@@ -2,7 +2,7 @@
 
 ## Current request and outcome
 
-The user requested: “אני רוצה שתחפש בכל תלמוד כל מחלוקת בין רב ושמואל ותשמור את זה בקובץ”. The implemented scope was base Bavli and Yerushalmi in the available local Sefaria export. The current deliverable is a searchable Hebrew report plus TXT and JSON, containing 509 source-location entries. Full scholarly completeness has not been established.
+The user requested: “אני רוצה שתחפש בכל תלמוד כל מחלוקת בין רב ושמואל ותשמור את זה בקובץ”. The implemented scope was base Bavli and Yerushalmi in the available local Sefaria export. The current deliverable is a searchable Hebrew report plus TXT and JSON, containing 512 source-location entries (509 in the 2026-11-22 snapshot, plus 3 added on 2026-11-23; see "Review corrections" below). Full scholarly completeness has not been established.
 
 ## Useful inputs
 
@@ -13,7 +13,7 @@ Read `rav_shmuel_results/rav_shmuel_index.json` first:
 - `source_units`: surrounding source segments with references, quotations, and links. These can contain adjacent unrelated material as context.
 - `coverage`: every scanned tractate, including those without selected entries.
 
-Raw retrieval found 1,494 broad windows and 1,382 declaration/joint-mention candidates. Their counts do not represent disputes. The primary index groups selections by source segment. Full quotations and raw candidates are retained for auditing and recall improvement.
+Raw retrieval found 1,494 broad windows and 1,384 declaration/joint-mention candidates (1,382 in the original snapshot). Their counts do not represent disputes. The primary index groups selections by source segment. Full quotations and raw candidates are retained for auditing and recall improvement.
 
 ## Critical reference issue
 
@@ -57,3 +57,17 @@ The current scan uses only the original export's base Talmud files. Commentary a
 ## Validation already performed
 
 The report was rendered in a headless browser and visually inspected for Hebrew RTL layout. Node verification exercised rendering, Hebrew search for שמוטת גף, and filtering to the 89 Yerushalmi entries. These checks do not validate completeness or every scholarly classification.
+
+## Review corrections — 2026-11-23
+
+An independent review re-read every entry's segment from the original `merged.json`. All quotations matched, and every reference matched the daf mapping above. All 150 entries of an older, separate Bavli extraction (`F:/Sefaria_Corpus_Normalized/reports/rav_shmuel_bavli_disputes.json`) are present here. That older file's references are one daf too high (the normalized-corpus offset), so do not cite from it.
+
+Changes made:
+
+- `classify_rav_shmuel.py`: the anonymous pattern accepted only space, comma, period, or colon after רב ושמואל, so the semicolon form רב ושמואל; חד אמר was missed. A widened pattern (also semicolon and dash) now finds Gittin 68b:16, Bava Batra 91a:4, and Bava Batra 91b:7. To keep snapshot candidate IDs stable, Bava Batra 91a:4 (ID 864) is upgraded in place from `explicit_mention` to `anonymous`, and the other two are appended as IDs 1383 and 1384. No other candidate record changed.
+- `build_rav_shmuel_report.py`: the three IDs are added to `more`. The manual Sukkah/Ketubot entries now use their published IDs (2529–2531) instead of a count-dependent ID. Two invalid escape sequences (future syntax errors) were fixed. Three malformed `</option value=…>` tags had hidden the Bavli, dispute, and reconciled filter options in the HTML report; the tags are fixed.
+- `verify_report.cjs`: now also checks the filter-option markup.
+
+`remaining.json` and `supplements.json` were not regenerated, so they do not list IDs 1383–1384; both were selected directly in the builder.
+
+Entries to read in full: Eruvin 12a:8 and Avodah Zarah 57a:5 (Shmuel's view appears only indirectly, through another amora's report).

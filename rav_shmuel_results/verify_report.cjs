@@ -1,6 +1,8 @@
 const fs=require('fs'),vm=require('vm'),path=require('path');
 const html=fs.readFileSync(path.join('rav_shmuel_results','מחלוקות_רב_ושמואל.html'),'utf8');
 const data=html.match(/<script id="data" type="application\/json">([\s\S]*?)<\/script>/)[1];
+// The DOM stub below cannot see <select> markup, so check the filter options directly.
+if(html.includes('</option value=')||!['Bavli','Yerushalmi','dispute','reconciled'].every(v=>html.includes('<option value="'+v+'">')))throw Error('Filter options malformed');
 const scripts=[...html.matchAll(/<script(?: [^>]*)?>([\s\S]*?)<\/script>/g)];
 const elements=new Map();
 function get(id){if(!elements.has(id))elements.set(id,{value:'',innerHTML:'',textContent:id==='data'?data:'',addEventListener(){}});return elements.get(id)}

@@ -4,7 +4,8 @@ import rav_shmuel_search as s
 P=Path('rav_shmuel_results')
 rows=json.loads((P/'selected.json').read_text(encoding='utf-8'))
 allpairs=json.loads((P/'classified_candidates.json').read_text(encoding='utf-8'))
-more={190,402,827,828,1197,1378}
+# 864, 1383, 1384: "רב ושמואל; חד אמר" forms found after widening the anonymous pattern (2026-11-23).
+more={190,402,827,828,1197,1378,864,1383,1384}
 remove={503,1242}
 rows=[r for r in rows if r['id'] not in remove]+[r for r in allpairs if r['id'] in more]
 for r in rows:r.setdefault('status','dispute')
@@ -30,17 +31,18 @@ def heref(w,ref):
   return w['he']+' '+heb(int(m[1]))+' ע״'+('א' if m[2]=='a' else 'ב')+' · קטע '+m[3]
  return w['he']+' · פרק '+heb(int(addr.split(':')[0]))+' הלכה '+heb(int(addr.split(':')[1]))+' · קטע '+addr.split(':')[2]
 # Additional dialogue-form disputes whose speaker attribution is not an adjacent declaration.
-for title, prefix, phrase in [
- ('Sukkah','Sukkah 11a:','צריך לנענע'),
- ('Sukkah','Sukkah 14a:','מחלוקת בנסרין'),
- ('Ketubot','Ketubot 77a:','האומר "איני זן ואיני מפרנס"'),
+# IDs are fixed at their 2026-11-22 published values so they do not shift when rows are added.
+for title, prefix, phrase, manual_id in [
+ ('Sukkah','Sukkah 11a:','צריך לנענע',2529),
+ ('Sukkah','Sukkah 14a:','מחלוקת בנסרין',2530),
+ ('Ketubot','Ketubot 77a:','האומר "איני זן ואיני מפרנס"',2531),
 ]:
  w=workmap[title]
  for i,u in enumerate(w['units']):
   if u['ref'].startswith(prefix) and phrase in u['text']:
    endi=min(len(w['units'])-1,i+5)
    ev='\n'.join(x['text'] for x in w['units'][i:endi+1])
-   rows.append({'id':2000+len(rows),'work':title,'ref':u['ref'],'start':w['offsets'][i],'end':w['offsets'][endi]+len(w['units'][endi]['text']),'evidence':ev,'status':'dispute'})
+   rows.append({'id':manual_id,'work':title,'ref':u['ref'],'start':w['offsets'][i],'end':w['offsets'][endi]+len(w['units'][endi]['text']),'evidence':ev,'status':'dispute'})
    break
 
 # One entry per source segment; different disputes in a segment remain in its quotation.
@@ -89,12 +91,12 @@ for e in entries:
  lines+=['לשון הגמרא וההקשר:']
  for u in e['source_units']:lines+=['['+u['ref']+']',u['text'],'']
 (P/'מחלוקות_רב_ושמואל.txt').write_text('\n'.join(lines),encoding='utf-8-sig')
-payload=json.dumps(data,ensure_ascii=False).replace('</','<\/')
+payload=json.dumps(data,ensure_ascii=False).replace('</','<\\/')
 template='''<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>מחלוקות רב ושמואל</title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f4f1e9;color:#242a30;font:18px/1.75 Arial,sans-serif}header,main{max-width:1100px;margin:auto;padding:24px}header{padding-top:44px}h1{font-size:36px;margin:0}h2{font-size:23px;margin:0 0 10px}p{margin:10px 0}.muted{color:#5c6268;font-size:15px}.stats{display:flex;gap:16px;flex-wrap:wrap}.stat{background:#fff;padding:12px 22px;border:1px solid #d9d4c7;border-radius:8px}.stat strong{font-size:27px;color:#225c58}.filters{position:sticky;top:0;background:#f4f1e9f5;padding:14px 0;z-index:2;display:flex;flex-wrap:wrap;gap:10px}input,select,button{font:inherit;border:1px solid #aaa;border-radius:5px;padding:9px;background:white}input{flex:1;min-width:240px}button{cursor:pointer;color:#225c58}article{background:white;border:1px solid #d9d4c7;border-right:5px solid #39716b;padding:22px;margin:18px 0;border-radius:6px}a{color:#225c58}.quote{font-family:"Times New Roman",serif;font-size:23px;white-space:pre-wrap;line-height:1.9}.tag{display:inline-block;background:#e9efeb;color:#225c58;padding:2px 10px;border-radius:5px;font-size:14px}.note{background:#fcf6de;padding:8px 14px;font-size:16px}summary{cursor:pointer;font-weight:bold}details{margin:12px 0}table{border-collapse:collapse;width:100%;font-size:16px}td,th{padding:6px;border-bottom:1px solid #ddd;text-align:right}.page{display:flex;align-items:center;gap:12px;margin:20px 0}code{font-size:13px;word-break:break-all}.source{padding-top:14px;border-top:1px solid #eee;margin-top:14px}footer{margin:28px 0;font-size:15px}@media print{.filters,.page,button{display:none}article{break-inside:avoid}header,main{max-width:none;padding:8px}body{background:white}}
 </style><header><p class="muted">ספריית מקורות ללימוד • 22 בנובמבר 2026</p><h1>מחלוקות רב ושמואל</h1><p>מפתח מקורות בתלמוד הבבלי ובתלמוד הירושלמי</p><div class="stats" id="stats"></div><p id="scope"></p><p class="note" id="limits"></p><details><summary>היקף החיפוש ושיטת העבודה</summary><p id="method"></p><p>לצד מחלוקות בדין נכללו הבדלי פירוש, אגדה ונוסח. נשמרו מקבילות וחזרות, וכן חילופי ייחוס המופיעים בגמרא. הציטוטים כוללים הקשר ולעיתים גם נושאים סמוכים.</p><p>המקור: קובצי Hebrew/merged.json המקומיים של Sefaria Export. ההפניות המקוונות ניתנות לעיון, ואין הכרח שהמהדורה באתר תהיה זהה לקובץ המקומי.</p><p>לצורך ביקורת נוספת נשמרו באותה תיקייה candidates.json ו־classified_candidates.json. אלו פלטי חיפוש גולמיים, ולא רשימות מחלוקות מאומתות.</p></details><details><summary>כיסוי המסכתות</summary><table><thead><tr><th>תלמוד</th><th>מסכת</th><th>קטעי מקור שנסרקו</th><th>רשומות במפתח</th></tr></thead><tbody id="coverage"></tbody></table><p class="muted">אפס רשומות פירושו שלא סווג מופע למפתח זה; אינו הוכחה שאין מחלוקת במסכת.</p></details></header>
-<main><div class="filters"><input id="q" aria-label="חיפוש" placeholder="חיפוש בציטוטים או במראי המקום"><select id="branch" aria-label="תלמוד"><option value="">שני התלמודים</option value="Bavli">בבלי</option><option value="Yerushalmi">ירושלמי</option></select><select id="work" aria-label="מסכת"><option value="">כל המסכתות</option></select><select id="status" aria-label="סוג"><option value="">כל סוגי הרשומות</option value="dispute">מופעי מחלוקת והבדלי דעות</option value="reconciled">בירור או יישוב ההבדל</option></select></div><p class="muted" id="count"></p><div class="page"><button id="prev">הקודם</button><span id="page"></span><button id="next">הבא</button><button id="all">הצג הכל / הדפסה</button></div><div id="results"></div><footer>קובץ מקומי עצמאי: החיפוש פועל ללא אינטרנט. קישורי המקורות נפתחים באתר ספריא.</footer></main>
+<main><div class="filters"><input id="q" aria-label="חיפוש" placeholder="חיפוש בציטוטים או במראי המקום"><select id="branch" aria-label="תלמוד"><option value="">שני התלמודים</option><option value="Bavli">בבלי</option><option value="Yerushalmi">ירושלמי</option></select><select id="work" aria-label="מסכת"><option value="">כל המסכתות</option></select><select id="status" aria-label="סוג"><option value="">כל סוגי הרשומות</option><option value="dispute">מופעי מחלוקת והבדלי דעות</option><option value="reconciled">בירור או יישוב ההבדל</option></select></div><p class="muted" id="count"></p><div class="page"><button id="prev">הקודם</button><span id="page"></span><button id="next">הבא</button><button id="all">הצג הכל / הדפסה</button></div><div id="results"></div><footer>קובץ מקומי עצמאי: החיפוש פועל ללא אינטרנט. קישורי המקורות נפתחים באתר ספריא.</footer></main>
 <script id="data" type="application/json">PAYLOAD</script><script>
 const D=JSON.parse(document.querySelector('#data').textContent),$=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -106,7 +108,7 @@ $('work').innerHTML+=[...works].sort((a,b)=>a[1].localeCompare(b[1],'he')).map((
 const clean=s=>s.toLowerCase().replace(/[\u0591-\u05c7"׳״']/g,'');
 D.entries.forEach(e=>e.search=clean(e.he_ref+' '+e.ref+' '+e.source_units.map(u=>u.text).join(' ')));
 let page=0,size=25,filtered=[];
-function render(reset=false){if(reset)page=0;const q=clean($('q').value.trim());filtered=D.entries.filter(e=>(!q||q.split(/\s+/).every(t=>e.search.includes(t)))&&(!$('branch').value||e.branch===$('branch').value)&&(!$('work').value||e.work===$('work').value)&&(!$('status').value||e.status===$('status').value));const pages=Math.max(1,Math.ceil(filtered.length/size));page=Math.max(0,Math.min(page,pages-1));$('count').textContent=filtered.length+' רשומות תואמות מתוך '+D.entries.length;$('page').textContent='עמוד '+(page+1)+' מתוך '+pages;$('prev').disabled=page===0;$('next').disabled=page>=pages-1;
+function render(reset=false){if(reset)page=0;const q=clean($('q').value.trim());filtered=D.entries.filter(e=>(!q||q.split(/\\s+/).every(t=>e.search.includes(t)))&&(!$('branch').value||e.branch===$('branch').value)&&(!$('work').value||e.work===$('work').value)&&(!$('status').value||e.status===$('status').value));const pages=Math.max(1,Math.ceil(filtered.length/size));page=Math.max(0,Math.min(page,pages-1));$('count').textContent=filtered.length+' רשומות תואמות מתוך '+D.entries.length;$('page').textContent='עמוד '+(page+1)+' מתוך '+pages;$('prev').disabled=page===0;$('next').disabled=page>=pages-1;
 $('results').innerHTML=filtered.slice(page*size,(page+1)*size).map(e=>'<article><span class="tag">'+(e.branch==='Bavli'?'בבלי':'ירושלמי')+' · רשומה '+e.id+'</span><h2><a href="'+esc(e.link)+'" target="_blank" rel="noopener">'+esc(e.he_ref)+'</a></h2><p class="muted" dir="ltr" style="text-align:right">'+esc(e.ref)+'</p>'+e.notes.map(n=>'<p class="note">'+esc(n)+'</p>').join('')+'<p><strong>פתיחת קטע המקור:</strong> '+esc(e.opening)+'…</p><div class="quote">'+esc(e.evidence[0])+'</div><details><summary>הצג את קטעי המקור המלאים וההקשר</summary>'+e.source_units.map(u=>'<div class="source"><a href="'+esc(u.link)+'" target="_blank" rel="noopener" dir="ltr">'+esc(u.ref)+'</a><div class="quote">'+esc(u.text)+'</div></div>').join('')+'</details><details><summary>פרטי המקור המקומי</summary><code dir="ltr">'+esc(e.source_file)+'</code><p class="muted">כתובת במערך המקור, בסיס אפס: '+esc(e.json_index.join(' / '))+'</p></details></article>').join('');}
 ['q','branch','work','status'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',()=>render(true)));
 $('prev').onclick=()=>{page--;render()};$('next').onclick=()=>{page++;render()};$('all').onclick=()=>{size=D.entries.length;render(true)};render();

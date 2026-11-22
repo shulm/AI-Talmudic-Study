@@ -11,7 +11,7 @@ The November 22, 2026 snapshot searches the base texts of **37 Bavli and 39 Yeru
 - [Structured index](rav_shmuel_results/rav_shmuel_index.json): the best entry point for another AI agent.
 - [Coverage](rav_shmuel_results/coverage.json): all scanned tractates and source paths.
 
-The index contains **509 source-location entries: 420 Bavli and 89 Yerushalmi**. Of these, 501 are classified as dispute/opinion-difference entries and 8 as differences discussed or reconciled in the sugya. These are **not 509 distinct disputes**. Parallel passages and repetitions remain, and one entry can contain multiple disputes.
+The index contains **512 source-location entries: 423 Bavli and 89 Yerushalmi**. Of these, 504 are classified as dispute/opinion-difference entries and 8 as differences discussed or reconciled in the sugya. These are **not 512 distinct disputes**. Parallel passages and repetitions remain, and one entry can contain multiple disputes.
 
 **Research status:** this is a first-pass search and excerpt-based classification, not a critically verified exhaustive catalogue. Complete sugyot have not all been reviewed. Indirect disputes may be missing, and classifications need further checking against the full discussion. Do not treat the catalogue as a halachic ruling.
 
