@@ -2,7 +2,18 @@
 
 A private workspace for source-based Talmudic research with AI agents: finding sources, comparing opinions, and preparing Hebrew discussions, conclusions, and lessons.
 
-## Latest results: Rav and Shmuel
+## Latest results: Abaye and Rava — November 23, 2026
+
+The new scan covers the same **76 tractates / 94,045 nonempty segments** of Bavli and Yerushalmi. The selected index has **498 source-location entries in 36 Bavli tractates**, grouped from 568 selected candidate occurrences. These are not 498 distinct disputes: alternative explanations, repeated reasoning, and parallel passages remain.
+
+- [Searchable Hebrew report](abaye_rava_results/מחלוקות_אביי_ורבא.html)
+- [Hebrew text with source context](abaye_rava_results/מחלוקות_אביי_ורבא.txt)
+- [Structured index for another agent](abaye_rava_results/abaye_rava_index.json)
+- [Research procedure and limitations](abaye_rava_results/README.md)
+
+**First-pass excerpt review only.** The scan retrieved 1,052 declaration/joint-mention candidates and 2,455 overlapping name-proximity windows. They are not counts of disputes. No paired candidates were retrieved in Yerushalmi with these patterns; this is not proof of absence. The selected index still needs full-sugya checking and broader recall review.
+
+## Rav and Shmuel
 
 The November 22, 2026 snapshot searches the base texts of **37 Bavli and 39 Yerushalmi tractates**, covering **94,045 nonempty source segments** in the local Sefaria export.
 

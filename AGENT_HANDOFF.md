@@ -1,4 +1,22 @@
-# Research handoff — 2026-11-22
+# Research handoff — updated 2026-11-23
+
+## New active research: Abaye and Rava
+
+The latest user request was to find all disputes between אביי and רבא across Talmud. Read `abaye_rava_results/abaye_rava_index.json` and `abaye_rava_results/README.md` for this task. The scan covered 76 tractates and 94,045 segments; the first-pass selected report has **498 source-location entries in 36 Bavli tractates**. This is not a count of unique topics or a certified exhaustive list.
+
+Raw retrieval: 1,052 declaration/joint candidates, plus 2,455 overlapping proximity windows. Manual excerpt decisions selected 565 declaration/joint candidates; 3 broad dialogue excerpts were added. Quotations were reviewed partly through shortened views. Complete sugyot have NOT all been reviewed. Unselected candidates must not automatically be treated as rejected disputes. See stable candidate keys and reasons in `review_decisions.json` and `supplemental_decisions.json`.
+
+No Yerushalmi pair was found by the implemented patterns. The patterns can miss distant, implicit, variant-name and dialogue-form disputes. The scanner also has an incomplete exclusion of names such as בר רבא; several known false identities were excluded during review. Preserve the frozen snapshot IDs if editing decisions. Do not silently equate רבא and רבה. Rosh Hashanah 18a has an attribution warning in the selected index.
+
+Validation: `python -X utf8 verify_abaye_rava_sources.py` checks retained text against the normalized original source, addresses, source hashes, and six coverage probes. `node abaye_rava_results/verify_report.cjs` checks UI behavior. Neither certifies that a passage is a dispute or that the index is complete. The prior Rav–Shmuel report was not regenerated or changed.
+
+Recommended next work: audit complete Abaye–Rava sugyot tractate by tractate; classify practical disputes vs alternative explanations and proofs; trace retractions and attribution corrections; then review remaining broad windows and deduplicate topics while preserving parallel references.
+
+### Abaye–Rava review — 2026-11-23
+
+An independent check re-read every entry's main segment from the raw `merged.json`; all quotations and daf addresses matched. The full pipeline reran and reproduced every output byte-for-byte. All 19 selected entries whose second speaker appears after 500 characters were read; each has differing Abaye and Rava statements in the same sugya.
+
+Recall gap: the 362 `declaration_pair` candidates marked `not_selected` were only partly reviewed. In a random sample of 25, one was a clear miss: Megillah 8b:13 (review ID 230), where Abaye rejects Rava's derivation and gives his own. It is now selected. Chagigah 22b:10 (ID 178) is borderline: Rava's answer is refuted by the Gemara and Abaye then answers differently. Expect roughly a dozen or more further misses among the unselected declaration pairs; review them before claiming coverage.
 
 ## Current request and outcome
 
