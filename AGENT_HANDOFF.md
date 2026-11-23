@@ -1,6 +1,20 @@
 # Research handoff — updated 2026-11-23
 
-## New active research: Abaye and Rava
+## Current active research: Rabbi Yohanan and Resh Lakish
+
+The user requested the same research for רבי יוחנן versus רבי שמעון בן לקיש (ריש לקיש / בר לקיש / רשב״ל / ר״ל), followed by commit and push. Read `yochanan_lakish_results/yochanan_lakish_index.json` and its README first. The scan covers all 76 local tractates (94,045 segments). The selected index has **561 source locations: 336 Bavli and 225 Yerushalmi in 71 tractates (33 Bavli, 38 Yerushalmi)**. Counts include parallel occurrences and continued discussions, not unique topics.
+
+Review: 1,409 declaration/joint candidates, of which 722 were selected, 134 excluded as pairings, and 553 left needing review. Another 17 explicit dialogue/rebuttal windows were selected from 2,109 broad windows. Stable keys and frozen IDs are retained. Selection was based on first-pass excerpts, often compact views; it is NOT full-sugya certification. The broad appendix and unselected candidates have not been exhaustively audited. Do not estimate remaining misses without a new representative audit.
+
+The scanner matches abbreviations and alternative names, and excludes explicit Yohanan patronymics. Ambiguous ר״ל is flagged. Other identities, variants, distant statements, anonymous pronouns and indirect disputes can still escape the patterns. Joint mentions are not automatically disputes. Zevachim 46b:4 has two pairs of amoraim and was not silently assigned to Yohanan vs Resh Lakish. In חד אמר cases the report quotes the continuation and does not assign opinions by name order. Yerushalmi Ketubot 6:1:2 is especially important: an initial attribution is replaced by a later report. Automatic warnings for inversions/retractions may concern nearby material; verify them manually.
+
+`verify_yochanan_lakish_sources.py` independently reads raw JSON arrays and verifies every selected quotation, address, main index and source hash. UI tests are in `yochanan_lakish_results/verify_report.cjs`; also run the required `rav_shmuel_results/verify_report.cjs`. These checks do not prove classification accuracy or completeness. Original corpora and earlier reports were not modified.
+
+Recommended next pass: review full sugyot tractate by tractate, then all unresolved candidates/proximity windows, especially dialogue forms and Yerushalmi implicit opinions. Separate practical rulings, explanations, derivations and resolved objections; link parallel topics without deleting occurrences.
+
+Repository privacy: inspection found the repository PUBLIC despite prior private instructions. It was restored to PRIVATE before this upload, under the user's existing authorization to keep it private.
+
+## Previous research: Abaye and Rava
 
 The latest user request was to find all disputes between אביי and רבא across Talmud. Read `abaye_rava_results/abaye_rava_index.json` and `abaye_rava_results/README.md` for this task. The scan covered 76 tractates and 94,045 segments; the first-pass selected report has **498 source-location entries in 36 Bavli tractates**. This is not a count of unique topics or a certified exhaustive list.
 

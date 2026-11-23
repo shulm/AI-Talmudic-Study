@@ -2,7 +2,18 @@
 
 A private workspace for source-based Talmudic research with AI agents: finding sources, comparing opinions, and preparing Hebrew discussions, conclusions, and lessons.
 
-## Latest results: Abaye and Rava — November 23, 2026
+## Latest results: Rabbi Yohanan and Resh Lakish — November 23, 2026
+
+Scanned **76 tractates / 94,045 nonempty segments**. The first-pass index contains **561 source locations: 336 Bavli and 225 Yerushalmi, across 71 tractates**. These are source occurrences, not unique-topic counts or a certified exhaustive list.
+
+- [Searchable Hebrew report](yochanan_lakish_results/מחלוקות_רבי_יוחנן_וריש_לקיש.html)
+- [Hebrew quotations and context](yochanan_lakish_results/מחלוקות_רבי_יוחנן_וריש_לקיש.txt)
+- [Structured index for another agent](yochanan_lakish_results/yochanan_lakish_index.json)
+- [Method, limitations and rebuild commands](yochanan_lakish_results/README.md)
+
+Aliases include רבי שמעון בן לקיש, ריש לקיש, בר לקיש, רשב״ל and ר״ל. The pipeline retains 1,409 pattern candidates and 2,109 overlapping proximity windows for further audit. Read the limitations before using the index to prepare a lesson.
+
+## Abaye and Rava — November 23, 2026
 
 The new scan covers the same **76 tractates / 94,045 nonempty segments** of Bavli and Yerushalmi. The selected index has **498 source-location entries in 36 Bavli tractates**, grouped from 568 selected candidate occurrences. These are not 498 distinct disputes: alternative explanations, repeated reasoning, and parallel passages remain.
 
