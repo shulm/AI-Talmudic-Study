@@ -10,5 +10,5 @@
 - Treat raw candidates as unverified. The current selected index has only first-pass excerpt review, not full-sugya verification.
 - Never modify the user's source corpora in place. Put derived data and corrections in this project.
 - Do not commit credentials, environment files, cache directories, or full corpus copies.
-- Preserve this repository's private visibility unless the user explicitly requests a change.
+- This repository is public by the user's decision (2026-11-23). Do not change its visibility unless the user explicitly requests it.
 - Validate changes to the generated report with `node rav_shmuel_results/verify_report.cjs`. This checks UI logic only, not scholarly accuracy.

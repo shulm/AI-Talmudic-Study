@@ -1,10 +1,10 @@
 # AI Talmudic Study
 
-A private workspace for source-based Talmudic research with AI agents: finding sources, comparing opinions, and preparing Hebrew discussions, conclusions, and lessons.
+A public workspace for source-based Talmudic research with AI agents: finding sources, comparing opinions, and preparing Hebrew discussions, conclusions, and lessons.
 
 ## Latest results: Rabbi Yohanan and Resh Lakish — November 23, 2026
 
-Scanned **76 tractates / 94,045 nonempty segments**. The first-pass index contains **561 source locations: 336 Bavli and 225 Yerushalmi, across 71 tractates**. These are source occurrences, not unique-topic counts or a certified exhaustive list.
+Scanned **76 tractates / 94,045 nonempty segments**. The first-pass index contains **563 source locations: 338 Bavli and 225 Yerushalmi, across 71 tractates**. These are source occurrences, not unique-topic counts or a certified exhaustive list.
 
 - [Searchable Hebrew report](yochanan_lakish_results/מחלוקות_רבי_יוחנן_וריש_לקיש.html)
 - [Hebrew quotations and context](yochanan_lakish_results/מחלוקות_רבי_יוחנן_וריש_לקיש.txt)

@@ -39,7 +39,7 @@ def main():
  assert len(d['coverage'])==76 and sum(c['units'] for c in d['coverage'])==94045
  # Niddah 3b contrasts Hezekiah with Yohanan, not Resh Lakish.
  assert not any(e['ref'].startswith('Niddah 3b:') for e in d['entries'])
- for probe in ['Yoma 74a','Bava Kamma 22a','Bava Metzia 47b','Gittin 47b','Niddah 24a','Jerusalem Talmud Nedarim 11:1']:
+ for probe in ['Yoma 74a','Bava Kamma 22a','Bava Metzia 47b','Gittin 47b','Niddah 24a','Jerusalem Talmud Nedarim 11:1','Eruvin 8b','Menachot 54a']:
   assert any(e['ref'].startswith(probe+':') for e in d['entries']),probe
  print(f'PASS: {len(d["entries"])} entries, {checked} context quotations, raw-array references, hashes and coverage probes. Not a completeness or dispute-classification check.')
 if __name__=='__main__':main()

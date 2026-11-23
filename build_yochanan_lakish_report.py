@@ -6,6 +6,8 @@ import re
 from pathlib import Path
 from build_abaye_rava_report import he_ref, link
 from yochanan_lakish_review import main as review
+from yochanan_lakish_search import mentions
+from abaye_rava_search import load_works, record
 
 P=Path(__file__).parent/'yochanan_lakish_results'
 def save(name,value):
@@ -24,6 +26,18 @@ def main():
   decision={'key':r['key'],'broad_index':i,'ref':r['ref'],'decision':'selected_dialogue_excerpt',
    'reason':'נקרא ציטוט המשא ומתן: דחייה או פירוש חלופי; אין זו קביעה שהמחלוקת נותרה למסקנה.','reconciled':False}
   decisions[r['key']]=decision;supplemental.append(decision);picked.append(r)
+ # Group statements with plural verbs (אמרי/אמרו), which the scanner's singular-verb patterns miss.
+ # Found by an independent strict-pattern recall check on 2026-11-23; IDs are fixed so earlier IDs stay stable.
+ manual_ids={}
+ works={w['work']:w for w in load_works()}
+ for ref,entry_id in [('Eruvin 8b:11',562),('Menachot 54a:8',563)]:
+  w=works[ref.rsplit(' ',1)[0]];k=next(n for n,u in enumerate(w['units']) if u['ref']==ref)
+  start=w['offsets'][k];text=w['units'][k]['text']
+  anchors=[m|{'start':m['start']+start,'end':m['end']+start} for m in mentions(text)]
+  r=json.loads(json.dumps(record(w,start,start+len(text),'manual_group_statement',anchors),ensure_ascii=False));r['review_id']='manual:'+ref
+  decision={'key':r['key'],'ref':ref,'decision':'selected_manual_group',
+   'reason':'אמירה בלשון רבים: רבי יוחנן וריש לקיש מנויים בשתי קבוצות חולקות. נמצא בבדיקת החמצות; לא נבדקה כל הסוגיה.','reconciled':False}
+  decisions[r['key']]=decision;supplemental.append(decision);picked.append(r);manual_ids[ref]=entry_id
  save('supplemental_decisions.json',supplemental)
  grouped=collections.defaultdict(list)
  for r in picked:grouped[r['ref']].append(r)
@@ -54,7 +68,9 @@ def main():
    'candidate_keys':[x['key'] for x in rs],'notes':notes})
  seder={'Zeraim':0,'Moed':1,'Nashim':2,'Nezikin':3,'Kodashim':4,'Tahorot':5}
  entries.sort(key=lambda e:(e['branch']!='Bavli',next((v for k,v in seder.items() if 'Seder '+k in e['source_file']),9),e['he_work'],e['json_index']))
- for i,e in enumerate(entries,1):e['id']=i
+ for i,e in enumerate((e for e in entries if e['ref'] not in manual_ids),1):e['id']=i
+ for e in entries:
+  if e['ref'] in manual_ids:e['id']=manual_ids[e['ref']]
  coverage=json.loads((P/'coverage.json').read_text(encoding='utf-8'))
  for c in coverage:
   c['title']=c['work'];c['he_title']=c['he_work'];c['entries']=sum(e['work']==c['work'] for e in entries)

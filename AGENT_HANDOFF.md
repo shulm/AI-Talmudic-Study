@@ -2,9 +2,9 @@
 
 ## Current active research: Rabbi Yohanan and Resh Lakish
 
-The user requested the same research for רבי יוחנן versus רבי שמעון בן לקיש (ריש לקיש / בר לקיש / רשב״ל / ר״ל), followed by commit and push. Read `yochanan_lakish_results/yochanan_lakish_index.json` and its README first. The scan covers all 76 local tractates (94,045 segments). The selected index has **561 source locations: 336 Bavli and 225 Yerushalmi in 71 tractates (33 Bavli, 38 Yerushalmi)**. Counts include parallel occurrences and continued discussions, not unique topics.
+The user requested the same research for רבי יוחנן versus רבי שמעון בן לקיש (ריש לקיש / בר לקיש / רשב״ל / ר״ל), followed by commit and push. Read `yochanan_lakish_results/yochanan_lakish_index.json` and its README first. The scan covers all 76 local tractates (94,045 segments). The selected index has **563 source locations: 338 Bavli and 225 Yerushalmi in 71 tractates (33 Bavli, 38 Yerushalmi)**. Counts include parallel occurrences and continued discussions, not unique topics.
 
-Review: 1,409 declaration/joint candidates, of which 722 were selected, 134 excluded as pairings, and 553 left needing review. Another 17 explicit dialogue/rebuttal windows were selected from 2,109 broad windows. Stable keys and frozen IDs are retained. Selection was based on first-pass excerpts, often compact views; it is NOT full-sugya certification. The broad appendix and unselected candidates have not been exhaustively audited. Do not estimate remaining misses without a new representative audit.
+Review: 1,409 declaration/joint candidates, of which 722 were selected, 134 excluded as pairings, and 553 left needing review. Another 17 explicit dialogue/rebuttal windows were selected from 2,109 broad windows, and 2 group statements were added manually (see the review below). Stable keys and frozen IDs are retained. Selection was based on first-pass excerpts, often compact views; it is NOT full-sugya certification. The broad appendix and unselected candidates have not been exhaustively audited. Do not estimate remaining misses without a new representative audit.
 
 The scanner matches abbreviations and alternative names, and excludes explicit Yohanan patronymics. Ambiguous ר״ל is flagged. Other identities, variants, distant statements, anonymous pronouns and indirect disputes can still escape the patterns. Joint mentions are not automatically disputes. Zevachim 46b:4 has two pairs of amoraim and was not silently assigned to Yohanan vs Resh Lakish. In חד אמר cases the report quotes the continuation and does not assign opinions by name order. Yerushalmi Ketubot 6:1:2 is especially important: an initial attribution is replaced by a later report. Automatic warnings for inversions/retractions may concern nearby material; verify them manually.
 
@@ -12,7 +12,15 @@ The scanner matches abbreviations and alternative names, and excludes explicit Y
 
 Recommended next pass: review full sugyot tractate by tractate, then all unresolved candidates/proximity windows, especially dialogue forms and Yerushalmi implicit opinions. Separate practical rulings, explanations, derivations and resolved objections; link parallel topics without deleting occurrences.
 
-Repository privacy: inspection found the repository PUBLIC despite prior private instructions. It was restored to PRIVATE before this upload, under the user's existing authorization to keep it private.
+Repository visibility: the user decided on 2026-11-23 that the repository should be PUBLIC, and it is now public. Do not make it private unless the user asks.
+
+### Yohanan–Resh Lakish review — 2026-11-23
+
+All checks passed, and a full rebuild reproduced every output byte-for-byte. A random sample of 14 entries, the Shabbat 71b–72a series and the 23 entries that depend only on ר״ל were read; all are Rabbi Yohanan vs Resh Lakish.
+
+Independent recall check: a strict pattern (רבי יוחנן אמר … ריש לקיש אמר, either order, within one segment) hit 270 segments; 263 were already main entries. Of the other 7, two were clear misses and are now added: Eruvin 8b:11 (entry ID 562) and Menachot 54a:8 (ID 563). In both, the two amoraim stand in opposing groups with a plural verb (אמרו / אמרי), which the scanner's singular-verb patterns do not match. They are added in `build_yochanan_lakish_report.py` with fixed IDs, so all 561 earlier entries kept their IDs and content; the two new entries appear in tractate order but carry the higher IDs. The rest: Yerushalmi Kiddushin 1:4:10 (agreement) and Sotah 5:6:2 (unrelated) are correctly excluded. Borderline, left unselected: Yerushalmi Bava Metzia 10:6:2 (possibly complementary rulings), Berakhot 1:1:25 (different aggadic explanations), and Sanhedrin 7:9:8 (both are printed as saying כמחלוקת, probably a textual corruption).
+
+Known scanner gap: רבי יוחנן הסנדלר (a tanna) is not excluded. It appears only in 5 broad proximity windows (Ketubot 58b, Kiddushin 63a, Yerushalmi Ketubot 5:5:2–3, Nedarim 11:4:2), none selected. It was not fixed in the scanner, because that would renumber `broad_candidates.json`, which the 17 supplemental selections address by index. Fix both together if the scanner is changed.
 
 ## Previous research: Abaye and Rava
 
