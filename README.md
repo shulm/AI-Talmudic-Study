@@ -26,6 +26,13 @@ The index contains **512 source-location entries: 423 Bavli and 89 Yerushalmi**.
 
 **Research status:** this is a first-pass search and excerpt-based classification, not a critically verified exhaustive catalogue. Complete sugyot have not all been reviewed. Indirect disputes may be missing, and classifications need further checking against the full discussion. Do not treat the catalogue as a halachic ruling.
 
+## Research continuation plan
+
+- [Metric representations and scholar attribution — research plan](research/metric_attribution_2026-11-23/RESEARCH_PLAN.md)
+- [Next-agent assignment: source inventory and annotation feasibility](research/metric_attribution_2026-11-23/NEXT_AGENT_PROMPT.md)
+
+Status: **planned, not executed**. The plan starts with a Rav–Shmuel Bavli feasibility study and reserves Abaye–Rava for a later supervised replication. Source-location counts are not training sample counts.
+
 ## Start here as an AI agent
 
 Read [AGENTS.md](AGENTS.md), then [the handoff](AGENT_HANDOFF.md). Work from the structured index and preserve source references. The report and JSON include source quotations, so initial review does not require access to the original F: drive.
