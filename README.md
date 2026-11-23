@@ -2,7 +2,18 @@
 
 A public workspace for source-based Talmudic research with AI agents: finding sources, comparing opinions, and preparing Hebrew discussions, conclusions, and lessons.
 
-## Latest results: Rabbi Yohanan and Resh Lakish — November 23, 2026
+## Latest results: Rabbah and Rav Yosef — November 23, 2026
+
+Scanned **76 tractates / 94,045 nonempty segments**. The first-pass index contains **101 source locations in 27 Bavli tractates**, including one objection resolved by distinguishing cases. These are occurrences, not 101 unique disputes or a certified exhaustive catalogue. No Yerushalmi entry was selected.
+
+- [Searchable Hebrew report](rabbah_yosef_results/מחלוקות_רבה_ורב_יוסף.html)
+- [Hebrew quotations and context](rabbah_yosef_results/מחלוקות_רבה_ורב_יוסף.txt)
+- [Structured index for another agent](rabbah_yosef_results/rabbah_yosef_index.json)
+- [Method, limitations and rebuild commands](rabbah_yosef_results/README.md)
+
+The search distinguishes רבה from רבא. It retains 207 pattern candidates, 477 overlapping proximity windows, and explicit review decisions. Read the attribution and conclusion notes before preparing a lesson.
+
+## Rabbi Yohanan and Resh Lakish — November 23, 2026
 
 Scanned **76 tractates / 94,045 nonempty segments**. The first-pass index contains **563 source locations: 338 Bavli and 225 Yerushalmi, across 71 tractates**. These are source occurrences, not unique-topic counts or a certified exhaustive list.
 

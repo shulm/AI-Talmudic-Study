@@ -1,6 +1,20 @@
 # Research handoff — updated 2026-11-23
 
-## Current active research: Rabbi Yohanan and Resh Lakish
+## Current active research: Rabbah and Rav Yosef
+
+User requested all disputes of רבה and רב יוסף across Talmud, committed and pushed. Start with `rabbah_yosef_results/rabbah_yosef_index.json` and its README. Scan: 37 Bavli and 39 Yerushalmi tractates, 94,045 segments. Index: **101 source locations in 27 Bavli tractates**, grouped from 102 selected pattern candidates and 12 supplemental dialogue/continuation windows. One entry (Yevamot 45a:18) is classified as a resolved objection. No Yerushalmi entry was selected; this does not prove absence.
+
+Review: all 207 pattern candidates and broad windows not already represented at selected opening refs received compact excerpt triage; selected supplements were read with fuller context. 47 pattern candidates are excluded as agreements and 58 remain `needs_review`. Broad windows not selected are NOT certified exclusions. Full sugyot have not all been checked. Counts preserve repeats and continuations, not unique topics.
+
+Identity: רבה and רבא are separate. Explicit patronymics are filtered, but raw matches still include ordinary words such as מרבה and גברא רבה; do not trust raw candidates. Sotah 21a:10 attributes the objection to רבה but the alternative answer to רבא. Sanhedrin 98b:3 prints [רבה]. Bava Batra 32b uses both spellings. Preserve these readings and check textual witnesses before assigning all stages. Bava Kamma 51b has חד אמר formulations: do not assign views by order. Gittin 67a has ואיכא דאפיך להו. Menachot 39a is an attribution correction, not opposing rulings.
+
+Narrow independent recall probe: 23 segments have literal רבה אמר/אומר and רב יוסף אמר/אומר; 22 are selected main refs. The remaining Eruvin 88a:9 gives the same ruling from different teachers. This small check is not evidence of exhaustive recall. `audit_rabbah_yosef_recall.py` reproduces it.
+
+The builder and review script pin raw candidate SHA-256 values to prevent silent renumbering. Remap decisions by stable keys if changing retrieval. `verify_rabbah_yosef_sources.py` checks all 101 addresses and 626 context quotations directly against raw source arrays; it does not certify selection quality. UI tests and the required Rav–Shmuel test pass. A complete scan/build/audit rebuild was checked byte-for-byte. Source corpora and previous generated reports are unchanged.
+
+Next research pass: read complete sugyot for the selected entries, resolve the 58 undecided candidates and remaining broad windows, audit indirect/anonymous formulations and name variants, and link parallel topics without deleting occurrences.
+
+## Previous research: Rabbi Yohanan and Resh Lakish
 
 The user requested the same research for רבי יוחנן versus רבי שמעון בן לקיש (ריש לקיש / בר לקיש / רשב״ל / ר״ל), followed by commit and push. Read `yochanan_lakish_results/yochanan_lakish_index.json` and its README first. The scan covers all 76 local tractates (94,045 segments). The selected index has **563 source locations: 338 Bavli and 225 Yerushalmi in 71 tractates (33 Bavli, 38 Yerushalmi)**. Counts include parallel occurrences and continued discussions, not unique topics.
 
