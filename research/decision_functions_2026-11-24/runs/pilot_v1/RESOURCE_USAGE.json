@@ -69,14 +69,26 @@
       "wall_seconds": 1.624513864517212,
       "cpu_seconds_sampled": 1.1875,
       "peak_rss_bytes_sampled": 70127616
+    },
+    {
+      "command": [
+        "python",
+        "labs/decision_functions/evaluate.py",
+        "test",
+        "--freeze",
+        "4de12a1fb300a7c9e9d927591bc4b101f0e263a2"
+      ],
+      "exit_status": 0,
+      "wall_seconds": 9.045226335525513,
+      "cpu_seconds_sampled": 6.390625,
+      "peak_rss_bytes_sampled": 83771392
     }
   ],
-  "measured_cpu_seconds": 99.359375,
-  "measured_wall_seconds": 147.6061761379242,
+  "measured_cpu_seconds": 105.75,
+  "measured_wall_seconds": 156.6514024734497,
   "sampled_peak_rss_bytes": 582651904,
   "human_shared_fits": 30,
   "synthetic_shared_fits_total": 4,
-  "adaptation_person_solves": 5100,
   "limits": {
     "download_bytes": 2147483648,
     "cpu_core_hours": 6,
@@ -86,6 +98,10 @@
   "unmeasured": "Initial acquire/prepare and small documentation/inspection commands not process-profiled; measured child-process CPU/RSS sampled every 0.1 seconds, final fraction of second may be missed. HTTP metadata/transport overhead not captured.",
   "failed_attempts": [
     "Initial encoding: removed prepare_for_model API; no model fit or query scoring occurred.",
-    "Read-only diagnostic numpy.linalg.norm with 3-axis argument failed; no artifacts changed."
-  ]
+    "Read-only diagnostic numpy.linalg.norm with 3-axis argument failed; no artifacts changed.",
+    "Initial freeze command failed with KeyError selected due to development output filename collision; recovered pre-test without refit.",
+    "Preliminary freeze superseded before scoring to canonicalize Windows/Git line endings."
+  ],
+  "human_adaptation_person_solves": 8730,
+  "synthetic_adaptation_person_solves": 128
 }

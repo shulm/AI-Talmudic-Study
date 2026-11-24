@@ -1,0 +1,182 @@
+{
+  "status": "VALID_PILOT_POSITIVE_PRIMARY",
+  "freeze_commit": "4de12a1fb300a7c9e9d927591bc4b101f0e263a2",
+  "people": 22,
+  "items": 76,
+  "groups": 55,
+  "primary_baseline": "B3",
+  "primary": {
+    "delta": 1.9145913755253597e-12,
+    "interval95": [
+      1.655029168969052e-13,
+      3.804900589608094e-12
+    ],
+    "valid_resamples": 2000,
+    "rejected": 0
+  },
+  "contrasts": {
+    "B2": {
+      "delta": 0.052063435022851594,
+      "interval95": [
+        0.014072400815651859,
+        0.09861916330252561
+      ],
+      "valid_resamples": 2000,
+      "rejected": 0
+    },
+    "B3": {
+      "delta": 1.9145913755253597e-12,
+      "interval95": [
+        1.655029168969052e-13,
+        3.804900589608094e-12
+      ],
+      "valid_resamples": 2000,
+      "rejected": 0
+    }
+  },
+  "history_controls": [
+    {
+      "model": "B3",
+      "true_nll": 0.7204485381213804,
+      "shuffled_nll": 0.8145900346846182,
+      "true_history_advantage": 0.09414149656323786
+    },
+    {
+      "model": "B4",
+      "true_nll": 0.7280984870479158,
+      "shuffled_nll": 0.7889511547774672,
+      "true_history_advantage": 0.060852667729551495
+    },
+    {
+      "model": "M1",
+      "true_nll": 0.7204485381194657,
+      "shuffled_nll": 0.8145900346844069,
+      "true_history_advantage": 0.09414149656494109
+    }
+  ],
+  "seed_diagnostics": [
+    {
+      "seed": 11,
+      "nll": 0.7204485381161646
+    },
+    {
+      "seed": 29,
+      "nll": 0.7204485381212171
+    },
+    {
+      "seed": 47,
+      "nll": 0.7204485381210156
+    }
+  ],
+  "source_revision": "b5596d9edd585361967991a591abc7b11fb1f7a3",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "primary_support": 16,
+  "selected": {
+    "B0": null,
+    "B2": 0.01,
+    "B1": 4,
+    "B3": 0.1,
+    "B4": [
+      8,
+      4
+    ],
+    "M1": {
+      "rank": 2,
+      "l2": 0.1
+    }
+  },
+  "k16_results": {
+    "B0": {
+      "model": "B0",
+      "k": 16,
+      "nll": 0.7829414360810504,
+      "accuracy": 0.6758373205741627,
+      "brier": 0.483412863425011,
+      "disagreement_subset": {
+        "nll": 0.7909022096718896,
+        "accuracy": 0.6719367588932806,
+        "brier": 0.4872222570349473
+      }
+    },
+    "B1": {
+      "model": "B1",
+      "k": 16,
+      "nll": 0.7262868593407651,
+      "accuracy": 0.648524720893142,
+      "brier": 0.4530941391217366,
+      "disagreement_subset": {
+        "nll": 0.7274395878668778,
+        "accuracy": 0.6490996925779534,
+        "brier": 0.4516113168289999
+      }
+    },
+    "B2": {
+      "model": "B2",
+      "k": 16,
+      "nll": 0.7725119731423172,
+      "accuracy": 0.6758373205741627,
+      "brier": 0.47470303072427616,
+      "disagreement_subset": {
+        "nll": 0.7826927389736346,
+        "accuracy": 0.6719367588932806,
+        "brier": 0.48048863162445704
+      }
+    },
+    "B3": {
+      "model": "B3",
+      "k": 16,
+      "nll": 0.7204485381213804,
+      "accuracy": 0.6586921850079746,
+      "brier": 0.4442661513358776,
+      "disagreement_subset": {
+        "nll": 0.72304753433734,
+        "accuracy": 0.6559068950373298,
+        "brier": 0.44461507487939933
+      }
+    },
+    "B4": {
+      "model": "B4",
+      "k": 16,
+      "nll": 0.7280984870479158,
+      "accuracy": 0.6618819776714514,
+      "brier": 0.4478937660752475,
+      "disagreement_subset": {
+        "nll": 0.7325312147555971,
+        "accuracy": 0.6611769872639438,
+        "brier": 0.44888401228326513
+      }
+    },
+    "M1": {
+      "model": "M1",
+      "k": 16,
+      "nll": 0.7204485381194657,
+      "accuracy": 0.6586921850079746,
+      "brier": 0.44426615133463293,
+      "disagreement_subset": {
+        "nll": 0.7230475343353548,
+        "accuracy": 0.6559068950373298,
+        "brier": 0.44461507487807217
+      }
+    }
+  },
+  "basis_norms": [
+    6.598532669670373e-05,
+    1.4454418664283208e-05,
+    3.255720181727323e-05
+  ],
+  "probability_artifacts": [
+    {
+      "filename": "test_predictions.npz",
+      "bytes": 3583087,
+      "sha256": "25b3f08b45c360483984c6ae61f2e067da466b45fcffcb13f9f7caaf5e536927"
+    },
+    {
+      "filename": "test_paired_losses.npz",
+      "bytes": 136988,
+      "sha256": "a4b5d74830f816ec83224ea5f77ef5f4bbd899f2c25bad58efcfe7340f06ae83"
+    }
+  ],
+  "claim": "Fixed-split pilot on new people and held-out input groups, not new verified semantic topics or recovered reasoning mechanisms",
+  "scientific_interpretation": "No numerically resolvable M1 improvement over B3; formal positive sign-only status is not evidence of an interaction benefit. Personal-history calibration improves NLL/Brier over B2 but accuracy is lower.",
+  "maximum_absolute_M1_vs_B3_probability_difference": 6.00721694610229e-11
+}
