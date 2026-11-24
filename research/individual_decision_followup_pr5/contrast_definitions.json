@@ -1,0 +1,16 @@
+{
+  "status": "exploratory_post_hoc_original_test_reuse",
+  "budgets": [0, 2, 4, 8],
+  "primary_descriptive_budget": 8,
+  "delta_value": "participant_mean(loss(validation_selected_source_blind) - loss(coherent_own))",
+  "delta_identity": "participant_mean(mean_donor(loss(seed_mean_donor_probability)) - loss(seed_mean_own_probability))",
+  "delta_mixture": "participant_mean(loss(mean_donor(seed_mean_donor_probability)) - loss(seed_mean_own_probability))",
+  "jensen_gap": "participant_mean(mean_donor(loss(donor_probability)) - loss(mean_donor(donor_probability)))",
+  "zero_budget_donor_scope": "historical saved fallback versus historical own, separate from coherent prior curve",
+  "history_pairing": "validation_only; inference_only; five whole-history derangements; mean losses, not mixture probabilities",
+  "source_blind_candidates": ["item_frequency", "integrated_prior", "empirical_reference", "legacy_population"],
+  "item_smoothing_alpha": 0.5,
+  "clipping": [1e-12, 0.999999999999],
+  "bootstrap": {"seed": 20261124, "draws": 2000, "percentiles": [2.5, 97.5], "cluster": "participant", "bank": "fixed"},
+  "new_confirmation": false
+}
