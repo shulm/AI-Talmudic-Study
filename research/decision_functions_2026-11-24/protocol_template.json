@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0",
+  "status": "UNEXECUTED_TEMPLATE",
+  "experiment_id": "general_decision_functions_pilot_v1",
+  "plan_version": "1.0",
+  "prepared_date": "2026-11-24",
+  "primary_target": "P(a | q, C(q), H_s); new person and held-out item group",
+  "source_repository": "shulm/AI-Talmudic-Study",
+  "source_base_commit": "6014a75250ce536f8d1426c7fdbfa257d404e230",
+  "coordination_issue": "https://github.com/shulm/AI-Talmudic-Study/issues/2",
+  "dataset": {
+    "preferred": "DICES350",
+    "repository": "https://github.com/google-research-datasets/dices-dataset",
+    "upstream_revision": null,
+    "artifact_sha256": null,
+    "downloaded_bytes": null,
+    "person_field": "rater_id",
+    "item_field": "item_id",
+    "input_fields": [
+      "context",
+      "response"
+    ],
+    "target_field": "Q_overall",
+    "outcome_type": "categorical",
+    "documented_classes": 3,
+    "actual_class_mapping": null,
+    "quality_policy": null,
+    "source_terms": null,
+    "counts_before": null,
+    "counts_after": null,
+    "grouping_policy": null,
+    "eligible_cohort": null,
+    "fallback": {
+      "name": "MultiPref",
+      "configuration": "default",
+      "scope": "Audit-only during P0-P3; no fallback training under the DICES protocol",
+      "condition": "Documented access or structural failure of DICES",
+      "requires_before_future_fit": "Separate candidate-aware equations, ordinal or A/tie/B likelihood, symmetric tie handling, support design, equivariant predictions and applicable baselines in a new frozen protocol"
+    }
+  },
+  "learner": {
+    "input_serialization": "Context:\\n{context}\\n\\nAssessed response:\\n{response}",
+    "person_ids": "Opaque join keys, not predictive features",
+    "excluded_fields": [
+      "query_target",
+      "expert_gold",
+      "expert_reason",
+      "target_other_judgments",
+      "target_explanation",
+      "target_confidence",
+      "target_timing",
+      "demographics",
+      "split_membership",
+      "row_order",
+      "source_location",
+      "synthetic_latent_rules"
+    ],
+    "raw_data_in_git": false,
+    "model_cache_in_git": false
+  },
+  "encoder": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": null,
+    "frozen": true,
+    "tokenizer_revision": null,
+    "embedding_dimension": null,
+    "max_sequence_length": null,
+    "pooling": null,
+    "long_input_policy": "Deterministic non-overlapping windows respecting special-token budget; checkpoint pooling; original-token-count-weighted mean of window vectors; final L2 normalization",
+    "input_token_coverage_required": 1,
+    "preprocessing_fit_scope": "Training questions only",
+    "libraries": null,
+    "artifact_manifest": null
+  },
+  "partitions": {
+    "seed": 20261124,
+    "ratios": {
+      "train": 0.6,
+      "development": 0.2,
+      "test": 0.2
+    },
+    "person_namespace": "people_v1",
+    "question_namespace": "question_groups_v1",
+    "ordering": "Lexicographically sort SHA-256(seed|namespace|canonical_id), with canonical_id tie-break",
+    "counts": "floor(0.6N), floor(0.2N), remaining",
+    "shared_training": "S_train x Q_train",
+    "development_support": "S_dev x Q_train",
+    "development_query": "S_dev x Q_dev",
+    "test_support": "S_test x Q_train",
+    "test_query": "S_test x Q_test",
+    "refit_on_development": false,
+    "item_grouping_rule": null,
+    "claim_scope_if_only_item_ids_verified": "New items, not verified new semantic topics",
+    "split_manifest_path": null,
+    "split_manifest_sha256": null
+  },
+  "support": {
+    "budgets": [
+      0,
+      4,
+      16,
+      64
+    ],
+    "primary_budget": 16,
+    "draw_seeds": [
+      101,
+      211,
+      307
+    ],
+    "nested": true,
+    "same_questions_across_people_when_dense": true,
+    "fixed_cohort_across_main_curve": true,
+    "choose_using_query_labels": false,
+    "infeasible_budget_policy": "Only secondary k=64 may be omitted before fitting; primary k=16 is fixed. If infeasible, deliver structural limitation and engineering outputs; a new endpoint needs an explicitly versioned pre-model protocol.",
+    "support_manifest_path": null,
+    "support_manifest_sha256": null
+  },
+  "models": {
+    "B0": {
+      "name": "smoothed_population_frequency"
+    },
+    "B1": {
+      "name": "personal_frequency",
+      "smoothing_grid": [
+        1,
+        4,
+        16
+      ]
+    },
+    "B2": {
+      "name": "population_multinomial_logistic",
+      "mean_loss_l2_grid": [
+        0.01,
+        0.1,
+        1
+      ]
+    },
+    "B3": {
+      "name": "B2_plus_personal_class_intercept",
+      "support_mean_loss_l2_grid": [
+        0.1,
+        1,
+        10
+      ]
+    },
+    "B4": {
+      "name": "history_knn_shrunk_to_B2",
+      "neighbor_grid": [
+        1,
+        4,
+        8
+      ],
+      "shrinkage_grid": [
+        1,
+        4
+      ]
+    },
+    "M1": {
+      "name": "B2_plus_low_rank_personal_interaction",
+      "rank_grid": [
+        2,
+        4,
+        8
+      ],
+      "mean_loss_l2_grid": [
+        0.1,
+        1,
+        10
+      ],
+      "fit_seeds": [
+        11,
+        29,
+        47
+      ],
+      "shared_B2_frozen": true,
+      "new_person_fit_parameters": [
+        "personal_class_intercept",
+        "personal_latent_vector"
+      ],
+      "k_zero": "Personal intercept and latent vector fixed to zero; output equals B2",
+      "probability_ensemble_across_fit_seeds": true
+    },
+    "optimizer_and_convergence": null,
+    "selected_baseline": null,
+    "selected_M1_configuration": null,
+    "selection_metric": "Macro-person development NLL at k=16, averaged over support draws",
+    "select_best_training_seed": false
+  },
+  "evaluation": {
+    "primary_comparison": "NLL(selected B0-B4 baseline) minus NLL(M1), k=16, S_test x Q_test",
+    "primary_log_base": "e",
+    "probability_clip_epsilon": 1e-12,
+    "aggregation": "Equal person weight, then equal observed query weight within person; average repeated support-draw losses within person/query before uncertainty",
+    "secondary": [
+      "accuracy",
+      "multiclass_Brier",
+      "support_curve",
+      "M1_vs_B2",
+      "M1_vs_B3",
+      "true_vs_shuffled_history",
+      "per_person_distribution"
+    ],
+    "bootstrap": {
+      "resamples": 2000,
+      "seed": 1701,
+      "method": "Paired independent person and item-group resampling; first normalize weighted query losses within each person, then average those means with person multiplicities",
+      "level": 0.95,
+      "interval": "Percentile 2.5% to 97.5%",
+      "zero_intersection_policy": "Reject and redraw entire replicate if any sampled person has zero observed query intersections; count rejections",
+      "maximum_attempts": 20000
+    },
+    "shuffled_histories": {
+      "permutations": 10,
+      "method": "Fixed derangements of histories across held-out people; retain query owners and support question identities",
+      "seed": 919
+    },
+    "invariant_checks": [
+      "person_partition_disjoint",
+      "question_group_partition_disjoint",
+      "support_query_disjoint",
+      "all_models_same_supports",
+      "person_id_renaming",
+      "valid_probability_vectors",
+      "query_target_excluded",
+      "synthetic_variants_grouped"
+    ],
+    "final_evaluation_list": null,
+    "freeze_commit": null,
+    "final_run_id": null,
+    "results": null
+  },
+  "resources": {
+    "scope": "One human corpus, one frozen encoder, small synthetic fixture",
+    "default_compute": "Existing local CPU",
+    "maximum_dataset_and_weight_download_bytes": 2147483648,
+    "maximum_fitting_encoding_cpu_core_hours": 6,
+    "maximum_working_memory_bytes": 8589934592,
+    "maximum_shared_model_fits": 40,
+    "count_adaptation_solves_separately": true,
+    "paid_inference_calls": false,
+    "new_paid_infrastructure": false,
+    "encoder_finetuning": false,
+    "actual_usage": null
+  },
+  "required_before_development": [
+    "dataset.upstream_revision",
+    "dataset.artifact_sha256",
+    "dataset.actual_class_mapping",
+    "dataset.quality_policy",
+    "dataset.source_terms",
+    "dataset.counts_after",
+    "dataset.eligible_cohort",
+    "encoder.revision",
+    "encoder.max_sequence_length",
+    "encoder.pooling",
+    "encoder.libraries",
+    "partitions.item_grouping_rule",
+    "partitions.split_manifest_path",
+    "partitions.split_manifest_sha256",
+    "support.support_manifest_path",
+    "support.support_manifest_sha256",
+    "models.optimizer_and_convergence"
+  ],
+  "required_before_final_scoring": [
+    "models.selected_baseline",
+    "models.selected_M1_configuration",
+    "evaluation.final_evaluation_list",
+    "evaluation.freeze_commit"
+  ],
+  "note": "The freeze commit SHA cannot be embedded in its own commit. Put it in the issue freeze checkpoint and a subsequent run manifest; the scorer verifies the checked-out code and protocol against that external freeze SHA. All nulls here are planned values, not executed evidence."
+}

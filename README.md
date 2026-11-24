@@ -2,6 +2,16 @@
 
 A public workspace for source-based Talmudic research with AI agents: finding sources, comparing opinions, and preparing Hebrew discussions, conclusions, and lessons.
 
+## General decision-function research — November 24, 2026
+
+The modeling continuation studies prediction of an individual's answer from a new textual problem and their observed question–answer history. It starts with a general human-judgment pilot; Talmudic scholarship is a later application.
+
+- [Continuation plan and source register](research/decision_functions_2026-11-24/README.md)
+- [Full execution prompt for the next AI agent](research/decision_functions_2026-11-24/NEXT_AGENT_PROMPT.md)
+- [GitHub coordination issue](https://github.com/shulm/AI-Talmudic-Study/issues/2)
+
+Status: **plan ready; experiments not started**. The new modeling objective supersedes the narrower attribution proposal in [draft PR #1](https://github.com/shulm/AI-Talmudic-Study/pull/1). Existing source-index research continues as its own track.
+
 ## Latest results: Rabbah and Rav Yosef — November 23, 2026
 
 Scanned **76 tractates / 94,045 nonempty segments**. The first-pass index contains **101 source locations in 27 Bavli tractates**, including one objection resolved by distinguishing cases. These are occurrences, not 101 unique disputes or a certified exhaustive catalogue. No Yerushalmi entry was selected.
@@ -52,7 +62,7 @@ The index contains **512 source-location entries: 423 Bavli and 89 Yerushalmi**.
 
 Read [AGENTS.md](AGENTS.md), then [the handoff](AGENT_HANDOFF.md). Work from the structured index and preserve source references. The report and JSON include source quotations, so initial review does not require access to the original F: drive.
 
-Suggested first task:
+Suggested source-audit task (separate from the modeling continuation):
 
 > Read AGENTS.md and AGENT_HANDOFF.md. Audit the Rav–Shmuel index one tractate at a time against the full source text. Distinguish genuine disputes, agreements, alternative attributions, reconciled differences, and unrelated adjacent statements. Preserve exact references and quotations; record corrections and uncertainty. Do not claim exhaustive coverage until the remaining candidates and indirect formulations have been checked.
 
@@ -96,3 +106,4 @@ The builder imports the search module, which reruns the broad search and rewrite
 Quotations derive from the user's local Sefaria Export Hebrew `merged.json` base texts. Each index entry includes a local source path, zero-based JSON position, canonical reference, and a Sefaria link. Online versions may differ from the local snapshot. Formatting tags and Hebrew vocalization were removed for search/display; source wording was not intentionally rewritten.
 
 The full Sefaria corpus and earlier unrelated document-extraction materials are not included. This repository does not grant a new license to underlying source editions; retain their attribution and consult the relevant edition's terms before redistribution.
+
