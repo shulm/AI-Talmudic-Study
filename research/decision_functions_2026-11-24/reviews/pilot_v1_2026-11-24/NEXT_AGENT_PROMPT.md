@@ -8,6 +8,8 @@ Completed pilot: draft PR [#4](https://github.com/shulm/AI-Talmudic-Study/pull/4
 
 The outcome is settled for that experiment: history improves NLL/Brier; M1 is numerically equivalent to B3; accuracy is lower than B2; detailed development convergence logs were lost. The next task is to distinguish a validation/optimization problem from regularization-induced collapse and representation limitations. Do not seek a favorable reinterpretation of the exposed test.
 
+Also read the separate completed [PR #5](https://github.com/shulm/AI-Talmudic-Study/pull/5) and its [handoff at delivery 6ca2dedc547144d7279696bd5322c1e39c7f03d3](https://github.com/shulm/AI-Talmudic-Study/blob/6ca2dedc547144d7279696bd5322c1e39c7f03d3/research/individual_decision_model_2026-11-24/HANDOFF.md). It reports an SRO cross-task pilot and provisional scholarly-source preparation on a parallel branch. This DICES review has not audited those results. Record both tracks' exposed data/tasks and existing artifacts before selecting fresh confirmation material or proposing duplicate corpus work. Do not merge or overwrite the parallel branch as part of this assignment.
+
 ## Scope, location, and limits
 
 Create a separate continuation branch from the latest review branch containing this prompt, after inspecting its exact head. Preserve the `pilot_v1` run directory and frozen implementation. Put new tooling under `labs/decision_functions_diagnostics/` and new outputs under `research/decision_functions_2026-11-24/runs/interaction_diagnostics_v1/`. Reuse the old objective only through an explicitly versioned adapter or copied, source-attributed implementation whose equivalence is checked.
