@@ -1,0 +1,9 @@
+# Source provenance and attribution
+
+Source: **Wikisource Talmud Bavli**, Hebrew/Aramaic edition, distributed in the user's original Sefaria export at F:/Sefaria-Export-master. Version source recorded by the edition: [Wikisource Talmud Bavli](https://he.wikisource.org/wiki/תלמוד_בבלי). Attribution: Wikisource contributors and Sefaria export. Each tractate's complete non-text version metadata, recorded license, source-relative path and SHA256 are in source_manifest.json.
+
+The export LICENSE.md states that each text has its own license. These named source files record **CC-BY-SA**, without a numeric license version. The mapping review records the current Wikisource footer's CC BY-SA4.0 notice separately; it does not silently replace the historical metadata. Source quotations retain the source attribution and share-alike terms as recorded. No English translation was used or included. The live API's differently licensed English payload is not part of this dataset.
+
+No upstream revision is invented. table_of_contents.json, each selected tractate file and its schema are byte-pinned. The local snapshot—not a mutable live API—is the reproducible annotation input. The live explicit-address comparison independently tests the address mapping but shares the textual lineage; it is not manuscript-witness verification. Mapping-review endpoint response hashes document that check.
+
+The actual TOC yields37 base Bavli tractates with81,793 source segments in this named edition. Commentary and Yerushalmi are excluded by category path. Empty amud array slots are preserved in inventory, not shifted away. The bounded pilot includes215 numbered segments and68 context segments; no full source corpus copy is committed. Exact raw source punctuation, markup, variants, brackets and trailing whitespace remain intact. Editorial summaries and group boundaries are separately labeled provisional transformations.

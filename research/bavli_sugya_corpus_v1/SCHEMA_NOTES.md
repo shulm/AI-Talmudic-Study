@@ -1,0 +1,17 @@
+# Schema and annotation contract
+
+The prompt mentioned schema_v1.json, but only its text attachment was present. The user explicitly authorized defining a provisional v1. Therefore this is a **new contract1.0.0**, not an undocumented modification of an unseen schema. make_schema.py deterministically generates Draft2020-12 JSON Schema with strict property lists, required fields, typed references and controlled statuses. validate.py additionally enforces cross-record semantics that JSON Schema alone cannot check.
+
+This implementation-time contract has not been released previously. The addition of related_topic within the initial design is part of this documented1.0.0 contract. Future incompatible changes require a new schema version and migration, keeping source IDs and previous annotations traceable. Annotation revision1.1 is separate from schema version and is recorded in revisions.json.
+
+Source IDs derive from kind, tractate, named edition and zero-based source indices. Exact source hashes are carried separately: changed source bytes must fail validation rather than silently obtain the old evidence status. Semantic IDs derive from permanently retained authoring keys; adding a group must not renumber old keys. Boundary edits retain a documented lineage, while splits/merges require explicit successor records in a future schema migration. No IDs from prior project datasets are changed.
+
+Every evidence span is a Python Unicode code-point half-open interval [start_char,end_char) into the exact raw segment string. In this pilot spans generally retain a whole source segment to avoid truncating attribution and conditions. They are not claimed to be minimal atomic spans. Quotes are exact source strings; summaries/questions/graph interpretations are separate editorial fields. Display-only HTML removal in pipeline.show is never written over raw text.
+
+The record named statements has broad discourse-unit granularity: assertions, questions, proofs, answered objections, alternative versions, narratives, partial continuations, lemmas and structural markers. Do not count every statement record as a historical decision. The narrator field denotes the generic textual framing, not a claim about an identified historical redactor. A transmitter is not made the owner of the quoted authority's view. Anonymous continuation is retained when finer speech-scope resolution remains open.
+
+Position status belongs to the proposition, not its target: a maintained refutation is asserted and its rejected target remains rejected. An answered challenge does not globally reject the challenged scholar. An alternative explanation is not automatically a retraction. C01/C02/C04/C07 show why local continuation is necessary. This is not a final halakhic-ruling database.
+
+The question's candidate_position_ids are provisional pointers to topic-associated claims, including supporting interpretations. **Comparability and mutual exclusivity have not been validated.** All ML eligibility is therefore false. This limitation is preferable to forcing every discussion into a binary menu; downstream training adapters must fail closed until an upgraded contract explicitly certifies comparable questions and candidates.
+
+Family IDs are provisional occurrence scaffolding, not adjudicated cross-corpus deduplication. Four related_topic edges preserve known internal discussion links without merging evidence. Repeated source text at different addresses is retained. No train/test split is supplied.

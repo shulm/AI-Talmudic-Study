@@ -1,0 +1,2240 @@
+{
+  "reviewer": "separate Codex AI mapping/source reviewer",
+  "review_date": "2026-11-24",
+  "status": "PASS_BOUNDED_ADDRESS_AND_SEGMENT_CHECK",
+  "independence": "Separate agent; original named version/schema read directly, then requested independently addressed live Sefaria pages. Live Sefaria and local export share textual lineage; not independent manuscript testimony, human review, or Gemini review. Did not use primary semantic annotations.",
+  "normalization": "strip HTML tags, decode entities, collapse whitespace; preserve Hebrew letters, punctuation and spelling",
+  "mapping_rule": "zero-based page i -> daf floor(i/2)+1, even=a odd=b; segment j -> j+1; first two empty arrays are placeholders, not removed",
+  "local_sources": [
+    {
+      "tractate": "Berakhot",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\Wikisource Talmud Bavli.json",
+      "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+      "source_version": "Wikisource Talmud Bavli",
+      "source_license": "CC-BY-SA",
+      "schema_file": "F:\\Sefaria-Export-master\\schemas\\Berakhot.json",
+      "schema_sha256": "18697aa2b786f7ed172dbf3634fe7203ec6ee419cc99671d67ac57ef7ae629b2",
+      "schema_fields": {
+        "depth": 2,
+        "addressTypes": [
+          "Talmud",
+          "Integer"
+        ],
+        "sectionNames": [
+          "Daf",
+          "Line"
+        ],
+        "startingAddress": null,
+        "lengths": [
+          127,
+          2749
+        ]
+      },
+      "leading_array_lengths": [
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "tractate": "Bava Metzia",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Metzia\\Hebrew\\Wikisource Talmud Bavli.json",
+      "source_sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
+      "source_version": "Wikisource Talmud Bavli",
+      "source_license": "CC-BY-SA",
+      "schema_file": "F:\\Sefaria-Export-master\\schemas\\Bava_Metzia.json",
+      "schema_sha256": "21fb46d7bedd3ce06c12678addc3edb9fc09fa2adc1aef2ebef8ea1d02e8bcd0",
+      "schema_fields": {
+        "depth": 2,
+        "addressTypes": [
+          "Talmud",
+          "Integer"
+        ],
+        "sectionNames": [
+          "Daf",
+          "Line"
+        ],
+        "startingAddress": null,
+        "lengths": [
+          237,
+          3660
+        ]
+      },
+      "leading_array_lengths": [
+        0,
+        0,
+        12
+      ]
+    }
+  ],
+  "amud_checks": [
+    {
+      "requested_ref": "Berakhot 2a",
+      "returned_ref": "Berakhot 2a",
+      "local_page_array_index": 2,
+      "local_segment_count": 14,
+      "returned_segment_count": 14,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Berakhot 2a:1",
+      "first_anchor": "מתני׳ מאימתי קורין את שמע בערבין. משעה שהכהנים",
+      "last_anchor_ref": "Berakhot 2a:14",
+      "last_anchor": "ובא השמש ביאת השמש והאי וטהר טהר יומא",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Berakhot.2a?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "1b7483c483b27e145c1d78bbe9bf08ea927d5bdfdc7c39a45817a83ff4032128",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Berakhot 2a:1",
+          "local_json_index": [
+            2,
+            0
+          ],
+          "normalized_sha256": "fc01276fef1f9e7943eb0808b5c2701f81b4fce5bfa8fe5ee0994add6156bfe3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:2",
+          "local_json_index": [
+            2,
+            1
+          ],
+          "normalized_sha256": "29fa98cfc47f86dd8a62a1dc4494075d1906bdd0ab9e762424e20e7988f58450",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:3",
+          "local_json_index": [
+            2,
+            2
+          ],
+          "normalized_sha256": "7dfdd58e92e405e61e877e909d23ce14cc9778a09444a296f7014a7da601f3ae",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:4",
+          "local_json_index": [
+            2,
+            3
+          ],
+          "normalized_sha256": "fedd32260226aad59bd821f354cb9ffad70b786d8c7239a28c0f695b643f1c6f",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:5",
+          "local_json_index": [
+            2,
+            4
+          ],
+          "normalized_sha256": "59cc6520afa8c46e4630032d62028c6699ff36cc4f125fcb80bc17dfda5a5b37",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:6",
+          "local_json_index": [
+            2,
+            5
+          ],
+          "normalized_sha256": "48ffb6f4886037af8e078934587407b1aab467298152997d03a135fad53f7ad4",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:7",
+          "local_json_index": [
+            2,
+            6
+          ],
+          "normalized_sha256": "5ed4380d8a8ed298d700e28986b8362ed7905d7387f50f67e1ddbf2f8ca2aadf",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:8",
+          "local_json_index": [
+            2,
+            7
+          ],
+          "normalized_sha256": "95e31e41011a3ff8e584d5bdeaa84b3b812e05bec86e8e030edcdea886d953d0",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:9",
+          "local_json_index": [
+            2,
+            8
+          ],
+          "normalized_sha256": "b2e2fd3dce3d6789f47a8b7278eefc50ce1975b8e805211e5ef1ac89b02eb1b7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:10",
+          "local_json_index": [
+            2,
+            9
+          ],
+          "normalized_sha256": "600abc4e2dd621ab587fa7c77819aaa93333dc4f8a3ab118194aaf7eae1f6323",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:11",
+          "local_json_index": [
+            2,
+            10
+          ],
+          "normalized_sha256": "4fdeb51b6f540ff7707d5b16756ecaa549ec4a6e37175ebe4c2d780dff47312d",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:12",
+          "local_json_index": [
+            2,
+            11
+          ],
+          "normalized_sha256": "e15e8b05ba7db0d7d5a2d468e4d5ee4b214e5f1de1c782338ccf578313275e59",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:13",
+          "local_json_index": [
+            2,
+            12
+          ],
+          "normalized_sha256": "2741d01b8804391cbdd0b61047d40790778cca87800aa10524dbfd4337cf2baf",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2a:14",
+          "local_json_index": [
+            2,
+            13
+          ],
+          "normalized_sha256": "30ee14c05c26a2de67f7645667f6e55dcbb6da42f7d940b3dd85b45f8e6853b9",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Berakhot 2b",
+      "returned_ref": "Berakhot 2b",
+      "local_page_array_index": 3,
+      "local_segment_count": 19,
+      "returned_segment_count": 19,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Berakhot 2b:1",
+      "first_anchor": "דילמא ביאת אורו הוא ומאי וטהר טהר גברא",
+      "last_anchor_ref": "Berakhot 2b:19",
+      "last_anchor": "זה נכנס וזה יוצא ואי אפשר לעמוד עליו",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Berakhot.2b?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "1411a6f404638027de53d85b9a94ed41b0e34997dd796edb438a03078dbda098",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Berakhot 2b:1",
+          "local_json_index": [
+            3,
+            0
+          ],
+          "normalized_sha256": "b3af43565ce785452ec28ad49ec9e6093ef7582b4f165ac8ef3f0db689acacff",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:2",
+          "local_json_index": [
+            3,
+            1
+          ],
+          "normalized_sha256": "c486d208bc720e42c7a4c5ff6058e1d67e5274f39e6d8579bbb0e449a4780e2b",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:3",
+          "local_json_index": [
+            3,
+            2
+          ],
+          "normalized_sha256": "8ce2fbffefaa97bb704a6b6febe50e1469203050ef64db417264bf75ce885a83",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:4",
+          "local_json_index": [
+            3,
+            3
+          ],
+          "normalized_sha256": "74406d591d47d1f5dd78eb77c3912a28054fe0636452f763cdfe0581a61bfe15",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:5",
+          "local_json_index": [
+            3,
+            4
+          ],
+          "normalized_sha256": "206f3704f7da80689d57309a1ddb16b27dc5094b5b179aed81389524f8bea788",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:6",
+          "local_json_index": [
+            3,
+            5
+          ],
+          "normalized_sha256": "7def2bd5393e3667bd24c34a5164593dd2502e995ac258796038c2cf35282ee3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:7",
+          "local_json_index": [
+            3,
+            6
+          ],
+          "normalized_sha256": "19f05b93631670ca3eb7aa8803237787a586f37c0a97e724810c28825e1f4fbf",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:8",
+          "local_json_index": [
+            3,
+            7
+          ],
+          "normalized_sha256": "ab70bb9a29e6bb8a016d60ea5d44d3fac2d6822f9a321ccd48575d244cca78b7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:9",
+          "local_json_index": [
+            3,
+            8
+          ],
+          "normalized_sha256": "50eecbb437486b9ae5a69803367b711980a27e3d903fadd92c5da9479e6556c7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:10",
+          "local_json_index": [
+            3,
+            9
+          ],
+          "normalized_sha256": "db0cf8f3ff1f8d92fed960d595cc7e03f39a2d8b8ada2db4ae2ee40a5cbe1370",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:11",
+          "local_json_index": [
+            3,
+            10
+          ],
+          "normalized_sha256": "2c191eba6fb617e96f99243601e34c539e5050885df3345371fff5560951839a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:12",
+          "local_json_index": [
+            3,
+            11
+          ],
+          "normalized_sha256": "ed7a8708eaddb0e68c3dcf6ef92c1800f92a8daf949b2973b72d1ef6d508f44e",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:13",
+          "local_json_index": [
+            3,
+            12
+          ],
+          "normalized_sha256": "7df26abc7b98c4fc1fefb92ef25ab6990e3e1bc278a1e699380d5516c4c459de",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:14",
+          "local_json_index": [
+            3,
+            13
+          ],
+          "normalized_sha256": "4c15f4070bacb778154a1b37814519cc68a66e5d097155fd878f29ab512eb688",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:15",
+          "local_json_index": [
+            3,
+            14
+          ],
+          "normalized_sha256": "ebcfebf11068fc9b5c0085fccc09a67a9f29e1302938bea9954845c898f102a8",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:16",
+          "local_json_index": [
+            3,
+            15
+          ],
+          "normalized_sha256": "7c737e03580c61a7e72e3c25c1baac052e036ca6d8f8086e93df0680210a63c4",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:17",
+          "local_json_index": [
+            3,
+            16
+          ],
+          "normalized_sha256": "e8981d8adc7b31496e9abe489c7caf43b542a1737c39e8ee22ef69c81d6f4014",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:18",
+          "local_json_index": [
+            3,
+            17
+          ],
+          "normalized_sha256": "72b5ca7d28b4bff69dea34786ee7e0cd8349831b1e8ca341f6e439d4e5342e76",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 2b:19",
+          "local_json_index": [
+            3,
+            18
+          ],
+          "normalized_sha256": "fc7fb373360e59b62eaf56186e78e870887469442ba32587348ce6eacdc750b1",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Berakhot 3a",
+      "returned_ref": "Berakhot 3a",
+      "local_page_array_index": 4,
+      "local_segment_count": 15,
+      "returned_segment_count": 15,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Berakhot 3a:1",
+      "first_anchor": "קשיא דרבי מאיר אדרבי מאיר תרי תנאי אליבא",
+      "last_anchor_ref": "Berakhot 3a:15",
+      "last_anchor": "ומפני המזיקין. מפני חשד ותיפוק ליה משום מפולת",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Berakhot.3a?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "3fc8966fe8289691fcfc1c76df7d6dd29e78ae4de35f974bb0d9b8ddd1ab8622",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Berakhot 3a:1",
+          "local_json_index": [
+            4,
+            0
+          ],
+          "normalized_sha256": "7044959f57e952703789ac8951b015233d82ecd22e55cd2f87111a07bb0aabe0",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:2",
+          "local_json_index": [
+            4,
+            1
+          ],
+          "normalized_sha256": "53a2be405ee19759e0870b0841c70f57b4a34d5424424bf73b24d73e5557f1cc",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:3",
+          "local_json_index": [
+            4,
+            2
+          ],
+          "normalized_sha256": "46303d55c71ab43d19f323ad9be6d64502206343d08b9236f4ae3d3f1a1ddabe",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:4",
+          "local_json_index": [
+            4,
+            3
+          ],
+          "normalized_sha256": "e61910881398bb0e6a876837b91ecc040e0c0103ca8dc1f775ac20496e4afccb",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:5",
+          "local_json_index": [
+            4,
+            4
+          ],
+          "normalized_sha256": "30bee71ec56da8325352c6e73f40bd5a5c26585efa62d7c01f6dc79285366d69",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:6",
+          "local_json_index": [
+            4,
+            5
+          ],
+          "normalized_sha256": "876808395337c66359d01b50fbc0862349057e03b38b9ce59c65c23cc9f45159",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:7",
+          "local_json_index": [
+            4,
+            6
+          ],
+          "normalized_sha256": "ae810a91f555044eb023e067c5d27754d539cbcffc78dc38db40854338e6a86b",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:8",
+          "local_json_index": [
+            4,
+            7
+          ],
+          "normalized_sha256": "61e47bd6017913f968870723de11740871c220d350985e27914246ce3f0a8122",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:9",
+          "local_json_index": [
+            4,
+            8
+          ],
+          "normalized_sha256": "9ce150bab89c29dcfefcedece8bda49447e2efa0b2fd6587a33bb0835933d7d9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:10",
+          "local_json_index": [
+            4,
+            9
+          ],
+          "normalized_sha256": "83394501d7f69da8cb576c67e28b7438cee58229ab3fb3690ca38d09873b62c0",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:11",
+          "local_json_index": [
+            4,
+            10
+          ],
+          "normalized_sha256": "0756ebce0519f5d23724bc719167b489cfaf7afde0927140e10c421527b1a2d5",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:12",
+          "local_json_index": [
+            4,
+            11
+          ],
+          "normalized_sha256": "b7ac462706f1da995838b739521e9c469435ff5cb3fc3549145c02bb72e06d2c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:13",
+          "local_json_index": [
+            4,
+            12
+          ],
+          "normalized_sha256": "da3a6f0bf7df489d54d671afc6baa85b6f19bba7d485a27b09535789411f0566",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:14",
+          "local_json_index": [
+            4,
+            13
+          ],
+          "normalized_sha256": "878c0f576d52b4595ad017a5eba6d4004ad3fb83fa27b6b072d0bfadfdd1d027",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3a:15",
+          "local_json_index": [
+            4,
+            14
+          ],
+          "normalized_sha256": "8ecd25e5666ffae66de135291847e526cfcad91c8edf58f6793891c25793aac4",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Berakhot 3b",
+      "returned_ref": "Berakhot 3b",
+      "local_page_array_index": 5,
+      "local_segment_count": 32,
+      "returned_segment_count": 32,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Berakhot 3b:1",
+      "first_anchor": "בחדתי",
+      "last_anchor_ref": "Berakhot 3b:32",
+      "last_anchor": "יעץ בימים ההם כאשר ישאל (איש) בדבר האלהים",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Berakhot.3b?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "ade7c047b65cbbe91d0e97922209c36692d7ecd9c4730a399e82915628c28f3a",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Berakhot 3b:1",
+          "local_json_index": [
+            5,
+            0
+          ],
+          "normalized_sha256": "d9db2e6c70c9c9e30606a199075ed014271b7682b35d84797cd686be91c5c70a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:2",
+          "local_json_index": [
+            5,
+            1
+          ],
+          "normalized_sha256": "834c796efcda62666627efd05682c73e7d3cc221f50b70f4c07cdd0740ade6f3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:3",
+          "local_json_index": [
+            5,
+            2
+          ],
+          "normalized_sha256": "87d12705d00f9c8226a3a48ddcda9b66721469e164fd769e75ee0978c6127e94",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:4",
+          "local_json_index": [
+            5,
+            3
+          ],
+          "normalized_sha256": "aa2949c0f02555650e391b7639fa00d65c9b60152b82c356574b9026098a5923",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:5",
+          "local_json_index": [
+            5,
+            4
+          ],
+          "normalized_sha256": "b99f9b080405a1536176eff84198e93346ccdf896f99286f68677fce86da3986",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:6",
+          "local_json_index": [
+            5,
+            5
+          ],
+          "normalized_sha256": "9eac7b64ec594327458736bf8029f8b1d9ef4e8773bae397ed8d4e8db3dce98a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:7",
+          "local_json_index": [
+            5,
+            6
+          ],
+          "normalized_sha256": "8884c3ea6ba55f3980c63799376f268df6338afd6cb367e07f714430640287c0",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:8",
+          "local_json_index": [
+            5,
+            7
+          ],
+          "normalized_sha256": "4ffee5fed4a166532e75dba060a1ce0a499cb619294c3e0b4d550c482b20bcd7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:9",
+          "local_json_index": [
+            5,
+            8
+          ],
+          "normalized_sha256": "964ecf40c99d0058926c9ce78bbe52aaf6e8e4ff0a9b2cc744ba9ff459e300ed",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:10",
+          "local_json_index": [
+            5,
+            9
+          ],
+          "normalized_sha256": "b062a0ccb92f8ee42458bd2225fd99a2d9de7c3203ca261fa2a9553dcc395623",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:11",
+          "local_json_index": [
+            5,
+            10
+          ],
+          "normalized_sha256": "255187360f40103165ef00914f1d6816e673b5d516b789a507265dbbe5cf28dd",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:12",
+          "local_json_index": [
+            5,
+            11
+          ],
+          "normalized_sha256": "8d28dfe08770b5fa0715a4ef4fe0c494395f12322a19a435eef8f771fe3d9454",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:13",
+          "local_json_index": [
+            5,
+            12
+          ],
+          "normalized_sha256": "d0209952b2be5ef6bde70f41d68b96c3acee70f674578d903e7684308126c142",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:14",
+          "local_json_index": [
+            5,
+            13
+          ],
+          "normalized_sha256": "598817ae438d35d2ba62e729950aabe87477ce41e0891a6ce8545c79be44b245",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:15",
+          "local_json_index": [
+            5,
+            14
+          ],
+          "normalized_sha256": "0cd9ca39860ad40f0fcc6f27a2e1a42d46e9349f0ccb85eecb69fd42848f70b2",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:16",
+          "local_json_index": [
+            5,
+            15
+          ],
+          "normalized_sha256": "8d9755ea8f12cea38456206b7995ecec18122d71e9b198f247ff84b852d92acf",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:17",
+          "local_json_index": [
+            5,
+            16
+          ],
+          "normalized_sha256": "0d79300f6e5641ecdd9469c474fd4d20eafdcbb0deb9478f83274b7002672362",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:18",
+          "local_json_index": [
+            5,
+            17
+          ],
+          "normalized_sha256": "be04db270befe0ce6c52dbcce6f96f80276ed1ee9bca06df7c4584852afe8e12",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:19",
+          "local_json_index": [
+            5,
+            18
+          ],
+          "normalized_sha256": "f3d0e3a42752cd0857559710fd017712dd2c5dda640b8d13ad5cad1f0142110b",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:20",
+          "local_json_index": [
+            5,
+            19
+          ],
+          "normalized_sha256": "509469d9b28e2d35c3b13c273c066119708edd45c02255aaf172d97c8439487c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:21",
+          "local_json_index": [
+            5,
+            20
+          ],
+          "normalized_sha256": "645361b0b6e8974291459a6ae1fd5a83026da4e33af72c6f99f1273889ed1b25",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:22",
+          "local_json_index": [
+            5,
+            21
+          ],
+          "normalized_sha256": "baf039c6b5b01d550907698a753a689d3edad5d895c55420dbd4a411395a1944",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:23",
+          "local_json_index": [
+            5,
+            22
+          ],
+          "normalized_sha256": "229f50d7f1d660e86cb4ab5e5e222d356536d721f0acc5a9984f789e3abbd0a7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:24",
+          "local_json_index": [
+            5,
+            23
+          ],
+          "normalized_sha256": "d0ce883008fbdf0533ed4c9dce005e0af75d0847e5676474f113066affff45fb",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:25",
+          "local_json_index": [
+            5,
+            24
+          ],
+          "normalized_sha256": "95aab9099bade780fc0d1e62258fadecc31d0dcd68c5ca9ed4739314b1c2c502",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:26",
+          "local_json_index": [
+            5,
+            25
+          ],
+          "normalized_sha256": "0922dc49d914332a772bbbf9a49122d7ef8d8f52f23b13932c1199c6c7eba437",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:27",
+          "local_json_index": [
+            5,
+            26
+          ],
+          "normalized_sha256": "ef48cc354cf1705987c7961f0dd98662d6fd3e5cabbd317efaefe8b905975271",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:28",
+          "local_json_index": [
+            5,
+            27
+          ],
+          "normalized_sha256": "02604ff78b608f108e5300adf6aa484f62aa2aebdb245f79b9735bced4e9fd98",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:29",
+          "local_json_index": [
+            5,
+            28
+          ],
+          "normalized_sha256": "d8fa44216f2c2e1bae4e0f7225cb76bc190c4cfc8d00bdf588a15fd1f0916f15",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:30",
+          "local_json_index": [
+            5,
+            29
+          ],
+          "normalized_sha256": "ff3e4873e7a32e4ef72347442fc773f851206c733e5a7239c00082d68b0c4e49",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:31",
+          "local_json_index": [
+            5,
+            30
+          ],
+          "normalized_sha256": "3f3dfca87039b9bd03006c22b802184c6129f8abe7a2c0ec8fb77063fa0bbd7f",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 3b:32",
+          "local_json_index": [
+            5,
+            31
+          ],
+          "normalized_sha256": "a82173524c0dad954cbb1b4661cc59554e6c448b1f311b04b8ca1035cfee217f",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Berakhot 4a",
+      "returned_ref": "Berakhot 4a",
+      "local_page_array_index": 6,
+      "local_segment_count": 19,
+      "returned_segment_count": 19,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Berakhot 4a:1",
+      "first_anchor": "בניהו בן יהוידע זה סנהדרין ואביתר אלו אורים",
+      "last_anchor_ref": "Berakhot 4a:19",
+      "last_anchor": "אי כרבי אליעזר סבירא להו לימרו כרבי אליעזר",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Berakhot.4a?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "9b002c5b9c46f056497dfd790002dbe9aa34a0e3ad2a8b52c9f98317f65095f6",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Berakhot 4a:1",
+          "local_json_index": [
+            6,
+            0
+          ],
+          "normalized_sha256": "a964a2931484188b063d0fb57a2462ac4602826cf578313ebabfd2c7680b2090",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:2",
+          "local_json_index": [
+            6,
+            1
+          ],
+          "normalized_sha256": "3de2a5dd7ff353e38219653dbc93b74175372c3df0eeb686dc32d71dcf925e28",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:3",
+          "local_json_index": [
+            6,
+            2
+          ],
+          "normalized_sha256": "79266d1cca9d49a6003f4f584c3dc41c906bd33ef5fc2386fd321138d0ee7fd2",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:4",
+          "local_json_index": [
+            6,
+            3
+          ],
+          "normalized_sha256": "6980f1143fbe92528e24e1f278c7f0bc4fda0faca54b23b35980d2aa1da5d369",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:5",
+          "local_json_index": [
+            6,
+            4
+          ],
+          "normalized_sha256": "8979bc56da2eb2ee2e092491a311d6e5ec6795094f0e748c52bcb54a82f24cc6",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:6",
+          "local_json_index": [
+            6,
+            5
+          ],
+          "normalized_sha256": "7c0f950c5789d5fa054c97aa2aedafe173047758dfea575e9e97e1d26bd381e9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:7",
+          "local_json_index": [
+            6,
+            6
+          ],
+          "normalized_sha256": "b05aa9c678070f3c5de17c82a8f82c29434709f63bc7086c6eff8fcfac26f919",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:8",
+          "local_json_index": [
+            6,
+            7
+          ],
+          "normalized_sha256": "299b22a3eaaad9153d52904ac3a34d44813932cd9e338c41ca0ae486b07363aa",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:9",
+          "local_json_index": [
+            6,
+            8
+          ],
+          "normalized_sha256": "548fdf97a37f5c26349b3294e3357bb6f84abc361f12c55b7cfb01b9d5d23af6",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:10",
+          "local_json_index": [
+            6,
+            9
+          ],
+          "normalized_sha256": "f210ceaa4f258f483043e20b1adc8207431cac66aa95b83b63dd8517030198e3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:11",
+          "local_json_index": [
+            6,
+            10
+          ],
+          "normalized_sha256": "256dc1dadd2c169df4efd060194a40478913ebb4650824b268ee1672c03afa87",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:12",
+          "local_json_index": [
+            6,
+            11
+          ],
+          "normalized_sha256": "5f1eff9a45f518dd60a5f6c08d66097dcdcc79fcf87fbc0da37fda480f0779a9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:13",
+          "local_json_index": [
+            6,
+            12
+          ],
+          "normalized_sha256": "d2b64a3c68cb4f86899c25dfc09973a930d071d9255a677e8cbe03ffe2c5576c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:14",
+          "local_json_index": [
+            6,
+            13
+          ],
+          "normalized_sha256": "6c0322e67335fff8d945c9aa304e56ff6f3b5d2d1b0e2babf5169ab1a1a06ece",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:15",
+          "local_json_index": [
+            6,
+            14
+          ],
+          "normalized_sha256": "fe3fb6c2cafe0577f0ff03725daa9702bded900177461623c5e8deec7c456adc",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:16",
+          "local_json_index": [
+            6,
+            15
+          ],
+          "normalized_sha256": "9f2f72fc22be4eaf90cc61a777f8b394b4ab594cb17521694cd55c56da262d16",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:17",
+          "local_json_index": [
+            6,
+            16
+          ],
+          "normalized_sha256": "cbf25e043f3faffe9c629184ceb3286ccd5535e5f2ff8fd8227812e9a9cab0b3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:18",
+          "local_json_index": [
+            6,
+            17
+          ],
+          "normalized_sha256": "66aa49e43c574ea19b064c7f24a0b2012721ee82367b0fc2ae152eee935915c1",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4a:19",
+          "local_json_index": [
+            6,
+            18
+          ],
+          "normalized_sha256": "c393b22f0ed5c09c9dc766102ee3a1323c60dce17b561070cd2428d0ac5aa61d",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Berakhot 4b",
+      "returned_ref": "Berakhot 4b",
+      "local_page_array_index": 7,
+      "local_segment_count": 28,
+      "returned_segment_count": 28,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Berakhot 4b:1",
+      "first_anchor": "ואי כרבן גמליאל סבירא להו לימרו כרבן גמליאל",
+      "last_anchor_ref": "Berakhot 4b:28",
+      "last_anchor": "אמר רב נחמן",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Berakhot.4b?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "dac8176c27cad589aa627b25e170eda36f8e61e58cf5b4b8811458cf8e67acef",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Berakhot 4b:1",
+          "local_json_index": [
+            7,
+            0
+          ],
+          "normalized_sha256": "4eb7273c2298b1f02998cc431b4d895e011beb798d1d39f294fde6691d9b3ee9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:2",
+          "local_json_index": [
+            7,
+            1
+          ],
+          "normalized_sha256": "e0f7a55d85e25320e84f41c98796c8885417e66d7de1dfa27f259e6fc2548710",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:3",
+          "local_json_index": [
+            7,
+            2
+          ],
+          "normalized_sha256": "ef0f3ad608881db787ae0c7c1d2704e6aa9e7b82e19e94bee549441830ba7005",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:4",
+          "local_json_index": [
+            7,
+            3
+          ],
+          "normalized_sha256": "20fe5559b8a90f4887946d583a749f274463732666c9a3e959714aa9982a87a8",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:5",
+          "local_json_index": [
+            7,
+            4
+          ],
+          "normalized_sha256": "634e7943037ff079f01bf613d1ae158b23a4401f9c6d75c6012b947f98e9b4c3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:6",
+          "local_json_index": [
+            7,
+            5
+          ],
+          "normalized_sha256": "88d5a8c78abd04d30039596ce0c061dab0a0b04e6741e0978b28cf8312554a5a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:7",
+          "local_json_index": [
+            7,
+            6
+          ],
+          "normalized_sha256": "dcaf3686f7466c17124c12e8d36a62c98318d59bfb1ed91c28f23264a16506c5",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:8",
+          "local_json_index": [
+            7,
+            7
+          ],
+          "normalized_sha256": "9e154bd2d817b9eb1c1aba3ce0736da16032eefe095a0389eb9dbee9a74c0411",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:9",
+          "local_json_index": [
+            7,
+            8
+          ],
+          "normalized_sha256": "263ebdeaf9bbe7da446b16548efa015ab8e39dbda711ad7da76064f5ce26ffd2",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:10",
+          "local_json_index": [
+            7,
+            9
+          ],
+          "normalized_sha256": "332faeddbe96dec163ae130248a3b7815cf0545186fb13571b057121c709f93d",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:11",
+          "local_json_index": [
+            7,
+            10
+          ],
+          "normalized_sha256": "2933702f22d3222f3331b48179b2e043df6b93a8b72254fa6dcfd77a7333db25",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:12",
+          "local_json_index": [
+            7,
+            11
+          ],
+          "normalized_sha256": "a30abadd2185c8cc2a939855ca7392d3ef4c51746e866ecb1a7191aaac7dcd49",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:13",
+          "local_json_index": [
+            7,
+            12
+          ],
+          "normalized_sha256": "b26ab8afce0e76d667f64e3fa56516d89345026f2789a895362f3ef4fd3f3509",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:14",
+          "local_json_index": [
+            7,
+            13
+          ],
+          "normalized_sha256": "be2398dc7fa48c39dd9d139241645f79757c61d29040688198f8d766e391b07c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:15",
+          "local_json_index": [
+            7,
+            14
+          ],
+          "normalized_sha256": "120b618265d9e60ca24acd89f15981ac02458adc1da1a94d6f38bc841cb77642",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:16",
+          "local_json_index": [
+            7,
+            15
+          ],
+          "normalized_sha256": "a17f1280cf43a26b162ab8acfd309bfde31039c063b1f66cac98e08dd715eaf8",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:17",
+          "local_json_index": [
+            7,
+            16
+          ],
+          "normalized_sha256": "caf5ff8e668eb139f9411857856f319afdd2c5ab7720d627b2271622542da44d",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:18",
+          "local_json_index": [
+            7,
+            17
+          ],
+          "normalized_sha256": "3b6daf84be60b3a495039255e26d7dd174254b8c477e6f9da804c5672a84eb17",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:19",
+          "local_json_index": [
+            7,
+            18
+          ],
+          "normalized_sha256": "ddd80a8a2a48c5a7318f8d7cbda8b11618b92834227989bc30f71c79468f5641",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:20",
+          "local_json_index": [
+            7,
+            19
+          ],
+          "normalized_sha256": "1db44e9694df32a16d02cbe1bef5086d380e617983aefd6f3aafb04675ba09e9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:21",
+          "local_json_index": [
+            7,
+            20
+          ],
+          "normalized_sha256": "bd82657e81e0786dfe85e2942bb5a0fac14e154d7546f690eb458f98e24318f8",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:22",
+          "local_json_index": [
+            7,
+            21
+          ],
+          "normalized_sha256": "afd58859f0721baae4743d7191404e5c9b43319dec00aaead79c76eb0fc2af77",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:23",
+          "local_json_index": [
+            7,
+            22
+          ],
+          "normalized_sha256": "3726d2476c714dc12bdcd2c7aec06fdc6a3a79b5aeae9fd368a6ad446cc58f3c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:24",
+          "local_json_index": [
+            7,
+            23
+          ],
+          "normalized_sha256": "bfb97a72572e2a4bee22edc290effd2402d9e0dc5210545e5c6eaa150c92b6f3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:25",
+          "local_json_index": [
+            7,
+            24
+          ],
+          "normalized_sha256": "6ed68c0c9ad0930def6e7d075211a9be1322a7099fd902d33964434012f6f1a9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:26",
+          "local_json_index": [
+            7,
+            25
+          ],
+          "normalized_sha256": "a3796673af7196ac901d2bdf0a39132cb5dddb0f80447de1b683f0abbda70bad",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:27",
+          "local_json_index": [
+            7,
+            26
+          ],
+          "normalized_sha256": "dc845161952a3a91059814cfa552559b529633330bbc7a99caf90a2044079930",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 4b:28",
+          "local_json_index": [
+            7,
+            27
+          ],
+          "normalized_sha256": "2c6e30cb8e43e94ad35aa5b2d721a0913a09e3dcec758cb35517b1dc20b8e11d",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Berakhot 5a",
+      "returned_ref": "Berakhot 5a",
+      "local_page_array_index": 8,
+      "local_segment_count": 24,
+      "returned_segment_count": 24,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Berakhot 5a:1",
+      "first_anchor": "אם תלמיד חכם הוא אין צריך אמר אביי",
+      "last_anchor_ref": "Berakhot 5a:24",
+      "last_anchor": "קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Berakhot.5a?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "60356c9cd2e98c6eb581bb4894d0043a266361e1c5695c2b86d10ed15b56c114",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Berakhot 5a:1",
+          "local_json_index": [
+            8,
+            0
+          ],
+          "normalized_sha256": "6216003146888aff74e069968fd9466e7c45376f9f0721a338ed43f6cad0b77e",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:2",
+          "local_json_index": [
+            8,
+            1
+          ],
+          "normalized_sha256": "45b97ec86364d9453aef107c21a605ad0d7fb3b782e7f1a950da3c3104ac6047",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:3",
+          "local_json_index": [
+            8,
+            2
+          ],
+          "normalized_sha256": "9caa601c40ec8aa000f16e4c0412a5eb27f52fdd2e243cddc08ddffefea4bac8",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:4",
+          "local_json_index": [
+            8,
+            3
+          ],
+          "normalized_sha256": "f189f9d9aaff7fa3d3d3dd145d8b6a3e62e591dfed0fcebaf7219798f765c07c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:5",
+          "local_json_index": [
+            8,
+            4
+          ],
+          "normalized_sha256": "92b3fa5c3bbbebc4d8d1f69bf2cdc18da78673acdd59c987fc10ea7bc5e963ef",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:6",
+          "local_json_index": [
+            8,
+            5
+          ],
+          "normalized_sha256": "60ae3bcb6facd7abdc17fa79542f979a2d9913567fb60de56d6fb9f2fba7b9a1",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:7",
+          "local_json_index": [
+            8,
+            6
+          ],
+          "normalized_sha256": "3881a3b48953c78fa585e60916473b421c925a1c4285916faadb7ff9961d32dd",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:8",
+          "local_json_index": [
+            8,
+            7
+          ],
+          "normalized_sha256": "f18e3434b4f2c375731ed797512c5e881d306601cc503bb5f307633aaf723629",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:9",
+          "local_json_index": [
+            8,
+            8
+          ],
+          "normalized_sha256": "ca1064e7ba314354bda33f2844f7486a0cde2301ad278fab7153404e0f3fcc9e",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:10",
+          "local_json_index": [
+            8,
+            9
+          ],
+          "normalized_sha256": "16c05b918e23a4e92c7b767d866804d46beb38badad22f390a1835226314874e",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:11",
+          "local_json_index": [
+            8,
+            10
+          ],
+          "normalized_sha256": "bd844e55522805629b6e6f6814e6d576bb1f57523b3103ab26f1a2e9bf2a0800",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:12",
+          "local_json_index": [
+            8,
+            11
+          ],
+          "normalized_sha256": "03fc841baf4695463823d7e42e81869dbdb4d8e038a07e3ccebf3a8c28c1b726",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:13",
+          "local_json_index": [
+            8,
+            12
+          ],
+          "normalized_sha256": "288df62968b6e8ebffcdd0b4cf1f0426f3375916948c8e0134d8ef68c26154d4",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:14",
+          "local_json_index": [
+            8,
+            13
+          ],
+          "normalized_sha256": "7bf1dc0785fd1d7dd06ba47dcc5da8ab0565c1ff363a405e51216aad597d8fab",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:15",
+          "local_json_index": [
+            8,
+            14
+          ],
+          "normalized_sha256": "c01f0d55c7aaaef8a95da0e440f0a9662aea04770e089b29e5b44537711de05a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:16",
+          "local_json_index": [
+            8,
+            15
+          ],
+          "normalized_sha256": "e98e7cd47f90750d138b0ac67a79c4f2fb7ab5cb2d2212dffbe8e290ceb2d49c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:17",
+          "local_json_index": [
+            8,
+            16
+          ],
+          "normalized_sha256": "7392816e5ebaf6726a2b7de3bd7006e7e029c84f725557efc313cdf69dcb8363",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:18",
+          "local_json_index": [
+            8,
+            17
+          ],
+          "normalized_sha256": "eb381bce0b607e22cd113f59afffd60e8cb993d85a595a90975881bf054f37c9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:19",
+          "local_json_index": [
+            8,
+            18
+          ],
+          "normalized_sha256": "96de085499cd026ed90d02aecbb21968d223b67053e7ca3329943751018e033d",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:20",
+          "local_json_index": [
+            8,
+            19
+          ],
+          "normalized_sha256": "cd29d851463da8896f453aa787b99cdf91fc32cb88b4776a5914f578c3d8413a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:21",
+          "local_json_index": [
+            8,
+            20
+          ],
+          "normalized_sha256": "eea4b95ca4895a5456e0f51f8d720d13ebb10db26c3abf11cd8ccfcc5f3e52f3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:22",
+          "local_json_index": [
+            8,
+            21
+          ],
+          "normalized_sha256": "221ecb06ef5fefd02e3ee3a7f79515e1658ca3d7029d28826892871bf66f3c7a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:23",
+          "local_json_index": [
+            8,
+            22
+          ],
+          "normalized_sha256": "859fa90d09fc85d2b7aa023e81977bf920910cbdb0b943220d3d41ccd9bcd055",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Berakhot 5a:24",
+          "local_json_index": [
+            8,
+            23
+          ],
+          "normalized_sha256": "8cc6a9c4f75ab718f0a0da7aae7a9e470a5635e2965be1f82313acac7ad34f90",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Bava Metzia 21a",
+      "returned_ref": "Bava Metzia 21a",
+      "local_page_array_index": 40,
+      "local_segment_count": 19,
+      "returned_segment_count": 19,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Bava Metzia 21a:1",
+      "first_anchor": "דשיילינן להו לסהדי אי פרוע אי לא פרוע",
+      "last_anchor_ref": "Bava Metzia 21a:19",
+      "last_anchor": "איתמר",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Bava_Metzia.21a?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "2fee6292bebe04ad1262af9fb8652d5cd76806210ed63c383f0a3948b44d6b5e",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Bava Metzia 21a:1",
+          "local_json_index": [
+            40,
+            0
+          ],
+          "normalized_sha256": "65d3aecd27e63c099dbbc5c379102607d3d7ce2eb2a04774c5358c56bda23b42",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:2",
+          "local_json_index": [
+            40,
+            1
+          ],
+          "normalized_sha256": "61df0f7aee0ae0d023f99e3db19b7fa0cd61ccf338f23a567742f62ee7c28952",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:3",
+          "local_json_index": [
+            40,
+            2
+          ],
+          "normalized_sha256": "f3d1b022f7dba7509f76b660e2d056cba97e6979813fb275f87ac87bb64c8df7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:4",
+          "local_json_index": [
+            40,
+            3
+          ],
+          "normalized_sha256": "7f75c549967fd67b05a0890f03509c1b23b0fa55f967c7f1d19e81c993ee79f5",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:5",
+          "local_json_index": [
+            40,
+            4
+          ],
+          "normalized_sha256": "07f4a6686c5f48ec152a028fc19325afdd37cb718ee838147c42f7940c54fabe",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:6",
+          "local_json_index": [
+            40,
+            5
+          ],
+          "normalized_sha256": "03362da19558603b7db3f98f48928c307abbc91ee95885f78a19d1954f658d00",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:7",
+          "local_json_index": [
+            40,
+            6
+          ],
+          "normalized_sha256": "56b5347c2522dc1149c32898749cbc9dde53527a751d00ca1f3d84a78e60c2f6",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:8",
+          "local_json_index": [
+            40,
+            7
+          ],
+          "normalized_sha256": "7f09573a908a7890c5a7a55415e07e9d6d2fee55ac60343b93cf3b4dc1f224fa",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:9",
+          "local_json_index": [
+            40,
+            8
+          ],
+          "normalized_sha256": "b07a8848c350a4007a0dc62d44bb783c302b877375df07b06138ae2275a78123",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:10",
+          "local_json_index": [
+            40,
+            9
+          ],
+          "normalized_sha256": "e699272c7015d15a78c5302cf6bf4b0bc2faf92a58003a901e99576163a454d7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:11",
+          "local_json_index": [
+            40,
+            10
+          ],
+          "normalized_sha256": "aca5f6aee190a686348248853334a8021e04b25fafe7cd846142c413ef7d8906",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:12",
+          "local_json_index": [
+            40,
+            11
+          ],
+          "normalized_sha256": "695ae725a77b0c0e8d1038ae17d85b2384aba013ecdafe071840dcdb04a4bea3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:13",
+          "local_json_index": [
+            40,
+            12
+          ],
+          "normalized_sha256": "a71bcac5620d85ca687290f4e30882b1dafbd5a4f1fd18819bb96eabde1da919",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:14",
+          "local_json_index": [
+            40,
+            13
+          ],
+          "normalized_sha256": "2d42cd3d5bf25aec004015660c45acd1980a946ed10d402ae11e0d82004690da",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:15",
+          "local_json_index": [
+            40,
+            14
+          ],
+          "normalized_sha256": "cb137e5047910c20873006e93fe44f9ec3e25e9dc3fe01522934e1fdead4b20f",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:16",
+          "local_json_index": [
+            40,
+            15
+          ],
+          "normalized_sha256": "5198a33df8758774fea15e21e8b0853fdd38bba8c6bcde2b39bf79d0d63470d6",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:17",
+          "local_json_index": [
+            40,
+            16
+          ],
+          "normalized_sha256": "b150bf7b034e2deb58d5f1e105e1ce244dc0a87b5844dc67d59c1a11a94176b7",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:18",
+          "local_json_index": [
+            40,
+            17
+          ],
+          "normalized_sha256": "be7619fa0b755a14aed807685684665d687f7fcc723e60f20881e8d039e464ff",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21a:19",
+          "local_json_index": [
+            40,
+            18
+          ],
+          "normalized_sha256": "b9b656dc628f2c3ce84d727ea51eb61fda4d23a70c1ec1c1c5d2d4670b802244",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Bava Metzia 21b",
+      "returned_ref": "Bava Metzia 21b",
+      "local_page_array_index": 41,
+      "local_segment_count": 17,
+      "returned_segment_count": 17,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Bava Metzia 21b:1",
+      "first_anchor": "יאוש שלא מדעת אביי אמר לא הוי יאוש",
+      "last_anchor_ref": "Bava Metzia 21b:17",
+      "last_anchor": "ונתן לזה וכן גזלן שנטל מזה ונתן לזה",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Bava_Metzia.21b?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "463414eca6db9ab7e94f1d308fc878b5052298eb0ebe91ed37dc4a2f41753e9c",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Bava Metzia 21b:1",
+          "local_json_index": [
+            41,
+            0
+          ],
+          "normalized_sha256": "649ab832958b9a03c0b3eb227303e8e7b17f426ea94b40e9dd8e53d2985860d5",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:2",
+          "local_json_index": [
+            41,
+            1
+          ],
+          "normalized_sha256": "fea8f51c6edc93980ab0f4e45e0c8dd0487fe9de26d2a9b80637b10e6326c082",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:3",
+          "local_json_index": [
+            41,
+            2
+          ],
+          "normalized_sha256": "f1e9efb46b8414bdccaef826028ba9b1a2bad57ac7908a940af6b82f9f5de994",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:4",
+          "local_json_index": [
+            41,
+            3
+          ],
+          "normalized_sha256": "f08bc0ff2c4c10a6fbec0f778b78a62228ac66a844e439c8c281642345d82000",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:5",
+          "local_json_index": [
+            41,
+            4
+          ],
+          "normalized_sha256": "1ce52e4fe79165e16cfcbda1f7ba019200f5237679b582aea0c542b8808744aa",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:6",
+          "local_json_index": [
+            41,
+            5
+          ],
+          "normalized_sha256": "9422724d9d1f8b90011c969137536673abc0152a43f2f4c534bee026157e65f9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:7",
+          "local_json_index": [
+            41,
+            6
+          ],
+          "normalized_sha256": "976514758da11899ba6f5262b043eedfe6f00a46d98382f8dd74d2bfe159219d",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:8",
+          "local_json_index": [
+            41,
+            7
+          ],
+          "normalized_sha256": "60193872ddb143d1d822a7df751ff06035968c48fed2cbf37485214e6ef45e5a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:9",
+          "local_json_index": [
+            41,
+            8
+          ],
+          "normalized_sha256": "074383f4d736a0e3e5f9f73375e8dd2668cbe0929e04163f8338c52cf382ea49",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:10",
+          "local_json_index": [
+            41,
+            9
+          ],
+          "normalized_sha256": "a41161c0201da7d54be29a96fd5aab6d9b0bd9d771e9852205b3ba48e0bba54e",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:11",
+          "local_json_index": [
+            41,
+            10
+          ],
+          "normalized_sha256": "c48c1bd89c8e25a7f0ef23db31fd442b7f48da1631465fb7cd91b27c56f90835",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:12",
+          "local_json_index": [
+            41,
+            11
+          ],
+          "normalized_sha256": "7006f4740e353215666a971701e27e180a15561ec629b4acb9fec8727cf29ef8",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:13",
+          "local_json_index": [
+            41,
+            12
+          ],
+          "normalized_sha256": "d9e9140a1ceceb5694531c9f2b1f8cc1839634db27d5da1fa630e12c3fe206a9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:14",
+          "local_json_index": [
+            41,
+            13
+          ],
+          "normalized_sha256": "b5bb192e39fa1158120aaf2de31f6b29ead78d4bf0af618f1572b6e2f8e7ca12",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:15",
+          "local_json_index": [
+            41,
+            14
+          ],
+          "normalized_sha256": "bec3977a0e5360faaa0031a0fb89dffa4fe350088141b815f2ccfd199f03abfd",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:16",
+          "local_json_index": [
+            41,
+            15
+          ],
+          "normalized_sha256": "ec3afffb8f6a5df84fed9b9625ea2b3c3a86b8e036c69d3a3e59c5c6d0c6ba7c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 21b:17",
+          "local_json_index": [
+            41,
+            16
+          ],
+          "normalized_sha256": "239eaa4df099e04f97478a24e23322a5519cfd7eaa87aaed4e2eb1a11813e03c",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Bava Metzia 22a",
+      "returned_ref": "Bava Metzia 22a",
+      "local_page_array_index": 42,
+      "local_segment_count": 12,
+      "returned_segment_count": 12,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Bava Metzia 22a:1",
+      "first_anchor": "וכן ירדן שנטל מזה ונתן לזה מה שנטל",
+      "last_anchor_ref": "Bava Metzia 22a:12",
+      "last_anchor": "לח) בכי יותן נגבו אף על פי ששמח",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Bava_Metzia.22a?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "3a928fda0f3d41c6a730a9dd4d895dd7637953c8a0800b7e1a1ddd3af0f72d96",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Bava Metzia 22a:1",
+          "local_json_index": [
+            42,
+            0
+          ],
+          "normalized_sha256": "e322307bebf1a520798e20af6b7f045fa23922d4d859141d9705d38124b534c9",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:2",
+          "local_json_index": [
+            42,
+            1
+          ],
+          "normalized_sha256": "523f6037fe419f35fc6941acb292087cd49bb3e68b64d9044ec803daf3316711",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:3",
+          "local_json_index": [
+            42,
+            2
+          ],
+          "normalized_sha256": "9e4a9a3a0eb8df7a7075464a42611c750583f8773d5da82b00402ce5fb903222",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:4",
+          "local_json_index": [
+            42,
+            3
+          ],
+          "normalized_sha256": "aad4f8cb2247c40d72dae5664c4f0ad9e725a9e7e66e4029b11c4d717ef9941e",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:5",
+          "local_json_index": [
+            42,
+            4
+          ],
+          "normalized_sha256": "4a3e9f32fb81766186bd581b9df3c1b3b56ef72e4a3d11291904c9478f13d5ef",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:6",
+          "local_json_index": [
+            42,
+            5
+          ],
+          "normalized_sha256": "40ebe1838353069b347771322e3613e06e5e78d849efa32f9157859f3867d328",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:7",
+          "local_json_index": [
+            42,
+            6
+          ],
+          "normalized_sha256": "ec3374efa1f325ad86dc6b49e9f0d82d72e14210c466d7d206212f9c7481af3e",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:8",
+          "local_json_index": [
+            42,
+            7
+          ],
+          "normalized_sha256": "4fef39a4693cc46c5f150b6f690564b542f313ab4731b864b52b9952794bb44f",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:9",
+          "local_json_index": [
+            42,
+            8
+          ],
+          "normalized_sha256": "bfbeb516e363597434399d847913bced27bbbbb68665e0ac10fba6ea9cc73071",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:10",
+          "local_json_index": [
+            42,
+            9
+          ],
+          "normalized_sha256": "58ec4776486978e1b04a5c951ddafe173f70a036f0d102a561d9e108355f8754",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:11",
+          "local_json_index": [
+            42,
+            10
+          ],
+          "normalized_sha256": "7cef7de1bcd60ca31273659af1f04688bd54aa54ef06a0b1d01f2416e7426667",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22a:12",
+          "local_json_index": [
+            42,
+            11
+          ],
+          "normalized_sha256": "1e169699ef955cfd7feefe955f747baf915ebd99a64ddd2561716cf7608752f8",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    },
+    {
+      "requested_ref": "Bava Metzia 22b",
+      "returned_ref": "Bava Metzia 22b",
+      "local_page_array_index": 43,
+      "local_segment_count": 16,
+      "returned_segment_count": 16,
+      "normalized_mismatched_segment_numbers": [],
+      "raw_html_equal": true,
+      "first_anchor_ref": "Bava Metzia 22b:1",
+      "first_anchor": "אינן בכי יותן",
+      "last_anchor_ref": "Bava Metzia 22b:16",
+      "last_anchor": "בסימן כריכות ברשות הרבים הרי אלו שלו משום",
+      "explicit_address_api": "https://www.sefaria.org/api/texts/Bava_Metzia.22b?context=0&commentary=0&vhe=Wikisource_Talmud_Bavli",
+      "response_sha256": "759ffa7529186466caf181f9db6d93af25543e727f852ad189b166d94215504d",
+      "he_version_title": "Wikisource Talmud Bavli",
+      "he_license": "CC-BY-SA",
+      "segment_checks": [
+        {
+          "ref": "Bava Metzia 22b:1",
+          "local_json_index": [
+            43,
+            0
+          ],
+          "normalized_sha256": "c39d32ae3ef800f51179eef314aa9cd068351b5767727df9464e88562968a1bb",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:2",
+          "local_json_index": [
+            43,
+            1
+          ],
+          "normalized_sha256": "8e53c20955d028937a94cd52ca5d555f9c6b112333d8d336e6e930a3677d9ab3",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:3",
+          "local_json_index": [
+            43,
+            2
+          ],
+          "normalized_sha256": "c71c1c551325cd2097b48750d9ebd3f623760d9336e81f07408e0a4abd65f737",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:4",
+          "local_json_index": [
+            43,
+            3
+          ],
+          "normalized_sha256": "8fb79e13353311f48a6d01087b8865efa0e5005bd8b83c0eee1eb55b502a2022",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:5",
+          "local_json_index": [
+            43,
+            4
+          ],
+          "normalized_sha256": "13fbce013c102370c83f0532a19d22151ebcc99a696d4fd9051f38a33365a934",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:6",
+          "local_json_index": [
+            43,
+            5
+          ],
+          "normalized_sha256": "f00376b57c8bca66ae2019e82a2f25ca64a96ce8ee825c294bdc99329354150c",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:7",
+          "local_json_index": [
+            43,
+            6
+          ],
+          "normalized_sha256": "61b112847839a499f18d7c7f437a916669526776d62269f888e5dd3cac13db32",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:8",
+          "local_json_index": [
+            43,
+            7
+          ],
+          "normalized_sha256": "c60f06043331c0d3d45b7cf7562dc367b87ed69a4caa1e92804c85c0f002f2fd",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:9",
+          "local_json_index": [
+            43,
+            8
+          ],
+          "normalized_sha256": "4fd7e64c0a0eaa607f819ac696794d6f778f3f154670cc58d89ff57c11a671d5",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:10",
+          "local_json_index": [
+            43,
+            9
+          ],
+          "normalized_sha256": "4bfd805cef8f2b92f27423bd082a8c99eac5d4c31ddf04f59d536fcccebf9b0a",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:11",
+          "local_json_index": [
+            43,
+            10
+          ],
+          "normalized_sha256": "7690d7e09dde7b0e44cd5ec8168d2d81d9c8ae28d90abedfe4cb08cbc40ffb36",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:12",
+          "local_json_index": [
+            43,
+            11
+          ],
+          "normalized_sha256": "563fe17640c87b2c021bd0665231bb2a5801c4c7dc070fa934c9333fae59bf69",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:13",
+          "local_json_index": [
+            43,
+            12
+          ],
+          "normalized_sha256": "b9c10e9b4127cfc817dbd02bb0ff35a8f8a31adb4fbab54bda82f381db0e8e01",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:14",
+          "local_json_index": [
+            43,
+            13
+          ],
+          "normalized_sha256": "54ee23598f0e3426171beb8545b4ed12674326d516a1c4c459f7ba63c4628d1d",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:15",
+          "local_json_index": [
+            43,
+            14
+          ],
+          "normalized_sha256": "54287cb63703d68bee6896e2e62b526ffe8c8926a07998d3d5f12eabbbfcff35",
+          "matches_same_numbered_remote_segment": true
+        },
+        {
+          "ref": "Bava Metzia 22b:16",
+          "local_json_index": [
+            43,
+            15
+          ],
+          "normalized_sha256": "e1893aae0581f16601458e00ad9b03cdd35096e281e647a77324207cd31e7919",
+          "matches_same_numbered_remote_segment": true
+        }
+      ]
+    }
+  ],
+  "total_amudim": 11,
+  "total_segments": 215,
+  "mismatch_count": 0,
+  "independent_web_page_anchors": [
+    {
+      "url": "https://he.wikisource.org/wiki/ברכות_ב_א",
+      "permalink": "https://he.wikisource.org/w/index.php?title=ברכות_ב_א&oldid=3006896",
+      "check": "Page heading identifies2a, opening מאימתי matches local2a:1; page closing matches local2a:14. Web page has paragraphs, not Sefaria numbered segments.",
+      "status": "matched"
+    },
+    {
+      "url": "https://he.wikisource.org/wiki/בבא_מציעא_כא_א",
+      "check": "Heading21a, opening דשיילינן matches21a:1; chapter heading inside page precedes21a:7; closing איתמר matches21a:19. Page displays not-proofread warning.",
+      "status": "matched"
+    }
+  ],
+  "licensing_note": "Local named files and live API heLicense say CC-BY-SA without version number. Wikisource page footer currently says CC BY-SA4.0, possibly additional terms. API default English is separate CC-BY-NC material; only Hebrew he field used/compared, English neither copied nor licensed as Hebrew. No assumption that merged.json has identical provenance.",
+  "limits": [
+    "This verifies all215 numbered Hebrew segments in these11 amudim against an explicit-address endpoint, not every tractate or text witness.",
+    "Daf boundaries are not sugya boundaries:21a opens with previous chapter continuation and closes with איתמר continued21b.",
+    "No complete remote response or full corpus copy published; response hashes and small anchors retained.",
+    "Live API response includes volatile metadata; response digest documents this retrieval, not a pinned reproducible API revision."
+  ],
+  "mismatches": []
+}

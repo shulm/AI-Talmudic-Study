@@ -1,0 +1,411 @@
+{
+  "review_date": "2026-11-24",
+  "reviewer": "separate Codex AI source reviewer",
+  "status": "PROVISIONAL_AI_COMPARISON_CORRECTIONS_RECOMMENDED",
+  "human_certification": false,
+  "independent_initial_sha256": "72219e2588b45d1183d41e525fe373287514c700c762a2041e089bba71e64044",
+  "primary_initial_sha256": "cb4033f66c23e24e8cd80523291a952aa5c597f8b3358555abf84887c8d7c569",
+  "primary_annotation_manifest_sha256": "f4b9ba95d03bdf2bd36e8db81f5daa8e6a265f64478517168ae618bb9f4af1d5",
+  "independence": {
+    "BM": "Independent initial source judgments frozen before opening primary GROUPS/CLAIMS/EDGES; comparison is later and cannot be relabeled blind.",
+    "Berakhot": "Subsequent targeted review after primary annotations and parent concern about Moses-doubt classification were seen; not independent initial."
+  },
+  "denominators": {
+    "BM_pilot_segments": 64,
+    "BM_independently_read_with_context_segments": 105,
+    "BM_primary_parent_groups": 5,
+    "BM_primary_subgroups": 6,
+    "BM_primary_selected_claims_reviewed": 44,
+    "BM_primary_edges_reviewed": 18,
+    "Berakhot_targeted_segments_read": 40,
+    "Berakhot_targeted_ranges": [
+      "3b:27–4a:9",
+      "5a:9–5b:9"
+    ],
+    "coverage": "selected_claims_only; counts are review coverage, not all atomic source claims or dataset recall",
+    "agreement_percentages": null,
+    "why_no_agreement_percentage": "Independent artifact uses different granularity and includes context; no one-to-one exhaustive predeclared annotation alignment. Do not derive accuracy from compatible selected cases."
+  },
+  "boundary_comparison": [
+    {
+      "primary": "M01",
+      "independent": "ind_bm_receipt",
+      "assessment": "compatible pilot clipping",
+      "note": "Independent full context20b:18–21a:5; primary begins21a:1 and openly flags previous context. Keep left-open flag."
+    },
+    {
+      "primary": "M02",
+      "independent": "ind_bm_mishnah",
+      "assessment": "minor structural attachment difference, not substantive disagreement",
+      "note": "Primary begins21a:6 hadran; independent semantic mishnah begins21a:7. Primary explicitly calls6 structural. Prefer6 as structural transition or membership_role=structural, not a source claim of new chapter."
+    },
+    {
+      "primary": "M03",
+      "independent": "ind_bm_scattered_fruit",
+      "assessment": "matching substantive bounds21a:11–18",
+      "note": "Unresolved multi-case inquiries; repeated21b:6 interpretation is linked child/parallel, not independent observation."
+    },
+    {
+      "primary": "M04",
+      "independent": "ind_bm_yeush",
+      "assessment": "matching parent21a:19–22b:10",
+      "note": "Both include cross-daf איתמר and post-ruling dates/orphan applications; primary6 subgroups are coarser than independent argument moves, compatible hierarchy."
+    },
+    {
+      "primary": "M05",
+      "independent": "ind_bm_trampled_sign",
+      "assessment": "compatible right-open pilot clipping",
+      "note": "Independent reads through23a:15; primary clips22b:16 and flags continuation.22b:16 ends משום; never treat as complete text."
+    }
+  ],
+  "findings": [
+    {
+      "id": "C01",
+      "priority": "required",
+      "track": "independent_BM_comparison",
+      "target": "m_refute.status",
+      "source_refs": [
+        "Bava Metzia 22b:6",
+        "Bava Metzia 22b:7"
+      ],
+      "initial": "rejected",
+      "recommendation": "asserted",
+      "reason": "The refutation claim is accepted in this discourse; Rava position m_rava is what is rejected. The existing m_refute rejects m_rava edge should remain. Marking the refutation itself rejected reverses the record’s meaning."
+    },
+    {
+      "id": "C02",
+      "priority": "recommended",
+      "track": "independent_BM_comparison",
+      "target": "m_sign.status",
+      "source_refs": [
+        "Bava Metzia 21b:2"
+      ],
+      "initial": "reconciled",
+      "recommendation": "asserted (role scope retained); explicit agreement/no-dispute marker if schema permits",
+      "reason": "כולי עלמא לא פליגי is an agreed scope exclusion, not reconciliation of two earlier opposing same-case statements. Both m_abaye and m_rava must be read under the no-sign scope."
+    },
+    {
+      "id": "C03",
+      "priority": "recommended",
+      "track": "independent_BM_comparison",
+      "target": "m_floor authority canonical identity",
+      "source_refs": [
+        "Bava Metzia 21a:13",
+        "Bava Metzia 21b:6"
+      ],
+      "initial": "רבי עוקבא בר חמא versus רב עוקבא בר חמא in m_fruitanswer",
+      "recommendation": "one canonical רב עוקבא בר חמא identity, preserve original abbreviated א״ר surface text and current first annotation",
+      "reason": "Opening abbreviation itself does not settle רבי/rav; explicit same explanation later names רב עוקבא בר חמא. Avoid splitting the same transmitted explanation into two people. This is entity normalization, not a new dispute attribution."
+    },
+    {
+      "id": "C04",
+      "priority": "required",
+      "track": "subsequent_targeted_Berakhot_review",
+      "target": "b_mosesdoubt.status and b_mosesknew rejects b_mosesdoubt edge",
+      "source_refs": [
+        "Berakhot 3b:27",
+        "Berakhot 3b:28",
+        "Berakhot 3b:29",
+        "Berakhot 4a:4",
+        "Berakhot 4a:5",
+        "Berakhot 4a:6",
+        "Berakhot 4a:7"
+      ],
+      "initial": {
+        "status": "rejected",
+        "edge": "rejects"
+      },
+      "recommendation": {
+        "status": "unresolved",
+        "edge": "alternative_to"
+      },
+      "reason": "First explanation allows inference that Moses was uncertain and David had a harp sign. Rabbi Zeira supplies an alternative: both knew, harp wakes David, astrologers explain wording. Rav Ashi adds another interpretation. No narrator’s global final rejection of the first explanation appears in this bounded passage. Concern was explicitly supplied by parent before targeted reading, so this is corroborative subsequent review, not a blind independent discovery."
+    },
+    {
+      "id": "C05",
+      "priority": "retain_with_queue",
+      "track": "subsequent_targeted_Berakhot_review",
+      "target": "b_hasid1/b_hasid2 attribution and b_love1/b_love2 attribution",
+      "source_refs": [
+        "Berakhot 4a:8",
+        "Berakhot 4a:9",
+        "Berakhot 5a:14",
+        "Berakhot 5a:15",
+        "Berakhot 5a:16"
+      ],
+      "initial": "unresolved named candidate pairs",
+      "recommendation": "retain unresolved assignments; do not assign from name order",
+      "reason": "לוי ורבי יצחק חד אמר / ואידך does not identify which is which. רבי יעקב בר אידי ורבי אחא בר חנינא חד אמר likewise remains anonymous; Rabbi Yohanan’s response does not identify their names. Targeted4a range ends9; no claim all possible later/commentary identification exhausted."
+    },
+    {
+      "id": "C06",
+      "priority": "retain_with_queue",
+      "track": "subsequent_targeted_Berakhot_review",
+      "target": "B22/B24 context links and b_loveboth scope",
+      "source_refs": [
+        "Berakhot 5a:9",
+        "Berakhot 5a:10",
+        "Berakhot 5a:14",
+        "Berakhot 5a:15",
+        "Berakhot 5a:16",
+        "Berakhot 5a:24",
+        "Berakhot 5b:1",
+        "Berakhot 5b:2",
+        "Berakhot 5b:3",
+        "Berakhot 5b:4",
+        "Berakhot 5b:6",
+        "Berakhot 5b:7",
+        "Berakhot 5b:8",
+        "Berakhot 5b:9"
+      ],
+      "initial": "selected pilot claims, open B24, later context unmodeled",
+      "recommendation": "retain ml_eligible=false and explicit context/omission queue; no forced promotion or simple all-sufferings rule",
+      "reason": "5a:24 sentence ends only5b:1 and its proof continues5b:2–3.5b:4 says lesions/children not sufferings of love, with multiple distinctions5b:6–9. Atonement and sufferings-of-love are distinguished explicitly5b:6. Do not read5a:16 as unrestricted consensus about every suffering or mark Rabbi Yohanan globally retracted. Current omission is disclosed rather than encoded falsely."
+    }
+  ],
+  "confirmed_high_risk_checks": [
+    {
+      "refs": [
+        "Bava Metzia 21b:1",
+        "Bava Metzia 21b:4",
+        "Bava Metzia 22b:6",
+        "Bava Metzia 22b:7"
+      ],
+      "result": "Abaye/Rava assignment and rejection target preserved correctly apart from C01 status of the refutation event."
+    },
+    {
+      "refs": [
+        "Bava Metzia 21b:11"
+      ],
+      "result": "Rabbi Yohanan/Resh Lakish nested namushot interpretation correctly separate from Abaye/Rava."
+    },
+    {
+      "refs": [
+        "Bava Metzia 22a:7",
+        "Bava Metzia 22a:8"
+      ],
+      "result": "Rava answers according to Abaye; primary correctly avoids swapping speaker or declaring Rava retraction."
+    },
+    {
+      "refs": [
+        "Bava Metzia 22a:11"
+      ],
+      "result": "Rava ruling reported by Mar Zutra correctly distinguished from eating by Ameimar/Rav Ashi in narrative."
+    },
+    {
+      "refs": [
+        "Bava Metzia 22b:11",
+        "Bava Metzia 22b:12",
+        "Bava Metzia 22b:13",
+        "Bava Metzia 22b:14"
+      ],
+      "result": "Rabbah distinct from Rava; apparent refutation13 answered14, correctly objects_to/answers rather than global rejection."
+    },
+    {
+      "refs": [
+        "Bava Metzia 23a:3",
+        "Bava Metzia 23a:4",
+        "Bava Metzia 23a:5",
+        "Bava Metzia 23a:13"
+      ],
+      "result": "Outside-pilot continuation contains answered Rabbah challenge and rejected initial tannaitic comparisons; preserve as context/queue, not claim completeness for selected claims."
+    },
+    {
+      "refs": [
+        "Berakhot 4a:3",
+        "Berakhot 5a:9",
+        "Berakhot 5a:11",
+        "Berakhot 5a:16"
+      ],
+      "result": "Alternative transmission authorities and explicit Rava→Rav Sehora→Rav Huna / Rabbi Abba→Rabbi Hiyya→Rabbi Yohanan chains retained; no named-order inference recommended."
+    }
+  ],
+  "targeted_berakhot_source": {
+    "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\Wikisource Talmud Bavli.json",
+    "sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+    "version": "Wikisource Talmud Bavli"
+  },
+  "targeted_evidence": [
+    {
+      "ref": "Berakhot 3b:28",
+      "json_index": [
+        5,
+        27
+      ],
+      "text": "מאי כחצות אילימא דאמר ליה קודשא בריך הוא כחצות מי איכא ספיקא קמי שמיא אלא דאמר ליה (למחר) בחצות (כי השתא) ואתא איהו ואמר כחצות אלמא מספקא ליה ודוד הוה ידע",
+      "raw_segment_sha256": "925830c4e6c2713c808a1650749d441f6cee112521cc1e5de082c745a2d699ab"
+    },
+    {
+      "ref": "Berakhot 3b:29",
+      "json_index": [
+        5,
+        28
+      ],
+      "text": "דוד סימנא הוה ליה דאמר רב אחא בר ביזנא אמר רבי שמעון חסידא כנור היה תלוי למעלה ממטתו של דוד וכיון שהגיע חצות לילה בא רוח צפונית ונושבת בו ומנגן מאליו מיד היה עומד ועוסק בתורה עד שעלה עמוד השחר כיון שעלה עמוד השחר נכנסו חכמי ישראל אצלו אמרו לו אדונינו המלך עמך ישראל צריכין פרנסה אמר להם לכו והתפרנסו זה מזה אמרו לו אין הקומץ משביע את הארי ואין הבור מתמלא מחוליתו אמר להם לכו ופשטו ידיכם בגדוד",
+      "raw_segment_sha256": "d8fa44216f2c2e1bae4e0f7225cb76bc190c4cfc8d00bdf588a15fd1f0916f15"
+    },
+    {
+      "ref": "Berakhot 4a:4",
+      "json_index": [
+        6,
+        3
+      ],
+      "text": "רבי זירא אמר משה לעולם הוה ידע ודוד נמי הוה ידע",
+      "raw_segment_sha256": "6980f1143fbe92528e24e1f278c7f0bc4fda0faca54b23b35980d2aa1da5d369"
+    },
+    {
+      "ref": "Berakhot 4a:5",
+      "json_index": [
+        6,
+        4
+      ],
+      "text": "וכיון דדוד הוה ידע כנור למה ליה לאתעורי משנתיה",
+      "raw_segment_sha256": "8979bc56da2eb2ee2e092491a311d6e5ec6795094f0e748c52bcb54a82f24cc6"
+    },
+    {
+      "ref": "Berakhot 4a:6",
+      "json_index": [
+        6,
+        5
+      ],
+      "text": "וכיון דמשה הוה ידע למה ליה למימר כחצות משה קסבר שמא יטעו אצטגניני פרעה ויאמרו משה בדאי הוא דאמר מר למד לשונך לומר איני יודע שמא תתבדה ותאחז",
+      "raw_segment_sha256": "7c0f950c5789d5fa054c97aa2aedafe173047758dfea575e9e97e1d26bd381e9"
+    },
+    {
+      "ref": "Berakhot 4a:7",
+      "json_index": [
+        6,
+        6
+      ],
+      "text": "רב אשי אמר בפלגא אורתא דתליסר נגהי ארבסר הוה קאי והכי קאמר משה לישראל אמר הקב\"ה למחר כחצות הלילה כי האידנא אני יוצא בתוך מצרים:",
+      "raw_segment_sha256": "b05aa9c678070f3c5de17c82a8f82c29434709f63bc7086c6eff8fcfac26f919"
+    },
+    {
+      "ref": "Berakhot 4a:8",
+      "json_index": [
+        6,
+        7
+      ],
+      "text": "(תהלים פו, ב) לדוד שמרה נפשי כי חסיד אני לוי ור' יצחק חד אמר כך אמר דוד לפני הקב\"ה רבונו של עולם לא חסיד אני שכל מלכי מזרח ומערב ישנים עד שלש שעות ואני (תהלים קיט, סב) חצות לילה אקום להודות לך",
+      "raw_segment_sha256": "299b22a3eaaad9153d52904ac3a34d44813932cd9e338c41ca0ae486b07363aa"
+    },
+    {
+      "ref": "Berakhot 4a:9",
+      "json_index": [
+        6,
+        8
+      ],
+      "text": "ואידך כך אמר דוד לפני הקב\"ה רבונו של עולם לא חסיד אני שכל מלכי מזרח ומערב יושבים אגודות אגודות בכבודם ואני ידי מלוכלכות בדם ובשפיר ובשליא כדי לטהר אשה לבעלה ולא עוד אלא כל מה שאני עושה אני נמלך במפיבשת רבי ואומר לו מפיבשת רבי יפה דנתי יפה חייבתי יפה זכיתי יפה טהרתי יפה טמאתי ולא בושתי",
+      "raw_segment_sha256": "48f160767b7f7b711c68a686675c8df5bd8eddd4f9c0e5c36df2ddfc717ef497"
+    },
+    {
+      "ref": "Berakhot 5a:9",
+      "json_index": [
+        8,
+        8
+      ],
+      "text": "אמר רבא ואיתימא רב חסדא אם רואה אדם שיסורין באין עליו יפשפש במעשיו שנא' (איכה ג, מ) נחפשה דרכינו ונחקורה ונשובה עד ה' פשפש ולא מצא יתלה בבטול תורה שנאמר (תהלים צד, יב) אשרי הגבר אשר תיסרנו יה ומתורתך תלמדנו",
+      "raw_segment_sha256": "ca1064e7ba314354bda33f2844f7486a0cde2301ad278fab7153404e0f3fcc9e"
+    },
+    {
+      "ref": "Berakhot 5a:11",
+      "json_index": [
+        8,
+        10
+      ],
+      "text": "אמר רבא אמר רב סחורה אמר רב הונא כל שהקב\"ה חפץ בו מדכאו ביסורין שנאמר (ישעיהו נג, י) וה' חפץ דכאו החלי",
+      "raw_segment_sha256": "bd844e55522805629b6e6f6814e6d576bb1f57523b3103ab26f1a2e9bf2a0800"
+    },
+    {
+      "ref": "Berakhot 5a:14",
+      "json_index": [
+        8,
+        13
+      ],
+      "text": "פליגי בה רבי יעקב בר אידי ורבי אחא בר חנינא חד אמר אלו הם יסורין של אהבה כל שאין בהן בטול תורה שנאמר (תהלים צד, יב) אשרי הגבר אשר תיסרנו יה ומתורתך תלמדנו",
+      "raw_segment_sha256": "7bf1dc0785fd1d7dd06ba47dcc5da8ab0565c1ff363a405e51216aad597d8fab"
+    },
+    {
+      "ref": "Berakhot 5a:15",
+      "json_index": [
+        8,
+        14
+      ],
+      "text": "וחד אמר אלו הם יסורין של אהבה כל שאין בהן בטול תפלה שנאמר (תהלים סו, כ) ברוך אלהים אשר לא הסיר תפלתי וחסדו מאתי",
+      "raw_segment_sha256": "c01f0d55c7aaaef8a95da0e440f0a9662aea04770e089b29e5b44537711de05a"
+    },
+    {
+      "ref": "Berakhot 5a:16",
+      "json_index": [
+        8,
+        15
+      ],
+      "text": "אמר להו רבי אבא בריה דר' חייא בר אבא הכי אמר ר' חייא בר אבא א\"ר יוחנן אלו ואלו יסורין של אהבה הן שנאמר כי את אשר יאהב ה' יוכיח",
+      "raw_segment_sha256": "e98e7cd47f90750d138b0ac67a79c4f2fb7ab5cb2d2212dffbe8e290ceb2d49c"
+    },
+    {
+      "ref": "Berakhot 5a:24",
+      "json_index": [
+        8,
+        23
+      ],
+      "text": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים",
+      "raw_segment_sha256": "8cc6a9c4f75ab718f0a0da7aae7a9e470a5635e2965be1f82313acac7ad34f90"
+    },
+    {
+      "ref": "Berakhot 5b:1",
+      "json_index": [
+        9,
+        0
+      ],
+      "text": "וקובר את בניו מוחלין לו על כל עונותיו",
+      "raw_segment_sha256": "0b1ef7c1781f162c678e75ee2dfe68869599e62804dc010bd4c10ee6c543d54f"
+    },
+    {
+      "ref": "Berakhot 5b:4",
+      "json_index": [
+        9,
+        3
+      ],
+      "text": "א\"ר יוחנן נגעים ובנים אינן יסורין של אהבה",
+      "raw_segment_sha256": "5b38242eb0fa194cacefdefddc14b9d945d039f549a26d12fdd21c284f0ed4e1"
+    },
+    {
+      "ref": "Berakhot 5b:6",
+      "json_index": [
+        9,
+        5
+      ],
+      "text": "מזבח כפרה הוו יסורין של אהבה לא הוו",
+      "raw_segment_sha256": "5ea49139f089f2f356c49dc3b5643f267ed81fd6ef9b2b69f0f379ca57d52ee6"
+    },
+    {
+      "ref": "Berakhot 5b:7",
+      "json_index": [
+        9,
+        6
+      ],
+      "text": "ואב\"א הא לן והא להו",
+      "raw_segment_sha256": "1a620509ec96674649b829b095b0f0d262c47bcbb4777b66f1f3db2c3b40d49e"
+    },
+    {
+      "ref": "Berakhot 5b:8",
+      "json_index": [
+        9,
+        7
+      ],
+      "text": "ואי בעית אימא הא בצנעא הא בפרהסיא",
+      "raw_segment_sha256": "cb3e6f5fef0579ac7abe816e78bdf380a5c6191c4e981a8babecb8202710c539"
+    },
+    {
+      "ref": "Berakhot 5b:9",
+      "json_index": [
+        9,
+        8
+      ],
+      "text": "ובנים לא היכי דמי אילימא דהוו להו ומתו והא א\"ר יוחנן דין גרמא דעשיראה ביר אלא הא דלא הוו ליה כלל והא דהוו ליה ומתו.",
+      "raw_segment_sha256": "bfe270a907a98160cd11ba1775ba285d3657557b0c6a2cb991919fb5c7dea97e"
+    }
+  ],
+  "recommendation": "Apply separately versioned overlay with source-backed changes; never overwrite initial_primary or independent_initial; keep all ml_eligible=false and omission queues. No scholar model, confirmation scoring or human signoff."
+}
