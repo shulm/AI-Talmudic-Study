@@ -67,8 +67,15 @@ def validate_records(path,expected):
     if starts!=set(expected) or ends!=set(expected): raise ValueError('Missing/unexpected/interrupted records')
     records=[read(path/(key+'.complete.json')) for key in expected]
     for key,r in zip(expected,records):
+        start=read(path/(key+'.start.json'))
+        if start['id']!=key or start['meta']!=expected[key]: raise ValueError('Start configuration mismatch')
         if r['id']!=key or r['meta']!=expected[key]: raise ValueError('Configuration identity mismatch')
         if not r['success'] or not r['finite']: raise ValueError('Unsuccessful/nonfinite optimization')
+        required=['message','iterations','objective','gradient_max','person_scaled_gradient_max','parameter_count','parameter_norm','feature_shape','feature_norm','cpu_seconds','wall_seconds']
+        if any(k not in r for k in required): raise ValueError('Incomplete optimizer evidence')
+        numeric=[r[k] for k in required if k not in ['message','feature_shape']]
+        if not np.isfinite(numeric).all(): raise ValueError('Nonfinite optimizer evidence')
+        if r['parameter_count']<=0 or r['iterations']<0 or not r['feature_shape']: raise ValueError('Invalid optimizer dimensions')
     return dict(audit='VERIFIED_OPTIMIZATION',records=len(records),person_solves=sum(m['person_solves'] for m in expected.values()),stationarity_separate=True)
 
 def meta(kind,lam,seed=None,people=0):

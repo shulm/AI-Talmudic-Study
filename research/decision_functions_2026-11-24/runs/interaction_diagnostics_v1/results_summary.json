@@ -1,0 +1,90 @@
+{
+  "assignment": "D0-D4 complete; stop at proposal",
+  "synthetic_protocol_commit": "5fc8cf48394b4e620a75be8e8f92054a6c02a451",
+  "cache": "AVAILABLE",
+  "replay": "REPLAYED_FROM_SAVED_ARRAYS",
+  "max_replay_error": 0.0,
+  "audit": {
+    "synthetic": {
+      "audit": "VERIFIED_OPTIMIZATION",
+      "records": 104,
+      "person_solves": 1952,
+      "stationarity_separate": true
+    },
+    "human_certificate": {
+      "audit": "VERIFIED_OPTIMIZATION",
+      "records": 3,
+      "person_solves": 186,
+      "stationarity_separate": true
+    }
+  },
+  "engineering": "PASS",
+  "positive_recovery": {
+    "expected_gain": 0.6402261407489642,
+    "oracle_gap_recovery": 0.9602802627793705,
+    "contrast_normalized_rmse": 0.2039641776523686
+  },
+  "synthetic_status": "BOUNDED_DIAGNOSTIC_FAILURE",
+  "synthetic_gates": {
+    "positive_NLL": true,
+    "oracle_gap_recovery": true,
+    "contrast_recovery": true,
+    "null_behavior": false,
+    "batch_invariance": true
+  },
+  "null_degradation": 0.011949302494470126,
+  "batch_max_probability_difference": 1.6718637163570804e-07,
+  "human_certificates": [
+    {
+      "status": "ZERO_INTERACTION_OPTIMAL",
+      "S": 62,
+      "N": 207,
+      "d": 384,
+      "spectral_norm": 0.002618463452425281,
+      "threshold": 0.01270001270001905,
+      "signed_margin": 0.010081549247593769,
+      "error_bound": 1.0786011186265947e-07,
+      "intercept_residual_max": 1.9363173410502643e-06,
+      "intercept_residual_frobenius": 6.457966586793981e-06,
+      "svd_roundoff_allowance": 2.220446049250313e-14,
+      "feature_norm": 12.483383435896348,
+      "feature_spectral_norm": 2.979695198842099,
+      "lambda": 0.1
+    },
+    {
+      "status": "ZERO_INTERACTION_OPTIMAL",
+      "S": 62,
+      "N": 207,
+      "d": 384,
+      "spectral_norm": 0.0025452953395271203,
+      "threshold": 0.1270001270001905,
+      "signed_margin": 0.12445483166066339,
+      "error_bound": 1.780129575177759e-09,
+      "intercept_residual_max": 2.822643653255241e-07,
+      "intercept_residual_frobenius": 1.0658134957450347e-06,
+      "svd_roundoff_allowance": 2.220446049250313e-14,
+      "feature_norm": 12.483383435896348,
+      "feature_spectral_norm": 2.979695198842099,
+      "lambda": 1.0
+    },
+    {
+      "status": "ZERO_INTERACTION_OPTIMAL",
+      "S": 62,
+      "N": 207,
+      "d": 384,
+      "spectral_norm": 0.002531989071059845,
+      "threshold": 1.270001270001905,
+      "signed_margin": 1.2674692809308452,
+      "error_bound": 7.220316203715816e-11,
+      "intercept_residual_max": 1.4195332548316841e-07,
+      "intercept_residual_frobenius": 4.3217302499012603e-07,
+      "svd_roundoff_allowance": 2.220446049250313e-14,
+      "feature_norm": 12.483383435896348,
+      "feature_spectral_norm": 2.979695198842099,
+      "lambda": 10.0
+    }
+  ],
+  "diagnostic_arithmetic": "PASS",
+  "human_confirmation": "BLOCKED_BY_NULL_GATE_AND_DATA_ADMISSION",
+  "next_step": "One separately frozen synthetic penalty-separation study; no human experiment launched"
+}
