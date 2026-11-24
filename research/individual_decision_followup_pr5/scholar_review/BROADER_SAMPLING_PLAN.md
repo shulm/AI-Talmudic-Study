@@ -1,0 +1,20 @@
+# Broader comparable-source sampling — proposal only
+
+The existing inventories intentionally locate disagreements. They cannot estimate agreement prevalence, universal strictness, individual decision propensities, or a common scale among eight scholars. This follow-up does not sample new cases or infer answers from absent statements.
+
+After human adjudication of the present packet, prepare an additional small source inventory whose selection rule does not depend on observing disagreement. Freeze tractate/subject coverage, source edition, canonical ordering, a deterministic seed, attempted-window budget and replacement rules before examining the selected windows. A practical next preparation target is 30 attempted source windows distributed across the same three tractate strata, explicitly allowing outcome and interpretive material to be separated after reading. This is a proposed target, not an executed or certified sample.
+
+Use two separately reported frames:
+
+- **Pair-observation frame:** identify windows mentioning the intended pair through direct statements or explicit transmission, without requiring opposed predicates. Have readers classify explicit agreement, genuine disagreement, compatible answers to different questions, transmission only, or unresolved. A pair proximity hit is a lead, not proof of common question. Record all failures and do not replace them just because they are agreements.
+- **Single-scholar frame:** select direct or explicit transmitted positions of a canonical scholar without requiring a second named scholar nearby. Record only the attested position. Missing positions for other scholars remain null with status `not_attested_in_reviewed_context`; they must not be encoded as disagreement, abstention, indifference, or a negative label.
+
+Sampling frames have different inclusion probabilities and must not be naively pooled to estimate corpus frequencies. A future prevalence study needs a declared representative frame and weighting. The existing dispute bank can remain a discovery inventory alongside these new frames, not an unbiased population sample.
+
+For every proposed comparable case, record the precise question, scope and premises; stable alternatives in a shared semantic vocabulary; attested scholar responses with exact spans; explicit agreement evidence where present; transmission and version uncertainty; and the distinction between an initial view and final practical ruling. Retain alternatives that are genuinely different answers; do not manufacture a complete binary pair from a lone statement or treat alternative proofs of the same outcome as opposed actions.
+
+Build a scholar–case bipartite graph using **verified same-question observations**, not nearby names. Add a bridge only when two records concern the same sufficiently specified case and corresponding alternatives. Record weaker thematic analogies separately. Preserve occurrences and parallel/version links; one source-rich family must not supply several independent test observations. Connectedness alone does not prove a shared psychological scale or identifiable latent traits; eight principal scholar identities remain eight historical identities.
+
+Before any future split, merge answer-bearing duplicates, semantic restatements, continuations, and alternative versions that would disclose the withheld answer. Have two knowledgeable readers independently judge difficult boundaries and retain initial disagreements. If grouping remains uncertain, keep the connected candidate family in development or unscored review. Existing confirmation material stays untouched.
+
+The next deliverable would be a **source-feasibility inventory**, with attempted and usable counts by frame, type and stratum, actual review qualifications, and a candidate overlap graph. No scholar simulator, performance estimate, or new confirmation claim follows merely from this preparation. Any later modeling requires a separate authorized protocol and evidence that the resulting observations support its estimand.
