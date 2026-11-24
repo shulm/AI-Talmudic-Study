@@ -1,0 +1,46 @@
+{
+  "approved": true,
+  "reviewer_role": "independent_AI",
+  "reviewer": "methods_review agent",
+  "review_date": "2026-11-24",
+  "scope": "Declared one-time test prediction/scoring after freeze and commit; no scholarly model or new-family/adaptive extension",
+  "reviewed_files": {
+    "PROTOCOL.md": "bee0f6e16d5bde5ecd124a7a941d086a49d9a7aef67a0e6832fcf0ac965a4550",
+    "DATA_ADMISSION.md": "766be45968deafaa71d0b42a4fd031ffb344ca22b7feac890cace6425b3c073c",
+    "DATA_CONTRACT.json": "1ad3fc0a2d2ec696f713fd8881c7681a8a527a2d49affca558ebc9b36a1b71bb",
+    "data_pipeline.py": "f7783f6d22025ffa7bedd3f995acf349ee2a08afa35e7a75036f6ef5b14acbbe",
+    "run_lab.py": "8d9f6fc8fad176c7c0cfee9c3f8afdd6e4f5a5c37ef3ee094a7eab548edc01eb",
+    "models.py": "28c9b2694cc76774a1000a977071bfc4a554daa1ec6237134bfbbfbaf4b43212",
+    "test_models.py": "edf2356334569f4571fb34d3f8b5523b9e9bc0913b599d01edc317aa2a9e810a",
+    "model_config.json": "29a371289a869a5b9bd5de509e6241bc1653e752e8941ea6f54f857915c901b4",
+    "selected_config.json": "9cec78c1b1a0189e253566cdce3bd615fc1e3efcc9ec81889233f006d8b3e457",
+    "split_manifest.json": "83d948c71264c0aee82dc1141aade3f11205bf731899e41a85a4ab23eb149a14",
+    "source_manifest.json": "4faec4ef04a162fd229b7b1bb184b0620203717b60451327045c6014a9e3b6d5",
+    "data_validation.json": "261d7f712f68fbfcb26bea86255319ea1056370e83c2441d3c78167c3df34d13",
+    "synthetic_controls.json": "becbd6bd875f0f56e8da042295aed7cd8f0b3aabcaa4c83e2315fd7fe602929f",
+    "resource_prefit.json": "26ba90cc4464fd21d812e1f2184822937d151410ec2695dfd531d24f3a02f3be",
+    "resource_smoke_refined.json": "90b6453493555721af3c449532d2771697565efb996c902ec5a8f0515453c083",
+    "smoke.json": "9264716f9972e94240be98774e13a0e594fa81b75a61a8fca1509649ce56c97e",
+    "development_results.json": "bce46de3b6a062e9d116a86e1533e882adf34e8ad0cf5bb042a3b9c89174248c",
+    "development_fit_ledger.json": "73a1d9c7ef7c6f87097bdc2a1ef68d2cf455ec9cf38901262514ccdef23a55b7",
+    "environment.json": "df2714627c871c30806dd4c1ac049f1af4cfb1cbd5c08c4eebb981104495750c",
+    "REVIEW_PROTOCOL.md": "0ae01b403a0806e1ae0ee58d68a051c89d733071d62909da8f9e8aff0336074b",
+    "local_data/fitted_models.pkl": "5bd42d73dbb6d03b9b3923d8ca623c622e8b3b489903e20faca782aa0adb04db"
+  },
+  "test_targets_inspected": false,
+  "final_predictions_absent_at_signoff": true,
+  "findings_history": "REVIEW_PROTOCOL.md",
+  "remaining_qualifications": [
+    "fixed alternative position confounds monetary preference with response style",
+    "retrospective static task pair, not new-family or future-behavior forecasting",
+    "task definition revisions postdate collection",
+    "uncertainty conditional on fitted models, validation donor pool and one target schedule family"
+  ],
+  "independent_checks": [
+    "guarded development/test loader boundaries",
+    "selected configuration recomputation",
+    "code review of source-only inference, donor intervention and scoring",
+    "synthetic and data-validation results inspected"
+  ],
+  "boundary_refresh": "Learner source file physically limited to eight fixed probes per person; verified support membership before prediction."
+}

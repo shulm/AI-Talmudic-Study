@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observed canonical decision v1",
+  "type": "object",
+  "required": [
+    "dataset_revision",
+    "person_id",
+    "task_id",
+    "family_id",
+    "session_id",
+    "trial_id",
+    "decision_id",
+    "stable_original_decision_id",
+    "stimulus",
+    "instructions",
+    "alternatives",
+    "chosen_alternative",
+    "missing_status",
+    "original_order",
+    "order_kind",
+    "predecessor_dependencies",
+    "pre_choice_feedback",
+    "source_file",
+    "source_span",
+    "source_sha256",
+    "extraction_version",
+    "observed",
+    "synthetic",
+    "partition",
+    "prediction_time_visibility",
+    "feature_difference"
+  ],
+  "properties": {
+    "dataset_revision": {
+      "type": "string"
+    },
+    "person_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "family_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "trial_id": {
+      "type": "string"
+    },
+    "decision_id": {
+      "type": "string"
+    },
+    "stable_original_decision_id": {
+      "type": "string"
+    },
+    "stimulus": {
+      "type": "string"
+    },
+    "instructions": {
+      "type": "string"
+    },
+    "alternatives": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "chosen_alternative": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "missing_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "original_order": {
+      "type": "integer"
+    },
+    "order_kind": {
+      "type": "string"
+    },
+    "predecessor_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pre_choice_feedback": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "source_span": {
+      "type": "object",
+      "required": [
+        "row_id"
+      ]
+    },
+    "source_sha256": {
+      "type": "string"
+    },
+    "extraction_version": {
+      "type": "string"
+    },
+    "observed": {
+      "const": true
+    },
+    "synthetic": {
+      "const": false
+    },
+    "partition": {
+      "type": "string"
+    },
+    "prediction_time_visibility": {
+      "type": "object"
+    },
+    "feature_difference": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Cross-field invariants validated by run_lab.py validate; missing labels never imputed. Synthetic checks have separate fixtures and are never written as these observed records."
+}
