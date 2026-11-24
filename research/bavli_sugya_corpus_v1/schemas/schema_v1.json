@@ -1,0 +1,896 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/shulm/AI-Talmudic-Study/research/bavli_sugya_corpus_v1/schemas/schema_v1.json",
+  "title": "Babylonian Talmud Sugya Corpus Schema v1",
+  "description": "Versioned JSON Schema v1.0.0 for source-grounded Babylonian Talmud sugya segmentation, speech-act attribution, questions, positions, argument relations, scholar registry, parallel family links, and append-only review queues.",
+  "oneOf": [
+    { "$ref": "#/$defs/segment" },
+    { "$ref": "#/$defs/sugya" },
+    { "$ref": "#/$defs/scholar" },
+    { "$ref": "#/$defs/statement" },
+    { "$ref": "#/$defs/question" },
+    { "$ref": "#/$defs/position" },
+    { "$ref": "#/$defs/relation" },
+    { "$ref": "#/$defs/review" },
+    { "$ref": "#/$defs/parallel_link" }
+  ],
+  "$defs": {
+    "anchor": {
+      "type": "object",
+      "required": [
+        "segment_id",
+        "start_char",
+        "end_char"
+      ],
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "pattern": "^seg:bavli:[a-z0-9_]+:[0-9]+[ab]:[0-9]+$"
+        },
+        "start_char": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "end_char": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "quote": {
+          "type": "string"
+        },
+        "quote_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "alignment_status": {
+          "type": "string",
+          "enum": ["exact", "unaligned_needs_review"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "boundary_cue": {
+      "type": "object",
+      "required": ["cue_type", "description"],
+      "properties": {
+        "cue_type": {
+          "type": "string",
+          "enum": [
+            "mishnah_opening",
+            "gemara_opening",
+            "mishnah_lemma_quote",
+            "tannaitic_baraita_formula",
+            "amoraic_itmar_opening",
+            "new_question_formula",
+            "aggadic_transition",
+            "narrative_episode_shift",
+            "sugya_conclusion",
+            "perek_boundary",
+            "tractate_boundary",
+            "continuation_across_daf",
+            "ambiguous_transition"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "anchor": {
+          "$ref": "#/$defs/anchor"
+        }
+      },
+      "additionalProperties": false
+    },
+    "segment": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "source_version_id",
+        "segment_id",
+        "tractate",
+        "tractate_he",
+        "seder",
+        "chapter_num",
+        "daf",
+        "folio_num",
+        "amud",
+        "segment_num",
+        "ref",
+        "he_ref",
+        "raw_array_index",
+        "source_file_rel",
+        "source_file_sha256",
+        "license",
+        "redistribution_status",
+        "raw_sha256",
+        "canonical_sha256",
+        "raw_char_len",
+        "canonical_char_len",
+        "normalization_spec_id",
+        "offset_map"
+      ],
+      "properties": {
+        "record_type": { "const": "segment" },
+        "schema_version": { "type": "string" },
+        "source_version_id": { "type": "string" },
+        "segment_id": {
+          "type": "string",
+          "pattern": "^seg:bavli:[a-z0-9_]+:[0-9]+[ab]:[0-9]+$"
+        },
+        "tractate": { "type": "string", "minLength": 1 },
+        "tractate_he": { "type": "string", "minLength": 1 },
+        "seder": { "type": "string", "minLength": 1 },
+        "chapter_num": { "type": "integer", "minimum": 1 },
+        "chapter_title_en": { "type": ["string", "null"] },
+        "chapter_title_he": { "type": ["string", "null"] },
+        "daf": {
+          "type": "string",
+          "pattern": "^[0-9]+[ab]$"
+        },
+        "folio_num": { "type": "integer", "minimum": 2 },
+        "amud": { "type": "string", "enum": ["a", "b"] },
+        "segment_num": { "type": "integer", "minimum": 1 },
+        "ordinal_in_tractate": { "type": "integer", "minimum": 0 },
+        "ref": { "type": "string", "minLength": 3 },
+        "he_ref": { "type": "string", "minLength": 2 },
+        "raw_array_index": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "source_file_rel": { "type": "string" },
+        "source_file_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "license": { "type": "string" },
+        "redistribution_status": {
+          "type": "string",
+          "enum": ["local_only_cc_by_nc", "public_permitted"]
+        },
+        "raw_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "canonical_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "raw_char_len": { "type": "integer", "minimum": 1 },
+        "canonical_char_len": { "type": "integer", "minimum": 1 },
+        "normalization_spec_id": { "type": "string" },
+        "offset_map": {
+          "type": "array",
+          "description": "Ordered [canon_start, canon_end, raw_start, raw_end] runs mapping canonical_text back to raw_text.",
+          "items": {
+            "type": "array",
+            "items": { "type": "integer", "minimum": 0 },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "raw_text": { "type": ["string", "null"] },
+        "canonical_text": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "sugya": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "source_version_id",
+        "sugya_id",
+        "lineage_id",
+        "tractate",
+        "level",
+        "parent_sugya_id",
+        "ordered_segment_ids",
+        "start_ref",
+        "end_ref",
+        "chapter_nums",
+        "daf_span",
+        "crosses_amud",
+        "crosses_daf",
+        "sugya_type",
+        "mishna_gemara_relation",
+        "topic_tags",
+        "boundary_start_cue",
+        "boundary_end_cue",
+        "boundary_status",
+        "review_status"
+      ],
+      "properties": {
+        "record_type": { "const": "sugya" },
+        "schema_version": { "type": "string" },
+        "source_version_id": { "type": "string" },
+        "sugya_id": {
+          "type": "string",
+          "pattern": "^(sugya|subsugya):bavli:[a-z0-9_]+:[0-9]+[ab]:[0-9]+__[0-9]+[ab]:[0-9]+(:[a-z0-9_]+)?$"
+        },
+        "lineage_id": { "type": "string", "minLength": 6 },
+        "redirects_from": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "tractate": { "type": "string" },
+        "level": { "type": "string", "enum": ["top", "sub"] },
+        "parent_sugya_id": { "type": ["string", "null"] },
+        "ordered_segment_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "start_ref": { "type": "string" },
+        "end_ref": { "type": "string" },
+        "chapter_nums": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1 },
+          "minItems": 1
+        },
+        "daf_span": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[0-9]+[ab]$" },
+          "minItems": 1
+        },
+        "crosses_amud": { "type": "boolean" },
+        "crosses_daf": { "type": "boolean" },
+        "sugya_type": {
+          "type": "string",
+          "enum": [
+            "mishnah",
+            "halakhic_dialectic",
+            "halakhic_exegesis",
+            "aggadic_exegesis",
+            "aggadic_narrative",
+            "baraita_analysis",
+            "amoraic_dispute",
+            "mixed_halakhic_aggadic",
+            "unresolved_boundary_region"
+          ]
+        },
+        "mishna_gemara_relation": {
+          "type": "string",
+          "enum": [
+            "mishnah_text",
+            "direct_mishnah_commentary",
+            "lemma_discussion",
+            "tangential_digression",
+            "independent_baraita_sugya",
+            "aggadic_cluster",
+            "halakhic_discourse",
+            "mixed"
+          ]
+        },
+        "topic_tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "summary_paraphrase_en": { "type": "string" },
+        "is_annotator_paraphrase": { "type": "boolean" },
+        "boundary_start_cue": { "$ref": "#/$defs/boundary_cue" },
+        "boundary_end_cue": { "$ref": "#/$defs/boundary_cue" },
+        "candidate_boundary_interpretations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["candidate_range", "rationale"],
+            "properties": {
+              "candidate_range": { "type": "string" },
+              "rationale": { "type": "string" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "adjacent_prev_sugya_id": { "type": ["string", "null"] },
+        "adjacent_next_sugya_id": { "type": ["string", "null"] },
+        "parallel_family_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "boundary_status": {
+          "type": "string",
+          "enum": [
+            "clear",
+            "provisional_clear",
+            "ambiguous",
+            "unresolved_pending_adjudication",
+            "window_edge_pending"
+          ]
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "provisional_ai_single",
+            "provisional_ai_double",
+            "needs_review",
+            "human_reviewed",
+            "scholarly_confirmed"
+          ]
+        },
+        "uncertainty_notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "scholar": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "scholar_id",
+        "canonical_name_he",
+        "canonical_name_en",
+        "entity_kind",
+        "orthographic_variants",
+        "era",
+        "identity_status",
+        "disambiguation_notes"
+      ],
+      "properties": {
+        "record_type": { "const": "scholar" },
+        "schema_version": { "type": "string" },
+        "scholar_id": {
+          "type": "string",
+          "pattern": "^(scholar|entity):[a-z0-9_]+:[a-z0-9_]+$"
+        },
+        "canonical_name_he": { "type": "string", "minLength": 1 },
+        "canonical_name_en": { "type": "string", "minLength": 1 },
+        "entity_kind": {
+          "type": "string",
+          "enum": [
+            "individual_scholar",
+            "collective_school",
+            "biblical_figure",
+            "named_interlocutor",
+            "unresolved_identity"
+          ]
+        },
+        "orthographic_variants": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "era": {
+          "type": "string",
+          "enum": [
+            "biblical",
+            "zugot",
+            "tanna",
+            "transitional",
+            "amora_bavli",
+            "amora_eretz_yisrael",
+            "savora",
+            "collective",
+            "uncertain"
+          ]
+        },
+        "generation": { "type": ["string", "null"] },
+        "identity_status": {
+          "type": "string",
+          "enum": [
+            "well_attested",
+            "tentative",
+            "ambiguous_homonym",
+            "textual_variant_dependent"
+          ]
+        },
+        "distinct_from_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "disambiguation_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "statement": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "source_version_id",
+        "statement_id",
+        "sugya_id",
+        "source_spans",
+        "source_quote",
+        "alignment_status",
+        "speaker_kind",
+        "speaker_id",
+        "reported_by_id",
+        "attributed_to_ids",
+        "attribution_type",
+        "speech_act",
+        "interpretation_status"
+      ],
+      "properties": {
+        "record_type": { "const": "statement" },
+        "schema_version": { "type": "string" },
+        "source_version_id": { "type": "string" },
+        "statement_id": {
+          "type": "string",
+          "pattern": "^stmt:bavli:[a-z0-9_]+:[0-9]+[ab]:[0-9]+:s[0-9]{2,3}$"
+        },
+        "sugya_id": { "type": "string" },
+        "sub_sugya_id": { "type": ["string", "null"] },
+        "source_spans": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/anchor" },
+          "minItems": 1
+        },
+        "source_quote": { "type": "string", "minLength": 1 },
+        "alignment_status": {
+          "type": "string",
+          "enum": ["exact", "unaligned_needs_review"]
+        },
+        "speaker_kind": {
+          "type": "string",
+          "enum": [
+            "named_scholar",
+            "collective",
+            "anonymous_stam",
+            "tannaitic_anonymous",
+            "scriptural_quotation",
+            "narrator",
+            "unresolved_chad_amar",
+            "ambiguous"
+          ]
+        },
+        "speaker_id": { "type": ["string", "null"] },
+        "reported_by_id": { "type": ["string", "null"] },
+        "transmission_chain_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "quoted_source_type": {
+          "type": "string",
+          "enum": [
+            "none",
+            "bible",
+            "mishnah",
+            "baraita",
+            "memra",
+            "liturgy",
+            "folk_saying"
+          ]
+        },
+        "attributed_to_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "attribution_type": {
+          "type": "string",
+          "enum": [
+            "explicit_direct",
+            "explicit_transmitted",
+            "collective",
+            "anonymous_stam",
+            "anonymous_tannaitic",
+            "unresolved_chad_amar",
+            "disputed_inversion",
+            "textual_variant",
+            "narrative_voice"
+          ]
+        },
+        "speech_act": {
+          "type": "string",
+          "enum": [
+            "question",
+            "proposition",
+            "explanation",
+            "proof",
+            "objection",
+            "counterexample",
+            "answer",
+            "qualification",
+            "acceptance",
+            "rejection",
+            "correction",
+            "conclusion",
+            "transmission",
+            "quotation",
+            "narrative"
+          ]
+        },
+        "interpretation_status": {
+          "type": "string",
+          "enum": [
+            "asserted",
+            "challenged",
+            "refuted_tiyuvta",
+            "unresolved_kashya",
+            "retracted_hadar_beh",
+            "inverted_ipukh",
+            "reconciled_lo_peligi",
+            "qualified_conditional",
+            "halakhic_conclusion_hilkheta",
+            "aggadic_observation",
+            "quotation_premise",
+            "provisional"
+          ]
+        },
+        "annotator_paraphrase": { "type": ["string", "null"] },
+        "is_annotator_paraphrase": { "type": "boolean" },
+        "textual_variant_notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "question": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "source_version_id",
+        "question_id",
+        "sugya_id",
+        "neutral_question_he",
+        "prerequisites_conditions_he",
+        "question_scope",
+        "answer_set_type",
+        "candidate_alternatives",
+        "source_explicit_status",
+        "evidence_statement_ids",
+        "source_spans",
+        "ml_prediction_eligible",
+        "ml_eligibility_rationale",
+        "parallel_family_id"
+      ],
+      "properties": {
+        "record_type": { "const": "question" },
+        "schema_version": { "type": "string" },
+        "source_version_id": { "type": "string" },
+        "question_id": {
+          "type": "string",
+          "pattern": "^q:bavli:[a-z0-9_]+:[0-9]+[ab]:[0-9]+:q[0-9]{2}$"
+        },
+        "sugya_id": { "type": "string" },
+        "neutral_question_he": { "type": "string", "minLength": 5 },
+        "is_annotator_paraphrase": { "type": "boolean" },
+        "prerequisites_conditions_he": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "question_scope": {
+          "type": "string",
+          "enum": [
+            "halakhic_norm",
+            "halakhic_condition",
+            "textual_interpretation",
+            "scriptural_derivation",
+            "conceptual_definition",
+            "aggadic_meaning",
+            "factual_presumption"
+          ]
+        },
+        "answer_set_type": {
+          "type": "string",
+          "enum": [
+            "enumerated_alternatives",
+            "binary_ruling",
+            "time_boundary_choice",
+            "open_explanatory",
+            "single_attested_view",
+            "unresolved_inquiry"
+          ]
+        },
+        "candidate_alternatives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["alternative_id", "neutral_text_he", "content_sha256"],
+            "properties": {
+              "alternative_id": { "type": "string" },
+              "neutral_text_he": { "type": "string", "minLength": 1 },
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "source_explicit_status": {
+          "type": "string",
+          "enum": [
+            "source_explicit_question",
+            "source_explicit_dispute_frame",
+            "editor_reconstructed_from_positions"
+          ]
+        },
+        "evidence_statement_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_spans": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/anchor" },
+          "minItems": 1
+        },
+        "ml_prediction_eligible": { "type": "boolean" },
+        "ml_eligibility_rationale": { "type": "string" },
+        "parallel_family_id": { "type": "string", "minLength": 3 }
+      },
+      "additionalProperties": true
+    },
+    "position": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "source_version_id",
+        "position_id",
+        "question_id",
+        "sugya_id",
+        "statement_ids",
+        "holder_kind",
+        "holder_ids",
+        "semantic_position_he",
+        "position_status",
+        "source_spans"
+      ],
+      "properties": {
+        "record_type": { "const": "position" },
+        "schema_version": { "type": "string" },
+        "source_version_id": { "type": "string" },
+        "position_id": {
+          "type": "string",
+          "pattern": "^pos:bavli:[a-z0-9_]+:[0-9]+[ab]:[0-9]+:p[0-9]{2}$"
+        },
+        "question_id": { "type": "string" },
+        "sugya_id": { "type": "string" },
+        "statement_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "holder_kind": {
+          "type": "string",
+          "enum": [
+            "named_scholar",
+            "collective",
+            "anonymous_stam",
+            "anonymous_tanna",
+            "unresolved_chad_amar"
+          ]
+        },
+        "holder_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "transmitted_via_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "alternative_id": { "type": ["string", "null"] },
+        "semantic_position_he": { "type": "string", "minLength": 2 },
+        "is_annotator_paraphrase": { "type": "boolean" },
+        "conditions_he": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "position_status": {
+          "type": "string",
+          "enum": [
+            "asserted",
+            "conditional",
+            "rejected",
+            "retracted",
+            "inverted_candidate",
+            "reconciled_compatible",
+            "halakhic_ruling",
+            "anonymous",
+            "variant",
+            "unresolved"
+          ]
+        },
+        "reason_statement_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "source_spans": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/anchor" },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "relation": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "relation_id",
+        "from_id",
+        "to_id",
+        "relation_type",
+        "source_spans",
+        "relation_status"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "relation"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "source_version_id": {
+          "type": "string"
+        },
+        "sugya_id": {
+          "type": "string"
+        },
+        "relation_id": {
+          "type": "string"
+        },
+        "from_id": {
+          "type": "string"
+        },
+        "to_id": {
+          "type": "string"
+        },
+        "relation_type": {
+          "type": "string",
+          "enum": [
+            "supports",
+            "objects_to",
+            "answers",
+            "derives_from",
+            "qualifies",
+            "contradicts",
+            "retracts",
+            "reconciles",
+            "distinguishes",
+            "quotes",
+            "same_topic_as",
+            "alternative_version_of"
+          ]
+        },
+        "source_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/anchor"
+          },
+          "minItems": 1
+        },
+        "relation_status": {
+          "type": "string",
+          "enum": [
+            "explicit",
+            "inferred",
+            "ambiguous",
+            "needs_review"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "review_id",
+        "target_id",
+        "issue_type",
+        "status",
+        "evidence_refs",
+        "history"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "review"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "source_version_id": {
+          "type": "string"
+        },
+        "review_id": {
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "issue_type": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "open",
+            "resolved",
+            "escalated"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "history": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["timestamp", "stage", "actor", "decision"],
+            "properties": {
+              "timestamp": { "type": "string" },
+              "stage": { "type": "string" },
+              "actor": { "type": "string" },
+              "model_id": { "type": "string" },
+              "decision": { "type": "string" },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "review_level": {
+          "type": "string",
+          "enum": [
+            "ai_single",
+            "ai_independent_double",
+            "human_reviewed",
+            "human_independent_double"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "parallel_link": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "schema_version",
+        "parallel_family_id",
+        "member_ids",
+        "link_basis",
+        "status"
+      ],
+      "properties": {
+        "record_type": { "const": "parallel_link" },
+        "schema_version": { "type": "string" },
+        "parallel_family_id": { "type": "string" },
+        "member_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "link_basis": {
+          "type": "string",
+          "enum": [
+            "shared_mishnah_citation",
+            "shared_baraita",
+            "transferred_amoraic_memra",
+            "parallel_sugya_structure",
+            "cross_index_known_parallel"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["provisional", "verified", "needs_review"]
+        },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
