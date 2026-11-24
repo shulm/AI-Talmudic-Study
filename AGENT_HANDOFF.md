@@ -1,6 +1,14 @@
-# Research handoff — updated 2026-11-23
+# Research handoff — updated 2026-11-24
 
-## Current active research: Rabbah and Rav Yosef
+## Active modeling continuation: general decision functions — 2026-11-24
+
+The current modeling task is to learn `P(answer | problem, available answers, person's observed history)` on general corpora, then investigate the Talmudic application. This supersedes the scholar-position attribution objective in draft PR #1; retain that PR as historical context.
+
+Read [the continuation entry point](research/decision_functions_2026-11-24/README.md), [the research plan](research/decision_functions_2026-11-24/RESEARCH_PLAN.md), and [the executable next-agent prompt](research/decision_functions_2026-11-24/NEXT_AGENT_PROMPT.md). Communicate and return evidence through [the coordination issue](https://github.com/shulm/AI-Talmudic-Study/issues/2) and linked draft PRs.
+
+Status: **PLAN_READY / EXPERIMENTS_NOT_STARTED**. The next assignment is a bounded DICES350 audit and general personalization pilot, with a frozen protocol and one held-out evaluation if valid. A negative or inconclusive result completes the assignment. No new training, data extraction, or scientific measurements have been performed in preparing this plan. The existing source-index tracks below remain intact.
+
+## Current source-index research: Rabbah and Rav Yosef
 
 User requested all disputes of רבה and רב יוסף across Talmud, committed and pushed. Start with `rabbah_yosef_results/rabbah_yosef_index.json` and its README. Scan: 37 Bavli and 39 Yerushalmi tractates, 94,045 segments. Index: **101 source locations in 27 Bavli tractates**, grouped from 102 selected pattern candidates and 12 supplemental dialogue/continuation windows. One entry (Yevamot 45a:18) is classified as a resolved objection. No Yerushalmi entry was selected; this does not prove absence.
 
@@ -125,3 +133,4 @@ Changes made:
 `remaining.json` and `supplements.json` were not regenerated, so they do not list IDs 1383–1384; both were selected directly in the builder.
 
 Entries to read in full: Eruvin 12a:8 and Avodah Zarah 57a:5 (Shmuel's view appears only indirectly, through another amora's report).
+
