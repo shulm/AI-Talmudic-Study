@@ -1,0 +1,721 @@
+{
+  "status": "DECLARED_BEFORE_FITS",
+  "version": "interaction_diagnostics_v1",
+  "generator": {
+    "seed": 20261125,
+    "label_seed": 2718,
+    "people": 96,
+    "person_split": [
+      48,
+      24,
+      24
+    ],
+    "cases": 192,
+    "rotational_groups": 64,
+    "group_split": [
+      40,
+      12,
+      12
+    ],
+    "dimension": 2,
+    "rank": 2,
+    "shared_logit_scale": 0.25,
+    "interaction_scale": 2.5,
+    "offset_normal_sd": 0.12,
+    "matched_people": "Adjacent pairs share centered offsets, opposite phase; all person split boundaries preserve pairs",
+    "features": "unit circle, 3 rotations spaced 120 degrees per group",
+    "wording": "Two deterministic descriptions per semantic case share its group; numerical learner uses the case once, no duplicated label observations",
+    "support": "First 32 training groups = 96 cases; full isotropic Gram; identical across models",
+    "uninformative": "Same shared logits/offsets and support count, interaction features zero; independently sampled support outcomes from zero-interaction oracle; query distribution unchanged",
+    "splits": "Generator default_rng draws 64 base angles then group permutation then 48 person phases then 48x3 offsets; people indices 0:48/48:72/72:96",
+    "labels": "One categorical draw per person/case, random generator 2718; positive, positive-uninformative, null, null-uninformative in that order"
+  },
+  "penalties": [
+    0.1,
+    1.0,
+    10.0,
+    0.001
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "optimizer": {
+    "name": "L-BFGS-B",
+    "maxiter": 1000,
+    "ftol": 1e-12,
+    "gtol": 1e-08,
+    "maxls": 50,
+    "dtype": "float64"
+  },
+  "loss": "mean CE + lambda/2*(||V||F^2+(||U||F^2+||b||F^2)/S); personal support mean CE + lambda/2*(||u||^2+||b||^2); batched objective averages per-person objectives",
+  "initialization": "shared V/U normal(0,.05) seeded; offsets and adapted parameters zero",
+  "gates": {
+    "positive_expected_nll_gain": 0.05,
+    "oracle_excess_loss_recovery": 0.5,
+    "contrast_normalized_rmse_max": 0.5,
+    "null_expected_nll_degradation_max": 0.01,
+    "batch_probability_difference_max": 1e-06
+  },
+  "contrast": "Matched pairs; all query cases and three class contrasts relative to first query. Ensemble probabilities; no coordinate-alignment metric.",
+  "selection": "No tuning or best seed selection; every configuration reported. Gates apply to lambda .001 three-seed ensemble. Development partition reserved and not scored.",
+  "expected_synthetic_records": {
+    "positive_lambda0.1_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": null,
+      "person_solves": 48
+    },
+    "positive_lambda0.1_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda0.1_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda0.1_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.1,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "positive_lambda0.1_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda0.1_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda0.1_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.1,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "positive_lambda0.1_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda0.1_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda0.1_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.1,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "positive_lambda0.1_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "positive_lambda0.1_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": null,
+      "person_solves": 48
+    },
+    "positive_lambda1.0_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 1.0,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "positive_lambda1.0_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 1.0,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "positive_lambda1.0_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 1.0,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "positive_lambda1.0_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "positive_lambda1.0_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": null,
+      "person_solves": 48
+    },
+    "positive_lambda10.0_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 10.0,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "positive_lambda10.0_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 10.0,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "positive_lambda10.0_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 10.0,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "positive_lambda10.0_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "positive_lambda10.0_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 48
+    },
+    "positive_lambda0.001_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.001,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "positive_lambda0.001_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.001,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "positive_lambda0.001_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.001,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "positive_lambda0.001_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "positive_lambda0.001_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda0.1_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": null,
+      "person_solves": 48
+    },
+    "null_lambda0.1_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda0.1_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda0.1_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.1,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "null_lambda0.1_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda0.1_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda0.1_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.1,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "null_lambda0.1_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda0.1_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda0.1_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.1,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "null_lambda0.1_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda0.1_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.1,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda1.0_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": null,
+      "person_solves": 48
+    },
+    "null_lambda1.0_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda1.0_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda1.0_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 1.0,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "null_lambda1.0_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda1.0_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda1.0_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 1.0,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "null_lambda1.0_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda1.0_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda1.0_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 1.0,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "null_lambda1.0_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda1.0_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 1.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda10.0_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": null,
+      "person_solves": 48
+    },
+    "null_lambda10.0_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda10.0_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda10.0_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 10.0,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "null_lambda10.0_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda10.0_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda10.0_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 10.0,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "null_lambda10.0_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda10.0_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda10.0_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 10.0,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "null_lambda10.0_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda10.0_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 10.0,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda0.001_training_offset": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 48
+    },
+    "null_lambda0.001_informative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda0.001_uninformative_B3": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 24
+    },
+    "null_lambda0.001_seed11_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.001,
+      "seed": 11,
+      "person_solves": 0
+    },
+    "null_lambda0.001_seed11_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda0.001_seed11_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 11,
+      "person_solves": 24
+    },
+    "null_lambda0.001_seed29_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.001,
+      "seed": 29,
+      "person_solves": 0
+    },
+    "null_lambda0.001_seed29_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda0.001_seed29_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 29,
+      "person_solves": 24
+    },
+    "null_lambda0.001_seed47_shared": {
+      "kind": "synthetic_shared",
+      "lambda_": 0.001,
+      "seed": 47,
+      "person_solves": 0
+    },
+    "null_lambda0.001_seed47_informative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "null_lambda0.001_seed47_uninformative_M1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": 47,
+      "person_solves": 24
+    },
+    "batch_B3_1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 1
+    },
+    "batch_B3_7": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 7
+    },
+    "batch_M1_11_1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 1
+    },
+    "batch_M1_11_7": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 7
+    },
+    "batch_M1_29_1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 1
+    },
+    "batch_M1_29_7": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 7
+    },
+    "batch_M1_47_1": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 1
+    },
+    "batch_M1_47_7": {
+      "kind": "synthetic_adapt",
+      "lambda_": 0.001,
+      "seed": null,
+      "person_solves": 7
+    }
+  },
+  "expected_human_records": {
+    "lambda0.1": {
+      "kind": "human_training_intercept",
+      "lambda_": 0.1,
+      "seed": null,
+      "person_solves": 62
+    },
+    "lambda1.0": {
+      "kind": "human_training_intercept",
+      "lambda_": 1.0,
+      "seed": null,
+      "person_solves": 62
+    },
+    "lambda10.0": {
+      "kind": "human_training_intercept",
+      "lambda_": 10.0,
+      "seed": null,
+      "person_solves": 62
+    }
+  },
+  "budgets": {
+    "synthetic_shared_fits": 24,
+    "synthetic_person_solves": 1952,
+    "maximum_synthetic_person_solves": 4096,
+    "human_intercept_batches": 3,
+    "human_person_solves": 186,
+    "cpu_seconds": 3600,
+    "memory_bytes": 4294967296
+  },
+  "failed_fit_policy": "Retain unsuccessful records and all finite results; scientific gates and audit completeness reported separately. No retries or extra configurations beyond declared ledger.",
+  "original_private_root_readonly": "C:/Users/David/.cache/decision_functions/pilot_v1",
+  "new_private_root": "C:/Users/David/.cache/decision_functions/interaction_diagnostics_v1"
+}

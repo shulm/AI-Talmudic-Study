@@ -1,0 +1,83 @@
+{
+  "code_commit": "5fc8cf48394b4e620a75be8e8f92054a6c02a451",
+  "code_hashes": {
+    "checks.py": "6e00d5362fc3f9d959d1c139699968a7a27c1609ccdd2cda98904b14716c67b2",
+    "core.py": "44f82bbb3f76dca62f06ab288bf2efba5c64a901a959766fb4e5c8a7cd245ce2",
+    "head_v1.py": "a6100c75453788cac16c273cf0e6dc3b882c8a18ee15525d8d132d275886dc69",
+    "human_certificate.py": "2dab88261b24e262abc58b990f33288403e4adb11bfbc4c9e47f893d43cabc09",
+    "replay.py": "87e40d447b21d070f2518cb67c3219e90485babe194341f11a9d227ecf828dce",
+    "run_logged.py": "c3078b86e58b6b9df50b520469c661dafc75d874bf1252747174e69285f59bc1",
+    "synthetic.py": "2ab32a9193b0f02cc943591f0c5ba8970ca73e45a585bb93b1176ff2aaecfe24"
+  },
+  "command": [
+    "labs/decision_functions_diagnostics/checks.py"
+  ],
+  "environment": {
+    "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+    "numpy": "2.1.3",
+    "scipy": "1.15.1",
+    "psutil": "7.2.2",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "cpu": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+    "threads": 1
+  },
+  "status": "PASS",
+  "tests": [
+    "changed_bytes",
+    "missing_array",
+    "bad_normalization",
+    "wrong_loss_aggregation",
+    "empty_log",
+    "missing_configuration",
+    "interrupted_run",
+    "nonconvergence",
+    "output_collision",
+    "unexpected_configuration",
+    "objective_gradient_equivalence",
+    "finite_difference_gradients",
+    "spectral_satisfied",
+    "spectral_violated",
+    "rank_one_descent",
+    "group_bootstrap_known_constant"
+  ],
+  "equivalence_max_error": 0.0,
+  "gradient_errors": [
+    1.0131315807752922e-07,
+    5.7298549517302934e-08
+  ],
+  "spectral_examples": [
+    {
+      "status": "ZERO_INTERACTION_OPTIMAL",
+      "S": 2,
+      "N": 3,
+      "d": 1,
+      "spectral_norm": 0.3333333333333333,
+      "threshold": 7.071067811865475,
+      "signed_margin": 6.737734478532142,
+      "error_bound": 2.220631086421084e-14,
+      "intercept_residual_max": 3.700743415417188e-17,
+      "intercept_residual_frobenius": 9.064933036736789e-17,
+      "svd_roundoff_allowance": 2.220446049250313e-14,
+      "feature_norm": 1.4142135623730951,
+      "feature_spectral_norm": 1.4142135623730951
+    },
+    {
+      "status": "NONZERO_DESCENT_AVAILABLE",
+      "S": 2,
+      "N": 3,
+      "d": 1,
+      "spectral_norm": 0.3333333333333333,
+      "threshold": 0.0007071067811865475,
+      "signed_margin": -0.33262622655214674,
+      "error_bound": 4.070817756958908e-14,
+      "intercept_residual_max": 3.700743415417188e-17,
+      "intercept_residual_frobenius": 9.064933036736789e-17,
+      "svd_roundoff_allowance": 2.220446049250313e-14,
+      "feature_norm": 1.4142135623730951,
+      "feature_spectral_norm": 1.4142135623730951
+    }
+  ],
+  "rank_one_objective_decrease": 3.3262067099526504e-05,
+  "optimizer_fits": 0,
+  "person_solves": 0
+}
