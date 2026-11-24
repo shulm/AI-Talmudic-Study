@@ -1,0 +1,30 @@
+{
+  "unprofiled_commands": [
+    {
+      "command": "python labs/decision_functions/prepare.py acquire",
+      "exit_status": 0
+    },
+    {
+      "command": "python labs/decision_functions/prepare.py prepare",
+      "exit_status": 0
+    },
+    {
+      "command": "python labs/decision_functions/freeze.py (initial)",
+      "exit_status": 1,
+      "reason": "development JSON filename collision"
+    },
+    {
+      "command": "python labs/decision_functions/freeze.py (recovered and canonicalized)",
+      "exit_status": 0
+    },
+    {
+      "command": "python labs/decision_functions/report.py",
+      "exit_status": 0
+    },
+    {
+      "command": "independent saved-probability and freeze-hash verification",
+      "exit_status": 0
+    }
+  ],
+  "post_test_model_changes": 0
+}

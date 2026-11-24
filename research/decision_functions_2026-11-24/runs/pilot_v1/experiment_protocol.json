@@ -1,0 +1,526 @@
+{
+  "schema_version": "1.0",
+  "status": "PROTOCOL_FROZEN",
+  "experiment_id": "general_decision_functions_pilot_v1",
+  "plan_version": "1.0",
+  "prepared_date": "2026-11-24",
+  "primary_target": "P(a | q, C(q), H_s); new person and held-out item group",
+  "source_repository": "shulm/AI-Talmudic-Study",
+  "source_base_commit": "2c6d3466328752c220a9b1fc05c3c308553dab47",
+  "coordination_issue": "https://github.com/shulm/AI-Talmudic-Study/issues/2",
+  "dataset": {
+    "preferred": "DICES350",
+    "repository": "https://github.com/google-research-datasets/dices-dataset",
+    "upstream_revision": "b5596d9edd585361967991a591abc7b11fb1f7a3",
+    "artifact_sha256": "63cb8620eb04e64957f9e45b1f7cb3d079c4eed8e8b28909f46e0b7038ce4301",
+    "downloaded_bytes": 31156639,
+    "person_field": "rater_id",
+    "item_field": "item_id",
+    "input_fields": [
+      "context",
+      "response"
+    ],
+    "target_field": "Q_overall",
+    "outcome_type": "categorical",
+    "documented_classes": 3,
+    "actual_class_mapping": {
+      "No": 0,
+      "Unsure": 1,
+      "Yes": 2
+    },
+    "quality_policy": "Exclude exactly the 19 author-listed failed-quality raters before splitting; no outcome-based exclusions",
+    "source_terms": "Google LLC CC-BY-4.0; attribution in source_manifest.json",
+    "counts_before": {
+      "rows": 43050,
+      "people": 123,
+      "items": 350
+    },
+    "counts_after": {
+      "rows": 36400,
+      "people": 104,
+      "items": 350,
+      "groups": 271
+    },
+    "grouping_policy": "NFKC whitespace-normalized full-input duplicates OR same nonempty normalized context; connected components; no outcome access",
+    "eligible_cohort": {
+      "people": {
+        "train": 62,
+        "development": 20,
+        "test": 22
+      },
+      "groups": {
+        "train": 162,
+        "development": 54,
+        "test": 55
+      },
+      "items": {
+        "train": 207,
+        "development": 67,
+        "test": 76
+      }
+    },
+    "fallback": {
+      "name": "MultiPref",
+      "configuration": "default",
+      "scope": "Audit-only during P0-P3; no fallback training under the DICES protocol",
+      "condition": "Documented access or structural failure of DICES",
+      "requires_before_future_fit": "Separate candidate-aware equations, ordinal or A/tie/B likelihood, symmetric tie handling, support design, equivariant predictions and applicable baselines in a new frozen protocol"
+    }
+  },
+  "learner": {
+    "input_serialization": "Context:\\n{context}\\n\\nAssessed response:\\n{response}",
+    "person_ids": "Opaque join keys, not predictive features",
+    "excluded_fields": [
+      "query_target",
+      "expert_gold",
+      "expert_reason",
+      "target_other_judgments",
+      "target_explanation",
+      "target_confidence",
+      "target_timing",
+      "demographics",
+      "split_membership",
+      "row_order",
+      "source_location",
+      "synthetic_latent_rules"
+    ],
+    "raw_data_in_git": false,
+    "model_cache_in_git": false
+  },
+  "encoder": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "frozen": true,
+    "tokenizer_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_dimension": 384,
+    "max_sequence_length": 256,
+    "pooling": {
+      "word_embedding_dimension": 384,
+      "pooling_mode_cls_token": false,
+      "pooling_mode_mean_tokens": true,
+      "pooling_mode_max_tokens": false,
+      "pooling_mode_mean_sqrt_len_tokens": false
+    },
+    "long_input_policy": "Deterministic non-overlapping windows respecting special-token budget; checkpoint pooling; original-token-count-weighted mean of window vectors; final L2 normalization",
+    "input_token_coverage_required": 1,
+    "preprocessing_fit_scope": "Training questions only",
+    "libraries": {
+      "torch": "2.6.0",
+      "transformers": "5.9.0",
+      "numpy": "2.1.3",
+      "huggingface-hub": "1.17.0",
+      "safetensors": "0.7.0"
+    },
+    "artifact_manifest": "encoder_manifest.json"
+  },
+  "partitions": {
+    "seed": 20261124,
+    "ratios": {
+      "train": 0.6,
+      "development": 0.2,
+      "test": 0.2
+    },
+    "person_namespace": "people_v1",
+    "question_namespace": "question_groups_v1",
+    "ordering": "Lexicographically sort SHA-256(seed|namespace|canonical_id), with canonical_id tie-break",
+    "counts": "floor(0.6N), floor(0.2N), remaining",
+    "shared_training": "S_train x Q_train",
+    "development_support": "S_dev x Q_train",
+    "development_query": "S_dev x Q_dev",
+    "test_support": "S_test x Q_train",
+    "test_query": "S_test x Q_test",
+    "refit_on_development": false,
+    "item_grouping_rule": "NFKC whitespace-normalized full-input duplicates OR same nonempty normalized context; connected components; no outcome access",
+    "claim_scope_if_only_item_ids_verified": "New items, not verified new semantic topics",
+    "split_manifest_path": "split_manifest.json",
+    "split_manifest_sha256": "cf8e7db218ce1d48c832b6ef4d1173c796f2525bf5cec820cddef29e7f49dc96"
+  },
+  "support": {
+    "budgets": [
+      0,
+      4,
+      16,
+      64
+    ],
+    "primary_budget": 16,
+    "draw_seeds": [
+      101,
+      211,
+      307
+    ],
+    "nested": true,
+    "same_questions_across_people_when_dense": true,
+    "fixed_cohort_across_main_curve": true,
+    "choose_using_query_labels": false,
+    "infeasible_budget_policy": "Only secondary k=64 may be omitted before fitting; primary k=16 is fixed. If infeasible, deliver structural limitation and engineering outputs; a new endpoint needs an explicitly versioned pre-model protocol.",
+    "support_manifest_path": "support_manifest.json",
+    "support_manifest_sha256": "4beac28efeb6bd21757146fc2e177a4772dcbbafe97d089466db6a3620fde1d4"
+  },
+  "models": {
+    "B0": {
+      "name": "smoothed_population_frequency"
+    },
+    "B1": {
+      "name": "personal_frequency",
+      "smoothing_grid": [
+        1,
+        4,
+        16
+      ]
+    },
+    "B2": {
+      "name": "population_multinomial_logistic",
+      "mean_loss_l2_grid": [
+        0.01,
+        0.1,
+        1
+      ]
+    },
+    "B3": {
+      "name": "B2_plus_personal_class_intercept",
+      "support_mean_loss_l2_grid": [
+        0.1,
+        1,
+        10
+      ]
+    },
+    "B4": {
+      "name": "history_knn_shrunk_to_B2",
+      "neighbor_grid": [
+        1,
+        4,
+        8
+      ],
+      "shrinkage_grid": [
+        1,
+        4
+      ]
+    },
+    "M1": {
+      "name": "B2_plus_low_rank_personal_interaction",
+      "rank_grid": [
+        2,
+        4,
+        8
+      ],
+      "mean_loss_l2_grid": [
+        0.1,
+        1,
+        10
+      ],
+      "fit_seeds": [
+        11,
+        29,
+        47
+      ],
+      "shared_B2_frozen": true,
+      "new_person_fit_parameters": [
+        "personal_class_intercept",
+        "personal_latent_vector"
+      ],
+      "k_zero": "Personal intercept and latent vector fixed to zero; output equals B2",
+      "probability_ensemble_across_fit_seeds": true
+    },
+    "optimizer_and_convergence": {
+      "B2": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "B1": [
+        1,
+        4,
+        16
+      ],
+      "B3": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "B4_neighbors": [
+        1,
+        4,
+        8
+      ],
+      "B4_shrinkage": [
+        1,
+        4
+      ],
+      "M1_rank": [
+        2,
+        4,
+        8
+      ],
+      "M1_l2": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "M1_seeds": [
+        11,
+        29,
+        47
+      ],
+      "optimizer": "scipy L-BFGS-B, analytic gradients, float64; shared maxiter=300, adaptation maxiter=100, ftol=1e-10, gtol=1e-6, maxls=30",
+      "loss": "mean categorical cross entropy + lambda/2 * sum(parameter squares); M1 personal penalty averaged over training people, basis penalty summed; B2 biases unpenalized; B3 and M1 support penalties summed",
+      "B0": "add-one smoothing of training-block class counts",
+      "B4": "exp(cosine_similarity-1) weights; weighted class sum plus alpha*B2 probability divided by weight sum plus alpha",
+      "selection": "development macro-person NLL at 16, mean loss over three support draws; M1 ensemble probabilities across all three fit seeds; deterministic first grid entry tie break",
+      "initialization": "B2 zeros; M1 normal(0,0.05) V and u with numpy default_rng(seed), zero b; new-person parameters zeros",
+      "final_batch": "B0-B4 and selected M1 ensemble at 0/4/16/64, draws 101/211/307; M1 individual seeds at 16; B3/B4/M1 ten fixed history derangements at 16; full-cohort and evaluator disagreement-subset metrics; paired bootstrap primary, M1-vs-B2, M1-vs-B3",
+      "derangements": "numpy default_rng(919), rejection-sampled permutations of canonical split-person order, reject any fixed point; generate once per split",
+      "bootstrap": "2000 independent person/group multinomial resamples, seed 1701, percentile 95%, within-person group-weight normalization; reject empty intersections, max 20000 attempts"
+    },
+    "selected_baseline": "B3",
+    "selected_M1_configuration": {
+      "rank": 2,
+      "l2": 0.1
+    },
+    "selection_metric": "Macro-person development NLL at k=16, averaged over support draws",
+    "select_best_training_seed": false,
+    "selected_all": {
+      "B0": null,
+      "B2": 0.01,
+      "B1": 4,
+      "B3": 0.1,
+      "B4": [
+        8,
+        4
+      ],
+      "M1": {
+        "rank": 2,
+        "l2": 0.1
+      }
+    }
+  },
+  "evaluation": {
+    "primary_comparison": "NLL(selected B0-B4 baseline) minus NLL(M1), k=16, S_test x Q_test",
+    "primary_log_base": "e",
+    "probability_clip_epsilon": 1e-12,
+    "aggregation": "Equal person weight, then equal observed query weight within person; average repeated support-draw losses within person/query before uncertainty",
+    "secondary": [
+      "accuracy",
+      "multiclass_Brier",
+      "support_curve",
+      "M1_vs_B2",
+      "M1_vs_B3",
+      "true_vs_shuffled_history",
+      "per_person_distribution"
+    ],
+    "bootstrap": {
+      "resamples": 2000,
+      "seed": 1701,
+      "method": "Paired independent person and item-group resampling; first normalize weighted query losses within each person, then average those means with person multiplicities",
+      "level": 0.95,
+      "interval": "Percentile 2.5% to 97.5%",
+      "zero_intersection_policy": "Reject and redraw entire replicate if any sampled person has zero observed query intersections; count rejections",
+      "maximum_attempts": 20000
+    },
+    "shuffled_histories": {
+      "permutations": 10,
+      "method": "Fixed derangements of histories across held-out people; retain query owners and support question identities",
+      "seed": 919
+    },
+    "invariant_checks": [
+      "person_partition_disjoint",
+      "question_group_partition_disjoint",
+      "support_query_disjoint",
+      "all_models_same_supports",
+      "person_id_renaming",
+      "valid_probability_vectors",
+      "query_target_excluded",
+      "synthetic_variants_grouped"
+    ],
+    "final_evaluation_list": "B0-B4 and selected M1 ensemble at 0/4/16/64, draws 101/211/307; M1 individual seeds at 16; B3/B4/M1 ten fixed history derangements at 16; full-cohort and evaluator disagreement-subset metrics; paired bootstrap primary, M1-vs-B2, M1-vs-B3",
+    "freeze_commit": "External pushed SHA supplied to scorer and issue before evaluation (cannot self-embed)",
+    "final_run_id": "pilot_v1_test_once",
+    "results": "Not yet scored at freeze"
+  },
+  "resources": {
+    "scope": "One human corpus, one frozen encoder, small synthetic fixture",
+    "default_compute": "Existing local CPU",
+    "maximum_dataset_and_weight_download_bytes": 2147483648,
+    "maximum_fitting_encoding_cpu_core_hours": 6,
+    "maximum_working_memory_bytes": 8589934592,
+    "maximum_shared_model_fits": 40,
+    "count_adaptation_solves_separately": true,
+    "paid_inference_calls": false,
+    "new_paid_infrastructure": false,
+    "encoder_finetuning": false,
+    "actual_usage": {
+      "hardware": {
+        "system": "Windows-10-10.0.19045-SP0",
+        "processor": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+        "logical_cpus": 8
+      },
+      "downloaded_dataset_and_weight_payload_bytes": 122724436,
+      "download_accounting": "Unique acquired payload bytes, includes failed encoder attempt reuse; HTTP metadata/transport overhead not measured",
+      "dependency_installs": 0,
+      "dependency_install_bytes": 0,
+      "measured_commands": [
+        {
+          "command": [
+            "python",
+            "labs/decision_functions/encode.py"
+          ],
+          "exit_status": 1,
+          "wall_seconds": 84.97480487823486,
+          "cpu_seconds_sampled": 31.5625,
+          "peak_rss_bytes_sampled": 498372608
+        },
+        {
+          "command": [
+            "python",
+            "labs/decision_functions/checks.py"
+          ],
+          "exit_status": 0,
+          "wall_seconds": 1.4317185878753662,
+          "cpu_seconds_sampled": 0.8125,
+          "peak_rss_bytes_sampled": 69595136
+        },
+        {
+          "command": [
+            "python",
+            "labs/decision_functions/encode.py"
+          ],
+          "exit_status": 0,
+          "wall_seconds": 38.8330397605896,
+          "cpu_seconds_sampled": 47.546875,
+          "peak_rss_bytes_sampled": 582651904
+        },
+        {
+          "command": [
+            "python",
+            "labs/decision_functions/develop.py"
+          ],
+          "exit_status": 0,
+          "wall_seconds": 13.378835678100586,
+          "cpu_seconds_sampled": 12.140625,
+          "peak_rss_bytes_sampled": 77021184
+        },
+        {
+          "command": [
+            "python",
+            "labs/decision_functions/evaluate.py",
+            "development"
+          ],
+          "exit_status": 0,
+          "wall_seconds": 7.363263368606567,
+          "cpu_seconds_sampled": 6.109375,
+          "peak_rss_bytes_sampled": 77668352
+        },
+        {
+          "command": [
+            "python",
+            "labs/decision_functions/checks.py"
+          ],
+          "exit_status": 0,
+          "wall_seconds": 1.624513864517212,
+          "cpu_seconds_sampled": 1.1875,
+          "peak_rss_bytes_sampled": 70127616
+        }
+      ],
+      "measured_cpu_seconds": 99.359375,
+      "measured_wall_seconds": 147.6061761379242,
+      "sampled_peak_rss_bytes": 582651904,
+      "human_shared_fits": 30,
+      "synthetic_shared_fits_total": 4,
+      "adaptation_person_solves": 5100,
+      "limits": {
+        "download_bytes": 2147483648,
+        "cpu_core_hours": 6,
+        "memory_bytes": 8589934592,
+        "shared_fits": 40
+      },
+      "unmeasured": "Initial acquire/prepare and small documentation/inspection commands not process-profiled; measured child-process CPU/RSS sampled every 0.1 seconds, final fraction of second may be missed. HTTP metadata/transport overhead not captured.",
+      "failed_attempts": [
+        "Initial encoding: removed prepare_for_model API; no model fit or query scoring occurred.",
+        "Read-only diagnostic numpy.linalg.norm with 3-axis argument failed; no artifacts changed."
+      ]
+    }
+  },
+  "required_before_development": [
+    "dataset.upstream_revision",
+    "dataset.artifact_sha256",
+    "dataset.actual_class_mapping",
+    "dataset.quality_policy",
+    "dataset.source_terms",
+    "dataset.counts_after",
+    "dataset.eligible_cohort",
+    "encoder.revision",
+    "encoder.max_sequence_length",
+    "encoder.pooling",
+    "encoder.libraries",
+    "partitions.item_grouping_rule",
+    "partitions.split_manifest_path",
+    "partitions.split_manifest_sha256",
+    "support.support_manifest_path",
+    "support.support_manifest_sha256",
+    "models.optimizer_and_convergence"
+  ],
+  "required_before_final_scoring": [
+    "models.selected_baseline",
+    "models.selected_M1_configuration",
+    "evaluation.final_evaluation_list",
+    "evaluation.freeze_commit"
+  ],
+  "note": "The freeze commit SHA cannot be embedded in its own commit. Put it in the issue freeze checkpoint and a subsequent run manifest; the scorer verifies the checked-out code and protocol against that external freeze SHA. All nulls here are planned values, not executed evidence.",
+  "private_files": {
+    "splits.json": {
+      "filename": "splits.json",
+      "bytes": 16882,
+      "sha256": "7a3ce179e1de6ec0053e232ddfeb252b15ff697be6f2cda08cf8901c4fd2762f"
+    },
+    "supports.json": {
+      "filename": "supports.json",
+      "bytes": 2103,
+      "sha256": "4276d35ae2a66f80d717fba2a038f0461000d29d678bac41c9c8b8c406a4f160"
+    },
+    "learner.json": {
+      "filename": "learner.json",
+      "bytes": 157260,
+      "sha256": "a512457f75b9294fc32573e93929acb319f9c6f30d40889463e0aeb4567ace2c"
+    },
+    "embeddings.npy": {
+      "filename": "embeddings.npy",
+      "bytes": 1075328,
+      "sha256": "7502efa9edd94deaf6f2e2135999999338ae06cb44b83b57e54f3c1572f6a845"
+    },
+    "selected_models.npz": {
+      "filename": "selected_models.npz",
+      "bytes": 68840,
+      "sha256": "b72f80a71ac7ada1d509feb42ce81c966b5af8be60f1645aaebecf847d23804a"
+    },
+    "test_evaluator.npz": {
+      "filename": "test_evaluator.npz",
+      "bytes": 13632,
+      "sha256": "02c5381e7dfed6f61639dbbc38e6404ec70cc4f6be1641be2ebcdef8ab97bee5"
+    },
+    "test_support.npz": {
+      "filename": "test_support.npz",
+      "bytes": 36688,
+      "sha256": "8066820a244c3cbc81a939349c8a91283c7339e8b96a22cc3260643b27652d16"
+    }
+  },
+  "integrity_files": {
+    "labs/decision_functions/checks.py": "c6ef7dc7f9c6b19967ff1d8117fef561cba33115e79c2c81b8b10f718ee63281",
+    "labs/decision_functions/common.py": "37132704c75f04030c63c4f562fe41186ce33898f23dd63e219f0b51de8b804c",
+    "labs/decision_functions/develop.py": "1f0b1c7c402a84e198a1ed4745922d6f0eb695f1b518445b701742a3cd874792",
+    "labs/decision_functions/encode.py": "e4a799f80e2dc58c6d94cdeda19227753182d91f49228d79e6a2eef59ccd2c3f",
+    "labs/decision_functions/evaluate.py": "962dc71762f9e3c42fc464e0d042721cf0bce01a4499d47ff820b1ef06a31af4",
+    "labs/decision_functions/freeze.py": "21c38d75132d9e9257ad58fb7e2121714aef9bff7b07ebaa3aae57a513e560ae",
+    "labs/decision_functions/models.py": "64b58e7175992fd88eda34d901c984124e34c8ac360ad468d29dcb348caad634",
+    "labs/decision_functions/prepare.py": "f1e05aff9c8732a77be19892b660b634a130d8ed00a92478782ed39024e8fc59",
+    "labs/decision_functions/report.py": "90e3cbb55aa115385649e58fc1dddb017431a4258395e1c92edabad8e4ee8926",
+    "labs/decision_functions/run_logged.py": "c987eefd29d095703db5d4f1d99c782e08f1b49d99a44f8d3da1f0af9712c74f",
+    "labs/decision_functions/grid.json": "74b54de14be3c0eb3fbb6ada035ce5e4dc2d425caa221d01aac64e994b89481f",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/source_manifest.json": "3d34d9b5fb3f4173eb9460d0ccb1c5c11df065997bb1cbab0cb941b3a4a97447",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/dataset_schema.json": "ebe0dd856958c3ffec04b7fb0e912e6024288927352191c076de479b11609cbe",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/split_manifest.json": "cf8e7db218ce1d48c832b6ef4d1173c796f2525bf5cec820cddef29e7f49dc96",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/support_manifest.json": "4beac28efeb6bd21757146fc2e177a4772dcbbafe97d089466db6a3620fde1d4",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/encoder_manifest.json": "a0a9895b9ae586ea545c94f6389457b239ccdcbfacf3d563a123f118d0a0dcc4",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/model_artifact_manifest.json": "2366ed9b1684673a75c8dec6259fb33634167729b8bebc6d2dc45344cfe88647",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/validation_results.json": "6eed30e41786eccb446aa733c86739376c3ee5a463ee407bf97b1bae2eed80ba",
+    "research/decision_functions_2026-11-24/runs/pilot_v1/development_results.json": "b617f3e0b87ca2eb90e6d5bd7d01ca91c4835d16c7a73dce2b4859811126e888"
+  }
+}

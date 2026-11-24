@@ -1,0 +1,19 @@
+{
+  "B2": [0.01, 0.1, 1.0],
+  "B1": [1, 4, 16],
+  "B3": [0.1, 1.0, 10.0],
+  "B4_neighbors": [1, 4, 8],
+  "B4_shrinkage": [1, 4],
+  "M1_rank": [2, 4, 8],
+  "M1_l2": [0.1, 1.0, 10.0],
+  "M1_seeds": [11, 29, 47],
+  "optimizer": "scipy L-BFGS-B, analytic gradients, float64; shared maxiter=300, adaptation maxiter=100, ftol=1e-10, gtol=1e-6, maxls=30",
+  "loss": "mean categorical cross entropy + lambda/2 * sum(parameter squares); M1 personal penalty averaged over training people, basis penalty summed; B2 biases unpenalized; B3 and M1 support penalties summed",
+  "B0": "add-one smoothing of training-block class counts",
+  "B4": "exp(cosine_similarity-1) weights; weighted class sum plus alpha*B2 probability divided by weight sum plus alpha",
+  "selection": "development macro-person NLL at 16, mean loss over three support draws; M1 ensemble probabilities across all three fit seeds; deterministic first grid entry tie break",
+  "initialization": "B2 zeros; M1 normal(0,0.05) V and u with numpy default_rng(seed), zero b; new-person parameters zeros",
+  "final_batch": "B0-B4 and selected M1 ensemble at 0/4/16/64, draws 101/211/307; M1 individual seeds at 16; B3/B4/M1 ten fixed history derangements at 16; full-cohort and evaluator disagreement-subset metrics; paired bootstrap primary, M1-vs-B2, M1-vs-B3",
+  "derangements": "numpy default_rng(919), rejection-sampled permutations of canonical split-person order, reject any fixed point; generate once per split",
+  "bootstrap": "2000 independent person/group multinomial resamples, seed 1701, percentile 95%, within-person group-weight normalization; reject empty intersections, max 20000 attempts"
+}

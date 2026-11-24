@@ -1,0 +1,17 @@
+{
+  "artifacts": [
+    {
+      "filename": "test_predictions.npz",
+      "bytes": 3583087,
+      "sha256": "25b3f08b45c360483984c6ae61f2e067da466b45fcffcb13f9f7caaf5e536927"
+    },
+    {
+      "filename": "test_paired_losses.npz",
+      "bytes": 136988,
+      "sha256": "a4b5d74830f816ec83224ea5f77ef5f4bbd899f2c25bad58efcfe7340f06ae83"
+    }
+  ],
+  "regenerate": "python labs/decision_functions/evaluate.py test --freeze 4de12a1fb300a7c9e9d927591bc4b101f0e263a2",
+  "local_only": true,
+  "warning": "Reruns require a separate private output directory; never overwrite an exposed evaluation"
+}

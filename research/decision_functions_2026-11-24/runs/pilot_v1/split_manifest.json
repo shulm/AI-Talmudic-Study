@@ -1,0 +1,27 @@
+{
+  "algorithm": "SHA256(seed|namespace|canonical_id), lexical digest then ID; floor 60/20/rest",
+  "seed": 20261124,
+  "private_manifest": {
+    "filename": "splits.json",
+    "bytes": 16882,
+    "sha256": "7a3ce179e1de6ec0053e232ddfeb252b15ff697be6f2cda08cf8901c4fd2762f"
+  },
+  "counts": {
+    "people": {
+      "train": 62,
+      "development": 20,
+      "test": 22
+    },
+    "groups": {
+      "train": 162,
+      "development": 54,
+      "test": 55
+    },
+    "items": {
+      "train": 207,
+      "development": 67,
+      "test": 76
+    }
+  },
+  "grouping": "NFKC whitespace-normalized full-input duplicates OR same nonempty normalized context; connected components; no outcome access"
+}
