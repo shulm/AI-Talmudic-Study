@@ -30,3 +30,8 @@ def partition(ids, namespace):
 def manifest(path):
     p = Path(path)
     return dict(filename=p.name, bytes=p.stat().st_size, sha256=sha(p.read_bytes()))
+
+def learner_record(record):
+    if set(record)!={'item_id','text'}: raise ValueError('Evaluator contamination or missing input')
+    if not all(isinstance(v,str) for v in record.values()): raise ValueError('Invalid learner fields')
+    return record

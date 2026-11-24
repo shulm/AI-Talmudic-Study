@@ -13,6 +13,7 @@ def main():
     revision=requests.get('https://huggingface.co/api/models/'+model_id,timeout=30).json()['sha']
     pinned=OUT/'encoder_manifest.json'
     if pinned.exists(): revision=read(pinned)['revision']
+    write(pinned,dict(model_id=model_id,revision=revision,status='ACQUISITION_STARTED'))
     path=snapshot_download(model_id,revision=revision,allow_patterns=['config.json','model.safetensors','tokenizer.json','tokenizer_config.json','special_tokens_map.json','vocab.txt','modules.json','sentence_bert_config.json','1_Pooling/config.json'],cache_dir=str(PRIVATE/'hf'))
     path=Path(path)
     tokenizer=AutoTokenizer.from_pretrained(path,local_files_only=True)
@@ -23,12 +24,14 @@ def main():
     budget=limit-tokenizer.num_special_tokens_to_add(pair=False)
     vectors=[]; counts=[]
     for row in read(PRIVATE/'learner.json'):
+        learner_record(row)
         tokens=tokenizer.encode(row['text'],add_special_tokens=False,truncation=False)
         chunks=[tokens[i:i+budget] for i in range(0,len(tokens),budget)]
         vec=[]
         for chunk in chunks:
-            batch=tokenizer.prepare_for_model(chunk,return_tensors='pt',truncation=False)
-            batch={k:v.unsqueeze(0) if v.ndim==1 else v for k,v in batch.items()}
+            assert model.config.model_type=='bert' and tokenizer.num_special_tokens_to_add(pair=False)==2
+            ids=torch.tensor([[tokenizer.cls_token_id]+chunk+[tokenizer.sep_token_id]])
+            batch=dict(input_ids=ids,attention_mask=torch.ones_like(ids),token_type_ids=torch.zeros_like(ids))
             with torch.no_grad():
                 h=model(**batch).last_hidden_state
                 mask=batch['attention_mask'].unsqueeze(-1)

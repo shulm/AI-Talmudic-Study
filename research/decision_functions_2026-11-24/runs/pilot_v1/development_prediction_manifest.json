@@ -1,0 +1,17 @@
+{
+  "artifacts": [
+    {
+      "filename": "development_predictions.npz",
+      "bytes": 3130407,
+      "sha256": "e3cad4f0db5556d9f659daf2b79dbe6f806918b60266983e7bc9bb9c3427097b"
+    },
+    {
+      "filename": "development_paired_losses.npz",
+      "bytes": 113931,
+      "sha256": "7bd72bd4aa5d24a402f9e9c2dded892e590a6bc8b7bcb1c7988472cc1847e272"
+    }
+  ],
+  "regenerate": "python labs/decision_functions/evaluate.py development",
+  "local_only": true,
+  "warning": "Reruns require a separate private output directory; never overwrite an exposed evaluation"
+}
