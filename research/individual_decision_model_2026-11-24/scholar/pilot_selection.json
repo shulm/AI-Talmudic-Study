@@ -1,0 +1,583 @@
+{
+  "seed": 20261123,
+  "strata": {
+    "civil_property": [
+      "Bava Batra",
+      "Bava Kamma",
+      "Bava Metzia"
+    ],
+    "shabbat_festival": [
+      "Shabbat",
+      "Eruvin",
+      "Pesachim",
+      "Sukkah",
+      "Beitzah",
+      "Yoma",
+      "Rosh Hashanah",
+      "Moed Katan",
+      "Chagigah"
+    ],
+    "prayer_blessing": [
+      "Berakhot"
+    ]
+  },
+  "procedure": "For each stratum in listed order, sort provisional family hashes; Python Random(seed).shuffle; first 10 unused. Focal occurrence minimum (work,json_index). Two recorded next-in-order replacements, preserving all original attempts.",
+  "eligible_family_pools": {
+    "civil_property": [
+      "fam_061af49f1c01",
+      "fam_07aca1779e4e",
+      "fam_0a38e2b84721",
+      "fam_10109d93a30c",
+      "fam_1b6e9657e50f",
+      "fam_1f348ff54ecc",
+      "fam_1f40278a77f3",
+      "fam_25a4f29333d6",
+      "fam_2df787557833",
+      "fam_30123629aa8c",
+      "fam_310c045f0dee",
+      "fam_39cb2eaf5bd1",
+      "fam_3abb6ac104bd",
+      "fam_41db0e1d4541",
+      "fam_458ac598a2e6",
+      "fam_5ad0b8e3a429",
+      "fam_6254491c25b1",
+      "fam_63f92ce4c6ab",
+      "fam_64fb84486c22",
+      "fam_66316a675fbf",
+      "fam_705766e35832",
+      "fam_784a19096145",
+      "fam_7ad2edf0af2f",
+      "fam_7bb7996ccae0",
+      "fam_8031baeca337",
+      "fam_8271bd09c0ac",
+      "fam_845faf770742",
+      "fam_85775693d692",
+      "fam_861463655709",
+      "fam_8ae9eeb5723f",
+      "fam_8c3ba0ed7243",
+      "fam_8ed68a161905",
+      "fam_8f3c322a2221",
+      "fam_980e13074ecf",
+      "fam_9918ab1c3460",
+      "fam_9f7e642379d4",
+      "fam_a65988887033",
+      "fam_af4475e496e1",
+      "fam_b77a637ea0db",
+      "fam_b8b0a5a03ef3",
+      "fam_be89556c1d0c",
+      "fam_be9ec326613b",
+      "fam_c4f1f3f62ec2",
+      "fam_c5b4997b651a",
+      "fam_c8cb40aa6e7f",
+      "fam_c93391d67747",
+      "fam_cdf40eb8e80a",
+      "fam_d50edb344c30",
+      "fam_d5f00457d4b9",
+      "fam_d6b1dced6180",
+      "fam_d923d9a152f9",
+      "fam_dbc42420c9ca",
+      "fam_dc68d09a50e3",
+      "fam_e4092edaa5f2",
+      "fam_e42aa70ed6bf",
+      "fam_e68996068299",
+      "fam_e983b07794bc",
+      "fam_f36bf5af205b",
+      "fam_f638fd0a2e42",
+      "fam_fcdf3c87f8e5",
+      "fam_ff3fb12813fd"
+    ],
+    "shabbat_festival": [
+      "fam_00eb8dbe1ac8",
+      "fam_023ea58dd174",
+      "fam_0c9a1d957265",
+      "fam_0d482b42c255",
+      "fam_1340ab512c78",
+      "fam_163ed09355b0",
+      "fam_1799a2367376",
+      "fam_18573f6359bf",
+      "fam_186fd30adc66",
+      "fam_23503aeb9283",
+      "fam_2a0f2a8c0172",
+      "fam_2c57c5ecb832",
+      "fam_3213748b4dd8",
+      "fam_321714c8e486",
+      "fam_36bece793497",
+      "fam_378a35c7aaf5",
+      "fam_37df377f5140",
+      "fam_387183bad3ed",
+      "fam_38cce9f31fbf",
+      "fam_3afd9b75ac9b",
+      "fam_4021f6cf0bf3",
+      "fam_487f09c46cc1",
+      "fam_4e935818671c",
+      "fam_4f02fcb6e6da",
+      "fam_50d900ac74cf",
+      "fam_55c2b60a4e14",
+      "fam_56f2c65d0221",
+      "fam_5a9dff241933",
+      "fam_5d23100d9718",
+      "fam_5fad710a6805",
+      "fam_60fdf5ab89dc",
+      "fam_614764173a2f",
+      "fam_66f99d5b9a49",
+      "fam_67294623eda8",
+      "fam_69c67173193e",
+      "fam_75bd01a8c3c0",
+      "fam_798e6d29f0a0",
+      "fam_7b11d855588d",
+      "fam_7e27c7a77234",
+      "fam_8033fdde8385",
+      "fam_80b84123794f",
+      "fam_83785500c9d8",
+      "fam_86abac70badd",
+      "fam_8c4cb797f939",
+      "fam_8e7b64909754",
+      "fam_8fee0f19f3ac",
+      "fam_91a12ebce887",
+      "fam_9647d0bfca8b",
+      "fam_968049854b70",
+      "fam_96bd486aa009",
+      "fam_9723f2c48ff0",
+      "fam_9acb05f1a245",
+      "fam_a0e954c589a3",
+      "fam_a361d5629d95",
+      "fam_a40c988a4ef1",
+      "fam_a456a615b38d",
+      "fam_a530579ec939",
+      "fam_a7f0aca32a54",
+      "fam_aa3692f6c8ef",
+      "fam_aac1c5ea9737",
+      "fam_ab5020597f60",
+      "fam_abe04596ced9",
+      "fam_ad3df7b3c04f",
+      "fam_b014c8a52c5d",
+      "fam_b45d979c2428",
+      "fam_b51fbef80f9d",
+      "fam_b7dc434d3db1",
+      "fam_b862af54430a",
+      "fam_bcdb32dde8b0",
+      "fam_bf9cd4486769",
+      "fam_c2204d64b0c3",
+      "fam_c4f45b232b51",
+      "fam_c6c6a1bb77a1",
+      "fam_cc046a3c1832",
+      "fam_d1d599b08831",
+      "fam_d1e1fa1b3f8c",
+      "fam_d2a6ccca7445",
+      "fam_d35b2fa34dbf",
+      "fam_d49f0750cf98",
+      "fam_d69a8ae2495e",
+      "fam_d9428658f807",
+      "fam_da59fa5ff4bd",
+      "fam_dbdef3fc25a4",
+      "fam_dc0e832b41a1",
+      "fam_dcccd413c684",
+      "fam_e2c5d5ae600c",
+      "fam_f8ec58343c4f",
+      "fam_f95070db6e05",
+      "fam_f988e2f08386",
+      "fam_fe86938cf07a"
+    ],
+    "prayer_blessing": [
+      "fam_02a1ae417465",
+      "fam_043558e4152b",
+      "fam_27000ff47c5d",
+      "fam_4e50ead9ef59",
+      "fam_514cba40ba05",
+      "fam_6d7b2600d1ed",
+      "fam_6f5d13aaa6c9",
+      "fam_c8627dd8383d",
+      "fam_eb4c2b7888cf",
+      "fam_f9f80fe1beb6",
+      "fam_fc55c6ab846f"
+    ]
+  },
+  "selected": [
+    {
+      "attempt_id": "RS01",
+      "family_id": "fam_d923d9a152f9",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:268",
+      "ref": "Bava Batra 96a:10",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        190,
+        9
+      ]
+    },
+    {
+      "attempt_id": "RS02",
+      "family_id": "fam_dbc42420c9ca",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:279",
+      "ref": "Bava Metzia 15b:6",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Metzia\\Hebrew\\merged.json",
+      "json_index": [
+        29,
+        5
+      ]
+    },
+    {
+      "attempt_id": "RS03",
+      "family_id": "fam_861463655709",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:301",
+      "ref": "Bava Metzia 111a:5",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Metzia\\Hebrew\\merged.json",
+      "json_index": [
+        220,
+        4
+      ]
+    },
+    {
+      "attempt_id": "RS04",
+      "family_id": "fam_fcdf3c87f8e5",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:260",
+      "ref": "Bava Batra 64b:11",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        127,
+        10
+      ]
+    },
+    {
+      "attempt_id": "RS05",
+      "family_id": "fam_8c3ba0ed7243",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:253",
+      "ref": "Bava Batra 24a:9",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        46,
+        8
+      ]
+    },
+    {
+      "attempt_id": "RS06",
+      "family_id": "fam_e983b07794bc",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:264",
+      "ref": "Bava Batra 91a:4",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        180,
+        3
+      ]
+    },
+    {
+      "attempt_id": "RS07",
+      "family_id": "fam_980e13074ecf",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:318",
+      "ref": "Bava Kamma 46a:11",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Kamma\\Hebrew\\merged.json",
+      "json_index": [
+        90,
+        10
+      ]
+    },
+    {
+      "attempt_id": "RS08",
+      "family_id": "fam_c5b4997b651a",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:255",
+      "ref": "Bava Batra 36b:6",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        71,
+        5
+      ]
+    },
+    {
+      "attempt_id": "RS09",
+      "family_id": "fam_2df787557833",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:274",
+      "ref": "Bava Batra 152b:4",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        303,
+        3
+      ]
+    },
+    {
+      "attempt_id": "RS10",
+      "family_id": "fam_061af49f1c01",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:273",
+      "ref": "Bava Batra 152a:1",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        302,
+        0
+      ]
+    },
+    {
+      "attempt_id": "RS11",
+      "family_id": "fam_8fee0f19f3ac",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:99",
+      "ref": "Pesachim 100b:5",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Pesachim\\Hebrew\\merged.json",
+      "json_index": [
+        199,
+        4
+      ]
+    },
+    {
+      "attempt_id": "RS12",
+      "family_id": "fam_798e6d29f0a0",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:56",
+      "ref": "Sukkah 22a:2",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Sukkah\\Hebrew\\merged.json",
+      "json_index": [
+        42,
+        1
+      ]
+    },
+    {
+      "attempt_id": "RS13",
+      "family_id": "fam_18573f6359bf",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:108",
+      "ref": "Shabbat 22a:5",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Shabbat\\Hebrew\\merged.json",
+      "json_index": [
+        42,
+        4
+      ]
+    },
+    {
+      "attempt_id": "RS14",
+      "family_id": "fam_ad3df7b3c04f",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:59",
+      "ref": "Eruvin 6b:5",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Eruvin\\Hebrew\\merged.json",
+      "json_index": [
+        11,
+        4
+      ]
+    },
+    {
+      "attempt_id": "RS15",
+      "family_id": "fam_dc0e832b41a1",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:118",
+      "ref": "Shabbat 54a:6",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Shabbat\\Hebrew\\merged.json",
+      "json_index": [
+        106,
+        5
+      ]
+    },
+    {
+      "attempt_id": "RS16",
+      "family_id": "fam_80b84123794f",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:114",
+      "ref": "Shabbat 51a:3",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Shabbat\\Hebrew\\merged.json",
+      "json_index": [
+        100,
+        2
+      ]
+    },
+    {
+      "attempt_id": "RS17",
+      "family_id": "fam_9acb05f1a245",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:66",
+      "ref": "Eruvin 49b:11",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Eruvin\\Hebrew\\merged.json",
+      "json_index": [
+        97,
+        10
+      ]
+    },
+    {
+      "attempt_id": "RS18",
+      "family_id": "fam_d69a8ae2495e",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:103",
+      "ref": "Pesachim 119b:9",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Pesachim\\Hebrew\\merged.json",
+      "json_index": [
+        237,
+        8
+      ]
+    },
+    {
+      "attempt_id": "RS19",
+      "family_id": "fam_4e935818671c",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:122",
+      "ref": "Shabbat 56a:14",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Shabbat\\Hebrew\\merged.json",
+      "json_index": [
+        110,
+        13
+      ]
+    },
+    {
+      "attempt_id": "RS20",
+      "family_id": "fam_387183bad3ed",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:140",
+      "ref": "Shabbat 145a:7",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Shabbat\\Hebrew\\merged.json",
+      "json_index": [
+        288,
+        6
+      ]
+    },
+    {
+      "attempt_id": "RS21",
+      "family_id": "fam_27000ff47c5d",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:3",
+      "ref": "Berakhot 14a:11",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        26,
+        10
+      ]
+    },
+    {
+      "attempt_id": "RS22",
+      "family_id": "fam_02a1ae417465",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:4",
+      "ref": "Berakhot 25a:17",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        48,
+        16
+      ]
+    },
+    {
+      "attempt_id": "RS23",
+      "family_id": "fam_fc55c6ab846f",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:9",
+      "ref": "Berakhot 60b:2",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        119,
+        1
+      ]
+    },
+    {
+      "attempt_id": "RS24",
+      "family_id": "fam_eb4c2b7888cf",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:10",
+      "ref": "Berakhot 61a:7",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        120,
+        6
+      ]
+    },
+    {
+      "attempt_id": "RS25",
+      "family_id": "fam_c8627dd8383d",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:11",
+      "ref": "Berakhot 61a:27",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        120,
+        26
+      ]
+    },
+    {
+      "attempt_id": "RS26",
+      "family_id": "fam_6f5d13aaa6c9",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:1",
+      "ref": "Berakhot 10b:15",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        19,
+        14
+      ]
+    },
+    {
+      "attempt_id": "RS27",
+      "family_id": "fam_514cba40ba05",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:8",
+      "ref": "Berakhot 44b:22",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        87,
+        21
+      ]
+    },
+    {
+      "attempt_id": "RS28",
+      "family_id": "fam_f9f80fe1beb6",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:7",
+      "ref": "Berakhot 38a:8",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        74,
+        7
+      ]
+    },
+    {
+      "attempt_id": "RS29",
+      "family_id": "fam_4e50ead9ef59",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:5",
+      "ref": "Berakhot 29a:13",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        56,
+        12
+      ]
+    },
+    {
+      "attempt_id": "RS30",
+      "family_id": "fam_6d7b2600d1ed",
+      "stratum": "prayer_blessing",
+      "occurrence_id": "rav_shmuel:6",
+      "ref": "Berakhot 31b:17",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\merged.json",
+      "json_index": [
+        61,
+        16
+      ]
+    },
+    {
+      "attempt_id": "RS31",
+      "family_id": "fam_7ad2edf0af2f",
+      "stratum": "civil_property",
+      "occurrence_id": "rav_shmuel:259",
+      "ref": "Bava Batra 62b:2",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Batra\\Hebrew\\merged.json",
+      "json_index": [
+        123,
+        1
+      ],
+      "replacement_reason": "Next shuffled family after manual answer-bearing linkage reduced initial 30 components to 28: RS09/RS10 and RS11/RS13."
+    },
+    {
+      "attempt_id": "RS32",
+      "family_id": "fam_56f2c65d0221",
+      "stratum": "shabbat_festival",
+      "occurrence_id": "rav_shmuel:65",
+      "ref": "Eruvin 42b:16",
+      "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Eruvin\\Hebrew\\merged.json",
+      "json_index": [
+        83,
+        15
+      ],
+      "replacement_reason": "Next shuffled family after manual answer-bearing linkage reduced initial 30 components to 28: RS09/RS10 and RS11/RS13."
+    }
+  ]
+}
