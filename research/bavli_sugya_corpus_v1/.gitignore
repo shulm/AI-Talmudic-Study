@@ -1,0 +1,11 @@
+# Never commit licensed full-text caches, raw Sefaria dumps, or credentials
+local_source_cache/
+*.local_fulltext.jsonl
+*.raw_cache.json
+.env
+.env.*
+*credentials*.json
+*api_key*
+__pycache__/
+*.pyc
+.pytest_cache/

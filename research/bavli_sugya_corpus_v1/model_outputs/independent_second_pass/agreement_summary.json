@@ -1,0 +1,63 @@
+{
+  "review_level": "ai_independent_double",
+  "human_expert_certified": false,
+  "blind_second_reading_sha256": "3bac6d28d1a0c9cc815a73d9998af177f4256c42f4dc524f521c18758bd6156d",
+  "overall": {
+    "total_pilot_segments": 215,
+    "total_inter_segment_slots": 213,
+    "total_slot_agreements": 209,
+    "slot_agreement_rate": 0.9812,
+    "primary_top_sugyot_total": 24,
+    "blind_top_sugyot_total": 28,
+    "exact_top_sugya_span_matches": 21,
+    "primary_internal_cuts_total": 22,
+    "primary_internal_cuts_matched_in_blind": 22,
+    "named_dispute_attribution_agreement": "11/11 focal questions (100% on named holders, transmission chains, unresolved חד אמר, תיקו, and תיובתא rejection)",
+    "semantic_nuance_disagreements_logged": 1,
+    "granularity_disagreements_logged": 3
+  },
+  "by_tractate": {
+    "berakhot": {
+      "target_segments": 151,
+      "inter_segment_slots": 150,
+      "slot_boundary_agreements": 147,
+      "slot_boundary_agreement_rate": 0.98,
+      "primary_top_sugyot": 19,
+      "blind_top_sugyot": 22,
+      "primary_internal_cuts": 18,
+      "blind_internal_cuts": 21,
+      "primary_cuts_matched_by_blind": 18,
+      "extra_blind_splits": [
+        "seg:bavli:berakhot:5a:1",
+        "seg:bavli:berakhot:5a:3",
+        "seg:bavli:berakhot:5a:8"
+      ],
+      "extra_primary_splits": [],
+      "exact_top_sugya_span_matches": 17,
+      "slice_edge_continuation_agreement": {
+        "starts_from_before_slice_match": true,
+        "continues_after_slice_match": true
+      }
+    },
+    "bava_metzia": {
+      "target_segments": 64,
+      "inter_segment_slots": 63,
+      "slot_boundary_agreements": 62,
+      "slot_boundary_agreement_rate": 0.9841,
+      "primary_top_sugyot": 5,
+      "blind_top_sugyot": 6,
+      "primary_internal_cuts": 4,
+      "blind_internal_cuts": 5,
+      "primary_cuts_matched_by_blind": 4,
+      "extra_blind_splits": [
+        "seg:bavli:bava_metzia:22b:7"
+      ],
+      "extra_primary_splits": [],
+      "exact_top_sugya_span_matches": 4,
+      "slice_edge_continuation_agreement": {
+        "starts_from_before_slice_match": true,
+        "continues_after_slice_match": true
+      }
+    }
+  }
+}
