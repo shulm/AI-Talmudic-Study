@@ -1,0 +1,98 @@
+{
+  "controls": [
+    {
+      "synthetic_only": true,
+      "transfer": true,
+      "train_people": 240,
+      "test_people": 200,
+      "source_budget": 8,
+      "fit_process_cpu_seconds": {
+        "population": 0.0,
+        "summary": 0.015625,
+        "profile": 6.265625,
+        "retrieval": 0.046875
+      },
+      "mean_nll": {
+        "population": 0.6969146668222221,
+        "summary": 0.3414129866042813,
+        "profile": 0.23891395432616694,
+        "retrieval": 0.21516648412332756
+      },
+      "delta_personal": {
+        "estimate": 0.45800071249605506,
+        "ci95": [
+          0.4388936236119017,
+          0.4752072810961036
+        ],
+        "participants": 200,
+        "draws": 2000
+      },
+      "delta_specific": {
+        "estimate": 0.9877272748488782,
+        "ci95": [
+          0.8673488260701554,
+          1.1102329917986886
+        ],
+        "participants": 200,
+        "draws": 2000
+      },
+      "profile_vs_summary": {
+        "estimate": 0.10249903227811444,
+        "ci95": [
+          0.09557118724595476,
+          0.10854162468466541
+        ],
+        "participants": 200,
+        "draws": 2000
+      }
+    },
+    {
+      "synthetic_only": true,
+      "transfer": false,
+      "train_people": 240,
+      "test_people": 200,
+      "source_budget": 8,
+      "fit_process_cpu_seconds": {
+        "population": 0.0,
+        "summary": 0.015625,
+        "profile": 5.234375,
+        "retrieval": 0.046875
+      },
+      "mean_nll": {
+        "population": 0.6932283250043904,
+        "summary": 0.6944861883796122,
+        "profile": 0.6972727628865145,
+        "retrieval": 0.6982506136931219
+      },
+      "delta_personal": {
+        "estimate": -0.004044437882124353,
+        "ci95": [
+          -0.018031220485039152,
+          0.010356919076875262
+        ],
+        "participants": 200,
+        "draws": 2000
+      },
+      "delta_specific": {
+        "estimate": 0.0006090634458898254,
+        "ci95": [
+          -0.02066379554986358,
+          0.02056446390111637
+        ],
+        "participants": 200,
+        "draws": 2000
+      },
+      "profile_vs_summary": {
+        "estimate": -0.002786574506902492,
+        "ci95": [
+          -0.007599267091544274,
+          0.002116991607239224
+        ],
+        "participants": 200,
+        "draws": 2000
+      }
+    }
+  ],
+  "total_process_cpu_seconds": 18.0,
+  "invariants": "finite normalized binary probabilities, option-order invariance, zero-support prior, hidden-label-free prediction API"
+}

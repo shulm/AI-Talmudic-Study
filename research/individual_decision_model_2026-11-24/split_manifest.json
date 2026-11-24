@@ -1,0 +1,62 @@
+{
+  "seed": 20261124,
+  "algorithm": "SHA256(seed|person|worker_id); sorted; floor(.6N), floor(.8N) boundaries",
+  "original_audit_person_partition": "train",
+  "audit_person_override": "s001 assigned train after its first rows were inspected; not an official benchmark split",
+  "eligible_people": 508,
+  "all_people": 522,
+  "counts": {
+    "train": 304,
+    "validation": 102,
+    "test": 102
+  },
+  "exclusions": {
+    "incomplete_target_schedule": 14
+  },
+  "source_support_order": [
+    "kirby:11:30:7",
+    "kirby:40:55:62",
+    "kirby:33:80:14",
+    "kirby:54:80:30",
+    "kirby:34:50:30",
+    "kirby:14:25:19",
+    "kirby:27:50:21",
+    "kirby:54:55:117",
+    "kirby:15:35:13",
+    "kirby:31:85:7",
+    "kirby:78:80:192",
+    "kirby:49:60:89",
+    "kirby:24:35:29",
+    "kirby:80:85:157",
+    "kirby:55:75:61",
+    "kirby:28:30:179",
+    "kirby:34:35:186",
+    "kirby:19:25:53",
+    "kirby:67:75:119",
+    "kirby:54:60:111",
+    "kirby:20:55:7",
+    "kirby:69:85:91",
+    "kirby:25:60:14",
+    "kirby:22:25:136",
+    "kirby:25:30:80",
+    "kirby:41:75:20",
+    "kirby:47:50:160"
+  ],
+  "source_decisions": 14094,
+  "target_decisions": 5206,
+  "eligible_source_decisions": 13716,
+  "eligible_target_decisions": 5080,
+  "target_families": 1,
+  "source_item_families": 27,
+  "independent_task_types": 2,
+  "artifacts": {
+    "person_partitions.json": "fa5b781a4202b93e8ea80e4facd9e7b3cc26af3ca540646958d9054974798ad9",
+    "canonical_observations.jsonl": "50a1a2351245776b55e6530b5eea506a28501e2a2c1a40a3e588f1885e94d137",
+    "episode_membership.jsonl": "14c764ba51edbe5befd01963cb388e7c29b95a65067bb2cb11350ff0357d0318",
+    "source_observations.jsonl": "b7018ce8704cb5bd287cb2fc14117ca6358f1b5dd966c393a81681710f50b023",
+    "target_scenarios.jsonl": "dbad51ba11a3eb2777beb7fba7bdb66cc1d43b6d699fd686bcc55154453ebf91",
+    "evaluator_labels_train.jsonl": "d7c0c33dd694ff0e6fbca586a8819c41673cc1e5fc431271c9d3dd5a94805893",
+    "evaluator_labels_validation.jsonl": "34f8c580e7b9686cd20b1c3d25caefdc11ab8ffc51e093cde80bf9a2db86b4e7",
+    "evaluator_labels_test.jsonl": "3a2f66a671ef48a83020cf7d2f0e510321afd50db33b89fa264bb352d8a0578d"
+  }
+}

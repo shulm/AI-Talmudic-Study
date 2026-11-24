@@ -1,0 +1,73 @@
+{
+  "checked_date": "2026-11-24",
+  "review_type": "independent AI primary-source and bounded code inspection; no replication",
+  "references": [
+    {
+      "method": "PReF",
+      "paper": "https://arxiv.org/html/2503.06358v1",
+      "version": "v1, 2025-03-08",
+      "repository": "idanshen/PReF_code",
+      "observed_head": "2a38b0737ea00a2559e272eab3cc87bbd3fe1454",
+      "inspected_code_file": "discover_user.py"
+    },
+    {
+      "method": "VPL",
+      "paper": "https://arxiv.org/html/2408.10075v1",
+      "version": "v1, 2024-08-19",
+      "repository": "WEIRDLabUW/vpl_llm",
+      "observed_head": "fdfdfa767752b5af7f89f2e6ab6989c1953062c9",
+      "inspected_code_file": "hidden_context/vae_utils.py"
+    },
+    {
+      "method": "Adaptive Querying",
+      "paper": "https://proceedings.mlr.press/v306/wang26jb.html",
+      "version": "PMLR306 (2026); full text arxiv2605.00696v2, 2026-05-30",
+      "repository": "yw3453/adaptive-query-ai-persona-priors",
+      "observed_head": "fbd8e19eed6af960b64e3afae13e3bcf4020b73f",
+      "inspected_code_file": "src/greedy.py"
+    },
+    {
+      "method": "Cross-Centaur",
+      "paper": "https://aclanthology.org/2026.emnlp-main.2235.pdf",
+      "version": "EMNLP2026 pp50868-50890",
+      "repository": null,
+      "observed_head": null,
+      "inspected_code_file": null
+    },
+    {
+      "method": "PLUS",
+      "paper": "https://arxiv.org/html/2507.13579v4",
+      "version": "v4, 2026-08-26",
+      "repository": "nam630/pluralistic_user_summary_public",
+      "observed_head": "0f99332fe66b8dea9b0b08ad20ca2562ffcf06e5",
+      "inspected_code_file": "openrlhf/datasets/personalized_dataset.py"
+    },
+    {
+      "method": "Individuality transfer",
+      "paper": "https://doi.org/10.7554/eLife.107163.3",
+      "version": "Version of Record, 2026-01-19",
+      "repository": "hgshrs/indiv_trans",
+      "observed_head": "f13b3cf1ba7e713979bc61d13edf05ccdaa902c2",
+      "inspected_code_file": "train_it_mdp.py"
+    }
+  ],
+  "additional_repository": {
+    "repository": "WEIRDLabUW/vpl",
+    "observed_head": "531bb97241dd5f5e1b350165a85beebbc9e96904",
+    "inspection": "tree and project link only; no control run"
+  },
+  "cross_psych_release": {
+    "revision": "532794c51e046a0ddaf560e7972789688d46bf63",
+    "last_modified": "2026-07-01T16:01:40Z",
+    "license": "not specified in raw README or API metadata",
+    "train_transcript_rows": 29118,
+    "test_transcript_rows": 7295,
+    "raw_task_code": "not present in release; not located through paper links"
+  },
+  "resource_accounting": {
+    "measured_http_body_bytes": 1624093,
+    "downloaded_datasets_or_weights_bytes": 0,
+    "browser_fetches_bytes": "not exposed by web tool; not included in measured HTTP-body total",
+    "training_process_cpu_seconds": 0
+  }
+}
