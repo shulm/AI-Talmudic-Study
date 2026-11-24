@@ -1,0 +1,693 @@
+{
+  "record_type": "independent_initial_source_review",
+  "reviewer": "separate Codex AI source reviewer",
+  "review_level": "AI_provisional",
+  "human_review": false,
+  "Gemini_used": false,
+  "review_date": "2026-11-24",
+  "primary_annotations_seen_before_freeze": false,
+  "primary_model_predictions_seen": false,
+  "source_file": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Metzia\\Hebrew\\Wikisource Talmud Bavli.json",
+  "source_sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
+  "source_version": "Wikisource Talmud Bavli",
+  "source_license": "CC-BY-SA",
+  "read_span": {
+    "start_ref": "Bava Metzia 20b:1",
+    "end_ref": "Bava Metzia 23a:15"
+  },
+  "read_segment_count": 105,
+  "pilot_span": {
+    "start_ref": "Bava Metzia 21a:1",
+    "end_ref": "Bava Metzia 22b:16"
+  },
+  "method": "Read original named source directly in full bounded six-amud window, before primary semantic annotations; proposals below are independent initial AI judgments, not expert-certified maximal boundaries.",
+  "proposed_units": [
+    {
+      "proposed_id": "ind_bm_receipt",
+      "range": {
+        "start_ref": "Bava Metzia 20b:18",
+        "end_ref": "Bava Metzia 21a:5"
+      },
+      "pilot_overlap": {
+        "start_ref": "Bava Metzia 21a:1",
+        "end_ref": "Bava Metzia 21a:5"
+      },
+      "topic_he": "סמפון היוצא מתחת ידי המלווה",
+      "question_he": "מתי סמפון מעיד על פירעון ומתי אין לסמוך עליו?",
+      "opening_status": "complete enough opening in context20b:18; earlier משנה base not fully read",
+      "closing_evidence": "21a:6 explicit הדרן עלך; previous chapter must not be merged with אלו מציאות",
+      "boundary_confidence": "high for separation at21a:6–7",
+      "attributions": [
+        {
+          "speaker": "Rav",
+          "transmitter": "Rav Yirmeya bar Abba",
+          "ref": "Bava Metzia 20b:18",
+          "position_he": "סמפון שמתחת יד המלווה, אפילו בכתב ידו, אינו ראיה מספקת לפירעון."
+        },
+        {
+          "speaker": "Rav Safra",
+          "refs": [
+            "Bava Metzia 20b:21",
+            "Bava Metzia 20b:23",
+            "Bava Metzia 20b:25"
+          ],
+          "role": "explanation for apparent counterexamples: among torn documents"
+        }
+      ],
+      "corrections": [
+        {
+          "refs": [
+            "Bava Metzia 20b:26",
+            "Bava Metzia 21a:1"
+          ],
+          "kind": "reading_reinterpretation",
+          "note": "יתקיים בחותמיו -> אימא יתקיים מחותמיו; ask witnesses whether paid. Do not silently normalize the baraita into a final literal quote."
+        },
+        {
+          "refs": [
+            "Bava Metzia 21a:2",
+            "Bava Metzia 21a:3"
+          ],
+          "kind": "qualification",
+          "note": "עדים interpreted as attesting validation; later21a:4–5 gives third-party custody / after signatures cases."
+        }
+      ]
+    },
+    {
+      "proposed_id": "ind_bm_mishnah",
+      "range": {
+        "start_ref": "Bava Metzia 21a:7",
+        "end_ref": "Bava Metzia 21a:10"
+      },
+      "topic_he": "משנת אלו מציאות",
+      "question_he": "אילו מציאות של המוצא ואילו טעונות הכרזה?",
+      "boundary_confidence": "high textual boundary; contextual parent for following discussions",
+      "annotation_role": "shared foundational mishnah; do not count its repeated quotation as independent dispute observations",
+      "attributions": [
+        {
+          "speaker": "Rabbi Meir",
+          "ref": "Bava Metzia 21a:8",
+          "role": "printed attribution for list of finder-owned articles"
+        },
+        {
+          "speaker": "Rabbi Yehuda",
+          "ref": "Bava Metzia 21a:9",
+          "role": "change/unusual inclusion triggers announcement"
+        },
+        {
+          "speaker": "Rabbi Shimon ben Elazar",
+          "ref": "Bava Metzia 21a:10",
+          "role": "anporya vessels need no announcement; discussion outside reviewed pilot"
+        }
+      ],
+      "warning": "The mishnah is not itself one binary Abaye/Rava question."
+    },
+    {
+      "proposed_id": "ind_bm_scattered_fruit",
+      "range": {
+        "start_ref": "Bava Metzia 21a:11",
+        "end_ref": "Bava Metzia 21a:18"
+      },
+      "topic_he": "פירות מפוזרים במכנשתא",
+      "question_he": "מה משמעות קב בארבע אמות, ומה דין צפיפות וכמות אחרות?",
+      "boundary_confidence": "high: initial lemma21a:11, final תיקו21a:18, new איתמר21a:19",
+      "attributions": [
+        {
+          "speaker": "Rabbi Yitzhak",
+          "ref": "Bava Metzia 21a:11",
+          "role": "קב בארבע אמות"
+        },
+        {
+          "speaker": "Rav Ukva bar Hama",
+          "ref": "Bava Metzia 21a:13",
+          "role": "threshing-floor gathering context, not ordinary falling/intentional deposit"
+        },
+        {
+          "speaker": "Rabbi Yirmeya",
+          "ref": "Bava Metzia 21a:14",
+          "role": "opens unresolved related questions; later questions continue his inquiry context, not separately named new speakers"
+        }
+      ],
+      "discussion_status": "unresolved multi-case questions at תיקו; not evidence of opposing named answers",
+      "dependent_cases": [
+        "half kav/two amot21a:14",
+        "two kav/eight amot21a:15",
+        "sesame21a:16",
+        "dates/pomegranates21a:17–18"
+      ],
+      "parallel_links": [
+        {
+          "target": "Bava Metzia 21b:6",
+          "kind": "explicit reused explanation",
+          "note": "yeush discussion quotes Rav Ukva interpretation. Preserve as linked answer-bearing material."
+        }
+      ]
+    },
+    {
+      "proposed_id": "ind_bm_yeush",
+      "range": {
+        "start_ref": "Bava Metzia 21a:19",
+        "end_ref": "Bava Metzia 22b:10"
+      },
+      "topic_he": "ייאוש שלא מדעת",
+      "question_he": "האם ייאוש עתידי מועיל כשבשעת המציאה הבעלים עדיין אינם יודעים שנפלה האבדה?",
+      "boundary_confidence": "high for main family; internal child boundaries interpretive",
+      "opening_note": "איתמר belongs at21a:19 even though actual named declaration begins21b:1. Do not treat isolated איתמר as standalone sugya.",
+      "premises": [
+        {
+          "refs": [
+            "Bava Metzia 21b:2"
+          ],
+          "note": "For item with identifying sign both say not yeush; subsequent heard despair does not cure original forbidden receipt."
+        },
+        {
+          "refs": [
+            "Bava Metzia 21b:3",
+            "Bava Metzia 22b:5"
+          ],
+          "note": "Loss unavailable to anyone, sea/flood category, is a distinct scriptural exception even with sign."
+        },
+        {
+          "ref": "Bava Metzia 21b:4",
+          "note": "Focal dispute concerns no identifying sign and owner not yet aware."
+        }
+      ],
+      "attributions": [
+        {
+          "speaker": "Abaye",
+          "refs": [
+            "Bava Metzia 21b:1",
+            "Bava Metzia 21b:4"
+          ],
+          "position_he": "לא הוי יאוש."
+        },
+        {
+          "speaker": "Rava",
+          "refs": [
+            "Bava Metzia 21b:1",
+            "Bava Metzia 21b:4"
+          ],
+          "position_he": "הוי יאוש."
+        }
+      ],
+      "final_status": [
+        {
+          "ref": "Bava Metzia 22b:6",
+          "text": "תיובתא דרבא תיובתא",
+          "judgment": "explicit refutation of Rava within this dispute; keep initial Rava view and final rejection separately"
+        },
+        {
+          "ref": "Bava Metzia 22b:7",
+          "text": "והלכתא כוותיה דאביי ביע\"ל קג\"ם",
+          "judgment": "explicit ruling favors Abaye; not interchangeable with an original attribution label"
+        }
+      ],
+      "closing_note": "22b:8–10 asks post-refutation windfall dates/orphan cases and answers; not a fresh unrelated family just because ruling occurs22b:7."
+    },
+    {
+      "proposed_id": "ind_bm_trampled_sign",
+      "range": {
+        "start_ref": "Bava Metzia 22b:11",
+        "end_ref": "Bava Metzia 23a:15"
+      },
+      "pilot_overlap": {
+        "start_ref": "Bava Metzia 22b:11",
+        "end_ref": "Bava Metzia 22b:16"
+      },
+      "topic_he": "סימן העשוי לידרס ומקום כסימן",
+      "question_he": "האם סימן העשוי להידרס ומקום המציאה הם סימנים, ומה דין כריכות ברשות הרבים והיחיד?",
+      "boundary_confidence": "high opening at new mishnah lemma22b:11; ending at23a:15 is bounded reviewed closure, later context not audited",
+      "attributions": [
+        {
+          "speaker": "Rabbah / רבה",
+          "refs": [
+            "Bava Metzia 22b:11",
+            "Bava Metzia 22b:12"
+          ],
+          "position_he": "סימן העשוי לידרס לא הוי סימן."
+        },
+        {
+          "speaker": "Rava / רבא",
+          "refs": [
+            "Bava Metzia 22b:11",
+            "Bava Metzia 22b:12"
+          ],
+          "position_he": "סימן העשוי לידרס הוי סימן."
+        },
+        {
+          "speaker": "Rabbah / רבה",
+          "ref": "Bava Metzia 22b:14",
+          "position_he": "מקום לא הוי סימן."
+        },
+        {
+          "speaker": "Rava / רבא",
+          "ref": "Bava Metzia 22b:14",
+          "position_he": "מקום הוי סימן."
+        }
+      ],
+      "versions": [
+        {
+          "ref": "Bava Metzia 22b:12",
+          "note": "Alternate report states trampled-sign rule independently rather than through כריכות; retain both formulations, not two independent disputes."
+        },
+        {
+          "refs": [
+            "Bava Metzia 23a:5",
+            "Bava Metzia 23a:10"
+          ],
+          "note": "Two סברוה presentations of proposed tannaitic parallel; initial assumptions differ; both answered with accidental-sign dispute."
+        }
+      ],
+      "final_status": "Initial תיובתא challenges to each amora are answered locally; do not import the decisive22b:6 refutation of earlier Rava dispute into this family.23a:15 transmits Rava practical rules via Rav Zevid; preserve attribution without treating it as an anonymous universal final ruling."
+    }
+  ],
+  "argument_moves": [
+    {
+      "range": {
+        "start_ref": "Bava Metzia 21b:6",
+        "end_ref": "Bava Metzia 21b:6"
+      },
+      "kind": "challenge_answer",
+      "note": "Scattered fruit rebuttal uses known abandonment, not unnoticed loss."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 21b:7",
+        "end_ref": "Bava Metzia 21b:10"
+      },
+      "kind": "challenge_answers",
+      "note": "Coins habitually checked; heavy loaves noticed; valuable purple checked. Distinct empirical premises for each, not one generic answer."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 21b:11",
+        "end_ref": "Bava Metzia 21b:12"
+      },
+      "kind": "challenge_answer_with_nested_dispute",
+      "note": "Namushot: Rabbi Yohanan elderly collectors; Resh Lakish collectors after collectors. This nested interpretive pair is not Abaye versus Rava. Distant poor assumed to despair beforehand."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 21b:13",
+        "end_ref": "Bava Metzia 21b:16"
+      },
+      "kind": "challenge_answer",
+      "note": "Dried figs/fig tree: Abaye awareness answer; olives/carobs challenge to Rava answered via recognizable provenance; figs deteriorate on falling. Preserve changing target of challenge."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 21b:17",
+        "end_ref": "Bava Metzia 22a:2"
+      },
+      "kind": "cross_daf_challenge_answer",
+      "note": "Thief/robber/Jordan proof; Rav Pappa reinterprets thief as armed bandit, two robber types.22a:1 continues previous source, not new opening."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22a:3",
+        "end_ref": "Bava Metzia 22a:4"
+      },
+      "kind": "qualified_case",
+      "note": "River wood salvage possible with effort; pursuit distinguishes non-despair from despair. Do not conflate with unrecoverable sea/flood exception."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22a:5",
+        "end_ref": "Bava Metzia 22a:9"
+      },
+      "kind": "challenge_reinterpretation",
+      "note": "Terumah without knowledge: Rava explicitly answers according to Abaye, prior appointment as agent. Not Rava retracting his own yeush position or Abaye named as answering. Consent-to-agency proof strengthens reinterpretation."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22a:10",
+        "end_ref": "Bava Metzia 22a:11"
+      },
+      "kind": "nested_narrative_application",
+      "note": "Ameimar and Rav Ashi eat; Mar Zutra does not. Later בעל הבית praise does not prove original permission: Mar Zutra transmits Rava restriction of כלך אצל יפות to terumah; hospitality may reflect embarrassment. Do not label this Abaye/Rava behavioral evidence."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22a:12",
+        "end_ref": "Bava Metzia 22b:4"
+      },
+      "kind": "cross_daf_challenge_answer",
+      "note": "Dew wetness/pleasure retroactivity; answer restricts because כתיב כי יתן and קרינן כי יותן.22b:1 completes the quoted baraita; objection not final refutation."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22b:5",
+        "end_ref": "Bava Metzia 22b:7"
+      },
+      "kind": "decisive_refutation_and_ruling",
+      "note": "Rabbi Yohanan transmits Rabbi Yishmael ben Yehotzadak scripture; inference contrasts permitted irrecoverable loss and prohibited recoverable loss with/without sign; explicit תיובתא דרבא and ruling Abaye."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22b:8",
+        "end_ref": "Bava Metzia 22b:10"
+      },
+      "kind": "post_resolution_qualification",
+      "note": "Rav Aha son of Rava asks Rav Ashi about windfall dates after Rava refuted. Prior despair due to creatures; known orphan orchard / כרכתא prohibited. Neither asks as Rava himself."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22b:13",
+        "end_ref": "Bava Metzia 22b:14"
+      },
+      "kind": "apparent_refutation_answered",
+      "note": "Challenge ending תיובתא דרבא immediately answered by Rava through location announcement; do not tag unqualified final rejected."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 22b:15",
+        "end_ref": "Bava Metzia 23a:2"
+      },
+      "kind": "cross_daf_paired_explanations",
+      "note": "Rabbah interprets via intrinsic sign/trampling; Rava via place and movement.22b:16 cuts off משום, completed23a:1."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 23a:3",
+        "end_ref": "Bava Metzia 23a:4"
+      },
+      "kind": "apparent_refutation_answered",
+      "note": "Householder bread challenges Rabbah; answer no trampling of food plus no beasts/dogs context. Not final תיובתא."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 23a:5",
+        "end_ref": "Bava Metzia 23a:13"
+      },
+      "kind": "rejected_assumptions_alternate_versions",
+      "note": "Do not retain סברוה as endorsed shared premises. Rav Zevid in Rava name and Rabbah each reconstruct tannaim as disagreement on accidental signs; spellings רבה/רבא critical."
+    },
+    {
+      "range": {
+        "start_ref": "Bava Metzia 23a:14",
+        "end_ref": "Bava Metzia 23a:15"
+      },
+      "kind": "transmitted_summary",
+      "note": "Rav Zevid in Rava name: despair formulation then bundle rules; keep source transmission explicit."
+    }
+  ],
+  "exact_boundary_and_resolution_evidence": [
+    {
+      "ref": "Bava Metzia 20b:18",
+      "json_index": [
+        39,
+        17
+      ],
+      "text": "אם יש עמהן סמפונות יעשה מה שבסמפונות: אמר רב ירמיה בר אבא אמר רב סמפון היוצא מתחת ידי מלוה אע\"פ שכתוב בכתב ידו אינו אלא כמשחק ופסול",
+      "raw_segment_sha256": "01755293262efdff5f7909a268ff52d063785b954bcf8589ecec2c16095fe0bd"
+    },
+    {
+      "ref": "Bava Metzia 20b:26",
+      "json_index": [
+        39,
+        25
+      ],
+      "text": "ת\"ש סמפון שיש עליו עדים יתקיים בחותמיו אימא יתקיים מחותמיו",
+      "raw_segment_sha256": "2c6ff1c94aaccc041644ff51ef9eee2ec99b8e894ea90a1fc76485e6e4397fdd"
+    },
+    {
+      "ref": "Bava Metzia 21a:1",
+      "json_index": [
+        40,
+        0
+      ],
+      "text": "דשיילינן להו לסהדי אי פרוע אי לא פרוע",
+      "raw_segment_sha256": "65d3aecd27e63c099dbbc5c379102607d3d7ce2eb2a04774c5358c56bda23b42"
+    },
+    {
+      "ref": "Bava Metzia 21a:6",
+      "json_index": [
+        40,
+        5
+      ],
+      "text": "הדרן עלך שנים אוחזין",
+      "raw_segment_sha256": "5824099e6884ea8a3873fa7233b39bc9b0cacf342213822dfdd3b1fbb481d600"
+    },
+    {
+      "ref": "Bava Metzia 21a:7",
+      "json_index": [
+        40,
+        6
+      ],
+      "text": "מתני׳ אלו מציאות שלו ואלו חייב להכריז",
+      "raw_segment_sha256": "844324bba0f10b04e5a6b183274438c2cd3f257fd9558c4830438d9572f3f8d2"
+    },
+    {
+      "ref": "Bava Metzia 21a:11",
+      "json_index": [
+        40,
+        10
+      ],
+      "text": "גמ׳ מצא פירות מפוזרין וכמה א\"ר יצחק קב בארבע אמות",
+      "raw_segment_sha256": "f8e3a7ceabf5d6e0c4419d6efee17ee8e834151e809f60dfac647f1fba4aa35a"
+    },
+    {
+      "ref": "Bava Metzia 21a:18",
+      "json_index": [
+        40,
+        17
+      ],
+      "text": "או דלמא משום דנפישא טרחייהו וקב תמרי בארבע אמות וקב רמוני בארבע אמות כיון דלא נפיש טרחייהו לא מפקר להו מאי תיקו",
+      "raw_segment_sha256": "be7619fa0b755a14aed807685684665d687f7fcc723e60f20881e8d039e464ff"
+    },
+    {
+      "ref": "Bava Metzia 21a:19",
+      "json_index": [
+        40,
+        18
+      ],
+      "text": "איתמר",
+      "raw_segment_sha256": "b9b656dc628f2c3ce84d727ea51eb61fda4d23a70c1ec1c1c5d2d4670b802244"
+    },
+    {
+      "ref": "Bava Metzia 21b:1",
+      "json_index": [
+        41,
+        0
+      ],
+      "text": "יאוש שלא מדעת אביי אמר לא הוי יאוש ורבא אמר הוי יאוש",
+      "raw_segment_sha256": "649ab832958b9a03c0b3eb227303e8e7b17f426ea94b40e9dd8e53d2985860d5"
+    },
+    {
+      "ref": "Bava Metzia 21b:2",
+      "json_index": [
+        41,
+        1
+      ],
+      "text": "בדבר שיש בו סימן כולי עלמא לא פליגי דלא הוי יאוש ואף על גב דשמעיניה דמיאש לסוף לא הוי יאוש דכי אתא לידיה באיסורא הוא דאתא לידיה דלכי ידע דנפל מיניה לא מיאש מימר אמר סימנא אית לי בגויה יהבנא סימנא ושקילנא ליה",
+      "raw_segment_sha256": "fea8f51c6edc93980ab0f4e45e0c8dd0487fe9de26d2a9b80637b10e6326c082"
+    },
+    {
+      "ref": "Bava Metzia 21b:3",
+      "json_index": [
+        41,
+        2
+      ],
+      "text": "בזוטו של ים ובשלוליתו של נהר אע\"ג דאית ביה סימן רחמנא שרייה כדבעינן למימר לקמן",
+      "raw_segment_sha256": "f1e9efb46b8414bdccaef826028ba9b1a2bad57ac7908a940af6b82f9f5de994"
+    },
+    {
+      "ref": "Bava Metzia 21b:4",
+      "json_index": [
+        41,
+        3
+      ],
+      "text": "כי פליגי בדבר שאין בו סימן אביי אמר לא הוי יאוש דהא לא ידע דנפל מיניה רבא אמר הוי יאוש דלכי ידע דנפל מיניה מיאש מימר אמר סימנא לית לי בגויה מהשתא הוא דמיאש",
+      "raw_segment_sha256": "f08bc0ff2c4c10a6fbec0f778b78a62228ac66a844e439c8c281642345d82000"
+    },
+    {
+      "ref": "Bava Metzia 21b:11",
+      "json_index": [
+        41,
+        10
+      ],
+      "text": "ת\"ש מאימתי כל אדם מותרים בלקט משילכו בה הנמושות ואמרינן מאי נמושות וא\"ר יוחנן סבי דאזלי אתיגרא ריש לקיש אמר לקוטי בתר לקוטי",
+      "raw_segment_sha256": "c48c1bd89c8e25a7f0ef23db31fd442b7f48da1631465fb7cd91b27c56f90835"
+    },
+    {
+      "ref": "Bava Metzia 22a:7",
+      "json_index": [
+        42,
+        6
+      ],
+      "text": "וכי נמצאו יפות מהן תרומתו תרומה אמאי בעידנא דתרם הא לא הוה ידע תרגמה רבא אליבא דאביי דשויה שליח",
+      "raw_segment_sha256": "ec3374efa1f325ad86dc6b49e9f0d82d72e14210c466d7d206212f9c7481af3e"
+    },
+    {
+      "ref": "Bava Metzia 22a:11",
+      "json_index": [
+        42,
+        10
+      ],
+      "text": "אמרו ליה אמימר ורב אשי למר זוטרא השתא אמאי לא אכיל מר והתניא אם נמצאו יפות מהן תרומתו תרומה אמר להו הכי אמר רבא לא אמרו כלך אצל יפות אלא לענין תרומה בלבד משום דמצוה הוא וניחא ליה אבל הכא משום כסיפותא הוא דאמר הכי",
+      "raw_segment_sha256": "7cef7de1bcd60ca31273659af1f04688bd54aa54ef06a0b1d01f2416e7426667"
+    },
+    {
+      "ref": "Bava Metzia 22b:1",
+      "json_index": [
+        43,
+        0
+      ],
+      "text": "אינן בכי יותן",
+      "raw_segment_sha256": "c39d32ae3ef800f51179eef314aa9cd068351b5767727df9464e88562968a1bb"
+    },
+    {
+      "ref": "Bava Metzia 22b:6",
+      "json_index": [
+        43,
+        5
+      ],
+      "text": "ואיסורא דומיא דהיתירא מה היתירא בין דאית בה סימן ובין דלית בה סימן שרא אף איסורא בין דאית בה סימן ובין דלית בה סימן אסורה תיובתא דרבא תיובתא",
+      "raw_segment_sha256": "f00376b57c8bca66ae2019e82a2f25ca64a96ce8ee825c294bdc99329354150c"
+    },
+    {
+      "ref": "Bava Metzia 22b:7",
+      "json_index": [
+        43,
+        6
+      ],
+      "text": "והלכתא כוותיה דאביי ביע\"ל קג\"ם",
+      "raw_segment_sha256": "61b112847839a499f18d7c7f437a916669526776d62269f888e5dd3cac13db32"
+    },
+    {
+      "ref": "Bava Metzia 22b:8",
+      "json_index": [
+        43,
+        7
+      ],
+      "text": "א\"ל רב אחא בריה דרבא לרב אשי וכי מאחר דאיתותב רבא הני תמרי דזיקא היכי אכלינן להו אמר ליה כיון דאיכא שקצים ורמשים דקא אכלי להו מעיקרא יאושי מיאש מנייהו",
+      "raw_segment_sha256": "c60f06043331c0d3d45b7cf7562dc367b87ed69a4caa1e92804c85c0f002f2fd"
+    },
+    {
+      "ref": "Bava Metzia 22b:11",
+      "json_index": [
+        43,
+        10
+      ],
+      "text": "כריכות ברה\"ר הרי אלו שלו: אמר רבה ואפילו בדבר שיש בו סימן אלמא קסבר רבה סימן העשוי לידרס לא הוי סימן רבא אמר לא שנו אלא בדבר שאין בו סימן אבל בדבר שיש בו סימן חייב להכריז אלמא קסבר רבא סימן העשוי לידרס הוי סימן",
+      "raw_segment_sha256": "7690d7e09dde7b0e44cd5ec8168d2d81d9c8ae28d90abedfe4cb08cbc40ffb36"
+    },
+    {
+      "ref": "Bava Metzia 22b:12",
+      "json_index": [
+        43,
+        11
+      ],
+      "text": "ואיכא דמתני להא שמעתא באנפי נפשה סימן העשוי לידרס רבה אמר לא הוי סימן ורבא אמר הוי סימן",
+      "raw_segment_sha256": "563fe17640c87b2c021bd0665231bb2a5801c4c7dc070fa934c9333fae59bf69"
+    },
+    {
+      "ref": "Bava Metzia 22b:13",
+      "json_index": [
+        43,
+        12
+      ],
+      "text": "תנן כריכות ברה\"ר הרי אלו שלו ברה\"י נוטל ומכריז ה\"ד אי דלית בהו סימן ברה\"י מאי מכריז אלא לאו דאית בהו סימן וקתני ברה\"ר הרי אלו שלו אלמא סימן העשוי לידרס לא הוי סימן תיובתא דרבא",
+      "raw_segment_sha256": "b9c10e9b4127cfc817dbd02bb0ff35a8f8a31adb4fbab54bda82f381db0e8e01"
+    },
+    {
+      "ref": "Bava Metzia 22b:14",
+      "json_index": [
+        43,
+        13
+      ],
+      "text": "אמר לך רבא לעולם דלית בהו סימן ודקא אמרת ברה\"י מאי מכריז מכריז מקום ורבה אמר מקום לא הוי סימן דאיתמר מקום רבה אמר לא הוי סימן ורבא אמר הוי סימן",
+      "raw_segment_sha256": "54ee23598f0e3426171beb8545b4ed12674326d516a1c4c459f7ba63c4628d1d"
+    },
+    {
+      "ref": "Bava Metzia 22b:16",
+      "json_index": [
+        43,
+        15
+      ],
+      "text": "רבה מתרץ לטעמיה בסימן כריכות ברשות הרבים הרי אלו שלו משום",
+      "raw_segment_sha256": "e1893aae0581f16601458e00ad9b03cdd35096e281e647a77324207cd31e7919"
+    },
+    {
+      "ref": "Bava Metzia 23a:1",
+      "json_index": [
+        44,
+        0
+      ],
+      "text": "דמדרסא ברשות היחיד נוטל ומכריז דלא מדרסא והאלומות בין ברשות הרבים ובין ברה\"י נוטל ומכריז כיון דגביהן לא מדרסא",
+      "raw_segment_sha256": "74c7797b839616c5688ea11335727fe0aca72abe3996253ba35b3492ab28970e"
+    },
+    {
+      "ref": "Bava Metzia 23a:3",
+      "json_index": [
+        44,
+        2
+      ],
+      "text": "ת\"ש ככרות של נחתום הרי אלו שלו הא של בעל הבית חייב להכריז של בעל הבית מאי טעמא כיון דאית בהו סימן דמידע ידיע רפתא דאיניש איניש הוא ולא שנא רשות הרבים ולא שנא רשות היחיד נוטל ומכריז אלמא סימן העשוי לידרס הוי סימן תיובתא דרבה",
+      "raw_segment_sha256": "eb613341d930bb3329efe3e61130e35b19ec4be1366110fd58c39cbb0cc8e07c"
+    },
+    {
+      "ref": "Bava Metzia 23a:4",
+      "json_index": [
+        44,
+        3
+      ],
+      "text": "אמר לך רבה התם היינו טעמא משום דאין מעבירין על האוכלין והא איכא נכרים נכרים חיישי לכשפים והאיכא בהמה וכלבים באתרא דלא שכיחי בהמה וכלבים",
+      "raw_segment_sha256": "b8bcc25f3d317151c96696bf118e717173d24372fbc4dabb1be8cd3386f4a873"
+    },
+    {
+      "ref": "Bava Metzia 23a:8",
+      "json_index": [
+        44,
+        7
+      ],
+      "text": "אלא אמר רב זביד משמיה דרבא דכולי עלמא סברי סימן העשוי לידרס הוי סימן ומעבירין על האוכלין והכא בסימן הבא מאיליו קא מיפלגי דתנא קמא סבר סימן הבא מאיליו לא הוי סימן ור\"י סבר הוי סימן",
+      "raw_segment_sha256": "63abb7bb8c7da1a778357b789aa4a899b5ef7060813b2560ec9fc144783e7271"
+    },
+    {
+      "ref": "Bava Metzia 23a:9",
+      "json_index": [
+        44,
+        8
+      ],
+      "text": "ורבה אמר לך דכ\"ע סימן העשוי לידרס לא הוי סימן ואין מעבירין על האוכלין והכא בסימן הבא מאיליו קמיפלגי ת\"ק סבר לא הוי סימן ור\"י סבר הוי סימן",
+      "raw_segment_sha256": "959bf4d17ede63e278e3f59aa4bbcfe5675dc403115a2fb42b390120f4934a0b"
+    },
+    {
+      "ref": "Bava Metzia 23a:12",
+      "json_index": [
+        44,
+        11
+      ],
+      "text": "אלא אמר רב זביד משמיה דרבא דכולי עלמא סברי סימן העשוי לידרס הוי סימן ומעבירין על האוכלין והכא בסימן הבא מאיליו קא מיפלגי דתנא קמא סבר סימן הבא מאיליו לא הוי סימן ור\"י סבר הוי סימן",
+      "raw_segment_sha256": "63abb7bb8c7da1a778357b789aa4a899b5ef7060813b2560ec9fc144783e7271"
+    },
+    {
+      "ref": "Bava Metzia 23a:13",
+      "json_index": [
+        44,
+        12
+      ],
+      "text": "ורבה אמר לך דכולי עלמא סימן העשוי לידרס לא הוי סימן ואין מעבירין על האוכלין והכא בסימן הבא מאיליו קא מיפלגי תנא קמא סבר סימן הבא מאיליו לא הוי סימן ור\"י סבר הוי סימן",
+      "raw_segment_sha256": "9a1db3cbddbf89716cd6555ab9c2ebf7b1d4296e0313fb97b77bc3198f5660ed"
+    },
+    {
+      "ref": "Bava Metzia 23a:15",
+      "json_index": [
+        44,
+        14
+      ],
+      "text": "ואמר רב זביד משמיה דרבא הלכתא כריכות ברשות הרבים הרי אלו שלו ברשות היחיד אי דרך נפילה הרי אלו שלו אי דרך הנחה נוטל ומכריז וזה וזה בדבר שאין בו סימן אבל בדבר שיש בו סימן לא שנא ברה\"ר ולא שנא ברשות היחיד בין דרך נפילה ובין דרך הנחה חייב להכריז",
+      "raw_segment_sha256": "7f7eb1c50d45469cf26f7df4e53c7bd6b6d6f41efdf30d532f9fff2a5c072cc8"
+    }
+  ],
+  "review_limits": [
+    "No manuscripts or commentaries consulted for semantic adjudication; named local edition only.",
+    "20b:1–17 contain upstream continuation outside pilot; do not certify its full opening from missing20a.",
+    "23a:15 is the bounded reviewed endpoint; later broader signs discussion may motivate a larger parent family.",
+    "Mishnah and quoted parallels must remain linked and may be represented as context rather than standalone semantic unit.",
+    "Nested proofs and mini-disputes should be child structures, not automatically independent examples.",
+    "All proposed speaker assignments refer to the source version, not historical certainty or normative advice."
+  ],
+  "frozen_initial_decisions": "Preserve this file unchanged after comparison; later disagreements belong in a separate record."
+}

@@ -1,0 +1,258 @@
+{
+  "review_status": "PROVISIONAL_AI_REVIEW_NOT_CERTIFICATION",
+  "phase": "subsequent review of applied overlays and completion pass; not a new independent initial reading",
+  "reviewer": "separate Codex AI source reviewer",
+  "human_review": false,
+  "Gemini_used": false,
+  "initial_primary_sha256": "cb4033f66c23e24e8cd80523291a952aa5c597f8b3358555abf84887c8d7c569",
+  "independent_initial_sha256": "72219e2588b45d1183d41e525fe373287514c700c762a2041e089bba71e64044",
+  "reviewed_completion_sha256": "94fc356681e476885ebbdbad3f5c87826f46488ca13cf47d04327903b056f62e",
+  "reviewed_revisions_sha256": "80501a48aebd49f2538153f9d802e6423d056951c5c6d309eb7faeb7eb2a9512",
+  "counts": {
+    "initial_selected_statements": 128,
+    "completion_source_unit_summaries": 96,
+    "completion_extra_positions_as_statements": 7,
+    "revised_statements": 231,
+    "initial_positions": 77,
+    "revised_positions": 94,
+    "initial_relations": 37,
+    "revised_relations": 43,
+    "initial_scholars": 55,
+    "revised_scholars": 59,
+    "pilot_segments": 215,
+    "BM_pilot_segments": 64,
+    "BM_independent_initial_read_with_context": 105,
+    "completion_BM_source_units_reviewed": 24,
+    "completion_Berakhot_targeted_source_units_reviewed": 25,
+    "completion_new_Berakhot_positions_reviewed": 7
+  },
+  "review_scope": {
+    "BM": "All24 added BM unit summaries compared against the original named source, already independently read20b–23a. No new material attribution/boundary error found in these summaries; their composite status remains.",
+    "Berakhot": "25 high-risk added unit summaries and all7 added named/ambiguous start-time positions checked; not every one of72 added Berakhot source-unit summaries exhaustively reread. Named-order alternatives retained.",
+    "Berakhot_target_keys": [
+      "unit_B2b:1",
+      "unit_B2b:5",
+      "unit_B2b:6",
+      "unit_B2b:8",
+      "unit_B2b:9",
+      "unit_B2b:10",
+      "unit_B2b:11",
+      "unit_B2b:12",
+      "unit_B2b:13",
+      "unit_B2b:14",
+      "unit_B3b:24",
+      "unit_B3b:25",
+      "unit_B4a:10",
+      "unit_B4a:11",
+      "unit_B4a:12",
+      "unit_B4a:13",
+      "unit_B4a:14",
+      "unit_B4a:17",
+      "unit_B4a:18",
+      "unit_B4b:1",
+      "unit_B4b:3",
+      "unit_B4b:14",
+      "unit_B4b:17",
+      "unit_B4b:18",
+      "unit_B4b:19"
+    ],
+    "completeness": "Source-unit coverage does not establish exhaustive atomic claims, complete relations, valid alternative sets, identity resolution, or independent families."
+  },
+  "overlay_checks": {
+    "C01_refutation_status": true,
+    "C02_scope_status": true,
+    "C03_single_Ukva_identity": true,
+    "C04_alternative_status": true,
+    "C04_alternative_edge": true,
+    "C05_Kilav_name": true,
+    "C06_Gamliel_wording": true,
+    "new_rejection_status_2b1": true,
+    "new_rejection_status_3b24": true,
+    "new_rejection_status_2b1_rejects_edge": true,
+    "new_rejection_status_3b24_rejects_edge": true,
+    "questions_excluded_from_positions": true,
+    "m_half_question_preserved_in_statements": true
+  },
+  "context_checks": {
+    "b_scholarbed": {
+      "required": [
+        "Berakhot 4b:28"
+      ],
+      "actual": [
+        "Berakhot 5a:1",
+        "Berakhot 4b:28"
+      ],
+      "pass": true
+    },
+    "b_cut": {
+      "required": [
+        "Berakhot 5b:1",
+        "Berakhot 5b:2",
+        "Berakhot 5b:3"
+      ],
+      "actual": [
+        "Berakhot 5a:24",
+        "Berakhot 5b:1",
+        "Berakhot 5b:2",
+        "Berakhot 5b:3"
+      ],
+      "pass": true
+    },
+    "b_loveboth": {
+      "required": [
+        "Berakhot 5b:4",
+        "Berakhot 5b:5",
+        "Berakhot 5b:6",
+        "Berakhot 5b:7",
+        "Berakhot 5b:8",
+        "Berakhot 5b:9"
+      ],
+      "actual": [
+        "Berakhot 5a:16",
+        "Berakhot 5b:4",
+        "Berakhot 5b:5",
+        "Berakhot 5b:6",
+        "Berakhot 5b:7",
+        "Berakhot 5b:8",
+        "Berakhot 5b:9"
+      ],
+      "pass": true
+    },
+    "m_bundles": {
+      "required": [
+        "Bava Metzia 23a:1",
+        "Bava Metzia 23a:2"
+      ],
+      "actual": [
+        "Bava Metzia 22b:15",
+        "Bava Metzia 23a:1",
+        "Bava Metzia 23a:2"
+      ],
+      "pass": true
+    },
+    "m_rava_sign": {
+      "required": [
+        "Bava Metzia 23a:15"
+      ],
+      "actual": [
+        "Bava Metzia 22b:11",
+        "Bava Metzia 23a:15"
+      ],
+      "pass": true
+    }
+  },
+  "remaining_material_findings": [
+    {
+      "target": "unit_B2b:1",
+      "source_refs": [
+        "Berakhot 2b:1",
+        "Berakhot 2b:2"
+      ],
+      "issue": "Generic proposed_answer mapping leaves unresolved despite explicit subsequent correction of טהר גברא.",
+      "recommendation": "position_status rejected via preserved overlay",
+      "currently_corrected": true,
+      "resolution": "C07 overlay applied; compiled status rejected and explicit rejects edge verified; initial annotation_completion.py preserved."
+    },
+    {
+      "target": "unit_B3b:24",
+      "source_refs": [
+        "Berakhot 3b:24",
+        "Berakhot 3b:25",
+        "Berakhot 3b:26"
+      ],
+      "issue": "Generic proposed_answer mapping leaves unresolved despite objection and אלא אמר רבא replacing same-night interpretation with two נשפים.",
+      "recommendation": "position_status rejected via preserved overlay",
+      "currently_corrected": true,
+      "resolution": "C07 overlay applied; compiled status rejected and explicit rejects edge verified; initial annotation_completion.py preserved."
+    }
+  ],
+  "all_checked_records_ml_ineligible": true,
+  "qa_snapshot": {
+    "mechanical_pass": true,
+    "records": {
+      "segments": 215,
+      "sugyot": 35,
+      "scholars": 59,
+      "statements": 231,
+      "questions": 52,
+      "positions": 94,
+      "relations": 43,
+      "review_queue": 39
+    },
+    "pilot_source_segments": 215,
+    "context_only_segments": 68,
+    "primary_sugyot": 29,
+    "sub_sugyot": 6,
+    "evidence_spans_checked": 688,
+    "primary_coverage_segments": 215,
+    "source_text_errors": 0,
+    "reference_errors": 0,
+    "duplicate_ids": 0,
+    "uncovered_pilot_segments": 0,
+    "segments_with_selected_statements": 215,
+    "segments_without_curated_source_unit": 0,
+    "open_review_records": 39,
+    "ml_eligible_records": 0,
+    "human_expert_reviews": 0,
+    "semantic_completeness_pass": false,
+    "expansion_gate_pass": false,
+    "source_files_checked": 37,
+    "scope_note": "Selected semantic extraction is incomplete; full mechanical coverage does not mean full semantic annotation."
+  },
+  "limits": [
+    "231 statement records include composite summaries, structural markers and selected analyses; not231 independent atomic scholarly observations.",
+    "94 positions are compiler-generated position rows, not95 validated comparable options or independent people.",
+    "43 relations include four added related_topic sugya links and two added rejects edges; these are editorial topical links, not proof of parallel equivalence or complete reasoning graph.",
+    "Context evidence added to a claim may qualify, constrain or challenge it; mere citation membership must not be interpreted as uniform support.",
+    "Initial first and independent readings preserved; later targeted reading and corrections are not blind agreement trials.",
+    "No human signoff, full-manuscript validation, scholar fitting or confirmation scoring."
+  ],
+  "disposition": "Suitable for explicitly provisional source-review pilot; all indicated corrections compiled and verified. No ML eligibility or blanket scholarly certification.47 added Berakhot source-unit summaries remain not exhaustively reread in this review.",
+  "verification_history": [
+    {
+      "phase": "before_C07_overlay",
+      "reviewed_revisions_sha256": "615292bacfc89a9e3f6ab6d12ba4446ec309f7d51e15e2b16708c46ed49dffd8",
+      "revised_relations": 41,
+      "status_checks": {
+        "unit_B2b:1": false,
+        "unit_B3b:24": false
+      },
+      "findings_preserved": "Both had unresolved statuses despite explicit subsequent corrections; original findings retained below."
+    },
+    {
+      "phase": "before_question_position_filter",
+      "revised_positions": 95,
+      "positions_sha256": "946df8b00584e968dc220e1f80c19539a1b7344528521dc3162002bedb3a3706",
+      "issue": "m_half was an unanswered Rabbi Yirmeya question, not an observed decision; original statement retained."
+    }
+  ],
+  "reviewed_compiled_hashes": {
+    "statements.jsonl": "430d6010c3678df66de12e2f54e41b97a4115098bee25e9008dc263a63a2e69e",
+    "positions.jsonl": "0251989361dd03bf5d76e5e04e6501adcfc6fc72822ac96506e738045738ea35",
+    "relations.jsonl": "bb60805e9d45669cee60ce117f62e9522fc6c1c55236b2f15a1b79352c64781a",
+    "scholars.jsonl": "e8e97c0c72a20201afa5364a1ad18905baf14a2cb9d7ac97e5a8fe0196d5f354"
+  },
+  "test_report_snapshot": {
+    "passed": true,
+    "corruption_tests": 8,
+    "tests": [
+      "one-daf offset",
+      "rewritten source text",
+      "duplicate stable ID",
+      "unknown schema property",
+      "dangling graph endpoint",
+      "overlapping primary coverage",
+      "quote not exact substring",
+      "name-order assignment to unresolved alternative"
+    ],
+    "scope": "mechanical safeguards, not scholarly accuracy"
+  },
+  "serialization_correction": {
+    "rule": "role=question excluded from positions, retained in statements and question tables",
+    "removed_position_authoring_key": "m_half",
+    "reason": "An unanswered question is not an attested scholar choice.",
+    "final_position_count": 94,
+    "statement_count_unchanged": 231,
+    "relation_count_unchanged": 43
+  }
+}

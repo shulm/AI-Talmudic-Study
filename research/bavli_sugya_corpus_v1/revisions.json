@@ -1,0 +1,131 @@
+{
+  "annotation_revision": "1.1",
+  "schema_version": "1.0.0",
+  "preserve_initial": "annotation_initial.py remains unchanged; review/independent_bm_initial.json remains unchanged",
+  "changes": [
+    {
+      "review_id": "C01",
+      "key": "m_refute",
+      "field": "position_status",
+      "old": "rejected",
+      "new": "asserted",
+      "reason": "The refutation is maintained; its target m_rava remains rejected."
+    },
+    {
+      "review_id": "C02",
+      "key": "m_sign",
+      "field": "position_status",
+      "old": "reconciled",
+      "new": "asserted",
+      "reason": "Explicit agreement about scope, not reconciliation of previously conflicting positions."
+    },
+    {
+      "review_id": "C03",
+      "key": "m_floor",
+      "field": "authority",
+      "old": "רבי עוקבא בר חמא",
+      "new": "רב עוקבא בר חמא",
+      "reason": "21a:13 abbreviation is disambiguated by explicit רב עוקבא בר חמא in21b:6; preserve original label in initial reading and raw evidence."
+    },
+    {
+      "review_id": "C04",
+      "key": "b_mosesdoubt",
+      "field": "position_status",
+      "old": "rejected",
+      "new": "unresolved",
+      "reason": "R. Zeira provides an alternative explanation, not a universal rejection of Moses's uncertainty."
+    },
+    {
+      "review_id": "C04",
+      "edge": [
+        "b_mosesknew",
+        "rejects",
+        "b_mosesdoubt"
+      ],
+      "replacement": [
+        "b_mosesknew",
+        "alternative_to",
+        "b_mosesdoubt"
+      ],
+      "reason": "Preserve competing explanations."
+    },
+    {
+      "review_id": "C05",
+      "key": "unit_B4a:11",
+      "field": "summary_he",
+      "old": "דרש שם מפיבשת כבושה בהלכה ושכר דוד בכלב",
+      "new": "דרש שם מפיבשת כבושה בהלכה ושכר דוד בכלאב",
+      "reason": "Preserve the source name כלאב, not כלב."
+    },
+    {
+      "review_id": "C05",
+      "key": "unit_B4a:12",
+      "field": "summary_he",
+      "old": "שם כלב נדרש כהכלמת מפיבשת ושמו דניאל",
+      "new": "שם כלאב נדרש כהכלמת מפיבשת ושמו דניאל",
+      "reason": "Preserve the source name כלאב, not כלב."
+    },
+    {
+      "review_id": "C06",
+      "key": "unit_B4b:1",
+      "field": "summary_he",
+      "old": "אם כחכמי רבן גמליאל מדוע לא אמרו זמנו?",
+      "new": "אם כרבן גמליאל מדוע לא אמרו זמנו?",
+      "reason": "The comparison is with Rabban Gamliel, not his sages."
+    },
+    {
+      "review_id": "C07",
+      "key": "unit_B2b:1",
+      "field": "position_status",
+      "old": "unresolved",
+      "new": "rejected",
+      "reason": "Subsequent local answer/correction rejects this proposed explanation; preserved first pass used too broad unresolved status."
+    },
+    {
+      "review_id": "C07",
+      "key": "unit_B3b:24",
+      "field": "position_status",
+      "old": "unresolved",
+      "new": "rejected",
+      "reason": "Subsequent local answer/correction rejects this proposed explanation; preserved first pass used too broad unresolved status."
+    }
+  ],
+  "completion_pass": "annotation_completion.py supplies96 remaining source-unit summaries and7 more named/ambiguous positions. These are provisional source-unit analyses, not a claim of exhaustive atomic extraction.",
+  "context_evidence": {
+    "b_scholarbed": [
+      "Berakhot 4b:28"
+    ],
+    "b_cut": [
+      "Berakhot 5b:1",
+      "Berakhot 5b:2",
+      "Berakhot 5b:3"
+    ],
+    "b_loveboth": [
+      "Berakhot 5b:4",
+      "Berakhot 5b:5",
+      "Berakhot 5b:6",
+      "Berakhot 5b:7",
+      "Berakhot 5b:8",
+      "Berakhot 5b:9"
+    ],
+    "m_bundles": [
+      "Bava Metzia 23a:1",
+      "Bava Metzia 23a:2"
+    ],
+    "m_rava_sign": [
+      "Bava Metzia 23a:15"
+    ]
+  },
+  "additional_edges": [
+    [
+      "b_vetaher",
+      "rejects",
+      "unit_B2b:1"
+    ],
+    [
+      "b_neshef",
+      "rejects",
+      "unit_B3b:24"
+    ]
+  ]
+}
