@@ -1,0 +1,183 @@
+{
+  "status": "planning only; synthetic resampling of development residuals",
+  "development_people": 102,
+  "contrasts": [
+    "value_item_frequency",
+    "identity_single_donor"
+  ],
+  "development_means": [
+    -0.03979198869752244,
+    0.014764700109059998
+  ],
+  "development_sd": [
+    0.1303005237563423,
+    0.09807281123983125
+  ],
+  "correlation": [
+    [
+      1.0,
+      0.6077496094181943
+    ],
+    [
+      0.6077496094181943,
+      1.0
+    ]
+  ],
+  "outer_draws": 200,
+  "inner_draws": 2000,
+  "seed": 20261125,
+  "rule": "both two-sided95% percentile lower endpoints exceed0",
+  "results": [
+    {
+      "n": 100,
+      "equal_true_advantage": 0,
+      "joint_success_rate": 0.01,
+      "monte_carlo_se": 0.007035623639735145,
+      "mean_half_width": [
+        0.025332604093941728,
+        0.018986218087913606
+      ]
+    },
+    {
+      "n": 100,
+      "equal_true_advantage": 0.01,
+      "joint_success_rate": 0.105,
+      "monte_carlo_se": 0.021676600286945368,
+      "mean_half_width": [
+        0.025332604093941728,
+        0.018986218087913606
+      ]
+    },
+    {
+      "n": 100,
+      "equal_true_advantage": 0.02,
+      "joint_success_rate": 0.345,
+      "monte_carlo_se": 0.033613613313656115,
+      "mean_half_width": [
+        0.025332604093941728,
+        0.018986218087913606
+      ]
+    },
+    {
+      "n": 250,
+      "equal_true_advantage": 0,
+      "joint_success_rate": 0.005,
+      "monte_carlo_se": 0.004987484335815001,
+      "mean_half_width": [
+        0.01592593875072833,
+        0.012059915372315388
+      ]
+    },
+    {
+      "n": 250,
+      "equal_true_advantage": 0.01,
+      "joint_success_rate": 0.17,
+      "monte_carlo_se": 0.02656124997058685,
+      "mean_half_width": [
+        0.01592593875072833,
+        0.012059915372315388
+      ]
+    },
+    {
+      "n": 250,
+      "equal_true_advantage": 0.02,
+      "joint_success_rate": 0.665,
+      "monte_carlo_se": 0.0333747659167821,
+      "mean_half_width": [
+        0.01592593875072833,
+        0.012059915372315388
+      ]
+    },
+    {
+      "n": 500,
+      "equal_true_advantage": 0,
+      "joint_success_rate": 0.01,
+      "monte_carlo_se": 0.007035623639735145,
+      "mean_half_width": [
+        0.011305355004420212,
+        0.008505232461136545
+      ]
+    },
+    {
+      "n": 500,
+      "equal_true_advantage": 0.01,
+      "joint_success_rate": 0.315,
+      "monte_carlo_se": 0.032846232660687286,
+      "mean_half_width": [
+        0.011305355004420212,
+        0.008505232461136545
+      ]
+    },
+    {
+      "n": 500,
+      "equal_true_advantage": 0.02,
+      "joint_success_rate": 0.915,
+      "monte_carlo_se": 0.019719913792915014,
+      "mean_half_width": [
+        0.011305355004420212,
+        0.008505232461136545
+      ]
+    },
+    {
+      "n": 1000,
+      "equal_true_advantage": 0,
+      "joint_success_rate": 0.01,
+      "monte_carlo_se": 0.007035623639735145,
+      "mean_half_width": [
+        0.008001514420871112,
+        0.005999849827654608
+      ]
+    },
+    {
+      "n": 1000,
+      "equal_true_advantage": 0.01,
+      "joint_success_rate": 0.63,
+      "monte_carlo_se": 0.034139420030223126,
+      "mean_half_width": [
+        0.008001514420871112,
+        0.005999849827654608
+      ]
+    },
+    {
+      "n": 1000,
+      "equal_true_advantage": 0.02,
+      "joint_success_rate": 1.0,
+      "monte_carlo_se": 0.0,
+      "mean_half_width": [
+        0.008001514420871112,
+        0.005999849827654608
+      ]
+    },
+    {
+      "n": 2000,
+      "equal_true_advantage": 0,
+      "joint_success_rate": 0.0,
+      "monte_carlo_se": 0.0,
+      "mean_half_width": [
+        0.005685762500510588,
+        0.0042679277362392435
+      ]
+    },
+    {
+      "n": 2000,
+      "equal_true_advantage": 0.01,
+      "joint_success_rate": 0.93,
+      "monte_carlo_se": 0.01804161855266871,
+      "mean_half_width": [
+        0.005685762500510588,
+        0.0042679277362392435
+      ]
+    },
+    {
+      "n": 2000,
+      "equal_true_advantage": 0.02,
+      "joint_success_rate": 1.0,
+      "monte_carlo_se": 0.0,
+      "mean_half_width": [
+        0.005685762500510588,
+        0.0042679277362392435
+      ]
+    }
+  ],
+  "limitations": "conditional fixed-model/bank residual approximation; original fixed positions and selected model do not establish new-cohort variance; no human evidence generated"
+}
