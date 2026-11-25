@@ -1,0 +1,22 @@
+{
+  "status": "FAIL",
+  "tests_run": 11,
+  "failures": [
+    "(<__main__.Checks testMethod=test_selection_and_confirmation>, 'Traceback (most recent call last):\\n  File \"C:\\\\Users\\\\David\\\\.codex\\\\worktrees\\\\short-history-null-control-v1\\\\AI Talmudic Study\\\\labs\\\\decision_functions_null_control_v1\\\\checks.py\", line 67, in test_selection_and_confirmation\\n    self.assertEqual(s[\\'state\\'],\\'SELECTED\\');self.assertEqual(s[\\'selected\\'][\\'w\\'],.25)\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: \\'DEV_NO_CANDIDATE\\' != \\'SELECTED\\'\\n- DEV_NO_CANDIDATE\\n+ SELECTED\\n\\n')"
+  ],
+  "errors": [
+    "(<__main__.Checks testMethod=test_precision_cap>, 'Traceback (most recent call last):\\n  File \"C:\\\\Users\\\\David\\\\.codex\\\\worktrees\\\\short-history-null-control-v1\\\\AI Talmudic Study\\\\labs\\\\decision_functions_null_control_v1\\\\checks.py\", line 79, in test_precision_cap\\n    for i,row in enumerate(x):row[\\'population\\'][s[\\'selected\\'][\\'id\\']][\\'loss\\']+=i*.02\\n                                                ~^^^^^^^^^^^^\\nKeyError: \\'selected\\'\\n')"
+  ],
+  "scientific_fits": 0,
+  "human_evaluations": 0,
+  "fresh_generator_calls": 0,
+  "python_cpu_seconds": 0.609375,
+  "source_hashes": {
+    "checks.py": "327f92b7a5d2f63cf6d5455aa1ec381c3acf8ae2e11a662564112c67bc04c318",
+    "design.py": "b9f8a1eeb03ab60347fd893f7dec71483364b756383dc6b440dde0a994cce66d",
+    "engine.py": "e214a0c3eebae19568d367429b588d79bb0ef3419cb24b723e5d1219ea53a180",
+    "prepare.py": "0d109f00729e99c12817aecffe949f63d55e4ecd4bf58aa70bb5e7e6ccdeb453",
+    "run.py": "b74b9423a7c735e989bcc410517be9d40797596cebaf85e87a4159989f01da38"
+  },
+  "limitations": "Analytic tests do not validate predictive performance or full future execution. End-to-end mocked stage tests are separate."
+}

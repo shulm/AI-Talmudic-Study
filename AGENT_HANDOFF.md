@@ -1,5 +1,11 @@
 # Research handoff — updated 2026-11-25
 
+## Null-control study prepared — 2026-11-25
+
+The latest planning continuation is [short_history_null_control_v1](research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/NEXT_HANDOFF.md), with executable stages in `labs/decision_functions_null_control_v1/`. This is a frozen proposal, not an executed study; separate owner authorization is required before fitting. Read the exact-artifact independent review and zero-fit check receipts before execution.
+
+PR15 remains **COMPLETED_PRIMARY_FAILURE**. Its original private arrays were replayed into a fresh receipt directory:17,038 comparisons, maximum discrepancy3.552713678800501e-14, unchanged private bytes, qualification=false. The proposal tests four adaptation penalty pairs and five global blend weights, selects once on12 fresh worlds, and reserves24–96 independent confirmation worlds under a predeclared precision rule. Primary risk is incremental loss relative to common B3, not overall personalization safety. No new scientific fits, fresh research seed materialization, human evaluations or corpus changes occurred in this planning assignment. Historical evidence remains unchanged; no merge or issue messages were sent.
+
 ## Active modeling continuation: general decision functions — 2026-11-24
 
 The current modeling task is to learn `P(answer | problem, available answers, person's observed history)` on general corpora, then investigate the Talmudic application. This supersedes the scholar-position attribution objective in draft PR #1; retain that PR as historical context.

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Full all orchestrator: reduced MOCK2x6 stages, exact ledgers, selection, complete no-candidate stop and replay",
+    "Missing components.npz rejected",
+    "Missing shared_11.complete.json rejected",
+    "Missing shared_11.npy rejected",
+    "Changed exact contract rejected",
+    "Confirmation after no-candidate stop rejected",
+    "Full selected-confirmation orchestrator with MOCK2 development+2 confirmation worlds and fabricated score responses; replay/selection freeze/verification passed",
+    "Missing resource receipt rejected",
+    "Previous resource stop rejects execution before fits",
+    "Outstanding execution lock rejects final verification"
+  ],
+  "scientific_fits": 0,
+  "fresh_generator_calls": 0,
+  "human_evaluations": 0,
+  "mock_design": "2 development worlds; selected branch adds2 confirmation worlds; real 12/24-96 counts separately checked analytically",
+  "python_cpu_seconds": 27.515625,
+  "source_hashes": {
+    "audit_history.py": "f5ad5f1c959f41d6f8043407fecbb52c380f6401824b259e5dd5ea34a6243133",
+    "checks.py": "1dd354225bde29fc9033bc4cb019f0e66616e1e13ad264a398c004c18f400442",
+    "design.py": "0bd33fb3f590e83f17eabbc605c7f4ee2c59b697be36851e08cc019a896a0c3f",
+    "engine.py": "2284d85a026d93130d5b2efb72be826397291e723cbbe7605ad4751b96e464a8",
+    "integration_checks.py": "7c9ed3ebd95fd09ba099c9a29952f73c6fdbae0e563ea283fd950ef8b78e69a0",
+    "prepare.py": "0d109f00729e99c12817aecffe949f63d55e4ecd4bf58aa70bb5e7e6ccdeb453",
+    "run.py": "a2772e2918275da34b21f689a0fedbdb6abaaefb5c0936c9e1c2f6b7c5c9205a"
+  },
+  "limitations": "Fit/adapt/objective replay replaced by analytic mocks; selected-path scores fabricated. Tests orchestration and evidence integrity, not predictive success, optimizer convergence or statistical coverage. Real finite-difference objective separately checked."
+}

@@ -1,0 +1,21 @@
+{
+  "rule": "design.expected(confirmation,n,selected,common_lb) gives every exact ID and array; materialize before confirmation",
+  "minimum": 24,
+  "maximum": 96,
+  "per_realization_equal_offset": {
+    "shared_fits": 18,
+    "adaptation_batches": 48,
+    "person_solves": 1152,
+    "optimizer_records": 66,
+    "archives": 6
+  },
+  "per_realization_distinct_offset": {
+    "shared_fits": 18,
+    "adaptation_batches": 60,
+    "person_solves": 1440,
+    "optimizer_records": 78,
+    "archives": 6
+  },
+  "stage_pattern": "<phase><index:03d>/<regime>",
+  "archives": "one components.npz per stage plus manifest.json and all expected start/complete optimizer records and parameter.npy files"
+}
