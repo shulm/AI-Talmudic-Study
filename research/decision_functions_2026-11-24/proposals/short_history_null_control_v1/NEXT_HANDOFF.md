@@ -7,4 +7,3 @@ Read PROPOSED_PROTOCOL.json,INDEPENDENT_REVIEW.md,ZERO_FIT_CHECKS.json and final
 Keep all A-D,DICES,SRO exposure and historical artifacts unchanged. The common-B3 risk claim is incremental,not overall safety. Representation,human collection,adaptive questioning and corpus production remain separate work.
 
 Base is ee2b0a5a2f0916fed3dd59f720b902eb332eecc3. This branch is stacked on codex/short-history-v1; draft PR must not be merged automatically. Public artifacts contain no private probability arrays,parameters,histories or credentials.
-

@@ -9,4 +9,3 @@ The claim concerns average risk over the specified generated-world distribution,
 B3 may overfit. Candidate-minus-B3 bounds concern incremental interaction risk. Candidate-minus-known-shared-base and B3-minus-known-shared-base distributions are mandatory, but no source-blind noninferiority gate is added here. Thus a successful result must not be described as overall safe personalization. The known shared-base predictor is a strong, history-blind control; in regimes with offsets/interactions it is not necessarily the exact Bayes population marginal.
 
 Strong-signal usefulness requires mean gain>=.05, recovery>=.50, contrast NRMSE<=.50, positive one-sided gain lower bound, and w>0. This excludes a B3 fallback. Weak, hidden nontransfer and mixed conditions are descriptive sensitivity tests and cannot rescue or veto the primary result.
-

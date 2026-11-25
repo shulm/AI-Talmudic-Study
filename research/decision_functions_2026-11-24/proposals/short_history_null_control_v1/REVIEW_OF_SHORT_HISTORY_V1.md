@@ -26,4 +26,3 @@ Historical resource reports give 12 shared fits,184 adaptation batches,3,776 per
 DICES M1 differed from B3 by approximately1.9e-12, so history calibration did not establish interaction benefit. PR5's joint criteria were not met. PR8's exposed follow-up found item-frequency minus own loss -.071577, single-donor minus own .003012 with interval spanning zero, and donor-mixture minus own -.007573. A probability mixture and mean donor loss differ because log loss is nonlinear. Its prospective eight-support human protocol remains unexecuted and separate.
 
 All A-D, DICES and SRO results are exposed. They motivate this design but cannot provide its fresh confirmation. The supplied Individual_Decision_Research_Plan_2026-11-25.docx was read as a proposed direction. Its later text, human, adaptive-question and scholarly studies are not part of the present execution scope.
-

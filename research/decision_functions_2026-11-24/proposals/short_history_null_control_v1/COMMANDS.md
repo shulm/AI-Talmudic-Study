@@ -30,4 +30,3 @@ Resume skips complete world receipts; an attempted but incomplete world cannot b
 Before owner-authorized execution, publish the exact reviewed pre-fit commit. Selection checkpoint is an immutable local hash binding before confirmation; publish its hash/decision with final evidence. Private arrays are never committed. Public final report should contain aggregate metrics,resource totals,freeze hashes and verification state; redact individual rows from publication.
 
 Historical replay used the unchanged PR15 verify.py with --private-root pointing to its original cache and --output-root pointing to a fresh copy of its public evidence excluding verification.json. Do not run it against the original public results directory, because its receipt is create-once.
-

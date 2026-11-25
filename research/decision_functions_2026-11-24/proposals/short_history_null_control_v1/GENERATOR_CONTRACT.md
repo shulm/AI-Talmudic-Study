@@ -28,4 +28,3 @@ Each B1 uses own history counts plus4 times training-label frequency; B2=softmax
 Matched donor is heldout local row xor1. It is a deliberately paired opposite-phase donor, not a random-person population estimand. Compute recipient loss of the saved donor prediction minus own loss. One donor is used, so no multi-donor mixture claim is made. No extra fitting is needed. Every world/schedule/person harm distribution is retained.
 
 Weak results are descriptive only: report gain/common-B3 oracle-gap when gap>1e-8, otherwise undefined; report contrast NRMSE only when oracle contrast square mean>1e-8, otherwise unscaled contrast RMS. There is no .05 weak gate or post-hoc scaled eligibility rule. Nontransfer and mixed receive the same descriptive metrics and no new primary gates.
-

@@ -33,4 +33,3 @@ The historical four point thresholds are also tabulated per world using the blen
 Probability log floor1e-12. Primary denominator floor1e-8; at/below it the ratio is undefined and cannot pass. Nonfinite probabilities, wrong identities, missing/duplicate records, changed files or unsuccessful optimizers cause INCOMPLETE, never qualification. Zero observed endpoint variance is unresolved rather than a claim of zero uncertainty.
 
 Always report candidate/common-B3 losses relative to the known shared-base control, realized NLL,accuracy,Brier,oracle expected NLL,paired-antiphase donor contrasts, each schedule,person harms and world distribution. Harm fractions are descriptive with clustered dependence. Expected-risk success across worlds is not a maximum-harm guarantee. No source-blind noninferiority claim is made.
-
