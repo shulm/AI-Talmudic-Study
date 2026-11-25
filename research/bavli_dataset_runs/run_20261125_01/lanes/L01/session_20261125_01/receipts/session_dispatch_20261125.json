@@ -1,0 +1,20 @@
+{
+  "run_id": "run_20261125_01",
+  "lane": "L01",
+  "authority": "User's explicit L01 assignment; COMMON_EXECUTION_CONTRACT delegates same-lane worker transitions to admitted lane lead. Previous producer recorded inactive in coordinator revision 3.",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "previous_owner": "/root/lead_l01_l03",
+  "transitions": [
+    {"job": "bavli_berakhot", "previous_epoch": 2, "epoch": 3, "owner": "/root/berakhot", "prior_snapshot": "0d4c319e766f089d6845b4c81c85e50ff67c9d27c4bfa4495b278df6f3e28aa1"},
+    {"job": "bavli_zevachim", "previous_epoch": 1, "epoch": 2, "owner": "/root/verify_l01", "prior_snapshot": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"},
+    {"job": "bavli_ketubot", "previous_epoch": 1, "epoch": 2, "owner": "/root/l01_ketubot", "execution_agent": "/root", "prior_snapshot": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"}
+  ],
+  "method": "Shared runner handoff command; exclusive job lock; previous expected owner and epoch checked.",
+  "global_ledger_modified": false,
+  "review": {"agent": "/root/blind_review", "context": "fresh source-only", "production_write_authority": false},
+  "queued": ["Bekhorot", "Sukkah", "Chagigah"],
+  "new_metered_api_calls": 0,
+  "tokens": null,
+  "all_tractates_delivered": false
+}

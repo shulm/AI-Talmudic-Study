@@ -1,0 +1,99 @@
+{
+  "artifact_type": "independent_reviewer_resume_packet",
+  "created_utc": "2026-11-25T21:16:37.896987+00:00",
+  "reviewer_agent_id": "/root/blind_review",
+  "model_id": null,
+  "state": "CHECKPOINTED_PARTIAL_REVIEW_REMAINS",
+  "artifact_manifest": [
+    {
+      "file": "l01_session_20261125_berakhot5_initial.json",
+      "sha256": "729bc5d09a12029d9a5d88cf8607a548bf8c8a67cb183a0bc1de722a0fe4fcee"
+    },
+    {
+      "file": "l01_session_20261125_berakhot_b24_correction_verification_001.json",
+      "sha256": "f5129fc1f4f4f0c468dfdd5a2a4bbe89552fd76c910d9cbd7f5a429ecf04558c"
+    },
+    {
+      "file": "l01_session_20261125_ketubot_correction_verification_001.json",
+      "sha256": "b29ce2a07622d877cab35bf43c93d46c8e9856fb15863b5a1cb8294894ac5c84"
+    },
+    {
+      "file": "l01_session_20261125_ketubot_opening_initial.json",
+      "sha256": "ca6de3979264a3dbd36df3faf231d78a6de7aaae41ffdfcda4d07bd0bce1b59d"
+    },
+    {
+      "file": "l01_session_20261125_zevachim_opening_initial.json",
+      "sha256": "047074b5b7998567a5886104e13b0f80947146981b8fd17d0d1ce3a759b05e38"
+    },
+    {
+      "file": "l01_session_20261125_zevachim_probability_block000008_comparison_001.json",
+      "sha256": "4600b80034d032f3bcd298bf25048ba908435d9e9d7d40ddcb0fe66e81c10ab5"
+    },
+    {
+      "file": "l01_session_20261125_zevachim_probability_block000008_initial.json",
+      "sha256": "986ac8adf97d97e96a359b3e71b7c717485b8b7fb77b83ed0988b55c6d0d0da8"
+    },
+    {
+      "file": "l01_session_20261125_zevachim_probability_block000008_provenance_correction.json",
+      "sha256": "358f685aa4e5aca5aaf9d9387085f69447c4e093563074925305e4ff9247afaf"
+    }
+  ],
+  "independence_history": {
+    "initial_source_only_frozen": [
+      "l01_session_20261125_berakhot5_initial.json",
+      "l01_session_20261125_zevachim_opening_initial.json",
+      "l01_session_20261125_ketubot_opening_initial.json",
+      "l01_session_20261125_zevachim_probability_block000008_initial.json"
+    ],
+    "provenance_event": "Probability-block initial file is accompanied by append-only provenance correction: frozen plan inspected before source reading; hash recomputation occurred afterward. No reroll, source change, or label exposure occurred before initial freeze.",
+    "post_exposure_phase": "After initial freezes the coordinator authorized comparison; this context then read Ketubot, Zevachim and Berakhot producer records. It is no longer a fresh blind reviewer context.",
+    "next_source_only_reviewer_requirement": "Use a fresh context supplied only original source, pinned manifest/common protocol, neutral source plan and frozen block IDs; do not fork this label-exposed context."
+  },
+  "progress": {
+    "Berakhot": {
+      "cohort": "targeted_risk_continuation",
+      "initial_core_read": 21,
+      "matched_compared_core": 4,
+      "unmatched_core": 17,
+      "probability_blocks_completed": 0,
+      "whole_tractate_review": false
+    },
+    "Ketubot": {
+      "cohort": "assigned_opening_endpoint",
+      "initial_core_read": 15,
+      "core_compared": 15,
+      "additional_qualification_segments_verified": 3,
+      "probability_blocks_completed": 0,
+      "whole_tractate_review": false
+    },
+    "Zevachim": {
+      "opening_core_read": 12,
+      "opening_formal_comparison_by_this_reviewer": false,
+      "probability_plan_sha256": "60d525f0de6d7e5a8d7206d22fee04edd0e5047dc25a518a7370056554746f8f",
+      "probability_blocks_total": 39,
+      "probability_blocks_read_and_compared": [
+        "block_000008"
+      ],
+      "probability_core_segments_compared": 10,
+      "probability_blocks_remaining": 38,
+      "next_source_ordered_probability_block": "block_000017",
+      "next_core_refs": "Zevachim6a:15–6b:6",
+      "whole_tractate_review": false
+    }
+  },
+  "next_actions": [
+    "Coordinator can record scoped correction verifications without elevating whole-tractate review or ML eligibility.",
+    "Fresh blind reviewer should continue frozen probability plans, without rerolling difficult blocks. Zevachim block000017 is next in source order; Berakhot and Ketubot probability work remains unstarted by this reviewer.",
+    "Post-exposure reviewer may compare remaining17 Berakhot initial core segments when exact producer versions exist; reuse original initial judgments and retain discrepancies.",
+    "For isolated Ketubot QA exports, close conditional ancestry and daily-court preparation qualifications; composite claims need splitting only under an atomic task policy.",
+    "After new producer revisions, bind checks to new exact snapshots rather than carrying acceptance forward silently."
+  ],
+  "restrictions": {
+    "human_reviewed": false,
+    "ml_eligible": false,
+    "probability_accuracy_estimate": null,
+    "no_production_promotion": true,
+    "no_global_state_mutation": true,
+    "no_full_tractate_acceptance": true
+  }
+}

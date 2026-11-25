@@ -1,0 +1,151 @@
+{
+  "artifact_type": "independent_exact_version_correction_verification",
+  "created_utc": "2026-11-25T21:16:37.881986+00:00",
+  "reviewer": {
+    "agent_id": "/root/blind_review",
+    "model_id": null,
+    "phase": "post_exposure_comparison_against_frozen_source_only_initial"
+  },
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "verdict_scope": "Only four matching Berakhot core segments5a:24–5b:3, including B24 correction records. No certification of remaining17 initially read core segments or whole tractate.",
+  "bindings": {
+    "producer_snapshot_sha256": "a00d9df0e31b9c3496305b6dce849906c083fe4c55fe726bdcb0811a4b771061",
+    "correction_proposal_sha256": "9569f9a1846b8aeb9032d40b5b3cd96a17234e6797b50d0930b80f3d1ffa2b98",
+    "producer_comparison_sha256": "936714e667201f566cdfa81e8b3a24d6638d317d5e2ec3928bd65831d6c254ec",
+    "initial_reading_sha256": "729bc5d09a12029d9a5d88cf8607a548bf8c8a67cb183a0bc1de722a0fe4fcee",
+    "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38"
+  },
+  "mechanical_checks": {
+    "scope_active_records_checked": 35,
+    "literal_spans_checked_against_original": 41,
+    "quote_errors": 0,
+    "active_reference_errors": 0,
+    "four_segment_primary_partition_exact": true,
+    "all_correction_record_payloads_equal_accepted_snapshot": true,
+    "correction_record_count": 14,
+    "runner_replay_rerun": false,
+    "schema_validator_rerun": false
+  },
+  "claim_mapping": {
+    "C01": [
+      "bk.b24.semantic2.c1"
+    ],
+    "C02": [
+      "bk.b24.review20261125.verse"
+    ],
+    "C03": [
+      "bk.b24.semantic2.c3"
+    ],
+    "C04": [
+      "bk.b24.semantic2.c4"
+    ],
+    "C05": [
+      "bk.b24.semantic2.c5"
+    ]
+  },
+  "correction_results": [
+    {
+      "finding_id": "F1",
+      "status": "verified_corrected",
+      "record_ids": [
+        "bk.b24.review20261125.verse",
+        "bk.b24.review20261125.averse",
+        "bk.b24.review20261125.pverse",
+        "bk.b24.review20261125.everse"
+      ],
+      "evidence_quote": "בחסד ואמת יכופר עון",
+      "ref": "Berakhot 5b:2",
+      "assessment": "The verse proposition is now separate from Yohanan’s meta-level acceptance and supports it; original supported acceptance claim retained."
+    },
+    {
+      "finding_id": "F2",
+      "status": "verified_corrected",
+      "record_ids": [
+        "bk.b24.review20261125.kindproof",
+        "bk.b24.review20261125.truthproof",
+        "bk.b24.review20261125.ekind",
+        "bk.b24.review20261125.etruth"
+      ],
+      "ref": "Berakhot 5b:2",
+      "evidence_quotes": [
+        "רודף צדקה וחסד ימצא חיים צדקה וכבוד",
+        "אמת קנה ואל תמכור"
+      ],
+      "assessment": "Both lexical proof verses are separately represented and support their respective חסד/אמת identifications. Quoted-scripture attribution is explicit."
+    },
+    {
+      "finding_id": "F3",
+      "status": "verified_corrected",
+      "record_ids": [
+        "bk.b24.review20261125.pkind",
+        "bk.b24.review20261125.ptruth"
+      ],
+      "ref": "Berakhot 5b:2",
+      "evidence_quotes": [
+        "חסד זו גמילות חסדים",
+        "אמת זו תורה"
+      ],
+      "assessment": "Yohanan positions are present for each identification."
+    },
+    {
+      "finding_id": "edge_target_clarification",
+      "status": "verified_supported_representation",
+      "record_ids": [
+        "bk.b24.review20261125.qkind",
+        "bk.b24.review20261125.qtruth",
+        "bk.b24.semantic2.e3",
+        "bk.b24.semantic2.e4"
+      ],
+      "assessment": "New qualification edges target the verse-level proposition. Original support edges target Yohanan’s acceptance, so their differing relation labels/endpoints are not errors."
+    }
+  ],
+  "attribution_and_condition_checks": [
+    "Conjunctive Torah study, acts of kindness and burial of sons retained; no distribution into three independent sufficient conditions.",
+    "Initial reciter remains unnamed, with Yohanan recipient/interlocutor rather than author of the recitation.",
+    "Unnamed elder remains transmitter and Rabbi Shimon ben Yohai quoted authority; no unsupported equivalence between elder and initial reciter.",
+    "Cross-folio5a:24–5b:1 teaching remains one unit through question and response5b:3."
+  ],
+  "remaining_limitations": [
+    "The17 initial core segments5b:4–20 remain unmatched in this verification; no agreement or error rate is asserted for them.",
+    "This is targeted continuation review, not a probability sample or full endpoint plan completion.",
+    "Literal scripture attributions and local positions do not establish enduring doctrine, later practical halakha, or independently verified personal identity.",
+    "No human review or task eligibility granted; broader production pipeline replay and schema checks were not rerun here."
+  ],
+  "scope": {
+    "matched_refs": [
+      "Berakhot 5a:24",
+      "Berakhot 5b:1",
+      "Berakhot 5b:2",
+      "Berakhot 5b:3"
+    ],
+    "matched_core_segments": 4,
+    "unmatched_core_refs": [
+      "Berakhot 5b:4",
+      "Berakhot 5b:5",
+      "Berakhot 5b:6",
+      "Berakhot 5b:7",
+      "Berakhot 5b:8",
+      "Berakhot 5b:9",
+      "Berakhot 5b:10",
+      "Berakhot 5b:11",
+      "Berakhot 5b:12",
+      "Berakhot 5b:13",
+      "Berakhot 5b:14",
+      "Berakhot 5b:15",
+      "Berakhot 5b:16",
+      "Berakhot 5b:17",
+      "Berakhot 5b:18",
+      "Berakhot 5b:19",
+      "Berakhot 5b:20"
+    ],
+    "initial_total_core_segments": 21,
+    "reviewer_core_claims_matched": 5,
+    "whole_tractate_review": false
+  },
+  "qualification": {
+    "ml_eligible": false,
+    "human_reviewed": false,
+    "production_changes": false,
+    "new_task_eligible_records": 0
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "artifact_type": "independent_exact_version_comparison",
+  "created_utc": "2026-11-25T21:14:41.503831+00:00",
+  "reviewer": {
+    "agent_id": "/root/blind_review",
+    "model_id": null,
+    "source_only_initial_preserved": true,
+    "current_phase_blind": false
+  },
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "bindings": {
+    "initial_reading_sha256": "986ac8adf97d97e96a359b3e71b7c717485b8b7fb77b83ed0988b55c6d0d0da8",
+    "initial_provenance_correction_sha256": "358f685aa4e5aca5aaf9d9387085f69447c4e093563074925305e4ff9247afaf",
+    "producer_snapshot_sha256": "e608c1c50591fbd858a80364f04d0c77e3a2d8f5acbfc2a7ec0f4997872fdea3",
+    "review_plan_sha256": "60d525f0de6d7e5a8d7206d22fee04edd0e5047dc25a518a7370056554746f8f"
+  },
+  "scope": {
+    "cohort": "probability_sample",
+    "block_id": "block_000008",
+    "core_segments": 10,
+    "sample_blocks_compared": 1,
+    "sample_blocks_total": 39,
+    "sample_inclusion_probability": 0.10209424083769633,
+    "context_not_counted_as_core": true,
+    "whole_tractate_review": false
+  },
+  "mechanical_checks": {
+    "snapshot_sha256": "e608c1c50591fbd858a80364f04d0c77e3a2d8f5acbfc2a7ec0f4997872fdea3",
+    "source_sha256": "7fcfa68ee6f55ecf8535b90b2d56d7f3a3c209db54a78eeb9792bbe4f172186a",
+    "active_scope_records_checked": 46,
+    "evidence_spans_checked_against_original": 110,
+    "direct_evidence_errors": 0,
+    "invalid_or_inactive_links": 0,
+    "primary_partition_segments_checked": 10,
+    "primary_partition_errors": 0,
+    "record_counts_by_layer": {
+      "attributions": 7,
+      "claims": 10,
+      "edges": 10,
+      "positions": 3,
+      "structure": 2,
+      "utterances": 10,
+      "questions": 4
+    },
+    "scope_refs": [
+      "Zevachim 4a:16",
+      "Zevachim 4a:17",
+      "Zevachim 4a:18",
+      "Zevachim 4a:19",
+      "Zevachim 4a:20",
+      "Zevachim 4a:21",
+      "Zevachim 4a:22",
+      "Zevachim 4a:23",
+      "Zevachim 4a:24",
+      "Zevachim 4a:25"
+    ],
+    "replay_rerun": false,
+    "schema_validator_rerun": false,
+    "method": "Independent raw-source equality, original index/ref lookup, active link checks and exact primary interval coverage. Not a runner replay or full schema validation."
+  },
+  "claim_mapping": {
+    "C01": "zev_avodot_limbs",
+    "C02": "zev_avodot_blood",
+    "C03": "zev_avodot_carrying",
+    "C04": "zev_baalim_pinchas",
+    "C05": "zev_baalim_pinchas",
+    "C06": "zev_baalim_todah",
+    "C07": "zev_baalim_todah",
+    "C08": "zev_baalim_todah",
+    "C09": "zev_baalim_todah",
+    "C10": "zev_baalim_q_todah+zev_baalim_e_todah",
+    "C11": "zev_baalim_zvach",
+    "C12": "zev_baalim_chatatasham",
+    "C13": "zev_baalim_two",
+    "C14": "zev_baalim_no_slaughter",
+    "C15": "zev_baalim_analogy"
+  },
+  "discrepancies": [
+    {
+      "id": "ZP01",
+      "category": "reasonable_granularity",
+      "severity": "annotation_design",
+      "refs": [
+        "Zevachim 4a:18"
+      ],
+      "worker_record_ids": [
+        "zev_baalim_pinchas"
+      ],
+      "reviewer_reading": [
+        "C04",
+        "C05"
+      ],
+      "worker_claim": "Combines initial thanksgiving designation premise and the transfer to owner designation.",
+      "evidence": "אמר רב פנחס בריה דרב אמי אמר קרא (ויקרא ז, טו) ובשר זבח תודה שלמיו שתהא זביחה לשם תודה אם אינו ענין לשינוי קודש דנפקא לן מהתם תנהו ענין לשינוי בעלים",
+      "resolution_state": "semantic_content_agreed_composite_retained",
+      "proposed_action": "Split if atomic-claim task view requires it; no content omission counted."
+    },
+    {
+      "id": "ZP02",
+      "category": "reasonable_granularity_and_embedded_reasoning",
+      "severity": "annotation_design",
+      "refs": [
+        "Zevachim 4a:19"
+      ],
+      "worker_record_ids": [
+        "zev_baalim_todah"
+      ],
+      "reviewer_reading": [
+        "C06",
+        "C07",
+        "C08",
+        "C09"
+      ],
+      "worker_claim": "Both directed legal cases and both naming reasons combined.",
+      "evidence": "תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה",
+      "resolution_state": "semantic_content_agreed_composite_retained",
+      "proposed_action": "Do not count four independent producer claims; atomic argument view needs separate rule/reason nodes and internal support edges."
+    },
+    {
+      "id": "ZP03",
+      "category": "representation_difference",
+      "severity": "low",
+      "refs": [
+        "Zevachim 4a:19"
+      ],
+      "worker_record_ids": [
+        "zev_baalim_q_todah",
+        "zev_baalim_e_todah"
+      ],
+      "reviewer_reading": [
+        "C10"
+      ],
+      "worker_claim": "The verse-availability objection is represented as a question and objection edge rather than separate claim.",
+      "evidence": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא",
+      "resolution_state": "accepted_equivalent_discourse_representation",
+      "proposed_action": "No semantic correction required."
+    },
+    {
+      "id": "ZP04",
+      "category": "unproduced_context_tail",
+      "severity": "scope_limit",
+      "refs": [
+        "Zevachim 4b:8",
+        "Zevachim 4b:10"
+      ],
+      "worker_record_ids": [],
+      "reviewer_reading": [
+        "X05"
+      ],
+      "worker_claim": null,
+      "evidence": "אלא אמר רב אשי אתיא מאיל נזיר",
+      "resolution_state": "outside_current_produced_scope",
+      "proposed_action": "Continue production from4b:8; do not count X05 as omitted within the ten-segment probability core or claim whole local derivation delivered."
+    }
+  ],
+  "confirmed_scope_errors": [],
+  "agreements": [
+    "All15 independently identified core propositions represented; composite mappings are transparent and no accuracy percentage is inferred.",
+    "Abba Hanin transmitter and Rabbi Eliezer quoted authority separated.",
+    "Printed Rav Pinhas son of Rav Ami and son of Rav Mari remain distinct.",
+    "The4a:25 analogy is hypothetical, with objections and qualifications in4a:26–4b:3 preserved; it is not presented as final accepted proof.",
+    "The10 source segments are fully partitioned by primary structure without character gaps or overlap."
+  ],
+  "qualification": {
+    "ml_eligible": false,
+    "newly_task_qualified_records": 0,
+    "human_reviewed": false,
+    "production_state_mutated": false,
+    "producer_promotion_performed": false,
+    "no_full_tractate_verdict": true
+  }
+}
