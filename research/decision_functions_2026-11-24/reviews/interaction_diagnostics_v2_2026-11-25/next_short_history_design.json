@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "status": "ASSIGNMENT_DESIGN_NOT_EXECUTED_REQUIRES_NEW_PREFIT_CHECKPOINT",
+  "version": "short_history_v1",
+  "repository": "shulm/AI-Talmudic-Study",
+  "reviewed_execution_commit": "40d201997ab8d79d138734b1ef116c161719c11b",
+  "purpose": "Test the fixed qualified numerical method at 16 well-covered observations; no text or human experiment.",
+  "paths": {
+    "code": "labs/decision_functions_short_history_v1/",
+    "public_run": "research/decision_functions_2026-11-24/runs/short_history_v1/",
+    "private": "new private array/parameter directory, never committed"
+  },
+  "objective": {
+    "shared": "mean CE + rho/2*(||V||F^2 + ||U||F^2/S) + lambda_b/(2*S)*||b||F^2",
+    "personal_per_person": "mean CE over k supports + rho_adapt/2*||u||^2 + lambda_b_adapt/2*||b||^2"
+  },
+  "shared_model": {
+    "rho": 0.01,
+    "lambda_b": 0.1,
+    "rank": 2,
+    "classes": 3,
+    "feature_dimension": 2,
+    "shared_logits": "known and fixed",
+    "initialization_seeds": [
+      11,
+      29,
+      47
+    ],
+    "ensemble": "mean seed probabilities within each one-history condition",
+    "shared_reuse": "one basis per realization/regime/initialization across every history budget, schedule and adaptation policy"
+  },
+  "generator": {
+    "source": "40d201997ab8d79d138734b1ef116c161719c11b:labs/decision_functions_diagnostics_v2/fixture.py",
+    "family": "unchanged rotational generator with parameterized seeds",
+    "people": 96,
+    "person_partition": [
+      48,
+      24,
+      24
+    ],
+    "cases": 192,
+    "groups": 64,
+    "group_partition": [
+      40,
+      12,
+      12
+    ],
+    "feature_dimension": 2,
+    "support_pool_groups": 32,
+    "support_pool_cases": 96,
+    "shared_logit_scale": 0.25,
+    "interaction_scale": 2.5,
+    "offset_normal_sd": 0.12,
+    "pairing": "adjacent people have identical centered offsets and opposite interaction phases",
+    "training_people": 48,
+    "training_cases": 120,
+    "heldout_people": 24,
+    "heldout_cases": 36,
+    "reserved_middle_partition": "unused; no development selection",
+    "regimes": [
+      "positive",
+      "null"
+    ]
+  },
+  "realizations": [
+    {
+      "id": "C",
+      "generator_seed": 20261128,
+      "label_seed": 2721
+    },
+    {
+      "id": "D",
+      "generator_seed": 20261129,
+      "label_seed": 2722
+    }
+  ],
+  "support": {
+    "primary_k": 16,
+    "secondary_k": [
+      4,
+      32,
+      96
+    ],
+    "zero_fit_fallback_k": 0,
+    "schedule_seeds": [
+      101,
+      211
+    ],
+    "pool": "original split_support: first 32 complete training groups in the fixture",
+    "group_hash": "sha256(UTF8(\"short_history_v1|<realization>|<seed>|group|<group_id>\"))",
+    "group_sort": "ascending digest, then ascending integer group ID for an exact tie",
+    "phase_hash": "sha256(UTF8(\"short_history_v1|<realization>|<seed>|phase|<group_id>\"))",
+    "phase_rule": "full digest as unsigned big-endian integer modulo 3; cyclic phase,phase+1,phase+2 modulo 3",
+    "serialization": "uppercase C or D; decimal integer seed/group ID without leading zeros; no spaces or trailing newline",
+    "selection": "concatenate complete triplets and take case prefixes",
+    "selection_inputs_allowed": [
+      "realization_id",
+      "fixed_schedule_seed",
+      "training_support_group_id",
+      "within_group_phase_id"
+    ],
+    "selection_inputs_forbidden": [
+      "angles",
+      "responses",
+      "oracle probabilities",
+      "gradients",
+      "fitted parameters",
+      "query outcomes"
+    ],
+    "same_cases": "all people, methods and donor controls share selected question IDs",
+    "gram_eigenvalues": {
+      "4": [
+        0.375,
+        0.625
+      ],
+      "16": [
+        0.46875,
+        0.53125
+      ],
+      "32": [
+        0.484375,
+        0.515625
+      ],
+      "96": [
+        0.5,
+        0.5
+      ]
+    },
+    "gram_absolute_tolerance": 1e-12,
+    "96_reuse": "fit once per head/regime/realization in canonical fixture support order; reuse for both schedules",
+    "partial_groups": "allowed only within training partition; no sibling case crosses into query partition",
+    "k0": "B3 and M1 equal B2 analytically; B1 equals training-frequency prior; no optimizer"
+  },
+  "policies": {
+    "primary": {
+      "budgets": [
+        4,
+        16,
+        32,
+        96
+      ],
+      "rho_adapt": 0.01,
+      "lambda_b_adapt": 0.1,
+      "B3_lambda_b": 0.1,
+      "role": "frozen algorithm learning curve; sole predictive qualification policy"
+    },
+    "count_scaled_secondary": {
+      "budgets": [
+        16
+      ],
+      "rho_adapt": 0.06,
+      "lambda_b_adapt": 0.6,
+      "B3_lambda_b": 0.6,
+      "role": "preserve 96-support summed-loss ridge precision; descriptive only; cannot rescue primary failure"
+    }
+  },
+  "baselines": {
+    "B1_pseudocount": 4,
+    "B1_prior": "own realization and regime training-label frequencies",
+    "B2": "softmax of known shared logits",
+    "B3": "offset-only adaptation with the current policy offset penalty",
+    "no_hyperparameter_selection": true
+  },
+  "controls": {
+    "matched_other": {
+      "map": "heldout local row xor 1",
+      "construction": "row permutation of saved same-budget/same-policy own-history probabilities; one donor, no mixtures",
+      "models": [
+        "B1",
+        "B2",
+        "B3",
+        "M1"
+      ],
+      "evaluation_target": "recipient oracle probabilities and sampled outcomes",
+      "additional_fits": 0,
+      "B2": "exact invariance",
+      "null_expected_pair_average": "zero algebraically because paired oracle probabilities are identical; structural sanity check, not evidence of absent spurious interaction",
+      "null_identity_absolute_tolerance": 1e-12,
+      "save": [
+        "actual recipient-to-donor mapping",
+        "support IDs",
+        "support-label provenance",
+        "input hashes",
+        "resulting array hashes"
+      ]
+    },
+    "uninformative": {
+      "budget": 16,
+      "policy": "primary",
+      "schedules": [
+        101,
+        211
+      ],
+      "regimes": [
+        "positive",
+        "null"
+      ],
+      "support_features": "zero interaction features",
+      "support_labels": "existing generator no-interaction oracle draws",
+      "query": "unchanged oracle/features",
+      "fit": "one B3 batch per realization/regime/schedule",
+      "M1": "analytic u=0 and identical B3 offset problem; construct prediction without extra optimization",
+      "qualification": false
+    }
+  },
+  "optimizer": {
+    "name": "L-BFGS-B",
+    "dtype": "float64",
+    "maxiter": 1000,
+    "ftol": 1e-12,
+    "gtol": 1e-08,
+    "maxls": 50,
+    "extra_retries": 0,
+    "failure": "record the consumed slot and stop with explicit incomplete state; no replacement seed or retry"
+  },
+  "numerical_checks": {
+    "realizations": [
+      "C",
+      "D"
+    ],
+    "regime": "positive",
+    "budget": 16,
+    "schedule_seed": 101,
+    "policies": [
+      "primary",
+      "count_scaled_secondary"
+    ],
+    "heads": [
+      "B3",
+      "M1_11",
+      "M1_29",
+      "M1_47"
+    ],
+    "new_batch_sizes": [
+      1,
+      7
+    ],
+    "reuse_batch_size": 24,
+    "comparison": "same first person, individual seed heads before ensembling",
+    "probability_difference_max": 1e-06,
+    "first_person_expected_nll_difference_max": 1e-05,
+    "tolerance_expansion": false
+  },
+  "metrics": {
+    "probability_floor": 1e-12,
+    "expected_NLL": "mean oracle cross entropy over people and query cases; then mean across the two support schedules",
+    "gain": "schedule-averaged expected NLL(B3)-expected NLL(M1)",
+    "oracle_gap_recovery": "averaged gain divided by averaged B3 excess expected NLL over oracle",
+    "contrast": "v2 matched-person difference in each of three pairwise class log odds, relative to first canonical query",
+    "contrast_NRMSE": "sqrt(mean over histories/pairs/queries/class-contrasts of (D_pred-D_oracle)^2 / mean over pairs/queries/class-contrasts of D_oracle^2)",
+    "null_contrast_RMS": "sqrt(mean squared predicted contrast); no normalization by zero oracle contrast",
+    "history_aggregation": "average losses and squared errors; never average probabilities from different histories",
+    "denominators": "positive and finite for positive-regime oracle-gap and contrast metrics; undefined cannot pass",
+    "also_report": [
+      "realized NLL",
+      "accuracy",
+      "Brier",
+      "expected NLL",
+      "initialization variation",
+      "single-donor minus own loss",
+      "each schedule",
+      "aggregate",
+      "worst schedule",
+      "distance to each gate"
+    ]
+  },
+  "primary_gates": {
+    "k": 16,
+    "policy": "primary",
+    "required_realizations": [
+      "C",
+      "D"
+    ],
+    "positive_expected_nll_gain_min": 0.05,
+    "positive_oracle_gap_recovery_min": 0.5,
+    "positive_contrast_NRMSE_max": 0.5,
+    "null_expected_nll_degradation_max": 0.01,
+    "comparison_uses_unrounded_values": true,
+    "pooling_or_secondary_rescue": false
+  },
+  "bootstrap": {
+    "metrics": [
+      "positive primary expected-NLL gain",
+      "primary null expected-NLL degradation",
+      "positive primary M1 donor-minus-own expected-NLL contrast"
+    ],
+    "replicates": 2000,
+    "seed": 1701,
+    "rng": "numpy.random.Generator(numpy.random.PCG64(1701)) reset separately per realization",
+    "draw_order": "2000x12 uniform integer person-pair indices in [0,12), then separate 2000x12 query-group indices in [0,12)",
+    "interval": "95 percent percentile; quantiles 0.025 and 0.975 with linear interpolation",
+    "person_unit": "12 whole adjacent matched pairs, both people retained",
+    "query_unit": "12 whole rotational groups, all 3 cases retained",
+    "aggregation": "average history cell losses first; resample pairs/groups independently; normalize within person then average people",
+    "pairing": "identical resample indices across models/paired contrasts",
+    "save": "indices, hashes, replicate scalars, interval outputs",
+    "interpretation": "conditional on fitted models and fixed support schedules; not retraining/domain uncertainty",
+    "gate_role": "reported uncertainty, no new interval-based pass rule"
+  },
+  "curvature": {
+    "role": "zero-fit explanatory diagnostic, cannot select/exclude/tune",
+    "scope": "each saved per-seed informative M1 adaptation in primary and secondary policies; do not treat probability ensemble as one parameter fit",
+    "coordinates": "2 orthonormal offset-contrast coordinates and 2 personal interaction coordinates",
+    "offset_basis": "columns (1,-1,0)/sqrt(2) and (1,1,-2)/sqrt(6)",
+    "data_units": "mean-loss Hessian: sum_i J_i.T*(diag(p_i)-p_i*p_i.T)*J_i / k",
+    "penalized_units": "data mean Hessian + diag(lambda_b_adapt I2, rho_adapt I2)",
+    "probabilities": "saved-parameter fitted support probabilities, no oracle selection",
+    "report": [
+      "data-only min eigenvalue and condition number",
+      "data-plus-ridge min eigenvalue and condition number",
+      "units, k, seed, policy"
+    ],
+    "singularity": "record singular/nonfinite state explicitly rather than invalid JSON numbers or exclusions",
+    "not_claimed": "calibrated posterior uncertainty"
+  },
+  "verification": {
+    "states": [
+      "VERIFIED_COMPLETE",
+      "VERIFIED_DECLARED_EARLY_STOP",
+      "INCOMPLETE"
+    ],
+    "expected_sets": "derive exact stages, archives, array keys, metric rows, and ledger identities from frozen protocol; presence-conditional checks and upper bounds insufficient",
+    "qualification": "complete valid audit AND passed numerical checks AND complete saved-evidence replay AND all four primary gates separately on C and D",
+    "early_stop_qualifies": false,
+    "zero_fit_failure_tests": [
+      "empty run",
+      "missing complete ledger",
+      "missing heldout stage/archive",
+      "missing array key",
+      "inconsistent IDs/counts",
+      "unsuccessful optimizer evidence",
+      "success flag inconsistent with prerequisites"
+    ],
+    "replay": [
+      "metric arithmetic",
+      "bootstrap replicates/intervals",
+      "gate decisions",
+      "actual donor permutations",
+      "analytic zero-support and uninformative identities",
+      "complete-run state"
+    ],
+    "artifact_identity": "hash private artifacts before and after replay",
+    "no_refits": true,
+    "declared_early_stop_paths": [],
+    "early_stop_interpretation": "No scientific early stop is authorized here. A C gate failure still executes D; engineering/resource interruption is INCOMPLETE."
+  },
+  "execution_limits": {
+    "shared_fits": 12,
+    "adaptation_batches": 184,
+    "person_solves": 3776,
+    "optimizer_records": 196,
+    "cpu_core_seconds": 3600,
+    "sampled_memory_bytes": 4294967296,
+    "person_solves_outer_sanity_cap": 4096,
+    "paid_calls": 0,
+    "dataset_model_download_bytes": 0,
+    "human_fits": 0,
+    "human_adaptation_solves": 0,
+    "human_evaluations": 0,
+    "extra_retries": 0,
+    "unused_capacity_authorizes_extra_work": false
+  },
+  "checkpoints": [
+    "reviewed assignment SHA recorded",
+    "complete scientific code/protocol/expected IDs/zero-fit checks pushed and posted before fitting",
+    "execute declared C and D; no selection checkpoint",
+    "saved-evidence verification",
+    "final report and draft PR with final SHA"
+  ],
+  "scientific_failure": "continue the other predeclared realization unless invalid execution/resource failure; preserve primary failure without tuning or rescue",
+  "text_next_spec": "proposal only: representation meaning, leakage exclusions, semantic/template/paraphrase grouping, matched numerical control, frozen encoder admission/revision and training-only transforms; no encoder choice/download/experiment",
+  "parallel_coordination": {
+    "SRO_exposure_prs": [
+      5,
+      8
+    ],
+    "corpus_preparation_prs": [
+      10,
+      11
+    ],
+    "instruction": "consult current handoffs; do not duplicate, change or suspend independently authorized tracks"
+  },
+  "required_deliverables": [
+    "PROTOCOL.json",
+    "exact stage manifests",
+    "private arrays and parameter manifests",
+    "support schedules and donor maps",
+    "RESULTS.md",
+    "results_summary.json",
+    "complete verification receipts",
+    "cumulative resource ledger",
+    "NEXT_HANDOFF.md",
+    "TEXT_REPRESENTATION_NEXT_SPEC.md"
+  ],
+  "planned_stages": [
+    {
+      "id": "C_shared",
+      "shared_fits": 6,
+      "adaptation_batches": 0,
+      "person_solves": 0,
+      "optimizer_records": 6
+    },
+    {
+      "id": "C_support",
+      "shared_fits": 0,
+      "adaptation_batches": 76,
+      "person_solves": 1824,
+      "optimizer_records": 76,
+      "breakdown": {
+        "primary_informative": 56,
+        "count_scaled_16": 16,
+        "uninformative_B3": 4
+      }
+    },
+    {
+      "id": "C_batch",
+      "shared_fits": 0,
+      "adaptation_batches": 16,
+      "person_solves": 64,
+      "optimizer_records": 16
+    },
+    {
+      "id": "D_shared",
+      "shared_fits": 6,
+      "adaptation_batches": 0,
+      "person_solves": 0,
+      "optimizer_records": 6
+    },
+    {
+      "id": "D_support",
+      "shared_fits": 0,
+      "adaptation_batches": 76,
+      "person_solves": 1824,
+      "optimizer_records": 76,
+      "breakdown": {
+        "primary_informative": 56,
+        "count_scaled_16": 16,
+        "uninformative_B3": 4
+      }
+    },
+    {
+      "id": "D_batch",
+      "shared_fits": 0,
+      "adaptation_batches": 16,
+      "person_solves": 64,
+      "optimizer_records": 16
+    }
+  ]
+}

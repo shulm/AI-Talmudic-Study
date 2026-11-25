@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-25",
+  "repository": "shulm/AI-Talmudic-Study",
+  "pull_request": 12,
+  "reviewed_commit": "40d201997ab8d79d138734b1ef116c161719c11b",
+  "prefit_commit": "1ac9eaec22230d3db2b46ebdda3ada1f84f25366",
+  "selection_commit": "f830fbd989d196ebf5b44c2c862a2725da330c81",
+  "disposition": "RETAIN_QUALIFIED_SYNTHETIC_DIAGNOSTIC_WITH_BOUNDED_SCOPE",
+  "independently_checked": {
+    "public_scalar_comparisons": 70,
+    "public_scalar_rows": 14,
+    "public_scalar_max_discrepancy": 0.0,
+    "gates_reconstructed": true,
+    "development_selection_reconstructed": true,
+    "delivery_manifest_normalized_text_hashes": 225,
+    "prefit_scientific_source_hashes": 8,
+    "all_available_manifest_hashes_match": true,
+    "historical_pilot_v1_lab_run_blobs_preserved": 287,
+    "previously_present_files_changed_after_prefit": [
+      "AGENT_HANDOFF.md"
+    ],
+    "previously_present_files_changed_after_selection": [
+      "AGENT_HANDOFF.md"
+    ],
+    "complete_stage_ledgers": 6,
+    "optimizer_records": 88,
+    "shared_fits": 24,
+    "support_adaptation_batches": 60,
+    "training_offset_batches": 4,
+    "person_solves": 1472,
+    "stage_IDs_match_declarations": true,
+    "all_complete_records_valid": true,
+    "A_development_hash_matches_selection": true,
+    "successful_command_receipts": 7,
+    "resource_receipt_arithmetic_matches": true,
+    "sampled_CPU_seconds": 27.171875,
+    "profiled_wall_seconds": 72.8289999999106,
+    "peak_sampled_child_RSS_bytes": 80646144,
+    "fitting_and_selection_source_boundaries": "logical code boundaries inspected; no OS secrecy claim",
+    "publication_receipts_and_ledger_order": "consistent with declared ordering"
+  },
+  "executor_reported_not_independently_replayed": {
+    "private_cache_available": false,
+    "primary_saved_array_comparisons": 329,
+    "primary_max_discrepancy": 2.220446049250313e-16,
+    "supplemental_comparisons": 280,
+    "supplemental_max_discrepancy": 0.0,
+    "comparison_counts_reconciled_from_source": true,
+    "private_archive_hash_bytes_independently_checked": false,
+    "predictions_regenerated_from_weights": false
+  },
+  "reproduced_verifier_defect": {
+    "method": "isolated temporary empty run; no fits or prediction generation",
+    "observed": {
+      "status": "PASS",
+      "comparisons": 0,
+      "optimizer_records": 0,
+      "person_solves": 0,
+      "stages": []
+    },
+    "location": "labs/decision_functions_diagnostics_v2/verify.py",
+    "related_report_weakness": "report.py does not explicitly conjoin every audit/numerical prerequisite",
+    "completed_v2_result_invalidated": false,
+    "reason": "actual required evidence is complete and supplemental audit enforces exact totals",
+    "required_followup": "protocol-derived completeness states and conjunction in new lab; preserve v2 unchanged"
+  },
+  "scope_limits": [
+    "96 supports",
+    "two numerical feature dimensions",
+    "rank two",
+    "known shared logits",
+    "one generating family with two realizations",
+    "three optimizer seeds are not three independent generated datasets",
+    "paired people and grouped query dependence",
+    "null degradation is positive within fixed tolerance",
+    "no 16-support, text, or human qualification"
+  ],
+  "review_activity": {
+    "new_model_fits": 0,
+    "new_person_adaptation_solves": 0,
+    "new_prediction_conditions": 0,
+    "private_saved_array_replays": 0,
+    "human_evaluations": 0,
+    "new_scientific_fixtures_generated": 0,
+    "merges": 0
+  },
+  "next_assignment": {
+    "version": "short_history_v1",
+    "primary_supports": 16,
+    "shared_fits": 12,
+    "adaptation_batches": 184,
+    "person_solves": 3776,
+    "optimizer_records": 196,
+    "execution_status": "NOT_EXECUTED_IN_THIS_REVIEW"
+  },
+  "parallel_PR_metadata_read": [
+    5,
+    8,
+    10,
+    11
+  ],
+  "parallel_findings_independently_reviewed_in_this_review": false
+}
