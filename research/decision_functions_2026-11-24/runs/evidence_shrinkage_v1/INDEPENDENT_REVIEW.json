@@ -1,0 +1,37 @@
+{
+  "status": "APPROVED_FOR_PREFIT_PUBLICATION",
+  "reviewer": "independent AI methods/code reviewer; not human certification",
+  "scope": "conditional proof, scientific core, exact audit and forward replay",
+  "reviewed_hashes": {
+    "contracts.py": "c96b32417a4c762646cfea513e333230a22081a723a19acbbf48c4839a6ccbeb",
+    "core.py": "b5acd1ff213eec3dc4c876f2beac274a51bcff3f195d6f07dbd8523d95bd72f9",
+    "head.py": "477d318cc566da07dafeb53e82e5e10a5679e9e329b488cf988009fed96006fc",
+    "evidence.py": "5cc64b702eba69d55d91e1ef7bdfe814e513e47969f084287177f398993b4802",
+    "fixture.py": "388d19cafb9f26f043e1dc40ce477d7b3128a528859ee0505a84a21c4d98e829",
+    "execute.py": "80fb1dd99bc37dc73ee628f868ddf6a84e6b3db131cc7d242564182bbaa942b4",
+    "scoring.py": "d92ebee8499ab7ff8952fe2968a233ad04b02581030c8b0926acfc6ae3ef2981",
+    "replay.py": "842315c4c9a24da6554cd996730b600130bda49e2dad0807601de6dc2f5f52e7",
+    "independent_scoring.py": "5c1d6ed18878f95ca7b62dfcda95aaf811e17428eb16070e780ae47266f08d91",
+    "verify.py": "ac68a4bce2feeca9b8815ee6c0ebf189c9a8eb341c0d58767eefd33b972e4161",
+    "preflight.py": "84a4c065546ef8a24e70cc2c8d8d159d3275e007e69c6b18e576a50b6d08b4a4",
+    "integration_preflight.py": "150d75c328b8b38dcdcfde4ee456f01831ad8a1cfd986d1fa942f8f7469b981f",
+    "freeze.py": "8cd71b5de2957fb482a4bf3d2dccde2f1c46e25cd9a6e8e34ae6ebec2c814333",
+    "report.py": "c10a655ec22d2f5abd3f5109a7b9373852d5a75a7e41e58d59fd6053fe2e367a",
+    "run_logged.py": "c3078b86e58b6b9df50b520469c661dafc75d874bf1252747174e69285f59bc1"
+  },
+  "toy_checks": {
+    "exhaustive_dp_max": 1.887379141862766e-15,
+    "null_mean_error": 6.661338147750939e-16,
+    "analytic_gradient_max": 1.4502024234253064e-10,
+    "objective_replay_max": 2.220446049250313e-16
+  },
+  "cpu_seconds": 0.265625,
+  "overhead": "imports/startup not profiled",
+  "initial_findings": [
+    "empty input bindings could pass",
+    "empty source/history manifests could pass",
+    "failure-path checks required actual verifier mutation"
+  ],
+  "resolution": "Exact stage/source identities and assignment-anchored history enforced; integration_01 passed 1160 complete mock comparisons and all17 mutation/collision checks",
+  "limitation": "Scoring report/gate/contrast logic substantially shared; independent probability/DP/weight forward arithmetic, objective replay, loss reduction and bootstrap expressions provide distinct checks"
+}

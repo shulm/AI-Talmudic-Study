@@ -1,0 +1,657 @@
+{
+  "private_files": {
+    "bootstrap.npz": "874fa16998dd40eafdb34d8108f6d2f08e39caf72f69dfdc6ec313307b80ff98",
+    "evaluator.npz": "c5cb658cdafe4e69503fe6e6b559e2d724dee895fee87a4020d58df731d70e94",
+    "evidence.npz": "b6ff5202f2b16b953cab34f05648c918411ca2275eebcf81e3a4a3235abb8261",
+    "fixture.npz": "0931ec40db1876a624729afbd7864bd4351f3dfda639c89a1523284389276776",
+    "learner.npz": "48cb34c56692d956380fb6afbc95b15d643a3d2f8ed0a393028e8e6f15fca458",
+    "models.npz": "7667eb564a04ace3f9aff78ef867d344c10e08daee56826a679a0060599323c8",
+    "numerical.npz": "821c399ec07f4cfcb1b1831020841c8f6693877603fb22d502d894712046441a",
+    "predictions.npz": "7171fa29c5042568540bd5c1139e154ebce446e8df6d945d40fe82f0be98bb6b",
+    "support.npz": "1d26a5a282fa42e2fe0a886eb24a2a7acf57d62d2262292094218a473b73a847",
+    "parameters/F_numerical_101_B3_1.npy": "8be12be1436674b489c9a1cc097ee3ff5f891f1d02035018db9bd7597c4743c1",
+    "parameters/F_numerical_101_B3_7.npy": "12510300aac673ed39c699b8653e8381b60a4cee8e76fe5f191a01db2e99b1f7",
+    "parameters/F_numerical_101_M1_11_1.npy": "4cd5e3daa846f2ea5d564ce6f05bed69ae6634817d49c3d690548def198eb537",
+    "parameters/F_numerical_101_M1_11_7.npy": "403749a501b741165ec5a8baf72c83519f8e7722df621cb34bef6c307ccdea42",
+    "parameters/F_numerical_101_M1_29_1.npy": "1ed8377db12c838d83d51cbc0fdf5d7823e9dd5da1aed8c6d90de06fd7f4963a",
+    "parameters/F_numerical_101_M1_29_7.npy": "71f0cc4924632e468c98e89df94e2017748ade80b65a1bc2d5c812f1b2392fff",
+    "parameters/F_numerical_101_M1_47_1.npy": "6ad6addc9060ff2e8caa82e27f59c416acccd07cd6510c0785cbdffc9db72e67",
+    "parameters/F_numerical_101_M1_47_7.npy": "37f391f9658575eac95f9538f07025b520ee473f857da63db77fd2dc179586db",
+    "parameters/F_shared_11.npy": "b1c8fd0029ebba4a893265a6febc80a6bec6470bbb80c2166ba017990379778d",
+    "parameters/F_shared_29.npy": "220a2252c778f4aa8660332b299fb0f6377bf7eb845c89bcf58dcd3959f43430",
+    "parameters/F_shared_47.npy": "fcf1b5df3081a38fc30a9bfd831d4d3b7e87b1f476bae5b67239d0b288dcbadf",
+    "parameters/F_support_101_B3_48.npy": "4ffa8d52a98ac283f1fdd7f688ab8625474579306905889e4ed26dc4fe70024d",
+    "parameters/F_support_101_M1_11_48.npy": "11dd07cc32433ebef0c0b2d4f11c0ae94407b724fbec78ddd8117f7f58dfb977",
+    "parameters/F_support_101_M1_29_48.npy": "eb4b909da9afcddfaf8ecdce50edebc79c96004a5c3a644cd429e8a574cafdaa",
+    "parameters/F_support_101_M1_47_48.npy": "f4645372e3e893e1f388797b72cabb8b14f87dd50e94ae0b5d466d8f26887004",
+    "parameters/F_support_211_B3_48.npy": "b386a112089bb0ca8f7b0b4c7f512fa0d8fc1c0359edd9c551a5cc6f66237fb2",
+    "parameters/F_support_211_M1_11_48.npy": "ad6cc13521ae13b4de1024805e36fbf05cd91199929d17db96efb87c35d566e2",
+    "parameters/F_support_211_M1_29_48.npy": "1482e169f71fc3db22274a38216d26bcb6da8897c318595c75dda066f341c91c",
+    "parameters/F_support_211_M1_47_48.npy": "3ff608d0fc1e4bfcdd921cfd88d3df8093c1c1a7d7307cd52dbf4d073156b5d7"
+  },
+  "archives": {
+    "fixture": {
+      "z": [
+        192,
+        2
+      ],
+      "base": [
+        192,
+        3
+      ],
+      "bias": [
+        192,
+        3
+      ],
+      "u": [
+        192,
+        2
+      ],
+      "v": [
+        3,
+        2,
+        2
+      ],
+      "active": [
+        192
+      ],
+      "y": [
+        192,
+        192
+      ],
+      "oracle": [
+        192,
+        192,
+        3
+      ],
+      "train": [
+        120
+      ],
+      "reserved": [
+        36
+      ],
+      "test": [
+        36
+      ],
+      "pool": [
+        96
+      ]
+    },
+    "learner": {
+      "z": [
+        120,
+        2
+      ],
+      "base": [
+        120,
+        3
+      ],
+      "y": [
+        96,
+        120
+      ],
+      "query_z": [
+        36,
+        2
+      ],
+      "query_base": [
+        36,
+        3
+      ],
+      "query_ids": [
+        36
+      ],
+      "training_prior": [
+        3
+      ]
+    },
+    "support": {
+      "101_ids": [
+        16
+      ],
+      "101_z": [
+        16,
+        2
+      ],
+      "101_base": [
+        16,
+        3
+      ],
+      "101_y": [
+        48,
+        16
+      ],
+      "211_ids": [
+        16
+      ],
+      "211_z": [
+        16,
+        2
+      ],
+      "211_base": [
+        16,
+        3
+      ],
+      "211_y": [
+        48,
+        16
+      ]
+    },
+    "evaluator": {
+      "y": [
+        48,
+        36
+      ],
+      "oracle": [
+        48,
+        36,
+        3
+      ],
+      "active": [
+        48
+      ],
+      "person_ids": [
+        48
+      ],
+      "query_ids": [
+        36
+      ]
+    },
+    "models": {
+      "11_V": [
+        3,
+        2,
+        2
+      ],
+      "11_U": [
+        96,
+        2
+      ],
+      "11_b": [
+        96,
+        3
+      ],
+      "29_V": [
+        3,
+        2,
+        2
+      ],
+      "29_U": [
+        96,
+        2
+      ],
+      "29_b": [
+        96,
+        3
+      ],
+      "47_V": [
+        3,
+        2,
+        2
+      ],
+      "47_U": [
+        96,
+        2
+      ],
+      "47_b": [
+        96,
+        3
+      ]
+    },
+    "predictions": {
+      "101_B3": [
+        48,
+        36,
+        3
+      ],
+      "101_M1_11": [
+        48,
+        36,
+        3
+      ],
+      "101_M1_29": [
+        48,
+        36,
+        3
+      ],
+      "101_M1_47": [
+        48,
+        36,
+        3
+      ],
+      "101_B1": [
+        48,
+        36,
+        3
+      ],
+      "101_B2": [
+        48,
+        36,
+        3
+      ],
+      "101_M1": [
+        48,
+        36,
+        3
+      ],
+      "101_FIXED_MIX": [
+        48,
+        36,
+        3
+      ],
+      "101_ES": [
+        48,
+        36,
+        3
+      ],
+      "101_B1_donor": [
+        48,
+        36,
+        3
+      ],
+      "101_B2_donor": [
+        48,
+        36,
+        3
+      ],
+      "101_B3_donor": [
+        48,
+        36,
+        3
+      ],
+      "101_M1_donor": [
+        48,
+        36,
+        3
+      ],
+      "101_FIXED_MIX_donor": [
+        48,
+        36,
+        3
+      ],
+      "101_ES_donor": [
+        48,
+        36,
+        3
+      ],
+      "211_B3": [
+        48,
+        36,
+        3
+      ],
+      "211_M1_11": [
+        48,
+        36,
+        3
+      ],
+      "211_M1_29": [
+        48,
+        36,
+        3
+      ],
+      "211_M1_47": [
+        48,
+        36,
+        3
+      ],
+      "211_B1": [
+        48,
+        36,
+        3
+      ],
+      "211_B2": [
+        48,
+        36,
+        3
+      ],
+      "211_M1": [
+        48,
+        36,
+        3
+      ],
+      "211_FIXED_MIX": [
+        48,
+        36,
+        3
+      ],
+      "211_ES": [
+        48,
+        36,
+        3
+      ],
+      "211_B1_donor": [
+        48,
+        36,
+        3
+      ],
+      "211_B2_donor": [
+        48,
+        36,
+        3
+      ],
+      "211_B3_donor": [
+        48,
+        36,
+        3
+      ],
+      "211_M1_donor": [
+        48,
+        36,
+        3
+      ],
+      "211_FIXED_MIX_donor": [
+        48,
+        36,
+        3
+      ],
+      "211_ES_donor": [
+        48,
+        36,
+        3
+      ]
+    },
+    "numerical": {
+      "1_B3": [
+        1,
+        36,
+        3
+      ],
+      "1_M1_11": [
+        1,
+        36,
+        3
+      ],
+      "1_M1_29": [
+        1,
+        36,
+        3
+      ],
+      "1_M1_47": [
+        1,
+        36,
+        3
+      ],
+      "1_M1": [
+        1,
+        36,
+        3
+      ],
+      "1_FIXED_MIX": [
+        1,
+        36,
+        3
+      ],
+      "1_ES": [
+        1,
+        36,
+        3
+      ],
+      "7_B3": [
+        1,
+        36,
+        3
+      ],
+      "7_M1_11": [
+        1,
+        36,
+        3
+      ],
+      "7_M1_29": [
+        1,
+        36,
+        3
+      ],
+      "7_M1_47": [
+        1,
+        36,
+        3
+      ],
+      "7_M1": [
+        1,
+        36,
+        3
+      ],
+      "7_FIXED_MIX": [
+        1,
+        36,
+        3
+      ],
+      "7_ES": [
+        1,
+        36,
+        3
+      ]
+    },
+    "evidence": {
+      "101_11_atoms": [
+        192,
+        2
+      ],
+      "101_11_weights": [
+        192
+      ],
+      "101_11_count_order": [
+        153,
+        3
+      ],
+      "101_11_normalizers": [
+        193,
+        153
+      ],
+      "101_11_counts": [
+        48,
+        3
+      ],
+      "101_11_columns": [
+        48
+      ],
+      "101_11_sufficient": [
+        48,
+        2
+      ],
+      "101_11_log_e": [
+        48
+      ],
+      "101_29_atoms": [
+        192,
+        2
+      ],
+      "101_29_weights": [
+        192
+      ],
+      "101_29_count_order": [
+        153,
+        3
+      ],
+      "101_29_normalizers": [
+        193,
+        153
+      ],
+      "101_29_counts": [
+        48,
+        3
+      ],
+      "101_29_columns": [
+        48
+      ],
+      "101_29_sufficient": [
+        48,
+        2
+      ],
+      "101_29_log_e": [
+        48
+      ],
+      "101_47_atoms": [
+        192,
+        2
+      ],
+      "101_47_weights": [
+        192
+      ],
+      "101_47_count_order": [
+        153,
+        3
+      ],
+      "101_47_normalizers": [
+        193,
+        153
+      ],
+      "101_47_counts": [
+        48,
+        3
+      ],
+      "101_47_columns": [
+        48
+      ],
+      "101_47_sufficient": [
+        48,
+        2
+      ],
+      "101_47_log_e": [
+        48
+      ],
+      "101_log_e": [
+        48
+      ],
+      "101_h": [
+        48
+      ],
+      "101_w": [
+        48
+      ],
+      "211_11_atoms": [
+        192,
+        2
+      ],
+      "211_11_weights": [
+        192
+      ],
+      "211_11_count_order": [
+        153,
+        3
+      ],
+      "211_11_normalizers": [
+        193,
+        153
+      ],
+      "211_11_counts": [
+        48,
+        3
+      ],
+      "211_11_columns": [
+        48
+      ],
+      "211_11_sufficient": [
+        48,
+        2
+      ],
+      "211_11_log_e": [
+        48
+      ],
+      "211_29_atoms": [
+        192,
+        2
+      ],
+      "211_29_weights": [
+        192
+      ],
+      "211_29_count_order": [
+        153,
+        3
+      ],
+      "211_29_normalizers": [
+        193,
+        153
+      ],
+      "211_29_counts": [
+        48,
+        3
+      ],
+      "211_29_columns": [
+        48
+      ],
+      "211_29_sufficient": [
+        48,
+        2
+      ],
+      "211_29_log_e": [
+        48
+      ],
+      "211_47_atoms": [
+        192,
+        2
+      ],
+      "211_47_weights": [
+        192
+      ],
+      "211_47_count_order": [
+        153,
+        3
+      ],
+      "211_47_normalizers": [
+        193,
+        153
+      ],
+      "211_47_counts": [
+        48,
+        3
+      ],
+      "211_47_columns": [
+        48
+      ],
+      "211_47_sufficient": [
+        48,
+        2
+      ],
+      "211_47_log_e": [
+        48
+      ],
+      "211_log_e": [
+        48
+      ],
+      "211_h": [
+        48
+      ],
+      "211_w": [
+        48
+      ]
+    },
+    "bootstrap": {
+      "active_pairs": [
+        2000,
+        12
+      ],
+      "inactive_pairs": [
+        2000,
+        12
+      ],
+      "query_groups": [
+        2000,
+        12
+      ],
+      "active_gain": [
+        2000
+      ],
+      "inactive_degradation": [
+        2000
+      ],
+      "active_donor": [
+        2000
+      ],
+      "active_ES_fixed": [
+        2000
+      ],
+      "inactive_ES_fixed": [
+        2000
+      ]
+    }
+  },
+  "source_commit": "38dfff076b90d7c08387a06bd25f3cc75f15f6ae",
+  "seeds": {
+    "generator_seed": 20261202,
+    "label_seed": 2802,
+    "mask_seed": 2902
+  },
+  "information_boundary": "evaluator loaded only after prediction/evidence/numerical publication",
+  "model_hash": "7667eb564a04ace3f9aff78ef867d344c10e08daee56826a679a0060599323c8"
+}
