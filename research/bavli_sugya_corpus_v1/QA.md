@@ -1,36 +1,33 @@
-# Pilot QA and expansion decision
+# QA and Continuation Checkpoint Report (`v1.1.0`)
 
-**Mechanical validation passes. Semantic annotation remains provisional and the expansion gate does not pass.** This is a completed bounded construction/review checkpoint, not a completed masechet or certified atomic corpus.
+**Mechanical validation passes on cumulative data (`267` processed segments). The historical full-semantics/ML gate from PR #10 remains `false`; this checkpoint advances provisional sugya segmentation only (`ml_eligible=false`).**
 
-| Pilot | Source segments | Primary sugyot | Sub-sugyot | Statement units | Questions | Positions | Open review records |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Berakhot2a–5a |151|24|0|163|41|70|34|
-| Bava Metzia21a–22b |64|5|6|68|11|24|5|
-| Total |215|29|6|231|52|94|39|
+## 1. Cumulative Coverage Before vs. After `berakhot_block_002_5b_6a`
 
-Also59 textual scholar-name labels and43 relations:39 statement edges plus4 related-topic links. Labels are not59 independently disambiguated historical people. Statement units include narratives, questions and structural markers, not231 decisions. Questions are not exported as scholar positions. Relations and sub-sugyot are not additional independent observations. No model fitting, scholar prediction or held-out scoring occurred.
+| Metric | Baseline PR #10 (`ef29310`) | After Block `Berakhot 5b–6a` | Notes |
+|---|---:|---:|---|
+| Berakhot processed segments | `151` (`2a–5a`) | **`203`** (`2a–6a`) | `+52` core (`27` promoted from `5b` context with identical IDs/hashes + `25` on `6a`) |
+| Bava Metzia processed segments | `64` (`21a–22b`) | `64` (`21a–22b`) | `100%` byte-for-byte unchanged |
+| Total processed segments (`data/segments.jsonl`) | `215` | **`267`** | First `215` rows byte-identical |
+| Context-only segments (`context/segments.jsonl`) | `68` | **`78`** | `27` `5b` promoted out; `37` `6b` added; `41` BM context untouched |
+| Primary sugyot / Sub-sugyot | `29` / `6` | **`37`** (`32` BRK, `5` BM) / **`7`** | `B24` extended (`5a:24–5b:3`); `B25..B32` + `B31a` added |
+| Textual scholar labels (`data/scholars.jsonl`) | `59` | **`71`** | First `59` rows byte-identical; `+12` new labels on `5b–6a` |
+| Statements / Questions / Positions / Relations | `231` / `52` / `94` / `43` | **`250`** / `52` / `94` / **`44`** | Exhaustive Q–A/positions deferred (`29` core segs flagged `semantic_extraction_pending`) |
+| Open review records (`data/review_queue.jsonl`) | `39` | **`80`** | Includes `6a:7\|6a:8` boundary disagreement, `5b:14` homonym, and `B32` open tail |
+| Exact evidence spans verified | `688` | **`791`** | `0` substring, offset, or SHA-256 errors across all 37 pinned source files |
 
-The inventory contains37 tractates and81,793 original source segments. The semantic pilot covers215/81,793 (about0.263%);68 additional segments were retained as boundary context. Berakhot has2,749 source segments and Bava Metzia3,660 in this edition; neither is complete. All other35 tractates are inventory-only. Full per-masechet denominators and status are in progress_manifest.json.
+## 2. Continuation Safety Invariants Verified (`test_continuation.py`)
 
-## Recorded quality criteria and results
+1. **Preservation of accepted work:** All `215` baseline segment rows, all `34` unaffected sugyot (`B01..B23`, `M01..M05`, `M04a..M04f`), all `59` baseline scholars, `231` baseline statements, `52` questions, `94` positions, `43` relations, and `38` unaffected review records were verified byte-for-byte identical after block application.
+2. **Idempotent block replay:** Re-applying `berakhot_block_002_5b_6a` returns `already_applied_idempotent` with zero duplicate rows or byte changes.
+3. **Source & conflict rejection:** Mutated `source_sha256` raises `SourceIntegrityError`; a modified proposal under an existing `block_id` or overlapping core range raises `ConflictingBlockError`.
+4. **Crash / interrupted-write safety:** Simulated `IOError` mid-promotion automatically rolls back all touched files from write-ahead backup, leaving the previous checkpoint byte-identical and passing `validate.py`.
+5. **Cross-block open-tail lineage & full-span reading:** `B24` retained ID `sug_9a1c712c3a26fe45003b`, closed from `open_right` to `provisional` across `5a:24–5b:3`, and archived its prior JSON record (`previous_record_sha256: 03c92488...`) in `revisions_ledger.jsonl`. Multi-page inherited open tails automatically expand `prepare_block_input` before default preceding context using bounded `<=10`-segment / `<=8,000`-char sequential reading packets.
+6. **Whole-span review status enforcement:** Validator rejects `independent_source_reviewed` if any segment of an extended sugya (such as `5a:24` in `B24`) was omitted from the independent review span.
 
-These implementation-time criteria are not a preregistered scientific test:
+## 3. Separate Source-Only Review of `Berakhot 5b–6a`
 
-1. **Exact source and reference alignment:** zero errors required. All37 source files/schemas and TOC hashes checked;215 pilot and68 context raw strings match. The separate explicit-address audit checked11 amudim/215 numbered segments with0 normalized mismatches. It shares the source lineage and does not independently certify manuscripts or all remaining Bavli addresses.
-2. **Coverage and structural integrity:** every pilot segment appears once in a primary unit, nested units stay within parents, and no accidental duplicate IDs, dangling graph endpoints or unsupported quotations. Passed:215/215 primary coverage,0 gaps,0 overlaps,0 duplicate IDs;688 exact evidence spans checked. Exact quotations may recur across records intentionally.
-3. **Schema and stable serialization:** all eight JSONL tables validate; eight adversarial corruption tests reject offset, rewrite, duplicate, schema, graph, overlap, quote and name-order errors. An isolated rebuild reproduced13 outputs byte-for-byte. Semantic judgments are replayed from preserved authoring files, not independently regenerated by that test.
-4. **Separate difficult-source review:** BM initial review was frozen before seeing the primary reading, covering105 segments including context. Comparison examined44 initial BM claims/18 edges/5 primary groups/6 children. Later review examined all24 added BM units,25 targeted added Berakhot units and7 added positions.47 added Berakhot units were not exhaustively reread by the separate reviewer. Targeted Berakhot source reading covered40 segments and was explicitly subsequent, not blind. No unjustified global accuracy/agreement percentage is calculated from these different granularities.
-5. **Semantic readiness:** complete atomic claim decomposition, independently adjudicated boundaries/identities and comparable questions/alternatives are required before ML or expansion. **Not passed.** All215 source units now have a curated discourse representation, but some are composite;39 review records remain open (29 boundary/family/atomic work items and10 attribution items). A zero source-unit gap count is not zero atomic omissions. All semantic records remain ML-ineligible and AI-provisional; human expert reviews0.
-6. **Expansion budget:** a separately authorized budget is required before finishing Berakhot and continuing in TOC order. **Not authorized.** No full-masechet semantic execution occurred.
+A context-isolated reader (`blocks/berakhot_5b_6a/independent_review_initial.json`, `SHA-256: 1249a6d49e1bcb4dd82a88a0bcf13be4cdc5b56c3376a827b91d654c658e480f`) read only `input_packet.json` and `berakhot_5a_6b_reading.txt` before `proposal.json` existed in the workspace:
 
-## Findings corrected without erasing first readings
-
-The first author pass left96 source units without selected claims; a documented second pass filled their discourse summaries and added7 finer positions. The independent comparison produced four substantive corrections: C01 distinguished a maintained refutation from its rejected target; C02 distinguished explicit agreed scope from reconciliation; C03 corrected the Rav Ukva bar Hama name expansion using the continuation; C04 changed a supposed global rejection of Moses's uncertainty into an alternative explanation.
-
-Subsequent review corrected the paraphrased name כלאב (two records), the wording כרבן גמליאל (one record), and two locally rejected proposed explanations that had been left unresolved. C01–C07 and the original readings are retained, with both failed and corrected verification history. These are actual observed errors, not an estimate of all remaining errors. No speaker was assigned by חד אמר name order, no Rav/Rabbah/Rava collapse was used, and no anonymous narrator was automatically assigned to a nearby scholar.
-
-Open boundary cases: M01 starts in the previous page's receipt discussion; B24 begins a sentence completed on5b; M05 continues beyond22b into23a and further source context. Cross-page quotations and explicit open flags prevent arbitrary closure at the pilot edge. The attachment of the hadran marker21a:6 to the next structural unit differs from the independent review's semantic opening21a:7; it is disclosed, not counted as substantive agreement/disagreement.
-
-## What remains
-
-Finish atomic decomposition and speaker-scope review, especially composite baraitot and embedded narratives; independently review the remaining Berakhot source units; adjudicate alternative boundaries and comparable question groups; survey external parallels before any family split. Retain different occurrences even if later grouped into one family. After these criteria and an explicit execution budget, finish Berakhot, validate/checkpoint it, then proceed through the remaining actual TOC order. Do not use this pilot to claim a complete research-grade Bavli dataset or psychologically observed scholar choices.
+- Agreed on **`51 / 52` (`98.08%`)** inter-segment boundary slots, including closing `B24` at `5b:3`, crossing `5b:27 -> 6a:1` (`B29`), and leaving `B32` (`6a:17–6a:25`) `open_right` into `6b:1` (`וכולהו כתיבי באדרעיה:`).
+- Differed at **`6a:7 | 6a:8`** (splitting the fourth Abba Binyamin baraita `6a:7` from `6a:8–16` vs. grouping `6a:7–16` with sub-sugya `B31a`). Both frozen files are retained untouched, and `B31` carries `independent_source_reviewed_with_disagreement` plus an open `boundary_disagreement_preserved` review item.
