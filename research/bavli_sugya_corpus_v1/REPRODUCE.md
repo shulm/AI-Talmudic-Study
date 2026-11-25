@@ -1,26 +1,32 @@
-# Reproduce and inspect the bounded pilot
+# Reproduce, Validate, and Inspect (`v1.1.0`)
 
-Python3.12.4; jsonschema4.26.0, already available. Source handling/serialization otherwise uses the standard library. No new package installation, paid API, model training or corpus modification occurred. Reproduction replays recorded annotations; it does not claim a fresh model would independently produce identical judgments.
+Python 3.12+, `jsonschema`, and Node.js (built-in modules only for reader verification). No external network calls, paid API keys, or model training are used.
 
-From this directory:
+From `research/bavli_sugya_corpus_v1`:
 
 ```powershell
-python -X utf8 pipeline.py build --source-root 'F:\Sefaria-Export-master'
-python make_schema.py
-python -X utf8 compile_annotations.py
-python -X utf8 validate.py --source-root 'F:\Sefaria-Export-master'
+# 1. Validate cumulative dataset against local pinned Sefaria Wikisource export (all 37 tractates)
+python -X utf8 continue_corpus.py validate --source-root "F:\Sefaria-Export-master"
+python -X utf8 validate.py --source-root "F:\Sefaria-Export-master"
+
+# 2. Public-only validation (no F:\Sefaria-Export-master required) + public artifact hash check
+python -X utf8 continue_corpus.py validate --public-only
+python -X utf8 verify_manifest.py
+
+# 3. Run adversarial corruption tests, 7 continuation/rollback/replay tests, and isolated byte-for-byte rebuild
 python -X utf8 test_pipeline.py
+python -X utf8 test_continuation.py
 python -X utf8 test_reproduction.py
+
+# 4. Regenerate & verify Berakhot cumulative JSONL export, compact index, and self-contained Hebrew RTL reader
+python -X utf8 continue_corpus.py export
+node exports/verify_reader.cjs
+
+# 5. Inspect reconstructed sugyot (including extended B24 and open-right B32) or scholar positions
+python -X utf8 examples.py sugya B24
+python -X utf8 examples.py sugya B32
 python -X utf8 examples.py sugya M04
-python -X utf8 examples.py scholar 'רבא'
+python -X utf8 examples.py scholar "רבא"
 ```
 
-Build reads all37 named source files to construct the inventory; semantic extraction remains fixed to the two pilot intervals. It never falls back silently to merged.json or to another edition. An alternate source root is accepted, but hashes must match the delivered manifest for an exact reproduction. A different source snapshot is a new revision, not an equivalent rebuild. Save independent model or human review files separately; do not overwrite initial annotations.
-
-`validate.py --public-only` checks the included pilot data, schemas, quotations and graph without accessing the original corpus; it does not verify external source hashes. Full validation also checks all37 original source/schema files, actual TOC order, exact source coverage and byte-exact text. `test_reproduction.py` builds in an isolated temporary directory and compares13 generated outputs byte-for-byte; it leaves the delivered data untouched.
-
-`pipeline.py show Berakhot 2 4` displays zero-based page indices2–4, namely2a–3a, removing HTML only for reading. Do not treat this view as canonical text. context/windows.jsonl contains35 overlapping context windows, capped at10 segments/8,000 characters unless a single atomic segment exceeds that limit (explicitly flagged). Initial manual reading used the overlapping page-range batches documented in annotation_manifest.json; the window files support future provider use but are not claimed as35 separate model/API calls.
-
-Live address checks can be repeated using the explicit Sefaria endpoint URLs and selected version in mapping_review.json. Those endpoints may change; historical response hashes and normalized match counts remain the recorded audit. Never regenerate the independently frozen initial review just to obtain agreement.
-
-There is no Gemini adapter making hidden network calls. To change provider later, use a separately versioned annotated result bundle, record exact model/settings/prompt/input hashes and actual provider usage/cost, validate against the contract, and obtain a separate review before promotion. A paid provider requires an authorized budget.
+To open the interactive offline Hebrew RTL Berakhot reader, open `exports/berakhot_sugya_reader.html` directly in any browser. It supports full-text/title/summary/scholar search, daf and open-tail filtering, toggle between clean display text and raw Wikisource markup, and single-sugya export as `.json` or `.txt` with `CC-BY-SA` attribution.

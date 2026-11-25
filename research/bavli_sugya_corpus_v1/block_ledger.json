@@ -1,0 +1,106 @@
+{
+  "ledger_schema_version": "1.1.0",
+  "baseline_commit": "ef29310b50575ac2441ce59d0c68d58424f4b823",
+  "edition": "Wikisource Talmud Bavli",
+  "historical_pilot_gates": {
+    "semantic_completeness_pass": false,
+    "expansion_gate_pass": false,
+    "ml_eligible_records": 0,
+    "note": "Historical full-semantics/ML gate from PR #10 remains false; current phase is provisional sugya segmentation only."
+  },
+  "blocks": [
+    {
+      "block_id": "pilot_baseline_ef29310",
+      "phase": "bounded_pilot_v1",
+      "tractates": {
+        "Berakhot": "2a-5a",
+        "Bava Metzia": "21a-22b"
+      },
+      "core_segments_added": 215,
+      "cumulative_core_segments": 215,
+      "open_tails_after_block": [
+        {
+          "id": "sug_9a1c712c3a26fe45003b",
+          "authoring_key": "B24",
+          "tractate": "Berakhot",
+          "start_ref": "Berakhot 5a:24",
+          "end_ref": "Berakhot 5a:24",
+          "boundary_status": "open_right"
+        },
+        {
+          "id": "sug_d968fce424f6218db2d2",
+          "authoring_key": "M01",
+          "tractate": "Bava Metzia",
+          "start_ref": "Bava Metzia 21a:1",
+          "end_ref": "Bava Metzia 21a:5",
+          "boundary_status": "open_left"
+        },
+        {
+          "id": "sug_c0f6c7e3ae9d902ee487",
+          "authoring_key": "M05",
+          "tractate": "Bava Metzia",
+          "start_ref": "Bava Metzia 22b:11",
+          "end_ref": "Bava Metzia 22b:16",
+          "boundary_status": "open_right"
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "block_id": "berakhot_block_002_5b_6a",
+      "phase": "provisional_sugya_continuation_v1_1",
+      "tractate": "Berakhot",
+      "core_daf_range": "5b-6a",
+      "input_packet_sha256": "3185cd5c4ffa5f720d176bd1dd9f0712e8d077d693c4ede54644bdcdb8a420bf",
+      "proposal_sha256": "1d24dfc30a4e80b3e459bcb8220865e10fc175ca45a36a30f013769ee7a4c97b",
+      "independent_review_sha256": "1249a6d49e1bcb4dd82a88a0bcf13be4cdc5b56c3376a827b91d654c658e480f",
+      "core_segments_added": 52,
+      "promoted_from_context_count": 27,
+      "cumulative_tractate_segments": 203,
+      "cumulative_total_segments": 267,
+      "revised_record_ids": [
+        "rev_77544b1ee3d5d919e5fa",
+        "sug_9a1c712c3a26fe45003b"
+      ],
+      "new_sugya_ids": [
+        "sug_8aaf502a219414d94655",
+        "sug_3e781bcc10a62912f6fa",
+        "sug_4bddd22de96ee7dad529",
+        "sug_8abdf1580603d91a8e25",
+        "sug_d210ba50f39c0d38f613",
+        "sug_726a2749e243fa32b5db",
+        "sug_5eb00cfd65e6c6c1ae30",
+        "sug_bc413c5b52ef04c8a017"
+      ],
+      "last_closed_ref": "Berakhot 6a:16",
+      "next_unprocessed_ref": "Berakhot 6b:1",
+      "open_tails_after_block": [
+        {
+          "id": "sug_d968fce424f6218db2d2",
+          "authoring_key": "M01",
+          "tractate": "Bava Metzia",
+          "start_ref": "Bava Metzia 21a:1",
+          "end_ref": "Bava Metzia 21a:5",
+          "boundary_status": "open_left"
+        },
+        {
+          "id": "sug_c0f6c7e3ae9d902ee487",
+          "authoring_key": "M05",
+          "tractate": "Bava Metzia",
+          "start_ref": "Bava Metzia 22b:11",
+          "end_ref": "Bava Metzia 22b:16",
+          "boundary_status": "open_right"
+        },
+        {
+          "id": "sug_bc413c5b52ef04c8a017",
+          "authoring_key": "B32",
+          "tractate": "Berakhot",
+          "start_ref": "Berakhot 6a:17",
+          "end_ref": "Berakhot 6a:25",
+          "boundary_status": "open_right"
+        }
+      ],
+      "accepted": true
+    }
+  ]
+}

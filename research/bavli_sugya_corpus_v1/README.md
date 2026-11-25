@@ -1,27 +1,19 @@
-# Bavli sugya corpus v1 — bounded provisional pilot
+# Bavli sugya corpus v1.1 — provisional masechet-by-masechet continuation (from PR #10)
 
-This builds a reproducible source-grounded pilot, **not a completed Bavli corpus or a training-ready dataset**. The inventory covers all37 base tractates in the actual source TOC, in that order. Semantic processing is limited to Berakhot2a–5a and Bava Metzia21a–22b, with adjacent context read. No masechet is complete and no model was trained. Earlier experiments and source indexes are unchanged.
+This directory continues PR #10 (`ef29310b50575ac2441ce59d0c68d58424f4b823`) on its pinned **Wikisource Talmud Bavli** edition (`CC-BY-SA`, 37 tractates, 81,793 source segments) and existing stable IDs. PR #11 (which used a different edition and incompatible offsets) is preserved separately on its own branch and was never concatenated or copied here.
 
-The requested Gemini runtime and schema attachment were unavailable. The user explicitly authorized the current model for provisional pilot annotation and a newly defined provisional schema. These substitutions are recorded, not attributed to Gemini. No paid API calls were made. See SCHEMA_NOTES.md, RUN_LEDGER.md and annotation_manifest.json.
+## Current Scope and Gate Truthfulness
 
-Start with [the QA summary](QA.md), [progress manifest](progress_manifest.json), [mapping review](mapping_review.md), [independent comparison](review/comparison.md), and [reproduction commands](REPRODUCE.md). Each record validates against schema_v1.json. Exact Hebrew/Aramaic strings, including markup, punctuation and whitespace, are retained in segments; derived prose is explicitly editorial.
+- **Active phase:** Provisional sequential sugya segmentation (`v1.1.0`), one bounded block at a time, preserving the richer PR #10 pilot annotations (`Berakhot 2a–5a` and `Bava Metzia 21a–22b`) byte-for-byte while deferring exhaustive Q–A and comparable-position extraction to a separate phase.
+- **Historical gate preserved:** PR #10's full semantic/ML readiness gate (`semantic_completeness_pass=false`, `expansion_gate_pass=false`) did **not** pass and is preserved unchanged. Every semantic record remains `ai_provisional` and `ml_eligible=false`. No masechet is complete and no model was trained.
+- **Completed continuation checkpoint (`berakhot_block_002_5b_6a`):**
+  - Core added: **Berakhot `5b–6a`** (`52` segments: `27` on `5b` promoted from prior `context_only` with unchanged segment IDs/hashes + `25` newly extracted on `6a`), with `5a` preceding context and `6b` (`37` segments) following context.
+  - Cumulative *Berakhot* coverage: **`203 / 2,749` segments** (`2a:1–6a:25`), **`32` primary sugyot** (+ `1` sub-sugya `B31a`), last closed ref **`Berakhot 6a:16`**, active open tail **`B32` (`sug_bc413c5b52ef04c8a017`, `6a:17–6a:25` -> `6b:1`)**, next unprocessed ref **`Berakhot 6b:1`**.
+  - Inherited open unit **`B24` (`sug_9a1c712c3a26fe45003b`)** was extended from `Berakhot 5a:24` through `Berakhot 5b:3` and closed (`provisional`), preserving its ID and archiving its prior `1.0.0` snapshot in `revisions_ledger.jsonl`.
 
-## Dataset design
+## Key Files
 
-- `segments`:215 pilot source units, plus68 clearly separate context-only units in context/segments.jsonl. No source segment is silently rewritten or discarded.
-- `sugyot`:29 primary units and6 nested units. Boundaries follow discussion, not page breaks; three primary units are explicitly open at pilot edges. Primary coverage is exactly once per pilot segment; children are not extra independent examples.
-- `scholars`:textual name labels with evidence, not a certified authority catalog. Repeated names may refer to different historical people; external identity remains unresolved. Rav, Rabbah, Rava and named patronymics are not collapsed by substring matching.
-- `statements`:curated source-unit claims, questions, arguments, narratives and structural markers. Some units remain composite. Direct named authority, transmitter chain, quoted authority and anonymous narrator are distinct fields. Unassigned alternatives retain candidate names without assignment.
-- `questions` and `positions`:multiple questions/claims are allowed; statuses preserve assertions, conditions, rejection, reconciliation and uncertainty. Candidate-position lists are **topic inventories, not certified mutually exclusive or comparable answers**. They cannot yet be exported as an ML answer menu.
-- `relations`:source-supported argument edges and four within-pilot related-topic links. Related topics do not automatically form one parallel family. No claim of exhaustive graph or corpus-wide parallel detection.
-- `review_queue`:open boundary/family/atomic-decomposition and attribution work. Every semantic record is `ai_provisional`, with `ml_eligible=false`.
-
-`annotation_initial.py` and the independently frozen initial BM review preserve first readings. `annotation_completion.py` is a second author pass over previously unrepresented source units. `revisions.json` applies documented corrections without replacing those initial decisions. `compile_annotations.py` serializes them deterministically; it does not make semantic judgments by regex or fabricate missing scholar positions.
-
-## Future use and limits
-
-`examples.py` reconstructs a sugya using the original source strings or retrieves a named scholar label's documented provisional positions with quotations. Missing records mean missing evidence, never negative answers. A reported action, biblical narrative, interpretation or transmitted ruling is not automatically an observed psychological decision.
-
-Before any learned distance, Q–A or scholar-history experiment: finish atomic question/condition extraction; disambiguate entities and transmissions; neutralize candidate alternatives without removing conditions; review full continuations and semantic parallels; form adjudicated source families; then freeze family-level partitions. Do not randomly split these occurrences or related sub-sugyot. No synthetic scholar decision is represented as historical evidence.
-
-The local source edition is Wikisource Talmud Bavli as exported by Sefaria, pinned by file hashes. Source text retains the recorded CC-BY-SA attribution/terms; see SOURCE_ATTRIBUTION.md. Public files contain only the bounded pilot/context evidence, not full corpus copies. Subsequent tractate extraction must use a separate authorized execution budget and the recorded expansion gates.
+- **Continuation architecture:** `make_schema_v1_1.py` (`schema_v1_1.json`), `continuation.py`, `continue_corpus.py`, `block_ledger.json`, `revisions_ledger.jsonl`, `test_continuation.py`.
+- **Immutable block artifacts:** `blocks/berakhot_5b_6a/{input_packet.json, proposal_initial.json, proposal.json, independent_review_initial.json, comparison.json, comparison.md}`.
+- **Convenient Berakhot exports & reader:** `export_reader.py`, `exports/berakhot_sugyot_cumulative.jsonl`, `exports/berakhot_index.json`, `exports/berakhot_sugya_reader.html`, and `exports/verify_reader.cjs`.
+- **Preserved pilot & validation:** `pipeline.py`, `make_schema.py` (`schema_v1.json`), `annotation_initial.py`, `annotation_completion.py`, `revisions.json`, `compile_annotations.py`, `validate.py`, `test_pipeline.py`, `test_reproduction.py`, `verify_manifest.py`, [QA.md](QA.md), [HANDOFF.md](HANDOFF.md), [SCHEMA_NOTES.md](SCHEMA_NOTES.md), [REPRODUCE.md](REPRODUCE.md), and [SOURCE_ATTRIBUTION.md](SOURCE_ATTRIBUTION.md).
