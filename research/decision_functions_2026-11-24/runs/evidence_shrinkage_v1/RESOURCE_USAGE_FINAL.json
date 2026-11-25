@@ -1,0 +1,23 @@
+{
+  "command_receipts": 7,
+  "cpu_seconds_sampled": 43.203125,
+  "reviewer_cpu_seconds": 0.265625,
+  "postrun_delivery_audit_cpu_seconds": 0.453125,
+  "peak_rss_bytes_sampled": 101486592,
+  "profiled_wall_seconds": 59.37399999983609,
+  "failed_command_receipts": 2,
+  "failed_prefit_commands": 0,
+  "scientific_retries": 0,
+  "paid_calls": 0,
+  "dataset_model_download_bytes": 0,
+  "human_fits": 0,
+  "human_adaptations": 0,
+  "human_evaluations": 0,
+  "limits": {
+    "cpu_core_seconds": 3600,
+    "sampled_memory_bytes": 4294967296
+  },
+  "limitations": "All7 supervised commands included, including failure receipts and final inventory audit. Reviewer .265625 CPU seconds added separately. Polling every .05s can miss startup/exit CPU or transient RSS peaks. Shell/Git/network/orchestration and final report serialization overhead not comprehensively profiled. This is an accounted subtotal, not exact total process-tree cost.",
+  "accounted_cpu_subtotal": 43.46875,
+  "postrun_audit_accounting": "Included in seventh sampled command; internal .453125s is informational and not added again"
+}

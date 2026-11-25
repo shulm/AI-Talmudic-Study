@@ -1,0 +1,22 @@
+{
+  "command_receipts": 6,
+  "cpu_seconds_sampled": 42.5,
+  "reviewer_cpu_seconds": 0.265625,
+  "postrun_delivery_audit_cpu_seconds": 0.453125,
+  "peak_rss_bytes_sampled": 101486592,
+  "profiled_wall_seconds": 57.467999999877065,
+  "failed_command_receipts": 2,
+  "failed_prefit_commands": 0,
+  "scientific_retries": 0,
+  "paid_calls": 0,
+  "dataset_model_download_bytes": 0,
+  "human_fits": 0,
+  "human_adaptations": 0,
+  "human_evaluations": 0,
+  "limits": {
+    "cpu_core_seconds": 3600,
+    "sampled_memory_bytes": 4294967296
+  },
+  "limitations": "CPU/RSS polling every .05s omits possible startup/exit/transient peaks. Final audit measured process CPU after imports and counted separately (do not double count its later supervisor receipt). Imports, shell/Git/network/orchestration and other report edits not comprehensively profiled. Subtotal is measured accounting, not an exact total process-tree cost.",
+  "accounted_cpu_subtotal": 43.21875
+}

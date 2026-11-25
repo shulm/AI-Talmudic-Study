@@ -1,5 +1,13 @@
 # Research handoff — updated 2026-11-25
 
+## Evidence-shrinkage bounded delivery — PR20
+
+Executed PR19 G0–G4 from assignment724be8c49808e1e1b8643d81c73267f7577439c8; pre-fit38dfff076b90d7c08387a06bd25f3cc75f15f6ae was pushed and posted/read back before fitting. Read [results](research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/RESULTS.md), [handoff](research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/NEXT_HANDOFF.md), and [resource ledger](research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/RESOURCE_USAGE_FINAL.json).
+
+Status **INCOMPLETE / NUMERICALLY_UNRESOLVED**, qualification false. All12 shared fits,64 adaptation batches,1664 personal solves and76 optimizer records finished without retries. H batch7 probability difference1.2232536670264693e-6 exceeded the fixed1e-6 tolerance. The frozen executor stopped after H artifacts, before scientific_summary.json. The frozen verifier rejected that missing summary; it was not repaired. An explicitly post-run observer retained1158/1160 reached comparisons (max2.842170943040401e-14), unchanged private hashes, and the original exception. This is not VERIFIED_COMPLETE. Separate inventory confirms all36 archives/176 query arrays and965 historical blobs preserved.
+
+Available ES gains are .507507/.502357/.519710/.514875 and inactive degradation9.2423362e-6/0/0/0, but contrast NRMSE .555276/.564899/.534685/.556167 fails .5 throughout E/F/G/H. Preserve these empirical failures alongside numerical invalidity; no control or expectation theorem rescues qualification. No human/text experiment, downloads, paid calls, corpus changes or merge. Stop at review. PR18's separate planning-only sweep and seed banks remain untouched; PR5/8 exposure and PR14/16 source-production tracks remain separate. Any numerical diagnosis or representation study needs a new bounded assignment; do not rerun, retune or repair this frozen execution.
+
 ## Active modeling continuation: general decision functions — 2026-11-24
 
 The current modeling task is to learn `P(answer | problem, available answers, person's observed history)` on general corpora, then investigate the Talmudic application. This supersedes the scholar-position attribution objective in draft PR #1; retain that PR as historical context.
