@@ -1,4 +1,4 @@
-# Research handoff — updated 2026-11-24
+# Research handoff — updated 2026-11-25
 
 ## Active modeling continuation: general decision functions — 2026-11-24
 
@@ -19,6 +19,12 @@ PR #7 completed D0–D4 at `6da06a4b01bb825bcf4ad4b13c61648d6ee82220`. Read [its
 ### Completed canonical interaction diagnostic v2 — 2026-11-25
 
 PR #12 executes PR #9's E0–E4 assignment. Pre-fit checkpoint `1ac9eaec22230d3db2b46ebdda3ada1f84f25366`; selection freeze `f830fbd989d196ebf5b44c2c862a2725da330c81`. Read [results](research/decision_functions_2026-11-24/runs/interaction_diagnostics_v2/RESULTS.md), [handoff](research/decision_functions_2026-11-24/runs/interaction_diagnostics_v2/NEXT_HANDOFF.md), and [proposal only](research/decision_functions_2026-11-24/runs/interaction_diagnostics_v2/NEXT_STUDY_PROPOSAL.md). Rho=.01, offset penalty=.1 qualifies on both independently generated held-out realizations: positive expected-NLL gains .647037/.648746; contrast NRMSE .133680/.123272; null degradation .005626/.006592 below .01. This is bounded synthetic capability with 96 supports in two dimensions, not human/text/16-support validation. Exactly24 shared fits,64 adaptation batches,1472 personal solves; zero retries/human fits/evaluations/downloads. Original pilot/v1 results and v1 null failure are unchanged. Saved-array arithmetic and supplemental audits pass; 287 historical files preserved. Final resource totals are in RESOURCE_USAGE_FINAL.json. Stop for review; future limited-history/representation work requires a separately frozen assignment. PR5/PR8 SRO exposure and TID-8/scholarly admission gates remain separate.
+
+### Independent v2 review and next short-history assignment — 2026-11-25
+
+Read [the v2 independent review](research/decision_functions_2026-11-24/reviews/interaction_diagnostics_v2_2026-11-25/REVIEW.md), [executable next-agent prompt](research/decision_functions_2026-11-24/reviews/interaction_diagnostics_v2_2026-11-25/NEXT_AGENT_PROMPT.md), and [machine-readable design](research/decision_functions_2026-11-24/reviews/interaction_diagnostics_v2_2026-11-25/next_short_history_design.json). This assignment supersedes v2's proposal-only handoff as the next modeling task. The review retains qualification at `40d201997ab8d79d138734b1ef116c161719c11b` and independently checked public arithmetic, all 88 records/1,472 personal solves, 225 delivery hashes, eight pre-fit source hashes, and final resource totals. Original private arrays were unavailable. The generic v2 verifier can PASS an empty run; the actual completed result has complete evidence and an exact supplemental audit. Repair that verification weakness in the new version without changing v2.
+
+Next task: freeze and execute `short_history_v1`, primary 16 well-covered observations, secondary 4/32/96, two fresh realizations and two outcome-blind nested history schedules. Fix shared rho=.01 and lambda_b=.1; add one separately reported 16-case adaptation-scaling control (.06/.6), matched-other history permutations, and exact completeness gates. Complete design: 12 shared fits, 184 adaptation batches, 3,776 personal solves, 196 optimizer records; no retries, human evaluation, encoder acquisition, or corpus construction. A secondary success cannot rescue primary failure. Publish the new pre-fit checkpoint before optimization, then execute within the bounded assignment and return a draft PR/report through issue #2. Do not merge. Prepare the text-representation specification only as a later proposal. Parallel SRO PRs #5/#8 and provisional corpus PRs #10/#11 remain separate; consult their current handoffs and preserve their work.
 
 ## Current source-index research: Rabbah and Rav Yosef
 
