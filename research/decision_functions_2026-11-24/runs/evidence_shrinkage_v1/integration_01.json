@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "checks": {
+    "complete_mock": {
+      "state": "VERIFIED_COMPLETE",
+      "comparisons": 1160,
+      "qualification": false
+    },
+    "corrupt_bytes": {
+      "rejected": true,
+      "error": "Categorical mismatch"
+    },
+    "missing_evidence": {
+      "rejected": true,
+      "error": "Missing/duplicate/unexpected identities"
+    },
+    "wrong_prediction": {
+      "rejected": true,
+      "error": "E/forward/predictions/101_ES: 0.14101563479872942 exceeds 1e-12"
+    },
+    "bad_normalization": {
+      "rejected": true,
+      "error": "Bad normalization"
+    },
+    "wrong_evidence": {
+      "rejected": true,
+      "error": "E/forward/evidence/101_11_log_e: 1.000006393580696 exceeds 1e-10"
+    },
+    "wrong_weight": {
+      "rejected": true,
+      "error": "E/forward/evidence/101_w: 0.39999981911648924 exceeds 1e-12"
+    },
+    "wrong_parameter_slice": {
+      "rejected": true,
+      "error": "E/forward/models/11_U: 8.965981077336293 exceeds 1e-12"
+    },
+    "empty_input_binding": {
+      "rejected": true,
+      "error": "Missing/duplicate/unexpected identities"
+    },
+    "empty_source_manifest": {
+      "rejected": true,
+      "error": "Missing/duplicate/unexpected identities"
+    },
+    "empty_history_manifest": {
+      "rejected": true,
+      "error": "Incomplete historical manifest"
+    },
+    "incomplete_log": {
+      "rejected": true,
+      "error": "Incomplete optimizer evidence"
+    },
+    "nonconvergence": {
+      "rejected": true,
+      "error": "Unsuccessful/nonfinite optimization"
+    },
+    "inconsistent_qualification": {
+      "rejected": true,
+      "error": "Categorical mismatch"
+    },
+    "wrong_aggregation": {
+      "rejected": true,
+      "error": "E/scores: 0.1 exceeds 1e-12"
+    },
+    "duplicate_evidence": {
+      "rejected": true,
+      "error": "Missing/duplicate/unexpected identities"
+    },
+    "missing_configuration": {
+      "rejected": true,
+      "error": "Missing/unexpected/interrupted records"
+    },
+    "output_collision": {
+      "rejected": true
+    }
+  },
+  "cpu_seconds": 19.4375,
+  "scientific_fits": 0,
+  "scientific_seed_materializations": 0,
+  "fixture": "full-shape mock integration only: generator8001/labels8002/mask8003; optimizer replaced by initial-vector passthrough; not research evidence"
+}
