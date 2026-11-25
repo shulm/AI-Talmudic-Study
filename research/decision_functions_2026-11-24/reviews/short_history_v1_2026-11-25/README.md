@@ -15,3 +15,5 @@ The next assignment is **`evidence_shrinkage_v1`**: one fixed evidence-dependent
 - [Public review receipt](public_review_receipt.json)
 
 Complete next-study budget: 12 shared fits, 64 adaptation batches, 1,664 person-solves, 76 optimizer records. No experiment is executed by this review. Coordinate through [issue #2](https://github.com/shulm/AI-Talmudic-Study/issues/2). Parallel source preparation, including PRs #14/#16, remains separate.
+
+Coordination update: [parallel PR #18](https://github.com/shulm/AI-Talmudic-Study/pull/18) is a separate planning-only global-blend study. Its reserved seeds are disjoint. Preserve its execution boundary; this prompt runs only the distinct evidence-shrinkage assignment. See the review for the scope comparison.

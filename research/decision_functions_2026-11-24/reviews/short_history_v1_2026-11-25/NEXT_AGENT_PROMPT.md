@@ -10,6 +10,10 @@ Execute one new synthetic-only experiment, **`evidence_shrinkage_v1`**. Question
 
 Create a continuation branch from the reviewed assignment head after recording its SHA. Put new code under `labs/decision_functions_evidence_shrinkage_v1/` and public artifacts under `research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/`. Use a fresh private artifact directory. Preserve every historical laboratory/run file. Consult current SRO and corpus coordination, including PRs #5/#8/#14/#16, without duplicating their work. No merge, human evaluation, encoder acquisition, corpus expansion, paid call or external person-directed communication is assigned.
 
+## Coordination with parallel PR #18
+
+A separate null-control planning package appeared during this review: PR #18 at `49d7157e3998a20f646e9200c3e223bbbb58541f`. Read its current handoff for coordination. It studies a globally selected penalty/blend policy over development and confirmation worlds; its mixed condition is descriptive. This assignment tests one history-dependent method with mixed populations as primary. The reserved seeds are disjoint, and PR #18 reports no fresh scientific execution. Preserve its separate authorization boundary: do not run its CLI, consume its seed banks, alter its branch or add its sweep to this assignment. This prompt neither cancels nor supersedes that proposal. Check issue #2/current heads before the new pre-fit checkpoint; keep the numerical design and seeds below unchanged.
+
 ## G0. Prove, implement and freeze before fitting
 
 Implement the single continuous rule in `METHOD_NOTE.md`; do not add a hard-gate arm, penalty grid, learned selector or alternate prior. Write the conditional-count derivation and null-loss proof into the run's method record. Have an independent review check that the code implements that argument before the first optimizer call.
