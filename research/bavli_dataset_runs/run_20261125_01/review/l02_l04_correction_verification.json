@@ -1,0 +1,179 @@
+{
+  "review_id": "l02_l04_correction_verification_003",
+  "created_at_utc": "2026-11-25T20:10:44.205175+00:00",
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/verify_corrections_24",
+    "model_id": null
+  },
+  "review_type": "independent correction verification; exposed to prior initial findings, comparison and producer correction; not blind initial review",
+  "scope": "Only L02-F01 and L04-F01 and changed dependency records in correction003 proposals; no new extraction or full-tractate approval",
+  "input_hashes": {
+    "research\\bavli_dataset_runs\\run_20261125_01\\review\\l02_l04_initial.json": "0d0f2e0b810507b4c95be6f722204b9c24ce539d705407e0350d8a28fa660428",
+    "research\\bavli_dataset_runs\\run_20261125_01\\review\\l02_l04_comparison.json": "36463490e10931c9c92610d21ec70af501217bba015238adb4af3e8c40c9202d",
+    "research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L02\\CORRECTION_RECEIPT_003.json": "d46b97e871a70b9ad46e46ccd8e9dd41b28afc0d4fa640297ce5172e83dcc9a5",
+    "research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L02\\bm_review_correction_003.json": "24562dfe90d8d9f0a2dcdc76cd5ef2e92f5f89edd179fc7b1c6389dbaf591f07",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L02\\bavli_bava_metzia\\exports\\correction003\\manifest.json": "20acd9d776d21d1189b6eabd1f5b12b81ef8a03748a796f06cc6778be7d57b95",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L02\\bavli_bava_metzia\\snapshots\\15dfee7e82b867d02f5c9aed071a9313ad9c03ef9b821471b7e6acf124c39eba.json": "15dfee7e82b867d02f5c9aed071a9313ad9c03ef9b821471b7e6acf124c39eba",
+    "research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L04\\CORRECTION_RECEIPT_003.json": "832b400a576920fccb40e3cdd9e1264752046354a300775993cabbc94cb3a3a7",
+    "research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L04\\ta_review_correction_003.json": "227ad240899781734058f6350684d9a67ee056495aa242fac50c873b763f88e8",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\exports\\correction003\\manifest.json": "90422f40a4eb52ab8539c59148e940264a47b82114497708f8bd4e9febb888e2",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\snapshots\\3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7.json": "3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7"
+  },
+  "sources": {
+    "Bava Metzia": {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Metzia\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
+      "edition": "Wikisource Talmud Bavli",
+      "context_refs_read": [
+        "Bava Metzia 2a:5",
+        "Bava Metzia 2a:6",
+        "Bava Metzia 2a:7",
+        "Bava Metzia 2a:8",
+        "Bava Metzia 2a:9",
+        "Bava Metzia 2a:10",
+        "Bava Metzia 2a:11",
+        "Bava Metzia 2a:12",
+        "Bava Metzia 2b:1",
+        "Bava Metzia 2b:2",
+        "Bava Metzia 2b:3",
+        "Bava Metzia 3a:1",
+        "Bava Metzia 3a:2",
+        "Bava Metzia 3a:3",
+        "Bava Metzia 3a:4",
+        "Bava Metzia 3a:5",
+        "Bava Metzia 3a:6",
+        "Bava Metzia 3a:7",
+        "Bava Metzia 3a:8",
+        "Bava Metzia 3a:9"
+      ]
+    },
+    "Taanit": {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Taanit\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+      "edition": "Wikisource Talmud Bavli",
+      "context_refs_read": [
+        "Taanit 2a:10",
+        "Taanit 2a:11",
+        "Taanit 2a:12",
+        "Taanit 2a:13",
+        "Taanit 2b:1",
+        "Taanit 2b:2",
+        "Taanit 2b:3"
+      ]
+    }
+  },
+  "lanes": [
+    {
+      "lane": "L02",
+      "finding_id": "L02-F01",
+      "verdict": "correction_verified",
+      "checks": {
+        "receipt_proposal_hash": true,
+        "receipt_comparison_hash": true,
+        "receipt_snapshot_hash": true,
+        "receipt_export_manifest_hash": true,
+        "source_hash": true,
+        "all_corrected_evidence_matches_original": true,
+        "all_proposal_records_in_snapshot_unchanged": true,
+        "all_changed_links_resolve": true,
+        "originals_retained_with_superseded_release_state": true,
+        "corrected_records_valid": true,
+        "valid_records_do_not_link_superseded_ids": true
+      },
+      "corrected_record_ids": [
+        "bm.gemara001.opening.attributions.67.reviewfix1",
+        "bm.gemara001.opening.attributions.71.reviewfix1",
+        "bm.gemara001.opening.positions.68.reviewfix1",
+        "bm.gemara001.opening.positions.72.reviewfix1",
+        "bm.gemara001.opening.utterances.65.reviewfix1",
+        "bm.gemara001.opening.utterances.69.reviewfix1",
+        "bm.gemara001.opening.claims.66.reviewfix1",
+        "bm.gemara001.opening.claims.70.reviewfix1",
+        "bm.gemara001.opening.attributions.77.reviewfix1",
+        "bm.gemara001.opening.edges.73.reviewfix1",
+        "bm.gemara001.opening.edges.74.reviewfix1",
+        "bm.gemara001.opening.edges.75.reviewfix1",
+        "bm.gemara001.opening.edges.76.reviewfix1"
+      ],
+      "evidence": {
+        "ref": "Bava Metzia 2a:11",
+        "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+      },
+      "reason": "The literal ואיתימא and ואמרי לה כדי preserve alternative reports of one two-case explanation. The separate candidate and holder arrays now retain Rav Pappa, Rav Shimi bar Ashi, and an explicitly non-person unattributed variant. No transmission chain, joint ownership, or interpersonal dispute is asserted; the adjacent challenge and continuation support the two-case explanation."
+    },
+    {
+      "lane": "L04",
+      "finding_id": "L04-F01",
+      "verdict": "correction_verified",
+      "checks": {
+        "receipt_proposal_hash": true,
+        "receipt_comparison_hash": true,
+        "receipt_snapshot_hash": true,
+        "receipt_export_manifest_hash": true,
+        "source_hash": true,
+        "all_corrected_evidence_matches_original": true,
+        "all_proposal_records_in_snapshot_unchanged": true,
+        "all_changed_links_resolve": true,
+        "originals_retained_with_superseded_release_state": true,
+        "corrected_records_valid": true,
+        "valid_records_do_not_link_superseded_ids": true
+      },
+      "corrected_record_ids": [
+        "ta.gemara001.opening.positions.145.reviewfix1",
+        "ta.gemara001.opening.utterances.142.reviewfix1",
+        "ta.gemara001.opening.claims.143.reviewfix1",
+        "ta.gemara001.opening.attributions.144.reviewfix1",
+        "ta.gemara001.opening.attributions.134.reviewfix1",
+        "ta.gemara001.opening.edges.146.reviewfix1",
+        "ta.gemara001.opening.edges.147.reviewfix1"
+      ],
+      "evidence": {
+        "ref": "Taanit 2b:2",
+        "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+      },
+      "reason": "The explicit question ור' יוחנן מאי טעמא לא קא חשיב להא identifies whom the subsequent אמר לך reply answers for. Corrected position145 assigns Yohanan only as inferred holder; utterance142 and attribution144 remain anonymous with reconstructed-speech caveats. במערבא אמרי supports collective attribution134. The next segment begins a new lemma; no local retraction or named direct transmission replaces this distinction."
+    }
+  ],
+  "remaining_exceptions": [
+    {
+      "severity": "nonblocking",
+      "lane": "L02",
+      "records": [
+        "bm.gemara001.opening.attributions.67.reviewfix1",
+        "bm.gemara001.opening.attributions.71.reviewfix1",
+        "bm.gemara001.opening.positions.68.reviewfix1",
+        "bm.gemara001.opening.positions.72.reviewfix1"
+      ],
+      "issue": "Their evidence spans quote the substantive clauses without the attribution prefix. Full original segment and corrected attribution77 contain the prefix and support the candidates, so correction is substantively verified; isolated-record consumers should resolve segment context/attribution77.",
+      "uncertainty": "כדי is preserved as unattributed alternative rather than identified person. No textual-witness adjudication attempted."
+    },
+    {
+      "severity": "nonblocking",
+      "lane": "L04",
+      "records": [
+        "ta.gemara001.opening.positions.145.reviewfix1"
+      ],
+      "issue": "Holder is contextually inferred, not an independently transmitted Yohanan utterance. This uncertainty is correctly retained; do not flatten it in downstream use."
+    },
+    {
+      "severity": "nonblocking_carried_forward",
+      "lane": "L04",
+      "issue": "Cross-amud biblical sentence completion is labeled qualification. continuation would better describe it; current content and uncertainty explicitly preserve mid-verse continuation, so no confirmed substantive corruption.",
+      "status": "Outside correction target; retained with prior caveat, not newly certified."
+    },
+    {
+      "severity": "nonblocking_carried_forward",
+      "lane": "L02",
+      "issue": "Three conjunctive conditions are split into separately attached answer edges; all conditions are present. A composite answer or conjunction grouping would aid consumers but absence is not called an omission.",
+      "status": "Outside correction target; not newly certified."
+    }
+  ],
+  "limitations": [
+    "AI provisional scholarly verification of bounded corrections only; no human adjudication claimed.",
+    "No completeness, accuracy-rate, full-sugya extraction, tractate delivery or ML eligibility certification.",
+    "Runner replay was reported by producer receipts; reviewer independently checked bytes, quotation offsets, active snapshot records and reference closure, not rerun submit/replay."
+  ],
+  "ml_eligible": false,
+  "verdict": "both_targeted_corrections_verified_with_nonblocking_caveats"
+}

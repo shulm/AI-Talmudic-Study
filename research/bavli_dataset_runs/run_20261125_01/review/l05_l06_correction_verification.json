@@ -1,0 +1,105 @@
+{
+  "review_version": "correction-verification-1",
+  "agent_id": "/root/verify_corrections_56",
+  "model_id": null,
+  "identity_note": "Actual collaboration task identity; runtime model identifier unavailable.",
+  "review_kind": "correction_verification_not_blind_review",
+  "scope": "L05 semikhah correction and addressee quarantine; L06 unchanged. Original Chullin 2a:1–2b:6 reread with immediate continuation. No full lane certification.",
+  "input_hashes": [
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review\\l05_l06_initial.json",
+      "sha256": "114a34c46c8a5e69669f9e9d819e4a43029eb4b2d548f3dbdb3d8626adac6ed2"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review\\l05_l06_comparison.json",
+      "sha256": "7274adefcf8c1ac976a45ecf56c5e61080d16c201891cede41f845899e0faaa4"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L05\\CH01_CORRECTION_V2_RECEIPT.json",
+      "sha256": "fc5aa73e05ca86a5d4d82bdf201119c7d0fea0cc75ab1ade56e1aed1c18061ea"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L05\\ch01_semikhah_correction_v2.json",
+      "sha256": "38300ebde1f148ffddb4a708a7e0f1fae66eba2016954e15f61f41515f982d05"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L05\\ch01_proposal.json",
+      "sha256": "113c34c9c760be3b558d22acc0ef7f3ba423aac7b19ac887536cbda77cc314a9"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L06\\bk01_proposal.json",
+      "sha256": "c3eb083420643dc8339e8924af9659d66daad92f3c17f2c38c01c0dbd56d871d"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\QUARANTINE.json",
+      "sha256": "286a91c0fb3da417b69fc7381bff63a1b73468b844a22a91dea9e3cd6f59155d"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\1702c98fe63ed1da55efdde34dc35d8991bf49710e613ed94e79b1021eecab7e.json",
+      "sha256": "1702c98fe63ed1da55efdde34dc35d8991bf49710e613ed94e79b1021eecab7e"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\98b69a22276956442697c13ec7f91fe8acf15527851f982d7123944bdabf1062.json",
+      "sha256": "98b69a22276956442697c13ec7f91fe8acf15527851f982d7123944bdabf1062"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_bava_kamma\\snapshots\\c6444e21ae3bb63f29da713f3f7281fe9a8613660155c007ac3fbace2d4de68f.json",
+      "sha256": "c6444e21ae3bb63f29da713f3f7281fe9a8613660155c007ac3fbace2d4de68f"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_bava_kamma\\CURRENT.json",
+      "sha256": "58b68994f39267b98f48e17e4140fd271a6803500d98d78b47a1607a0a7aa26e"
+    },
+    {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Kodashim\\Chullin\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b"
+    }
+  ],
+  "checks": {
+    "receipt_comparison_proposal_and_source_hashes_match": true,
+    "targeted_original_evidence_spans_verified": 5,
+    "added_records": [
+      "ch01_e_semikha_v2"
+    ],
+    "changed_existing_records": [
+      "ch01_e_semikha"
+    ],
+    "old_edge_change_only_release_state": true,
+    "old_edge_release_state": "superseded",
+    "all_attributions_unchanged": true,
+    "quarantine_exact_record_hash_matches": true,
+    "bava_kamma_current_matches_prior_snapshot": true
+  },
+  "verdicts": [
+    {
+      "finding_id": "L05-F02",
+      "verdict": "correction_verified",
+      "record_id": "ch01_e_semikha_v2",
+      "record_sha256": "827a9841af62073c1bacfe58b6953262d1c1c0bbc0388f3f2f1fc8bac3e80fd9",
+      "relation": "support",
+      "source_id": "ch01_c_semikha",
+      "target_id": "ch01_q_semikha",
+      "reason": "After חייבין לא קאמינא excludes the preceding obligation examples, אלא מעתה introduces semikhah and והא כתיב וסמך supplies its local counterexample premise. The new edge correctly targets that question. This is support, not an answer edge. Chullin 2b:4 concedes mixed usage and returns to slaughter wording; 2b:5 explains the original textual difficulty."
+    },
+    {
+      "finding_id": "L05-F01",
+      "verdict": "quarantine_verified_repair_unresolved",
+      "record_id": "ch01_a_ashi_addressee",
+      "record_sha256": "2cf1a9fc61dd6830b8e5256f15b2fdae0c7d10b0244c23559dbb247ba3291de9",
+      "reason": "לרב אשי identifies Rav Ashi as addressee of Rav Aha son of Rava, not quoted authority. The unsupported typed role remains in raw snapshot but exactly matches the globally quarantined version. No new unsupported role was introduced. ch01_u_acha preserves the correct addressing relationship. Do not clear quarantine."
+    },
+    {
+      "lane": "L06",
+      "verdict": "unchanged_previous_targeted_verdict_retained",
+      "reason": "CURRENT and snapshot bytes match the prior comparison binding. No renewed full scholarly review claimed."
+    }
+  ],
+  "remaining_exceptions": [
+    "Addressee representation repair remains unresolved; exact version must remain excluded by integrated release quarantine. Verification checks quarantine declaration/hash, not execution of an integrated export filter.",
+    "L05/L06 remain provisional, not ML eligible; continuation extraction and broader independent coverage remain incomplete.",
+    "Prior effective-position-condition representation caveat remains unchanged."
+  ],
+  "ml_eligible": false,
+  "whole_lane_approval": false,
+  "status": "targeted_correction_verified_with_persistent_quarantine"
+}

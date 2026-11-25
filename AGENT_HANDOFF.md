@@ -1,5 +1,13 @@
 # Research handoff — updated 2026-11-24
 
+## Bavli production coordination — 2026-11-25
+
+The active reusable Bavli dataset run is `run_20261125_01` on `dataset/bavli-coordination-v1`, draft PR #17. Start with [the immutable active-run pointer](research/bavli_dataset_runs/ACTIVE_RUN.json), [run evidence and resume instructions](research/bavli_dataset_runs/run_20261125_01/README.md), and [the exact unfinished-work matrix](research/bavli_dataset_runs/run_20261125_01/REMAINING_WORK.md). Preserve the other research tracks below.
+
+Status: **PARTIAL_REQUIRED_WORK_REMAINS**. Real production runner and source packages are implemented and verified; all six lanes produced local semantic checkpoints. Snapshot 004 records 82/81,793 segments per required pass, 764 active typed records (one quarantined), 64 preserved superseded records, and **0/37 delivered tractates**. The remaining 81,711 segments per pass and full-tractate independent review are unfinished. The corrected new core was reconstructed from 18 frozen proposals with matching hashes for all 37 job states. Source inventory and historical pilot coverage are not semantic completion.
+
+Assignment ledger revision 3 records checkpointed inactive producers and per-job epochs. Remote source transfers/sessions are unestablished; all six lanes have verified local access. No background service or human certification is claimed. Resume existing lane ownership and checkpoints; only the global coordinator transfers tractates across lanes. Complete source copies and job stores remain outside Git.
+
 ## Active modeling continuation: general decision functions — 2026-11-24
 
 The current modeling task is to learn `P(answer | problem, available answers, person's observed history)` on general corpora, then investigate the Talmudic application. This supersedes the scholar-position attribution objective in draft PR #1; retain that PR as historical context.
