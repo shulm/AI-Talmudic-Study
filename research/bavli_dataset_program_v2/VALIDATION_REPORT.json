@@ -1,0 +1,40 @@
+{
+  "package_version": "2.0.0-design",
+  "checked_date": "2026-11-25",
+  "status": "PREPARATORY_PACKAGE_VALIDATED_NOT_A_CORPUS_RELEASE",
+  "base_commit": "ef29310b50575ac2441ce59d0c68d58424f4b823",
+  "test_command": "python -B -m unittest discover -s tools -p 'test_*.py' -v",
+  "test_count": 18,
+  "tests_passed": 18,
+  "tests_failed": 0,
+  "test_scope": "Synthetic integrity/identity/sampling/atomic-publication tests for delivered tools; not semantic correctness or full-source corpus validation",
+  "real_manifest_queue_replay": "byte_identical",
+  "jobs_sha256": "570594e1075316bc8ffa05af190b0e5853ebccc4d8ad875531a14fc18f4fb6b6",
+  "job_count": 37,
+  "source_segment_inventory": 81793,
+  "historical_pilot_segments": 215,
+  "first_wave": [
+    "Berakhot",
+    "Bava Metzia",
+    "Rosh Hashanah",
+    "Taanit"
+  ],
+  "new_tractates_completed": 0,
+  "new_semantic_annotations": 0,
+  "actual_blind_readings_produced": 0,
+  "persistent_production_agents_launched": 0,
+  "full_original_source_files_verified": false,
+  "full_annotation_runner_implemented": false,
+  "new_paid_model_api_calls": 0,
+  "model_training_performed": false,
+  "production_execution_metadata": "All runtime values in jobs.json are explicitly initialization templates, not observed work",
+  "review_scope": "Three independent design reviews, cross-review of the delivered tools, and targeted corrections",
+  "observed_limits": [
+    "Shared chat transcript not retrievable; only generic share page was exposed.",
+    "Full pinned source export was not available in the workspace.",
+    "Original pilot's full-source tests were not rerun.",
+    "Review-plan tests used synthetic sources, not actual Berakhot source.",
+    "This package does not implement the complete production/schema migration target."
+  ],
+  "test_output": "test_cli_refuses_self_consistent_wrong_baseline (test_build_jobs.QueueIntegrityTests.test_cli_refuses_self_consistent_wrong_baseline) ... ok\ntest_cli_verified_replay_and_differing_output_protection (test_build_jobs.QueueIntegrityTests.test_cli_verified_replay_and_differing_output_protection) ... ok\ntest_determinism_order_provenance_and_no_false_execution (test_build_jobs.QueueIntegrityTests.test_determinism_order_provenance_and_no_false_execution) ... ok\ntest_failed_flush_leaves_no_final_path_and_race_preserves_winner (test_build_jobs.QueueIntegrityTests.test_failed_flush_leaves_no_final_path_and_race_preserves_winner) ... ok\ntest_inherited_tail_and_interior_pilot_are_distinct (test_build_jobs.QueueIntegrityTests.test_inherited_tail_and_interior_pilot_are_distinct) ... ok\ntest_invalid_inputs_leave_existing_output_untouched (test_build_jobs.QueueIntegrityTests.test_invalid_inputs_leave_existing_output_untouched) ... ok\ntest_refuses_bad_denominators_counts_and_false_completion (test_build_jobs.QueueIntegrityTests.test_refuses_bad_denominators_counts_and_false_completion) ... ok\ntest_refuses_duplicate_identities_and_mixed_editions (test_build_jobs.QueueIntegrityTests.test_refuses_duplicate_identities_and_mixed_editions) ... ok\ntest_cli_competing_final_path_is_not_overwritten (test_make_review_plan.ReviewPlanTests.test_cli_competing_final_path_is_not_overwritten) ... ok\ntest_cli_identical_output_is_idempotent_and_different_output_refused (test_make_review_plan.ReviewPlanTests.test_cli_identical_output_is_idempotent_and_different_output_refused) ... ok\ntest_cli_interruption_before_publication_leaves_no_final (test_make_review_plan.ReviewPlanTests.test_cli_interruption_before_publication_leaves_no_final) ... ok\ntest_cli_source_cannot_be_overwritten (test_make_review_plan.ReviewPlanTests.test_cli_source_cannot_be_overwritten) ... ok\ntest_determinism_sampling_fraction_and_endpoint_union (test_make_review_plan.ReviewPlanTests.test_determinism_sampling_fraction_and_endpoint_union) ... ok\ntest_initial_gaps_internal_empty_page_and_blank_positions (test_make_review_plan.ReviewPlanTests.test_initial_gaps_internal_empty_page_and_blank_positions) ... ok\ntest_invalid_source_shapes_and_empty_source_refused (test_make_review_plan.ReviewPlanTests.test_invalid_source_shapes_and_empty_source_refused) ... ok\ntest_small_tractate_samples_all_and_deduplicates_endpoints (test_make_review_plan.ReviewPlanTests.test_small_tractate_samples_all_and_deduplicates_endpoints) ... ok\ntest_source_hash_mismatch_refused (test_make_review_plan.ReviewPlanTests.test_source_hash_mismatch_refused) ... ok\ntest_version_title_language_and_duplicate_keys_refused (test_make_review_plan.ReviewPlanTests.test_version_title_language_and_duplicate_keys_refused) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.037s\n\nOK\n"
+}
