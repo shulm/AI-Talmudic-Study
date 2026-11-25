@@ -1,0 +1,62 @@
+{
+  "cpu_seconds_sampled": 78.984375,
+  "peak_rss_bytes_sampled": 90120192,
+  "profiled_wall_seconds": 143.17000000039116,
+  "profiled_commands": 9,
+  "failed_command_receipts": [
+    {
+      "command": [
+        "python",
+        "labs/decision_functions_short_history_v1/integration_preflight.py"
+      ],
+      "exit_status": 1,
+      "cpu_seconds_sampled": 5.484375,
+      "peak_rss_bytes_sampled": 84500480,
+      "wall_seconds": 11.342999999877065,
+      "termination": null,
+      "code_commit": "47b19560350aa8c5d877d99f381d5b27f5b3490a",
+      "sampling_seconds": 0.05
+    },
+    {
+      "command": [
+        "python",
+        "labs/decision_functions_short_history_v1/integration_preflight.py"
+      ],
+      "exit_status": 1,
+      "cpu_seconds_sampled": 0.265625,
+      "peak_rss_bytes_sampled": 23617536,
+      "wall_seconds": 0.546000000089407,
+      "termination": null,
+      "code_commit": "47b19560350aa8c5d877d99f381d5b27f5b3490a",
+      "sampling_seconds": 0.05
+    }
+  ],
+  "optimizer_records": 196,
+  "shared_fits": 12,
+  "adaptation_batches": 184,
+  "person_solves": 3776,
+  "scientific_retries": 0,
+  "paid_calls": 0,
+  "dataset_model_download_bytes": 0,
+  "human_fits": 0,
+  "human_adaptations": 0,
+  "human_evaluations": 0,
+  "limits": {
+    "shared_fits": 12,
+    "adaptation_batches": 184,
+    "person_solves": 3776,
+    "optimizer_records": 196,
+    "cpu_core_seconds": 3600,
+    "sampled_memory_bytes": 4294967296,
+    "person_solves_outer_sanity_cap": 4096,
+    "paid_calls": 0,
+    "dataset_model_download_bytes": 0,
+    "human_fits": 0,
+    "human_adaptation_solves": 0,
+    "human_evaluations": 0,
+    "extra_retries": 0,
+    "unused_capacity_authorizes_extra_work": false
+  },
+  "sampling_seconds": 0.05,
+  "limitations": "Polling may omit transient peaks/final CPU fractions. Supervisor/imports, Git subprocesses, metadata and report rendering are not comprehensively profiled. Mock zero-fit test records are isolated and not scientific fits; their process usage is included in cumulative totals."
+}

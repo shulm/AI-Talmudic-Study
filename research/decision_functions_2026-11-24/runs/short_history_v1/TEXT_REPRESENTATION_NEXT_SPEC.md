@@ -33,3 +33,7 @@ Report expected-oracle metrics only where an oracle exists, and realized NLL/acc
 DICES and SRO pilot/follow-up outcomes are exposed. TID-8 CommitmentBank remains an archival candidate subject to constituent terms, immutable revision, identity/overlap checks and sufficient observed history coverage; no acquisition or substitution occurs here. PR10 and PR11 prepare distinct provisional Bavli tracks with their own edition/provenance and review boundaries. Neither makes AI-only positions validated human decisions. This proposal neither duplicates nor suspends their independently authorized work, and makes no scholarly training or corpus-expansion request.
 
 Next review must resolve the semantic renderer, grouping graph, encoder admission and numerical normalization before a text experiment can be frozen. Stop at this specification.
+
+## Outcome-dependent admission note
+
+short_history_v1 completed with primary failure: positive interaction recovery passes at16 in both realizations, but primary null degradation .05219/.05741 exceeds .01. The stronger secondary policy reduces this to .00959/.01092 and still fails on D. A later text study must not describe the primary16-case method as fully qualified. Resolve the numerical-method null-control question under a separate frozen assignment, or explicitly make it a documented unresolved limitation of any future bridge experiment. Do not use text representation changes to conceal this failure.
