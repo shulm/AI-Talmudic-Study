@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "status": "DESIGN_FOR_NEW_PREFIT_CHECKPOINT_NOT_EXECUTED",
+  "version": "interaction_diagnostics_v2",
+  "repository": "shulm/AI-Talmudic-Study",
+  "reviewed_v1_commit": "6da06a4b01bb825bcf4ad4b13c61648d6ee82220",
+  "objective": "mean CE + rho/2*(||V||F^2 + ||U||F^2/S) + lambda_b/(2S)*||b||F^2",
+  "parameterization": {
+    "lambda_b": 0.1,
+    "lambda_V": "rho",
+    "lambda_U": "rho",
+    "rho_squared_candidates": [
+      0.00001,
+      0.0001,
+      0.001
+    ],
+    "rho_candidates": [
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379
+    ],
+    "rank": 2,
+    "classes": 3,
+    "shared_logits": "known and fixed",
+    "new_person_penalty": "rho*||u||^2/2 + lambda_b*||b||^2/2"
+  },
+  "generator": {
+    "family": "Unchanged v1 rotational generator with seed arguments",
+    "people": 96,
+    "person_partition": [
+      48,
+      24,
+      24
+    ],
+    "cases": 192,
+    "groups": 64,
+    "group_partition": [
+      40,
+      12,
+      12
+    ],
+    "feature_dimension": 2,
+    "support_cases": 96,
+    "support_training_groups": 32,
+    "shared_logit_scale": 0.25,
+    "interaction_scale": 2.5,
+    "offset_normal_sd": 0.12,
+    "person_pairing": "identical centered offsets/opposite phases; preserve whole adjacent pairs",
+    "regimes": [
+      "positive",
+      "null"
+    ],
+    "conditions": [
+      "informative",
+      "uninformative"
+    ]
+  },
+  "realizations": [
+    {
+      "id": "A",
+      "generator_seed": 20261126,
+      "label_seed": 2719,
+      "purpose": "training/development selection, then one held-out evaluation"
+    },
+    {
+      "id": "B",
+      "generator_seed": 20261127,
+      "label_seed": 2720,
+      "purpose": "independent generated realization at fixed selected rho",
+      "materialize_only_after": "selection checkpoint",
+      "development_partition": "unused",
+      "new_shared_training": "own training block only"
+    }
+  ],
+  "initialization_seeds": [
+    11,
+    29,
+    47
+  ],
+  "ensemble": "mean probabilities; no favorable seed selection",
+  "optimizer": {
+    "name": "L-BFGS-B",
+    "maxiter": 1000,
+    "ftol": 1e-12,
+    "gtol": 1e-8,
+    "maxls": 50,
+    "dtype": "float64"
+  },
+  "controls": {
+    "B3_lambda_b": 0.1,
+    "B1_pseudocount": 4,
+    "B1_prior": "own realization's training-label frequencies",
+    "B2": "known shared logits"
+  },
+  "gates": {
+    "positive_expected_nll_gain_min": 0.05,
+    "positive_oracle_gap_recovery_min": 0.5,
+    "positive_contrast_normalized_rmse_max": 0.5,
+    "null_expected_nll_degradation_max": 0.01,
+    "batch_probability_difference_max": 0.000001,
+    "batch_first_person_expected_nll_difference_max": 0.00001
+  },
+  "selection": {
+    "data": "A development only",
+    "eligibility": "All four predictive gates pass on development",
+    "criterion": "maximum positive expected-NLL gain among eligible candidates",
+    "nll_tie_tolerance": 0.00001,
+    "tie_rule": "larger rho",
+    "none_eligible": "NO_QUALIFIED_INTERACTION; no holdout scoring and no realization B",
+    "numerical_failure": "NUMERICALLY_UNRESOLVED; no tolerance expansion",
+    "freeze_before": "A held-out scoring and B materialization",
+    "support_condition": "informative only; no uninformative development adaptation batches"
+  },
+  "overall_qualification": "Complete valid audit records AND passed numerical checks AND saved-array verification AND development eligibility AND all four predictive gates separately on held-out A and B",
+  "holdout_rule": {
+    "A": "one evaluation at selected configuration",
+    "B": "one evaluation at same selected configuration; new training on B's training block",
+    "overall_predictive_qualification": "all four predictive gates pass separately on both A and B",
+    "pooling_to_rescue_failure": false
+  },
+  "certificate": {
+    "training_intercepts": "one batch per regime and realization, lambda_b=.1",
+    "threshold": "rho/sqrt(S)",
+    "residual": "mean_i(p-y)+lambda_b*b",
+    "residual_error_denominator": "lambda_b",
+    "role": "explanatory training-only diagnostic; cannot replace predictive gates",
+    "B": "one intercept batch per regime, two total, evaluate selected rho only"
+  },
+  "planned_stages": [
+    {
+      "id": "A_training_offsets",
+      "shared_fits": 0,
+      "adaptation_batches": 2,
+      "person_solves": 96
+    },
+    {
+      "id": "A_dev_M1",
+      "shared_fits": 18,
+      "adaptation_batches": 18,
+      "person_solves": 432
+    },
+    {
+      "id": "A_dev_B3",
+      "shared_fits": 0,
+      "adaptation_batches": 2,
+      "person_solves": 48
+    },
+    {
+      "id": "A_selected_positive_batch_checks",
+      "shared_fits": 0,
+      "adaptation_batches": 8,
+      "person_solves": 32
+    },
+    {
+      "id": "A_holdout_M1",
+      "shared_fits": 0,
+      "adaptation_batches": 12,
+      "person_solves": 288
+    },
+    {
+      "id": "A_holdout_B3",
+      "shared_fits": 0,
+      "adaptation_batches": 4,
+      "person_solves": 96
+    },
+    {
+      "id": "B_training_offsets",
+      "shared_fits": 0,
+      "adaptation_batches": 2,
+      "person_solves": 96
+    },
+    {
+      "id": "B_holdout_M1",
+      "shared_fits": 6,
+      "adaptation_batches": 12,
+      "person_solves": 288
+    },
+    {
+      "id": "B_holdout_B3",
+      "shared_fits": 0,
+      "adaptation_batches": 4,
+      "person_solves": 96
+    }
+  ],
+  "maximum_complete_design": {
+    "shared_fits": 24,
+    "adaptation_batches": 64,
+    "person_solves": 1472,
+    "optimizer_records": 88
+  },
+  "outer_limits": {
+    "cpu_core_seconds": 3600,
+    "sampled_memory_bytes": 4294967296,
+    "person_solves_sanity_cap": 4096,
+    "paid_calls": 0,
+    "dataset_model_download_bytes": 0,
+    "human_fits": 0,
+    "human_adaptation_solves": 0,
+    "human_evaluations": 0,
+    "extra_retries": 0
+  },
+  "checkpoint_order": [
+    "scientific code and complete design pushed and posted",
+    "stage A training/development",
+    "selected rho, model hashes and conditional later-stage ledgers pushed and posted",
+    "held-out A once",
+    "materialize/train/evaluate B once",
+    "verification and final report"
+  ],
+  "implementation_notes": [
+    "No original run/array overwrite",
+    "Exact stage IDs must be bound before their stage runs",
+    "No new candidates/seeds/fixtures after failure",
+    "No optimizer needed for finite-difference/objective/rescaling checks",
+    "Unused budget does not authorize additional scientific fits",
+    "Complete all predeclared B work after A held-out scientific failure unless execution is invalid or resource-limited; B cannot rescue A"
+  ],
+  "interpretation_limits": [
+    "Synthetic informative numerical features, not a text-embedding test",
+    "96 supports in two dimensions; no conclusion at DICES 16/384",
+    "Two realizations do not establish universal null behavior or human-domain generalization"
+  ],
+  "parallel_exposure_refs": [
+    5,
+    8
+  ]
+}
