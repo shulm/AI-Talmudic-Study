@@ -1,0 +1,32 @@
+{
+  "package_version": "1.0.0",
+  "validation_date": "2026-11-25",
+  "status": "STATIC_LAUNCH_PACK_VALIDATED_NO_PRODUCTION_EXECUTION",
+  "checks": {
+    "tractates_exactly_once": 37,
+    "source_segments_total": 81793,
+    "lane_count": 6,
+    "worker_prompt_count": 37,
+    "source_hash_and_path_match_to_pinned_queue": true,
+    "source_denominator_match_to_pinned_queue": true,
+    "all_local_markdown_links_resolve": true,
+    "all_lane_totals_match_job_rows": true,
+    "largest_minus_smallest_lane_segments": 76,
+    "assignment_fields_are_planned_not_live": true
+  },
+  "source_queue_sha256": "570594e1075316bc8ffa05af190b0e5853ebccc4d8ad875531a14fc18f4fb6b6",
+  "assignments_sha256": "cebe3248155bc225321c9f924104a8f250c6b91a5fc32e9dfe641e014e5c2beb",
+  "new_source_reads": 0,
+  "new_semantic_annotations": 0,
+  "runtime_contract_created": false,
+  "production_agents_launched": 0,
+  "whole_tractates_newly_completed": 0,
+  "notes": [
+    "Static packet and dispatch-scope validation only.",
+    "Original exact source files must be delivered by the source-owning coordinator.",
+    "Current v2 package is a design/preparation baseline; bootstrap must supply actual production code/schema/protocol hashes.",
+    "Existing v2 tool tests were not rerun or represented as semantic validation in this task."
+  ],
+  "independent_packet_review": "passed_zero_mismatches",
+  "review_note": "Two independent agents reviewed dispatch design; final static cross-check found zero job/source mismatches. Per-tractate epochs and delegated within-lane dispatch clarified."
+}
