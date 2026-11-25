@@ -1,0 +1,1301 @@
+{
+  "artifact_type": "frozen_source_first_bootstrap_review",
+  "version": 1,
+  "reviewer": "/root/blind_review",
+  "model_id": null,
+  "created_utc": "2026-11-25T19:49:10.429838+00:00",
+  "blindness": {
+    "producer_proposals_seen": false,
+    "producer_annotations_seen": false,
+    "inherited_handoff_seen": false,
+    "prior_producer_conversation_seen": false,
+    "permitted_method_files": [
+      "AGENTS.md",
+      "research/bavli_multiplatform_launch_v1/COMMON_EXECUTION_CONTRACT.md",
+      "research/bavli_production_v1/schema.json",
+      "research/bavli_production_v1/PROTOCOL.md"
+    ],
+    "handoff_instruction_waived_by_coordinator_for_blindness": true
+  },
+  "source_manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+  "sources": [
+    {
+      "title": "Berakhot",
+      "source_path": "json/Talmud/Bavli/Seder Zeraim/Berakhot/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+      "edition": "Wikisource Talmud Bavli",
+      "license": "CC-BY-SA"
+    },
+    {
+      "title": "Rosh Hashanah",
+      "source_path": "json/Talmud/Bavli/Seder Moed/Rosh Hashanah/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+      "edition": "Wikisource Talmud Bavli",
+      "license": "CC-BY-SA"
+    }
+  ],
+  "offset_convention": "Python Unicode code points, half-open, exact original string including markup",
+  "cohorts": [
+    {
+      "type": "targeted_bootstrap_inherited_continuation",
+      "core_refs": [
+        "Berakhot 5a:24",
+        "Berakhot 5b:1",
+        "Berakhot 5b:2",
+        "Berakhot 5b:3"
+      ],
+      "core_segments": 4
+    },
+    {
+      "type": "targeted_bootstrap_fresh_source",
+      "core_refs": [
+        "Rosh Hashanah 2a:1",
+        "Rosh Hashanah 2a:2",
+        "Rosh Hashanah 2a:3",
+        "Rosh Hashanah 2a:4"
+      ],
+      "core_segments": 4
+    }
+  ],
+  "context_read_separately": {
+    "Berakhot": [
+      "5a:1–23",
+      "5b:4–27"
+    ],
+    "Rosh Hashanah": [
+      "2a:5–8",
+      "2b:1–13"
+    ]
+  },
+  "sampling_claim": "Targeted eight-segment bootstrap only. Not a random tractate sample, endpoint cohort, or full-sugya/full-tractate certification. Context does not increase core counts.",
+  "records": [
+    {
+      "id": "b.structure",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "content": {
+        "boundary": "closed",
+        "scope": [
+          "Berakhot 5a:24",
+          "Berakhot 5b:1",
+          "Berakhot 5b:2",
+          "Berakhot 5b:3"
+        ],
+        "judgment": "One complete local teaching, question, and answer across the folio boundary. The initial teaching runs through 5b:1. 5b:4 begins a related new statement about afflictions of love, not an additional clause in this teaching. Nested within the wider suffering/atonement discussion."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5a:24",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים"
+        },
+        {
+          "source_ref": "Berakhot 5b:1",
+          "start_char": 0,
+          "end_char": 37,
+          "quote": "וקובר את בניו מוחלין לו על כל עונותיו"
+        },
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 0,
+          "end_char": 229,
+          "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+        },
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ]
+    },
+    {
+      "id": "r.structure",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "content": {
+        "boundary": "closed",
+        "scope": [
+          "Rosh Hashanah 2a:1",
+          "Rosh Hashanah 2a:2",
+          "Rosh Hashanah 2a:3",
+          "Rosh Hashanah 2a:4"
+        ],
+        "judgment": "Complete opening Mishnah, comprising a four-new-year list and two local date disputes. 2a:5 explicitly begins Gemara. The wider exposition of its subjects is open beyond the target; no full-tractate disposition is claimed."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:1",
+          "start_char": 0,
+          "end_char": 82,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> ראשי שנים הם באחד בניסן ר\"ה למלכים ולרגלים"
+        },
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        },
+        {
+          "source_ref": "Rosh Hashanah 2a:3",
+          "start_char": 0,
+          "end_char": 58,
+          "quote": "באחד בתשרי ראש השנה לשנים ולשמיטין וליובלות לנטיעה ולירקות"
+        },
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:"
+        }
+      ]
+    },
+    {
+      "id": "b.u1",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "content": {
+        "voice": "Unnamed tanna reciting before Rabbi Yohanan",
+        "role": "teaching",
+        "composition": "composite",
+        "reason": "One sentence spans two source segments; antecedent conditions must accompany its consequent."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5a:24",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים"
+        },
+        {
+          "source_ref": "Berakhot 5b:1",
+          "start_char": 0,
+          "end_char": 37,
+          "quote": "וקובר את בניו מוחלין לו על כל עונותיו"
+        }
+      ]
+    },
+    {
+      "id": "b.u2",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "content": {
+        "voice": "Rabbi Yohanan",
+        "role": "concession with scriptural support followed by question",
+        "composition": "composite"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 0,
+          "end_char": 229,
+          "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+        }
+      ]
+    },
+    {
+      "id": "b.u3",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "content": {
+        "voice": "Unnamed elder reporting in the name of Rabbi Shimon ben Yohai",
+        "role": "answer by verbal analogy",
+        "composition": "composite"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ]
+    },
+    {
+      "id": "b.c1",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "All sins are forgiven for the person described as engaging in Torah and acts of kindness and burying his sons.",
+        "conditions": [
+          "Engages in Torah",
+          "Engages in acts of kindness",
+          "Buries his sons"
+        ],
+        "scope": "The recited teaching; retain its conjunction without silently converting it into three independent universal promises.",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5a:24",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים"
+        },
+        {
+          "source_ref": "Berakhot 5b:1",
+          "start_char": 0,
+          "end_char": 37,
+          "quote": "וקובר את בניו מוחלין לו על כל עונותיו"
+        }
+      ]
+    },
+    {
+      "id": "b.c2",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "Kindness and truth provide a scriptural basis for the Torah and acts-of-kindness part of the atonement teaching.",
+        "conditions": [],
+        "scope": "Rabbi Yohanan accepts this portion as intelligible from Proverbs 16:6.",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 18,
+          "end_char": 81,
+          "quote": "בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון"
+        }
+      ]
+    },
+    {
+      "id": "b.c3",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "The cited kindness is acts of kindness.",
+        "conditions": [],
+        "scope": "Interpretation supported by Proverbs 21:21",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 82,
+          "end_char": 157,
+          "quote": "חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד"
+        }
+      ]
+    },
+    {
+      "id": "b.c4",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "The cited truth is Torah.",
+        "conditions": [],
+        "scope": "Interpretation supported by Proverbs 23:23",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 158,
+          "end_char": 207,
+          "quote": "אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור"
+        }
+      ]
+    },
+    {
+      "id": "b.q1",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "content": {
+        "formulation": "What is the scriptural source for the burial-of-sons portion?",
+        "question_origin": "explicit",
+        "conditions": [
+          "Within the atonement teaching"
+        ],
+        "answer_set_status": "partial",
+        "note": "A source is supplied immediately; question does not reject the claim or deny bereavement."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 208,
+          "end_char": 229,
+          "quote": "אלא קובר את בניו מנין"
+        }
+      ]
+    },
+    {
+      "id": "b.c5",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "The repeated term עון connects atonement in Proverbs 16:6 with parental sin repaid into the bosom of sons in Jeremiah 32:18, supplying the requested basis.",
+        "conditions": [],
+        "scope": "The elder’s report in the name of Rabbi Shimon ben Yohai; local derivational answer.",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ]
+    },
+    {
+      "id": "b.a1",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "surface": "תני תנא קמיה דר' יוחנן",
+        "speaker": "Unnamed tanna",
+        "recipient": "Rabbi Yohanan",
+        "position_holder": "Unnamed recited teaching",
+        "note": "Rabbi Yohanan is not the original speaker merely because the teaching is recited before him."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5a:24",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים"
+        }
+      ]
+    },
+    {
+      "id": "b.a2",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "surface": "אמר ליה רבי יוחנן",
+        "speaker": "Rabbi Yohanan",
+        "scope": [
+          "b.c2",
+          "b.c3",
+          "b.c4",
+          "b.q1"
+        ]
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 0,
+          "end_char": 229,
+          "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+        }
+      ]
+    },
+    {
+      "id": "b.a3",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "surface": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי",
+        "transmitter": "Unnamed elder",
+        "quoted_authority": "Rabbi Shimon ben Yohai",
+        "scope": [
+          "b.c5"
+        ],
+        "note": "Do not identify the elder with the tanna or with Rabbi Shimon ben Yohai."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ]
+    },
+    {
+      "id": "b.p1",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Unnamed tanna / recited tradition"
+        ],
+        "claim_id": "b.c1",
+        "question_id": null,
+        "conditions": [
+          "Torah",
+          "Acts of kindness",
+          "Burying sons"
+        ],
+        "local_status": "Asserted; source for third component queried and then supplied."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5a:24",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים"
+        },
+        {
+          "source_ref": "Berakhot 5b:1",
+          "start_char": 0,
+          "end_char": 37,
+          "quote": "וקובר את בניו מוחלין לו על כל עונותיו"
+        }
+      ]
+    },
+    {
+      "id": "b.p2",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_ids": [
+          "b.c2",
+          "b.c3",
+          "b.c4"
+        ],
+        "question_id": null,
+        "local_status": "Concession/support, not an opposing atonement position."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 0,
+          "end_char": 229,
+          "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+        }
+      ]
+    },
+    {
+      "id": "b.p3",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Rabbi Shimon ben Yohai"
+        ],
+        "claim_id": "b.c5",
+        "question_id": "b.q1",
+        "local_status": "Answer transmitted by unnamed elder; no rejection follows inside local unit."
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ]
+    },
+    {
+      "id": "b.e1",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "content": {
+        "source_id": "b.c2",
+        "target_id": "b.c1",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 0,
+          "end_char": 229,
+          "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+        }
+      ]
+    },
+    {
+      "id": "b.e2",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "content": {
+        "source_id": "b.c3",
+        "target_id": "b.c2",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 0,
+          "end_char": 229,
+          "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+        }
+      ]
+    },
+    {
+      "id": "b.e3",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "content": {
+        "source_id": "b.c4",
+        "target_id": "b.c2",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:2",
+          "start_char": 0,
+          "end_char": 229,
+          "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+        }
+      ]
+    },
+    {
+      "id": "b.e4",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "content": {
+        "source_id": "b.c5",
+        "target_id": "b.q1",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ]
+    },
+    {
+      "id": "b.e5",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "content": {
+        "source_id": "b.c5",
+        "target_id": "b.c1",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ]
+    },
+    {
+      "id": "r.u1",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "content": {
+        "voice": "Mishnah; anonymous framing",
+        "role": "Calendar head-date teaching",
+        "composition": "composite"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:1",
+          "start_char": 0,
+          "end_char": 82,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> ראשי שנים הם באחד בניסן ר\"ה למלכים ולרגלים"
+        }
+      ]
+    },
+    {
+      "id": "r.u2",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "content": {
+        "voice": "Mishnah; anonymous framing and named alternatives",
+        "role": "Calendar head-date teaching",
+        "composition": "composite"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ]
+    },
+    {
+      "id": "r.u3",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "content": {
+        "voice": "Mishnah; anonymous framing",
+        "role": "Calendar head-date teaching",
+        "composition": "composite"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:3",
+          "start_char": 0,
+          "end_char": 58,
+          "quote": "באחד בתשרי ראש השנה לשנים ולשמיטין וליובלות לנטיעה ולירקות"
+        }
+      ]
+    },
+    {
+      "id": "r.u4",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "content": {
+        "voice": "Mishnah; anonymous framing and named alternatives",
+        "role": "Calendar head-date teaching",
+        "composition": "composite"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:"
+        }
+      ]
+    },
+    {
+      "id": "r.c0",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "There are four new years.",
+        "conditions": [],
+        "scope": "Opening Mishnah framing",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:1",
+          "start_char": 6,
+          "end_char": 52,
+          "quote": "<big><strong>ארבעה</strong></big> ראשי שנים הם"
+        }
+      ]
+    },
+    {
+      "id": "r.c1",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "Nisan 1 is the new year for kings and festivals.",
+        "conditions": [
+          "Applies only to listed category/categories"
+        ],
+        "scope": [
+          "kings",
+          "festivals"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:1",
+          "start_char": 53,
+          "end_char": 82,
+          "quote": "באחד בניסן ר\"ה למלכים ולרגלים"
+        }
+      ]
+    },
+    {
+      "id": "r.c1.a",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder": "Anonymous Mishnah",
+        "role": "anonymous",
+        "scope": "r.c1",
+        "note": "No additional named author inferred."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:1",
+          "start_char": 53,
+          "end_char": 82,
+          "quote": "באחד בניסן ר\"ה למלכים ולרגלים"
+        }
+      ]
+    },
+    {
+      "id": "r.c1.p",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Anonymous Mishnah"
+        ],
+        "claim_id": "r.c1",
+        "conditions": [
+          "kings",
+          "festivals"
+        ],
+        "question_id": null,
+        "local_status": "Asserted in Mishnah; later Gemara exposition not represented as a final legal ruling."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:1",
+          "start_char": 53,
+          "end_char": 82,
+          "quote": "באחד בניסן ר\"ה למלכים ולרגלים"
+        }
+      ]
+    },
+    {
+      "id": "r.c2",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "Elul 1 is the new year for animal tithe.",
+        "conditions": [
+          "Applies only to listed category/categories"
+        ],
+        "scope": [
+          "animal tithe"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 30,
+          "quote": "באחד באלול ראש השנה למעשר בהמה"
+        }
+      ]
+    },
+    {
+      "id": "r.c2.a",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder": "Anonymous first Mishnah position",
+        "role": "anonymous",
+        "scope": "r.c2",
+        "note": "No additional named author inferred."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 30,
+          "quote": "באחד באלול ראש השנה למעשר בהמה"
+        }
+      ]
+    },
+    {
+      "id": "r.c2.p",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Anonymous first Mishnah position"
+        ],
+        "claim_id": "r.c2",
+        "conditions": [
+          "animal tithe"
+        ],
+        "question_id": "r.q1",
+        "local_status": "Locally stated alternative, no selection or retraction in target."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 30,
+          "quote": "באחד באלול ראש השנה למעשר בהמה"
+        }
+      ]
+    },
+    {
+      "id": "r.c3",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "Tishrei 1 is the new year for animal tithe.",
+        "conditions": [
+          "Applies only to listed category/categories"
+        ],
+        "scope": [
+          "animal tithe"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 31,
+          "end_char": 62,
+          "quote": "ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ]
+    },
+    {
+      "id": "r.c3.a",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder": "ר' אלעזר ור\"ש",
+        "role": "position_holder",
+        "scope": "r.c3",
+        "note": "Retain the printed ר' אלעזר; do not silently change to ר' אליעזר."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 31,
+          "end_char": 62,
+          "quote": "ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ]
+    },
+    {
+      "id": "r.c3.p",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "ר' אלעזר ור\"ש"
+        ],
+        "claim_id": "r.c3",
+        "conditions": [
+          "animal tithe"
+        ],
+        "question_id": "r.q1",
+        "local_status": "Locally stated alternative, no selection or retraction in target."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 31,
+          "end_char": 62,
+          "quote": "ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ]
+    },
+    {
+      "id": "r.c4",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "Tishrei 1 is the new year for years, sabbatical years, jubilees, planting and vegetables.",
+        "conditions": [
+          "Applies only to listed category/categories"
+        ],
+        "scope": [
+          "years",
+          "sabbatical years",
+          "jubilees",
+          "planting",
+          "vegetables"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:3",
+          "start_char": 0,
+          "end_char": 58,
+          "quote": "באחד בתשרי ראש השנה לשנים ולשמיטין וליובלות לנטיעה ולירקות"
+        }
+      ]
+    },
+    {
+      "id": "r.c4.a",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder": "Anonymous Mishnah",
+        "role": "anonymous",
+        "scope": "r.c4",
+        "note": "No additional named author inferred."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:3",
+          "start_char": 0,
+          "end_char": 58,
+          "quote": "באחד בתשרי ראש השנה לשנים ולשמיטין וליובלות לנטיעה ולירקות"
+        }
+      ]
+    },
+    {
+      "id": "r.c4.p",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Anonymous Mishnah"
+        ],
+        "claim_id": "r.c4",
+        "conditions": [
+          "years",
+          "sabbatical years",
+          "jubilees",
+          "planting",
+          "vegetables"
+        ],
+        "question_id": null,
+        "local_status": "Asserted in Mishnah; later Gemara exposition not represented as a final legal ruling."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:3",
+          "start_char": 0,
+          "end_char": 58,
+          "quote": "באחד בתשרי ראש השנה לשנים ולשמיטין וליובלות לנטיעה ולירקות"
+        }
+      ]
+    },
+    {
+      "id": "r.c5",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "Shevat 1 is the new year for the tree.",
+        "conditions": [
+          "Applies only to listed category/categories"
+        ],
+        "scope": [
+          "tree"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 39,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי"
+        }
+      ]
+    },
+    {
+      "id": "r.c5.a",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder": "Beit Shammai",
+        "role": "position_holder",
+        "scope": "r.c5",
+        "note": "No additional named author inferred."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 39,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי"
+        }
+      ]
+    },
+    {
+      "id": "r.c5.p",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Beit Shammai"
+        ],
+        "claim_id": "r.c5",
+        "conditions": [
+          "tree"
+        ],
+        "question_id": "r.q2",
+        "local_status": "Locally stated alternative, no selection or retraction in target."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 39,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי"
+        }
+      ]
+    },
+    {
+      "id": "r.c6",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "content": {
+        "proposition": "Shevat 15 is the new year for the tree.",
+        "conditions": [
+          "Applies only to listed category/categories"
+        ],
+        "scope": [
+          "tree"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 40,
+          "end_char": 67,
+          "quote": "בית הלל אומרים בחמשה עשר בו"
+        }
+      ]
+    },
+    {
+      "id": "r.c6.a",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder": "Beit Hillel",
+        "role": "position_holder",
+        "scope": "r.c6",
+        "note": "No additional named author inferred."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 40,
+          "end_char": 67,
+          "quote": "בית הלל אומרים בחמשה עשר בו"
+        }
+      ]
+    },
+    {
+      "id": "r.c6.p",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "content": {
+        "holder_candidates": [
+          "Beit Hillel"
+        ],
+        "claim_id": "r.c6",
+        "conditions": [
+          "tree"
+        ],
+        "question_id": "r.q2",
+        "local_status": "Locally stated alternative, no selection or retraction in target."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 40,
+          "end_char": 67,
+          "quote": "בית הלל אומרים בחמשה עשר בו"
+        }
+      ]
+    },
+    {
+      "id": "r.q1",
+      "layer": "questions",
+      "origin": "editorial_inference",
+      "content": {
+        "formulation": "Which date is the new year for animal tithe?",
+        "question_origin": "editorial_reconstruction",
+        "conditions": [
+          "Animal tithe only"
+        ],
+        "answer_set_status": "topic_inventory"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ]
+    },
+    {
+      "id": "r.q2",
+      "layer": "questions",
+      "origin": "editorial_inference",
+      "content": {
+        "formulation": "Which day of Shevat is the new year for the tree?",
+        "question_origin": "editorial_reconstruction",
+        "conditions": [
+          "Tree only"
+        ],
+        "answer_set_status": "topic_inventory"
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:"
+        }
+      ]
+    },
+    {
+      "id": "r.e1",
+      "layer": "edges",
+      "origin": "editorial_inference",
+      "content": {
+        "source_id": "r.c2",
+        "target_id": "r.q1",
+        "relation": "answer",
+        "explicitness": "editorial_reconstruction",
+        "note": "Directed alignment to reconstructed topic question; no argument or proof is asserted by this edge."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ]
+    },
+    {
+      "id": "r.e2",
+      "layer": "edges",
+      "origin": "editorial_inference",
+      "content": {
+        "source_id": "r.c3",
+        "target_id": "r.q1",
+        "relation": "answer",
+        "explicitness": "editorial_reconstruction",
+        "note": "Directed alignment to reconstructed topic question; no argument or proof is asserted by this edge."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ]
+    },
+    {
+      "id": "r.e3",
+      "layer": "edges",
+      "origin": "editorial_inference",
+      "content": {
+        "source_id": "r.c5",
+        "target_id": "r.q2",
+        "relation": "answer",
+        "explicitness": "editorial_reconstruction",
+        "note": "Directed alignment to reconstructed topic question; no argument or proof is asserted by this edge."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:"
+        }
+      ]
+    },
+    {
+      "id": "r.e4",
+      "layer": "edges",
+      "origin": "editorial_inference",
+      "content": {
+        "source_id": "r.c6",
+        "target_id": "r.q2",
+        "relation": "answer",
+        "explicitness": "editorial_reconstruction",
+        "note": "Directed alignment to reconstructed topic question; no argument or proof is asserted by this edge."
+      },
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:"
+        }
+      ]
+    }
+  ],
+  "omission_pass": [
+    {
+      "core_refs": [
+        "Berakhot 5a:24",
+        "Berakhot 5b:1",
+        "Berakhot 5b:2",
+        "Berakhot 5b:3"
+      ],
+      "independently_found": [
+        "Cross-folio composite teaching",
+        "Three conjunctive antecedent activities/events and all-sins consequent",
+        "Torah/kindness concession with scriptural basis",
+        "Separate kindness and truth interpretive identifications and their proof texts",
+        "Explicit question about burial of sons",
+        "Elder transmission in name of Rabbi Shimon ben Yohai",
+        "Repeated-word scriptural answer"
+      ],
+      "risks": [
+        "Do not omit 5a:24 when extracting 5b:1.",
+        "Do not turn מנין into denial.",
+        "Do not conflate atonement with afflictions of love: 5b:4–9 distinguishes those categories.",
+        "No named dispute or historical decision in this core."
+      ]
+    },
+    {
+      "core_refs": [
+        "Rosh Hashanah 2a:1",
+        "Rosh Hashanah 2a:2",
+        "Rosh Hashanah 2a:3",
+        "Rosh Hashanah 2a:4"
+      ],
+      "independently_found": [
+        "Four-new-year framing",
+        "Both Nisan categories",
+        "Animal-tithe Elul anonymous and Tishrei named positions",
+        "All five Tishrei categories",
+        "Both tree-date positions with named schools"
+      ],
+      "risks": [
+        "No explicit interrogative in Mishnah; topic questions must be marked editorial.",
+        "No proof, victory, final halachic ruling or motive supplied in target.",
+        "Tishrei animal-tithe alternative is category-specific and must not be merged with anonymous Tishrei list.",
+        "Two distinct disputes are not one binary calendar choice.",
+        "Maintain original markup and ר' אלעזר surface."
+      ]
+    }
+  ],
+  "context_judgments": [
+    {
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5b:4",
+          "start_char": 0,
+          "end_char": 41,
+          "quote": "א\"ר יוחנן נגעים ובנים אינן יסורין של אהבה"
+        },
+        {
+          "source_ref": "Berakhot 5b:6",
+          "start_char": 0,
+          "end_char": 35,
+          "quote": "מזבח כפרה הוו יסורין של אהבה לא הוו"
+        },
+        {
+          "source_ref": "Berakhot 5b:9",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "ובנים לא היכי דמי אילימא דהוו להו ומתו והא א\"ר יוחנן דין גרמא דעשיראה ביר אלא הא דלא הוו ליה כלל והא דהוו ליה ומתו."
+        }
+      ],
+      "judgment": "Related sequel discusses afflictions of love, explicitly separates atonement from that category and distinguishes absence of sons from sons who died; it does not retract the core atonement derivation."
+    },
+    {
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:5",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> למלכים למאי הלכתא אמר רב חסדא לשטרות"
+        },
+        {
+          "source_ref": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "דתנן שטרי חוב המוקדמין פסולין והמאוחרין כשרין"
+        }
+      ],
+      "judgment": "Gemara starts with legal relevance of kings and Rav Hisda’s answer about documents. Context only: not a core Mishnah utterance or final disposition of all Mishnah disputes."
+    }
+  ],
+  "qualification": {
+    "review_state": "AI provisional source-first initial reading frozen before comparison",
+    "human_certified": false,
+    "ml_eligible": false,
+    "whole_tractate_review_complete": false,
+    "comparison_performed": false
+  },
+  "unresolved": [
+    "The conjunctive atonement sentence is not adjudicated here as three independently sufficient conditions.",
+    "No later-tractate adjudication of Mishnah date disputes is claimed.",
+    "The original elder and reciting tanna remain unnamed."
+  ]
+}
