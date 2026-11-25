@@ -1,0 +1,4566 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Taanit",
+  "source_sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "owner": "/root/lead_l02_l04",
+  "epoch": 1,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/lead_l02_l04",
+    "model_id": null
+  },
+  "records": [
+    {
+      "id": "ta.gemara001.opening.questions.1",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_b67d5da7f1c5cf48f049",
+          "start_char": 32,
+          "end_char": 57,
+          "quote": "תנא היכא קאי דקתני מאימתי"
+        }
+      ],
+      "content": {
+        "formulation": "What earlier teaching presupposes the opening from when?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.2",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_b67d5da7f1c5cf48f049",
+          "start_char": 58,
+          "end_char": 69,
+          "quote": "תנא התם קאי"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "initial placement explanation",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "2a7 replaces this explanation after editorial-location challenge."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.3",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b67d5da7f1c5cf48f049",
+          "start_char": 58,
+          "end_char": 69,
+          "quote": "תנא התם קאי"
+        }
+      ],
+      "content": {
+        "proposition": "The tanna refers back to the earlier prayer teaching.",
+        "conditions": [],
+        "scope": "Taanit 2a:4",
+        "assertion_mode": "rejected"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "2a7 replaces this explanation after editorial-location challenge."
+      ],
+      "links": [
+        "ta.gemara001.opening.utterances.2"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.4",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_b67d5da7f1c5cf48f049",
+          "start_char": 58,
+          "end_char": 69,
+          "quote": "תנא התם קאי"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.3",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "2a7 replaces this explanation after editorial-location challenge."
+      ],
+      "links": [
+        "ta.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.5",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b67d5da7f1c5cf48f049",
+          "start_char": 58,
+          "end_char": 69,
+          "quote": "תנא התם קאי"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.3",
+        "question_id": "ta.gemara001.opening.questions.1",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "2a7 replaces this explanation after editorial-location challenge."
+      ],
+      "links": [
+        "ta.gemara001.opening.claims.3",
+        "ta.gemara001.opening.questions.1"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.6",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_b67d5da7f1c5cf48f049",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "<big><strong>גמ׳</strong></big> תנא היכא קאי דקתני מאימתי תנא התם קאי"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.3",
+        "target_id": "ta.gemara001.opening.questions.1",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.3",
+        "ta.gemara001.opening.questions.1"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.7",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 6,
+          "end_char": 39,
+          "quote": "מזכירין גבורות גשמים בתחיית המתים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous quoted Mishnah",
+        "discourse_role": "quoted rule",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.8",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 6,
+          "end_char": 39,
+          "quote": "מזכירין גבורות גשמים בתחיית המתים"
+        }
+      ],
+      "content": {
+        "proposition": "Mention powers of rain in the resurrection blessing.",
+        "conditions": [],
+        "scope": "Taanit 2a:5",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.7"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.9",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 6,
+          "end_char": 39,
+          "quote": "מזכירין גבורות גשמים בתחיית המתים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous quoted Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.8",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.8"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.10",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 6,
+          "end_char": 39,
+          "quote": "מזכירין גבורות גשמים בתחיית המתים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.8",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.8"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.11",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 40,
+          "end_char": 59,
+          "quote": "ושואלין בברכת השנים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous quoted Mishnah",
+        "discourse_role": "quoted rule",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.12",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 40,
+          "end_char": 59,
+          "quote": "ושואלין בברכת השנים"
+        }
+      ],
+      "content": {
+        "proposition": "Request rain in the blessing of years.",
+        "conditions": [],
+        "scope": "Taanit 2a:5",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.11"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.13",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 40,
+          "end_char": 59,
+          "quote": "ושואלין בברכת השנים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous quoted Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.12",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.12"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.14",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 40,
+          "end_char": 59,
+          "quote": "ושואלין בברכת השנים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.12",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.12"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.15",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 60,
+          "end_char": 77,
+          "quote": "והבדלה בחונן הדעת"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous quoted Mishnah",
+        "discourse_role": "quoted rule",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.16",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 60,
+          "end_char": 77,
+          "quote": "והבדלה בחונן הדעת"
+        }
+      ],
+      "content": {
+        "proposition": "Havdalah belongs in the knowledge blessing.",
+        "conditions": [],
+        "scope": "Taanit 2a:5",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.15"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.17",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 60,
+          "end_char": 77,
+          "quote": "והבדלה בחונן הדעת"
+        }
+      ],
+      "content": {
+        "surface": "anonymous quoted Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.16",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.16"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.18",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 60,
+          "end_char": 77,
+          "quote": "והבדלה בחונן הדעת"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.16",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.16"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.19",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 78,
+          "end_char": 111,
+          "quote": "וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "initial editorial linkage",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.20",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 78,
+          "end_char": 111,
+          "quote": "וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "proposition": "Our when question would continue that earlier placement rule.",
+        "conditions": [],
+        "scope": "Taanit 2a:5",
+        "assertion_mode": "rejected"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.19"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.21",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 78,
+          "end_char": 111,
+          "quote": "וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.20",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.20"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.22",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 78,
+          "end_char": 111,
+          "quote": "וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.20",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.20"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.23",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "דקתני מזכירין גבורות גשמים בתחיית המתים ושואלין בברכת השנים והבדלה בחונן הדעת וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.8",
+        "target_id": "ta.gemara001.opening.claims.3",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.8",
+        "ta.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.24",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "דקתני מזכירין גבורות גשמים בתחיית המתים ושואלין בברכת השנים והבדלה בחונן הדעת וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.20",
+        "target_id": "ta.gemara001.opening.claims.3",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.20",
+        "ta.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.25",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_b88b48904847f2f89562",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "וליתני התם מ\"ש דשבקיה עד הכא"
+        }
+      ],
+      "content": {
+        "formulation": "Why was the timing question left until here instead of taught there?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.edges.26",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_b88b48904847f2f89562",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "וליתני התם מ\"ש דשבקיה עד הכא"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.questions.25",
+        "target_id": "ta.gemara001.opening.claims.3",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.questions.25",
+        "ta.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.27",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "אלא תנא מראש השנה סליק"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "replacement explanation",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.28",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "אלא תנא מראש השנה סליק"
+        }
+      ],
+      "content": {
+        "proposition": "The tanna proceeds from Rosh Hashanah.",
+        "conditions": [],
+        "scope": "Taanit 2a:7",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.27"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.29",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "אלא תנא מראש השנה סליק"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.28",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.28"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.30",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "אלא תנא מראש השנה סליק"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.28",
+        "question_id": "ta.gemara001.opening.questions.1",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.28",
+        "ta.gemara001.opening.questions.1"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.31",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 23,
+          "end_char": 48,
+          "quote": "דתנן ובחג נידונין על המים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous quoted Mishnah",
+        "discourse_role": "quoted premise",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.32",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 23,
+          "end_char": 48,
+          "quote": "דתנן ובחג נידונין על המים"
+        }
+      ],
+      "content": {
+        "proposition": "On Sukkot the world is judged concerning water.",
+        "conditions": [],
+        "scope": "Taanit 2a:7",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.31"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.33",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 23,
+          "end_char": 48,
+          "quote": "דתנן ובחג נידונין על המים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous quoted Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.32",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.32"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.34",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 23,
+          "end_char": 48,
+          "quote": "דתנן ובחג נידונין על המים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.32",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.32"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.35",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 49,
+          "end_char": 113,
+          "quote": "ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "editorial linkage",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.36",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 49,
+          "end_char": 113,
+          "quote": "ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "proposition": "Water judgment on Sukkot motivates the transition to when rain is mentioned.",
+        "conditions": [],
+        "scope": "Taanit 2a:7",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.35"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.37",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 49,
+          "end_char": 113,
+          "quote": "ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.36",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.36"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.38",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 49,
+          "end_char": 113,
+          "quote": "ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.36",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.36"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.39",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.28",
+        "target_id": "ta.gemara001.opening.claims.3",
+        "relation": "correction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.28",
+        "ta.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.40",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.28",
+        "target_id": "ta.gemara001.opening.questions.25",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.28",
+        "ta.gemara001.opening.questions.25"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.41",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.32",
+        "target_id": "ta.gemara001.opening.claims.36",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.32",
+        "ta.gemara001.opening.claims.36"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.42",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.36",
+        "target_id": "ta.gemara001.opening.claims.28",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.36",
+        "ta.gemara001.opening.claims.28"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.43",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 32,
+          "end_char": 48,
+          "quote": "מאי גבורות גשמים"
+        }
+      ],
+      "content": {
+        "formulation": "Why say powers of rain rather than simply rain?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.44",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 49,
+          "end_char": 78,
+          "quote": "א\"ר יוחנן מפני שיורדין בגבורה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yohanan",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.45",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 49,
+          "end_char": 78,
+          "quote": "א\"ר יוחנן מפני שיורדין בגבורה"
+        }
+      ],
+      "content": {
+        "proposition": "Rains descend with power.",
+        "conditions": [],
+        "scope": "Taanit 2a:8",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.44"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.46",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 49,
+          "end_char": 78,
+          "quote": "א\"ר יוחנן מפני שיורדין בגבורה"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yohanan",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "ta.gemara001.opening.claims.45",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.45"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.47",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 49,
+          "end_char": 78,
+          "quote": "א\"ר יוחנן מפני שיורדין בגבורה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.45",
+        "question_id": "ta.gemara001.opening.questions.43",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.45",
+        "ta.gemara001.opening.questions.43"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.48",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 97,
+          "end_char": 139,
+          "quote": "עושה גדולות עד אין חקר ונפלאות עד אין מספר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Job biblical quotation",
+        "discourse_role": "scriptural premise",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.49",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 97,
+          "end_char": 139,
+          "quote": "עושה גדולות עד אין חקר ונפלאות עד אין מספר"
+        }
+      ],
+      "content": {
+        "proposition": "God does great and unsearchable deeds and wonders beyond number.",
+        "conditions": [],
+        "scope": "Taanit 2a:8",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.48"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.50",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 97,
+          "end_char": 139,
+          "quote": "עושה גדולות עד אין חקר ונפלאות עד אין מספר"
+        }
+      ],
+      "content": {
+        "surface": "Job biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Job biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.49",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.49"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.51",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 97,
+          "end_char": 139,
+          "quote": "עושה גדולות עד אין חקר ונפלאות עד אין מספר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Job biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.49",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.49"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.52",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 158,
+          "end_char": 201,
+          "quote": "הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "textual_voice": "Job biblical quotation",
+        "discourse_role": "scriptural premise",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.53",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 158,
+          "end_char": 201,
+          "quote": "הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "proposition": "God gives rain on earth and sends water over the fields.",
+        "conditions": [],
+        "scope": "Taanit 2a:8",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.52"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.54",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 158,
+          "end_char": 201,
+          "quote": "הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "surface": "Job biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Job biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.53",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.53"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.55",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 158,
+          "end_char": 201,
+          "quote": "הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Job biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.53",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.53"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.56",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 0,
+          "end_char": 201,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים א\"ר יוחנן מפני שיורדין בגבורה שנאמר (איוב ה, ט) עושה גדולות עד אין חקר ונפלאות עד אין מספר וכתיב (איוב ה, י) הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.45",
+        "target_id": "ta.gemara001.opening.questions.43",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.45",
+        "ta.gemara001.opening.questions.43"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.57",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 0,
+          "end_char": 201,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים א\"ר יוחנן מפני שיורדין בגבורה שנאמר (איוב ה, ט) עושה גדולות עד אין חקר ונפלאות עד אין מספר וכתיב (איוב ה, י) הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.49",
+        "target_id": "ta.gemara001.opening.claims.45",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.49",
+        "ta.gemara001.opening.claims.45"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.58",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 0,
+          "end_char": 201,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים א\"ר יוחנן מפני שיורדין בגבורה שנאמר (איוב ה, ט) עושה גדולות עד אין חקר ונפלאות עד אין מספר וכתיב (איוב ה, י) הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.53",
+        "target_id": "ta.gemara001.opening.claims.45",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.53",
+        "ta.gemara001.opening.claims.45"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.59",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_7167bea849de7b2bd976",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "מאי משמע"
+        }
+      ],
+      "content": {
+        "formulation": "How does that verse imply power?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.60",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_7167bea849de7b2bd976",
+          "start_char": 9,
+          "end_char": 53,
+          "quote": "אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbah bar Shila",
+        "discourse_role": "lexical derivation",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.61",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_7167bea849de7b2bd976",
+          "start_char": 9,
+          "end_char": 53,
+          "quote": "אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "proposition": "Infer through the repeated word חקר from creation.",
+        "conditions": [],
+        "scope": "Taanit 2a:9",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.60"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.62",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_7167bea849de7b2bd976",
+          "start_char": 9,
+          "end_char": 53,
+          "quote": "אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "surface": "Rabbah bar Shila",
+        "role": "speaker",
+        "candidates": [
+          "Rabbah bar Shila"
+        ],
+        "scope": "ta.gemara001.opening.claims.61",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.61"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.63",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_7167bea849de7b2bd976",
+          "start_char": 9,
+          "end_char": 53,
+          "quote": "אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbah bar Shila"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.61",
+        "question_id": "ta.gemara001.opening.questions.59",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.61",
+        "ta.gemara001.opening.questions.59"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.64",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_7167bea849de7b2bd976",
+          "start_char": 0,
+          "end_char": 53,
+          "quote": "מאי משמע אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.61",
+        "target_id": "ta.gemara001.opening.questions.59",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.61",
+        "ta.gemara001.opening.questions.59"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.65",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "quoted lexical evidence",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.66",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר"
+        }
+      ],
+      "content": {
+        "proposition": "The rain-associated verse contains אין חקר.",
+        "conditions": [],
+        "scope": "Taanit 2a:10",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.65"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.67",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.66",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.66"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.68",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.66",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.66"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.69",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 105,
+          "end_char": 137,
+          "quote": "לא ייעף ולא ייגע אין חקר לתבונתו"
+        }
+      ],
+      "content": {
+        "textual_voice": "Isaiah biblical quotation",
+        "discourse_role": "scriptural premise",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.70",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 105,
+          "end_char": 137,
+          "quote": "לא ייעף ולא ייגע אין חקר לתבונתו"
+        }
+      ],
+      "content": {
+        "proposition": "The creator neither tires nor wearies and his understanding is unsearchable.",
+        "conditions": [],
+        "scope": "Taanit 2a:10",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.69"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.71",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 105,
+          "end_char": 137,
+          "quote": "לא ייעף ולא ייגע אין חקר לתבונתו"
+        }
+      ],
+      "content": {
+        "surface": "Isaiah biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Isaiah biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.70",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.70"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.72",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 105,
+          "end_char": 137,
+          "quote": "לא ייעף ולא ייגע אין חקר לתבונתו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Isaiah biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.70",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.70"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.73",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 158,
+          "end_char": 184,
+          "quote": "מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Psalms biblical quotation",
+        "discourse_role": "scriptural premise",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.74",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 158,
+          "end_char": 184,
+          "quote": "מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "proposition": "God establishes mountains by strength and is girded in power.",
+        "conditions": [],
+        "scope": "Taanit 2a:10",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.73"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.75",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 158,
+          "end_char": 184,
+          "quote": "מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "surface": "Psalms biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Psalms biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.74",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.74"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.76",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 158,
+          "end_char": 184,
+          "quote": "מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Psalms biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.74",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.74"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.77",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.66",
+        "target_id": "ta.gemara001.opening.claims.61",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.66",
+        "ta.gemara001.opening.claims.61"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.78",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.70",
+        "target_id": "ta.gemara001.opening.claims.61",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.70",
+        "ta.gemara001.opening.claims.61"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.79",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.74",
+        "target_id": "ta.gemara001.opening.claims.61",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.74",
+        "ta.gemara001.opening.claims.61"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.80",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 0,
+          "end_char": 14,
+          "quote": "ומנא לן דבתפלה"
+        }
+      ],
+      "content": {
+        "formulation": "How is rain connected to prayer?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.81",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 72,
+          "end_char": 112,
+          "quote": "איזו היא עבודה שהיא בלב הוי אומר זו תפלה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous baraita",
+        "discourse_role": "scriptural interpretation",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.82",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 72,
+          "end_char": 112,
+          "quote": "איזו היא עבודה שהיא בלב הוי אומר זו תפלה"
+        }
+      ],
+      "content": {
+        "proposition": "Service of the heart is prayer.",
+        "conditions": [],
+        "scope": "Taanit 2a:11",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.81"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.83",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 72,
+          "end_char": 112,
+          "quote": "איזו היא עבודה שהיא בלב הוי אומר זו תפלה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous baraita",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.82",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.82"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.84",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 72,
+          "end_char": 112,
+          "quote": "איזו היא עבודה שהיא בלב הוי אומר זו תפלה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.82",
+        "question_id": "ta.gemara001.opening.questions.80",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.82",
+        "ta.gemara001.opening.questions.80"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.85",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 113,
+          "end_char": 172,
+          "quote": "וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "scriptural adjacency",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.86",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 113,
+          "end_char": 172,
+          "quote": "וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "proposition": "The ensuing verse promises seasonal rain.",
+        "conditions": [],
+        "scope": "Taanit 2a:11",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.85"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.87",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 113,
+          "end_char": 172,
+          "quote": "וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.86",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.86"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.88",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 113,
+          "end_char": 172,
+          "quote": "וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.86",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.86"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.89",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.82",
+        "target_id": "ta.gemara001.opening.questions.80",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.82",
+        "ta.gemara001.opening.questions.80"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.90",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.86",
+        "target_id": "ta.gemara001.opening.questions.80",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.86",
+        "ta.gemara001.opening.questions.80"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.91",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 72,
+          "end_char": 95,
+          "quote": "איזו היא עבודה שהיא בלב"
+        }
+      ],
+      "content": {
+        "formulation": "What service is performed with the heart?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.edges.92",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.82",
+        "target_id": "ta.gemara001.opening.questions.91",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.82",
+        "ta.gemara001.opening.questions.91"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.93",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 64,
+          "end_char": 77,
+          "quote": "מפתח של גשמים"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yohanan",
+        "discourse_role": "theological assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.94",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 64,
+          "end_char": 77,
+          "quote": "מפתח של גשמים"
+        }
+      ],
+      "content": {
+        "proposition": "The key of rain remains with God and was not delegated.",
+        "conditions": [],
+        "scope": "Taanit 2a:12",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.93"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.95",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 64,
+          "end_char": 77,
+          "quote": "מפתח של גשמים"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yohanan",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "ta.gemara001.opening.claims.94",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.94"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.96",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 64,
+          "end_char": 77,
+          "quote": "מפתח של גשמים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.94",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.94"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.97",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 78,
+          "end_char": 89,
+          "quote": "מפתח של חיה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yohanan",
+        "discourse_role": "theological assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.98",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 78,
+          "end_char": 89,
+          "quote": "מפתח של חיה"
+        }
+      ],
+      "content": {
+        "proposition": "The key of childbirth remains with God and was not delegated.",
+        "conditions": [],
+        "scope": "Taanit 2a:12",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.97"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.99",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 78,
+          "end_char": 89,
+          "quote": "מפתח של חיה"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yohanan",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "ta.gemara001.opening.claims.98",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.98"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.100",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 78,
+          "end_char": 89,
+          "quote": "מפתח של חיה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.98",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.98"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.101",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 90,
+          "end_char": 109,
+          "quote": "מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yohanan",
+        "discourse_role": "theological assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.102",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 90,
+          "end_char": 109,
+          "quote": "מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "proposition": "The key of resurrection remains with God and was not delegated.",
+        "conditions": [],
+        "scope": "Taanit 2a:12",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.101"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.103",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 90,
+          "end_char": 109,
+          "quote": "מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yohanan",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "ta.gemara001.opening.claims.102",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.102"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.104",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 90,
+          "end_char": 109,
+          "quote": "מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.102",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.102"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.105",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 13,
+          "end_char": 55,
+          "quote": "ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yohanan",
+        "discourse_role": "enumeration",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.106",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 13,
+          "end_char": 55,
+          "quote": "ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח"
+        }
+      ],
+      "content": {
+        "proposition": "Three specified keys remain with God and were not handed to an agent.",
+        "conditions": [],
+        "scope": "Taanit 2a:12",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.105"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.107",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 13,
+          "end_char": 55,
+          "quote": "ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yohanan",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "ta.gemara001.opening.claims.106",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.106"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.108",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 13,
+          "end_char": 55,
+          "quote": "ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.106",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.106"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.109",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 35,
+          "end_char": 86,
+          "quote": "יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו"
+        }
+      ],
+      "content": {
+        "textual_voice": "Deuteronomy biblical quotation",
+        "discourse_role": "rain-key proof",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.110",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 35,
+          "end_char": 86,
+          "quote": "יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו"
+        }
+      ],
+      "content": {
+        "proposition": "God opens the heavenly treasury to give seasonal rain.",
+        "conditions": [],
+        "scope": "Taanit 2a:13",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.109"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.111",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 35,
+          "end_char": 86,
+          "quote": "יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו"
+        }
+      ],
+      "content": {
+        "surface": "Deuteronomy biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Deuteronomy biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.110",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.110"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.112",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 35,
+          "end_char": 86,
+          "quote": "יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Deuteronomy biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.110",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.110"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.113",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מפתח של גשמים דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו מפתח של חיה מנין דכתיב ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.110",
+        "target_id": "ta.gemara001.opening.claims.106",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.110",
+        "ta.gemara001.opening.claims.106"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.114",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 87,
+          "end_char": 103,
+          "quote": "מפתח של חיה מנין"
+        }
+      ],
+      "content": {
+        "formulation": "What is the source for the childbirth key?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.115",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 110,
+          "end_char": 135,
+          "quote": "ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "textual_voice": "Genesis biblical quotation",
+        "discourse_role": "childbirth-key proof",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "This source segment ends mid-verse; next segment supplies opening womb."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.116",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 110,
+          "end_char": 135,
+          "quote": "ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "proposition": "God remembers Rachel and hears her; the quotation continues into next amud.",
+        "conditions": [],
+        "scope": "Taanit 2a:13",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "This source segment ends mid-verse; next segment supplies opening womb."
+      ],
+      "links": [
+        "ta.gemara001.opening.utterances.115"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.117",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 110,
+          "end_char": 135,
+          "quote": "ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "surface": "Genesis biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Genesis biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.116",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "This source segment ends mid-verse; next segment supplies opening womb."
+      ],
+      "links": [
+        "ta.gemara001.opening.claims.116"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.118",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 110,
+          "end_char": 135,
+          "quote": "ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Genesis biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.116",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "This source segment ends mid-verse; next segment supplies opening womb."
+      ],
+      "links": [
+        "ta.gemara001.opening.claims.116"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.119",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 24,
+          "quote": "אליה אלהים ויפתח את רחמה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Genesis biblical quotation",
+        "discourse_role": "childbirth-key proof",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.120",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 24,
+          "quote": "אליה אלהים ויפתח את רחמה"
+        }
+      ],
+      "content": {
+        "proposition": "God heard her and opened her womb.",
+        "conditions": [],
+        "scope": "Taanit 2b:1",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.119"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.121",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 24,
+          "quote": "אליה אלהים ויפתח את רחמה"
+        }
+      ],
+      "content": {
+        "surface": "Genesis biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Genesis biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.120",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.120"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.122",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 24,
+          "quote": "אליה אלהים ויפתח את רחמה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Genesis biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.120",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.120"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.123",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.120",
+        "target_id": "ta.gemara001.opening.claims.116",
+        "relation": "continuation",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.120",
+        "ta.gemara001.opening.claims.116"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.124",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.120",
+        "target_id": "ta.gemara001.opening.questions.114",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.120",
+        "ta.gemara001.opening.questions.114"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.125",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 25,
+          "end_char": 49,
+          "quote": "מפתח של תחיית המתים מנין"
+        }
+      ],
+      "content": {
+        "formulation": "What is the source for the resurrection key?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.126",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 72,
+          "end_char": 106,
+          "quote": "וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "textual_voice": "Ezekiel biblical quotation",
+        "discourse_role": "resurrection-key proof",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.127",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 72,
+          "end_char": 106,
+          "quote": "וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "proposition": "God identifies himself through opening graves.",
+        "conditions": [],
+        "scope": "Taanit 2b:1",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.126"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.128",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 72,
+          "end_char": 106,
+          "quote": "וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "surface": "Ezekiel biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Ezekiel biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.127",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.127"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.129",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 72,
+          "end_char": 106,
+          "quote": "וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Ezekiel biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.127",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.127"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.130",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.127",
+        "target_id": "ta.gemara001.opening.questions.125",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.127",
+        "ta.gemara001.opening.questions.125"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.131",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.127",
+        "target_id": "ta.gemara001.opening.claims.106",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.127",
+        "ta.gemara001.opening.claims.106"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.132",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "במערבא אמרי אף מפתח של פרנסה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Western sages",
+        "discourse_role": "additional enumeration",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.133",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "במערבא אמרי אף מפתח של פרנסה"
+        }
+      ],
+      "content": {
+        "proposition": "Western sages add the key of sustenance.",
+        "conditions": [],
+        "scope": "Taanit 2b:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.132"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.134",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "במערבא אמרי אף מפתח של פרנסה"
+        }
+      ],
+      "content": {
+        "surface": "Western sages",
+        "role": "speaker",
+        "candidates": [
+          "Western sages"
+        ],
+        "scope": "ta.gemara001.opening.claims.133",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.133"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.135",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "במערבא אמרי אף מפתח של פרנסה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Western sages"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.133",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.133"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.136",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 51,
+          "end_char": 62,
+          "quote": "פותח את ידך"
+        }
+      ],
+      "content": {
+        "textual_voice": "Psalms biblical quotation",
+        "discourse_role": "sustenance-key proof",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.137",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 51,
+          "end_char": 62,
+          "quote": "פותח את ידך"
+        }
+      ],
+      "content": {
+        "proposition": "God opens his hand.",
+        "conditions": [],
+        "scope": "Taanit 2b:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.utterances.136"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.138",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 51,
+          "end_char": 62,
+          "quote": "פותח את ידך"
+        }
+      ],
+      "content": {
+        "surface": "Psalms biblical quotation",
+        "role": "speaker",
+        "candidates": [
+          "Psalms biblical quotation"
+        ],
+        "scope": "ta.gemara001.opening.claims.137",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.137"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.139",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 51,
+          "end_char": 62,
+          "quote": "פותח את ידך"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Psalms biblical quotation"
+        ],
+        "claim_id": "ta.gemara001.opening.claims.137",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.137"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.140",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.137",
+        "target_id": "ta.gemara001.opening.claims.133",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.137",
+        "ta.gemara001.opening.claims.133"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.questions.141",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 68,
+          "end_char": 101,
+          "quote": "ור' יוחנן מאי טעמא לא קא חשיב להא"
+        }
+      ],
+      "content": {
+        "formulation": "Why does Rabbi Yohanan not count sustenance?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.utterances.142",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102,
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara speaking for Rabbi Yohanan",
+        "discourse_role": "reconstructed reply",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "אמר לך is the discussion's offered answer, not an independently transmitted utterance of Yohanan."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.gemara001.opening.claims.143",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102,
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה"
+        }
+      ],
+      "content": {
+        "proposition": "Rain constitutes sustenance, explaining its inclusion without a separate key.",
+        "conditions": [],
+        "scope": "Taanit 2b:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "אמר לך is the discussion's offered answer, not an independently transmitted utterance of Yohanan."
+      ],
+      "links": [
+        "ta.gemara001.opening.utterances.142"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.attributions.144",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102,
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara speaking for Rabbi Yohanan",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.gemara001.opening.claims.143",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "אמר לך is the discussion's offered answer, not an independently transmitted utterance of Yohanan."
+      ],
+      "links": [
+        "ta.gemara001.opening.claims.143"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.positions.145",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102,
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.gemara001.opening.claims.143",
+        "question_id": "ta.gemara001.opening.questions.141",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "אמר לך is the discussion's offered answer, not an independently transmitted utterance of Yohanan."
+      ],
+      "links": [
+        "ta.gemara001.opening.claims.143",
+        "ta.gemara001.opening.questions.141"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.146",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.143",
+        "target_id": "ta.gemara001.opening.questions.141",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.143",
+        "ta.gemara001.opening.questions.141"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.edges.147",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "source_id": "ta.gemara001.opening.claims.143",
+        "target_id": "ta.gemara001.opening.claims.133",
+        "relation": "distinction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.gemara001.opening.claims.143",
+        "ta.gemara001.opening.claims.133"
+      ]
+    },
+    {
+      "id": "ta.gemara001.opening.structure.148",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "seg_b67d5da7f1c5cf48f049",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "<big><strong>גמ׳</strong></big> תנא היכא קאי דקתני מאימתי תנא התם קאי"
+        },
+        {
+          "segment_id": "seg_d3f601fd912c17b5cc63",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "דקתני מזכירין גבורות גשמים בתחיית המתים ושואלין בברכת השנים והבדלה בחונן הדעת וקתני מאימתי מזכירין גבורות גשמים"
+        },
+        {
+          "segment_id": "seg_b88b48904847f2f89562",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "וליתני התם מ\"ש דשבקיה עד הכא"
+        },
+        {
+          "segment_id": "seg_ab8d45e1b81ee880f2b9",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        },
+        {
+          "segment_id": "seg_57a37c5b529b93dba331",
+          "start_char": 0,
+          "end_char": 201,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים א\"ר יוחנן מפני שיורדין בגבורה שנאמר (איוב ה, ט) עושה גדולות עד אין חקר ונפלאות עד אין מספר וכתיב (איוב ה, י) הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        },
+        {
+          "segment_id": "seg_7167bea849de7b2bd976",
+          "start_char": 0,
+          "end_char": 53,
+          "quote": "מאי משמע אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        },
+        {
+          "segment_id": "seg_833d8eed523ca6a589f0",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        },
+        {
+          "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        },
+        {
+          "segment_id": "seg_b2410fcf3e578ba131f9",
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "אמר ר' יוחנן ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח ואלו הן מפתח של גשמים מפתח של חיה מפתח של תחיית המתים"
+        },
+        {
+          "segment_id": "seg_282091106a1831bae345",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מפתח של גשמים דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו מפתח של חיה מנין דכתיב ויזכור אלהים את רחל וישמע"
+        },
+        {
+          "segment_id": "seg_49c8a11a109f033ac571",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        },
+        {
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "title": "Gemara: editorial opening, rain power and prayer, three divine keys",
+        "primary": true,
+        "boundary": "open_right",
+        "legacy_ids": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    }
+  ],
+  "coverage": [
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.2"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.3"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.4"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.1"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.5"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.6"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b67d5da7f1c5cf48f049",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread explicit antecedent question and initial answer; later replacement kept in local status."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.7",
+        "ta.gemara001.opening.utterances.11",
+        "ta.gemara001.opening.utterances.15",
+        "ta.gemara001.opening.utterances.19"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.8",
+        "ta.gemara001.opening.claims.12",
+        "ta.gemara001.opening.claims.16",
+        "ta.gemara001.opening.claims.20"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.9",
+        "ta.gemara001.opening.attributions.13",
+        "ta.gemara001.opening.attributions.17",
+        "ta.gemara001.opening.attributions.21"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.10",
+        "ta.gemara001.opening.positions.14",
+        "ta.gemara001.opening.positions.18",
+        "ta.gemara001.opening.positions.22"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.23",
+        "ta.gemara001.opening.edges.24"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_d3f601fd912c17b5cc63",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread all three quoted liturgical placements, including Havdalah often omitted from rain-only summaries; editorial link retained as rejected explanation."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit utterances found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit claims found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit attributions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.25"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit positions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.26"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b88b48904847f2f89562",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread why-here challenge and its target; no separate factual claim invented."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.27",
+        "ta.gemara001.opening.utterances.31",
+        "ta.gemara001.opening.utterances.35"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.28",
+        "ta.gemara001.opening.claims.32",
+        "ta.gemara001.opening.claims.36"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.29",
+        "ta.gemara001.opening.attributions.33",
+        "ta.gemara001.opening.attributions.37"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.30",
+        "ta.gemara001.opening.positions.34",
+        "ta.gemara001.opening.positions.38"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.39",
+        "ta.gemara001.opening.edges.40",
+        "ta.gemara001.opening.edges.41",
+        "ta.gemara001.opening.edges.42"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_ab8d45e1b81ee880f2b9",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread replacement Rosh Hashanah linkage, water-judgment quotation and reason for transition."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.44",
+        "ta.gemara001.opening.utterances.48",
+        "ta.gemara001.opening.utterances.52"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.45",
+        "ta.gemara001.opening.claims.49",
+        "ta.gemara001.opening.claims.53"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.46",
+        "ta.gemara001.opening.attributions.50",
+        "ta.gemara001.opening.attributions.54"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.43"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.47",
+        "ta.gemara001.opening.positions.51",
+        "ta.gemara001.opening.positions.55"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.56",
+        "ta.gemara001.opening.edges.57",
+        "ta.gemara001.opening.edges.58"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57a37c5b529b93dba331",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread wording question, named Yohanan explanation and both Job clauses separately. Scriptural speakers kept distinct from amora."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.60"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.61"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.62"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.59"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.63"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.64"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_7167bea849de7b2bd976",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread derivation query and Rabbah bar Shila answer; not conflated with Rabbah or Rava."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.65",
+        "ta.gemara001.opening.utterances.69",
+        "ta.gemara001.opening.utterances.73"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.66",
+        "ta.gemara001.opening.claims.70",
+        "ta.gemara001.opening.claims.74"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.67",
+        "ta.gemara001.opening.attributions.71",
+        "ta.gemara001.opening.attributions.75"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.68",
+        "ta.gemara001.opening.positions.72",
+        "ta.gemara001.opening.positions.76"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.77",
+        "ta.gemara001.opening.edges.78",
+        "ta.gemara001.opening.edges.79"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_833d8eed523ca6a589f0",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread three supporting quotations; creation verse and mountain verse jointly supply lexical/power link; no independent halakhic conclusion."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.81",
+        "ta.gemara001.opening.utterances.85"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.82",
+        "ta.gemara001.opening.claims.86"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.83",
+        "ta.gemara001.opening.attributions.87"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.80",
+        "ta.gemara001.opening.questions.91"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.84",
+        "ta.gemara001.opening.positions.88"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.89",
+        "ta.gemara001.opening.edges.90",
+        "ta.gemara001.opening.edges.92"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_e8ebe72a8bb5f0e5b53f",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread rain/prayer question, heart-service inner question, baraita answer and following-rain verse; explicit nesting preserved."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.93",
+        "ta.gemara001.opening.utterances.97",
+        "ta.gemara001.opening.utterances.101",
+        "ta.gemara001.opening.utterances.105"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.94",
+        "ta.gemara001.opening.claims.98",
+        "ta.gemara001.opening.claims.102",
+        "ta.gemara001.opening.claims.106"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.95",
+        "ta.gemara001.opening.attributions.99",
+        "ta.gemara001.opening.attributions.103",
+        "ta.gemara001.opening.attributions.107"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.96",
+        "ta.gemara001.opening.positions.100",
+        "ta.gemara001.opening.positions.104",
+        "ta.gemara001.opening.positions.108"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit edges found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b2410fcf3e578ba131f9",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread three-key enumeration and each key separately; only textually specified nondelegation, no invented historical exception resolution."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.109",
+        "ta.gemara001.opening.utterances.115"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.110",
+        "ta.gemara001.opening.claims.116"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.111",
+        "ta.gemara001.opening.attributions.117"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.114"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.112",
+        "ta.gemara001.opening.positions.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.113"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_282091106a1831bae345",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread rain proof and childbirth question; dangling verse carried into next amud rather than falsely closed."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.119",
+        "ta.gemara001.opening.utterances.126"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.120",
+        "ta.gemara001.opening.claims.127"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.121",
+        "ta.gemara001.opening.attributions.128"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.125"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.122",
+        "ta.gemara001.opening.positions.129"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.123",
+        "ta.gemara001.opening.edges.124",
+        "ta.gemara001.opening.edges.130",
+        "ta.gemara001.opening.edges.131"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_49c8a11a109f033ac571",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread childbirth continuation and separate resurrection question/proof; source-crossing edge retained."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.structure.148"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.132",
+        "ta.gemara001.opening.utterances.136",
+        "ta.gemara001.opening.utterances.142"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.claims.133",
+        "ta.gemara001.opening.claims.137",
+        "ta.gemara001.opening.claims.143"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.134",
+        "ta.gemara001.opening.attributions.138",
+        "ta.gemara001.opening.attributions.144"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.questions.141"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.positions.135",
+        "ta.gemara001.opening.positions.139",
+        "ta.gemara001.opening.positions.145"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.gemara001.opening.edges.140",
+        "ta.gemara001.opening.edges.146",
+        "ta.gemara001.opening.edges.147"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_fbf660d7ed72e0a90054",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread Western addition, proof, question about Yohanan and anonymous reconstructed reply; addition not forced into substantive disagreement. Colon closes keys discussion; next lemma begins2b3."
+    }
+  ],
+  "open_tails": [
+    "ta.gemara001.opening.structure.148",
+    "ta.opening.structure.54"
+  ]
+}

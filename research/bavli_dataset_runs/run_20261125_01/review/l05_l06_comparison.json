@@ -1,0 +1,552 @@
+{
+  "review_version": "independent-source-first-comparison-1",
+  "agent_id": "/root/review_l05_l06",
+  "model_id": null,
+  "identity_note": "Known collaboration tool task identity supplied by coordinator; initial null identity retained immutably as originally frozen.",
+  "initial_artifact": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review\\l05_l06_initial.json",
+  "initial_sha256": "114a34c46c8a5e69669f9e9d819e4a43029eb4b2d548f3dbdb3d8626adac6ed2",
+  "snapshot_bindings": {
+    "Chullin": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\1702c98fe63ed1da55efdde34dc35d8991bf49710e613ed94e79b1021eecab7e.json",
+      "sha256": "1702c98fe63ed1da55efdde34dc35d8991bf49710e613ed94e79b1021eecab7e"
+    },
+    "Bava Kamma": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_bava_kamma\\snapshots\\c6444e21ae3bb63f29da713f3f7281fe9a8613660155c007ac3fbace2d4de68f.json",
+      "sha256": "c6444e21ae3bb63f29da713f3f7281fe9a8613660155c007ac3fbace2d4de68f"
+    }
+  },
+  "comparison_authorized_after_freeze": true,
+  "quarantine_read_after_freeze": true,
+  "scope": "Targeted Chullin 2a:1–2b:5 and Bava Kamma 2a:1–2b:2 only; context ranges and source metadata in initial. No full lane/tractate verification.",
+  "validation": {
+    "Chullin": {
+      "records_inspected": 76,
+      "evidence_spans_verified_against_frozen_original_reading": 88,
+      "core_segments": 11,
+      "layers_present": {
+        "attributions": 13,
+        "claims": 17,
+        "edges": 10,
+        "positions": 17,
+        "questions": 6,
+        "structure": 2,
+        "utterances": 11
+      },
+      "segment_mapping": {
+        "seg_7fc740f53f65aa4b28fc": "Chullin 2a:2",
+        "seg_577405bef7b937a57d8f": "Chullin 2a:3",
+        "seg_49d5b35c9356567ae51f": "Chullin 2a:4",
+        "seg_823bd16ae347d9625700": "Chullin 2a:5",
+        "seg_5f122323b9e1216a038e": "Chullin 2a:6",
+        "seg_e0c531495f03426954fd": "Chullin 2b:1",
+        "seg_2cebba142a400b7826a3": "Chullin 2b:2",
+        "seg_595f79be6b1b09f38a3f": "Chullin 2b:3",
+        "seg_bd3c8f80d957433fa4fb": "Chullin 2b:4",
+        "seg_fadd079789b5b9810a84": "Chullin 2b:5",
+        "seg_62d4780382d335c6f058": "Chullin 2a:1"
+      }
+    },
+    "Bava Kamma": {
+      "records_inspected": 81,
+      "evidence_spans_verified_against_frozen_original_reading": 94,
+      "core_segments": 12,
+      "layers_present": {
+        "attributions": 14,
+        "claims": 20,
+        "edges": 10,
+        "positions": 20,
+        "questions": 4,
+        "structure": 2,
+        "utterances": 11
+      },
+      "segment_mapping": {
+        "seg_07c65948726fdcffc502": "Bava Kamma 2a:5",
+        "seg_0674ba314ca9987d2261": "Bava Kamma 2a:6",
+        "seg_d90ba7d61e18046f36b2": "Bava Kamma 2a:7",
+        "seg_a4d7c6d51eb18e9374c7": "Bava Kamma 2a:8",
+        "seg_4216bdd1a4a3e290e192": "Bava Kamma 2a:9",
+        "seg_d9f1585ef83398aa4b66": "Bava Kamma 2a:10",
+        "seg_1db325cc8b7cf1cbef28": "Bava Kamma 2b:1",
+        "seg_b15fcd28e198946617a1": "Bava Kamma 2b:2",
+        "seg_9fed8fe3f8fc7a5d3850": "Bava Kamma 2a:1",
+        "seg_1f08542ff95cba727dff": "Bava Kamma 2a:2",
+        "seg_a608beaefd887d3bee09": "Bava Kamma 2a:3",
+        "seg_4e7ddad20996ed3eba06": "Bava Kamma 2a:4"
+      }
+    }
+  },
+  "findings": [
+    {
+      "id": "L05-F01",
+      "severity": "release_blocker_for_exact_record",
+      "type": "incorrect_attribution_role",
+      "record_ids": [
+        "ch01_a_ashi_addressee"
+      ],
+      "source_ref": "Chullin 2a:3",
+      "source_evidence": [
+        {
+          "end_char": 32,
+          "quote": "לרב אשי",
+          "segment_id": "seg_577405bef7b937a57d8f",
+          "start_char": 25
+        }
+      ],
+      "finding": "לרב אשי is the addressee of Rav Aha son of Rava. It does not quote Rav Ashi as authority. typed quoted_authority contradicts the literal relationship; a scope caveat does not repair the machine-readable role.",
+      "independent_basis": "Frozen initial 2a:3 explicitly distinguished speaker/addressee/patronymic before quarantine exposure.",
+      "known_quarantine": "Confirms existing coordinator quarantine independently.",
+      "repair": "Keep this exact version quarantined; replace via versioned supported addressee representation or omit unsupported role while preserving addressee information in utterance. Do not overwrite initial record."
+    },
+    {
+      "id": "L05-F02",
+      "severity": "minor_graph_precision",
+      "type": "edge_target_mismatch",
+      "record_ids": [
+        "ch01_e_semikha",
+        "ch01_c_semikha",
+        "ch01_q_semikha",
+        "ch01_q_reverse"
+      ],
+      "source_ref": "Chullin 2b:3",
+      "source_evidence": [
+        {
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה",
+          "segment_id": "seg_595f79be6b1b09f38a3f",
+          "start_char": 0
+        }
+      ],
+      "finding": "The verse וסמך directly supplies the premise for the newly introduced semikhah counterquestion, ch01_q_semikha. Current edge points instead to the preceding sukkah/tzitzit counterquestion ch01_q_reverse, whose חייבין cases have just been excluded. A broad thematic link is intelligible but source_explicit overstates this endpoint.",
+      "repair": "Prefer support to ch01_q_semikha; if broad relation to ch01_q_reverse retained, label editorial reconstruction and preserve local new-question link.",
+      "qualification": "Minor graph issue, not wrong halakhic claim or missing source evidence."
+    }
+  ],
+  "bound_records_for_findings": [
+    {
+      "record_id": "ch01_a_ashi_addressee",
+      "record": {
+        "content": {
+          "candidates": [
+            "רב אשי"
+          ],
+          "role": "quoted_authority",
+          "scope": "Named addressee, not asserted holder of the opening anonymous interpretation",
+          "surface": "רב אשי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 32,
+            "quote": "לרב אשי",
+            "segment_id": "seg_577405bef7b937a57d8f",
+            "start_char": 25
+          }
+        ],
+        "id": "ch01_a_ashi_addressee",
+        "layer": "attributions",
+        "links": [
+          "ch01_u_acha"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Schema lacks addressee role; quoted_authority is a coarse container, scope explicitly limits it to addressee."
+        ]
+      }
+    },
+    {
+      "record_id": "ch01_c_semikha",
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The quoted command of laying a hand motivates an initial-action counterexample.",
+          "scope": "Role of וסמך in the lexical argument"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "והא כתיב (ויקרא א, ד) וסמך ידו ונרצה",
+            "segment_id": "seg_595f79be6b1b09f38a3f",
+            "start_char": 79
+          }
+        ],
+        "id": "ch01_c_semikha",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    },
+    {
+      "record_id": "ch01_e_semikha",
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch01_c_semikha",
+          "target_id": "ch01_q_reverse"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה",
+            "segment_id": "seg_595f79be6b1b09f38a3f",
+            "start_char": 0
+          }
+        ],
+        "id": "ch01_e_semikha",
+        "layer": "edges",
+        "links": [
+          "ch01_c_semikha",
+          "ch01_q_reverse"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    },
+    {
+      "record_id": "ch01_q_reverse",
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [],
+          "formulation": "Must every הכל be non-initial, even הכל חייבים בסוכה and הכל חייבין בציצית?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 81,
+            "quote": "וכל הכל לאו לכתחלה הוא אלא הכל חייבים בסוכה הכל חייבין בציצית הכי נמי דלאו לכתחלה",
+            "segment_id": "seg_2cebba142a400b7826a3",
+            "start_char": 0
+          }
+        ],
+        "id": "ch01_q_reverse",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    },
+    {
+      "record_id": "ch01_q_semikha",
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [],
+          "formulation": "Would הכל סומכין also be non-initial despite the command וסמך ידו?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה",
+            "segment_id": "seg_595f79be6b1b09f38a3f",
+            "start_char": 17
+          }
+        ],
+        "id": "ch01_q_semikha",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    }
+  ],
+  "condition_review": {
+    "verdict": "No actual linked claim condition loss established in targeted cohorts. Empty position.conditions is a representation hazard, not independently an unconditional position when claim_id resolves to the conditional claim.",
+    "examples": [
+      {
+        "record_id": "ch01_p_watch",
+        "record": {
+          "content": {
+            "claim_id": "ch01_c_watch",
+            "conditions": [],
+            "holder_candidates": [],
+            "local_status": "Anonymous Mishnah rule; interpretation of scope pending",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 140,
+              "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:",
+              "segment_id": "seg_62d4780382d335c6f058",
+              "start_char": 0
+            }
+          ],
+          "id": "ch01_p_watch",
+          "layer": "positions",
+          "links": [
+            "ch01_c_watch"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      },
+      {
+        "record_id": "ch01_c_watch",
+        "record": {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Others observe the slaughter"
+            ],
+            "proposition": "Slaughter is valid when others watch those who slaughtered.",
+            "scope": "Mishnah וכולן clause"
+          },
+          "evidence": [
+            {
+              "end_char": 139,
+              "quote": "וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה",
+              "segment_id": "seg_62d4780382d335c6f058",
+              "start_char": 98
+            }
+          ],
+          "id": "ch01_c_watch",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "Scope of וכולן is debated in the ensuing interpretations; do not finally restrict its referent here."
+          ]
+        }
+      },
+      {
+        "record_id": "ch01_p_yehuda",
+        "record": {
+          "content": {
+            "claim_id": "ch01_c_yehuda",
+            "conditions": [
+              "הרי זו"
+            ],
+            "holder_candidates": [
+              "רבי יהודה"
+            ],
+            "local_status": "Anonymous continuation restricts preference to הרי זו",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל",
+              "segment_id": "seg_5f122323b9e1216a038e",
+              "start_char": 0
+            },
+            {
+              "end_char": 18,
+              "quote": "אבל אמר הרי עלי לא",
+              "segment_id": "seg_e0c531495f03426954fd",
+              "start_char": 0
+            }
+          ],
+          "id": "ch01_p_yehuda",
+          "layer": "positions",
+          "links": [
+            "ch01_c_yehuda"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "Restriction is supplied by ensuing anonymous discussion."
+          ]
+        }
+      },
+      {
+        "record_id": "ch01_c_zeh",
+        "record": {
+          "content": {
+            "assertion_mode": "conditional",
+            "conditions": [
+              "Declaration is הרי זו rather than personal obligation הרי עלי"
+            ],
+            "proposition": "Rabbi Yehuda’s preference is limited here to הרי זו, not הרי עלי.",
+            "scope": "Anonymous restriction of the cited position"
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל",
+              "segment_id": "seg_5f122323b9e1216a038e",
+              "start_char": 0
+            },
+            {
+              "end_char": 18,
+              "quote": "אבל אמר הרי עלי לא",
+              "segment_id": "seg_e0c531495f03426954fd",
+              "start_char": 0
+            }
+          ],
+          "id": "ch01_c_zeh",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "This qualification is the local anonymous presentation, not independently quoted speech of Rabbi Yehuda."
+          ]
+        }
+      },
+      {
+        "record_id": "bk01_p_same",
+        "record": {
+          "content": {
+            "claim_id": "bk01_c_same",
+            "conditions": [],
+            "holder_candidates": [],
+            "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 154,
+              "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+              "segment_id": "seg_a4d7c6d51eb18e9374c7",
+              "start_char": 0
+            }
+          ],
+          "id": "bk01_p_same",
+          "layer": "positions",
+          "links": [
+            "bk01_c_same"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      },
+      {
+        "record_id": "bk01_c_same",
+        "record": {
+          "content": {
+            "assertion_mode": "conditional",
+            "conditions": [
+              "Principal labor and its own derivative done together"
+            ],
+            "proposition": "Doing a principal labor and its own derivative incurs only one liability.",
+            "scope": "Anonymous Shabbat distinction"
+          },
+          "evidence": [
+            {
+              "end_char": 154,
+              "quote": "ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+              "segment_id": "seg_a4d7c6d51eb18e9374c7",
+              "start_char": 111
+            }
+          ],
+          "id": "bk01_c_same",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      },
+      {
+        "record_id": "bk01_p_eliezer",
+        "record": {
+          "content": {
+            "claim_id": "bk01_c_eliezer",
+            "conditions": [],
+            "holder_candidates": [
+              "רבי אליעזר"
+            ],
+            "local_status": "Reported position motivating alternative terminology explanation",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 137,
+              "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+              "segment_id": "seg_4216bdd1a4a3e290e192",
+              "start_char": 0
+            }
+          ],
+          "id": "bk01_p_eliezer",
+          "layer": "positions",
+          "links": [
+            "bk01_c_eliezer"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      },
+      {
+        "record_id": "bk01_c_eliezer",
+        "record": {
+          "content": {
+            "assertion_mode": "conditional",
+            "conditions": [
+              "Derivative performed with principal"
+            ],
+            "proposition": "Rabbi Eliezer imposes liability for a derivative even alongside its principal.",
+            "scope": "Reported Rabbi Eliezer position"
+          },
+          "evidence": [
+            {
+              "end_char": 35,
+              "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב",
+              "segment_id": "seg_4216bdd1a4a3e290e192",
+              "start_char": 0
+            }
+          ],
+          "id": "bk01_c_eliezer",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      }
+    ],
+    "recommendation": "Document that effective position conditions include linked claim conditions or materialize them. Do not count duplicate fields as missing scholarship without that contract."
+  },
+  "non_findings": [
+    "Anonymous replies are cautiously unattributed rather than assigning names solely by turn order; this is acceptable abstention. Initial reviewer suggested contextual candidates only as inference, not required named attribution.",
+    "Composite utterances preserve multiple clauses through corresponding separate claims/questions; further atomization alone is not a substantive omission.",
+    "Rabbi Meir/Rabbi Yehuda holders and הרי זו/הרי עלי qualification preserved, with anonymous qualification distinguished.",
+    "Cross-folio אבל and impurity-list continuations preserved.",
+    "Chullin lexical unit may be closed while Mishnah interpretive unit stays open; does not falsely close substantive sugya.",
+    "Bava Kamma Rav Pappa mixed answer and open tail retained, pebbles mentioned only as continuation context; no rejected interim candidate promoted to final answer.",
+    "Bava Kamma Rabbi Eliezer is position holder, not narrator; Rav Pappa distinct from Rav. Maveh interpretation not prematurely resolved.",
+    "No further material claim omission found by this bounded comparison; this is not a recall estimate or certification of completeness."
+  ],
+  "targeted_verdict": {
+    "Chullin": "changes_required_for_exact_quarantined_attribution_record; minor edge precision correction recommended; remaining inspected core broadly source-faithful, AI provisional",
+    "Bava Kamma": "no material error found in inspected core; targeted provisional review only, continuation extraction remains open"
+  },
+  "qualification_policy": "No automatic ML eligibility or whole-lane approval. New/superseding records require independent review; initial snapshot and initial review remain immutable."
+}

@@ -1,0 +1,1014 @@
+{
+  "review_version": "independent-source-first-1",
+  "agent_id": null,
+  "model_id": null,
+  "reviewer_task_path": "/root/review_l05_l06",
+  "identity_note": "Task path observed; actual runtime agent/model identifiers unavailable.",
+  "status": "frozen_initial_source_judgments_before_label_exposure",
+  "qualification": "AI provisional targeted cohort review only; not full tractate or lane review; not ML eligible",
+  "source_manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+  "sources": {
+    "Bava Kamma": {
+      "path": "json/Talmud/Bavli/Seder Nezikin/Bava Kamma/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "a5d8d42dbfddb121a824a9b996a4d51360457559e7a5da3750d3b7351e40a63a",
+      "edition": {
+        "language": "he",
+        "title": "Bava Kamma",
+        "versionSource": "http://he.wikisource.org/wiki/%D7%AA%D7%9C%D7%9E%D7%95%D7%93_%D7%91%D7%91%D7%9C%D7%99",
+        "versionTitle": "Wikisource Talmud Bavli",
+        "status": "locked",
+        "license": "CC-BY-SA",
+        "versionTitleInHebrew": "תלמוד בבלי (ויקיטקסט)",
+        "actualLanguage": "he",
+        "languageFamilyName": "hebrew",
+        "isSource": true,
+        "isPrimary": true,
+        "direction": "rtl",
+        "heTitle": "בבא קמא",
+        "categories": [
+          "Talmud",
+          "Bavli",
+          "Seder Nezikin"
+        ],
+        "sectionNames": [
+          "Daf",
+          "Line"
+        ]
+      }
+    },
+    "Chullin": {
+      "path": "json/Talmud/Bavli/Seder Kodashim/Chullin/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
+      "edition": {
+        "language": "he",
+        "title": "Chullin",
+        "versionSource": "http://he.wikisource.org/wiki/%D7%AA%D7%9C%D7%9E%D7%95%D7%93_%D7%91%D7%91%D7%9C%D7%99",
+        "versionTitle": "Wikisource Talmud Bavli",
+        "status": "locked",
+        "license": "CC-BY-SA",
+        "versionNotes": "The text is according to the Vilna Shas, and has been segmented according the punctuation of the <a href='http://www.korenpub.com/EN/categories/talmud' target='_blank'>Steinsaltz Koren Gemara</a>, courtesy of <a href='http://www.korenpub.com/' target='_blank'>Koren Publishers</a>.",
+        "versionTitleInHebrew": "תלמוד בבלי (ויקיטקסט)",
+        "versionNotesInHebrew": "החלוקה לפסקאות בגרסה זו הינה על פי מהדורת <a href='https://korenpub.co.il/collections/talmud' target='_blank'>תלמוד בבלי קורן</a>, באדיבות  <a href='http://www.korenpub.com/' target='_blank'>הוצאת קורן ירושלים</a>.",
+        "actualLanguage": "he",
+        "languageFamilyName": "hebrew",
+        "isSource": true,
+        "isPrimary": true,
+        "direction": "rtl",
+        "heTitle": "חולין",
+        "categories": [
+          "Talmud",
+          "Bavli",
+          "Seder Kodashim"
+        ],
+        "sectionNames": [
+          "Daf",
+          "Line"
+        ]
+      }
+    }
+  },
+  "exposure": {
+    "read": [
+      "AGENTS.md",
+      "AGENT_HANDOFF.md",
+      "research/bavli_production_v1/schema.json",
+      "research/bavli_production_v1/PROTOCOL.md",
+      "research/bavli_sugya_corpus_v1/source_manifest.json",
+      "original source JSON for Chullin and Bava Kamma"
+    ],
+    "not_read": [
+      "production lane artifacts",
+      "current proposals",
+      "production authoring scripts",
+      "producer labels"
+    ],
+    "handoff_effect": "Historical research cautions and unrelated examples exposed, not core cohort producer decisions. Handoff suggestions to read legacy indices intentionally not followed under source-first instruction."
+  },
+  "span_convention": "Python Unicode code points, half-open offsets in original marked-up strings",
+  "core": [
+    {
+      "segment_id": "Chullin 2a:1",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        },
+        {
+          "segment_id": "Chullin 2a:1",
+          "start_char": 19,
+          "end_char": 57,
+          "quote": "הכל</strong></big> שוחטין ושחיטתן כשרה"
+        },
+        {
+          "segment_id": "Chullin 2a:1",
+          "start_char": 58,
+          "end_char": 97,
+          "quote": "חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן"
+        },
+        {
+          "segment_id": "Chullin 2a:1",
+          "start_char": 98,
+          "end_char": 140,
+          "quote": "וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "layers": {
+        "structure": "Mishnah; closed as text, interpretation open right. Full segment primary interval.",
+        "utterances": "Composite anonymous tannaitic rule, exception/reason, supervised exception.",
+        "claims": [
+          "All slaughter; their slaughter valid.",
+          "Deaf-mute, mentally incompetent person and minor excepted because they may spoil slaughter.",
+          "When others observe the slaughter, slaughter valid; exact referent of וכולן is subsequently debated."
+        ],
+        "attributions": "Anonymous Mishnah collective; no named tanna.",
+        "questions": "No explicit question.",
+        "positions": "Anonymous rules conditional on actor and observation; do not flatten permission and validity.",
+        "edges": "Exception and qualification among clauses; 2a:2 challenges surface wording.",
+        "reconciliation": "Retain שמא rationale and observation condition. Do not read later amoraic interpretations into literal Mishnah."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2a:2",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2a:2",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> הכל שוחטין לכתחלה ושחיטתן כשרה דיעבד"
+        }
+      ],
+      "layers": {
+        "structure": "Gemara opening; open right through 2b:5.",
+        "utterances": "Anonymous formulation of tension.",
+        "claims": [
+          "הכל שוחטין implies initially permissible; שחיטתן כשרה implies post-facto validity."
+        ],
+        "attributions": "Textual voice anonymous; later dialogue locates defense with Rav Ashi, not explicit named speaker here.",
+        "questions": "Implicit contradiction/tension, not explicit interrogative punctuation.",
+        "positions": "Interpretive premise challenged in 2a:3 onward, defended at 2b:5.",
+        "edges": "Objection to Mishnah combination; response chain continues.",
+        "reconciliation": "Do not present merely two independent final halakhic rulings."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2a:3",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2a:3",
+          "start_char": 0,
+          "end_char": 176,
+          "quote": "אמר ליה רב אחא בריה דרבא לרב אשי וכל הכל לכתחלה הוא אלא מעתה הכל ממירין אחד האנשים ואחד הנשים ה\"נ דלכתחלה הוא והא כתיב (ויקרא כז, י) לא יחליפנו ולא ימיר אותו טוב ברע או רע בטוב"
+        },
+        {
+          "segment_id": "Chullin 2a:3",
+          "start_char": 0,
+          "end_char": 32,
+          "quote": "אמר ליה רב אחא בריה דרבא לרב אשי"
+        },
+        {
+          "segment_id": "Chullin 2a:3",
+          "start_char": 33,
+          "end_char": 51,
+          "quote": "וכל הכל לכתחלה הוא"
+        },
+        {
+          "segment_id": "Chullin 2a:3",
+          "start_char": 61,
+          "end_char": 93,
+          "quote": "הכל ממירין אחד האנשים ואחד הנשים"
+        },
+        {
+          "segment_id": "Chullin 2a:3",
+          "start_char": 133,
+          "end_char": 176,
+          "quote": "לא יחליפנו ולא ימיר אותו טוב ברע או רע בטוב"
+        }
+      ],
+      "layers": {
+        "structure": "Dialogue objection; open right.",
+        "utterances": "Rav Aha son of Rava addresses Rav Ashi; quoted Mishnah and biblical prohibition embedded.",
+        "claims": [
+          "Universal inference הכל => initially permitted challenged by temurah example.",
+          "Men and women can effect temurah; prohibition against exchanging contradicts alleged permission."
+        ],
+        "attributions": "Explicit speaker רב אחא בריה דרבא; addressee רב אשי; Rava is patronymic, not speaker. Anonymous quoted Mishnah; Torah citation distinct authority.",
+        "questions": [
+          "Does every הכל imply permission initially?",
+          "Would הכל ממירין then permit temurah?"
+        ],
+        "positions": "Hypothetical permission rejected, not Rav Aha ruling permitting temurah.",
+        "edges": "Objection to 2a:2; quotation supports objection.",
+        "reconciliation": "Separate speaker, addressee, patronymic and quoted authority."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2a:4",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2a:4",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "התם כדקתני טעמא לא שהאדם רשאי להמיר אלא שאם המיר מומר וסופג את הארבעים"
+        }
+      ],
+      "layers": {
+        "structure": "Local response.",
+        "utterances": "Unnamed reply; continuation naturally Rav Ashi but inferential attribution.",
+        "claims": [
+          "Temurah text expressly explains it is not permitted, but if done it takes effect and incurs forty lashes."
+        ],
+        "attributions": "Anonymous surface; Rav Ashi candidate by dialogue, mark editorial inference. Quoted explanation from cited Mishnah.",
+        "questions": "No new question.",
+        "positions": "Conditional post-facto effect plus punishment; no general permission.",
+        "edges": "Answer/distinction to 2a:3.",
+        "reconciliation": "Preserve lashes and effective transformation; do not label answer as repeal of prohibition."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2a:5",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        }
+      ],
+      "layers": {
+        "structure": "Renewed objection extends into 2a:6–2b:1.",
+        "utterances": "Anonymous surface, likely continuing Rav Aha challenge; Mishnah and verse embedded.",
+        "claims": [
+          "Valuations, being valued, vows and being vowed concerning are universal-capacity language; inference of initially recommended vows challenged by biblical no-sin in abstention."
+        ],
+        "attributions": "Dialogue speaker inferred, not explicit; quoted Mishnah and Torah.",
+        "questions": "Does הכל מעריכין... also mean initially?",
+        "positions": "Hypothetical initial permission/recommendation challenged; not accepted unconditional ruling.",
+        "edges": "Further objection to הכל inference.",
+        "reconciliation": "Retain all four verbs; avoid collapsing נערכין/נידרין into vow-maker agency."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2a:6",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        },
+        {
+          "segment_id": "Chullin 2a:6",
+          "start_char": 56,
+          "end_char": 101,
+          "quote": "טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר"
+        },
+        {
+          "segment_id": "Chullin 2a:6",
+          "start_char": 102,
+          "end_char": 139,
+          "quote": "ר' יהודה אומר טוב מזה ומזה נודר ומשלם"
+        },
+        {
+          "segment_id": "Chullin 2a:6",
+          "start_char": 140,
+          "end_char": 184,
+          "quote": "ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        }
+      ],
+      "layers": {
+        "structure": "Continuation ending in duplicated אבל across page boundary; no closed conclusion here.",
+        "utterances": "Ecclesiastes quotation, baraita with Rabbi Meir and Rabbi Yehuda, anonymous restriction.",
+        "claims": [
+          "Ecclesiastes prefers not vowing to vowing and failing to pay.",
+          "Rabbi Meir: better than both is never vowing.",
+          "Rabbi Yehuda: better than both is vowing and paying.",
+          "Even Rabbi Yehuda restricted to הרי זו; contrast completes 2b:1."
+        ],
+        "attributions": "Rabbi Meir and Rabbi Yehuda named position holders in quoted baraita. Anonymous restrictor not silently assigned to Rabbi Yehuda as his verbatim words.",
+        "questions": [
+          "Implicit comparison of abstention vs fulfilled vow."
+        ],
+        "positions": "Two tannaitic alternatives, then scope qualification; explicit question absent.",
+        "edges": "Quotation supports 2a:5 challenge; distinction/qualification of Rabbi Yehuda.",
+        "reconciliation": "Do not omit named tannaim or convert conditional Rabbi Yehuda view into all vows. Preserve original trailing אבל."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2b:1",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2b:1",
+          "start_char": 0,
+          "end_char": 18,
+          "quote": "אבל אמר הרי עלי לא"
+        }
+      ],
+      "layers": {
+        "structure": "Continuation of 2a:6; literal starts אבל again.",
+        "utterances": "Anonymous qualifying continuation.",
+        "claims": [
+          "Rabbi Yehuda favorable statement does not extend to הרי עלי."
+        ],
+        "attributions": "Rabbi Yehuda is restricted position holder by anonymous interpretation.",
+        "questions": "None independently.",
+        "positions": "Condition distinction: הרי זו vs הרי עלי, not standalone ban on every vow.",
+        "edges": "Completes qualification at preceding segment.",
+        "reconciliation": "Do not orphan fragment or deduplicate source אבל in quoted evidence."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2b:2",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2b:2",
+          "start_char": 0,
+          "end_char": 81,
+          "quote": "וכל הכל לאו לכתחלה הוא אלא הכל חייבים בסוכה הכל חייבין בציצית הכי נמי דלאו לכתחלה"
+        }
+      ],
+      "layers": {
+        "structure": "Counterquestion in dialogue.",
+        "utterances": "Anonymous surface; speaker inferential.",
+        "claims": [
+          "Counterexample: all are obligated in sukkah/tzitzit."
+        ],
+        "attributions": "No new named authority; cited formulations distinct from dialogue voice.",
+        "questions": "Does every הכל lack initial force, including obligation examples?",
+        "positions": "Reductio hypothetical, not denial of sukkah/tzitzit obligation.",
+        "edges": "Counter-objection to sweeping inverse claim.",
+        "reconciliation": "Retain both examples and distinguish הכל חייבין from unqualified הכל."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2b:3",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        },
+        {
+          "segment_id": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 16,
+          "quote": "חייבין לא קאמינא"
+        },
+        {
+          "segment_id": "Chullin 2b:3",
+          "start_char": 17,
+          "end_char": 78,
+          "quote": "אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה"
+        },
+        {
+          "segment_id": "Chullin 2b:3",
+          "start_char": 79,
+          "end_char": 115,
+          "quote": "והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        }
+      ],
+      "layers": {
+        "structure": "Reply then renewed challenge in same segment.",
+        "utterances": "Composite: exclusion of חייבין examples; challenge from semikhah and verse.",
+        "claims": [
+          "Obligation formulations excluded from prior argument.",
+          "All perform semikhah, men/women quoted; verse supplies affirmative performance basis."
+        ],
+        "attributions": "Two dialogue turns likely; not one undifferentiated speaker. No named tanna in quoted source; do not import parallel-source attribution.",
+        "questions": "Does הכל סומכין likewise mean only after the fact?",
+        "positions": "Hypothetical denial of initial force challenged.",
+        "edges": "Distinction answers 2b:2, renewed objection from semikhah.",
+        "reconciliation": "Split חייבין לא קאמינא from אלא מעתה. Do not assert universal women obligation beyond quoted wording."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2b:4",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "layers": {
+        "structure": "Local concession and refined challenge.",
+        "utterances": "Anonymous surface continuing dialogue.",
+        "claims": [
+          "Some הכל formulations initially permit, others are post-facto.",
+          "Therefore this Mishnah may be post-facto, removing apparent contradiction."
+        ],
+        "attributions": "Dialogue holder inference only.",
+        "questions": "What establishes initial force here?",
+        "positions": "Mixed usage conceded; this case post-facto merely proposed.",
+        "edges": "Local resolution of universal linguistic question; continued objection to 2a:2 premise.",
+        "reconciliation": "Do not treat דלמא as final resolution of Mishnah."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Chullin 2b:5",
+      "evidence": [
+        {
+          "segment_id": "Chullin 2b:5",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "א\"ל אנא שחיטתן כשרה קשיא לי מדקתני שחיטתן כשר' דיעבד מכלל דהכל לכתחלה הוא דאי דיעבד תרתי דיעבד למה לי"
+        },
+        {
+          "segment_id": "Chullin 2b:5",
+          "start_char": 28,
+          "end_char": 73,
+          "quote": "מדקתני שחיטתן כשר' דיעבד מכלל דהכל לכתחלה הוא"
+        },
+        {
+          "segment_id": "Chullin 2b:5",
+          "start_char": 74,
+          "end_char": 101,
+          "quote": "דאי דיעבד תרתי דיעבד למה לי"
+        }
+      ],
+      "layers": {
+        "structure": "Closes preliminary linguistic defense; substantive Mishnah interpretations begin 2b:6.",
+        "utterances": "Explicit א\"ל without repeated personal name, answering earlier interlocutor.",
+        "claims": [
+          "Redundancy: שחיטתן כשרה itself post-facto, so הכל must have initial force; two redundant post-facto clauses would be unnecessary."
+        ],
+        "attributions": "Rav Ashi answer by antecedent/dialogue reconstruction, mark inference; א\"ל literal only.",
+        "questions": "If both post-facto, why twice?",
+        "positions": "Initial/post-facto tension sustained; substantive solution deferred beyond core.",
+        "edges": "Answer to 2b:4; support to 2a:2.",
+        "reconciliation": "Do not mark whole sugya resolved merely because linguistic objection answered."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:1",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:1",
+          "start_char": 0,
+          "end_char": 76,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> אבות נזיקין השור והבור והמבעה וההבער"
+        }
+      ],
+      "layers": {
+        "structure": "Mishnah opening; continuation to 2a:4.",
+        "utterances": "Anonymous taxonomy.",
+        "claims": [
+          "Four primary damage categories: ox, pit, maveh, fire."
+        ],
+        "attributions": "Anonymous Mishnah.",
+        "questions": "None explicit.",
+        "positions": "Taxonomic claim, not named amora ruling.",
+        "edges": "Continues into comparisons.",
+        "reconciliation": "Do not select Rav/Shmuel maveh interpretation in core literal claim; preserve unresolved surface term."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:2",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:2",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים"
+        }
+      ],
+      "layers": {
+        "structure": "Mishnah comparison continuation.",
+        "utterances": "Composite anonymous contrasts.",
+        "claims": [
+          "Ox unlike maveh and conversely.",
+          "These have life; fire lacks life."
+        ],
+        "attributions": "Anonymous Mishnah.",
+        "questions": "No explicit question.",
+        "positions": "Comparison not flat disagreement among people.",
+        "edges": "Distinction/analogy structure; grounds common-law derivation in 2a:4.",
+        "reconciliation": "Keep reciprocal first comparison separate from life/nonlife contrast."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:3",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:3",
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "ולא זה וזה שדרכן לילך ולהזיק כהרי הבור שאין דרכו לילך ולהזיק"
+        }
+      ],
+      "layers": {
+        "structure": "Mishnah comparison continuation.",
+        "utterances": "Anonymous contrast.",
+        "claims": [
+          "Mobile damaging categories differ from stationary pit."
+        ],
+        "attributions": "Anonymous Mishnah.",
+        "questions": "None explicit.",
+        "positions": "Category contrast.",
+        "edges": "Continuation of 2a:2.",
+        "reconciliation": "זה וזה here requires context; avoid literal numeric inference excluding other mobile categories."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:4",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:4",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:"
+        }
+      ],
+      "layers": {
+        "structure": "Closes Mishnah.",
+        "utterances": "Common denominator and resulting liability.",
+        "claims": [
+          "Ordinary propensity to damage and duty to guard.",
+          "Upon damage the liable damager pays damages from best land."
+        ],
+        "attributions": "Anonymous Mishnah.",
+        "questions": "None explicit.",
+        "positions": "Conditional liability when damage occurs, tied to guarded categories.",
+        "edges": "Common denominator supports payment rule.",
+        "reconciliation": "Retain מיטב הארץ and שמירתן עליך; do not reduce to damages only."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:5",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:5",
+          "start_char": 0,
+          "end_char": 98,
+          "quote": "<big><strong>גמ׳</strong></big> מדקתני אבות מכלל דאיכא תולדות תולדותיהן כיוצא בהן או לאו כיוצא בהן"
+        }
+      ],
+      "layers": {
+        "structure": "Gemara question opens extended unit through 3b:12.",
+        "utterances": "Inference then explicit question.",
+        "claims": [
+          "Term fathers entails derivatives."
+        ],
+        "attributions": "Anonymous.",
+        "questions": "Are derivatives like primary categories or unlike?",
+        "positions": "Queried, answer not yet supplied.",
+        "edges": "Question answered partially by Rav Pappa at 2b:2 and specified in context.",
+        "reconciliation": "Do not close unit at 2b:2."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:6",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:6",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "גבי שבת תנן אבות מלאכות ארבעים חסר אחת אבות מכלל דאיכא תולדות"
+        }
+      ],
+      "layers": {
+        "structure": "Shabbat analogy opening.",
+        "utterances": "Quoted Mishnah and inference.",
+        "claims": [
+          "Thirty-nine primary Shabbat labors; fathers entails derivatives."
+        ],
+        "attributions": "Anonymous quoted Mishnah, anonymous inference.",
+        "questions": "None independently.",
+        "positions": "Comparison basis.",
+        "edges": "Analogy to damages question.",
+        "reconciliation": "Preserve quoted count; do not assign to Rav Pappa."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:7",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:7",
+          "start_char": 0,
+          "end_char": 89,
+          "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה"
+        }
+      ],
+      "layers": {
+        "structure": "Shabbat analogy continues.",
+        "utterances": "Anonymous statement of parity.",
+        "claims": [
+          "Both av and derivative incur sin offering; both can incur stoning."
+        ],
+        "attributions": "Anonymous explanatory voice.",
+        "questions": "None explicit.",
+        "positions": "Liability parity; relevant differing legal conditions for sin offering versus stoning are not enumerated in source and must not be invented as literal evidence.",
+        "edges": "Supports one possible derivative-primary relation.",
+        "reconciliation": "Retain both penalties separately; not claim both simultaneously."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:8",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:8",
+          "start_char": 0,
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא"
+        },
+        {
+          "segment_id": "Bava Kamma 2a:8",
+          "start_char": 0,
+          "end_char": 23,
+          "quote": "ומאי איכא בין אב לתולדה"
+        },
+        {
+          "segment_id": "Bava Kamma 2a:8",
+          "start_char": 34,
+          "end_char": 110,
+          "quote": "דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא"
+        },
+        {
+          "segment_id": "Bava Kamma 2a:8",
+          "start_char": 111,
+          "end_char": 154,
+          "quote": "ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא"
+        }
+      ],
+      "layers": {
+        "structure": "Question then distinction in same segment.",
+        "utterances": "Composite anonymous question/answer.",
+        "claims": [
+          "Two primary labors together or two derivatives together entail separate liabilities.",
+          "An av with its own derivative incurs one liability."
+        ],
+        "attributions": "Anonymous.",
+        "questions": "What difference remains between av and derivative?",
+        "positions": "Conditional distinction; two derivatives wording should not be expanded to same-av derivatives without source context.",
+        "edges": "Qualification of parity in 2a:7.",
+        "reconciliation": "Must retain דידיה. Other legal conditions such as one lapse are interpretive background, not quoted text."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:9",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:9",
+          "start_char": 0,
+          "end_char": 137,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה"
+        },
+        {
+          "segment_id": "Bava Kamma 2a:9",
+          "start_char": 0,
+          "end_char": 35,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב"
+        },
+        {
+          "segment_id": "Bava Kamma 2a:9",
+          "start_char": 71,
+          "end_char": 137,
+          "quote": "הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה"
+        }
+      ],
+      "layers": {
+        "structure": "Alternative-authority objection and terminology answer.",
+        "utterances": "Anonymous discussion of Rabbi Eliezer.",
+        "claims": [
+          "Rabbi Eliezer imposes derivative liability alongside av.",
+          "For this view, av/derivative terminology explained by Mishkan importance wording."
+        ],
+        "attributions": "Rabbi Eliezer position holder, not current dialogic speaker; anonymous explanatory respondent.",
+        "questions": "Under Rabbi Eliezer why call one av and other derivative?",
+        "positions": "Reported Rabbi Eliezer view distinct from prior anonymous rule; terminological answer not retraction.",
+        "edges": "Objection to prior distinction; answer by Mishkan criterion.",
+        "reconciliation": "Preserve exact unusual חשיבא wording in both clauses; interpretation of criterion should be cautious."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2a:10",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2a:10",
+          "start_char": 0,
+          "end_char": 43,
+          "quote": "גבי טומאות תנן אבות הטומאות השרץ והשכבת זרע"
+        }
+      ],
+      "layers": {
+        "structure": "Impurity analogy, list continues 2b:1.",
+        "utterances": "Quoted Mishnah listing primary impurities.",
+        "claims": [
+          "Sheretz and semen listed; corpse-contaminated person follows next segment."
+        ],
+        "attributions": "Anonymous quoted source.",
+        "questions": "None explicit.",
+        "positions": "Taxonomy not yet full comparison.",
+        "edges": "Analogy contrasting Shabbat paradigm.",
+        "reconciliation": "Do not treat page break as list ending."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2b:1",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2b:1",
+          "start_char": 0,
+          "end_char": 105,
+          "quote": "וטמא מת תולדותיהן לאו כיוצא בהן דאילו אב מטמא אדם וכלים ואילו תולדות אוכלין ומשקין מטמא אדם וכלים לא מטמא"
+        },
+        {
+          "segment_id": "Bava Kamma 2b:1",
+          "start_char": 0,
+          "end_char": 7,
+          "quote": "וטמא מת"
+        },
+        {
+          "segment_id": "Bava Kamma 2b:1",
+          "start_char": 8,
+          "end_char": 31,
+          "quote": "תולדותיהן לאו כיוצא בהן"
+        },
+        {
+          "segment_id": "Bava Kamma 2b:1",
+          "start_char": 32,
+          "end_char": 55,
+          "quote": "דאילו אב מטמא אדם וכלים"
+        },
+        {
+          "segment_id": "Bava Kamma 2b:1",
+          "start_char": 56,
+          "end_char": 105,
+          "quote": "ואילו תולדות אוכלין ומשקין מטמא אדם וכלים לא מטמא"
+        }
+      ],
+      "layers": {
+        "structure": "Completes list and impurity comparison.",
+        "utterances": "Composite quotation continuation plus explanatory contrast.",
+        "claims": [
+          "Corpse-contaminated person completes list.",
+          "Primary impurity contaminates people and utensils; derivatives contaminate foods/liquids but not people/utensils."
+        ],
+        "attributions": "Anonymous quotation/explanation; no named holder.",
+        "questions": "None explicit.",
+        "positions": "Derivative not like av in stated transmission scope.",
+        "edges": "Contrasts Shabbat parity; supplies alternative model for 2a:5.",
+        "reconciliation": "Keep source list vs explanatory rule distinct; do not substitute corpse itself for טמא מת."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    },
+    {
+      "segment_id": "Bava Kamma 2b:2",
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2b:2",
+          "start_char": 0,
+          "end_char": 57,
+          "quote": "הכא מאי אמר רב פפא יש מהן כיוצא בהן ויש מהן לאו כיוצא בהן"
+        },
+        {
+          "segment_id": "Bava Kamma 2b:2",
+          "start_char": 0,
+          "end_char": 7,
+          "quote": "הכא מאי"
+        },
+        {
+          "segment_id": "Bava Kamma 2b:2",
+          "start_char": 8,
+          "end_char": 18,
+          "quote": "אמר רב פפא"
+        },
+        {
+          "segment_id": "Bava Kamma 2b:2",
+          "start_char": 19,
+          "end_char": 57,
+          "quote": "יש מהן כיוצא בהן ויש מהן לאו כיוצא בהן"
+        }
+      ],
+      "layers": {
+        "structure": "Returns to damages; answer open right.",
+        "utterances": "Anonymous question followed by Rav Pappa answer.",
+        "claims": [
+          "Some damages derivatives are like primaries and some unlike."
+        ],
+        "attributions": "רב פפא explicit speaker and position holder; not Rav. No transmitter chain.",
+        "questions": "What is the case here?",
+        "positions": "Asserted mixed answer, enumeration not given in core; context ultimately specifies half-damage pebbles.",
+        "edges": "Partial answer to 2a:5; long specification follows.",
+        "reconciliation": "Do not label complete resolved answer set or import rejected interim candidates as Rav Pappa final positions."
+      },
+      "origin": "source_paraphrase_except_exact_evidence",
+      "full_layer_extraction_claim": false
+    }
+  ],
+  "context": [
+    {
+      "evidence": [
+        {
+          "segment_id": "Chullin 2b:6",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "אמר רבה בר עולא הכי קתני הכל שוחטין ואפי' טמא בחולין טמא בחולין מאי למימרא בחולין שנעשו על טהרת הקדש וקסבר חולין שנעשו על טהרת הקדש כקדש דמו"
+        }
+      ],
+      "judgment": "Rabbah bar Ulla first substantive interpretation, impure person slaughtering unconsecrated food prepared to sacred purity; cannot assign to Rav Ashi from preceding dialogue.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Chullin 2b:13",
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "הכא עיקר התם איידי דתנא שאר פסולין תנא נמי טמא במוקדשים ואב\"א התם עיקר דבקדשים קאי הכא איידי דתנא טמא בחולין תני נמי טמא במוקדשים"
+        }
+      ],
+      "judgment": "Alternative priority explanations הכא עיקר / התם עיקר preserved as alternatives.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Chullin 3b:11",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "רבינא ורבה בר עולא כאביי ורבא ורב אשי לא אמרי משום דקשיא להו וכולן"
+        }
+      ],
+      "judgment": "Different explanations encounter וכולן difficulty; core initial tension not globally solved by one final consensus.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Chullin 3b:19",
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "לדבריו דאביי קאמר וליה לא סבירא ליה:"
+        }
+      ],
+      "judgment": "Rava explanation spoken according to Abaye and not his own view; prevents flattening context alternative into personal endorsed view.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 2b:18",
+          "start_char": 0,
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל"
+        }
+      ],
+      "judgment": "Horn derivatives like horn; temporary move to tooth/foot, not final Rav Pappa assignment.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 3a:15",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מאי שנא שן דיש הנאה להזיקו וממונך ושמירתו עליך הני נמי יש הנאה להזיקן וממונך ושמירתן עליך אלא תולדה דשן כשן וכי קאמר רב פפא אתולדה דרגל"
+        }
+      ],
+      "judgment": "Tooth derivatives like tooth; temporary foot hypothesis.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 3a:17",
+          "start_char": 0,
+          "end_char": 130,
+          "quote": "מאי שנא רגל דהזיקו מצוי וממונך ושמירתו עליך הני נמי הזיקן מצוי וממונך ושמירתן עליך אלא תולדה דרגל כרגל וכי קאמר רב פפא אתולדה דבור"
+        }
+      ],
+      "judgment": "Foot derivatives like foot; temporary pit hypothesis.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 3b:7",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מ\"ש אש דכח אחר מעורב בהן וממונך ושמירתו עליך הני נמי כח אחר מעורב בהן וממונך ושמירתן עליך אלא תולדה דאש כאש וכי קאמר רב פפא אתולדה דרגל"
+        }
+      ],
+      "judgment": "Fire derivatives like fire; returned to foot.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 3b:8",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "רגל הא אוקימנא תולדה דרגל כרגל בחצי נזק צרורות דהלכתא גמירי לה"
+        }
+      ],
+      "judgment": "Final local specification of exceptional derivative: half-damage pebbles, traditional law.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 3b:10",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "והא מבעיא בעי רבא דבעי רבא חצי נזק צרורות מגופו משלם או מן העלייה משלם"
+        }
+      ],
+      "judgment": "Rava asks whether pebbles paid from body or superior assets; no final answer personally attributed to Rava.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 3b:11",
+          "start_char": 0,
+          "end_char": 32,
+          "quote": "לרבא מבעיא ליה לרב פפא פשיטא ליה"
+        }
+      ],
+      "judgment": "Rava remains doubtful; Rav Pappa regards superior-assets payment as clear.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    },
+    {
+      "evidence": [
+        {
+          "segment_id": "Bava Kamma 3b:12",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "לרבא דמבעיא ליה אמאי קרי לה תולדה דרגל לפוטרה ברה\"ר:"
+        }
+      ],
+      "judgment": "For Rava, foot designation instead explains exemption in public domain. Distinct conditional rationale.",
+      "origin": "source_paraphrase",
+      "counts_as_core_review": false
+    }
+  ],
+  "reconciliation": [
+    "All 11 Chullin and 12 Bava Kamma core source segments inspected across eight layer considerations. This is targeted source judgment, not exhaustive schema-conformant atomic annotation or completed tractate coverage.",
+    "Every core segment carries full exact evidence plus selected exact atomic spans. No production labels read or compared.",
+    "Omission-sensitive items: Chullin composite dialogue turns, quoted tannaim, הרי זו/הרי עלי condition, post-facto versus initially permitted, actor/observer scope, duplicated אבל; Bava Kamma repeated-liability conditions, Rabbi Eliezer role, split impurity list, Rav Pappa partial answer and context final specification.",
+    "Speaker assignments based on dialogue rather than explicit names are flagged inferential. Unresolved Maveh interpretation in core is not silently settled.",
+    "No silent attribution inversion or retraction identified in core; contextual Rava לדבריו דאביי explicitly cautioned. Exact occurrence counts preserved, no unique-topic count inferred."
+  ],
+  "context_read_ranges": [
+    "Chullin 2b:6–3b:21 (last segment is incomplete next-unit opening; relevant interpretive unit read through 3b:19)",
+    "Bava Kamma 2b:3–3b:19 (relevant derivatives unit closes at 3b:12; subsequent maveh interpretation beginning also read)"
+  ]
+}
