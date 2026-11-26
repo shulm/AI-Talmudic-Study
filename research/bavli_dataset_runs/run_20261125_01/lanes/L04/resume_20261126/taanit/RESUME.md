@@ -1,25 +1,21 @@
 # Taanit resumable producer checkpoint — 2026-11-26
 
-Partial: 118/895 source segments per all eight required layers, through Taanit 6a:1. Next Taanit 6a:2; 777 remain. Do not mark tractate delivered.
+Partial: **203/895 source segments per all eight required layers**, through Taanit 8b:4. Next **Taanit 8b:5**; **692 remain per layer**. Do not mark tractate delivered.
 
-The authoritative immutable snapshot is `bf269222667a2403dbfb6b92cfedcbe3f842f578ba83fdb2dd2ebe4d6975292a`. External job and exact export paths/hashes are in CHECKPOINT_007.json. Export includes normalized typed tables, per-sugya views, qualification, unresolved cases, coverage, and manifest. Source inventory stays external. All qualifications remain false/unreviewed.
+Authoritative snapshot: `9936408e656e02d42c8df7d80f8803e7f37cc0565ec53449e03056cad69ab017`. Exact external job, export and manifest hashes are in `CHECKPOINT_014.json`. Owner remains `L04/taanit_resume_20261126`, epoch 3. Resume under authorized lane ownership only.
 
-Owner is `L04/taanit_resume_20261126`, epoch 3. No other writer may promote without an authorized lane handoff. Frozen implementation/protocol/schema unchanged. No commits or pushes performed by this worker.
+This session added 85 source segments in manually authored batches008–012 after reading pinned originals and rereading for omissions. Sources, common schema/runner and all previous record IDs remain preserved. No paid API calls, commits or pushes. New annotations are AI-provisional and unreviewed; no human certification is claimed.
 
-Before continuing, replay:
+Replay before continuing:
 
 ```powershell
 python -X utf8 research/bavli_production_v1/runner.py replay --job-dir F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_taanit
 ```
 
-Then inspect CURRENT and OWNER, read source from 6a:2 with overlap 5b:11–6a:1, continue bounded source-first annotation, and submit immutable new IDs under the frozen schema. The four manually authored continuation scripts, correction script, and identity-audit script are retained in the external job; their frozen proposal JSON is under staging_resume_20261126 and the accepted bytes under proposals. Reproduce by runner replay of accepted bytes, not by rerunning authoring scripts against the new CURRENT.
+Then inspect CURRENT and OWNER and use runner.load to verify exact source bytes. Read from 8b:5 with overlap 8a:18–8b:4 and sufficient continuation. All eight passes remain required. Author scripts in this directory depend on the helper prefix of build_batch008.py and are checkpoint-bound single-use authoring records; **replay immutable accepted proposal bytes, do not rerun them against new CURRENT**. Accepted proposal data and complete exports stay external.
 
-TA-STATUS corrections are in the first new correction proposal. TA-VERSE initially fixed four attribution rows; identity_audit004 extends the fix to all biblical labels in active attribution and position projections, and removes anonymous voice labels from named-person candidates. The original records are preserved. A fresh reviewer has been asked to recheck the final version; producer checks are not independent acceptance.
+Correction013 adjudicates all ten findings in the frozen comparison (`f78d0ef730548b3bf0c9f2453c5a980041a772dcf8a76b8789a9fe8e9f49ee4d`). It preserves status-polarity corrections, printed כותיים, rainy-season conditions, unresolved inherited/anonymous attribution differences, canonical lexical terms, two additional scoped edges, and the exact 4a:1 boundary before ואמר רבא. See `REVIEW_CORRECTION_013.json`; 43 versions were superseded with full graph and coverage closure, no coverage inflation. No prior correction was undone.
 
-Source continuations preserve both Abbahu transmission versions; Yehoshua ben Beteira identification; Rav Yosef and Rabbah rejected explanations; both Rava/Abaye versions; full improper-request narratives; Temple-era reconciliation; Rav/Shmuel two-day schedules and Rav’s explicit retraction. No open structural tails remain at the current endpoint 6a:1. Uncertainty is retained in the exported unresolved ledger.
+The immutable correction review target is `1bccca4286a5288948141c490c2a66d0b3f3f32738236b66e70e2ac65145e82f`. Subsequent batch012 only appends records. Parent was asked for independent recheck; consult its receipt before claiming closure. All active links and content fields, including attribution scope strings containing IDs before punctuation, were checked for stale correction targets. Historical supersedes references intentionally remain.
 
-The completed reconciliation markers represent the producer’s actual rereading, not independently measured exhaustive recall. All newly produced source blocks still require separate exact-version source-first review. Continue automatically without awaiting a new user instruction.
-
-Final additional batch retains Joel rain/growth narrative, seven famine years, Jerusalem/idolatry exegesis, Samuel aging narrative, meal speech, Jacob scriptural interpretation, Rahab familiarity condition and farewell tree blessing. Voice/composition audit uses immutable revisions and preserves the rejected first dependency-incomplete correction attempt.
-
-Review accounting: historical exact comparison covers 10 opening segments only; targeted latest correction recheck is separate. This worker makes no independent review claim for the additional 103 produced segments. Consult parent’s reviewer receipt before declaring correction closure.
+Latest export includes typed tables, coverage, per-sugya views, unresolved cases, qualification and manifest. Replay and export file hashes passed. There are no open structural tails at this endpoint. Frozen source/semantic review cohorts remain separate from production coverage; the producer does not count its own reread as independent review. Previous CHECKPOINT_007 and CHECKPOINT_005 remain historical receipts.

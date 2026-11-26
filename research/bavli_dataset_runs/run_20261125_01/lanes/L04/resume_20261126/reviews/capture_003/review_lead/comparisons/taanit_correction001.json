@@ -1,0 +1,416 @@
+{
+  "artifact_kind": "nonblind_targeted_correction_receipt",
+  "status": "TARGETED_DISCREPANCIES_RESOLVED_AT_EXACT_VERSION",
+  "bindings": {
+    "old_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\snapshots\\3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7.json",
+      "sha256": "3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7"
+    },
+    "corrected_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\snapshots\\463a44280cdb694e9606f11c4487280b0308f9013d9f0810c4509ac0f635dded.json",
+      "sha256": "463a44280cdb694e9606f11c4487280b0308f9013d9f0810c4509ac0f635dded"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "initial_comparison": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\taanit_batch001_exact_version.json",
+      "sha256": "7a41648b3f217c6fb3223373a533497e32b99af1556896d1349c68694732757f"
+    },
+    "initial_reading": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\taanit_batch001.json",
+      "sha256": "34b19f8628562cef1a3d88db0a39d4e347b84003e672aec4735d901a75a9a8f7"
+    }
+  },
+  "read_only_exact_replay_pass": true,
+  "proposal_count": 8,
+  "initial_records_preserved_except_release_state": true,
+  "checked_records": [
+    {
+      "old_id": "ta.gemara001.opening.positions.5",
+      "new_record": {
+        "content": {
+          "claim_id": "ta.gemara001.opening.claims.3",
+          "conditions": [],
+          "holder_candidates": [],
+          "local_status": "rejected explanatory premise; replaced by the anonymous conclusion that the tanna refers to Rosh Hashanah, not a maintained conclusion",
+          "question_id": "ta.gemara001.opening.questions.1"
+        },
+        "evidence": [
+          {
+            "end_char": 69,
+            "quote": "תנא התם קאי",
+            "segment_id": "seg_b67d5da7f1c5cf48f049",
+            "start_char": 58
+          }
+        ],
+        "id": "ta.gemara001.opening.positions.5.r20261126",
+        "layer": "positions",
+        "links": [
+          "ta.gemara001.opening.claims.3",
+          "ta.gemara001.opening.questions.1"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.positions.5",
+        "uncertainty": [
+          "2a7 replaces this explanation after editorial-location challenge."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.positions.22",
+      "new_record": {
+        "content": {
+          "claim_id": "ta.gemara001.opening.claims.20",
+          "conditions": [],
+          "holder_candidates": [],
+          "local_status": "rejected explanatory premise; replaced by the anonymous conclusion that the tanna refers to Rosh Hashanah, not a maintained conclusion",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "וקתני מאימתי מזכירין גבורות גשמים",
+            "segment_id": "seg_d3f601fd912c17b5cc63",
+            "start_char": 78
+          }
+        ],
+        "id": "ta.gemara001.opening.positions.22.r20261126",
+        "layer": "positions",
+        "links": [
+          "ta.gemara001.opening.claims.20"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.positions.22",
+        "uncertainty": []
+      }
+    },
+    {
+      "old_id": "ta.opening.positions.32",
+      "new_record": {
+        "content": {
+          "claim_id": "ta.opening.claims.30",
+          "conditions": [
+            "if mentioning differs from requesting"
+          ],
+          "holder_candidates": [
+            "Rabbi Yehoshua"
+          ],
+          "local_status": "challenging consequence raised by Rabbi Yehoshua, not his maintained ruling; Rabbi Eliezer accepts permissibility in the ensuing baraita",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 171,
+            "quote": "א\"כ לעולם יהא מזכיר",
+            "segment_id": "seg_8fe3f9e214fd090f88cf",
+            "start_char": 152
+          }
+        ],
+        "id": "ta.opening.positions.32.r20261126",
+        "layer": "positions",
+        "links": [
+          "ta.opening.claims.30"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.opening.positions.32",
+        "uncertainty": [
+          "Implicit final אמר לו resolved by dialogue turn, not repeated name;2b8 shows Eliezer accepts permissibility."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.attributions.50",
+      "new_record": {
+        "content": {
+          "candidates": [],
+          "role": "quoted_authority",
+          "scope": "ta.gemara001.opening.claims.49; scriptural source citation only; no person identified",
+          "surface": "Job biblical quotation",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 139,
+            "quote": "עושה גדולות עד אין חקר ונפלאות עד אין מספר",
+            "segment_id": "seg_57a37c5b529b93dba331",
+            "start_char": 97
+          }
+        ],
+        "id": "ta.gemara001.opening.attributions.50.r20261126",
+        "layer": "attributions",
+        "links": [
+          "ta.gemara001.opening.claims.49"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.attributions.50",
+        "uncertainty": [
+          "Book label identifies a cited textual authority, not a historical speaker or scholar-choice candidate."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.attributions.54",
+      "new_record": {
+        "content": {
+          "candidates": [],
+          "role": "quoted_authority",
+          "scope": "ta.gemara001.opening.claims.53; scriptural source citation only; no person identified",
+          "surface": "Job biblical quotation",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 201,
+            "quote": "הנותן מטר על פני ארץ ושולח מים על פני חוצות",
+            "segment_id": "seg_57a37c5b529b93dba331",
+            "start_char": 158
+          }
+        ],
+        "id": "ta.gemara001.opening.attributions.54.r20261126",
+        "layer": "attributions",
+        "links": [
+          "ta.gemara001.opening.claims.53"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.attributions.54",
+        "uncertainty": [
+          "Book label identifies a cited textual authority, not a historical speaker or scholar-choice candidate."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.attributions.71",
+      "new_record": {
+        "content": {
+          "candidates": [],
+          "role": "quoted_authority",
+          "scope": "ta.gemara001.opening.claims.70; scriptural source citation only; no person identified",
+          "surface": "Isaiah biblical quotation",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "לא ייעף ולא ייגע אין חקר לתבונתו",
+            "segment_id": "seg_833d8eed523ca6a589f0",
+            "start_char": 105
+          }
+        ],
+        "id": "ta.gemara001.opening.attributions.71.r20261126",
+        "layer": "attributions",
+        "links": [
+          "ta.gemara001.opening.claims.70"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.attributions.71",
+        "uncertainty": [
+          "Book label identifies a cited textual authority, not a historical speaker or scholar-choice candidate."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.attributions.75",
+      "new_record": {
+        "content": {
+          "candidates": [],
+          "role": "quoted_authority",
+          "scope": "ta.gemara001.opening.claims.74; scriptural source citation only; no person identified",
+          "surface": "Psalms biblical quotation",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 184,
+            "quote": "מכין הרים בכחו נאזר בגבורה",
+            "segment_id": "seg_833d8eed523ca6a589f0",
+            "start_char": 158
+          }
+        ],
+        "id": "ta.gemara001.opening.attributions.75.r20261126",
+        "layer": "attributions",
+        "links": [
+          "ta.gemara001.opening.claims.74"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.attributions.75",
+        "uncertainty": [
+          "Book label identifies a cited textual authority, not a historical speaker or scholar-choice candidate."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.positions.51",
+      "new_record": {
+        "content": {
+          "claim_id": "ta.gemara001.opening.claims.49",
+          "conditions": [],
+          "holder_candidates": [],
+          "local_status": "provisional local reading; no final halakhic adjudication",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 139,
+            "quote": "עושה גדולות עד אין חקר ונפלאות עד אין מספר",
+            "segment_id": "seg_57a37c5b529b93dba331",
+            "start_char": 97
+          }
+        ],
+        "id": "ta.gemara001.opening.positions.51.identityfix20261126",
+        "layer": "positions",
+        "links": [
+          "ta.gemara001.opening.claims.49"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.positions.51",
+        "uncertainty": [
+          "Anonymous voice or biblical book citation is not a named-person candidate; exact text and prior reading retained."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.positions.55",
+      "new_record": {
+        "content": {
+          "claim_id": "ta.gemara001.opening.claims.53",
+          "conditions": [],
+          "holder_candidates": [],
+          "local_status": "provisional local reading; no final halakhic adjudication",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 201,
+            "quote": "הנותן מטר על פני ארץ ושולח מים על פני חוצות",
+            "segment_id": "seg_57a37c5b529b93dba331",
+            "start_char": 158
+          }
+        ],
+        "id": "ta.gemara001.opening.positions.55.identityfix20261126",
+        "layer": "positions",
+        "links": [
+          "ta.gemara001.opening.claims.53"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.positions.55",
+        "uncertainty": [
+          "Anonymous voice or biblical book citation is not a named-person candidate; exact text and prior reading retained."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.positions.72",
+      "new_record": {
+        "content": {
+          "claim_id": "ta.gemara001.opening.claims.70",
+          "conditions": [],
+          "holder_candidates": [],
+          "local_status": "provisional local reading; no final halakhic adjudication",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "לא ייעף ולא ייגע אין חקר לתבונתו",
+            "segment_id": "seg_833d8eed523ca6a589f0",
+            "start_char": 105
+          }
+        ],
+        "id": "ta.gemara001.opening.positions.72.identityfix20261126",
+        "layer": "positions",
+        "links": [
+          "ta.gemara001.opening.claims.70"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.positions.72",
+        "uncertainty": [
+          "Anonymous voice or biblical book citation is not a named-person candidate; exact text and prior reading retained."
+        ]
+      }
+    },
+    {
+      "old_id": "ta.gemara001.opening.positions.76",
+      "new_record": {
+        "content": {
+          "claim_id": "ta.gemara001.opening.claims.74",
+          "conditions": [],
+          "holder_candidates": [],
+          "local_status": "provisional local reading; no final halakhic adjudication",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 184,
+            "quote": "מכין הרים בכחו נאזר בגבורה",
+            "segment_id": "seg_833d8eed523ca6a589f0",
+            "start_char": 158
+          }
+        ],
+        "id": "ta.gemara001.opening.positions.76.identityfix20261126",
+        "layer": "positions",
+        "links": [
+          "ta.gemara001.opening.claims.74"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "ta.gemara001.opening.positions.76",
+        "uncertainty": [
+          "Anonymous voice or biblical book citation is not a named-person candidate; exact text and prior reading retained."
+        ]
+      }
+    }
+  ],
+  "evidence_occurrences": 11,
+  "findings": [
+    {
+      "id": "TA-STATUS",
+      "result": "Three position revisions preserve rejected explanation versus challenged year-round consequence. Original Taanit2a2 and2a4–7 reread; no practical ruling inferred."
+    },
+    {
+      "id": "TA-VERSE",
+      "result": "Four cited-book attribution labels and four dependent positions now have empty person candidates. Quoted-source surface/evidence preserved. Prior partial correction residual retained in lane check01; closed here only for these exact records."
+    }
+  ],
+  "limits": [
+    "No admission of intervening production",
+    "No full tractate admission or new task eligibility",
+    "Other expanded candidate-normalization changes not semantically admitted",
+    "Reader errors in initial comparison preserved"
+  ],
+  "new_blind_core_segments": 0,
+  "ml_eligible": false
+}

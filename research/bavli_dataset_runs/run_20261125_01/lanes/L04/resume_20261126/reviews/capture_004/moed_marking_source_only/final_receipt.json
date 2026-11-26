@@ -1,0 +1,40 @@
+{
+  "status": "TARGETED_MARKING_REVIEW_FINDINGS_CLOSED",
+  "timestamp_utc": "2026-11-26T20:58:47.640571+00:00",
+  "reviewer": "/root/source_review_moed_marking",
+  "snapshot_sha256": "849a65e15c05ec5ea4dc6c6d82462aef15507e8d6c2a4b59c8fe8141681b7e1c",
+  "proposal_sha256": "382f6679db1c25df81196868f2b49cd850b0e4f605628d072e51ebf0280a54cc",
+  "prior_recheck_sha256": "8e5959b08b4c9640f9e6414b70dd0093ae8a31adbe1b71bd699bf3bbc1206d39",
+  "scope": "Only two residual metadata items checked; previous semantic adjudications retained.",
+  "checks": [
+    {
+      "item": "MM02 top-level origin",
+      "result": "resolved",
+      "record_id": "mk.r010.student_example.review011.metadata012",
+      "origin": "editorial_inference",
+      "explicitness": "editorial_reconstruction",
+      "coverage_reference_count": 2
+    },
+    {
+      "item": "5a:18 question coverage stale rationale",
+      "result": "resolved",
+      "coverage": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "questions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Independent repair recheck: preserved supported records; rhetorical doubled-word question is explicitly represented at5a:18. Narrative-to-homily support is editorial inference, with both narrative segments as evidence.",
+        "record_ids": [
+          "mk.r011.doubling_q.q"
+        ],
+        "segment_id": "seg_b2da51c9db550e18544a"
+      }
+    }
+  ],
+  "acceptance": "Bounded marking cohort findings closed. No global or full-tractate acceptance; no probability-sample claim; AI provisional.",
+  "production_writes": false
+}

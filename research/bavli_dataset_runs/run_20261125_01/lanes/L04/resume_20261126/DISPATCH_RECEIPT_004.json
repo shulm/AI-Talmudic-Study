@@ -1,0 +1,18 @@
+{
+  "run_id": "run_20261125_01",
+  "same_ownership_epochs": true,
+  "global_ledger_modified": false,
+  "production": [
+    {"job": "bava_batra", "agent": "/root/bava_batra_review_repair", "owner": "L04/bava_batra_resume_20261126", "epoch": 3, "starting_snapshot": "f82c4e3f725e0eac9e92ce05eeb4070e085b2aa370f3e27d64445236f3c97077", "scope": "Exclusive writer after prior producer handoff; targeted repair then continuation"},
+    {"job": "taanit", "agent": "/root/taanit_continuation_3", "owner": "L04/taanit_resume_20261126", "epoch": 3, "starting_snapshot": "9936408e656e02d42c8df7d80f8803e7f37cc0565ec53449e03056cad69ab017", "scope": "Exclusive writer after continuation_2 durable handoff"},
+    {"job": "nedarim", "agent": "/root/nedarim_continuation", "scope": "Continues existing exclusive assignment"},
+    {"job": "moed_katan", "agent": "/root", "scope": "Sole writer; marking010b and review011b/metadata012"},
+    {"job": "pesachim", "agent": "/root", "scope": "Sole writer; targeted review007"}
+  ],
+  "review": [
+    {"agent": "/root/compare_taanit_frozen", "scope": "Nonblind comparison of prior frozen independent readings and targeted correction013 recheck"},
+    {"agent": "/root/source_review_moed_marking", "scope": "Fresh source-only risk reading frozen before production comparison, followed by targeted repair checks"},
+    {"agent": "independent_review_lead", "scope": "Separate exact-version BB and Pesachim comparison/correction checks, with overlapping source cohorts deduplicated"}
+  ],
+  "restrictions": "No shared schema/runner changes, no original-source edits, no merge, no automatic full-tractate or ML eligibility."
+}

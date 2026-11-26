@@ -1,18 +1,18 @@
 # L04 exact-version partial production checkpoint
 
-Checkpoint 001 contains actual semantic annotations and preserved review evidence for **460 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
+Checkpoint 004 contains actual semantic annotations and preserved review evidence for **1,065 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
 
-The authoritative selection of package versions is [LANE_CHECKPOINT_001.json](LANE_CHECKPOINT_001.json). Later production may advance beyond these immutable packages.
+The selected package versions are in [LANE_CHECKPOINT_004.json](LANE_CHECKPOINT_004.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
 
 | Tractate | Covered in each of eight layers | Denominator | Next source |
 |---|---:|---:|---|
-| Taanit | 118 | 895 | 6a:2 |
+| Taanit | 203 | 895 | 8b:5 |
 | Bava Batra | 142 | 3,804 | 7a:5 |
 | Pesachim | 71 | 3,519 | 4b:8 |
 | Avodah Zarah | 60 | 2,131 | 4a:4 |
-| Nedarim | 22 | 1,509 | 3a:5 |
-| Moed Katan | 17 | 1,026 | 2b:3 |
-| Makkot | 30 | 709 | 3a:8 |
+| Nedarim | 309 | 1,509 | 18b:1 |
+| Moed Katan | 134 | 1,026 | 5b:2 |
+| Makkot | 146 | 709 | 7a:2 |
 
 Coverage means the producer recorded a source pass for structure, utterances, claims, attribution/transmission, questions, positions, edges, and reconciliation. It does not establish exhaustive recall or scholarly correctness. Reconciliation can correctly have zero records while retaining a source-reread rationale. Tables preserve superseded records; consumers must filter `release_state == "valid"` for the current graph. Per-sugya exports use segment-overlap context, not certified semantic containment.
 
@@ -26,7 +26,11 @@ All seven external jobs use owner `L04/<slug>_resume_20261126`, epoch 3. [Dispat
 
 ## Review and qualification
 
+[Review capture 003](reviews/capture_003/MANIFEST.json) preserves the further Taanit comparison and correction013 independent recheck: seven corrections verified and three attribution/gloss uncertainties retained. Later source additions remain outside that acceptance. It also preserves the independent Bava Batra window-obligation and acquisition-premise findings; correction016 is included and passed independent recheck. The fresh source-only risk review of Moed Katan5a:13–5b:1 found a typed question omission, an inference mislabeled explicit, and relation refinements. Corrections011b/012 passed targeted recheck; original findings remain preserved. [Capture 004](reviews/capture_004/MANIFEST.json) records those findings and checks. Pesachim review007 repairs an explicit-answer metadata finding; its independent recheck passed in [capture005](reviews/capture_005/MANIFEST.json), an addendum after checkpoint004 was frozen. Review scopes and exact versions must be read from the receipts.
+
 [Frozen review capture](reviews/capture_001/MANIFEST.json) preserves source readings, comparisons, correction checks, and their exact versions. Probability samples, endpoint samples, and continuation context are separately recorded. An independent reading of source not yet produced is pending comparison, not an omission failure. A correction check is not a fresh random sample and is not full-tractate acceptance.
+
+[Review capture 002](reviews/capture_002/MANIFEST.json) adds three ten-segment probability cores (Makkot, Nedarim, Moed Katan), plus a separate Moed Katan review of twenty probability segments and thirty-three risk segments with ten overlapping. The latter found one missing direct relation at4a:17; an immutable `distinction` edge now connects the opposed majority-condition claims and passed targeted recheck. Makkot's embedded obsolete scope ID also passed a pointer-only equivalence check. These are bounded comparisons; later additions are not automatically covered by their verdicts. [Engineering findings](ENGINEERING_FINDINGS.md) document the free-text scope validation gap, question/answer-set metadata ambiguity, and version-count accounting.
 
 Taanit review corrected rejected-position statuses and biblical speaker/holder projections. Moed Katan review corrected Rav Huna's replaced identification and added the explicit replacement edge. Makkot review separated Ulla's initial question from anonymous clarification. Broad opening utterances in Nedarim, Moed Katan, and Makkot were qualified as composite; selected named speeches were narrowed. A subsequent mechanical repair updated attribution scopes to successor IDs, with independent equivalence checking. Initial findings and superseded versions remain preserved.
 

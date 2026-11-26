@@ -1,0 +1,42 @@
+{
+  "artifact_type": "additive_targeted_repair_verification",
+  "moed_katan": {
+    "snapshot_sha256": "bab8114c03ace3430edf6834035c39aaa70169cf0a34da93c34ec07efe7d39cd",
+    "proposal_sha256": "80a0c4d5c3aa7ba443d7c674b102f22dfab2623decd0089197630d250862e924",
+    "finding": "F01",
+    "original_finding_retained": true,
+    "status": "TARGETED_REPAIR_VERIFIED",
+    "scope": "Moed Katan 4a:17 only",
+    "verified_edge": "mk.r009.majority_contrast",
+    "conclusion": "The distinction edge explicitly links Rav Ashi’s even-without-majority position to Rav Pappa’s majority requirement. Direction and evidence fit the source. Its uncertainty explains that distinction encodes contrast without asserting retraction/adjudication. This satisfies F01 under the shared relation vocabulary.",
+    "checks": [
+      "snapshot/proposal hashes exact",
+      "pinned source hash exact",
+      "raw 4a:17 span 0:166 equal",
+      "both endpoint claims valid and unchanged",
+      "previous qualification edges and rationale unchanged",
+      "new edge appears in segment edge coverage",
+      "proposal adds exactly one record"
+    ],
+    "exclusions": [
+      "Intervening production through5a:12 is not independently reviewed or accepted by this check.",
+      "No new source-blindness claim; this is targeted adjudication after production exposure."
+    ]
+  },
+  "makkot": {
+    "snapshot_sha256": "4d303ae0cd52352256d5f5b72b0987ab993503d7bae57c18ed40142674fe5cff",
+    "proposal_sha256": "4952ae9c784c905d6e011b9523144e3628c1c3dfecff5fe390152d4d3ee40e69",
+    "status": "MECHANICAL_POINTER_REPAIR_VERIFIED",
+    "prior_id": "ma.r001.seed.a.scope002",
+    "replacement_id": "ma.r001.seed.a.scope012",
+    "scope_before": "ma.r001.seed.c; printed attribution variant unresolved",
+    "scope_after": "ma.r001.seed.c.scope002; printed attribution variant unresolved",
+    "conclusion": "Embedded ID before the semicolon now targets the valid revised claim. The suffix, candidates, role, surface, chain, raw evidence, uncertainty, links and other non-lineage fields remain identical. Supersession and coverage point to the replacement. No semantic change detected in this record pair.",
+    "exclusions": [
+      "No independent Makkot source reading or tractate semantic review claimed.",
+      "This is a record-pair mechanical check, not verification of the entire snapshot."
+    ]
+  },
+  "prior_frozen_artifacts_unchanged": true,
+  "production_writes": false
+}

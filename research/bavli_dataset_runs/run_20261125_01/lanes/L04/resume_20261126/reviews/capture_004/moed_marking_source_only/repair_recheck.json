@@ -1,0 +1,71 @@
+{
+  "status": "BOUNDED_RECHECK_SUBSTANTIVE_FINDINGS_REMEDIED_MINOR_METADATA_CLEANUP",
+  "timestamp_utc": "2026-11-26T20:57:43.978151+00:00",
+  "reviewer": "/root/source_review_moed_marking",
+  "snapshot_sha256": "bfa62bc7c2c8cf5ac8327caac77d9439224a048cca92518fce1e8cccc259f50c",
+  "proposal_sha256": "f5cf2f38818fbc75c6e135082d54f196570553ee92c58c83fa24d5c4d4fb6617",
+  "independent_freeze_sha256": "8da454f6786c0f043d8c8963df93184e653528eeff1b2b5de35f7672fb16af4a",
+  "original_source_sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7",
+  "changed_records_checked": 13,
+  "quote_offset_errors": [],
+  "adjudications": [
+    {
+      "id": "MM01",
+      "status": "resolved",
+      "evidence": "מאי וטמא טמא",
+      "records": [
+        "mk.r011.doubling_q.q",
+        "mk.r011.doubling_answer"
+      ],
+      "reason": "Explicit rhetorical question, anonymous utterance/attribution and answer edge now present; questions coverage records_found."
+    },
+    {
+      "id": "MM02",
+      "status": "substantive_issue_resolved_metadata_cleanup_remains",
+      "evidence": "קרי עליה (תהלים נ, כג) ושם דרך אראנו בישע אלהים",
+      "records": [
+        "mk.r010.student_example.review011"
+      ],
+      "reason": "explicitness editorial_reconstruction and precise uncertainty correctly identify inference, with narrative tail evidence. Top-level origin still source_paraphrase; change to editorial_inference for consistent machine-readable origin."
+    },
+    {
+      "id": "MM03",
+      "status": "resolved",
+      "evidence": "רבי ינאי הוה ליה ההוא תלמידא דכל יומא הוה מקשי ליה בשבתא דריגלא לא הוה מקשי ליה; קרי עליה (תהלים נ, כג) ושם דרך אראנו בישע אלהים",
+      "records": [
+        "mk.r011.narrative_head",
+        "mk.r011.narrative_tail",
+        "mk.r010.praise_narrative.review011"
+      ],
+      "reason": "Nonprimary structures preserve existing primary partition; explicit continuation head→tail replaces misclassified qualification. Semantic remedy acceptable without changing claim content."
+    },
+    {
+      "id": "MM04",
+      "status": "resolved_as_uncertainty",
+      "evidence": "א\"ל רבינא לרב אשי הא מקמי דליתי יחזקאל מאן אמר וליטעמיך",
+      "records": [
+        "mk.r010.analogy_q.a.review011",
+        "mk.r010.tradition.a.review011",
+        "mk.r010.mark_tradition.a.review011"
+      ],
+      "reason": "Anonymous retained with explicit plausible Rav Ashi conversational respondent note and earlier context evidence. Does not fabricate named transmission."
+    },
+    {
+      "id": "MM05",
+      "status": "resolved",
+      "evidence": "הכא נמי; וכן אמר רבי עוזיאל בר בריה דרבי עוזיאל רבה",
+      "records": [
+        "mk.r010.trad_analogy.review011",
+        "mk.r011.uzziel_agreement"
+      ],
+      "reason": "Analogy edge and Uzziel→Abbahu same-reading support now explicit; no invented dispute."
+    }
+  ],
+  "additional_metadata_note": "5a:18 questions coverage retains stale phrase no additional independent object found before appended correction rationale, despite records_found and new question ID. Remove stale phrase for clarity.",
+  "limitations": [
+    "No global acceptance or full tractate approval.",
+    "Targeted source-only frozen cohort; no probability estimates.",
+    "No production/source edits.",
+    "Rejected 011 attempt not evaluated; only requested immutable accepted snapshot and proposal inspected."
+  ]
+}
