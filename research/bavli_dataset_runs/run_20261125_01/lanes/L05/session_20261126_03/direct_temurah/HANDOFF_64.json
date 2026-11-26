@@ -1,0 +1,30 @@
+{
+  "job_id": "bavli_temurah",
+  "owner": "L05/temurah",
+  "epoch": 2,
+  "status": "PARTIAL_UNREVIEWED",
+  "snapshot_sha256": "7d4de3664fbc1bdf7ce11b65101c779855788ef7521677f0091d113963ed0ec2",
+  "completed_by_layer": {
+    "structure": 64,
+    "utterances": 64,
+    "claims": 64,
+    "attributions": 64,
+    "questions": 64,
+    "positions": 64,
+    "edges": 64,
+    "reconciliation": 64
+  },
+  "denominator": 1150,
+  "records": 445,
+  "next_ref": "Temurah 4a:3",
+  "context_read_through": "Temurah 4a:8",
+  "export": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\exports\\temurah_64_20261126",
+  "source_sha256": "5e3336dff6155a38eb0f82473821bd06657651a70f902ea152c0092ecbcd0405",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "replay_pass": true,
+  "independent_review_completed": false,
+  "tractate_delivered": false,
+  "ml_eligible": false,
+  "next_step": "Read terumah-before-first-fruits discussion from 4a:3 with complete continuation: initial attribution at 4a:4 is reversed by 4a:5\u20137, and contradiction at 4a:8 requires reading onward before assigning final views. Submit next owner L05/temurah epoch2 proposal.",
+  "reproduce": "Shared runner.py replay --job-dir F:/Sefaria_QA/bavli_production_run_20261125_01/L05/bavli_temurah; export to new external directory."
+}

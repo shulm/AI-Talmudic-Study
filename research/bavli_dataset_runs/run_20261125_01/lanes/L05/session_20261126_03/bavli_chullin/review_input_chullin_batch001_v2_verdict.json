@@ -1,0 +1,154 @@
+{
+  "verdict": "REWORK_TARGETED",
+  "bindings": {
+    "run_contract": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\RUN_CONTRACT.json",
+      "sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "schema": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    "protocol": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    "contract_production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "initial_reading": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\chullin_batch001.json",
+      "sha256": "5bf2710251547bf88de3d6305176d3bea52092806ef94e1b3dcae9edc6afe8da"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\98b69a22276956442697c13ec7f91fe8acf15527851f982d7123944bdabf1062.json",
+      "sha256": "98b69a22276956442697c13ec7f91fe8acf15527851f982d7123944bdabf1062"
+    },
+    "source": {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Kodashim\\Chullin\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b"
+    },
+    "plan": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\frozen_plans\\bavli_chullin.json",
+      "sha256": "b2a73464cb0f62ab3d817b499e913594fde9190ec1e7c3e8f4c7a4353f69dfc3"
+    },
+    "plan_embedded_sha256": "91ff51e55eb4fd5c8faa62b9ab8faf3b1be85f85f33111df29403cd04b1d9af8",
+    "proposals": [
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\proposals\\113c34c9c760be3b558d22acc0ef7f3ba423aac7b19ac887536cbda77cc314a9.json",
+        "sha256": "113c34c9c760be3b558d22acc0ef7f3ba423aac7b19ac887536cbda77cc314a9"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\proposals\\38300ebde1f148ffddb4a708a7e0f1fae66eba2016954e15f61f41515f982d05.json",
+        "sha256": "38300ebde1f148ffddb4a708a7e0f1fae66eba2016954e15f61f41515f982d05"
+      }
+    ],
+    "preserved_quarantine": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\QUARANTINE.json",
+      "sha256": "286a91c0fb3da417b69fc7381bff63a1b73468b844a22a91dea9e3cd6f59155d"
+    },
+    "comparison_script": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\verify_taanit_chullin_openings.py",
+      "sha256": "5334cd437723eec732b6ba7a84ab5183bf5cac4dadda0a534bcb8754dc2aaea3"
+    }
+  },
+  "comparison": {
+    "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\chullin_batch001_exact_version.json",
+    "sha256": "30065eb2a285fbbe07fb027985f2db87d2e5fb69bc751822968daa57e626ae63"
+  },
+  "scope": "Exact frozen opening10 only",
+  "required_changes": [
+    {
+      "id": "CH-ROLE",
+      "category": "preserved_quarantine",
+      "finding": "Rav Ashi is addressee, not quoted authority; current typed role remains unsupported. Existing coordinator quarantine preserved.",
+      "records": [
+        "ch01_a_ashi_addressee"
+      ],
+      "required_change": "Follow existing QUARANTINE.json clearance; preserve original exact row.",
+      "regression_check": "Quarantined record excluded from integrated release until independent versioned role review."
+    },
+    {
+      "id": "CH-ATOMIC",
+      "category": "atomic_claim_omission",
+      "finding": "Valuation/vow roles c15–c18, sukkah/tzitzit c25–c26 and semikha class c28 survive only inside questions; no independent claim nodes. c01–c06 and c30–c31 bundled; cannot credit32 distinct atomic production claims.",
+      "records": [
+        "ch01_q_vows",
+        "ch01_q_reverse",
+        "ch01_q_semikha",
+        "ch01_c_all",
+        "ch01_c_ex",
+        "ch01_c_mixed"
+      ],
+      "required_change": "Add separately anchored claims where atomic policy requires; retain quoted-authority status and do not turn quotations into universal practical rulings.",
+      "regression_check": "Seven quoted propositions recoverable as claims, with exclusions/quoted scope preserved."
+    },
+    {
+      "id": "CH-COND",
+      "category": "condition_scope",
+      "finding": "ch01_c_notperm bundles prohibition with post-act effectiveness under a Substitution was performed condition; prohibition must not be conditional on completion. Several positions discard claim conditions (watch/lashes/zeh).",
+      "records": [
+        "ch01_c_notperm",
+        "ch01_p_notperm",
+        "ch01_p_watch",
+        "ch01_p_lashes",
+        "ch01_p_zeh"
+      ],
+      "required_change": "Separate unconditional prohibition from post-act effect and carry operative conditions to positions.",
+      "regression_check": "No output licenses initial substitution or drops supervision/performed/designation conditions."
+    },
+    {
+      "id": "CH-GRAPH",
+      "category": "argument_scope",
+      "finding": "Temurah/vow objection edges target local initial-permission claim, but challenge is universal lexical inference; later2b:5 defends local reading. Reader ce1 has same overly narrow target.",
+      "records": [
+        "ch01_e_counter",
+        "ch01_e_vowcounter",
+        "ch01_c_initial"
+      ],
+      "required_change": "Target generalization or explicitly scope objection. Existing ch01_e_initial_restore and ch01_e_restore correctly encode2b:5 closure; preserve them. Ensure challenged initial status is interpreted historically with those restoration edges.",
+      "regression_check": "Local initial-permission interpretation must not remain falsely rejected merely because universal הכל inference fails."
+    }
+  ],
+  "task_eligibility": {
+    "argument_extraction": false,
+    "attribution": false,
+    "ml": false,
+    "qa": false,
+    "retrieval": false,
+    "scholar_choice": false,
+    "segmentation": false
+  },
+  "layer_matrix": {
+    "endpoint_core_segments_compared": 10,
+    "probability_core_segments_compared": 10,
+    "overlap_core_segments": 10,
+    "unique_core_segments_compared": 10,
+    "independent_core_denominators": {
+      "independently_found_atomic_claims": 32,
+      "attributable_claims": 24,
+      "condition_bearing_claims": 14,
+      "questions": 3,
+      "answer_sets": 3,
+      "supported_edges": 11
+    },
+    "producer_completed_per_layer": {
+      "structure": 11,
+      "utterances": 11,
+      "claims": 11,
+      "attributions": 11,
+      "questions": 11,
+      "positions": 11,
+      "edges": 11,
+      "reconciliation": 11
+    },
+    "source_segments_total": 4393
+  },
+  "tractate_accepted": false,
+  "full_review_receipt": false,
+  "human_certification": false,
+  "admission_owner": "global coordinator",
+  "remaining": "Targeted revisions through authorized owner followed by new exact-version review. Continue remaining source-first cohort independently."
+}
