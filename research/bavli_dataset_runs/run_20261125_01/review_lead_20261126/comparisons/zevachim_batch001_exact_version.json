@@ -1,0 +1,4882 @@
+{
+  "artifact_kind": "nonblind_exact_version_partial_comparison",
+  "comparator_provenance": {
+    "agent_id": "/root/compare_zevachim_wave2",
+    "blind": false,
+    "reader_frozen_before_comparison": true
+  },
+  "bindings": {
+    "source": {
+      "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Kodashim/Zevachim/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "7fcfa68ee6f55ecf8535b90b2d56d7f3a3c209db54a78eeb9792bbe4f172186a",
+      "verified": true
+    },
+    "original_source_schema": {
+      "path": "F:/Sefaria-Export-master/schemas/Zevachim.json",
+      "sha256": "4e50519fa5816a140b94586de3e6f6030a17e3ed5c166829a68c933c3f984c39",
+      "verified": true
+    },
+    "frozen_plan": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_zevachim.json",
+      "sha256": "af80dc8238656e4e314537d9a1402c9ab40a92aca2a4a8c91402144697e1261f",
+      "verified": true
+    },
+    "PROTOCOL.md": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "verified": true
+    },
+    "schema.json": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "verified": true
+    },
+    "INDEPENDENT_REVIEW_PROMPT.md": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2",
+      "verified": true
+    },
+    "job_descriptor": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\jobs\\bavli_zevachim.json",
+      "sha256": "4a73f30ed72572ef25898741476ec8def7600e259044d8ae00d62a6db49c9f52"
+    },
+    "initial_reading": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\zevachim_batch001.json",
+      "sha256": "0fd673049af4f37d4c0e8efc2ef9ad2ec856c1fab194bf48a7be786ca60994ab"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\snapshots\\0ca186f5d15caef7d17399b21fd0464a8f22b9ded849d454f08b6460c4e00c64.json",
+      "sha256": "0ca186f5d15caef7d17399b21fd0464a8f22b9ded849d454f08b6460c4e00c64"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "run_contract": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\RUN_CONTRACT.json",
+      "sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174"
+    },
+    "contract_production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "proposals": [
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\3f77470aa905b9dd4f3b74be343bb8956096e63475bf72526d6d2bed75cc81ca.json",
+        "sha256": "3f77470aa905b9dd4f3b74be343bb8956096e63475bf72526d6d2bed75cc81ca"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\97112748ecff84517b6175c25462ebae4b010db9640a47768ae19be097dc1822.json",
+        "sha256": "97112748ecff84517b6175c25462ebae4b010db9640a47768ae19be097dc1822"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\dd5f414d019145aa22b53588459b204077dec2a6bd82319b0b67e1ac8b64b3a6.json",
+        "sha256": "dd5f414d019145aa22b53588459b204077dec2a6bd82319b0b67e1ac8b64b3a6"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\b5fcaae9eabc53df04ecd6d7c3250596a5ad816f9907eda9ef50ae22b3f0bc94.json",
+        "sha256": "b5fcaae9eabc53df04ecd6d7c3250596a5ad816f9907eda9ef50ae22b3f0bc94"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\417ecb0ed1deb7d44b43b12897afd9fdc6aa4e16d62f59d9aaa556ee993c25e6.json",
+        "sha256": "417ecb0ed1deb7d44b43b12897afd9fdc6aa4e16d62f59d9aaa556ee993c25e6"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\d50b0b3dcff43b005f6c8ced0b260e07b482203fde9fa2b54bafa3a2e400ae09.json",
+        "sha256": "d50b0b3dcff43b005f6c8ced0b260e07b482203fde9fa2b54bafa3a2e400ae09"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\bfe9934306acf95a3d6b6974741863868f5c5023d2f7af47d61da25cf9ad930a.json",
+        "sha256": "bfe9934306acf95a3d6b6974741863868f5c5023d2f7af47d61da25cf9ad930a"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\cce3672ac5e799b98339396950db009fd0f467892507c9b7b2c3fda2fa20cdf0.json",
+        "sha256": "cce3672ac5e799b98339396950db009fd0f467892507c9b7b2c3fda2fa20cdf0"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\48a110cb98b14d4d8afcbf851566595235cc489d186f7e28d899b1e4654f8034.json",
+        "sha256": "48a110cb98b14d4d8afcbf851566595235cc489d186f7e28d899b1e4654f8034"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\8e76e7ab6efbde09e545b03715f3fe08a6de992148ab647a45e0ff856920c920.json",
+        "sha256": "8e76e7ab6efbde09e545b03715f3fe08a6de992148ab647a45e0ff856920c920"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\proposals\\911a0fbdc482f9a9c0181689fb12964994d1d98022d2bf8acdf2d3a4d6326516.json",
+        "sha256": "911a0fbdc482f9a9c0181689fb12964994d1d98022d2bf8acdf2d3a4d6326516"
+      }
+    ],
+    "comparison_script": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\verify_zevachim_batch001.py",
+      "sha256": "0385cb7c6543bd38a0879ab9a8ccef14694936926d8e7e956c6e1f2f745da1fa"
+    },
+    "plan_embedded_sha256": "60d525f0de6d7e5a8d7206d22fee04edd0e5047dc25a518a7370056554746f8f"
+  },
+  "denominators": {
+    "independently_found_atomic_claims": 39,
+    "attributable_claims": 39,
+    "named_holder_claims": 20,
+    "condition_bearing_claims": 19,
+    "questions": 4,
+    "proposed_answer_sets": 4,
+    "supported_edges": 13,
+    "attributable_definition": "Includes anonymous and quoted voices; named-holder subset separate.",
+    "condition_definition": "Nonempty reader condition arrays, not condition completeness; contextual missing conditions noted separately.",
+    "edge_definition": "Reader relation evidence intersects a sampled core; context-only relations excluded. Counts are occurrences, not unique topics."
+  },
+  "cohorts": {
+    "endpoint_core_segments": 10,
+    "probability_core_segments": 20,
+    "overlap_core_segments": 0,
+    "unique_core_segments": 30,
+    "context_expansion_segments": 62
+  },
+  "core_refs": [
+    "Zevachim 2a:1",
+    "Zevachim 2a:2",
+    "Zevachim 2a:3",
+    "Zevachim 2a:4",
+    "Zevachim 2a:5",
+    "Zevachim 2a:6",
+    "Zevachim 2a:7",
+    "Zevachim 2a:8",
+    "Zevachim 2a:9",
+    "Zevachim 2a:10",
+    "Zevachim 4a:16",
+    "Zevachim 4a:17",
+    "Zevachim 4a:18",
+    "Zevachim 4a:19",
+    "Zevachim 4a:20",
+    "Zevachim 4a:21",
+    "Zevachim 4a:22",
+    "Zevachim 4a:23",
+    "Zevachim 4a:24",
+    "Zevachim 4a:25",
+    "Zevachim 6a:15",
+    "Zevachim 6a:16",
+    "Zevachim 6a:17",
+    "Zevachim 6a:18",
+    "Zevachim 6b:1",
+    "Zevachim 6b:2",
+    "Zevachim 6b:3",
+    "Zevachim 6b:4",
+    "Zevachim 6b:5",
+    "Zevachim 6b:6"
+  ],
+  "context_refs_not_in_denominator": [
+    "Zevachim 2b:1",
+    "Zevachim 2b:2",
+    "Zevachim 4a:1",
+    "Zevachim 4a:2",
+    "Zevachim 4a:3",
+    "Zevachim 4a:4",
+    "Zevachim 4a:5",
+    "Zevachim 4a:6",
+    "Zevachim 4a:7",
+    "Zevachim 4a:8",
+    "Zevachim 4a:9",
+    "Zevachim 4a:10",
+    "Zevachim 4a:11",
+    "Zevachim 4a:12",
+    "Zevachim 4a:13",
+    "Zevachim 4a:14",
+    "Zevachim 4a:15",
+    "Zevachim 4a:26",
+    "Zevachim 4a:27",
+    "Zevachim 4b:1",
+    "Zevachim 4b:2",
+    "Zevachim 4b:3",
+    "Zevachim 4b:4",
+    "Zevachim 4b:5",
+    "Zevachim 4b:6",
+    "Zevachim 4b:7",
+    "Zevachim 4b:8",
+    "Zevachim 4b:9",
+    "Zevachim 4b:10",
+    "Zevachim 4b:11",
+    "Zevachim 4b:12",
+    "Zevachim 4b:13",
+    "Zevachim 4b:14",
+    "Zevachim 4b:15",
+    "Zevachim 4b:16",
+    "Zevachim 4b:17",
+    "Zevachim 4b:18",
+    "Zevachim 4b:19",
+    "Zevachim 4b:20",
+    "Zevachim 4b:21",
+    "Zevachim 4b:22",
+    "Zevachim 4b:23",
+    "Zevachim 4b:24",
+    "Zevachim 4b:25",
+    "Zevachim 4b:26",
+    "Zevachim 4b:27",
+    "Zevachim 4b:28",
+    "Zevachim 5a:1",
+    "Zevachim 6a:12",
+    "Zevachim 6a:13",
+    "Zevachim 6a:14",
+    "Zevachim 6b:7",
+    "Zevachim 6b:8",
+    "Zevachim 6b:9",
+    "Zevachim 6b:10",
+    "Zevachim 6b:11",
+    "Zevachim 6b:12",
+    "Zevachim 6b:13",
+    "Zevachim 7a:1",
+    "Zevachim 7a:2",
+    "Zevachim 7a:3",
+    "Zevachim 7a:4"
+  ],
+  "claim_comparisons": [
+    {
+      "reader_id": "C01",
+      "reader_record_sha256": "6a8f588d8bb584b18f09494bbcdd3c39214fb8fd9ac8636ec9a80eb31f44cf49",
+      "producer_id": "zev_open_c_valid",
+      "producer_record_sha256": "c863fc176fdf1d080cb921d8d5e18304e1c463ffd311586b53f6dd3cff7bcce4",
+      "reader": {
+        "id": "C01",
+        "kind": "atomic_claim",
+        "proposition": "Sacrifices slaughtered under another designation remain valid, apart from the stated exceptions.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous Mishnah"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "Slaughter שלא לשמן",
+          "Exceptions: Paschal offering at its appointed time; sin offering at any time"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:1",
+            "start": 0,
+            "end": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "שחיטה שלא לשם הזבח",
+            "להוציא פסח בזמנו וחטאת בכל זמן"
+          ],
+          "proposition": "הזבחים שנזבחו שלא לשמם כשרים אך אינם עולים לבעלים לשם חובה, מלבד החריגים המנויים.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+            "segment_id": "seg_f741e900c406de2e6fa0",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_valid",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_valid",
+            "conditions": [
+              "שחיטה שלא לשם הזבח",
+              "להוציא פסח בזמנו וחטאת בכל זמן"
+            ],
+            "holder_candidates": [
+              "סתם משנה"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+              "segment_id": "seg_f741e900c406de2e6fa0",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p1_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_valid"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p1",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C02",
+      "reader_record_sha256": "47d8e8e2de9d05d9cfbeb3938a80038ade9c58122fdd00d682261f19fe3d60a0",
+      "producer_id": "zev_open_c_valid",
+      "producer_record_sha256": "c863fc176fdf1d080cb921d8d5e18304e1c463ffd311586b53f6dd3cff7bcce4",
+      "reader": {
+        "id": "C02",
+        "kind": "atomic_claim",
+        "proposition": "These otherwise valid offerings do not discharge the owners’ obligation.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous Mishnah"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "Slaughter שלא לשמן",
+          "Offering not within invalidating exceptions"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:1",
+            "start": 0,
+            "end": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "שחיטה שלא לשם הזבח",
+            "להוציא פסח בזמנו וחטאת בכל זמן"
+          ],
+          "proposition": "הזבחים שנזבחו שלא לשמם כשרים אך אינם עולים לבעלים לשם חובה, מלבד החריגים המנויים.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+            "segment_id": "seg_f741e900c406de2e6fa0",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_valid",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_valid",
+            "conditions": [
+              "שחיטה שלא לשם הזבח",
+              "להוציא פסח בזמנו וחטאת בכל זמן"
+            ],
+            "holder_candidates": [
+              "סתם משנה"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+              "segment_id": "seg_f741e900c406de2e6fa0",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p1_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_valid"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p1",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C03",
+      "reader_record_sha256": "dff6364bf17bf10d978cf3f9b7fecc4fe1803afd2c9280a86916d952f5149c0f",
+      "producer_id": "zev_open_c_pesach",
+      "producer_record_sha256": "e1dca489073c665dfab2d1e351d47e39667d4985aa8d79342f2c1c3200bbee05",
+      "reader": {
+        "id": "C03",
+        "kind": "atomic_claim",
+        "proposition": "The Paschal offering is invalid under another designation at its appointed time.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous Mishnah"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "בזמנו",
+          "שלא לשמו"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:1",
+            "start": 0,
+            "end": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "פסח בזמנו",
+            "שלא לשמו"
+          ],
+          "proposition": "פסח שנשחט שלא לשמו בזמנו אינו בכלל הכשרים.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+            "segment_id": "seg_f741e900c406de2e6fa0",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_pesach",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_pesach",
+            "conditions": [
+              "פסח בזמנו",
+              "שלא לשמו"
+            ],
+            "holder_candidates": [
+              "סתם משנה"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+              "segment_id": "seg_f741e900c406de2e6fa0",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p2_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_pesach"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p2",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C04",
+      "reader_record_sha256": "48b80ae1551c7fc235b669ac55e77e3e40dbf1650a6dad5cc36d7bfbf327b7f3",
+      "producer_id": "zev_open_c_chatat",
+      "producer_record_sha256": "5f7e326c18c69f4cd9ca2d54a1dd7cf08fe59b63c62cc0ff1b320170ef956747",
+      "reader": {
+        "id": "C04",
+        "kind": "atomic_claim",
+        "proposition": "A sin offering is invalid under another designation at any time.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous Mishnah"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "שלא לשמה"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:1",
+            "start": 0,
+            "end": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "חטאת",
+            "שלא לשמה"
+          ],
+          "proposition": "חטאת שנשחטה שלא לשמה פסולה בכל זמן.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+            "segment_id": "seg_f741e900c406de2e6fa0",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_chatat",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_chatat",
+            "conditions": [
+              "חטאת",
+              "שלא לשמה"
+            ],
+            "holder_candidates": [
+              "סתם משנה"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מתני׳ <big><strong>כל</strong></big> הזבחים שנזבחו שלא לשמן כשרים אלא שלא עלו לבעלים לשם חובה חוץ מן הפסח והחטאת הפסח בזמנו והחטאת בכל זמן",
+              "segment_id": "seg_f741e900c406de2e6fa0",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p3_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_chatat"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p3",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C05",
+      "reader_record_sha256": "51a3a07bc0ed627fc69ae3ae4ddf34246174efd70c87887b520d2eea36ef434a",
+      "producer_id": "zev_open_c_asham",
+      "producer_record_sha256": "22f8b2118e3f224c414e35148e7b53311de7b414ea29cbbdbeaf3b4d81493f23",
+      "reader": {
+        "id": "C05",
+        "kind": "atomic_claim",
+        "proposition": "A guilt offering too is invalid under another designation at any time.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי אליעזר"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "שלא לשמו"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:2",
+            "start": 0,
+            "end": 148,
+            "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "אשם",
+            "שלא לשמו"
+          ],
+          "proposition": "רבי אליעזר מוסיף אשם לפסולים שלא לשמם בכל זמן.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 148,
+            "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו",
+            "segment_id": "seg_b20fd0baaa445a900d34",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_asham",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_asham",
+            "conditions": [
+              "אשם",
+              "שלא לשמו"
+            ],
+            "holder_candidates": [
+              "רבי אליעזר"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו",
+              "segment_id": "seg_b20fd0baaa445a900d34",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p4_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_asham"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p4",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C06",
+      "reader_record_sha256": "705a9f5f251dddd9e93bd3ec213335a10673ea63f4d1112d2b129243b49068ef",
+      "producer_id": "zev_open_c_sin",
+      "producer_record_sha256": "5facf2f3cb9c3a9fe42b55d7fd7e5727fa3993e330db96d27cf8ee5c591b95c5",
+      "reader": {
+        "id": "C06",
+        "kind": "atomic_claim",
+        "proposition": "The guilt offering’s coming for sin grounds its analogy to the sin offering.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי אליעזר"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "stated argument for C05",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:2",
+            "start": 0,
+            "end": 148,
+            "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "השוואת אשם לחטאת"
+          ],
+          "proposition": "החטאת והאשם שניהם באים על חטא; רבי אליעזר לומד מכאן לפסול אשם שלא לשמו כשם שחטאת פסולה.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 148,
+            "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו",
+            "segment_id": "seg_b20fd0baaa445a900d34",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_sin",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_sin",
+            "conditions": [
+              "השוואת אשם לחטאת"
+            ],
+            "holder_candidates": [
+              "רבי אליעזר"
+            ],
+            "local_status": "ייחוס מפורש או המשך מקומי; הסבר ודרשה אינם בחירה הלכתית חדשה",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו",
+              "segment_id": "seg_b20fd0baaa445a900d34",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p_sin_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_sin"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C07",
+      "reader_record_sha256": "52f44be8920a49ce74b74f0b210453df857a5721849f66f5b22b912dfbdd1e18",
+      "producer_id": "zev_open_c_yosi",
+      "producer_record_sha256": "e175847f75fd33ed386e8cbd3d07497881531ba0eafe5395cfa340fa5a8f5ff8",
+      "reader": {
+        "id": "C07",
+        "kind": "atomic_claim",
+        "proposition": "Offerings slaughtered for the designation of a Paschal or sin offering are invalid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "יוסי בן חוני"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "Intended designation לשם פסח or לשם חטאת"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:3",
+            "start": 0,
+            "end": 50,
+            "quote": "יוסי בן חוני אומר הנשחטין לשם פסח ולשם חטאת פסולין"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "זבח שנשחט לשם פסח או לשם חטאת"
+          ],
+          "proposition": "יוסי בן חוני פוסל את הנשחטים לשם פסח ולשם חטאת.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 50,
+            "quote": "יוסי בן חוני אומר הנשחטין לשם פסח ולשם חטאת פסולין",
+            "segment_id": "seg_d4d7f969823a8099831d",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_yosi",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_yosi",
+            "conditions": [
+              "זבח שנשחט לשם פסח או לשם חטאת"
+            ],
+            "holder_candidates": [
+              "יוסי בן חוני"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 50,
+              "quote": "יוסי בן חוני אומר הנשחטין לשם פסח ולשם חטאת פסולין",
+              "segment_id": "seg_d4d7f969823a8099831d",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p5_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_yosi"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p5",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C08",
+      "reader_record_sha256": "bb0ce767dca27f9381a93c84588ab971fdf5638050c7389ca5c83dc0c80c7c8c",
+      "producer_id": "zev_open_c_high",
+      "producer_record_sha256": "b7dd8d10796730cb2c215fd387d1966651dd1f69a92f3a75b0a75675dd17f958",
+      "reader": {
+        "id": "C08",
+        "kind": "atomic_claim",
+        "proposition": "Slaughter for a higher sanctity designation is valid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "שמעון אחי עזריה"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "לשם גבוה מהן"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:4",
+            "start": 0,
+            "end": 64,
+            "quote": "שמעון אחי עזריה אומר שחטן לשם גבוה מהן כשרין לשם נמוך מהן פסולין"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "יחס הקדושה בין הזבח המקורי ובין שם הזבח שהתכוון אליו"
+          ],
+          "proposition": "שמעון אחי עזריה מכשיר כששחט לשם זבח הגבוה ממנו ופוסל כששחט לשם נמוך ממנו.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "שמעון אחי עזריה אומר שחטן לשם גבוה מהן כשרין לשם נמוך מהן פסולין",
+            "segment_id": "seg_8731df591d64b3d2d82c",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_high",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_high",
+            "conditions": [
+              "יחס הקדושה בין הזבח המקורי ובין שם הזבח שהתכוון אליו"
+            ],
+            "holder_candidates": [
+              "שמעון אחי עזריה"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 64,
+              "quote": "שמעון אחי עזריה אומר שחטן לשם גבוה מהן כשרין לשם נמוך מהן פסולין",
+              "segment_id": "seg_8731df591d64b3d2d82c",
+              "start_char": 0
+            },
+            {
+              "end_char": 155,
+              "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+              "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p6_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_high"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p6",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C09",
+      "reader_record_sha256": "cfaf121679d1ddf16717de289ce90a3537dfb1d751191427f515595e6fe88f14",
+      "producer_id": "zev_open_c_high",
+      "producer_record_sha256": "b7dd8d10796730cb2c215fd387d1966651dd1f69a92f3a75b0a75675dd17f958",
+      "reader": {
+        "id": "C09",
+        "kind": "atomic_claim",
+        "proposition": "Slaughter for a lower sanctity designation is invalid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "שמעון אחי עזריה"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "לשם נמוך מהן"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:4",
+            "start": 0,
+            "end": 64,
+            "quote": "שמעון אחי עזריה אומר שחטן לשם גבוה מהן כשרין לשם נמוך מהן פסולין"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "יחס הקדושה בין הזבח המקורי ובין שם הזבח שהתכוון אליו"
+          ],
+          "proposition": "שמעון אחי עזריה מכשיר כששחט לשם זבח הגבוה ממנו ופוסל כששחט לשם נמוך ממנו.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "שמעון אחי עזריה אומר שחטן לשם גבוה מהן כשרין לשם נמוך מהן פסולין",
+            "segment_id": "seg_8731df591d64b3d2d82c",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_high",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_high",
+            "conditions": [
+              "יחס הקדושה בין הזבח המקורי ובין שם הזבח שהתכוון אליו"
+            ],
+            "holder_candidates": [
+              "שמעון אחי עזריה"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 64,
+              "quote": "שמעון אחי עזריה אומר שחטן לשם גבוה מהן כשרין לשם נמוך מהן פסולין",
+              "segment_id": "seg_8731df591d64b3d2d82c",
+              "start_char": 0
+            },
+            {
+              "end_char": 155,
+              "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+              "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p6_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_high"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p6",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C10",
+      "reader_record_sha256": "c26e93b43c006353ec24067193dd7fd27ad9221d2ab2ccad56f271a354c545fe",
+      "producer_id": "zev_open_c_high_examples",
+      "producer_record_sha256": "f0c98187851be2f77e26c4f39ca8f56edb47154cb22624daaf3d3f2336930436",
+      "reader": {
+        "id": "C10",
+        "kind": "atomic_claim",
+        "proposition": "Most holy offerings slaughtered as offerings of lesser sanctity are invalid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "שמעון אחי עזריה"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "קדשי קדשים לשם קדשים קלים"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:5",
+            "start": 0,
+            "end": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "דוגמאות לכלל שמעון אחי עזריה"
+          ],
+          "proposition": "קדשי קדשים שנשחטו לשם קדשים קלים פסולים; קדשים קלים לשם קדשי קדשים כשרים. בכור ומעשר לשם שלמים כשרים; שלמים לשם בכור או מעשר פסולים.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+            "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_high_examples",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_high_examples",
+            "conditions": [
+              "דוגמאות לכלל שמעון אחי עזריה"
+            ],
+            "holder_candidates": [
+              "שמעון אחי עזריה"
+            ],
+            "local_status": "ייחוס מפורש או המשך מקומי; הסבר ודרשה אינם בחירה הלכתית חדשה",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 155,
+              "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+              "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p_examples_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_high_examples"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "דוגמאות יורשות ייחוס לשמעון לפי המשך המקור."
+          ]
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C11",
+      "reader_record_sha256": "34420bc1c8e0b90c7580ac370e9987fdc1e58b76f9a548a8cecd8c40bf70bfd9",
+      "producer_id": "zev_open_c_high_examples",
+      "producer_record_sha256": "f0c98187851be2f77e26c4f39ca8f56edb47154cb22624daaf3d3f2336930436",
+      "reader": {
+        "id": "C11",
+        "kind": "atomic_claim",
+        "proposition": "Offerings of lesser sanctity slaughtered as most holy offerings are valid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "שמעון אחי עזריה"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "קדשים קלים לשם קדשי קדשים"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:5",
+            "start": 0,
+            "end": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "דוגמאות לכלל שמעון אחי עזריה"
+          ],
+          "proposition": "קדשי קדשים שנשחטו לשם קדשים קלים פסולים; קדשים קלים לשם קדשי קדשים כשרים. בכור ומעשר לשם שלמים כשרים; שלמים לשם בכור או מעשר פסולים.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+            "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_high_examples",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_high_examples",
+            "conditions": [
+              "דוגמאות לכלל שמעון אחי עזריה"
+            ],
+            "holder_candidates": [
+              "שמעון אחי עזריה"
+            ],
+            "local_status": "ייחוס מפורש או המשך מקומי; הסבר ודרשה אינם בחירה הלכתית חדשה",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 155,
+              "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+              "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p_examples_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_high_examples"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "דוגמאות יורשות ייחוס לשמעון לפי המשך המקור."
+          ]
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C12",
+      "reader_record_sha256": "43db8f88dc1f8dded6845ba22aacf20de921303ecee08a6f7b3568448620b481",
+      "producer_id": "zev_open_c_high_examples",
+      "producer_record_sha256": "f0c98187851be2f77e26c4f39ca8f56edb47154cb22624daaf3d3f2336930436",
+      "reader": {
+        "id": "C12",
+        "kind": "atomic_claim",
+        "proposition": "Firstborn and tithe offerings slaughtered as peace offerings are valid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "שמעון אחי עזריה"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "בכור or מעשר לשם שלמים"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:5",
+            "start": 0,
+            "end": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "דוגמאות לכלל שמעון אחי עזריה"
+          ],
+          "proposition": "קדשי קדשים שנשחטו לשם קדשים קלים פסולים; קדשים קלים לשם קדשי קדשים כשרים. בכור ומעשר לשם שלמים כשרים; שלמים לשם בכור או מעשר פסולים.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+            "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_high_examples",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_high_examples",
+            "conditions": [
+              "דוגמאות לכלל שמעון אחי עזריה"
+            ],
+            "holder_candidates": [
+              "שמעון אחי עזריה"
+            ],
+            "local_status": "ייחוס מפורש או המשך מקומי; הסבר ודרשה אינם בחירה הלכתית חדשה",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 155,
+              "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+              "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p_examples_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_high_examples"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "דוגמאות יורשות ייחוס לשמעון לפי המשך המקור."
+          ]
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C13",
+      "reader_record_sha256": "0b6edd8da2145de675820cecc6d98aec98d0b7358613ced9bc76081d4992f5c9",
+      "producer_id": "zev_open_c_high_examples",
+      "producer_record_sha256": "f0c98187851be2f77e26c4f39ca8f56edb47154cb22624daaf3d3f2336930436",
+      "reader": {
+        "id": "C13",
+        "kind": "atomic_claim",
+        "proposition": "Peace offerings slaughtered as firstborn or tithe offerings are invalid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "שמעון אחי עזריה"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "שלמים לשם בכור or מעשר"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:5",
+            "start": 0,
+            "end": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "דוגמאות לכלל שמעון אחי עזריה"
+          ],
+          "proposition": "קדשי קדשים שנשחטו לשם קדשים קלים פסולים; קדשים קלים לשם קדשי קדשים כשרים. בכור ומעשר לשם שלמים כשרים; שלמים לשם בכור או מעשר פסולים.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+            "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_high_examples",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_high_examples",
+            "conditions": [
+              "דוגמאות לכלל שמעון אחי עזריה"
+            ],
+            "holder_candidates": [
+              "שמעון אחי עזריה"
+            ],
+            "local_status": "ייחוס מפורש או המשך מקומי; הסבר ודרשה אינם בחירה הלכתית חדשה",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 155,
+              "quote": "כיצד קדשי קדשים ששחטן לשם קדשים קלים פסולין קדשים קלים ששחטן לשם קדשי קדשים כשרין הבכור והמעשר ששחטן לשם שלמים כשרין שלמים ששחטן לשם בכור ולשם מעשר פסולין:",
+              "segment_id": "seg_a9c6fbaa87e4d9dcbb24",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p_examples_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_high_examples"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "דוגמאות יורשות ייחוס לשמעון לפי המשך המקור."
+          ]
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C14",
+      "reader_record_sha256": "86cd6bae05c4ef308d257f1628e1bcf255c2dc5c10cae356d8abbf1a5ad0043a",
+      "producer_id": "zev_open_c_sanctity",
+      "producer_record_sha256": "f5e23251599043737f5194841a88bc63b1dfc6f53ac1fa1f8a3afc847d5e4129",
+      "reader": {
+        "id": "C14",
+        "kind": "atomic_claim",
+        "proposition": "Non-discharge of the obligation does not remove the offering’s sanctity.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:7",
+            "start": 0,
+            "end": 73,
+            "quote": "הא קמ\"ל לבעלים הוא דלא עלו לשם חובה אבל בקדושתייהו קיימי ואסור לשנויי בהו"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "כבר נעשתה שחיטה שלא לשמה"
+          ],
+          "proposition": "אי עליית הזבח לחובה לבעלים אינה מבטלת את קדושתו; אסור להמשיך לשנות בו.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 73,
+            "quote": "הא קמ\"ל לבעלים הוא דלא עלו לשם חובה אבל בקדושתייהו קיימי ואסור לשנויי בהו",
+            "segment_id": "seg_8ef42b29ebed7e011b38",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_sanctity",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_sanctity",
+            "conditions": [
+              "כבר נעשתה שחיטה שלא לשמה"
+            ],
+            "holder_candidates": [
+              "סתם התלמוד"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 73,
+              "quote": "הא קמ\"ל לבעלים הוא דלא עלו לשם חובה אבל בקדושתייהו קיימי ואסור לשנויי בהו",
+              "segment_id": "seg_8ef42b29ebed7e011b38",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p8_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_sanctity"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p8",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C15",
+      "reader_record_sha256": "8b82cb9d2f243cca70280a56f0accffcb700667ff6569a5c875bf017c83515c7",
+      "producer_id": "zev_open_c_sanctity",
+      "producer_record_sha256": "f5e23251599043737f5194841a88bc63b1dfc6f53ac1fa1f8a3afc847d5e4129",
+      "reader": {
+        "id": "C15",
+        "kind": "atomic_claim",
+        "proposition": "Changing the remaining service’s designation is prohibited even after the initial incorrect designation.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:7",
+            "start": 0,
+            "end": 73,
+            "quote": "הא קמ\"ל לבעלים הוא דלא עלו לשם חובה אבל בקדושתייהו קיימי ואסור לשנויי בהו"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "כבר נעשתה שחיטה שלא לשמה"
+          ],
+          "proposition": "אי עליית הזבח לחובה לבעלים אינה מבטלת את קדושתו; אסור להמשיך לשנות בו.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 73,
+            "quote": "הא קמ\"ל לבעלים הוא דלא עלו לשם חובה אבל בקדושתייהו קיימי ואסור לשנויי בהו",
+            "segment_id": "seg_8ef42b29ebed7e011b38",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_sanctity",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_sanctity",
+            "conditions": [
+              "כבר נעשתה שחיטה שלא לשמה"
+            ],
+            "holder_candidates": [
+              "סתם התלמוד"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 73,
+              "quote": "הא קמ\"ל לבעלים הוא דלא עלו לשם חובה אבל בקדושתייהו קיימי ואסור לשנויי בהו",
+              "segment_id": "seg_8ef42b29ebed7e011b38",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p8_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_sanctity"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p8",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C16",
+      "reader_record_sha256": "0b1c1380b3ef86e55cc6ad5067f48693879616380f01cf71b72dd40bf13f7093",
+      "producer_id": "zev_open_c_rava",
+      "producer_record_sha256": "ddf37ce028d275a3bdab3a45550dc76e418127e47bd3ed32fc02a32de17ff6e8",
+      "reader": {
+        "id": "C16",
+        "kind": "atomic_claim",
+        "proposition": "After slaughtering a burnt offering under another designation one may not sprinkle its blood under another designation.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבא"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "עולה ששחטה שלא לשמה"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:8",
+            "start": 0,
+            "end": 59,
+            "quote": "וכדרבא דאמר רבא עולה ששחטה שלא לשמה אסור לזרוק דמה שלא לשמה"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "עולה שכבר נשחטה שלא לשמה"
+          ],
+          "proposition": "רבא אוסר זריקת דם עולה שלא לשמה אף אם נשחטה שלא לשמה.",
+          "scope": "דין זבחים שלא לשמם"
+        },
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "וכדרבא דאמר רבא עולה ששחטה שלא לשמה אסור לזרוק דמה שלא לשמה",
+            "segment_id": "seg_23fc4a28bb3b7eb95f42",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_rava",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_rava",
+            "conditions": [
+              "עולה שכבר נשחטה שלא לשמה"
+            ],
+            "holder_candidates": [
+              "רבא"
+            ],
+            "local_status": "עמדה מקומית מפורשת; אין כאן הכרעה הלכתית מאוחרת",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 59,
+              "quote": "וכדרבא דאמר רבא עולה ששחטה שלא לשמה אסור לזרוק דמה שלא לשמה",
+              "segment_id": "seg_23fc4a28bb3b7eb95f42",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p7_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_rava"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_open_p7",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C17",
+      "reader_record_sha256": "f90af5f92c202f3f512c1fbcee523907eaaff265f9b5a7937160a9d8a1b624d5",
+      "producer_id": "zev_open_c_reason",
+      "producer_record_sha256": "2a92ba79278488b52d36c5511ed16ed4c0aa686cfb3b7c83214d2c1143831b9f",
+      "reader": {
+        "id": "C17",
+        "kind": "atomic_claim",
+        "proposition": "A prior alteration is no reason to continue altering the offering.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "first alternative rationale for prohibition",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:9",
+            "start": 0,
+            "end": 85,
+            "quote": "איבעית אימא סברא איבעית אימא קרא איבעית אימא סברא משום דשני בה כל הני לישני בה וליזיל"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "נעשה שינוי קודם"
+          ],
+          "proposition": "שינוי קודם בזבח אינו מצדיק המשך שינוי בו.",
+          "scope": "סברת האיסור להמשיך עבודה שלא לשמה"
+        },
+        "evidence": [
+          {
+            "end_char": 85,
+            "quote": "איבעית אימא סברא איבעית אימא קרא איבעית אימא סברא משום דשני בה כל הני לישני בה וליזיל",
+            "segment_id": "seg_4e737d81e9dcf04dc271",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_open_c_reason",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_open_c_reason",
+            "conditions": [
+              "נעשה שינוי קודם"
+            ],
+            "holder_candidates": [
+              "סתם התלמוד"
+            ],
+            "local_status": "ייחוס מפורש או המשך מקומי; הסבר ודרשה אינם בחירה הלכתית חדשה",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 85,
+              "quote": "איבעית אימא סברא איבעית אימא קרא איבעית אימא סברא משום דשני בה כל הני לישני בה וליזיל",
+              "segment_id": "seg_4e737d81e9dcf04dc271",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_p_reason_v2",
+          "layer": "positions",
+          "links": [
+            "zev_open_c_reason"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C20",
+      "reader_record_sha256": "fa8d17a56fd5bbe998af8755eb86902270e54e192839b8e11f5f7070ba71b8c0",
+      "producer_id": "zev_avodot_carrying",
+      "producer_record_sha256": "d0ccedb93bd2cb56dc668427f91c65cbb9a2b785028e837a9d7d71e02814c786",
+      "reader": {
+        "id": "C20",
+        "kind": "atomic_claim",
+        "proposition": "The reception verse uses bringing language so conveying the blood remains within reception’s rule of proper designation.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [
+          "אמר מר: identification of limb conveyance",
+          "תניא: identification of blood reception"
+        ],
+        "conditions": [],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:16",
+            "start": 0,
+            "end": 170,
+            "quote": "אלא אמר קרא (ויקרא א, יג) והקריב את הכל המזבחה ואמר מר זו הולכת אברים לכבש ותניא (ויקרא א, ה) והקריבו זו קבלת הדם ואפיק רחמנא בלשון הולכה למימרא דהולכה לא תפקה מכלל קבלה'"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "הכתוב נוקט בקבלת הדם לשון הולכה, ללמד שהולכה אינה יוצאת מכלל קבלה לדרישת לשמה.",
+          "scope": "דרשות לשמה בעבודות הזבח בשינוי קודש"
+        },
+        "evidence": [
+          {
+            "end_char": 170,
+            "quote": "אלא אמר קרא (ויקרא א, יג) והקריב את הכל המזבחה ואמר מר זו הולכת אברים לכבש ותניא (ויקרא א, ה) והקריבו זו קבלת הדם ואפיק רחמנא בלשון הולכה למימרא דהולכה לא תפקה מכלל קבלה'",
+            "segment_id": "seg_460ac12ec2732c17fb1f",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_avodot_carrying",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_avodot_carrying",
+            "conditions": [
+              "עבודת הקרבן לעניין שינוי קודש"
+            ],
+            "holder_candidates": [
+              "סתם התלמוד"
+            ],
+            "local_status": "מסקנת דרשה מקומית; ההרחבה לשינוי בעלים נידונה בהמשך",
+            "question_id": "zev_avodot_q_carrying"
+          },
+          "evidence": [
+            {
+              "end_char": 170,
+              "quote": "אלא אמר קרא (ויקרא א, יג) והקריב את הכל המזבחה ואמר מר זו הולכת אברים לכבש ותניא (ויקרא א, ה) והקריבו זו קבלת הדם ואפיק רחמנא בלשון הולכה למימרא דהולכה לא תפקה מכלל קבלה'",
+              "segment_id": "seg_460ac12ec2732c17fb1f",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_avodot_p_carrying",
+          "layer": "positions",
+          "links": [
+            "zev_avodot_carrying"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C21",
+      "reader_record_sha256": "4d0bd5d2d3538c490aeddbf4f7c1f662a9239a3cd12cf795ad4636c5614912a0",
+      "producer_id": "zev_baalim_pinchas",
+      "producer_record_sha256": "07cf83629f2f2406c09f9f3422f91957238995996905ddf013a0478444ea2a04",
+      "reader": {
+        "id": "C21",
+        "kind": "atomic_claim",
+        "proposition": "The thanksgiving verse supplies the requirement of the proper owner in slaughter through אם אינו ענין.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רב פנחס בריה דרב אמי"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:18",
+            "start": 0,
+            "end": 148,
+            "quote": "אמר רב פנחס בריה דרב אמי אמר קרא (ויקרא ז, טו) ובשר זבח תודה שלמיו שתהא זביחה לשם תודה אם אינו ענין לשינוי קודש דנפקא לן מהתם תנהו ענין לשינוי בעלים"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "רב פנחס בריה דרב אמי דורש ובשר זבח תודה שלמיו לזביחה לשם תודה; הוא מעבירו לשינוי בעלים כי שינוי קודש כבר נלמד.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 148,
+            "quote": "אמר רב פנחס בריה דרב אמי אמר קרא (ויקרא ז, טו) ובשר זבח תודה שלמיו שתהא זביחה לשם תודה אם אינו ענין לשינוי קודש דנפקא לן מהתם תנהו ענין לשינוי בעלים",
+            "segment_id": "seg_8373dd42d12475921ede",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_pinchas",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_baalim_pinchas",
+            "conditions": [],
+            "holder_candidates": [
+              "רב פנחס בריה דרב אמי"
+            ],
+            "local_status": "מימרה או דרשה מקומית; השוואת העבודות נשארה כפופה לפירכות המתועדות",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "אמר רב פנחס בריה דרב אמי אמר קרא (ויקרא ז, טו) ובשר זבח תודה שלמיו שתהא זביחה לשם תודה אם אינו ענין לשינוי קודש דנפקא לן מהתם תנהו ענין לשינוי בעלים",
+              "segment_id": "seg_8373dd42d12475921ede",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_p_pinchas",
+          "layer": "positions",
+          "links": [
+            "zev_baalim_pinchas"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C22",
+      "reader_record_sha256": "8b3180e64c031ccf5623cced3a3e27bdd96c37f8ccb371bb4c8d91e5fe521c3c",
+      "producer_id": "zev_baalim_todah",
+      "producer_record_sha256": "bc964909c8c5b4bb9ac6cdd3970695c3199cf8f7994565534a247cc3ad37e362",
+      "reader": {
+        "id": "C22",
+        "kind": "atomic_claim",
+        "proposition": "A thanksgiving offering slaughtered as a peace offering is valid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי אליעזר"
+        ],
+        "transmission_chain": [
+          "אבא חנין",
+          "רבי אליעזר"
+        ],
+        "conditions": [
+          "תודה לשם שלמים"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:19",
+            "start": 0,
+            "end": 208,
+            "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "תודה ושלמים בשינוי שם"
+          ],
+          "proposition": "אבא חנין משום רבי אליעזר דורש שתודה שנשחטה לשם שלמים כשרה ושלמים לשם תודה פסולים, מפני שתודה קרויה שלמים ואין שלמים קרויים תודה.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 208,
+            "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה",
+            "segment_id": "seg_b24cad042f8192832fee",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_todah",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_baalim_todah",
+            "conditions": [
+              "תודה ושלמים בשינוי שם"
+            ],
+            "holder_candidates": [
+              "רבי אליעזר"
+            ],
+            "local_status": "מימרה או דרשה מקומית; השוואת העבודות נשארה כפופה לפירכות המתועדות",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 208,
+              "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה",
+              "segment_id": "seg_b24cad042f8192832fee",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_p_todah_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_baalim_todah"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_baalim_p_todah",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C23",
+      "reader_record_sha256": "255e5c3e4fefb0bf05ee477813d0ac29e315cd82f950e24a483c31cfe267699c",
+      "producer_id": "zev_baalim_todah",
+      "producer_record_sha256": "bc964909c8c5b4bb9ac6cdd3970695c3199cf8f7994565534a247cc3ad37e362",
+      "reader": {
+        "id": "C23",
+        "kind": "atomic_claim",
+        "proposition": "A peace offering slaughtered as thanksgiving is invalid.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי אליעזר"
+        ],
+        "transmission_chain": [
+          "אבא חנין",
+          "רבי אליעזר"
+        ],
+        "conditions": [
+          "שלמים לשם תודה"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:19",
+            "start": 0,
+            "end": 208,
+            "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "תודה ושלמים בשינוי שם"
+          ],
+          "proposition": "אבא חנין משום רבי אליעזר דורש שתודה שנשחטה לשם שלמים כשרה ושלמים לשם תודה פסולים, מפני שתודה קרויה שלמים ואין שלמים קרויים תודה.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 208,
+            "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה",
+            "segment_id": "seg_b24cad042f8192832fee",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_todah",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_baalim_todah",
+            "conditions": [
+              "תודה ושלמים בשינוי שם"
+            ],
+            "holder_candidates": [
+              "רבי אליעזר"
+            ],
+            "local_status": "מימרה או דרשה מקומית; השוואת העבודות נשארה כפופה לפירכות המתועדות",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 208,
+              "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה",
+              "segment_id": "seg_b24cad042f8192832fee",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_p_todah_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_baalim_todah"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_baalim_p_todah",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C24",
+      "reader_record_sha256": "c2a1b9a5b1f3baa144e2ef37a19a25f48eacd62d8040dffbd115ab36c7966a18",
+      "producer_id": "zev_baalim_todah",
+      "producer_record_sha256": "bc964909c8c5b4bb9ac6cdd3970695c3199cf8f7994565534a247cc3ad37e362",
+      "reader": {
+        "id": "C24",
+        "kind": "atomic_claim",
+        "proposition": "Thanksgiving is called peace offering, whereas a peace offering is not called thanksgiving.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי אליעזר"
+        ],
+        "transmission_chain": [
+          "אבא חנין",
+          "רבי אליעזר"
+        ],
+        "conditions": [],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:19",
+            "start": 0,
+            "end": 208,
+            "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "תודה ושלמים בשינוי שם"
+          ],
+          "proposition": "אבא חנין משום רבי אליעזר דורש שתודה שנשחטה לשם שלמים כשרה ושלמים לשם תודה פסולים, מפני שתודה קרויה שלמים ואין שלמים קרויים תודה.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 208,
+            "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה",
+            "segment_id": "seg_b24cad042f8192832fee",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_todah",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zev_baalim_todah",
+            "conditions": [
+              "תודה ושלמים בשינוי שם"
+            ],
+            "holder_candidates": [
+              "רבי אליעזר"
+            ],
+            "local_status": "מימרה או דרשה מקומית; השוואת העבודות נשארה כפופה לפירכות המתועדות",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 208,
+              "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה",
+              "segment_id": "seg_b24cad042f8192832fee",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_p_todah_conditions_v2",
+          "layer": "positions",
+          "links": [
+            "zev_baalim_todah"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "zev_baalim_p_todah",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C25",
+      "reader_record_sha256": "c8220b2b156f63d2b7c0fa06a8a10d73a9a20b94a29293ff5a145ff8b6c6f9da",
+      "producer_id": "zev_baalim_zvach",
+      "producer_record_sha256": "aafc270fa75fb6dcd4278ce7a49ccf310629548d54be20bdbb8a440696dd79f4",
+      "reader": {
+        "id": "C25",
+        "kind": "atomic_claim",
+        "proposition": "The owner-designation derivation is specifically from זבח.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "answer to competing use of verse",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:20",
+            "start": 0,
+            "end": 16,
+            "quote": "אנן מזבח קאמרינן"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "התשובה היא שהדרשה לשינוי בעלים נשענת על זבח.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 16,
+            "quote": "אנן מזבח קאמרינן",
+            "segment_id": "seg_94f834116a8991b638f4",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_zvach",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C26",
+      "reader_record_sha256": "334066787282ff8f5bdb2a5f3c47dd3be7c6fbdfe071e327db50ba23a8456c3c",
+      "producer_id": "zev_baalim_chatatasham",
+      "producer_record_sha256": "f25346aeba5d79370c7753ff694ed708e8db86da5dd3681cca9d978a0bdd351b",
+      "reader": {
+        "id": "C26",
+        "kind": "atomic_claim",
+        "proposition": "זבח is also needed to include sin and guilt offerings.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "competing-use objection",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:21",
+            "start": 0,
+            "end": 45,
+            "quote": "ואכתי מיבעי ליה חטאת ואשם מנין תלמוד לומר זבח"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "מועלית דרשה נוספת מן זבח לרבות חטאת ואשם.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "ואכתי מיבעי ליה חטאת ואשם מנין תלמוד לומר זבח",
+            "segment_id": "seg_0b7d335f35559447253c",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_chatatasham",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C27",
+      "reader_record_sha256": "2db6d5e6cd67f7c4b289f21120db1ddd0df38b74b9f7e4003455ff4525381eb1",
+      "producer_id": "zev_baalim_two",
+      "producer_record_sha256": "b2cc8eeb4d4ad129c6f157b068d00bc036e6b52fac3743da05fa4dc1e7cdafb8",
+      "reader": {
+        "id": "C27",
+        "kind": "atomic_claim",
+        "proposition": "The wording permits both derivations.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "answer preserving C21 despite C26",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:22",
+            "start": 0,
+            "end": 59,
+            "quote": "אם כן נכתוב קרא ובשר תודת שלמיו [זבח] מאי זבח שמע מינה תרתי"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "הניסוח החלופי ובשר תודת שלמיו זבח היה מספיק לצורך אחד; מיקום זבח מלמד שתי דרשות.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "אם כן נכתוב קרא ובשר תודת שלמיו [זבח] מאי זבח שמע מינה תרתי",
+            "segment_id": "seg_b5ee39db50b348f3051b",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_two",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C28",
+      "reader_record_sha256": "2559ab5e0f6a22c679646afed48c83bc4ca6827074380b1a071c02b037f275ed",
+      "producer_id": "zev_baalim_no_slaughter",
+      "producer_record_sha256": "b89e087578992bc46a9838fa02f9a5ede0d38f5fb546c6e0ca502d8fbaa96379",
+      "reader": {
+        "id": "C28",
+        "kind": "atomic_claim",
+        "proposition": "Direct inference from slaughter to other services is vulnerable because slaughter uniquely invalidates a Paschal offering for unintended eaters.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "objection to proposed direct inference",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:24",
+            "start": 0,
+            "end": 59,
+            "quote": "וכי תימא לילף מזביחה מה לזביחה שכן פוסל שלא לשם אוכלין בפסח"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "אין ללמוד שאר עבודות מזביחה בלבד, שכן זביחה פוסלת שלא לשם אוכלין בפסח.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "וכי תימא לילף מזביחה מה לזביחה שכן פוסל שלא לשם אוכלין בפסח",
+            "segment_id": "seg_45b905425b4076d25c5f",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_no_slaughter",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C29",
+      "reader_record_sha256": "df218fa338c60f0d3e7907f7bde537855f766c2e12b352018ea38c59ffd633e8",
+      "producer_id": "zev_baalim_analogy",
+      "producer_record_sha256": "c241dcab13cfd25b8ce4f0b3a98d9d7f12d25e36d8f1f7801b66ccd2a95756e3",
+      "reader": {
+        "id": "C29",
+        "kind": "atomic_claim",
+        "proposition": "The shared mention of slaughter in change of sanctity and change of owner could extend the latter to other services.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "proposed analogy; challenged in 4a:26–4b:3, replaced by subsequent derivations",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:25",
+            "start": 0,
+            "end": 170,
+            "quote": "נאמרה זביחה בשינוי קודש ונאמרה זביחה בשינוי בעלים מה זביחה האמורה בשינוי קודש לא חלקת בין זביחה לשאר עבודות אף זביחה האמורה בשינוי בעלים לא תחלק בהן בין זביחה לשאר עבודות"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "hypothetical",
+          "conditions": [],
+          "proposition": "מוצע להשוות זביחה בשינוי בעלים לזביחה בשינוי קודש: כשם שאין לחלק שם בין שחיטה לשאר עבודות כך כאן.",
+          "scope": "דרישת לשמה בשינוי בעלים בשחיטה וזריקה"
+        },
+        "evidence": [
+          {
+            "end_char": 170,
+            "quote": "נאמרה זביחה בשינוי קודש ונאמרה זביחה בשינוי בעלים מה זביחה האמורה בשינוי קודש לא חלקת בין זביחה לשאר עבודות אף זביחה האמורה בשינוי בעלים לא תחלק בהן בין זביחה לשאר עבודות",
+            "segment_id": "seg_630979b3b82cf3809b1c",
+            "start_char": 0
+          }
+        ],
+        "id": "zev_baalim_analogy",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C46",
+      "reader_record_sha256": "4c83a833180957819e0c5feb7d5cbf647317998a0259c42de7f69905db237bd4",
+      "producer_id": "zv.20261126.b3.c8a",
+      "producer_record_sha256": "5dc6c63938e25263e5c8318d4ff2415cb1b0d1813eac3dc7bb6556372f9f098d",
+      "reader": {
+        "id": "C46",
+        "kind": "atomic_claim",
+        "proposition": "Blood, rather than laying hands, effects atonement.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "cited anonymous teaching"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:15",
+            "start": 0,
+            "end": 206,
+            "quote": "תא שמע (ויקרא א, ד) וסמך ונרצה וכי סמיכה מכפרת והלא אין כפרה אלא בדם שנאמר (ויקרא יז, יא) כי הדם הוא בנפש יכפר אלא מה תלמוד לומר וסמך ונרצה לכפר שאם עשאה לסמיכה שירי מצוה מעלה עליו הכתוב כאילו לא כיפר וכיפר"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Sacrificial atonement"
+          ],
+          "proposition": "Blood effects atonement, not laying on hands.",
+          "scope": "Quoted rule in local proof discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 206,
+            "quote": "תא שמע (ויקרא א, ד) וסמך ונרצה וכי סמיכה מכפרת והלא אין כפרה אלא בדם שנאמר (ויקרא יז, יא) כי הדם הוא בנפש יכפר אלא מה תלמוד לומר וסמך ונרצה לכפר שאם עשאה לסמיכה שירי מצוה מעלה עליו הכתוב כאילו לא כיפר וכיפר",
+            "segment_id": "seg_32a601570397a5f25cf7",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c8a",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c8a",
+            "conditions": [
+              "Sacrificial atonement"
+            ],
+            "holder_candidates": [
+              "quoted baraita"
+            ],
+            "local_status": "Quoted position, not independently adjudicated",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 206,
+              "quote": "תא שמע (ויקרא א, ד) וסמך ונרצה וכי סמיכה מכפרת והלא אין כפרה אלא בדם שנאמר (ויקרא יז, יא) כי הדם הוא בנפש יכפר אלא מה תלמוד לומר וסמך ונרצה לכפר שאם עשאה לסמיכה שירי מצוה מעלה עליו הכתוב כאילו לא כיפר וכיפר",
+              "segment_id": "seg_32a601570397a5f25cf7",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p8a",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c8a"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C47",
+      "reader_record_sha256": "efc5e8c615b3df2f246f99cd4255134ada8f2ba310791e9981d063f9b04b8d02",
+      "producer_id": "zv.20261126.b3.c8",
+      "producer_record_sha256": "0f72609489800b1bf6b0432daa34a7744d705de045797ed4a29b1e2acddb3c3e",
+      "reader": {
+        "id": "C47",
+        "kind": "atomic_claim",
+        "proposition": "Neglecting laying hands is treated as though one did not atone, yet one did atone.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "cited anonymous teaching"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "סמיכה treated as שירי מצוה"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:15",
+            "start": 0,
+            "end": 206,
+            "quote": "תא שמע (ויקרא א, ד) וסמך ונרצה וכי סמיכה מכפרת והלא אין כפרה אלא בדם שנאמר (ויקרא יז, יא) כי הדם הוא בנפש יכפר אלא מה תלמוד לומר וסמך ונרצה לכפר שאם עשאה לסמיכה שירי מצוה מעלה עליו הכתוב כאילו לא כיפר וכיפר"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Offering made without the required laying on hands"
+          ],
+          "proposition": "The laying-on-of-hands verse is interpreted: blood, not laying on hands, effects atonement; treating laying on hands as a nonessential remainder of the commandment is reckoned as not atoning, yet atoning.",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 206,
+            "quote": "תא שמע (ויקרא א, ד) וסמך ונרצה וכי סמיכה מכפרת והלא אין כפרה אלא בדם שנאמר (ויקרא יז, יא) כי הדם הוא בנפש יכפר אלא מה תלמוד לומר וסמך ונרצה לכפר שאם עשאה לסמיכה שירי מצוה מעלה עליו הכתוב כאילו לא כיפר וכיפר",
+            "segment_id": "seg_32a601570397a5f25cf7",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c8",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u8"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c8",
+            "conditions": [
+              "Offering made without the required laying on hands"
+            ],
+            "holder_candidates": [],
+            "local_status": "Local statement; objections and qualifications retained",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 206,
+              "quote": "תא שמע (ויקרא א, ד) וסמך ונרצה וכי סמיכה מכפרת והלא אין כפרה אלא בדם שנאמר (ויקרא יז, יא) כי הדם הוא בנפש יכפר אלא מה תלמוד לומר וסמך ונרצה לכפר שאם עשאה לסמיכה שירי מצוה מעלה עליו הכתוב כאילו לא כיפר וכיפר",
+              "segment_id": "seg_32a601570397a5f25cf7",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p8",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c8"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C48",
+      "reader_record_sha256": "7937931d2820096268f073461655bd2419396b4da36c9adac0ad30c57b3e5240",
+      "producer_id": "zv.20261126.b3.c9",
+      "producer_record_sha256": "77fbf4f34fd59c9281a7ed4c28f7d5a8a4f22843eb3096d3d75b200d5c331844",
+      "reader": {
+        "id": "C48",
+        "kind": "atomic_claim",
+        "proposition": "The teaching might mean atonement for pre-designation commands but not for omitted laying hands after designation.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "proposed proof; applicability rejected by Rava",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:16",
+            "start": 0,
+            "end": 74,
+            "quote": "מאי לאו דכיפר עשה דקודם הפרשה לא כיפר אעשה דסמיכה דהוה ליה עשה דלאחר הפרשה"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "hypothetical",
+          "conditions": [
+            "Omission of laying on hands; proposed interpretation"
+          ],
+          "proposition": "Does this not mean it atoned for prior positive-commandment violations but not the omitted laying on hands, a violation after designation?",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 74,
+            "quote": "מאי לאו דכיפר עשה דקודם הפרשה לא כיפר אעשה דסמיכה דהוה ליה עשה דלאחר הפרשה",
+            "segment_id": "seg_9770f36dda2994c711be",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c9",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u9"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c9",
+            "conditions": [
+              "Omission of laying on hands; proposed interpretation"
+            ],
+            "holder_candidates": [],
+            "local_status": "Proposed alternative, not settled",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 74,
+              "quote": "מאי לאו דכיפר עשה דקודם הפרשה לא כיפר אעשה דסמיכה דהוה ליה עשה דלאחר הפרשה",
+              "segment_id": "seg_9770f36dda2994c711be",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p9",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c9"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C49",
+      "reader_record_sha256": "d385297ca26435057c40027e5ca9cd652feb7c295490c493a64c5e3992b26775",
+      "producer_id": "zv.20261126.b3.c10",
+      "producer_record_sha256": "265bb249320d59f1634cf107c5823cc29c6fdd327369b5e333700ab1d334b893",
+      "reader": {
+        "id": "C49",
+        "kind": "atomic_claim",
+        "proposition": "The obligation to lay hands remains performable until slaughter; its violation occurs only afterward.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבא"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "answer excluding proof from present inquiry",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:17",
+            "start": 0,
+            "end": 120,
+            "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Omission becomes final after slaughter"
+          ],
+          "proposition": "Laying on hands remains possible until slaughter; its violation becomes fixed only after slaughter, and the inquiry did not ask about violations after slaughter.",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 120,
+            "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן",
+            "segment_id": "seg_b73b75f69feb474cfafd",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c10",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u10"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c10",
+            "conditions": [
+              "Omission becomes final after slaughter"
+            ],
+            "holder_candidates": [
+              "רבא"
+            ],
+            "local_status": "Local statement; objections and qualifications retained",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 120,
+              "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן",
+              "segment_id": "seg_b73b75f69feb474cfafd",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p10",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c10"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C50",
+      "reader_record_sha256": "5966cb5618dbacfcbe5be6bc397a1585d9f5d2668a4f6baebaceb5253ff341bd",
+      "producer_id": "zv.20261126.b3.c10",
+      "producer_record_sha256": "265bb249320d59f1634cf107c5823cc29c6fdd327369b5e333700ab1d334b893",
+      "reader": {
+        "id": "C50",
+        "kind": "atomic_claim",
+        "proposition": "Post-slaughter transgression is outside the question being asked.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבא"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:17",
+            "start": 0,
+            "end": 120,
+            "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Omission becomes final after slaughter"
+          ],
+          "proposition": "Laying on hands remains possible until slaughter; its violation becomes fixed only after slaughter, and the inquiry did not ask about violations after slaughter.",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 120,
+            "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן",
+            "segment_id": "seg_b73b75f69feb474cfafd",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c10",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u10"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c10",
+            "conditions": [
+              "Omission becomes final after slaughter"
+            ],
+            "holder_candidates": [
+              "רבא"
+            ],
+            "local_status": "Local statement; objections and qualifications retained",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 120,
+              "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן",
+              "segment_id": "seg_b73b75f69feb474cfafd",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p10",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c10"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C51",
+      "reader_record_sha256": "d0828caa34cf567f1f0389ce1180830bd5195731dd83a8310e68575a14ce75c0",
+      "producer_id": "zv.20261126.b3.c11",
+      "producer_record_sha256": "8e22230dc477a4af48b133a0e44441223b25ae3185a78ff686298edf53f3df7b",
+      "reader": {
+        "id": "C51",
+        "kind": "atomic_claim",
+        "proposition": "The teaching may mean the person has atonement but lacks atonement before Heaven.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רב הונא בר יהודה"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "alternative interpretation posed to Rava; continued at 6b:1",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:18",
+            "start": 0,
+            "end": 40,
+            "quote": "א\"ל רב הונא בר יהודה לרבא אימא כיפר גברא"
+          },
+          {
+            "source_ref": "Zevachim 6b:1",
+            "start": 0,
+            "end": 16,
+            "quote": "לא כיפר קמי שמיא"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Baraita saying atoned and not atoned"
+          ],
+          "proposition": "Rav Huna bar Yehuda suggests to Rava: the person is atoned for, yet not fully atoned before Heaven.",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 40,
+            "quote": "א\"ל רב הונא בר יהודה לרבא אימא כיפר גברא",
+            "segment_id": "seg_02d0f50d28e2679d0681",
+            "start_char": 0
+          },
+          {
+            "end_char": 16,
+            "quote": "לא כיפר קמי שמיא",
+            "segment_id": "seg_0e6a09289c4b5dc72bb7",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c11",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u11"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c11",
+            "conditions": [
+              "Baraita saying atoned and not atoned"
+            ],
+            "holder_candidates": [
+              "רב הונא בר יהודה"
+            ],
+            "local_status": "Local statement; objections and qualifications retained",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 40,
+              "quote": "א\"ל רב הונא בר יהודה לרבא אימא כיפר גברא",
+              "segment_id": "seg_02d0f50d28e2679d0681",
+              "start_char": 0
+            },
+            {
+              "end_char": 16,
+              "quote": "לא כיפר קמי שמיא",
+              "segment_id": "seg_0e6a09289c4b5dc72bb7",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p11",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c11"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C52",
+      "reader_record_sha256": "b1d8de92e76f2cbc16158023f9bbc9d8a6720f87ac5a90705476149cda8319ca",
+      "producer_id": "zv.20261126.b3.c12a",
+      "producer_record_sha256": "428b72d4f1938fab6a75d084f8903e7fc27878591baa1c26f1fa6150e1d15ded",
+      "reader": {
+        "id": "C52",
+        "kind": "atomic_claim",
+        "proposition": "Applying the remaining oil brings atonement; omitting it does not.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי עקיבא"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "Remaining oil on leper’s head"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:2",
+            "start": 0,
+            "end": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Remaining oil application to head"
+          ],
+          "proposition": "If the remaining oil is applied, atonement occurs; if omitted, it does not.",
+          "scope": "Quoted rule in local proof discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר",
+            "segment_id": "seg_c058a0da4a62e9e2fe4c",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c12a",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c12a",
+            "conditions": [
+              "Remaining oil application to head"
+            ],
+            "holder_candidates": [
+              "רבי עקיבא"
+            ],
+            "local_status": "Quoted position, not independently adjudicated",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 199,
+              "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר",
+              "segment_id": "seg_c058a0da4a62e9e2fe4c",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p12a",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c12a"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C53",
+      "reader_record_sha256": "4bf782b3f8f0de1f43a1e0b4bfe9bf4614bd32163b7268b57d0dcea1e023dbb2",
+      "producer_id": "zv.20261126.b3.c12b",
+      "producer_record_sha256": "7a42207569f9d5ea5d8e6a27856af7d7910dfa7b688814387daf3d5fa6638bf2",
+      "reader": {
+        "id": "C53",
+        "kind": "atomic_claim",
+        "proposition": "The remaining oil is a remainder of the command: atonement occurs whether applied or omitted.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי יוחנן [בן נורי]"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "Remaining oil on leper’s head"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:2",
+            "start": 0,
+            "end": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Remaining oil application to head; omission is a remainder-of-commandment issue"
+          ],
+          "proposition": "Atonement occurs whether the remaining oil is applied or not, but omission is reckoned as nonatonement.",
+          "scope": "Quoted rule in local proof discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר",
+            "segment_id": "seg_c058a0da4a62e9e2fe4c",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c12b",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c12b",
+            "conditions": [
+              "Remaining oil application to head; omission is a remainder-of-commandment issue"
+            ],
+            "holder_candidates": [
+              "רבי יוחנן [בן נורי]"
+            ],
+            "local_status": "Quoted position, not independently adjudicated",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 199,
+              "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר",
+              "segment_id": "seg_c058a0da4a62e9e2fe4c",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p12b",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c12b"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C54",
+      "reader_record_sha256": "dba4bb68702ae7f8fb3cca908f8d13e089d3be0f18d69ae000a890d373cb9c82",
+      "producer_id": "zv.20261126.b3.c12b",
+      "producer_record_sha256": "7a42207569f9d5ea5d8e6a27856af7d7910dfa7b688814387daf3d5fa6638bf2",
+      "reader": {
+        "id": "C54",
+        "kind": "atomic_claim",
+        "proposition": "Despite that atonement, omission is reckoned as though there were no atonement.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "רבי יוחנן [בן נורי]"
+        ],
+        "transmission_chain": [],
+        "conditions": [
+          "Omitted remaining oil"
+        ],
+        "local_status": "asserted locally",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:2",
+            "start": 0,
+            "end": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Remaining oil application to head; omission is a remainder-of-commandment issue"
+          ],
+          "proposition": "Atonement occurs whether the remaining oil is applied or not, but omission is reckoned as nonatonement.",
+          "scope": "Quoted rule in local proof discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר",
+            "segment_id": "seg_c058a0da4a62e9e2fe4c",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c12b",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c12b",
+            "conditions": [
+              "Remaining oil application to head; omission is a remainder-of-commandment issue"
+            ],
+            "holder_candidates": [
+              "רבי יוחנן [בן נורי]"
+            ],
+            "local_status": "Quoted position, not independently adjudicated",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 199,
+              "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר",
+              "segment_id": "seg_c058a0da4a62e9e2fe4c",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p12b",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c12b"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C55",
+      "reader_record_sha256": "4c5a39d5a045f6a63e922e93f0bca497384436c8f6a64f50da04353193613af0",
+      "producer_id": "zv.20261126.b3.c13",
+      "producer_record_sha256": "0929da7ff4b870665da925140c0e6247962a3e54f8e628d63385e817ab0737df",
+      "reader": {
+        "id": "C55",
+        "kind": "atomic_claim",
+        "proposition": "The apparent lack of atonement cannot require another offering after the teaching expressly says atonement occurred.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "argument for person/before-Heaven distinction",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:3",
+            "start": 0,
+            "end": 130,
+            "quote": "מאי כאילו לא כיפר אילימא דמבעי לאיתויי קרבן אחרינא האמרת בין ניתן בין לא ניתן כיפר אלא כיפר גברא לא כיפר קמי שמיא הכא נמי כיפר כו'"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Rabbi Yohanan ben Nuri's formulation; no additional offering required"
+          ],
+          "proposition": "The phrase as if not atoned cannot demand another offering, since the Mishnah says atonement occurs either way; it means atoned for the person but not before Heaven, and the same can explain the earlier baraita.",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "מאי כאילו לא כיפר אילימא דמבעי לאיתויי קרבן אחרינא האמרת בין ניתן בין לא ניתן כיפר אלא כיפר גברא לא כיפר קמי שמיא הכא נמי כיפר כו'",
+            "segment_id": "seg_ccf4fbbe2b753979f959",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c13",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u13"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c13",
+            "conditions": [
+              "Rabbi Yohanan ben Nuri's formulation; no additional offering required"
+            ],
+            "holder_candidates": [],
+            "local_status": "Local statement; objections and qualifications retained",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "מאי כאילו לא כיפר אילימא דמבעי לאיתויי קרבן אחרינא האמרת בין ניתן בין לא ניתן כיפר אלא כיפר גברא לא כיפר קמי שמיא הכא נמי כיפר כו'",
+              "segment_id": "seg_ccf4fbbe2b753979f959",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p13",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c13"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C56",
+      "reader_record_sha256": "fbd719857757b38e3dc075cfe09c2da12c7cd7db9efb38e977dd20e91ad42875",
+      "producer_id": "zv.20261126.b3.c14",
+      "producer_record_sha256": "4fa0af26a497bd60a56ad85cab2c2721335a766a44068544752a7404f903cfaa",
+      "reader": {
+        "id": "C56",
+        "kind": "atomic_claim",
+        "proposition": "The oil teaching can instead distinguish atonement of thumb/toe applications from absent head applications.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "counter-interpretation; preceding interpretation not conclusively established",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:4",
+            "start": 0,
+            "end": 42,
+            "quote": "התם נמי כיפר מתן בהונות לא כיפר מתנות הראש"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Alternative explanation of oil-application Mishnah"
+          ],
+          "proposition": "There too it can mean atonement for thumb applications but not head applications, rather than the proposed person/Heaven distinction.",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 42,
+            "quote": "התם נמי כיפר מתן בהונות לא כיפר מתנות הראש",
+            "segment_id": "seg_7fc85a5d68554acccf3c",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c14",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u14"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c14",
+            "conditions": [
+              "Alternative explanation of oil-application Mishnah"
+            ],
+            "holder_candidates": [],
+            "local_status": "Local statement; objections and qualifications retained",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 42,
+              "quote": "התם נמי כיפר מתן בהונות לא כיפר מתנות הראש",
+              "segment_id": "seg_7fc85a5d68554acccf3c",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p14",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c14"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    },
+    {
+      "reader_id": "C57",
+      "reader_record_sha256": "4ff4301c754094e9c2cc669d5d3a96922d0aa861a24838207d0601bb70a358f4",
+      "producer_id": "zv.20261126.b3.c16",
+      "producer_record_sha256": "ecc43888612fc5b1e5d65d86c09ef29f36b76e5af6fd049ddc17dd0e5327cf84",
+      "reader": {
+        "id": "C57",
+        "kind": "atomic_claim",
+        "proposition": "The question must concern Shavuot goats, not lambs, since its lambs are peace offerings.",
+        "origin": "source_paraphrase",
+        "holders": [
+          "anonymous discussion"
+        ],
+        "transmission_chain": [],
+        "conditions": [],
+        "local_status": "explicit correction to quoted question at 6b:5",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:6",
+            "start": 0,
+            "end": 48,
+            "quote": "כבשי עצרת שלמים נינהו אלא שעירי עצרת למה הן באין"
+          }
+        ],
+        "cohort": "core"
+      },
+      "producer": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Correction from lambs to goats"
+          ],
+          "proposition": "The Shavuot lambs are peace offerings; the question is corrected to ask about the Shavuot goats.",
+          "scope": "Local atonement inquiry; alternatives and later qualification preserved"
+        },
+        "evidence": [
+          {
+            "end_char": 48,
+            "quote": "כבשי עצרת שלמים נינהו אלא שעירי עצרת למה הן באין",
+            "segment_id": "seg_b653fef8314a2463bfa2",
+            "start_char": 0
+          }
+        ],
+        "id": "zv.20261126.b3.c16",
+        "layer": "claims",
+        "links": [
+          "zv.20261126.b3.u16"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "positions": [
+        {
+          "content": {
+            "claim_id": "zv.20261126.b3.c16",
+            "conditions": [
+              "Correction from lambs to goats"
+            ],
+            "holder_candidates": [],
+            "local_status": "Local statement; objections and qualifications retained",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 48,
+              "quote": "כבשי עצרת שלמים נינהו אלא שעירי עצרת למה הן באין",
+              "segment_id": "seg_b653fef8314a2463bfa2",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.p16",
+          "layer": "positions",
+          "links": [
+            "zv.20261126.b3.c16"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "result": "source_content_present; atomicity and local-status caveats apply"
+    }
+  ],
+  "question_comparisons": [
+    {
+      "reader": {
+        "id": "Q01",
+        "formulation": "Why does the Mishnah say אלא שלא עלו rather than ולא עלו?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:6",
+            "start": 0,
+            "end": 87,
+            "quote": "<big><strong>גמ׳</strong></big> למה לי למיתנא אלא שלא עלו ליתני ולא עלו לבעלים לשם חובה"
+          }
+        ]
+      },
+      "cohort": "core",
+      "producer": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "למה נשנה אלא שלא עלו ולא ולא עלו לבעלים לשם חובה?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 87,
+              "quote": "<big><strong>גמ׳</strong></big> למה לי למיתנא אלא שלא עלו ליתני ולא עלו לבעלים לשם חובה",
+              "segment_id": "seg_084990eefeca5d43cbfe",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_q_word",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Same local question; Q06 preserves producer separate original/corrected formulations; partial answer status is not settled law."
+    },
+    {
+      "reader": {
+        "id": "Q02",
+        "formulation": "What is the source that conveying requires proper designation?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:14",
+            "start": 0,
+            "end": 22,
+            "quote": "אשכחן כולהו הולכה מנלן"
+          }
+        ]
+      },
+      "cohort": "context",
+      "producer": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "מניין להולכה לאחר כל אלה?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 22,
+              "quote": "אשכחן כולהו הולכה מנלן",
+              "segment_id": "seg_d64080ba40fc63f68d26",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_avodot_q_carrying",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Same local question; Q06 preserves producer separate original/corrected formulations; partial answer status is not settled law."
+    },
+    {
+      "reader": {
+        "id": "Q03",
+        "formulation": "What is the source for proper owner designation?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:17",
+            "start": 0,
+            "end": 32,
+            "quote": "ואשכחן שנוי קודש שנוי בעלים מנלן"
+          }
+        ]
+      },
+      "cohort": "core",
+      "producer": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "מניין שינוי בעלים לאחר שנמצא שינוי קודש?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 32,
+              "quote": "ואשכחן שנוי קודש שנוי בעלים מנלן",
+              "segment_id": "seg_ac35d55c541e19345ffc",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_q_source",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Same local question; Q06 preserves producer separate original/corrected formulations; partial answer status is not settled law."
+    },
+    {
+      "reader": {
+        "id": "Q04",
+        "formulation": "How does the owner-designation requirement extend beyond slaughter?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:23",
+            "start": 0,
+            "end": 27,
+            "quote": "אשכחן זביחה שאר עבודות מנלן"
+          }
+        ]
+      },
+      "cohort": "core",
+      "producer": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "מניין שאר העבודות לאחר זביחה?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 27,
+              "quote": "אשכחן זביחה שאר עבודות מנלן",
+              "segment_id": "seg_4458f03bc7903c348f46",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_q_works",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Same local question; Q06 preserves producer separate original/corrected formulations; partial answer status is not settled law."
+    },
+    {
+      "reader": {
+        "id": "Q05",
+        "formulation": "Does the burnt offering atone for positive-command transgressions after designation?",
+        "question_origin": "explicit",
+        "conditions": [
+          "After designation but before slaughter; post-slaughter excluded by Rava"
+        ],
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:12",
+            "start": 0,
+            "end": 45,
+            "quote": "איבעיא להו אעשה דלאחר הפרשה מכפרא או לא מכפרא"
+          }
+        ]
+      },
+      "cohort": "context",
+      "producer": [
+        {
+          "content": {
+            "answer_set_status": "unreviewed_alternatives",
+            "conditions": [
+              "Positive-commandment violation after designation of the offering"
+            ],
+            "formulation": "Does it atone for violations after designation?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 45,
+              "quote": "איבעיא להו אעשה דלאחר הפרשה מכפרא או לא מכפרא",
+              "segment_id": "seg_4183adaf93eb98561e35",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.q5",
+          "layer": "questions",
+          "links": [
+            "zv.20261126.b3.u5"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Same local question; Q06 preserves producer separate original/corrected formulations; partial answer status is not settled law."
+    },
+    {
+      "reader": {
+        "id": "Q06",
+        "formulation": "What do the Shavuot goats come for? The initial lamb reading is explicitly corrected.",
+        "question_origin": "explicit",
+        "conditions": [],
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:5",
+            "start": 0,
+            "end": 39,
+            "quote": "ת\"ש ר' שמעון אומר כבשי עצרת למה הן באין"
+          },
+          {
+            "source_ref": "Zevachim 6b:6",
+            "start": 0,
+            "end": 48,
+            "quote": "כבשי עצרת שלמים נינהו אלא שעירי עצרת למה הן באין"
+          }
+        ]
+      },
+      "cohort": "core",
+      "producer": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Initial wording later corrected to goats"
+            ],
+            "formulation": "For what do the Shavuot lambs come?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 39,
+              "quote": "ת\"ש ר' שמעון אומר כבשי עצרת למה הן באין",
+              "segment_id": "seg_21ecce5d6d99249fdc3a",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.q15",
+          "layer": "questions",
+          "links": [
+            "zv.20261126.b3.u15"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Correction from lambs to goats"
+            ],
+            "formulation": "For what do the Shavuot goats come?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 48,
+              "quote": "כבשי עצרת שלמים נינהו אלא שעירי עצרת למה הן באין",
+              "segment_id": "seg_b653fef8314a2463bfa2",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.q16",
+          "layer": "questions",
+          "links": [
+            "zv.20261126.b3.u16"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Same local question; Q06 preserves producer separate original/corrected formulations; partial answer status is not settled law."
+    },
+    {
+      "reader": {
+        "id": "Q07",
+        "formulation": "With blood received in two cups, what does the second goat address after application of the first?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "evidence": [
+          {
+            "source_ref": "Zevachim 7a:2",
+            "start": 0,
+            "end": 171,
+            "quote": "ועוד הא בעא מיניה ר' ירמיה מר' זירא שעירי עצרת שקבל דמן בשני כוסות ונזרק דמו של ראשון שני למה הוא בא על טומאה שאורעה בין [זריקה של] זה לזה (נזרק דמו של שני למה הוא קריבין)"
+          }
+        ]
+      },
+      "cohort": "context",
+      "producer": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Both goats slaughtered; blood received in two cups"
+            ],
+            "formulation": "What does the second goat atone for after the first sprinkling?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 171,
+              "quote": "ועוד הא בעא מיניה ר' ירמיה מר' זירא שעירי עצרת שקבל דמן בשני כוסות ונזרק דמו של ראשון שני למה הוא בא על טומאה שאורעה בין [זריקה של] זה לזה (נזרק דמו של שני למה הוא קריבין)",
+              "segment_id": "seg_5520f1164040e56e3619",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.q24",
+          "layer": "questions",
+          "links": [
+            "zv.20261126.b3.u24"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "Parenthetical tail in 7a:2 is retained in evidence; inference follows the explicit main question and 7a:3–4."
+          ]
+        }
+      ],
+      "assessment": "Same local question; Q06 preserves producer separate original/corrected formulations; partial answer status is not settled law."
+    }
+  ],
+  "answer_sets": [
+    {
+      "question_id": "Q01",
+      "claim_ids": [
+        "C14",
+        "C15"
+      ],
+      "comparability": "same wording question; complementary explanatory claims"
+    },
+    {
+      "question_id": "Q02",
+      "claim_ids": [
+        "C20"
+      ],
+      "comparability": "direct derivation"
+    },
+    {
+      "question_id": "Q03",
+      "claim_ids": [
+        "C21",
+        "C25",
+        "C27"
+      ],
+      "comparability": "derivation and defenses; not opposed rulings"
+    },
+    {
+      "question_id": "Q04",
+      "claim_ids": [
+        "C29",
+        "C34",
+        "C35",
+        "C36",
+        "C37",
+        "C38",
+        "C39"
+      ],
+      "comparability": "C29 challenged; replacement derivations and alternative interpretive routes do not create a ruling dispute"
+    },
+    {
+      "question_id": "Q05",
+      "claim_ids": [
+        "C44",
+        "C45",
+        "C48",
+        "C49",
+        "C50",
+        "C51",
+        "C55",
+        "C56",
+        "C61",
+        "C62",
+        "C63",
+        "C67",
+        "C68"
+      ],
+      "comparability": "yes/no hypotheses and attempted proofs; rebuttals about applicability are not maintained no answers",
+      "local_outcome": "unresolved"
+    },
+    {
+      "question_id": "Q06",
+      "claim_ids": [
+        "C57",
+        "C58",
+        "C59"
+      ],
+      "comparability": "corrected subject; same textual question only after correction"
+    },
+    {
+      "question_id": "Q07",
+      "claim_ids": [
+        "C67",
+        "C68"
+      ],
+      "comparability": "conditional question blocks conclusive answer to Q05"
+    }
+  ],
+  "edge_comparisons": [
+    {
+      "reader": {
+        "source_id": "C05",
+        "target_id": "C01",
+        "relation": "qualification",
+        "explicitness": "source_explicit",
+        "explanation": "Rabbi Eliezer adds guilt offering to exceptions.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:2",
+            "start": 0,
+            "end": 148,
+            "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "objection",
+            "source_id": "zev_open_c_asham",
+            "target_id": "zev_open_c_valid"
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו",
+              "segment_id": "seg_b20fd0baaa445a900d34",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_e_asham_disagreement_v2",
+          "layer": "edges",
+          "links": [
+            "zev_open_c_asham",
+            "zev_open_c_valid"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C06",
+        "target_id": "C05",
+        "relation": "support",
+        "explicitness": "source_explicit",
+        "explanation": "Both offerings come for sin.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:2",
+            "start": 0,
+            "end": 148,
+            "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "analogy",
+            "source_id": "zev_open_c_sin",
+            "target_id": "zev_open_c_asham"
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "רבי אליעזר אומר אף האשם הפסח בזמנו והחטאת והאשם בכל זמן אמר רבי אליעזר החטאת באה על חטא והאשם בא על חטא מה חטאת פסולה שלא לשמה אף האשם פסול שלא לשמו",
+              "segment_id": "seg_b20fd0baaa445a900d34",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_e_analogy",
+          "layer": "edges",
+          "links": [
+            "zev_open_c_sin",
+            "zev_open_c_asham"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C16",
+        "target_id": "C15",
+        "relation": "support",
+        "explicitness": "source_explicit",
+        "explanation": "Rava cited as matching prohibition.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:8",
+            "start": 0,
+            "end": 59,
+            "quote": "וכדרבא דאמר רבא עולה ששחטה שלא לשמה אסור לזרוק דמה שלא לשמה"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "support",
+            "source_id": "zev_open_c_rava",
+            "target_id": "zev_open_c_sanctity"
+          },
+          "evidence": [
+            {
+              "end_char": 59,
+              "quote": "וכדרבא דאמר רבא עולה ששחטה שלא לשמה אסור לזרוק דמה שלא לשמה",
+              "segment_id": "seg_23fc4a28bb3b7eb95f42",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_e_rava",
+          "layer": "edges",
+          "links": [
+            "zev_open_c_rava",
+            "zev_open_c_sanctity"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C17",
+        "target_id": "C16",
+        "relation": "support",
+        "explicitness": "source_explicit",
+        "explanation": "Rational alternative.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:9",
+            "start": 0,
+            "end": 85,
+            "quote": "איבעית אימא סברא איבעית אימא קרא איבעית אימא סברא משום דשני בה כל הני לישני בה וליזיל"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "support",
+            "source_id": "zev_open_c_reason",
+            "target_id": "zev_open_c_rava"
+          },
+          "evidence": [
+            {
+              "end_char": 85,
+              "quote": "איבעית אימא סברא איבעית אימא קרא איבעית אימא סברא משום דשני בה כל הני לישני בה וליזיל",
+              "segment_id": "seg_4e737d81e9dcf04dc271",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_e_reason",
+          "layer": "edges",
+          "links": [
+            "zev_open_c_reason",
+            "zev_open_c_rava"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C18",
+        "target_id": "C16",
+        "relation": "support",
+        "explicitness": "source_explicit",
+        "explanation": "Scriptural alternative completed across page.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 2a:10",
+            "start": 0,
+            "end": 92,
+            "quote": "איבעית אימא קרא (דברים כג, כד) מוצא שפתיך תשמור ועשית כאשר נדרת לה' אלהיך נדבה וגו' האי נדבה"
+          },
+          {
+            "source_ref": "Zevachim 2b:1",
+            "start": 0,
+            "end": 53,
+            "quote": "נדר הוא אלא אם כמה שנדרת עשית יהא נדר ואם לא נדבה יהא"
+          },
+          {
+            "source_ref": "Zevachim 2b:2",
+            "start": 0,
+            "end": 22,
+            "quote": "ונדבה מי שרי לשנויי בה"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "support",
+            "source_id": "zev_open_c_nedava",
+            "target_id": "zev_open_c_rava"
+          },
+          "evidence": [
+            {
+              "end_char": 92,
+              "quote": "איבעית אימא קרא (דברים כג, כד) מוצא שפתיך תשמור ועשית כאשר נדרת לה' אלהיך נדבה וגו' האי נדבה",
+              "segment_id": "seg_837cb19e29fba38f802a",
+              "start_char": 0
+            },
+            {
+              "end_char": 53,
+              "quote": "נדר הוא אלא אם כמה שנדרת עשית יהא נדר ואם לא נדבה יהא",
+              "segment_id": "seg_5f02c312d86416ed48eb",
+              "start_char": 0
+            },
+            {
+              "end_char": 22,
+              "quote": "ונדבה מי שרי לשנויי בה",
+              "segment_id": "seg_100c3a7d9b6eedc5dab7",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_open_e_nedava",
+          "layer": "edges",
+          "links": [
+            "zev_open_c_nedava",
+            "zev_open_c_rava"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C25",
+        "target_id": "C21",
+        "relation": "answer",
+        "explicitness": "source_explicit",
+        "explanation": "Different word supplies derivation despite Abba Chanin citation.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:19",
+            "start": 0,
+            "end": 208,
+            "quote": "והאי להכי הוא דאתא הא מיבעי ליה לכדתניא ובשר זבח תודת שלמיו אבא חנין אומר משום רבי אליעזר בא ללמד תודה ששחטה לשם שלמים כשרה שלמים ששחטן לשם תודה פסולה מה הפרש בין זה לזה תודה קרויה שלמים ואין שלמים קרויה תודה"
+          },
+          {
+            "source_ref": "Zevachim 4a:20",
+            "start": 0,
+            "end": 16,
+            "quote": "אנן מזבח קאמרינן"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "answer",
+            "source_id": "zev_baalim_zvach",
+            "target_id": "zev_baalim_q_todah"
+          },
+          "evidence": [
+            {
+              "end_char": 16,
+              "quote": "אנן מזבח קאמרינן",
+              "segment_id": "seg_94f834116a8991b638f4",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_e_zvach",
+          "layer": "edges",
+          "links": [
+            "zev_baalim_zvach",
+            "zev_baalim_q_todah"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C27",
+        "target_id": "C26",
+        "relation": "answer",
+        "explicitness": "source_explicit",
+        "explanation": "Both uses retained.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 4a:22",
+            "start": 0,
+            "end": 59,
+            "quote": "אם כן נכתוב קרא ובשר תודת שלמיו [זבח] מאי זבח שמע מינה תרתי"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "answer",
+            "source_id": "zev_baalim_two",
+            "target_id": "zev_baalim_q_chatat"
+          },
+          "evidence": [
+            {
+              "end_char": 59,
+              "quote": "אם כן נכתוב קרא ובשר תודת שלמיו [זבח] מאי זבח שמע מינה תרתי",
+              "segment_id": "seg_b5ee39db50b348f3051b",
+              "start_char": 0
+            }
+          ],
+          "id": "zev_baalim_e_two",
+          "layer": "edges",
+          "links": [
+            "zev_baalim_two",
+            "zev_baalim_q_chatat"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C49",
+        "target_id": "C48",
+        "relation": "objection",
+        "explicitness": "source_explicit",
+        "explanation": "Laying hands fails only after slaughter, outside inquiry.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:17",
+            "start": 0,
+            "end": 120,
+            "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "objection",
+            "source_id": "zv.20261126.b3.c10",
+            "target_id": "zv.20261126.b3.c9"
+          },
+          "evidence": [
+            {
+              "end_char": 120,
+              "quote": "אמר רבא עשה דסמיכה קאמרת שאני התם דכל כמה דלא שחיט בעמוד וסמוך קאי אימת קא הוי עשה לאחר שחיטה לאחר שחיטה לא קא מיבעיא לן",
+              "segment_id": "seg_b73b75f69feb474cfafd",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.e10_9",
+          "layer": "edges",
+          "links": [
+            "zv.20261126.b3.c10",
+            "zv.20261126.b3.c9"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C51",
+        "target_id": "C48",
+        "relation": "qualification",
+        "explicitness": "source_explicit",
+        "explanation": "Alternative explanation of כיפר ולא כיפר.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6a:18",
+            "start": 0,
+            "end": 40,
+            "quote": "א\"ל רב הונא בר יהודה לרבא אימא כיפר גברא"
+          },
+          {
+            "source_ref": "Zevachim 6b:1",
+            "start": 0,
+            "end": 16,
+            "quote": "לא כיפר קמי שמיא"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "distinction",
+            "source_id": "zv.20261126.b3.c11",
+            "target_id": "zv.20261126.b3.c9"
+          },
+          "evidence": [
+            {
+              "end_char": 40,
+              "quote": "א\"ל רב הונא בר יהודה לרבא אימא כיפר גברא",
+              "segment_id": "seg_02d0f50d28e2679d0681",
+              "start_char": 0
+            },
+            {
+              "end_char": 16,
+              "quote": "לא כיפר קמי שמיא",
+              "segment_id": "seg_0e6a09289c4b5dc72bb7",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.e11_9",
+          "layer": "edges",
+          "links": [
+            "zv.20261126.b3.c11",
+            "zv.20261126.b3.c9"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C53",
+        "target_id": "C52",
+        "relation": "qualification",
+        "explicitness": "source_explicit",
+        "explanation": "Explicit disagreement on consequence of omitted remaining oil.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:2",
+            "start": 0,
+            "end": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר"
+          }
+        ]
+      },
+      "producer": [],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C55",
+        "target_id": "C51",
+        "relation": "support",
+        "explicitness": "source_explicit",
+        "explanation": "Analogy offered from oil.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:2",
+            "start": 0,
+            "end": 199,
+            "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר"
+          },
+          {
+            "source_ref": "Zevachim 6b:3",
+            "start": 0,
+            "end": 130,
+            "quote": "מאי כאילו לא כיפר אילימא דמבעי לאיתויי קרבן אחרינא האמרת בין ניתן בין לא ניתן כיפר אלא כיפר גברא לא כיפר קמי שמיא הכא נמי כיפר כו'"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "support",
+            "source_id": "zv.20261126.b3.c12",
+            "target_id": "zv.20261126.b3.c11"
+          },
+          "evidence": [
+            {
+              "end_char": 199,
+              "quote": "מי לא תנן (ויקרא יד, יח) והנותר בשמן אשר על כף וגו' לכפר עליו לפני ה' אם נתן כיפר ואם לא נתן לא כיפר דברי ר\"ע ר' יוחנן [בן נורי] אומר שירי מצוה הן בין ניתן בין שלא ניתן כיפר ומעלין עליו כאילו לא כיפר",
+              "segment_id": "seg_c058a0da4a62e9e2fe4c",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.e12_11",
+          "layer": "edges",
+          "links": [
+            "zv.20261126.b3.c12",
+            "zv.20261126.b3.c11"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "qualification",
+            "source_id": "zv.20261126.b3.c13",
+            "target_id": "zv.20261126.b3.c12"
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "מאי כאילו לא כיפר אילימא דמבעי לאיתויי קרבן אחרינא האמרת בין ניתן בין לא ניתן כיפר אלא כיפר גברא לא כיפר קמי שמיא הכא נמי כיפר כו'",
+              "segment_id": "seg_ccf4fbbe2b753979f959",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.e13_12",
+          "layer": "edges",
+          "links": [
+            "zv.20261126.b3.c13",
+            "zv.20261126.b3.c12"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C56",
+        "target_id": "C55",
+        "relation": "objection",
+        "explicitness": "source_explicit",
+        "explanation": "Alternative interpretation avoids conclusion.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:4",
+            "start": 0,
+            "end": 42,
+            "quote": "התם נמי כיפר מתן בהונות לא כיפר מתנות הראש"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "objection",
+            "source_id": "zv.20261126.b3.c14",
+            "target_id": "zv.20261126.b3.c13"
+          },
+          "evidence": [
+            {
+              "end_char": 42,
+              "quote": "התם נמי כיפר מתן בהונות לא כיפר מתנות הראש",
+              "segment_id": "seg_7fc85a5d68554acccf3c",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.e14_13",
+          "layer": "edges",
+          "links": [
+            "zv.20261126.b3.c14",
+            "zv.20261126.b3.c13"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    },
+    {
+      "reader": {
+        "source_id": "C57",
+        "target_id": "Q06",
+        "relation": "correction",
+        "explicitness": "source_explicit",
+        "explanation": "Lambs replaced by goats.",
+        "evidence": [
+          {
+            "source_ref": "Zevachim 6b:5",
+            "start": 0,
+            "end": 39,
+            "quote": "ת\"ש ר' שמעון אומר כבשי עצרת למה הן באין"
+          },
+          {
+            "source_ref": "Zevachim 6b:6",
+            "start": 0,
+            "end": 48,
+            "quote": "כבשי עצרת שלמים נינהו אלא שעירי עצרת למה הן באין"
+          }
+        ]
+      },
+      "producer": [
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "correction",
+            "source_id": "zv.20261126.b3.c16",
+            "target_id": "zv.20261126.b3.c15"
+          },
+          "evidence": [
+            {
+              "end_char": 48,
+              "quote": "כבשי עצרת שלמים נינהו אלא שעירי עצרת למה הן באין",
+              "segment_id": "seg_b653fef8314a2463bfa2",
+              "start_char": 0
+            }
+          ],
+          "id": "zv.20261126.b3.e16_15",
+          "layer": "edges",
+          "links": [
+            "zv.20261126.b3.c16",
+            "zv.20261126.b3.c15"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "Compared argument role, with reader-target and missing-disagreement caveats below."
+    }
+  ],
+  "producer_issues": [
+    {
+      "id": "ZV-ATOMIC",
+      "category": "atomic_representation",
+      "severity": "targeted",
+      "resolution": "open; no production mutation",
+      "records": [
+        {
+          "id": "zev_open_c_valid",
+          "sha256": "c863fc176fdf1d080cb921d8d5e18304e1c463ffd311586b53f6dd3cff7bcce4"
+        },
+        {
+          "id": "zev_open_c_high",
+          "sha256": "b7dd8d10796730cb2c215fd387d1966651dd1f69a92f3a75b0a75675dd17f958"
+        },
+        {
+          "id": "zev_open_c_high_examples",
+          "sha256": "f0c98187851be2f77e26c4f39ca8f56edb47154cb22624daaf3d3f2336930436"
+        },
+        {
+          "id": "zev_open_c_sanctity",
+          "sha256": "f5e23251599043737f5194841a88bc63b1dfc6f53ac1fa1f8a3afc847d5e4129"
+        },
+        {
+          "id": "zev_baalim_todah",
+          "sha256": "bc964909c8c5b4bb9ac6cdd3970695c3199cf8f7994565534a247cc3ad37e362"
+        },
+        {
+          "id": "zv.20261126.b3.c10",
+          "sha256": "265bb249320d59f1634cf107c5823cc29c6fdd327369b5e333700ab1d334b893"
+        },
+        {
+          "id": "zv.20261126.b3.c12b",
+          "sha256": "7a42207569f9d5ea5d8e6a27856af7d7910dfa7b688814387daf3d5fa6638bf2"
+        }
+      ],
+      "finding": "All 39 reader core claim meanings have counterparts, but validity/non-discharge, opposite sanctity rulings, four examples, retained sanctity/prohibition, three Abba Chanin propositions, temporal boundary/inquiry scope, and atonement/as-if-not-atoned are bundled. This is atomic representation deficit, not absent text; 39 matches cannot be counted as 39 distinct atomic producer claims.",
+      "required_change": "Create separately anchored atomic claims/positions where required, preserving conditions and source occurrences; retained composite summaries must not double count.",
+      "regression_check": "Re-read exact source and new successor/dependent records; do not inherit this version review."
+    },
+    {
+      "id": "ZV-STATUS",
+      "category": "local_position_status",
+      "severity": "targeted",
+      "resolution": "open; no production mutation",
+      "records": [
+        {
+          "id": "zv.20261126.b3.p11",
+          "sha256": "49cdef877146cd7e8c89cd31b2a13926f3902c378a8b43f13e5d4eec58ccc3de"
+        },
+        {
+          "id": "zv.20261126.b3.p13",
+          "sha256": "54da21d3ff4c6cbf64c94ac2679e0b81397e0e92d54358a7ad5cbe2bd614a7b4"
+        }
+      ],
+      "finding": "Proposed person/before-Heaven interpretation and the challenged oil inference have generic Local statement; objections and qualifications retained status. Claims c11/c13 use asserted although the local reading is offered and counter-interpreted at 6b:4. Existing objection e14_13 preserves graph history but a position-only view loses it.",
+      "required_change": "Mark proposed/challenged interpretation explicitly in successor position status, and scope assertion mode as interpretive proposal rather than settled conclusion.",
+      "regression_check": "Re-read exact source and new successor/dependent records; do not inherit this version review."
+    },
+    {
+      "id": "ZV-OIL-RELATION",
+      "category": "argument_relation_omission",
+      "severity": "targeted",
+      "resolution": "open; no production mutation",
+      "records": [
+        {
+          "id": "zv.20261126.b3.c12a",
+          "sha256": "428b72d4f1938fab6a75d084f8903e7fc27878591baa1c26f1fa6150e1d15ded"
+        },
+        {
+          "id": "zv.20261126.b3.c12b",
+          "sha256": "7a42207569f9d5ea5d8e6a27856af7d7910dfa7b688814387daf3d5fa6638bf2"
+        }
+      ],
+      "finding": "Distinct Rabbi Akiva and Rabbi Yohanan [ben Nuri] claims/positions exist, but no typed edge between these competing outcomes for omitted oil was found. The reader qualification edge also understates the disagreement on atonement.",
+      "required_change": "Add a source-supported relation/common question for the incompatible outcomes under omitted oil; preserve bracketed attribution and quoted status.",
+      "regression_check": "Re-read exact source and new successor/dependent records; do not inherit this version review."
+    }
+  ],
+  "reader_corrections": [
+    "C20 compresses two independently quoted lexical interpretations and the resulting inference; its transmission_chain entries are cited anonymous teachings, not a serial personal transmission chain. Producer separates limbs, blood and carrying claims correctly.",
+    "C05->C01 qualification and C53->C52 qualification understate actual competing outcomes. Producer opening objection is more precise; oil relation remains missing.",
+    "C25->C21 answer is shorthand: the immediate question concerns a competing use of the verse. Producer targets q_todah, correctly. Likewise C27 answers q_chatat rather than denying the quoted inclusion.",
+    "C18->C16 support requires C19 (even a voluntary offering may not be altered); producer nedava support retains that intermediate premise. Do not classify its different endpoint as omission.",
+    "Reader C14/C15/C17 have empty conditions despite contextual prior alteration; producer preserves this scope. C52/C53/C54 asserted locally are quoted views, not adjudicated law.",
+    "Q02/Q05/Q07 begin in context; their answers may touch core but their question counts must not be added to core-origin denominators.",
+    "Reader C65/C66 holders combine reporter and quoted holder in a label; producer separates Rabbi Shimon/Sages and the four-person transmission chain more clearly. Context check only."
+  ],
+  "uncertainties_preserved": [
+    {
+      "scope": "6b:2",
+      "text": "The pinned edition brackets בן נורי; preserve this surface attribution rather than silently equating with the amora Rabbi Yochanan."
+    },
+    {
+      "scope": "4b:18",
+      "text": "לישנא אחרינא retained as a textual alternative; no unwarranted doctrinal disagreement inferred."
+    },
+    {
+      "scope": "4b:12",
+      "text": "Answer follows Rav Acha bar Abba addressing Rava; explicit name absent in answer, so no confident named attribution asserted."
+    },
+    {
+      "scope": "6a:12–7a:4",
+      "text": "Attempted proofs do not establish a final yes/no outcome."
+    }
+  ],
+  "qa": {
+    "reader_evidence_slices": 110,
+    "producer_evidence_slices": 1330,
+    "all_slices_match_original_source": true,
+    "replay": {
+      "read_only": true,
+      "method": "load + empty + validate_apply for exactly frozen proposal list; no lock/current/submit/write to production",
+      "replay_pass": true,
+      "snapshot_sha256": "0ca186f5d15caef7d17399b21fd0464a8f22b9ded849d454f08b6460c4e00c64",
+      "proposal_count": 11,
+      "report": {
+        "source_segments": 3817,
+        "semantic_records": 922,
+        "completed_by_layer": {
+          "structure": 214,
+          "utterances": 214,
+          "claims": 214,
+          "attributions": 214,
+          "questions": 214,
+          "positions": 214,
+          "edges": 214,
+          "reconciliation": 214
+        },
+        "outcomes_by_layer": {
+          "structure": {
+            "records_found": 214,
+            "none_found_after_pass": 0,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          },
+          "utterances": {
+            "records_found": 214,
+            "none_found_after_pass": 0,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          },
+          "claims": {
+            "records_found": 197,
+            "none_found_after_pass": 17,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          },
+          "attributions": {
+            "records_found": 171,
+            "none_found_after_pass": 43,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          },
+          "questions": {
+            "records_found": 79,
+            "none_found_after_pass": 135,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          },
+          "positions": {
+            "records_found": 108,
+            "none_found_after_pass": 106,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          },
+          "edges": {
+            "records_found": 173,
+            "none_found_after_pass": 41,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          },
+          "reconciliation": {
+            "records_found": 0,
+            "none_found_after_pass": 214,
+            "abstained_ambiguous": 0,
+            "not_applicable": 0
+          }
+        },
+        "independent_review_completed": false,
+        "tractate_delivered": false,
+        "next_unprocessed_by_layer": {
+          "structure": "Zevachim 7b:10",
+          "utterances": "Zevachim 7b:10",
+          "claims": "Zevachim 7b:10",
+          "attributions": "Zevachim 7b:10",
+          "questions": "Zevachim 7b:10",
+          "positions": "Zevachim 7b:10",
+          "edges": "Zevachim 7b:10",
+          "reconciliation": "Zevachim 7b:10"
+        }
+      }
+    }
+  },
+  "source_omission_pass": {
+    "scope": "All 30 independently read cores, all 8 producer layers completed at this exact snapshot",
+    "absent_reader_core_claim_meanings": 0,
+    "distinct_producer_claim_counterparts": 29,
+    "atomic_completeness_pass": false,
+    "additional_source_claims": "Producer limbs/blood lexical claims at 4a:16 exceed reader compressed C20; not hallucinations."
+  },
+  "context_checks": {
+    "ownership_analogy": "4a:26–4b:4 objections, two remaining distinctions, and replacement Rav Ashi derivation retained; no final adoption inferred.",
+    "atonement": "6b:12–7a:4 transmitter/holder distinction and conditional deflection retained; no Rav–Shmuel dispute inferred.",
+    "limits": "Context selected continuation check, not exhaustive context review or expansion of sampled denominator."
+  },
+  "limits": [
+    "Initial reading and producer snapshot preserved immutable.",
+    "No whole-tractate accuracy estimate or full admission.",
+    "Bundled counterparts and reader omissions prevent numeric precision/recall claim."
+  ],
+  "human_certification": false,
+  "ml_eligible": false
+}
