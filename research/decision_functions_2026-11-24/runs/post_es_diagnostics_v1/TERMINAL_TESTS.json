@@ -1,0 +1,80 @@
+{
+  "success": {
+    "completed_inventory": {
+      "attempts": 384
+    },
+    "expected_inventory": {
+      "attempts": 384
+    },
+    "inventory_complete": true,
+    "artifact_integrity": "PASS",
+    "numerical_status": "PASS",
+    "scientific_status": "PASS",
+    "failure_reason": null,
+    "qualification": true,
+    "receipt_is_integrity_proof": false
+  },
+  "numerical_failure": {
+    "completed_inventory": {
+      "attempts": 384
+    },
+    "expected_inventory": {
+      "attempts": 384
+    },
+    "inventory_complete": true,
+    "artifact_integrity": "PASS",
+    "numerical_status": "FAIL",
+    "scientific_status": "PASS",
+    "failure_reason": "residual",
+    "qualification": false,
+    "receipt_is_integrity_proof": false
+  },
+  "scientific_failure": {
+    "completed_inventory": {
+      "attempts": 384
+    },
+    "expected_inventory": {
+      "attempts": 384
+    },
+    "inventory_complete": true,
+    "artifact_integrity": "PASS",
+    "numerical_status": "PASS",
+    "scientific_status": "FAIL",
+    "failure_reason": "scientific gate",
+    "qualification": false,
+    "receipt_is_integrity_proof": false
+  },
+  "incomplete_evidence": {
+    "completed_inventory": {
+      "attempts": 4
+    },
+    "expected_inventory": {
+      "attempts": 384
+    },
+    "inventory_complete": false,
+    "artifact_integrity": "INCOMPLETE",
+    "numerical_status": "NOT_RUN",
+    "scientific_status": "NOT_RUN",
+    "failure_reason": "missing files",
+    "qualification": false,
+    "receipt_is_integrity_proof": false
+  },
+  "resource_stop": {
+    "completed_inventory": {
+      "attempts": 4
+    },
+    "expected_inventory": {
+      "attempts": 384
+    },
+    "inventory_complete": false,
+    "artifact_integrity": "INCOMPLETE",
+    "numerical_status": "INCOMPLETE",
+    "scientific_status": "NOT_RUN",
+    "failure_reason": "resource ceiling",
+    "qualification": false,
+    "receipt_is_integrity_proof": false
+  },
+  "corrupted_bytes_rejected": true,
+  "missing_file_rejected": true,
+  "collision_rejected": true
+}
