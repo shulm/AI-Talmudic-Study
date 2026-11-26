@@ -1,5 +1,7 @@
 # Production run 20261125_01
 
+**2026-11-26 coordination update:** Assignment revision 4 supersedes revision 3 for production owners and observed checkpoints. [Later-checkpoint reconciliation](releases/ownership_reconciliation_20261126.json) verified 15 within-lane epoch changes and 1,048 claim-pass source segments. These later snapshots are not yet an integrated release or completed independent review. Snapshot 004 and STATUS.json below remain historical release evidence; do not use their inactive-session statement to infer current worker activity.
+
 Status: **PARTIAL_REQUIRED_WORK_REMAINS**, not a completed Bavli corpus. Draft [PR #17](https://github.com/shulm/AI-Talmudic-Study/pull/17) remains unmerged on `dataset/bavli-coordination-v1`.
 
 ## Immutable execution contract
