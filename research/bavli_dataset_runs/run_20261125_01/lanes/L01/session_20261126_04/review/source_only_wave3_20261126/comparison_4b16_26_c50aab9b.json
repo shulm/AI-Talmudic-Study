@@ -1,0 +1,153 @@
+{
+  "artifact_type": "post_freeze_bounded_comparison",
+  "created_utc": "2026-11-26T20:59:16.873139+00:00",
+  "frozen_reading": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\review\\source_only_wave3_20261126\\berakhot_4b16_5a23.json",
+    "sha256": "bb0bcaced9f4bc2a0ef14030ecdc8a1aa91867dc688698060d308bca65e75295"
+  },
+  "production_snapshot": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\c50aab9b98333baed2f7e0280e3f5a45cf1ac807c2e132e8dfc1c178115d94d9.json",
+    "sha256": "c50aab9b98333baed2f7e0280e3f5a45cf1ac807c2e132e8dfc1c178115d94d9"
+  },
+  "compared_scope": "Berakhot 4b:16–26 only",
+  "excluded_scope": "4b:27–5a:23 not compared; no future-production omission finding",
+  "alignment": [
+    {
+      "source_only_record": "c01",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c16"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "q01",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.q17"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c02",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c18hyp",
+        "bk.psalm_angels.20261126w3.c18counter"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c03",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c19hyp",
+        "bk.psalm_angels.20261126w3.c19counter"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c04",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c20"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c05",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.q21",
+        "bk.psalm_angels.20261126w3.c21",
+        "bk.psalm_angels.20261126w3.c21verse"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c06",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c22west"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c07",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c22support"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c08",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c23"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "q02",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.q24"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c09",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c25"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c10",
+      "production_records": [
+        "bk.psalm_angels.20261126w3.c26m",
+        "bk.psalm_angels.20261126w3.c26g",
+        "bk.psalm_angels.20261126w3.c26e",
+        "bk.psalm_angels.20261126w3.c26d",
+        "bk.psalm_angels.20261126w3.c26plague"
+      ],
+      "assessment": "substantive agreement"
+    }
+  ],
+  "findings": [],
+  "observations": [
+    {
+      "kind": "granularity",
+      "detail": "Production splits hypotheses from counterarguments and each flight count into separate claims; frozen source-only reader grouped these. This is compatible, not an omission."
+    },
+    {
+      "kind": "local_status",
+      "detail": "Hypothesis answer edges are qualified by hypothetical assertion modes, challenged positions, objection edges and combined final answer. No erroneous acceptance inferred."
+    },
+    {
+      "kind": "attribution",
+      "detail": "4b:16 transmitter/authority and 4b:23 bar-Avina patronymic are distinguished; Western interpretation and Rav Nahman bar Yitzhak remain separate."
+    },
+    {
+      "kind": "scope",
+      "detail": "Epidemic qualification applies to the angel of death. The flight unit is contextual paraphrase, not literal wording; this is a retained interpretive limitation rather than a detected substantive mismatch."
+    },
+    {
+      "kind": "relations",
+      "detail": "Western reinterpretation targets the Amos verse, while consolatory support qualifies the omission explanation; these preserve the distinction in the independent reading."
+    }
+  ],
+  "checks": {
+    "production_records": 62,
+    "records_by_layer": {
+      "attributions": 8,
+      "claims": 17,
+      "edges": 12,
+      "positions": 9,
+      "questions": 3,
+      "structure": 2,
+      "utterances": 11
+    },
+    "evidence_spans_checked": 71,
+    "source_segments_mapped": 11,
+    "exact_quote_and_codepoint_checks": "passed",
+    "source_only_core_claims_or_questions_unmatched": 0
+  },
+  "conclusion": "No actionable omission, attribution, scope or directed-relation error identified within this exact 11-segment comparison.",
+  "limitations": [
+    "Bounded AI comparison; not human certification or full-tractate review.",
+    "No judgment about future cores, unrelated snapshot records, or qualification policies.",
+    "Initial source-only reading preserved unchanged."
+  ]
+}

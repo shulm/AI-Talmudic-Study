@@ -1,0 +1,369 @@
+{
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Source reread for frozen targeted review exceptions; replacement records and explicit dependencies reconciled, original judgments preserved. No scope extension or review qualification.",
+      "record_ids": [
+        "bk.order.pass2.later.reviewfix1",
+        "bk.reviewfix1.a.evening"
+      ],
+      "segment_id": "seg_260000b714277eafa776"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Source reread for frozen targeted review exceptions; replacement records and explicit dependencies reconciled, original judgments preserved. No scope extension or review qualification.",
+      "record_ids": [
+        "bk.order.pass2.c.later.reviewfix1",
+        "bk.reviewfix1.c.evening"
+      ],
+      "segment_id": "seg_260000b714277eafa776"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Source reread for frozen targeted review exceptions; replacement records and explicit dependencies reconciled, original judgments preserved. No scope extension or review qualification.",
+      "record_ids": [
+        "bk.order.pass2.edge.objection.reviewfix1",
+        "bk.order.pass2.edge.support.reviewfix1",
+        "bk.reviewfix1.e.evening"
+      ],
+      "segment_id": "seg_260000b714277eafa776"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Source reread for frozen targeted review exceptions; replacement records and explicit dependencies reconciled, original judgments preserved. No scope extension or review qualification.",
+      "record_ids": [
+        "bk.order.pass2.p.later.reviewfix1",
+        "bk.reviewfix1.p.evening"
+      ],
+      "segment_id": "seg_260000b714277eafa776"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Source reread for frozen targeted review exceptions; replacement records and explicit dependencies reconciled, original judgments preserved. No scope extension or review qualification.",
+      "record_ids": [
+        "bk.opening.pass1.p.duty",
+        "bk.opening.pass1.p.sons",
+        "bk.opening.pass1.p.general.reviewfix1"
+      ],
+      "segment_id": "seg_60ee4773ccee2b2b063e"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "utterances",
+      "rationale": "Source reread for frozen targeted review exceptions; replacement records and explicit dependencies reconciled, original judgments preserved. No scope extension or review qualification.",
+      "record_ids": [
+        "bk.opening.pass1.u.4.reviewfix1"
+      ],
+      "segment_id": "seg_60ee4773ccee2b2b063e"
+    }
+  ],
+  "epoch": 2,
+  "execution": {
+    "agent_id": "/root/lead_l01_l03",
+    "model_id": null,
+    "route": "interactive_agent"
+  },
+  "open_tails": [],
+  "owner": "/root/lead_l01_l03",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "records": [
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "This quotation is used to question sequence; no independent analysis of blessing law claimed"
+        ],
+        "proposition": "The quoted later Mishnah prescribes two blessings before morning Shema and one after it.",
+        "scope": "Local passage; no later practical ruling inferred"
+      },
+      "evidence": [
+        {
+          "end_char": 50,
+          "quote": "בשחר מברך שתים לפניה ואחת לאחריה",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 18
+        }
+      ],
+      "id": "bk.order.pass2.c.later.reviewfix1",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "supersedes": "bk.order.pass2.c.later",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "claim_id": "bk.order.pass2.c.later.reviewfix1",
+        "conditions": [
+          "This quotation is used to question sequence; no independent analysis of blessing law claimed"
+        ],
+        "holder_candidates": [
+          "Later Mishnah as quoted"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 50,
+          "quote": "בשחר מברך שתים לפניה ואחת לאחריה",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 18
+        }
+      ],
+      "id": "bk.order.pass2.p.later.reviewfix1",
+      "layer": "positions",
+      "links": [
+        "bk.order.pass2.c.later.reviewfix1"
+      ],
+      "origin": "source_paraphrase",
+      "supersedes": "bk.order.pass2.p.later",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "quoted_authority",
+        "scope": "bk.order.pass2.c.later.reviewfix1",
+        "surface": "סיפא דקתני",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 17,
+          "quote": "סיפא דקתני",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 7
+        }
+      ],
+      "id": "bk.order.pass2.later.reviewfix1",
+      "layer": "attributions",
+      "links": [
+        "bk.order.pass2.c.later.reviewfix1"
+      ],
+      "origin": "source_paraphrase",
+      "supersedes": "bk.order.pass2.later",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "claim_id": "bk.opening.pass1.c.general",
+        "conditions": [
+          "Limited to the stated generalization and its listed applications"
+        ],
+        "holder_candidates": [
+          "Mishnah continuation; Rabban Gamliel is a possible continuing speaker"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 166,
+          "quote": "כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר",
+          "segment_id": "seg_60ee4773ccee2b2b063e",
+          "start_char": 116
+        }
+      ],
+      "id": "bk.opening.pass1.p.general.reviewfix1",
+      "layer": "positions",
+      "links": [
+        "bk.opening.pass1.c.general"
+      ],
+      "origin": "source_paraphrase",
+      "supersedes": "bk.opening.pass1.p.general",
+      "uncertainty": [
+        "No fresh named speech marker at ולא זו בלבד; attribution to Rabban Gamliel remains plausible, not textually explicit."
+      ]
+    },
+    {
+      "content": {
+        "composition": "composite",
+        "discourse_role": "Case narrative, report, conditional answer and generalization",
+        "textual_voice": "Narrator, sons, explicit Rabban Gamliel answer, then Mishnah continuation with uncertain speech boundary"
+      },
+      "evidence": [
+        {
+          "end_char": 166,
+          "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר",
+          "segment_id": "seg_60ee4773ccee2b2b063e",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.opening.pass1.u.4.reviewfix1",
+      "layer": "utterances",
+      "links": [],
+      "origin": "source_paraphrase",
+      "supersedes": "bk.opening.pass1.u.4",
+      "uncertainty": [
+        "Rabban Gamliel is the referent of אמר להם for the sons’ duty; the following generalization has no new named marker."
+      ]
+    },
+    {
+      "content": {
+        "explicitness": "editorial_reconstruction",
+        "relation": "objection",
+        "source_id": "bk.order.pass2.q.objection",
+        "target_id": "bk.order.pass2.c.creation"
+      },
+      "evidence": [
+        {
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא.",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.order.pass2.edge.objection.reviewfix1",
+      "layer": "edges",
+      "links": [
+        "bk.order.pass2.q.objection",
+        "bk.order.pass2.c.creation"
+      ],
+      "origin": "editorial_inference",
+      "supersedes": "bk.order.pass2.edge.objection",
+      "uncertainty": [
+        "Immediate adjacency supports targeting the creation answer, but אי הכי can challenge evening-first ordering generally, including the scriptural explanation; this edge does not assert an exclusive target."
+      ]
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "bk.order.pass2.c.later.reviewfix1",
+        "target_id": "bk.order.pass2.q.objection"
+      },
+      "evidence": [
+        {
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא.",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.order.pass2.edge.support.reviewfix1",
+      "layer": "edges",
+      "links": [
+        "bk.order.pass2.c.later.reviewfix1",
+        "bk.order.pass2.q.objection"
+      ],
+      "origin": "source_paraphrase",
+      "supersedes": "bk.order.pass2.edge.support",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "This quotation is used to question sequence; no independent analysis of blessing law claimed"
+        ],
+        "proposition": "The quoted later Mishnah prescribes two blessings before evening Shema and two after it.",
+        "scope": "Local passage; no later practical ruling inferred"
+      },
+      "evidence": [
+        {
+          "end_char": 85,
+          "quote": "ובערב מברך שתים לפניה ושתים לאחריה",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 51
+        }
+      ],
+      "id": "bk.reviewfix1.c.evening",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "claim_id": "bk.reviewfix1.c.evening",
+        "conditions": [
+          "This quotation is used to question sequence; no independent analysis of blessing law claimed"
+        ],
+        "holder_candidates": [
+          "Later Mishnah as quoted"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 85,
+          "quote": "ובערב מברך שתים לפניה ושתים לאחריה",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 51
+        }
+      ],
+      "id": "bk.reviewfix1.p.evening",
+      "layer": "positions",
+      "links": [
+        "bk.reviewfix1.c.evening"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "quoted_authority",
+        "scope": "bk.reviewfix1.c.evening",
+        "surface": "סיפא דקתני",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 17,
+          "quote": "סיפא דקתני",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 7
+        }
+      ],
+      "id": "bk.reviewfix1.a.evening",
+      "layer": "attributions",
+      "links": [
+        "bk.reviewfix1.c.evening"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "bk.reviewfix1.c.evening",
+        "target_id": "bk.order.pass2.q.objection"
+      },
+      "evidence": [
+        {
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא.",
+          "segment_id": "seg_260000b714277eafa776",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.reviewfix1.e.evening",
+      "layer": "edges",
+      "links": [
+        "bk.reviewfix1.c.evening",
+        "bk.order.pass2.q.objection"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": []
+    }
+  ],
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "schema_version": "2.0.0-production",
+  "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+  "tractate": "Berakhot"
+}
