@@ -1,0 +1,5 @@
+Intermediate resume record at first chapter completion. Current may already have advanced; read OWNER and CURRENT before any write.
+
+Snapshot36054a317a76bfb04699b333a3af0ac8993ef5653b5c8290dbb1bdfa1f29da96:341/1026 through11a:21, next11b:1. Exact package atpackages/moed_katan/36054a317a76bfb04699b333a3af0ac8993ef5653b5c8290dbb1bdfa1f29da96, replay/export passed. All source read through12b:23 as subsequent continuation after checkpoint.
+
+Authors023–028 are stable. 026 corrects only origin of two editorial edges (same evidence/endpoints) and awaits independent targeted check. Published checkpoint006 deliberately pins earlier290; do not edit it. Fresh51-core source-only review8b:7–9b:21 is underway at independent review lead. Coverage is not accuracy or delivery; all eligibility false. OwnerL04/moed_katan_resume_20261126 epoch3, root remains sole writer. 022 rejected variants retained externally;027 initial staging preserved before adding explicit contradiction question, accepted027b. No common/source changes.
