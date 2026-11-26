@@ -1,0 +1,13 @@
+# Independent review checkpoint 005 — 2026-11-26
+
+Partial review through wave 4: 360 direct fresh-context source-reading cores, 242 direct exact-version comparison cores across 14 tractates. Combined declared reading coverage is 911 unique cores, including 591 inherited cores with lane-declared source-only provenance and 40 direct/inherited overlaps. Cohorts: 645 probability, 261 endpoint, 30 probability/endpoint overlap, plus 35 separate risk/expanded cores. No full tractate admission (0/37), new task eligibility, or human scholarly certification.
+
+New exact-version comparisons: Yevamot, Ketubot, Eruvin and Pesachim require targeted rework. Yoma accepts only its compared opening scope with exceptions. The recorded issues include atomic bundling, mutually exclusive conditions incorrectly combined, a missing question, mis-scoped argument relations, and answer-status inconsistency. Reader-side mistakes and uncertainties remain alongside producer findings. Unprocessed sampled cores are not counted as omissions.
+
+Bava Batra correction verified at 95c61e5e4d60466f3ebb56f5fd491908d64e0f3320e901e9d7220beed5d46940: 31 correction records, exact replay, evidence and original-record preservation passed. The initial REWORK verdict remains unchanged. Taanit correction receipt from delivery004 remains valid only at its bound version. Chullin's addressee-as-quoted-authority record remains present at e3820a8f1a9958659f65f5fd706c5ba00b7c2962a74e4157aee272ec18ccd165; prior exact-role exclusion is not cleared.
+
+L06's additional inherited readings were checked: all prior readings unchanged; five additions contribute 37 cores (30 probability, 7 closing endpoints). All 704 evidence occurrences across its 16 readings match the source. This is integrity/cohort validation, not semantic comparison or direct audit of hidden context.
+
+COVERAGE_CHECKPOINT_005.json preserves all 37 queues and separate historical extraction metadata. Do not substitute the coordinator's separately frozen 2,450-segment integration audit for a current source-reading/comparison denominator. Newer production versions do not inherit prior verdicts automatically.
+
+Wave5 is active in fresh source-only contexts: Sukkah/Bekhorot/Chagigah; Kiddushin/Nazir/Arakhin/Tamid; Shevuot/Temurah/Horayot. Each tractate reading must be frozen separately before comparison. These active assignments receive no prospective coverage credit. SESSION_LAUNCH_005.json and SESSION_LAUNCH_005b.json document dispatch. Resume completed queues from COVERAGE_CHECKPOINT_005.json, pending corrections from exact comparison receipts, and active source-only assignments from those launch files. Never pass this annotated checkpoint into a fresh reader.
