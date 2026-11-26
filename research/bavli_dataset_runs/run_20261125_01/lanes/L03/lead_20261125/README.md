@@ -1,5 +1,7 @@
 # L03 production checkpoint — 2026-11-25
 
+> Historical checkpoint: the counts and package hashes below describe the frozen 2026-11-25 package. The later bounded Rosh Hashanah correction is in [review_correction_20261126](../rosh_hashanah/review_correction_20261126/RESUME.md). Its response binds the exact comparison, reader, verdict and revised snapshot. Independent correction verification remains pending; coverage and zero-of-seven delivery status are unchanged. Resume new source production only under the coordinator’s next-wave dispatch instructions.
+
 **PARTIAL_REQUIRED_WORK_REMAINS. Zero of seven tractates delivered.**
 
 The user-appointed L03 lead verified the immutable active contract, production commit, every frozen production-file hash, output schema/protocol, all seven exact named-edition sources and schemas, the 13,635-segment inventory, source-package hash, original indices, historical owners and checkpoints. The coordinator's revision 3 records prior producers inactive. The user authorizes this lane only; no cross-lane reassignment occurred.
