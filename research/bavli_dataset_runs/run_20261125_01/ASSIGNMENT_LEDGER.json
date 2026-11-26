@@ -1,52 +1,53 @@
 {
   "global_owner": "/root",
+  "integration_capture_sha256": "ebe2f6ff56cd789a3e6df016d6ec404e153313e654d43e69554c5ab6c4e7087c",
   "jobs": [
     {
       "checkpoint": {
-        "accepted_proposal_count": 17,
-        "snapshot_sha256": "03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e"
+        "accepted_proposal_count": 20,
+        "snapshot_sha256": "e13b2ef701f28d7823c5d9b271b6c3ece295194205efe92c9d86512e9c20e5e2"
       },
-      "epoch": 3,
+      "epoch": 4,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot",
       "job_id": "bavli_berakhot",
       "lane_id": "L01",
       "legacy_note": "Preserved segmentation through 9a:29; production semantic backfill incomplete",
-      "owner": "/root/berakhot",
+      "owner": "/root/l01_berakhot_correction",
       "source_segments": 2749,
       "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Berakhot"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 7,
-        "snapshot_sha256": "4816d1a56f623ce6377d478dd97aca7b3c62c895c55e7b3ec4d2f97246f4a83f"
+        "accepted_proposal_count": 10,
+        "snapshot_sha256": "d4b3fbf60e707e286bb5f8caae51063a91439564090ce6a9d7920487917ad2cd"
       },
-      "epoch": 2,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim",
       "job_id": "bavli_zevachim",
       "lane_id": "L01",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/verify_l01",
+      "owner": "/root/zevachim_resume",
       "source_segments": 3817,
       "source_sha256": "7fcfa68ee6f55ecf8535b90b2d56d7f3a3c209db54a78eeb9792bbe4f172186a",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Zevachim"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 3,
-        "snapshot_sha256": "107caa00ffc7786eb509da045b06f38c1862bd6ef6ea4714ace19d855ef2cc79"
+        "accepted_proposal_count": 7,
+        "snapshot_sha256": "d756bd8113efcf3d6a938ca9571ed77688d71bedbf3a9e6bb2439658ca084a67"
       },
-      "epoch": 2,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_ketubot",
       "job_id": "bavli_ketubot",
       "lane_id": "L01",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/l01_ketubot",
+      "owner": "/root/ketubot_resume",
       "source_segments": 3038,
       "source_sha256": "f736ba10fa498bbe884bd4243f334fec4b8ccd2161b6a29cbe8cc58649451d4a",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Ketubot"
     },
     {
@@ -62,7 +63,7 @@
       "owner": "/root/l01_bekhorot",
       "source_segments": 1957,
       "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Bekhorot"
     },
     {
@@ -99,8 +100,8 @@
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 5,
-        "snapshot_sha256": "25ffca05e9a6f9445ac1f1b285f70d8e113e962353c02e0e108ce4aa2d5e5990"
+        "accepted_proposal_count": 6,
+        "snapshot_sha256": "1de0ef2ed8f9cd4fc22791162f92e7d59d276dc09dd9c50336dd8fe0a3940a92"
       },
       "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L02\\bavli_bava_metzia",
@@ -110,7 +111,7 @@
       "owner": "/root/bava_metzia",
       "source_segments": 3660,
       "source_sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Bava Metzia"
     },
     {
@@ -126,7 +127,7 @@
       "owner": "/root/sanhedrin",
       "source_segments": 4171,
       "source_sha256": "bf0e4b682965e2de25969841f69354a90afceaa38e84ad32782d24d26f1ba2aa",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Sanhedrin"
     },
     {
@@ -142,7 +143,7 @@
       "owner": "/root/L02_gittin",
       "source_segments": 2992,
       "source_sha256": "a5f62b44b8d7169783a97a1b894d6186ab446f45f3e7a88df67bc18d575d6de6",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Gittin"
     },
     {
@@ -158,7 +159,7 @@
       "owner": "/root/sanhedrin",
       "source_segments": 1635,
       "source_sha256": "728c220f989308eec03a41c7be4dd026c4bb4bfe1d8f93fca48f5dc1b90204a1",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Sotah"
     },
     {
@@ -174,13 +175,13 @@
       "owner": "/root/bava_metzia",
       "source_segments": 1211,
       "source_sha256": "0261a83aab64c143af0412d1f4bc598ebeec4c820bbc7c7b059a447f069542e2",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Keritot"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 9,
-        "snapshot_sha256": "73e6ef36b8a8df4f14fc006202501b4bfbeee0589919f8ad4c8330c7f3103592"
+        "accepted_proposal_count": 11,
+        "snapshot_sha256": "685478e47cbad58e38ac2a3436738429439adaa04b4e4d4f222905f883e93620"
       },
       "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L03\\bavli_rosh_hashanah",
@@ -190,7 +191,7 @@
       "owner": "L03/rosh_hashanah",
       "source_segments": 1025,
       "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Rosh Hashanah"
     },
     {
@@ -206,7 +207,7 @@
       "owner": "L03/yevamot",
       "source_segments": 3869,
       "source_sha256": "e3f2ddea9c75119de9dd032ca9cf91108d55c332ca8eeab4fb0997ed1eca5a07",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Yevamot"
     },
     {
@@ -222,7 +223,7 @@
       "owner": "L03/eruvin",
       "source_segments": 3646,
       "source_sha256": "704da1ef8bd3b5748fc57c714c783744b67a16687fd1a83afecde18786953fed",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Eruvin"
     },
     {
@@ -291,216 +292,216 @@
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 3,
-        "snapshot_sha256": "3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7"
+        "accepted_proposal_count": 10,
+        "snapshot_sha256": "bf269222667a2403dbfb6b92cfedcbe3f842f578ba83fdb2dd2ebe4d6975292a"
       },
-      "epoch": 1,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit",
       "job_id": "bavli_taanit",
       "lane_id": "L04",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l02_l04",
+      "owner": "L04/taanit_resume_20261126",
       "source_segments": 895,
       "source_sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Taanit"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 15,
+        "snapshot_sha256": "f82c4e3f725e0eac9e92ce05eeb4070e085b2aa370f3e27d64445236f3c97077"
       },
-      "epoch": 1,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra",
       "job_id": "bavli_bava_batra",
       "lane_id": "L04",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l02_l04",
+      "owner": "L04/bava_batra_resume_20261126",
       "source_segments": 3804,
       "source_sha256": "efa311405538b4993cd84dc91aad0bb3ff792aac3a3b62df117948d8a3ee9dd3",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Bava Batra"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 6,
+        "snapshot_sha256": "6cd74742059e02cbc7f80f4c373838f1779066975af8eae6e422f988930bc72b"
       },
-      "epoch": 1,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_pesachim",
       "job_id": "bavli_pesachim",
       "lane_id": "L04",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l02_l04",
+      "owner": "L04/pesachim_resume_20261126",
       "source_segments": 3519,
       "source_sha256": "991fdf80c9e63aa181875439631c2a08b49a8b9fb2b0118ccb44754d96da073e",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Pesachim"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 6,
+        "snapshot_sha256": "dc11341a8c57eb436038fa653808c9847d04429201c1ae5667b3782734a79197"
       },
-      "epoch": 1,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_avodah_zarah",
       "job_id": "bavli_avodah_zarah",
       "lane_id": "L04",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l02_l04",
+      "owner": "L04/avodah_zarah_resume_20261126",
       "source_segments": 2131,
       "source_sha256": "2ec254680a7711f122b072f08e556174ec536a48b0b9ac1f575994bf06aaa7a0",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Avodah Zarah"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 9,
+        "snapshot_sha256": "1ecfc626e3738ef20c14844b0262c69765443111d2786fd683e89b3708eee3bf"
       },
-      "epoch": 1,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_nedarim",
       "job_id": "bavli_nedarim",
       "lane_id": "L04",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l02_l04",
+      "owner": "L04/nedarim_resume_20261126",
       "source_segments": 1509,
       "source_sha256": "52a452f67441cc435f1908275e349834ddc53a2add513905d52e6a0a186e85a1",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Nedarim"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 7,
+        "snapshot_sha256": "5fac8984798328adcb8844f711954a943836d40eaad6e6bf605f1589d98cbfaf"
       },
-      "epoch": 1,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan",
       "job_id": "bavli_moed_katan",
       "lane_id": "L04",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l02_l04",
+      "owner": "L04/moed_katan_resume_20261126",
       "source_segments": 1026,
       "source_sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Moed Katan"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 12,
+        "snapshot_sha256": "4d303ae0cd52352256d5f5b72b0987ab993503d7bae57c18ed40142674fe5cff"
       },
-      "epoch": 1,
+      "epoch": 3,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_makkot",
       "job_id": "bavli_makkot",
       "lane_id": "L04",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l02_l04",
+      "owner": "L04/makkot_resume_20261126",
       "source_segments": 709,
       "source_sha256": "ca2b205e20bd401000af94a7f6d9da4ba9fa5208b9a0f78c5f50aa2bda618efd",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Makkot"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 2,
-        "snapshot_sha256": "98b69a22276956442697c13ec7f91fe8acf15527851f982d7123944bdabf1062"
+        "accepted_proposal_count": 5,
+        "snapshot_sha256": "129b3c0b78259222a4038266d2d3afe7622c0c65b95659dd13fea7a74dbbfe0d"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin",
       "job_id": "bavli_chullin",
       "lane_id": "L05",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "L05/chullin",
       "source_segments": 4393,
       "source_sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Chullin"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 3,
+        "snapshot_sha256": "fe708810f594231c7dcb654d30f106af9af6e885095e4d4bae0fd09d863f47d3"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shabbat",
       "job_id": "bavli_shabbat",
       "lane_id": "L05",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "L05/shabbat",
       "source_segments": 3778,
       "source_sha256": "7f0e982f0560b600515ef2de7c978537accacdff9f74d616e3c68a33ea60fd9e",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Shabbat"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 3,
+        "snapshot_sha256": "e49172b482d9fbb9d021aa4cb2f2b78bd3a155c8601c8f07958ef4d6181250ab"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_yoma",
       "job_id": "bavli_yoma",
       "lane_id": "L05",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "L05/yoma",
       "source_segments": 2271,
       "source_sha256": "52311dd2a84d80173e8ee0c0a2e236f41482bc6377f96bd0ca6b035f22dc52e2",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Yoma"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 1,
+        "snapshot_sha256": "83746e4b7a9c884bb3cb3c79684f804cc5b85770bb15bd84aa85b753a8896489"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot",
       "job_id": "bavli_shevuot",
       "lane_id": "L05",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "L05/shevuot",
       "source_segments": 1555,
       "source_sha256": "a3b0bb25746aa3683e9dd9da551b66670ab1fb57e1ac9c2bd1583d4aa984edd9",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Shevuot"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 4,
+        "snapshot_sha256": "7d4de3664fbc1bdf7ce11b65101c779855788ef7521677f0091d113963ed0ec2"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_temurah",
       "job_id": "bavli_temurah",
       "lane_id": "L05",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "L05/temurah",
       "source_segments": 1150,
       "source_sha256": "5e3336dff6155a38eb0f82473821bd06657651a70f902ea152c0092ecbcd0405",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Temurah"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 6,
+        "snapshot_sha256": "b161e3f79e71f5d463d653d3c53b883c2aff0bb7fd715d0a893448a8d57d961d"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_horayot",
       "job_id": "bavli_horayot",
       "lane_id": "L05",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "L05/horayot",
       "source_segments": 451,
       "source_sha256": "10bacb499f453e1f64670867d8803692fd4bedeef66024c28a6d53601c28ca2e",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Horayot"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 3,
-        "snapshot_sha256": "440c66bcbf1d0f66b7ae8df9aa8b04ad764becf01d25c6b27318ae8f6f279937"
+        "accepted_proposal_count": 7,
+        "snapshot_sha256": "e5070bae2d89395a752d94c4ad76d826228bff329c0ad59516442f89493ccf1d"
       },
       "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_bava_kamma",
@@ -510,13 +511,13 @@
       "owner": "/root/bava_kamma_owner",
       "source_segments": 4314,
       "source_sha256": "a5d8d42dbfddb121a824a9b996a4d51360457559e7a5da3750d3b7351e40a63a",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Bava Kamma"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 2,
-        "snapshot_sha256": "8ef92dadc43fdfaea1654f4253b5caa09fa54abd9ff3b596ac6f153eb4a329da"
+        "accepted_proposal_count": 5,
+        "snapshot_sha256": "995939dd6f68d0b9cb77d3969517d377e01e01d39c62e3e12cdb09cbf1402837"
       },
       "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_menachot",
@@ -526,13 +527,13 @@
       "owner": "/root/menachot_owner",
       "source_segments": 3783,
       "source_sha256": "a785012ce1fdc713618bd37ef58e8141efd38e18f72e854d6535b3d8ea20dc30",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Menachot"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 2,
-        "snapshot_sha256": "007e840a12e08fd27b3778e35c32acc4932994d1f44fa99d5e8cd22637d5e256"
+        "accepted_proposal_count": 4,
+        "snapshot_sha256": "27c0502ce5da00497d9b9aedee418ec430922a091493ef2542a791a8d6d82419"
       },
       "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_niddah",
@@ -542,91 +543,97 @@
       "owner": "/root/l06_niddah",
       "source_segments": 2665,
       "source_sha256": "2ef431a223773c5920cd51f03d6555e45c81ad98373c98beae9b466cf962e265",
-      "state": "verified_partial_activity_unconfirmed",
+      "state": "captured_partial",
       "tractate": "Niddah"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 2,
+        "snapshot_sha256": "3ef217433be9e89957f553127135fe714333f368b127f48e8b3a9ee4527fe232"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_megillah",
       "job_id": "bavli_megillah",
       "lane_id": "L06",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "/root/bava_kamma_owner",
       "source_segments": 1213,
       "source_sha256": "1867903e8e200a22b7931d936bfdd6cc2fb9fc032c425427cba695944650fd87",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Megillah"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 4,
+        "snapshot_sha256": "4f5cdda53c32dd6294175f36a00381657bd142393e695bd65468c0ab165b4e88"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_beitzah",
       "job_id": "bavli_beitzah",
       "lane_id": "L06",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "/root/menachot_owner",
       "source_segments": 1151,
       "source_sha256": "dfac792819786eb3092e1bc182b62f31dd30874ce58369497d097ecca5264a53",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Beitzah"
     },
     {
       "checkpoint": {
-        "accepted_proposal_count": 0,
-        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        "accepted_proposal_count": 3,
+        "snapshot_sha256": "a334dc1edf4494b484624bf6ce55f2d22e881ad56013414245b232d2d1412817"
       },
-      "epoch": 1,
+      "epoch": 2,
       "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_meilah",
       "job_id": "bavli_meilah",
       "lane_id": "L06",
       "legacy_note": "No inherited pilot",
-      "owner": "/root/lead_l05_l06",
+      "owner": "/root/l06_meilah",
       "source_segments": 515,
       "source_sha256": "19676a143e57405bd2b099952515d0171a1f3e88f3455df4306fcef4ff2eaa6a",
-      "state": "assigned_queued",
+      "state": "captured_partial",
       "tractate": "Meilah"
     }
   ],
   "lanes": {
     "L01": {
       "launch_confirmation": "collaboration.spawn_agent confirmed /root/lead_l01_l03",
-      "lead": "/root/lead_l01_l03",
-      "state": "later_checkpoints_reconciled_activity_unconfirmed"
+      "lead": "L01 peer lead",
+      "lead_thread_id": "01a21482-c7de-7da1-9010-0dd36d0c977d",
+      "state": "continuation_requested"
     },
     "L02": {
       "launch_confirmation": "collaboration.spawn_agent confirmed /root/lead_l02_l04",
-      "lead": "/root/lead_l02_l04",
-      "state": "later_checkpoints_reconciled_activity_unconfirmed"
+      "lead": "L02 peer lead",
+      "lead_thread_id": "01a21483-b191-7e82-a58c-c96c099af09f",
+      "state": "continuation_requested"
     },
     "L03": {
       "launch_confirmation": "collaboration.spawn_agent confirmed /root/lead_l01_l03",
-      "lead": "/root/lead_l01_l03",
-      "state": "later_checkpoints_reconciled_activity_unconfirmed"
+      "lead": "L03 peer lead",
+      "lead_thread_id": "01a21483-ec6e-7d80-9dce-324790c682f2",
+      "state": "continuation_requested"
     },
     "L04": {
       "launch_confirmation": "collaboration.spawn_agent confirmed /root/lead_l02_l04",
-      "lead": "/root/lead_l02_l04",
-      "state": "later_checkpoints_reconciled_activity_unconfirmed"
+      "lead": "L04 peer lead",
+      "lead_thread_id": "01a21956-bd7a-7460-b00f-2c883bff697a",
+      "state": "continuation_requested"
     },
     "L05": {
       "launch_confirmation": "collaboration.spawn_agent confirmed /root/lead_l05_l06",
-      "lead": "/root/lead_l05_l06",
-      "state": "later_checkpoints_reconciled_activity_unconfirmed"
+      "lead": "L05 peer lead",
+      "lead_thread_id": "01a21957-2064-7bf3-96dd-e0bbd53f5c85",
+      "state": "continuation_requested"
     },
     "L06": {
       "launch_confirmation": "collaboration.spawn_agent confirmed /root/lead_l05_l06",
-      "lead": "/root/lead_l05_l06",
-      "state": "later_checkpoints_reconciled_activity_unconfirmed"
+      "lead": "L06 peer lead",
+      "lead_thread_id": "01a21928-350c-7da2-b814-a9124aa5316f",
+      "state": "continuation_requested"
     }
   },
-  "revision": 4,
-  "revision_note": "Reconciled later within-lane dispatch epochs and exact checkpoints after source/schema/replay verification. No cross-lane transfer. Review and integration outstanding; activity not inferred from checkpoint files.",
+  "revision": 5,
+  "revision_note": "Coordinator reconciled preserved within-lane ownership lineage against locked source/schema/replay-verified integration capture. No owner files or epochs changed. Exact captured snapshots may precede later live work.",
   "run_id": "run_20261125_01"
 }
