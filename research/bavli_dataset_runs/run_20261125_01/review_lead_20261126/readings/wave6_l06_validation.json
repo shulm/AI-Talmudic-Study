@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "tractate": "Menachot",
+      "status": "PASS",
+      "core_segments": 30,
+      "claims": 26,
+      "sha256": "c8a7373c90c501985a6d78f1d6f9ff25b9c8a7165fdbafd1b120ef1f4f7d57f3"
+    },
+    {
+      "tractate": "Niddah",
+      "status": "PASS",
+      "core_segments": 30,
+      "claims": 30,
+      "sha256": "e255b793c7385b712635339eec4cdb49a2f851a2618f696ce8ed84e4ddd7f33c"
+    },
+    {
+      "tractate": "Megillah",
+      "status": "PASS",
+      "core_segments": 30,
+      "claims": 23,
+      "sha256": "1d02115257a293a1e0f963d8dcbe97117404fb9f785b0d41a2eb95a62b6807ab"
+    },
+    {
+      "tractate": "Beitzah",
+      "status": "PASS",
+      "core_segments": 30,
+      "claims": 38,
+      "sha256": "61a3e7dd09d059b0269017a2fa10f1b0afef796343fa8dc303e37026da7c01f1"
+    },
+    {
+      "tractate": "Meilah",
+      "status": "PASS",
+      "core_segments": 30,
+      "claims": 29,
+      "sha256": "9b2ff50ef5e495322be6a6476fc8f847000b079ba9c03785da0b5200726c6b98"
+    }
+  ],
+  "checks_performed": [
+    "source/schema/plan/common hashes",
+    "reading sidecar hash",
+    "exact core membership",
+    "exact Unicode slices",
+    "unique IDs",
+    "question/answer and relation link integrity"
+  ],
+  "required_correction": "niddah_batch001.coverage_correction.json excludes unread 7a/7b context"
+}

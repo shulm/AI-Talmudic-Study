@@ -1,0 +1,128 @@
+{
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "bindings": {
+    "queue": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\COMPARISON_QUEUE_007.json",
+      "sha256": "fb77d1b03c8367318082bc49174504785258bc6ebf4054e6b9eff181f21fe875"
+    },
+    "initial_reading": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\shevuot_batch001.json",
+      "sha256": "c76abd82d3928291bca158bf6f20f65549db06ed815bbf44d8ae2255681674ed"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\snapshots\\83746e4b7a9c884bb3cb3c79684f804cc5b85770bb15bd84aa85b753a8896489.json",
+      "sha256": "83746e4b7a9c884bb3cb3c79684f804cc5b85770bb15bd84aa85b753a8896489"
+    },
+    "source": {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Shevuot\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "a3b0bb25746aa3683e9dd9da551b66670ab1fb57e1ac9c2bd1583d4aa984edd9"
+    },
+    "job_descriptor": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\jobs\\bavli_shevuot.json",
+      "sha256": "4603047365831ce3b019de173e8e96cd2437cfa0c21acd080de00eeef7e0b23e"
+    },
+    "run_contract": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\RUN_CONTRACT.json",
+      "sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "schema": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    "protocol": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    "plan": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\frozen_plans\\bavli_shevuot.json",
+      "sha256": "24d1bbb66d1f1f51969ccadecabbf205e5b7c08b425209d5984597c1a984a201"
+    },
+    "proposals": [
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\proposals\\a036d1b18bc6026ef2fdceb466215a2f366edc01909ab1006871a01c11198f35.json",
+        "sha256": "a036d1b18bc6026ef2fdceb466215a2f366edc01909ab1006871a01c11198f35"
+      }
+    ],
+    "policy_impact": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\POLICY_IMPACT_006.json",
+      "sha256": "6aed0bcc81ec6b46dad2c7f157874786ca152d5b25d99402c1b033a4d4637f41"
+    },
+    "comparison_script": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\queue007_comparator_assigned_v2.py",
+      "sha256": "7f06257873bdccd79679874b9db7eda15e0dd07e86af33663ded8d1f5669cb84"
+    },
+    "manual_config_sha256": "710d02297d6e6447a5dba90d0aad8efff35221d5e27f2fcc71f564073c314169"
+  },
+  "comparison": {
+    "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\shevuot_batch001_exact_version.json",
+    "sha256": "0e14d0e815e54dc394b56ab4cc6d7c69db3e87de12df11428ea7123c1269d76e"
+  },
+  "scope": {
+    "independent_core_segments": 30,
+    "compared_unique_core_segments": 19,
+    "pending_core_segments": 11,
+    "probability_read_segments": 30,
+    "probability_compared_segments": 19,
+    "opening_read_segments": 10,
+    "opening_compared_segments": 10,
+    "closing_read_segments": 0,
+    "closing_compared_segments": 0,
+    "compared_endpoint_probability_overlap": 10
+  },
+  "required_changes": [],
+  "exceptions": [
+    "19 completed probability cores including opening10; 11 cores pending.",
+    "Torah quoted by Mishnah attribution is a source label, never a historical scholar/person choice; task eligibility remains false.",
+    "Partial bounded comparison; no exhaustive inventory or numeric accuracy certification."
+  ],
+  "layer_matrix": {
+    "independent_core_denominators": {
+      "source_findings": 27,
+      "attributable_findings": 27,
+      "condition_bearing_findings": 15,
+      "nonempty_comparable_question_labels": 7,
+      "embedded_reader_relation_descriptions": 1,
+      "formal_reader_edges": 0,
+      "warning": "Composite category listings and reconstructed question labels are not exhaustive atomic/question gold standard."
+    },
+    "producer_completed_per_layer": {
+      "structure": 19,
+      "utterances": 19,
+      "claims": 19,
+      "attributions": 19,
+      "questions": 19,
+      "positions": 19,
+      "edges": 19,
+      "reconciliation": 19
+    },
+    "sample_completed_per_layer": {
+      "structure": 19,
+      "utterances": 19,
+      "claims": 19,
+      "attributions": 19,
+      "questions": 19,
+      "positions": 19,
+      "edges": 19,
+      "reconciliation": 19
+    },
+    "source_segments_total": 1555
+  },
+  "task_eligibility": {
+    "ml": false,
+    "scholar_choice": false,
+    "attribution": false,
+    "retrieval": false,
+    "qa": false,
+    "argument_extraction": false,
+    "segmentation": false
+  },
+  "tractate_accepted": false,
+  "full_review_receipt": false,
+  "human_certification": false,
+  "admission_owner": "global coordinator",
+  "remaining": "Continue frozen source sample and new exact-version review; unchanged eligibility."
+}
