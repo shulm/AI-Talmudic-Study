@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "source_commit": "16ef28b105ff6c28ee3f822b1409f076fa895318",
+  "checks": {
+    "inventory": 6,
+    "row": 3152,
+    "historical": 2176,
+    "inactive": 56,
+    "aggregate": 1512,
+    "reference": 4,
+    "evidence": 846,
+    "residual": 148513,
+    "batch": 5121
+  },
+  "total_checks": 161386,
+  "failures": [],
+  "public_input_sha256": {
+    "research/decision_functions_2026-11-24/runs/post_es_diagnostics_v1/ABLATION.json": "7d04d67d28fa327e0bc9c9f786bb667487bfcde04ea11f2fefc1a2fa849d0dcc",
+    "research/decision_functions_2026-11-24/runs/post_es_diagnostics_v1/RESIDUALS.json": "7cdf4455bd11b104ff3ed34f418de708fd7722db3dc9d9ba14def8dd73ac9046",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/E_scores.json": "ec71fbe04a28cea93e64c6266cef5b94f78beab95462c7ce00f203618ae14767",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/F_scores.json": "d92af44f44fdec161fc50fc39c5b8451c92e134c2fde35c8fa9522643326d061",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/G_scores.json": "60f6b2d80c46bd1a4a058655b80a26f1a163743301906f53ff1be1bde744906c",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/H_scores.json": "6cb3806787c357fe3a4563a7f1c94b0b8c74a79b3383ee0a7c973c0c8dc9130d",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/E_evidence.json": "ffe29b1b9e28a5a82eff0da68ba43565a14863cd95a4f8ea902764c0e3aaa058",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/F_evidence.json": "21a2150e1281e15e37ae2261a94f8f1fafb27041281d67824ecadf43658737af",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/G_evidence.json": "4605dbebdc239ec82a8f8e8658305ff170dffbbd00137b5a48cdc357d5c2b160",
+    "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/H_evidence.json": "45d9365c86580d1d65997f034f23f2294d06532c8692c41567dba9a96a296821"
+  },
+  "uncapped_history_failures": [
+    {
+      "id": "E_101_active",
+      "nrmse": 0.5165570102926313,
+      "lower": 0.5165552180283067
+    }
+  ],
+  "uncapped_aggregate_contrast": {
+    "E": 0.4821921034506257,
+    "F": 0.48282660203677735,
+    "G": 0.4388665439418593,
+    "H": 0.4759287818423109
+  },
+  "original_ES_aggregate_contrast_lower": {
+    "E": 0.5552739114101162,
+    "F": 0.5648972346557398,
+    "G": 0.5346817867502928,
+    "H": 0.5561640887160271
+  },
+  "max_published_personal_R": 2.7945614658793225e-06,
+  "max_published_batch_difference": 1.2232536670264693e-06,
+  "scope": "Public scalar arithmetic and published residual relationships only; no model fit, no original fixture generation, no private-cache access. Saved gradients, interaction K, probabilities and per-cell contrast bounds cannot be independently recreated without private artifacts. Bounds are analytic expressions evaluated in float64, not directed-rounding certificates. Check count is arithmetic assertions, not independent studies or verifier groups."
+}
