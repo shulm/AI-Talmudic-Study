@@ -1,0 +1,66 @@
+from pathlib import Path
+exec((Path(__file__).parent.parent/'worker_20261126/batch001.py').read_text(encoding='utf-8').split("add('s.baraita'")[0])
+prefix='kt.wave2.b7.';core=['7a:'+str(n) for n in range(12,17)]+['7b:'+str(n) for n in range(1,7)]
+add('s.duration','structure',core[:7],dict(title='Wedding blessings for widow and bachelor: one versus seven days and rejoicing',primary=True,boundary='closed',legacy_ids=[]),origin='editorial_inference')
+add('s.ten','structure',core[7:],dict(title='Ten for wedding blessings: Boaz, congregations, and public teaching',primary=True,boundary='closed',legacy_ids=[]),origin='editorial_inference')
+for ref,voice,role in [('7a:12','Rav Helbo transmitting Rav through Rav Huna and Rabbi Abba bar Zavda; anonymous discussion','universal blessing statement, contrary report and spouse-status distinction'),('7a:13','anonymous objection quoting Rav Nahman’s report from Huna bar Natan','Boaz precedent'),('7a:14','anonymous clarification','no seven-day requirement but one day'),('7a:15','anonymous challenge quoting baraita','three-day rejoicing question'),('7a:16','anonymous alternatives','blessing and rejoicing durations separated'),('7b:1','anonymous objection and reply','widow baraita and wording challenge'),('7b:2','anonymous reply','minimum duration formulation'),('7b:3','Rav Nahman through Huna bar Natan; Rabbi Abbahu','alternative scriptural proofs for ten'),('7b:4','anonymous discussion citing Rabbi Meir','first verse reassignment and response'),('7b:5','anonymous discussion','Boaz interpretation and elders objection'),('7b:6','anonymous discussion quoting Shmuel; anonymous conclusion','publicity answer, fetus acquisition illustration and final contrary ruling')]:add('u.'+ref,'utterances',ref,dict(textual_voice=voice,discourse_role=role,composition='composite'))
+cb=claim('both','7a:12','אחת בתולה ואחת אלמנה טעונה ברכה','Rav’s transmitted statement requires wedding blessings for both a virgin and a widow.',['Wedding of virgin or widow'],holder=['רב'])
+chain=['רבי חלבו','רב הונא','רבי אבא בר זבדא','רב']
+for key,name,role in [('helbo','רבי חלבו','transmitter'),('huna','רב הונא','transmitter'),('abba','רבי אבא בר זבדא','transmitter'),('rav','רב','quoted_authority')]:attr(key,'7a:12','אמר רבי חלבו אמר רב הונא א"ר אבא בר זבדא אמר רב',name,role,[name],'Blessing for virgin and widow',chain)
+qcontra=q('huna_contra','7a:12','ומי אמר רב הונא הכי והאמר רב הונא אלמנה אינה טעונה ברכה','How can Rav Huna transmit that, when he also says a widow does not require a blessing?')
+cno=claim('widow_none','7a:12','והאמר רב הונא אלמנה אינה טעונה ברכה','A contrary Rav Huna statement says a widow does not require a blessing.',['Widow wedding; scope clarified below'],mode='challenged',holder=['רב הונא'],status='Initially broad wording, subsequently limited to widower and duration')
+cdist=claim('husband_status','7a:12','לא קשיא כאן בבחור שנשא אלמנה כאן באלמון שנשא אלמנה','The discussion distinguishes a bachelor marrying a widow from a widower marrying a widow.',['Bachelor versus widower groom','Widow bride'],status='First distinction; blessing duration clarified next')
+edge('huna_challenge','7a:12','ומי אמר רב הונא הכי',qcontra,cb,'objection');edge('status_reply','7a:12','לא קשיא',cdist,qcontra,'answer')
+qboaz=q('boaz','7a:13','ואלמון שנשא אלמנה לא','Does a widower marrying a widow really not require a blessing?',['Boaz precedent follows'])
+cten=claim('ten_first','7a:13','תנא מנין לברכת חתנים בעשרה שנאמר (רות ד, ב) ויקח עשרה אנשים מזקני העיר ויאמר שבו פה וישבו','The teaching reported through Huna bar Natan and Rav Nahman derives ten for wedding blessings from Ruth4:2’s ten elders.',['Wedding blessing quorum'],holder=['teaching reported by הונא בר נתן to רב נחמן'])
+cboaz=claim('boaz_status','7a:13','ובועז אלמון שנשא אלמנה הוה','The objection identifies Boaz as a widower who married a widow.',['Boaz precedent'],status='Source’s stated characterization')
+attr('nahman_first','7a:13','רב נחמן אמר לי הונא בר נתן תנא','רב נחמן','transmitter',['רב נחמן'],'Ten-person teaching',['רב נחמן','הונא בר נתן','unnamed teaching'])
+attr('huna_natan_first','7a:13','הונא בר נתן תנא','הונא בר נתן','transmitter',['הונא בר נתן'],'Ten-person teaching; distinct from Rav Huna',['רב נחמן','הונא בר נתן','unnamed teaching'])
+edge('boaz_challenge','7a:13','ואלמון שנשא אלמנה לא',qboaz,cdist,'objection');edge('boaz_support','7a:13','ובועז אלמון שנשא אלמנה הוה',cboaz,qboaz,'support')
+cnot7=claim('not_seven','7a:14','אינה טעונה ברכה כל ז\'','The widow-with-widower case does not require blessing throughout seven days.',['Widower marrying widow'],status='Clarified meaning of Rav Huna’s negative statement')
+cone=claim('one_day','7a:14','אבל יום אחד טעונה ברכה','That case does require blessing for one day.',['Widower marrying widow'],status='Clarification, not absolute absence of blessing')
+edge('duration_reply','7a:14','אינה טעונה ברכה כל ז\'',cnot7,qboaz,'answer');edge('one_reply','7a:14','אבל יום אחד טעונה ברכה',cone,qboaz,'answer');edge('clarify_negative','7a:14','מאי אינה טעונה ברכה דאמר רב הונא',cnot7,cno,'qualification')
+qjoy=q('three_days','7a:15','אלא הא דתניא שקדו חכמים על תקנת בנות ישראל שיהא שמח עמה ג\' ימים במאי אי בבחור האמרת שבעה אי באלמון האמרת יום אחד','How do the baraita’s three rejoicing days fit: a bachelor has seven, and a widower one?',['Widow marriage','Apparent conflation of blessing and rejoicing durations'])
+cwidow=claim('widower_durations','7a:16','איבעית אימא באלמון יום אחד לברכה ושלשה לשמחה','One answer assigns the baraita to a widower: one day of blessings and three of rejoicing.',['Widower marrying widow'],status='First alternative explanation distinguishing two duties')
+cbachelor=claim('bachelor_durations','7a:16','ואיבעית אימא בבחור שבעה לברכה ושלשה לשמחה','Alternatively it concerns a bachelor: seven days of blessings and three of rejoicing.',['Bachelor marrying widow'],status='Alternative explanation; distinct duties, not competing measures for same duty')
+edge('widower_reply','7a:16','איבעית אימא באלמון',cwidow,qjoy,'answer');edge('bachelor_reply','7a:16','ואיבעית אימא בבחור',cbachelor,qjoy,'answer')
+qbar=q('baraita_duration','7b:1','מיתיבי מברכין לבתולה שבעה ולאלמנה יום אחד מאי לאו אפילו אלמנה שנשאת לבחור','Does the baraita’s one day for a widow not include a widow marrying a bachelor?')
+cbar=claim('widower_limit','7b:1','לא לאלמון','The one-day statement refers to a widower.',['Widower marrying widow'],status='Answer restricting the one-day clause')
+qword=q('wording','7b:1','אי הכי ליתני מברכין לבתולה שבעה ולאלמנה שנשאת לבחור שבעה ולאלמנה יום אחד','Why not expressly list seven days for a widow marrying a bachelor?')
+cmin=claim('minimum','7b:2','מילתא פסיקתא קתני דליכא בתולה דבצרה משבעה וליכא אלמנה דבצרה מיום אחד','The baraita states fixed minima: no virgin has fewer than seven days and no widow fewer than one.',['Duration of wedding blessings'],status='Explanation of terse formulation, not denial of longer widow cases')
+edge('baraita_challenge','7b:1','מאי לאו אפילו אלמנה שנשאת לבחור',qbar,cbachelor,'objection');edge('widower_limit','7b:1','לא לאלמון',cbar,qbar,'answer');edge('wording_challenge','7b:1','אי הכי ליתני',qword,cbar,'objection');edge('minimum_reply','7b:2','מילתא פסיקתא קתני',cmin,qword,'answer')
+cten2=claim('ten_repeat','7b:3','גופא אמר רב נחמן אמר לי הונא בר נתן תנא מנין לברכת חתנים בעשרה שנאמר (רות ד, ב) ויקח עשרה אנשים מזקני העיר ויאמר שבו פה','The teaching deriving ten for wedding blessings from Boaz’s ten elders is repeated through Rav Nahman and Huna bar Natan.',['Wedding blessing quorum'],holder=['teaching reported by הונא בר נתן to רב נחמן'],status='Parallel occurrence retained')
+cverse=claim('abahu_verse','7b:3','ורבי אבהו אמר מהכא (תהלים סח, כז) במקהלות ברכו אלהים ה\' ממקור ישראל','Rabbi Abbahu derives the blessing quorum from Psalm68:27’s congregations and source of Israel.',['Wedding blessing quorum'],holder=['רבי אבהו'])
+attr('nahman_repeat','7b:3','רב נחמן אמר לי הונא בר נתן תנא','רב נחמן','transmitter',['רב נחמן'],'Repeated ten-person teaching',['רב נחמן','הונא בר נתן','unnamed teaching'])
+attr('huna_repeat','7b:3','הונא בר נתן תנא','הונא בר נתן','transmitter',['הונא בר נתן'],'Repeated ten-person teaching',['רב נחמן','הונא בר נתן','unnamed teaching'])
+attr('abahu','7b:3','ורבי אבהו אמר','רבי אבהו','speaker',['רבי אבהו'],'Alternative verse for wedding quorum')
+qn=q('nahman_verse','7b:4','ורב נחמן בהאי קרא דרבי אבהו מאי דריש ביה','What does Rav Nahman derive from Rabbi Abbahu’s verse?')
+cfetus=claim('fetal_song','7b:4','מיבעי ליה לכדתניא היה ר"מ אומר מנין שאפילו עוברים שבמעי אמן אמרו שירה על הים שנאמר במקהלות ברכו אלהים ה\' ממקור ישראל','The answer uses Rabbi Meir’s teaching that even fetuses in their mothers’ wombs sang at the sea, derived from that verse.',holder=['רבי מאיר'],status='Quoted interpretation used to explain Rav Nahman’s verse allocation')
+attr('meir','7b:4','היה ר"מ אומר','רבי מאיר','quoted_authority',['רבי מאיר'],'Fetal song derivation')
+csource=claim('source_word','7b:4','ואידך אם כן לימא קרא מבטן מאי ממקור על עסקי מקור','The other side argues that from the womb would suffice for fetal song; the wording from the source points to affairs of procreation.',['Response defending Rabbi Abbahu’s derivation'],status='Anonymous dialectical response attributed by context, not a newly named speech')
+edge('fetal_answer','7b:4','מיבעי ליה לכדתניא',cfetus,qn,'answer');edge('source_reply','7b:4','ואידך אם כן לימא קרא מבטן',csource,cfetus,'objection')
+qa=q('abahu_boaz','7b:5','ורבי אבהו בהאי קרא דרב נחמן מאי דריש ביה','What does Rabbi Abbahu derive from Rav Nahman’s verse?')
+cam=claim('gender','7b:5','ההוא מיבעי ליה למידרש עמוני ולא עמונית מואבי ולא מואבית','The verse is used for the interpretation excluding an Ammonite woman and Moabite woman from the male-named restrictions.',holder=['anonymous explanation of Rabbi Abbahu’s verse use'],status='Source’s gendered exclusion; surrounding laws not expanded')
+qeld=q('elders','7b:5','דאי סלקא דעתך לברכה לא סגיא דלאו זקנים','If the gathering were only for a blessing, would elders be indispensable?')
+edge('gender_answer','7b:5','ההוא מיבעי ליה למידרש',cam,qa,'answer');edge('elders_objection','7b:5','דאי סלקא דעתך לברכה',qeld,cten2,'objection')
+qten=q('ten_exegesis','7b:6','ואידך אי סלקא דעתך למידרש לא סגיא דלאו עשרה','The other side asks why ten would be indispensable merely to expound the law.')
+cpub=claim('publicize','7b:6','אין לפרסומי מילתא','Ten serve to publicize the matter.',['Public teaching of the disputed rule'])
+csh=claim('shmuel_public','7b:6','וכדאמר ליה שמואל לרב חנא בגדתאה פוק ואייתי לי בי עשרה ואימא לך באנפייהו המזכה לעובר קנה','Shmuel told Rav Hana of Baghdad to gather ten so he could announce before them that a transfer to a fetus takes effect.',holder=['שמואל'],status='Publicity illustration; the legal assertion is expressly rejected by the following final ruling')
+cfinal=claim('fetus_final','7b:6','והלכתא המזכה לעובר לא קנה','The anonymous final ruling says a transfer to a fetus does not take effect.',holder=['anonymous conclusion'],status='Explicit local final ruling on embedded property-law illustration')
+attr('shmuel','7b:6','דאמר ליה שמואל לרב חנא בגדתאה','שמואל','speaker',['שמואל'],'Public instruction to Rav Hana of Baghdad; Hana is addressee')
+edge('ten_challenge','7b:6','לא סגיא דלאו עשרה',qten,cam,'objection');edge('public_answer','7b:6','אין לפרסומי מילתא',cpub,qten,'answer');edge('public_example','7b:6','וכדאמר ליה שמואל',csh,cpub,'support');edge('fetus_correction','7b:6','והלכתא המזכה לעובר לא קנה',cfinal,csh,'local_resolution')
+for x in records:
+ if x['layer']=='claims':x['content']['scope']='Wedding blessing duration/quorum and embedded proof discussions, Ketubot7a:12–7b:6'
+coverage=[]
+for ref in core:
+ sid=byref[ref]['id']
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in records if x['layer']==layer and any(e['segment_id']==sid for e in x['evidence'])]
+  rationale='Manual '+layer+' pass over '+ref+'; '+('reread full continuation through8b, widow/bachelor duration conditions, distinction of blessing from rejoicing, Huna identities, repeated ten-person teaching, reciprocal verse uses and final fetus ruling' if layer=='reconciliation' else 'source-local alternatives and transmitted authorities retained without harmonization')
+  if not ids:rationale+='; no additional supported finding in this layer'
+  coverage.append(dict(segment_id=sid,layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale=rationale))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/ketubot_resume',epoch=3,source_sha256=j['source_sha256'],**r.hashes(),execution=dict(route='interactive_agent',agent_id='/root/ketubot_resume',model_id=None),records=records,coverage=coverage,open_tails=r.current(job)['open_tails'])
+r.validate_apply(r.current(job),p,segments,j);path=out/'batch007_proposal.json';r.immutable(path,r.encoded(p))
+if '--promote' in sys.argv:
+ receipt=r.submit(job,path,p['owner'],p['epoch']);r.immutable(out/'batch007_receipt.json',r.encoded(receipt));print(receipt)
+else:print('Prepared validated proposal only; promotion explicitly held.')

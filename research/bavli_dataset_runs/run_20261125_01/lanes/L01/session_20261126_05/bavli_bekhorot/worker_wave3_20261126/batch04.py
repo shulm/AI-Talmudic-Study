@@ -1,0 +1,42 @@
+from pathlib import Path
+helper=(Path(r'F:/Sefaria_QA/bavli_production_run_20261125_01/L01/bavli_berakhot/worker_wave2_20261126/batch01.py')).read_text(encoding='utf-8').split("refs=['4a:'")[0]
+exec(compile(helper,'serialization_helpers','exec'))
+pre='beh.partner_share.20261126w3.'
+assert r.sha(r.encoded(state))=='8f548984cca27c8a780e8d7a82e5964080cf958bece1461e3d598c1e773a302a'
+refs=['3a:'+str(n) for n in range(12,19)]
+add('s','structure',refs,dict(title='Minimum non-Jewish partnership and rejected harmonization',primary=True,boundary='closed',legacy_ids=[]))
+for n,voice,role in [(12,'Anonymous question, Rav Huna, Rav Nahman','Threshold answer and objection'),(13,'Rav Hisda and Rava','Reported alternative thresholds'),(14,'Anonymous Gemara','Basis of disagreement'),(15,'Sages before Rav Pappa','Proposed harmonization'),(16,'Rav Pappa','Rejection of harmonization'),(17,'Mar bar Rav Ashi','Objection from nonviable births'),(18,'Anonymous Gemara','Mixture distinction')]:add('u'+str(n),'utterances',['3a:'+str(n)],dict(textual_voice=voice,discourse_role=role,composition='composite'))
+q('q12',('3a:12','וכמה תהא שותפות של עובד כוכבים ותהא פטורה מן הבכורה'),'How much non-Jewish partnership exempts from firstborn status?')
+c('c12',('3a:12','אמר רב הונא אפילו אזנו'),'Rav Huna says even ownership of its ear suffices.',cond=['Non-Jewish partnership represented by the ear'])
+q('q12n',('3a:12','ולימא ליה שקיל אזנך וזיל'),'Rav Nahman objects: why not tell the partner to take his ear and go?')
+c('c13h',('3a:13','רב חסדא אמר דבר שעושה אותו נבלה'),'Rav Hisda requires a part whose loss would render the animal a nevelah.',cond=['Non-Jewish ownership of the requisite part'])
+c('c13r',('3a:13','ורבא אמר דבר שעושה אותו טריפה'),'Rava requires a part whose loss would render it a tereifah.',cond=['Non-Jewish ownership of the requisite part'])
+q('q14',('3a:14','במאי קמיפלגי'),'What is the basis of the threshold disagreement?')
+c('c14r',('3a:14','למאן דאמר דבר שעושה אותו טריפה קסבר טריפה אינה חיה'),'The tereifah threshold is explained by the view that a tereifah does not live.')
+c('c14h',('3a:14','ולמאן דאמר דבר שעושה אותו נבלה אבל טריפה חיה'),'The nevelah threshold is explained by the view that a tereifah can live.')
+c('c15same',('3a:15','הא דרב הונא ורב חסדא ורבא לא פליגי'),'The Sages propose before Rav Pappa that Rav Huna, Rav Hisda and Rava do not disagree.',mode='hypothetical')
+c('c15dist',('3a:15','הא בו הא באמו'),'Their proposed reconciliation distinguishes a share in the offspring itself from a share in its mother.',mode='hypothetical')
+q('q16',('3a:16','מאי שנא בו דבעינן כל בכור וליכא אמו נמי בעינן (שמות לד, יט) כל מקנך תזכר וליכא'),'Rav Pappa asks why the all-firstborn requirement for the offspring differs from the all-your-livestock requirement for the mother?')
+c('c16',('3a:16','אלא לא שנא'),'Rav Pappa concludes there is no difference between offspring and mother for this issue, rejecting the proposed harmonization.')
+q('q17','3a:17','Mar bar Rav Ashi asks why this differs from nonviable births, which are sanctified despite not being viable, as the cited interpretation teaches.')
+c('c17','3a:17','The cited derashah includes a nonviable expelled birth under firstborn sanctity.')
+c('c18pure',('3a:18','התם כיון דלא עריבו בהו חולין קרינא בהו בבהמה כל בכור'),'The answer distinguishes nonviable births as having no unconsecrated share mixed in, so the whole-firstborn wording applies.')
+c('c18mixed',('3a:18','הכא כיון דעריבו בהו חולין לא קרינא בהו כל בכור'),'Here an unconsecrated share is mixed in, so the whole-firstborn wording does not apply.')
+for k,ref,surface,role,cands,scope in [('a12h','3a:12','רב הונא','speaker',['רב הונא'],'c12'),('a12n','3a:12','רב נחמן','speaker',['רב נחמן'],'q12n'),('a13h','3a:13','רב חסדא','speaker',['רב חסדא'],'c13h'),('a13r','3a:13','רבא','speaker',['רבא'],'c13r'),('a15','3a:15','רבנן','collective',['רבנן'],'Proposed harmonization before Rav Pappa'),('a16','3a:16','רב פפא','speaker',['רב פפא'],'Rejection of harmonization'),('a17','3a:17','מר בר רב אשי','speaker',['מר בר רב אשי'],'q17')]:att(k,ref,surface,role,cands,pre+scope if scope.startswith(('c','q')) else scope)
+for k,ref,cl,h,status,question in [('p12','3a:12','c12',['רב הונא'],'Reported threshold challenged by Rav Nahman','q12'),('p13h','3a:13','c13h',['רב חסדא'],'Reported threshold','q12'),('p13r','3a:13','c13r',['רבא'],'Reported threshold','q12'),('p14h','3a:14','c14h',['רב חסדא'],'Anonymous explanation of his threshold','q14'),('p14r','3a:14','c14r',['רבא'],'Anonymous explanation of his threshold','q14'),('p15s','3a:15','c15same',['רבנן'],'Proposed harmonization rejected by Rav Pappa',None),('p15d','3a:15','c15dist',['רבנן'],'Proposed distinction rejected in next segment',None),('p16','3a:16','c16',['רב פפא'],'Rejection of proposed harmonization','q16'),('p18p','3a:18','c18pure',['Anonymous Gemara'],'Answer distinguishing nonviable births','q17'),('p18m','3a:18','c18mixed',['Anonymous Gemara'],'Answer distinguishing mixed ownership','q17')]:
+ cr=next(x for x in rows if x['id']==pre+cl);pos(k,ref,cl,h,status,question,cr['content']['conditions'])
+for k,ref,a,b,rel in [('e12','3a:12','c12','q12','answer'),('e12n','3a:12','q12n','c12','objection'),('e13h','3a:13','c13h','q12','answer'),('e13r','3a:13','c13r','q12','answer'),('e13d','3a:13','c13h','c13r','distinction'),('e14h','3a:14','c14h','q14','answer'),('e14r','3a:14','c14r','q14','answer'),('e14hs','3a:14','c14h','c13h','support'),('e14rs','3a:14','c14r','c13r','support'),('e15','3a:15','c15dist','c15same','support'),('e16q','3a:16','q16','c15dist','objection'),('e16','3a:16','c16','c15same','objection'),('e16a','3a:16','c16','q16','answer'),('e17','3a:17','q17','c13r','objection'),('e17s','3a:17','c17','q17','support'),('e18p','3a:18','c18pure','q17','answer'),('e18m','3a:18','c18mixed','q17','answer'),('e18d','3a:18','c18pure','c18mixed','distinction')]:edge(k,ref,a,b,rel)
+# Self-omission check: explicit support marker in preceding3a3 refers to preceding penalty passage.
+oldpre='beh.offspring_rights.20261126w3.';penpre='beh.penalty.20261126w3.'
+x=dict(id=pre+'e_prior_penalty_support',layer='edges',evidence=[ev('3a:3')],content=dict(source_id=oldpre+'c3a2',target_id=penpre+'c3',relation='support',explicitness='source_explicit'),origin='source_paraphrase',links=[oldpre+'c3a2',penpre+'c3'],uncertainty=['Explicit מסייעא marker links preceding penalty discussion to first ReshLakish report; does not erase the alternative report.']);rows.append(x)
+for x in rows:
+ if x['layer']=='claims':x['content']['scope']='Local partnership threshold discussion. Proposed לא פליגי harmonization is rejected by Rav Pappa; mother/offspring distinction is not a settled reconciliation. Exact anatomical thresholds and viability rationale retained.'
+ if x['id']==pre+'c15dist':x['uncertainty'].append('Compact הא בו הא באמו does not explicitly name the assignment within this segment; no name-order mapping invented.')
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Read3a12-19, preceding partnership derivations. Omission reread preserves RavNahman objection, distinct Hisda/Rava thresholds, viability reasoning, rejected לא פליגי, whole-mother analogy and no-unconsecrated-mixture answer. Completed '+layer+' pass.'))
+old=next(x for x in state['coverage'] if x['segment_id']==by['3a:3']['id'] and x['layer']=='edges');cov.append(dict(segment_id=old['segment_id'],layer='edges',extraction_state='completed',extraction_result='records_found',record_ids=old['record_ids']+[pre+'e_prior_penalty_support'],rationale='Self-omission correction: explicit support marker connects prior penalty discussion to first ReshLakish report. Prior proposal retained.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/l01_bekhorot',epoch=2,execution=dict(route='interactive_agent',agent_id='/root',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch04_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch04_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch04_receipt.json',r.encoded(out));print(r.encoded(out).decode())
