@@ -1,0 +1,299 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Niddah",
+  "owner": "/root/l06_niddah",
+  "epoch": 2,
+  "source_sha256": "2ef431a223773c5920cd51f03d6555e45c81ad98373c98beae9b466cf962e265",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "candidates": [
+          "רבי אליעזר"
+        ],
+        "role": "quoted_authority",
+        "scope": "l06.nid.reasons.c.four.nid_attr_001",
+        "surface": "דא\"ר אליעזר",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 32,
+          "end_char": 60,
+          "quote": "דא\"ר אליעזר ארבע נשים ותו לא"
+        }
+      ],
+      "id": "l06.nid.reasons.a.eliezer.nid_attr_001",
+      "layer": "attributions",
+      "links": [
+        "l06.nid.reasons.c.four.nid_attr_001"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "NID-ATTR-001 correction: named four-women restriction separated from anonymous exclusion explanation; original version preserved."
+      ],
+      "supersedes": "l06.nid.reasons.a.eliezer"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "dayah-shaatah rule"
+        ],
+        "proposition": "Rabbi Eliezer limits the dayah-shaatah rule to four women.",
+        "scope": "Quoted Rabbi Eliezer restriction only"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 32,
+          "end_char": 60,
+          "quote": "דא\"ר אליעזר ארבע נשים ותו לא"
+        }
+      ],
+      "id": "l06.nid.reasons.c.four.nid_attr_001",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "NID-ATTR-001 correction: named four-women restriction separated from anonymous exclusion explanation; original version preserved."
+      ],
+      "supersedes": "l06.nid.reasons.c.four"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "l06.nid.reasons.c.exclude_four.nid_attr_001",
+        "target_id": "l06.nid.reasons.q.all"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 12,
+          "end_char": 31,
+          "quote": "לאפוקי מדרבי אליעזר"
+        },
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 61,
+          "end_char": 74,
+          "quote": "קמ\"ל כל הנשים"
+        }
+      ],
+      "id": "l06.nid.reasons.e.all.nid_attr_001",
+      "layer": "edges",
+      "links": [
+        "l06.nid.reasons.c.exclude_four.nid_attr_001",
+        "l06.nid.reasons.q.all"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "NID-ATTR-001 correction: named four-women restriction separated from anonymous exclusion explanation; original version preserved."
+      ],
+      "supersedes": "l06.nid.reasons.e.all"
+    },
+    {
+      "content": {
+        "claim_id": "l06.nid.reasons.c.four.nid_attr_001",
+        "conditions": [
+          "dayah-shaatah rule"
+        ],
+        "holder_candidates": [
+          "רבי אליעזר"
+        ],
+        "local_status": "quoted restriction attributed to Rabbi Eliezer, excluding the anonymous explanation",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 32,
+          "end_char": 60,
+          "quote": "דא\"ר אליעזר ארבע נשים ותו לא"
+        }
+      ],
+      "id": "l06.nid.reasons.p.four.nid_attr_001",
+      "layer": "positions",
+      "links": [
+        "l06.nid.reasons.c.four.nid_attr_001"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "NID-ATTR-001 correction: named four-women restriction separated from anonymous exclusion explanation; original version preserved."
+      ],
+      "supersedes": "l06.nid.reasons.p.four"
+    },
+    {
+      "id": "l06.nid.reasons.c.exclude_four.nid_attr_001",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 12,
+          "end_char": 31,
+          "quote": "לאפוקי מדרבי אליעזר"
+        },
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 61,
+          "end_char": 74,
+          "quote": "קמ\"ל כל הנשים"
+        }
+      ],
+      "content": {
+        "proposition": "The anonymous explanation says that the Mishnah’s all-women wording excludes Rabbi Eliezer’s four-women restriction.",
+        "conditions": [
+          "explanation of the wording כל הנשים"
+        ],
+        "scope": "anonymous editorial explanation, not Rabbi Eliezer’s statement",
+        "assertion_mode": "asserted"
+      },
+      "links": [
+        "l06.nid.reasons.c.four.nid_attr_001"
+      ],
+      "uncertainty": [],
+      "origin": "source_paraphrase"
+    },
+    {
+      "id": "l06.nid.reasons.a.exclude_four.nid_attr_001",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 12,
+          "end_char": 31,
+          "quote": "לאפוקי מדרבי אליעזר"
+        },
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 61,
+          "end_char": 74,
+          "quote": "קמ\"ל כל הנשים"
+        }
+      ],
+      "content": {
+        "surface": "לאפוקי מדרבי אליעזר ... קמ\"ל כל הנשים",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "l06.nid.reasons.c.exclude_four.nid_attr_001",
+        "transmission_chain": []
+      },
+      "links": [
+        "l06.nid.reasons.c.exclude_four.nid_attr_001"
+      ],
+      "uncertainty": [],
+      "origin": "source_paraphrase"
+    },
+    {
+      "id": "l06.nid.reasons.p.exclude_four.nid_attr_001",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 12,
+          "end_char": 31,
+          "quote": "לאפוקי מדרבי אליעזר"
+        },
+        {
+          "segment_id": "seg_9a1c8cf4d41a90666cf3",
+          "start_char": 61,
+          "end_char": 74,
+          "quote": "קמ\"ל כל הנשים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "l06.nid.reasons.c.exclude_four.nid_attr_001",
+        "question_id": "l06.nid.reasons.q.all",
+        "conditions": [
+          "explanation of wording"
+        ],
+        "local_status": "anonymous explanatory answer; no named holder assigned"
+      },
+      "links": [
+        "l06.nid.reasons.c.exclude_four.nid_attr_001",
+        "l06.nid.reasons.q.all"
+      ],
+      "uncertainty": [],
+      "origin": "source_paraphrase"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Manual source pass 3a:12–3b:12 with basket continuation read through3b:18. Preserves alternative accounts, scoped exceptions, Abaye/Rava distinction, two alternative reconciliations and taharot-only scope; no psychological inference beyond text. Raw evidence verified. NID-ATTR-001: split quoted restriction from anonymous exclusion explanation; narrowed role evidence; redirected answer edge; original versions retained.",
+      "record_ids": [
+        "l06.nid.reasons.anon40",
+        "l06.nid.reasons.a.eliezer.nid_attr_001",
+        "l06.nid.reasons.a.exclude_four.nid_attr_001"
+      ],
+      "segment_id": "seg_9a1c8cf4d41a90666cf3"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Manual source pass 3a:12–3b:12 with basket continuation read through3b:18. Preserves alternative accounts, scoped exceptions, Abaye/Rava distinction, two alternative reconciliations and taharot-only scope; no psychological inference beyond text. Raw evidence verified. NID-ATTR-001: split quoted restriction from anonymous exclusion explanation; narrowed role evidence; redirected answer edge; original versions retained.",
+      "record_ids": [
+        "l06.nid.reasons.c.four.nid_attr_001",
+        "l06.nid.reasons.c.exclude_four.nid_attr_001"
+      ],
+      "segment_id": "seg_9a1c8cf4d41a90666cf3"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Manual source pass 3a:12–3b:12 with basket continuation read through3b:18. Preserves alternative accounts, scoped exceptions, Abaye/Rava distinction, two alternative reconciliations and taharot-only scope; no psychological inference beyond text. Raw evidence verified. NID-ATTR-001: split quoted restriction from anonymous exclusion explanation; narrowed role evidence; redirected answer edge; original versions retained.",
+      "record_ids": [
+        "l06.nid.reasons.e.all.nid_attr_001"
+      ],
+      "segment_id": "seg_9a1c8cf4d41a90666cf3"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Manual source pass 3a:12–3b:12 with basket continuation read through3b:18. Preserves alternative accounts, scoped exceptions, Abaye/Rava distinction, two alternative reconciliations and taharot-only scope; no psychological inference beyond text. Raw evidence verified. NID-ATTR-001: split quoted restriction from anonymous exclusion explanation; narrowed role evidence; redirected answer edge; original versions retained.",
+      "record_ids": [
+        "l06.nid.reasons.p.four.nid_attr_001",
+        "l06.nid.reasons.p.exclude_four.nid_attr_001"
+      ],
+      "segment_id": "seg_9a1c8cf4d41a90666cf3"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Manual source pass 3a:12–3b:12 with basket continuation read through3b:18. Preserves alternative accounts, scoped exceptions, Abaye/Rava distinction, two alternative reconciliations and taharot-only scope; no psychological inference beyond text. Raw evidence verified. NID-ATTR-001: split quoted restriction from anonymous exclusion explanation; narrowed role evidence; redirected answer edge; original versions retained.",
+      "record_ids": [
+        "l06.nid.reasons.structure",
+        "l06.nid.reasons.c.four.nid_attr_001",
+        "l06.nid.reasons.p.four.nid_attr_001",
+        "l06.nid.reasons.u40",
+        "l06.nid.reasons.anon40",
+        "l06.nid.reasons.a.eliezer.nid_attr_001",
+        "l06.nid.reasons.q.all",
+        "l06.nid.reasons.e.all.nid_attr_001",
+        "l06.nid.reasons.c.exclude_four.nid_attr_001",
+        "l06.nid.reasons.a.exclude_four.nid_attr_001",
+        "l06.nid.reasons.p.exclude_four.nid_attr_001"
+      ],
+      "segment_id": "seg_9a1c8cf4d41a90666cf3"
+    }
+  ],
+  "open_tails": [
+    "l06.nid.open.structure.reason",
+    "l06.nid.mikveh.structure"
+  ]
+}
