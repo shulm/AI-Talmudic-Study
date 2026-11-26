@@ -1,0 +1,139 @@
+{
+  "artifact_type": "nonblind_correction_verification",
+  "created": "2026-11-26",
+  "agent": "/root/source_reader_20261126",
+  "tractate": "Berakhot",
+  "source_only": false,
+  "exposure_statement": "Nonblind correction check: read existing independent first reading, comparison, verdict, producer correction proposal and old/new snapshots before source verification. Does not enlarge or reclassify the initial blind reading. Ketubot labels were not accessed.",
+  "status": "BOUNDED_CORRECTION_VERIFIED_WITH_EDGE_ALTERNATIVE_UNRESOLVED",
+  "snapshot_sha256": "1cb99b6538dd9323c93dc54ef524320400ec7ea4a10bcfabad9657d35f66a817",
+  "prior_snapshot_sha256": "03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e",
+  "proposal_sha256": "a6aaf8c1f102b1636acb0daee1b81db66e7ca2d6618afaad49e889339783551d",
+  "artifact_hashes": {
+    "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\berakhot_batch001.json": "583a9532d6b54631eafbe19fd941281d222e1fa43089537645fa7c95ad3436fb",
+    "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\berakhot_03622eb5_batch001.json": "51067df028d991c8750c6e08387174dba22d930e10e73c827591c64edcd07ade",
+    "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\verdicts\\berakhot_03622eb5.json": "06feae36bdb143d6d6f5d229c0307852edf78686569c05c4c02108ae5e45a132",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e.json": "03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\1cb99b6538dd9323c93dc54ef524320400ec7ea4a10bcfabad9657d35f66a817.json": "1cb99b6538dd9323c93dc54ef524320400ec7ea4a10bcfabad9657d35f66a817",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\proposals\\a6aaf8c1f102b1636acb0daee1b81db66e7ca2d6618afaad49e889339783551d.json": "a6aaf8c1f102b1636acb0daee1b81db66e7ca2d6618afaad49e889339783551d",
+    "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\Wikisource Talmud Bavli.json": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+    "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\source_inventory.json": "8531c5cd79e801a04c29d861b3e154a1aa6841a17b0290fad8094488e70c2fc7"
+  },
+  "findings": [
+    {
+      "id": "BR-COND-001",
+      "initial_state": "proposed_correction_pending",
+      "verification": "CORRECTION_VERIFIED_IN_SNAPSHOT",
+      "evidence": [
+        {
+          "ref": "Berakhot 2a:4",
+          "start_char": 0,
+          "end_char": 166,
+          "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "explanation": "Both explicit premises are now structured in claim and position: sons have not recited and dawn has not risen. Attribution scope and support-edge target point to corrected claim. Original incomplete fields remain in preserved superseded records.",
+      "replacement_ids": [
+        "bk.opening.pass1.answer.review20261126",
+        "bk.opening.pass1.c.duty.review20261126",
+        "bk.opening.pass1.general.review20261126",
+        "bk.opening.pass1.p.duty.review20261126"
+      ]
+    },
+    {
+      "id": "BR-QUESTION-002",
+      "initial_state": "unresolved_representation_alternative",
+      "verification": "RESTRICTION_VERIFIED_NULL_QUESTION_LINKS",
+      "evidence": [
+        {
+          "ref": "Berakhot 3b:10",
+          "start_char": 0,
+          "end_char": 56,
+          "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש"
+        },
+        {
+          "ref": "Berakhot 3b:11",
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "מאי טעמא דרבי נתן דכתיב (שופטים ז)ויבא גדעון ומאה איש אשר אתו בקצה המחנה ראש האשמורת התיכונה תנא אין תיכונה אלא שיש לפניה ולאחריה"
+        },
+        {
+          "ref": "Berakhot 3b:14",
+          "start_char": 0,
+          "end_char": 191,
+          "quote": "מאי טעמיה דרבי אמר רב זריקא אמר רבי אמי אמר רבי יהושע בן לוי כתוב אחד אומר (תהלים קיט)חצות לילה אקום להודות לך על משפטי צדקך וכתוב אחד אומר (שם)קדמו עיני אשמורות הא כיצד ארבע משמרות הוי הלילה"
+        }
+      ],
+      "explanation": "Three/four count positions retain proper holders and claim references. Both question_id fields are null, and q11/q14 why-question links removed. Source contains a comparable count disagreement, but no new editorial count question or qualified QA answer set is asserted. Historical discourse-association alternative preserved.",
+      "replacement_ids": [
+        "bk.watch_dispute.20261125.p10n.review20261126",
+        "bk.watch_dispute.20261125.p10r.review20261126"
+      ]
+    },
+    {
+      "id": "BR-EDGE-003",
+      "initial_state": "unresolved_supported_alternatives",
+      "verification": "ALTERNATIVES_AND_RESTRICTION_PRESERVED_NOT_ADJUDICATED",
+      "evidence": [
+        {
+          "ref": "Berakhot 3b:14",
+          "start_char": 0,
+          "end_char": 191,
+          "quote": "מאי טעמיה דרבי אמר רב זריקא אמר רבי אמי אמר רבי יהושע בן לוי כתוב אחד אומר (תהלים קיט)חצות לילה אקום להודות לך על משפטי צדקך וכתוב אחד אומר (שם)קדמו עיני אשמורות הא כיצד ארבע משמרות הוי הלילה"
+        },
+        {
+          "ref": "Berakhot 3b:15",
+          "start_char": 0,
+          "end_char": 130,
+          "quote": "ורבי נתן סבר לה כרבי יהושע דתנן רבי יהושע אומר עד שלש שעות שכן דרך מלכים לעמוד בשלש שעות שית דליליא ותרתי דיממא הוו להו שתי משמרות"
+        },
+        {
+          "ref": "Berakhot 3b:16",
+          "start_char": 0,
+          "end_char": 42,
+          "quote": "רב אשי אמר משמרה ופלגא נמי משמרות קרו להו:"
+        }
+      ],
+      "explanation": "Both readings undermine necessity of four-watch inference by alternative interpretation; objection versus qualification remains a supported labeling difference. Edges retain original direction and objection label, adding explicit qualification alternative and prohibition on demanding edge-label eligibility before adjudication. No retraction or exact-label agreement claimed.",
+      "replacement_ids": [
+        "bk.watch_dispute.20261125.e15.review20261126",
+        "bk.watch_dispute.20261125.e16.review20261126"
+      ]
+    }
+  ],
+  "mechanical_checks": {
+    "source_hash_verified": true,
+    "inventory_rows_exact": 2749,
+    "all_snapshot_evidence_spans_verified": 679,
+    "original_record_ids_preserved": 592,
+    "new_record_ids": 8,
+    "original_record_contents_preserved": true,
+    "original_changes_only_release_state": true,
+    "replacement_lineage_valid": true,
+    "active_reference_to_replaced_records": [],
+    "coverage_record_references_valid": true,
+    "coverage_layer_state_result_pairs_unchanged": true,
+    "completed_claim_pass_segments_before": 71,
+    "completed_claim_pass_segments_after": 71,
+    "all_snapshot_records_ml_eligible_false": true,
+    "snapshot_ml_eligible_false": true,
+    "proposal_history_preserved": true
+  },
+  "coverage_statement": "No new independently blind source cores or extraction coverage; this is a targeted nonblind verification of three existing findings. Original reviewed batch and full-tractate limitations remain.",
+  "preservation": {
+    "original_reading_hash_unchanged": true,
+    "original_comparison_hash_unchanged": true,
+    "old_snapshot_hash_unchanged": true,
+    "prior_initial_findings_retained": true,
+    "ketubot_frozen_reading_untouched": true
+  },
+  "limitations": [
+    "Not full required review, probability-sample completion, tractate admission, or human certification.",
+    "This verifies authoritative snapshot dependencies and coverage references, not an independently regenerated exported reader or downstream task view. All ML eligibility stays false.",
+    "BR-EDGE-003 remains unresolved and cannot enter demanding edge-label evaluation without adjudication.",
+    "Original REWORK_TARGETED report retained as historical verdict; this bounded event does not retroactively rewrite it."
+  ],
+  "human_certification": false,
+  "whole_tractate_admission": false,
+  "new_task_eligible_records": 0
+}
