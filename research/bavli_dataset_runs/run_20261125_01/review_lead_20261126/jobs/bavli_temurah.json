@@ -1,0 +1,705 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 0,
+    "endpoint_added_core_segments": 0,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 20,
+    "endpoint_overlap_blocks": 2,
+    "endpoint_overlap_core_segments": 20,
+    "probability_blocks": 30,
+    "probability_core_segments": 300,
+    "source_nonempty_segments": 1150,
+    "source_segment_positions": 1150,
+    "union_blocks": 30,
+    "union_core_segments": 300
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_temurah.json",
+    "sha256": "2e238957395bd321f7343c59e4935eb4d800071883cc617deb03939e154f908b"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_temurah",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_temurah.json",
+    "sha256": "2e238957395bd321f7343c59e4935eb4d800071883cc617deb03939e154f908b"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Temurah.json",
+    "sha256": "541f567920d2519305318a56d0f39396e3ec7f299f2d8772988f6f2ce299f58d"
+  },
+  "plan_sha256": "7016091c4e2b6db0d0067c81e9aa1706581be1807ba29460cf6b3088221d8ada",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 115,
+    "inclusion_probability_denominator": 115,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000000",
+      "block_000002",
+      "block_000004",
+      "block_000005",
+      "block_000008",
+      "block_000014",
+      "block_000015",
+      "block_000020",
+      "block_000023",
+      "block_000032",
+      "block_000036",
+      "block_000039",
+      "block_000040",
+      "block_000044",
+      "block_000049",
+      "block_000063",
+      "block_000067",
+      "block_000068",
+      "block_000075",
+      "block_000077",
+      "block_000081",
+      "block_000083",
+      "block_000084",
+      "block_000095",
+      "block_000096",
+      "block_000097",
+      "block_000099",
+      "block_000103",
+      "block_000107",
+      "block_000114"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Temurah 2a:1",
+        "Temurah 2a:2",
+        "Temurah 2a:3",
+        "Temurah 2a:4",
+        "Temurah 2a:5",
+        "Temurah 2a:6",
+        "Temurah 2a:7",
+        "Temurah 2a:8",
+        "Temurah 2a:9",
+        "Temurah 2a:10"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000002",
+      "core_refs": [
+        "Temurah 2b:10",
+        "Temurah 2b:11",
+        "Temurah 2b:12",
+        "Temurah 3a:1",
+        "Temurah 3a:2",
+        "Temurah 3a:3",
+        "Temurah 3a:4",
+        "Temurah 3a:5",
+        "Temurah 3a:6",
+        "Temurah 3a:7"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000004",
+      "core_refs": [
+        "Temurah 3a:18",
+        "Temurah 3a:19",
+        "Temurah 3b:1",
+        "Temurah 3b:2",
+        "Temurah 3b:3",
+        "Temurah 3b:4",
+        "Temurah 3b:5",
+        "Temurah 3b:6",
+        "Temurah 3b:7",
+        "Temurah 3b:8"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000005",
+      "core_refs": [
+        "Temurah 3b:9",
+        "Temurah 3b:10",
+        "Temurah 3b:11",
+        "Temurah 3b:12",
+        "Temurah 3b:13",
+        "Temurah 3b:14",
+        "Temurah 3b:15",
+        "Temurah 3b:16",
+        "Temurah 3b:17",
+        "Temurah 3b:18"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000008",
+      "core_refs": [
+        "Temurah 4b:10",
+        "Temurah 4b:11",
+        "Temurah 4b:12",
+        "Temurah 4b:13",
+        "Temurah 4b:14",
+        "Temurah 5a:1",
+        "Temurah 5a:2",
+        "Temurah 5a:3",
+        "Temurah 5a:4",
+        "Temurah 5a:5"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000014",
+      "core_refs": [
+        "Temurah 6a:14",
+        "Temurah 6a:15",
+        "Temurah 6b:1",
+        "Temurah 6b:2",
+        "Temurah 6b:3",
+        "Temurah 6b:4",
+        "Temurah 6b:5",
+        "Temurah 6b:6",
+        "Temurah 6b:7",
+        "Temurah 6b:8"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000015",
+      "core_refs": [
+        "Temurah 6b:9",
+        "Temurah 6b:10",
+        "Temurah 6b:11",
+        "Temurah 6b:12",
+        "Temurah 6b:13",
+        "Temurah 6b:14",
+        "Temurah 6b:15",
+        "Temurah 6b:16",
+        "Temurah 6b:17",
+        "Temurah 6b:18"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000020",
+      "core_refs": [
+        "Temurah 8a:3",
+        "Temurah 8a:4",
+        "Temurah 8a:5",
+        "Temurah 8a:6",
+        "Temurah 8a:7",
+        "Temurah 8a:8",
+        "Temurah 8a:9",
+        "Temurah 8a:10",
+        "Temurah 8a:11",
+        "Temurah 8a:12"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000023",
+      "core_refs": [
+        "Temurah 9a:2",
+        "Temurah 9a:3",
+        "Temurah 9a:4",
+        "Temurah 9a:5",
+        "Temurah 9a:6",
+        "Temurah 9a:7",
+        "Temurah 9a:8",
+        "Temurah 9a:9",
+        "Temurah 9a:10",
+        "Temurah 9a:11"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000032",
+      "core_refs": [
+        "Temurah 11b:7",
+        "Temurah 11b:8",
+        "Temurah 11b:9",
+        "Temurah 11b:10",
+        "Temurah 11b:11",
+        "Temurah 11b:12",
+        "Temurah 11b:13",
+        "Temurah 11b:14",
+        "Temurah 11b:15",
+        "Temurah 11b:16"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Temurah 13a:1",
+        "Temurah 13a:2",
+        "Temurah 13a:3",
+        "Temurah 13a:4",
+        "Temurah 13a:5",
+        "Temurah 13a:6",
+        "Temurah 13a:7",
+        "Temurah 13a:8",
+        "Temurah 13a:9",
+        "Temurah 13a:10"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000039",
+      "core_refs": [
+        "Temurah 13b:14",
+        "Temurah 13b:15",
+        "Temurah 13b:16",
+        "Temurah 13b:17",
+        "Temurah 14a:1",
+        "Temurah 14a:2",
+        "Temurah 14a:3",
+        "Temurah 14a:4",
+        "Temurah 14a:5",
+        "Temurah 14a:6"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000040",
+      "core_refs": [
+        "Temurah 14a:7",
+        "Temurah 14a:8",
+        "Temurah 14a:9",
+        "Temurah 14a:10",
+        "Temurah 14a:11",
+        "Temurah 14a:12",
+        "Temurah 14a:13",
+        "Temurah 14a:14",
+        "Temurah 14a:15",
+        "Temurah 14a:16"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000044",
+      "core_refs": [
+        "Temurah 15a:1",
+        "Temurah 15a:2",
+        "Temurah 15a:3",
+        "Temurah 15a:4",
+        "Temurah 15a:5",
+        "Temurah 15a:6",
+        "Temurah 15a:7",
+        "Temurah 15a:8",
+        "Temurah 15a:9",
+        "Temurah 15b:1"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000049",
+      "core_refs": [
+        "Temurah 16a:22",
+        "Temurah 16a:23",
+        "Temurah 16a:24",
+        "Temurah 16b:1",
+        "Temurah 16b:2",
+        "Temurah 16b:3",
+        "Temurah 16b:4",
+        "Temurah 16b:5",
+        "Temurah 16b:6",
+        "Temurah 16b:7"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000063",
+      "core_refs": [
+        "Temurah 20b:2",
+        "Temurah 20b:3",
+        "Temurah 20b:4",
+        "Temurah 20b:5",
+        "Temurah 20b:6",
+        "Temurah 20b:7",
+        "Temurah 20b:8",
+        "Temurah 20b:9",
+        "Temurah 20b:10",
+        "Temurah 20b:11"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000067",
+      "core_refs": [
+        "Temurah 21b:1",
+        "Temurah 21b:2",
+        "Temurah 21b:3",
+        "Temurah 21b:4",
+        "Temurah 21b:5",
+        "Temurah 21b:6",
+        "Temurah 21b:7",
+        "Temurah 21b:8",
+        "Temurah 21b:9",
+        "Temurah 21b:10"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000068",
+      "core_refs": [
+        "Temurah 21b:11",
+        "Temurah 21b:12",
+        "Temurah 21b:13",
+        "Temurah 21b:14",
+        "Temurah 21b:15",
+        "Temurah 22a:1",
+        "Temurah 22a:2",
+        "Temurah 22a:3",
+        "Temurah 22a:4",
+        "Temurah 22a:5"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000075",
+      "core_refs": [
+        "Temurah 23b:12",
+        "Temurah 23b:13",
+        "Temurah 23b:14",
+        "Temurah 23b:15",
+        "Temurah 23b:16",
+        "Temurah 24a:1",
+        "Temurah 24a:2",
+        "Temurah 24a:3",
+        "Temurah 24a:4",
+        "Temurah 24a:5"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000077",
+      "core_refs": [
+        "Temurah 24a:16",
+        "Temurah 24a:17",
+        "Temurah 24a:18",
+        "Temurah 24a:19",
+        "Temurah 24a:20",
+        "Temurah 24a:21",
+        "Temurah 24a:22",
+        "Temurah 24a:23",
+        "Temurah 24a:24",
+        "Temurah 24a:25"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000081",
+      "core_refs": [
+        "Temurah 25a:16",
+        "Temurah 25a:17",
+        "Temurah 25a:18",
+        "Temurah 25a:19",
+        "Temurah 25a:20",
+        "Temurah 25b:1",
+        "Temurah 25b:2",
+        "Temurah 25b:3",
+        "Temurah 25b:4",
+        "Temurah 25b:5"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000083",
+      "core_refs": [
+        "Temurah 25b:16",
+        "Temurah 25b:17",
+        "Temurah 25b:18",
+        "Temurah 26a:1",
+        "Temurah 26a:2",
+        "Temurah 26a:3",
+        "Temurah 26a:4",
+        "Temurah 26a:5",
+        "Temurah 26a:6",
+        "Temurah 26a:7"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000084",
+      "core_refs": [
+        "Temurah 26a:8",
+        "Temurah 26a:9",
+        "Temurah 26a:10",
+        "Temurah 26a:11",
+        "Temurah 26a:12",
+        "Temurah 26a:13",
+        "Temurah 26a:14",
+        "Temurah 26a:15",
+        "Temurah 26b:1",
+        "Temurah 26b:2"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000095",
+      "core_refs": [
+        "Temurah 29a:11",
+        "Temurah 29a:12",
+        "Temurah 29a:13",
+        "Temurah 29a:14",
+        "Temurah 29a:15",
+        "Temurah 29a:16",
+        "Temurah 29a:17",
+        "Temurah 29a:18",
+        "Temurah 29a:19",
+        "Temurah 29b:1"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000096",
+      "core_refs": [
+        "Temurah 29b:2",
+        "Temurah 29b:3",
+        "Temurah 29b:4",
+        "Temurah 29b:5",
+        "Temurah 29b:6",
+        "Temurah 29b:7",
+        "Temurah 29b:8",
+        "Temurah 29b:9",
+        "Temurah 29b:10",
+        "Temurah 29b:11"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000097",
+      "core_refs": [
+        "Temurah 29b:12",
+        "Temurah 29b:13",
+        "Temurah 29b:14",
+        "Temurah 29b:15",
+        "Temurah 29b:16",
+        "Temurah 29b:17",
+        "Temurah 29b:18",
+        "Temurah 29b:19",
+        "Temurah 29b:20",
+        "Temurah 29b:21"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000099",
+      "core_refs": [
+        "Temurah 30a:5",
+        "Temurah 30a:6",
+        "Temurah 30a:7",
+        "Temurah 30a:8",
+        "Temurah 30a:9",
+        "Temurah 30a:10",
+        "Temurah 30a:11",
+        "Temurah 30a:12",
+        "Temurah 30a:13",
+        "Temurah 30a:14"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000103",
+      "core_refs": [
+        "Temurah 31a:4",
+        "Temurah 31a:5",
+        "Temurah 31a:6",
+        "Temurah 31a:7",
+        "Temurah 31a:8",
+        "Temurah 31a:9",
+        "Temurah 31a:10",
+        "Temurah 31a:11",
+        "Temurah 31a:12",
+        "Temurah 31a:13"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000107",
+      "core_refs": [
+        "Temurah 32a:9",
+        "Temurah 32a:10",
+        "Temurah 32a:11",
+        "Temurah 32a:12",
+        "Temurah 32b:1",
+        "Temurah 32b:2",
+        "Temurah 32b:3",
+        "Temurah 32b:4",
+        "Temurah 32b:5",
+        "Temurah 32b:6"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 0.2608695652173913,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000114",
+      "core_refs": [
+        "Temurah 34a:12",
+        "Temurah 34a:13",
+        "Temurah 34a:14",
+        "Temurah 34a:15",
+        "Temurah 34a:16",
+        "Temurah 34a:17",
+        "Temurah 34a:18",
+        "Temurah 34a:19",
+        "Temurah 34a:20",
+        "Temurah 34a:21"
+      ],
+      "inclusion_probability": 0.2608695652173913,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Kodashim/Temurah/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "5e3336dff6155a38eb0f82473821bd06657651a70f902ea152c0092ecbcd0405"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Temurah"
+}

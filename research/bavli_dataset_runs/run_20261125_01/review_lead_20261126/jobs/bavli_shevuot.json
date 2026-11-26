@@ -1,0 +1,700 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 0,
+    "endpoint_added_core_segments": 0,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 15,
+    "endpoint_overlap_blocks": 2,
+    "endpoint_overlap_core_segments": 15,
+    "probability_blocks": 30,
+    "probability_core_segments": 295,
+    "source_nonempty_segments": 1555,
+    "source_segment_positions": 1555,
+    "union_blocks": 30,
+    "union_core_segments": 295
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_shevuot.json",
+    "sha256": "24d1bbb66d1f1f51969ccadecabbf205e5b7c08b425209d5984597c1a984a201"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_shevuot",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_shevuot.json",
+    "sha256": "24d1bbb66d1f1f51969ccadecabbf205e5b7c08b425209d5984597c1a984a201"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Shevuot.json",
+    "sha256": "b3c4a69a8c2b298a3feb179b74201699a3e9c9823880be82c3f28d075120354f"
+  },
+  "plan_sha256": "d382ed251eacfb63298c50c98b8a583e5831b647c1acc22be25030daeca7a546",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 156,
+    "inclusion_probability_denominator": 156,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000000",
+      "block_000001",
+      "block_000010",
+      "block_000011",
+      "block_000020",
+      "block_000033",
+      "block_000036",
+      "block_000045",
+      "block_000049",
+      "block_000055",
+      "block_000060",
+      "block_000061",
+      "block_000062",
+      "block_000072",
+      "block_000091",
+      "block_000097",
+      "block_000104",
+      "block_000105",
+      "block_000110",
+      "block_000112",
+      "block_000117",
+      "block_000121",
+      "block_000122",
+      "block_000125",
+      "block_000130",
+      "block_000139",
+      "block_000140",
+      "block_000150",
+      "block_000154",
+      "block_000155"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Shevuot 2a:1",
+        "Shevuot 2a:2",
+        "Shevuot 2a:3",
+        "Shevuot 2a:4",
+        "Shevuot 2a:5",
+        "Shevuot 2a:6",
+        "Shevuot 2a:7",
+        "Shevuot 2a:8",
+        "Shevuot 2b:1",
+        "Shevuot 2b:2"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000001",
+      "core_refs": [
+        "Shevuot 2b:3",
+        "Shevuot 2b:4",
+        "Shevuot 2b:5",
+        "Shevuot 2b:6",
+        "Shevuot 2b:7",
+        "Shevuot 2b:8",
+        "Shevuot 2b:9",
+        "Shevuot 2b:10",
+        "Shevuot 2b:11",
+        "Shevuot 2b:12"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000010",
+      "core_refs": [
+        "Shevuot 5b:9",
+        "Shevuot 5b:10",
+        "Shevuot 6a:1",
+        "Shevuot 6a:2",
+        "Shevuot 6a:3",
+        "Shevuot 6a:4",
+        "Shevuot 6a:5",
+        "Shevuot 6a:6",
+        "Shevuot 6a:7",
+        "Shevuot 6a:8"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000011",
+      "core_refs": [
+        "Shevuot 6a:9",
+        "Shevuot 6a:10",
+        "Shevuot 6b:1",
+        "Shevuot 6b:2",
+        "Shevuot 6b:3",
+        "Shevuot 6b:4",
+        "Shevuot 6b:5",
+        "Shevuot 6b:6",
+        "Shevuot 6b:7",
+        "Shevuot 6b:8"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000020",
+      "core_refs": [
+        "Shevuot 9a:11",
+        "Shevuot 9b:1",
+        "Shevuot 9b:2",
+        "Shevuot 9b:3",
+        "Shevuot 9b:4",
+        "Shevuot 9b:5",
+        "Shevuot 9b:6",
+        "Shevuot 9b:7",
+        "Shevuot 9b:8",
+        "Shevuot 9b:9"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000033",
+      "core_refs": [
+        "Shevuot 14a:4",
+        "Shevuot 14a:5",
+        "Shevuot 14a:6",
+        "Shevuot 14a:7",
+        "Shevuot 14a:8",
+        "Shevuot 14a:9",
+        "Shevuot 14a:10",
+        "Shevuot 14a:11",
+        "Shevuot 14a:12",
+        "Shevuot 14a:13"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Shevuot 14b:18",
+        "Shevuot 15a:1",
+        "Shevuot 15a:2",
+        "Shevuot 15a:3",
+        "Shevuot 15a:4",
+        "Shevuot 15a:5",
+        "Shevuot 15a:6",
+        "Shevuot 15a:7",
+        "Shevuot 15a:8",
+        "Shevuot 15a:9"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000045",
+      "core_refs": [
+        "Shevuot 18a:12",
+        "Shevuot 18a:13",
+        "Shevuot 18b:1",
+        "Shevuot 18b:2",
+        "Shevuot 18b:3",
+        "Shevuot 18b:4",
+        "Shevuot 18b:5",
+        "Shevuot 18b:6",
+        "Shevuot 18b:7",
+        "Shevuot 18b:8"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000049",
+      "core_refs": [
+        "Shevuot 19b:13",
+        "Shevuot 19b:14",
+        "Shevuot 19b:15",
+        "Shevuot 19b:16",
+        "Shevuot 20a:1",
+        "Shevuot 20a:2",
+        "Shevuot 20a:3",
+        "Shevuot 20a:4",
+        "Shevuot 20a:5",
+        "Shevuot 20a:6"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000055",
+      "core_refs": [
+        "Shevuot 21b:16",
+        "Shevuot 21b:17",
+        "Shevuot 22a:1",
+        "Shevuot 22a:2",
+        "Shevuot 22a:3",
+        "Shevuot 22a:4",
+        "Shevuot 22a:5",
+        "Shevuot 22a:6",
+        "Shevuot 22a:7",
+        "Shevuot 22a:8"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000060",
+      "core_refs": [
+        "Shevuot 23a:17",
+        "Shevuot 23a:18",
+        "Shevuot 23b:1",
+        "Shevuot 23b:2",
+        "Shevuot 23b:3",
+        "Shevuot 23b:4",
+        "Shevuot 23b:5",
+        "Shevuot 23b:6",
+        "Shevuot 23b:7",
+        "Shevuot 23b:8"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000061",
+      "core_refs": [
+        "Shevuot 23b:9",
+        "Shevuot 23b:10",
+        "Shevuot 23b:11",
+        "Shevuot 23b:12",
+        "Shevuot 23b:13",
+        "Shevuot 23b:14",
+        "Shevuot 23b:15",
+        "Shevuot 23b:16",
+        "Shevuot 23b:17",
+        "Shevuot 23b:18"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000062",
+      "core_refs": [
+        "Shevuot 23b:19",
+        "Shevuot 23b:20",
+        "Shevuot 24a:1",
+        "Shevuot 24a:2",
+        "Shevuot 24a:3",
+        "Shevuot 24a:4",
+        "Shevuot 24a:5",
+        "Shevuot 24a:6",
+        "Shevuot 24a:7",
+        "Shevuot 24b:1"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000072",
+      "core_refs": [
+        "Shevuot 26a:22",
+        "Shevuot 26a:23",
+        "Shevuot 26a:24",
+        "Shevuot 26a:25",
+        "Shevuot 26a:26",
+        "Shevuot 26a:27",
+        "Shevuot 26a:28",
+        "Shevuot 26a:29",
+        "Shevuot 26a:30",
+        "Shevuot 26b:1"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000091",
+      "core_refs": [
+        "Shevuot 32a:10",
+        "Shevuot 32a:11",
+        "Shevuot 32a:12",
+        "Shevuot 32a:13",
+        "Shevuot 32a:14",
+        "Shevuot 32a:15",
+        "Shevuot 32a:16",
+        "Shevuot 32a:17",
+        "Shevuot 32a:18",
+        "Shevuot 32a:19"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000097",
+      "core_refs": [
+        "Shevuot 33b:10",
+        "Shevuot 33b:11",
+        "Shevuot 33b:12",
+        "Shevuot 33b:13",
+        "Shevuot 33b:14",
+        "Shevuot 33b:15",
+        "Shevuot 33b:16",
+        "Shevuot 33b:17",
+        "Shevuot 33b:18",
+        "Shevuot 33b:19"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000104",
+      "core_refs": [
+        "Shevuot 35a:14",
+        "Shevuot 35a:15",
+        "Shevuot 35a:16",
+        "Shevuot 35a:17",
+        "Shevuot 35a:18",
+        "Shevuot 35a:19",
+        "Shevuot 35a:20",
+        "Shevuot 35a:21",
+        "Shevuot 35a:22",
+        "Shevuot 35a:23"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000105",
+      "core_refs": [
+        "Shevuot 35a:24",
+        "Shevuot 35a:25",
+        "Shevuot 35a:26",
+        "Shevuot 35a:27",
+        "Shevuot 35a:28",
+        "Shevuot 35a:29",
+        "Shevuot 35b:1",
+        "Shevuot 35b:2",
+        "Shevuot 35b:3",
+        "Shevuot 35b:4"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000110",
+      "core_refs": [
+        "Shevuot 36a:18",
+        "Shevuot 36a:19",
+        "Shevuot 36a:20",
+        "Shevuot 36a:21",
+        "Shevuot 36a:22",
+        "Shevuot 36a:23",
+        "Shevuot 36a:24",
+        "Shevuot 36a:25",
+        "Shevuot 36a:26",
+        "Shevuot 36a:27"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000112",
+      "core_refs": [
+        "Shevuot 36b:9",
+        "Shevuot 36b:10",
+        "Shevuot 36b:11",
+        "Shevuot 36b:12",
+        "Shevuot 36b:13",
+        "Shevuot 36b:14",
+        "Shevuot 36b:15",
+        "Shevuot 36b:16",
+        "Shevuot 36b:17",
+        "Shevuot 36b:18"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000117",
+      "core_refs": [
+        "Shevuot 38a:5",
+        "Shevuot 38a:6",
+        "Shevuot 38a:7",
+        "Shevuot 38a:8",
+        "Shevuot 38a:9",
+        "Shevuot 38a:10",
+        "Shevuot 38a:11",
+        "Shevuot 38a:12",
+        "Shevuot 38a:13",
+        "Shevuot 38a:14"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000121",
+      "core_refs": [
+        "Shevuot 38b:25",
+        "Shevuot 38b:26",
+        "Shevuot 38b:27",
+        "Shevuot 39a:1",
+        "Shevuot 39a:2",
+        "Shevuot 39a:3",
+        "Shevuot 39a:4",
+        "Shevuot 39a:5",
+        "Shevuot 39a:6",
+        "Shevuot 39a:7"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000122",
+      "core_refs": [
+        "Shevuot 39a:8",
+        "Shevuot 39a:9",
+        "Shevuot 39a:10",
+        "Shevuot 39a:11",
+        "Shevuot 39a:12",
+        "Shevuot 39a:13",
+        "Shevuot 39a:14",
+        "Shevuot 39a:15",
+        "Shevuot 39a:16",
+        "Shevuot 39a:17"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000125",
+      "core_refs": [
+        "Shevuot 39b:16",
+        "Shevuot 39b:17",
+        "Shevuot 39b:18",
+        "Shevuot 39b:19",
+        "Shevuot 39b:20",
+        "Shevuot 39b:21",
+        "Shevuot 40a:1",
+        "Shevuot 40a:2",
+        "Shevuot 40a:3",
+        "Shevuot 40a:4"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000130",
+      "core_refs": [
+        "Shevuot 41a:8",
+        "Shevuot 41a:9",
+        "Shevuot 41a:10",
+        "Shevuot 41a:11",
+        "Shevuot 41a:12",
+        "Shevuot 41a:13",
+        "Shevuot 41a:14",
+        "Shevuot 41b:1",
+        "Shevuot 41b:2",
+        "Shevuot 41b:3"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000139",
+      "core_refs": [
+        "Shevuot 44a:1",
+        "Shevuot 44a:2",
+        "Shevuot 44a:3",
+        "Shevuot 44a:4",
+        "Shevuot 44a:5",
+        "Shevuot 44a:6",
+        "Shevuot 44b:1",
+        "Shevuot 44b:2",
+        "Shevuot 44b:3",
+        "Shevuot 44b:4"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000140",
+      "core_refs": [
+        "Shevuot 44b:5",
+        "Shevuot 44b:6",
+        "Shevuot 44b:7",
+        "Shevuot 44b:8",
+        "Shevuot 44b:9",
+        "Shevuot 44b:10",
+        "Shevuot 44b:11",
+        "Shevuot 44b:12",
+        "Shevuot 45a:1",
+        "Shevuot 45a:2"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000150",
+      "core_refs": [
+        "Shevuot 48a:9",
+        "Shevuot 48a:10",
+        "Shevuot 48a:11",
+        "Shevuot 48a:12",
+        "Shevuot 48a:13",
+        "Shevuot 48a:14",
+        "Shevuot 48a:15",
+        "Shevuot 48a:16",
+        "Shevuot 48b:1",
+        "Shevuot 48b:2"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000154",
+      "core_refs": [
+        "Shevuot 49b:2",
+        "Shevuot 49b:3",
+        "Shevuot 49b:4",
+        "Shevuot 49b:5",
+        "Shevuot 49b:6",
+        "Shevuot 49b:7",
+        "Shevuot 49b:8",
+        "Shevuot 49b:9",
+        "Shevuot 49b:10",
+        "Shevuot 49b:11"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 0.19230769230769232,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000155",
+      "core_refs": [
+        "Shevuot 49b:12",
+        "Shevuot 49b:13",
+        "Shevuot 49b:14",
+        "Shevuot 49b:15",
+        "Shevuot 49b:16"
+      ],
+      "inclusion_probability": 0.19230769230769232,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nezikin/Shevuot/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "a3b0bb25746aa3683e9dd9da551b66670ab1fb57e1ac9c2bd1583d4aa984edd9"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Shevuot"
+}

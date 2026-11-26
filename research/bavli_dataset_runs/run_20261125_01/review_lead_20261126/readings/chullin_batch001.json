@@ -1,0 +1,1496 @@
+{
+  "artifact_kind": "frozen_source_only_opening_block_reading",
+  "job_id": "bavli_chullin",
+  "tractate": "Chullin",
+  "batch": "batch001",
+  "execution": {
+    "agent_id": "/root/reader_taanit_chullin",
+    "route": "interactive_agent",
+    "model_id": null
+  },
+  "context_isolation": {
+    "fork_turns": "none",
+    "producer_labels_exposed": false,
+    "handoff": "Root read required handoff; reader excluded under current source-only isolation instruction because handoff includes annotated results."
+  },
+  "producer_labels_exposed": false,
+  "frozen_before_comparison": true,
+  "source_sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
+  "source_path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Kodashim/Chullin/Hebrew/Wikisource Talmud Bavli.json",
+  "plan_file_sha256": "b2a73464cb0f62ab3d817b499e913594fde9190ec1e7c3e8f4c7a4353f69dfc3",
+  "plan_sha256": "91ff51e55eb4fd5c8faa62b9ab8faf3b1be85f85f33111df29403cd04b1d9af8",
+  "common_document_hashes": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "source_metadata": {
+    "versionTitle": "Wikisource Talmud Bavli",
+    "versionSource": "http://he.wikisource.org/wiki/%D7%AA%D7%9C%D7%9E%D7%95%D7%93_%D7%91%D7%91%D7%9C%D7%99",
+    "license": "CC-BY-SA"
+  },
+  "review_block_id": "block_000000",
+  "core_refs": [
+    "Chullin 2a:1",
+    "Chullin 2a:2",
+    "Chullin 2a:3",
+    "Chullin 2a:4",
+    "Chullin 2a:5",
+    "Chullin 2a:6",
+    "Chullin 2b:1",
+    "Chullin 2b:2",
+    "Chullin 2b:3",
+    "Chullin 2b:4"
+  ],
+  "context_refs": [
+    "Chullin 2b:5",
+    "Chullin 2b:6",
+    "Chullin 2b:7",
+    "Chullin 2b:8",
+    "Chullin 2b:9",
+    "Chullin 2b:10",
+    "Chullin 2b:11",
+    "Chullin 2b:12",
+    "Chullin 2b:13",
+    "Chullin 2b:14",
+    "Chullin 3a:1",
+    "Chullin 3a:2",
+    "Chullin 3a:3",
+    "Chullin 3a:4",
+    "Chullin 3a:5",
+    "Chullin 3a:6",
+    "Chullin 3a:7",
+    "Chullin 3a:8",
+    "Chullin 3a:9",
+    "Chullin 3a:10",
+    "Chullin 3a:11",
+    "Chullin 3a:12",
+    "Chullin 3a:13",
+    "Chullin 3b:1",
+    "Chullin 3b:2",
+    "Chullin 3b:3",
+    "Chullin 3b:4",
+    "Chullin 3b:5",
+    "Chullin 3b:6",
+    "Chullin 3b:7",
+    "Chullin 3b:8",
+    "Chullin 3b:9",
+    "Chullin 3b:10",
+    "Chullin 3b:11",
+    "Chullin 3b:12",
+    "Chullin 3b:13",
+    "Chullin 3b:14",
+    "Chullin 3b:15",
+    "Chullin 3b:16",
+    "Chullin 3b:17",
+    "Chullin 3b:18",
+    "Chullin 3b:19"
+  ],
+  "cohorts": {
+    "roles": [
+      "probability_sample",
+      "opening_check"
+    ],
+    "probability_core_segments": 10,
+    "endpoint_core_segments": 10,
+    "overlap_core_segments": 10,
+    "unique_core_segments": 10,
+    "context_segments": 42,
+    "probability_inclusion_probability": 0.1,
+    "review_union_inclusion_probability": 1.0
+  },
+  "boundaries": [
+    {
+      "core": "2a:1",
+      "unit": "Mishnah slaughter permission and validity",
+      "interpretive_continuation": "2b:6–3b:19"
+    },
+    {
+      "core": "2a:2–2b:4",
+      "unit": "Lexical הכל challenge and vow citation",
+      "closure": "2b:5"
+    }
+  ],
+  "findings": [
+    {
+      "id": "c01",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "The included class may slaughter.",
+      "holder": "anonymous Mishnah",
+      "transmission_chain": [],
+      "conditions": [
+        "subject to stated exclusions"
+      ],
+      "local_status": "asserted; scope disputed by later interpretations",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c02",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Slaughter of the included class is valid.",
+      "holder": "anonymous Mishnah",
+      "transmission_chain": [],
+      "conditions": [
+        "subject to stated exclusions"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c03",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "A deaf-mute is excluded from unsupervised slaughter.",
+      "holder": "anonymous Mishnah",
+      "transmission_chain": [],
+      "conditions": [
+        "deaf-mute; without observers"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c04",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "A person lacking legal mental competence is excluded from unsupervised slaughter.",
+      "holder": "anonymous Mishnah",
+      "transmission_chain": [],
+      "conditions": [
+        "שוטה; without observers"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c05",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "A minor is excluded from unsupervised slaughter.",
+      "holder": "anonymous Mishnah",
+      "transmission_chain": [],
+      "conditions": [
+        "minor; without observers"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c06",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "The exclusions reflect concern they will spoil slaughter.",
+      "holder": "anonymous Mishnah",
+      "transmission_chain": [],
+      "conditions": [
+        "excluded slaughterers"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c07",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Slaughter is valid when others observe the act.",
+      "holder": "anonymous Mishnah",
+      "transmission_chain": [],
+      "conditions": [
+        "others observing"
+      ],
+      "local_status": "asserted; antecedent of וכולן disputed in interpretation",
+      "uncertainty": [
+        "Do not silently fix וכולן to excluded three: ensuing amoraic readings explicitly dispute its syntactic attachment."
+      ],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:1",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "מתני׳ <big><strong>הכל</strong></big> שוחטין ושחיטתן כשרה חוץ מחרש שוטה וקטן שמא יקלקלו את שחיטתן וכולן ששחטו ואחרים רואין אותן שחיטתן כשרה:"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c08",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "הכל שוחטין is read as permission in advance.",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "initial reading defended at 2b:5",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:2",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> הכל שוחטין לכתחלה ושחיטתן כשרה דיעבד"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c09",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "שחיטתן כשרה is read as validity after the act.",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "initial reading retained",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:2",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> הכל שוחטין לכתחלה ושחיטתן כשרה דיעבד"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c10",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Both men and women fall under the formula הכל ממירין.",
+      "holder": "quoted Mishnah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:3",
+          "start_char": 0,
+          "end_char": 176,
+          "quote": "אמר ליה רב אחא בריה דרבא לרב אשי וכל הכל לכתחלה הוא אלא מעתה הכל ממירין אחד האנשים ואחד הנשים ה\"נ דלכתחלה הוא והא כתיב (ויקרא כז, י) לא יחליפנו ולא ימיר אותו טוב ברע או רע בטוב"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c11",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Substitution of a sacrificial animal is prohibited.",
+      "holder": "quoted Torah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted as Rav Aha son of Rava’s counterexample",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:3",
+          "start_char": 0,
+          "end_char": 176,
+          "quote": "אמר ליה רב אחא בריה דרבא לרב אשי וכל הכל לכתחלה הוא אלא מעתה הכל ממירין אחד האנשים ואחד הנשים ה\"נ דלכתחלה הוא והא כתיב (ויקרא כז, י) לא יחליפנו ולא ימיר אותו טוב ברע או רע בטוב"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c12",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "A person is not authorized to substitute.",
+      "holder": "quoted explanation",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:4",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "התם כדקתני טעמא לא שהאדם רשאי להמיר אלא שאם המיר מומר וסופג את הארבעים"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c13",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "If substitution was performed, it takes effect.",
+      "holder": "quoted explanation",
+      "transmission_chain": [],
+      "conditions": [
+        "substitution already performed"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:4",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "התם כדקתני טעמא לא שהאדם רשאי להמיר אלא שאם המיר מומר וסופג את הארבעים"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c14",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "The person who substitutes receives forty lashes.",
+      "holder": "quoted explanation",
+      "transmission_chain": [],
+      "conditions": [
+        "substitution performed"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:4",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "התם כדקתני טעמא לא שהאדם רשאי להמיר אלא שאם המיר מומר וסופג את הארבעים"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c15",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "All may be valuation declarants.",
+      "holder": "quoted Mishnah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c16",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "All may be subjects of valuations.",
+      "holder": "quoted Mishnah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c17",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "All may vow monetary dedication.",
+      "holder": "quoted Mishnah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c18",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "All may be subjects of monetary dedication vows.",
+      "holder": "quoted Mishnah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c19",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Refraining from vows incurs no sin.",
+      "holder": "quoted Torah",
+      "transmission_chain": [],
+      "conditions": [
+        "refrains from vows"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c20",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Not vowing is better than vowing and not paying.",
+      "holder": "quoted Ecclesiastes",
+      "transmission_chain": [],
+      "conditions": [
+        "vow unpaid"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c21",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Not vowing at all is best.",
+      "holder": "Rabbi Meir",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c22",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Vowing and paying is best.",
+      "holder": "Rabbi Yehuda",
+      "transmission_chain": [],
+      "conditions": [
+        "vow fulfilled; contextual restriction to הרי זו"
+      ],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c23",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Even Yehuda’s approval is limited to designating this object (הרי זו).",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [
+        "הרי זו"
+      ],
+      "local_status": "anonymous qualification of Yehuda",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c24",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Yehuda’s approval does not extend to undertaking a personal obligation (הרי עלי).",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [
+        "הרי עלי"
+      ],
+      "local_status": "anonymous qualification; continues previous segment",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:1",
+          "start_char": 0,
+          "end_char": 18,
+          "quote": "אבל אמר הרי עלי לא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c25",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "All are obligated in sukkah.",
+      "holder": "quoted Mishnah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:2",
+          "start_char": 0,
+          "end_char": 81,
+          "quote": "וכל הכל לאו לכתחלה הוא אלא הכל חייבים בסוכה הכל חייבין בציצית הכי נמי דלאו לכתחלה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c26",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "All are obligated in tzitzit.",
+      "holder": "quoted Mishnah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:2",
+          "start_char": 0,
+          "end_char": 81,
+          "quote": "וכל הכל לאו לכתחלה הוא אלא הכל חייבים בסוכה הכל חייבין בציצית הכי נמי דלאו לכתחלה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c27",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "The lexical challenge excludes formulations saying חייבין.",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "anonymous reply; exact interlocutor not marked",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c28",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "The cited semikha formula includes men and women.",
+      "holder": "quoted formula",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [
+        "Quote exactly as this edition; no external correction of wording."
+      ],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c29",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Laying hands is positively commanded.",
+      "holder": "quoted Torah",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "counterexample to universal after-the-fact reading",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c30",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Some הכל formulations permit or prescribe action in advance.",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c31",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "Some הכל formulations describe only validity after the fact.",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "asserted",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "c32",
+      "kind": "atomic_claim",
+      "origin": "source_paraphrase",
+      "interpretation": "The slaughter opening could itself be read after the fact, avoiding the alleged tension.",
+      "holder": "anonymous",
+      "transmission_chain": [],
+      "conditions": [],
+      "local_status": "hypothetical challenge; answered at 2b:5",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "cc01",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "The reply explains that redundant after-the-fact clauses would be unnecessary: שחיטתן כשרה therefore indicates that the first clause is in advance. This closes the core lexical question without the false general rule that every הכל is permission in advance.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:5",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "א\"ל אנא שחיטתן כשרה קשיא לי מדקתני שחיטתן כשר' דיעבד מכלל דהכל לכתחלה הוא דאי דיעבד תרתי דיעבד למה לי"
+        }
+      ],
+      "cohort": "context_expansion"
+    },
+    {
+      "id": "cc02",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "Rabbah bar Ulla reads a tamei slaughterer: ordinary meat maintained to sacred purity is treated like sacred, using a long knife; for actual offerings no initial slaughter lest contact occur, but a post-act claim of no contact suffices. Others observing substitutes when the slaughterer is absent for inquiry. The duplicate Mishnah is explained in two directions. Sheretz impurity or corpse impurity with a checked reed shard answers knife impurity. Do not confuse Rabbah bar Ulla with Rav.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 2b:6",
+          "start_char": 0,
+          "end_char": 140,
+          "quote": "אמר רבה בר עולא הכי קתני הכל שוחטין ואפי' טמא בחולין טמא בחולין מאי למימרא בחולין שנעשו על טהרת הקדש וקסבר חולין שנעשו על טהרת הקדש כקדש דמו"
+        },
+        {
+          "ref": "Chullin 2b:7",
+          "start_char": 0,
+          "end_char": 55,
+          "quote": "כיצד הוא עושה מביא סכין ארוכה ושוחט בה כדי שלא יגע בבשר"
+        },
+        {
+          "ref": "Chullin 2b:8",
+          "start_char": 0,
+          "end_char": 74,
+          "quote": "ובמוקדשים לא ישחוט שמא יגע בבשר ואם שחט ואומר ברי לי שלא נגעתי שחיטתו כשרה"
+        },
+        {
+          "ref": "Chullin 2b:9",
+          "start_char": 0,
+          "end_char": 82,
+          "quote": "חוץ מחרש שוטה וקטן דאפילו בחולין גרידי דיעבד נמי לא שמא ישהו שמא ידרסו ושמא יחלידו"
+        },
+        {
+          "ref": "Chullin 2b:10",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "וכולן ששחטו אהייא אילימא אחרש שוטה וקטן עלה קאי ואם שחטו מיבעי ליה אלא אטמא בחולין הא אמרת לכתחלה נמי שחיט"
+        },
+        {
+          "ref": "Chullin 2b:11",
+          "start_char": 0,
+          "end_char": 50,
+          "quote": "ואלא אטמא במוקדשים בברי לי סגי דליתיה קמן דנשייליה"
+        },
+        {
+          "ref": "Chullin 2b:12",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "האי טמא במוקדשים מהכא נפקא מהתם נפקא כל הפסולין ששחטו שחיטתן כשרה שהשחיטה כשרה בזרים בנשים ובעבדים ובטמאים ואפילו בקדשי קדשים ובלבד שלא יהיו טמאין נוגעין בבשר"
+        },
+        {
+          "ref": "Chullin 2b:13",
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "הכא עיקר התם איידי דתנא שאר פסולין תנא נמי טמא במוקדשים ואב\"א התם עיקר דבקדשים קאי הכא איידי דתנא טמא בחולין תני נמי טמא במוקדשים"
+        },
+        {
+          "ref": "Chullin 2b:14",
+          "start_char": 0,
+          "end_char": 71,
+          "quote": "האי טמא דאיטמא במאי אילימא דאיטמי במת (במדבר יט, טז) בחלל חרב אמר רחמנא"
+        },
+        {
+          "ref": "Chullin 3a:1",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "חרב הרי הוא כחלל אב הטומאה הוא לטמייה לסכין ואזל סכין וטמיתיה לבשר"
+        },
+        {
+          "ref": "Chullin 3a:2",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "אלא דאיטמי בשרץ ואי בעית אימא לעולם דאיטמי במת וכגון שבדק קרומית של קנה ושחט בה דתניא בכל שוחטים בין בצור בין בזכוכית בין בקרומית של קנה"
+        }
+      ],
+      "cohort": "context_expansion"
+    },
+    {
+      "id": "cc03",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "Abaye reads a Samaritan under continuous Jewish supervision; intermittent entry is insufficient in advance, with post-act eating test. Rava initially objects by a case whose wording only shows post-fact permission, then cites an explicit intermittent-watch allowance and offers the more lenient intermittent-supervision reading. Both readings leave וכולן with קשיא; do not label either an unqualified final resolution.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 3a:3",
+          "start_char": 0,
+          "end_char": 102,
+          "quote": "אביי אמר הכי קתני הכל שוחטין ואפילו כותי במה דברים אמורים כשישראל עומד על גביו אבל יוצא ונכנס לא ישחוט"
+        },
+        {
+          "ref": "Chullin 3a:4",
+          "start_char": 0,
+          "end_char": 81,
+          "quote": "ואם שחט חותך כזית בשר ונותן לו אכלו מותר לאכול משחיטתו לא אכלו אסור לאכול משחיטתו"
+        },
+        {
+          "ref": "Chullin 3a:5",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "חוץ מחרש שוטה וקטן דאפילו דיעבד נמי לא שמא ישהו שמא ידרסו ושמא יחלידו"
+        },
+        {
+          "ref": "Chullin 3a:6",
+          "start_char": 0,
+          "end_char": 65,
+          "quote": "וכולן ששחטו אהייא אילימא אחרש שוטה וקטן עלה קאי ואם שחטו מבעי ליה"
+        },
+        {
+          "ref": "Chullin 3a:7",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "אלא אכותי הא אמרת כשישראל עומד על גביו שחיט אפילו לכתחלה קשיא"
+        },
+        {
+          "ref": "Chullin 3a:8",
+          "start_char": 0,
+          "end_char": 117,
+          "quote": "אמר רבא ויוצא ונכנס לכתחלה לא והתנן המניח עובד כוכבים בחנותו וישראל יוצא ונכנס מותר התם מי קתני מניח המניח קתני דיעבד"
+        },
+        {
+          "ref": "Chullin 3a:9",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "אלא מהכא אין השומר צריך להיות יושב ומשמר אלא אע\"פ שיוצא ונכנס מותר"
+        },
+        {
+          "ref": "Chullin 3a:10",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "אלא אמר רבא הכי קתני הכל שוחטין ואפי' כותי בד\"א כשישראל יוצא ונכנס אבל בא ומצאו ששחט חותך כזית בשר ונותן לו אכלו מותר לאכול משחיטתו לא אכלו אסור לאכול משחיטתו"
+        },
+        {
+          "ref": "Chullin 3a:11",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "חוץ מחרש שוטה וקטן דאפילו דיעבד נמי לא שמא ישהו ושמא ידרסו ושמא יחלידו וכולן ששחטו אהייא אילימא אחרש שוטה וקטן עלה קאי ואם שחטו מבעי ליה"
+        },
+        {
+          "ref": "Chullin 3a:12",
+          "start_char": 0,
+          "end_char": 51,
+          "quote": "אלא אכותי הא אמרת אפילו יוצא ונכנס שחיט לכתחלה קשיא"
+        }
+      ],
+      "cohort": "context_expansion"
+    },
+    {
+      "id": "cc04",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "Rav Ashi reads an Israelite apostate who eats neveilah for appetite, invoking Rava: checked knife first allows slaughter, otherwise subsequent knife inspection controls permission. The וכולן clause remains קשיא because observing slaughter cannot establish a missing knife’s quality.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 3a:13",
+          "start_char": 0,
+          "end_char": 126,
+          "quote": "רב אשי אמר הכי קתני הכל שוחטין ואפילו ישראל מומר מומר למאי לאכול נבילות לתיאבון וכדרבא דאמר רבא ישראל מומר אוכל נבילות לתיאבון"
+        },
+        {
+          "ref": "Chullin 3b:1",
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "בודק סכין ונותן לו ומותר לאכול משחיטתו אבל לא בדק ונתן לו לא ישחוט ואם שחט בודק סכינו אחריו נמצאת סכינו יפה מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו"
+        },
+        {
+          "ref": "Chullin 3b:2",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "חוץ מחרש שוטה וקטן דאפילו דיעבד נמי לא שמא ישהו שמא ידרסו ושמא יחלידו וכולן ששחטו אהייא אילימא אחרש שוטה וקטן עלה קאי ואם שחטו מיבעי ליה"
+        },
+        {
+          "ref": "Chullin 3b:3",
+          "start_char": 0,
+          "end_char": 170,
+          "quote": "אלא אישראל מומר אי דבדק סכין ונותן לו הא אמרת שוחט לכתחלה אלא דלא בדק אי דאיתיה לסכין ליבדקיה השתא ואי דליתיה לסכין כי אחרים רואין אותו מאי הוי דלמא בסכין פגומה שחיט קשיא"
+        }
+      ],
+      "cohort": "context_expansion"
+    },
+    {
+      "id": "cc05",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "First Ravina version: known competence suffices without established resistance to fainting. Unknown competence precludes initial slaughter; after the act examination may validate. Observers replace unavailable post-act examination when the person is absent.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 3b:4",
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "רבינא אמר הכי קתני הכל שוחטין הכל מומחין שוחטין מומחין ואע\"פ שאין מוחזקין"
+        },
+        {
+          "ref": "Chullin 3b:5",
+          "start_char": 0,
+          "end_char": 179,
+          "quote": "בד\"א שיודעין בו שיודע לומר הלכות שחיטה אבל אין יודעין בו שיודע לומר הלכות שחיטה לא ישחוט ואם שחט בודקין אותו אם יודע לומר הלכות שחיטה מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו"
+        },
+        {
+          "ref": "Chullin 3b:6",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "חוץ מחרש שוטה וקטן דאפילו דיעבד נמי לא שמא ישהו שמא ידרסו ושמא יחלידו וכולן ששחטו אהייא אילימא אחרש שוטה וקטן עלה קאי ואם שחטו מבעי ליה"
+        },
+        {
+          "ref": "Chullin 3b:7",
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "אלא אשאין מומחין בבודקין אותו סגי דליתיה לקמן דליבדקיה"
+        }
+      ],
+      "cohort": "context_expansion"
+    },
+    {
+      "id": "cc06",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "Second Ravina version: established non-fainting suffices even without known expertise. Prior two/three observed slaughters establish this; otherwise no initial permission, with post-act assurance of no fainting sufficient. Observers address the absent slaughterer. Keep this alternative separate from Ravina’s first version.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 3b:8",
+          "start_char": 0,
+          "end_char": 220,
+          "quote": "ואיכא דאמרי רבינא אמר הכי קתני הכל שוחטין הכל מוחזקין שוחטין מוחזקין אע\"פ שאין מומחין בד\"א ששחטו לפנינו ב' וג' פעמים ולא נתעלף אבל לא שחט לפנינו ב' וג' פעמים לא ישחוט שמא יתעלף ואם שחט ואמר ברי לי שלא נתעלפתי שחיטתו כשרה"
+        },
+        {
+          "ref": "Chullin 3b:9",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "חוץ מחרש שוטה וקטן דאפילו דיעבד נמי לא שמא ישהו שמא ידרסו ושמא יחלידו וכולן ששחטו אהייא אילימא אחרש שוטה וקטן עלה קאי ואם שחטו מיבעי ליה"
+        },
+        {
+          "ref": "Chullin 3b:10",
+          "start_char": 0,
+          "end_char": 57,
+          "quote": "אלא אשאין מוחזקין והאמרת בברי לי סגי דליתיה קמן דלישייליה"
+        }
+      ],
+      "cohort": "context_expansion"
+    },
+    {
+      "id": "cc07",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "The comparison explains why Ravina/Rabbah bar Ulla reject the other readings (וכולן difficulty), why others reject Rabbah bar Ulla’s redundancy or sacred-purity premise, and why others reject each Ravina version (most slaughterers expert; no fainting concern). These are explanations of interpretive choices, not one unanimous ruling.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 3b:11",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "רבינא ורבה בר עולא כאביי ורבא ורב אשי לא אמרי משום דקשיא להו וכולן"
+        },
+        {
+          "ref": "Chullin 3b:12",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "כולהו כרבה בר עולא לא אמרי להך לישנא דאמרת הכא עיקר אדרבה התם עיקר דבקדשים קאי"
+        },
+        {
+          "ref": "Chullin 3b:13",
+          "start_char": 0,
+          "end_char": 142,
+          "quote": "להך לישנא דאמרת התם עיקר והכא איידי דתנא טמא בחולין תנא נמי טמא במוקדשין טמא בחולין גופיה לא איצטריכא ליה חולין שנעשו על טהרת קדש לאו כקדש דמו"
+        },
+        {
+          "ref": "Chullin 3b:14",
+          "start_char": 0,
+          "end_char": 92,
+          "quote": "כולהו כרבינא לא אמרי להך לישנא דאמר מומחין אין שאין מומחין לא רוב מצויין אצל שחיטה מומחין הן"
+        },
+        {
+          "ref": "Chullin 3b:15",
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "להך לישנא דאמר מוחזקין אין שאין מוחזקין לא לעלופי לא חיישינן"
+        }
+      ],
+      "cohort": "context_expansion"
+    },
+    {
+      "id": "cc08",
+      "kind": "context_interpretation",
+      "origin": "source_paraphrase",
+      "interpretation": "Rava rejects Abaye per his objection; Abaye distinguishes contact. Rav Ashi treats Samaritans as lion-converts. Abaye rejects Rava’s apostate statement. Rava’s Samaritan interpretation is explicitly only according to Abaye’s premises, not Rava’s own belief; preserve לדבריו דאביי ... וליה לא סבירא ליה.",
+      "uncertainty": [],
+      "evidence": [
+        {
+          "ref": "Chullin 3b:16",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "רבא לא אמר כאביי כי קושייה אביי לא אמר כרבא התם לא נגע הכא נגע"
+        },
+        {
+          "ref": "Chullin 3b:17",
+          "start_char": 0,
+          "end_char": 46,
+          "quote": "רב אשי לא אמר כתרוייהו קסבר כותים גרי אריות הן"
+        },
+        {
+          "ref": "Chullin 3b:18",
+          "start_char": 0,
+          "end_char": 72,
+          "quote": "אביי לא אמר כרב אשי לא סבירא ליה הא דרבא אלא רבא מאי טעמא לא אמר כשמעתיה"
+        },
+        {
+          "ref": "Chullin 3b:19",
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "לדבריו דאביי קאמר וליה לא סבירא ליה:"
+        }
+      ],
+      "cohort": "context_expansion"
+    }
+  ],
+  "questions_and_answer_sets": [
+    {
+      "id": "cq1",
+      "formulation": "Does הכל uniformly mean permission in advance?",
+      "origin": "explicit",
+      "answer_claim_ids": [
+        "c30",
+        "c31"
+      ],
+      "comparability": "Counterexamples address a lexical generalization, not direct legal disputes between adjoining authorities.",
+      "local_status": "locally answered",
+      "evidence": [
+        {
+          "ref": "Chullin 2a:2",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> הכל שוחטין לכתחלה ושחיטתן כשרה דיעבד"
+        },
+        {
+          "ref": "Chullin 2a:3",
+          "start_char": 0,
+          "end_char": 176,
+          "quote": "אמר ליה רב אחא בריה דרבא לרב אשי וכל הכל לכתחלה הוא אלא מעתה הכל ממירין אחד האנשים ואחד הנשים ה\"נ דלכתחלה הוא והא כתיב (ויקרא כז, י) לא יחליפנו ולא ימיר אותו טוב ברע או רע בטוב"
+        },
+        {
+          "ref": "Chullin 2a:4",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "התם כדקתני טעמא לא שהאדם רשאי להמיר אלא שאם המיר מומר וסופג את הארבעים"
+        },
+        {
+          "ref": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        },
+        {
+          "ref": "Chullin 2b:2",
+          "start_char": 0,
+          "end_char": 81,
+          "quote": "וכל הכל לאו לכתחלה הוא אלא הכל חייבים בסוכה הכל חייבין בציצית הכי נמי דלאו לכתחלה"
+        },
+        {
+          "ref": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        },
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "cq2",
+      "formulation": "Which vow practice is preferable?",
+      "origin": "explicit",
+      "answer_claim_ids": [
+        "c21",
+        "c22"
+      ],
+      "comparability": "Meir and Yehuda compete on ideal practice, but anonymous limitation restricts Yehuda to הרי זו; do not universalize to הרי עלי.",
+      "local_status": "locally answered",
+      "evidence": [
+        {
+          "ref": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "cq3",
+      "formulation": "Why read this slaughter הכל as in advance?",
+      "origin": "explicit",
+      "answer_claim_ids": [
+        "c08",
+        "c09",
+        "c32"
+      ],
+      "comparability": "Possible post-act reading challenged by redundancy; final lexical answer is in 2b:5.",
+      "local_status": "locally answered",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        },
+        {
+          "ref": "Chullin 2b:5",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "א\"ל אנא שחיטתן כשרה קשיא לי מדקתני שחיטתן כשר' דיעבד מכלל דהכל לכתחלה הוא דאי דיעבד תרתי דיעבד למה לי"
+        }
+      ],
+      "cohort": "core"
+    }
+  ],
+  "supported_edges": [
+    {
+      "id": "ce1",
+      "source_id": "c11",
+      "target_id": "c08",
+      "relation": "objection",
+      "explicitness": "source_explicit",
+      "interpretation": "Substitution counters inference from every הכל; c08 alone is not refuted.",
+      "evidence": [
+        {
+          "ref": "Chullin 2a:3",
+          "start_char": 0,
+          "end_char": 176,
+          "quote": "אמר ליה רב אחא בריה דרבא לרב אשי וכל הכל לכתחלה הוא אלא מעתה הכל ממירין אחד האנשים ואחד הנשים ה\"נ דלכתחלה הוא והא כתיב (ויקרא כז, י) לא יחליפנו ולא ימיר אותו טוב ברע או רע בטוב"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce2",
+      "source_id": "c12",
+      "target_id": "cq1",
+      "relation": "answer",
+      "explicitness": "source_explicit",
+      "interpretation": "Substitution text explicitly disallows initial action.",
+      "evidence": [
+        {
+          "ref": "Chullin 2a:4",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "התם כדקתני טעמא לא שהאדם רשאי להמיר אלא שאם המיר מומר וסופג את הארבעים"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce3",
+      "source_id": "c19",
+      "target_id": "cq1",
+      "relation": "objection",
+      "explicitness": "source_explicit",
+      "interpretation": "Vow text supplies further counterexample to universal initial permission.",
+      "evidence": [
+        {
+          "ref": "Chullin 2a:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "אלא הכל מעריכין ונערכין נודרין ונידרין הכי נמי דלכתחלה והא כתיב (דברים כג, כג) וכי תחדל לנדור לא יהיה בך חטא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce4",
+      "source_id": "c23",
+      "target_id": "c22",
+      "relation": "qualification",
+      "explicitness": "source_explicit",
+      "interpretation": "Approval limited to הרי זו.",
+      "evidence": [
+        {
+          "ref": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce5",
+      "source_id": "c24",
+      "target_id": "c22",
+      "relation": "qualification",
+      "explicitness": "source_explicit",
+      "interpretation": "Personal-obligation vows excluded.",
+      "evidence": [
+        {
+          "ref": "Chullin 2a:6",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "וכתיב (קהלת ה, ד) טוב אשר לא תדור משתדור ולא תשלם ותניא טוב מזה ומזה שאינו נודר כל עיקר דברי רבי מאיר ר' יהודה אומר טוב מזה ומזה נודר ומשלם ואפי' רבי יהודה לא קאמר אלא באומר הרי זו אבל"
+        },
+        {
+          "ref": "Chullin 2b:1",
+          "start_char": 0,
+          "end_char": 18,
+          "quote": "אבל אמר הרי עלי לא"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce6",
+      "source_id": "c25",
+      "target_id": "cq1",
+      "relation": "objection",
+      "explicitness": "source_explicit",
+      "interpretation": "Positive obligation counters universal after-the-fact reading.",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:2",
+          "start_char": 0,
+          "end_char": 81,
+          "quote": "וכל הכל לאו לכתחלה הוא אלא הכל חייבים בסוכה הכל חייבין בציצית הכי נמי דלאו לכתחלה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce7",
+      "source_id": "c27",
+      "target_id": "ce6",
+      "relation": "answer",
+      "explicitness": "source_explicit",
+      "interpretation": "Reply excludes חייבין expressions from the challenge.",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce8",
+      "source_id": "c29",
+      "target_id": "cq1",
+      "relation": "objection",
+      "explicitness": "source_explicit",
+      "interpretation": "Semikha command supplies non-חייבין counterexample.",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:3",
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "חייבין לא קאמינא אלא מעתה הכל סומכין אחד האנשים ואחד הנשים הכי נמי דלאו לכתחלה והא כתיב (ויקרא א, ד) וסמך ידו ונרצה"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce9",
+      "source_id": "c30",
+      "target_id": "cq1",
+      "relation": "local_resolution",
+      "explicitness": "source_explicit",
+      "interpretation": "The formula admits in-advance usage.",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce10",
+      "source_id": "c31",
+      "target_id": "cq1",
+      "relation": "local_resolution",
+      "explicitness": "source_explicit",
+      "interpretation": "The formula also admits post-act usage.",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce11",
+      "source_id": "c32",
+      "target_id": "c08",
+      "relation": "objection",
+      "explicitness": "source_explicit",
+      "interpretation": "Permission cannot be inferred from הכל alone.",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:4",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "אין איכא הכל לכתחלה ואיכא הכל דיעבד אלא הכל דהכא ממאי דלכתחלה הוא דתקשי לך דלמא דיעבד הוא ולא תקשי לך"
+        }
+      ],
+      "cohort": "core"
+    },
+    {
+      "id": "ce12",
+      "source_id": "cc01",
+      "target_id": "c32",
+      "relation": "answer",
+      "explicitness": "source_explicit",
+      "interpretation": "Redundancy between first and second clauses resolves local reading.",
+      "evidence": [
+        {
+          "ref": "Chullin 2b:5",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "א\"ל אנא שחיטתן כשרה קשיא לי מדקתני שחיטתן כשר' דיעבד מכלל דהכל לכתחלה הוא דאי דיעבד תרתי דיעבד למה לי"
+        }
+      ],
+      "cohort": "context_expansion"
+    }
+  ],
+  "core_denominators": {
+    "independently_found_atomic_claims": 32,
+    "attributable_claims": 24,
+    "condition_bearing_claims": 14,
+    "questions": 3,
+    "answer_sets": 3,
+    "supported_edges": 11
+  },
+  "denominator_definition": "Claims count independently enumerated atomic propositions, including asserted quotations, hypothetical challenges and rejected proposals; attributable means a named or explicitly quoted collective textual holder, excluding anonymous discourse. Condition-bearing counts explicit scope/if restrictions. Answer sets count questions with locally identified answer claims; no pairing by mere adjacency. Context findings do not inflate core denominators. Quoted verse propositions are counted only where independently used in argument. These operational boundaries remain contestable scholarly granularity.",
+  "limitations": [
+    "Opening block only; no producer comparison, no full-tractate verdict, no human scholarly certification.",
+    "Context read to resolve core interpretation; context findings are selective and do not claim complete context extraction.",
+    "No production schema validation claimed for this separate review artifact."
+  ],
+  "notes": [
+    "Named challenge speaker at 2a:3 is Rav Aha son of Rava addressing Rav Ashi. Later unlabeled dialogue turns are left anonymous rather than mechanically assigned.",
+    "The anonymous Mishnah and explicitly quoted authorities count as attributable textual holders in the stated operational denominator; they are not named amoraic persons.",
+    "Comparability is constrained by priori/posteriori validity, supervision, knife knowledge, competence, fainting and alternative reports; adjacent citations alone are not disputes."
+  ],
+  "validation": {
+    "source_hash_verified": true,
+    "frozen_plan_hash_verified": true,
+    "common_documents_hash_verified": true,
+    "original_source_schema_hash_verified": true,
+    "core_span_hashes_verified": 10,
+    "evidence_spans_validated": 97,
+    "offset_contract": "Original Unicode codepoint half-open; includes markup; no normalization",
+    "id_links_validated": true
+  },
+  "next_review_block": {
+    "block_id": "block_000006",
+    "core_refs": [
+      "Chullin 4a:7",
+      "Chullin 4a:8",
+      "Chullin 4a:9",
+      "Chullin 4a:10",
+      "Chullin 4a:11",
+      "Chullin 4a:12",
+      "Chullin 4a:13",
+      "Chullin 4a:14",
+      "Chullin 4a:15",
+      "Chullin 4a:16"
+    ],
+    "inclusion_probability": 0.1,
+    "review_union_inclusion_probability": 0.1,
+    "roles": [
+      "probability_sample"
+    ]
+  },
+  "frozen_utc": "2026-11-26T18:52:35.504223+00:00"
+}

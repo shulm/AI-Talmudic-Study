@@ -1,0 +1,738 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 15,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 15,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 30,
+    "probability_core_segments": 300,
+    "source_nonempty_segments": 2665,
+    "source_segment_positions": 2665,
+    "union_blocks": 32,
+    "union_core_segments": 315
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_niddah.json",
+    "sha256": "42b38ab871d7e7bf7d07d9b09fc89802c457d0c0bbb42dbaab18247d277a5250"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_niddah",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_niddah.json",
+    "sha256": "42b38ab871d7e7bf7d07d9b09fc89802c457d0c0bbb42dbaab18247d277a5250"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Niddah.json",
+    "sha256": "e0fedf6b739e0041502bd4f2700f3bf5f1f74e6ac9fc06e35805b47fc807ffb2"
+  },
+  "plan_sha256": "5e96f4655fb6a8e51644b04217daedab1b6555eabeb1a75edf7b26337515b832",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 267,
+    "inclusion_probability_denominator": 267,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000004",
+      "block_000010",
+      "block_000013",
+      "block_000032",
+      "block_000035",
+      "block_000043",
+      "block_000050",
+      "block_000054",
+      "block_000065",
+      "block_000069",
+      "block_000070",
+      "block_000071",
+      "block_000073",
+      "block_000074",
+      "block_000091",
+      "block_000095",
+      "block_000125",
+      "block_000130",
+      "block_000139",
+      "block_000141",
+      "block_000162",
+      "block_000166",
+      "block_000168",
+      "block_000178",
+      "block_000185",
+      "block_000200",
+      "block_000205",
+      "block_000240",
+      "block_000244",
+      "block_000263"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Niddah 2a:1",
+        "Niddah 2a:2",
+        "Niddah 2a:3",
+        "Niddah 2a:4",
+        "Niddah 2a:5",
+        "Niddah 2a:6",
+        "Niddah 2b:1",
+        "Niddah 2b:2",
+        "Niddah 2b:3",
+        "Niddah 2b:4"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000004",
+      "core_refs": [
+        "Niddah 3a:17",
+        "Niddah 3a:18",
+        "Niddah 3a:19",
+        "Niddah 3a:20",
+        "Niddah 3a:21",
+        "Niddah 3a:22",
+        "Niddah 3b:1",
+        "Niddah 3b:2",
+        "Niddah 3b:3",
+        "Niddah 3b:4"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000010",
+      "core_refs": [
+        "Niddah 5a:1",
+        "Niddah 5a:2",
+        "Niddah 5a:3",
+        "Niddah 5a:4",
+        "Niddah 5a:5",
+        "Niddah 5a:6",
+        "Niddah 5a:7",
+        "Niddah 5a:8",
+        "Niddah 5a:9",
+        "Niddah 5a:10"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000013",
+      "core_refs": [
+        "Niddah 5b:15",
+        "Niddah 6a:1",
+        "Niddah 6a:2",
+        "Niddah 6a:3",
+        "Niddah 6a:4",
+        "Niddah 6a:5",
+        "Niddah 6a:6",
+        "Niddah 6a:7",
+        "Niddah 6a:8",
+        "Niddah 6a:9"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000032",
+      "core_refs": [
+        "Niddah 12a:2",
+        "Niddah 12a:3",
+        "Niddah 12a:4",
+        "Niddah 12a:5",
+        "Niddah 12a:6",
+        "Niddah 12a:7",
+        "Niddah 12a:8",
+        "Niddah 12a:9",
+        "Niddah 12a:10",
+        "Niddah 12a:11"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000035",
+      "core_refs": [
+        "Niddah 13a:8",
+        "Niddah 13a:9",
+        "Niddah 13a:10",
+        "Niddah 13a:11",
+        "Niddah 13a:12",
+        "Niddah 13a:13",
+        "Niddah 13a:14",
+        "Niddah 13a:15",
+        "Niddah 13a:16",
+        "Niddah 13a:17"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000043",
+      "core_refs": [
+        "Niddah 14b:23",
+        "Niddah 14b:24",
+        "Niddah 15a:1",
+        "Niddah 15a:2",
+        "Niddah 15a:3",
+        "Niddah 15a:4",
+        "Niddah 15a:5",
+        "Niddah 15a:6",
+        "Niddah 15a:7",
+        "Niddah 15a:8"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000050",
+      "core_refs": [
+        "Niddah 16b:11",
+        "Niddah 16b:12",
+        "Niddah 16b:13",
+        "Niddah 16b:14",
+        "Niddah 16b:15",
+        "Niddah 16b:16",
+        "Niddah 16b:17",
+        "Niddah 17a:1",
+        "Niddah 17a:2",
+        "Niddah 17a:3"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000054",
+      "core_refs": [
+        "Niddah 17b:11",
+        "Niddah 17b:12",
+        "Niddah 18a:1",
+        "Niddah 18a:2",
+        "Niddah 18a:3",
+        "Niddah 18a:4",
+        "Niddah 18a:5",
+        "Niddah 18a:6",
+        "Niddah 18a:7",
+        "Niddah 18a:8"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000065",
+      "core_refs": [
+        "Niddah 20b:7",
+        "Niddah 20b:8",
+        "Niddah 20b:9",
+        "Niddah 20b:10",
+        "Niddah 20b:11",
+        "Niddah 20b:12",
+        "Niddah 20b:13",
+        "Niddah 20b:14",
+        "Niddah 20b:15",
+        "Niddah 20b:16"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000069",
+      "core_refs": [
+        "Niddah 21b:4",
+        "Niddah 21b:5",
+        "Niddah 21b:6",
+        "Niddah 21b:7",
+        "Niddah 21b:8",
+        "Niddah 21b:9",
+        "Niddah 21b:10",
+        "Niddah 21b:11",
+        "Niddah 21b:12",
+        "Niddah 21b:13"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000070",
+      "core_refs": [
+        "Niddah 21b:14",
+        "Niddah 21b:15",
+        "Niddah 21b:16",
+        "Niddah 21b:17",
+        "Niddah 21b:18",
+        "Niddah 21b:19",
+        "Niddah 21b:20",
+        "Niddah 21b:21",
+        "Niddah 21b:22",
+        "Niddah 21b:23"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000071",
+      "core_refs": [
+        "Niddah 21b:24",
+        "Niddah 21b:25",
+        "Niddah 22a:1",
+        "Niddah 22a:2",
+        "Niddah 22a:3",
+        "Niddah 22a:4",
+        "Niddah 22a:5",
+        "Niddah 22a:6",
+        "Niddah 22a:7",
+        "Niddah 22a:8"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000073",
+      "core_refs": [
+        "Niddah 22b:5",
+        "Niddah 22b:6",
+        "Niddah 22b:7",
+        "Niddah 22b:8",
+        "Niddah 22b:9",
+        "Niddah 22b:10",
+        "Niddah 22b:11",
+        "Niddah 22b:12",
+        "Niddah 22b:13",
+        "Niddah 22b:14"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000074",
+      "core_refs": [
+        "Niddah 22b:15",
+        "Niddah 22b:16",
+        "Niddah 22b:17",
+        "Niddah 22b:18",
+        "Niddah 22b:19",
+        "Niddah 22b:20",
+        "Niddah 22b:21",
+        "Niddah 22b:22",
+        "Niddah 22b:23",
+        "Niddah 22b:24"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000091",
+      "core_refs": [
+        "Niddah 26b:10",
+        "Niddah 26b:11",
+        "Niddah 26b:12",
+        "Niddah 26b:13",
+        "Niddah 27a:1",
+        "Niddah 27a:2",
+        "Niddah 27a:3",
+        "Niddah 27a:4",
+        "Niddah 27a:5",
+        "Niddah 27a:6"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000095",
+      "core_refs": [
+        "Niddah 28a:4",
+        "Niddah 28a:5",
+        "Niddah 28a:6",
+        "Niddah 28a:7",
+        "Niddah 28a:8",
+        "Niddah 28a:9",
+        "Niddah 28a:10",
+        "Niddah 28a:11",
+        "Niddah 28a:12",
+        "Niddah 28a:13"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000125",
+      "core_refs": [
+        "Niddah 35b:11",
+        "Niddah 35b:12",
+        "Niddah 35b:13",
+        "Niddah 35b:14",
+        "Niddah 35b:15",
+        "Niddah 35b:16",
+        "Niddah 35b:17",
+        "Niddah 35b:18",
+        "Niddah 35b:19",
+        "Niddah 35b:20"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000130",
+      "core_refs": [
+        "Niddah 36b:16",
+        "Niddah 36b:17",
+        "Niddah 36b:18",
+        "Niddah 36b:19",
+        "Niddah 36b:20",
+        "Niddah 36b:21",
+        "Niddah 36b:22",
+        "Niddah 36b:23",
+        "Niddah 36b:24",
+        "Niddah 36b:25"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000139",
+      "core_refs": [
+        "Niddah 39a:3",
+        "Niddah 39a:4",
+        "Niddah 39a:5",
+        "Niddah 39a:6",
+        "Niddah 39a:7",
+        "Niddah 39a:8",
+        "Niddah 39a:9",
+        "Niddah 39a:10",
+        "Niddah 39a:11",
+        "Niddah 39a:12"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000141",
+      "core_refs": [
+        "Niddah 39b:6",
+        "Niddah 39b:7",
+        "Niddah 39b:8",
+        "Niddah 39b:9",
+        "Niddah 39b:10",
+        "Niddah 39b:11",
+        "Niddah 39b:12",
+        "Niddah 40a:1",
+        "Niddah 40a:2",
+        "Niddah 40a:3"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000162",
+      "core_refs": [
+        "Niddah 45a:22",
+        "Niddah 45a:23",
+        "Niddah 45a:24",
+        "Niddah 45b:1",
+        "Niddah 45b:2",
+        "Niddah 45b:3",
+        "Niddah 45b:4",
+        "Niddah 45b:5",
+        "Niddah 45b:6",
+        "Niddah 45b:7"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000166",
+      "core_refs": [
+        "Niddah 46a:17",
+        "Niddah 46a:18",
+        "Niddah 46a:19",
+        "Niddah 46a:20",
+        "Niddah 46a:21",
+        "Niddah 46a:22",
+        "Niddah 46a:23",
+        "Niddah 46a:24",
+        "Niddah 46b:1",
+        "Niddah 46b:2"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000168",
+      "core_refs": [
+        "Niddah 46b:13",
+        "Niddah 46b:14",
+        "Niddah 46b:15",
+        "Niddah 46b:16",
+        "Niddah 46b:17",
+        "Niddah 46b:18",
+        "Niddah 46b:19",
+        "Niddah 47a:1",
+        "Niddah 47a:2",
+        "Niddah 47a:3"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000178",
+      "core_refs": [
+        "Niddah 49b:5",
+        "Niddah 49b:6",
+        "Niddah 49b:7",
+        "Niddah 49b:8",
+        "Niddah 49b:9",
+        "Niddah 49b:10",
+        "Niddah 49b:11",
+        "Niddah 49b:12",
+        "Niddah 49b:13",
+        "Niddah 49b:14"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000185",
+      "core_refs": [
+        "Niddah 51b:5",
+        "Niddah 51b:6",
+        "Niddah 51b:7",
+        "Niddah 51b:8",
+        "Niddah 51b:9",
+        "Niddah 51b:10",
+        "Niddah 51b:11",
+        "Niddah 51b:12",
+        "Niddah 51b:13",
+        "Niddah 51b:14"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000200",
+      "core_refs": [
+        "Niddah 55a:16",
+        "Niddah 55a:17",
+        "Niddah 55b:1",
+        "Niddah 55b:2",
+        "Niddah 55b:3",
+        "Niddah 55b:4",
+        "Niddah 55b:5",
+        "Niddah 55b:6",
+        "Niddah 55b:7",
+        "Niddah 55b:8"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000205",
+      "core_refs": [
+        "Niddah 56b:4",
+        "Niddah 56b:5",
+        "Niddah 56b:6",
+        "Niddah 56b:7",
+        "Niddah 56b:8",
+        "Niddah 56b:9",
+        "Niddah 56b:10",
+        "Niddah 56b:11",
+        "Niddah 56b:12",
+        "Niddah 56b:13"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000240",
+      "core_refs": [
+        "Niddah 65b:16",
+        "Niddah 65b:17",
+        "Niddah 65b:18",
+        "Niddah 65b:19",
+        "Niddah 65b:20",
+        "Niddah 66a:1",
+        "Niddah 66a:2",
+        "Niddah 66a:3",
+        "Niddah 66a:4",
+        "Niddah 66a:5"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000244",
+      "core_refs": [
+        "Niddah 66b:10",
+        "Niddah 66b:11",
+        "Niddah 67a:1",
+        "Niddah 67a:2",
+        "Niddah 67a:3",
+        "Niddah 67a:4",
+        "Niddah 67a:5",
+        "Niddah 67a:6",
+        "Niddah 67a:7",
+        "Niddah 67a:8"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000263",
+      "core_refs": [
+        "Niddah 72b:1",
+        "Niddah 72b:2",
+        "Niddah 72b:3",
+        "Niddah 72b:4",
+        "Niddah 72b:5",
+        "Niddah 72b:6",
+        "Niddah 72b:7",
+        "Niddah 72b:8",
+        "Niddah 72b:9",
+        "Niddah 72b:10"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 0.11235955056179775,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000266",
+      "core_refs": [
+        "Niddah 73a:12",
+        "Niddah 73a:13",
+        "Niddah 73a:14",
+        "Niddah 73a:15",
+        "Niddah 73a:16"
+      ],
+      "inclusion_probability": 0.11235955056179775,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Tahorot/Niddah/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "2ef431a223773c5920cd51f03d6555e45c81ad98373c98beae9b466cf962e265"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Niddah"
+}

@@ -1,0 +1,233 @@
+{
+  "state": "CHECKPOINTED_PARTIAL_REQUIRED_WORK_REMAINS",
+  "run_id": "run_20261125_01",
+  "lead_chat": "01a21928-d823-7640-a819-7afa816fc1a1",
+  "source_only_reader_activity": "All directly dispatched source-only readers finished their bounded batches. No autonomous background continuation promised.",
+  "capacity": "0 active source-only reading slots at this checkpoint; future capacity must be explicitly dispatched. Up to three child slots available during an active lead session, shared with comparators.",
+  "run_contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "next_actions": [
+    "Reverify ACTIVE_RUN and contract; preserve current source-only plans and all initial readings. Do not reroll seed20261125.",
+    "Inspect latest correction receipts and candidate hashes before restating verdict; changed evidence/dependents require recheck.",
+    "Close Berakhot/BavaMetzia/RoshHashanah/Taanit/Chullin targeted issues and review-side disagreements via new artifacts. BavaKamma BK001-E15 already independently verified corrected; later374 records not covered by that correction receipt.",
+    "Audit inherited L02/Rosh source-only launch provenance before promoting declared source-first status. Validating source slices is not semantic rereading. Rosh has315 declared cores but only20 newly compared in this wave.",
+    "Verify new L06 REVIEW_MANIFEST_002 before importing110 declared cores; currently pending, excluded from534 union. Existing L01 readings likewise not yet imported.",
+    "Dispatch fresh fork_turns=none readers with ONLY jobs/<job>.json, its original source/common docs/frozen plan and selected unreviewed neutral cores. Do not pass this resume/report or annotated conversation.",
+    "Freeze every new independent output hash before sending producer versions to comparators. Context expansions never inflate sampled cores.",
+    "Continue all37 job queues in COVERAGE_CHECKPOINT_001. Null next selected block means inherited plan-core declarations cover it, NOT completed comparison/risk/admission.",
+    "Review risk records and demanding task examples separately. Attributable-claim denominator definitions differ by reader; retain definitions, do not pool error rates.",
+    "Coordinate bounded production batches with available review slots; current wave has no remaining active source-only slots. Coordinator owns global assignments and admission."
+  ],
+  "lanes": [
+    {
+      "lane": "L01",
+      "source_segments": 13657,
+      "producer_claim_coverage_at_pinned_coordinator_audit": 237,
+      "direct_new_reading_cores": 30,
+      "inherited_declared_reading_cores": 0,
+      "remaining_selected_blocks_after_declared_readings": 196,
+      "next_frozen_cohorts": [
+        {
+          "job_id": "bavli_berakhot",
+          "block_id": "block_000017"
+        },
+        {
+          "job_id": "bavli_zevachim",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_ketubot",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_bekhorot",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_sukkah",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_chagigah",
+          "block_id": "block_000000"
+        }
+      ]
+    },
+    {
+      "lane": "L02",
+      "source_segments": 13669,
+      "producer_claim_coverage_at_pinned_coordinator_audit": 310,
+      "direct_new_reading_cores": 20,
+      "inherited_declared_reading_cores": 129,
+      "remaining_selected_blocks_after_declared_readings": 166,
+      "next_frozen_cohorts": [
+        {
+          "job_id": "bavli_bava_metzia",
+          "block_id": "block_000040"
+        },
+        {
+          "job_id": "bavli_sanhedrin",
+          "block_id": "block_000010"
+        },
+        {
+          "job_id": "bavli_gittin",
+          "block_id": "block_000019"
+        },
+        {
+          "job_id": "bavli_sotah",
+          "block_id": "block_000010"
+        },
+        {
+          "job_id": "bavli_keritot",
+          "block_id": "block_000009"
+        }
+      ]
+    },
+    {
+      "lane": "L03",
+      "source_segments": 13635,
+      "producer_claim_coverage_at_pinned_coordinator_audit": 390,
+      "direct_new_reading_cores": 20,
+      "inherited_declared_reading_cores": 315,
+      "remaining_selected_blocks_after_declared_readings": 196,
+      "next_frozen_cohorts": [
+        {
+          "job_id": "bavli_yevamot",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_eruvin",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_kiddushin",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_nazir",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_arakhin",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_tamid",
+          "block_id": "block_000000"
+        }
+      ]
+    },
+    {
+      "lane": "L04",
+      "source_segments": 13593,
+      "producer_claim_coverage_at_pinned_coordinator_audit": 15,
+      "direct_new_reading_cores": 10,
+      "inherited_declared_reading_cores": 0,
+      "remaining_selected_blocks_after_declared_readings": 234,
+      "next_frozen_cohorts": [
+        {
+          "job_id": "bavli_taanit",
+          "block_id": "block_000004"
+        },
+        {
+          "job_id": "bavli_bava_batra",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_pesachim",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_avodah_zarah",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_nedarim",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_moed_katan",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_makkot",
+          "block_id": "block_000000"
+        }
+      ]
+    },
+    {
+      "lane": "L05",
+      "source_segments": 13598,
+      "producer_claim_coverage_at_pinned_coordinator_audit": 11,
+      "direct_new_reading_cores": 10,
+      "inherited_declared_reading_cores": 0,
+      "remaining_selected_blocks_after_declared_readings": 207,
+      "next_frozen_cohorts": [
+        {
+          "job_id": "bavli_chullin",
+          "block_id": "block_000006"
+        },
+        {
+          "job_id": "bavli_shabbat",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_yoma",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_shevuot",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_temurah",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_horayot",
+          "block_id": "block_000000"
+        }
+      ]
+    },
+    {
+      "lane": "L06",
+      "source_segments": 13641,
+      "producer_claim_coverage_at_pinned_coordinator_audit": 85,
+      "direct_new_reading_cores": 30,
+      "inherited_declared_reading_cores": 0,
+      "remaining_selected_blocks_after_declared_readings": 209,
+      "next_frozen_cohorts": [
+        {
+          "job_id": "bavli_bava_kamma",
+          "block_id": "block_000012"
+        },
+        {
+          "job_id": "bavli_menachot",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_niddah",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_megillah",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_beitzah",
+          "block_id": "block_000000"
+        },
+        {
+          "job_id": "bavli_meilah",
+          "block_id": "block_000000"
+        }
+      ]
+    }
+  ],
+  "pending_external_review": {
+    "L06": "F:/Sefaria_QA/bavli_production_run_20261125_01/L06/review_fresh_20261126/REVIEW_MANIFEST_002.json",
+    "L06_reported_manifest_sha256": "aeb3f4a4f29f3670eeb145e81a8ec68ea18b426a729045943beeb2152edf8076",
+    "status": "reported_not_import_verified"
+  },
+  "global_failure_assessment": "No shared source/edition/coordinate/replay failure established. Recurring conditional/status/export risks across specific reviewed versions require affected-field restrictions and follow-up; do not infer all81793 records wrong. Existing Chullin exact-role quarantine preserved.",
+  "delivery_boundary": "Local immutable review artifacts supplied to coordinator for hash-verified import; no current-workspace unrelated branch commit, no merge, no corpus files copied."
+}

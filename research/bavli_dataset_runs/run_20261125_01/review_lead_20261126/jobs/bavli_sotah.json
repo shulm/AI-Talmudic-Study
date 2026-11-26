@@ -1,0 +1,738 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 15,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 15,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 30,
+    "probability_core_segments": 300,
+    "source_nonempty_segments": 1635,
+    "source_segment_positions": 1635,
+    "union_blocks": 32,
+    "union_core_segments": 315
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_sotah.json",
+    "sha256": "2842e27a0329812ef718827cd2d7e315dda04acb5fda3a1a35d3222cbeed9de4"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_sotah",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_sotah.json",
+    "sha256": "2842e27a0329812ef718827cd2d7e315dda04acb5fda3a1a35d3222cbeed9de4"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Sotah.json",
+    "sha256": "1655abc2d54f04d2cbdeedff990bb64fefae47d2f5d8b17d5a559bbd71d3e4e2"
+  },
+  "plan_sha256": "e75a2d638089a07c99593417982608231b27954a4feaf04fb26de0504f909bca",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 164,
+    "inclusion_probability_denominator": 164,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000008",
+      "block_000010",
+      "block_000016",
+      "block_000019",
+      "block_000023",
+      "block_000025",
+      "block_000038",
+      "block_000045",
+      "block_000069",
+      "block_000073",
+      "block_000082",
+      "block_000083",
+      "block_000094",
+      "block_000098",
+      "block_000099",
+      "block_000104",
+      "block_000109",
+      "block_000112",
+      "block_000125",
+      "block_000128",
+      "block_000130",
+      "block_000142",
+      "block_000144",
+      "block_000147",
+      "block_000148",
+      "block_000149",
+      "block_000150",
+      "block_000153",
+      "block_000155",
+      "block_000162"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Sotah 2a:1",
+        "Sotah 2a:2",
+        "Sotah 2a:3",
+        "Sotah 2a:4",
+        "Sotah 2a:5",
+        "Sotah 2a:6",
+        "Sotah 2a:7",
+        "Sotah 2a:8",
+        "Sotah 2a:9",
+        "Sotah 2a:10"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000008",
+      "core_refs": [
+        "Sotah 3b:15",
+        "Sotah 3b:16",
+        "Sotah 3b:17",
+        "Sotah 3b:18",
+        "Sotah 3b:19",
+        "Sotah 3b:20",
+        "Sotah 3b:21",
+        "Sotah 3b:22",
+        "Sotah 3b:23",
+        "Sotah 4a:1"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000010",
+      "core_refs": [
+        "Sotah 4a:12",
+        "Sotah 4a:13",
+        "Sotah 4a:14",
+        "Sotah 4a:15",
+        "Sotah 4a:16",
+        "Sotah 4a:17",
+        "Sotah 4a:18",
+        "Sotah 4a:19",
+        "Sotah 4a:20",
+        "Sotah 4a:21"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000016",
+      "core_refs": [
+        "Sotah 5b:12",
+        "Sotah 6a:1",
+        "Sotah 6a:2",
+        "Sotah 6a:3",
+        "Sotah 6a:4",
+        "Sotah 6a:5",
+        "Sotah 6a:6",
+        "Sotah 6a:7",
+        "Sotah 6a:8",
+        "Sotah 6a:9"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000019",
+      "core_refs": [
+        "Sotah 6b:11",
+        "Sotah 6b:12",
+        "Sotah 6b:13",
+        "Sotah 6b:14",
+        "Sotah 6b:15",
+        "Sotah 6b:16",
+        "Sotah 6b:17",
+        "Sotah 6b:18",
+        "Sotah 7a:1",
+        "Sotah 7a:2"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000023",
+      "core_refs": [
+        "Sotah 7b:11",
+        "Sotah 7b:12",
+        "Sotah 7b:13",
+        "Sotah 7b:14",
+        "Sotah 7b:15",
+        "Sotah 8a:1",
+        "Sotah 8a:2",
+        "Sotah 8a:3",
+        "Sotah 8a:4",
+        "Sotah 8a:5"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000025",
+      "core_refs": [
+        "Sotah 8b:2",
+        "Sotah 8b:3",
+        "Sotah 8b:4",
+        "Sotah 8b:5",
+        "Sotah 8b:6",
+        "Sotah 8b:7",
+        "Sotah 8b:8",
+        "Sotah 8b:9",
+        "Sotah 8b:10",
+        "Sotah 8b:11"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000038",
+      "core_refs": [
+        "Sotah 11b:15",
+        "Sotah 11b:16",
+        "Sotah 11b:17",
+        "Sotah 11b:18",
+        "Sotah 11b:19",
+        "Sotah 11b:20",
+        "Sotah 11b:21",
+        "Sotah 11b:22",
+        "Sotah 11b:23",
+        "Sotah 11b:24"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000045",
+      "core_refs": [
+        "Sotah 13a:15",
+        "Sotah 13a:16",
+        "Sotah 13a:17",
+        "Sotah 13b:1",
+        "Sotah 13b:2",
+        "Sotah 13b:3",
+        "Sotah 13b:4",
+        "Sotah 13b:5",
+        "Sotah 13b:6",
+        "Sotah 13b:7"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000069",
+      "core_refs": [
+        "Sotah 20b:2",
+        "Sotah 20b:3",
+        "Sotah 20b:4",
+        "Sotah 20b:5",
+        "Sotah 20b:6",
+        "Sotah 20b:7",
+        "Sotah 20b:8",
+        "Sotah 20b:9",
+        "Sotah 20b:10",
+        "Sotah 20b:11"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000073",
+      "core_refs": [
+        "Sotah 22a:1",
+        "Sotah 22a:2",
+        "Sotah 22a:3",
+        "Sotah 22a:4",
+        "Sotah 22a:5",
+        "Sotah 22a:6",
+        "Sotah 22a:7",
+        "Sotah 22a:8",
+        "Sotah 22a:9",
+        "Sotah 22a:10"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000082",
+      "core_refs": [
+        "Sotah 25b:3",
+        "Sotah 25b:4",
+        "Sotah 26a:1",
+        "Sotah 26a:2",
+        "Sotah 26a:3",
+        "Sotah 26a:4",
+        "Sotah 26a:5",
+        "Sotah 26a:6",
+        "Sotah 26a:7",
+        "Sotah 26a:8"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000083",
+      "core_refs": [
+        "Sotah 26a:9",
+        "Sotah 26a:10",
+        "Sotah 26a:11",
+        "Sotah 26a:12",
+        "Sotah 26a:13",
+        "Sotah 26a:14",
+        "Sotah 26a:15",
+        "Sotah 26a:16",
+        "Sotah 26b:1",
+        "Sotah 26b:2"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000094",
+      "core_refs": [
+        "Sotah 29b:16",
+        "Sotah 29b:17",
+        "Sotah 29b:18",
+        "Sotah 30a:1",
+        "Sotah 30a:2",
+        "Sotah 30a:3",
+        "Sotah 30a:4",
+        "Sotah 30a:5",
+        "Sotah 30a:6",
+        "Sotah 30a:7"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000098",
+      "core_refs": [
+        "Sotah 31a:7",
+        "Sotah 31a:8",
+        "Sotah 31a:9",
+        "Sotah 31a:10",
+        "Sotah 31a:11",
+        "Sotah 31a:12",
+        "Sotah 31a:13",
+        "Sotah 31a:14",
+        "Sotah 31a:15",
+        "Sotah 31a:16"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000099",
+      "core_refs": [
+        "Sotah 31a:17",
+        "Sotah 31a:18",
+        "Sotah 31a:19",
+        "Sotah 31a:20",
+        "Sotah 31b:1",
+        "Sotah 31b:2",
+        "Sotah 31b:3",
+        "Sotah 31b:4",
+        "Sotah 31b:5",
+        "Sotah 31b:6"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000104",
+      "core_refs": [
+        "Sotah 32b:14",
+        "Sotah 32b:15",
+        "Sotah 32b:16",
+        "Sotah 32b:17",
+        "Sotah 32b:18",
+        "Sotah 32b:19",
+        "Sotah 32b:20",
+        "Sotah 32b:21",
+        "Sotah 32b:22",
+        "Sotah 32b:23"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000109",
+      "core_refs": [
+        "Sotah 34a:11",
+        "Sotah 34b:1",
+        "Sotah 34b:2",
+        "Sotah 34b:3",
+        "Sotah 34b:4",
+        "Sotah 34b:5",
+        "Sotah 34b:6",
+        "Sotah 34b:7",
+        "Sotah 34b:8",
+        "Sotah 34b:9"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000112",
+      "core_refs": [
+        "Sotah 35a:16",
+        "Sotah 35a:17",
+        "Sotah 35a:18",
+        "Sotah 35a:19",
+        "Sotah 35a:20",
+        "Sotah 35a:21",
+        "Sotah 35a:22",
+        "Sotah 35a:23",
+        "Sotah 35b:1",
+        "Sotah 35b:2"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000125",
+      "core_refs": [
+        "Sotah 39b:7",
+        "Sotah 39b:8",
+        "Sotah 39b:9",
+        "Sotah 39b:10",
+        "Sotah 39b:11",
+        "Sotah 39b:12",
+        "Sotah 39b:13",
+        "Sotah 40a:1",
+        "Sotah 40a:2",
+        "Sotah 40a:3"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000128",
+      "core_refs": [
+        "Sotah 40b:8",
+        "Sotah 40b:9",
+        "Sotah 40b:10",
+        "Sotah 41a:1",
+        "Sotah 41a:2",
+        "Sotah 41a:3",
+        "Sotah 41a:4",
+        "Sotah 41a:5",
+        "Sotah 41a:6",
+        "Sotah 41a:7"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000130",
+      "core_refs": [
+        "Sotah 41a:18",
+        "Sotah 41a:19",
+        "Sotah 41a:20",
+        "Sotah 41a:21",
+        "Sotah 41a:22",
+        "Sotah 41a:23",
+        "Sotah 41a:24",
+        "Sotah 41a:25",
+        "Sotah 41b:1",
+        "Sotah 41b:2"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000142",
+      "core_refs": [
+        "Sotah 45a:3",
+        "Sotah 45a:4",
+        "Sotah 45a:5",
+        "Sotah 45a:6",
+        "Sotah 45a:7",
+        "Sotah 45a:8",
+        "Sotah 45a:9",
+        "Sotah 45a:10",
+        "Sotah 45a:11",
+        "Sotah 45a:12"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000144",
+      "core_refs": [
+        "Sotah 45a:23",
+        "Sotah 45a:24",
+        "Sotah 45a:25",
+        "Sotah 45a:26",
+        "Sotah 45b:1",
+        "Sotah 45b:2",
+        "Sotah 45b:3",
+        "Sotah 45b:4",
+        "Sotah 45b:5",
+        "Sotah 45b:6"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000147",
+      "core_refs": [
+        "Sotah 46a:7",
+        "Sotah 46a:8",
+        "Sotah 46a:9",
+        "Sotah 46a:10",
+        "Sotah 46a:11",
+        "Sotah 46a:12",
+        "Sotah 46a:13",
+        "Sotah 46a:14",
+        "Sotah 46a:15",
+        "Sotah 46a:16"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000148",
+      "core_refs": [
+        "Sotah 46a:17",
+        "Sotah 46a:18",
+        "Sotah 46a:19",
+        "Sotah 46a:20",
+        "Sotah 46a:21",
+        "Sotah 46a:22",
+        "Sotah 46a:23",
+        "Sotah 46b:1",
+        "Sotah 46b:2",
+        "Sotah 46b:3"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000149",
+      "core_refs": [
+        "Sotah 46b:4",
+        "Sotah 46b:5",
+        "Sotah 46b:6",
+        "Sotah 46b:7",
+        "Sotah 46b:8",
+        "Sotah 46b:9",
+        "Sotah 46b:10",
+        "Sotah 46b:11",
+        "Sotah 46b:12",
+        "Sotah 46b:13"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000150",
+      "core_refs": [
+        "Sotah 46b:14",
+        "Sotah 46b:15",
+        "Sotah 46b:16",
+        "Sotah 46b:17",
+        "Sotah 46b:18",
+        "Sotah 46b:19",
+        "Sotah 46b:20",
+        "Sotah 46b:21",
+        "Sotah 46b:22",
+        "Sotah 46b:23"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000153",
+      "core_refs": [
+        "Sotah 47a:20",
+        "Sotah 47b:1",
+        "Sotah 47b:2",
+        "Sotah 47b:3",
+        "Sotah 47b:4",
+        "Sotah 47b:5",
+        "Sotah 47b:6",
+        "Sotah 47b:7",
+        "Sotah 47b:8",
+        "Sotah 47b:9"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000155",
+      "core_refs": [
+        "Sotah 47b:20",
+        "Sotah 47b:21",
+        "Sotah 47b:22",
+        "Sotah 47b:23",
+        "Sotah 48a:1",
+        "Sotah 48a:2",
+        "Sotah 48a:3",
+        "Sotah 48a:4",
+        "Sotah 48a:5",
+        "Sotah 48a:6"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000162",
+      "core_refs": [
+        "Sotah 49b:6",
+        "Sotah 49b:7",
+        "Sotah 49b:8",
+        "Sotah 49b:9",
+        "Sotah 49b:10",
+        "Sotah 49b:11",
+        "Sotah 49b:12",
+        "Sotah 49b:13",
+        "Sotah 49b:14",
+        "Sotah 49b:15"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 0.18292682926829268,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000163",
+      "core_refs": [
+        "Sotah 49b:16",
+        "Sotah 49b:17",
+        "Sotah 49b:18",
+        "Sotah 49b:19",
+        "Sotah 49b:20"
+      ],
+      "inclusion_probability": 0.18292682926829268,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nashim/Sotah/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "728c220f989308eec03a41c7be4dd026c4bb4bfe1d8f93fca48f5dc1b90204a1"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Sotah"
+}

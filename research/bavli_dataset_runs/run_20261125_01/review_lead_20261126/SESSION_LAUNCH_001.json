@@ -1,0 +1,42 @@
+{
+  "session_date": "2026-11-26",
+  "lead_chat_id": "01a21928-d823-7640-a819-7afa816fc1a1",
+  "run_id": "run_20261125_01",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "registration_commit": "39e9c52",
+  "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "source_route": "verified local files; no remote availability claim",
+  "lead_role": "comparison/method auditor; exposed to historical coordinator summaries; never count lead as blind reader",
+  "launches": [
+    {
+      "agent_id": "/root/prepare_review",
+      "fork_turns": "none",
+      "role": "source/plan verifier; not a semantic reading",
+      "status_at_launch": "launched"
+    },
+    {
+      "agent_id": "/root/reader_berakhot",
+      "fork_turns": "none",
+      "role": "source-only semantic reading",
+      "job_id": "bavli_berakhot",
+      "core_selection": "first three frozen review_blocks in source order",
+      "status_at_launch": "launched"
+    },
+    {
+      "agent_id": "/root/reader_bava_kamma",
+      "fork_turns": "none",
+      "role": "source-only semantic reading",
+      "job_id": "bavli_bava_kamma",
+      "core_selection": "first three frozen review_blocks in source order",
+      "status_at_launch": "launched"
+    }
+  ],
+  "telemetry": {
+    "new_metered_external_api_calls": 0,
+    "model_ids": null,
+    "token_counts": null
+  },
+  "overlap_disclosure": "L06 reports separate fresh Bava Kamma opening reader; preserve both, deduplicate core coverage, no duplicate Menachot dispatch",
+  "capacity": "two semantic readers plus one verification agent; bounded actual slots only",
+  "source_only_isolation": "fresh contexts with explicit allowlist: common instructions/schema/protocol, original source, frozen neutral plan. Not OS sandboxing. No producer handoff inherited."
+}

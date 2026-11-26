@@ -1,0 +1,2056 @@
+{
+  "snapshot_sha256": "03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e",
+  "snapshot_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e.json",
+  "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "producer_delivery_commit": "98a6e0cc0e3dc2c85485dd86ab0d688d09f40951",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "plan_file_sha256": "4cb5b9baad10bc4fe7ff90f860e5d7716d90833248040e51a66c9dda4be5b3d1",
+  "initial_reading_hashes": [
+    "583a9532d6b54631eafbe19fd941281d222e1fa43089537645fa7c95ad3436fb"
+  ],
+  "adapter_sha256": "492087458e05b1673558491a331b7b42ee767a407eda15fe5bdc8cd6aa499a34",
+  "job_id": "bavli_berakhot",
+  "comparison_agent": "/root",
+  "comparison_blind": false,
+  "initial_reading_frozen_before_producer_access": true,
+  "omission_pass_performed": true,
+  "omission_scope": "33 independently found core claims;25 in completed production scope,8 outside. No absence in unprocessed scope scored as omission.",
+  "claim_comparison": [
+    {
+      "independent_claim_id": "C01",
+      "independent_claim": {
+        "id": "C01",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Evening Shema begins when priests enter to eat terumah.",
+        "holder_candidates": [
+          "Mishnah anonymous frame"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:1",
+            "start_char": 0,
+            "end_char": 135,
+            "quote": "מתני׳ <big><strong>מאימתי</strong></big> קורין את שמע בערבין. משעה שהכהנים נכנסים לאכול בתרומתן עד סוף האשמורה הראשונה דברי רבי אליעזר."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The evening Shema begins when priests enter to eat their terumah.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 95,
+                "quote": "משעה שהכהנים נכנסים לאכול בתרומתן",
+                "segment_id": "seg_c8bdecebbaecc5d7762b",
+                "start_char": 62
+              }
+            ],
+            "id": "bk.opening.pass1.c.start",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "b686795205995adf592fb92f4988bcbd526cb54a80749bab8094a9ade8034a0f"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C02",
+      "independent_claim": {
+        "id": "C02",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Evening Shema terminus is end of first watch.",
+        "holder_candidates": [
+          "Rabbi Eliezer"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:1",
+            "start_char": 0,
+            "end_char": 135,
+            "quote": "מתני׳ <big><strong>מאימתי</strong></big> קורין את שמע בערבין. משעה שהכהנים נכנסים לאכול בתרומתן עד סוף האשמורה הראשונה דברי רבי אליעזר."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Rabbi Eliezer gives the end of the first watch as the endpoint.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 134,
+                "quote": "עד סוף האשמורה הראשונה דברי רבי אליעזר",
+                "segment_id": "seg_c8bdecebbaecc5d7762b",
+                "start_char": 96
+              }
+            ],
+            "id": "bk.opening.pass1.c.re",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "5c18d53280c518e43ee85ee566250be1bbaf5be53c79191fb1b484bd86d820b0"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C03",
+      "independent_claim": {
+        "id": "C03",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Evening Shema terminus is midnight.",
+        "holder_candidates": [
+          "Sages"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:2",
+            "start_char": 0,
+            "end_char": 22,
+            "quote": "וחכמים אומרים עד חצות."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The Sages give midnight as the endpoint.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 22,
+                "quote": "וחכמים אומרים עד חצות.",
+                "segment_id": "seg_affbfc187561b4c6db56",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.opening.pass1.c.sages",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "3e2e27202917f0acc8251a1c189b47db037844786db625f00102f6921c0d0288"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C04",
+      "independent_claim": {
+        "id": "C04",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Evening Shema terminus is dawn.",
+        "holder_candidates": [
+          "Rabban Gamliel"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:3",
+            "start_char": 0,
+            "end_char": 35,
+            "quote": "רבן גמליאל אומר עד שיעלה עמוד השחר."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Rabban Gamliel gives dawn as the endpoint.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 35,
+                "quote": "רבן גמליאל אומר עד שיעלה עמוד השחר.",
+                "segment_id": "seg_3176b27f4c3896255c78",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.opening.pass1.c.rg",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "2e0a9e6fdcb8e0c3d9d892bb336e2b60570c165650197490a60a28748097c3bd"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C05",
+      "independent_claim": {
+        "id": "C05",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "His sons remain obligated to recite Shema.",
+        "holder_candidates": [
+          "Rabban Gamliel"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "They have not recited",
+          "Dawn has not risen"
+        ],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:4",
+            "start_char": 0,
+            "end_char": 166,
+            "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "Dawn has not risen"
+              ],
+              "proposition": "The sons remain obligated to recite if dawn has not risen.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 94,
+                "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות",
+                "segment_id": "seg_60ee4773ccee2b2b063e",
+                "start_char": 58
+              }
+            ],
+            "id": "bk.opening.pass1.c.duty",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "6f672785313ce1eb5bfc5c16e2ea25040796db3207e91764b6f1bd3bbfd819e4"
+        }
+      ],
+      "comparison": "mapped; condition caveat below"
+    },
+    {
+      "independent_claim_id": "C06",
+      "independent_claim": {
+        "id": "C06",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The mitzvah time of the cases called until midnight extends to dawn.",
+        "holder_candidates": [
+          "Rabban Gamliel / Mishnah continuation"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:4",
+            "start_char": 0,
+            "end_char": 166,
+            "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": [
+          "Exact transition from reported speech to anonymous Mishnah generalization is not marked."
+        ]
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "Limited to the stated generalization and its listed applications"
+              ],
+              "proposition": "For the obligations described here as ending at midnight by the Sages, their mitzvah time extends until dawn.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 166,
+                "quote": "כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר",
+                "segment_id": "seg_60ee4773ccee2b2b063e",
+                "start_char": 116
+              }
+            ],
+            "id": "bk.opening.pass1.c.general",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "d9b8ccf4ea70724195a6fdb1b1eba0b571affe62b8cfed37f156e92911415337"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C07",
+      "independent_claim": {
+        "id": "C07",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Burning fats and limbs has a mitzvah period until dawn.",
+        "holder_candidates": [
+          "Mishnah continuation"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:5",
+            "start_char": 0,
+            "end_char": 143,
+            "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר אם כן למה אמרו חכמים עד חצות כדי להרחיק אדם מן העבירה:"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Burning fats and limbs has its mitzvah time until dawn.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 42,
+                "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר",
+                "segment_id": "seg_8a4eb8b6f71020b82fbb",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.opening.pass1.c.fats",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "041d4b389a5db8145225c997e4cfe8c35ff1de5da73eb341503a79a8009b3b00"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C08",
+      "independent_claim": {
+        "id": "C08",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Offerings eaten for one day have a mitzvah period until dawn.",
+        "holder_candidates": [
+          "Mishnah continuation"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "Offerings in the one-day consumption category"
+        ],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:5",
+            "start_char": 0,
+            "end_char": 143,
+            "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר אם כן למה אמרו חכמים עד חצות כדי להרחיק אדם מן העבירה:"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "Items described as eaten for one day"
+              ],
+              "proposition": "Items eaten for one day have their mitzvah time until dawn.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 88,
+                "quote": "וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר",
+                "segment_id": "seg_8a4eb8b6f71020b82fbb",
+                "start_char": 43
+              }
+            ],
+            "id": "bk.opening.pass1.c.eaten",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "857a1c4101f06b0bb0eed6c99133dbf4c35f00c2eec733a1e8666e09122806ec"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C09",
+      "independent_claim": {
+        "id": "C09",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The midnight limit distances a person from transgression.",
+        "holder_candidates": [
+          "Mishnah continuation"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:5",
+            "start_char": 0,
+            "end_char": 143,
+            "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר אם כן למה אמרו חכמים עד חצות כדי להרחיק אדם מן העבירה:"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The midnight limit distances a person from transgression.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 142,
+                "quote": "כדי להרחיק אדם מן העבירה",
+                "segment_id": "seg_8a4eb8b6f71020b82fbb",
+                "start_char": 118
+              }
+            ],
+            "id": "bk.opening.pass1.c.safeguard",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "08d7d43a4c245036f73a65db4d57f88129ca313f4890445e090b5e799cb8de6f"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C10",
+      "independent_claim": {
+        "id": "C10",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The tanna presupposes the verse בשכבך ובקומך; the evening question concerns the time of lying-down Shema.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:8",
+            "start_char": 0,
+            "end_char": 101,
+            "quote": "תנא אקרא קאי דכתיב בשכבך ובקומך והכי קתני זמן קריאת שמע דשכיבה אימת משעה שהכהנים נכנסין לאכול בתרומתן"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The tanna stands on the scriptural wording when you lie down and when you rise.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 31,
+                "quote": "תנא אקרא קאי דכתיב בשכבך ובקומך",
+                "segment_id": "seg_14a303ff961bf4a85d73",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.order.pass2.c.scripture",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "af952e3fdde478222ecce3db467c1a41c268ae0a3cba8be188e557daeb9d48ab"
+        },
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The Mishnah asks when the lying-down Shema time begins and answers when priests enter to eat terumah.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 101,
+                "quote": "והכי קתני זמן קריאת שמע דשכיבה אימת משעה שהכהנים נכנסין לאכול בתרומתן",
+                "segment_id": "seg_14a303ff961bf4a85d73",
+                "start_char": 32
+              }
+            ],
+            "id": "bk.order.pass2.c.restatement",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "fc1fb7967ecd36bd19661c58b344e3960fdd661868b4eee1012a0cccdee486f6"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C11",
+      "independent_claim": {
+        "id": "C11",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The order evening before morning can alternatively be derived from creation order.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "alternative answer",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:9",
+            "start_char": 0,
+            "end_char": 66,
+            "quote": "ואי בעית אימא יליף מברייתו של עולם דכתיב ויהי ערב ויהי בקר יום אחד"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "Alternative explanation introduced by ואי בעית אימא"
+              ],
+              "proposition": "Alternatively, the evening-first order is learned from creation, where the verse puts evening before morning.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 66,
+                "quote": "ואי בעית אימא יליף מברייתו של עולם דכתיב ויהי ערב ויהי בקר יום אחד",
+                "segment_id": "seg_21080d7ae52960c91e68",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.order.pass2.c.creation",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "6cbebc387cab669bbac668d3de62cdea6015139121e86c2ba5dfa26f97d6bfeb"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C18",
+      "independent_claim": {
+        "id": "C18",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Suspicion still applies with two licentious people.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "Two people",
+          "Licentious people",
+          "New ruin inherited from 3b:1"
+        ],
+        "local_status": "local answer",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:3",
+            "start_char": 0,
+            "end_char": 33,
+            "quote": "אי בתרי חשד נמי ליכא בתרי ופריצי."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "conditional",
+              "conditions": [
+                "Two people enter.",
+                "They are dissolute.",
+                "The prior new-ruin condition remains in the local case."
+              ],
+              "proposition": "The suspicion case involves two dissolute people.",
+              "scope": "Three independent reasons for not entering a ruin and their isolating circumstances, Berakhot 3a:15–3b:9."
+            },
+            "evidence": [
+              {
+                "end_char": 32,
+                "quote": "בתרי ופריצי",
+                "segment_id": "seg_c13cb393319849aff605",
+                "start_char": 21
+              }
+            ],
+            "id": "bk.ruin_reasons.20261125.c3",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "0c11f6c4ab7295ce57a34b21ee6ad8a39610eeda30da77c58e1a6ba7159c939b"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C19",
+      "independent_claim": {
+        "id": "C19",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The collapse rationale applies independently with two upright people.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "Two people",
+          "Upright people"
+        ],
+        "local_status": "local answer",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:5",
+            "start_char": 0,
+            "end_char": 12,
+            "quote": "בתרי וכשרי. "
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "conditional",
+              "conditions": [
+                "Two people enter.",
+                "They are upright."
+              ],
+              "proposition": "The collapse case involves two upright people, excluding the other stated concerns.",
+              "scope": "Three independent reasons for not entering a ruin and their isolating circumstances, Berakhot 3a:15–3b:9."
+            },
+            "evidence": [
+              {
+                "end_char": 12,
+                "quote": "בתרי וכשרי. ",
+                "segment_id": "seg_dce20db60913be050771",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.ruin_reasons.20261125.c5",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "82b8684e0167ac062db683ee21812c977d3417c3f6ed9c6feeac0302ab10e143"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C20",
+      "independent_claim": {
+        "id": "C20",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The harmful-beings rationale is initially isolated in a new ruin with two upright people.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "New ruin",
+          "Two upright people"
+        ],
+        "local_status": "challenged and qualified",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:7",
+            "start_char": 0,
+            "end_char": 23,
+            "quote": "בחורבה חדתי ובתרי וכשרי"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "challenged",
+              "conditions": [
+                "The ruin is new.",
+                "Two upright people enter."
+              ],
+              "proposition": "The harmful-beings case is initially located in a new ruin with two upright people.",
+              "scope": "Three independent reasons for not entering a ruin and their isolating circumstances, Berakhot 3a:15–3b:9."
+            },
+            "evidence": [
+              {
+                "end_char": 23,
+                "quote": "בחורבה חדתי ובתרי וכשרי",
+                "segment_id": "seg_742a6ac994cde5ce5a9e",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.ruin_reasons.20261125.c7",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "3ac70f515be9a3b57b743cd0b59e0fa3ab7b030d09c4c10f91d85f8a9b4371b6"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C21",
+      "independent_claim": {
+        "id": "C21",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Even with two people, harmful beings are feared in their own place.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "Their place",
+          "Two upright people",
+          "New ruin inherited from 3b:7"
+        ],
+        "local_status": "local answer",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:9",
+            "start_char": 0,
+            "end_char": 123,
+            "quote": "במקומן חיישינן ואי בעית אימא לעולם בחד ובחורבה חדתי דקאי בדברא דהתם משום חשד ליכא דהא אשה בדברא לא שכיחא ומשום מזיקין איכא:"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "conditional",
+              "conditions": [
+                "It is the harmful beings’ dwelling place.",
+                "The preceding case has two upright people and a new ruin."
+              ],
+              "proposition": "At their dwelling place, harmful beings remain a concern even for the two-person case.",
+              "scope": "Three independent reasons for not entering a ruin and their isolating circumstances, Berakhot 3a:15–3b:9."
+            },
+            "evidence": [
+              {
+                "end_char": 14,
+                "quote": "במקומן חיישינן",
+                "segment_id": "seg_0a0610ad700d443d3751",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.ruin_reasons.20261125.c9a",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "188498f54aa4f3bc377f1d1098ca30805bbb23549562df2888bec69c16c90d10"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C22",
+      "independent_claim": {
+        "id": "C22",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Alternatively the harmful-beings case is a solitary person in a new rural ruin.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "One person",
+          "New ruin",
+          "In the fields"
+        ],
+        "local_status": "alternative answer",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:9",
+            "start_char": 0,
+            "end_char": 123,
+            "quote": "במקומן חיישינן ואי בעית אימא לעולם בחד ובחורבה חדתי דקאי בדברא דהתם משום חשד ליכא דהא אשה בדברא לא שכיחא ומשום מזיקין איכא:"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "conditional",
+              "conditions": [
+                "One person enters.",
+                "The ruin is new.",
+                "The ruin stands in the field."
+              ],
+              "proposition": "Alternatively, the harmful-beings case concerns one person in a new ruin situated in the field.",
+              "scope": "Three independent reasons for not entering a ruin and their isolating circumstances, Berakhot 3a:15–3b:9."
+            },
+            "evidence": [
+              {
+                "end_char": 62,
+                "quote": "ואי בעית אימא לעולם בחד ובחורבה חדתי דקאי בדברא",
+                "segment_id": "seg_0a0610ad700d443d3751",
+                "start_char": 15
+              }
+            ],
+            "id": "bk.ruin_reasons.20261125.c9b",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "8faf768c41eaaa3fbd862114df52112b8f375189f96511f6909ca9234f51ac79"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C23",
+      "independent_claim": {
+        "id": "C23",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Suspicion is absent in that rural case because a woman is not commonly present there.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "Rural ruin"
+        ],
+        "local_status": "supporting explanation",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:9",
+            "start_char": 0,
+            "end_char": 123,
+            "quote": "במקומן חיישינן ואי בעית אימא לעולם בחד ובחורבה חדתי דקאי בדברא דהתם משום חשד ליכא דהא אשה בדברא לא שכיחא ומשום מזיקין איכא:"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "conditional",
+              "conditions": [
+                "The ruin is situated in the field."
+              ],
+              "proposition": "The field case lacks suspicion because a woman is not ordinarily found in the field.",
+              "scope": "Three independent reasons for not entering a ruin and their isolating circumstances, Berakhot 3a:15–3b:9."
+            },
+            "evidence": [
+              {
+                "end_char": 104,
+                "quote": "דהתם משום חשד ליכא דהא אשה בדברא לא שכיחא",
+                "segment_id": "seg_0a0610ad700d443d3751",
+                "start_char": 63
+              }
+            ],
+            "id": "bk.ruin_reasons.20261125.c9c",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "798a04edfaa9a479330e11a0c691043d9a29ddd9483c8e3980803575397794a0"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C24",
+      "independent_claim": {
+        "id": "C24",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The night has four watches.",
+        "holder_candidates": [
+          "Rabbi"
+        ],
+        "reporter_or_transmission_chain": [
+          "anonymous baraita",
+          "Rabbi"
+        ],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:10",
+            "start_char": 0,
+            "end_char": 56,
+            "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Rabbi holds that the night has four watches.",
+              "scope": "Berakhot 3b:10–19: watch-count dispute and adjacent transmitted rule before the dead."
+            },
+            "evidence": [
+              {
+                "end_char": 39,
+                "quote": "ארבע משמרות הוי הלילה דברי רבי",
+                "segment_id": "seg_7e74d76d3cf8500a3127",
+                "start_char": 9
+              }
+            ],
+            "id": "bk.watch_dispute.20261125.c10r",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "3dfe97e4479582629748a6b33d87b8b08cd63ac263eca9202f0adc22118ee9f7"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C25",
+      "independent_claim": {
+        "id": "C25",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The night has three watches.",
+        "holder_candidates": [
+          "Rabbi Natan"
+        ],
+        "reporter_or_transmission_chain": [
+          "anonymous baraita",
+          "Rabbi Natan"
+        ],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:10",
+            "start_char": 0,
+            "end_char": 56,
+            "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Rabbi Natan holds that the night has three watches.",
+              "scope": "Berakhot 3b:10–19: watch-count dispute and adjacent transmitted rule before the dead."
+            },
+            "evidence": [
+              {
+                "end_char": 56,
+                "quote": "רבי נתן אומר שלש",
+                "segment_id": "seg_7e74d76d3cf8500a3127",
+                "start_char": 40
+              }
+            ],
+            "id": "bk.watch_dispute.20261125.c10n",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "e310bffd0571417eaa33b4a37a042cdcdba86c623b025d690c8980bd61ae640d"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C26",
+      "independent_claim": {
+        "id": "C26",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "A middle watch has one preceding it and one following it.",
+        "holder_candidates": [
+          "anonymous tanna in exposition of Rabbi Natan"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "scriptural support",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:11",
+            "start_char": 0,
+            "end_char": 129,
+            "quote": "מאי טעמא דרבי נתן דכתיב (שופטים ז)ויבא גדעון ומאה איש אשר אתו בקצה המחנה ראש האשמורת התיכונה תנא אין תיכונה אלא שיש לפניה ולאחריה"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The recited explanation takes a middle watch as one with a watch before and after it.",
+              "scope": "Berakhot 3b:10–19: watch-count dispute and adjacent transmitted rule before the dead."
+            },
+            "evidence": [
+              {
+                "end_char": 129,
+                "quote": "תנא אין תיכונה אלא שיש לפניה ולאחריה",
+                "segment_id": "seg_88a3f6efdda9c59e32f7",
+                "start_char": 93
+              }
+            ],
+            "id": "bk.watch_dispute.20261125.c11m",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "1660f091f2c4c83329b8c28db1d4084b6ed771252572e590f76940142b4f7c0c"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C27",
+      "independent_claim": {
+        "id": "C27",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The middle watch can mean one of the middle watches.",
+        "holder_candidates": [
+          "Rabbi (Gemara reconstruction)"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "answer",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:12",
+            "start_char": 0,
+            "end_char": 40,
+            "quote": "ורבי מאי תיכונה אחת מן התיכונה שבתיכונות"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": [
+          "Not a direct named utterance by Rabbi; dialectical attribution."
+        ]
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The Gemara reconstructs Rabbi’s reading of middle as one among the middle watches.",
+              "scope": "Berakhot 3b:10–19: watch-count dispute and adjacent transmitted rule before the dead."
+            },
+            "evidence": [
+              {
+                "end_char": 40,
+                "quote": "ורבי מאי תיכונה אחת מן התיכונה שבתיכונות",
+                "segment_id": "seg_37e3597455bf954ef1dc",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.watch_dispute.20261125.c12",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          },
+          "record_sha256": "ca08ed0b9e65317e95b99d95d776112df3f5c1433979c0e479c4b6727412558a"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C32",
+      "independent_claim": {
+        "id": "C32",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "One who studies Torah, practices kindness, and buries his children is forgiven all his sins.",
+        "holder_candidates": [
+          "anonymous tanna"
+        ],
+        "reporter_or_transmission_chain": [
+          "tanna reciting before Rabbi Yohanan"
+        ],
+        "conditions": [
+          "Torah study",
+          "Acts of kindness",
+          "Burying children"
+        ],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 5a:24",
+            "start_char": 0,
+            "end_char": 52,
+            "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים"
+          },
+          {
+            "ref": "Berakhot 5b:1",
+            "start_char": 0,
+            "end_char": 37,
+            "quote": "וקובר את בניו מוחלין לו על כל עונותיו"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": [
+          "Conjunction is preserved; whether each merit suffices independently is not settled by this wording alone."
+        ]
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "עוסק בתורה",
+                "עוסק בגמילות חסדים",
+                "קובר את בניו"
+              ],
+              "proposition": "The recited teaching promises forgiveness of all sins to the person described as engaging in Torah and acts of kindness and burying his children.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 52,
+                "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים",
+                "segment_id": "seg_5698abf5c9370fa5209d",
+                "start_char": 0
+              },
+              {
+                "end_char": 37,
+                "quote": "וקובר את בניו מוחלין לו על כל עונותיו",
+                "segment_id": "seg_fc41e9046ac6d14f7269",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.b24.semantic2.c1",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "bk.b24.semantic1.c1",
+            "uncertainty": []
+          },
+          "record_sha256": "24cf2443a44425dc7b46975254bfb45d34c059acc488b12277ca4c0c878d85e1"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C33",
+      "independent_claim": {
+        "id": "C33",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Kindness in the atonement verse denotes acts of kindness.",
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:2",
+            "start_char": 0,
+            "end_char": 229,
+            "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "חסד is interpreted here as acts of kindness.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 101,
+                "quote": "חסד זו גמילות חסדים",
+                "segment_id": "seg_89b768574dd16de8ed94",
+                "start_char": 82
+              }
+            ],
+            "id": "bk.b24.semantic2.c3",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "bk.b24.semantic1.c3",
+            "uncertainty": []
+          },
+          "record_sha256": "a697e64e3e134e1604c6089c9fde3d73bf80afbd2d6e99e7e0df978d341fb570"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C34",
+      "independent_claim": {
+        "id": "C34",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Truth in the atonement verse denotes Torah.",
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:2",
+            "start_char": 0,
+            "end_char": 229,
+            "quote": "אמר ליה רבי יוחנן בשלמא תורה וגמילות חסדים דכתיב (משלי טז, ו) בחסד ואמת יכופר עון חסד זו גמילות חסדים שנאמר (משלי כא, כא) רודף צדקה וחסד ימצא חיים צדקה וכבוד אמת זו תורה שנאמר (משלי כג, כג) אמת קנה ואל תמכור אלא קובר את בניו מנין"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "אמת is interpreted here as Torah.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 169,
+                "quote": "אמת זו תורה",
+                "segment_id": "seg_89b768574dd16de8ed94",
+                "start_char": 158
+              }
+            ],
+            "id": "bk.b24.semantic2.c4",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "bk.b24.semantic1.c4",
+            "uncertainty": []
+          },
+          "record_sha256": "076be8a9ced800c1f0bb7042ffc284e96758c8c29045cb62c2770c8462c79b56"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C35",
+      "independent_claim": {
+        "id": "C35",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "The repeated word עון supplies the derivation for burying children and forgiveness.",
+        "holder_candidates": [
+          "Rabbi Shimon ben Yohai"
+        ],
+        "reporter_or_transmission_chain": [
+          "unnamed elder",
+          "Rabbi Shimon ben Yohai"
+        ],
+        "conditions": [],
+        "local_status": "answer to Rabbi Yohanan",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:3",
+            "start_char": 0,
+            "end_char": 136,
+            "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [
+        {
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The elder reports in Rabbi Shimon ben Yohai’s name a verbal analogy עון–עון linking the atonement verse and the verse about fathers’ sin reaching their children.",
+              "scope": "Local passage; no later practical ruling inferred"
+            },
+            "evidence": [
+              {
+                "end_char": 136,
+                "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם.",
+                "segment_id": "seg_39c2cc03129b52b64e17",
+                "start_char": 0
+              }
+            ],
+            "id": "bk.b24.semantic2.c5",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "bk.b24.semantic1.c5",
+            "uncertainty": []
+          },
+          "record_sha256": "6a69f77c55c5bd939cdab9d8abeff0e2122527df52100bf6ce9f46b41fbfae41"
+        }
+      ],
+      "comparison": "mapped equivalent proposition or reasonable split granularity"
+    },
+    {
+      "independent_claim_id": "C36",
+      "independent_claim": {
+        "id": "C36",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Skin afflictions are not afflictions of love.",
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "asserted; alternative qualifications follow",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:4",
+            "start_char": 0,
+            "end_char": 41,
+            "quote": "א\"ר יוחנן נגעים ובנים אינן יסורין של אהבה"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    },
+    {
+      "independent_claim_id": "C37",
+      "independent_claim": {
+        "id": "C37",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Children-related suffering is not affliction of love.",
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "qualified by 5b:9",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:4",
+            "start_char": 0,
+            "end_char": 41,
+            "quote": "א\"ר יוחנן נגעים ובנים אינן יסורין של אהבה"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    },
+    {
+      "independent_claim_id": "C38",
+      "independent_claim": {
+        "id": "C38",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Any of the four appearances of skin affliction is an altar of atonement.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "One of the four appearances of affliction"
+        ],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:5",
+            "start_char": 0,
+            "end_char": 76,
+            "quote": "ונגעים לא והתניא כל מי שיש בו אחד מארבעה מראות נגעים הללו אינן אלא מזבח כפרה"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    },
+    {
+      "independent_claim_id": "C39",
+      "independent_claim": {
+        "id": "C39",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Being an altar of atonement does not make these afflictions afflictions of love.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "first reconciliation",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:6",
+            "start_char": 0,
+            "end_char": 35,
+            "quote": "מזבח כפרה הוו יסורין של אהבה לא הוו"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    },
+    {
+      "independent_claim_id": "C40",
+      "independent_claim": {
+        "id": "C40",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Alternatively distinguish our location from theirs.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "alternative reconciliation",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:7",
+            "start_char": 0,
+            "end_char": 19,
+            "quote": "ואב\"א הא לן והא להו"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": [
+          "Bare הא לן והא להו does not expressly map locations to each proposition; no geographical or directional assignment imposed."
+        ]
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    },
+    {
+      "independent_claim_id": "C41",
+      "independent_claim": {
+        "id": "C41",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Alternatively distinguish private from public affliction.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "alternative reconciliation",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:8",
+            "start_char": 0,
+            "end_char": 33,
+            "quote": "ואי בעית אימא הא בצנעא הא בפרהסיא"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": [
+          "Bare הא בצנעא הא בפרהסיא does not expressly map each condition to the two propositions."
+        ]
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    },
+    {
+      "independent_claim_id": "C42",
+      "independent_claim": {
+        "id": "C42",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Rabbi Yohanan refers to a bone of his tenth son.",
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "reported counterevidence",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:9",
+            "start_char": 0,
+            "end_char": 115,
+            "quote": "ובנים לא היכי דמי אילימא דהוו להו ומתו והא א\"ר יוחנן דין גרמא דעשיראה ביר אלא הא דלא הוו ליה כלל והא דהוו ליה ומתו."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": [
+          "The inference to afflictions of love belongs to the Gemara objection, not to the quotation itself."
+        ]
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    },
+    {
+      "independent_claim_id": "C43",
+      "independent_claim": {
+        "id": "C43",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "Distinguish having no children at all from having children who died.",
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [],
+        "local_status": "local reconciliation",
+        "evidence": [
+          {
+            "ref": "Berakhot 5b:9",
+            "start_char": 0,
+            "end_char": 115,
+            "quote": "ובנים לא היכי דמי אילימא דהוו להו ומתו והא א\"ר יוחנן דין גרמא דעשיראה ביר אלא הא דלא הוו ליה כלל והא דהוו ליה ומתו."
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": [
+          "Context supports restricting the negative claim to never having children; the two cases themselves are explicit, their mapping is reconstructed."
+        ]
+      },
+      "producer_records": [],
+      "comparison": "not_yet_processed; excluded from omission error denominator"
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "BR-COND-001",
+      "category": "condition_loss",
+      "severity": "medium",
+      "state": "proposed_correction_pending",
+      "independent_claim_ids": [
+        "C05"
+      ],
+      "producer_record_ids": [
+        "bk.opening.pass1.c.duty",
+        "bk.opening.pass1.p.duty"
+      ],
+      "initial_reader": {
+        "id": "C05",
+        "kind": "atomic_claim",
+        "origin": "source_paraphrase",
+        "proposition": "His sons remain obligated to recite Shema.",
+        "holder_candidates": [
+          "Rabban Gamliel"
+        ],
+        "reporter_or_transmission_chain": [],
+        "conditions": [
+          "They have not recited",
+          "Dawn has not risen"
+        ],
+        "local_status": "asserted",
+        "evidence": [
+          {
+            "ref": "Berakhot 2a:4",
+            "start_char": 0,
+            "end_char": 166,
+            "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+          }
+        ],
+        "core_claim": true,
+        "uncertainty": []
+      },
+      "producer_initial_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Dawn has not risen"
+            ],
+            "proposition": "The sons remain obligated to recite if dawn has not risen.",
+            "scope": "Local passage; no later practical ruling inferred"
+          },
+          "evidence": [
+            {
+              "end_char": 94,
+              "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות",
+              "segment_id": "seg_60ee4773ccee2b2b063e",
+              "start_char": 58
+            }
+          ],
+          "id": "bk.opening.pass1.c.duty",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "bk.opening.pass1.c.duty",
+            "conditions": [
+              "Dawn has not risen"
+            ],
+            "holder_candidates": [
+              "רבן גמליאל"
+            ],
+            "local_status": "Reported in this passage; no ruling beyond local text asserted",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 94,
+              "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות",
+              "segment_id": "seg_60ee4773ccee2b2b063e",
+              "start_char": 58
+            }
+          ],
+          "id": "bk.opening.pass1.p.duty",
+          "layer": "positions",
+          "links": [
+            "bk.opening.pass1.c.duty"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "explanation": "Structured conditions retain dawn not risen but omit the explicit prior non-recitation. The word remain and the separate sons-report claim preserve narrative meaning, so this is a structured-field completeness issue, not a claim of wholly false narrative. Standalone duty examples must retain both premises.",
+      "proposed_correction": "Version both claim and dependent position conditions to include sons have not recited; preserve originals and recheck downstream examples.",
+      "affected_scope": "These two records and standalone condition-dependent QA/choice views; unrelated core remains available.",
+      "evidence": [
+        {
+          "ref": "Berakhot 2a:4",
+          "start_char": 0,
+          "end_char": 166,
+          "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ]
+    },
+    {
+      "id": "BR-QUESTION-002",
+      "category": "question_comparability",
+      "severity": "medium",
+      "state": "unresolved_representation_alternative",
+      "independent_question_id": "Q08",
+      "producer_record_ids": [
+        "bk.watch_dispute.20261125.p10n",
+        "bk.watch_dispute.20261125.p10r"
+      ],
+      "initial_reader": {
+        "id": "Q08",
+        "kind": "question",
+        "origin": "source_paraphrase",
+        "formulation": "How many watches are in the night?",
+        "evidence": [
+          {
+            "ref": "Berakhot 3b:10",
+            "start_char": 0,
+            "end_char": 56,
+            "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש"
+          }
+        ],
+        "answer_claim_ids": [
+          "C24",
+          "C25"
+        ],
+        "comparability": "Explicit comparable count disagreement, preserved after continuation to 3b:16."
+      },
+      "producer_initial_records": [
+        {
+          "content": {
+            "claim_id": "bk.watch_dispute.20261125.c10n",
+            "conditions": [],
+            "holder_candidates": [
+              "רבי נתן"
+            ],
+            "local_status": "Reported three-watch position",
+            "question_id": "bk.watch_dispute.20261125.q11"
+          },
+          "evidence": [
+            {
+              "end_char": 56,
+              "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש",
+              "segment_id": "seg_7e74d76d3cf8500a3127",
+              "start_char": 0
+            }
+          ],
+          "id": "bk.watch_dispute.20261125.p10n",
+          "layer": "positions",
+          "links": [
+            "bk.watch_dispute.20261125.c10n",
+            "bk.watch_dispute.20261125.q11"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "bk.watch_dispute.20261125.c10r",
+            "conditions": [],
+            "holder_candidates": [
+              "רבי"
+            ],
+            "local_status": "Reported four-watch position",
+            "question_id": "bk.watch_dispute.20261125.q14"
+          },
+          "evidence": [
+            {
+              "end_char": 56,
+              "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש",
+              "segment_id": "seg_7e74d76d3cf8500a3127",
+              "start_char": 0
+            }
+          ],
+          "id": "bk.watch_dispute.20261125.p10r",
+          "layer": "positions",
+          "links": [
+            "bk.watch_dispute.20261125.c10r",
+            "bk.watch_dispute.20261125.q14"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "explanation": "Count positions link to different why-question records (q11 and q14), whereas the independently reconstructed common question asks how many watches. Association can be valid discourse organization, but these links must not be interpreted as a reviewed comparable answer set.",
+      "proposed_correction": "Before any choice/QA view, use a separately labeled editorial common-count question or null these question links; do not force the two why-questions into one choice set. Preserve current association interpretation as an alternative.",
+      "evidence": [
+        {
+          "ref": "Berakhot 3b:10",
+          "start_char": 0,
+          "end_char": 56,
+          "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש"
+        }
+      ]
+    },
+    {
+      "id": "BR-EDGE-003",
+      "category": "relation_granularity_disagreement",
+      "severity": "low",
+      "state": "unresolved_supported_alternatives",
+      "independent_relation_ids": [
+        "E17",
+        "E18"
+      ],
+      "producer_record_ids": [
+        "bk.watch_dispute.20261125.e15",
+        "bk.watch_dispute.20261125.e16"
+      ],
+      "explanation": "Independent reading calls these qualification; producer calls them objection to four-watch inference. Both preserve alternate readings of the verses, not retraction. Do not claim exact-label agreement or use in a demanding edge-label benchmark without adjudication.",
+      "evidence": [
+        {
+          "ref": "Berakhot 3b:15",
+          "start_char": 0,
+          "end_char": 130,
+          "quote": "ורבי נתן סבר לה כרבי יהושע דתנן רבי יהושע אומר עד שלש שעות שכן דרך מלכים לעמוד בשלש שעות שית דליליא ותרתי דיממא הוו להו שתי משמרות"
+        },
+        {
+          "ref": "Berakhot 3b:16",
+          "start_char": 0,
+          "end_char": 42,
+          "quote": "רב אשי אמר משמרה ופלגא נמי משמרות קרו להו:"
+        }
+      ]
+    }
+  ],
+  "boundary_review": "Six locally coherent source units; no boundary equivalence claim for whole tractate. The night-watch continuation beyond3b16 is outside this comparison.",
+  "attribution_review": "Preserves uncertain Mishnah continuation, reconstructed Rabbi defense, unnamed tanna as initial voice, elder as transmitter and Rashbi as quoted holder. No identities inferred from name order.",
+  "relation_review": "Source-explicit answer/support edges inspected within read scope. Conditions issue and edge-label alternatives preserved; no blanket edge-accuracy statistic.",
+  "question_review": "Reader groups some sequential questions; producer separates them. Reasonable granularity except downstream comparable-answer-set restriction BR-QUESTION-002.",
+  "denominators_initial_reader": {
+    "definition": "Explicit record counts; core counts are omission baseline for this batch, not accuracy rates. Attributable means a named/collective identifiable holder, excluding anonymous and uncertain Mishnah continuation.",
+    "independently_found_core_claims": 33,
+    "all_enumerated_claims": 43,
+    "attributable_claims": 18,
+    "condition_bearing_claims": 13,
+    "proposed_answer_sets": 13,
+    "argument_edges": 25,
+    "core_segments_unique": 30,
+    "context_segments_unique": 25,
+    "cohorts": {
+      "opening_check_core_segments": 10,
+      "probability_sample_core_segments": 20,
+      "overlap_segments": 0
+    },
+    "core": {
+      "claims": 33,
+      "condition_bearing_claims": 10,
+      "attributable_claims": 14,
+      "proposed_answer_sets": 12,
+      "argument_edges": 20
+    },
+    "context": {
+      "claims": 10,
+      "condition_bearing_claims": 3,
+      "attributable_claims": 4,
+      "proposed_answer_sets": 1,
+      "argument_edges": 5
+    }
+  },
+  "coverage": {
+    "source_segments": 2749,
+    "completed_claim_pass_segments_in_snapshot": 71,
+    "independently_read_core_segments": 30,
+    "probability_core_segments": 20,
+    "endpoint_core_segments": 10,
+    "context_segments": 25,
+    "compared_core_segments": 24,
+    "unprocessed_core_segments": 6,
+    "independent_core_claims": 33,
+    "claims_in_completed_scope": 25,
+    "mapped_claims": 25,
+    "confirmed_whole_claim_omissions": 0,
+    "not_yet_processed_claims": 8
+  },
+  "reviewed_risk_record_ids": [
+    "bk.opening.pass1.p.general.reviewfix1"
+  ],
+  "risk_review_complete": false,
+  "unresolved_integrity_critical_count": 0,
+  "task_eligibility": {
+    "ml_eligible": false,
+    "new_eligible_records": 0,
+    "reason": "Partial review; no task policy-qualified benchmark examples. Preserve supported uncertainty and exclude disputed fields from demanding tasks."
+  },
+  "mechanical_checks": {
+    "source_hash": true,
+    "snapshot_hash": true,
+    "all_evidence_in_core_overlapping_producer_records": "exact source slices checked",
+    "producer_records_checked": 154
+  },
+  "limits": [
+    "No claim of all required sample/risk coverage.",
+    "No scholarly human certification.",
+    "Original reviewer does not enumerate quoted scripture as separate claims; producer-only granularity is not an omission error.",
+    "Initial reading lacked top-level findings; separately hashed adapter preserves exact substantive collections and original hash."
+  ]
+}

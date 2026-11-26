@@ -1,0 +1,715 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 1,
+    "endpoint_added_core_segments": 10,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 11,
+    "endpoint_overlap_blocks": 1,
+    "endpoint_overlap_core_segments": 1,
+    "probability_blocks": 30,
+    "probability_core_segments": 291,
+    "source_nonempty_segments": 2131,
+    "source_segment_positions": 2131,
+    "union_blocks": 31,
+    "union_core_segments": 301
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_avodah_zarah.json",
+    "sha256": "3006bd43733c5d98466cdf18b6350f68a71a7ec51ddd68c1626ec786812003c5"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_avodah_zarah",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_avodah_zarah.json",
+    "sha256": "3006bd43733c5d98466cdf18b6350f68a71a7ec51ddd68c1626ec786812003c5"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Avodah_Zarah.json",
+    "sha256": "10a04f596e570e6a75d101acac5e56165385955f8831577e541e236191ee9e74"
+  },
+  "plan_sha256": "559014ff31b82223766acb5007578416e7a4e42277f06d154d9df2cfefd9d6bd",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 214,
+    "inclusion_probability_denominator": 214,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000011",
+      "block_000012",
+      "block_000021",
+      "block_000029",
+      "block_000034",
+      "block_000036",
+      "block_000044",
+      "block_000047",
+      "block_000055",
+      "block_000070",
+      "block_000087",
+      "block_000088",
+      "block_000093",
+      "block_000110",
+      "block_000114",
+      "block_000116",
+      "block_000127",
+      "block_000134",
+      "block_000144",
+      "block_000149",
+      "block_000150",
+      "block_000159",
+      "block_000165",
+      "block_000166",
+      "block_000172",
+      "block_000182",
+      "block_000187",
+      "block_000191",
+      "block_000201",
+      "block_000213"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Avodah Zarah 2a:1",
+        "Avodah Zarah 2a:2",
+        "Avodah Zarah 2a:3",
+        "Avodah Zarah 2a:4",
+        "Avodah Zarah 2a:5",
+        "Avodah Zarah 2a:6",
+        "Avodah Zarah 2a:7",
+        "Avodah Zarah 2a:8",
+        "Avodah Zarah 2b:1",
+        "Avodah Zarah 2b:2"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000011",
+      "core_refs": [
+        "Avodah Zarah 5a:16",
+        "Avodah Zarah 5a:17",
+        "Avodah Zarah 5a:18",
+        "Avodah Zarah 5a:19",
+        "Avodah Zarah 5a:20",
+        "Avodah Zarah 5a:21",
+        "Avodah Zarah 5a:22",
+        "Avodah Zarah 5b:1",
+        "Avodah Zarah 5b:2",
+        "Avodah Zarah 5b:3"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000012",
+      "core_refs": [
+        "Avodah Zarah 5b:4",
+        "Avodah Zarah 5b:5",
+        "Avodah Zarah 5b:6",
+        "Avodah Zarah 5b:7",
+        "Avodah Zarah 5b:8",
+        "Avodah Zarah 5b:9",
+        "Avodah Zarah 5b:10",
+        "Avodah Zarah 5b:11",
+        "Avodah Zarah 6a:1",
+        "Avodah Zarah 6a:2"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000021",
+      "core_refs": [
+        "Avodah Zarah 8b:2",
+        "Avodah Zarah 8b:3",
+        "Avodah Zarah 8b:4",
+        "Avodah Zarah 8b:5",
+        "Avodah Zarah 8b:6",
+        "Avodah Zarah 8b:7",
+        "Avodah Zarah 8b:8",
+        "Avodah Zarah 8b:9",
+        "Avodah Zarah 8b:10",
+        "Avodah Zarah 8b:11"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000029",
+      "core_refs": [
+        "Avodah Zarah 11b:4",
+        "Avodah Zarah 11b:5",
+        "Avodah Zarah 11b:6",
+        "Avodah Zarah 11b:7",
+        "Avodah Zarah 11b:8",
+        "Avodah Zarah 11b:9",
+        "Avodah Zarah 11b:10",
+        "Avodah Zarah 11b:11",
+        "Avodah Zarah 11b:12",
+        "Avodah Zarah 12a:1"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000034",
+      "core_refs": [
+        "Avodah Zarah 13b:7",
+        "Avodah Zarah 13b:8",
+        "Avodah Zarah 13b:9",
+        "Avodah Zarah 13b:10",
+        "Avodah Zarah 13b:11",
+        "Avodah Zarah 13b:12",
+        "Avodah Zarah 14a:1",
+        "Avodah Zarah 14a:2",
+        "Avodah Zarah 14a:3",
+        "Avodah Zarah 14a:4"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Avodah Zarah 14b:3",
+        "Avodah Zarah 14b:4",
+        "Avodah Zarah 14b:5",
+        "Avodah Zarah 14b:6",
+        "Avodah Zarah 14b:7",
+        "Avodah Zarah 14b:8",
+        "Avodah Zarah 14b:9",
+        "Avodah Zarah 14b:10",
+        "Avodah Zarah 14b:11",
+        "Avodah Zarah 15a:1"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000044",
+      "core_refs": [
+        "Avodah Zarah 17a:13",
+        "Avodah Zarah 17a:14",
+        "Avodah Zarah 17a:15",
+        "Avodah Zarah 17a:16",
+        "Avodah Zarah 17a:17",
+        "Avodah Zarah 17b:1",
+        "Avodah Zarah 17b:2",
+        "Avodah Zarah 17b:3",
+        "Avodah Zarah 17b:4",
+        "Avodah Zarah 17b:5"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000047",
+      "core_refs": [
+        "Avodah Zarah 18a:12",
+        "Avodah Zarah 18a:13",
+        "Avodah Zarah 18a:14",
+        "Avodah Zarah 18a:15",
+        "Avodah Zarah 18a:16",
+        "Avodah Zarah 18b:1",
+        "Avodah Zarah 18b:2",
+        "Avodah Zarah 18b:3",
+        "Avodah Zarah 18b:4",
+        "Avodah Zarah 18b:5"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000055",
+      "core_refs": [
+        "Avodah Zarah 20b:11",
+        "Avodah Zarah 20b:12",
+        "Avodah Zarah 20b:13",
+        "Avodah Zarah 20b:14",
+        "Avodah Zarah 20b:15",
+        "Avodah Zarah 20b:16",
+        "Avodah Zarah 20b:17",
+        "Avodah Zarah 20b:18",
+        "Avodah Zarah 20b:19",
+        "Avodah Zarah 21a:1"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000070",
+      "core_refs": [
+        "Avodah Zarah 26a:10",
+        "Avodah Zarah 26a:11",
+        "Avodah Zarah 26a:12",
+        "Avodah Zarah 26a:13",
+        "Avodah Zarah 26a:14",
+        "Avodah Zarah 26a:15",
+        "Avodah Zarah 26a:16",
+        "Avodah Zarah 26a:17",
+        "Avodah Zarah 26b:1",
+        "Avodah Zarah 26b:2"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000087",
+      "core_refs": [
+        "Avodah Zarah 32a:8",
+        "Avodah Zarah 32a:9",
+        "Avodah Zarah 32a:10",
+        "Avodah Zarah 32a:11",
+        "Avodah Zarah 32b:1",
+        "Avodah Zarah 32b:2",
+        "Avodah Zarah 32b:3",
+        "Avodah Zarah 32b:4",
+        "Avodah Zarah 32b:5",
+        "Avodah Zarah 32b:6"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000088",
+      "core_refs": [
+        "Avodah Zarah 32b:7",
+        "Avodah Zarah 32b:8",
+        "Avodah Zarah 33a:1",
+        "Avodah Zarah 33a:2",
+        "Avodah Zarah 33a:3",
+        "Avodah Zarah 33a:4",
+        "Avodah Zarah 33a:5",
+        "Avodah Zarah 33a:6",
+        "Avodah Zarah 33a:7",
+        "Avodah Zarah 33a:8"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000093",
+      "core_refs": [
+        "Avodah Zarah 34b:13",
+        "Avodah Zarah 34b:14",
+        "Avodah Zarah 34b:15",
+        "Avodah Zarah 34b:16",
+        "Avodah Zarah 35a:1",
+        "Avodah Zarah 35a:2",
+        "Avodah Zarah 35a:3",
+        "Avodah Zarah 35a:4",
+        "Avodah Zarah 35a:5",
+        "Avodah Zarah 35a:6"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000110",
+      "core_refs": [
+        "Avodah Zarah 39b:16",
+        "Avodah Zarah 39b:17",
+        "Avodah Zarah 39b:18",
+        "Avodah Zarah 39b:19",
+        "Avodah Zarah 40a:1",
+        "Avodah Zarah 40a:2",
+        "Avodah Zarah 40a:3",
+        "Avodah Zarah 40a:4",
+        "Avodah Zarah 40a:5",
+        "Avodah Zarah 40a:6"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000114",
+      "core_refs": [
+        "Avodah Zarah 41a:9",
+        "Avodah Zarah 41a:10",
+        "Avodah Zarah 41a:11",
+        "Avodah Zarah 41a:12",
+        "Avodah Zarah 41a:13",
+        "Avodah Zarah 41b:1",
+        "Avodah Zarah 41b:2",
+        "Avodah Zarah 41b:3",
+        "Avodah Zarah 41b:4",
+        "Avodah Zarah 41b:5"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000116",
+      "core_refs": [
+        "Avodah Zarah 42a:1",
+        "Avodah Zarah 42a:2",
+        "Avodah Zarah 42a:3",
+        "Avodah Zarah 42a:4",
+        "Avodah Zarah 42a:5",
+        "Avodah Zarah 42a:6",
+        "Avodah Zarah 42a:7",
+        "Avodah Zarah 42a:8",
+        "Avodah Zarah 42a:9",
+        "Avodah Zarah 42a:10"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000127",
+      "core_refs": [
+        "Avodah Zarah 44b:13",
+        "Avodah Zarah 44b:14",
+        "Avodah Zarah 44b:15",
+        "Avodah Zarah 45a:1",
+        "Avodah Zarah 45a:2",
+        "Avodah Zarah 45a:3",
+        "Avodah Zarah 45a:4",
+        "Avodah Zarah 45a:5",
+        "Avodah Zarah 45a:6",
+        "Avodah Zarah 45b:1"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000134",
+      "core_refs": [
+        "Avodah Zarah 47a:13",
+        "Avodah Zarah 47a:14",
+        "Avodah Zarah 47a:15",
+        "Avodah Zarah 47a:16",
+        "Avodah Zarah 47a:17",
+        "Avodah Zarah 47a:18",
+        "Avodah Zarah 47a:19",
+        "Avodah Zarah 47a:20",
+        "Avodah Zarah 47a:21",
+        "Avodah Zarah 47a:22"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000144",
+      "core_refs": [
+        "Avodah Zarah 49b:19",
+        "Avodah Zarah 49b:20",
+        "Avodah Zarah 49b:21",
+        "Avodah Zarah 50a:1",
+        "Avodah Zarah 50a:2",
+        "Avodah Zarah 50a:3",
+        "Avodah Zarah 50a:4",
+        "Avodah Zarah 50a:5",
+        "Avodah Zarah 50a:6",
+        "Avodah Zarah 50a:7"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000149",
+      "core_refs": [
+        "Avodah Zarah 51a:23",
+        "Avodah Zarah 51b:1",
+        "Avodah Zarah 51b:2",
+        "Avodah Zarah 51b:3",
+        "Avodah Zarah 51b:4",
+        "Avodah Zarah 51b:5",
+        "Avodah Zarah 51b:6",
+        "Avodah Zarah 51b:7",
+        "Avodah Zarah 51b:8",
+        "Avodah Zarah 51b:9"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000150",
+      "core_refs": [
+        "Avodah Zarah 51b:10",
+        "Avodah Zarah 51b:11",
+        "Avodah Zarah 51b:12",
+        "Avodah Zarah 51b:13",
+        "Avodah Zarah 51b:14",
+        "Avodah Zarah 51b:15",
+        "Avodah Zarah 51b:16",
+        "Avodah Zarah 51b:17",
+        "Avodah Zarah 51b:18",
+        "Avodah Zarah 51b:19"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000159",
+      "core_refs": [
+        "Avodah Zarah 53b:18",
+        "Avodah Zarah 54a:1",
+        "Avodah Zarah 54a:2",
+        "Avodah Zarah 54a:3",
+        "Avodah Zarah 54a:4",
+        "Avodah Zarah 54a:5",
+        "Avodah Zarah 54a:6",
+        "Avodah Zarah 54a:7",
+        "Avodah Zarah 54a:8",
+        "Avodah Zarah 54a:9"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000165",
+      "core_refs": [
+        "Avodah Zarah 56a:7",
+        "Avodah Zarah 56b:1",
+        "Avodah Zarah 56b:2",
+        "Avodah Zarah 56b:3",
+        "Avodah Zarah 56b:4",
+        "Avodah Zarah 56b:5",
+        "Avodah Zarah 57a:1",
+        "Avodah Zarah 57a:2",
+        "Avodah Zarah 57a:3",
+        "Avodah Zarah 57a:4"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000166",
+      "core_refs": [
+        "Avodah Zarah 57a:5",
+        "Avodah Zarah 57a:6",
+        "Avodah Zarah 57a:7",
+        "Avodah Zarah 57a:8",
+        "Avodah Zarah 57a:9",
+        "Avodah Zarah 57a:10",
+        "Avodah Zarah 57a:11",
+        "Avodah Zarah 57a:12",
+        "Avodah Zarah 57a:13",
+        "Avodah Zarah 57a:14"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000172",
+      "core_refs": [
+        "Avodah Zarah 60b:3",
+        "Avodah Zarah 60b:4",
+        "Avodah Zarah 60b:5",
+        "Avodah Zarah 60b:6",
+        "Avodah Zarah 60b:7",
+        "Avodah Zarah 60b:8",
+        "Avodah Zarah 60b:9",
+        "Avodah Zarah 60b:10",
+        "Avodah Zarah 60b:11",
+        "Avodah Zarah 60b:12"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000182",
+      "core_refs": [
+        "Avodah Zarah 64b:7",
+        "Avodah Zarah 64b:8",
+        "Avodah Zarah 64b:9",
+        "Avodah Zarah 64b:10",
+        "Avodah Zarah 64b:11",
+        "Avodah Zarah 64b:12",
+        "Avodah Zarah 64b:13",
+        "Avodah Zarah 64b:14",
+        "Avodah Zarah 64b:15",
+        "Avodah Zarah 64b:16"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000187",
+      "core_refs": [
+        "Avodah Zarah 66b:2",
+        "Avodah Zarah 66b:3",
+        "Avodah Zarah 66b:4",
+        "Avodah Zarah 66b:5",
+        "Avodah Zarah 66b:6",
+        "Avodah Zarah 66b:7",
+        "Avodah Zarah 67a:1",
+        "Avodah Zarah 67a:2",
+        "Avodah Zarah 67a:3",
+        "Avodah Zarah 67a:4"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000191",
+      "core_refs": [
+        "Avodah Zarah 68b:7",
+        "Avodah Zarah 68b:8",
+        "Avodah Zarah 68b:9",
+        "Avodah Zarah 68b:10",
+        "Avodah Zarah 68b:11",
+        "Avodah Zarah 68b:12",
+        "Avodah Zarah 68b:13",
+        "Avodah Zarah 68b:14",
+        "Avodah Zarah 68b:15",
+        "Avodah Zarah 68b:16"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000201",
+      "core_refs": [
+        "Avodah Zarah 72a:15",
+        "Avodah Zarah 72a:16",
+        "Avodah Zarah 72b:1",
+        "Avodah Zarah 72b:2",
+        "Avodah Zarah 72b:3",
+        "Avodah Zarah 72b:4",
+        "Avodah Zarah 72b:5",
+        "Avodah Zarah 72b:6",
+        "Avodah Zarah 72b:7",
+        "Avodah Zarah 72b:8"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 0.14018691588785046,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000213",
+      "core_refs": [
+        "Avodah Zarah 76b:5"
+      ],
+      "inclusion_probability": 0.14018691588785046,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nezikin/Avodah Zarah/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "2ec254680a7711f122b072f08e556174ec536a48b0b9ac1f575994bf06aaa7a0"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Avodah Zarah"
+}

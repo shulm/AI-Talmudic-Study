@@ -1,0 +1,513 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 0,
+    "endpoint_added_core_segments": 0,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 17,
+    "endpoint_overlap_blocks": 2,
+    "endpoint_overlap_core_segments": 17,
+    "probability_blocks": 21,
+    "probability_core_segments": 207,
+    "source_nonempty_segments": 207,
+    "source_segment_positions": 207,
+    "union_blocks": 21,
+    "union_core_segments": 207
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_tamid.json",
+    "sha256": "ea6f083d85b1e49a42c135878c628dea969ea2f01527ea1669ba07019a0d448e"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_tamid",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_tamid.json",
+    "sha256": "ea6f083d85b1e49a42c135878c628dea969ea2f01527ea1669ba07019a0d448e"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Tamid.json",
+    "sha256": "22f679c21fa0c12eab0e3a686a4069b0a628415290b7204e57ac92d368de60f9"
+  },
+  "plan_sha256": "d62a91891511999a043beadd3bf8973017c7c0c8e4ab3970a1b2b82900821ec7",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 21,
+    "inclusion_probability_denominator": 21,
+    "inclusion_probability_numerator": 21,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000000",
+      "block_000001",
+      "block_000002",
+      "block_000003",
+      "block_000004",
+      "block_000005",
+      "block_000006",
+      "block_000007",
+      "block_000008",
+      "block_000009",
+      "block_000010",
+      "block_000011",
+      "block_000012",
+      "block_000013",
+      "block_000014",
+      "block_000015",
+      "block_000016",
+      "block_000017",
+      "block_000018",
+      "block_000019",
+      "block_000020"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 21
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Tamid 25b:1",
+        "Tamid 25b:2",
+        "Tamid 25b:3",
+        "Tamid 26a:1",
+        "Tamid 26a:2",
+        "Tamid 26a:3",
+        "Tamid 26a:4",
+        "Tamid 26a:5",
+        "Tamid 26a:6",
+        "Tamid 26a:7"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000001",
+      "core_refs": [
+        "Tamid 26a:8",
+        "Tamid 26a:9",
+        "Tamid 26a:10",
+        "Tamid 26b:1",
+        "Tamid 26b:2",
+        "Tamid 26b:3",
+        "Tamid 26b:4",
+        "Tamid 26b:5",
+        "Tamid 26b:6",
+        "Tamid 26b:7"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000002",
+      "core_refs": [
+        "Tamid 26b:8",
+        "Tamid 26b:9",
+        "Tamid 26b:10",
+        "Tamid 27a:1",
+        "Tamid 27a:2",
+        "Tamid 27a:3",
+        "Tamid 27a:4",
+        "Tamid 27a:5",
+        "Tamid 27a:6",
+        "Tamid 27a:7"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000003",
+      "core_refs": [
+        "Tamid 27a:8",
+        "Tamid 27a:9",
+        "Tamid 27a:10",
+        "Tamid 27a:11",
+        "Tamid 27a:12",
+        "Tamid 27a:13",
+        "Tamid 27a:14",
+        "Tamid 27a:15",
+        "Tamid 27a:16",
+        "Tamid 27a:17"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000004",
+      "core_refs": [
+        "Tamid 27a:18",
+        "Tamid 27b:1",
+        "Tamid 27b:2",
+        "Tamid 27b:3",
+        "Tamid 27b:4",
+        "Tamid 27b:5",
+        "Tamid 27b:6",
+        "Tamid 27b:7",
+        "Tamid 27b:8",
+        "Tamid 27b:9"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000005",
+      "core_refs": [
+        "Tamid 27b:10",
+        "Tamid 27b:11",
+        "Tamid 27b:12",
+        "Tamid 27b:13",
+        "Tamid 27b:14",
+        "Tamid 27b:15",
+        "Tamid 27b:16",
+        "Tamid 27b:17",
+        "Tamid 27b:18",
+        "Tamid 28a:1"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000006",
+      "core_refs": [
+        "Tamid 28a:2",
+        "Tamid 28a:3",
+        "Tamid 28a:4",
+        "Tamid 28a:5",
+        "Tamid 28a:6",
+        "Tamid 28a:7",
+        "Tamid 28a:8",
+        "Tamid 28a:9",
+        "Tamid 28a:10",
+        "Tamid 28a:11"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000007",
+      "core_refs": [
+        "Tamid 28a:12",
+        "Tamid 28a:13",
+        "Tamid 28a:14",
+        "Tamid 28b:1",
+        "Tamid 28b:2",
+        "Tamid 28b:3",
+        "Tamid 28b:4",
+        "Tamid 28b:5",
+        "Tamid 28b:6",
+        "Tamid 28b:7"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000008",
+      "core_refs": [
+        "Tamid 28b:8",
+        "Tamid 28b:9",
+        "Tamid 28b:10",
+        "Tamid 29a:1",
+        "Tamid 29a:2",
+        "Tamid 29a:3",
+        "Tamid 29a:4",
+        "Tamid 29a:5",
+        "Tamid 29a:6",
+        "Tamid 29a:7"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000009",
+      "core_refs": [
+        "Tamid 29a:8",
+        "Tamid 29a:9",
+        "Tamid 29a:10",
+        "Tamid 29a:11",
+        "Tamid 29a:12",
+        "Tamid 29a:13",
+        "Tamid 29b:1",
+        "Tamid 29b:2",
+        "Tamid 29b:3",
+        "Tamid 29b:4"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000010",
+      "core_refs": [
+        "Tamid 29b:5",
+        "Tamid 29b:6",
+        "Tamid 29b:7",
+        "Tamid 29b:8",
+        "Tamid 29b:9",
+        "Tamid 29b:10",
+        "Tamid 30a:1",
+        "Tamid 30a:2",
+        "Tamid 30a:3",
+        "Tamid 30a:4"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000011",
+      "core_refs": [
+        "Tamid 30a:5",
+        "Tamid 30a:6",
+        "Tamid 30a:7",
+        "Tamid 30a:8",
+        "Tamid 30a:9",
+        "Tamid 30a:10",
+        "Tamid 30b:1",
+        "Tamid 30b:2",
+        "Tamid 30b:3",
+        "Tamid 30b:4"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000012",
+      "core_refs": [
+        "Tamid 30b:5",
+        "Tamid 30b:6",
+        "Tamid 30b:7",
+        "Tamid 30b:8",
+        "Tamid 30b:9",
+        "Tamid 30b:10",
+        "Tamid 30b:11",
+        "Tamid 30b:12",
+        "Tamid 30b:13",
+        "Tamid 30b:14"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000013",
+      "core_refs": [
+        "Tamid 30b:15",
+        "Tamid 31a:1",
+        "Tamid 31a:2",
+        "Tamid 31a:3",
+        "Tamid 31a:4",
+        "Tamid 31a:5",
+        "Tamid 31a:6",
+        "Tamid 31a:7",
+        "Tamid 31a:8",
+        "Tamid 31a:9"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000014",
+      "core_refs": [
+        "Tamid 31b:1",
+        "Tamid 31b:2",
+        "Tamid 31b:3",
+        "Tamid 31b:4",
+        "Tamid 31b:5",
+        "Tamid 31b:6",
+        "Tamid 31b:7",
+        "Tamid 31b:8",
+        "Tamid 31b:9",
+        "Tamid 31b:10"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000015",
+      "core_refs": [
+        "Tamid 31b:11",
+        "Tamid 31b:12",
+        "Tamid 31b:13",
+        "Tamid 31b:14",
+        "Tamid 31b:15",
+        "Tamid 32a:1",
+        "Tamid 32a:2",
+        "Tamid 32a:3",
+        "Tamid 32a:4",
+        "Tamid 32a:5"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000016",
+      "core_refs": [
+        "Tamid 32a:6",
+        "Tamid 32a:7",
+        "Tamid 32a:8",
+        "Tamid 32a:9",
+        "Tamid 32a:10",
+        "Tamid 32a:11",
+        "Tamid 32a:12",
+        "Tamid 32a:13",
+        "Tamid 32a:14",
+        "Tamid 32b:1"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000017",
+      "core_refs": [
+        "Tamid 32b:2",
+        "Tamid 32b:3",
+        "Tamid 32b:4",
+        "Tamid 32b:5",
+        "Tamid 32b:6",
+        "Tamid 32b:7",
+        "Tamid 32b:8",
+        "Tamid 32b:9",
+        "Tamid 32b:10",
+        "Tamid 32b:11"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000018",
+      "core_refs": [
+        "Tamid 32b:12",
+        "Tamid 33a:1",
+        "Tamid 33a:2",
+        "Tamid 33a:3",
+        "Tamid 33a:4",
+        "Tamid 33a:5",
+        "Tamid 33a:6",
+        "Tamid 33a:7",
+        "Tamid 33a:8",
+        "Tamid 33a:9"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000019",
+      "core_refs": [
+        "Tamid 33a:10",
+        "Tamid 33a:11",
+        "Tamid 33a:12",
+        "Tamid 33a:13",
+        "Tamid 33a:14",
+        "Tamid 33b:1",
+        "Tamid 33b:2",
+        "Tamid 33b:3",
+        "Tamid 33b:4",
+        "Tamid 33b:5"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000020",
+      "core_refs": [
+        "Tamid 33b:6",
+        "Tamid 33b:7",
+        "Tamid 33b:8",
+        "Tamid 33b:9",
+        "Tamid 33b:10",
+        "Tamid 33b:11",
+        "Tamid 33b:12"
+      ],
+      "inclusion_probability": 1.0,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Kodashim/Tamid/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "d37fab6314d84a21da855c5b5d8b91f8bfc594b336817e13393e383ffdcd453d"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Tamid"
+}

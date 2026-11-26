@@ -1,0 +1,5816 @@
+{
+  "algorithm_version": "source-only-block-review-v1",
+  "coordinate_contract": "Original zero-based array indices; half-open Unicode codepoint offsets; no normalization",
+  "coverage": {
+    "probability_sample_nonempty_segments": 300,
+    "unique_review_blocks": 32,
+    "unique_review_nonempty_segments": 316
+  },
+  "empty_rule": "Only raw empty strings are empty (bool(text)==False); whitespace-only raw strings remain nonempty; no normalization or HTML stripping",
+  "endpoint_checks": {
+    "closing_block_id": "block_000240",
+    "opening_block_id": "block_000000",
+    "overlap_with_probability_sample": [],
+    "unique_added_block_ids": [
+      "block_000000",
+      "block_000240"
+    ]
+  },
+  "plan_hash_contract": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON; sorted keys; compact separators; ensure_ascii=false; no NaN",
+    "domain": "bavli-source-only-review-plan-v1",
+    "domain_separator": "one NUL byte",
+    "excluded_top_level_field": "plan_sha256"
+  },
+  "plan_sha256": "cc79a9182a8f9b713a5efdb8ffcd6fd60d412c1233c7246d4ff1c2b06f0f1f7f",
+  "reader_context_policy": "Expansion to full discussions is a later, separately logged reader event; context does not inflate sampled core counts",
+  "review_blocks": [
+    {
+      "block_id": "block_000000",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 0,
+          "offsets_codepoints": [
+            0,
+            219
+          ],
+          "page_index": 2,
+          "ref": "Kiddushin 2a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "dc86ef003ea548f2dc0a228b635af041702a8baab376b071ca8b9f0f79f97c3f"
+        },
+        {
+          "nonempty_ordinal": 1,
+          "offsets_codepoints": [
+            0,
+            80
+          ],
+          "page_index": 2,
+          "ref": "Kiddushin 2a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "29b25ef88c9d8a2aafd39f2b089ce63dc04d14852d1d19e98b16e71c2dc47d02"
+        },
+        {
+          "nonempty_ordinal": 2,
+          "offsets_codepoints": [
+            0,
+            117
+          ],
+          "page_index": 2,
+          "ref": "Kiddushin 2a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "0a16c7844856a0c1b2a9c4c6d9c3e843339ffd9e0d3eaa528b1592bf87d6dcb0"
+        },
+        {
+          "nonempty_ordinal": 3,
+          "offsets_codepoints": [
+            0,
+            121
+          ],
+          "page_index": 2,
+          "ref": "Kiddushin 2a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "b733625aea6d75bd94980d869a2c86b77c3aca5ada93c1f89120be4e5b7b2550"
+        },
+        {
+          "nonempty_ordinal": 4,
+          "offsets_codepoints": [
+            0,
+            42
+          ],
+          "page_index": 2,
+          "ref": "Kiddushin 2a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "e06a0b32ddc5d0ea8689cf15e18cc66fb3015a9caed6da2c20de550013833749"
+        },
+        {
+          "nonempty_ordinal": 5,
+          "offsets_codepoints": [
+            0,
+            51
+          ],
+          "page_index": 3,
+          "ref": "Kiddushin 2b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "5d9b62fd788a634385cc7685b2d232326554e456d4ae51b505c72d600ca37bc0"
+        },
+        {
+          "nonempty_ordinal": 6,
+          "offsets_codepoints": [
+            0,
+            111
+          ],
+          "page_index": 3,
+          "ref": "Kiddushin 2b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "7386eb793f49b478681982663bb734718ce12e8c3abd2c444ab841a7492930ba"
+        },
+        {
+          "nonempty_ordinal": 7,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "page_index": 3,
+          "ref": "Kiddushin 2b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "19debaa3411b766f4b166c67e28f7188eba0a466c429a29291d201ba11635ec8"
+        },
+        {
+          "nonempty_ordinal": 8,
+          "offsets_codepoints": [
+            0,
+            82
+          ],
+          "page_index": 3,
+          "ref": "Kiddushin 2b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "2cb8b1ccdcfdf578694e8910c1c2275cdd01dc77fd73972623b031bed16223e8"
+        },
+        {
+          "nonempty_ordinal": 9,
+          "offsets_codepoints": [
+            0,
+            83
+          ],
+          "page_index": 3,
+          "ref": "Kiddushin 2b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "a64e2973f10671b779bfd83619516300fd985e07d065a748d4a6b4eb49a543e0"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000006",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 60,
+          "offsets_codepoints": [
+            0,
+            32
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "35603c2b2ea8c1a56e662c74ea40729e608dc5adb65769c1514403896874f39e"
+        },
+        {
+          "nonempty_ordinal": 61,
+          "offsets_codepoints": [
+            0,
+            127
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "d1ab54c79f24d7271bc562a86c33178639bf631b4ca7f09639203443c7beb8a2"
+        },
+        {
+          "nonempty_ordinal": 62,
+          "offsets_codepoints": [
+            0,
+            169
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "c1dae6dc57e69fe7afdccf9a3709c423785b4b03a7a6e36c2e43d99687bab161"
+        },
+        {
+          "nonempty_ordinal": 63,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "788c138edae07bd9ec88f87aa256be7653a80f126b06e1d3f810a9e9deb8f26d"
+        },
+        {
+          "nonempty_ordinal": 64,
+          "offsets_codepoints": [
+            0,
+            89
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "98cfb8422ae18f99aa561eecfcc9f03a6f0134b186de2ee08fd890dfe0bc1de0"
+        },
+        {
+          "nonempty_ordinal": 65,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "4416feb25218d62e748442516688eb2318af291ab1ff6a51e0d7f7de1c17e492"
+        },
+        {
+          "nonempty_ordinal": 66,
+          "offsets_codepoints": [
+            0,
+            101
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "7ae7c52dc71189cf7308d2dc7e5eca1351717bc158ec250db10923856d226491"
+        },
+        {
+          "nonempty_ordinal": 67,
+          "offsets_codepoints": [
+            0,
+            132
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "29c5da5583848dac9ac238c3c73f5fb6bc07ed517257f9dd757ee66c4a275a2f"
+        },
+        {
+          "nonempty_ordinal": 68,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "55cce4a822c6996d8506c5b5fddd9df23bc4bfcbe6f1d10ef6972016be78076a"
+        },
+        {
+          "nonempty_ordinal": 69,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "page_index": 7,
+          "ref": "Kiddushin 4b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "a451d1390778657519bec4ef1688af379f8b0e8c7ef7d7b75da6b7b17d06e601"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000011",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 110,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "5621c5393ea97be20795187a7b39da3fe6f29f4062e02780937009fcfe435081"
+        },
+        {
+          "nonempty_ordinal": 111,
+          "offsets_codepoints": [
+            0,
+            150
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "c1a5dd9473151bf060f29e868d89f9d9f0ec0fb95dd6f3e4796f10cde02f8d7e"
+        },
+        {
+          "nonempty_ordinal": 112,
+          "offsets_codepoints": [
+            0,
+            121
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "7f2653e39f0970def4394822bbeaef6e6e1eec54a41ffd81791267ed53059044"
+        },
+        {
+          "nonempty_ordinal": 113,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "0016df04abf485054ec9a44e6b0ad236088cae222393df95bb48235df8192241"
+        },
+        {
+          "nonempty_ordinal": 114,
+          "offsets_codepoints": [
+            0,
+            104
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "9d3b56bb82e1395dabbd81f1989b06a352aea0fea16a25fc06b5dfd89fb3fa03"
+        },
+        {
+          "nonempty_ordinal": 115,
+          "offsets_codepoints": [
+            0,
+            176
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "780c7df6f6c2d54710e9303c3a1d1369ce2535dd9b93fb5272fe53f89b00405f"
+        },
+        {
+          "nonempty_ordinal": 116,
+          "offsets_codepoints": [
+            0,
+            133
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "5e7c107f4ca0b10121f71bc958a83a14947cdfb48cab5284b83b5352698ee6b5"
+        },
+        {
+          "nonempty_ordinal": 117,
+          "offsets_codepoints": [
+            0,
+            151
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "eeb67c783184b58c43472f06342622cddf512710634b1fa42dc3ac04f7beb31d"
+        },
+        {
+          "nonempty_ordinal": 118,
+          "offsets_codepoints": [
+            0,
+            97
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "b2f25ce362715647372c538f4dc7e559424b5f04867d77c8921f42a828365532"
+        },
+        {
+          "nonempty_ordinal": 119,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "c156b9caa4160ec8cec94022bf0fe64d3b39772a8d32769e6ff234599a25e709"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000012",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 120,
+          "offsets_codepoints": [
+            0,
+            164
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "3cb05fe7d8b9c2a5118ab3b753ece6b75a707a8e7feafb27152987bd83399201"
+        },
+        {
+          "nonempty_ordinal": 121,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "0e52546f3ea3d86b7762edb79c31ae3b600a4ae8f0227b2d11acf84a8e1ab78d"
+        },
+        {
+          "nonempty_ordinal": 122,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "c25880d29b0e0d8f7dae01454d6892e24d64061386288797969bbdb141eb0b0e"
+        },
+        {
+          "nonempty_ordinal": 123,
+          "offsets_codepoints": [
+            0,
+            197
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "0d681764085fdc265e2fd7bc5b77e61e8f154f5bb08ebad69d0dfe41d43f19a6"
+        },
+        {
+          "nonempty_ordinal": 124,
+          "offsets_codepoints": [
+            0,
+            145
+          ],
+          "page_index": 10,
+          "ref": "Kiddushin 6a:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "2e9fac9d4cffdf8cce733540806ba0a5ebfbdeacbf7fcba593895078c52c0af4"
+        },
+        {
+          "nonempty_ordinal": 125,
+          "offsets_codepoints": [
+            0,
+            66
+          ],
+          "page_index": 11,
+          "ref": "Kiddushin 6b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "0716e81a4c9c3f3e04af209c108487ef270f29f611de3fe1a64fc37370416978"
+        },
+        {
+          "nonempty_ordinal": 126,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "page_index": 11,
+          "ref": "Kiddushin 6b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "b1882304a056c711da34378344494bf01cb88bb244dc67f5d706e24bc3abd764"
+        },
+        {
+          "nonempty_ordinal": 127,
+          "offsets_codepoints": [
+            0,
+            169
+          ],
+          "page_index": 11,
+          "ref": "Kiddushin 6b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "1f13f18f42a26409aa4441b57b46b8c944b31e2eab28d864741d5e5fd03b0832"
+        },
+        {
+          "nonempty_ordinal": 128,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "page_index": 11,
+          "ref": "Kiddushin 6b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "0b73ddb76d760a2ff30d732c3690e8c3a821a2a3369b8cdb41efb0310d57a459"
+        },
+        {
+          "nonempty_ordinal": 129,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "page_index": 11,
+          "ref": "Kiddushin 6b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "c3f14bb850649cbe0ceeebdad621e3f04ef730e605bd57da1bca64af0cb2c384"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000019",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 190,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "page_index": 14,
+          "ref": "Kiddushin 8a:21",
+          "segment_index": 20,
+          "span_sha256_utf8": "2d2dc71e3d6cc3e81e1818f06ddc9fad1a0c2e1ce0ec7a5578303ae3aa4693a0"
+        },
+        {
+          "nonempty_ordinal": 191,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "page_index": 14,
+          "ref": "Kiddushin 8a:22",
+          "segment_index": 21,
+          "span_sha256_utf8": "c3d63471bb96b1b1ccd22350a1a1ed6b9c8dc2e7e8cb5d5fdcc9da66b38f32cf"
+        },
+        {
+          "nonempty_ordinal": 192,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "page_index": 14,
+          "ref": "Kiddushin 8a:23",
+          "segment_index": 22,
+          "span_sha256_utf8": "78e4d515ada69ee0638994bffd696364d404ef1889a1bd20e14f888610c8fcf7"
+        },
+        {
+          "nonempty_ordinal": 193,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "page_index": 15,
+          "ref": "Kiddushin 8b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "f897b5eda6316f3cec6a48706e70151c09efbb9ce84411d44078ae8bb92169c8"
+        },
+        {
+          "nonempty_ordinal": 194,
+          "offsets_codepoints": [
+            0,
+            123
+          ],
+          "page_index": 15,
+          "ref": "Kiddushin 8b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "680594418e526488c7289a7600b5a3f11ed6e3c83dcaa63468af5a97ab4f564e"
+        },
+        {
+          "nonempty_ordinal": 195,
+          "offsets_codepoints": [
+            0,
+            143
+          ],
+          "page_index": 15,
+          "ref": "Kiddushin 8b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "d6a9f265564274ccdfd19e107adf7d615d3673f114dc17f3e44f837840f26f46"
+        },
+        {
+          "nonempty_ordinal": 196,
+          "offsets_codepoints": [
+            0,
+            127
+          ],
+          "page_index": 15,
+          "ref": "Kiddushin 8b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "4723afc961338884b32875b42ce2077cd318ad689217bc016c8d1e45767ec31c"
+        },
+        {
+          "nonempty_ordinal": 197,
+          "offsets_codepoints": [
+            0,
+            181
+          ],
+          "page_index": 15,
+          "ref": "Kiddushin 8b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "cec4e3ca20384572ebc1fa045151ac7789effd792cc81a338dfa0dd024efacb8"
+        },
+        {
+          "nonempty_ordinal": 198,
+          "offsets_codepoints": [
+            0,
+            76
+          ],
+          "page_index": 15,
+          "ref": "Kiddushin 8b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "589540ad496e2a3e2ecc0d1f87ac2e387df0caa72fa3241528f327678ca44b50"
+        },
+        {
+          "nonempty_ordinal": 199,
+          "offsets_codepoints": [
+            0,
+            50
+          ],
+          "page_index": 15,
+          "ref": "Kiddushin 8b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "5fcc22c8cec90973c351c5908d27de26877083b053c3a41958320da447ee2243"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000021",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 210,
+          "offsets_codepoints": [
+            0,
+            151
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "0959797578e051e3b3d2f6f6708464d847576058cdf4444cf43f2999412edc85"
+        },
+        {
+          "nonempty_ordinal": 211,
+          "offsets_codepoints": [
+            0,
+            104
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "af65733046546b09a85d0493dd4f8705ccfd72e3c768714c7a9a8607a51a7bc0"
+        },
+        {
+          "nonempty_ordinal": 212,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "750e226bae8f67736acaacc36b90bd18b3874c67413a8b7007d4f33488d1955a"
+        },
+        {
+          "nonempty_ordinal": 213,
+          "offsets_codepoints": [
+            0,
+            119
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "e87b129461759213f6c5070f2c911ef52170101371430d7be9493cdc61c7a6f9"
+        },
+        {
+          "nonempty_ordinal": 214,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "cc979082071c9e135d5176f150065636564210c027d95d0f18a531295be36744"
+        },
+        {
+          "nonempty_ordinal": 215,
+          "offsets_codepoints": [
+            0,
+            141
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "1206be5a378564a7344e5b750a77b90f9802203df993fbe7ca57829cb37ca379"
+        },
+        {
+          "nonempty_ordinal": 216,
+          "offsets_codepoints": [
+            0,
+            156
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "c73b4e408f5f1ceab64e7fdff131bc00e2b96a029b46c39ec538a07b66dcda4f"
+        },
+        {
+          "nonempty_ordinal": 217,
+          "offsets_codepoints": [
+            0,
+            104
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "9aefb44d3e612e9f822c8c635f7b85f359e6d8fb38888e38649af8c51ccd74bd"
+        },
+        {
+          "nonempty_ordinal": 218,
+          "offsets_codepoints": [
+            0,
+            165
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "8dcedc63ae2dc134369e54a122aab23f0c3466bcb7d8ad7174fbf56df82392d1"
+        },
+        {
+          "nonempty_ordinal": 219,
+          "offsets_codepoints": [
+            0,
+            151
+          ],
+          "page_index": 16,
+          "ref": "Kiddushin 9a:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "66801fd51f2ef873ff30df7109754812d625e17a19b9ee5cf379ad6cf0a5edab"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000024",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 240,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "page_index": 17,
+          "ref": "Kiddushin 9b:20",
+          "segment_index": 19,
+          "span_sha256_utf8": "680b33cfcb120f01cc060ec6cd12005ba3cd23416849a2b6a00e867368519f86"
+        },
+        {
+          "nonempty_ordinal": 241,
+          "offsets_codepoints": [
+            0,
+            122
+          ],
+          "page_index": 17,
+          "ref": "Kiddushin 9b:21",
+          "segment_index": 20,
+          "span_sha256_utf8": "bb10f678180378f39db4565d800ac1cac5b9bc7db349a8b3749a946982f9438a"
+        },
+        {
+          "nonempty_ordinal": 242,
+          "offsets_codepoints": [
+            0,
+            117
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "7cf33ed704e1f057d23a3c1d81a4fa0b7c024c73a3b0866f625b0e694b9f3ebc"
+        },
+        {
+          "nonempty_ordinal": 243,
+          "offsets_codepoints": [
+            0,
+            149
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "597d1798be35ddfa77dbc07bc7584bd47f775a6416cd0bda568cc6424382e2f4"
+        },
+        {
+          "nonempty_ordinal": 244,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "b1d5bdffa9da605f05105bc566ea22f4d77fa67d9906b784e07d3dc22ed286f1"
+        },
+        {
+          "nonempty_ordinal": 245,
+          "offsets_codepoints": [
+            0,
+            95
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "1e4e264eff53bf7a155456618decdb670aed1521770e350869d8771321af00d1"
+        },
+        {
+          "nonempty_ordinal": 246,
+          "offsets_codepoints": [
+            0,
+            88
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "1076c6cc9b71dd0ae8963b91650750c5c81be2ca733ceff93806202812d7d682"
+        },
+        {
+          "nonempty_ordinal": 247,
+          "offsets_codepoints": [
+            0,
+            60
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "8950a4f2b7dd1f3a1216a23c11cd3faf1a71e355467c3bf5d6ce7b2a207090fc"
+        },
+        {
+          "nonempty_ordinal": 248,
+          "offsets_codepoints": [
+            0,
+            138
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "62e3be79aae414207d00030166b3ee134ebd5c1264a7a3ccc91bb5750a27a7a5"
+        },
+        {
+          "nonempty_ordinal": 249,
+          "offsets_codepoints": [
+            0,
+            165
+          ],
+          "page_index": 18,
+          "ref": "Kiddushin 10a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "a0cb4741b01a0db3f61c25cf0a3d0ab7d238d4d7cf8158d750955c15c1d12776"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000038",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 380,
+          "offsets_codepoints": [
+            0,
+            24
+          ],
+          "page_index": 27,
+          "ref": "Kiddushin 14b:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "cb6b62cb93661497f7a8f8b2a2ab92447e80091c7e7b54362304cffee1520ea2"
+        },
+        {
+          "nonempty_ordinal": 381,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "page_index": 27,
+          "ref": "Kiddushin 14b:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "9521d1ec0da62ff2bdcc2da1f3edea391749c67e0af1ebe7f2f084a6863d03e6"
+        },
+        {
+          "nonempty_ordinal": 382,
+          "offsets_codepoints": [
+            0,
+            139
+          ],
+          "page_index": 27,
+          "ref": "Kiddushin 14b:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "f4c708b8e0c218fd74b6d266841c9bf0119c567a1a7c8df63510c8568839b330"
+        },
+        {
+          "nonempty_ordinal": 383,
+          "offsets_codepoints": [
+            0,
+            148
+          ],
+          "page_index": 28,
+          "ref": "Kiddushin 15a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "2792b83520c38c825409a9e1d1b266137614bde8291d9c95f1cad37aa7f9b83e"
+        },
+        {
+          "nonempty_ordinal": 384,
+          "offsets_codepoints": [
+            0,
+            31
+          ],
+          "page_index": 28,
+          "ref": "Kiddushin 15a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "5a95ef05c0d12580ef45e705ec1a06ab1d127f5084541120534fd72bb1f5425c"
+        },
+        {
+          "nonempty_ordinal": 385,
+          "offsets_codepoints": [
+            0,
+            89
+          ],
+          "page_index": 28,
+          "ref": "Kiddushin 15a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "ea38a3c77a85728766dd7cc901ef8dd456b64ddf3be9ca78e18d6b3923162ede"
+        },
+        {
+          "nonempty_ordinal": 386,
+          "offsets_codepoints": [
+            0,
+            34
+          ],
+          "page_index": 28,
+          "ref": "Kiddushin 15a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "baea722d743a21a97336bd9cac7237b5abd3ad496a56fba9ce71c74b3bba0784"
+        },
+        {
+          "nonempty_ordinal": 387,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "page_index": 28,
+          "ref": "Kiddushin 15a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "81d3a98d37f34b039b0738e98f34aaa4b810ceb89fad109246dc08ae24dc0b01"
+        },
+        {
+          "nonempty_ordinal": 388,
+          "offsets_codepoints": [
+            0,
+            115
+          ],
+          "page_index": 28,
+          "ref": "Kiddushin 15a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "0fd8a7d406f5a201d21885630135c4362ab0935970cdf96b350f9b6c5d3da75f"
+        },
+        {
+          "nonempty_ordinal": 389,
+          "offsets_codepoints": [
+            0,
+            133
+          ],
+          "page_index": 28,
+          "ref": "Kiddushin 15a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "dd9f2be9577f2a9bd77cfe60b526b8b4d8666dcdaa9bb3ed58a2fe79fb1b3fe7"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000058",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 580,
+          "offsets_codepoints": [
+            0,
+            104
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "94475d1b27d4d744037fb8c8fce4a7d936e90a4bc801e8a9d8c09089d01cbece"
+        },
+        {
+          "nonempty_ordinal": 581,
+          "offsets_codepoints": [
+            0,
+            163
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "6f7c802bf7a65f54c4e3ef06a05d7db0156c0dbb41df651ade4208f581f3e36c"
+        },
+        {
+          "nonempty_ordinal": 582,
+          "offsets_codepoints": [
+            0,
+            130
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "b3924012d8f0e335c5bf9cef8adb090337889c5b8cb1dc92cbf3d7abb5e5e9d8"
+        },
+        {
+          "nonempty_ordinal": 583,
+          "offsets_codepoints": [
+            0,
+            140
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "d499ec57b8b56bbd2fd448a2aee0d1cc40de0fcca72e9a0cb6d47bcfbbf0ef1e"
+        },
+        {
+          "nonempty_ordinal": 584,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "fe679b0fe0d5fd9ad77e40f3bed7c7745fcfc443ac2ddd641a6900c0fc2845d1"
+        },
+        {
+          "nonempty_ordinal": 585,
+          "offsets_codepoints": [
+            0,
+            206
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "9cc34a269e9f7f727b499d90a3ee7b7fb727422232b06d871fc754035a300974"
+        },
+        {
+          "nonempty_ordinal": 586,
+          "offsets_codepoints": [
+            0,
+            51
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "0800e0164444146c71a8445f649ef93f5eaeb6dbb9517c3ce9efedbc84e542e8"
+        },
+        {
+          "nonempty_ordinal": 587,
+          "offsets_codepoints": [
+            0,
+            177
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "504eb15bcceac0f591be42963dcddfd482713542be0f1eed38482a897bd638bc"
+        },
+        {
+          "nonempty_ordinal": 588,
+          "offsets_codepoints": [
+            0,
+            178
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "5e1e6f9cdb1dc97af4850a142f57b1175d940cc7e994c4930734f90559999e92"
+        },
+        {
+          "nonempty_ordinal": 589,
+          "offsets_codepoints": [
+            0,
+            42
+          ],
+          "page_index": 39,
+          "ref": "Kiddushin 20b:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "4e433f8c51807bf6298b9bf299fe039893752fafd6132a193294dddebbbe1a75"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000062",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 620,
+          "offsets_codepoints": [
+            0,
+            251
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "bb1878fb11367aabce0585e38d05c9c54a3b34d62eb9bf248df70cbb415290df"
+        },
+        {
+          "nonempty_ordinal": 621,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "4d877f0932718d9b241c5d72976e6773b72ee35d3bf60fa1d1d014dc55d3f0cb"
+        },
+        {
+          "nonempty_ordinal": 622,
+          "offsets_codepoints": [
+            0,
+            88
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "cad9d491ad57c938d26fba45dafc8382df668d6ea43ef1400a3461e4b553e106"
+        },
+        {
+          "nonempty_ordinal": 623,
+          "offsets_codepoints": [
+            0,
+            142
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "37f3a9645c5b1ab2da57d6c52730a46f9be5bcf62e0905f933e289ddbe6a58f6"
+        },
+        {
+          "nonempty_ordinal": 624,
+          "offsets_codepoints": [
+            0,
+            72
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "58e632cdd0e4b0aa806687284d976657524d583ebcdf16ed37aee5dafb71f0de"
+        },
+        {
+          "nonempty_ordinal": 625,
+          "offsets_codepoints": [
+            0,
+            209
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "e48bbf943c5e78dc7e451d85d12d64413cb98697a674ea66015be010b191bb62"
+        },
+        {
+          "nonempty_ordinal": 626,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "4746c50a9a07b1b49a9d1f93f79bac77c2514e0b74d35e759123c8015e290cdc"
+        },
+        {
+          "nonempty_ordinal": 627,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "27b8978cf2ec153cf0f7ec793675f875f70c4ec3ac37d51ff478622b6f1262ba"
+        },
+        {
+          "nonempty_ordinal": 628,
+          "offsets_codepoints": [
+            0,
+            36
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "71edd45c7e111e4b0f3ef348f8a8be0085ef69a3f3a85354e1624f377122cf88"
+        },
+        {
+          "nonempty_ordinal": 629,
+          "offsets_codepoints": [
+            0,
+            109
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "a5a17b24fa23d92097f80cc0e967386a8aed11b6ee7d32ec6cff2d38dd658f71"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000063",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 630,
+          "offsets_codepoints": [
+            0,
+            196
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "ba982310cf9f5b9d7dbb064bbacdfaf0bebb507edba95f170802a76c53b704d8"
+        },
+        {
+          "nonempty_ordinal": 631,
+          "offsets_codepoints": [
+            0,
+            87
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "06d2efbc9fb47642cbf51509b3fdfe8e3f4debd5d2f8b5d0f2f2cfcea0933c55"
+        },
+        {
+          "nonempty_ordinal": 632,
+          "offsets_codepoints": [
+            0,
+            81
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "3882a9432ecb414bae23820962a2785b70fb14c479b0dc407ea36ea34d07dbad"
+        },
+        {
+          "nonempty_ordinal": 633,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "8d5d7600d5133a477d9db7ac0516736b2531c235e2f1b39a5b6f865d40da70a8"
+        },
+        {
+          "nonempty_ordinal": 634,
+          "offsets_codepoints": [
+            0,
+            109
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:16",
+          "segment_index": 15,
+          "span_sha256_utf8": "7a5cdba81bed70fb021c660c2573fecbdde559551ff0e9d8ec27795817327562"
+        },
+        {
+          "nonempty_ordinal": 635,
+          "offsets_codepoints": [
+            0,
+            138
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:17",
+          "segment_index": 16,
+          "span_sha256_utf8": "0dc4dd178b602b7f3ced915c36929617f1a6ea6557c0d0eafe8198af9b1f148e"
+        },
+        {
+          "nonempty_ordinal": 636,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:18",
+          "segment_index": 17,
+          "span_sha256_utf8": "dd9d2e80a811b3397d7fc71e30d943ec332e0d520b1288f43f636ccd43d94f06"
+        },
+        {
+          "nonempty_ordinal": 637,
+          "offsets_codepoints": [
+            0,
+            135
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:19",
+          "segment_index": 18,
+          "span_sha256_utf8": "837397ba494932d6707d7a0c06e8fc67f24821cf2ffb2abbe26b6ed2b8a888d4"
+        },
+        {
+          "nonempty_ordinal": 638,
+          "offsets_codepoints": [
+            0,
+            274
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:20",
+          "segment_index": 19,
+          "span_sha256_utf8": "f62a9cda2d323c39f2992bb101399bc91f62a1b27e60e945d54eb88435c8d29b"
+        },
+        {
+          "nonempty_ordinal": 639,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "page_index": 41,
+          "ref": "Kiddushin 21b:21",
+          "segment_index": 20,
+          "span_sha256_utf8": "458840d42eeed15bfcad43edc839fe9c9b399e6d17fe786b4ae19ea1e2840b57"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000064",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 640,
+          "offsets_codepoints": [
+            0,
+            95
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "c7837fe3fd36d4877a7bfc92c89c9f94080b002ab6a88fbe2469d86590f2d25e"
+        },
+        {
+          "nonempty_ordinal": 641,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "70dd974be140da9fce11eea65180cc58cea6a605a8c65106834d814c252f4294"
+        },
+        {
+          "nonempty_ordinal": 642,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "020d662920d98da5e2a0d6a8ea512e80e3a21565070aaa91c2041d456d375fa2"
+        },
+        {
+          "nonempty_ordinal": 643,
+          "offsets_codepoints": [
+            0,
+            81
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "58649eba2743b555460739f4edd19bfe181cb67d465f74ddc1a47d9b8f2cf18f"
+        },
+        {
+          "nonempty_ordinal": 644,
+          "offsets_codepoints": [
+            0,
+            154
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "feba8319263455c658831c0d2d069cc8379f94a301091a489eaa2d5aa889de9b"
+        },
+        {
+          "nonempty_ordinal": 645,
+          "offsets_codepoints": [
+            0,
+            151
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "6f2b72895c5dc83c594cfd93669dcc9c5f198b7f0de8a97d2655f2987d88884e"
+        },
+        {
+          "nonempty_ordinal": 646,
+          "offsets_codepoints": [
+            0,
+            164
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "651a87d70a3c1c8699dc195f18afc39682583d80c84903f39bba9e32ff37b48b"
+        },
+        {
+          "nonempty_ordinal": 647,
+          "offsets_codepoints": [
+            0,
+            230
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "4fbc323421e0e545d806b1bf3b322f30d75a1951e0d87de1685a4f064d8818fc"
+        },
+        {
+          "nonempty_ordinal": 648,
+          "offsets_codepoints": [
+            0,
+            98
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "8ade1785db0624a830dbeac66d5e7b2c44eba301c184ff72d06d705b1fc08854"
+        },
+        {
+          "nonempty_ordinal": 649,
+          "offsets_codepoints": [
+            0,
+            201
+          ],
+          "page_index": 42,
+          "ref": "Kiddushin 22a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "ba20dbf97257fb58a79e62db50a9d18a894e2c05349258a550e2297dfc51ac36"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000074",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 740,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "cce9814c5432d1578c9d09507f01be3c609c0e38b55ccaecca3f6060969eb17c"
+        },
+        {
+          "nonempty_ordinal": 741,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "0bc2b0cc37f8a781f1a31e67d56fad907d2b267922b5c8a3b0411183e6fb2ce7"
+        },
+        {
+          "nonempty_ordinal": 742,
+          "offsets_codepoints": [
+            0,
+            122
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "3586a4c7394c4e29e962b0ddd550a78fde6b8661bed448a22586cdbeeae662a9"
+        },
+        {
+          "nonempty_ordinal": 743,
+          "offsets_codepoints": [
+            0,
+            48
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:16",
+          "segment_index": 15,
+          "span_sha256_utf8": "28323902919d8477c972752bf2cd5de9970a61521aad006769e37a6c175bb7a9"
+        },
+        {
+          "nonempty_ordinal": 744,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:17",
+          "segment_index": 16,
+          "span_sha256_utf8": "b5f57ce215127877fb7b82116320c8fe7594b89a6114fc5f0c0cd4b2fdd2f97d"
+        },
+        {
+          "nonempty_ordinal": 745,
+          "offsets_codepoints": [
+            0,
+            142
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:18",
+          "segment_index": 17,
+          "span_sha256_utf8": "4a9a0ef3b48eccaa622389b88e4d3852c16ccf70fd7c6facc0f770124e692e69"
+        },
+        {
+          "nonempty_ordinal": 746,
+          "offsets_codepoints": [
+            0,
+            51
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:19",
+          "segment_index": 18,
+          "span_sha256_utf8": "ac5e67fd3bbc46e59771105db3fbe8cd8f8b474fb4d92c4be26274f48e6c5e97"
+        },
+        {
+          "nonempty_ordinal": 747,
+          "offsets_codepoints": [
+            0,
+            89
+          ],
+          "page_index": 48,
+          "ref": "Kiddushin 25a:20",
+          "segment_index": 19,
+          "span_sha256_utf8": "a6af415f978a1ab738e236c4e55fb6f6c258fd514a1901eb591082473779ee0f"
+        },
+        {
+          "nonempty_ordinal": 748,
+          "offsets_codepoints": [
+            0,
+            71
+          ],
+          "page_index": 49,
+          "ref": "Kiddushin 25b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "c91bd2ccbaa87ecd2e467c716d45864d8860504c5ac167cfebdf3e91549bd2d9"
+        },
+        {
+          "nonempty_ordinal": 749,
+          "offsets_codepoints": [
+            0,
+            149
+          ],
+          "page_index": 49,
+          "ref": "Kiddushin 25b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "8b895b7ffdd2138c356247a009f783bc2558eda6db1d4ef017bfa66fc93ba9a8"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000077",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 770,
+          "offsets_codepoints": [
+            0,
+            229
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "c2d52650db18e2d1efcb9cd1442410da720d76c12cbfe25ec37f4b1d99adc8c9"
+        },
+        {
+          "nonempty_ordinal": 771,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "1da6f897047f0928b76cf87800389d3fa1e2547f2de82f6d18c9960f4a9e9cf0"
+        },
+        {
+          "nonempty_ordinal": 772,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "a0829ebb3791bd69fd1f07be8ed680332f827970bd02afdb9178f2016ebbea06"
+        },
+        {
+          "nonempty_ordinal": 773,
+          "offsets_codepoints": [
+            0,
+            230
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "fca27020b3e67062b74a19108f003ef76d3b2a127253860af319d3c0baba4481"
+        },
+        {
+          "nonempty_ordinal": 774,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "0c344b1b34586aa8d055ba0b399e7542b9f66fb079569effced53e759c3a97ab"
+        },
+        {
+          "nonempty_ordinal": 775,
+          "offsets_codepoints": [
+            0,
+            80
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "e99ac74d1f4e44800dbadf3749f185be39fff8bcaee9d639982a95158508b772"
+        },
+        {
+          "nonempty_ordinal": 776,
+          "offsets_codepoints": [
+            0,
+            57
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "ced48384e417b1cf436a6dcce271b9d6653f79707893cf0e08c6e6de3bfbfa39"
+        },
+        {
+          "nonempty_ordinal": 777,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "8dd954d08682fde5dbd5ab357c3fa991b50378f05ea8452a8e7346c432ce0db5"
+        },
+        {
+          "nonempty_ordinal": 778,
+          "offsets_codepoints": [
+            0,
+            94
+          ],
+          "page_index": 51,
+          "ref": "Kiddushin 26b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "a3f6e7920e8c4fd36f779e6ae48acc18844b40cbdb2e21e4e87647bada049bb6"
+        },
+        {
+          "nonempty_ordinal": 779,
+          "offsets_codepoints": [
+            0,
+            166
+          ],
+          "page_index": 52,
+          "ref": "Kiddushin 27a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "8257f389b41b94057eb37c7c2d2f3e209ec1ca8c1b8403253f6f259ee85bdf45"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000081",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 810,
+          "offsets_codepoints": [
+            0,
+            35
+          ],
+          "page_index": 54,
+          "ref": "Kiddushin 28a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "21d1c496f2fd2bab285d3089421aea376b96550b646d66dc57db4f4289bf6f99"
+        },
+        {
+          "nonempty_ordinal": 811,
+          "offsets_codepoints": [
+            0,
+            148
+          ],
+          "page_index": 54,
+          "ref": "Kiddushin 28a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "3d395ac1ebf5212695a4f3a53ca301ea486d286ea0fd4f8fa64d54e7938ff595"
+        },
+        {
+          "nonempty_ordinal": 812,
+          "offsets_codepoints": [
+            0,
+            120
+          ],
+          "page_index": 54,
+          "ref": "Kiddushin 28a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "3af60d32499e4821f2be4c010ff3f31d4c8c30170487c7d01eb5e3e2e8d5a8e7"
+        },
+        {
+          "nonempty_ordinal": 813,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "91edc9870538682273934aa58c06cc44be1f849fd3da6a245f83f8c52e37908a"
+        },
+        {
+          "nonempty_ordinal": 814,
+          "offsets_codepoints": [
+            0,
+            147
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "22e81c7f32dfc3afb943f9bf6e8598802a1ba8d08a75c0c7c17b3fbe8e0303c5"
+        },
+        {
+          "nonempty_ordinal": 815,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "0bd8ed93e2d1594fa9e30e0f41c66463153caaeb17717d98405ed566549eb312"
+        },
+        {
+          "nonempty_ordinal": 816,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "422951c401f20c98e77c2012d0db6f092d583c08d8f981c66f7642cf34112c91"
+        },
+        {
+          "nonempty_ordinal": 817,
+          "offsets_codepoints": [
+            0,
+            106
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "fb7f50567952260662cc7070078fc78941e6ab7db9b5e60c35ba2aa598eb1c2b"
+        },
+        {
+          "nonempty_ordinal": 818,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "03a0de9b6a89bf84f0c5439ef0f0db67161ce80eb3b8972db10ce8229e1f3c46"
+        },
+        {
+          "nonempty_ordinal": 819,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "4642188f7ecc099a4203f7b7e1b435eb5cbc7d056c1ad2ff8caf79fe89096ee3"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000082",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 820,
+          "offsets_codepoints": [
+            0,
+            91
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "ed247cde2095058593e79befd0d2f7133df298d748c4986909d451a78020d0f8"
+        },
+        {
+          "nonempty_ordinal": 821,
+          "offsets_codepoints": [
+            0,
+            97
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "9c17fdfb67e3e1966fa2d8b5603dddbee8af26f9297286ed27e3bfe273d92442"
+        },
+        {
+          "nonempty_ordinal": 822,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "29afce61b5e58a0dd639e9ac70204c9b2a6b14a60b03da211b2c19580a7eace4"
+        },
+        {
+          "nonempty_ordinal": 823,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "page_index": 55,
+          "ref": "Kiddushin 28b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "2348253ad0cde4521b9bbca5d004a4f082ed042f5d532f216ce0a4d3640e5b29"
+        },
+        {
+          "nonempty_ordinal": 824,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "page_index": 56,
+          "ref": "Kiddushin 29a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "091c1ac1b46b7cfd107b65de1a80ee1c10c0b8be97f1108619ff1c0ed743b15b"
+        },
+        {
+          "nonempty_ordinal": 825,
+          "offsets_codepoints": [
+            0,
+            88
+          ],
+          "page_index": 56,
+          "ref": "Kiddushin 29a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "90592e3dd16d8d2e1da6423331c6057b16d9b89df13748ab1d218d704e9ed59c"
+        },
+        {
+          "nonempty_ordinal": 826,
+          "offsets_codepoints": [
+            0,
+            166
+          ],
+          "page_index": 56,
+          "ref": "Kiddushin 29a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "6bb9bd337b49604e20784c5e629969372ff03fe4dae98baa0ffa306332ddca89"
+        },
+        {
+          "nonempty_ordinal": 827,
+          "offsets_codepoints": [
+            0,
+            40
+          ],
+          "page_index": 56,
+          "ref": "Kiddushin 29a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "a74fd1badf706d9dcd6c1ac03f14b105346d27d7bcf0bee55d169a5aa4696ce8"
+        },
+        {
+          "nonempty_ordinal": 828,
+          "offsets_codepoints": [
+            0,
+            27
+          ],
+          "page_index": 56,
+          "ref": "Kiddushin 29a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "089cc4feef4f7e247a798d233561b200d4c2bb5250d5d66001121c7321ce104f"
+        },
+        {
+          "nonempty_ordinal": 829,
+          "offsets_codepoints": [
+            0,
+            231
+          ],
+          "page_index": 56,
+          "ref": "Kiddushin 29a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "6f9f9c83dde34a988524c1390a873adf1c30cf70fce3c4cb15b15130cbf53660"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000087",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 870,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "page_index": 58,
+          "ref": "Kiddushin 30a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "5506976e8e198cf83619f48245ff81c8eb4e9b4eafe460b1a70d154ae4b7d975"
+        },
+        {
+          "nonempty_ordinal": 871,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "page_index": 58,
+          "ref": "Kiddushin 30a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "ac8eb0f842b2fc1fdb1955285d67ab016286cd67638f3b9762c4eeb68b1dd332"
+        },
+        {
+          "nonempty_ordinal": 872,
+          "offsets_codepoints": [
+            0,
+            292
+          ],
+          "page_index": 58,
+          "ref": "Kiddushin 30a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "9682806873d90c505dd662a60325c68da0a93e43919da161ac6436df35292b13"
+        },
+        {
+          "nonempty_ordinal": 873,
+          "offsets_codepoints": [
+            0,
+            175
+          ],
+          "page_index": 58,
+          "ref": "Kiddushin 30a:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "d33e2683195c562e391f84a8dbbe5878b2e3f09003ba58e30aabc61ac1fee7ed"
+        },
+        {
+          "nonempty_ordinal": 874,
+          "offsets_codepoints": [
+            0,
+            214
+          ],
+          "page_index": 58,
+          "ref": "Kiddushin 30a:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "5293094f69b678624246345a72f6f69f576add23c1032ce508400c5894a30989"
+        },
+        {
+          "nonempty_ordinal": 875,
+          "offsets_codepoints": [
+            0,
+            114
+          ],
+          "page_index": 58,
+          "ref": "Kiddushin 30a:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "26a4369ebdad32df0d7276d601e37a41d9e20e6abc2786c9fc0e1d2e51b38980"
+        },
+        {
+          "nonempty_ordinal": 876,
+          "offsets_codepoints": [
+            0,
+            103
+          ],
+          "page_index": 58,
+          "ref": "Kiddushin 30a:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "0e1e110f52654bcc0dbab66168c57b6af057af921409d0f8d3e69a5f7b988f76"
+        },
+        {
+          "nonempty_ordinal": 877,
+          "offsets_codepoints": [
+            0,
+            307
+          ],
+          "page_index": 59,
+          "ref": "Kiddushin 30b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "11c0ec3febc5d1c8d86cb90f2d0ada330fcdf0f6511d6e3ba59c6abf40c7aa45"
+        },
+        {
+          "nonempty_ordinal": 878,
+          "offsets_codepoints": [
+            0,
+            208
+          ],
+          "page_index": 59,
+          "ref": "Kiddushin 30b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "23741bbb1c3b973d1761386dc5ff442d0e77a5cfda23c827b2eea1f56d2e5d0e"
+        },
+        {
+          "nonempty_ordinal": 879,
+          "offsets_codepoints": [
+            0,
+            245
+          ],
+          "page_index": 59,
+          "ref": "Kiddushin 30b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "e5db490ff1fb697019df2eaae71e6f0687a742555e27efbd665e9505dbf03a76"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000090",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 900,
+          "offsets_codepoints": [
+            0,
+            227
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "304bea2d619739266efe1bb321307fedea675f3115487b34d203b2eaecb4ad82"
+        },
+        {
+          "nonempty_ordinal": 901,
+          "offsets_codepoints": [
+            0,
+            170
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "8f3eb3d2f40e9a202790fa5f945507d4b935f1dfe5501f5a1c836abf1f3cb466"
+        },
+        {
+          "nonempty_ordinal": 902,
+          "offsets_codepoints": [
+            0,
+            178
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "9b0096b9bb3887be1e59675adaf28545e71773e0b20dcd3e0ed493ec00372c9e"
+        },
+        {
+          "nonempty_ordinal": 903,
+          "offsets_codepoints": [
+            0,
+            101
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "467233bd29b91e99d78500d43a0dc59926715518dfdd8cd73f18a234640807e3"
+        },
+        {
+          "nonempty_ordinal": 904,
+          "offsets_codepoints": [
+            0,
+            204
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "1199e15ae931193538802aea448eb18a5790448d26baf78fea0df842a08d3691"
+        },
+        {
+          "nonempty_ordinal": 905,
+          "offsets_codepoints": [
+            0,
+            167
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "c390f77e3639ba67929c8f4dd76b819285d31aef70aa0748bcc41c47de578443"
+        },
+        {
+          "nonempty_ordinal": 906,
+          "offsets_codepoints": [
+            0,
+            194
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "39aa479c020e696306d8ba499eeb4c91f587e542d306b8342d2b18626001e397"
+        },
+        {
+          "nonempty_ordinal": 907,
+          "offsets_codepoints": [
+            0,
+            251
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "0bd520c13e2f5ed1819e00544d2d71f46503f59929d8f166e16f01b2ffa93079"
+        },
+        {
+          "nonempty_ordinal": 908,
+          "offsets_codepoints": [
+            0,
+            198
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "52182bac6ef65d583fa01a0c2188d716391a172d4e33ab84c7e4c1f70300e6dd"
+        },
+        {
+          "nonempty_ordinal": 909,
+          "offsets_codepoints": [
+            0,
+            102
+          ],
+          "page_index": 60,
+          "ref": "Kiddushin 31a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "6d7bd46f326b9e6eb232124bb737db23930931ee279f99cb9aaa8ba5152b91f3"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000123",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1230,
+          "offsets_codepoints": [
+            0,
+            227
+          ],
+          "page_index": 82,
+          "ref": "Kiddushin 42a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "934b09ef6c8d99fcbbcba6a2e9fe50b35b299f5b37c74d2bc26a42b4de3cc586"
+        },
+        {
+          "nonempty_ordinal": 1231,
+          "offsets_codepoints": [
+            0,
+            198
+          ],
+          "page_index": 82,
+          "ref": "Kiddushin 42a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "a1b8f9685a8c666ba7ec4d39da3b5b5c5bc983a1c9b7c23a25bd9ad38fa5dd1f"
+        },
+        {
+          "nonempty_ordinal": 1232,
+          "offsets_codepoints": [
+            0,
+            192
+          ],
+          "page_index": 82,
+          "ref": "Kiddushin 42a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "e4142b0ce75d58afa8143233761ff8b5132c73fab0e6e1d28ea670b9b2a5e39d"
+        },
+        {
+          "nonempty_ordinal": 1233,
+          "offsets_codepoints": [
+            0,
+            229
+          ],
+          "page_index": 82,
+          "ref": "Kiddushin 42a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "680653cbaea82a3b63d8a358732f7ad6ec038e3e186bc00372511c7327982c57"
+        },
+        {
+          "nonempty_ordinal": 1234,
+          "offsets_codepoints": [
+            0,
+            7
+          ],
+          "page_index": 82,
+          "ref": "Kiddushin 42a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "deb57726cfa7dabb40e142bd44f975f3e2a0cde17f2ce069c3c1fc804ea7de87"
+        },
+        {
+          "nonempty_ordinal": 1235,
+          "offsets_codepoints": [
+            0,
+            66
+          ],
+          "page_index": 83,
+          "ref": "Kiddushin 42b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "1bbe94653a8059c660e4b2163a3e680cc9c552176c2bc8d6e8532994a246ca9c"
+        },
+        {
+          "nonempty_ordinal": 1236,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "page_index": 83,
+          "ref": "Kiddushin 42b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "acec6873c00b1e2641dee8031f4c07efe4b127d34a929f95088b61ccc4ea2bd5"
+        },
+        {
+          "nonempty_ordinal": 1237,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "page_index": 83,
+          "ref": "Kiddushin 42b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "2133008fcf965b75ed97e46f4ac288c215b9e9de872eca8c61040b332a129684"
+        },
+        {
+          "nonempty_ordinal": 1238,
+          "offsets_codepoints": [
+            0,
+            183
+          ],
+          "page_index": 83,
+          "ref": "Kiddushin 42b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "7310a8d1214f4e53f2e0841863821f42df1d1cba14f12b01947ae03f5c13a08f"
+        },
+        {
+          "nonempty_ordinal": 1239,
+          "offsets_codepoints": [
+            0,
+            210
+          ],
+          "page_index": 83,
+          "ref": "Kiddushin 42b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "fc6bc7eee07abf7241ae4ac34673aca55fb051cc2aaf6fd39babffc6acc4cbaf"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000126",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1260,
+          "offsets_codepoints": [
+            0,
+            184
+          ],
+          "page_index": 84,
+          "ref": "Kiddushin 43a:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "8d15fc801b955169e826f5d991304d0d761a241d7f9347e4902d3c28da2bf2f0"
+        },
+        {
+          "nonempty_ordinal": 1261,
+          "offsets_codepoints": [
+            0,
+            175
+          ],
+          "page_index": 84,
+          "ref": "Kiddushin 43a:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "21708cd725cfcbafd269bccd7032e80a5316a50abc5e1a00a1523d652093d5a6"
+        },
+        {
+          "nonempty_ordinal": 1262,
+          "offsets_codepoints": [
+            0,
+            130
+          ],
+          "page_index": 84,
+          "ref": "Kiddushin 43a:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "981e30a2cf248b72d76a4e327eb46fe1097abcbd0e610bd7a5f5a87285a638e2"
+        },
+        {
+          "nonempty_ordinal": 1263,
+          "offsets_codepoints": [
+            0,
+            156
+          ],
+          "page_index": 84,
+          "ref": "Kiddushin 43a:16",
+          "segment_index": 15,
+          "span_sha256_utf8": "33a3fe47e4c911e634ee2184bcf9f6e4b6faea3253de30f19c8bd8cfbaf49cb6"
+        },
+        {
+          "nonempty_ordinal": 1264,
+          "offsets_codepoints": [
+            0,
+            218
+          ],
+          "page_index": 84,
+          "ref": "Kiddushin 43a:17",
+          "segment_index": 16,
+          "span_sha256_utf8": "e3acd2dd2afc3d53211a6bd4c4ea1975b03b6975d8b081a514cfa7552183c63c"
+        },
+        {
+          "nonempty_ordinal": 1265,
+          "offsets_codepoints": [
+            0,
+            87
+          ],
+          "page_index": 84,
+          "ref": "Kiddushin 43a:18",
+          "segment_index": 17,
+          "span_sha256_utf8": "1bda9063a9f3da7d5bf25a9b1fd3192ca2888f3c43474018952b4e5deb2d6619"
+        },
+        {
+          "nonempty_ordinal": 1266,
+          "offsets_codepoints": [
+            0,
+            16
+          ],
+          "page_index": 85,
+          "ref": "Kiddushin 43b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "1ecf1d3ce2ede789a093a0de37c290d5510741bbc75aeaa8524fd48e82b35609"
+        },
+        {
+          "nonempty_ordinal": 1267,
+          "offsets_codepoints": [
+            0,
+            80
+          ],
+          "page_index": 85,
+          "ref": "Kiddushin 43b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "e8b747007862c96a3460542a926c383641ed5643a10d62e961f14ce00adfe105"
+        },
+        {
+          "nonempty_ordinal": 1268,
+          "offsets_codepoints": [
+            0,
+            83
+          ],
+          "page_index": 85,
+          "ref": "Kiddushin 43b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "77367eefc6c8c5ebffd615c4a9606038a9b10585c4b5dcbc2f79da3204555837"
+        },
+        {
+          "nonempty_ordinal": 1269,
+          "offsets_codepoints": [
+            0,
+            109
+          ],
+          "page_index": 85,
+          "ref": "Kiddushin 43b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "ffc5068dd5a6b49bfa181918879f1233e07bd9ec795ea78c78b867c341f2d379"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000128",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1280,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "8eeceb7cb5e030f922cb977502956945edb77a2d4e73bd9f80cb2aabe2da9946"
+        },
+        {
+          "nonempty_ordinal": 1281,
+          "offsets_codepoints": [
+            0,
+            150
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "22bfa42f0134b35aae03239112c455619c94230b99dac8fa97d0b7d65c46acfe"
+        },
+        {
+          "nonempty_ordinal": 1282,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "3db3d9669d585cc8bc0294f6e25bbbd1e6d35791b33d7febf2bc16bbe766fbd6"
+        },
+        {
+          "nonempty_ordinal": 1283,
+          "offsets_codepoints": [
+            0,
+            121
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "b15c9408b76262db45ceed0f4198cadff88100e2d09f3de648d56686d8e52000"
+        },
+        {
+          "nonempty_ordinal": 1284,
+          "offsets_codepoints": [
+            0,
+            115
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "101929ef7284e222bae3f9ca89f43f9a693200facaf1ee2a725b72f225d9c587"
+        },
+        {
+          "nonempty_ordinal": 1285,
+          "offsets_codepoints": [
+            0,
+            114
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "1706a7f9da0a19ff6a1e38a14ee0395718bd2ac48076f67b34294d9647404d80"
+        },
+        {
+          "nonempty_ordinal": 1286,
+          "offsets_codepoints": [
+            0,
+            49
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "54f4c44f5238e7e16213ffa21e8db95b4e3d50b98cdebefed67dadf40f3cb2ac"
+        },
+        {
+          "nonempty_ordinal": 1287,
+          "offsets_codepoints": [
+            0,
+            52
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "60092bd34aac36093dceeb5f67758d6305098fe0e76e120a415bb6040b641e9a"
+        },
+        {
+          "nonempty_ordinal": 1288,
+          "offsets_codepoints": [
+            0,
+            242
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "064e21f038a7443f9311ed41531d4c7af2257b51c72f83fb90344ee026b51027"
+        },
+        {
+          "nonempty_ordinal": 1289,
+          "offsets_codepoints": [
+            0,
+            48
+          ],
+          "page_index": 86,
+          "ref": "Kiddushin 44a:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "20b10b31707f2a0acb4027dd98dcf974c380ee563b0338b1cf615daa70c0d11e"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000132",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1320,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "page_index": 89,
+          "ref": "Kiddushin 45b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "578401c8cac695550747d926605d8d0173e5896397b07d430d7cf4abb09745b4"
+        },
+        {
+          "nonempty_ordinal": 1321,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "page_index": 89,
+          "ref": "Kiddushin 45b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "f7fe373a53363ae11f225f41b5fc45395dd05db7575d8a39da619d0a7d07ac37"
+        },
+        {
+          "nonempty_ordinal": 1322,
+          "offsets_codepoints": [
+            0,
+            225
+          ],
+          "page_index": 89,
+          "ref": "Kiddushin 45b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "66cf4f741258c2a03399e7415dd35c0b4ead62b598ee581252434c7624624009"
+        },
+        {
+          "nonempty_ordinal": 1323,
+          "offsets_codepoints": [
+            0,
+            210
+          ],
+          "page_index": 89,
+          "ref": "Kiddushin 45b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "73c453b0e6a3cf529fc916aa19b88a89e6c81c80174fb74ec772e7830133d80f"
+        },
+        {
+          "nonempty_ordinal": 1324,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "page_index": 90,
+          "ref": "Kiddushin 46a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "b51d713b5b14ca9a2ad3ba56337405859ea42619d5264597d5081628b930f467"
+        },
+        {
+          "nonempty_ordinal": 1325,
+          "offsets_codepoints": [
+            0,
+            227
+          ],
+          "page_index": 90,
+          "ref": "Kiddushin 46a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "82797d1785385817e84bc794c8a1f8dc6a46f9fbcf285982cfb392ff03e1835d"
+        },
+        {
+          "nonempty_ordinal": 1326,
+          "offsets_codepoints": [
+            0,
+            137
+          ],
+          "page_index": 90,
+          "ref": "Kiddushin 46a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "55f868662f0587d18a81355eaedd9a575e5d0ae14ecb0e5eb467fcbc05867773"
+        },
+        {
+          "nonempty_ordinal": 1327,
+          "offsets_codepoints": [
+            0,
+            153
+          ],
+          "page_index": 90,
+          "ref": "Kiddushin 46a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "422cdc9b1e0504a94b6af2936350645a11e6db6dc1bc16a084a871be28846619"
+        },
+        {
+          "nonempty_ordinal": 1328,
+          "offsets_codepoints": [
+            0,
+            256
+          ],
+          "page_index": 90,
+          "ref": "Kiddushin 46a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "9f243a2b7deeeb42317db04fe2f89a323cb0bb8444ab5f4087082d76d651c073"
+        },
+        {
+          "nonempty_ordinal": 1329,
+          "offsets_codepoints": [
+            0,
+            102
+          ],
+          "page_index": 90,
+          "ref": "Kiddushin 46a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "9eaf960ca72419c33086cadf202792482baa4b9da0e9289a300cab9b71313619"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000143",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1430,
+          "offsets_codepoints": [
+            0,
+            193
+          ],
+          "page_index": 97,
+          "ref": "Kiddushin 49b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "5353bd0988efbc9d1ccf78c6d44b4c81dcd5e3ad2aee5e5d239cdd0c759f0934"
+        },
+        {
+          "nonempty_ordinal": 1431,
+          "offsets_codepoints": [
+            0,
+            186
+          ],
+          "page_index": 97,
+          "ref": "Kiddushin 49b:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "ca9b7c45eb37aaead131ee4b799c725b0c4c8aef4cfc9c25178b51c6e027840f"
+        },
+        {
+          "nonempty_ordinal": 1432,
+          "offsets_codepoints": [
+            0,
+            185
+          ],
+          "page_index": 97,
+          "ref": "Kiddushin 49b:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "239feeb28c1642d0e353864a4ca214071713e25621bafa3bdca637d6475e924d"
+        },
+        {
+          "nonempty_ordinal": 1433,
+          "offsets_codepoints": [
+            0,
+            72
+          ],
+          "page_index": 98,
+          "ref": "Kiddushin 50a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "3402759aacdf3420110c908cb833b510268c87cc852b4665f2e2ba395444930c"
+        },
+        {
+          "nonempty_ordinal": 1434,
+          "offsets_codepoints": [
+            0,
+            148
+          ],
+          "page_index": 98,
+          "ref": "Kiddushin 50a:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "7ffd55bc9d70b733099d8f49c190d6cb2cca007e0d5b8ec3406981a1097dd1fe"
+        },
+        {
+          "nonempty_ordinal": 1435,
+          "offsets_codepoints": [
+            0,
+            189
+          ],
+          "page_index": 98,
+          "ref": "Kiddushin 50a:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "662684228e1f1c0b6c5b4003c565fba063fce55a9e97b97936f467c81f0fdbfc"
+        },
+        {
+          "nonempty_ordinal": 1436,
+          "offsets_codepoints": [
+            0,
+            256
+          ],
+          "page_index": 98,
+          "ref": "Kiddushin 50a:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "35637b643d9f519e06f86dc0156553c7065bf904ce6d97d761c83c6bab09eeac"
+        },
+        {
+          "nonempty_ordinal": 1437,
+          "offsets_codepoints": [
+            0,
+            152
+          ],
+          "page_index": 98,
+          "ref": "Kiddushin 50a:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "7c2e005dee065cbbcd3458713bfebe256b1a0ac592aa36d5a49802e72a850d43"
+        },
+        {
+          "nonempty_ordinal": 1438,
+          "offsets_codepoints": [
+            0,
+            265
+          ],
+          "page_index": 98,
+          "ref": "Kiddushin 50a:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "5d4bb2fa2f2155d394ef68a626bb64d6f6a45e49bed2dc458459d5eb5439b941"
+        },
+        {
+          "nonempty_ordinal": 1439,
+          "offsets_codepoints": [
+            0,
+            39
+          ],
+          "page_index": 98,
+          "ref": "Kiddushin 50a:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "cbd0d5cac36a3df872e2093d695a0630767723904057e3b2829a5bc8103dde73"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000166",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1660,
+          "offsets_codepoints": [
+            0,
+            187
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "c80f501c5df0fac654368da2f51c48ec147581bf4bac26634325efb38c264d7d"
+        },
+        {
+          "nonempty_ordinal": 1661,
+          "offsets_codepoints": [
+            0,
+            164
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "4b359b8c5e6f6656a9804c92e7423faaa023577e5189d9a1feaeafb635f47a46"
+        },
+        {
+          "nonempty_ordinal": 1662,
+          "offsets_codepoints": [
+            0,
+            116
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "d8124084d028dcba664e7b3608af65bf6a3a0d6cef6209a2e9477985b64d8921"
+        },
+        {
+          "nonempty_ordinal": 1663,
+          "offsets_codepoints": [
+            0,
+            37
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "f0d020ca2a465f3f3508d715b1dd5e29c9bf1b7e0c69a7be357c3ef1bce0b185"
+        },
+        {
+          "nonempty_ordinal": 1664,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "361a7c206345ac572940ab340ebb24ff92846bd15730794de82bc8a04fa7397d"
+        },
+        {
+          "nonempty_ordinal": 1665,
+          "offsets_codepoints": [
+            0,
+            126
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "65069b4b84d36e67f5f50adc019be17aa45f566dfe5d4dd769ca86bc107007a5"
+        },
+        {
+          "nonempty_ordinal": 1666,
+          "offsets_codepoints": [
+            0,
+            176
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "fe4ca30d540900b11b80f2183c65a8ce8517867f4a2e0df9427db9ca4281e36e"
+        },
+        {
+          "nonempty_ordinal": 1667,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "e60bb95b6cc7e5f125ce977d7731dd1ad65d9ac56e726510eb233c60d45e48da"
+        },
+        {
+          "nonempty_ordinal": 1668,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "747074853831c09aa736000f0df23c0eab4a74da3e2203bc8fff42263f929fea"
+        },
+        {
+          "nonempty_ordinal": 1669,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "page_index": 115,
+          "ref": "Kiddushin 58b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "bddfb0c69c254e2b28571a836ee0f402574f19ceb9efe222af5dbb696b656cf1"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000191",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1910,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "page_index": 130,
+          "ref": "Kiddushin 66a:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "c31ab423cbd0c0e3f9c5c9f41662c4cff85eee9d1549cf55a9f634d1275983e1"
+        },
+        {
+          "nonempty_ordinal": 1911,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "page_index": 130,
+          "ref": "Kiddushin 66a:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "5a4be28081ade7d8d50f7be8c2af606e963bd3e677adefbdd3ddc50a0675d8f6"
+        },
+        {
+          "nonempty_ordinal": 1912,
+          "offsets_codepoints": [
+            0,
+            74
+          ],
+          "page_index": 130,
+          "ref": "Kiddushin 66a:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "d7f5c2c140b2b6c6d6da7ba1b50d81d74cc43aa77dabf43939cef0aa7b93f0f5"
+        },
+        {
+          "nonempty_ordinal": 1913,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "page_index": 130,
+          "ref": "Kiddushin 66a:16",
+          "segment_index": 15,
+          "span_sha256_utf8": "eebbd12d6b7d54636f7f9906ac009a02ed7927549d8b28676d64537307a03f0f"
+        },
+        {
+          "nonempty_ordinal": 1914,
+          "offsets_codepoints": [
+            0,
+            7
+          ],
+          "page_index": 130,
+          "ref": "Kiddushin 66a:17",
+          "segment_index": 16,
+          "span_sha256_utf8": "2224b19f16ee463cb6567641854f3e2d14bd1057d0f9ff4c0414d78ae84875e0"
+        },
+        {
+          "nonempty_ordinal": 1915,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "page_index": 131,
+          "ref": "Kiddushin 66b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "0da75174e4ab39a167a0f8ba0aceeffbc131d6c35c491681fdd6bc09bd8ba462"
+        },
+        {
+          "nonempty_ordinal": 1916,
+          "offsets_codepoints": [
+            0,
+            201
+          ],
+          "page_index": 131,
+          "ref": "Kiddushin 66b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "dd753e77dc81cc4f3c3d758110e7ce9601390aedf65eb1b6d6405a3353f5f4ab"
+        },
+        {
+          "nonempty_ordinal": 1917,
+          "offsets_codepoints": [
+            0,
+            163
+          ],
+          "page_index": 131,
+          "ref": "Kiddushin 66b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "3deaa40d7a2eb1948fc03bd89f8e381298c437613cfaa75e0180c4f4dd98da0a"
+        },
+        {
+          "nonempty_ordinal": 1918,
+          "offsets_codepoints": [
+            0,
+            174
+          ],
+          "page_index": 131,
+          "ref": "Kiddushin 66b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "7e0bbb5068b433f003009ae4aa59d60b5a866e33272dc57fa2dd9f7b3a3562c2"
+        },
+        {
+          "nonempty_ordinal": 1919,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "page_index": 131,
+          "ref": "Kiddushin 66b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "be1fd676e272ac6e8ab6a240e3abf557e708b1b21ad3f43734c3d6f45b24c8c9"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000194",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 1940,
+          "offsets_codepoints": [
+            0,
+            53
+          ],
+          "page_index": 132,
+          "ref": "Kiddushin 67a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "cf249c530701eb08ca7a2980e6ffb75f64b144d030c318d1475d6ab88b5bfb04"
+        },
+        {
+          "nonempty_ordinal": 1941,
+          "offsets_codepoints": [
+            0,
+            48
+          ],
+          "page_index": 132,
+          "ref": "Kiddushin 67a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "3cfe64878d17e5c829204f980441b7e903b734be8ba1866914bd0babf44119cd"
+        },
+        {
+          "nonempty_ordinal": 1942,
+          "offsets_codepoints": [
+            0,
+            126
+          ],
+          "page_index": 132,
+          "ref": "Kiddushin 67a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "1ebf6515bf8b93922db478c3f26df3a6e1d6054c98d048eb484f9eed1acad276"
+        },
+        {
+          "nonempty_ordinal": 1943,
+          "offsets_codepoints": [
+            0,
+            124
+          ],
+          "page_index": 133,
+          "ref": "Kiddushin 67b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "ffa5b0fe1615d25a76666d30a27728498a23f49c39da8c7b010bb13466ad31f2"
+        },
+        {
+          "nonempty_ordinal": 1944,
+          "offsets_codepoints": [
+            0,
+            132
+          ],
+          "page_index": 133,
+          "ref": "Kiddushin 67b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "b5a7b851c3994cc9fda5e836e18576cd13bf602e88a7ed0534f4ccf22f80b0b9"
+        },
+        {
+          "nonempty_ordinal": 1945,
+          "offsets_codepoints": [
+            0,
+            80
+          ],
+          "page_index": 133,
+          "ref": "Kiddushin 67b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "415425cfadc77401c6de30dfd2db673768425ad417ba31d3afd3f5fed0e428c1"
+        },
+        {
+          "nonempty_ordinal": 1946,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "page_index": 133,
+          "ref": "Kiddushin 67b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "651b69ceecd7ca62238213a199c7c7fdde101e337ba21808f3128e60fb53c9bf"
+        },
+        {
+          "nonempty_ordinal": 1947,
+          "offsets_codepoints": [
+            0,
+            203
+          ],
+          "page_index": 133,
+          "ref": "Kiddushin 67b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "1562cd6e7511f2f17e7ce61334208cb2af76a89fb23871e5b4538e801ac85cb3"
+        },
+        {
+          "nonempty_ordinal": 1948,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "page_index": 133,
+          "ref": "Kiddushin 67b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "d86b61e737ca26c65df988ae09eec94ee40bfb13f4aef0deb2d846d5a89f8d79"
+        },
+        {
+          "nonempty_ordinal": 1949,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "page_index": 133,
+          "ref": "Kiddushin 67b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "31522b678b23f89d2da879b74e27ba65b21207d80e4f66b36b5bb156188a8bbf"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000200",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 2000,
+          "offsets_codepoints": [
+            0,
+            120
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "ee08a482a1e7e812f62fc0350711c7fc0c7981d02563920d26b00253089f120f"
+        },
+        {
+          "nonempty_ordinal": 2001,
+          "offsets_codepoints": [
+            0,
+            127
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "6b45714e600ba588119480f7018a7c986bb55bc531fc4879800933f1561ef234"
+        },
+        {
+          "nonempty_ordinal": 2002,
+          "offsets_codepoints": [
+            0,
+            176
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "7b65cb5ba08a8dc79716f6a7038d4419abe5b642dece6b25319f67ca6cfab8d8"
+        },
+        {
+          "nonempty_ordinal": 2003,
+          "offsets_codepoints": [
+            0,
+            163
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "4fa30f219f0580f361a86f0e962803b35e83a70b9e629a3ee133cd510bbde54f"
+        },
+        {
+          "nonempty_ordinal": 2004,
+          "offsets_codepoints": [
+            0,
+            131
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "60c6cd0cc01b53504204e80dda81727b5c5fa041edd5f9691a67373db6500903"
+        },
+        {
+          "nonempty_ordinal": 2005,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "9bf0677c20f3bc8c61c3a84d103fb887d347c081e247c3cbfe36840b5ebc7600"
+        },
+        {
+          "nonempty_ordinal": 2006,
+          "offsets_codepoints": [
+            0,
+            127
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "a27549b2ff8fc2fc4e1180e1d4516300e5bf5894beacf893843cd15bbb58f622"
+        },
+        {
+          "nonempty_ordinal": 2007,
+          "offsets_codepoints": [
+            0,
+            281
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "97be022ff07b9167860475d8ae0db6efc674312318a04c833586816f25ed2ea2"
+        },
+        {
+          "nonempty_ordinal": 2008,
+          "offsets_codepoints": [
+            0,
+            82
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "4ea00b136790326b71aeb5195abe6b90bb0941dcec3d1dc7c1f157fe5da3bf6c"
+        },
+        {
+          "nonempty_ordinal": 2009,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "page_index": 137,
+          "ref": "Kiddushin 69b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "f4d80a2691db782f93625d96e162ed1849c195580014fabba93dd6cde5d5bee4"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000212",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 2120,
+          "offsets_codepoints": [
+            0,
+            176
+          ],
+          "page_index": 144,
+          "ref": "Kiddushin 73a:16",
+          "segment_index": 15,
+          "span_sha256_utf8": "cd0afa4d256c0d6a99adc9d58f92b8c5c81b6d70f4bcdab42b6ad6097c568630"
+        },
+        {
+          "nonempty_ordinal": 2121,
+          "offsets_codepoints": [
+            0,
+            20
+          ],
+          "page_index": 144,
+          "ref": "Kiddushin 73a:17",
+          "segment_index": 16,
+          "span_sha256_utf8": "db5a37a5717fb603295196ecb57ba84095abfa58306545737364ea2c6b973ff9"
+        },
+        {
+          "nonempty_ordinal": 2122,
+          "offsets_codepoints": [
+            0,
+            28
+          ],
+          "page_index": 144,
+          "ref": "Kiddushin 73a:18",
+          "segment_index": 17,
+          "span_sha256_utf8": "b29545f5b3c58092dcd7e5514e4a1c8b9d54a74deea7ec09d8987a56da8532ca"
+        },
+        {
+          "nonempty_ordinal": 2123,
+          "offsets_codepoints": [
+            0,
+            117
+          ],
+          "page_index": 145,
+          "ref": "Kiddushin 73b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "974d9bf883e3ac44dfcbc1b87af192a720feb175e58690a5550b932cb016d620"
+        },
+        {
+          "nonempty_ordinal": 2124,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "page_index": 145,
+          "ref": "Kiddushin 73b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "be37b5ef180d48e5cd45ee00bc848365b0a3cdd9b5264dbf6042cd2ce9d938ad"
+        },
+        {
+          "nonempty_ordinal": 2125,
+          "offsets_codepoints": [
+            0,
+            140
+          ],
+          "page_index": 145,
+          "ref": "Kiddushin 73b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "92ca80d52948ac46fd27c9b743cc0c1e00a8a4f17cc2c0031e060a4bae2e94b6"
+        },
+        {
+          "nonempty_ordinal": 2126,
+          "offsets_codepoints": [
+            0,
+            157
+          ],
+          "page_index": 145,
+          "ref": "Kiddushin 73b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "554831efb29e6a1cf36eb98fff7826e3cc2b96d7d295be6d8cd2bf1404b8c02a"
+        },
+        {
+          "nonempty_ordinal": 2127,
+          "offsets_codepoints": [
+            0,
+            158
+          ],
+          "page_index": 145,
+          "ref": "Kiddushin 73b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "898590275fe269069676f5e128f187f6dd5f15a42ffa9690d395525eb5acd47d"
+        },
+        {
+          "nonempty_ordinal": 2128,
+          "offsets_codepoints": [
+            0,
+            139
+          ],
+          "page_index": 145,
+          "ref": "Kiddushin 73b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "cfa45b47cdb871f3cc70fb8a3e3fa249c2d2123a26f62dd8846a0b6e1560e8d2"
+        },
+        {
+          "nonempty_ordinal": 2129,
+          "offsets_codepoints": [
+            0,
+            103
+          ],
+          "page_index": 145,
+          "ref": "Kiddushin 73b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "e6ae2afbac7e863d89b4bec9583ea05263bbf4e3602caf50d33846cccead1cb4"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000225",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 2250,
+          "offsets_codepoints": [
+            0,
+            220
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "9f27d4125f291705079b351a346b1c6fe448eaa2a2f83377ff101763cc4bc9cd"
+        },
+        {
+          "nonempty_ordinal": 2251,
+          "offsets_codepoints": [
+            0,
+            81
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "fdd438dcbf91dbd9322a24f91e4728ee919ed778f1af2a2e92170281f17165f9"
+        },
+        {
+          "nonempty_ordinal": 2252,
+          "offsets_codepoints": [
+            0,
+            139
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "13a2fb6d1b0df92efca3db7145e5189d2309e7c0228476954fd2c5de8ee0f0f8"
+        },
+        {
+          "nonempty_ordinal": 2253,
+          "offsets_codepoints": [
+            0,
+            145
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "ed42de47f754da3c10e021b11a81515ee063accf27a032da94acac216dbc3f05"
+        },
+        {
+          "nonempty_ordinal": 2254,
+          "offsets_codepoints": [
+            0,
+            107
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "4405de9d334d61b744625e94b50afb2655560da96def4cf72ca8e380ea1d2b47"
+        },
+        {
+          "nonempty_ordinal": 2255,
+          "offsets_codepoints": [
+            0,
+            223
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "b96fa268063873964e63cab29ca487ecc6bf175a2394b3757ce6cfdc419c0a08"
+        },
+        {
+          "nonempty_ordinal": 2256,
+          "offsets_codepoints": [
+            0,
+            31
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "85459c0b797d31507ce62c8d63c00cbbb5266a24f725dadee4f0a2c13112b7a8"
+        },
+        {
+          "nonempty_ordinal": 2257,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "dbf5d35176db16052b6f04a1dd2e5dcee6350a3dc40c89d16b65808391322e23"
+        },
+        {
+          "nonempty_ordinal": 2258,
+          "offsets_codepoints": [
+            0,
+            147
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "c5661bc04ee569249aa2f4b30ef79ed939b8ff83677bd371ccb819c30c249c05"
+        },
+        {
+          "nonempty_ordinal": 2259,
+          "offsets_codepoints": [
+            0,
+            233
+          ],
+          "page_index": 153,
+          "ref": "Kiddushin 77b:16",
+          "segment_index": 15,
+          "span_sha256_utf8": "2056a788efe209f193ecb0e60db0af4efaf93d03092a786688eb28a3374549f5"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000227",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 2270,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "e933363ad5f1d90f0fb14c41a9b76d83e026087f633e7131ea76a713affb000f"
+        },
+        {
+          "nonempty_ordinal": 2271,
+          "offsets_codepoints": [
+            0,
+            170
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "04669c95fad20ea46f799640fa202a1f78c2e37a5b49460e192d07f31ec50f44"
+        },
+        {
+          "nonempty_ordinal": 2272,
+          "offsets_codepoints": [
+            0,
+            154
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "6da6931faa60c7b7d47c7e9373aba5bab72d83c1f62c33f2968961aef8f3966e"
+        },
+        {
+          "nonempty_ordinal": 2273,
+          "offsets_codepoints": [
+            0,
+            76
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "d110adb36d5b3ec9aafab897c0317e5f92e9e0fbd40ddfcfe52b75aca76f5751"
+        },
+        {
+          "nonempty_ordinal": 2274,
+          "offsets_codepoints": [
+            0,
+            46
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "e4f7a0a8e03a4872d485a7582bd9ab757569996cf45dec3ab6b3efdeffcef415"
+        },
+        {
+          "nonempty_ordinal": 2275,
+          "offsets_codepoints": [
+            0,
+            103
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "44211f113b9708d06d5766ea95ea614a711c34243e91ec049f537e38f6ed7e6f"
+        },
+        {
+          "nonempty_ordinal": 2276,
+          "offsets_codepoints": [
+            0,
+            37
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "44f2400e6fc96183e3aec5aedc548e910f605f567ed43059e280ee46366e4eec"
+        },
+        {
+          "nonempty_ordinal": 2277,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:15",
+          "segment_index": 14,
+          "span_sha256_utf8": "db745aec8b58aced437d41f39c14af107f57e2ee10e7d4f3ac809e8c00879b2c"
+        },
+        {
+          "nonempty_ordinal": 2278,
+          "offsets_codepoints": [
+            0,
+            47
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:16",
+          "segment_index": 15,
+          "span_sha256_utf8": "de1d773179300526c17695d209f6a553e6a9ed92c5e8e38bca7239fc18412f77"
+        },
+        {
+          "nonempty_ordinal": 2279,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "page_index": 154,
+          "ref": "Kiddushin 78a:17",
+          "segment_index": 16,
+          "span_sha256_utf8": "df1edc520cdfb5d5e1fe9682607f7ed3287488bfc9b97c3e88be4ddf730aec63"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000229",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 0.12448132780082988,
+      "roles": [
+        "probability_sample"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 2290,
+          "offsets_codepoints": [
+            0,
+            97
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "b05be15cfc140ced31fda62fa3188a2a1b8e622a4797ad2b7ec115905c010656"
+        },
+        {
+          "nonempty_ordinal": 2291,
+          "offsets_codepoints": [
+            0,
+            139
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:7",
+          "segment_index": 6,
+          "span_sha256_utf8": "9ad4c702fc60f5ebf621009cbd716192b39fb60fc77a91c7e8b4285d9c94ee35"
+        },
+        {
+          "nonempty_ordinal": 2292,
+          "offsets_codepoints": [
+            0,
+            221
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:8",
+          "segment_index": 7,
+          "span_sha256_utf8": "4b219281eb816f1968a9763ac58d35acd9ac9a4ea880701dd0972b4ded958124"
+        },
+        {
+          "nonempty_ordinal": 2293,
+          "offsets_codepoints": [
+            0,
+            205
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:9",
+          "segment_index": 8,
+          "span_sha256_utf8": "22f81f052c05f6dbeb98c4abb52163a677b35b8c1f6ed27566d25491cbc8cc31"
+        },
+        {
+          "nonempty_ordinal": 2294,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:10",
+          "segment_index": 9,
+          "span_sha256_utf8": "c10a21d38a1f030809aec97745262e8715990d7710f877b3d364f7437bf64504"
+        },
+        {
+          "nonempty_ordinal": 2295,
+          "offsets_codepoints": [
+            0,
+            111
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:11",
+          "segment_index": 10,
+          "span_sha256_utf8": "9546a7ac6707b34c086bc03c3ecc9cc2f5557afaa627b27f18a5804c12c3df63"
+        },
+        {
+          "nonempty_ordinal": 2296,
+          "offsets_codepoints": [
+            0,
+            22
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:12",
+          "segment_index": 11,
+          "span_sha256_utf8": "23185f8c236f00fea5a5125e7fbd05bf5ed910eefe3649aa8eec1f4d038be597"
+        },
+        {
+          "nonempty_ordinal": 2297,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:13",
+          "segment_index": 12,
+          "span_sha256_utf8": "a21a720bde94345bb1e4db9225c031918196556d1e9785879def4acb815c61b1"
+        },
+        {
+          "nonempty_ordinal": 2298,
+          "offsets_codepoints": [
+            0,
+            156
+          ],
+          "page_index": 155,
+          "ref": "Kiddushin 78b:14",
+          "segment_index": 13,
+          "span_sha256_utf8": "8bf1651f05ac01a6058d18d41ed96d7a526d4a28f906e443916925ad574f3bd6"
+        },
+        {
+          "nonempty_ordinal": 2299,
+          "offsets_codepoints": [
+            0,
+            45
+          ],
+          "page_index": 156,
+          "ref": "Kiddushin 79a:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "05873e80ef972ec0139b6d77f163b8038f9396aa7bfbed448cb72fe90aae1e40"
+        }
+      ]
+    },
+    {
+      "block_id": "block_000240",
+      "inclusion_probability": 0.12448132780082988,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ],
+      "spans": [
+        {
+          "nonempty_ordinal": 2400,
+          "offsets_codepoints": [
+            0,
+            13
+          ],
+          "page_index": 163,
+          "ref": "Kiddushin 82b:1",
+          "segment_index": 0,
+          "span_sha256_utf8": "c1673dc3ec2eaf035a8deb3187a4dd84366f27c43bb517b5fbe99077cf3522d5"
+        },
+        {
+          "nonempty_ordinal": 2401,
+          "offsets_codepoints": [
+            0,
+            282
+          ],
+          "page_index": 163,
+          "ref": "Kiddushin 82b:2",
+          "segment_index": 1,
+          "span_sha256_utf8": "39ac0b44b2f5fdd3069dbdf6a78bb5aa91903ca4f6dd456e7cfeb3956d3d04be"
+        },
+        {
+          "nonempty_ordinal": 2402,
+          "offsets_codepoints": [
+            0,
+            191
+          ],
+          "page_index": 163,
+          "ref": "Kiddushin 82b:3",
+          "segment_index": 2,
+          "span_sha256_utf8": "31f9b89df9282a2240d0303e2c2f871d130cfcb074dcb178b7c4446ba6aba5d5"
+        },
+        {
+          "nonempty_ordinal": 2403,
+          "offsets_codepoints": [
+            0,
+            339
+          ],
+          "page_index": 163,
+          "ref": "Kiddushin 82b:4",
+          "segment_index": 3,
+          "span_sha256_utf8": "ca97356c906ca7c2e29544826f9a382e6ed32bc067691ac6c848503551db0185"
+        },
+        {
+          "nonempty_ordinal": 2404,
+          "offsets_codepoints": [
+            0,
+            406
+          ],
+          "page_index": 163,
+          "ref": "Kiddushin 82b:5",
+          "segment_index": 4,
+          "span_sha256_utf8": "587d9305a1f8e5f46224b29995b018f1b8385bbccf780fab272b05b2d295b3a8"
+        },
+        {
+          "nonempty_ordinal": 2405,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "page_index": 163,
+          "ref": "Kiddushin 82b:6",
+          "segment_index": 5,
+          "span_sha256_utf8": "e394d896a27a312b6d537ad04b24a766671c71f8c02bbced0dee60bd98ec5bf1"
+        }
+      ]
+    }
+  ],
+  "review_policy": "No worker annotations or flags used. No sugya counts exist until independent reading. AI review is not human certification.",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 241,
+    "inclusion_probability_denominator": 241,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000006",
+      "block_000011",
+      "block_000012",
+      "block_000019",
+      "block_000021",
+      "block_000024",
+      "block_000038",
+      "block_000058",
+      "block_000062",
+      "block_000063",
+      "block_000064",
+      "block_000074",
+      "block_000077",
+      "block_000081",
+      "block_000082",
+      "block_000087",
+      "block_000090",
+      "block_000123",
+      "block_000126",
+      "block_000128",
+      "block_000132",
+      "block_000143",
+      "block_000166",
+      "block_000191",
+      "block_000194",
+      "block_000200",
+      "block_000212",
+      "block_000225",
+      "block_000227",
+      "block_000229"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "sampling_grid": [
+    {
+      "block_id": "block_000000",
+      "first_ref": "Kiddushin 2a:1",
+      "last_ref": "Kiddushin 2b:5",
+      "membership_sha256": "edd853381c14245a880224cd2160144ad4591d79af0f9af21f148d5b4c9d5108",
+      "nonempty_ordinal_end_exclusive": 10,
+      "nonempty_ordinal_start": 0
+    },
+    {
+      "block_id": "block_000001",
+      "first_ref": "Kiddushin 2b:6",
+      "last_ref": "Kiddushin 2b:15",
+      "membership_sha256": "72923b3869507f758e47a82a05ad71724900e69ea294acbe35636883b6d0cea3",
+      "nonempty_ordinal_end_exclusive": 20,
+      "nonempty_ordinal_start": 10
+    },
+    {
+      "block_id": "block_000002",
+      "first_ref": "Kiddushin 3a:1",
+      "last_ref": "Kiddushin 3b:3",
+      "membership_sha256": "09ce7746d92241b07236118f273e99dfba0cefc9b5f9f1dde1a07b7f21b2f7ae",
+      "nonempty_ordinal_end_exclusive": 30,
+      "nonempty_ordinal_start": 20
+    },
+    {
+      "block_id": "block_000003",
+      "first_ref": "Kiddushin 3b:4",
+      "last_ref": "Kiddushin 4a:1",
+      "membership_sha256": "4c16607c838189010b68d4641cacd100f9ec233460e3d62d18f64717c3844128",
+      "nonempty_ordinal_end_exclusive": 40,
+      "nonempty_ordinal_start": 30
+    },
+    {
+      "block_id": "block_000004",
+      "first_ref": "Kiddushin 4a:2",
+      "last_ref": "Kiddushin 4a:11",
+      "membership_sha256": "aaaa1b5a12a7f9a50781ee91984da712d6d6147f54db4bb1c30270abdea71c44",
+      "nonempty_ordinal_end_exclusive": 50,
+      "nonempty_ordinal_start": 40
+    },
+    {
+      "block_id": "block_000005",
+      "first_ref": "Kiddushin 4a:12",
+      "last_ref": "Kiddushin 4a:21",
+      "membership_sha256": "785998a02ef241f4cdc00fbf0870f7497c0ce6a77b41547fa26027ecff0d02dd",
+      "nonempty_ordinal_end_exclusive": 60,
+      "nonempty_ordinal_start": 50
+    },
+    {
+      "block_id": "block_000006",
+      "first_ref": "Kiddushin 4b:1",
+      "last_ref": "Kiddushin 4b:10",
+      "membership_sha256": "fda67c35641437c464eb17f48aa5623dd6fac7065b8bdb5b3ac6aeb69f5061fc",
+      "nonempty_ordinal_end_exclusive": 70,
+      "nonempty_ordinal_start": 60
+    },
+    {
+      "block_id": "block_000007",
+      "first_ref": "Kiddushin 4b:11",
+      "last_ref": "Kiddushin 5a:7",
+      "membership_sha256": "96ff6b6bf83f740faf9bc0942b8362f5a0a75350254a6a821839b9332ac862c3",
+      "nonempty_ordinal_end_exclusive": 80,
+      "nonempty_ordinal_start": 70
+    },
+    {
+      "block_id": "block_000008",
+      "first_ref": "Kiddushin 5a:8",
+      "last_ref": "Kiddushin 5a:17",
+      "membership_sha256": "650235669724460de1bcee75c85361cf7ebcaf178144268dcfe3d34894589d3d",
+      "nonempty_ordinal_end_exclusive": 90,
+      "nonempty_ordinal_start": 80
+    },
+    {
+      "block_id": "block_000009",
+      "first_ref": "Kiddushin 5a:18",
+      "last_ref": "Kiddushin 5b:8",
+      "membership_sha256": "99dc8741acca1841e98c70a84e855eecb5c0391efe1447eb4032a88d59ebfc69",
+      "nonempty_ordinal_end_exclusive": 100,
+      "nonempty_ordinal_start": 90
+    },
+    {
+      "block_id": "block_000010",
+      "first_ref": "Kiddushin 5b:9",
+      "last_ref": "Kiddushin 5b:18",
+      "membership_sha256": "d47b19b615dce9cbd54cd3c5bfe0765086fb3d6e1288716a7dc5f80b75ed2203",
+      "nonempty_ordinal_end_exclusive": 110,
+      "nonempty_ordinal_start": 100
+    },
+    {
+      "block_id": "block_000011",
+      "first_ref": "Kiddushin 6a:1",
+      "last_ref": "Kiddushin 6a:10",
+      "membership_sha256": "e573ea9d42e036731eb6e3254dede9eb6bb7a75c5313a154bd54f506360dd5c7",
+      "nonempty_ordinal_end_exclusive": 120,
+      "nonempty_ordinal_start": 110
+    },
+    {
+      "block_id": "block_000012",
+      "first_ref": "Kiddushin 6a:11",
+      "last_ref": "Kiddushin 6b:5",
+      "membership_sha256": "cdea1b2db43b259616b6373aff19041e9ab7bb029f918a0a8ed0a639103b29e0",
+      "nonempty_ordinal_end_exclusive": 130,
+      "nonempty_ordinal_start": 120
+    },
+    {
+      "block_id": "block_000013",
+      "first_ref": "Kiddushin 6b:6",
+      "last_ref": "Kiddushin 6b:15",
+      "membership_sha256": "d7c0015771a1bb12fc006e6ebf0cc7ad0ae6753b0cc72417199152a63f89ca18",
+      "nonempty_ordinal_end_exclusive": 140,
+      "nonempty_ordinal_start": 130
+    },
+    {
+      "block_id": "block_000014",
+      "first_ref": "Kiddushin 7a:1",
+      "last_ref": "Kiddushin 7a:10",
+      "membership_sha256": "dd8589424ad63b8384c5d0b480bdd1f6ba1a812de76010ef608952b33eb1c40a",
+      "nonempty_ordinal_end_exclusive": 150,
+      "nonempty_ordinal_start": 140
+    },
+    {
+      "block_id": "block_000015",
+      "first_ref": "Kiddushin 7a:11",
+      "last_ref": "Kiddushin 7b:2",
+      "membership_sha256": "e6d4bc232fd3149da2e536d48c19b228940b8b43b67da531e40f30ebf74305ff",
+      "nonempty_ordinal_end_exclusive": 160,
+      "nonempty_ordinal_start": 150
+    },
+    {
+      "block_id": "block_000016",
+      "first_ref": "Kiddushin 7b:3",
+      "last_ref": "Kiddushin 7b:12",
+      "membership_sha256": "029a4448da4f7ec1228831fef23034e4b58810770370eb1d07a687f517374de8",
+      "nonempty_ordinal_end_exclusive": 170,
+      "nonempty_ordinal_start": 160
+    },
+    {
+      "block_id": "block_000017",
+      "first_ref": "Kiddushin 8a:1",
+      "last_ref": "Kiddushin 8a:10",
+      "membership_sha256": "2f5016f7cff8f6e29cb5368487488ee399da79300107f243058fd449a8e68428",
+      "nonempty_ordinal_end_exclusive": 180,
+      "nonempty_ordinal_start": 170
+    },
+    {
+      "block_id": "block_000018",
+      "first_ref": "Kiddushin 8a:11",
+      "last_ref": "Kiddushin 8a:20",
+      "membership_sha256": "dec64ec1093dfdf2bd2b990f0912e3aaed07f792c7995152f569ab967c9c0991",
+      "nonempty_ordinal_end_exclusive": 190,
+      "nonempty_ordinal_start": 180
+    },
+    {
+      "block_id": "block_000019",
+      "first_ref": "Kiddushin 8a:21",
+      "last_ref": "Kiddushin 8b:7",
+      "membership_sha256": "997a885c26cc8c373c3d9cc6e4ff6329cca28efa83bee62e1d4aea7b1b62a587",
+      "nonempty_ordinal_end_exclusive": 200,
+      "nonempty_ordinal_start": 190
+    },
+    {
+      "block_id": "block_000020",
+      "first_ref": "Kiddushin 8b:8",
+      "last_ref": "Kiddushin 9a:2",
+      "membership_sha256": "7787994b9cfd136d09ef7b21b800cf4c479d8280b61b204ae0efc5b7f6dcc0e1",
+      "nonempty_ordinal_end_exclusive": 210,
+      "nonempty_ordinal_start": 200
+    },
+    {
+      "block_id": "block_000021",
+      "first_ref": "Kiddushin 9a:3",
+      "last_ref": "Kiddushin 9a:12",
+      "membership_sha256": "df180c64c756ff1857f1ae7f012d944b7dae0dc2504cc8feaa56b7ab7a3323d7",
+      "nonempty_ordinal_end_exclusive": 220,
+      "nonempty_ordinal_start": 210
+    },
+    {
+      "block_id": "block_000022",
+      "first_ref": "Kiddushin 9a:13",
+      "last_ref": "Kiddushin 9b:9",
+      "membership_sha256": "085334824129a8456c04de5fd51f8d71537f82c7ea5f82d88ef2aea83a0a8897",
+      "nonempty_ordinal_end_exclusive": 230,
+      "nonempty_ordinal_start": 220
+    },
+    {
+      "block_id": "block_000023",
+      "first_ref": "Kiddushin 9b:10",
+      "last_ref": "Kiddushin 9b:19",
+      "membership_sha256": "3661ca6c74e8f5eb269353582332f2691d451967ecffe3980ffb7e08620db2d0",
+      "nonempty_ordinal_end_exclusive": 240,
+      "nonempty_ordinal_start": 230
+    },
+    {
+      "block_id": "block_000024",
+      "first_ref": "Kiddushin 9b:20",
+      "last_ref": "Kiddushin 10a:8",
+      "membership_sha256": "ea78878e7d4e8c4cc70284254c10578ebbd37d67776807707ed1641e4d0bd7a6",
+      "nonempty_ordinal_end_exclusive": 250,
+      "nonempty_ordinal_start": 240
+    },
+    {
+      "block_id": "block_000025",
+      "first_ref": "Kiddushin 10a:9",
+      "last_ref": "Kiddushin 10b:8",
+      "membership_sha256": "a81e0638fda9b4df4896d6567fe69a8284d98a1e80ca8a9e89a07df41e337bd5",
+      "nonempty_ordinal_end_exclusive": 260,
+      "nonempty_ordinal_start": 250
+    },
+    {
+      "block_id": "block_000026",
+      "first_ref": "Kiddushin 10b:9",
+      "last_ref": "Kiddushin 11a:3",
+      "membership_sha256": "4644fe61abd64bcf2234a10f4a953aaee61f1e7bea8ea9d4d0d8c76108bc16b8",
+      "nonempty_ordinal_end_exclusive": 270,
+      "nonempty_ordinal_start": 260
+    },
+    {
+      "block_id": "block_000027",
+      "first_ref": "Kiddushin 11a:4",
+      "last_ref": "Kiddushin 11b:3",
+      "membership_sha256": "82d0c806ce1c21f70dbf4628a86d91efb2168eac59d5c25d5c88c406bda7480a",
+      "nonempty_ordinal_end_exclusive": 280,
+      "nonempty_ordinal_start": 270
+    },
+    {
+      "block_id": "block_000028",
+      "first_ref": "Kiddushin 11b:4",
+      "last_ref": "Kiddushin 12a:3",
+      "membership_sha256": "f1070f5bb8128e63e088a4c1db040837cac9fafc99fe3ecb9682c8f2d18521e6",
+      "nonempty_ordinal_end_exclusive": 290,
+      "nonempty_ordinal_start": 280
+    },
+    {
+      "block_id": "block_000029",
+      "first_ref": "Kiddushin 12a:4",
+      "last_ref": "Kiddushin 12a:13",
+      "membership_sha256": "78150859412dd0090b1b560cc88f95ad528b770056442527ef016829ad52fbd4",
+      "nonempty_ordinal_end_exclusive": 300,
+      "nonempty_ordinal_start": 290
+    },
+    {
+      "block_id": "block_000030",
+      "first_ref": "Kiddushin 12a:14",
+      "last_ref": "Kiddushin 12b:7",
+      "membership_sha256": "63bcf025ac60678b1ce6dd673cf35dc0d4aa71102c554314355310fb78fe9c05",
+      "nonempty_ordinal_end_exclusive": 310,
+      "nonempty_ordinal_start": 300
+    },
+    {
+      "block_id": "block_000031",
+      "first_ref": "Kiddushin 12b:8",
+      "last_ref": "Kiddushin 13a:4",
+      "membership_sha256": "f7150025751f8cda894b83d976880e9e6fe69b21791361f8d48bb195d35ee047",
+      "nonempty_ordinal_end_exclusive": 320,
+      "nonempty_ordinal_start": 310
+    },
+    {
+      "block_id": "block_000032",
+      "first_ref": "Kiddushin 13a:5",
+      "last_ref": "Kiddushin 13a:14",
+      "membership_sha256": "aebf57ce186cc67c8503eabc3e39204172df5e3cb071e5e8102f3d427a4068ce",
+      "nonempty_ordinal_end_exclusive": 330,
+      "nonempty_ordinal_start": 320
+    },
+    {
+      "block_id": "block_000033",
+      "first_ref": "Kiddushin 13a:15",
+      "last_ref": "Kiddushin 13b:8",
+      "membership_sha256": "0f5e710202140703d29c20c48d5beb10c18ecd54f98e5bdafcbc797fd2508d90",
+      "nonempty_ordinal_end_exclusive": 340,
+      "nonempty_ordinal_start": 330
+    },
+    {
+      "block_id": "block_000034",
+      "first_ref": "Kiddushin 13b:9",
+      "last_ref": "Kiddushin 14a:1",
+      "membership_sha256": "f271e57e9b0fdaed817fa3cf12f5d576a0360e1ff1152bff3f1bbe27ea1f3320",
+      "nonempty_ordinal_end_exclusive": 350,
+      "nonempty_ordinal_start": 340
+    },
+    {
+      "block_id": "block_000035",
+      "first_ref": "Kiddushin 14a:2",
+      "last_ref": "Kiddushin 14a:11",
+      "membership_sha256": "7ca51da15318d018eb6e637dbbdb5f3e999c680c8ea496c728dc692b0b98c2f4",
+      "nonempty_ordinal_end_exclusive": 360,
+      "nonempty_ordinal_start": 350
+    },
+    {
+      "block_id": "block_000036",
+      "first_ref": "Kiddushin 14a:12",
+      "last_ref": "Kiddushin 14b:2",
+      "membership_sha256": "69860c4517827dbbab6893fc7062cd3f086de313a5a0c7ffd155fe8592deb405",
+      "nonempty_ordinal_end_exclusive": 370,
+      "nonempty_ordinal_start": 360
+    },
+    {
+      "block_id": "block_000037",
+      "first_ref": "Kiddushin 14b:3",
+      "last_ref": "Kiddushin 14b:12",
+      "membership_sha256": "59872778b4ebb8ecdf3a05fd4405ce5e9991eaf89d66b32579f496f1f6f3b24e",
+      "nonempty_ordinal_end_exclusive": 380,
+      "nonempty_ordinal_start": 370
+    },
+    {
+      "block_id": "block_000038",
+      "first_ref": "Kiddushin 14b:13",
+      "last_ref": "Kiddushin 15a:7",
+      "membership_sha256": "1ce5b9b67a81d8455eb165000c0bdb1ef109a47e0cd3e50b2c7f71c3aef67061",
+      "nonempty_ordinal_end_exclusive": 390,
+      "nonempty_ordinal_start": 380
+    },
+    {
+      "block_id": "block_000039",
+      "first_ref": "Kiddushin 15a:8",
+      "last_ref": "Kiddushin 15a:17",
+      "membership_sha256": "4024d8c5f9952b99003dc6833e80812ef99e3c510526f6e2ab88c23b09083602",
+      "nonempty_ordinal_end_exclusive": 400,
+      "nonempty_ordinal_start": 390
+    },
+    {
+      "block_id": "block_000040",
+      "first_ref": "Kiddushin 15a:18",
+      "last_ref": "Kiddushin 15b:4",
+      "membership_sha256": "f462b828815b336009b19e7bafc37826adc7307c670c56a9f64fd5599b25d08b",
+      "nonempty_ordinal_end_exclusive": 410,
+      "nonempty_ordinal_start": 400
+    },
+    {
+      "block_id": "block_000041",
+      "first_ref": "Kiddushin 15b:5",
+      "last_ref": "Kiddushin 15b:14",
+      "membership_sha256": "3e123beadd607b9ce8a7c743eae66d7bb73a01a41f9a34851a1a1ab7f6e13b08",
+      "nonempty_ordinal_end_exclusive": 420,
+      "nonempty_ordinal_start": 410
+    },
+    {
+      "block_id": "block_000042",
+      "first_ref": "Kiddushin 16a:1",
+      "last_ref": "Kiddushin 16a:10",
+      "membership_sha256": "06decaea4c00a87dfde6b4430c01cb68f3a3e13dc4a9e24fcb05dfa108b52b47",
+      "nonempty_ordinal_end_exclusive": 430,
+      "nonempty_ordinal_start": 420
+    },
+    {
+      "block_id": "block_000043",
+      "first_ref": "Kiddushin 16a:11",
+      "last_ref": "Kiddushin 16b:2",
+      "membership_sha256": "2358dcdf85df929e1da30fcee91109e18e621ec24f63ace3cde8a2a404cd6371",
+      "nonempty_ordinal_end_exclusive": 440,
+      "nonempty_ordinal_start": 430
+    },
+    {
+      "block_id": "block_000044",
+      "first_ref": "Kiddushin 16b:3",
+      "last_ref": "Kiddushin 16b:12",
+      "membership_sha256": "d654a053da8193ae113c0f65b42d606e817c72d59582142f41f8bc47bbdf37fc",
+      "nonempty_ordinal_end_exclusive": 450,
+      "nonempty_ordinal_start": 440
+    },
+    {
+      "block_id": "block_000045",
+      "first_ref": "Kiddushin 16b:13",
+      "last_ref": "Kiddushin 17a:1",
+      "membership_sha256": "efd2401e770ecf9f46ecfa5f91b600a8c06ab054a2f2c579ba09ee5a8bcfe39f",
+      "nonempty_ordinal_end_exclusive": 460,
+      "nonempty_ordinal_start": 450
+    },
+    {
+      "block_id": "block_000046",
+      "first_ref": "Kiddushin 17a:2",
+      "last_ref": "Kiddushin 17a:11",
+      "membership_sha256": "b325bd033285dcb250ad9aef6e94f66f2e78ff9199c787352abeb86391847853",
+      "nonempty_ordinal_end_exclusive": 470,
+      "nonempty_ordinal_start": 460
+    },
+    {
+      "block_id": "block_000047",
+      "first_ref": "Kiddushin 17a:12",
+      "last_ref": "Kiddushin 17b:3",
+      "membership_sha256": "35f9f3c0a057a4e7f54accb67d9941b04d3812b840170da906264dbcdfb1baa2",
+      "nonempty_ordinal_end_exclusive": 480,
+      "nonempty_ordinal_start": 470
+    },
+    {
+      "block_id": "block_000048",
+      "first_ref": "Kiddushin 17b:4",
+      "last_ref": "Kiddushin 17b:13",
+      "membership_sha256": "bb98ce8b77aeeabdebaea3c277381cb4d92fae28fe0bd157bec63c4110f24f93",
+      "nonempty_ordinal_end_exclusive": 490,
+      "nonempty_ordinal_start": 480
+    },
+    {
+      "block_id": "block_000049",
+      "first_ref": "Kiddushin 17b:14",
+      "last_ref": "Kiddushin 18a:4",
+      "membership_sha256": "273c334abfcc47547751c87cfcca82b6a56d786a10e79eaec0f7bb2914e01e12",
+      "nonempty_ordinal_end_exclusive": 500,
+      "nonempty_ordinal_start": 490
+    },
+    {
+      "block_id": "block_000050",
+      "first_ref": "Kiddushin 18a:5",
+      "last_ref": "Kiddushin 18a:14",
+      "membership_sha256": "da254374dfee15d45aec9cc3dd656d6750b84681e688db5f4602d9c2a82e3cfb",
+      "nonempty_ordinal_end_exclusive": 510,
+      "nonempty_ordinal_start": 500
+    },
+    {
+      "block_id": "block_000051",
+      "first_ref": "Kiddushin 18a:15",
+      "last_ref": "Kiddushin 18b:8",
+      "membership_sha256": "32a805320613ad96bed90dd2707a1964b77dc52511b2d6df9ad2fccfd266f6b2",
+      "nonempty_ordinal_end_exclusive": 520,
+      "nonempty_ordinal_start": 510
+    },
+    {
+      "block_id": "block_000052",
+      "first_ref": "Kiddushin 18b:9",
+      "last_ref": "Kiddushin 19a:8",
+      "membership_sha256": "7c22f4681348b0d6e74dcec68bd4b6658f96addddc4bb195b8694297e13f168c",
+      "nonempty_ordinal_end_exclusive": 530,
+      "nonempty_ordinal_start": 520
+    },
+    {
+      "block_id": "block_000053",
+      "first_ref": "Kiddushin 19a:9",
+      "last_ref": "Kiddushin 19b:3",
+      "membership_sha256": "e5d7a8e863ca7b082c8b3699f1ad400b90ba851d367dd8dfb7117994e552bad2",
+      "nonempty_ordinal_end_exclusive": 540,
+      "nonempty_ordinal_start": 530
+    },
+    {
+      "block_id": "block_000054",
+      "first_ref": "Kiddushin 19b:4",
+      "last_ref": "Kiddushin 19b:13",
+      "membership_sha256": "58c2fcb5a9a4eb585310530460748f03cb1b2448b27ac9510ba178c5fc743d25",
+      "nonempty_ordinal_end_exclusive": 550,
+      "nonempty_ordinal_start": 540
+    },
+    {
+      "block_id": "block_000055",
+      "first_ref": "Kiddushin 19b:14",
+      "last_ref": "Kiddushin 20a:6",
+      "membership_sha256": "a0e73f87ec69ea0cfd4a17a445e243eefe68192924ad464ca358459f50869ae9",
+      "nonempty_ordinal_end_exclusive": 560,
+      "nonempty_ordinal_start": 550
+    },
+    {
+      "block_id": "block_000056",
+      "first_ref": "Kiddushin 20a:7",
+      "last_ref": "Kiddushin 20a:16",
+      "membership_sha256": "8090fb9d05a6872cc68f897028f039d36a7033988f3dcb0bf22b8b8f50b0c92e",
+      "nonempty_ordinal_end_exclusive": 570,
+      "nonempty_ordinal_start": 560
+    },
+    {
+      "block_id": "block_000057",
+      "first_ref": "Kiddushin 20a:17",
+      "last_ref": "Kiddushin 20b:4",
+      "membership_sha256": "30e66bf50f445ba7f16e1e2fbff65110f9959c1be4bf5a4e22617f17a787c82a",
+      "nonempty_ordinal_end_exclusive": 580,
+      "nonempty_ordinal_start": 570
+    },
+    {
+      "block_id": "block_000058",
+      "first_ref": "Kiddushin 20b:5",
+      "last_ref": "Kiddushin 20b:14",
+      "membership_sha256": "7d561ac4a30f83eb6774d8aa30645a9c030a1e5f158a63e634535d87cb902b1e",
+      "nonempty_ordinal_end_exclusive": 590,
+      "nonempty_ordinal_start": 580
+    },
+    {
+      "block_id": "block_000059",
+      "first_ref": "Kiddushin 20b:15",
+      "last_ref": "Kiddushin 21a:2",
+      "membership_sha256": "102792502d7e27f19868cbd421ebb4633aff48e7d2f6617863cce5aeab0fdb4e",
+      "nonempty_ordinal_end_exclusive": 600,
+      "nonempty_ordinal_start": 590
+    },
+    {
+      "block_id": "block_000060",
+      "first_ref": "Kiddushin 21a:3",
+      "last_ref": "Kiddushin 21a:12",
+      "membership_sha256": "8a5eb0584d7eb7034f52cd575fd818fda59178ecb69aba5a66ba0b72fe6f73b5",
+      "nonempty_ordinal_end_exclusive": 610,
+      "nonempty_ordinal_start": 600
+    },
+    {
+      "block_id": "block_000061",
+      "first_ref": "Kiddushin 21a:13",
+      "last_ref": "Kiddushin 21b:1",
+      "membership_sha256": "370b4731f62db7ab4532fcd52cec7047f52c5bb7b57b5b6747dc99f88b16e6d0",
+      "nonempty_ordinal_end_exclusive": 620,
+      "nonempty_ordinal_start": 610
+    },
+    {
+      "block_id": "block_000062",
+      "first_ref": "Kiddushin 21b:2",
+      "last_ref": "Kiddushin 21b:11",
+      "membership_sha256": "b4121a58cd9e486331f65c1ba30391035ee3f8e55f2dc435c88d0b51ee1745a7",
+      "nonempty_ordinal_end_exclusive": 630,
+      "nonempty_ordinal_start": 620
+    },
+    {
+      "block_id": "block_000063",
+      "first_ref": "Kiddushin 21b:12",
+      "last_ref": "Kiddushin 21b:21",
+      "membership_sha256": "ff17b4c19e8f8d8637f837a2c9f5c26402bbf7f4fd3d55fa0b7000a9affb56dc",
+      "nonempty_ordinal_end_exclusive": 640,
+      "nonempty_ordinal_start": 630
+    },
+    {
+      "block_id": "block_000064",
+      "first_ref": "Kiddushin 22a:1",
+      "last_ref": "Kiddushin 22a:10",
+      "membership_sha256": "801245ed43ab9dc6e3248cce8cda879247cea564c1b1e6f50c55ab72a6d13b8b",
+      "nonempty_ordinal_end_exclusive": 650,
+      "nonempty_ordinal_start": 640
+    },
+    {
+      "block_id": "block_000065",
+      "first_ref": "Kiddushin 22a:11",
+      "last_ref": "Kiddushin 22b:6",
+      "membership_sha256": "494523386fba87ff1f782f047d4deebe36e02a3bb7d8abaf4cf6f79118ea5e1d",
+      "nonempty_ordinal_end_exclusive": 660,
+      "nonempty_ordinal_start": 650
+    },
+    {
+      "block_id": "block_000066",
+      "first_ref": "Kiddushin 22b:7",
+      "last_ref": "Kiddushin 22b:16",
+      "membership_sha256": "166fd718557a6e24cf3b529b5939fbbb1405240ca6253a7ac383993afa15eb82",
+      "nonempty_ordinal_end_exclusive": 670,
+      "nonempty_ordinal_start": 660
+    },
+    {
+      "block_id": "block_000067",
+      "first_ref": "Kiddushin 22b:17",
+      "last_ref": "Kiddushin 23a:7",
+      "membership_sha256": "f812da601fa75e613465d6feee6def9a6dc3de438c16f3669b3d4ed727c22075",
+      "nonempty_ordinal_end_exclusive": 680,
+      "nonempty_ordinal_start": 670
+    },
+    {
+      "block_id": "block_000068",
+      "first_ref": "Kiddushin 23a:8",
+      "last_ref": "Kiddushin 23b:1",
+      "membership_sha256": "943fcdb30d14dd6f78adae2c9e9a26cb0273bc69dca300eddc3a55ad4e4f87da",
+      "nonempty_ordinal_end_exclusive": 690,
+      "nonempty_ordinal_start": 680
+    },
+    {
+      "block_id": "block_000069",
+      "first_ref": "Kiddushin 23b:2",
+      "last_ref": "Kiddushin 23b:11",
+      "membership_sha256": "93643308c7e9a02bd4f113cc0880a7dd9c185ebdb12b936e29ee8df08b43908a",
+      "nonempty_ordinal_end_exclusive": 700,
+      "nonempty_ordinal_start": 690
+    },
+    {
+      "block_id": "block_000070",
+      "first_ref": "Kiddushin 24a:1",
+      "last_ref": "Kiddushin 24b:3",
+      "membership_sha256": "565782020acdb255397809798dd777b53586a3c7c83a7e55d421175f20a26e1e",
+      "nonempty_ordinal_end_exclusive": 710,
+      "nonempty_ordinal_start": 700
+    },
+    {
+      "block_id": "block_000071",
+      "first_ref": "Kiddushin 24b:4",
+      "last_ref": "Kiddushin 24b:13",
+      "membership_sha256": "90e1b9edd31870738b3f58bfe802d25c01b47decac0986dd1a729ed30a5b4085",
+      "nonempty_ordinal_end_exclusive": 720,
+      "nonempty_ordinal_start": 710
+    },
+    {
+      "block_id": "block_000072",
+      "first_ref": "Kiddushin 24b:14",
+      "last_ref": "Kiddushin 25a:2",
+      "membership_sha256": "8402de0f6efa5044043d3ef947d936a6cef499ade303043d01fadec1cbd807e9",
+      "nonempty_ordinal_end_exclusive": 730,
+      "nonempty_ordinal_start": 720
+    },
+    {
+      "block_id": "block_000073",
+      "first_ref": "Kiddushin 25a:3",
+      "last_ref": "Kiddushin 25a:12",
+      "membership_sha256": "efb2f682c7b4b5ff2a664a5c9f2d50d7a8f170ebb3752361e6f1b315e70ca7ab",
+      "nonempty_ordinal_end_exclusive": 740,
+      "nonempty_ordinal_start": 730
+    },
+    {
+      "block_id": "block_000074",
+      "first_ref": "Kiddushin 25a:13",
+      "last_ref": "Kiddushin 25b:2",
+      "membership_sha256": "85e274c770aa448d7e16d9c6dcea42e1e6d100cecb28a63af0ab296aaf14c8bf",
+      "nonempty_ordinal_end_exclusive": 750,
+      "nonempty_ordinal_start": 740
+    },
+    {
+      "block_id": "block_000075",
+      "first_ref": "Kiddushin 25b:3",
+      "last_ref": "Kiddushin 26a:6",
+      "membership_sha256": "1e5b8deaa032488c8ba365598c20d450d63258d23f5d0327432b49aaadd9c160",
+      "nonempty_ordinal_end_exclusive": 760,
+      "nonempty_ordinal_start": 750
+    },
+    {
+      "block_id": "block_000076",
+      "first_ref": "Kiddushin 26a:7",
+      "last_ref": "Kiddushin 26b:2",
+      "membership_sha256": "abd0d208b96095aa0af315ba7bbb4101bc1c0ab567cc404206f4a6690ca59717",
+      "nonempty_ordinal_end_exclusive": 770,
+      "nonempty_ordinal_start": 760
+    },
+    {
+      "block_id": "block_000077",
+      "first_ref": "Kiddushin 26b:3",
+      "last_ref": "Kiddushin 27a:1",
+      "membership_sha256": "02c343af689ffa9d470f40e980895abbf2bb90663adb95a375c3a5063ecf3474",
+      "nonempty_ordinal_end_exclusive": 780,
+      "nonempty_ordinal_start": 770
+    },
+    {
+      "block_id": "block_000078",
+      "first_ref": "Kiddushin 27a:2",
+      "last_ref": "Kiddushin 27a:11",
+      "membership_sha256": "12f3589f76b5f0063022faecb65b60cc59d98eb4441b2e616d9340875950ad56",
+      "nonempty_ordinal_end_exclusive": 790,
+      "nonempty_ordinal_start": 780
+    },
+    {
+      "block_id": "block_000079",
+      "first_ref": "Kiddushin 27a:12",
+      "last_ref": "Kiddushin 27b:8",
+      "membership_sha256": "0a102df4d50faf3c314d3ea933dcad73d45d5626b3b3701aaf16637069f31d67",
+      "nonempty_ordinal_end_exclusive": 800,
+      "nonempty_ordinal_start": 790
+    },
+    {
+      "block_id": "block_000080",
+      "first_ref": "Kiddushin 27b:9",
+      "last_ref": "Kiddushin 28a:7",
+      "membership_sha256": "268e041321d7c4f2db66568837b11a8361b65b65f59ce9fb342e28ef0515c92f",
+      "nonempty_ordinal_end_exclusive": 810,
+      "nonempty_ordinal_start": 800
+    },
+    {
+      "block_id": "block_000081",
+      "first_ref": "Kiddushin 28a:8",
+      "last_ref": "Kiddushin 28b:7",
+      "membership_sha256": "fd68514bd6b7c25f54364fa8c0d8db216739a5e965d349ab35b741c47a50133b",
+      "nonempty_ordinal_end_exclusive": 820,
+      "nonempty_ordinal_start": 810
+    },
+    {
+      "block_id": "block_000082",
+      "first_ref": "Kiddushin 28b:8",
+      "last_ref": "Kiddushin 29a:6",
+      "membership_sha256": "d78197c498aba37be5021ff11bd9edbf256f25c6c3a57df4c62b4e61a48c6659",
+      "nonempty_ordinal_end_exclusive": 830,
+      "nonempty_ordinal_start": 820
+    },
+    {
+      "block_id": "block_000083",
+      "first_ref": "Kiddushin 29a:7",
+      "last_ref": "Kiddushin 29a:16",
+      "membership_sha256": "88e2045827e0e359d0b168e21ecef15470134ce65f0a78f4966d182a8757245a",
+      "nonempty_ordinal_end_exclusive": 840,
+      "nonempty_ordinal_start": 830
+    },
+    {
+      "block_id": "block_000084",
+      "first_ref": "Kiddushin 29a:17",
+      "last_ref": "Kiddushin 29b:7",
+      "membership_sha256": "42a3ccaf0d13329bdae85fecfdc74d8d37eb0a147b119922ab768b38009b2cca",
+      "nonempty_ordinal_end_exclusive": 850,
+      "nonempty_ordinal_start": 840
+    },
+    {
+      "block_id": "block_000085",
+      "first_ref": "Kiddushin 29b:8",
+      "last_ref": "Kiddushin 29b:17",
+      "membership_sha256": "c20403c3accd5f095b8e27bb176ef6151fea0f89c13961bc6c9f807e042a2a18",
+      "nonempty_ordinal_end_exclusive": 860,
+      "nonempty_ordinal_start": 850
+    },
+    {
+      "block_id": "block_000086",
+      "first_ref": "Kiddushin 29b:18",
+      "last_ref": "Kiddushin 30a:8",
+      "membership_sha256": "111a831876f15304b2d522d74b55663958c1b2678b425a5200bf272203ee3eda",
+      "nonempty_ordinal_end_exclusive": 870,
+      "nonempty_ordinal_start": 860
+    },
+    {
+      "block_id": "block_000087",
+      "first_ref": "Kiddushin 30a:9",
+      "last_ref": "Kiddushin 30b:3",
+      "membership_sha256": "a466064e725722b47be122f4b042cbf27ffced04c964cd66fc5e08a15940dace",
+      "nonempty_ordinal_end_exclusive": 880,
+      "nonempty_ordinal_start": 870
+    },
+    {
+      "block_id": "block_000088",
+      "first_ref": "Kiddushin 30b:4",
+      "last_ref": "Kiddushin 30b:13",
+      "membership_sha256": "97c1abf9ee30dfd2c50a1a86e06a84ddf907f02dbdd0a16191481ebcee31a4e2",
+      "nonempty_ordinal_end_exclusive": 890,
+      "nonempty_ordinal_start": 880
+    },
+    {
+      "block_id": "block_000089",
+      "first_ref": "Kiddushin 30b:14",
+      "last_ref": "Kiddushin 31a:1",
+      "membership_sha256": "8982b065a0a3f307d35b1fefcb27920b352daee8d5f362d826d3044cb67202d0",
+      "nonempty_ordinal_end_exclusive": 900,
+      "nonempty_ordinal_start": 890
+    },
+    {
+      "block_id": "block_000090",
+      "first_ref": "Kiddushin 31a:2",
+      "last_ref": "Kiddushin 31a:11",
+      "membership_sha256": "79ccfc66e8a90e722cd58ce3342b74cfa0aecf0096d31d0c964e5445cfb68f26",
+      "nonempty_ordinal_end_exclusive": 910,
+      "nonempty_ordinal_start": 900
+    },
+    {
+      "block_id": "block_000091",
+      "first_ref": "Kiddushin 31a:12",
+      "last_ref": "Kiddushin 31b:7",
+      "membership_sha256": "9fff6d2597c8f61b17048ec0d4e210a3775ac5e3dec981f14dc3251678ed798d",
+      "nonempty_ordinal_end_exclusive": 920,
+      "nonempty_ordinal_start": 910
+    },
+    {
+      "block_id": "block_000092",
+      "first_ref": "Kiddushin 31b:8",
+      "last_ref": "Kiddushin 32a:2",
+      "membership_sha256": "d4a7cca47a4bc15265123acd4b76c9964283b1b1439cec7b82e6dbf1f99a5dcb",
+      "nonempty_ordinal_end_exclusive": 930,
+      "nonempty_ordinal_start": 920
+    },
+    {
+      "block_id": "block_000093",
+      "first_ref": "Kiddushin 32a:3",
+      "last_ref": "Kiddushin 32a:12",
+      "membership_sha256": "a06e575391d4db9beea13bbb86059af7b3185cae4056af7cfd0b98a913100f1f",
+      "nonempty_ordinal_end_exclusive": 940,
+      "nonempty_ordinal_start": 930
+    },
+    {
+      "block_id": "block_000094",
+      "first_ref": "Kiddushin 32a:13",
+      "last_ref": "Kiddushin 32b:6",
+      "membership_sha256": "07dc22833badd99a603f8d89f4bc21818cfb6318cca0eb251d0d1cb01884a68e",
+      "nonempty_ordinal_end_exclusive": 950,
+      "nonempty_ordinal_start": 940
+    },
+    {
+      "block_id": "block_000095",
+      "first_ref": "Kiddushin 32b:7",
+      "last_ref": "Kiddushin 33a:1",
+      "membership_sha256": "eb826daf658b3e12b211527954f016121098d4a6257bea235786df676caf2a09",
+      "nonempty_ordinal_end_exclusive": 960,
+      "nonempty_ordinal_start": 950
+    },
+    {
+      "block_id": "block_000096",
+      "first_ref": "Kiddushin 33a:2",
+      "last_ref": "Kiddushin 33a:11",
+      "membership_sha256": "03f4f1aa5b15011358da31d81f79d70216e69976fb95b32e28a2361e8a6cf0dd",
+      "nonempty_ordinal_end_exclusive": 970,
+      "nonempty_ordinal_start": 960
+    },
+    {
+      "block_id": "block_000097",
+      "first_ref": "Kiddushin 33a:12",
+      "last_ref": "Kiddushin 33b:2",
+      "membership_sha256": "179846076fd64219713587e9b7620abf5a66972b05dd74db5a866ea8dd5f4bea",
+      "nonempty_ordinal_end_exclusive": 980,
+      "nonempty_ordinal_start": 970
+    },
+    {
+      "block_id": "block_000098",
+      "first_ref": "Kiddushin 33b:3",
+      "last_ref": "Kiddushin 33b:12",
+      "membership_sha256": "8a8b8ba7b2bf5282be5718a834a976ff8526cd4a99d42484b25dc6c9d708efa6",
+      "nonempty_ordinal_end_exclusive": 990,
+      "nonempty_ordinal_start": 980
+    },
+    {
+      "block_id": "block_000099",
+      "first_ref": "Kiddushin 33b:13",
+      "last_ref": "Kiddushin 34a:5",
+      "membership_sha256": "b226d3226f38f0a8b051282a4c442d6443baf5f5c44605006e2dba10b45b69d5",
+      "nonempty_ordinal_end_exclusive": 1000,
+      "nonempty_ordinal_start": 990
+    },
+    {
+      "block_id": "block_000100",
+      "first_ref": "Kiddushin 34a:6",
+      "last_ref": "Kiddushin 34b:4",
+      "membership_sha256": "80ff40500111da571e01029396e0a4dcab515e7c6713d9f2648a688629d135c2",
+      "nonempty_ordinal_end_exclusive": 1010,
+      "nonempty_ordinal_start": 1000
+    },
+    {
+      "block_id": "block_000101",
+      "first_ref": "Kiddushin 34b:5",
+      "last_ref": "Kiddushin 35a:1",
+      "membership_sha256": "6c732fb14b19b521415307864a3ece0333c1ecc0ed4de668f82275c50c896e00",
+      "nonempty_ordinal_end_exclusive": 1020,
+      "nonempty_ordinal_start": 1010
+    },
+    {
+      "block_id": "block_000102",
+      "first_ref": "Kiddushin 35a:2",
+      "last_ref": "Kiddushin 35a:11",
+      "membership_sha256": "4e3bc11aba9c1b8ce70981ef1a2dabe5b847fc6e190c1b18b37379f24ea4f70e",
+      "nonempty_ordinal_end_exclusive": 1030,
+      "nonempty_ordinal_start": 1020
+    },
+    {
+      "block_id": "block_000103",
+      "first_ref": "Kiddushin 35b:1",
+      "last_ref": "Kiddushin 35b:10",
+      "membership_sha256": "b793e158f373a7ae66b0cdeb0e4d974e9642b1e805701c692e9b6a8c5a5e4191",
+      "nonempty_ordinal_end_exclusive": 1040,
+      "nonempty_ordinal_start": 1030
+    },
+    {
+      "block_id": "block_000104",
+      "first_ref": "Kiddushin 35b:11",
+      "last_ref": "Kiddushin 36a:1",
+      "membership_sha256": "4097bc0f3481a43800e8527ee693d08df3beb0f9e321f2a91067a5423fa308ee",
+      "nonempty_ordinal_end_exclusive": 1050,
+      "nonempty_ordinal_start": 1040
+    },
+    {
+      "block_id": "block_000105",
+      "first_ref": "Kiddushin 36a:2",
+      "last_ref": "Kiddushin 36a:11",
+      "membership_sha256": "0bce859c89319ef34b9a59ee8af5f0beb20bd50801d617455ec1e33737d7e66e",
+      "nonempty_ordinal_end_exclusive": 1060,
+      "nonempty_ordinal_start": 1050
+    },
+    {
+      "block_id": "block_000106",
+      "first_ref": "Kiddushin 36a:12",
+      "last_ref": "Kiddushin 36a:21",
+      "membership_sha256": "ca16d539cea62e828c93f2ce4fbf377d5e2e3332f2f826eac0aef1da5e0b61b1",
+      "nonempty_ordinal_end_exclusive": 1070,
+      "nonempty_ordinal_start": 1060
+    },
+    {
+      "block_id": "block_000107",
+      "first_ref": "Kiddushin 36a:22",
+      "last_ref": "Kiddushin 37a:1",
+      "membership_sha256": "9aeb9da360332d8ae0edf516dddbc2ff2171cfd4e35e14ecacacf3311bf88004",
+      "nonempty_ordinal_end_exclusive": 1080,
+      "nonempty_ordinal_start": 1070
+    },
+    {
+      "block_id": "block_000108",
+      "first_ref": "Kiddushin 37a:2",
+      "last_ref": "Kiddushin 37a:11",
+      "membership_sha256": "e5544f817c853945ef34127c858d859fc21eef7975624597aa36bea27d558eae",
+      "nonempty_ordinal_end_exclusive": 1090,
+      "nonempty_ordinal_start": 1080
+    },
+    {
+      "block_id": "block_000109",
+      "first_ref": "Kiddushin 37a:12",
+      "last_ref": "Kiddushin 37b:5",
+      "membership_sha256": "aa001263d3325a72efb64356f837f16dead63a68e36cfa779565946eb6fde690",
+      "nonempty_ordinal_end_exclusive": 1100,
+      "nonempty_ordinal_start": 1090
+    },
+    {
+      "block_id": "block_000110",
+      "first_ref": "Kiddushin 37b:6",
+      "last_ref": "Kiddushin 38a:1",
+      "membership_sha256": "ece8f7d65253a89b9430890aab71f17c97503c2f0e4d5d00bcf231dce567e3d3",
+      "nonempty_ordinal_end_exclusive": 1110,
+      "nonempty_ordinal_start": 1100
+    },
+    {
+      "block_id": "block_000111",
+      "first_ref": "Kiddushin 38a:2",
+      "last_ref": "Kiddushin 38a:11",
+      "membership_sha256": "90af7b9321766260f49c36bd379ed68c6933e3c1fed68681bc7faf61afa096b4",
+      "nonempty_ordinal_end_exclusive": 1120,
+      "nonempty_ordinal_start": 1110
+    },
+    {
+      "block_id": "block_000112",
+      "first_ref": "Kiddushin 38b:1",
+      "last_ref": "Kiddushin 38b:10",
+      "membership_sha256": "757ad15ffa1d5ae8d236e7e2f769b5da2187e3f98cea289c7d61189c7710ebc0",
+      "nonempty_ordinal_end_exclusive": 1130,
+      "nonempty_ordinal_start": 1120
+    },
+    {
+      "block_id": "block_000113",
+      "first_ref": "Kiddushin 38b:11",
+      "last_ref": "Kiddushin 39a:8",
+      "membership_sha256": "174a5df8a4220710429ced5b9a6ffeefeea796345fd996ec8779639a5c41b83d",
+      "nonempty_ordinal_end_exclusive": 1140,
+      "nonempty_ordinal_start": 1130
+    },
+    {
+      "block_id": "block_000114",
+      "first_ref": "Kiddushin 39a:9",
+      "last_ref": "Kiddushin 39b:4",
+      "membership_sha256": "a76918c675478c622809f27208e63781e8363f5959621ada958644cb6f076b74",
+      "nonempty_ordinal_end_exclusive": 1150,
+      "nonempty_ordinal_start": 1140
+    },
+    {
+      "block_id": "block_000115",
+      "first_ref": "Kiddushin 39b:5",
+      "last_ref": "Kiddushin 39b:14",
+      "membership_sha256": "987e26f75c92b9ce174df8932fcf2e25c7df80bda0964c2c4062711fbd1a35f3",
+      "nonempty_ordinal_end_exclusive": 1160,
+      "nonempty_ordinal_start": 1150
+    },
+    {
+      "block_id": "block_000116",
+      "first_ref": "Kiddushin 39b:15",
+      "last_ref": "Kiddushin 40a:8",
+      "membership_sha256": "0db17c55e16f3e61678c9231fb3109e1519883437de500816166795c80a7422b",
+      "nonempty_ordinal_end_exclusive": 1170,
+      "nonempty_ordinal_start": 1160
+    },
+    {
+      "block_id": "block_000117",
+      "first_ref": "Kiddushin 40a:9",
+      "last_ref": "Kiddushin 40a:18",
+      "membership_sha256": "a138975c877c13ca9e155fa76e2dbaab5004adf168aa69dc3f4072ea44ae9a1d",
+      "nonempty_ordinal_end_exclusive": 1180,
+      "nonempty_ordinal_start": 1170
+    },
+    {
+      "block_id": "block_000118",
+      "first_ref": "Kiddushin 40a:19",
+      "last_ref": "Kiddushin 40b:7",
+      "membership_sha256": "57681fd90fbcd46c02ef8f926ad5bfc7cb930d6baf707a400768d8c16a118cc2",
+      "nonempty_ordinal_end_exclusive": 1190,
+      "nonempty_ordinal_start": 1180
+    },
+    {
+      "block_id": "block_000119",
+      "first_ref": "Kiddushin 40b:8",
+      "last_ref": "Kiddushin 41a:3",
+      "membership_sha256": "19a3a2052aabbf7aba73c0f103845e88a9f44268ecf99ecaabe45da5d1ce62fe",
+      "nonempty_ordinal_end_exclusive": 1200,
+      "nonempty_ordinal_start": 1190
+    },
+    {
+      "block_id": "block_000120",
+      "first_ref": "Kiddushin 41a:4",
+      "last_ref": "Kiddushin 41b:1",
+      "membership_sha256": "ab9f267c5abbb35c14b72e63ee518b0fed965b2cc73f2117f5aeb0dac26b19d7",
+      "nonempty_ordinal_end_exclusive": 1210,
+      "nonempty_ordinal_start": 1200
+    },
+    {
+      "block_id": "block_000121",
+      "first_ref": "Kiddushin 41b:2",
+      "last_ref": "Kiddushin 41b:11",
+      "membership_sha256": "56ca80207575ae3d37ef11a34ca34373f68d2a6b8b29dd4851018c74b2d6f720",
+      "nonempty_ordinal_end_exclusive": 1220,
+      "nonempty_ordinal_start": 1210
+    },
+    {
+      "block_id": "block_000122",
+      "first_ref": "Kiddushin 41b:12",
+      "last_ref": "Kiddushin 42a:6",
+      "membership_sha256": "6e9a6d8b9db2631d489c6512edb3bc15fac1946389206c02a28be4477ca17dda",
+      "nonempty_ordinal_end_exclusive": 1230,
+      "nonempty_ordinal_start": 1220
+    },
+    {
+      "block_id": "block_000123",
+      "first_ref": "Kiddushin 42a:7",
+      "last_ref": "Kiddushin 42b:5",
+      "membership_sha256": "4279ce8c8db64e13a9ee1c7f8a17c6f60e89461173d928836d8439c153e2bc98",
+      "nonempty_ordinal_end_exclusive": 1240,
+      "nonempty_ordinal_start": 1230
+    },
+    {
+      "block_id": "block_000124",
+      "first_ref": "Kiddushin 42b:6",
+      "last_ref": "Kiddushin 43a:2",
+      "membership_sha256": "034e917fedd0cce4149bd7d759b1197aba95d7a09908ad0f4d140de233dd7b0c",
+      "nonempty_ordinal_end_exclusive": 1250,
+      "nonempty_ordinal_start": 1240
+    },
+    {
+      "block_id": "block_000125",
+      "first_ref": "Kiddushin 43a:3",
+      "last_ref": "Kiddushin 43a:12",
+      "membership_sha256": "d0e5f68b4c2fcb4876277288ca69f180f1b26e160c0089dfe410a8ec12af009f",
+      "nonempty_ordinal_end_exclusive": 1260,
+      "nonempty_ordinal_start": 1250
+    },
+    {
+      "block_id": "block_000126",
+      "first_ref": "Kiddushin 43a:13",
+      "last_ref": "Kiddushin 43b:4",
+      "membership_sha256": "8c0677a248066ca3bc39d2d4dde70c12d2754179b54a27eaaf626482adc2d204",
+      "nonempty_ordinal_end_exclusive": 1270,
+      "nonempty_ordinal_start": 1260
+    },
+    {
+      "block_id": "block_000127",
+      "first_ref": "Kiddushin 43b:5",
+      "last_ref": "Kiddushin 44a:4",
+      "membership_sha256": "28fdf3dde8d7213f0d5f63f2477fad9abd031e4ffda6dfb4badef873e3e4c580",
+      "nonempty_ordinal_end_exclusive": 1280,
+      "nonempty_ordinal_start": 1270
+    },
+    {
+      "block_id": "block_000128",
+      "first_ref": "Kiddushin 44a:5",
+      "last_ref": "Kiddushin 44a:14",
+      "membership_sha256": "be8a95b14c67ff74994517e62ecf113d88febf139619b76d8ce72517f361d3c0",
+      "nonempty_ordinal_end_exclusive": 1290,
+      "nonempty_ordinal_start": 1280
+    },
+    {
+      "block_id": "block_000129",
+      "first_ref": "Kiddushin 44a:15",
+      "last_ref": "Kiddushin 44b:7",
+      "membership_sha256": "fcfc63ad2037e1247071df09deefc2eb0be1459bf6216ed7a6522ba1c5f44aa7",
+      "nonempty_ordinal_end_exclusive": 1300,
+      "nonempty_ordinal_start": 1290
+    },
+    {
+      "block_id": "block_000130",
+      "first_ref": "Kiddushin 44b:8",
+      "last_ref": "Kiddushin 45a:3",
+      "membership_sha256": "c63df39d0fdce8b19895d839916c1d67078f9ed6259bf960848765161334e984",
+      "nonempty_ordinal_end_exclusive": 1310,
+      "nonempty_ordinal_start": 1300
+    },
+    {
+      "block_id": "block_000131",
+      "first_ref": "Kiddushin 45a:4",
+      "last_ref": "Kiddushin 45b:7",
+      "membership_sha256": "6dcd59f4b9c9490a99aedff2bb7a8286598445c6d5fc691d11256bc7e5ac283c",
+      "nonempty_ordinal_end_exclusive": 1320,
+      "nonempty_ordinal_start": 1310
+    },
+    {
+      "block_id": "block_000132",
+      "first_ref": "Kiddushin 45b:8",
+      "last_ref": "Kiddushin 46a:6",
+      "membership_sha256": "148f1ce2fd5fed8f02e6c5d90a78d0a94d9d1925d824850562eb3622e5635c59",
+      "nonempty_ordinal_end_exclusive": 1330,
+      "nonempty_ordinal_start": 1320
+    },
+    {
+      "block_id": "block_000133",
+      "first_ref": "Kiddushin 46a:7",
+      "last_ref": "Kiddushin 46b:5",
+      "membership_sha256": "708b257adff1d849cefb1832aca06baea0c7d43be11e8abfa0b2c18919284618",
+      "nonempty_ordinal_end_exclusive": 1340,
+      "nonempty_ordinal_start": 1330
+    },
+    {
+      "block_id": "block_000134",
+      "first_ref": "Kiddushin 46b:6",
+      "last_ref": "Kiddushin 47a:1",
+      "membership_sha256": "c7b91fa075a3637985d4f6f5af14c872789f702d73c0867ae965af2128e0e4f7",
+      "nonempty_ordinal_end_exclusive": 1350,
+      "nonempty_ordinal_start": 1340
+    },
+    {
+      "block_id": "block_000135",
+      "first_ref": "Kiddushin 47a:2",
+      "last_ref": "Kiddushin 47a:11",
+      "membership_sha256": "24b93b8af5be879616b599e833df71d3c8b271242ac96020ea3d48f0127448e5",
+      "nonempty_ordinal_end_exclusive": 1360,
+      "nonempty_ordinal_start": 1350
+    },
+    {
+      "block_id": "block_000136",
+      "first_ref": "Kiddushin 47a:12",
+      "last_ref": "Kiddushin 47b:7",
+      "membership_sha256": "6b0230160fd6d9c521da04e2c8030dbe8dbcbde603f2b911182b739cbbccb3e5",
+      "nonempty_ordinal_end_exclusive": 1370,
+      "nonempty_ordinal_start": 1360
+    },
+    {
+      "block_id": "block_000137",
+      "first_ref": "Kiddushin 47b:8",
+      "last_ref": "Kiddushin 48a:2",
+      "membership_sha256": "6da8bde59d20b3923775e6ed050226d11f21258e4302177693e78f650366323f",
+      "nonempty_ordinal_end_exclusive": 1380,
+      "nonempty_ordinal_start": 1370
+    },
+    {
+      "block_id": "block_000138",
+      "first_ref": "Kiddushin 48a:3",
+      "last_ref": "Kiddushin 48a:12",
+      "membership_sha256": "1d694a5c48f5f9631ec70df8290c876eb23b91c6f04d5f738dd7b3affc42c633",
+      "nonempty_ordinal_end_exclusive": 1390,
+      "nonempty_ordinal_start": 1380
+    },
+    {
+      "block_id": "block_000139",
+      "first_ref": "Kiddushin 48a:13",
+      "last_ref": "Kiddushin 48b:7",
+      "membership_sha256": "37befa79b4d004ec81c03710bcbe6d88189c97cef45c3b7c75a6f5824ec82454",
+      "nonempty_ordinal_end_exclusive": 1400,
+      "nonempty_ordinal_start": 1390
+    },
+    {
+      "block_id": "block_000140",
+      "first_ref": "Kiddushin 48b:8",
+      "last_ref": "Kiddushin 49a:4",
+      "membership_sha256": "4b7292306a306b1e27fc704e55cd5acba42451cc9aac13f02dff30aca2f53ad8",
+      "nonempty_ordinal_end_exclusive": 1410,
+      "nonempty_ordinal_start": 1400
+    },
+    {
+      "block_id": "block_000141",
+      "first_ref": "Kiddushin 49a:5",
+      "last_ref": "Kiddushin 49a:14",
+      "membership_sha256": "5cea8bfb68f8df98fe6da19ec7a6501fb6642a54252418cd462e24f9cc3049d1",
+      "nonempty_ordinal_end_exclusive": 1420,
+      "nonempty_ordinal_start": 1410
+    },
+    {
+      "block_id": "block_000142",
+      "first_ref": "Kiddushin 49b:1",
+      "last_ref": "Kiddushin 49b:10",
+      "membership_sha256": "5c4b54671fb879bcf64caa9cab4619b12b1286cfb873d89d7ec76753c8a51c39",
+      "nonempty_ordinal_end_exclusive": 1430,
+      "nonempty_ordinal_start": 1420
+    },
+    {
+      "block_id": "block_000143",
+      "first_ref": "Kiddushin 49b:11",
+      "last_ref": "Kiddushin 50a:7",
+      "membership_sha256": "41f3883f0dfc80b51a6246c8b29577ffacf60f35ed4df11a4491aa8b6e850af4",
+      "nonempty_ordinal_end_exclusive": 1440,
+      "nonempty_ordinal_start": 1430
+    },
+    {
+      "block_id": "block_000144",
+      "first_ref": "Kiddushin 50a:8",
+      "last_ref": "Kiddushin 50a:17",
+      "membership_sha256": "332ec31b376eb23e5afd3c05511515c83d1f64632d390211d0309c058b1d4a10",
+      "nonempty_ordinal_end_exclusive": 1450,
+      "nonempty_ordinal_start": 1440
+    },
+    {
+      "block_id": "block_000145",
+      "first_ref": "Kiddushin 50a:18",
+      "last_ref": "Kiddushin 50b:8",
+      "membership_sha256": "e6e6023daeb6ad60e43267b022c5f29d47cbd156e2a29ea9ea2c0e8f1ac85d36",
+      "nonempty_ordinal_end_exclusive": 1460,
+      "nonempty_ordinal_start": 1450
+    },
+    {
+      "block_id": "block_000146",
+      "first_ref": "Kiddushin 50b:9",
+      "last_ref": "Kiddushin 51a:4",
+      "membership_sha256": "210b1474a866b1e939a374c147e70487e15355df4c4f65e4fc73cd9b68e90861",
+      "nonempty_ordinal_end_exclusive": 1470,
+      "nonempty_ordinal_start": 1460
+    },
+    {
+      "block_id": "block_000147",
+      "first_ref": "Kiddushin 51a:5",
+      "last_ref": "Kiddushin 51b:1",
+      "membership_sha256": "8a95e4b8beb0c61e84b37c6ae37e8d7e96358367af80f53e38dbca446d150020",
+      "nonempty_ordinal_end_exclusive": 1480,
+      "nonempty_ordinal_start": 1470
+    },
+    {
+      "block_id": "block_000148",
+      "first_ref": "Kiddushin 51b:2",
+      "last_ref": "Kiddushin 51b:11",
+      "membership_sha256": "6e8cc0f5174f6e5f81bee694d97db466b1a86f4332910431517f7df19ebdbe55",
+      "nonempty_ordinal_end_exclusive": 1490,
+      "nonempty_ordinal_start": 1480
+    },
+    {
+      "block_id": "block_000149",
+      "first_ref": "Kiddushin 51b:12",
+      "last_ref": "Kiddushin 52a:4",
+      "membership_sha256": "56eeea2f5c6997a7311f3fa15b2f0c4bea0c0e668b48b2ad5e36d4335f54be64",
+      "nonempty_ordinal_end_exclusive": 1500,
+      "nonempty_ordinal_start": 1490
+    },
+    {
+      "block_id": "block_000150",
+      "first_ref": "Kiddushin 52a:5",
+      "last_ref": "Kiddushin 52b:3",
+      "membership_sha256": "b769286c7c9f640356e1f81364a8398a33f728251b168b6429cdf3e90502c037",
+      "nonempty_ordinal_end_exclusive": 1510,
+      "nonempty_ordinal_start": 1500
+    },
+    {
+      "block_id": "block_000151",
+      "first_ref": "Kiddushin 52b:4",
+      "last_ref": "Kiddushin 52b:13",
+      "membership_sha256": "e5694bbcc0901a6b8227a1d10fc896177cb12a0293d6ff2f425bbdadfedfefb5",
+      "nonempty_ordinal_end_exclusive": 1520,
+      "nonempty_ordinal_start": 1510
+    },
+    {
+      "block_id": "block_000152",
+      "first_ref": "Kiddushin 52b:14",
+      "last_ref": "Kiddushin 53a:6",
+      "membership_sha256": "6eb9bf271dc57a6cde88791fff44e2e2191eab12d2c583378a58b39ab759f077",
+      "nonempty_ordinal_end_exclusive": 1530,
+      "nonempty_ordinal_start": 1520
+    },
+    {
+      "block_id": "block_000153",
+      "first_ref": "Kiddushin 53a:7",
+      "last_ref": "Kiddushin 53b:1",
+      "membership_sha256": "289b2b2cc030aef56c89aba831c4d5395b4aa8cbbbdbf54322b30ecb0a932f3d",
+      "nonempty_ordinal_end_exclusive": 1540,
+      "nonempty_ordinal_start": 1530
+    },
+    {
+      "block_id": "block_000154",
+      "first_ref": "Kiddushin 53b:2",
+      "last_ref": "Kiddushin 54a:2",
+      "membership_sha256": "4a05365cf8d20a1398eee2473f96dcdf6bd26f47c3a2ad17d39a1e77135bee14",
+      "nonempty_ordinal_end_exclusive": 1550,
+      "nonempty_ordinal_start": 1540
+    },
+    {
+      "block_id": "block_000155",
+      "first_ref": "Kiddushin 54a:3",
+      "last_ref": "Kiddushin 54b:4",
+      "membership_sha256": "82f66aeb81bbec931eba1a973c5d6826e77160c5b58a58a14db98dafe8702cf6",
+      "nonempty_ordinal_end_exclusive": 1560,
+      "nonempty_ordinal_start": 1550
+    },
+    {
+      "block_id": "block_000156",
+      "first_ref": "Kiddushin 54b:5",
+      "last_ref": "Kiddushin 54b:14",
+      "membership_sha256": "e498586bd95e5d6f376077efe0077c22d1beff92d56be6de36969d23eab2fdaa",
+      "nonempty_ordinal_end_exclusive": 1570,
+      "nonempty_ordinal_start": 1560
+    },
+    {
+      "block_id": "block_000157",
+      "first_ref": "Kiddushin 54b:15",
+      "last_ref": "Kiddushin 55b:1",
+      "membership_sha256": "32755a39e8efc8b6036cb80b41897d786b81086a6f08c65977c3dbc2925dd152",
+      "nonempty_ordinal_end_exclusive": 1580,
+      "nonempty_ordinal_start": 1570
+    },
+    {
+      "block_id": "block_000158",
+      "first_ref": "Kiddushin 55b:2",
+      "last_ref": "Kiddushin 56a:2",
+      "membership_sha256": "0ce51501651b8f328b0f1eeacb790ce1badb952f692620dc967b542136231238",
+      "nonempty_ordinal_end_exclusive": 1590,
+      "nonempty_ordinal_start": 1580
+    },
+    {
+      "block_id": "block_000159",
+      "first_ref": "Kiddushin 56a:3",
+      "last_ref": "Kiddushin 56b:6",
+      "membership_sha256": "591f41b9a8aac79e72d9de51d2dc86b26743fd7caef2f1d83ae2decf4dea1d9b",
+      "nonempty_ordinal_end_exclusive": 1600,
+      "nonempty_ordinal_start": 1590
+    },
+    {
+      "block_id": "block_000160",
+      "first_ref": "Kiddushin 56b:7",
+      "last_ref": "Kiddushin 56b:16",
+      "membership_sha256": "68ee4cd313cafad16dd489b466b0960571d2d74a3fb737e388dab8731ea09326",
+      "nonempty_ordinal_end_exclusive": 1610,
+      "nonempty_ordinal_start": 1600
+    },
+    {
+      "block_id": "block_000161",
+      "first_ref": "Kiddushin 57a:1",
+      "last_ref": "Kiddushin 57a:10",
+      "membership_sha256": "a1286afb57cb50c53066411ba52d4a8f0de64d2eaed9d6a4b48ba625dd3f2bed",
+      "nonempty_ordinal_end_exclusive": 1620,
+      "nonempty_ordinal_start": 1610
+    },
+    {
+      "block_id": "block_000162",
+      "first_ref": "Kiddushin 57a:11",
+      "last_ref": "Kiddushin 57b:5",
+      "membership_sha256": "6a759ece268ebc095d4485b9de75e429179c3aeeca6ec6a3b0784d99e8c4dc40",
+      "nonempty_ordinal_end_exclusive": 1630,
+      "nonempty_ordinal_start": 1620
+    },
+    {
+      "block_id": "block_000163",
+      "first_ref": "Kiddushin 57b:6",
+      "last_ref": "Kiddushin 57b:15",
+      "membership_sha256": "69f38d1d3f04e72d9a8544c5edce2552f6d3b31a5e399bdd9c004fc8f49bf18b",
+      "nonempty_ordinal_end_exclusive": 1640,
+      "nonempty_ordinal_start": 1630
+    },
+    {
+      "block_id": "block_000164",
+      "first_ref": "Kiddushin 57b:16",
+      "last_ref": "Kiddushin 58a:7",
+      "membership_sha256": "f378bb64812675b68f387cd8f457c41064384cc1c415210cd946f51d20168231",
+      "nonempty_ordinal_end_exclusive": 1650,
+      "nonempty_ordinal_start": 1640
+    },
+    {
+      "block_id": "block_000165",
+      "first_ref": "Kiddushin 58a:8",
+      "last_ref": "Kiddushin 58b:1",
+      "membership_sha256": "a3a9010ab0676d666ac24174f88402c2925ed603e885b41b8bc7fc375f79cd64",
+      "nonempty_ordinal_end_exclusive": 1660,
+      "nonempty_ordinal_start": 1650
+    },
+    {
+      "block_id": "block_000166",
+      "first_ref": "Kiddushin 58b:2",
+      "last_ref": "Kiddushin 58b:11",
+      "membership_sha256": "50f3e019f75c8471f2b69e25e8be64e1c20cc1eb8ef70f5a3ff4fd7f67f6cbc5",
+      "nonempty_ordinal_end_exclusive": 1670,
+      "nonempty_ordinal_start": 1660
+    },
+    {
+      "block_id": "block_000167",
+      "first_ref": "Kiddushin 58b:12",
+      "last_ref": "Kiddushin 59a:6",
+      "membership_sha256": "4e187ba6c497fa092a4377fe2af5161563cc2ca1eeb8ca766f3d71b6b7ee7792",
+      "nonempty_ordinal_end_exclusive": 1680,
+      "nonempty_ordinal_start": 1670
+    },
+    {
+      "block_id": "block_000168",
+      "first_ref": "Kiddushin 59a:7",
+      "last_ref": "Kiddushin 59a:16",
+      "membership_sha256": "bb26aa762896a5c543fb51fcb8fbb5bda2561d1960e94028dee2a5ad956f9168",
+      "nonempty_ordinal_end_exclusive": 1690,
+      "nonempty_ordinal_start": 1680
+    },
+    {
+      "block_id": "block_000169",
+      "first_ref": "Kiddushin 59b:1",
+      "last_ref": "Kiddushin 59b:10",
+      "membership_sha256": "3be52cea639919aa96ae9f9fc18abeaa0424a2967766f4794d9811396634867e",
+      "nonempty_ordinal_end_exclusive": 1700,
+      "nonempty_ordinal_start": 1690
+    },
+    {
+      "block_id": "block_000170",
+      "first_ref": "Kiddushin 59b:11",
+      "last_ref": "Kiddushin 59b:20",
+      "membership_sha256": "0f723e72967d8e52bd7940af1418c523d6184df6ac3f7f635d85a9b9530fdee0",
+      "nonempty_ordinal_end_exclusive": 1710,
+      "nonempty_ordinal_start": 1700
+    },
+    {
+      "block_id": "block_000171",
+      "first_ref": "Kiddushin 60a:1",
+      "last_ref": "Kiddushin 60a:10",
+      "membership_sha256": "cf51431ec3405a97873c7bdd2d6619e7f899e4321a1089e5032455564214ff56",
+      "nonempty_ordinal_end_exclusive": 1720,
+      "nonempty_ordinal_start": 1710
+    },
+    {
+      "block_id": "block_000172",
+      "first_ref": "Kiddushin 60a:11",
+      "last_ref": "Kiddushin 60b:4",
+      "membership_sha256": "31f0795cecbc9c7290cadc858f31f8105d148900bc89376193f0a13a639ebe8f",
+      "nonempty_ordinal_end_exclusive": 1730,
+      "nonempty_ordinal_start": 1720
+    },
+    {
+      "block_id": "block_000173",
+      "first_ref": "Kiddushin 60b:5",
+      "last_ref": "Kiddushin 60b:14",
+      "membership_sha256": "e2049378cb7443e07be33c3cfc32c66845679ab66b13e9133bdf56b4d7b559b3",
+      "nonempty_ordinal_end_exclusive": 1740,
+      "nonempty_ordinal_start": 1730
+    },
+    {
+      "block_id": "block_000174",
+      "first_ref": "Kiddushin 60b:15",
+      "last_ref": "Kiddushin 61a:2",
+      "membership_sha256": "022d2aca79eb1a5f5341cc28ee526ef0156003403cab7509a3ef8d6bbeda28f3",
+      "nonempty_ordinal_end_exclusive": 1750,
+      "nonempty_ordinal_start": 1740
+    },
+    {
+      "block_id": "block_000175",
+      "first_ref": "Kiddushin 61a:3",
+      "last_ref": "Kiddushin 61b:1",
+      "membership_sha256": "f2077f22fb0eecb9bc6dc7247d61e959d4f6b3911276dc082a86f1eec542dd5f",
+      "nonempty_ordinal_end_exclusive": 1760,
+      "nonempty_ordinal_start": 1750
+    },
+    {
+      "block_id": "block_000176",
+      "first_ref": "Kiddushin 61b:2",
+      "last_ref": "Kiddushin 61b:11",
+      "membership_sha256": "e08aaba7c5bd8c15584102fa4629202ce9a6d1444830d7969c7c42c61f5a2bc4",
+      "nonempty_ordinal_end_exclusive": 1770,
+      "nonempty_ordinal_start": 1760
+    },
+    {
+      "block_id": "block_000177",
+      "first_ref": "Kiddushin 61b:12",
+      "last_ref": "Kiddushin 62a:6",
+      "membership_sha256": "93aa9d4fea6b41517685f1c94d5e15fbbc03e80bbcd985acc816c675b69aa8f2",
+      "nonempty_ordinal_end_exclusive": 1780,
+      "nonempty_ordinal_start": 1770
+    },
+    {
+      "block_id": "block_000178",
+      "first_ref": "Kiddushin 62a:7",
+      "last_ref": "Kiddushin 62b:2",
+      "membership_sha256": "806b33360b52b8730e2d9d3b3f1edf2d01cf0c53aa21b53014f606a110da785c",
+      "nonempty_ordinal_end_exclusive": 1790,
+      "nonempty_ordinal_start": 1780
+    },
+    {
+      "block_id": "block_000179",
+      "first_ref": "Kiddushin 62b:3",
+      "last_ref": "Kiddushin 63a:1",
+      "membership_sha256": "ff183662dbe199303eaaf42d181fc9e30f3ae6071af5bc42ba1ad9d1d892c1e6",
+      "nonempty_ordinal_end_exclusive": 1800,
+      "nonempty_ordinal_start": 1790
+    },
+    {
+      "block_id": "block_000180",
+      "first_ref": "Kiddushin 63a:2",
+      "last_ref": "Kiddushin 63a:11",
+      "membership_sha256": "87a53df374aff98256e39d34a4e9c0a0c7ff21acc0be34dff41e9665ca19f571",
+      "nonempty_ordinal_end_exclusive": 1810,
+      "nonempty_ordinal_start": 1800
+    },
+    {
+      "block_id": "block_000181",
+      "first_ref": "Kiddushin 63a:12",
+      "last_ref": "Kiddushin 63b:6",
+      "membership_sha256": "f07a5f0c7dcec2cd87fb6dedfc85dcfca6dfa63c54b08e4da25768ba263f7cd3",
+      "nonempty_ordinal_end_exclusive": 1820,
+      "nonempty_ordinal_start": 1810
+    },
+    {
+      "block_id": "block_000182",
+      "first_ref": "Kiddushin 63b:7",
+      "last_ref": "Kiddushin 64a:1",
+      "membership_sha256": "944c657e8c0ab9958e997e372e0ad9925313e7b3d675ca50c1a53f1fffe8942c",
+      "nonempty_ordinal_end_exclusive": 1830,
+      "nonempty_ordinal_start": 1820
+    },
+    {
+      "block_id": "block_000183",
+      "first_ref": "Kiddushin 64a:2",
+      "last_ref": "Kiddushin 64a:11",
+      "membership_sha256": "39ec7f3bd988d14225350e93343f8ce639d2e2d7f43791836c81f402e3b619b9",
+      "nonempty_ordinal_end_exclusive": 1840,
+      "nonempty_ordinal_start": 1830
+    },
+    {
+      "block_id": "block_000184",
+      "first_ref": "Kiddushin 64a:12",
+      "last_ref": "Kiddushin 64b:4",
+      "membership_sha256": "d922eabcd4b5638eef2af3a9ed884b0b16191319f530cca68ede1e5d9ccc9114",
+      "nonempty_ordinal_end_exclusive": 1850,
+      "nonempty_ordinal_start": 1840
+    },
+    {
+      "block_id": "block_000185",
+      "first_ref": "Kiddushin 64b:5",
+      "last_ref": "Kiddushin 64b:14",
+      "membership_sha256": "83a45056fa277781baca92db5f75d96507b1dfee3371b5b3bba49e2cf0eed46c",
+      "nonempty_ordinal_end_exclusive": 1860,
+      "nonempty_ordinal_start": 1850
+    },
+    {
+      "block_id": "block_000186",
+      "first_ref": "Kiddushin 64b:15",
+      "last_ref": "Kiddushin 65a:8",
+      "membership_sha256": "88621133818c3cb401893bccde24b531cbb73e18fa58fac4521be55112d3ba6c",
+      "nonempty_ordinal_end_exclusive": 1870,
+      "nonempty_ordinal_start": 1860
+    },
+    {
+      "block_id": "block_000187",
+      "first_ref": "Kiddushin 65a:9",
+      "last_ref": "Kiddushin 65a:18",
+      "membership_sha256": "18869a4daa53c7833186665ffb05730ab0ef3dca333662dd5cff347a9add3886",
+      "nonempty_ordinal_end_exclusive": 1880,
+      "nonempty_ordinal_start": 1870
+    },
+    {
+      "block_id": "block_000188",
+      "first_ref": "Kiddushin 65a:19",
+      "last_ref": "Kiddushin 65b:5",
+      "membership_sha256": "ce1092e78b14f7fc9e2310c213b245a7532cdd6086d75182a69beecc9053b02d",
+      "nonempty_ordinal_end_exclusive": 1890,
+      "nonempty_ordinal_start": 1880
+    },
+    {
+      "block_id": "block_000189",
+      "first_ref": "Kiddushin 65b:6",
+      "last_ref": "Kiddushin 66a:2",
+      "membership_sha256": "defb201b7020a69f72f152f2557bae2b7c3132d0f2c0a5dfcfec7419aaa5997f",
+      "nonempty_ordinal_end_exclusive": 1900,
+      "nonempty_ordinal_start": 1890
+    },
+    {
+      "block_id": "block_000190",
+      "first_ref": "Kiddushin 66a:3",
+      "last_ref": "Kiddushin 66a:12",
+      "membership_sha256": "5fb31de3ec0b20916738fd86584cb19c31109d443ba65c10c5f099ed00f9416e",
+      "nonempty_ordinal_end_exclusive": 1910,
+      "nonempty_ordinal_start": 1900
+    },
+    {
+      "block_id": "block_000191",
+      "first_ref": "Kiddushin 66a:13",
+      "last_ref": "Kiddushin 66b:5",
+      "membership_sha256": "03d24f1031b5cf20a3f2831977a5f0edc92708918f716e2f9d9a771fcca5f9da",
+      "nonempty_ordinal_end_exclusive": 1920,
+      "nonempty_ordinal_start": 1910
+    },
+    {
+      "block_id": "block_000192",
+      "first_ref": "Kiddushin 66b:6",
+      "last_ref": "Kiddushin 66b:15",
+      "membership_sha256": "ead4ff799c8bc1db40dce6f3faea042850886bf568fc6074977bb05316ec8347",
+      "nonempty_ordinal_end_exclusive": 1930,
+      "nonempty_ordinal_start": 1920
+    },
+    {
+      "block_id": "block_000193",
+      "first_ref": "Kiddushin 66b:16",
+      "last_ref": "Kiddushin 67a:8",
+      "membership_sha256": "20cd4cab9df1f28a2cc491de38f03bddd225ec5683d4f6687b05582100fa0fbd",
+      "nonempty_ordinal_end_exclusive": 1940,
+      "nonempty_ordinal_start": 1930
+    },
+    {
+      "block_id": "block_000194",
+      "first_ref": "Kiddushin 67a:9",
+      "last_ref": "Kiddushin 67b:7",
+      "membership_sha256": "2ba4d48920a9724da364c28aa9c79e259027b0c0d512860e15adb06382e98379",
+      "nonempty_ordinal_end_exclusive": 1950,
+      "nonempty_ordinal_start": 1940
+    },
+    {
+      "block_id": "block_000195",
+      "first_ref": "Kiddushin 67b:8",
+      "last_ref": "Kiddushin 67b:17",
+      "membership_sha256": "b7d234c15616b9f48f4d556ab2e6b71f8bbea1ac5a31f60c7c5d05264473fe94",
+      "nonempty_ordinal_end_exclusive": 1960,
+      "nonempty_ordinal_start": 1950
+    },
+    {
+      "block_id": "block_000196",
+      "first_ref": "Kiddushin 68a:1",
+      "last_ref": "Kiddushin 68a:10",
+      "membership_sha256": "f767eed1985219a355c25000d3dbe1cf2568be58e11799476047c54ee0fbc971",
+      "nonempty_ordinal_end_exclusive": 1970,
+      "nonempty_ordinal_start": 1960
+    },
+    {
+      "block_id": "block_000197",
+      "first_ref": "Kiddushin 68a:11",
+      "last_ref": "Kiddushin 68b:7",
+      "membership_sha256": "f000e1d8dfaa3153b69faeea08afb3cd1369f026668a8d062d96fbbd9daed4c1",
+      "nonempty_ordinal_end_exclusive": 1980,
+      "nonempty_ordinal_start": 1970
+    },
+    {
+      "block_id": "block_000198",
+      "first_ref": "Kiddushin 68b:8",
+      "last_ref": "Kiddushin 69a:7",
+      "membership_sha256": "fab534674b5e09034d36f0dbec37687c81cc0559ebd926c98778a07b2b5540bd",
+      "nonempty_ordinal_end_exclusive": 1990,
+      "nonempty_ordinal_start": 1980
+    },
+    {
+      "block_id": "block_000199",
+      "first_ref": "Kiddushin 69a:8",
+      "last_ref": "Kiddushin 69b:1",
+      "membership_sha256": "57d8de5b0a3e7eda2da988fd889dbc988fccb6f8dd895b455c1a353f923b8f97",
+      "nonempty_ordinal_end_exclusive": 2000,
+      "nonempty_ordinal_start": 1990
+    },
+    {
+      "block_id": "block_000200",
+      "first_ref": "Kiddushin 69b:2",
+      "last_ref": "Kiddushin 69b:11",
+      "membership_sha256": "e04a27ef251d58777503c95b3ad1c022e0f4b043acf7208da728586928919f9b",
+      "nonempty_ordinal_end_exclusive": 2010,
+      "nonempty_ordinal_start": 2000
+    },
+    {
+      "block_id": "block_000201",
+      "first_ref": "Kiddushin 69b:12",
+      "last_ref": "Kiddushin 70a:5",
+      "membership_sha256": "a8883d7586cbd26c3c476409b2655ef6f352218dcfc05c88aec25c5d769208c1",
+      "nonempty_ordinal_end_exclusive": 2020,
+      "nonempty_ordinal_start": 2010
+    },
+    {
+      "block_id": "block_000202",
+      "first_ref": "Kiddushin 70a:6",
+      "last_ref": "Kiddushin 70a:15",
+      "membership_sha256": "c5df2abf07b7a1df17ddf0e6278615716c1e78eed5feb9029b35ee6370f5400e",
+      "nonempty_ordinal_end_exclusive": 2030,
+      "nonempty_ordinal_start": 2020
+    },
+    {
+      "block_id": "block_000203",
+      "first_ref": "Kiddushin 70a:16",
+      "last_ref": "Kiddushin 70b:8",
+      "membership_sha256": "dd80a63d4cd3b5f04f58eb28c9e8516e487a274884f6a02174f7cf0dcb320492",
+      "nonempty_ordinal_end_exclusive": 2040,
+      "nonempty_ordinal_start": 2030
+    },
+    {
+      "block_id": "block_000204",
+      "first_ref": "Kiddushin 70b:9",
+      "last_ref": "Kiddushin 71a:2",
+      "membership_sha256": "1c8347ccca20ba8ca1b354485e5ff49fd27a6c25d39598417e3b5df5d0b49a35",
+      "nonempty_ordinal_end_exclusive": 2050,
+      "nonempty_ordinal_start": 2040
+    },
+    {
+      "block_id": "block_000205",
+      "first_ref": "Kiddushin 71a:3",
+      "last_ref": "Kiddushin 71a:12",
+      "membership_sha256": "b5a81d9b12b62192df6248d5764340899af5bdd3ee809019b3396b845d844522",
+      "nonempty_ordinal_end_exclusive": 2060,
+      "nonempty_ordinal_start": 2050
+    },
+    {
+      "block_id": "block_000206",
+      "first_ref": "Kiddushin 71a:13",
+      "last_ref": "Kiddushin 71b:7",
+      "membership_sha256": "8a2456a21ecd7a15ac914005bbda9e85d5981febe8781d1950c32dcb07489283",
+      "nonempty_ordinal_end_exclusive": 2070,
+      "nonempty_ordinal_start": 2060
+    },
+    {
+      "block_id": "block_000207",
+      "first_ref": "Kiddushin 71b:8",
+      "last_ref": "Kiddushin 72a:1",
+      "membership_sha256": "8eddb4d9a68341e26f46ac76493ef515d24ea5d24e0f386322a03fe3437c19e8",
+      "nonempty_ordinal_end_exclusive": 2080,
+      "nonempty_ordinal_start": 2070
+    },
+    {
+      "block_id": "block_000208",
+      "first_ref": "Kiddushin 72a:2",
+      "last_ref": "Kiddushin 72a:11",
+      "membership_sha256": "30c73ca47043ff9fa7821c0b14d3440278669d3ca9601a6b6ab08283e1a635d1",
+      "nonempty_ordinal_end_exclusive": 2090,
+      "nonempty_ordinal_start": 2080
+    },
+    {
+      "block_id": "block_000209",
+      "first_ref": "Kiddushin 72b:1",
+      "last_ref": "Kiddushin 72b:10",
+      "membership_sha256": "8fc3275ebd9c22b0d92f4faf45410a43f95c1f3861850d6bc560daa03889cefb",
+      "nonempty_ordinal_end_exclusive": 2100,
+      "nonempty_ordinal_start": 2090
+    },
+    {
+      "block_id": "block_000210",
+      "first_ref": "Kiddushin 72b:11",
+      "last_ref": "Kiddushin 73a:5",
+      "membership_sha256": "b3b4a85e56dc186001a5fd42c04c44fd9a3ba29b52d1682ad172999334ef6578",
+      "nonempty_ordinal_end_exclusive": 2110,
+      "nonempty_ordinal_start": 2100
+    },
+    {
+      "block_id": "block_000211",
+      "first_ref": "Kiddushin 73a:6",
+      "last_ref": "Kiddushin 73a:15",
+      "membership_sha256": "a06803a19a4d6e41727bc9236b9ef2b8efccc6bc621b4bf0a5cfcb7c79f53454",
+      "nonempty_ordinal_end_exclusive": 2120,
+      "nonempty_ordinal_start": 2110
+    },
+    {
+      "block_id": "block_000212",
+      "first_ref": "Kiddushin 73a:16",
+      "last_ref": "Kiddushin 73b:7",
+      "membership_sha256": "29620507b1ed4db82d2c4639d520bfed3321b1a52ca57d45777ac25628032061",
+      "nonempty_ordinal_end_exclusive": 2130,
+      "nonempty_ordinal_start": 2120
+    },
+    {
+      "block_id": "block_000213",
+      "first_ref": "Kiddushin 73b:8",
+      "last_ref": "Kiddushin 74a:2",
+      "membership_sha256": "6c7cdb08a1504e6247a4d9d7b2d5c20fe99d906027af48fec9a3d08cd7736ff8",
+      "nonempty_ordinal_end_exclusive": 2140,
+      "nonempty_ordinal_start": 2130
+    },
+    {
+      "block_id": "block_000214",
+      "first_ref": "Kiddushin 74a:3",
+      "last_ref": "Kiddushin 74a:12",
+      "membership_sha256": "6cfa68370fd688e4927fca05cb0cbc9219f4c140450f1f04ea4a13864810ee00",
+      "nonempty_ordinal_end_exclusive": 2150,
+      "nonempty_ordinal_start": 2140
+    },
+    {
+      "block_id": "block_000215",
+      "first_ref": "Kiddushin 74a:13",
+      "last_ref": "Kiddushin 74b:7",
+      "membership_sha256": "af06e1b8d3013b515c38bf4b66f83cff7f802c5de4d04774151495abf0d0ebb2",
+      "nonempty_ordinal_end_exclusive": 2160,
+      "nonempty_ordinal_start": 2150
+    },
+    {
+      "block_id": "block_000216",
+      "first_ref": "Kiddushin 74b:8",
+      "last_ref": "Kiddushin 75a:3",
+      "membership_sha256": "659f7a0618e75f5f09a2744639f5652cf8a7f754d27be3ca9cb24bf92fe687fa",
+      "nonempty_ordinal_end_exclusive": 2170,
+      "nonempty_ordinal_start": 2160
+    },
+    {
+      "block_id": "block_000217",
+      "first_ref": "Kiddushin 75a:4",
+      "last_ref": "Kiddushin 75a:13",
+      "membership_sha256": "08b2793f9cf95740d1abb1674139ab561d1b3c2bdff6407b44298b3fd2265ac4",
+      "nonempty_ordinal_end_exclusive": 2180,
+      "nonempty_ordinal_start": 2170
+    },
+    {
+      "block_id": "block_000218",
+      "first_ref": "Kiddushin 75a:14",
+      "last_ref": "Kiddushin 75b:2",
+      "membership_sha256": "cfcd8816a0e74b340d2707b929c55484438f370b3d62b1657af0dc85b7e09b8e",
+      "nonempty_ordinal_end_exclusive": 2190,
+      "nonempty_ordinal_start": 2180
+    },
+    {
+      "block_id": "block_000219",
+      "first_ref": "Kiddushin 75b:3",
+      "last_ref": "Kiddushin 76a:3",
+      "membership_sha256": "06e43527700fa9725b550718a88de84da843ea99a8777de0ca306acf98ac0acb",
+      "nonempty_ordinal_end_exclusive": 2200,
+      "nonempty_ordinal_start": 2190
+    },
+    {
+      "block_id": "block_000220",
+      "first_ref": "Kiddushin 76a:4",
+      "last_ref": "Kiddushin 76b:1",
+      "membership_sha256": "815304965c1ab27285257cb73b5044057b0203debf597c2f95c9ae4d9a145c6c",
+      "nonempty_ordinal_end_exclusive": 2210,
+      "nonempty_ordinal_start": 2200
+    },
+    {
+      "block_id": "block_000221",
+      "first_ref": "Kiddushin 76b:2",
+      "last_ref": "Kiddushin 76b:11",
+      "membership_sha256": "63741de8cdb09cd1f3ddbeb97efd202f6125529c3729d0b892dcb19da1d51f6b",
+      "nonempty_ordinal_end_exclusive": 2220,
+      "nonempty_ordinal_start": 2210
+    },
+    {
+      "block_id": "block_000222",
+      "first_ref": "Kiddushin 76b:12",
+      "last_ref": "Kiddushin 77a:4",
+      "membership_sha256": "6e205a677704fbe8492048d61043679f0301ad446fba2b4cd12bf978077e4055",
+      "nonempty_ordinal_end_exclusive": 2230,
+      "nonempty_ordinal_start": 2220
+    },
+    {
+      "block_id": "block_000223",
+      "first_ref": "Kiddushin 77a:5",
+      "last_ref": "Kiddushin 77a:14",
+      "membership_sha256": "c74b6acb9b7a4d81fe991793feab076d73bfad819919554375cde9e0e998c807",
+      "nonempty_ordinal_end_exclusive": 2240,
+      "nonempty_ordinal_start": 2230
+    },
+    {
+      "block_id": "block_000224",
+      "first_ref": "Kiddushin 77a:15",
+      "last_ref": "Kiddushin 77b:6",
+      "membership_sha256": "b49f9b7d9a383c3980e96b8667707e20e8ab06866b9cf40ef1c025532ff0d09d",
+      "nonempty_ordinal_end_exclusive": 2250,
+      "nonempty_ordinal_start": 2240
+    },
+    {
+      "block_id": "block_000225",
+      "first_ref": "Kiddushin 77b:7",
+      "last_ref": "Kiddushin 77b:16",
+      "membership_sha256": "bf18fba945daf8dba76e75bbf0d9a8609553c00206cabb10220011a5849236b9",
+      "nonempty_ordinal_end_exclusive": 2260,
+      "nonempty_ordinal_start": 2250
+    },
+    {
+      "block_id": "block_000226",
+      "first_ref": "Kiddushin 77b:17",
+      "last_ref": "Kiddushin 78a:7",
+      "membership_sha256": "608a456104853b78f724e25a11d17a626cd7e2dc0e3b9b14252b183028b374e4",
+      "nonempty_ordinal_end_exclusive": 2270,
+      "nonempty_ordinal_start": 2260
+    },
+    {
+      "block_id": "block_000227",
+      "first_ref": "Kiddushin 78a:8",
+      "last_ref": "Kiddushin 78a:17",
+      "membership_sha256": "d0004a6f2893bbd0966292a419578be9c375e445ea484ee90d133ab174a56df6",
+      "nonempty_ordinal_end_exclusive": 2280,
+      "nonempty_ordinal_start": 2270
+    },
+    {
+      "block_id": "block_000228",
+      "first_ref": "Kiddushin 78a:18",
+      "last_ref": "Kiddushin 78b:5",
+      "membership_sha256": "97b17e83d45757bfd343886b59533ecdce7470142f6f800158d792c06703550b",
+      "nonempty_ordinal_end_exclusive": 2290,
+      "nonempty_ordinal_start": 2280
+    },
+    {
+      "block_id": "block_000229",
+      "first_ref": "Kiddushin 78b:6",
+      "last_ref": "Kiddushin 79a:1",
+      "membership_sha256": "3d022d54e01fa6a302f55cb1bb806c71581a1c0490cd2f588a4e8ea7aebd7319",
+      "nonempty_ordinal_end_exclusive": 2300,
+      "nonempty_ordinal_start": 2290
+    },
+    {
+      "block_id": "block_000230",
+      "first_ref": "Kiddushin 79a:2",
+      "last_ref": "Kiddushin 79a:11",
+      "membership_sha256": "ee8ec538b701d021bdf75e9c38ebebeef936e31ff537aa19fb143f016e0f73fd",
+      "nonempty_ordinal_end_exclusive": 2310,
+      "nonempty_ordinal_start": 2300
+    },
+    {
+      "block_id": "block_000231",
+      "first_ref": "Kiddushin 79a:12",
+      "last_ref": "Kiddushin 79b:2",
+      "membership_sha256": "a2519c7712b642af4112608cb5472089043cc76d040bed3488ca943724491383",
+      "nonempty_ordinal_end_exclusive": 2320,
+      "nonempty_ordinal_start": 2310
+    },
+    {
+      "block_id": "block_000232",
+      "first_ref": "Kiddushin 79b:3",
+      "last_ref": "Kiddushin 79b:12",
+      "membership_sha256": "384946919cf6e80c5cc8de4214fe803e26f4f8a433d320d4ec85e6caf2ae25ab",
+      "nonempty_ordinal_end_exclusive": 2330,
+      "nonempty_ordinal_start": 2320
+    },
+    {
+      "block_id": "block_000233",
+      "first_ref": "Kiddushin 79b:13",
+      "last_ref": "Kiddushin 80a:8",
+      "membership_sha256": "94021d3d05a02b8907247063be1cc94d9f411cc89f0a836818881503bc284871",
+      "nonempty_ordinal_end_exclusive": 2340,
+      "nonempty_ordinal_start": 2330
+    },
+    {
+      "block_id": "block_000234",
+      "first_ref": "Kiddushin 80a:9",
+      "last_ref": "Kiddushin 80b:7",
+      "membership_sha256": "06db4e1725b5908d588f4a648b5a41099202c3ed2fe454468fb017f39fce348d",
+      "nonempty_ordinal_end_exclusive": 2350,
+      "nonempty_ordinal_start": 2340
+    },
+    {
+      "block_id": "block_000235",
+      "first_ref": "Kiddushin 80b:8",
+      "last_ref": "Kiddushin 81a:3",
+      "membership_sha256": "79e65af9bbac000c7447ca0ac7a0a34df83445295cb6443f10082fe355b5757c",
+      "nonempty_ordinal_end_exclusive": 2360,
+      "nonempty_ordinal_start": 2350
+    },
+    {
+      "block_id": "block_000236",
+      "first_ref": "Kiddushin 81a:4",
+      "last_ref": "Kiddushin 81a:13",
+      "membership_sha256": "89c01a1d7fe318377fd548737b91a3ae9ffe4e673eeaef2daba7eb2e17e6407a",
+      "nonempty_ordinal_end_exclusive": 2370,
+      "nonempty_ordinal_start": 2360
+    },
+    {
+      "block_id": "block_000237",
+      "first_ref": "Kiddushin 81a:14",
+      "last_ref": "Kiddushin 81b:8",
+      "membership_sha256": "5596e3cb060e9b443e781f735edc39609a564774f576bb748aa47d17183b4ef0",
+      "nonempty_ordinal_end_exclusive": 2380,
+      "nonempty_ordinal_start": 2370
+    },
+    {
+      "block_id": "block_000238",
+      "first_ref": "Kiddushin 81b:9",
+      "last_ref": "Kiddushin 82a:3",
+      "membership_sha256": "fa4f724ae9cc64bfc3a5ca3b530ab33f0c46842dbd5736d2a54d3cca785e5ef3",
+      "nonempty_ordinal_end_exclusive": 2390,
+      "nonempty_ordinal_start": 2380
+    },
+    {
+      "block_id": "block_000239",
+      "first_ref": "Kiddushin 82a:4",
+      "last_ref": "Kiddushin 82a:13",
+      "membership_sha256": "a04432024d03283c504df267a60eb7b1cd547ed730fa986a0ef53eedbbede4cc",
+      "nonempty_ordinal_end_exclusive": 2400,
+      "nonempty_ordinal_start": 2390
+    },
+    {
+      "block_id": "block_000240",
+      "first_ref": "Kiddushin 82b:1",
+      "last_ref": "Kiddushin 82b:6",
+      "membership_sha256": "52833e811a778dc0c3fe18474c60c10a152a69ad71649099b6cf43ab5b69f561",
+      "nonempty_ordinal_end_exclusive": 2406,
+      "nonempty_ordinal_start": 2400
+    }
+  ],
+  "seed": 20261125,
+  "source_inventory": {
+    "empty_page_indices": [
+      0,
+      1
+    ],
+    "empty_segment_positions": [],
+    "nonempty_segments": 2406,
+    "page_positions": 164,
+    "segment_positions": 2406,
+    "whitespace_only_nonempty_positions": []
+  },
+  "source_language": "he",
+  "source_sha256": "daf594dcc08ac2763187d84655f905d14fe94be566b723bff6bb95e6c33f138f",
+  "source_version_title": "Wikisource Talmud Bavli",
+  "status": "PLAN_ONLY_NOT_REVIEWED",
+  "tractate": "Kiddushin"
+}
