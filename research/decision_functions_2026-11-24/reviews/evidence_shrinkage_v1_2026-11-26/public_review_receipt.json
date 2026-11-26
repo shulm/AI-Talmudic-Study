@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-26",
+  "reviewed_commit": "f18255c5fad37f704881ff1f9ad50cd113497236",
+  "prefit_commit": "38dfff076b90d7c08387a06bd25f3cc75f15f6ae",
+  "assignment_commit": "724be8c49808e1e1b8643d81c73267f7577439c8",
+  "disposition": {
+    "historical_audit": "INCOMPLETE",
+    "historical_numerical": "NUMERICALLY_UNRESOLVED",
+    "historical_qualification": false,
+    "available_ES_contrast": "fails all four realizations and all eight histories",
+    "new_scientific_experiment": false
+  },
+  "scope": {
+    "original_private_cache_available": false,
+    "private_array_replay_performed": false,
+    "optimizer_calls": 0,
+    "new_scientific_worlds": 0,
+    "checks": "public arithmetic, manifests, Git identities, chronology, source review, deterministic equation enumeration"
+  },
+  "integrity": {
+    "exported_git_blobs": 252,
+    "export_mismatches": 0,
+    "delivery_sha256": 233,
+    "delivery_mismatches": 0,
+    "prefit_source_sha256": 18,
+    "source_mismatches": 0,
+    "historical_blobs": 965,
+    "historical_mismatches": 0,
+    "protocol_equals_assignment": true,
+    "private_hash_bindings_only": 112
+  },
+  "inventory": {
+    "optimizer_records": 76,
+    "start_records": 76,
+    "shared_fits": 12,
+    "adaptation_batches": 64,
+    "person_solves": 1664,
+    "archive_count": 36,
+    "archive_shape_contracts": 588,
+    "query_prediction_arrays": 176
+  },
+  "recorded_private_replay": {
+    "passed_recorded_ids": 1158,
+    "declared_ids": 1160,
+    "unreached_ids": [
+      "qualification",
+      "resource_contract"
+    ],
+    "maximum_recorded_discrepancy": 2.842170943040401e-14,
+    "independently_reexecuted": false
+  },
+  "public_arithmetic": {
+    "status": "PASS",
+    "checks": 6796,
+    "failed": 0,
+    "maximum_absolute_difference": 2.0372681319713593e-10,
+    "maximum_non_evidence_absolute_difference": 3.209238430557093e-16,
+    "totals": {
+      "score_rows": 144,
+      "score_aggregates": 72,
+      "evidence_rows": 384
+    },
+    "boundaries": "Public scalar arithmetic and reported evidence summaries only; no private probability/parameter/DP cache replay and no scientific optimization.",
+    "failures": [],
+    "results": {
+      "E": {
+        "M1": {
+          "gain": 0.5747217797626615,
+          "recovery": 0.8618270513435061,
+          "contrast": 0.4082060124976935,
+          "inactive": 0.04520736526818097
+        },
+        "FIXED_MIX": {
+          "gain": 0.5410630105048474,
+          "recovery": 0.81135386782627,
+          "contrast": 0.5139788126647771,
+          "inactive": 0.035990692337120433
+        },
+        "ES": {
+          "gain": 0.5075065198592263,
+          "recovery": 0.7610340567369906,
+          "contrast": 0.5552758916530851,
+          "inactive": 9.24233619959604e-06
+        }
+      },
+      "F": {
+        "M1": {
+          "gain": 0.5888232239089292,
+          "recovery": 0.8823672966233359,
+          "contrast": 0.3943962924395885,
+          "inactive": 0.03614304462442898
+        },
+        "FIXED_MIX": {
+          "gain": 0.5543502390545179,
+          "recovery": 0.8307086099115687,
+          "contrast": 0.5043103306875716,
+          "inactive": 0.028792826539029336
+        },
+        "ES": {
+          "gain": 0.5023565481024932,
+          "recovery": 0.7527946780828492,
+          "contrast": 0.5648991786407845,
+          "inactive": -0.0
+        }
+      },
+      "G": {
+        "M1": {
+          "gain": 0.5901545254798523,
+          "recovery": 0.8845863020028456,
+          "contrast": 0.381240603292565,
+          "inactive": 0.04701056426868028
+        },
+        "FIXED_MIX": {
+          "gain": 0.5570641334236601,
+          "recovery": 0.8349869067986642,
+          "contrast": 0.4946571963094829,
+          "inactive": 0.03744078859545565
+        },
+        "ES": {
+          "gain": 0.5197100337668052,
+          "recovery": 0.778996613657667,
+          "contrast": 0.5346845079431936,
+          "inactive": -0.0
+        }
+      },
+      "H": {
+        "M1": {
+          "gain": 0.584312751756358,
+          "recovery": 0.8744847541474221,
+          "contrast": 0.4038155159265867,
+          "inactive": 0.03526785693303823
+        },
+        "FIXED_MIX": {
+          "gain": 0.549739088730787,
+          "recovery": 0.8227416745722924,
+          "contrast": 0.5118154079246646,
+          "inactive": 0.028144268789026986
+        },
+        "ES": {
+          "gain": 0.5148746916333125,
+          "recovery": 0.7705634812457912,
+          "contrast": 0.556166870719065,
+          "inactive": -0.0
+        }
+      }
+    }
+  },
+  "deterministic_math": {
+    "status": "PASS",
+    "checks": 1814,
+    "maximum_absolute_difference": 8.881784197001252e-16,
+    "feasible_count_groups": 42,
+    "ordered_assignments": 760,
+    "scope": "Deterministic non-scientific k=0,1,3,6 toy enumeration using actual evidence.py. No RNG draws, optimizer calls, scientific-fixture materialization or private-cache replay.",
+    "failures": []
+  },
+  "chronology_UTC": {
+    "issue_prefit_comment": "2026-11-25T21:18:59Z",
+    "pr_prefit_comment": "2026-11-25T21:19:00Z",
+    "executor_readback_receipt": "2026-11-25T21:19:08.928803Z",
+    "first_optimizer_start": "2026-11-25T21:19:10.988078Z",
+    "consistent": true
+  },
+  "reported_run_resources_reconciled": {
+    "command_receipts": 7,
+    "cpu_seconds_sampled": 43.203125,
+    "reviewer_cpu_seconds": 0.265625,
+    "postrun_delivery_audit_cpu_seconds": 0.453125,
+    "peak_rss_bytes_sampled": 101486592,
+    "profiled_wall_seconds": 59.37399999983609,
+    "failed_command_receipts": 2,
+    "failed_prefit_commands": 0,
+    "scientific_retries": 0,
+    "paid_calls": 0,
+    "dataset_model_download_bytes": 0,
+    "human_fits": 0,
+    "human_adaptations": 0,
+    "human_evaluations": 0,
+    "limits": {
+      "cpu_core_seconds": 3600,
+      "sampled_memory_bytes": 4294967296
+    },
+    "limitations": "All7 supervised commands included, including failure receipts and final inventory audit. Reviewer .265625 CPU seconds added separately. Polling every .05s can miss startup/exit CPU or transient RSS peaks. Shell/Git/network/orchestration and final report serialization overhead not comprehensively profiled. This is an accounted subtotal, not exact total process-tree cost.",
+    "accounted_cpu_subtotal": 43.46875,
+    "postrun_audit_accounting": "Included in seventh sampled command; internal .453125s is informational and not added again"
+  },
+  "peer_review": {
+    "scientific_source_and_arithmetic": "PASS_WITH_HISTORICAL_FAILURES_PRESERVED",
+    "numerical_inventory_and_resources": "PASS_WITH_HISTORICAL_FAILURES_PRESERVED",
+    "method_derivations": "PASS",
+    "next_assignment_cross_document": "PASS",
+    "engineering_formula_counts_and_K": "PASS",
+    "clarifications_applied": [
+      "uniform count-vector C bound",
+      "deterministic versus confidence intervals",
+      "question-independent class offset wording",
+      "fixed roundoff guard epsilon/log fields",
+      "cap-inactive field naming"
+    ]
+  },
+  "coordination": {
+    "pr18_current_commit": "cdcafb41726820265bd4e1dea5272702f2663aae",
+    "pr18_original_planning_commit": "49d7157e3998a20f646e9200c3e223bbbb58541f",
+    "pr18_status": "scientifically unexecuted; engineering repair separately reviewed",
+    "review_scope": "updated PR metadata, handoff, review comments and changed-path list only",
+    "corpus_prs_observed": [
+      14,
+      16,
+      17,
+      21,
+      22,
+      23,
+      24
+    ]
+  },
+  "new_artifact_sha256": {
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/ENGINEERING_SPEC.md": "f732ff7c5849794d89a1d152bcf9b007ccbed55f5ae7da6762959b0716a5557b",
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/METHOD_NOTE.md": "f0350b053dbcb70f0bd1c33627f2c37e2c0e7c759de4788e8925b85e7eda1576",
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/NEXT_AGENT_PROMPT.md": "9f170545f839de6be7178753a9e445f709b61c2918cfe2f7d730942283d905c1",
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/README.md": "2c34165b776d3f1660880f913ef2a3f26a890caaddf03f69a262e4cf83792841",
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/REVIEW.md": "7aa1ebce059d9831c57b6ac13a951a3d53a43007c9ea1c71b8485b8bf946b918",
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/check_math.py": "b778359018a3d88c3dec4e9e61e6e608e78bb8f0b0e285d0ebd9e42f7a950af8",
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/check_public.py": "76820bfd9b106a852c43135409b32f76822c58e953f94714ff2d15953167bbe4",
+    "research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/next_post_es_design.json": "5185820dbd0ee0247671f404b34756b11d61f835a1eb50054f1e4c045e311f7d"
+  }
+}

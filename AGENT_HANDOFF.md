@@ -1,5 +1,15 @@
 # Research handoff — updated 2026-11-25
 
+## Independent evidence-shrinkage review and next assignment — 2026-11-26
+
+Read [the PR #20 review](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/REVIEW.md), [mathematical diagnosis](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/METHOD_NOTE.md), [H0–H4 next-agent prompt](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/NEXT_AGENT_PROMPT.md), and [fixed engineering suite](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/ENGINEERING_SPEC.md).
+
+Retain PR #20 at f18255c5fad37f704881ff1f9ad50cd113497236 as INCOMPLETE / NUMERICALLY_UNRESOLVED, qualification false. Independent public checks cover 6,796 arithmetic comparisons, 1,814 deterministic equation checks, 233 delivery hashes, 18 source/protocol hashes, exact optimization/archive inventories and 965 preserved historical blobs. Private arrays were unavailable to this review. All 1,158 recorded replay checks passed; the two final declared checks were unreached, not failed comparisons. Available ES contrast fails every realization/history. The fixed .9 mixture already fails contrast in three realizations; 153 of 192 active person-history weights reach the cap and no inactive weight does.
+
+Next assignment: post_es_diagnostics_v1. Diagnose all saved personal parameters without refitting; derive deterministic optimization-error enclosures; compute exactly one uncapped ES ablation from saved predictions/evidence; implement a personwise Newton solver on a fixed 384-attempt engineering suite; provide complete future failure reporting and a concrete next-study proposal. Zero new scientific fits, historical refits or fresh scientific worlds. Publish and read back the pre-analysis checkpoint before engineering solves/private ablation. Preserve the original failed run and its missing-summary exception. The ablation is post hoc and cannot qualify PR #20. Budget600 accounted CPU seconds and1GiB sampled RSS. Return a new draft PR and issue #2 report, then stop; no merge.
+
+PR #18 remains a separate planning-only package, with its engineering repair now atcdcafb41726820265bd4e1dea5272702f2663aae; its CLI/seed bank are outside this assignment. Corpus production and review continue independently, including the parallel PR #17/#21–#24 activity observed in this review. Do not duplicate or modify that work. Text prediction can be studied empirically without claiming the .009 theorem; transporting the theorem to an estimated population predictor requires a separate argument.
+
 ## Evidence-shrinkage bounded delivery — PR20
 
 Executed PR19 G0–G4 from assignment724be8c49808e1e1b8643d81c73267f7577439c8; pre-fit38dfff076b90d7c08387a06bd25f3cc75f15f6ae was pushed and posted/read back before fitting. Read [results](research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/RESULTS.md), [handoff](research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/NEXT_HANDOFF.md), and [resource ledger](research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/RESOURCE_USAGE_FINAL.json).
