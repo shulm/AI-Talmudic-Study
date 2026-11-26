@@ -1,0 +1,331 @@
+{
+  "cohort": "targeted opening/risk; not random sample",
+  "source_only_freeze_sha256": "e2e20196c1912373f4ae672a582074537be6da4458f4d37566734eee59e91989",
+  "production_snapshot_sha256": "541cb7109cec3394bb006c7b3e9d638ad05ca8e666f1ab5b3200cce0ab90f3b7",
+  "scope": "Horayot 2a:1–3b:1; 60 core nonempty segments; context 3b:2–5",
+  "verdict": "REQUIRES_LOCAL_CORRECTIONS; no corpus-wide accuracy estimate or blanket qualification",
+  "comparison_summary": "Strong substantive agreement on versions, argument direction, Rav/Rav Assi identity, Rav Pappa explanation versus Rabbi Yohanan holder, Rav concession reported by Rava, two Shmuel reports, rejected knowledge-only inference, teiku and conditional claims. Two defect classes found in structured reporting-role and question-condition representation, plus one granularity concern. No producer files mutated.",
+  "findings": [
+    {
+      "id": "HR-D01",
+      "status": "confirmed reporting-role defect",
+      "record_ids": [
+        "hor.s02.b2.sixsevenbar.a",
+        "hor.s02.b2.sixsevenbar.p",
+        "hor.s02.b2.sixsevenbar"
+      ],
+      "frozen_source_findings": [
+        "H14"
+      ],
+      "detail": "Horayot 3a:11 explicitly says רבי שמעון בן אלעזר אומר משמו. Claim uncertainty correctly acknowledges unnamed referent, but attribution asserts position_holder Shimon ben Elazar with empty transmission_chain, and position lists him without uncertainty. This loses the explicitly reported role and propagates an unqualified holder designation despite the claim-level caution. Not a claim that the actual unnamed referent is known.",
+      "repair": "Represent Shimon ben Elazar as transmitter/speaker and unresolved reported holder; propagate unresolved antecedent to attribution/position. Retain original records and create revisions.",
+      "production_records": [
+        {
+          "content": {
+            "candidates": [
+              "רבי שמעון בן אלעזר"
+            ],
+            "role": "position_holder",
+            "scope": "רבי שמעון בן אלעזר אומר משמו שחטאו שישה והם רוב קהל או שבעה אף שאינם רוב חייבים.",
+            "surface": "רבי שמעון בן אלעזר",
+            "transmission_chain": []
+          },
+          "evidence": [
+            {
+              "end_char": 97,
+              "quote": "דתניא רבי שמעון בן אלעזר אומר משמו חטאו ששה והן רובו של קהל או שבעה אע\"פ שאינן רובו של קהל חייבין",
+              "segment_id": "seg_c937fb0278c3eebe9b48",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.sixsevenbar.a",
+          "layer": "attributions",
+          "links": [
+            "hor.s02.b2.sixsevenbar"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "hor.s02.b2.sixsevenbar",
+            "conditions": [
+              "שישה ורוב קהל או שבעה ללא רוב קהל"
+            ],
+            "holder_candidates": [
+              "רבי שמעון בן אלעזר"
+            ],
+            "local_status": "asserted; AI provisional; subsequent discussion retained separately",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 97,
+              "quote": "דתניא רבי שמעון בן אלעזר אומר משמו חטאו ששה והן רובו של קהל או שבעה אע\"פ שאינן רובו של קהל חייבין",
+              "segment_id": "seg_c937fb0278c3eebe9b48",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.sixsevenbar.p",
+          "layer": "positions",
+          "links": [
+            "hor.s02.b2.sixsevenbar"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "שישה ורוב קהל או שבעה ללא רוב קהל"
+            ],
+            "proposition": "רבי שמעון בן אלעזר אומר משמו שחטאו שישה והם רוב קהל או שבעה אף שאינם רוב חייבים.",
+            "scope": "Horayot 3a:11"
+          },
+          "evidence": [
+            {
+              "end_char": 97,
+              "quote": "דתניא רבי שמעון בן אלעזר אומר משמו חטאו ששה והן רובו של קהל או שבעה אע\"פ שאינן רובו של קהל חייבין",
+              "segment_id": "seg_c937fb0278c3eebe9b48",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.sixsevenbar",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "משמו has no explicit named referent inside this segment; no referent invented."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HR-D02",
+      "status": "confirmed question-condition omission",
+      "record_ids": [
+        "hor.s02.b2.q.twofatsq",
+        "hor.s02.b2.q.bloodq",
+        "hor.s02.b2.q.idolq",
+        "hor.s02.b2.q.courtsq"
+      ],
+      "frozen_source_findings": [
+        "H17",
+        "H18"
+      ],
+      "detail": "All four question records have empty conditions and empty links. The first three formulations omit preceding if-you-say premises, which are preserved in neighboring claims but not linked from questions. The fourth question omits the restriction to the view that the public brings (3a:22); its evidence only quotes 3a:21. Unconditional reuse of these question rows changes scope. This is a structured question-layer omission, not loss from the entire corpus: claims preserve most qualifications.",
+      "repair": "Add explicit cumulative premises to aggregation questions and link corresponding claims; restrict replacement-court question to public-brings view and cite 3a:22–3b:1. Preserve unresolved outcomes.",
+      "production_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "האם חלב הקבה וחלב הדקין מצטרפים?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 175,
+              "quote": "ואם תמצא לומר כיון דאידי ואידי חלב הוא מצטרף מיעוט בחלב שעל גבי הקבה ומיעוט בחלב שעל גבי דקין מהו הכא ודאי כיון דבתרי קראי קאתי לא מצטרף או דלמא כיון דאידי ואידי חלב הוא מצטרף",
+              "segment_id": "seg_5319961b926452e8e17b",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.q.twofatsq",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "האם חלב ודם מצטרפים?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 160,
+              "quote": "ואת\"ל שם חלב הוא ומצטרף מיעוט בחלב ומיעוט בדם מהו הכא ודאי (כיון) דתרי איסורי נינהו [וכיון דאין איסורן שוה] לא מצטרף או דלמא כיון (דאיסורן שוה) דקרבנן שוה מצטרף",
+              "segment_id": "seg_787cb30df0a294d770c1",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.q.bloodq",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "האם חלב ועבודה זרה מצטרפים?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 160,
+              "quote": "ואת\"ל כיון (דאיסורן שוה) דקרבנן שוה מצטרף מיעוט בחלב ומיעוט בעבודת כוכבים מהו הכא ודאי אין איסורן שוה ואין קרבנן שוה או דלמא כיון דאידי ואידי כרת הוא מצטרף תיקו",
+              "segment_id": "seg_49546503b9f256b4db99",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.q.idolq",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "האם מצטרפים שני מיעוטים לאחר מות בית דין והחלפתו?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 98,
+              "quote": "איבעיא להו הורו ב\"ד שחלב מותר ועשו מיעוט הקהל ומת אותו ב\"ד ועמד ב\"ד אחר וחזרו והורו ועשו מיעוט אחר",
+              "segment_id": "seg_925663b3edb5059834c3",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.q.courtsq",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    },
+    {
+      "id": "HR-U01",
+      "status": "granularity concern; not counted as confirmed wrong attribution",
+      "record_ids": [
+        "hor.s02.b2.bara",
+        "hor.s02.b2.bara.a",
+        "hor.s02.b2.bara.p"
+      ],
+      "frozen_source_findings": [
+        "H12"
+      ],
+      "detail": "The direct Meir-exempts/sages-obligate baraita is one compound claim with quoted-baraita as holder, rather than separate named alternatives. The prose is accurate and actor ambiguity is preserved. Named position retrieval cannot recover the two holders from structured holder_candidates alone.",
+      "repair": "For atomic position extraction, split the two reported alternatives with shared actor-ambiguity qualification; do not resolve which actors outside each proposed reading.",
+      "production_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "הורו ועשו; זהות העושים נידונה בהמשך"
+            ],
+            "proposition": "בברייתת הורו ועשו רבי מאיר פוטר וחכמים מחייבים.",
+            "scope": "Horayot 3a:3"
+          },
+          "evidence": [
+            {
+              "end_char": 136,
+              "quote": "ורב נחמן אמר שמואל זו דברי ר\"מ אבל חכמי' אומרי' יחיד שעשה בהוראת ב\"ד חייב מאי ר\"מ ומאי רבנן דתניא הורו ועשו רבי מאיר פוטר וחכמים מחייבין",
+              "segment_id": "seg_a93378e5a587b6298f43",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.bara",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "candidates": [
+              "ברייתא מצוטטת"
+            ],
+            "role": "position_holder",
+            "scope": "בברייתת הורו ועשו רבי מאיר פוטר וחכמים מחייבים.",
+            "surface": "ברייתא מצוטטת",
+            "transmission_chain": []
+          },
+          "evidence": [
+            {
+              "end_char": 136,
+              "quote": "ורב נחמן אמר שמואל זו דברי ר\"מ אבל חכמי' אומרי' יחיד שעשה בהוראת ב\"ד חייב מאי ר\"מ ומאי רבנן דתניא הורו ועשו רבי מאיר פוטר וחכמים מחייבין",
+              "segment_id": "seg_a93378e5a587b6298f43",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.bara.a",
+          "layer": "attributions",
+          "links": [
+            "hor.s02.b2.bara"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "hor.s02.b2.bara",
+            "conditions": [
+              "הורו ועשו; זהות העושים נידונה בהמשך"
+            ],
+            "holder_candidates": [
+              "ברייתא מצוטטת"
+            ],
+            "local_status": "asserted; AI provisional; subsequent discussion retained separately",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 136,
+              "quote": "ורב נחמן אמר שמואל זו דברי ר\"מ אבל חכמי' אומרי' יחיד שעשה בהוראת ב\"ד חייב מאי ר\"מ ומאי רבנן דתניא הורו ועשו רבי מאיר פוטר וחכמים מחייבין",
+              "segment_id": "seg_a93378e5a587b6298f43",
+              "start_char": 0
+            }
+          ],
+          "id": "hor.s02.b2.bara.p",
+          "layer": "positions",
+          "links": [
+            "hor.s02.b2.bara"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    }
+  ],
+  "measurement_limits": "18 grouped source-first findings are not an atomic claim denominator. Four question rows audited for the reported condition omission; do not turn this targeted count into a population rate. No complete structural boundary or universal evidence-fidelity audit claimed."
+}

@@ -1,0 +1,144 @@
+{
+  "accepted_proposal_chain": [
+    "113c34c9c760be3b558d22acc0ef7f3ba423aac7b19ac887536cbda77cc314a9",
+    "38300ebde1f148ffddb4a708a7e0f1fae66eba2016954e15f61f41515f982d05",
+    "f0d8321c87c410d2c824ad039bd4019fc0913ed8955fe947e91e6a95e7193586",
+    "1410609fc9661f1aa91ad7ab242c06d13460e6fbd5f51905de382c84be0267bf"
+  ],
+  "completed_unique_segments": 32,
+  "corrections": [
+    {
+      "reason": "Producer reread fixed support direction: scriptural citation supports impurity inference.",
+      "replacement": "ch03_previous_edge_fix",
+      "superseded": "ch02_zz"
+    }
+  ],
+  "epoch": 2,
+  "export_hash_verification": "all files match manifest",
+  "export_manifest_sha256": "187b61b2bf5181a8104f6d946c5fc367c2438921e842c5a968581ffaa42fea70",
+  "export_path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\exports\\bavli_chullin\\export_86ddc0d5156a",
+  "independent_review": {
+    "completed": false,
+    "reviewed_new_segments": 0,
+    "verdict": "UNREVIEWED_AI_PROVISIONAL"
+  },
+  "job_id": "bavli_chullin",
+  "limitations": [
+    "No complete tractate delivery.",
+    "Continuation read through 3b:15 as context, not counted as completed extraction beyond 3a:12.",
+    "Proposals were manually authored using helper serialization; no automatic semantic extraction, shared schema or runner modifications."
+  ],
+  "new_proposals": {
+    "ch02_2b6_3a2_initial.json": "f0d8321c87c410d2c824ad039bd4019fc0913ed8955fe947e91e6a95e7193586",
+    "ch03_3a3_3a12_initial.json": "1410609fc9661f1aa91ad7ab242c06d13460e6fbd5f51905de382c84be0267bf"
+  },
+  "newly_completed_segments": 21,
+  "next_source": "Chullin 3a:13",
+  "next_steps": [
+    "Resume source-first extraction at Chullin 3a:13 (Rav Ashi). Read through both Ravina versions and comparative discussion before resolving open tails.",
+    "Reconcile Rabbah bar Ulla 3b:12–13 with ch02_s; retain different answers as alternatives.",
+    "Complete independent source-random, endpoint, risk and task review; compare frozen source-only readings against exact record versions.",
+    "Replay accepted proposals through pinned shared runner before next promotion."
+  ],
+  "open_tails": [
+    "ch01_s_m",
+    "ch02_s",
+    "ch03_s"
+  ],
+  "owner": "L05/chullin",
+  "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "remaining_segments_per_layer": 4361,
+  "replay": {
+    "completed_by_layer": {
+      "attributions": 32,
+      "claims": 32,
+      "edges": 32,
+      "positions": 32,
+      "questions": 32,
+      "reconciliation": 32,
+      "structure": 32,
+      "utterances": 32
+    },
+    "independent_review_completed": false,
+    "next_unprocessed_by_layer": {
+      "attributions": "Chullin 3a:13",
+      "claims": "Chullin 3a:13",
+      "edges": "Chullin 3a:13",
+      "positions": "Chullin 3a:13",
+      "questions": "Chullin 3a:13",
+      "reconciliation": "Chullin 3a:13",
+      "structure": "Chullin 3a:13",
+      "utterances": "Chullin 3a:13"
+    },
+    "outcomes_by_layer": {
+      "attributions": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 32
+      },
+      "claims": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 1,
+        "not_applicable": 0,
+        "records_found": 31
+      },
+      "edges": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 3,
+        "not_applicable": 0,
+        "records_found": 29
+      },
+      "positions": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 1,
+        "not_applicable": 0,
+        "records_found": 31
+      },
+      "questions": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 17,
+        "not_applicable": 0,
+        "records_found": 15
+      },
+      "reconciliation": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 32
+      },
+      "structure": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 32
+      },
+      "utterances": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 32
+      }
+    },
+    "replay_pass": true,
+    "semantic_records": 312,
+    "snapshot_sha256": "86ddc0d5156a8decad1e649b40600e2465bcf3a9f0f9146a7ce8747ae84e1bc5",
+    "source_segments": 4393,
+    "tractate_delivered": false
+  },
+  "run_contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "snapshot_sha256": "86ddc0d5156a8decad1e649b40600e2465bcf3a9f0f9146a7ce8747ae84e1bc5",
+  "source_range": "Chullin 2a:1–3a:12",
+  "source_segments": 4393,
+  "source_sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
+  "status": "PARTIAL_REQUIRED_WORK_REMAINS",
+  "task_eligibility": "No qualification granted; ml_eligible remains false",
+  "telemetry": {
+    "cost": null,
+    "model_id": null,
+    "new_metered_api_calls": 0,
+    "tokens": null
+  }
+}

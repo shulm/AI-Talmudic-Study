@@ -1,0 +1,89 @@
+{
+  "verdict": "REWORK_TARGETED",
+  "snapshot_sha256": "33b8a981a43e6030e2fb4658122b281dbe1befeef219d5fcf9256a3eb62c24df",
+  "core_segments": 39,
+  "context_segments": 51,
+  "cohort": "targeted nonrandom risk cohort",
+  "blind_source_freeze": {
+    "stage": "frozen_before_production_access",
+    "hashes": {
+      "source_packet.json": "a9f0ffc8c85362ce8ac18a53cae1b0c18bc99a5c6bb3bb8ff4c1fa99c799dff0",
+      "source_reading_notes.json": "c8d1227be7d936f9aa23fc0dab31bd45ff11ab47ef9970c59874f493a1870db4"
+    }
+  },
+  "confirmed_errors": 1,
+  "unresolved_representation_disagreements": 1,
+  "corrected_cases": 0,
+  "findings": [
+    {
+      "id": "YOM-R02-001",
+      "category": "assertion_mode_proposition_mismatch",
+      "severity": "localized_semantic",
+      "state": "confirmed_error_unfixed",
+      "records": [
+        "yom.s02.derivation.c35b"
+      ],
+      "dependent_records": [
+        "yom.s02.derivation.e35b"
+      ],
+      "source": {
+        "ref": "Yoma 3b:8",
+        "start_char": 86,
+        "end_char": 159,
+        "quote": "אילימא תחלה בכהן גדול היינו קמייתא אלא עבודה תחלה במקום מעבודה תחלה במקום"
+      },
+      "independent_reading": "The interpretation first service by high priest is rejected because it duplicates the first version; the duplication argument itself is accepted.",
+      "production": "assertion_mode=rejected applied to the proposition that the interpretation is not a new alternative because identical to the prior version.",
+      "required_action": "Either mark the current negative/explanatory proposition asserted, or encode a positive proposed interpretation as rejected and store the accepted reason separately. Recheck e35b endpoints after repair."
+    },
+    {
+      "id": "YOM-R02-002",
+      "category": "typed_holder_correction_scope",
+      "severity": "qualification_risk",
+      "state": "unresolved_representation_disagreement",
+      "records": [
+        "yom.s02.derivation.c7a.a",
+        "yom.s02.derivation.c7a.p",
+        "yom.s02.derivation.c7b.a",
+        "yom.s02.derivation.c7b.p"
+      ],
+      "dependent_records": [
+        "yom.s02.derivation.e38b"
+      ],
+      "source": {
+        "ref": "Yoma 3b:11",
+        "start_char": 139,
+        "end_char": 237,
+        "quote": "ההוא דרביה דכי אתא רבין אמר רבי יוחנן משום רבי ישמעאל לעשות אלו מעשה פרה לכפר אלו מעשה יום הכפורים"
+      },
+      "independent_reading": "The opening transmitted two-part teaching is the teacher's teaching; Yohanan is transmitter, with R Ishmael named in Ravin's report.",
+      "production": "Initial holder fields retain Yohanan with labels initial attribution / quoted transmission. c7a has a continuation warning and correction edge; c7b has neither while its position remains asserted. Later c38b properly has R Ishmael holder.",
+      "required_action": "Preserve the initial report but explicitly scope its holder links to initial presentation, and propagate the continuation correction to both parts and dependent position rows. If these records intentionally preserve historical presentation rather than final attribution, document that typed semantic contract and exclude unresolved rows from maintained-holder tasks. This is not counted as a confirmed false-attribution error because the producer explicitly qualifies the initial label."
+    }
+  ],
+  "mechanical_check": {
+    "scope": "All saved evidence slices checked against source packet strings and raw codepoint offsets. This does not independently validate segment-ID mapping or replay.",
+    "evidence_spans": 296,
+    "matching": 296,
+    "nonmatching": []
+  },
+  "agreements": [
+    "Bira transmitter/holder distinction and proof direction",
+    "Literal parah non-atonement negation",
+    "Lexical analogy conditional limitation",
+    "Shemini PZR QShB versus compensation scope across folio",
+    "Two-ram dispute and day-offering/musaf distinction",
+    "Own/community funds scope restricted by continuation",
+    "Ravina alternative version retained; first-in-place resolution retained",
+    "Rav Dimi / Ravin reports distinguished; R Ishmael holder in c38b",
+    "Source-attested questions, including cross-folio question q28, retained",
+    "Checked relation directions support-to-supported, answer-to-question, and objection-to-target are consistent"
+  ],
+  "limitations": [
+    "No exhaustive atomic-claim inventory: no omission-rate denominator or completeness claim",
+    "No random sample, accuracy percentage, or tractate-level acceptance",
+    "No task eligibility promoted; existing ml_eligible=false retained",
+    "No canonical mutation, metered API, or human review",
+    "Boundary granularity and whole-tractate coverage not certified"
+  ]
+}
