@@ -1,0 +1,5045 @@
+{
+  "artifact_kind": "independent_ai_exact_candidate_partial_comparison",
+  "bindings": {
+    "comparison_script": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/comparisons/verify_bava_kamma_batch001.py",
+      "sha256": "6ee2c56ecedf91f9087719a556a7b61e605fbbe52e63f125fb0b82948f459df9"
+    },
+    "contract_production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "initial_reading": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/readings/bava_kamma_batch001.json",
+      "sha256": "7dd63968fa17b405b50d6fa1490504eb96f2dd88aaf8e3e0832ab3041def977d"
+    },
+    "plan": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_bava_kamma.json",
+      "sha256": "64d792132f99376ea8960addb53a7ba4154e1e4b815826a765ef904feb0dc663"
+    },
+    "plan_embedded_sha256": "1a0d2eeeffef1e9330145795c38be7e90ef4e9655818a0076e298ac7b6701f94",
+    "proposals": [
+      {
+        "path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L06/bavli_bava_kamma/proposals/c3eb083420643dc8339e8924af9659d66daad92f3c17f2c38c01c0dbd56d871d.json",
+        "sha256": "c3eb083420643dc8339e8924af9659d66daad92f3c17f2c38c01c0dbd56d871d"
+      },
+      {
+        "path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L06/bavli_bava_kamma/proposals/19a1e6ea256a88a40195d57f2ecfc3b6db8da74f64b98f3255dbf4ac3aa13f15.json",
+        "sha256": "19a1e6ea256a88a40195d57f2ecfc3b6db8da74f64b98f3255dbf4ac3aa13f15"
+      }
+    ],
+    "protocol": {
+      "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_production_v1/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    "run_contract": {
+      "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/RUN_CONTRACT.json",
+      "sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174"
+    },
+    "runner": {
+      "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_production_v1/runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "schema": {
+      "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_production_v1/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    "snapshot": {
+      "path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L06/bavli_bava_kamma/snapshots/89aab343c9b6bb4c302a7a18094c6f1ee229c8b78e77fa8828d5a84d34985ff9.json",
+      "sha256": "89aab343c9b6bb4c302a7a18094c6f1ee229c8b78e77fa8828d5a84d34985ff9"
+    },
+    "source": {
+      "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nezikin/Bava Kamma/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "a5d8d42dbfddb121a824a9b996a4d51360457559e7a5da3750d3b7351e40a63a"
+    }
+  },
+  "discrepancies": [
+    {
+      "blast_radius": "Local graph relation at 2b:18 and argument/QA views depending on that elimination. No evidence here of shared source, offset, schema, or named-attribution failure.",
+      "category": "argument_relation_omission",
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "ref": "Bava Kamma 2b:18",
+          "start_char": 0
+        }
+      ],
+      "finding": "Missing typed qualification relation from horn-equality conclusion to Rav Pappa scope question in a completed edges/reconciliation segment.",
+      "id": "BK001-E15",
+      "independent_id": "e15",
+      "producer_record_ids": [
+        "bk02_c_hornequal",
+        "bk02_q_pappa"
+      ],
+      "refs": [
+        "Bava Kamma 2b:16",
+        "Bava Kamma 2b:18"
+      ],
+      "regression_check": "Verify the resulting candidate includes an active source-anchored edge encoding that horn derivatives are excluded from Rav Pappa unequal-derivative scope, without making provisional tooth/foot assignment final.",
+      "required_change": "Add a new source-evidenced qualification edge from bk02_c_hornequal to bk02_q_pappa (or a semantically equivalent explicit elimination relation allowed by schema). Preserve all old records, proposal hashes, and reader judgments; submit through authorized producer ownership and rerun exact-source and schema/replay validation.",
+      "resolution_state": "OPEN_TARGETED_REWORK",
+      "severity": "moderate_local"
+    }
+  ],
+  "execution": {
+    "agent_id": "/root/prepare_review",
+    "role": "nonblind_comparison_auditor",
+    "route": "interactive_agent"
+  },
+  "human_certification": false,
+  "initial_reading_unchanged": true,
+  "interpretation_limits": [
+    "Coarser producer claim granularity is reported separately from content omissions; it does not establish atomically qualified examples.",
+    "Only 18 completed producer segments overlap independent cores. No omission inference is made for the 12 unprocessed independent cores.",
+    "Boundary granularity differs: producer preserves open local structural chunks; reader follows full discussion. Open tails are honest, not false completion.",
+    "No full risk-record review, exported-view audit, or whole-tractate acceptance."
+  ],
+  "mapped_producer_records": {
+    "bk01_a_an10": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Anonymous framing and argument only; named quoted position separately retained",
+        "surface": "anonymous Gemara",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 43,
+          "quote": "גבי טומאות תנן אבות הטומאות השרץ והשכבת זרע",
+          "segment_id": "seg_d9f1585ef83398aa4b66",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_an10",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_an5": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Anonymous framing and argument only; named quoted position separately retained",
+        "surface": "anonymous Gemara",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 98,
+          "quote": "<big><strong>גמ׳</strong></big> מדקתני אבות מכלל דאיכא תולדות תולדותיהן כיוצא בהן או לאו כיוצא בהן",
+          "segment_id": "seg_07c65948726fdcffc502",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_an5",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_an6": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Anonymous framing and argument only; named quoted position separately retained",
+        "surface": "anonymous Gemara",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "גבי שבת תנן אבות מלאכות ארבעים חסר אחת אבות מכלל דאיכא תולדות",
+          "segment_id": "seg_0674ba314ca9987d2261",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_an6",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_an7": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Anonymous framing and argument only; named quoted position separately retained",
+        "surface": "anonymous Gemara",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 89,
+          "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה",
+          "segment_id": "seg_d90ba7d61e18046f36b2",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_an7",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_an8": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Anonymous framing and argument only; named quoted position separately retained",
+        "surface": "anonymous Gemara",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_an8",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_an9": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Anonymous framing and argument only; named quoted position separately retained",
+        "surface": "anonymous Gemara",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 137,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_an9",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_eliezer": {
+      "content": {
+        "candidates": [
+          "רבי אליעזר"
+        ],
+        "role": "position_holder",
+        "scope": "Liability of derivative alongside principal",
+        "surface": "רבי אליעזר",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 35,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_eliezer",
+      "layer": "attributions",
+      "links": [
+        "bk01_c_eliezer"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_m1": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Opening Mishnah",
+        "surface": "מתני׳",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> אבות נזיקין השור והבור והמבעה וההבער",
+          "segment_id": "seg_9fed8fe3f8fc7a5d3850",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_m1",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_m2": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Opening Mishnah",
+        "surface": "anonymous Mishnah",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+          "segment_id": "seg_1f08542ff95cba727dff",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_m2",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_m3": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Opening Mishnah",
+        "surface": "anonymous Mishnah",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "ולא זה וזה שדרכן לילך ולהזיק כהרי הבור שאין דרכו לילך ולהזיק",
+          "segment_id": "seg_a608beaefd887d3bee09",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_m3",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_a_m4": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Opening Mishnah",
+        "surface": "anonymous Mishnah",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 83,
+          "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:",
+          "segment_id": "seg_4e7ddad20996ed3eba06",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_a_m4",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_39": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The cited Shabbat Mishnah lists thirty-nine principal labors.",
+        "scope": "Quoted Shabbat inventory"
+      },
+      "evidence": [
+        {
+          "end_char": 38,
+          "quote": "גבי שבת תנן אבות מלאכות ארבעים חסר אחת",
+          "segment_id": "seg_0674ba314ca9987d2261",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_c_39",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_eliezer": {
+      "content": {
+        "assertion_mode": "conditional",
+        "conditions": [
+          "Derivative performed with principal"
+        ],
+        "proposition": "Rabbi Eliezer imposes liability for a derivative even alongside its principal.",
+        "scope": "Reported Rabbi Eliezer position"
+      },
+      "evidence": [
+        {
+          "end_char": 35,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_c_eliezer",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_exist": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Use of אבות implies the existence of derivatives.",
+        "scope": "Inference from Mishnah terminology"
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "מדקתני אבות מכלל דאיכא תולדות",
+          "segment_id": "seg_07c65948726fdcffc502",
+          "start_char": 32
+        }
+      ],
+      "id": "bk01_c_exist",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_four": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Four principal damage categories are שור, בור, מבעה and הבער.",
+        "scope": "Opening Mishnah inventory"
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> אבות נזיקין השור והבור והמבעה וההבער",
+          "segment_id": "seg_9fed8fe3f8fc7a5d3850",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_c_four",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Meanings of שור and מבעה remain subject to ensuing interpretation; do not resolve them here."
+      ]
+    },
+    "bk01_c_guard": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The categories share a tendency to cause damage and a duty on you to guard them.",
+        "scope": "Common side in Mishnah"
+      },
+      "evidence": [
+        {
+          "end_char": 38,
+          "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך",
+          "segment_id": "seg_4e7ddad20996ed3eba06",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_c_guard",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_impav": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The cited impurity inventory includes creeping creature, semen and one impure through a corpse.",
+        "scope": "Quoted impurity Mishnah; last list item continues on 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 43,
+          "quote": "גבי טומאות תנן אבות הטומאות השרץ והשכבת זרע",
+          "segment_id": "seg_d9f1585ef83398aa4b66",
+          "start_char": 0
+        },
+        {
+          "end_char": 105,
+          "quote": "וטמא מת תולדותיהן לאו כיוצא בהן דאילו אב מטמא אדם וכלים ואילו תולדות אוכלין ומשקין מטמא אדם וכלים לא מטמא",
+          "segment_id": "seg_1db325cc8b7cf1cbef28",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_c_impav",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Evidence includes the continuation for the list, not an attribution of all following explanation to the quoted Mishnah."
+      ]
+    },
+    "bk01_c_life": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "שור and מבעה possess life whereas fire does not.",
+        "scope": "Mishnah comparison"
+      },
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+          "segment_id": "seg_1f08542ff95cba727dff",
+          "start_char": 47
+        }
+      ],
+      "id": "bk01_c_life",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_mave_shor": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The characteristics of מבעה do not equal those of שור.",
+        "scope": "Reverse Mishnah distinction"
+      },
+      "evidence": [
+        {
+          "end_char": 46,
+          "quote": "ולא הרי המבעה כהרי השור",
+          "segment_id": "seg_1f08542ff95cba727dff",
+          "start_char": 23
+        }
+      ],
+      "id": "bk01_c_mave_shor",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_mishkan": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The terminology is explained through significant association with the Tabernacle: that which was in the Tabernacle and significant is called a principal; the contrasting case a derivative.",
+        "scope": "Anonymous answer under Rabbi Eliezer’s liability view"
+      },
+      "evidence": [
+        {
+          "end_char": 137,
+          "quote": "הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 71
+        }
+      ],
+      "id": "bk01_c_mishkan",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Exact logical relation of הוה במשכן and חשיבא requires commentary/textual analysis; preserve wording without choosing an unexpressed disjunction."
+      ]
+    },
+    "bk01_c_motion": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The preceding mobile causes of harm differ from a pit, which does not move to cause harm.",
+        "scope": "Mishnah comparison with בור"
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "ולא זה וזה שדרכן לילך ולהזיק כהרי הבור שאין דרכו לילך ולהזיק",
+          "segment_id": "seg_a608beaefd887d3bee09",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_c_motion",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "זה וזה is retained as preceding mobile causes; exact grouping should receive continuation review."
+      ]
+    },
+    "bk01_c_pappa": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Some damage derivatives are like their principals, and some are not.",
+        "scope": "Rav Pappa’s answer; specification deferred to following discussion"
+      },
+      "evidence": [
+        {
+          "end_char": 57,
+          "quote": "אמר רב פפא יש מהן כיוצא בהן ויש מהן לאו כיוצא בהן",
+          "segment_id": "seg_b15fcd28e198946617a1",
+          "start_char": 8
+        }
+      ],
+      "id": "bk01_c_pappa",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Continuation through 3b:12 identifies half-damage pebbles; this block does not yet extract that derivation or qualify a final choice view."
+      ]
+    },
+    "bk01_c_pay": {
+      "content": {
+        "assertion_mode": "conditional",
+        "conditions": [
+          "Damage occurred"
+        ],
+        "proposition": "When damage occurs, the damaging party owes compensation from the best land.",
+        "scope": "Mishnah damages rule"
+      },
+      "evidence": [
+        {
+          "end_char": 82,
+          "quote": "וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ",
+          "segment_id": "seg_4e7ddad20996ed3eba06",
+          "start_char": 39
+        }
+      ],
+      "id": "bk01_c_pay",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_same": {
+      "content": {
+        "assertion_mode": "conditional",
+        "conditions": [
+          "Principal labor and its own derivative done together"
+        ],
+        "proposition": "Doing a principal labor and its own derivative incurs only one liability.",
+        "scope": "Anonymous Shabbat distinction"
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 111
+        }
+      ],
+      "id": "bk01_c_same",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_shab_der": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Calling the labors אבות implies derivatives.",
+        "scope": "Shabbat terminology"
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "אבות מכלל דאיכא תולדות",
+          "segment_id": "seg_0674ba314ca9987d2261",
+          "start_char": 39
+        }
+      ],
+      "id": "bk01_c_shab_der",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_shor_mave": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The characteristics of שור do not equal those of מבעה.",
+        "scope": "Mishnah distinction; grounds explicated later"
+      },
+      "evidence": [
+        {
+          "end_char": 22,
+          "quote": "לא הרי השור כהרי המבעה",
+          "segment_id": "seg_1f08542ff95cba727dff",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_c_shor_mave",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_sin": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "For Shabbat, principal and derivative labors each incur a sin-offering under the relevant liability conditions.",
+        "scope": "Shabbat comparison; conditions not spelled out in this local sentence"
+      },
+      "evidence": [
+        {
+          "end_char": 53,
+          "quote": "לא שנא אב חטאת ולא שנא תולדה חטאת",
+          "segment_id": "seg_d90ba7d61e18046f36b2",
+          "start_char": 20
+        }
+      ],
+      "id": "bk01_c_sin",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Do not read as unconditional liability; full conditions are outside the quoted local formulation."
+      ]
+    },
+    "bk01_c_stone": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "For Shabbat, principal and derivative labors each incur stoning under the relevant liability conditions.",
+        "scope": "Shabbat comparison"
+      },
+      "evidence": [
+        {
+          "end_char": 89,
+          "quote": "לא שנא אב סקילה ולא שנא תולדה סקילה",
+          "segment_id": "seg_d90ba7d61e18046f36b2",
+          "start_char": 54
+        }
+      ],
+      "id": "bk01_c_stone",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Conditions of capital liability are not enumerated locally."
+      ]
+    },
+    "bk01_c_two_av": {
+      "content": {
+        "assertion_mode": "conditional",
+        "conditions": [
+          "Two principal labors done together"
+        ],
+        "proposition": "Doing two principal labors together incurs separate liability for each.",
+        "scope": "Anonymous Shabbat distinction"
+      },
+      "evidence": [
+        {
+          "end_char": 110,
+          "quote": "נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 24
+        }
+      ],
+      "id": "bk01_c_two_av",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_c_two_tol": {
+      "content": {
+        "assertion_mode": "conditional",
+        "conditions": [
+          "Two derivative labors done together"
+        ],
+        "proposition": "Doing two derivative labors together incurs separate liability for each as stated in the comparison.",
+        "scope": "Anonymous Shabbat distinction"
+      },
+      "evidence": [
+        {
+          "end_char": 110,
+          "quote": "אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 64
+        }
+      ],
+      "id": "bk01_c_two_tol",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "The local wording does not spell out different principal families; do not infer unrestricted liability for derivatives of one principal."
+      ]
+    },
+    "bk01_e_diff": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk01_c_same",
+        "target_id": "bk01_q_shab_diff"
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_e_diff",
+      "layer": "edges",
+      "links": [
+        "bk01_c_same",
+        "bk01_q_shab_diff"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_e_mishkan": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk01_c_mishkan",
+        "target_id": "bk01_q_eliezer"
+      },
+      "evidence": [
+        {
+          "end_char": 137,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_e_mishkan",
+      "layer": "edges",
+      "links": [
+        "bk01_c_mishkan",
+        "bk01_q_eliezer"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_e_two": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk01_c_two_av",
+        "target_id": "bk01_q_shab_diff"
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_e_two",
+      "layer": "edges",
+      "links": [
+        "bk01_c_two_av",
+        "bk01_q_shab_diff"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_e_twot": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk01_c_two_tol",
+        "target_id": "bk01_q_shab_diff"
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_e_twot",
+      "layer": "edges",
+      "links": [
+        "bk01_c_two_tol",
+        "bk01_q_shab_diff"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_39": {
+      "content": {
+        "claim_id": "bk01_c_39",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "גבי שבת תנן אבות מלאכות ארבעים חסר אחת אבות מכלל דאיכא תולדות",
+          "segment_id": "seg_0674ba314ca9987d2261",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_39",
+      "layer": "positions",
+      "links": [
+        "bk01_c_39"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_eliezer": {
+      "content": {
+        "claim_id": "bk01_c_eliezer",
+        "conditions": [],
+        "holder_candidates": [
+          "רבי אליעזר"
+        ],
+        "local_status": "Reported position motivating alternative terminology explanation",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 137,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_eliezer",
+      "layer": "positions",
+      "links": [
+        "bk01_c_eliezer"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_exist": {
+      "content": {
+        "claim_id": "bk01_c_exist",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 98,
+          "quote": "<big><strong>גמ׳</strong></big> מדקתני אבות מכלל דאיכא תולדות תולדותיהן כיוצא בהן או לאו כיוצא בהן",
+          "segment_id": "seg_07c65948726fdcffc502",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_exist",
+      "layer": "positions",
+      "links": [
+        "bk01_c_exist"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_four": {
+      "content": {
+        "claim_id": "bk01_c_four",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous Mishnah assertion; no named holder inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> אבות נזיקין השור והבור והמבעה וההבער",
+          "segment_id": "seg_9fed8fe3f8fc7a5d3850",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_four",
+      "layer": "positions",
+      "links": [
+        "bk01_c_four"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_guard": {
+      "content": {
+        "claim_id": "bk01_c_guard",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous Mishnah assertion; no named holder inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 83,
+          "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:",
+          "segment_id": "seg_4e7ddad20996ed3eba06",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_guard",
+      "layer": "positions",
+      "links": [
+        "bk01_c_guard"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_impav": {
+      "content": {
+        "claim_id": "bk01_c_impav",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 43,
+          "quote": "גבי טומאות תנן אבות הטומאות השרץ והשכבת זרע",
+          "segment_id": "seg_d9f1585ef83398aa4b66",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_impav",
+      "layer": "positions",
+      "links": [
+        "bk01_c_impav"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_life": {
+      "content": {
+        "claim_id": "bk01_c_life",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous Mishnah assertion; no named holder inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+          "segment_id": "seg_1f08542ff95cba727dff",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_life",
+      "layer": "positions",
+      "links": [
+        "bk01_c_life"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_mave_shor": {
+      "content": {
+        "claim_id": "bk01_c_mave_shor",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous Mishnah assertion; no named holder inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+          "segment_id": "seg_1f08542ff95cba727dff",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_mave_shor",
+      "layer": "positions",
+      "links": [
+        "bk01_c_mave_shor"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_mishkan": {
+      "content": {
+        "claim_id": "bk01_c_mishkan",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 137,
+          "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_mishkan",
+      "layer": "positions",
+      "links": [
+        "bk01_c_mishkan"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_motion": {
+      "content": {
+        "claim_id": "bk01_c_motion",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous Mishnah assertion; no named holder inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "ולא זה וזה שדרכן לילך ולהזיק כהרי הבור שאין דרכו לילך ולהזיק",
+          "segment_id": "seg_a608beaefd887d3bee09",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_motion",
+      "layer": "positions",
+      "links": [
+        "bk01_c_motion"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_pappa": {
+      "content": {
+        "claim_id": "bk01_c_pappa",
+        "conditions": [],
+        "holder_candidates": [
+          "רב פפא"
+        ],
+        "local_status": "Partial specification; preserve continuation tail",
+        "question_id": "bk01_q_here"
+      },
+      "evidence": [
+        {
+          "end_char": 57,
+          "quote": "הכא מאי אמר רב פפא יש מהן כיוצא בהן ויש מהן לאו כיוצא בהן",
+          "segment_id": "seg_b15fcd28e198946617a1",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_pappa",
+      "layer": "positions",
+      "links": [
+        "bk01_c_pappa",
+        "bk01_q_here"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_pay": {
+      "content": {
+        "claim_id": "bk01_c_pay",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous Mishnah assertion; no named holder inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 83,
+          "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:",
+          "segment_id": "seg_4e7ddad20996ed3eba06",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_pay",
+      "layer": "positions",
+      "links": [
+        "bk01_c_pay"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_same": {
+      "content": {
+        "claim_id": "bk01_c_same",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_same",
+      "layer": "positions",
+      "links": [
+        "bk01_c_same"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_shab_der": {
+      "content": {
+        "claim_id": "bk01_c_shab_der",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "גבי שבת תנן אבות מלאכות ארבעים חסר אחת אבות מכלל דאיכא תולדות",
+          "segment_id": "seg_0674ba314ca9987d2261",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_shab_der",
+      "layer": "positions",
+      "links": [
+        "bk01_c_shab_der"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_shor_mave": {
+      "content": {
+        "claim_id": "bk01_c_shor_mave",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous Mishnah assertion; no named holder inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+          "segment_id": "seg_1f08542ff95cba727dff",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_shor_mave",
+      "layer": "positions",
+      "links": [
+        "bk01_c_shor_mave"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_sin": {
+      "content": {
+        "claim_id": "bk01_c_sin",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 89,
+          "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה",
+          "segment_id": "seg_d90ba7d61e18046f36b2",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_sin",
+      "layer": "positions",
+      "links": [
+        "bk01_c_sin"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_stone": {
+      "content": {
+        "claim_id": "bk01_c_stone",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 89,
+          "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה",
+          "segment_id": "seg_d90ba7d61e18046f36b2",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_stone",
+      "layer": "positions",
+      "links": [
+        "bk01_c_stone"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_two_av": {
+      "content": {
+        "claim_id": "bk01_c_two_av",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_two_av",
+      "layer": "positions",
+      "links": [
+        "bk01_c_two_av"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_p_two_tol": {
+      "content": {
+        "claim_id": "bk01_c_two_tol",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Anonymous statement or quoted anonymous inventory; no named speaker inferred",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 154,
+          "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_p_two_tol",
+      "layer": "positions",
+      "links": [
+        "bk01_c_two_tol"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_q_eliezer": {
+      "content": {
+        "answer_set_status": "partial",
+        "conditions": [],
+        "formulation": "For Rabbi Eliezer, why call one a principal and another a derivative?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 70,
+          "quote": "אמאי קרי ליה אב ואמאי קרי לה תולדה",
+          "segment_id": "seg_4216bdd1a4a3e290e192",
+          "start_char": 36
+        }
+      ],
+      "id": "bk01_q_eliezer",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_q_equiv": {
+      "content": {
+        "answer_set_status": "partial",
+        "conditions": [],
+        "formulation": "Do derivatives of the damage categories share their principals’ laws?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 98,
+          "quote": "תולדותיהן כיוצא בהן או לאו כיוצא בהן",
+          "segment_id": "seg_07c65948726fdcffc502",
+          "start_char": 62
+        }
+      ],
+      "id": "bk01_q_equiv",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk01_q_shab_diff": {
+      "content": {
+        "answer_set_status": "partial",
+        "conditions": [],
+        "formulation": "What distinction remains between principal and derivative labor?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 23,
+          "quote": "ומאי איכא בין אב לתולדה",
+          "segment_id": "seg_a4d7c6d51eb18e9374c7",
+          "start_char": 0
+        }
+      ],
+      "id": "bk01_q_shab_diff",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_11": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "question about scriptural vocabulary",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "מאי שנא גבי אדם דכתיב כי יגח ומאי שנא גבי בהמה דכתיב כי יגוף",
+          "segment_id": "seg_ca7fb96bd8476626b2d5",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_11",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_12": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "anonymous explanation",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+          "segment_id": "seg_df0fc86a0637836495a1",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_12",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_13": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "inferred legal qualification",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "ומלתא אגב אורחיה קמ\"ל דמועד לאדם הוי מועד לבהמה ומועד לבהמה לא הוי מועד לאדם",
+          "segment_id": "seg_694763c793dea096ac0b",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_13",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_14": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "classification challenge and distinction",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+          "segment_id": "seg_9925fd39f60dba7cd153",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_14",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_15": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "classification challenge and distinction",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+          "segment_id": "seg_b0e10b126b9050e6c20a",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_15",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_16": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "question specifying Rav Pappa",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 45,
+          "quote": "אלא תולדותיהן לאו כיוצא בהן דאמר רב פפא אהייא",
+          "segment_id": "seg_42e9a4a90c1f8174b2b5",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_16",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_17": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "hypothesis and objection by common features",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 98,
+          "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+          "segment_id": "seg_6b9e8c69ec7af7e500da",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_17",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_18": {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "local conclusion and provisional relocation",
+        "surface": "anonymous discourse",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_18",
+      "layer": "attributions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_a_pappa": {
+      "content": {
+        "candidates": [
+          "רב פפא"
+        ],
+        "role": "quoted_authority",
+        "scope": "Previously stated partial difference, not speaker of the anonymous successive hypotheses",
+        "surface": "רב פפא",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 45,
+          "quote": "אלא תולדותיהן לאו כיוצא בהן דאמר רב פפא אהייא",
+          "segment_id": "seg_42e9a4a90c1f8174b2b5",
+          "start_char": 0
+        },
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_a_pappa",
+      "layer": "attributions",
+      "links": [
+        "bk01_c_pappa"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_animalmuad": {
+      "content": {
+        "assertion_mode": "conditional",
+        "conditions": [
+          "Muad for animals"
+        ],
+        "proposition": "An ox established as muad for animals is not thereby muad for humans.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "ומלתא אגב אורחיה קמ\"ל דמועד לאדם הוי מועד לבהמה ומועד לבהמה לא הוי מועד לאדם",
+          "segment_id": "seg_694763c793dea096ac0b",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_animalmuad",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_bitebenefit": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Biting in the present horn inventory"
+        ],
+        "proposition": "The biting classified here lacks benefit from its damaging act.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+          "segment_id": "seg_9925fd39f60dba7cd153",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_bitebenefit",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_common": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Horn and these derivatives share intent to damage, being your property, and your duty to guard them; those features challenge treating these derivatives differently.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 98,
+          "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+          "segment_id": "seg_6b9e8c69ec7af7e500da",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_common",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_footfrequency": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Foot damage is usual/common.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+          "segment_id": "seg_b0e10b126b9050e6c20a",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_footfrequency",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_hornequal": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Horn derivatives have the same law as horn.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_hornequal",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_humanmuad": {
+      "content": {
+        "assertion_mode": "conditional",
+        "conditions": [
+          "Muad for humans"
+        ],
+        "proposition": "An ox established as muad for humans is muad for animals.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "ומלתא אגב אורחיה קמ\"ל דמועד לאדם הוי מועד לבהמה ומועד לבהמה לא הוי מועד לאדם",
+          "segment_id": "seg_694763c793dea096ac0b",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_humanmuad",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_mazal": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The anonymous answer associates the human wording with having מזלא and the animal wording with lacking מזלא.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+          "segment_id": "seg_df0fc86a0637836495a1",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_mazal",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "מזלא is retained without imposing a modern account of its sense."
+      ]
+    },
+    "bk02_c_pappatoothfoot": {
+      "content": {
+        "assertion_mode": "hypothetical",
+        "conditions": [],
+        "proposition": "The discussion provisionally relocates Rav Pappa’s unequal derivatives to tooth and foot.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_pappatoothfoot",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Not final: 3a:15 next excludes tooth and later continuation tests foot."
+      ]
+    },
+    "bk02_c_restkickfrequency": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The lying down and kicking discussed here do not have usual/common damage.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+          "segment_id": "seg_b0e10b126b9050e6c20a",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_restkickfrequency",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_c_toothbenefit": {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Tooth damage entails benefit from the damaging act.",
+        "scope": "Local horn-category discussion, Bava Kamma 2b"
+      },
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+          "segment_id": "seg_9925fd39f60dba7cd153",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_c_toothbenefit",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_e_biteanswer": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk02_c_bitebenefit",
+        "target_id": "bk02_q_bite"
+      },
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+          "segment_id": "seg_9925fd39f60dba7cd153",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_e_biteanswer",
+      "layer": "edges",
+      "links": [
+        "bk02_c_bitebenefit",
+        "bk02_q_bite"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_e_hornequality": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "bk02_c_common",
+        "target_id": "bk02_c_hornequal"
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_e_hornequality",
+      "layer": "edges",
+      "links": [
+        "bk02_c_common",
+        "bk02_c_hornequal"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_e_mazal": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk02_c_mazal",
+        "target_id": "bk02_q_vocabulary"
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+          "segment_id": "seg_df0fc86a0637836495a1",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_e_mazal",
+      "layer": "edges",
+      "links": [
+        "bk02_c_mazal",
+        "bk02_q_vocabulary"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_e_provisional": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk02_c_pappatoothfoot",
+        "target_id": "bk02_q_pappa"
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_e_provisional",
+      "layer": "edges",
+      "links": [
+        "bk02_c_pappatoothfoot",
+        "bk02_q_pappa"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_e_restanswer": {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk02_c_restkickfrequency",
+        "target_id": "bk02_q_restkick"
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+          "segment_id": "seg_b0e10b126b9050e6c20a",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_e_restanswer",
+      "layer": "edges",
+      "links": [
+        "bk02_c_restkickfrequency",
+        "bk02_q_restkick"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_animalmuad": {
+      "content": {
+        "claim_id": "bk02_c_animalmuad",
+        "conditions": [
+          "Muad for animals"
+        ],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "conditional; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "ומלתא אגב אורחיה קמ\"ל דמועד לאדם הוי מועד לבהמה ומועד לבהמה לא הוי מועד לאדם",
+          "segment_id": "seg_694763c793dea096ac0b",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_animalmuad",
+      "layer": "positions",
+      "links": [
+        "bk02_c_animalmuad"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_bitebenefit": {
+      "content": {
+        "claim_id": "bk02_c_bitebenefit",
+        "conditions": [
+          "Biting in the present horn inventory"
+        ],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+          "segment_id": "seg_9925fd39f60dba7cd153",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_bitebenefit",
+      "layer": "positions",
+      "links": [
+        "bk02_c_bitebenefit"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_common": {
+      "content": {
+        "claim_id": "bk02_c_common",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 98,
+          "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+          "segment_id": "seg_6b9e8c69ec7af7e500da",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_common",
+      "layer": "positions",
+      "links": [
+        "bk02_c_common"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_footfrequency": {
+      "content": {
+        "claim_id": "bk02_c_footfrequency",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+          "segment_id": "seg_b0e10b126b9050e6c20a",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_footfrequency",
+      "layer": "positions",
+      "links": [
+        "bk02_c_footfrequency"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_hornequal": {
+      "content": {
+        "claim_id": "bk02_c_hornequal",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_hornequal",
+      "layer": "positions",
+      "links": [
+        "bk02_c_hornequal"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_humanmuad": {
+      "content": {
+        "claim_id": "bk02_c_humanmuad",
+        "conditions": [
+          "Muad for humans"
+        ],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "conditional; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 76,
+          "quote": "ומלתא אגב אורחיה קמ\"ל דמועד לאדם הוי מועד לבהמה ומועד לבהמה לא הוי מועד לאדם",
+          "segment_id": "seg_694763c793dea096ac0b",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_humanmuad",
+      "layer": "positions",
+      "links": [
+        "bk02_c_humanmuad"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_mazal": {
+      "content": {
+        "claim_id": "bk02_c_mazal",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+          "segment_id": "seg_df0fc86a0637836495a1",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_mazal",
+      "layer": "positions",
+      "links": [
+        "bk02_c_mazal"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "מזלא is retained without imposing a modern account of its sense."
+      ]
+    },
+    "bk02_p_pappatoothfoot": {
+      "content": {
+        "claim_id": "bk02_c_pappatoothfoot",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "hypothetical; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+          "segment_id": "seg_a46a03a56b1c40730ece",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_pappatoothfoot",
+      "layer": "positions",
+      "links": [
+        "bk02_c_pappatoothfoot"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Not final: 3a:15 next excludes tooth and later continuation tests foot."
+      ]
+    },
+    "bk02_p_restkickfrequency": {
+      "content": {
+        "claim_id": "bk02_c_restkickfrequency",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+          "segment_id": "seg_b0e10b126b9050e6c20a",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_restkickfrequency",
+      "layer": "positions",
+      "links": [
+        "bk02_c_restkickfrequency"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_p_toothbenefit": {
+      "content": {
+        "claim_id": "bk02_c_toothbenefit",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted; AI provisional local reading",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+          "segment_id": "seg_9925fd39f60dba7cd153",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_p_toothbenefit",
+      "layer": "positions",
+      "links": [
+        "bk02_c_toothbenefit"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_q_bite": {
+      "content": {
+        "answer_set_status": "unreviewed_alternatives",
+        "conditions": [],
+        "formulation": "Should biting instead be a derivative of tooth?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+          "segment_id": "seg_9925fd39f60dba7cd153",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_q_bite",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_q_pappa": {
+      "content": {
+        "answer_set_status": "unreviewed_alternatives",
+        "conditions": [],
+        "formulation": "Which derivatives did Rav Pappa mean are unlike their principals?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 45,
+          "quote": "אלא תולדותיהן לאו כיוצא בהן דאמר רב פפא אהייא",
+          "segment_id": "seg_42e9a4a90c1f8174b2b5",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_q_pappa",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_q_restkick": {
+      "content": {
+        "answer_set_status": "unreviewed_alternatives",
+        "conditions": [],
+        "formulation": "Should lying down and kicking instead be derivatives of foot?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+          "segment_id": "seg_b0e10b126b9050e6c20a",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_q_restkick",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    "bk02_q_vocabulary": {
+      "content": {
+        "answer_set_status": "unreviewed_alternatives",
+        "conditions": [],
+        "formulation": "Why use כי יגח concerning a human but כי יגוף concerning an animal?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 60,
+          "quote": "מאי שנא גבי אדם דכתיב כי יגח ומאי שנא גבי בהמה דכתיב כי יגוף",
+          "segment_id": "seg_ca7fb96bd8476626b2d5",
+          "start_char": 0
+        }
+      ],
+      "id": "bk02_q_vocabulary",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    }
+  },
+  "mappings": [
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c01",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "מתני׳ <big><strong>ארבעה</strong></big> אבות נזיקין השור והבור והמבעה וההבער",
+            "ref": "Bava Kamma 2a:1",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c01",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "There are four primary damages categories: ox, pit, maveh and fire.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m1": "d1b78fcd4fd1f6ba2acaed80d3bd1219f57ab24a7cee4159b9f9a4142113fb1a",
+        "bk01_c_four": "e286216731432416002e69cca6090d7bd1a0488f46ff6aaffaab6170fb5fd164",
+        "bk01_p_four": "960999e109a3956e1b581c65f7907cd8b3cdc7d1614ffded6c86895802f145d8"
+      },
+      "producer_record_ids": [
+        "bk01_a_m1",
+        "bk01_c_four",
+        "bk01_p_four"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c02",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 100,
+            "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+            "ref": "Bava Kamma 2a:2",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c02",
+        "interpretive_notes": [
+          "Maveh is left untranslated here; the identification dispute is not stated in the core."
+        ],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The character of ox is unlike that of maveh.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m2": "902b50dda6cd3dc86e885e945dcd3021a69151c60e0f1576fb3feb5e3d48c548",
+        "bk01_c_shor_mave": "56f0434a39833eecef6fc4f69e5b559de5a0698570756baa02debe77d634e977",
+        "bk01_p_shor_mave": "d7fe3304c3966b2f725d4d453467678d1a113242f8072bc1a5425a24ea2028d8"
+      },
+      "producer_record_ids": [
+        "bk01_a_m2",
+        "bk01_c_shor_mave",
+        "bk01_p_shor_mave"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c03",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 100,
+            "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+            "ref": "Bava Kamma 2a:2",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c03",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The character of maveh is unlike that of ox.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m2": "902b50dda6cd3dc86e885e945dcd3021a69151c60e0f1576fb3feb5e3d48c548",
+        "bk01_c_mave_shor": "c30aad30a175c170deeda23ef13568c732d17a51e7a25eba02a9a7eb22a27c51",
+        "bk01_p_mave_shor": "cb3004644dd968505e9d4d7eb5677e1e883d0963c25a5c3f1159ad33686580bc"
+      },
+      "producer_record_ids": [
+        "bk01_a_m2",
+        "bk01_c_mave_shor",
+        "bk01_p_mave_shor"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c04",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 100,
+            "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+            "ref": "Bava Kamma 2a:2",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c04",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Ox and maveh have life.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m2": "902b50dda6cd3dc86e885e945dcd3021a69151c60e0f1576fb3feb5e3d48c548",
+        "bk01_c_life": "806e5db762b1545eff3dbc05013cc074d45453e2cd27cd6abf986d84a4c475ca",
+        "bk01_p_life": "61a4e0218e9286375c9656c9b8acd2201e773c9dcdc82edf4fa1846a6637f0c8"
+      },
+      "producer_record_ids": [
+        "bk01_a_m2",
+        "bk01_c_life",
+        "bk01_p_life"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c05",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 100,
+            "quote": "לא הרי השור כהרי המבעה ולא הרי המבעה כהרי השור ולא זה וזה שיש בהן רוח חיים כהרי האש שאין בו רוח חיים",
+            "ref": "Bava Kamma 2a:2",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c05",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Fire lacks life, unlike the preceding pair.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m2": "902b50dda6cd3dc86e885e945dcd3021a69151c60e0f1576fb3feb5e3d48c548",
+        "bk01_c_life": "806e5db762b1545eff3dbc05013cc074d45453e2cd27cd6abf986d84a4c475ca",
+        "bk01_p_life": "61a4e0218e9286375c9656c9b8acd2201e773c9dcdc82edf4fa1846a6637f0c8"
+      },
+      "producer_record_ids": [
+        "bk01_a_m2",
+        "bk01_c_life",
+        "bk01_p_life"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c06",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "ולא זה וזה שדרכן לילך ולהזיק כהרי הבור שאין דרכו לילך ולהזיק",
+            "ref": "Bava Kamma 2a:3",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c06",
+        "interpretive_notes": [
+          "The referent grouping of this compressed contrast is interpreted from the Mishnah sequence; no named scholar is supplied."
+        ],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The preceding mobile damaging categories characteristically go and cause harm.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m3": "3080bed2124cb8731779679eef57a88dac1ef1fd8271d484efeac277e1c70f6d",
+        "bk01_c_motion": "61c994cdd632fe7cf85b81d90fe6eacd8c89d132d01cc750ad3d4c5a2486956b",
+        "bk01_p_motion": "55588f083bd302fde128bf00de75abba846ed110971dbf5c0d050434abbbb64b"
+      },
+      "producer_record_ids": [
+        "bk01_a_m3",
+        "bk01_c_motion",
+        "bk01_p_motion"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c07",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "ולא זה וזה שדרכן לילך ולהזיק כהרי הבור שאין דרכו לילך ולהזיק",
+            "ref": "Bava Kamma 2a:3",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c07",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The pit does not characteristically go and cause harm.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m3": "3080bed2124cb8731779679eef57a88dac1ef1fd8271d484efeac277e1c70f6d",
+        "bk01_c_motion": "61c994cdd632fe7cf85b81d90fe6eacd8c89d132d01cc750ad3d4c5a2486956b",
+        "bk01_p_motion": "55588f083bd302fde128bf00de75abba846ed110971dbf5c0d050434abbbb64b"
+      },
+      "producer_record_ids": [
+        "bk01_a_m3",
+        "bk01_c_motion",
+        "bk01_p_motion"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c08",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 83,
+            "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:",
+            "ref": "Bava Kamma 2a:4",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c08",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The common feature is that these categories characteristically cause damage.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m4": "d1fb6cca1cd8e3bbc390524be77415bf5ce60736d90e1c2c51ac1e73872d10df",
+        "bk01_c_guard": "4041372af0ee182b2a5ba69bed4476763afb7cbf431828cd3d22794feb78a7ef",
+        "bk01_p_guard": "75fe2c1cd0ff220f098d1cc112db116d8d04ff7ffd88632b8cacf5428f378c91"
+      },
+      "producer_record_ids": [
+        "bk01_a_m4",
+        "bk01_c_guard",
+        "bk01_p_guard"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c09",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 83,
+            "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:",
+            "ref": "Bava Kamma 2a:4",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c09",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Their guarding is incumbent upon you.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m4": "d1fb6cca1cd8e3bbc390524be77415bf5ce60736d90e1c2c51ac1e73872d10df",
+        "bk01_c_guard": "4041372af0ee182b2a5ba69bed4476763afb7cbf431828cd3d22794feb78a7ef",
+        "bk01_p_guard": "75fe2c1cd0ff220f098d1cc112db116d8d04ff7ffd88632b8cacf5428f378c91"
+      },
+      "producer_record_ids": [
+        "bk01_a_m4",
+        "bk01_c_guard",
+        "bk01_p_guard"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c10",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "The guarded damaging source causes damage"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 83,
+            "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:",
+            "ref": "Bava Kamma 2a:4",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c10",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The damaging party must pay damages.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m4": "d1fb6cca1cd8e3bbc390524be77415bf5ce60736d90e1c2c51ac1e73872d10df",
+        "bk01_c_pay": "be8f8680b908bfb7a4d3ee4a09e42028e584a988b52552d95930f82e3c3799f4",
+        "bk01_p_pay": "f993a0fc089f0989707236993271e60812be6d8598ce0caa1a85ff7fa54be720"
+      },
+      "producer_record_ids": [
+        "bk01_a_m4",
+        "bk01_c_pay",
+        "bk01_p_pay"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c11",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Liability for the damage"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 83,
+            "quote": "הצד השוה שבהן שדרכן להזיק ושמירתן עליך וכשהזיק חב המזיק לשלם תשלומי נזק במיטב הארץ:",
+            "ref": "Bava Kamma 2a:4",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Mishnah",
+        "id": "c11",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Damages payment is from the best land.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_m4": "d1fb6cca1cd8e3bbc390524be77415bf5ce60736d90e1c2c51ac1e73872d10df",
+        "bk01_c_pay": "be8f8680b908bfb7a4d3ee4a09e42028e584a988b52552d95930f82e3c3799f4",
+        "bk01_p_pay": "f993a0fc089f0989707236993271e60812be6d8598ce0caa1a85ff7fa54be720"
+      },
+      "producer_record_ids": [
+        "bk01_a_m4",
+        "bk01_c_pay",
+        "bk01_p_pay"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c12",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "<big><strong>גמ׳</strong></big> מדקתני אבות מכלל דאיכא תולדות תולדותיהן כיוצא בהן או לאו כיוצא בהן",
+            "ref": "Bava Kamma 2a:5",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c12",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The term primary categories implies derivative categories.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an5": "69276bc12366f85dc43e31a2bb07ae7ae1fcd7557e2e790c316e13e81ebb5519",
+        "bk01_c_exist": "eea0392aaea0426601547fe44f3ebb4a309e72c1258404c3f0082edb301080e0",
+        "bk01_p_exist": "8185f27dd8393f76d98f13675e1292a94f27076edcbbc73bc7d552af71581aa8"
+      },
+      "producer_record_ids": [
+        "bk01_a_an5",
+        "bk01_c_exist",
+        "bk01_p_exist"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c13",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 61,
+            "quote": "גבי שבת תנן אבות מלאכות ארבעים חסר אחת אבות מכלל דאיכא תולדות",
+            "ref": "Bava Kamma 2a:6",
+            "start_char": 0
+          }
+        ],
+        "holder": "quoted anonymous Sabbath Mishnah",
+        "id": "c13",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The Sabbath Mishnah counts thirty-nine primary labors.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an6": "6b33d7221b4d54be7ce2ff229abc1ae03271064d3081e3b1acb195f54acd204b",
+        "bk01_c_39": "cc7b17b82d92e523b90e70b82a42ec8764703c232eb4a5ccf3d04a78b73b0a71",
+        "bk01_p_39": "6735adbc1758369d8531d5e7e08782e745253cf4065c6ad80f612edc81042505"
+      },
+      "producer_record_ids": [
+        "bk01_a_an6",
+        "bk01_c_39",
+        "bk01_p_39"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c14",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 61,
+            "quote": "גבי שבת תנן אבות מלאכות ארבעים חסר אחת אבות מכלל דאיכא תולדות",
+            "ref": "Bava Kamma 2a:6",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c14",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Calling Sabbath labors primary implies derivatives.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an6": "6b33d7221b4d54be7ce2ff229abc1ae03271064d3081e3b1acb195f54acd204b",
+        "bk01_c_shab_der": "d5e3c609f7028d9f121db582905f9af308e1a2bf5e16c90296aa116990a9345a",
+        "bk01_p_shab_der": "6104aceda45ac4cc92bbe5b7e4fb9fb8cf3758e0d37f50afe3a7a8a43e5567fa"
+      },
+      "producer_record_ids": [
+        "bk01_a_an6",
+        "bk01_c_shab_der",
+        "bk01_p_shab_der"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c15",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Circumstances of sin-offering liability are presupposed, not specified here"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה",
+            "ref": "Bava Kamma 2a:7",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c15",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "A primary Sabbath labor incurs a sin offering.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an7": "65363c1d9bf4a2b77e49e9db198557e186314d11a30ea1a2036653a8f25d5086",
+        "bk01_c_sin": "40a12a0ad06eb66e0de2282bbaab58ac84aaad69b29be577db5100a798263884",
+        "bk01_p_sin": "2bd059af1beb09e3c1297c29838d3ab4d8937449008976e2585f3824e234e56e"
+      },
+      "producer_record_ids": [
+        "bk01_a_an7",
+        "bk01_c_sin",
+        "bk01_p_sin"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c16",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Circumstances of sin-offering liability are presupposed, not specified here"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה",
+            "ref": "Bava Kamma 2a:7",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c16",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "A derivative Sabbath labor incurs a sin offering.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an7": "65363c1d9bf4a2b77e49e9db198557e186314d11a30ea1a2036653a8f25d5086",
+        "bk01_c_sin": "40a12a0ad06eb66e0de2282bbaab58ac84aaad69b29be577db5100a798263884",
+        "bk01_p_sin": "2bd059af1beb09e3c1297c29838d3ab4d8937449008976e2585f3824e234e56e"
+      },
+      "producer_record_ids": [
+        "bk01_a_an7",
+        "bk01_c_sin",
+        "bk01_p_sin"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c17",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Circumstances of stoning liability are presupposed, not specified here"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה",
+            "ref": "Bava Kamma 2a:7",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c17",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "A primary Sabbath labor incurs stoning.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an7": "65363c1d9bf4a2b77e49e9db198557e186314d11a30ea1a2036653a8f25d5086",
+        "bk01_c_stone": "cb958e676de4464b64bccf83e03d424491082c7b94ffd79bf20780faeef52c06",
+        "bk01_p_stone": "67e3e5e3ee88433d75c9e350ecbe9d098d71173123c5e3ee4a3fef2c15fccfa6"
+      },
+      "producer_record_ids": [
+        "bk01_a_an7",
+        "bk01_c_stone",
+        "bk01_p_stone"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c18",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Circumstances of stoning liability are presupposed, not specified here"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "תולדותיהן כיוצא בהן לא שנא אב חטאת ולא שנא תולדה חטאת לא שנא אב סקילה ולא שנא תולדה סקילה",
+            "ref": "Bava Kamma 2a:7",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c18",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "A derivative Sabbath labor incurs stoning.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an7": "65363c1d9bf4a2b77e49e9db198557e186314d11a30ea1a2036653a8f25d5086",
+        "bk01_c_stone": "cb958e676de4464b64bccf83e03d424491082c7b94ffd79bf20780faeef52c06",
+        "bk01_p_stone": "67e3e5e3ee88433d75c9e350ecbe9d098d71173123c5e3ee4a3fef2c15fccfa6"
+      },
+      "producer_record_ids": [
+        "bk01_a_an7",
+        "bk01_c_stone",
+        "bk01_p_stone"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c19",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Two distinct primary labors together"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+            "ref": "Bava Kamma 2a:8",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c19",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Two primary labors performed together generate liability for each.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an8": "11de719b50dd0dc11e62a14e9d86dd0adc90b44312fe2168a0403696ba686e00",
+        "bk01_c_two_av": "39bfef9b089dddb0c78cdf3bb51d81a1dd846551fcc0d6ed580a2827eb75f233",
+        "bk01_p_two_av": "4298e3ea2e87d76f797fc68e3ebc51ff4d5bd305d0f7056ee8ad86b715fbb74f"
+      },
+      "producer_record_ids": [
+        "bk01_a_an8",
+        "bk01_c_two_av",
+        "bk01_p_two_av"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Reader uncertainty is preserved in producer record uncertainty; no new resolution is asserted here.",
+      "independent_id": "c20",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Two derivatives together; their relation to primary labors is not spelled out here"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+            "ref": "Bava Kamma 2a:8",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c20",
+        "interpretive_notes": [
+          "Do not generalize to derivatives of one common primary without separate source support."
+        ],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Two derivative labors performed together generate liability for each.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an8": "11de719b50dd0dc11e62a14e9d86dd0adc90b44312fe2168a0403696ba686e00",
+        "bk01_c_two_tol": "b4b71a7ac15d0fc75ed5fb63e431ed5be515653afe7f6fcc71d2cc3a39863e85",
+        "bk01_p_two_tol": "d3ceef72542a08856c2426422e97d696dd4a3a76a218737e0eb460a9c139c78a"
+      },
+      "producer_record_ids": [
+        "bk01_a_an8",
+        "bk01_c_two_tol",
+        "bk01_p_two_tol"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c21",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Primary labor plus its own derivative together"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+            "ref": "Bava Kamma 2a:8",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c21",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "A primary labor and its own derivative performed together generate only one liability.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an8": "11de719b50dd0dc11e62a14e9d86dd0adc90b44312fe2168a0403696ba686e00",
+        "bk01_c_same": "205c11cc21bf431c19b67f01e7adc10f9ad777b6e4a582a38722968dab6e5e2f",
+        "bk01_p_same": "b44560ab842559e4f9d8428ed06a80d3a9ec24324fa370420dd2a8ad37de8336"
+      },
+      "producer_record_ids": [
+        "bk01_a_an8",
+        "bk01_c_same",
+        "bk01_p_same"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c22",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Derivative performed alongside its primary"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+            "ref": "Bava Kamma 2a:9",
+            "start_char": 0
+          }
+        ],
+        "holder": "Rabbi Eliezer",
+        "id": "c22",
+        "interpretive_notes": [
+          "Position is attributed in an anonymous question, not a direct speech or a transmitter chain."
+        ],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "A derivative generates liability even alongside its primary.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an9": "389be191a2c0ce153d2c54339bb447e71782587bb7c6cc1fbffa32f882519555",
+        "bk01_a_eliezer": "5090b9c60351b8e90c4139ef42f5a1ddfb0949ab2a0fab774fecf720b75c6894",
+        "bk01_c_eliezer": "f8b59e948555914c97aa746725fcd2e52bfb0b7024790500b93ad950f92a0865",
+        "bk01_p_eliezer": "2440839b7b14245f13fb68e4fbe124a464d7c9053cdf5dff72435273fbb61007"
+      },
+      "producer_record_ids": [
+        "bk01_a_an9",
+        "bk01_a_eliezer",
+        "bk01_c_eliezer",
+        "bk01_p_eliezer"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Reader uncertainty is preserved in producer record uncertainty; no new resolution is asserted here.",
+      "independent_id": "c23",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Explanation under Rabbi Eliezer"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+            "ref": "Bava Kamma 2a:9",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c23",
+        "interpretive_notes": [
+          "Preserve wording ambiguity of existence/importance in the Tabernacle; no commentary edition consulted."
+        ],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "What was important in the Tabernacle is called primary.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an9": "389be191a2c0ce153d2c54339bb447e71782587bb7c6cc1fbffa32f882519555",
+        "bk01_a_eliezer": "5090b9c60351b8e90c4139ef42f5a1ddfb0949ab2a0fab774fecf720b75c6894",
+        "bk01_c_mishkan": "0a6ca76c669eaea4c7be415538a3e832c2367838e8a224358bfe935f3e79b086",
+        "bk01_p_mishkan": "f15c4719822946cef7082623fa8095d099a55d1a1c4e5f2ca51c44fbbe9f3390"
+      },
+      "producer_record_ids": [
+        "bk01_a_an9",
+        "bk01_a_eliezer",
+        "bk01_c_mishkan",
+        "bk01_p_mishkan"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Reader uncertainty is preserved in producer record uncertainty; no new resolution is asserted here.",
+      "independent_id": "c24",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Explanation under Rabbi Eliezer"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+            "ref": "Bava Kamma 2a:9",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c24",
+        "interpretive_notes": [
+          "The phrase can bear a more specific reading of nonpresence or lack of importance; not resolved here."
+        ],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "What was not important in the Tabernacle is called derivative.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an9": "389be191a2c0ce153d2c54339bb447e71782587bb7c6cc1fbffa32f882519555",
+        "bk01_a_eliezer": "5090b9c60351b8e90c4139ef42f5a1ddfb0949ab2a0fab774fecf720b75c6894",
+        "bk01_c_mishkan": "0a6ca76c669eaea4c7be415538a3e832c2367838e8a224358bfe935f3e79b086",
+        "bk01_p_mishkan": "f15c4719822946cef7082623fa8095d099a55d1a1c4e5f2ca51c44fbbe9f3390"
+      },
+      "producer_record_ids": [
+        "bk01_a_an9",
+        "bk01_a_eliezer",
+        "bk01_c_mishkan",
+        "bk01_p_mishkan"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c25",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 43,
+            "quote": "גבי טומאות תנן אבות הטומאות השרץ והשכבת זרע",
+            "ref": "Bava Kamma 2a:10",
+            "start_char": 0
+          }
+        ],
+        "holder": "quoted anonymous impurity Mishnah",
+        "id": "c25",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The creeping creature is a primary impurity.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an10": "e540dbe3fb69f3148dd6de2a2f31b175f35b8de7a84550ff42c21db4a6be9ca8",
+        "bk01_c_impav": "5312da4cdeb3d46e51c348b15871ed2804d7904784443d457b5d4234bdb2d2f3",
+        "bk01_p_impav": "0a1217d4a9051852eb793433645ad3a6f4ed40a0b963cb237c7cfabdc10c6220"
+      },
+      "producer_record_ids": [
+        "bk01_a_an10",
+        "bk01_c_impav",
+        "bk01_p_impav"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c26",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 43,
+            "quote": "גבי טומאות תנן אבות הטומאות השרץ והשכבת זרע",
+            "ref": "Bava Kamma 2a:10",
+            "start_char": 0
+          }
+        ],
+        "holder": "quoted anonymous impurity Mishnah",
+        "id": "c26",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Semen is a primary impurity.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_a_an10": "e540dbe3fb69f3148dd6de2a2f31b175f35b8de7a84550ff42c21db4a6be9ca8",
+        "bk01_c_impav": "5312da4cdeb3d46e51c348b15871ed2804d7904784443d457b5d4234bdb2d2f3",
+        "bk01_p_impav": "0a1217d4a9051852eb793433645ad3a6f4ed40a0b963cb237c7cfabdc10c6220"
+      },
+      "producer_record_ids": [
+        "bk01_a_an10",
+        "bk01_c_impav",
+        "bk01_p_impav"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c27",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+            "ref": "Bava Kamma 2b:12",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c27",
+        "interpretive_notes": [
+          "Mazal is retained rather than forced into a specific metaphysics."
+        ],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The human has mazal, accounting for the wording yigach.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_12": "6952f983df59d528bbac242819fe1092b3aea5095870285e286c02991b131ea6",
+        "bk02_c_mazal": "710a209e8036899e2ff42f8586dcd45a0a699b3e787ebc9d38ae21d51a766672",
+        "bk02_p_mazal": "12b37b48f4366312cb85fc33ab05e3b27b53446252d066d9504f4648a4633afd"
+      },
+      "producer_record_ids": [
+        "bk02_a_12",
+        "bk02_c_mazal",
+        "bk02_p_mazal"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c28",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+            "ref": "Bava Kamma 2b:12",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c28",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The animal lacks mazal, accounting for the wording yigof.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_12": "6952f983df59d528bbac242819fe1092b3aea5095870285e286c02991b131ea6",
+        "bk02_c_mazal": "710a209e8036899e2ff42f8586dcd45a0a699b3e787ebc9d38ae21d51a766672",
+        "bk02_p_mazal": "12b37b48f4366312cb85fc33ab05e3b27b53446252d066d9504f4648a4633afd"
+      },
+      "producer_record_ids": [
+        "bk02_a_12",
+        "bk02_c_mazal",
+        "bk02_p_mazal"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c29",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Animal is forewarned for harming humans"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "ומלתא אגב אורחיה קמ\"ל דמועד לאדם הוי מועד לבהמה ומועד לבהמה לא הוי מועד לאדם",
+            "ref": "Bava Kamma 2b:13",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c29",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Forewarning with respect to humans also makes the animal forewarned with respect to animals.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_13": "06c7c0d3e74136f56d0f882d3455728d15e1058cfa13446a968666f87eb60201",
+        "bk02_c_humanmuad": "b9522a9804983d50ddae672300fafda0b35dd2be48f3042a6b2548d4b1a36e3d",
+        "bk02_p_humanmuad": "4a197c6b41844b8c1427834021ef620539c8a881d4328c12f17825589a4fc23d"
+      },
+      "producer_record_ids": [
+        "bk02_a_13",
+        "bk02_c_humanmuad",
+        "bk02_p_humanmuad"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c30",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Animal is forewarned for harming animals"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "ומלתא אגב אורחיה קמ\"ל דמועד לאדם הוי מועד לבהמה ומועד לבהמה לא הוי מועד לאדם",
+            "ref": "Bava Kamma 2b:13",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c30",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Forewarning with respect to animals does not make it forewarned with respect to humans.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_13": "06c7c0d3e74136f56d0f882d3455728d15e1058cfa13446a968666f87eb60201",
+        "bk02_c_animalmuad": "8f0db67890af35e5fb24b62fab9e904d75cfb6549eab161df8d9cee18a0f6758",
+        "bk02_p_animalmuad": "e3507bd82d8567389108c6bac7584d557656ee61fc3d490934c6b81a15d41e97"
+      },
+      "producer_record_ids": [
+        "bk02_a_13",
+        "bk02_c_animalmuad",
+        "bk02_p_animalmuad"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Reader models rejected proposal plus objection; producer models the same challenge as a question with an answer edge and contrast. Rejection is preserved by the answer and source; no maintained alternative is invented.",
+      "independent_id": "c31",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+            "ref": "Bava Kamma 2b:14",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c31",
+        "interpretive_notes": [],
+        "local_status": "rejected proposal",
+        "origin": "source_paraphrase",
+        "proposition": "Biting should be classified as a derivative of tooth.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_14": "3c9b97424266d7c9816b20760607beea7eb0b830abd957beceed32f237dc1c8d",
+        "bk02_q_bite": "2ed9823f86b9a72db1cdd6691ccd0584f85ff1c553516f8a8e1d36f1799b49d8"
+      },
+      "producer_record_ids": [
+        "bk02_a_14",
+        "bk02_q_bite"
+      ],
+      "status": "REPRESENTATIONAL_DIFFERENCE_NOT_OMISSION"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c32",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+            "ref": "Bava Kamma 2b:14",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c32",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Tooth yields enjoyment from its damaging act.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_14": "3c9b97424266d7c9816b20760607beea7eb0b830abd957beceed32f237dc1c8d",
+        "bk02_c_toothbenefit": "17572be7964df6ea1e44ca4c5662199c1e19b81d35435a38703aaba213d5dd80",
+        "bk02_p_toothbenefit": "f5134b5f9a769cf0a4ba69a9cf6e3ddd9bead780c735a01b26e1f9211d684e0f"
+      },
+      "producer_record_ids": [
+        "bk02_a_14",
+        "bk02_c_toothbenefit",
+        "bk02_p_toothbenefit"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c33",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Biting in the horn-derivative inventory"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+            "ref": "Bava Kamma 2b:14",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c33",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The biting under discussion yields no enjoyment from its damaging act.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_14": "3c9b97424266d7c9816b20760607beea7eb0b830abd957beceed32f237dc1c8d",
+        "bk02_c_bitebenefit": "68e296872af9b737b6a3c61265fa469c32ded7507db8b60b0b0b3f87cd25c43f",
+        "bk02_p_bitebenefit": "1c54ccb4ec87e1b5554bdb067a25c5a892ef679debdfae767fb9fab5bc683203"
+      },
+      "producer_record_ids": [
+        "bk02_a_14",
+        "bk02_c_bitebenefit",
+        "bk02_p_bitebenefit"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Reader models rejected proposal plus objection; producer models the same challenge as a question with an answer edge and contrast. Rejection is preserved by the answer and source; no maintained alternative is invented.",
+      "independent_id": "c34",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+            "ref": "Bava Kamma 2b:15",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c34",
+        "interpretive_notes": [],
+        "local_status": "rejected proposal",
+        "origin": "source_paraphrase",
+        "proposition": "Crouching should be classified as a derivative of foot.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_15": "ad3a46f77cfa36361fcf9c030fb3f3c4a9476db4ee203ee99af8545db70eb240",
+        "bk02_q_restkick": "717c4964eb7c8cdf18e25c48c355e6b30dd86a5da7ec27e08b53f3310aae56ac"
+      },
+      "producer_record_ids": [
+        "bk02_a_15",
+        "bk02_q_restkick"
+      ],
+      "status": "REPRESENTATIONAL_DIFFERENCE_NOT_OMISSION"
+    },
+    {
+      "assessment": "Reader models rejected proposal plus objection; producer models the same challenge as a question with an answer edge and contrast. Rejection is preserved by the answer and source; no maintained alternative is invented.",
+      "independent_id": "c35",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+            "ref": "Bava Kamma 2b:15",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c35",
+        "interpretive_notes": [],
+        "local_status": "rejected proposal",
+        "origin": "source_paraphrase",
+        "proposition": "Kicking should be classified as a derivative of foot.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_15": "ad3a46f77cfa36361fcf9c030fb3f3c4a9476db4ee203ee99af8545db70eb240",
+        "bk02_q_restkick": "717c4964eb7c8cdf18e25c48c355e6b30dd86a5da7ec27e08b53f3310aae56ac"
+      },
+      "producer_record_ids": [
+        "bk02_a_15",
+        "bk02_q_restkick"
+      ],
+      "status": "REPRESENTATIONAL_DIFFERENCE_NOT_OMISSION"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c36",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+            "ref": "Bava Kamma 2b:15",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c36",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Foot damage is common.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_15": "ad3a46f77cfa36361fcf9c030fb3f3c4a9476db4ee203ee99af8545db70eb240",
+        "bk02_c_footfrequency": "35ffa09c470ab99edfd78c36ecd80fd63b32890af6051982bf6b31f4bde22808",
+        "bk02_p_footfrequency": "fd604835e1cf59012a02cbf4821c3bc106d906366fead9add1bdb6aa72cfea3a"
+      },
+      "producer_record_ids": [
+        "bk02_a_15",
+        "bk02_c_footfrequency",
+        "bk02_p_footfrequency"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c37",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [
+          "Crouching and kicking in the horn-derivative inventory"
+        ],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+            "ref": "Bava Kamma 2b:15",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c37",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The crouching and kicking under discussion do not commonly cause damage.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_15": "ad3a46f77cfa36361fcf9c030fb3f3c4a9476db4ee203ee99af8545db70eb240",
+        "bk02_c_restkickfrequency": "ffb86fca2e78c8d5922cbfa2a91de0e90b3f5a4ffc7a8768d943d7c4b088db48",
+        "bk02_p_restkickfrequency": "d4f22e4440080e7dfd9076a6def1f63611d86e2644bf094dda336ce9cb6c06dc"
+      },
+      "producer_record_ids": [
+        "bk02_a_15",
+        "bk02_c_restkickfrequency",
+        "bk02_p_restkickfrequency"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Recalled Rav Pappa claim occurs at 2b:16 in attribution evidence linked to bk01_c_pappa; preserved occurrence and holder, not a new anonymous statement assigned to Rav Pappa.",
+      "independent_id": "c38",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "אלא תולדותיהן לאו כיוצא בהן דאמר רב פפא אהייא",
+            "ref": "Bava Kamma 2b:16",
+            "start_char": 0
+          }
+        ],
+        "holder": "Rav Pappa",
+        "id": "c38",
+        "interpretive_notes": [
+          "Anonymous Gemara recalls Rav Pappa; wording here abbreviates the mixed assertion at 2b:2."
+        ],
+        "local_status": "reported; scope under investigation",
+        "origin": "source_paraphrase",
+        "proposition": "Rav Pappa has said that some derivatives are unlike their primary.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk01_c_pappa": "f2060adb2fd3fd1b3bd90d01a4df8514a63cddf951b2bd68a55811e242e85d09",
+        "bk01_p_pappa": "de79363ee9aaefbdcb0951c5a31e0090a209d24cf0d03b50ce52f157d6643b5a",
+        "bk02_a_16": "e6c0f26a42598bf9e64b6eecfc3381f921bfac3191e7630b061f59be1b3d3ccb",
+        "bk02_a_pappa": "f2571cb8a19e0afc54d022467bbbe041cbc904ec92299703e34125dd4d73ed8d",
+        "bk02_q_pappa": "8597db82fbc32cd8254586dd64a490569d7cecce4b118b08cc83793ffe8a021f"
+      },
+      "producer_record_ids": [
+        "bk01_c_pappa",
+        "bk01_p_pappa",
+        "bk02_a_16",
+        "bk02_a_pappa",
+        "bk02_q_pappa"
+      ],
+      "status": "RECALL_LINKED_TO_EARLIER_CLAIM"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c39",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c39",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Horn has intent to harm.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_c_common": "6d21ad1c0c753f387467380047fe834cc1d61172a399b856153d48afeaa13636",
+        "bk02_p_common": "abe6f0cc48420176120fcc2a6821b96372188e8a5ad7ddcf84c84f30c09c1d87"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_c_common",
+        "bk02_p_common"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c40",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c40",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Horn is your property.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_c_common": "6d21ad1c0c753f387467380047fe834cc1d61172a399b856153d48afeaa13636",
+        "bk02_p_common": "abe6f0cc48420176120fcc2a6821b96372188e8a5ad7ddcf84c84f30c09c1d87"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_c_common",
+        "bk02_p_common"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c41",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c41",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "Horn guarding is incumbent upon you.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_c_common": "6d21ad1c0c753f387467380047fe834cc1d61172a399b856153d48afeaa13636",
+        "bk02_p_common": "abe6f0cc48420176120fcc2a6821b96372188e8a5ad7ddcf84c84f30c09c1d87"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_c_common",
+        "bk02_p_common"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c42",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c42",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The horn derivatives also have intent to harm.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_c_common": "6d21ad1c0c753f387467380047fe834cc1d61172a399b856153d48afeaa13636",
+        "bk02_p_common": "abe6f0cc48420176120fcc2a6821b96372188e8a5ad7ddcf84c84f30c09c1d87"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_c_common",
+        "bk02_p_common"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c43",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c43",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The horn derivatives also are your property.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_c_common": "6d21ad1c0c753f387467380047fe834cc1d61172a399b856153d48afeaa13636",
+        "bk02_p_common": "abe6f0cc48420176120fcc2a6821b96372188e8a5ad7ddcf84c84f30c09c1d87"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_c_common",
+        "bk02_p_common"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Multiple independent atomic propositions share this producer record. Source content is retained, but atomic downstream use requires finer splitting and fresh task qualification.",
+      "independent_id": "c44",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c44",
+        "interpretive_notes": [],
+        "local_status": "asserted",
+        "origin": "source_paraphrase",
+        "proposition": "The horn derivatives also require your guarding.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_c_common": "6d21ad1c0c753f387467380047fe834cc1d61172a399b856153d48afeaa13636",
+        "bk02_p_common": "abe6f0cc48420176120fcc2a6821b96372188e8a5ad7ddcf84c84f30c09c1d87"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_c_common",
+        "bk02_p_common"
+      ],
+      "status": "CONTENT_PRESERVED_COARSER_CLAIM_GRANULARITY"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "c45",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+            "ref": "Bava Kamma 2b:18",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c45",
+        "interpretive_notes": [],
+        "local_status": "local conclusion",
+        "origin": "source_paraphrase",
+        "proposition": "A horn derivative is like horn.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_18": "869c8c219970497b8809798a4383df3c4a5f0204515e8752ef3fb83e6ae69a99",
+        "bk02_a_pappa": "f2571cb8a19e0afc54d022467bbbe041cbc904ec92299703e34125dd4d73ed8d",
+        "bk02_c_hornequal": "16817316ae03fdab15efa58e6ce742bcd9efd6f0b067e23f088ce1b55aa99bdf",
+        "bk02_p_hornequal": "cfc5c04b29aa9f37e183815d542cd7d8d0c46a527d409ea1fab73bb02681aed5"
+      },
+      "producer_record_ids": [
+        "bk02_a_18",
+        "bk02_a_pappa",
+        "bk02_c_hornequal",
+        "bk02_p_hornequal"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Producer marks hypothetical/provisional and leaves structure open. Later supersession is in unprocessed source, so absent continuation edges are not counted as omissions in this snapshot.",
+      "independent_id": "c46",
+      "independent_layer": "claims",
+      "independent_reading": {
+        "conditions": [],
+        "core": true,
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+            "ref": "Bava Kamma 2b:18",
+            "start_char": 0
+          }
+        ],
+        "holder": "anonymous Gemara",
+        "id": "c46",
+        "interpretive_notes": [
+          "Not a direct Rav Pappa utterance. Tooth is eliminated at 3a:15; ordinary foot derivatives at 3a:17; final exception is half-damage pebbles at 3b:8."
+        ],
+        "local_status": "provisional scope assignment; superseded in continuation",
+        "origin": "source_paraphrase",
+        "proposition": "Rav Pappa intended tooth and foot when speaking of derivatives unlike their primary.",
+        "transmitter": null
+      },
+      "producer_record_hashes": {
+        "bk02_a_18": "869c8c219970497b8809798a4383df3c4a5f0204515e8752ef3fb83e6ae69a99",
+        "bk02_a_pappa": "f2571cb8a19e0afc54d022467bbbe041cbc904ec92299703e34125dd4d73ed8d",
+        "bk02_c_pappatoothfoot": "ef8a0ff21c1ebc00fb396a489054215a5f792ed9e25bc65dd85cef319c1fe620",
+        "bk02_p_pappatoothfoot": "e55db8d20e54ec87d1972a56d4be17b157178274cbfc7098252453a83c0f57c4"
+      },
+      "producer_record_ids": [
+        "bk02_a_18",
+        "bk02_a_pappa",
+        "bk02_c_pappatoothfoot",
+        "bk02_p_pappatoothfoot"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "q01",
+      "independent_layer": "questions",
+      "independent_reading": {
+        "answer_claim_ids": [
+          "x05",
+          "x14"
+        ],
+        "answer_set_status": "partial",
+        "comparability": "Mixed category answer, not a pair of named opposing scholars.",
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "<big><strong>גמ׳</strong></big> מדקתני אבות מכלל דאיכא תולדות תולדותיהן כיוצא בהן או לאו כיוצא בהן",
+            "ref": "Bava Kamma 2a:5",
+            "start_char": 0
+          }
+        ],
+        "formulation": "Are damage derivatives equivalent to their primaries?",
+        "id": "q01",
+        "origin": "explicit source question; English paraphrase"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an5": "69276bc12366f85dc43e31a2bb07ae7ae1fcd7557e2e790c316e13e81ebb5519",
+        "bk01_q_equiv": "e34cba8160adc2bd3cee696ccf108b7248f58ae6b4382d4be709ebcadc03eb8a"
+      },
+      "producer_record_ids": [
+        "bk01_a_an5",
+        "bk01_q_equiv"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "q02",
+      "independent_layer": "questions",
+      "independent_reading": {
+        "answer_claim_ids": [
+          "c19",
+          "c20",
+          "c21"
+        ],
+        "answer_set_status": "partial",
+        "comparability": "Answers address the same local question; no scholar-choice dataset eligibility inferred.",
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+            "ref": "Bava Kamma 2a:8",
+            "start_char": 0
+          }
+        ],
+        "formulation": "What distinguishes primary and derivative Sabbath labor?",
+        "id": "q02",
+        "origin": "explicit source question; English paraphrase"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an8": "11de719b50dd0dc11e62a14e9d86dd0adc90b44312fe2168a0403696ba686e00",
+        "bk01_q_shab_diff": "d65709d6eeabc1630c9b04710597e482421ff60a53cbebebf004cd585d020d45"
+      },
+      "producer_record_ids": [
+        "bk01_a_an8",
+        "bk01_q_shab_diff"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "q03",
+      "independent_layer": "questions",
+      "independent_reading": {
+        "answer_claim_ids": [
+          "c23",
+          "c24"
+        ],
+        "answer_set_status": "partial",
+        "comparability": "Answers explain terminology under his different liability premise; not proof that Rabbi Eliezer spoke the anonymous explanation.",
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+            "ref": "Bava Kamma 2a:9",
+            "start_char": 0
+          }
+        ],
+        "formulation": "Under Rabbi Eliezer why retain primary/derivative terminology?",
+        "id": "q03",
+        "origin": "explicit source question; English paraphrase"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an9": "389be191a2c0ce153d2c54339bb447e71782587bb7c6cc1fbffa32f882519555",
+        "bk01_a_eliezer": "5090b9c60351b8e90c4139ef42f5a1ddfb0949ab2a0fab774fecf720b75c6894",
+        "bk01_q_eliezer": "0d36a6a4324b96e95caa7dc905f1cb3167fe63e888d8d496a8fa534f042d6af4"
+      },
+      "producer_record_ids": [
+        "bk01_a_an9",
+        "bk01_a_eliezer",
+        "bk01_q_eliezer"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "q04",
+      "independent_layer": "questions",
+      "independent_reading": {
+        "answer_claim_ids": [
+          "c27",
+          "c28",
+          "c29",
+          "c30"
+        ],
+        "answer_set_status": "partial",
+        "comparability": "Answers address the same local question; no scholar-choice dataset eligibility inferred.",
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "מאי שנא גבי אדם דכתיב כי יגח ומאי שנא גבי בהמה דכתיב כי יגוף",
+            "ref": "Bava Kamma 2b:11",
+            "start_char": 0
+          }
+        ],
+        "formulation": "Why does the human verse say yigach and the animal verse yigof?",
+        "id": "q04",
+        "origin": "explicit source question; English paraphrase"
+      },
+      "producer_record_hashes": {
+        "bk02_a_11": "434dfe98e76b5801256c9f3912d48c800e0e6c399d7a44a92a0fd6b49018e035",
+        "bk02_q_vocabulary": "1587bd401f20e46a54e8d6fbf1c74b48ea50fc181e60ab7ee096d5e8533b29cb"
+      },
+      "producer_record_ids": [
+        "bk02_a_11",
+        "bk02_q_vocabulary"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "q05",
+      "independent_layer": "questions",
+      "independent_reading": {
+        "answer_claim_ids": [
+          "c32",
+          "c33"
+        ],
+        "answer_set_status": "partial",
+        "comparability": "Rejected reclassification, not a maintained alternative position.",
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+            "ref": "Bava Kamma 2b:14",
+            "start_char": 0
+          }
+        ],
+        "formulation": "Should biting instead be a tooth derivative?",
+        "id": "q05",
+        "origin": "explicit source question; English paraphrase"
+      },
+      "producer_record_hashes": {
+        "bk02_a_14": "3c9b97424266d7c9816b20760607beea7eb0b830abd957beceed32f237dc1c8d",
+        "bk02_q_bite": "2ed9823f86b9a72db1cdd6691ccd0584f85ff1c553516f8a8e1d36f1799b49d8"
+      },
+      "producer_record_ids": [
+        "bk02_a_14",
+        "bk02_q_bite"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "q06",
+      "independent_layer": "questions",
+      "independent_reading": {
+        "answer_claim_ids": [
+          "c36",
+          "c37"
+        ],
+        "answer_set_status": "partial",
+        "comparability": "Answers address the same local question; no scholar-choice dataset eligibility inferred.",
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+            "ref": "Bava Kamma 2b:15",
+            "start_char": 0
+          }
+        ],
+        "formulation": "Should crouching and kicking instead be foot derivatives?",
+        "id": "q06",
+        "origin": "explicit source question; English paraphrase"
+      },
+      "producer_record_hashes": {
+        "bk02_a_15": "ad3a46f77cfa36361fcf9c030fb3f3c4a9476db4ee203ee99af8545db70eb240",
+        "bk02_q_restkick": "717c4964eb7c8cdf18e25c48c355e6b30dd86a5da7ec27e08b53f3310aae56ac"
+      },
+      "producer_record_ids": [
+        "bk02_a_15",
+        "bk02_q_restkick"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "q07",
+      "independent_layer": "questions",
+      "independent_reading": {
+        "answer_claim_ids": [
+          "c45",
+          "c46",
+          "x09",
+          "x10",
+          "x11",
+          "x12",
+          "x13",
+          "x14"
+        ],
+        "answer_set_status": "partial",
+        "comparability": "Successive eliminated scope candidates; only the pebbles resolution survives locally.",
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "אלא תולדותיהן לאו כיוצא בהן דאמר רב פפא אהייא",
+            "ref": "Bava Kamma 2b:16",
+            "start_char": 0
+          }
+        ],
+        "formulation": "Which derivatives does Rav Pappa regard as unlike their primaries?",
+        "id": "q07",
+        "origin": "explicit source question; English paraphrase"
+      },
+      "producer_record_hashes": {
+        "bk02_a_16": "e6c0f26a42598bf9e64b6eecfc3381f921bfac3191e7630b061f59be1b3d3ccb",
+        "bk02_a_pappa": "f2571cb8a19e0afc54d022467bbbe041cbc904ec92299703e34125dd4d73ed8d",
+        "bk02_q_pappa": "8597db82fbc32cd8254586dd64a490569d7cecce4b118b08cc83793ffe8a021f"
+      },
+      "producer_record_ids": [
+        "bk02_a_16",
+        "bk02_a_pappa",
+        "bk02_q_pappa"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e02",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+            "ref": "Bava Kamma 2a:8",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e02",
+        "relation": "answer",
+        "source_id": "c19",
+        "target_id": "q02"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an8": "11de719b50dd0dc11e62a14e9d86dd0adc90b44312fe2168a0403696ba686e00",
+        "bk01_e_two": "3918d1c955efc4c53fd0b3c36905255dc1ae855efabf38a821413d02554564b3"
+      },
+      "producer_record_ids": [
+        "bk01_a_an8",
+        "bk01_e_two"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e03",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+            "ref": "Bava Kamma 2a:8",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e03",
+        "relation": "answer",
+        "source_id": "c20",
+        "target_id": "q02"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an8": "11de719b50dd0dc11e62a14e9d86dd0adc90b44312fe2168a0403696ba686e00",
+        "bk01_e_twot": "2a6026dd59357dc8ce60b606d51eaff4cba9ad91807cde1beb7819f8716353dd"
+      },
+      "producer_record_ids": [
+        "bk01_a_an8",
+        "bk01_e_twot"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e04",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "ומאי איכא בין אב לתולדה נפקא מינה דאילו עביד שתי אבות בהדי הדדי אי נמי שתי תולדות בהדי הדדי מחייב אכל חדא וחדא ואילו עביד אב ותולדה דידיה לא מחייב אלא חדא",
+            "ref": "Bava Kamma 2a:8",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e04",
+        "relation": "answer",
+        "source_id": "c21",
+        "target_id": "q02"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an8": "11de719b50dd0dc11e62a14e9d86dd0adc90b44312fe2168a0403696ba686e00",
+        "bk01_e_diff": "5148afc7bdac8b2d5c6477cb2564108c74a99ecf6d472512f02abc860ab46f88"
+      },
+      "producer_record_ids": [
+        "bk01_a_an8",
+        "bk01_e_diff"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e05",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+            "ref": "Bava Kamma 2a:9",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e05",
+        "relation": "answer",
+        "source_id": "c23",
+        "target_id": "q03"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an9": "389be191a2c0ce153d2c54339bb447e71782587bb7c6cc1fbffa32f882519555",
+        "bk01_a_eliezer": "5090b9c60351b8e90c4139ef42f5a1ddfb0949ab2a0fab774fecf720b75c6894",
+        "bk01_e_mishkan": "eac19f4f3701f01805489abb253fc4f61d3b75c6d873f3445d448995ff3c05ef"
+      },
+      "producer_record_ids": [
+        "bk01_a_an9",
+        "bk01_a_eliezer",
+        "bk01_e_mishkan"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e06",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 137,
+            "quote": "ולרבי אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי לה תולדה הך דהוה במשכן חשיבא קרי ליה אב הך דלא הוי במשכן חשיבא קרי לה תולדה",
+            "ref": "Bava Kamma 2a:9",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e06",
+        "relation": "answer",
+        "source_id": "c24",
+        "target_id": "q03"
+      },
+      "producer_record_hashes": {
+        "bk01_a_an9": "389be191a2c0ce153d2c54339bb447e71782587bb7c6cc1fbffa32f882519555",
+        "bk01_a_eliezer": "5090b9c60351b8e90c4139ef42f5a1ddfb0949ab2a0fab774fecf720b75c6894",
+        "bk01_e_mishkan": "eac19f4f3701f01805489abb253fc4f61d3b75c6d873f3445d448995ff3c05ef"
+      },
+      "producer_record_ids": [
+        "bk01_a_an9",
+        "bk01_a_eliezer",
+        "bk01_e_mishkan"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e07",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+            "ref": "Bava Kamma 2b:12",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e07",
+        "relation": "answer",
+        "source_id": "c27",
+        "target_id": "q04"
+      },
+      "producer_record_hashes": {
+        "bk02_a_12": "6952f983df59d528bbac242819fe1092b3aea5095870285e286c02991b131ea6",
+        "bk02_e_mazal": "b044a2d6b1615b2bc06ea0ccf5ac71f34a5a48c858d9b402c2ac025766cb225e"
+      },
+      "producer_record_ids": [
+        "bk02_a_12",
+        "bk02_e_mazal"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e08",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "אדם דאית ליה מזלא כתיב כי יגח בהמה דלית לה מזלא כתיב כי יגוף",
+            "ref": "Bava Kamma 2b:12",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e08",
+        "relation": "answer",
+        "source_id": "c28",
+        "target_id": "q04"
+      },
+      "producer_record_hashes": {
+        "bk02_a_12": "6952f983df59d528bbac242819fe1092b3aea5095870285e286c02991b131ea6",
+        "bk02_e_mazal": "b044a2d6b1615b2bc06ea0ccf5ac71f34a5a48c858d9b402c2ac025766cb225e"
+      },
+      "producer_record_ids": [
+        "bk02_a_12",
+        "bk02_e_mazal"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Reader models rejected proposal plus objection; producer models the same challenge as a question with an answer edge and contrast. Rejection is preserved by the answer and source; no maintained alternative is invented.",
+      "independent_id": "e09",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "נשיכה תולדה דשן היא לא שן יש הנאה להזיקה הא אין הנאה להזיקה",
+            "ref": "Bava Kamma 2b:14",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e09",
+        "relation": "objection",
+        "source_id": "c33",
+        "target_id": "c31"
+      },
+      "producer_record_hashes": {
+        "bk02_a_14": "3c9b97424266d7c9816b20760607beea7eb0b830abd957beceed32f237dc1c8d",
+        "bk02_e_biteanswer": "cf17b158e8807bab08849d74565ae2ae1de1790050b9f2e5ae7695059526eb90"
+      },
+      "producer_record_ids": [
+        "bk02_a_14",
+        "bk02_e_biteanswer"
+      ],
+      "status": "REPRESENTATIONAL_DIFFERENCE_NOT_OMISSION"
+    },
+    {
+      "assessment": "Reader models rejected proposal plus objection; producer models the same challenge as a question with an answer edge and contrast. Rejection is preserved by the answer and source; no maintained alternative is invented.",
+      "independent_id": "e10",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+            "ref": "Bava Kamma 2b:15",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e10",
+        "relation": "objection",
+        "source_id": "c37",
+        "target_id": "c34"
+      },
+      "producer_record_hashes": {
+        "bk02_a_15": "ad3a46f77cfa36361fcf9c030fb3f3c4a9476db4ee203ee99af8545db70eb240",
+        "bk02_e_restanswer": "230e1d7196067a2f3f73fcf18502b4a3f55db858639c702ed82dca9095cb1f42"
+      },
+      "producer_record_ids": [
+        "bk02_a_15",
+        "bk02_e_restanswer"
+      ],
+      "status": "REPRESENTATIONAL_DIFFERENCE_NOT_OMISSION"
+    },
+    {
+      "assessment": "Reader models rejected proposal plus objection; producer models the same challenge as a question with an answer edge and contrast. Rejection is preserved by the answer and source; no maintained alternative is invented.",
+      "independent_id": "e11",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "רביצה ובעיטה תולדה דרגל היא לא רגל הזיקה מצוי הני אין הזיקן מצוי",
+            "ref": "Bava Kamma 2b:15",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e11",
+        "relation": "objection",
+        "source_id": "c37",
+        "target_id": "c35"
+      },
+      "producer_record_hashes": {
+        "bk02_a_15": "ad3a46f77cfa36361fcf9c030fb3f3c4a9476db4ee203ee99af8545db70eb240",
+        "bk02_e_restanswer": "230e1d7196067a2f3f73fcf18502b4a3f55db858639c702ed82dca9095cb1f42"
+      },
+      "producer_record_ids": [
+        "bk02_a_15",
+        "bk02_e_restanswer"
+      ],
+      "status": "REPRESENTATIONAL_DIFFERENCE_NOT_OMISSION"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e12",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e12",
+        "relation": "support",
+        "source_id": "c42",
+        "target_id": "c45"
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_e_hornequality": "b23ef1b1f4e008e1a310ce8a583a1f46fa38cf11f70e6a0158945487c82e0c0d"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_e_hornequality"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e13",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e13",
+        "relation": "support",
+        "source_id": "c43",
+        "target_id": "c45"
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_e_hornequality": "b23ef1b1f4e008e1a310ce8a583a1f46fa38cf11f70e6a0158945487c82e0c0d"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_e_hornequality"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e14",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אילימא אהני מאי שנא קרן דכוונתו להזיק וממונך ושמירתו עליך הני נמי כוונתן להזיק וממונך ושמירתן עליך",
+            "ref": "Bava Kamma 2b:17",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e14",
+        "relation": "support",
+        "source_id": "c44",
+        "target_id": "c45"
+      },
+      "producer_record_hashes": {
+        "bk02_a_17": "bb89bf790b122375eac17d2818b56f1fdf91041813b875481659b68dc6758a71",
+        "bk02_e_hornequality": "b23ef1b1f4e008e1a310ce8a583a1f46fa38cf11f70e6a0158945487c82e0c0d"
+      },
+      "producer_record_ids": [
+        "bk02_a_17",
+        "bk02_e_hornequality"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    },
+    {
+      "assessment": "Both conclusion and question exist, but no edge makes the horn-equality conclusion qualify the scope question by excluding horn from unequal derivatives. The provisional tooth/foot answer does not encode this distinct negative elimination.",
+      "independent_id": "e15",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+            "ref": "Bava Kamma 2b:18",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e15",
+        "relation": "qualification",
+        "source_id": "c45",
+        "target_id": "q07"
+      },
+      "producer_record_hashes": {
+        "bk02_c_hornequal": "16817316ae03fdab15efa58e6ce742bcd9efd6f0b067e23f088ce1b55aa99bdf",
+        "bk02_e_hornequality": "b23ef1b1f4e008e1a310ce8a583a1f46fa38cf11f70e6a0158945487c82e0c0d",
+        "bk02_e_provisional": "2909c0d8ab9761e76b4322f774122b9e719d552de0f8b2cca6121bee729b0ccd",
+        "bk02_q_pappa": "8597db82fbc32cd8254586dd64a490569d7cecce4b118b08cc83793ffe8a021f"
+      },
+      "producer_record_ids": [
+        "bk02_c_hornequal",
+        "bk02_e_hornequality",
+        "bk02_e_provisional",
+        "bk02_q_pappa"
+      ],
+      "status": "MISSING_TYPED_RELATION_IN_COMPLETED_EDGE_PASS"
+    },
+    {
+      "assessment": "Checked proposition, conditions, local status, holder and source evidence; no incompatible attribution or maintained conclusion found.",
+      "independent_id": "e16",
+      "independent_layer": "argument_edges",
+      "independent_reading": {
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "אלא תולדה דקרן כקרן וכי קאמר רב פפא אשן ורגל",
+            "ref": "Bava Kamma 2b:18",
+            "start_char": 0
+          }
+        ],
+        "explicitness": "source_explicit",
+        "id": "e16",
+        "relation": "answer",
+        "source_id": "c46",
+        "target_id": "q07"
+      },
+      "producer_record_hashes": {
+        "bk02_a_18": "869c8c219970497b8809798a4383df3c4a5f0204515e8752ef3fb83e6ae69a99",
+        "bk02_a_pappa": "f2571cb8a19e0afc54d022467bbbe041cbc904ec92299703e34125dd4d73ed8d",
+        "bk02_e_provisional": "2909c0d8ab9761e76b4322f774122b9e719d552de0f8b2cca6121bee729b0ccd"
+      },
+      "producer_record_ids": [
+        "bk02_a_18",
+        "bk02_a_pappa",
+        "bk02_e_provisional"
+      ],
+      "status": "SUPPORTED_CONTENT_REPRESENTED"
+    }
+  ],
+  "mechanical_checks": {
+    "exact_candidate_in_memory_replay_pass": true,
+    "producer_evidence_slices": 208,
+    "read_only_replay": "runner.load and validate_apply only; no CURRENT selection, lock, promotion, or external write",
+    "reading_evidence_slices": 150,
+    "replayed_snapshot_sha256": "89aab343c9b6bb4c302a7a18094c6f1ee229c8b78e77fa8828d5a84d34985ff9",
+    "source_schema_protocol_pins_pass": true
+  },
+  "omission_pass_performed": true,
+  "producer_record_hash_contract": "SHA256 UTF-8 sorted-key compact JSON, ensure_ascii=false, followed by one LF; matches runner encoded(record).",
+  "scope": {
+    "argument_relations_denominator": 15,
+    "compared_completed_core_refs": [
+      "Bava Kamma 2a:1",
+      "Bava Kamma 2a:2",
+      "Bava Kamma 2a:3",
+      "Bava Kamma 2a:4",
+      "Bava Kamma 2a:5",
+      "Bava Kamma 2a:6",
+      "Bava Kamma 2a:7",
+      "Bava Kamma 2a:8",
+      "Bava Kamma 2a:9",
+      "Bava Kamma 2a:10",
+      "Bava Kamma 2b:11",
+      "Bava Kamma 2b:12",
+      "Bava Kamma 2b:13",
+      "Bava Kamma 2b:14",
+      "Bava Kamma 2b:15",
+      "Bava Kamma 2b:16",
+      "Bava Kamma 2b:17",
+      "Bava Kamma 2b:18"
+    ],
+    "context_is_not_probability_sample": true,
+    "endpoint_core_segments_compared": 10,
+    "full_tractate_review_complete": false,
+    "independent_core_claim_denominator": 46,
+    "independent_core_refs": [
+      "Bava Kamma 2a:1",
+      "Bava Kamma 2a:2",
+      "Bava Kamma 2a:3",
+      "Bava Kamma 2a:4",
+      "Bava Kamma 2a:5",
+      "Bava Kamma 2a:6",
+      "Bava Kamma 2a:7",
+      "Bava Kamma 2a:8",
+      "Bava Kamma 2a:9",
+      "Bava Kamma 2a:10",
+      "Bava Kamma 2b:11",
+      "Bava Kamma 2b:12",
+      "Bava Kamma 2b:13",
+      "Bava Kamma 2b:14",
+      "Bava Kamma 2b:15",
+      "Bava Kamma 2b:16",
+      "Bava Kamma 2b:17",
+      "Bava Kamma 2b:18",
+      "Bava Kamma 2b:19",
+      "Bava Kamma 2b:20",
+      "Bava Kamma 3a:1",
+      "Bava Kamma 3a:2",
+      "Bava Kamma 3a:3",
+      "Bava Kamma 3a:4",
+      "Bava Kamma 3a:5",
+      "Bava Kamma 3a:6",
+      "Bava Kamma 3a:7",
+      "Bava Kamma 3a:8",
+      "Bava Kamma 3a:9",
+      "Bava Kamma 3a:10"
+    ],
+    "missing_typed_relations": 1,
+    "probability_core_segments_compared": 8,
+    "producer_completed_per_layer": {
+      "attributions": 28,
+      "claims": 28,
+      "edges": 28,
+      "positions": 28,
+      "questions": 28,
+      "reconciliation": 28,
+      "structure": 28,
+      "utterances": 28
+    },
+    "questions_denominator": 7,
+    "represented_core_claim_contents": 46,
+    "source_segments_total": 4314,
+    "unprocessed_independent_core_refs": [
+      "Bava Kamma 2b:19",
+      "Bava Kamma 2b:20",
+      "Bava Kamma 3a:1",
+      "Bava Kamma 3a:2",
+      "Bava Kamma 3a:3",
+      "Bava Kamma 3a:4",
+      "Bava Kamma 3a:5",
+      "Bava Kamma 3a:6",
+      "Bava Kamma 3a:7",
+      "Bava Kamma 3a:8",
+      "Bava Kamma 3a:9",
+      "Bava Kamma 3a:10"
+    ]
+  },
+  "source_first_reading_hash_verified_before_producer_access": true,
+  "task_eligibility": {
+    "argument_extraction": false,
+    "attribution": false,
+    "ml": false,
+    "qa": false,
+    "retrieval": false,
+    "scholar_choice": false,
+    "segmentation": false
+  }
+}
