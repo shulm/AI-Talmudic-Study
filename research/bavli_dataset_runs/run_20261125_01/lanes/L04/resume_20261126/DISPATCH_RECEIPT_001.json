@@ -1,0 +1,51 @@
+{
+  "run_id": "run_20261125_01",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "authorization": "User requested continuation after prior agent; contract delegates within-lane handoffs to L04 lead.",
+  "observed_activity": "Only this L04 chat active in desktop list; coordinator idle; previous writer session not claimed active from files.",
+  "global_ledger_unchanged": true,
+  "dispatches": [
+    {
+      "job": "taanit",
+      "previous_owner": "L04/taanit",
+      "previous_epoch": 2,
+      "owner": "L04/taanit_resume_20261126",
+      "epoch": 3,
+      "agent": "/root/taanit_production"
+    },
+    {
+      "job": "bava_batra",
+      "previous_owner": "L04/bava_batra",
+      "previous_epoch": 2,
+      "owner": "L04/bava_batra_resume_20261126",
+      "epoch": 3,
+      "agent": "/root/verify_l04"
+    },
+    {
+      "job": "pesachim",
+      "previous_owner": "L04/pesachim",
+      "previous_epoch": 2,
+      "owner": "L04/pesachim_resume_20261126",
+      "epoch": 3,
+      "agent": "/root"
+    }
+  ],
+  "reviewer": {
+    "agent": "/root/source_review",
+    "fork_turns": "none",
+    "scope": "fresh source-only frozen plan readings; no production write"
+  },
+  "remaining_queue": [
+    "Avodah Zarah",
+    "Nedarim",
+    "Moed Katan",
+    "Makkot"
+  ],
+  "review_inbox_acknowledged": "7a41648b3f217c6fb3223373a533497e32b99af1556896d1349c68694732757f",
+  "telemetry": {
+    "new_metered_api_calls": 0,
+    "tokens": null,
+    "cost": null
+  }
+}

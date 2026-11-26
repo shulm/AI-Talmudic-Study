@@ -1,0 +1,59 @@
+{
+  "run_id": "run_20261125_01",
+  "authorization": "User-requested continuation; frozen contract delegates within-lane dispatch. No global ledger edits.",
+  "dispatches": [
+    {
+      "job": "avodah_zarah",
+      "previous_owner": "L04/avodah_zarah",
+      "previous_epoch": 2,
+      "epoch": 3,
+      "owner": "L04/avodah_zarah_resume_20261126",
+      "initial_agent": "/root/avodah_production"
+    },
+    {
+      "job": "nedarim",
+      "previous_owner": "L04/nedarim",
+      "previous_epoch": 2,
+      "epoch": 3,
+      "owner": "L04/nedarim_resume_20261126",
+      "initial_agent": "/root"
+    },
+    {
+      "job": "moed_katan",
+      "previous_owner": "L04/moed_katan",
+      "previous_epoch": 2,
+      "epoch": 3,
+      "owner": "L04/moed_katan_resume_20261126",
+      "initial_agent": "/root"
+    },
+    {
+      "job": "makkot",
+      "previous_owner": "L04/makkot",
+      "previous_epoch": 2,
+      "epoch": 3,
+      "owner": "L04/makkot_resume_20261126",
+      "initial_agent": "/root"
+    }
+  ],
+  "subsequent_delegation": [
+    {
+      "job": "makkot",
+      "agent": "/root/makkot_continuation",
+      "same_owner_epoch": true,
+      "starting_snapshot": "c0b5a58e9f5889d3cb276ff45e3fbf9f7749e8446884b342dd95bd944e03c2fb"
+    },
+    {
+      "job": "nedarim",
+      "agent": "/root/nedarim_continuation",
+      "same_owner_epoch": true,
+      "starting_snapshot": "ea261df8e980909566f9c44e23663c4adca9c1c4c7cdfcd99563e52b217898d7"
+    }
+  ],
+  "fresh_reviewers": [
+    "/root/review_avodah",
+    "/root/review_continuations"
+  ],
+  "new_metered_api_calls": 0,
+  "tokens": null,
+  "cost": null
+}

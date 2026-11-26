@@ -1,0 +1,753 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Bava Batra",
+  "source_sha256": "efa311405538b4993cd84dc91aad0bb3ff792aac3a3b62df117948d8a3ee9dd3",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "owner": "L04/bava_batra_resume_20261126",
+  "epoch": 3,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/verify_l04",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "bb.opening001.bothvalley.c.granularity015",
+        "target_id": "bb.opening001.bothvalleyfall.c"
+      },
+      "evidence": [
+        {
+          "end_char": 103,
+          "quote": "לפיכך אם נפל הכותל המקום והאבנים של שניהם",
+          "segment_id": "seg_dd31da8d4cea132f066e",
+          "start_char": 62
+        }
+      ],
+      "id": "bb.opening001.bothfall.reason.granularity015",
+      "layer": "edges",
+      "links": [
+        "bb.opening001.bothvalley.c.granularity015",
+        "bb.opening001.bothvalleyfall.c"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.bothfall.reason"
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "If both consent, they build at the middle and place a חזית on each side.",
+        "surface": "anonymous Mishnah",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "אם עשו מדעת שניהם בונין את הכותל באמצע ועושין חזית מכאן ומכאן",
+          "segment_id": "seg_dd31da8d4cea132f066e",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.bothvalley.a.granularity015",
+      "layer": "attributions",
+      "links": [
+        "bb.opening001.bothvalley.u.granularity015",
+        "bb.opening001.bothvalley.c.granularity015"
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.bothvalley.a"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "both consent to valley wall"
+        ],
+        "proposition": "If both consent, they build at the middle and place a חזית on each side.",
+        "scope": "local ruling"
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "אם עשו מדעת שניהם בונין את הכותל באמצע ועושין חזית מכאן ומכאן",
+          "segment_id": "seg_dd31da8d4cea132f066e",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.bothvalley.c.granularity015",
+      "layer": "claims",
+      "links": [
+        "bb.opening001.bothvalley.u.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.bothvalley.c"
+    },
+    {
+      "content": {
+        "claim_id": "bb.opening001.bothvalley.c.granularity015",
+        "conditions": [
+          "both consent to valley wall"
+        ],
+        "holder_candidates": [
+          "anonymous Mishnah"
+        ],
+        "local_status": "asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "אם עשו מדעת שניהם בונין את הכותל באמצע ועושין חזית מכאן ומכאן",
+          "segment_id": "seg_dd31da8d4cea132f066e",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.bothvalley.p.granularity015",
+      "layer": "positions",
+      "links": [
+        "bb.opening001.bothvalley.c.granularity015",
+        "bb.opening001.bothvalley.a.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.bothvalley.p"
+    },
+    {
+      "content": {
+        "composition": "composite",
+        "discourse_role": "ruling",
+        "textual_voice": "anonymous Mishnah"
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "אם עשו מדעת שניהם בונין את הכותל באמצע ועושין חזית מכאן ומכאן",
+          "segment_id": "seg_dd31da8d4cea132f066e",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.bothvalley.u.granularity015",
+      "layer": "utterances",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.bothvalley.u"
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "A partner who nevertheless wishes to build withdraws within his land, builds, and places a חזית on the outside.",
+        "surface": "anonymous Mishnah",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 47,
+          "quote": "אלא אם רצה כונס לתוך שלו ובונה ועושה חזית מבחוץ",
+          "segment_id": "seg_80c991cb0ceef516d89d",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.single.a.granularity015",
+      "layer": "attributions",
+      "links": [
+        "bb.opening001.single.u.granularity015",
+        "bb.opening001.single.c.granularity015"
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.single.a"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "noncompulsory valley wall",
+          "one partner alone wishes to build"
+        ],
+        "proposition": "A partner who nevertheless wishes to build withdraws within his land, builds, and places a חזית on the outside.",
+        "scope": "valley continuation"
+      },
+      "evidence": [
+        {
+          "end_char": 47,
+          "quote": "אלא אם רצה כונס לתוך שלו ובונה ועושה חזית מבחוץ",
+          "segment_id": "seg_80c991cb0ceef516d89d",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.single.c.granularity015",
+      "layer": "claims",
+      "links": [
+        "bb.opening001.single.u.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.single.c"
+    },
+    {
+      "content": {
+        "claim_id": "bb.opening001.single.c.granularity015",
+        "conditions": [
+          "noncompulsory valley wall",
+          "one partner alone wishes to build"
+        ],
+        "holder_candidates": [
+          "anonymous Mishnah"
+        ],
+        "local_status": "asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 47,
+          "quote": "אלא אם רצה כונס לתוך שלו ובונה ועושה חזית מבחוץ",
+          "segment_id": "seg_80c991cb0ceef516d89d",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.single.p.granularity015",
+      "layer": "positions",
+      "links": [
+        "bb.opening001.single.c.granularity015",
+        "bb.opening001.single.a.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.single.p"
+    },
+    {
+      "content": {
+        "composition": "composite",
+        "discourse_role": "ruling",
+        "textual_voice": "anonymous Mishnah"
+      },
+      "evidence": [
+        {
+          "end_char": 47,
+          "quote": "אלא אם רצה כונס לתוך שלו ובונה ועושה חזית מבחוץ",
+          "segment_id": "seg_80c991cb0ceef516d89d",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.single.u.granularity015",
+      "layer": "utterances",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.single.u"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "bb.opening001.single.c.granularity015",
+        "target_id": "bb.opening001.singlefall.c"
+      },
+      "evidence": [
+        {
+          "end_char": 84,
+          "quote": "לפיכך אם נפל הכותל המקום והאבנים שלו",
+          "segment_id": "seg_80c991cb0ceef516d89d",
+          "start_char": 48
+        }
+      ],
+      "id": "bb.opening001.singlefall.reason.granularity015",
+      "layer": "edges",
+      "links": [
+        "bb.opening001.single.c.granularity015",
+        "bb.opening001.singlefall.c"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.singlefall.reason"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "bb.opening001.vineyardliability.c.granularity015",
+        "target_id": "bb.opening001.vineyardnotice.c.granularity015"
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "נתיאש הימנה ולא גדרה ה\"ז קידש וחייב באחריותה",
+          "segment_id": "seg_3a25e3065639ef86ab64",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.vineyard.condition.granularity015",
+      "layer": "edges",
+      "links": [
+        "bb.opening001.vineyardliability.c.granularity015",
+        "bb.opening001.vineyardnotice.c.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.vineyard.condition"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "bb.opening001.vineyardnotice.c.granularity015",
+        "target_id": "bb.opening001.wallreading.c"
+      },
+      "evidence": [
+        {
+          "end_char": 115,
+          "quote": "כדתניא מחיצת הכרם שנפרצה אומר לו גדור חזרה ונפרצה אומר לו גדור",
+          "segment_id": "seg_93980afdb3d5dcb96ac5",
+          "start_char": 53
+        }
+      ],
+      "id": "bb.opening001.vineyard.lexical.granularity015",
+      "layer": "edges",
+      "links": [
+        "bb.opening001.vineyardnotice.c.granularity015",
+        "bb.opening001.wallreading.c"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.vineyard.lexical"
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "If he abandoned it and did not fence, it renders prohibited and he bears responsibility.",
+        "surface": "anonymous quoted baraita",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "נתיאש הימנה ולא גדרה ה\"ז קידש וחייב באחריותה",
+          "segment_id": "seg_3a25e3065639ef86ab64",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.vineyardliability.a.granularity015",
+      "layer": "attributions",
+      "links": [
+        "bb.opening001.vineyardliability.u.granularity015",
+        "bb.opening001.vineyardliability.c.granularity015"
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.vineyardliability.a"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "vineyard partition breached",
+          "abandonment and failure to fence"
+        ],
+        "proposition": "If he abandoned it and did not fence, it renders prohibited and he bears responsibility.",
+        "scope": "continuation of quoted vineyard baraita"
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "נתיאש הימנה ולא גדרה ה\"ז קידש וחייב באחריותה",
+          "segment_id": "seg_3a25e3065639ef86ab64",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.vineyardliability.c.granularity015",
+      "layer": "claims",
+      "links": [
+        "bb.opening001.vineyardliability.u.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Text uses pronouns; avoid supplying an explicit landholder identity not named in this passage."
+      ],
+      "supersedes": "bb.opening001.vineyardliability.c"
+    },
+    {
+      "content": {
+        "claim_id": "bb.opening001.vineyardliability.c.granularity015",
+        "conditions": [
+          "vineyard partition breached",
+          "abandonment and failure to fence"
+        ],
+        "holder_candidates": [
+          "anonymous quoted baraita"
+        ],
+        "local_status": "asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "נתיאש הימנה ולא גדרה ה\"ז קידש וחייב באחריותה",
+          "segment_id": "seg_3a25e3065639ef86ab64",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.vineyardliability.p.granularity015",
+      "layer": "positions",
+      "links": [
+        "bb.opening001.vineyardliability.c.granularity015",
+        "bb.opening001.vineyardliability.a.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Text uses pronouns; avoid supplying an explicit landholder identity not named in this passage."
+      ],
+      "supersedes": "bb.opening001.vineyardliability.p"
+    },
+    {
+      "content": {
+        "composition": "composite",
+        "discourse_role": "ruling",
+        "textual_voice": "anonymous quoted baraita"
+      },
+      "evidence": [
+        {
+          "end_char": 44,
+          "quote": "נתיאש הימנה ולא גדרה ה\"ז קידש וחייב באחריותה",
+          "segment_id": "seg_3a25e3065639ef86ab64",
+          "start_char": 0
+        }
+      ],
+      "id": "bb.opening001.vineyardliability.u.granularity015",
+      "layer": "utterances",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Text uses pronouns; avoid supplying an explicit landholder identity not named in this passage."
+      ],
+      "supersedes": "bb.opening001.vineyardliability.u"
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "A cited baraita says that when the vineyard partition is breached, one tells him to fence; if breached again, one again tells him to fence.",
+        "surface": "anonymous quoted baraita",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 115,
+          "quote": "כדתניא מחיצת הכרם שנפרצה אומר לו גדור חזרה ונפרצה אומר לו גדור",
+          "segment_id": "seg_93980afdb3d5dcb96ac5",
+          "start_char": 53
+        }
+      ],
+      "id": "bb.opening001.vineyardnotice.a.granularity015",
+      "layer": "attributions",
+      "links": [
+        "bb.opening001.vineyardnotice.u.granularity015",
+        "bb.opening001.vineyardnotice.c.granularity015"
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.vineyardnotice.a"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "vineyard partition breached; repeated breach triggers repeated notice"
+        ],
+        "proposition": "A cited baraita says that when the vineyard partition is breached, one tells him to fence; if breached again, one again tells him to fence.",
+        "scope": "local ruling"
+      },
+      "evidence": [
+        {
+          "end_char": 115,
+          "quote": "כדתניא מחיצת הכרם שנפרצה אומר לו גדור חזרה ונפרצה אומר לו גדור",
+          "segment_id": "seg_93980afdb3d5dcb96ac5",
+          "start_char": 53
+        }
+      ],
+      "id": "bb.opening001.vineyardnotice.c.granularity015",
+      "layer": "claims",
+      "links": [
+        "bb.opening001.vineyardnotice.u.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.vineyardnotice.c"
+    },
+    {
+      "content": {
+        "claim_id": "bb.opening001.vineyardnotice.c.granularity015",
+        "conditions": [
+          "vineyard partition breached; repeated breach triggers repeated notice"
+        ],
+        "holder_candidates": [
+          "anonymous quoted baraita"
+        ],
+        "local_status": "asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 115,
+          "quote": "כדתניא מחיצת הכרם שנפרצה אומר לו גדור חזרה ונפרצה אומר לו גדור",
+          "segment_id": "seg_93980afdb3d5dcb96ac5",
+          "start_char": 53
+        }
+      ],
+      "id": "bb.opening001.vineyardnotice.p.granularity015",
+      "layer": "positions",
+      "links": [
+        "bb.opening001.vineyardnotice.c.granularity015",
+        "bb.opening001.vineyardnotice.a.granularity015"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.vineyardnotice.p"
+    },
+    {
+      "content": {
+        "composition": "composite",
+        "discourse_role": "quoted precedent",
+        "textual_voice": "anonymous quoted baraita"
+      },
+      "evidence": [
+        {
+          "end_char": 115,
+          "quote": "כדתניא מחיצת הכרם שנפרצה אומר לו גדור חזרה ונפרצה אומר לו גדור",
+          "segment_id": "seg_93980afdb3d5dcb96ac5",
+          "start_char": 53
+        }
+      ],
+      "id": "bb.opening001.vineyardnotice.u.granularity015",
+      "layer": "utterances",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bb.opening001.vineyardnotice.u"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Reread abandonment, lack of fencing, prohibition and liability as baraita continuation; no silently invented landholder identity. Layer attributions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.vineyardliability.a.granularity015"
+      ],
+      "segment_id": "seg_3a25e3065639ef86ab64"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Reread abandonment, lack of fencing, prohibition and liability as baraita continuation; no silently invented landholder identity. Layer claims: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.vineyardliability.c.granularity015"
+      ],
+      "segment_id": "seg_3a25e3065639ef86ab64"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Reread abandonment, lack of fencing, prohibition and liability as baraita continuation; no silently invented landholder identity. Layer edges: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.vineyard.condition.granularity015"
+      ],
+      "segment_id": "seg_3a25e3065639ef86ab64"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Reread abandonment, lack of fencing, prohibition and liability as baraita continuation; no silently invented landholder identity. Layer positions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.vineyardliability.p.granularity015"
+      ],
+      "segment_id": "seg_3a25e3065639ef86ab64"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "utterances",
+      "rationale": "Reread abandonment, lack of fencing, prohibition and liability as baraita continuation; no silently invented landholder identity. Layer utterances: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.vineyardliability.u.granularity015"
+      ],
+      "segment_id": "seg_3a25e3065639ef86ab64"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Reread unilateral withdrawal into own land, construction, outside חזית and exclusive post-collapse ownership; pronoun tied to immediately preceding valley context as scoped inference. Layer attributions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.single.a.granularity015",
+        "bb.opening001.singlefall.a"
+      ],
+      "segment_id": "seg_80c991cb0ceef516d89d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Reread unilateral withdrawal into own land, construction, outside חזית and exclusive post-collapse ownership; pronoun tied to immediately preceding valley context as scoped inference. Layer claims: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.single.c.granularity015",
+        "bb.opening001.singlefall.c"
+      ],
+      "segment_id": "seg_80c991cb0ceef516d89d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Reread unilateral withdrawal into own land, construction, outside חזית and exclusive post-collapse ownership; pronoun tied to immediately preceding valley context as scoped inference. Layer edges: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.singlefall.reason.granularity015"
+      ],
+      "segment_id": "seg_80c991cb0ceef516d89d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Reread unilateral withdrawal into own land, construction, outside חזית and exclusive post-collapse ownership; pronoun tied to immediately preceding valley context as scoped inference. Layer positions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.single.p.granularity015",
+        "bb.opening001.singlefall.p"
+      ],
+      "segment_id": "seg_80c991cb0ceef516d89d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "utterances",
+      "rationale": "Reread unilateral withdrawal into own land, construction, outside חזית and exclusive post-collapse ownership; pronoun tied to immediately preceding valley context as scoped inference. Layer utterances: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.single.u.granularity015",
+        "bb.opening001.singlefall.u"
+      ],
+      "segment_id": "seg_80c991cb0ceef516d89d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Reread initial סברוה and exact quoted repeated vineyard breach notice; continuation on next amud retained separately. Interpretation remains hypothesis, not a named dispute. Layer attributions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.wallreading.a",
+        "bb.opening001.vineyardnotice.a.granularity015"
+      ],
+      "segment_id": "seg_93980afdb3d5dcb96ac5"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Reread initial סברוה and exact quoted repeated vineyard breach notice; continuation on next amud retained separately. Interpretation remains hypothesis, not a named dispute. Layer claims: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.wallreading.c",
+        "bb.opening001.vineyardnotice.c.granularity015"
+      ],
+      "segment_id": "seg_93980afdb3d5dcb96ac5"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Reread initial סברוה and exact quoted repeated vineyard breach notice; continuation on next amud retained separately. Interpretation remains hypothesis, not a named dispute. Layer edges: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.vineyard.lexical.granularity015"
+      ],
+      "segment_id": "seg_93980afdb3d5dcb96ac5"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Reread initial סברוה and exact quoted repeated vineyard breach notice; continuation on next amud retained separately. Interpretation remains hypothesis, not a named dispute. Layer positions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.wallreading.p",
+        "bb.opening001.vineyardnotice.p.granularity015"
+      ],
+      "segment_id": "seg_93980afdb3d5dcb96ac5"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "utterances",
+      "rationale": "Reread initial סברוה and exact quoted repeated vineyard breach notice; continuation on next amud retained separately. Interpretation remains hypothesis, not a named dispute. Layer utterances: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.wallreading.u",
+        "bb.opening001.vineyardnotice.u.granularity015"
+      ],
+      "segment_id": "seg_93980afdb3d5dcb96ac5"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Reread joint consent, middle construction, dual חזית and joint collapse ownership; retained separate unilateral/joint alternatives. Layer attributions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.bothvalley.a.granularity015",
+        "bb.opening001.bothvalleyfall.a"
+      ],
+      "segment_id": "seg_dd31da8d4cea132f066e"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Reread joint consent, middle construction, dual חזית and joint collapse ownership; retained separate unilateral/joint alternatives. Layer claims: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.bothvalley.c.granularity015",
+        "bb.opening001.bothvalleyfall.c"
+      ],
+      "segment_id": "seg_dd31da8d4cea132f066e"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Reread joint consent, middle construction, dual חזית and joint collapse ownership; retained separate unilateral/joint alternatives. Layer edges: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.bothfall.reason.granularity015"
+      ],
+      "segment_id": "seg_dd31da8d4cea132f066e"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Reread joint consent, middle construction, dual חזית and joint collapse ownership; retained separate unilateral/joint alternatives. Layer positions: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.bothvalley.p.granularity015",
+        "bb.opening001.bothvalleyfall.p"
+      ],
+      "segment_id": "seg_dd31da8d4cea132f066e"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "utterances",
+      "rationale": "Reread joint consent, middle construction, dual חזית and joint collapse ownership; retained separate unilateral/joint alternatives. Layer utterances: retained evidence-linked records. Independent comparison noted retained multi-action composites; utterance composition corrected to composite without changing source content, preserving full dependency lineage.",
+      "record_ids": [
+        "bb.opening001.bothvalley.u.granularity015",
+        "bb.opening001.bothvalleyfall.u"
+      ],
+      "segment_id": "seg_dd31da8d4cea132f066e"
+    }
+  ],
+  "open_tails": []
+}
