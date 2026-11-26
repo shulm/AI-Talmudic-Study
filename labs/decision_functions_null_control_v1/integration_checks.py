@@ -52,6 +52,10 @@ def main():
             assert result['state']=='VERIFIED_DECLARED_EARLY_STOP' and result['qualification'] is False
             assert len(list((root/'complete').glob('*.json')))==2
             checks.append('Full all orchestrator: reduced MOCK2x6 stages, exact ledgers, selection, complete no-candidate stop and replay')
+            before={p.relative_to(root).as_posix():digest(p) for p in root.rglob('*') if p.is_file()}
+            with patch.object(sys,'argv',['run.py','verify','--root',str(root),'--authorization',str(auth)]):run.main()
+            assert before=={p.relative_to(root).as_posix():digest(p) for p in root.rglob('*') if p.is_file()}
+            checks.append('Standalone repeat verify after all early-stop path preserves every evidence and receipt byte')
             e,pairs,lbs,candidates=run.config(root,'dev');c=e['stages'][0];folder=root/'worlds'/c['id']
             original=(folder/'manifest.json').read_bytes()
             # Each corruption is isolated, tested, then restored in temporary mock data.
@@ -89,6 +93,10 @@ def main():
             assert result['state']=='COMPLETE_PREDICTIVE_SUCCESS' and result['audit_state']=='VERIFIED_COMPLETE'
             assert len(list((root2/'complete').glob('*.json')))==4
             checks.append('Full selected-confirmation orchestrator with MOCK2 development+2 confirmation worlds and fabricated score responses; replay/selection freeze/verification passed')
+            before={p.relative_to(root2).as_posix():digest(p) for p in root2.rglob('*') if p.is_file()}
+            with patch.object(engine,'score_arrays',side_effect=fake_scores),patch.object(sys,'argv',['run.py','verify','--root',str(root2),'--authorization',str(auth)]):run.main()
+            assert before=={p.relative_to(root2).as_posix():digest(p) for p in root2.rglob('*') if p.is_file()}
+            checks.append('Standalone repeat verify after all selected-confirmation path preserves every evidence and receipt byte')
             (root2/'resources/confirmation000.json').unlink()
             try:run.replay(root2,'confirmation')
             except FileNotFoundError:checks.append('Missing resource receipt rejected')

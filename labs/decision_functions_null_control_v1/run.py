@@ -63,22 +63,57 @@ def execute(root,phase,index,auth):
     finally:
         lock.unlink()
 
+def execution_boundary(root):
+    """Missing failed-attempt accounting is unresolved expenditure, never free CPU."""
+    if (root/'EXECUTION_FAILURE.json').exists() or (root/'RESOURCE_STOP.json').exists():
+        raise ValueError('Terminal study failure; further execution forbidden')
+    attempts={p.stem for p in root.glob('attempts/*.json')}
+    complete={p.stem for p in root.glob('complete/*.json')}
+    resources={p.stem for p in root.glob('resources/*.json')}
+    if attempts!=complete or attempts!=resources:
+        raise ValueError('Incomplete attempt/completion/resource inventory; expenditure unresolved')
+    previous=[]
+    for key in sorted(attempts):
+        attempt=read(root/'attempts'/(key+'.json'));done=read(root/'complete'/(key+'.json'))
+        if done!=dict(state='COMPLETE',spec=attempt['spec']) or attempt['spec']['id']!=key:
+            raise ValueError('Prior completion identity mismatch')
+        r=read(root/'resources'/(key+'.json'))
+        nums=[r['cpu_seconds'],r['wall_seconds'],r['rss_at_end']]
+        if not np.isfinite(nums).all() or min(nums)<0 or r['rss_at_end']>4*1024**3 or r['scientific_retries']!=0:
+            raise ValueError('Invalid prior resource account')
+        previous.append(r['cpu_seconds'])
+    if sum(previous)>=14400:raise ValueError('Exhausted prior resource account')
+
 def execute_locked(root,phase,index,auth):
     verify_freeze(root,auth); e,pairs,lbs,candidates=config(root,phase)
-    if (root/'RESOURCE_STOP.json').exists():raise ValueError('Previous resource stop; execution forbidden')
-    previous=[read(p)['cpu_seconds'] for p in root.glob('resources/*.json')]
-    if not np.isfinite(previous).all() or any(x<0 for x in previous) or sum(previous)>=14400:raise ValueError('Invalid/exhausted prior resource account')
+    execution_boundary(root)
     if index<0 or index>=e['n']:raise ValueError('Realization outside frozen budget')
     spec=bank(phase)[index]; key=spec['id']
     # Atomic attempt claim disallows repeats even if an optimizer was interrupted.
     write(root/'attempts'/(key+'.json'),dict(spec=spec,source_hashes=pins(),state='STARTED'))
-    watchdog(root); start=time.monotonic(); generated=fixture(spec)
-    for contract in [s for s in e['stages'] if s['id'].startswith(key+'/')]:
-        reg=contract['id'].split('/')[1]; folder=root/'worlds'/contract['id']; folder.mkdir(parents=True)
-        components(key,reg,generated[reg],contract,folder,pairs,lbs)
-    cpu=sum(psutil.Process().cpu_times()[:2])
-    write(root/'resources'/(key+'.json'),dict(cpu_seconds=cpu,wall_seconds=time.monotonic()-start,rss_at_end=psutil.Process().memory_info().rss,scope='entire fitting process CPU; end RSS not peak; watchdog samples cap',scientific_retries=0))
-    write(root/'complete'/(key+'.json'),dict(state='COMPLETE',spec=spec))
+    start=time.monotonic()
+    try:
+        watchdog(root); generated=fixture(spec)
+        for contract in [s for s in e['stages'] if s['id'].startswith(key+'/')]:
+            reg=contract['id'].split('/')[1]; folder=root/'worlds'/contract['id']; folder.mkdir(parents=True)
+            components(key,reg,generated[reg],contract,folder,pairs,lbs)
+        cpu=sum(psutil.Process().cpu_times()[:2])
+        write(root/'resources'/(key+'.json'),dict(cpu_seconds=cpu,wall_seconds=time.monotonic()-start,rss_at_end=psutil.Process().memory_info().rss,scope='entire fitting process CPU; end RSS not peak; watchdog samples cap',scientific_retries=0))
+        write(root/'complete'/(key+'.json'),dict(state='COMPLETE',spec=spec))
+    except BaseException as error:
+        # Preserve partial CPU even on ordinary exceptions/KeyboardInterrupt.
+        # Hard termination can bypass this handler: the unmatched attempt still
+        # blocks every later index even if someone removes execution.lock.
+        measured=None; measurement_error=None
+        try:
+            proc=psutil.Process(); measured=sum(proc.cpu_times()[:2])
+            if not np.isfinite(measured) or measured<0:raise ValueError('Invalid failed-process CPU')
+            if not (root/'resources'/(key+'.json')).exists():
+                write(root/'resources'/(key+'.json'),dict(cpu_seconds=measured,wall_seconds=time.monotonic()-start,rss_at_end=proc.memory_info().rss,scope='failed process CPU measured at exception; teardown unmeasured',scientific_retries=0,state='FAILED'))
+        except BaseException as accounting_error:
+            measured=None;measurement_error=repr(accounting_error)
+        write(root/'EXECUTION_FAILURE.json',dict(state='INCOMPLETE',realization=key,error=repr(error),cpu_seconds_measured=measured,expenditure_status='PARTIALLY_MEASURED' if measured is not None else 'UNRESOLVED',accounting_error=measurement_error,retry_or_replacement_allowed=False))
+        raise
 
 def replay(root,phase):
     e,pairs,lbs,candidates=config(root,phase); out=[]
@@ -144,6 +179,7 @@ def distributions(scores,s):
 def verify(root,auth):
     if (root/'execution.lock').exists():raise ValueError('Execution still active or interrupted')
     if (root/'RESOURCE_STOP.json').exists():raise ValueError('Resource stop cannot qualify')
+    if (root/'EXECUTION_FAILURE.json').exists():raise ValueError('Failed execution cannot qualify')
     verify_freeze(root,auth); before={p.relative_to(root).as_posix():digest(p) for p in root.rglob('*') if p.is_file()}; s=verify_selection(root)
     if s['state']!='SELECTED':
         stop=read(root/'stop.json')
@@ -161,7 +197,14 @@ def verify(root,auth):
     if {p.relative_to(root/'worlds').as_posix() for p in (root/'worlds').glob('*/*') if p.is_dir()}!={i+'/'+r for i in ids for r in REGIMES}:raise ValueError('Exact world inventory mismatch')
     after={p.relative_to(root).as_posix():digest(p) for p in root.rglob('*') if p.is_file()}
     if before!=after:raise ValueError('Replay mutated evidence')
-    result['evidence_hashes']=before; write(root/'verification.json',result)
+    # The original audit receipt is not part of its own scientific evidence.
+    # Repeat audits recompute everything and compare, never replace that receipt.
+    result['evidence_hashes']={k:v for k,v in before.items() if k!='verification.json'}
+    receipt=root/'verification.json'
+    if receipt.exists():
+        if read(receipt)!=result:raise ValueError('Existing verification receipt differs from replay')
+    else:write(receipt,result)
+    return result
 
 def main():
     p=argparse.ArgumentParser(); p.add_argument('stage',choices=['freeze','execute','select','verify','all','contracts']);p.add_argument('--root',type=Path);p.add_argument('--authorization',type=Path);p.add_argument('--phase',choices=['dev','confirmation']);p.add_argument('--index',type=int)
@@ -178,6 +221,7 @@ def main():
     elif a.stage=='verify':verify(a.root,a.authorization)
     else:
         if not (a.root/'freeze.json').exists():freeze(a.root,a.authorization)
+        execution_boundary(a.root)
         for phase in ['dev','confirmation']:
             if phase=='confirmation':
                 if not (a.root/'selection.json').exists():selection(a.root,a.authorization)

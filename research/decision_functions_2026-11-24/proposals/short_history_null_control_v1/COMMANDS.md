@@ -25,7 +25,11 @@ The execute stage accepts each exact zero-based index in the frozen phase budget
 python labs/decision_functions_null_control_v1/run.py all --root $studyRoot --authorization $studyAuth
 ```
 
-Resume skips complete world receipts; an attempted but incomplete world cannot be retried. Exclusive attempt files consume a world slot. Failed execution terminates the orchestrator and leaves incomplete evidence. There is no automatic merge or person-directed message.
+Resume skips complete world receipts only when all prior attempt/completion/resource inventories agree. Any failed or interrupted world blocks every later index, through both direct execute and all, even after stale-lock removal. Catchable failures retain an immutable EXECUTION_FAILURE.json and measured partial CPU where available; unavailable expenditure is null/UNRESOLVED, never zero. Hard interruptions may leave no final receipt: the unmatched attempt still prevents retries or replacement worlds. Do not clear failure evidence to resume. There is no automatic merge or person-directed message.
+
+After all creates verification.json, the standalone verify command above is repeatable and read-only: it recomputes the checks, excludes verification.json itself from the scientific evidence hash set, and compares against the original receipt without overwriting it. Changed evidence or a disagreeing receipt fails the audit. No new scientific execution authorization is implied by auditing existing evidence; the existing exact-package authorization binding is still checked.
+
+The focused engineering regression command is `python labs/decision_functions_null_control_v1/repair_checks.py`. Final repair receipts and the exact-hash engineering audit are in `engineering_repair_2026-11-26/`. Earlier review/test receipts remain historical and bind their original commits; they do not certify subsequently edited code.
 
 Before owner-authorized execution, publish the exact reviewed pre-fit commit. Selection checkpoint is an immutable local hash binding before confirmation; publish its hash/decision with final evidence. Private arrays are never committed. Public final report should contain aggregate metrics,resource totals,freeze hashes and verification state; redact individual rows from publication.
 
