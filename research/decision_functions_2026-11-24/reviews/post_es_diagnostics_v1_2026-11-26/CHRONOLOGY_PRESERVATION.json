@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "scope": "GitHub recursive-tree metadata and existing local manifests; no historical blobs downloaded again; no fits or historical edits.",
+  "historical_blob_count": 1215,
+  "historical_matches": {
+    "pre_commit": {
+      "matched": 1215,
+      "mismatches": []
+    },
+    "final_commit": {
+      "matched": 1215,
+      "mismatches": []
+    },
+    "assignment_commit": {
+      "matched": 1215,
+      "mismatches": []
+    }
+  },
+  "source_count": 13,
+  "source_changes_preanalysis_to_final": [],
+  "frozen_artifact_count": 12,
+  "frozen_artifact_changes_preanalysis_to_final": [],
+  "diffs": {
+    "assignment_to_preanalysis": {
+      "base_blob_count": 1326,
+      "head_blob_count": 1358,
+      "added": 32,
+      "modified": [
+        ".gitattributes"
+      ],
+      "removed": []
+    },
+    "preanalysis_to_final": {
+      "base_blob_count": 1358,
+      "head_blob_count": 2382,
+      "added": 1024,
+      "modified": [
+        "AGENT_HANDOFF.md"
+      ],
+      "removed": []
+    },
+    "assignment_to_final": {
+      "base_blob_count": 1326,
+      "head_blob_count": 2382,
+      "added": 1056,
+      "modified": [
+        ".gitattributes",
+        "AGENT_HANDOFF.md"
+      ],
+      "removed": []
+    }
+  },
+  "trees": {
+    "pre_commit": {
+      "sha": "2314e1dfd7af4f982565f1a3a8635b04ae66a31f",
+      "truncated": false,
+      "entries": 1419
+    },
+    "final_commit": {
+      "sha": "01ddfb4564c2a703af0d20d9e1d5f281df3ce289",
+      "truncated": false,
+      "entries": 2445
+    },
+    "assignment_commit": {
+      "sha": "c2dc59e0dff1739c3eb10c46920a4d2c8376f1ae",
+      "truncated": false,
+      "entries": 1384
+    }
+  },
+  "commits": {
+    "pre_commit": {
+      "sha": "dfc649e4557d4689c5d33556bb52faa88ec3cf03",
+      "date": "2026-11-26T19:46:35Z",
+      "parents": [
+        "2f1cae3e894bec16c9c5cd280356a4e051029031"
+      ]
+    },
+    "final_commit": {
+      "sha": "16ef28b105ff6c28ee3f822b1409f076fa895318",
+      "date": "2026-11-26T19:55:59Z",
+      "parents": [
+        "dfc649e4557d4689c5d33556bb52faa88ec3cf03"
+      ]
+    },
+    "assignment_commit": {
+      "sha": "2f1cae3e894bec16c9c5cd280356a4e051029031",
+      "date": "2026-11-26T19:28:07Z",
+      "parents": [
+        "f18255c5fad37f704881ff1f9ad50cd113497236"
+      ]
+    }
+  },
+  "publication_comments": [
+    {
+      "id": 7201959649,
+      "url": "https://github.com/shulm/AI-Talmudic-Study/issues/2#issuecomment-7201959649",
+      "created_at": "2026-11-26T19:47:12Z",
+      "updated_at": "2026-11-26T19:47:12Z",
+      "commit_pinned": true
+    },
+    {
+      "id": 7201959960,
+      "url": "https://github.com/shulm/AI-Talmudic-Study/pull/27#issuecomment-7201959960",
+      "created_at": "2026-11-26T19:47:13Z",
+      "updated_at": "2026-11-26T19:47:13Z",
+      "commit_pinned": true
+    }
+  ],
+  "publication_readback_utc": "2026-11-26T19:47:27.322Z",
+  "execution_start_utc": "2026-11-26T19:47:28.294Z",
+  "readback_lead_seconds": 0.9719207286834717,
+  "comments_lead_seconds": [
+    {
+      "id": 7201959649,
+      "seconds": 16.294767141342163
+    },
+    {
+      "id": 7201959960,
+      "seconds": 15.294767141342163
+    }
+  ],
+  "chronology_pass": true,
+  "limitations": [
+    "GitHub comment timestamps are server-side; execution and readback timestamps are recorded by the execution host, whose clock synchronization is not independently attested.",
+    "Commit author/committer timestamps alone do not prove publication time. Unedited GitHub publication comments pin the exact pre-analysis SHA before the recorded execution start.",
+    "Git object identities establish byte preservation for the manifest scope. Historical private-file preservation remains based on published hash receipts; private file bytes were unavailable."
+  ],
+  "assignment_to_preanalysis_line_ending_change": "Only adds labs/decision_functions_post_es_diagnostics_v1/** text eol=lf; existing rules unchanged.",
+  "fresh_run_execution_requirements": [
+    "Bind the new output root and exact 82-world schedule: 246 shared fit identities and 31,488 personal solve identities. Derive terminal expectations from the frozen schedule instead of hard-coded diagnostic counts.",
+    "Freeze an explicit CPU/RSS/time budget for the larger workload; do not inherit the diagnostic supervisor's hard-coded 600 CPU seconds and 1 GiB without review.",
+    "Keep a cumulative command ledger that retains failed and interrupted work. Never add nested per-fit CPU again to command CPU totals.",
+    "Exercise real executor/supervisor boundaries using mocks before freeze: command-launch failure, child nonzero exit, resource stop, supervisor interruption, ordinary completion, and terminal serialization failure.",
+    "On supervisor exception or interruption, terminate and wait for its child (and any permitted descendants), preserve an unresolved attempt if completion cannot be certified, and write an unambiguous nonqualifying terminal state.",
+    "Use reporting-only recovery that reads retained artifacts and cannot call a solver. No fitting replay or automatic retries after failure; any authorized continuation must be limited to previously unstarted frozen identities.",
+    "Make failure_reason incompatible with scientific qualification and require verified inventory/integrity/numerical/scientific status, rather than accepting mere terminal-file existence.",
+    "Retain limitations of sampled CPU/RSS and distinguish a sampled enforcement target from an exact process-lifetime resource bound."
+  ]
+}

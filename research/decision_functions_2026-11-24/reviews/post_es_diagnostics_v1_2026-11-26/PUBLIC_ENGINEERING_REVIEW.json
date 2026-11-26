@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "checks": 12490,
+  "failures": [],
+  "worst_differences": {
+    "fixture": 0,
+    "trace_initial": 0,
+    "trace_value": 1.7763568394002505e-15,
+    "trace_residual": 7.105427357601002e-15,
+    "final_residual": 2.554340188375062e-15,
+    "final_KR": 1.445329255790176e-13,
+    "trajectory_next": 2.4424906541753444e-15,
+    "guard": 0,
+    "resources": 0
+  },
+  "engineering_attempts": 384,
+  "wrapper_calls": 114,
+  "trace_points": 1704,
+  "transitions_replayed": 1320,
+  "guarded_acceptances": 36,
+  "maximum_independent_R": 9.840073629366365e-11,
+  "maximum_independent_KR": 4.730843742981164e-10,
+  "maximum_steps": 9,
+  "delivery_manifest_files": 1055,
+  "delivery_missing": [],
+  "delivery_hash_mismatch": [],
+  "public_private_hash_bindings": 112,
+  "resources": {
+    "cpu_seconds_sampled": 41.140625,
+    "wall_seconds_profiled": 104.03099999995902,
+    "peak_rss_bytes_sampled": 107982848,
+    "commands": 6,
+    "failed_commands": 1,
+    "command_receipts": [
+      "commands/1795722271973148300.complete.json",
+      "commands/1795722328417208400.complete.json",
+      "commands/1795722447801573100.complete.json",
+      "commands/1795722550565570000.complete.json",
+      "commands/1795722587209568600.complete.json",
+      "commands/1795722661538311200.complete.json"
+    ],
+    "cpu_limit_seconds": 600,
+    "rss_limit_bytes": 1073741824,
+    "numerical_threads": 1,
+    "sampling_seconds": 0.02,
+    "limitations": "Process CPU and RSS sampled every 20 ms; startup/exit CPU and transient RSS may be missed. Source preparation/editor, final metadata/manifest assembly, shell/Git/network orchestration and delivery readback overhead are not comprehensively profiled. This is accounted command usage, not an exact end-to-end upper bound. Internal attempt CPU is not added again. Prior assignments are excluded from this new-task ledger."
+  },
+  "limitations": "No original or derived private archive bytes available. Public engineering parameter traces and mathematical values/updates replayed independently; no optimizer, new scientific fixture or new model fit invoked. Guarded/Armijo checks include stated numeric comparison allowance.",
+  "optimizer_calls": 0
+}

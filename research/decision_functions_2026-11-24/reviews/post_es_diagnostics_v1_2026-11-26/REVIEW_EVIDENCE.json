@@ -1,0 +1,80 @@
+{
+  "reviewed_commit": "16ef28b105ff6c28ee3f822b1409f076fa895318",
+  "scope": "Packaging of already completed independent public review; one portability/raw-hash replay of engineering arithmetic only.",
+  "copied_artifacts": [
+    {
+      "original_name": "post_es_public_audit_receipt.json",
+      "packaged_name": "PUBLIC_ENGINEERING_REVIEW.json",
+      "sha256": "461bd42638feba8dbee307bc4c16f69c99ca4393e33c0e51887f4b0738ad4262",
+      "byte_identical": true
+    },
+    {
+      "original_name": "post_es_terminal_review.json",
+      "packaged_name": "TERMINAL_REVIEW.json",
+      "sha256": "5b8ddfb5750343f32402d839a97d0de4e830659f475cf052bd20d3e42c628191",
+      "byte_identical": true
+    },
+    {
+      "original_name": "post_es_chronology_preservation_receipt.json",
+      "packaged_name": "CHRONOLOGY_PRESERVATION.json",
+      "sha256": "633b4698ecc71d1ef3c956a56f320edd7ae39cf5e2f980eae83446eab28328d4",
+      "byte_identical": true
+    },
+    {
+      "original_name": "check_public_science.py",
+      "packaged_name": "PUBLIC_SCIENCE_REVIEW.py",
+      "sha256": "92f5b50196bb4722b44b591dfbeb0b44f0c5c495036035dc3b8b7b73075bcd27",
+      "byte_identical": true
+    },
+    {
+      "original_name": "public_science_receipt.json",
+      "packaged_name": "PUBLIC_SCIENCE_REVIEW.json",
+      "sha256": "d1c7c9dffb90d162e9b89aef86f64146a078a40cd58c6dd4622a43bedc0b9ced",
+      "byte_identical": true
+    }
+  ],
+  "engineering_checker": {
+    "original_name": "post_es_public_audit.py",
+    "original_sha256": "2af2fc22d7280afd3005837e409f220ead1679089c461d3b53649b5964e6a6f3",
+    "packaged_name": "PUBLIC_ENGINEERING_REVIEW.py",
+    "packaged_sha256": "b57b12edc6ed4e4fdf383b17af68ea4d742201f5ab5203d957327a5591df83fa",
+    "minimal_changes": [
+      "Add argparse and two required positional arguments: repo_root and output.",
+      "Replace the two reviewer-specific absolute paths with resolved positional paths.",
+      "Hash raw file bytes rather than replacing CRLF with LF before SHA-256."
+    ],
+    "unchanged": "All fixture arithmetic, trace replay, identity/count checks, thresholds, guard checks, resource arithmetic, receipt schema and output values.",
+    "usage": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python PUBLIC_ENGINEERING_REVIEW.py <reviewed-repo-root> <scratch-output-json>",
+    "input_revision_requirement": "Use a checkout/export of the reviewed commit. A later review branch may intentionally change AGENT_HANDOFF.md, which is bound by the reviewed delivery manifest."
+  },
+  "hash_mode_provenance": {
+    "original_receipt_mode": "SHA-256 after CRLF-to-LF normalization",
+    "packaged_checker_mode": "SHA-256 of raw bytes",
+    "delivery_manifest_entries": 1055,
+    "manifest_files_containing_crlf": 0,
+    "raw_byte_manifest_mismatches": [],
+    "effect": "No observed difference: all manifest files in the reviewed export already use LF; all 1,055 raw-byte hashes match."
+  },
+  "portability_replay": {
+    "performed": true,
+    "output_location": "scratch-only, outside the repository export",
+    "output_sha256": "461bd42638feba8dbee307bc4c16f69c99ca4393e33c0e51887f4b0738ad4262",
+    "byte_identical_to_original_receipt": true,
+    "status": "PASS",
+    "checks": 12490,
+    "engineering_attempts": 384,
+    "trace_points": 1704,
+    "transitions_replayed": 1320,
+    "optimizer_calls": 0,
+    "new_scientific_fixtures": 0,
+    "new_model_fits": 0,
+    "private_archive_reads": 0
+  },
+  "science_artifacts": "Copied byte-for-byte under requested filenames; no additional science replay was run during packaging.",
+  "historical_sources_modified": false,
+  "limits": [
+    "The original receipts retain their original scopes and limitations.",
+    "Public engineering replay evaluates saved parameter trajectories and deterministic engineering fixture relationships; it is not a new fit.",
+    "This file records package provenance, not independent attestation of private archive bytes."
+  ]
+}
