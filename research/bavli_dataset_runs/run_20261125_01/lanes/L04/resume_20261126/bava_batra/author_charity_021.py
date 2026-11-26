@@ -1,0 +1,61 @@
+"""Source reading: membership periods, orphan contributions and captive redemption."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading,r
+a=ScopedReading('bava_batra','Bava Batra','bb.r021');c=a.claim;q=a.question;e=a.e
+parent='fc5c4d960233bff8d6e3f04b19b5308073300735ade96ba9d1a44a779bc5972a'
+a.structure('residency',['8a:12','8a:13','8a:14','8a:15'],'City membership, residents and graduated communal contribution periods')
+a.structure('orphans',['8a:16','8a:17'],'Orphan and scholar assessments, beneficial works and charity for social standing')
+a.structure('redemption',['8a:18']+['8b:'+str(i) for i in range(1,5)],'Gift designated for a great commandment and reasons for captive-redemption priority')
+challenge=q('residency_q','8a:12','ורמינהי','How can the Mishnah’s city-membership period agree with the following caravan rule?')
+travel=c('travel','8a:12','החמרת והגמלת העוברת ממקום למקום ולנה בתוכה והודחה עמהן הן בסקילה וממונן פלט','A passing donkey or camel caravan that lodges in an apostate city and joins its apostasy receives stoning, while its property escapes confiscation.',conditions=['passing caravan','overnight lodging','joins apostasy'],composition='composite',scope='Quoted legal teaching about the city condemned for apostasy; descriptive source extraction only')
+thirty=c('thirty','8a:13','ואם נשתהו שם שלשים יום הן בסייף וממונן אבד','After thirty days there, the teaching assigns execution by sword and loss of property.',conditions=['caravan stayed thirty days','joins city apostasy'],composition='composite',scope='Continuation of quoted legal teaching')
+dist=c('dist','8a:14','אמר רבא לא קשיא הא לבני מתא הא ליתובי מתא','Rava distinguishes city members from city residents.',candidates=['רבא'],scope='Twelve months for city members; thirty days for resident status as clarified by the following vow teaching')
+e('thirty_challenge',thirty,challenge,'support','8a:13');e('dist_answer',dist,challenge,'answer','8a:14')
+vowyear=c('vow_year','8a:14','המודר הנאה מאנשי העיר כל שנשתהא שם שנים עשר חדש אסור ליהנות ממנו','A vow excluding benefit from city members includes someone who has stayed twelve months.',conditions=['vow concerns אנשי העיר','twelve-month stay'],scope='Quoted baraita supporting terminology distinction')
+vowless=c('vow_less','8a:14','שנים עשר חדש אסור ליהנות ממנו פחות מכאן מותר','With a shorter stay, benefit is permitted under that city-members vow.',conditions=['vow concerns אנשי העיר','stay shorter than twelve months'])
+vowthirty=c('vow_thirty','8a:14','מיושבי העיר כל שנשתהא שם שלשים יום אסור ליהנות ממנו','A vow concerning city residents includes someone who stayed thirty days.',conditions=['vow concerns יושבי העיר','thirty-day stay'])
+vowshort=c('vow_short','8a:14','פחות מכאן מותר ליהנות ממנו','With a shorter stay, benefit remains permitted under the residents vow.',conditions=['vow concerns יושבי העיר','stay shorter than thirty days'])
+for i,x in enumerate([vowyear,vowless,vowthirty,vowshort]):e('vow_support'+str(i),x,dist,'support','8a:14')
+allq=q('all_q','8a:15','ולכל מילי מי בעינן י"ב חדש','Are twelve months required for every communal obligation?')
+periods=[]
+for key,quote,text,condition in [('food','שלשים יום לתמחוי','Thirty days establish liability for the food distribution.','thirty days residence'),('fund','שלשה חדשים לקופה','Three months establish liability for the charity fund.','three months residence'),('clothes','ששה לכסות','Six months establish liability for clothing provision.','six months residence'),('burial','תשעה לקבורה','Nine months establish liability for burial provision.','nine months residence'),('defense','שנים עשר לפסי העיר','Twelve months establish liability for פסי העיר.','twelve months residence')]:
+    x=c(key,'8a:15',quote,text,conditions=[condition],scope='Quoted graduated contribution schedule; preserve technical term where used');periods.append(x)
+walls=c('walls','8a:15','אמר ר\' אסי אמר ר\' יוחנן כי תנן נמי מתניתין שנים עשר חדש לפסי העיר תנן','Rabbi Asi transmits Rabbi Yohanan that the Mishnah’s twelve-month period concerns פסי העיר.',candidates=['ר\' יוחנן'],chain=['ר\' אסי','ר\' יוחנן'],scope='Restriction of the Mishnah’s city-membership assessment context')
+e('walls_answer',walls,allq,'answer','8a:15');e('walls_qualification',walls,'bb.r018.year.c','qualification','8a:15')
+for i,x in enumerate(periods):e('schedule_support'+str(i),x,allq,'support','8a:15')
+orphan=c('orphan','8a:16','וא"ר אסי אמר ר\' יוחנן הכל לפסי העיר ואפי\' מיתמי','Rabbi Asi transmits Rabbi Yohanan that everyone, including orphans, contributes to פסי העיר.',candidates=['ר\' יוחנן'],chain=['ר\' אסי','ר\' יוחנן'])
+scholar=c('scholar','8a:16','אבל רבנן לא דרבנן לא צריכי נטירותא','Scholars are excepted because they do not require protection.',candidates=['ר\' יוחנן'],chain=['ר\' אסי','ר\' יוחנן'],scope='Exception in the reported city-defense assessment rule')
+pappa=c('pappa','8a:16','אמר רב פפא לשורא ולפרשאה ולטרזינא אפילו מיתמי','Rav Pappa includes orphans in payments for שורא, פרשאה and טרזינא.',candidates=['רב פפא'],composition='composite',uncertainty=['Technical military/protection categories retained as printed rather than given unverified modern equivalents.'])
+pappaschol=c('pappa_scholars','8a:16','אבל רבנן לא צריכי נטירותא','Rav Pappa likewise excepts scholars from protection payments.',candidates=['רב פפא'])
+benefit=c('benefit','8a:16','כללא דמילתא כל מילתא דאית להו הנאה מיניה אפילו מיתמי','The concluding rule includes orphans in expenditures from which they benefit.',conditions=['orphans benefit from expenditure'],scope='Concluding generalization of the protection/communal benefit discussion')
+e('scholar_qualification',scholar,orphan,'qualification','8a:16');e('pappaschol_qualification',pappaschol,pappa,'qualification','8a:16');e('benefit_qualification',benefit,pappa,'qualification','8a:16')
+c('rabbah_event','8a:17','רבה רמא צדקה איתמי דבי בר מריון','Rabbah assessed charity on the orphans of the house of Bar Maryon.',scope='Narrated assessment; Rabbah distinct from Rava')
+abayeq=q('abaye_q','8a:17','א"ל אביי והתני רב שמואל בר יהודה','Abaye objects by citing the teaching of Rav Shmuel bar Yehuda.',candidates=['אביי'])
+nocharity=c('no_charity','8a:17','אין פוסקין צדקה על היתומים אפילו לפדיון שבוים','Rav Shmuel bar Yehuda teaches that charity is not assessed upon orphans, even for redeeming captives.',candidates=['רב שמואל בר יהודה'],conditions=['orphans','even captive redemption'])
+standing=c('standing','8a:17','אנא לאחשובינהו קא עבידנא','Rabbah replies that he acts to enhance their standing.',candidates=['רבה'],scope='Case-specific rationale, not repeal of the general orphan charity restriction')
+e('nocharity_support',nocharity,abayeq,'support','8a:17');e('standing_answer',standing,abayeq,'answer','8a:17');e('standing_distinction',standing,nocharity,'distinction','8a:17')
+c('gift','8a:18','איפרא הורמיז אימיה דשבור מלכא שדרה ארנקא דדינרי לקמיה דרב יוסף','Ifra Hormiz, mother of King Shapur, sent a purse of dinars to Rav Yosef.',scope='Narrative event')
+purpose=c('purpose','8a:18','אמרה ליהוי למצוה רבה','She designated it for a great commandment.',candidates=['איפרא הורמיז'])
+greatq=q('great_q','8a:18','יתיב רב יוסף וקא מעיין בה מאי מצוה רבה','Rav Yosef considers what counts as a great commandment.',candidates=['רב יוסף'])
+repeat=c('repeat_orphan','8a:18','מדתני רב שמואל בר יהודה אין פוסקין צדקה על היתומים אפילו לפדיון שבוים','Abaye cites the teaching excluding orphan assessments even for captive redemption.',candidates=['רב שמואל בר יהודה'],chain=['אביי','רב שמואל בר יהודה'],scope='Repeated teaching used as evidence; retained as a separate occurrence')
+great=c('great','8b:1','פדיון שבוים מצוה רבה היא','Abaye infers that redeeming captives is a great commandment.',candidates=['אביי'],naming_refs=['8a:18'],scope='Cross-page conclusion from the word אפילו in the cited teaching')
+e('repeat_support',repeat,great,'support','8a:18');e('great_answer',great,greatq,'answer','8b:1')
+sourceq=q('source_q','8b:2','אמר ליה רבא לרבה בר מרי מנא הא מילתא דאמור רבנן דפדיון שבוים מצוה רבה היא','Rava asks Rabbah bar Mari for the source of captive redemption’s status as a great commandment.',candidates=['רבא'])
+jeremiah=c('jeremiah','8b:2','א"ל דכתיב  (ירמיהו טו, ב) והיה כי יאמרו אליך אנה נצא ואמרת אליהם כה אמר ה\' אשר למות למות ואשר לחרב לחרב ואשר לרעב לרעב ואשר לשבי לשבי','Rabbah bar Mari cites Jeremiah’s sequence of death, sword, famine and captivity.',candidates=['רבה בר מרי'],composition='composite',scope='Quoted scriptural sequence supporting the argument')
+order=c('order','8b:2','ואמר רבי יוחנן כל המאוחר בפסוק זה קשה מחבירו','Rabbi Yohanan says each later item in the verse is more severe than the preceding one.',candidates=['רבי יוחנן'],scope='Reported interpretive ranking')
+e('jeremiah_answer',jeremiah,sourceq,'answer','8b:2');e('order_support',order,jeremiah,'support','8b:2')
+sword=c('sword','8b:3','חרב קשה ממות','Death by sword is worse than ordinary death.',scope='Exposition of the cited ranking, not a new independent named ruling')
+disfigure=c('disfigure','8b:3','האי קא מינוול והאי לא קא מינוול','The rational explanation distinguishes disfigurement by sword from ordinary death.',composition='composite')
+deathverse=c('death_verse','8b:3','יקר בעיני ה\' המותה לחסידיו','The alternative scriptural explanation cites the preciousness of the death of His faithful.',scope='Quoted Psalm in the ranking argument')
+e('disfigure_support',disfigure,sword,'support','8b:3');e('deathverse_support',deathverse,sword,'support','8b:3')
+famine=c('famine','8b:4','רעב קשה מחרב','Famine is worse than death by sword.',scope='Continuation of ranking exposition')
+suffer=c('suffer','8b:4','האי קא מצטער והאי לא קא מצטער','The rational explanation contrasts famine’s suffering with the sword case.',composition='composite')
+lament=c('lament','8b:4','טובים היו חללי חרב מחללי רעב','The alternative scriptural explanation cites the preference for those killed by sword over those killed by famine.',scope='Quoted Lamentations wording')
+captivity=c('captivity','8b:4','שבי [קשה מכולם] דכולהו איתנהו ביה','Captivity is worst because it includes all these dangers.',uncertainty=['Bracketed קשה מכולם retained as printed.'],scope='Source argument for captive-redemption priority')
+e('suffer_support',suffer,famine,'support','8b:4');e('lament_support',lament,famine,'support','8b:4');e('captivity_support',captivity,great,'support','8b:4')
+for row in a.rows:
+    if row['layer']=='questions':row['content']['answer_set_status']='partial'
+a.save_window(['8a:'+str(i) for i in range(12,19)]+['8b:'+str(i) for i in range(1,5)],'charity021.json','Read all residence/benefit/charity/redemption material through8b:5 before layer extraction; preserve distinct time thresholds, comparison cases, quoted traditions and cross-page inference. Orphan-benefit and status exceptions remain scoped. Reconciliation source reread is not independent review.',parent)
+

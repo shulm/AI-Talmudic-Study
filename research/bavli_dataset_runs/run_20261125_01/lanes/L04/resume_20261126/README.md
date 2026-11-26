@@ -1,17 +1,17 @@
 # L04 exact-version partial production checkpoint
 
-Checkpoint 004 contains actual semantic annotations and preserved review evidence for **1,065 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
+Checkpoint 005 contains actual semantic annotations and preserved review evidence for **1,635 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
 
-The selected package versions are in [LANE_CHECKPOINT_004.json](LANE_CHECKPOINT_004.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
+The selected package versions are in [LANE_CHECKPOINT_005.json](LANE_CHECKPOINT_005.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
 
 | Tractate | Covered in each of eight layers | Denominator | Next source |
 |---|---:|---:|---|
-| Taanit | 203 | 895 | 8b:5 |
-| Bava Batra | 142 | 3,804 | 7a:5 |
+| Taanit | 324 | 895 | 12b:9 |
+| Bava Batra | 267 | 3,804 | 11a:7 |
 | Pesachim | 71 | 3,519 | 4b:8 |
 | Avodah Zarah | 60 | 2,131 | 4a:4 |
-| Nedarim | 309 | 1,509 | 18b:1 |
-| Moed Katan | 134 | 1,026 | 5b:2 |
+| Nedarim | 528 | 1,509 | 30a:4 |
+| Moed Katan | 239 | 1,026 | 8b:7 |
 | Makkot | 146 | 709 | 7a:2 |
 
 Coverage means the producer recorded a source pass for structure, utterances, claims, attribution/transmission, questions, positions, edges, and reconciliation. It does not establish exhaustive recall or scholarly correctness. Reconciliation can correctly have zero records while retaining a source-reread rationale. Tables preserve superseded records; consumers must filter `release_state == "valid"` for the current graph. Per-sugya exports use segment-overlap context, not certified semantic containment.
@@ -25,6 +25,8 @@ Each package includes the exact source hash, edition metadata, source-manifest r
 All seven external jobs use owner `L04/<slug>_resume_20261126`, epoch 3. [Dispatch receipt 001](DISPATCH_RECEIPT_001.json) and [receipt 002](DISPATCH_RECEIPT_002.json) preserve the within-lane handoffs; the global ledger was not edited. Only one producer promotes each tractate. Read the external OWNER and CURRENT files before further dispatch; this document is not a lease for a second writer.
 
 ## Review and qualification
+
+Checkpoint005 adds source windows beyond the earlier reviewed versions. Those additions are independently unreviewed. A fresh source-only risk review of Moed Katan5b:2–6a:8 is underway. The coordinator’s [additive answer-set guidance](audit/COORDINATOR_ANSWER_SET_STATUS_001.json) leaves the frozen contract unchanged: historical `none` does not establish absence of a source answer, and flagged answer-edge/status combinations require source-based adjudication rather than bulk relabeling. The reported238 candidates remain an outstanding risk screen, not a confirmed-error or omission count. No enum grants choice-QA eligibility.
 
 [Review capture 003](reviews/capture_003/MANIFEST.json) preserves the further Taanit comparison and correction013 independent recheck: seven corrections verified and three attribution/gloss uncertainties retained. Later source additions remain outside that acceptance. It also preserves the independent Bava Batra window-obligation and acquisition-premise findings; correction016 is included and passed independent recheck. The fresh source-only risk review of Moed Katan5a:13–5b:1 found a typed question omission, an inference mislabeled explicit, and relation refinements. Corrections011b/012 passed targeted recheck; original findings remain preserved. [Capture 004](reviews/capture_004/MANIFEST.json) records those findings and checks. Pesachim review007 repairs an explicit-answer metadata finding; its independent recheck passed in [capture005](reviews/capture_005/MANIFEST.json), an addendum after checkpoint004 was frozen. Review scopes and exact versions must be read from the receipts.
 
