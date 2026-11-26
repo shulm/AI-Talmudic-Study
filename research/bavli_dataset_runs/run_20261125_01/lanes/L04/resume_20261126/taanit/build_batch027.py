@@ -1,0 +1,64 @@
+"""Manual reading 13b:8–14a:6; source continuation read through 14b:15."""
+import pathlib
+helper=pathlib.Path(__file__).with_name('build_batch008.py').read_text(encoding='utf-8').split("A=c('yoreh.instruct'")[0]
+helper=helper.replace('bf269222667a2403dbfb6b92cfedcbe3f842f578ba83fdb2dd2ebe4d6975292a','7c90da8dda20c65e0dabbc2f221584632ba662060595d11bd744a81e8438fd20').replace('ta.resume008.','ta.resume027.').replace('/root/taanit_continuation_2','/root/taanit_continuation_4')
+exec(compile(helper,__file__,'exec'))
+Aq=q('prayer.q','13b:8','צלותא דתעניתא היכי מדכרינן','How is the fast prayer mentioned?')
+A=c('yehuda.teaching','13b:8','אדבריה רב יהודה לרב יצחק בריה ודרש יחיד שקיבל עליו תענית מתפלל של תענית','Rav Yehuda, accompanied by his son Rav Yitzhak, expounded that an individual accepting a fast says the fast prayer.',who='Rav Yehuda',cond=['individual accepted fast'],unc=['Compact אדבריה...ודרש construction preserved; no extra transmitter assumed.'])
+Bq=q('location.q','13b:8','והיכן אומרה','Where does he say it?')
+B=c('between','13b:8','בין גואל לרופא','The initial teaching places it between redemption and healing.',who='Rav Yehuda',cond=['individual fasting'],status='initial position challenged below');e('location.answer','13b:8','בין גואל לרופא',B,Bq,'answer');e('prayer.answer','13b:8',ix['13b:8']['text'],B,Aq,'answer')
+Cq=q('individual.blessing.q','13b:9','מתקיף לה רב יצחק וכי יחיד קובע ברכה לעצמו','Rav Yitzhak challenges whether an individual establishes a separate blessing.',who='Rav Yitzhak')
+C=c('yitzhak.hearing','13b:9','אלא אמר רב יצחק בשומע תפלה','Rav Yitzhak instead places it in the blessing hearing prayer.',who='Rav Yitzhak',cond=['individual fast prayer'])
+D=c('sheshet.hearing','13b:9','וכן אמר רב ששת בשומע תפלה','Rav Sheshet likewise places it in hearing prayer.',who='Rav Sheshet',cond=['individual fast prayer']);e('yitzhak.answer','13b:9','אלא אמר רב יצחק בשומע תפלה',C,Cq,'answer');e('yitzhak.objection','13b:9',ix['13b:9']['text'],C,B,'objection');e('sheshet.agreement','13b:9','וכן אמר רב ששת בשומע תפלה',D,C)
+E=c('eighteen.nineteen','13b:10','אין בין יחיד לצבור אלא שזה מתפלל שמונה עשרה וזה מתפלל תשע עשרה','A cited teaching distinguishes an individual’s eighteen blessings from the public’s nineteen.',voice='quoted teaching',comp='composite',status='meaning of individual/public debated')
+Eq=q('terms.q','13b:10','מאי יחיד ומאי צבור','What do individual and public mean here?')
+F=c('literal.test','13b:10','אילימא יחיד ממש וצבור ש"צ','The first interpretation tests a literal individual against a public prayer leader.',mode='hypothetical',status='tested interpretation')
+Fq=q('count.q','13b:10','הני תשע עשרה עשרין וארבע הוו','Would those be nineteen? The leader says twenty-four.')
+G=c('individual.types','13b:11',ix['13b:11']['text'],'A proposed alternative distinguishes an individual accepting a private fast from one accepting a public fast: eighteen versus nineteen, supporting a separate individual blessing.',mode='hypothetical',cond=['individual private versus public fast acceptance'],comp='composite',status='proposed inference challenged by subsequent reinterpretation');e('terms.proposal','13b:11',ix['13b:11']['text'],G,Eq,'answer');e('separate.support','13b:11',ix['13b:11']['text'],G,B)
+H=c('first.three','13b:12',ix['13b:12']['text'],'The reply keeps the prayer-leader reading but restricts it to the first three fasts, which do not have twenty-four blessings.',cond=['prayer leader','first three fasts'],comp='composite');e('terms.reply','13b:12',ix['13b:12']['text'],H,Eq,'answer');e('count.answer','13b:12',ix['13b:12']['text'],H,Fq,'answer');e('types.objection','13b:12',ix['13b:12']['text'],H,G,'objection')
+I=c('first.middle','13b:13',ix['13b:13']['text'],'The objection cites a teaching whose only difference between the first and middle three fasts is work permission versus prohibition, inferring equal prayer counts.',voice='anonymous objection citing teaching',comp='composite',status='inference from exclusivity of אין בין');e('first.middle.objection','13b:13',ix['13b:13']['text'],I,H,'objection')
+J=c('omitted','13b:14','תנא ושייר','A proposed answer says the teacher omitted items.',status='initial answer challenged immediately')
+Jq=q('other.omission.q','13b:14','מאי שייר דהאי שייר','What else was omitted to justify treating this as an omission?')
+Kq=q('exclusive.q','13b:14','ותו והא אין בין קתני','Moreover, does the text not say there is no difference except this?')
+K=c('prohibitions.scope','13b:14','אלא תנא באיסורי קא מיירי בתפלות לא מיירי','The reply limits the comparison to prohibitions, excluding prayer.',cond=['scope of teaching is prohibitions']);e('exclusive.answer','13b:14','אלא תנא באיסורי קא מיירי בתפלות לא מיירי',K,Kq,'answer');e('omission.replace','13b:14',ix['13b:14']['text'],K,J,'correction');e('comparison.scope','13b:14',ix['13b:14']['text'],K,I,'qualification')
+L=c('middle.not24','13b:14','ואי בעית אימא באמצעייתא נמי לא מצלי כ"ד','An alternative answer says even the middle fasts do not have twenty-four blessings.',cond=['middle three fasts'],status='alternative explanation');e('middle.answer','13b:14','ואי בעית אימא באמצעייתא נמי לא מצלי כ"ד',L,I,'objection')
+M=c('middle.last','13b:15',ix['13b:15']['text'],'The next objection compares the middle three with the last seven: only alarm and shop closures differ, so the prayer count should match; an omission answer again faces אין בין.',voice='anonymous objection citing teaching',comp='composite');e('middle.last.objection','13b:15',ix['13b:15']['text'],M,L,'objection')
+Mq=q('strict.q','13b:16','ותסברא אין בין דוקא','Is there no difference necessarily exhaustive here?')
+N=c('ark.omission','14a:1','והא שייר תיבה','The counterargument notes that taking out the ark was omitted.')
+O=c('private.scope','14a:1','אי משום תיבה לאו שיורא הוא מילי דצינעא קתני מילי דבפרהסיא לא קתני','The reply excludes the ark as a counterexample because this list concerns private matters rather than public acts.',comp='composite',status='proposed explanation of comparison scope');e('strict.counterexample','14a:1','והא שייר תיבה',N,Mq,'answer');e('ark.reply','14a:1',ix['14a:1']['text'],O,N,'objection')
+P1=c('ashi.precision','14a:2',ix['14a:2']['text'],'Rav Ashi draws a parallel precision argument from the Mishnah’s what are these greater wording: only alarm and shops differ; saying the teacher omitted still faces that wording.',who='Rav Ashi',comp='composite',status='argument from exclusive comparison')
+Pq=q('what.strict.q','14a:3','ותסברא מה אלו דווקא הוא','Must what are these greater be exhaustive?')
+P2=c('ark.omission2','14a:3','והא שייר לה תיבה','The omitted ark is again offered as a counterexample.');e('what.counterexample','14a:3','והא שייר לה תיבה',P2,Pq,'answer')
+Q=c('ark.later','14a:3','אי משום תיבה לאו שיורא הוא משום דקא חשיב לה באידך פרקא','The reply says the ark is not an omission because another chapter states it.',cond=['item stated in following chapter']);e('ark.later.reply','14a:3',ix['14a:3']['text'],Q,P2,'objection')
+R=c('twentyfour.later','14a:3','השתא דאתית להכי עשרים וארבעה נמי לאו שיורא הוא דקתני לה באידך פירקא','The same explanation then accounts for twenty-four blessings, also taught in the other chapter.',cond=['prayer count stated in other chapter']);e('prayer.parallel','14a:3',ix['14a:3']['text'],R,Q,'analogy');e('precision.reply','14a:3',ix['14a:3']['text'],R,P1,'objection')
+Rq=q('conclusion.q','14a:4','מאי הוי עלה','What is the resulting placement of the fast prayer?')
+S=c('samuel.location','14a:4','אמר רב שמואל בר ססרטאי','Rav Shmuel bar Sasartai places it between redemption and healing.',who='Rav Shmuel bar Sasartai',status='named opinion with shared predicate later in segment')
+T=c('rav.location','14a:4','וכן אמר רב חייא בר אשי אמר רב בין גואל לרופא','Rav, through Rav Hiyya bar Ashi, likewise places it between redemption and healing.',who='Rav',chain=['Rav Hiyya bar Ashi','Rav'])
+for z in P['records']:
+ if z['id'] in [S,S+'.u',S+'.a',S+'.p']:z['evidence'].append(ev('14a:4','בין גואל לרופא'))
+U=c('yanai.location','14a:4','ורב אשי אמר משמיה דרבי ינאי בריה דרבי ישמעאל בשומע תפלה','Rav Ashi reports Rabbi Yannai son of Rabbi Yishmael placing it in hearing prayer.',who='Rabbi Yannai son of Rabbi Yishmael',chain=['Rav Ashi','Rabbi Yannai son of Rabbi Yishmael'])
+V=c('final.location','14a:4','והלכתא בשומע תפלה:','The anonymous halakhic conclusion places it in hearing prayer.',status='explicit anonymous local ruling')
+for k,z in [('samuel',S),('rav',T),('yanai',U),('final',V)]:e('conclusion.'+k,'14a:4',ix['14a:4']['text'],z,Rq,'answer')
+e('prayer.final','14a:4','והלכתא בשומע תפלה:',V,U,'local_resolution')
+W=c('pregnant.first','14a:5','תני חדא עוברות ומיניקות מתענות בראשונות ואין מתענות באחרונות','One teaching has pregnant and nursing women fast in the first fasts but not the last.',voice='first baraita',cond=['pregnant/nursing women','first versus last labels'],comp='composite',status='apparently conflicting relative labels reconciled below')
+X=c('pregnant.last','14a:5','ותניא אידך מתענות באחרונות ואין מתענות בראשונות','Another teaching has them fast in the last but not the first.',voice='second baraita',cond=['pregnant/nursing women','last versus first labels'],comp='composite')
+Y=c('pregnant.neither','14a:5','ותניא אידך אין מתענות לא בראשונות ולא באחרונות','A third teaching exempts them in both first and last.',voice='third baraita',cond=['pregnant/nursing women'],comp='composite')
+Z=c('middle.reconciliation','14a:6',ix['14a:6']['text'],'Rav Ashi says to hold to the middle fasts, thereby reconciling all three teachings.',who='Rav Ashi',status='middle group taken as fasting obligation; first/last labels relative to compared groups',unc=['Source gives compact reconciliation rather than separately spelling out all three relabellings.'])
+for k,z in [('first',W),('last',X),('neither',Y)]:e('pregnant.reconciliation.'+k,'14a:6',ix['14a:6']['text'],Z,z,'local_resolution')
+refs=list(ix);refs=refs[refs.index('13b:8'):refs.index('14a:6')+1]
+for k,title,first,last in [('prayer','Individual fast prayer placement and comparison of fast groups','13b:8','14a:4'),('pregnant','Reconciliation of pregnant/nursing fast obligations','14a:5','14a:6')]:
+ add('structure.'+k,'structure',first,dict(title=title,primary=True,boundary='closed',legacy_ids=[]),origin='editorial_inference');P['records'][-1]['evidence']=[ev(r) for r in refs[refs.index(first):refs.index(last)+1]]
+notes={'13b:8':'Question, Yehuda/son narrative, obligation and placement retained.','13b:9':'Yitzhak objection and placement, separate Sheshet agreement retained.','13b:10':'18/19 teaching, interpretation questions and first leader reading retained.','13b:11':'Private/public individual reinterpretation retained as proposed inference.','13b:12':'First-three leader reinterpretation and count answer retained.','13b:13':'First/middle work comparison and inferred prayer equality retained.','13b:14':'Omission answer, two objections, prohibitions-only reply and alternative middle-count reply retained.','13b:15':'Middle/last objection and renewed exclusivity concern retained.','13b:16':'Strictness challenge continues into next folio.','14a:1':'Ark counterexample and private/public scope reply retained.','14a:2':'Ashi comparison/exclusivity reasoning retained.','14a:3':'Repeated ark challenge, other-chapter response and application to24 retained.','14a:4':'Conclusion question, both between opinions, Ashi/Yannai transmission and anonymous final ruling retained.','14a:5':'All three apparently conflicting pregnancy/nursing baraitot retained.','14a:6':'Ashi middle-group reconciliation retained without inventing explicit detailed relabelling.'}
+for z in P['records']:
+ if z['layer']=='questions':
+  has_answer=any(x['layer']=='edges' and x['content']['relation']=='answer' and x['content']['target_id']==z['id'] for x in P['records'])
+  z['content']['answer_set_status']='partial' if has_answer else 'none'
+  z['uncertainty'].append('Status describes represented local response inventory only; none is not a claim of no source answer. No exhaustive choice set or task eligibility.')
+for ref in refs:
+ for layer in runner.LAYERS:
+  found=[r['id'] for r in P['records'] if r['layer']==layer and any(v['segment_id']==ix[ref]['id'] for v in r['evidence'])]
+  rationale=('Source reread and omission reconciliation: ' if layer=='reconciliation' else '')+notes[ref]
+  if not found:rationale+=' No distinct '+layer+' record warranted after this pass.'
+  P['coverage'].append(dict(segment_id=ix[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if found else 'none_found_after_pass',record_ids=found,rationale=rationale))
+runner.validate_apply(runner.current(JOB),P,ss,j)
+out=JOB/'staging_resume_20261126'/'batch027.json';runner.immutable(out,runner.encoded(P));print(json.dumps(dict(proposal=str(out),records=len(P['records']),segments=len(refs)),indent=2))

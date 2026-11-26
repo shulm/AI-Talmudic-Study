@@ -34,5 +34,5 @@ class ScopedReading(Reading):
             for layer in r.LAYERS:
                 ids=[x['id'] for x in active if x['layer']==layer and any(e['segment_id']==sid for e in x['evidence'])]
                 cov.append(dict(segment_id=sid,layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale=rationale+' '+layer+' source pass: '+('supported records retained.' if ids else 'no additional independent object found.')))
-        p=dict(schema_version=r.VERSION,tractate=self.title,owner='L04/'+self.slug+'_resume_20261126',epoch=3,source_sha256=self.meta['source_sha256'],**r.hashes(),execution=dict(route='interactive_agent',agent_id='/root',model_id=None),records=self.rows,coverage=cov,open_tails=state['open_tails'])
+        p=dict(schema_version=r.VERSION,tractate=self.title,owner='L04/'+self.slug+'_resume_20261126',epoch=3,source_sha256=self.meta['source_sha256'],**r.hashes(),execution=dict(route='interactive_agent',agent_id=getattr(self,'agent_id','/root'),model_id=None),records=self.rows,coverage=cov,open_tails=state['open_tails'])
         out=self.job/'staging'/filename;r.immutable(out,r.encoded(p));print(out)

@@ -1,0 +1,87 @@
+"""Explicit source readings 6b:12–7a:15. No automatic extraction."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading,r
+a=ScopedReading('pesachim','Pesachim','pe.r011');a.agent_id='/root/pesachim_continuation_2'
+def c(k,ref,quote,text,**kw):
+    cid=a.claim(k,ref,quote,text,**kw)
+    for row in a.rows[-2:]:row['evidence']=[a.span(ref,quote)]
+    return cid
+def q(k,ref,quote,text):
+    qid=a.question(k,ref,quote,text);a.rows[-1]['evidence']=[a.span(ref,quote)];return qid
+def e(k,x,y,rel,ref):
+    if rel=='answer':
+        for row in a.rows:
+            if row['id']==y and row['layer']=='questions':
+                row['content']['answer_set_status']='partial';row['uncertainty']=['Only actually represented local answers; no exhaustive inventory or choice eligibility.']
+    return a.e(k,x,y,rel,ref)
+refs=['6b:'+str(i) for i in range(12,18)]+['7a:'+str(i) for i in range(1,16)]
+a.structure('nullify',['6b:'+str(i) for i in range(12,18)]+['7a:'+str(i) for i in range(1,6)],'Nullification with search: significance, ownership, time, and not-yet-leavened dough')
+a.structure('mold',['7a:'+str(i) for i in range(6,16)],'Moldy bread, latest use and majority: interpretation and distinctions')
+null=c('null','6b:12','אמר רב יהודה אמר רב הבודק צריך שיבטל','Rav, reported by Rav Yehuda, requires the searcher to nullify the leaven.',candidates=['רב'],chain=['רב יהודה','רב'],scope='Search plus nullification requirement')
+a.add('null.reporter','attributions',dict(surface='רב יהודה אמר רב',role='transmitter',candidates=['רב יהודה'],scope=null,transmission_chain=['רב יהודה','רב']),['6b:12'],[null])
+why=q('why','6b:12','מאי טעמא','Why must the searcher also nullify?')
+crumb=c('crumb','6b:12','אי נימא משום פירורין','One proposed rationale is remaining crumbs.',mode='hypothetical',scope='Tentative explanation, rejected as insignificant')
+insig=c('insig','6b:12','הא לא חשיבי','The crumbs are not significant.',scope='Objection to the crumbs explanation')
+e('insig.objection',insig,crumb,'objection','6b:12')
+guard=c('guard','6b:13','וכי תימא כיון דמינטר להו אגב ביתיה חשיבי','One might treat crumbs as significant because they are guarded along with the house.',mode='hypothetical',conditions=['guarded incidentally with the house'],scope='Attempt to sustain the crumbs rationale')
+fruit=c('fruit','6b:13','והתניא סופי תאנים ומשמר שדהו מפני ענבים סופי ענבים ומשמר שדהו מפני מקשאות ומפני מדלעות','A baraita concerns late figs in a field guarded for grapes and late grapes in a field guarded for cucumbers or gourds.',composition='composite',scope='Setting for the owner-concern distinction continued in 6b:14')
+concern=c('concern','6b:14','בזמן שבעל הבית מקפיד עליהן אסורין משום גזל וחייבין במעשר','If the owner is particular about them, taking them is theft and they require tithing.',composition='composite',conditions=['owner is particular about the remaining fruit'],scope='Quoted baraita’s first case')
+free=c('free','6b:14','בזמן שאין בעל הבית מקפיד עליהן מותרין משום גזל ופטורין משום מעשר','If the owner is not particular about them, taking them is permitted and they are exempt from tithing.',composition='composite',conditions=['owner is not particular about the remaining fruit'],scope='Quoted baraita’s contrasting case')
+e('free.distinction',free,concern,'distinction','6b:14');e('free.objection',free,guard,'objection','6b:14')
+loaf=c('loaf','6b:15','אמר רבא גזירה שמא ימצא גלוסקא יפה ודעתיה עילויה','Rava explains the requirement as a precaution lest one find an attractive loaf and have one’s mind on it.',candidates=['רבא'],conditions=['possible discovery of an attractive loaf'],scope='Source’s דעתיה עילויה retained without inventing a precise psychological motive')
+e('loaf.answer',loaf,why,'answer','6b:15')
+findq=q('findq','6b:15','וכי משכחת ליה לבטליה','Why not nullify the loaf upon finding it?')
+late=c('late','6b:16','דילמא משכחת ליה לבתר איסורא ולאו ברשותיה קיימא ולא מצי מבטיל','It may be found after prohibition begins, when it is no longer in one’s domain and cannot be nullified.',conditions=['discovered after prohibition begins'],scope='Timing rationale for earlier nullification')
+e('late.answer',late,findq,'answer','6b:16')
+elazar=c('elazar','6b:16','דא"ר אלעזר שני דברים אינן ברשותו של אדם ועשאן הכתוב כאילו ברשותו ואלו הן בור ברשות הרבים וחמץ משש שעות ולמעלה','Rabbi Elazar names a pit in the public domain and leaven from six hours upward as outside one’s domain but treated by Scripture as if in it.',candidates=['רבי אלעזר'],composition='composite',scope='Two-item legal attribution list, not ordinary ownership')
+e('elazar.support',elazar,late,'support','6b:16')
+fourq=q('fourq','6b:17','וניבטליה בארבע וניבטליה בחמש','Why not nullify in the fourth or fifth hour?')
+forget=c('forget','6b:17','כיון דלאו זמן איסורא הוא ולאו זמן ביעורא הוא דילמא פשע ולא מבטל ליה','Because it is neither the prohibition time nor removal time, one may neglect nullification.',conditions=['fourth or fifth hour'],scope='Explanation of attaching nullification to search rather than those times')
+e('forget.answer',forget,fourq,'answer','6b:17')
+sixq=q('sixq','7a:1','וניבטליה בשית','Why not nullify in the sixth hour?')
+rabbinic=c('rabbinic','7a:1','כיון דאיסורא דרבנן עילויה כדאורייתא דמיא ולאו ברשותיה קיימא ולא מצי מבטיל','The rabbinic prohibition then is treated like a Torah prohibition for this purpose: the leaven is outside one’s domain and cannot be nullified.',conditions=['sixth hour rabbinic prohibition'],scope='Limited consequence for nullification')
+e('rabbinic.answer',rabbinic,sixq,'answer','7a:1')
+betroth=c('betroth','7a:2',a.refs['7a:2']['text'],'Rav, through Rabbi Hiyya bar Yosef and Rav Giddel, states that betrothal from six hours upward using even חיטי קורדניתא is not treated as a betrothal concern.',candidates=['רב'],chain=['רב גידל','רבי חייא בר יוסף','רב'],conditions=['betrothal with the stated item from six hours upward'],scope='Supporting report; חיטי קורדניתא retained without unsupported botanical identification')
+a.add('betroth.reporters','attributions',dict(surface="רב גידל אמר ר' חייא בר יוסף אמר רב",role='transmitter',candidates=['רב גידל','רבי חייא בר יוסף'],scope=betroth,transmission_chain=['רב גידל','רבי חייא בר יוסף','רב']),['7a:2'],[betroth])
+e('betroth.support',betroth,rabbinic,'support','7a:2')
+afterq=q('afterq','7a:3','ולבתר איסורא לא מצי מבטיל ליה','Can leaven indeed not be nullified after prohibition?')
+remember=c('remember','7a:3','והא תניא היה יושב בבית המדרש ונזכר שיש חמץ בתוך ביתו מבטלו בלבו אחד שבת ואחד יום טוב','A baraita allows one who remembers leaven at home while in the study hall to nullify mentally on either Shabbat or a festival.',composition='composite',conditions=['remembering at the study hall','Shabbat or festival'],scope='Quoted challenge, interpreted as not-yet-leavened dough below')
+shabbat=c('shabbat','7a:3','בשלמא שבת משכחת לה כגון שחל ארבעה עשר להיות בשבת','The Shabbat case can be the fourteenth falling on Shabbat.',conditions=['fourteenth on Shabbat'],scope='Anonymous explanation of the nonproblematic case')
+festival=c('festival','7a:3','אלא יום טוב בתר איסורא הוא','The festival case appears to fall after prohibition has begun.',scope='Problematic case in the challenge')
+e('remember.objection',remember,late,'objection','7a:3');e('festival.support',festival,afterq,'support','7a:3')
+dough=c('dough','7a:4',a.refs['7a:4']['text'],'Rav Aha bar Yaakov interprets the case as a student before his teacher remembering kneaded dough at home and nullifying it before it leavens.',candidates=['רב אחא בר יעקב'],conditions=['dough not yet leavened','student before teacher','fear it will leaven'],scope='Resolution narrows the object and timing, not permission for late nullification of existing leaven')
+e('dough.answer',dough,afterq,'answer','7a:4');e('dough.qualification',dough,remember,'qualification','7a:4')
+confirm=c('confirm','7a:5',a.refs['7a:5']['text'],'The study-hall wording is accepted as support for this interpretation.',scope='Explicit local שמע מינה')
+e('confirm.support',confirm,dough,'support','7a:5')
+mold=c('mold','7a:6','אמר רבה בר רב הונא אמר רב הפת שעיפשה כיון שרבתה מצה מותרת','Rav, reported by Rabba bar Rav Huna, permits moldy bread when matza has become predominant.',candidates=['רב'],chain=['רבה בר רב הונא','רב'],scope='Initial wording; predominance is reinterpreted as days of matza in 7a:11')
+a.add('mold.reporter','attributions',dict(surface='רבה בר רב הונא אמר רב',role='transmitter',candidates=['רבה בר רב הונא'],scope=mold,transmission_chain=['רבה בר רב הונא','רב']),['7a:6'],[mold])
+knownq=q('knownq','7a:6','היכי דמי אילימא דידע בה דחמץ היא כי רבתה מצה מאי הוי','If the bread is known to be leaven, what difference does predominance of matza make?')
+unknownq=q('unknownq','7a:7',a.refs['7a:7']['text'],'If it is unknown whether the bread is leaven or matza, why require matza predominance rather than follow the latest use?')
+e('knownq.objection',knownq,mold,'objection','7a:6');e('unknownq.objection',unknownq,mold,'objection','7a:7')
+coins1=c('coins1','7a:8','מי לא תנן מעות שנמצאו לפני סוחרי בהמה לעולם מעשר בהר הבית חולין','The cited Mishnah treats coins found before animal dealers as tithe money and those on the Temple Mount as ordinary money.',composition='composite',conditions=['finding location as stated'],scope='Cited monetary-status cases')
+coins2=c('coins2','7a:9',a.refs['7a:9']['text'],'In Jerusalem, found coins are treated as tithe money during the pilgrimage festival and ordinary money at other times.',composition='composite',conditions=['Jerusalem','festival versus other times'],scope='Cited Mishnah seasonal contrast')
+sweep=c('sweep','7a:10','ואמר רב שמעיה בר זירא מאי טעמא הואיל ושוקי ירושלים עשויין להתכבד בכל יום','Rav Shemaya bar Zeira explains the rule by the daily sweeping of Jerusalem’s markets.',candidates=['רב שמעיה בר זירא'],scope='Quoted explanation of the found-money rule')
+latest=c('latest','7a:10','אלמא אמרי\' קמאי קמאי אזלי ליה והני אחריני נינהו הכא נמי נימא קמא קמא אזיל והאי דהאידנא הוא','The discussion infers that earlier items have gone and new ones remain, proposing the same latest-use reasoning for bread.',mode='challenged',scope='Anonymous analogy from swept markets to bread')
+e('sweep.support',sweep,coins2,'support','7a:10');e('latest.analogy',latest,unknownq,'analogy','7a:10')
+moldproof=c('moldproof','7a:11','שאני הכא דעיפושה מוכיח עילויה','The bread differs because its mold evidences its age.',mode='challenged',scope='Initial distinction from recently swept markets')
+e('moldproof.answer',moldproof,unknownq,'answer','7a:11')
+thenq=q('thenq','7a:11','אי עיפושה מוכיח עילויה כי רבתה מצה מאי הוי','If mold proves age, how does predominance of matza help?')
+e('thenq.objection',thenq,moldproof,'objection','7a:11')
+days=c('days','7a:11','אמר רבה לא תימא שרבתה מצה אלא אימא שרבו ימי מצה עילויה','Rabba replaces predominance of matza with many days of matza having elapsed over the bread.',candidates=['רבה'],scope='Explicit wording correction; Rabba is not conflated with Rava or Rabba bar Rav Huna')
+e('days.answer',days,thenq,'answer','7a:11');e('days.correction',days,mold,'correction','7a:11')
+obvious=q('obvious','7a:12','אי הכי פשיטא','If so, is the rule not obvious?')
+extreme=c('extreme','7a:12','לא צריכא דעיפושה מרובה','The case has unusually extensive mold.',conditions=['extensive mold'],scope='Case narrowing')
+infer=c('infer','7a:12','מהו דתימא כיון דעיפושה מרובה איגליא מילתא דודאי חמץ מעליא הוא','One might infer from extensive mold that it must be actual old leaven.',mode='hypothetical',conditions=['extensive mold'],scope='Inference excluded by the rule')
+fresh=c('fresh','7a:13',a.refs['7a:13']['text'],'Once many matza days have elapsed, daily hot bread placed on it may account for the accelerated mold.',conditions=['many days of matza have elapsed'],scope='Source’s explanation for permitting despite extensive mold; not an independent scientific claim')
+e('extreme.answer',extreme,obvious,'answer','7a:12');e('fresh.correction',fresh,infer,'correction','7a:13');e('fresh.support',fresh,days,'support','7a:13')
+latestq=q('latestq','7a:14','ומי אזלינן בתר בתרא','Do we indeed follow the last use?')
+box=c('box','7a:14',"והא תניא ר' יוסי בר יהודה אומר תיבה שנשתמשו בה מעות חולין ומעות מעשר אם רוב חולין חולין אם רוב מעשר מעשר",'Rabbi Yosi bar Yehuda teaches that a box used for ordinary and tithe money follows the majority: ordinary if most was ordinary, tithe if most was tithe.',candidates=['רבי יוסי בר יהודה'],composition='composite',conditions=['box used for both kinds of money'],scope='Baraita challenge to unrestricted last-use reasoning')
+boxq=q('boxq','7a:14','ואמאי ליזיל בתר בתרא','Why not follow the last use of the box?')
+e('box.objection',box,latest,'objection','7a:14')
+unknown=c('unknown','7a:15','אמר רב נחמן בר יצחק הכא במאי עסקינן כגון שנשתמשו בה מעות חולין ומעות מעשר ואין יודע איזה מהן בסוף','Rav Nahman bar Yitzhak interprets the box case as one where the last type of money is unknown.',candidates=['רב נחמן בר יצחק'],conditions=['last type used is unknown'],scope='First reconciliation')
+piles=c('piles','7a:15','רב זביד אמר כגון שנשתמשו בה ציבורין ציבורין','Rav Zevid interprets it as use in piles.',candidates=['רב זביד'],conditions=['money used in piles'],scope='Second reconciliation; mechanism not embellished')
+hole=c('hole','7a:15','רב פפא אמר כגון דאשתכח בגומא','Rav Pappa interprets it as money found in a recess.',candidates=['רב פפא'],conditions=['money found in a recess'],scope='Third reconciliation; no forced selection')
+for k,x in [('unknown',unknown),('piles',piles),('hole',hole)]:e(k+'.answer',x,boxq,'answer','7a:15');e(k+'.general',x,latestq,'answer','7a:15')
+a.save_window(refs,'pesachim_nullification_011.json','Read original through 7b:19 and reread this covered scope. Retain every rationale, objection, timing condition, transmission chain, quoted money case and competing reconciliation. The local answer inventories are limited to linked represented replies.',expected_parent='12fef64095bca7db72bf94d6012e829f8f74d02ca084c432a61775d35dbae341')
