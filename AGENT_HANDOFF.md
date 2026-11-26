@@ -1,5 +1,13 @@
 # Research handoff — updated 2026-11-25
 
+## Completed post-ES diagnostics — draft PR #27, 2026-11-26
+
+Executed H0–H4 from assignment 2f1cae3e894bec16c9c5cd280356a4e051029031. Pre-analysis dfc649e4557d4689c5d33556bb52faa88ec3cf03 was published and read back before computation. Read [results](research/decision_functions_2026-11-24/runs/post_es_diagnostics_v1/RESULTS.md), [handoff](research/decision_functions_2026-11-24/runs/post_es_diagnostics_v1/NEXT_HANDOFF.md), and [proposal only](research/decision_functions_2026-11-24/runs/post_es_diagnostics_v1/NEXT_STUDY_PROPOSAL.md).
+
+Historical PR #20 stays INCOMPLETE / NUMERICALLY_UNRESOLVED. New diagnostic evidence COMPLETE, engineering PASS, cap ablation DESCRIPTIVE_COMPLETE, integrity PASS, scientific qualification false. Diagnosed 1,664 saved personal row instances; computed exactly eight uncapped primary arrays; completed all 384 toy engineering attempts in 114 wrappers with no retries. All 395 verification groups passed and 1,215 historical blobs plus 112 original private artifacts remained unchanged. Uncapped E/F/G/H aggregate contrast NRMSE is .482192/.482827/.438867/.475929; E history 101 still fails at .516557. No historical refit or new scientific fitting occurred.
+
+Preserve the new terminal serialization failure and reporting-only recovery documented in REPORTING_RECOVERY.json. Frozen scientific code was not changed; no solve was repeated. Future code must test the corrected complete terminal-composition boundary before launch. RESOURCE_USAGE_FINAL.json includes the failed command. Proposed next question: fresh independent confirmation of the one fixed uncapped mixture, subject to a separately frozen precision design and disjoint seed reservation. No launch, PR #18 execution, corpus modification, or merge is authorized here. Stop for review at [draft PR #27](https://github.com/shulm/AI-Talmudic-Study/pull/27).
+
 ## Independent evidence-shrinkage review and next assignment — 2026-11-26
 
 Read [the PR #20 review](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/REVIEW.md), [mathematical diagnosis](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/METHOD_NOTE.md), [H0–H4 next-agent prompt](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/NEXT_AGENT_PROMPT.md), and [fixed engineering suite](research/decision_functions_2026-11-24/reviews/evidence_shrinkage_v1_2026-11-26/ENGINEERING_SPEC.md).
