@@ -1,5 +1,17 @@
 # L02 resumable partial production checkpoint
 
+Update 2026-11-26: Bava Metzia has a newer targeted correction, snapshot
+`1de0ef2ed8f9cd4fc22791162f92e7d59d276dc09dd9c50336dd8fe0a3940a92`.
+See `bm001_scope_correction_receipt.json` and run
+`python -X utf8 research/bavli_dataset_runs/run_20261125_01/lanes/L02/verify_bm001_correction.py`.
+BM001-SCOPE adds explicit provisional combined-clause scope to claims 17/44/54
+and updates dependent records, while retaining sight-nonacquisition as an
+asserted separate principle. Fourteen supersessions preserve original judgments;
+coverage remains 47 segments per pass. The independent verdict remains
+`REWORK_TARGETED` pending exact-version re-review. The session receipt and frozen
+package below remain unchanged historical artifacts, not pointers to this newer
+Bava Metzia snapshot. Other tractate checkpoints are unchanged.
+
 **The requested five-tractate assignment is not complete. No tractate is delivered.**
 The frozen checkpoint has 310/13,669 original segments with recorded passes in each
 of structure, utterances, claims, attributions, questions, positions, edges and
