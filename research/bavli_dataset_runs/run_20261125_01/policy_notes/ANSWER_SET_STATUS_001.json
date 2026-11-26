@@ -1,0 +1,21 @@
+{
+  "authority": "GLOBAL_COORDINATOR",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "eligibility_change": false,
+  "policy_id": "answer_set_status_interpretation_001",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "required_followup": "Lane source-based adjudication, independent exact-version check, and a versioned enum-definition proposal if ambiguity persists.",
+  "risk_screen": "Reported RISK_SCREEN_006 238 candidates in L04; count not independently reverified by this policy note and not an omission/error estimate.",
+  "rules": [
+    "answer_set_status describes represented answer-set inventory; it is not evidence that the original source has no answer. Existing none values have ambiguous historical producer intent and must not support a negative source assertion.",
+    "An active answer edge targeting a question with none is a consistency-risk candidate, not automatically a confirmed source error. Read the question, answer, conditions and relevant continuation; verify the edge target and represented inventory.",
+    "For new records, use partial only when source-supported alternatives or an answer inventory are actually represented for that exact question; scope and continuation limits must remain explicit. Do not manufacture alternatives to satisfy an enum.",
+    "Do not infer complete or mutually comparable alternatives from partial, topic_inventory or unreviewed_alternatives. None of the enum values alone grants choice-QA eligibility.",
+    "Preserve source-present answers and their relations even if inventory eligibility is restricted. Distinguish a reason-question, count-question, rejected proposal and final local position.",
+    "Corrections use immutable superseding records with exact evidence and dependent coverage updates. No automatic bulk relabeling, deletion or blanket quarantine.",
+    "Existing source-based correction findings and exact-role quarantines remain in force; this note grants no clearance."
+  ],
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "status": "ADDITIVE_CONSERVATIVE_INTERPRETATION_AND_REVIEW_GUIDANCE",
+  "versioning_boundary": "Does not alter frozen schema/protocol or reinterpret old producer intent. A normative enum migration requires a new versioned contract and impact assessment."
+}
