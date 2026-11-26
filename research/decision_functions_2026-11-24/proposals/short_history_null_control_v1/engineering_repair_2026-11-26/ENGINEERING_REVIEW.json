@@ -1,0 +1,74 @@
+{
+  "reviewer": "independent_AI:methods_review",
+  "date": "2026-11-26",
+  "reviewed_commit": "696988b0b183881c87a8d91c76f870d6a404216a",
+  "comparison_base": "49d7157e3998a20f646e9200c3e223bbbb58541f",
+  "review_reference": "https://github.com/shulm/AI-Talmudic-Study/pull/18#pullrequestreview-6065024130",
+  "scope": "R1 failed-attempt boundary/accounting and R2 repeat read-only verification only",
+  "disposition": "ACCEPTABLE_SCOPED_ENGINEERING_REPAIR_NO_BLOCKERS",
+  "findings": [],
+  "first_judgment": "No actionable blocker in initial inspected repair diff; final receipt binds stabilized sources.",
+  "R1": [
+    "Direct execution and all reject unmatched attempt/completion/resource inventories before another attempt.",
+    "Catchable failure preserves partial process CPU; unavailable CPU is null/UNRESOLVED. Terminal marker blocks subsequent execution.",
+    "Hard interruption remains blocked after stale-lock cleanup. Removing terminal marker alone cannot supply missing completion.",
+    "Final verification rejects terminal failure."
+  ],
+  "R2": [
+    "First receipt is create-once; repeat verification fully recomputes and compares without rewriting.",
+    "Own verification receipt excluded from evidence hashes; no recursive receipt membership.",
+    "Changed evidence/receipt rejected; repeat standalone verification covered after both mocked all paths."
+  ],
+  "personally_checked": [
+    "Read exact GitHub R1/R2 comments via read-only API.",
+    "Inspected run.py diff, repair_checks.py and integration test additions.",
+    "Read final PASS receipts and checked all source hashes against reviewed files.",
+    "Computed hashes and compared artifact bytes against exact commit using git cat-file.",
+    "Verified10 scientific code/spec files and original methods receipt unchanged from prior head."
+  ],
+  "executor_reported_not_rerun": [
+    "7 focused regressions PASS",
+    "11 analytic checks PASS",
+    "12 mocked integration checks PASS"
+  ],
+  "limitations": [
+    "Reviewer inspected tests and receipts but did not rerun them.",
+    "No scientific fit, generator call or human evaluation executed; no implementation edited.",
+    "Mocks establish engineering behavior, not statistical coverage or scientific performance.",
+    "Failed-process CPU is partial through measurement; teardown unmeasured. Hard termination may leave unknown expenditure, which blocks future execution.",
+    "Receipt comparison uses parsed content; existing hashes do not authenticate adversarial rewriting of all artifacts.",
+    "Scientific design and original methods review unchanged. Separate owner authorization still required for scientific execution."
+  ],
+  "reviewed_sha256": {
+    "labs/decision_functions_null_control_v1/audit_history.py": "f5ad5f1c959f41d6f8043407fecbb52c380f6401824b259e5dd5ea34a6243133",
+    "labs/decision_functions_null_control_v1/checks.py": "1dd354225bde29fc9033bc4cb019f0e66616e1e13ad264a398c004c18f400442",
+    "labs/decision_functions_null_control_v1/design.py": "0bd33fb3f590e83f17eabbc605c7f4ee2c59b697be36851e08cc019a896a0c3f",
+    "labs/decision_functions_null_control_v1/engine.py": "2284d85a026d93130d5b2efb72be826397291e723cbbe7605ad4751b96e464a8",
+    "labs/decision_functions_null_control_v1/integration_checks.py": "2a5a12e32efecc6ce4a210f87e843c3ae8507ed3cbeac30160e3bfbdb3b089a4",
+    "labs/decision_functions_null_control_v1/prepare.py": "0d109f00729e99c12817aecffe949f63d55e4ecd4bf58aa70bb5e7e6ccdeb453",
+    "labs/decision_functions_null_control_v1/repair_checks.py": "ddd73785ec9db77f6cea5074f613a0c532e87d3f9387834a6c9b5207e480ac2f",
+    "labs/decision_functions_null_control_v1/run.py": "d78a4ecf286d7a5b17d8548eef7b26080b9c1c524f486134b5c5516550ed57e5",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/COMMANDS.md": "179060ef5ed26de55dec03cd0de6ea6439af541b8521658546a3026f34b82391",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/engineering_repair_2026-11-26/MOCK_INTEGRATION_CHECKS.json": "0b995430504a8e494409cdf52186b621271d92525928c13f0b5b5219f96297ed",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/engineering_repair_2026-11-26/REPAIR_DELIVERY.json": "b7d561263bb9833315c7dad7c341f2754735d57436ba37d13674f59ffc2a4087",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/engineering_repair_2026-11-26/REPAIR_REGRESSION_CHECKS.json": "05b0026c13ebb639a9142f92ab6f5ce71bb22b4d32d47f145a1b7430d67ff10d",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/engineering_repair_2026-11-26/REPAIR_REGRESSION_CHECKS_INITIAL.json": "ed998e15a1107bd7c661fd05f337c44cf449cdbbacb848dc3d9e0312329ac32d",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/engineering_repair_2026-11-26/REPAIR_REPORT.md": "3166fc5bcae79b137490dfddcc90cc6318749c95864c5883e04136db051b7edd",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/engineering_repair_2026-11-26/ZERO_FIT_CHECKS.json": "cce7beaf18320639957773ca9b0fc0ae83ca77fb1b5e0bcc42f64f6705bd3b72",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/FINAL_METHODS_REVIEW.json": "aa5128f2d31c0bea1f9a1b64284a7179edd9a725383cd60da8d87e29aabf16f2"
+  },
+  "unchanged_from_prior_head_sha256": {
+    "labs/decision_functions_null_control_v1/design.py": "0bd33fb3f590e83f17eabbc605c7f4ee2c59b697be36851e08cc019a896a0c3f",
+    "labs/decision_functions_null_control_v1/engine.py": "2284d85a026d93130d5b2efb72be826397291e723cbbe7605ad4751b96e464a8",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/PROPOSED_PROTOCOL.json": "b8ad569f918a39e88a152b479cbe9a95f3207eca7868e6905114de948044152e",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/CANDIDATES.json": "131d927c3acc61ae36754cf81528a4607bcc87cbb8e54d2eaa15ecbdb87c240a",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/SEEDS.json": "dbfd8042b38de89ed72e9649746b18f4925a55e579da2ddbfd50a95d44cf688a",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/GENERATOR_CONTRACT.md": "4dd53290a587a5673c70dc1c55c0b96edb68795443ed7377d75ac27f1506da0b",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/SELECTION_AND_CONFIRMATION.md": "3c9c4155666754a8707b84141b93c65ca615ece71518733748e8475973b7337b",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/RESOURCE_PLAN.json": "1117af4d513e808a9e5a62d477fed862c5a7f7d445c15cc01f3bf5c5fab545ba",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/EXPECTED_DEV.json": "fcf72d3b3169dea995def1059f6a8a2e28757a2b9a9800f16c3b3ea18fbfc290",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/EXPECTED_CONFIRMATION_SPEC.json": "9fff267e7f27482f74e72b782884072b7d343ec52edcf1917cf96237374acbab",
+    "research/decision_functions_2026-11-24/proposals/short_history_null_control_v1/FINAL_METHODS_REVIEW.json": "aa5128f2d31c0bea1f9a1b64284a7179edd9a725383cd60da8d87e29aabf16f2"
+  },
+  "verification_note": "Initial git show byte-check hit Windows long-path stat limitation; reran read-only byte checks successfully with git cat-file blob."
+}

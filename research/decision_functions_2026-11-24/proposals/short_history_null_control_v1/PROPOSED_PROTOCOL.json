@@ -1,0 +1,91 @@
+{
+  "version": "short_history_null_control_v1",
+  "status": "PROTOCOL_FROZEN",
+  "base_sha": "ee2b0a5a2f0916fed3dd59f720b902eb332eecc3",
+  "reason": "Scientific design fixed after independent first and follow-up reviews; final exact-hash review receipt required. Proposal only: execution requires separate owner authorization.",
+  "primary_k": 16,
+  "regimes": [
+    "population",
+    "offset",
+    "strong",
+    "weak",
+    "nontransfer",
+    "mixed"
+  ],
+  "primary_nulls": [
+    "population",
+    "offset"
+  ],
+  "strong_benchmark": "strong",
+  "sensitivity_only": [
+    "weak",
+    "nontransfer",
+    "mixed"
+  ],
+  "shared": {
+    "rho": 0.01,
+    "lambda_b": 0.1,
+    "rank": 2,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "normalization": "Canonical v2 objective: meanCE+rho/2*(norm(V)^2+norm(U)^2/S)+lambda_b/(2S)*norm(b)^2. Keep fitted V unchanged across policies; no post-fit unit-norm rescaling."
+  },
+  "personal": "mean support CE+rho/2*norm(u)^2+lambda_b/2*norm(b)^2",
+  "pairs": [
+    {
+      "id": "p0",
+      "rho": 0.01,
+      "lb": 0.1
+    },
+    {
+      "id": "p1",
+      "rho": 0.01,
+      "lb": 0.6
+    },
+    {
+      "id": "p2",
+      "rho": 0.06,
+      "lb": 0.1
+    },
+    {
+      "id": "p3",
+      "rho": 0.06,
+      "lb": 0.6
+    }
+  ],
+  "weight_grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "candidate_count": 20,
+  "unique_predictor_settings": 18,
+  "development_realizations": 12,
+  "confirmation": {
+    "minimum": 24,
+    "maximum": 96,
+    "precision": 0.005,
+    "per_bound_alpha": 0.016666666666666666,
+    "rule": "Smallest integer n in [24,96] with t_(1-.05/3,n-1)*max(development SD of two selected null harms and strong gain)/sqrt(n)<=.005; otherwise stop. Check achieved widths, no extension."
+  },
+  "selection": "Common B3 first by minimum mean expected NLL over development population/offset/strong equally, tie1e-12 lower lambda. Eligible global candidates: w>0, both null UCB<=.01, strong gain>=.05 and LCB>0, recovery>=.5, contrast NRMSE<=.5. Max strong gain; ties1e-12 lower w, higher rho, higher lambda, lexical ID.",
+  "inference": "Bonferroni one-sided t across two null harms and one strong gain, alpha=.05/3 each. Approximate for generated-world means; no exact normality guarantee.",
+  "continuity": "Historical matched-component B3 tables per world, distinct from new common-B3 point and statistical gates.",
+  "probability_floor": 1e-12,
+  "denominator_floor": 1e-08,
+  "zero_variance": "unresolved; cannot qualify",
+  "nonfinite": "INCOMPLETE; no drop or replacement",
+  "support_schedules": [
+    101,
+    211
+  ],
+  "extra_retries": 0,
+  "authorization": "Separate owner authorization of exact source hashes required before freeze/execute; this planning assignment does not authorize execution",
+  "scientific_fits_this_assignment": 0,
+  "human_evaluations_this_assignment": 0
+}
