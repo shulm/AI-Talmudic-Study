@@ -1,0 +1,46 @@
+{
+  "wave": 2,
+  "date": "2026-11-26",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "fork_turns": "none",
+  "isolation": "instruction allowlist and fresh context, not OS sandbox",
+  "producer_labels_provided": false,
+  "launches": [
+    {
+      "agent_id": "/root/reader_zevachim_wave2",
+      "descriptor_sha256": "4a73f30ed72572ef25898741476ec8def7600e259044d8ae00d62a6db49c9f52",
+      "job_id": "bavli_zevachim",
+      "selection": "first3 review_blocks in source order",
+      "blocks": [
+        "block_000000",
+        "block_000008",
+        "block_000017"
+      ],
+      "output": "readings/zevachim_batch001.json"
+    },
+    {
+      "agent_id": "/root/reader_bava_batra_wave2",
+      "descriptor_sha256": "e6253c57834f740a76a7538f81c36a55ac2d2bd4a242bb6126e0f2ee6a1ece86",
+      "job_id": "bavli_bava_batra",
+      "selection": "first3 review_blocks in source order",
+      "blocks": [
+        "block_000000",
+        "block_000002",
+        "block_000003"
+      ],
+      "output": "readings/bava_batra_batch001.json"
+    },
+    {
+      "agent_id": "/root/reader_shabbat_wave2",
+      "descriptor_sha256": "5ea224e65cfa0f61a40ac6088d5c9425ee2d307bc1a41cf00cd8b1a9f9c15545",
+      "job_id": "bavli_shabbat",
+      "selection": "first3 review_blocks in source order",
+      "blocks": [
+        "block_000000",
+        "block_000009",
+        "block_000018"
+      ],
+      "output": "readings/shabbat_batch001.json"
+    }
+  ]
+}

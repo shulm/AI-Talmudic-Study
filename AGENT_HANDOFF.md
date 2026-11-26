@@ -1,5 +1,9 @@
 # Research handoff — updated 2026-11-24
 
+## Rolling Bavli integration — 2026-11-26
+
+See [the partial release and exact resume instructions](research/bavli_dataset_runs/run_20261125_01/releases/INTEGRATION_20261126_01.md). Integration branch `codex/bavli-integration-release-20261126` assembles 2,450/81,793 segments per required pass and 19,128 included provisional records; 0/37 tractates are complete. Ledger revision 5 preserves later lane ownership. Exact source/proposal replay, output hash validation and a second byte-identical build passed. Later live output and review receipts remain separate; do not reset producers to this frozen capture.
+
 ## Bavli production coordination — 2026-11-25
 
 The active reusable Bavli dataset run is `run_20261125_01` on `dataset/bavli-coordination-v1`, draft PR #17. Start with [the immutable active-run pointer](research/bavli_dataset_runs/ACTIVE_RUN.json), [run evidence and resume instructions](research/bavli_dataset_runs/run_20261125_01/README.md), and [the exact unfinished-work matrix](research/bavli_dataset_runs/run_20261125_01/REMAINING_WORK.md). Preserve the other research tracks below.
