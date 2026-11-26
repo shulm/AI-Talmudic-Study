@@ -1,0 +1,111 @@
+{
+  "recovery": "REPORTING_ONLY_AFTER_ALL_ATTEMPTS",
+  "original_error": "TypeError: dict() got multiple values for keyword argument 'qualification'",
+  "original_failed_commands": [
+    {
+      "command": [
+        "python",
+        "labs/decision_functions_post_es_diagnostics_v1/execute_new.py",
+        "--private-root",
+        "C:/Users/David/.cache/decision_functions/evidence_shrinkage_v1",
+        "--derived-root",
+        "C:/Users/David/.cache/decision_functions/post_es_diagnostics_v1",
+        "--output-root",
+        "research/decision_functions_2026-11-24/runs/post_es_diagnostics_v1"
+      ],
+      "exit_code": 1,
+      "cpu_seconds_sampled": 12.953125,
+      "wall_seconds": 27.811999999918044,
+      "peak_rss_bytes_sampled": 107982848,
+      "stop": null,
+      "sampling_seconds": 0.02
+    }
+  ],
+  "frozen_scientific_sources_unchanged": true,
+  "solver_invocations_in_recovery": 0,
+  "diagnostic_recalculations_in_recovery": 0,
+  "adapter_sha256": "fdbb2fbf756c2614fe8a8adb70a4d8c40fe74e38b45a6d3dfca567362fcec9ae",
+  "tests": {
+    "success": {
+      "completed_inventory": {
+        "attempts": 384
+      },
+      "expected_inventory": {
+        "attempts": 384
+      },
+      "inventory_complete": true,
+      "artifact_integrity": "PASS",
+      "numerical_status": "PASS",
+      "scientific_status": "PASS",
+      "failure_reason": null,
+      "qualification": true,
+      "receipt_is_integrity_proof": false,
+      "path": "success"
+    },
+    "numerical_failure": {
+      "completed_inventory": {
+        "attempts": 384
+      },
+      "expected_inventory": {
+        "attempts": 384
+      },
+      "inventory_complete": true,
+      "artifact_integrity": "PASS",
+      "numerical_status": "FAIL",
+      "scientific_status": "PASS",
+      "failure_reason": "numerical_failure",
+      "qualification": false,
+      "receipt_is_integrity_proof": false,
+      "path": "numerical_failure"
+    },
+    "scientific_failure": {
+      "completed_inventory": {
+        "attempts": 384
+      },
+      "expected_inventory": {
+        "attempts": 384
+      },
+      "inventory_complete": true,
+      "artifact_integrity": "PASS",
+      "numerical_status": "PASS",
+      "scientific_status": "FAIL",
+      "failure_reason": "scientific_failure",
+      "qualification": false,
+      "receipt_is_integrity_proof": false,
+      "path": "scientific_failure"
+    },
+    "incomplete_evidence": {
+      "completed_inventory": {
+        "attempts": 4
+      },
+      "expected_inventory": {
+        "attempts": 384
+      },
+      "inventory_complete": false,
+      "artifact_integrity": "INCOMPLETE",
+      "numerical_status": "NOT_RUN",
+      "scientific_status": "NOT_RUN",
+      "failure_reason": "incomplete_evidence",
+      "qualification": false,
+      "receipt_is_integrity_proof": false,
+      "path": "incomplete_evidence"
+    },
+    "resource_stop": {
+      "completed_inventory": {
+        "attempts": 4
+      },
+      "expected_inventory": {
+        "attempts": 384
+      },
+      "inventory_complete": false,
+      "artifact_integrity": "INCOMPLETE",
+      "numerical_status": "INCOMPLETE",
+      "scientific_status": "NOT_RUN",
+      "failure_reason": "resource_stop",
+      "qualification": false,
+      "receipt_is_integrity_proof": false,
+      "path": "resource_stop"
+    },
+    "duplicate_axis_override_rejected": true
+  }
+}
