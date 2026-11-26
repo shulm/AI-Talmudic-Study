@@ -1,5 +1,10 @@
 # L02 resumable partial production checkpoint
 
+Latest continuation: see `RESUME_20261126.md` and
+`resume_20261126/RECEIPT.json`. Coverage is now 391/13,669 per required layer.
+All three child agents stopped at a platform usage limit; accepted work and three
+new source-first readings are frozen. The 310-segment session below is historical.
+
 Update 2026-11-26: Bava Metzia has a newer targeted correction, snapshot
 `1de0ef2ed8f9cd4fc22791162f92e7d59d276dc09dd9c50336dd8fe0a3940a92`.
 See `bm001_scope_correction_receipt.json` and run
