@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "version": "post_es_diagnostics_v1",
+  "status": "ASSIGNED_NOT_EXECUTED_REQUIRES_PRE_ANALYSIS_CHECKPOINT",
+  "repository": "shulm/AI-Talmudic-Study",
+  "date": "2026-11-26",
+  "reviewed_commit": "f18255c5fad37f704881ff1f9ad50cd113497236",
+  "reviewed_prefit": "38dfff076b90d7c08387a06bd25f3cc75f15f6ae",
+  "prior_assignment": "724be8c49808e1e1b8643d81c73267f7577439c8",
+  "historical_status": {
+    "audit": "INCOMPLETE",
+    "numerical": "NUMERICALLY_UNRESOLVED",
+    "qualification": false,
+    "immutable": true
+  },
+  "question": [
+    "Can fixed-V personal optimization uncertainty bridge the recorded contrast gaps?",
+    "What changes when only the .9 probability-mixture cap is removed from saved predictions?"
+  ],
+  "paths": {
+    "lab": "labs/decision_functions_post_es_diagnostics_v1/",
+    "public_run": "research/decision_functions_2026-11-24/runs/post_es_diagnostics_v1/",
+    "historical_run": "research/decision_functions_2026-11-24/runs/evidence_shrinkage_v1/",
+    "private_output": "fresh directory outside historical input cache"
+  },
+  "pre_analysis": {
+    "required": true,
+    "publish_and_read_back": "issue #2 before engineering solves or private ablation",
+    "freeze": [
+      "source",
+      "input hashes",
+      "exact output keys/shapes/rows/comparison IDs",
+      "fixtures and schedule",
+      "algorithm",
+      "tolerances",
+      "environment",
+      "resource accounting"
+    ],
+    "is_fresh_confirmation": false,
+    "prefreeze_optimizer_calls": 0
+  },
+  "scientific_optimization": {
+    "shared_fits": 0,
+    "personal_solves": 0,
+    "historical_refits": 0,
+    "fresh_worlds": 0,
+    "human_evaluations": 0,
+    "paid_calls": 0,
+    "data_model_downloads": 0,
+    "selection": false
+  },
+  "historical_inputs": {
+    "realizations": [
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "histories": [
+      101,
+      211
+    ],
+    "shared_seeds": [
+      11,
+      29,
+      47
+    ],
+    "private_archive_roles": 36,
+    "full_optimizer_vectors": 76,
+    "shared_vectors": 12,
+    "personal_vectors": 64,
+    "personal_row_instances": 1664,
+    "total_private_artifact_hashes": 112,
+    "hash_before_and_after": true,
+    "existing_fixture_reconstruction": "only deterministic E-H verification; never substitutes for missing fits"
+  },
+  "residual_diagnostic": {
+    "objective": "unaveraged per-person support mean CE plus theta^T D theta /2",
+    "D_B3": [
+      0.6,
+      0.6,
+      0.6
+    ],
+    "D_M1": [
+      0.6,
+      0.6,
+      0.6,
+      0.06,
+      0.06
+    ],
+    "R": "norm2(D^(-1/2) individual_gradient)",
+    "P": "I_3 - ones(3,3)/3",
+    "K": "spectral_norm(P A_query D^(-1/2))",
+    "probability_bound": "K*R/2",
+    "log_probability_bound": "sqrt(2)*K*R",
+    "fixed": [
+      "shared V",
+      "training priors",
+      "evidence",
+      "histories",
+      "mixture weights"
+    ],
+    "contrast_terms": 8,
+    "interval_kind": "deterministic optimization-error enclosure, not confidence interval",
+    "rounding": "explicitly record evaluation allowance; no machine-rigorous claim without directed-rounding validation",
+    "if_lower_contrast_bound_above_threshold": "personal optimization error cannot bridge recorded gap conditional on saved shared models/evidence",
+    "if_threshold_in_enclosure": "uninformative; no refit"
+  },
+  "ablation": {
+    "name": "ES_UNCAPPED",
+    "designation": "POST_HOC_EXPOSED_DIAGNOSTIC",
+    "alpha": 0.009,
+    "h": "alpha*max(E-1,0)",
+    "probability": "exp(-h)*B3 + (1-exp(-h))*M1",
+    "evidence": "unchanged original arithmetic-mean seed evidence within one history",
+    "new_prediction_arrays": 8,
+    "shape_each": [
+      48,
+      36,
+      3
+    ],
+    "stratum_history_rows": 16,
+    "stratum_aggregates": 8,
+    "expected_active_weight_changes": 153,
+    "inactive_person_history_rows_unchanged": 192,
+    "stable": "retain log_beta=-h; stable logaddexp; do not subtract rounded weight from one",
+    "score_log_floor": 1e-12,
+    "probability_clipping_or_renormalization": false,
+    "new_donor_arrays": 0,
+    "new_bootstrap_resamples": 0,
+    "compared_methods": [
+      "B3",
+      "M1",
+      "FIXED_MIX",
+      "ES",
+      "ES_UNCAPPED"
+    ],
+    "reference_thresholds": {
+      "active_gain_min": 0.05,
+      "recovery_min": 0.5,
+      "contrast_nrmse_max": 0.5,
+      "inactive_degradation_max": 0.01
+    },
+    "thresholds_are_confirmatory": false,
+    "qualification": false,
+    "rows_where_cap_is_inactive": "independently recompute within 1e-12, then copy old ES row exactly"
+  },
+  "engineering": {
+    "specification": "ENGINEERING_SPEC.md",
+    "specification_sha256": "f732ff7c5849794d89a1d152bcf9b007ccbed55f5ae7da6762959b0716a5557b",
+    "people": 48,
+    "motifs": 8,
+    "blocks": 6,
+    "support_rows": 16,
+    "query_rows": 12,
+    "heads": [
+      "B3",
+      "M1"
+    ],
+    "layouts": [
+      "singletons",
+      "chunks7",
+      "all48",
+      "reverse48"
+    ],
+    "wrapper_calls": 114,
+    "scheduled_person_attempts": 384,
+    "max_person_attempts": 384,
+    "retries": 0,
+    "learned_shared_fits": 0,
+    "scientific_fits": 0,
+    "basis": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "optimizer": "personwise damped Newton in D-scaled coordinates",
+    "initial": "zero for every attempt",
+    "residual_success_max": 1e-10,
+    "stopping_inputs": "support data and fixed penalties only",
+    "max_accepted_updates": 100,
+    "backtracking_candidates": 40,
+    "backtracking_alpha": "2^(-j), j=0..39",
+    "armijo": 0.0001,
+    "roundoff_full_step_safeguard": {
+      "predicted_decrease_max": "64*eps64*max(1,abs(J))",
+      "require_residual_strict_decrease": true,
+      "objective_increase_max": "64*eps64*max(1,abs(J))",
+      "changes_success_target": false,
+      "logged_fields": [
+        "J_old",
+        "J_new",
+        "R_old",
+        "R_new",
+        "predicted_decrease",
+        "allowance",
+        "acceptance_rule"
+      ]
+    },
+    "query_KR_max": 1e-08,
+    "query_K_upper": 57,
+    "gradient_comparison_blocks": 96,
+    "hessian_comparison_blocks": 96,
+    "derivative_step": "2^(-18)",
+    "derivative_normalized_tolerance": 2e-06,
+    "layout_equality": "bitwise after canonical person ordering",
+    "formal_failure": "preserve; continue finite isolated cases, abort corrupted inputs/nonfinite/resource stop; no retry",
+    "eps64": "2^(-52)"
+  },
+  "terminal_reporting": {
+    "new_utility_only": true,
+    "axes": [
+      "artifact_integrity",
+      "numerical_validity",
+      "scientific_status",
+      "qualification",
+      "completed_and_expected_inventory"
+    ],
+    "test_paths": [
+      "success",
+      "numerical_failure",
+      "scientific_failure",
+      "incomplete_evidence",
+      "resource_stop"
+    ],
+    "historical_summary_creation": false,
+    "historical_receipt_replacement": false
+  },
+  "resources": {
+    "cpu_core_seconds_max": 600,
+    "sampled_peak_rss_bytes_max": 1073741824,
+    "computational_threads": 1,
+    "include_failed_commands": true,
+    "sampling_limitations_required": true
+  },
+  "decisions": {
+    "private_unavailable": "finish independent engineering; explicit unavailable diagnosis; no substitute fits",
+    "engineering_fail": "unresolved numerical implementation; no scientific launch",
+    "ablation_or_error_bound_inconclusive": "report limiting uncertainty; no new search",
+    "engineering_pass_and_ablation_all_reference_criteria": "candidate for separately frozen fresh confirmation; proposal only"
+  },
+  "deliverables": [
+    "RESULTS.md",
+    "NEXT_HANDOFF.md",
+    "NEXT_STUDY_PROPOSAL.md",
+    "input/output hash manifests",
+    "pre-analysis source freeze",
+    "residual diagnostics and enclosures",
+    "eight private uncapped arrays and public scalar summaries",
+    "384 scheduled engineering receipts",
+    "independent check receipts",
+    "failure-complete reporting utility",
+    "resource ledger"
+  ],
+  "coordination": {
+    "pr18_commit": "cdcafb41726820265bd4e1dea5272702f2663aae",
+    "pr18_execution": false,
+    "pr18_seed_bank_use": false,
+    "corpus_track": "separate, refresh metadata only; no source production or review",
+    "historical_exposure": [
+      "DICES",
+      "completed SRO",
+      "all exposed synthetic realizations"
+    ],
+    "github_delivery": "new draft PR and issue #2; no merge",
+    "pr18_original_planning_commit": "49d7157e3998a20f646e9200c3e223bbbb58541f",
+    "pr18_status": "engineering repair accepted in separate supervisory review; frozen scientifically unexecuted"
+  },
+  "text_path": {
+    "empirical_route": "text prediction may be evaluated without the .009 theorem under its own admitted-data protocol",
+    "theorem_route": "estimated g requires separate conditional-null justification; training independence alone is insufficient",
+    "execution_authorized": false
+  }
+}
