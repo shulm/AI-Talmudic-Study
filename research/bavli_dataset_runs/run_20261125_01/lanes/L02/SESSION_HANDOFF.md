@@ -7,8 +7,13 @@ See `bm001_scope_correction_receipt.json` and run
 BM001-SCOPE adds explicit provisional combined-clause scope to claims 17/44/54
 and updates dependent records, while retaining sight-nonacquisition as an
 asserted separate principle. Fourteen supersessions preserve original judgments;
-coverage remains 47 segments per pass. The independent verdict remains
-`REWORK_TARGETED` pending exact-version re-review. The session receipt and frozen
+coverage remains 47 segments per pass. Independent exact-version verification now
+records `TARGETED_DISCREPANCY_RESOLVED` in
+`review/bm001_scope_independent_verification.json` (SHA-256
+`c35f8c7a5102733ace0cb62582aeaddc964c5ed6e95b3adbb2b108cc31feb2e0`).
+This nonblind correction verification covers 17 records and 41 evidence slices;
+it is not full review or tractate acceptance. The original `REWORK_TARGETED`
+verdict and correction receipt remain historical evidence. The session receipt and frozen
 package below remain unchanged historical artifacts, not pointers to this newer
 Bava Metzia snapshot. Other tractate checkpoints are unchanged.
 

@@ -35,4 +35,11 @@ assert all(not x['ml_eligible'] for x in after.values())
 assert r.report(old,segments)['completed_by_layer']==r.report(new,segments)['completed_by_layer']
 assert old['open_tails']==new['open_tails']
 assert r.replay(job)['snapshot_sha256']==receipt['snapshot_sha256']
-print(json.dumps({'status':'PASS_CORRECTION_REPLAY_AND_INVARIANTS','snapshot_sha256':receipt['snapshot_sha256'],'superseded_records':len(replaced),'coverage_per_layer':47,'independent_re_review_completed':False,'tractate_delivered':False}))
+review_raw=(HERE/'review/bm001_scope_independent_verification.json').read_bytes()
+assert r.sha(review_raw)=='c35f8c7a5102733ace0cb62582aeaddc964c5ed6e95b3adbb2b108cc31feb2e0'
+review=json.loads(review_raw)
+assert review['corrected_snapshot']['sha256']==receipt['snapshot_sha256']
+assert review['correction_proposal']['sha256']==receipt['proposal_sha256']
+assert review['status']=='TARGETED_DISCREPANCY_RESOLVED'
+assert not review['full_review_receipt'] and not review['full_tractate_acceptance']
+print(json.dumps({'status':'PASS_CORRECTION_REPLAY_AND_INVARIANTS','snapshot_sha256':receipt['snapshot_sha256'],'superseded_records':len(replaced),'coverage_per_layer':47,'independent_targeted_verification':review['status'],'full_review_completed':False,'tractate_delivered':False}))
