@@ -1,5 +1,10 @@
 # Research handoff — updated 2026-11-24
 
+## Rolling Bavli integration — 2026-11-27, review015
+
+See [the current partial release](research/bavli_dataset_runs/run_20261125_01/releases/INTEGRATION_20261127_02_REVIEW015.md). Frozen production spans 10,519/81,793 segments per required pass, with 84,263 included provisional records, 85,429 preserved versions and 21 exclusions. All 37 tractates remain incomplete and task eligibility is zero. All 37 source/proposal chains replayed; two builds matched 1,606 files. Coordinator ledger 6 preserves within-lane ownership. Later producer/review versions remain separate; do not reset them to this capture. Draft PR30 stays unmerged.
+
+
 ## Rolling Bavli integration — 2026-11-26
 
 See [the partial release and exact resume instructions](research/bavli_dataset_runs/run_20261125_01/releases/INTEGRATION_20261126_01.md). Integration branch `codex/bavli-integration-release-20261126` assembles 2,450/81,793 segments per required pass and 19,128 included provisional records; 0/37 tractates are complete. Ledger revision 5 preserves later lane ownership. Exact source/proposal replay, output hash validation and a second byte-identical build passed. Later live output and review receipts remain separate; do not reset producers to this frozen capture.

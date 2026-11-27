@@ -1,0 +1,78 @@
+{
+  "artifact_kind": "independent_generated_output_integrity_audit",
+  "status": "PASS",
+  "output_manifest": {
+    "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-integration-release\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\releases\\assembled_20261127_02_review015\\OUTPUT_MANIFEST.json",
+    "sha256": "39bc9644b33c8bc8460d6d4ed30418f2064efd2e865fe5f15ee17ab9c02ca658"
+  },
+  "input_manifest_sha256": "df1922be89b1869d3b9070496a113fbeaa3e65cc5faa5ebc3e36d00e3c6a606b",
+  "policy_manifest_sha256": "aaed2943b574ef52a86c348763d54cba96378737b5ee7a6a8d2863ac2aae5e45",
+  "method": "Read generated outputs; independently reconstructed input exact-hash quarantine/dependency closure; no builder replay or semantic recertification.",
+  "files_verified": 1605,
+  "included_records": 84263,
+  "table_counts": {
+    "attributions": 16382,
+    "claims": 17429,
+    "edges": 11916,
+    "positions": 16039,
+    "questions": 4665,
+    "structure": 1582,
+    "utterances": 16250
+  },
+  "excluded_records": 21,
+  "excluded_keys": [
+    "[\"bavli_chagigah\",\"chg.e2.c003\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c003.a\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c003.p\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c003.u\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c004\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c004.a\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c004.p\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c004.u\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c055.p\"]",
+    "[\"bavli_chagigah\",\"chg.e2.c060.p\"]",
+    "[\"bavli_chagigah\",\"chg.e2.e001\"]",
+    "[\"bavli_chullin\",\"ch01_a_ashi_addressee\"]",
+    "[\"bavli_makkot\",\"ma.r008.camel.answer\"]",
+    "[\"bavli_makkot\",\"ma.r008.camel.c\"]",
+    "[\"bavli_makkot\",\"ma.r008.camel.p\"]",
+    "[\"bavli_makkot\",\"ma.r008.vision.answer\"]",
+    "[\"bavli_makkot\",\"ma.r008.vision.c\"]",
+    "[\"bavli_makkot\",\"ma.r008.vision.p\"]",
+    "[\"bavli_nedarim\",\"nd.r010.stronger.a\"]",
+    "[\"bavli_nedarim\",\"nd.r010.stronger.p\"]",
+    "[\"bavli_taanit\",\"ta.resume002.winds.correction.tf013\"]"
+  ],
+  "history_versions": 85429,
+  "history_states": {
+    "integrity_valid_partial_unqualified": 84263,
+    "superseded": 1145,
+    "excluded": 21
+  },
+  "source_coordinates": 81793,
+  "source_jobs": 37,
+  "per_sugya_exports": 1582,
+  "contextual_memberships": 86028,
+  "record_dependency_references": 65850,
+  "dangling_dependencies": 0,
+  "evidence_occurrences_checked_for_source_fk": 98054,
+  "qualification_rows": 84263,
+  "full_tractates_admitted": 0,
+  "task_eligible_records": 0,
+  "assertions_passed": 1036712,
+  "limitations": [
+    "Integrity audit only; full required extraction and independent semantic review remain incomplete.",
+    "Contextual membership is source-segment overlap, not semantic attachment, unique topic count or parallel family equivalence.",
+    "Historical excluded and superseded evidence retained intentionally; normalized tables and contextual memberships exclude quarantined closure."
+  ],
+  "check_groups": [
+    "All1605manifest files hash/size/containment and exact output inventory",
+    "Unique table composite/native IDs and exact record hashes",
+    "All included graph/evidence FKs resolve",
+    "Independent21-record exclusion closure absent from active tables",
+    "Exact85429-version input/history bijection and supersession FKs",
+    "Exact81793source coordinate inventory across37jobs",
+    "1582contextual exports exact interval and overlap membership",
+    "All qualification/full-admission flags false; supervised exports blocked"
+  ]
+}
