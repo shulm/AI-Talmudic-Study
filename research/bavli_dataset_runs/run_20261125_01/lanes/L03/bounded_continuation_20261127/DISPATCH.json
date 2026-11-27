@@ -1,0 +1,24 @@
+{
+  "status": "BOUNDED_WAVE_DISPATCHED",
+  "tractate": "Rosh Hashanah",
+  "owner": "L03/rosh_hashanah",
+  "epoch": 3,
+  "base_snapshot": "70289b2e7db5c109fda8a29821a7a52a08d0e08d1dcce54c1811c223a2a2958c",
+  "base_covered_per_layer": 183,
+  "core_scope": [
+    "Rosh Hashanah 8a:4",
+    "Rosh Hashanah 8b:5"
+  ],
+  "core_segments": 19,
+  "producer": "/root/rosh_hashanah",
+  "reader": "/root/blind_review",
+  "reader_provenance": "Prior RH correction-review exposure, no new batch labels before source reading freeze; independent same-session reader, not fresh identity.",
+  "constraints": [
+    "One batch only",
+    "No new metered API funds",
+    "No ownership/epoch changes",
+    "Keep context outside core denominator",
+    "No review acceptance inherited from earlier corrections",
+    "Separate exact-version package from coordinator assembly"
+  ]
+}

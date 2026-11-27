@@ -1,0 +1,103 @@
+{
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "snapshot_sha256": "afd5ec0fbdf7ce7635e917a1068ac649193a5f9db692d1ac1b5e2925617e7557",
+  "proposal_sha256": "19baf32d19f99c5c718a30f8a9100ecd0f11c3d8f0f531e3c247cd9b7bf69fb5",
+  "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+  "agent_id": "/root/blind_review",
+  "model": null,
+  "route": "interactive_agent",
+  "scope": "RH012 only: Rosh Hashanah8a:4–8b:5;139 new rows;19 original cores",
+  "confirmed_errors": 0,
+  "unresolved_integrity_critical_count": 0,
+  "exceptions": [
+    {
+      "id": "RH012-GRANULARITY",
+      "record_ids": [
+        "rh.e3.b012.c4",
+        "rh.e3.b012.c6",
+        "rh.e3.b012.c18",
+        "rh.e3.b012.c19",
+        "rh.e3.b012.c20",
+        "rh.e3.b012.c24"
+      ],
+      "severity": "limitation",
+      "state": "retained caveat",
+      "interpretation": "Several rows bundle linked premises/outcomes or paired applications. Source meaning is represented, but this is not certified exhaustive atomic decomposition. Initial findings 2 and 3 also bundle seasonal claims. Do not count 38 findings as 38 atomic claims or infer atom-level recall."
+    },
+    {
+      "id": "RH012-CONTEXT-EDGES",
+      "record_ids": [
+        "rh.e3.b012.e9",
+        "rh.e3.b012.e10",
+        "rh.e3.b012.e21"
+      ],
+      "severity": "limitation",
+      "state": "context-dependent discourse relations supported",
+      "interpretation": "e9/e10 connect cited document validity rules to the document application, not a standalone proof of the Tishri date. e21 uses c28’s explicit reference to the occasion, resolved by c27 and the cross-folio text, to answer q5. Retain contextual dependency; do not export these as self-contained single-premise entailment examples. Unlike the earlier makeup.throughout defect, c28 expressly refers back to the identified occasion."
+    },
+    {
+      "id": "RH012-IDENTITY",
+      "record_ids": [
+        "rh.e3.b012.c24",
+        "rh.e3.b012.c24.pos",
+        "rh.e3.b012.a10"
+      ],
+      "severity": "uncertainty",
+      "state": "preserved",
+      "interpretation": "Producer retains raw abbreviated authority rather than asserting a full-name identity. This is conservative and compatible with the reader’s contextual Eliezer interpretation. No need to force full-name normalization."
+    },
+    {
+      "id": "RH012-STRUCTURE",
+      "record_ids": [
+        "rh.e3.b012.s2"
+      ],
+      "severity": "granularity",
+      "state": "reasonable difference",
+      "interpretation": "Producer groups 8a:10–8b:5; reader separated document/cycle from judgment subdiscussion. Exact primary partition is sound; optional nested subdivision is not a blocking omission."
+    },
+    {
+      "id": "RH012-PROVENANCE",
+      "record_ids": [],
+      "severity": "methodological limitation",
+      "state": "preserved",
+      "interpretation": "Same reader previously exposed to earlier RH correction labels. New-scope reading was frozen before RH012 labels. Seven cores 8a:4–10 repeat the old315 source-only cohort; twelve are newly read relative to it. This is not independent replication by a fresh agent or a new representative sample."
+    }
+  ],
+  "layer_matrix": {
+    "new_scope_structural_segments": 19,
+    "new_scope_pass_segments": {
+      "structure": 19,
+      "utterances": 19,
+      "claims": 19,
+      "attributions": 19,
+      "questions": 19,
+      "positions": 19,
+      "edges": 19,
+      "reconciliation": 19
+    },
+    "new_scope_records_by_layer": {
+      "structure": 2,
+      "utterances": 19,
+      "claims": 35,
+      "positions": 35,
+      "attributions": 12,
+      "questions": 9,
+      "edges": 27
+    },
+    "snapshot_producer_coverage_per_pass": 202,
+    "independent_continuation_core_count": 19,
+    "repeated_old315_cores": 7,
+    "new_cores_relative_to_old315": 12,
+    "probability_sample_additions": 0,
+    "endpoint_sample_additions": 0,
+    "context_only_segments": 18,
+    "task_eligible_count": 0
+  },
+  "limitations": [
+    "No full-tractate review or acceptance.",
+    "No new acceptance of earlier batches010/011 or extrapolation to unreviewed snapshot records.",
+    "Independent provisional AI assessment, not human certification.",
+    "Atomicity and context-dependent edge caveats remain; no demanding QA/argument or scholar-choice eligibility granted.",
+    "Earlier exact-version correction verdicts remain immutable."
+  ]
+}
