@@ -1,0 +1,118 @@
+from pathlib import Path
+import json,hashlib,re,datetime
+B=Path('research/bavli_dataset_runs/run_20261125_01/review_lead_20261126');jp=B/'jobs/bavli_moed_katan_batch005.json';job=json.loads(jp.read_text(encoding='utf-8-sig'))
+hashf=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+for item in [job['source'],job['frozen_plan'],*job['common_documents']]:assert hashf(item['path'])==item['sha256'],item['path']
+s=json.loads(Path(job['source']['path']).read_text(encoding='utf-8-sig'));texts={f'Moed Katan {i//2+1}{"a" if i%2==0 else "b"}:{j+1}':t for i,p in enumerate(s['text']) for j,t in enumerate(p)}
+claims=[];questions=[];edges=[]
+def ev(ref,quote=None):
+ ref=ref if ref.startswith('Moed') else 'Moed Katan '+ref;t=texts[ref];quote=t if quote is None else quote;start=t.index(quote);return {'ref':ref,'start_char':start,'end_char':start+len(quote),'quote':quote,'scope_role':'core' if ref in job['core_refs'] else 'context'}
+def c(ref,quote,prop,holder='anonymous',conditions='',status='asserted',chain='',uncertainty=''):
+ ident='mk005.c'+str(len(claims)+1).zfill(3);claims.append({'id':ident,'evidence':[ev(ref,quote)],'origin':'source_paraphrase','proposition':prop,'holder_candidates':holder.split('|'),'transmission_chain':chain.split('>') if chain else [],'conditions':conditions.split('|') if conditions else [],'local_status':status,'uncertainty':[uncertainty] if uncertainty else []});return ident
+def q(ref,quote,form,answers,origin='explicit'):
+ ident='mk005.q'+str(len(questions)+1).zfill(3);questions.append({'id':ident,'evidence':[ev(ref,quote)],'formulation':form,'question_origin':origin,'answer_set':answers,'answer_set_status':'bounded_local_inventory'});return ident
+def e(a,b,rel,ref,quote=None):edges.append({'id':'mk005.e'+str(len(edges)+1).zfill(3),'source_id':a,'target_id':b,'relation':rel,'explicitness':'source_explicit','evidence':[ev(ref,quote)]})
+a=c('12a:17','אמר רב חמא בר גוריא אמר רב הלכות מועד כהלכות כותים בהלכה','Festival laws are likened to Samaritan laws.','רב',chain='רב חמא בר גוריא>רב')
+b=c('12a:17','אמר רב דניאל בר קטינא (אמר רב) לומר שהן עקורות ואין למידות זו מזו','Individual rulings cannot be inferred from one another.','רב דניאל בר קטינא|רב',chain='רב דניאל בר קטינא>(אמר רב)',uncertainty='Parenthetical אמר רב preserved; attribution to Rav depends on parenthetical wording.')
+q('12a:17','למאי הלכתא','What is the operative analogy?',[b]);e(b,a,'qualification','12a:17')
+c('12a:18','דאמר שמואל זופתין כוזתא','A small vessel may be pitched.','שמואל','Chol Hamoed')
+c('12a:18','ואין זופתין חביתא','A barrel may not be pitched.','שמואל','Chol Hamoed')
+c('12a:18','רב דימי מנהרדעא אמר זופתין חביתא','A barrel may be pitched.','רב דימי מנהרדעא','Chol Hamoed')
+c('12a:18','ואין זופתין כוזתא','A small vessel may not be pitched.','רב דימי מנהרדעא','Chol Hamoed')
+c('12a:18','מר חייש לפסידא ומר חייש לטירחא','One authority prioritizes loss, the other exertion.','anonymous',uncertainty='Named mapping is not explicit in this clause; do not assign merely by order.')
+q('12a:18',None,'Which vessel may be pitched during the festival?',['mk005.c003','mk005.c004','mk005.c005','mk005.c006'],'editorial_reconstruction')
+a=c('12a:19','אמר אביי נקטינן הלכות מועד כהלכות שבת','Festival laws resemble Sabbath laws in their categories.','אביי')
+b=c('12b:1','יש מהן פטור אבל אסור','Some acts are exempt from punishment but forbidden.','אביי','Continuation of 12a:19');d=c('12b:1','ויש מהן מותר לכתחלה','Some acts are permitted initially.','אביי','Continuation of 12a:19');e(b,a,'continuation','12b:1');e(d,a,'continuation','12b:1')
+a=c('12b:2','רב הונא חצדו ליה חצדא במועדא','A harvest was performed for Rav Huna during the festival.','narrator','Chol Hamoed','reported_action')
+c('12b:2','טוחנין קמח במועד לצורך המועד','Grinding flour is allowed for festival need.','anonymous baraita','festival need',chain='רבה בר רב הונא>anonymous baraita')
+c('12b:2','ושלא לצורך המועד אסור','Grinding not for festival need is forbidden.','anonymous baraita','no festival need',chain='רבה בר רב הונא>anonymous baraita')
+c('12b:2','דבר שאבוד במועד מותר לעשותו במועד','Work on something liable to loss is permitted.','anonymous baraita','loss during festival',chain='רבה בר רב הונא>anonymous baraita')
+c('12b:2','דבר שאינו אבוד במועד אסור','Work without loss is forbidden.','anonymous baraita','no loss',chain='רבה בר רב הונא>anonymous baraita')
+b=c('12b:3','במה דברים אמורים בתלושין מן הקרקע','Loss permission applies to detached produce.','anonymous baraita','detached produce',chain='רבה בר רב הונא>anonymous baraita')
+d=c('12b:3',"אבל מחובר לקרקע אפי' כולו אבוד אסור",'Attached produce remains forbidden even if all will be lost.','anonymous baraita','attached produce|total loss',status='challenged_by_Rav_Huna',chain='רבה בר רב הונא>anonymous baraita');e(d,a,'objection','12b:2')
+f=c('12b:3','ואם אין לו מה יאכל קוצר ומעמר ודש וזורה ובורר וטוחן','One without food may harvest, gather, thresh, winnow, select, and grind.','anonymous baraita','no food to eat',chain='רבה בר רב הונא>anonymous baraita')
+c('12b:3','ובלבד שלא ידוש בפרות','Threshing with cows is excluded.','anonymous baraita','no food to eat',chain='רבה בר רב הונא>anonymous baraita')
+g=c('12b:4','אמר ליה יחידאה היא ולא סבירא לן כוותיה','The restrictive baraita is a single opinion not accepted by us.','רב הונא',status='local_response');e(g,d,'answer','12b:4')
+c('12b:4','דבר התלוש מן הקרקע אפילו מקצתו אבוד מותר','Detached produce may be worked even if only part is at risk.','רבי יוסי','detached produce|partial loss',chain="רבן שמעון בן גמליאל>ר' יוסי")
+c('12b:4',"והמחובר לקרקע אפי' כולו אבוד אסור",'Attached produce may not be worked even at total risk.','רבי יוסי','attached produce|total loss',chain="רבן שמעון בן גמליאל>ר' יוסי")
+a=c('12b:5',"הא אמר רב יצחק בר אבא מאן תנא שינוי במועד בדבר האבד דלא כר' יוסי",'Requiring changed practice for loss work is not Rabbi Yose’s position.','רב יצחק בר אבא','loss work',status='quoted_challenge')
+b=c('12b:6','כיון דכל יומא לאו בפרות דיישי האידנא נמי לאו שינוי הוא','Where ordinary threshing is without cows, avoiding cows now is no change.','anonymous response','normal practice without cows',status='local_reconciliation');q('12b:5',"ואי ר' יוסי ידוש נמי בפרות",'If Rabbi Yose, why not permit cows?',[b]);e(b,a,'answer','12b:6')
+for quote,prop,cond in [('טוחנין במועד לצורך המועד','Grinding is permitted.','festival need'),('ושלא לצורך המועד אסור','Grinding is forbidden.','no festival need'),('ואם טחן והותיר הרי זה מותר','Excess left after grinding is permitted.','ground for festival need'),('קוצצין עצים במועד לצורך המועד','Cutting wood is permitted.','festival need'),('ואם קצץ והותיר הרי זה מותר','Excess left after cutting wood is permitted.','cut for festival need')]:c('12b:7',quote,prop,'anonymous baraita',cond)
+c('12b:7','קוצצין עצים במועד לצורך המועד ושלא לצורך המועד אסור','Cutting wood without festival need is forbidden.','anonymous baraita','no festival need')
+a=c('13a:5','אמר אביי נקטינן טימא טהרותיו ומת לא קנסו בנו אחריו','If one rendered pure items impure and died, his son is not penalized after him.','אביי','offender died')
+b=c('13a:5','היזק שאינו ניכר לא שמיה היזק','Imperceptible damage is not classified as damage.','אביי','imperceptible damage')
+d=c('13a:5','לדידיה קנסו רבנן לבריה לא קנסו רבנן','The rabbinic fine is imposed on the offender, not his son.','אביי','rabbinic penalty');q('13a:5','מאי טעמא','Why is the son not penalized?',[b,d]);e(b,a,'support','13a:5');e(d,a,'support','13a:5')
+c('13a:6','אין לוקחין בתים עבדים ובהמה','Purchasing houses, slaves, and animals is prohibited absent an exception.','anonymous Mishnah','festival')
+c('13a:6','אלא לצורך המועד','Festival need permits these purchases.','anonymous Mishnah','festival need')
+c('13a:6','או לצורך המוכר שאין לו מה יאכל','Seller’s need for food permits these purchases.','anonymous Mishnah','seller lacks food')
+a=c('13a:7','לאו לאתויי שכר פעולה','The clause may include wages for a worker without food.','רב נחמן','worker without food',status='proposed_inference')
+b=c('13a:7','א"ל לא פרושי קא מפרש','The clause may merely explain the seller case.','רבא',status='rejection_of_proof');e(b,a,'objection','13a:7')
+d=c('13a:8','אין כותבין שטרי חוב במועד','Loan documents ordinarily may not be written.','anonymous cited teaching','festival',chain='אביי>anonymous cited teaching')
+c('13a:8','ואם אינו מאמינו','Distrust permits writing a loan document.','anonymous cited teaching','lender does not trust borrower',chain='אביי>anonymous cited teaching')
+f=c('13a:8','או שאין לו מה יאכל ה"ז יכתוב','Lack of food permits writing.','anonymous cited teaching','no food to eat',chain='אביי>anonymous cited teaching')
+g=c('13a:8','לאו לאתויי שכר פעולה שמע מינה','The lack-of-food clause establishes permission for the worker’s wage.','anonymous conclusion via Abaye','worker without food',status='locally_accepted');qq=q('13a:7','שכר פעולה שאין לו מה יאכל מהו','May paid work be performed by one lacking food?',[a,b,g]);e(g,a,'support','13a:8')
+a=c('13a:9','שלש אומניות עושין מלאכה בערבי פסחים עד חצות החייטין והספרין והכובסין','Sages permit tailors, barbers, and launderers to work until noon on Passover eve.','חכמים','Passover eve|before noon',chain='רב ששת>חכמים')
+c('13a:9','החייטין שכן הדיוט תופר כדרכו בחולו של מועד','Tailors are permitted by analogy to ordinary sewing on Chol Hamoed.','חכמים','Passover eve before noon',chain='רב ששת>חכמים')
+c('13a:9','הספרין והכובסין שכן הבאין ממדינת הים והיוצא מבית האסורין מותרין לספר ולכבס בחולו של מועד','Barbers/launderers are permitted by analogy to festival exceptions for returning travelers and prisoners.','חכמים','Passover eve before noon',chain='רב ששת>חכמים')
+b=c('13a:10','כל מלאכות נמי לישתרו','If indigent work is permitted on Chol Hamoed, the analogy would permit all trades on Passover eve.','רב ששת','supposed cross-calendar analogy',status='objection_not_maintained_ruling');e(b,g,'objection','13a:10')
+c('13a:11','שכן כותל הגוהה לרה"ר סותר ובונה כדרכו מפני הסכנה','A wall leaning into a public domain may be demolished and rebuilt normally for danger.','רב פפא','danger',status='premise_in_counterexample')
+d=c('13a:11','אלא מעתה בנין לישתרי','The same analogy would permit building.','רב פפא','supposed cross-calendar analogy',status='counterexample');e(d,b,'objection','13a:11')
+c('13a:12','שכן כותבין קידושי נשים גיטין ושוברין','Betrothal documents, divorces, and receipts may be written on the festival.','רבינא',status='premise_in_counterexample')
+d=c('13a:12','אלא מעתה לבלר לישתרי','The same analogy would permit scribes.','רבינא','supposed cross-calendar analogy',status='counterexample');e(d,b,'objection','13a:12')
+d=c('13a:13','מועד משום טירחא הוא ובמקום פסידא שרו רבנן','Festival labor rules concern exertion and permit work in a case of loss.','רב אשי','Chol Hamoed|loss',status='local_resolution')
+f=c('13a:13','ארבעה עשר משום צורך יום טוב הוא מידי דצורך יו"ט שרו רבנן','Fourteenth-day permission depends on festival need.','רב אשי','14 Nisan|festival need',status='local_resolution')
+c('13a:13','מידי דלאו צורך יום טוב לא שרו רבנן','Work without festival need is not permitted on the fourteenth.','רב אשי','14 Nisan|no festival need',status='local_resolution');e(d,b,'answer','13a:13');e(f,b,'distinction','13a:13')
+c('13a:14','אין מפנין מבית לבית','Moving from house to house is forbidden.','anonymous Mishnah','festival')
+a=c('13a:14','אבל מפנה הוא לחצרו','Moving to one’s courtyard is permitted.','anonymous Mishnah','festival',status='qualified_in_13a:15')
+c('13a:14','אין מביאין כלים מבית האומן','Articles may not be brought from the artisan.','anonymous Mishnah','festival')
+c('13a:14','אם חושש להם מפנן לחצר אחרת','If concerned for the articles, they may be moved to another courtyard.','anonymous Mishnah','concern for articles')
+b=c('13a:15','אמר אביי סיפא אתאן לבית שבחצר','The permission concerns a house within the same courtyard.','אביי','same courtyard',status='local_resolution');q('13a:15','והאמרת רישא אין מפנין כלל','How does the permission fit the preceding prohibition?',[b]);e(b,a,'qualification','13a:15')
+a=c('13a:16','אין מביאין כלים מבית האומן','The Mishnah prohibits bringing articles from the artisan.','anonymous Mishnah',chain='רב פפא>רבא>anonymous Mishnah',status='quoted_for_contradiction')
+b=c('13a:16','מוליכין ומביאין כלים מבית האומן ואע"פ שאינן לצורך המועד','Another teaching allows taking and bringing even articles not required for the festival.','anonymous teaching',chain='רב פפא>רבא>anonymous teaching',status='quoted_for_contradiction')
+d=c('13a:17','ושנינן ליה כאן בארבעה עשר כאן בחולו של מועד','Permission is on the fourteenth; prohibition is on Chol Hamoed.','respondents to רבא including רב פפא',status='initial_answer_reaffirmed_13b:2')
+f=c('13a:17','איבעית אימא הא והא בחולו של מועד כאן במאמינו כאן בשאינו מאמינו','Alternatively both concern Chol Hamoed, differing by trust in the artisan.','respondents to רבא including רב פפא','trust versus distrust',status='alternative_rejected_13b:2');q('13a:16',None,'How reconcile the prohibiting and permitting teachings?',[d,f]);e(d,a,'answer','13a:17');e(f,a,'answer','13a:17')
+c('13b:1','מביאין כלים מבית האומן כגון כד מבית הכדר וכוס מבית הזגג','A jug from a potter or cup from a glassmaker may be brought.','anonymous baraita','festival')
+c('13b:1','אבל לא צמר מבית הצבע ולא כלים מבית האומן','Wool from a dyer and other artisan articles may not be brought.','anonymous baraita','festival')
+c('13b:1','ואם אין לו מה יאכל נותן לו שכרו ומניחו אצלו','If the artisan lacks food, pay him and leave the articles with him.','anonymous baraita','artisan lacks food')
+c('13b:1','ואם אינו מאמינו מניחו בבית הסמוך לו','If he distrusts the artisan, leave them in an adjacent house.','anonymous baraita','distrust of artisan')
+c('13b:1','ואם חושש להם שמא יגנבו (מפנן לחצר אחרת ואם אינו מאמינו) מביאן בצנעה בתוך ביתו','Fear of theft permits bringing them privately into his house; parenthetical intermediate relocation retained.','anonymous baraita','fear of theft|privately',uncertainty='Parenthetical sequence preserved; not harmonized into a single definitive textual version.')
+a2=c('13b:2','תרצת מביאין מוליכין קשיא','The trust answer explains bringing but fails to explain taking to the artisan.','anonymous discussion',status='rejection_of_alternative');e(a2,f,'objection','13b:2')
+c('13b:2','דקתני אין מביאין וכל שכן שאין מוליכין','The ban on bringing implies a fortiori a ban on taking.','anonymous discussion',status='argument_premise')
+b2=c('13b:2','אלא מחוורתא כדשניין מעיקרא','The initial calendar distinction is the clear resolution.','anonymous discussion',status='local_resolution');e(b2,d,'local_resolution','13b:2');e(b2,f,'correction','13b:2')
+c('13b:3','מחפין את הקציעות בקש','Dried figs may be covered with straw.','anonymous Mishnah','festival')
+c('13b:3','רבי יהודה אומר אף מעבין','Rabbi Judah additionally permits thickening the covering.','רבי יהודה','festival',uncertainty='Meaning of מעבין has two explanations at 13b:4.')
+c('13b:3','מוכרי פירות כסות וכלים מוכרים בצנעה לצורך המועד','Fruit, clothing, and vessel merchants sell privately for festival need.','anonymous Mishnah','privately|festival need')
+c('13b:3','הציידין והדשושות והגרוסות עושין בצנעה לצורך המועד','Hunters and grain processors work privately for festival need.','anonymous Mishnah','privately|festival need')
+a=c('13b:3','רבי יוסי אומר הם החמירו על עצמן','Rabbi Yose says they imposed stringency on themselves.','רבי יוסי',status='meaning_resolved_13b:6')
+b=c('13b:4','חד אמר מחפין אקלושי מעבין אסמוכי','One explanation: covering is thin, thickening is dense.','anonymous alternative A',chain='רבי חייא בר אבא|רבי אסי>חזקיה|רבי יוחנן',uncertainty='The source does not map the anonymous alternatives to the named authorities.')
+d=c('13b:4','וחד אמר מחפין בין אקלושי בין אסמוכי מעבין עושה אותו כמין כרי','Other explanation: covering includes thin and dense; thickening means a heap.','anonymous alternative B',chain='רבי חייא בר אבא|רבי אסי>חזקיה|רבי יוחנן',uncertainty='Both reporters transmit in the names of Hezekiah and Rabbi Yohanan; no name-order assignment.')
+f=c('13b:4',"תניא נמי הכי מעבין עושה אותו כמין כרי דברי ר' יהודה",'A baraita supports the heap interpretation of Rabbi Judah.','רבי יהודה',status='support_for_alternative_B',chain='anonymous baraita>רבי יהודה');q('13b:4',None,'What distinguish covering and thickening?',[b,d],'editorial_reconstruction');e(f,d,'support','13b:4')
+b=c('13b:5','דלא הוו עבדי כלל','Possibility: voluntary stringency meant abstaining entirely.','anonymous questioner',status='queried')
+d=c('13b:5','או דלמא דהוו עבדי בצנעה','Possibility: voluntary stringency meant working privately.','anonymous questioner',status='queried_not_selected')
+qq=q('13b:5','הן החמירו על עצמן דלא הוו עבדי כלל או דלמא דהוו עבדי בצנעה','Was the self-imposed stringency total abstention or privacy?',[b,d])
+for quote,prop,holder,cond in [('מוכרי פירות כסות וכלים מוכרין בצנעה לצורך המועד','Merchants may sell privately for festival need.','anonymous baraita','privately|festival need'),('ר\' יוסי אומר תגרי טבריא הן החמירו על עצמן שלא יהו מוכרין כל עיקר','Tiberias merchants voluntarily abstained entirely.','רבי יוסי','Tiberias merchants'),('צדי חיות ועופות ודגים צדין בצנעה לצורך המועד','Animal, bird, and fish hunters may hunt privately for festival need.','anonymous baraita','privately|festival need'),('רבי יוסי אומר צדי עכו הן החמירו על עצמן שלא יהו צדין כל עיקר','Acre hunters voluntarily abstained entirely.','רבי יוסי','Acre hunters'),('דשושי חילקא טרגיס וטיסני דוששין בצנעה לצורך המועד','Processors of hilka, targis, and tisni may work privately for festival need.','anonymous baraita','privately|festival need'),('ר\' יוסי אומר דשושי ציפורי הן החמירו על עצמן שלא יהו דוששין כל עיקר','Sepphoris processors voluntarily abstained entirely.','רבי יוסי','Sepphoris processors')]:
+ z=c('13b:6',quote,prop,holder,cond)
+ if holder=='רבי יוסי':e(z,b,'support','13b:6',quote);e(z,a,'qualification','13b:6',quote)
+a=c('13b:7','אמר אביי חילקא חדא לתרתי','Hilka is one grain divided into two.','אביי')
+b=c('13b:7','טרגיס חדא לתלת','Targis is one grain divided into three.','אביי')
+d=c('13b:7','טיסני חדא לארבעה','Tisni is one grain divided into four.','אביי')
+f=c('13b:7','כי אתא רב דימי אמר כונתא','Rav Dimi identifies it as כונתא.','רב דימי',status='challenged_finally_kashya_13b:10',uncertainty='Immediate singular antecedent construed as חילקא by 13b:9; retain original term without speculative botanical identification.')
+g=c('13b:8','חילקא טרגיס וטיסני טמאין בכל מקום','Hilka, targis, and tisni are impure everywhere.','anonymous cited teaching',status='objection_premise')
+h=c('13b:8','הא לא איתכשור','The כונתא view seems to lack prior susceptibility through wetting.','anonymous discussion',status='objection');e(h,f,'objection','13b:8')
+i=c('13b:9','כגון דמיקלפן דאי לאו דשרא להו במיא לא הוה מיקלפא','Peeled grains imply soaking and answer the susceptibility objection.','anonymous response','peeled grains',status='local_answer');e(i,h,'answer','13b:9')
+c('13b:9','ואמאי קרי ליה חילקא דשקל חלקיהו','The term hilka is explained by removal of its outer portion.','anonymous response',status='lexical_explanation')
+j=c('13b:10','הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני','A grain vow includes dry Egyptian beans but excludes fresh ones, rice, hilka, targis, and tisni.','anonymous cited teaching',status='context_objection_premise')
+k=c('13b:10','אלא למ"ד כונתא דגן מעליא הוא קשיא','The כונתא interpretation leaves a difficulty because it remains grain.','anonymous discussion',status='unresolved_difficulty');e(k,f,'objection','13b:10');q('13b:7',None,'How are hilka, targis, and tisni identified?',[a,b,d,f],'editorial_reconstruction')
+# Exact bounded source inventory, including every actually displayed context segment.
+readrefs=[f'Moed Katan {i//2+1}{"a" if i%2==0 else "b"}:{j+1}' for i in range(22,26) for j,t in enumerate(s['text'][i])]
+inventory=[]
+for ref in job['core_refs']:
+ ids=[r['id'] for r in claims if any(x['ref']==ref for x in r['evidence'])]
+ assert ids,ref
+ inventory.append({'evidence':ev(ref),'primary_structure':True,'claim_ids':ids,'bounded_inventory_status':'processed','reconciliation':'Reread exact segment and local continuation; explicit claims, quoted challenges, qualifications, and alternatives represented. Provisional inventory is not scholarly certification.'})
+out={'artifact_kind':'frozen_source_only_independent_reading','reading_id':'moed_katan_batch005','tractate':'Moed Katan','status':'AI_PROVISIONAL_UNREVIEWED','ml_eligible':False,'schema_usage':'Independent reading envelope; semantic fields informed by common production schema, not an accepted production proposal.','execution':{'route':'interactive_agent','agent_id':'/root/reader_moed_katan_batch005','model_id':None},'provenance':{'blind_scope':job['core_refs'],'inputs_read':['neutral job','common protocol/schema/review prompt','frozen source-only plan','pinned original source'],'not_read':['AGENT_HANDOFF.md (lead-held, excluded by source-blind assignment)','prior readings','producer annotations','checkpoints','comparisons','lane work'],'source':job['source'],'source_metadata':{k:v for k,v in s.items() if k!='text'},'job':{'path':str(jp.resolve()),'sha256':hashf(jp)},'common_documents':job['common_documents'],'frozen_plan':job['frozen_plan'],'plan_sha256':job['plan_sha256']},'sampling':job['sampling'],'selected_blocks':job['selected_blocks'],'coordinate_contract':'Original Python Unicode codepoints, half-open intervals; raw markup and parenthetical text retained; no normalization','core_inventory':inventory,'actual_context_read':[ev(r) for r in readrefs if r not in job['core_refs']],'context_annotation_scope':'Only relevant context claims at 13b:8-10 annotated; other displayed context logged as read, not claimed exhaustively inventoried.','claims':claims,'questions':questions,'relations':edges,'unresolved_alternatives':[{'evidence':ev('12a:17'),'issue':'Parenthetical אמר רב in Rav Daniel attribution retained.'},{'evidence':ev('12a:18'),'issue':'Loss/exertion motivations not explicitly named in the מר clauses.'},{'evidence':ev('13b:1'),'issue':'Parenthetical relocation sequence retained without textual emendation.'},{'evidence':ev('13b:4'),'issue':'Anonymous paired explanations not assigned to named speakers by order; second has baraita support.'},{'evidence':ev('13b:10'),'issue':'כונתא reading left קשיא; no invented retraction.'}],'unprocessed_core_coordinates':[],'limits':['Bounded source inventory covers all 30 assigned cores, not full-tractate extraction.','No producer comparison or adjudication undertaken.','Answer sets are local, not exhaustive views of each scholar.','Context across 12b:10-11 rejects a simplistic Rav/Shmuel harvest dispute: loss/no-food facts and important-person alternative matter; it is context, not a sampled core.']}
+for group in [claims,questions,edges]:
+ for r in group:
+  for x in r['evidence']:assert texts[x['ref']][x['start_char']:x['end_char']]==x['quote']
+out['counts']={'core_segments':len(inventory),'context_segments_actually_read':len(out['actual_context_read']),'claims':len(claims),'questions':len(questions),'relations':len(edges),'unprocessed_core_segments':0}
+p=B/'readings/moed_katan_batch005.json';p.parent.mkdir(exist_ok=True);assert not p.exists();data=(json.dumps(out,ensure_ascii=False,indent=2)+'\n').encode('utf-8');p.write_bytes(data);digest=hashlib.sha256(data).hexdigest();side=p.with_suffix('.json.sha256');assert not side.exists();side.write_text(digest+'  '+p.name+'\n',encoding='ascii');print(json.dumps({'path':str(p.resolve()),'counts':out['counts'],'sha256':digest}))

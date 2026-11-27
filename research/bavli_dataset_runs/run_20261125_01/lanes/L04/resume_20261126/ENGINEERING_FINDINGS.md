@@ -19,3 +19,8 @@ The frozen production runner/schema/protocol were not changed. These findings do
 8. Independent Pesachim PE-QA-001 requested a concrete correction where an explicit answer was already linked: review007 sets the question to partial with a nonexhaustive qualification and revises all dependent IDs. The broader answer-set policy question in item2 remains; this local correction does not introduce missing alternatives.
 
 9. The lane ScopedReading serializer historically stamped execution.agent_id as /root even when a delegated worker authored the source reading. Dispatch receipts and worker checkpoints identify the actual authors; historical accepted bytes are not rewritten. The serialization helper now permits an explicit instance agent_id, defaulting to /root for lead-authored work. This changes provenance metadata only, not the common schema/runner or semantic decisions. Delegated authors are instructed to set their actual task path.
+
+
+## 10. Citing speaker and original teaching holder
+
+Independent Moed Katan batch005 distinguished Abaye introducing a cited teaching at13a:8 from its unnamed original authority. Additive proposal044 changes only the attribution role to speaker and clears the original-holder candidates. Independent recheck at exact e719c804 passed; the original exclusion and superseded records remain preserved in capture009. A named citing speaker cannot by itself populate the holder of an anonymous baraita. This lesson was sent to all active producers; no blanket historical rewriting was performed. New Rav Yosef citation records in043b were narrowed before acceptance, but the044 recheck does not independently review them.

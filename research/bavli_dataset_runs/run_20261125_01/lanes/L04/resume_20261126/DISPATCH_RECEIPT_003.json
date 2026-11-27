@@ -1,21 +1,50 @@
 {
-  "run_id": "run_20261125_01",
-  "continued_after_user_prompt": true,
-  "same_ownership_epochs": true,
-  "dispatches": [
+  "artifact_kind": "within_lane_worker_provenance_and_handoff",
+  "records": [
     {
-      "job": "taanit",
-      "agent": "/root/taanit_continuation_2",
-      "owner": "L04/taanit_resume_20261126",
-      "epoch": 3,
-      "starting_snapshot": "bf269222667a2403dbfb6b92cfedcbe3f842f578ba83fdb2dd2ebe4d6975292a"
+      "tractate": "Taanit",
+      "agent": "/root/taanit_continuation_5",
+      "accepted_batches": "035b–052",
+      "baseline_segments": 456,
+      "final_segments": 697,
+      "snapshot": "ed262e1b11801771d922c2ae6606f467a8fde3e00c42a9cfe87bb45e10229c17",
+      "writes_ceased": true
+    },
+    {
+      "tractate": "Nedarim",
+      "agent": "/root/nedarim_continuation",
+      "accepted_through_author": "064",
+      "final_segments": 1062,
+      "snapshot": "5e76010e8585d01a7ede4e1c6924d085ffad622bd6e9bac0ecfd6200861e9b1b",
+      "writes_ceased": true
+    },
+    {
+      "tractate": "Makkot",
+      "agent": "/root/makkot_continuation_2",
+      "baseline_segments": 146,
+      "final_segments": 253,
+      "snapshot": "83703222712ce4dda8a900326878ea0351e44318321431771ea10deb69e635a1",
+      "writes_ceased": true
+    },
+    {
+      "tractate": "Avodah Zarah",
+      "agent": "/root/avodah_continuation_2",
+      "baseline_segments": 60,
+      "final_segments": 195,
+      "snapshot": "645f4014fe2302172a05550c12c5580518f107ba703d09ada268cf8ad5e19a06",
+      "writes_ceased": true
+    },
+    {
+      "tractate": "Moed Katan",
+      "agent": "/root",
+      "accepted_through_author": "046",
+      "final_segments": 512,
+      "snapshot": "e5f88150985e9541e2f1a5def9b2975ab102767f3a5b5b2fe05770b5d3ae12e0",
+      "promotion_held_for_bounded_review": true
     }
   ],
-  "reviewers": [
-    "/root/review_continuations",
-    "/root/review_moed_extended",
-    "/root/compare_taanit_frozen"
-  ],
-  "interruptions": "Three workers reported usage-limit failures; after explicit user continuation, their resumptions succeeded. Frozen source readings and accepted proposal chains were preserved. No paid API bypass.",
-  "global_ledger_modified": false
+  "owner_epoch": 3,
+  "owner_changes": false,
+  "selected_package_checkpoint": "LANE_CHECKPOINT_008.json",
+  "qualification": "Production checkpoints are not independent acceptance. Selected packages intentionally pin earlier snapshots. Original records/proposals remain immutable."
 }

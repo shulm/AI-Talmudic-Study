@@ -1,0 +1,35 @@
+"""Three days: preserve failed proofs and final wording argument."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading,r
+a=ScopedReading('avodah_zarah','Avodah Zarah','az.r013');a.agent_id='/root/avodah_continuation_2'
+c=a.claim;q=a.question;e=a.e
+parent='8c21f94ec272943d61ed47bfd361d9b6acdcfcc5fcfa323fe99bfa21e862894e'
+a.structure('counting',['6a:'+str(i) for i in range(5,14)],'Whether the festival itself is included in the three days')
+countq=q('count_q','6a:5','איבעיא להו שלשה ימים הן ואידיהן או דלמא הן בלא אידיהן','Do the three days include the festival, or are they three days excluding the festival?')
+include=c('include','6a:5','שלשה ימים הן ואידיהן','One proposed reading includes the festival in the three days.',mode='rejected',scope='Explicit alternative ultimately rejected at6a:13, not a named ruling')
+exclude=c('exclude','6a:5','או דלמא הן בלא אידיהן','The alternative counts the three days apart from the festival.',mode='hypothetical',scope='Explicit question alternative, subsequently supported')
+ishmael=c('ishmael','6a:6','ר\' ישמעאל אומר שלשה לפניהם ושלשה לאחריהן אסור','Rabbi Ishmael prohibits three days before and three days after the festivals.',candidates=['רבי ישמעאל'],composition='composite',scope='Quoted position used to probe the counting question')
+double=c('double','6a:6','אי ס"ד הן ואידיהן רבי ישמעאל יום אידיהן חשיב להו מעיקרא וחשיב להו לבסוף','The first proof objects that including the festival would count its day in both the earlier and later sets.',mode='challenged',conditions=['if festival day were included'],scope='Proposed proof defeated as decisive by the next reply')
+symmetry=c('symmetry','6a:7','איידי דתנא שלשה לפניהם תנא נמי שלשה לאחריהם','The response explains three after as parallel wording to three before.',scope='Deflection of the first proof, not final adoption of inclusion')
+sunday=c('sunday','6a:8','דאמר רב תחליפא בר אבדימי אמר שמואל יום א\' לדברי רבי ישמעאל לעולם אסור','Rav Tahlifa bar Avdimi reports Shmuel that under Rabbi Ishmael’s view a Sunday festival makes dealings perpetually prohibited.',candidates=['שמואל'],chain=['רב תחליפא בר אבדימי'],conditions=['Rabbi Ishmael’s position','weekly first-day festival'],scope='Reported implication of Rabbi Ishmael, not Shmuel’s independent endorsement of that position')
+midweek=c('midweek','6a:8','ואי ס"ד הן ואידיהן האיכא ארבעה וחמשה דשרי','If the festival day were included, the fourth and fifth weekdays would remain permitted.',mode='hypothetical',conditions=['festival included in each three-day count'],scope='Counterexample in the second proof')
+known=c('known','6a:9','אליבא דרבי ישמעאל לא קמבעיא לי דהן בלא אידיהן','The reply accepts that for Rabbi Ishmael the count excludes the festival.',scope='Explicit narrowing of uncertainty, not full resolution for the sages')
+sagesq=q('sages_q','6a:9','כי קא מבעיא לי אליבא דרבנן מאי','The remaining question concerns the sages’ position.')
+festivals=c('festivals','6a:10','ואלו הן אידיהן של עובדי כוכבים קלנדא סטרונייא וקרטסים','Ravina adduces the listed festivals Kalenda, Saturnalia and Kratesis.',candidates=['רבינא'],composition='composite',scope='Ravina quotes a list as evidence; no dates supplied for Kratesis here')
+after=c('after','6a:10','ואמר רב חנין בר רבא קלנדא ח\' ימים אחר תקופה','Rav Hanin bar Rava describes Kalenda as eight days after the solstice.',candidates=['רב חנין בר רבא'],scope='Cited definition; do not shorten the name to Rav or Rava')
+before=c('before','6a:10','סטרונייא שמונה ימים לפני תקופה','He describes Saturnalia as eight days before the solstice.',candidates=['רב חנין בר רבא'],scope='Continuation of the cited definition')
+mnemonic=c('mnemonic','6a:10','וסימנך (תהלים קלט, ה) אחור וקדם צרתני','The mnemonic is the Psalm wording אחור וקדם צרתני.',scope='Mnemonic, not an independent proof of a calendrical date')
+ten=c('ten','6a:11','ואי סלקא דעתך הן ואידיהן עשרה הוו','The proposed inference says an inclusive count would instead total ten with the eight-day festival.',mode='challenged',conditions=['inclusive counting of festival days'],scope='Ravina proof continuation; counting inference challenged by next reply')
+oneday=c('oneday','6a:11','תנא כוליה קלנדא חד יומא הוא חשיב ליה','The reply says the tanna can count the entire Kalenda as one day-unit.',scope='Response defeating this proof, not denial that Kalenda lasts eight days')
+ashi=c('ashi','6a:12','אמר רב אשי ת"ש לפני אידיהן של עובדי כוכבים שלשה ימים','Rav Ashi adduces the Mishnah’s wording: three days before their festivals.',candidates=['רב אשי'],scope='Final wording proof')
+shorter=c('shorter','6a:12','ואי ס"ד הן ואידיהן ליתני אידיהן של עובדי כוכבים שלשה ימים','If the count included the festival, the text could have said simply their festivals three days.',mode='hypothetical',scope='Rav Ashi’s wording inference')
+afterhyp=c('afterhyp','6a:13','וכי תימא האי דקתני לפני אידיהן למעוטי לאחר אידיהן','One might explain before their festivals as merely excluding afterward.',mode='rejected',scope='Anticipated counterargument to Rav Ashi’s proof')
+wording=c('wording','6a:13','ליתני אידם של עובדי כוכבים ג\' ימים לפניהם','The reply gives alternative wording that would have expressed that exclusion.',scope='Refutation of the anticipated wording explanation')
+conclude=c('conclude','6a:13','אלא ש"מ הן בלא אידיהן ש"מ','The discussion concludes that the three days exclude the festival itself.',scope='Explicit local conclusion, preserving prior separate resolution for Rabbi Ishmael')
+e('ishmael_support',ishmael,double,'support','6a:6');e('double_objection',double,include,'objection','6a:6');e('symmetry_answer',symmetry,double,'answer','6a:7');e('midweek_objection',midweek,include,'objection','6a:8');e('sunday_support',sunday,known,'support','6a:9');e('known_qualification',known,countq,'qualification','6a:9');e('sages_qualification',sagesq,countq,'qualification','6a:9');e('after_support',after,ten,'support','6a:11');e('ten_objection',ten,include,'objection','6a:11');e('oneday_answer',oneday,ten,'answer','6a:11');e('ashi_support',ashi,shorter,'support','6a:12');e('shorter_support',shorter,conclude,'support','6a:13');e('afterhyp_objection',afterhyp,shorter,'objection','6a:13');e('wording_answer',wording,afterhyp,'answer','6a:13');e('conclude_answer',conclude,countq,'answer','6a:13');e('sages_answer',conclude,sagesq,'answer','6a:13');e('include_rejection',conclude,include,'correction','6a:13')
+for row in a.rows:
+ if row['id'] in {countq,sagesq}:
+  row['content']['answer_set_status']='partial';row['uncertainty'].append('Local alternatives and conclusion represented, not certified task eligibility.')
+a.save_window(['6a:'+str(i) for i in range(5,14)],'counting013.json','Reread full6a:5–13 question and all rejected proofs with context through6a:16. Distinguish Rabbi Ishmael from sages, Shmuel as reporter of implication, named Rav Tahlifa and Rav Hanin from Rav himself, eight-day duration from counting unit, and final Rav Ashi wording proof. Eight layers reread; existing structural tails unchanged.',parent)

@@ -1,25 +1,23 @@
-# Taanit resumable producer checkpoint — 2026-11-26
+# Taanit resumable producer checkpoint — 2026-11-27
 
-Partial: **456/895 segments across all eight required layers**, through **Taanit17a:9**. Next **Taanit17a:10**; **439 remain per layer**. Full tractate delivery and independent review remain unfinished.
+Partial: **697/895 segments in all eight required layers**, through **Taanit24b:13**. Next **Taanit24b:14**; **198 remain per layer**. Full production and independent review remain unfinished.
 
-Authoritative snapshot: `7e7df212d7cd42c7c916d7ac2bcbcfcde3b2d88f303c56afe4294a4b9f0d4680`. Owner remains `L04/taanit_resume_20261126`, epoch3. Worker `/root/taanit_continuation_4` is handing off inactive after batches025–034; parent may dispatch the next exclusive writer under existing lane authority. No concurrent second writer may promote Taanit.
+**Coordinator pacing hold:** parent requested finishing the current window and holding further promotion pending independent-review capacity. Batch052 was already promoted. No further semantic proposals are staged. Worker `/root/taanit_continuation_5` is inactive for promotion until the parent resumes the lane. Owner remains `L04/taanit_resume_20261126`, epoch3; no owner change and no duplicate writer.
 
-See `CHECKPOINT_034.json` for source/contract pins, proposal chain, export hashes and validation. Intermediate `CHECKPOINT_029.json` preserves391; prior `CHECKPOINT_024.json` preserves324. This worker added132 source segments and1,680 records. Current totals are6,057 active and6,182 preserved record versions. All324-checkpoint records remain byte-equivalent. Common tooling and original corpus unchanged. New annotations remain unreviewed and ML-ineligible; producer omission passes are not independent review.
+CURRENT: `ed262e1b11801771d922c2ae6606f467a8fde3e00c42a9cfe87bb45e10229c17`. Read `CHECKPOINT_052.json` for exact pins, chain, export hashes and validation. Previous048 preserves650;043 preserves579;034 preserves456. This resumed wave049–052 added47 segments and634 records; total8,983 active and9,108 preserved records. Since034 this worker added241 segments and2,926 records. All650-baseline records remain byte-equivalent.
 
-Replay:
+Export: `F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_taanit/exports/resume_20261126_697_ed262e1b`. Exact replay, all export hashes, nine production hashes, active links/embedded attribution scopes and baseline preservation were checked for052. No open structural tails. New rows remain independently unreviewed and ML-ineligible.
+
+On authorized continuation, verify OWNER/CURRENT and original bytes with runner.load; begin batch053 at24b14. Source has been read through25a14, including the full Hanina household/goats sequence through25a10. The Elazar ben Pedat dream beginning25a11 is not yet read to its full continuation; read onward before closing it. Overlap24b11–13 for Hanina/high-priest prayer context. Preserve parenthetical narrator/dreamer ambiguities in25a3–4 and the alternate beam account in25a8.
+
+Authors049–052 are manually authored, checkpoint-bound single-use builders. Replay accepted immutable proposals instead of rerunning historical builders against a later CURRENT. Actual execution.agent_id is `/root/taanit_continuation_5`. No rejected or replaced staged attempt in049–052. Historical035/046 drafts remain preserved unsubmitted;035b/046b were accepted as documented in048.
 
 ```powershell
 python -X utf8 research/bavli_production_v1/runner.py replay --job-dir F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_taanit
 ```
 
-Verify OWNER/CURRENT and original bytes with runner.load before continuing. Read17a:10 onward with overlap17a:5–9. This worker read original source through17b:13; further continuation must be read before closing that later discussion. The source begins haircut/grooming rules, links priestly wine/hair readiness, and distinguishes death liability from invalid service. Prior closed wine unit may be linked by later qualification; do not silently change earlier records.
+Preserve prior uncertainty inventory in048/052, notably23b7 bracketed alternative cloud explanations;23b13 שחרוריתה without modern racial mapping;23b14 implicit עמי היתה object;24a1 printed Yosi naming variant;24a15 Ilfa/Rabbi Ilfi alternative;24b1 alternative Uktzin citations;24b9 printed Psalm reference and Sepphoris/Tigris geography;24b12 joint transmitters and corrected prayer wording. Distinguish citing speaker from original holder: citing an anonymous teaching does not grant the citer original ownership. No blanket historical rewrite.
 
-Authors025–034 are manually authored, checkpoint-bound, single-use proposal builders. Replay accepted immutable proposals instead of rerunning builders against a later CURRENT. Actual execution.agent_id is `/root/taanit_continuation_4`. Quoting syntax failures happened before staging; none became accepted rejected-semantic attempts.
+Correction013 and independent bounded recheck remain preserved without admission of later source. Coordinator answer-set guidance001 applies: partial only for represented source-supported local responses, none is not a negative source assertion, explicit unresolved alternatives remain unresolved, and no enum grants choice-task eligibility. No full-tractate review acceptance claimed.
 
-Export: `F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_taanit/exports/resume_20261126_456_7e7df212`, manifest SHA-256 `fdaf17f536d30b9dc6f1948105090ffa5cdcde384424e8a0093f045916bb2aec`. Exact replay, all export-file hashes, nine production hashes, baseline-record preservation, active links and embedded attribution-scope closure passed. No structural open tails at this endpoint.
-
-Correction013 and its independent recheck remain preserved, without admission of later source. Parent coordinates fresh exact-version comparisons. Coordinator answer-set policy001 was read; new partial values refer to represented local source-supported responses only. Rhetorical questions without represented responses have none with explicit non-negative-source caveat. No historical bulk relabelling or task eligibility was granted.
-
-Preserve alternative Rava bathing versions, separate printed Sheshet/Hisda finger statements, compact pregnancy-fast reconciliation, uncertain distress type, alternative Zeira/Shmuel bar Nahmani objections, unassigned Levi bar Hama/Hanina pairs, both16b2 transmission alternatives, printed16b9 Abraham repetition, and Rabbi’s compact17a9 wine rationale. Repeated ritual formulas remain separate occurrences; composite inventories are not atomic evaluation denominators.
-
-No commits or pushes by this worker. Parent owns packaging/publication. Sources, shared schema and runner were not modified.
+No git commits/pushes, paid APIs, corpus or shared tooling edits. Parent owns packages/publication. Worker holds all further promotion as instructed; no background work claimed.

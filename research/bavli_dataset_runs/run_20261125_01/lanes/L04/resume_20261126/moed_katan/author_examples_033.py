@@ -1,0 +1,53 @@
+"""Direct source reading12b:12–21, narrative qualifications and concealed loss prevention."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading
+a=ScopedReading('moed_katan','Moed Katan','mk.r033');c=a.claim;e=a.e
+refs=['12b:'+str(i) for i in range(12,22)]
+def q(*args,**kwargs):
+ v=a.question(*args,**kwargs);a.rows[-1]['content']['answer_set_status']='partial';a.rows[-1]['uncertainty'].append('Source-present local reply only; no exhaustive alternatives or qualification.');return v
+a.structure('narratives',refs[:6],'Public status, palm cutting, flax/sesame and anticipated behavior')
+a.structure('concealed',refs[6:],'Loss prevention, deliberate delay and practical concealment')
+prince=c('prince','12b:12',"ר' יהודה נשיאה נפק בחומרתא דמדושא ואשתי מיא דאחים קפילא ארמאה",'Rabbi Yehuda Nesia went out with a חומרתא דמדושא and drank water heated by an Aramean cook.',composition='composite',scope='Reported actions; technical ring designation retained')
+ami=c('ami','12b:12',"שמע ר' אמי איקפד",'Rabbi Ami heard and was displeased.',scope='Narrative reaction')
+why=q('why','12b:12','אמר רב יוסף מאי טעמא איקפד','Rav Yosef asks why he was displeased.',candidates=['רב יוסף'])
+ring=c('ring','12b:12','אי משום חומרתא דמדושא הא תניא השירין הנזמים והטבעות הרי הן ככל הכלים הניטלין בחצר','If because of the ring, a baraita treats bracelets, nose rings and rings like other utensils movable in a courtyard.',candidates=['רב יוסף'],composition='composite',scope='Rav Yosef’s objection to one possible reason for the displeasure')
+water=c('water','12b:13','אי משום דאישתי מיא דאחים קפילא ארמאה','He considers the alternative possible reason: drinking water heated by the Aramean cook.',candidates=['רב יוסף'],mode='hypothetical',scope='Alternative proposed reason, challenged by the following quoted rule')
+raw=c('raw','12b:13','הא אמר שמואל בר יצחק אמר רב כל שנאכל כמות שהוא חי אין בו משום בישולי נכרים','Shmuel bar Yitzhak transmits Rav: something eaten in its raw state is not subject to the gentile-cooking restriction.',candidates=['רב'],role='quoted_authority',chain=['שמואל בר יצחק','רב'],conditions=['eaten as it is raw'],scope='Rav Yosef’s cited objection, not Shmuel himself speaking')
+important=c('important','12b:13','אדם חשוב שאני','The anonymous answer distinguishes an important person.',conditions=['important person'])
+e('ring_reason',ring,why,'answer','12b:12');e('raw_objection',raw,water,'objection','12b:13');e('important_answer',important,why,'answer','12b:13')
+palm=c('palm','12b:14','אמר רב חננאל אמר רב קוצץ אדם דקל במועד אע"פ שאינו צריך אלא לנסורת שלו','Rav Hananel transmits Rav permitting cutting a palm during the festival even if only its sawdust is needed.',candidates=['רב'],role='quoted_authority',chain=['רב חננאל','רב'],conditions=['need only its sawdust'])
+curse=c('curse','12b:14','לייט עלה אביי','Abaye denounced this allowance.',candidates=['אביי'],scope='Reported denunciation, no fabricated verbal argument')
+e('curse_objection',curse,palm,'objection','12b:14')
+ashi=c('ashi','12b:15','רב אשי הוה ליה אבא בשלנייא אזל למיקצייה בחולא דמועדא','Rav Ashi had a wooded property in Shalanya and went to cut it during the festival.',scope='Narrative circumstances')
+shilaq=q('shilaq','12b:15','אמר ליה רב שילא משלנייא לרב אשי מאי דעתיך','Rav Shila of Shalanya asks Rav Ashi the basis of his intention.',candidates=['רב שילא משלנייא'])
+quote=c('quote','12b:15','דקאמר רב חננאל אמר רב קוצץ אדם דקל במועד אע"פ שאינו צריך אלא לנסורת שלו','Rav Shila proposes Rav Hananel’s transmission of Rav as the basis.',candidates=['רב'],role='quoted_authority',chain=['רב שילא משלנייא','רב חננאל','רב'],scope='Repeated occurrence retained as a proposed rationale within Shila’s challenge')
+objection=c('objection','12b:15','הא לייט עלה אביי','Rav Shila points out Abaye’s denunciation.',candidates=['רב שילא משלנייא'])
+heard=c('heard','12b:15','אמר ליה לא שמיע לי','Rav Ashi replies that he has not heard it.',candidates=['רב אשי'],scope='Printed wording, immediately glossed by narrator')
+gloss=c('gloss','12b:15','כלומר לא סבירא לי','The narrator explains that this means he does not accept it.',scope='Explicit source gloss; do not misread as mere ignorance of the report')
+axe=c('axe','12b:15','אישתמיט נרגא בעי למיפסקיה לשקיה שבקיה והדר אתא','The axe slipped and threatened his leg; he left the work and returned.',composition='composite',scope='Narrative outcome; no inferred formal legal retraction')
+e('quote_answer',quote,shilaq,'answer','12b:15');e('objection_quote',objection,quote,'objection','12b:15');e('heard_reply',heard,objection,'answer','12b:15');e('gloss_explains',gloss,heard,'qualification','12b:15')
+for key,quote,text in [('flax','רב יהודה שרא למיעקר כיתנא','Rav Yehuda permitted uprooting flax.'),('hops','ולמיקטל כשותא','He permitted cutting hops.'),('sesame','ולמיעקר שומשמי','He permitted uprooting sesame.')]:
+ c(key,'12b:16',quote,text,candidates=['רב יהודה'],scope='Reported festival permission')
+flaxwhy=c('flaxwhy','12b:16','אמר ליה אביי לרב יוסף בשלמא כיתנא חזי לחפיפה','Abaye tells Rav Yosef that flax is intelligible because it is fit for washing.',candidates=['אביי'])
+hopswhy=c('hopswhy','12b:16','כשותא חזי לשיכרא','Hops are fit for beer.',candidates=['אביי'],naming_refs=['12b:16'])
+sesameq=q('sesameq','12b:16','אלא שומשמי למאי חזי','What immediate use does sesame have?',candidates=['אביי'])
+seeds=c('seeds','12b:16','חזי לנזיי דאית בהו','The reply points to the נזיי contained in it.',scope='Contextual response to Abaye; technical component retained',uncertainty=['Precise meaning of נזיי not resolved here; no unsupported culinary detail.'])
+e('flax_reason',flaxwhy,'mk.r033.flax.c','support','12b:16');e('hops_reason',hopswhy,'mk.r033.hops.c','support','12b:16');e('sesame_answer',seeds,sesameq,'answer','12b:16')
+yannai=c('yannai','12b:17','רבי ינאי הוה ליה ההוא פרדיסא דמטא זמניה בחולא דמועדא קטפיה','Rabbi Yannai had an orchard whose harvest time arrived during the festival and harvested it.',scope='Narrative, conditioned on harvest timing')
+copy=c('copy','12b:17','לשנה שהיוה כולי עלמא לפרדיסייהו לחולא דמועדא','The next year others delayed their orchards until the festival.',scope='Reported behavioral consequence')
+abandon=c('abandon','12b:17','אפקריה רבי ינאי לפרדיסיה ההוא שתא','Rabbi Yannai made his orchard ownerless that year.',scope='Narrative action retained; do not invent an explicit general ruling')
+fruit=c('fruit','12b:18','מכניס אדם פירותיו מפני הגנבים','The Mishnah permits bringing in produce because of thieves.',conditions=['risk from thieves'])
+soak=c('soak','12b:18','ושולה פשתנו מן המשרה בשביל שלא תאבד','It permits removing flax from soaking to prevent loss.',conditions=['prevent loss'])
+delay=c('delay','12b:18','ובלבד שלא יכוין את מלאכתו במועד','The permission requires not deliberately scheduling work for the festival.')
+loss=c('loss','12b:18','וכולן אם כוונו מלאכתן במועד יאבדו','If deliberately scheduled for the festival, all these are left to loss.',conditions=['deliberately scheduled for festival'],scope='Explicit Mishnah sanction wording')
+e('delay_fruit',delay,fruit,'qualification','12b:18');e('delay_flax',delay,soak,'qualification','12b:18')
+private=c('private','12b:19','תנא ובלבד שיכניסם בצנעא לתוך ביתו','The baraita requires bringing them into the house privately.')
+e('private_fruit',private,fruit,'qualification','12b:19')
+beams=c('beams','12b:20','רב יוסף הוה ליה כשורי עיילינהו ביממא','Rav Yosef had beams and brought them in during daytime.',scope='Narrative action')
+privacyq=q('privacyq','12b:21','אמר ליה אביי והתניא ובלבד שיכניסם בצנעא בתוך ביתו','Abaye challenges from the requirement to bring them into the house privately.',candidates=['אביי'])
+day=c('day','12b:21','אמר ליה צנעא דהני יממא הוא','Rav Yosef replies that daytime is the private way for these.',candidates=['רב יוסף'],conditions=['these beams'])
+night=c('night','12b:21','כיון דבליליא בעו גברא יתירי ובעו מדוכרי דנורא אוושא מילתא','At night more people and torches would be needed, causing publicity.',scope='Rationale for this specific daytime concealment',composition='composite')
+e('privacy_objection',privacyq,beams,'objection','12b:21');e('day_answer',day,privacyq,'answer','12b:21');e('night_reason',night,day,'support','12b:21')
+a.save_window(refs,'resume_moed_katan_examples033.json','Direct reading12b:12–21. Preserve separate people, candidate reasons rejected by citations, explicit narrator gloss of Rav Ashi, accident without invented legal retraction, technical ambiguity, orchard consequence, every loss/delay/concealment condition and local daytime rationale.','a4d8aca5d16580152fa53a43f01782453580cf6ef6404ee0ff72a4b083c286bb')

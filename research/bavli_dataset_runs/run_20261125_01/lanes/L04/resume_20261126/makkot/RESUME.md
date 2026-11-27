@@ -1,45 +1,35 @@
-# Makkot continuation handoff — 2026-11-26
+# Makkot continuation checkpoint — 2026-11-27
 
-Status: **PARTIAL_REQUIRED_WORK_REMAINS**. Sole production owner is `L04/makkot_resume_20261126`, epoch 3. No handoff/ownership change was issued.
+**PARTIAL_REQUIRED_WORK_REMAINS**. All eight layers cover **253/709** source segments, through **Makkot 10a:9**. Next is **10a:10**; **456 segments per layer remain**. Source context was read through 10a:24, not counted as coverage. No new independent review is claimed.
 
 Canonical job: `F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_makkot`.
+Owner remains `L04/makkot_resume_20261126`, epoch 3. CURRENT is `83703222712ce4dda8a900326878ea0351e44318321431771ea10deb69e635a1`. There are 2,221 active records, 106 superseded records and 2,327 total versions. No open structure tails at this boundary.
 
-Latest immutable snapshot: `4d303ae0cd52352256d5f5b72b0987ab993503d7bae57c18ed40142674fe5cff`.
+Parent requested a bounded production hold to match independent review capacity. **This producer has ceased canonical writes at this checkpoint.** No owner transfer occurred. Resume on lane-lead dispatch, after checking OWNER/CURRENT and replay; never infer continued background work.
 
-All eight required passes cover **146/709** segments, through **Makkot 7a:1**. Next unprocessed source on every layer is **Makkot 7a:2**; **563 segments per layer remain**. Actual context was read through 7a:12; unannotated context is not coverage. Current primary structures have no open tails, but the tractate is unfinished.
+## Exact artifacts
 
-There are **1,362 active records**, **101 superseded versions**, and **1,463 total versions**. The frozen runner field `semantic_records` counts total versions, not active rows. Earlier progress messages calling that field active were imprecise; this receipt supplies the correct counts.
+`CHECKPOINT_253.json` records complete proposal chain, author hashes, all nine frozen tool hashes, source/schema/run-contract hashes, replay evidence, export hashes, metadata and failed attempts. `EXPORT_RECHECK_253.json` records a second byte-identical export. Export directory: `exports/resume_20261127_253` inside the canonical job. All 506 embedded active attribution scope references were checked, including prose-embedded IDs.
 
-`CHECKPOINT_146.json` supplies proposal hashes, script hashes, exact source and tooling identity, replay evidence, owner, counts, and export location. Replay passed after the final pointer revision. Final export: `exports/resume_20261126_146_pointer012` inside the job. The earlier `exports/resume_20261126_146` remains immutable as a preceding version.
+Accepted new source proposals: 013b, 014b, 015b, 016, 017d, 018, 019, 021. Typographic correction 020 repairs a malformed English Rav Hisda label, revising all five affected/dependent records and affected coverage. It changes no source interpretation. Historical initial attempts remain preserved as separate scripts; prevalidation-rejected proposals 013/014/017c are in external staging. Exact-span assertion failures 015/017/017b never yielded full proposals and their original scripts remain preserved.
 
-## Resume
+`author_lib_cont2.py` serializes explicit semantic selections only and records agent `/root/makkot_continuation_2`. Its question default is `none`; scripts explicitly set `partial` only for represented source-supported reply inventories. No enum certifies exhaustive alternatives or choice eligibility. Do not rerun historical author scripts against a changed state; replay frozen accepted proposal bytes. The next available author prefix is 022.
 
-1. Read AGENTS.md, AGENT_HANDOFF.md, the common execution contract, worker24, v2 semantic/QA contracts and current production protocol.
-2. Confirm OWNER and CURRENT, then run replay; load actual source with `runner.load` and reject hash mismatch.
-3. Read from 7a:2 through the full relevant continuation; 7a:2–12 was context only. Continue with new uniquely named author scripts and immutable proposals (next prefix can be `ma.r013`). Do not rerun old author scripts against a later checkpoint: replay uses saved accepted proposal bytes.
-4. Use `author_lib.py` only to serialize individually selected semantic content. Its `c`/`q` methods use exact chosen spans. Set composite for real multi-act units. The helper does not classify or extract source automatically.
-5. Save checkpoints, replay and fresh immutable export; independent source-first review remains outstanding for r004–r011.
+## Source cautions added in this wave
 
-## Particular source risks retained
+- 7a:9: seventy-year frequency question remains unresolved.
+- 7b:4–5: Rava and Rabbah are distinct; Abaye challenges mistaken-permission classification.
+- 7b:13–16: preserve alternative rung reconciliations, without forcing unnamed mappings by order.
+- 7b:19–8a:1: challenged written-form explanation and Rabbi’s additional analogy both retained.
+- 8a:7: Rav Shmuel bar Yitzhak is neither Rav nor Shmuel individually.
+- 8a:13–8b:7: retain both distinct transmissions of Rava’s initial explanation, objection, retraction and replacement.
+- 8b:17–9a:1: Rav Aha bar Yaakov’s witness proposal is rejected; Rav Aha son of Rav Ika gives the strike explanation, whose sub-peruta condition continues on 9a:1.
+- 9a:5–7: Rav Hisda’s descent/ascent account is rejected by Rava; Abaye’s objection is separately attributed.
+- 9a:8: Rav Hisda is expressly named in this report; do not replace him with Abaye from 9a:7.
+- 9a:9–9b:3: distinguish human versus heavenly death arguments and interpreted biblical dialogue.
+- 9b:9: explicit correction from printed Rabbi Yose to Rabbi Yose bar Yehuda.
+- 10a:3: priest comparison concerns gathering; it does not accuse the priests in the simile of killing.
 
-- 2b10–13: Rav Hisda’s apparent exclusive kofer attribution is qualified by Rav Pappa; preserve the rejected money/atonement inference.
-- 2b14–15: both Rav Hamnuna sale proposals are rejected; parenthesized initial Rava attribution retained.
-- 3a2–7: final case requires prior court-imposed monetary liability, not merely confession to false testimony/hazama.
-- 3a15–3b6: opposing Shmuel versions are alternative transmissions; Rav Kahana’s role differs across them.
-- 3b9–10: preserve exact personal-condition wording; do not normalize away בשביעית versus שביעית.
-- 4a3–7: Rav Pappa’s textual alternatives and Abaye’s recollection of Rav Yosef remain separate; no forced harmonization with Rava.
-- 4a8–9: pinned source prints water then wine; neither emended.
-- 4b2–9: alternate placement of Ulla report retained.
-- 5a14–19: act date versus final-judgment date and actual testimony time must remain distinct; monetary cases here concern fines.
-- 5b2 and 6b8: explicit קשיא remains unresolved.
-- 5b3–7: repeated narratives retained; אמר לך responses marked dialectical reconstruction.
-- 5b10: בריבי not silently assigned a personal name.
-- 5b17–20: wrongful execution, public voice attribution, and alternative explanations preserved as narrative claims, not certified supernatural events.
-- 6a10: Shmuel and Rav Nahman give opposing local rulings; no confusion of Rav Yehuda the transmitter with Rav.
-- 6b9–10: Rabbi Yose versus Rabbi Yose bar Yehuda is an explicit attribution correction.
+Preserve citing-speaker versus original-holder distinctions. A named objection citing a baraita does not assign that baraita’s underlying rule to the citer. Composite units remain provisional and unqualified for atomic evaluation. Earlier opening review applies only to its recorded scope/version; no acceptance extends to this wave.
 
-## Integrity details
-
-No source corpus, common runner, schema or global registry was changed; no paid API and no git commit/push. All exact runner production-file hashes match the frozen contract. Active attribution scope strings were audited for embedded `ma.*` IDs. One opening scope pointer before a semicolon (`ma.r001.seed.c`) had escaped the parent’s mechanical correction; r012 changes it to its active `.scope002` version, retaining the same uncertainty and literal evidence. Prior proposals and judgments remain preserved.
-
-New continuation is AI provisional and unreviewed. Opening targeted AI review applies only to its recorded scope/versions; it does not review continuation. No human certification or task eligibility is asserted. Full-tractate production and independent review remain required.
+The preceding checkpoint handoff is preserved in `RESUME_146.md`. Original corpus, common runner/schema/protocol and global registries were not modified. No paid API, commit or push occurred.
