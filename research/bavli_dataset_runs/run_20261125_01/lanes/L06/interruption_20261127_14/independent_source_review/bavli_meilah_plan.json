@@ -1,0 +1,4175 @@
+{
+  "algorithm_version": "source-only-block-review-v1",
+  "status": "PLAN_ONLY_NOT_REVIEWED",
+  "tractate": "Meilah",
+  "source_sha256": "19676a143e57405bd2b099952515d0171a1f3e88f3455df4306fcef4ff2eaa6a",
+  "source_version_title": "Wikisource Talmud Bavli",
+  "source_language": "he",
+  "seed": 20261125,
+  "coordinate_contract": "Original zero-based array indices; half-open Unicode codepoint offsets; no normalization",
+  "empty_rule": "Only raw empty strings are empty (bool(text)==False); whitespace-only raw strings remain nonempty; no normalization or HTML stripping",
+  "source_inventory": {
+    "page_positions": 43,
+    "segment_positions": 515,
+    "nonempty_segments": 515,
+    "empty_segment_positions": [],
+    "whitespace_only_nonempty_positions": [],
+    "empty_page_indices": [
+      0,
+      1
+    ]
+  },
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 52,
+    "sampled_blocks": 30,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_denominator": 52,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "probability_sample_block_ids": [
+      "block_000001",
+      "block_000004",
+      "block_000011",
+      "block_000012",
+      "block_000013",
+      "block_000015",
+      "block_000016",
+      "block_000017",
+      "block_000021",
+      "block_000022",
+      "block_000024",
+      "block_000025",
+      "block_000026",
+      "block_000031",
+      "block_000032",
+      "block_000033",
+      "block_000035",
+      "block_000037",
+      "block_000038",
+      "block_000039",
+      "block_000042",
+      "block_000043",
+      "block_000044",
+      "block_000045",
+      "block_000046",
+      "block_000047",
+      "block_000048",
+      "block_000049",
+      "block_000050",
+      "block_000051"
+    ]
+  },
+  "endpoint_checks": {
+    "opening_block_id": "block_000000",
+    "closing_block_id": "block_000051",
+    "overlap_with_probability_sample": [
+      "block_000051"
+    ],
+    "unique_added_block_ids": [
+      "block_000000"
+    ]
+  },
+  "coverage": {
+    "unique_review_blocks": 31,
+    "probability_sample_nonempty_segments": 295,
+    "unique_review_nonempty_segments": 305
+  },
+  "sampling_grid": [
+    {
+      "block_id": "block_000000",
+      "nonempty_ordinal_start": 0,
+      "nonempty_ordinal_end_exclusive": 10,
+      "first_ref": "Meilah 2a:1",
+      "last_ref": "Meilah 2a:10",
+      "membership_sha256": "3a9efc23a78241047f4103fae825ce63b81dc84b718ef1989febaa959ba24417"
+    },
+    {
+      "block_id": "block_000001",
+      "nonempty_ordinal_start": 10,
+      "nonempty_ordinal_end_exclusive": 20,
+      "first_ref": "Meilah 2a:11",
+      "last_ref": "Meilah 2b:6",
+      "membership_sha256": "9cc57bc01769401fae1a950d945999ad4c5b38e1ba74b0c209c5bec51bdc9bfc"
+    },
+    {
+      "block_id": "block_000002",
+      "nonempty_ordinal_start": 20,
+      "nonempty_ordinal_end_exclusive": 30,
+      "first_ref": "Meilah 2b:7",
+      "last_ref": "Meilah 3a:5",
+      "membership_sha256": "de809c6841e8d9fa1a786967c577c0f3f0b0381bb36fc621c5bf79e5792796bf"
+    },
+    {
+      "block_id": "block_000003",
+      "nonempty_ordinal_start": 30,
+      "nonempty_ordinal_end_exclusive": 40,
+      "first_ref": "Meilah 3a:6",
+      "last_ref": "Meilah 3b:6",
+      "membership_sha256": "d32dac3480949082f02742e7a1633fd3efb52e82452afa08a77616de615e8777"
+    },
+    {
+      "block_id": "block_000004",
+      "nonempty_ordinal_start": 40,
+      "nonempty_ordinal_end_exclusive": 50,
+      "first_ref": "Meilah 3b:7",
+      "last_ref": "Meilah 4a:1",
+      "membership_sha256": "c7c03472647da4bb4e971f5ee516b01a2b26f64b5e38150dcbf656c05b68fa81"
+    },
+    {
+      "block_id": "block_000005",
+      "nonempty_ordinal_start": 50,
+      "nonempty_ordinal_end_exclusive": 60,
+      "first_ref": "Meilah 4a:2",
+      "last_ref": "Meilah 4b:1",
+      "membership_sha256": "f346a1ca8a69ccfe1a2b828a0f1f9b451379eb8b3835adc8c12c4d281d7e922d"
+    },
+    {
+      "block_id": "block_000006",
+      "nonempty_ordinal_start": 60,
+      "nonempty_ordinal_end_exclusive": 70,
+      "first_ref": "Meilah 4b:2",
+      "last_ref": "Meilah 4b:11",
+      "membership_sha256": "65df0cdff49e27d2f5699373be671853b3ccbad65b3457d0547ea98e945a80cf"
+    },
+    {
+      "block_id": "block_000007",
+      "nonempty_ordinal_start": 70,
+      "nonempty_ordinal_end_exclusive": 80,
+      "first_ref": "Meilah 4b:12",
+      "last_ref": "Meilah 5a:7",
+      "membership_sha256": "9b7de0480cf470bad2a1c1d213b2996764201f3255eb7bf3573f884a9c5ac1e6"
+    },
+    {
+      "block_id": "block_000008",
+      "nonempty_ordinal_start": 80,
+      "nonempty_ordinal_end_exclusive": 90,
+      "first_ref": "Meilah 5a:8",
+      "last_ref": "Meilah 5b:2",
+      "membership_sha256": "323b225f8788ff4b6d82b5f296424f1ba1aea40e7d1b998bf3acfe52852ea455"
+    },
+    {
+      "block_id": "block_000009",
+      "nonempty_ordinal_start": 90,
+      "nonempty_ordinal_end_exclusive": 100,
+      "first_ref": "Meilah 5b:3",
+      "last_ref": "Meilah 5b:12",
+      "membership_sha256": "daf28d1482504dbf3fc92afe68bcd09094a7b977680874e7243b516349488f2e"
+    },
+    {
+      "block_id": "block_000010",
+      "nonempty_ordinal_start": 100,
+      "nonempty_ordinal_end_exclusive": 110,
+      "first_ref": "Meilah 5b:13",
+      "last_ref": "Meilah 6a:8",
+      "membership_sha256": "6aad9876f184e6cc495dc2938ce2b595cce7d4e5f6aed4901cdf30c4b43d174c"
+    },
+    {
+      "block_id": "block_000011",
+      "nonempty_ordinal_start": 110,
+      "nonempty_ordinal_end_exclusive": 120,
+      "first_ref": "Meilah 6a:9",
+      "last_ref": "Meilah 6a:18",
+      "membership_sha256": "ef22fbca510821927936d0a407677052c9a0fc741dc84184adc63ee4b5b52a8a"
+    },
+    {
+      "block_id": "block_000012",
+      "nonempty_ordinal_start": 120,
+      "nonempty_ordinal_end_exclusive": 130,
+      "first_ref": "Meilah 6a:19",
+      "last_ref": "Meilah 6b:9",
+      "membership_sha256": "36eb24c1cd4eb2501ec21d9e0cc05d85b7a7fa41b4c9c669d29315ff4e883814"
+    },
+    {
+      "block_id": "block_000013",
+      "nonempty_ordinal_start": 130,
+      "nonempty_ordinal_end_exclusive": 140,
+      "first_ref": "Meilah 6b:10",
+      "last_ref": "Meilah 7a:4",
+      "membership_sha256": "3d2b88394d6035dae47fa15285c2cb73f080398ea7e8be12207fa79a68512c69"
+    },
+    {
+      "block_id": "block_000014",
+      "nonempty_ordinal_start": 140,
+      "nonempty_ordinal_end_exclusive": 150,
+      "first_ref": "Meilah 7a:5",
+      "last_ref": "Meilah 7b:2",
+      "membership_sha256": "5a7088bea5673b418c75eddffa56cdf5589619a222163824be04859790ea625d"
+    },
+    {
+      "block_id": "block_000015",
+      "nonempty_ordinal_start": 150,
+      "nonempty_ordinal_end_exclusive": 160,
+      "first_ref": "Meilah 7b:3",
+      "last_ref": "Meilah 7b:12",
+      "membership_sha256": "30ce9bdd387450558b311088836e43d61c46104936c96a33119f4625a8941d52"
+    },
+    {
+      "block_id": "block_000016",
+      "nonempty_ordinal_start": 160,
+      "nonempty_ordinal_end_exclusive": 170,
+      "first_ref": "Meilah 7b:13",
+      "last_ref": "Meilah 8a:3",
+      "membership_sha256": "ee928bd082e3afc89d5d7d633f4f43180173526c1764be38ec0c83326da6a451"
+    },
+    {
+      "block_id": "block_000017",
+      "nonempty_ordinal_start": 170,
+      "nonempty_ordinal_end_exclusive": 180,
+      "first_ref": "Meilah 8a:4",
+      "last_ref": "Meilah 8b:7",
+      "membership_sha256": "5ac2dc2779ccdfc5890a3ae1a9c2fa490ade53c58534c65644e420452b84d162"
+    },
+    {
+      "block_id": "block_000018",
+      "nonempty_ordinal_start": 180,
+      "nonempty_ordinal_end_exclusive": 190,
+      "first_ref": "Meilah 8b:8",
+      "last_ref": "Meilah 9a:6",
+      "membership_sha256": "989b3c3c541859aa799ccd6cb47ff0db4b551065723e4beb8a9039705cf44664"
+    },
+    {
+      "block_id": "block_000019",
+      "nonempty_ordinal_start": 190,
+      "nonempty_ordinal_end_exclusive": 200,
+      "first_ref": "Meilah 9a:7",
+      "last_ref": "Meilah 9a:16",
+      "membership_sha256": "50038a045e102862f12b42fe7c67f53d035c1a204343536a059bb99574215def"
+    },
+    {
+      "block_id": "block_000020",
+      "nonempty_ordinal_start": 200,
+      "nonempty_ordinal_end_exclusive": 210,
+      "first_ref": "Meilah 9a:17",
+      "last_ref": "Meilah 9b:7",
+      "membership_sha256": "6fddbaf6eb308928b266c9f2d8618f6016052cebeea50f41bcb5403e761ce17a"
+    },
+    {
+      "block_id": "block_000021",
+      "nonempty_ordinal_start": 210,
+      "nonempty_ordinal_end_exclusive": 220,
+      "first_ref": "Meilah 9b:8",
+      "last_ref": "Meilah 10a:7",
+      "membership_sha256": "46a0f8d382cc3e19735185d8c5699c6eea7c6444b3be93b3cef244b30e702da3"
+    },
+    {
+      "block_id": "block_000022",
+      "nonempty_ordinal_start": 220,
+      "nonempty_ordinal_end_exclusive": 230,
+      "first_ref": "Meilah 10a:8",
+      "last_ref": "Meilah 10b:8",
+      "membership_sha256": "971fb1b16c16c99062f4d0be8b8e59df93e758e0bc8add688e766fe372dc1175"
+    },
+    {
+      "block_id": "block_000023",
+      "nonempty_ordinal_start": 230,
+      "nonempty_ordinal_end_exclusive": 240,
+      "first_ref": "Meilah 11a:1",
+      "last_ref": "Meilah 11a:10",
+      "membership_sha256": "080f97444f7d62f489309865916ca9dd2f3a2ca07572a2f8fa3de1712266b0f8"
+    },
+    {
+      "block_id": "block_000024",
+      "nonempty_ordinal_start": 240,
+      "nonempty_ordinal_end_exclusive": 250,
+      "first_ref": "Meilah 11a:11",
+      "last_ref": "Meilah 11b:3",
+      "membership_sha256": "fca7b5416c71171c22e99d639918bf807ffffc6c8e312bc55eb9aef35d972093"
+    },
+    {
+      "block_id": "block_000025",
+      "nonempty_ordinal_start": 250,
+      "nonempty_ordinal_end_exclusive": 260,
+      "first_ref": "Meilah 11b:4",
+      "last_ref": "Meilah 11b:13",
+      "membership_sha256": "494e120a29a80bdf76cbd3580bbf472612ab4b756d319a78d45bd826f315e49c"
+    },
+    {
+      "block_id": "block_000026",
+      "nonempty_ordinal_start": 260,
+      "nonempty_ordinal_end_exclusive": 270,
+      "first_ref": "Meilah 11b:14",
+      "last_ref": "Meilah 12a:4",
+      "membership_sha256": "b28a89780b5d60f23af9be3a0bc2d7fd8b5d574e14676945894396986d76e467"
+    },
+    {
+      "block_id": "block_000027",
+      "nonempty_ordinal_start": 270,
+      "nonempty_ordinal_end_exclusive": 280,
+      "first_ref": "Meilah 12a:5",
+      "last_ref": "Meilah 12a:14",
+      "membership_sha256": "29d01635058af42d03db9709fb58865016ffcaa004adc47a38edc69d29549964"
+    },
+    {
+      "block_id": "block_000028",
+      "nonempty_ordinal_start": 280,
+      "nonempty_ordinal_end_exclusive": 290,
+      "first_ref": "Meilah 12a:15",
+      "last_ref": "Meilah 12b:9",
+      "membership_sha256": "3e6d28718cd95e7981bfb54a575bdc6a89bb6dd9a9befae8d023ba7a19dbd980"
+    },
+    {
+      "block_id": "block_000029",
+      "nonempty_ordinal_start": 290,
+      "nonempty_ordinal_end_exclusive": 300,
+      "first_ref": "Meilah 12b:10",
+      "last_ref": "Meilah 13a:8",
+      "membership_sha256": "8641ac8624c3ee865202ffcfccafc7b61df710977ccc260dfeb76105e624b736"
+    },
+    {
+      "block_id": "block_000030",
+      "nonempty_ordinal_start": 300,
+      "nonempty_ordinal_end_exclusive": 310,
+      "first_ref": "Meilah 13a:9",
+      "last_ref": "Meilah 13b:5",
+      "membership_sha256": "cb52f5d2a3b1bbf1068ead9b99464e5f4c2f65345ba22c7eaf16d5976be31657"
+    },
+    {
+      "block_id": "block_000031",
+      "nonempty_ordinal_start": 310,
+      "nonempty_ordinal_end_exclusive": 320,
+      "first_ref": "Meilah 13b:6",
+      "last_ref": "Meilah 14a:5",
+      "membership_sha256": "5235581dc469166a0f7975b4cc7bea04a72f60ebe1bb3c627dd8c16d9d894022"
+    },
+    {
+      "block_id": "block_000032",
+      "nonempty_ordinal_start": 320,
+      "nonempty_ordinal_end_exclusive": 330,
+      "first_ref": "Meilah 14a:6",
+      "last_ref": "Meilah 14b:2",
+      "membership_sha256": "bc7b6a95f1f9e220170cd2a66e0b5557afcba9d26c18d20085df6dd397eab34e"
+    },
+    {
+      "block_id": "block_000033",
+      "nonempty_ordinal_start": 330,
+      "nonempty_ordinal_end_exclusive": 340,
+      "first_ref": "Meilah 14b:3",
+      "last_ref": "Meilah 15a:2",
+      "membership_sha256": "fb506f69fb1634b1d7b804721682b0b777e06e324a2ae9cbc196e72f64597a28"
+    },
+    {
+      "block_id": "block_000034",
+      "nonempty_ordinal_start": 340,
+      "nonempty_ordinal_end_exclusive": 350,
+      "first_ref": "Meilah 15a:3",
+      "last_ref": "Meilah 15a:12",
+      "membership_sha256": "af258ddd7e9c7d438c73dba50c5a1bdb20fd38603d20ad2bfd6ee2c67dfa80a5"
+    },
+    {
+      "block_id": "block_000035",
+      "nonempty_ordinal_start": 350,
+      "nonempty_ordinal_end_exclusive": 360,
+      "first_ref": "Meilah 15a:13",
+      "last_ref": "Meilah 15b:9",
+      "membership_sha256": "60e7f5f5f3ff9a49506caf532b1c1bc1bf6d80418157bb3f6df8d6abba024a27"
+    },
+    {
+      "block_id": "block_000036",
+      "nonempty_ordinal_start": 360,
+      "nonempty_ordinal_end_exclusive": 370,
+      "first_ref": "Meilah 15b:10",
+      "last_ref": "Meilah 16a:4",
+      "membership_sha256": "0dce833f380ae7513e8260006ca73be34ab798d4f5035d17bfd9418e5a3193ed"
+    },
+    {
+      "block_id": "block_000037",
+      "nonempty_ordinal_start": 370,
+      "nonempty_ordinal_end_exclusive": 380,
+      "first_ref": "Meilah 16a:5",
+      "last_ref": "Meilah 16b:7",
+      "membership_sha256": "6b58c7128d8ec083c3ae4c8b5de3e09a026c6d820309184af4ddfa2612d59825"
+    },
+    {
+      "block_id": "block_000038",
+      "nonempty_ordinal_start": 380,
+      "nonempty_ordinal_end_exclusive": 390,
+      "first_ref": "Meilah 16b:8",
+      "last_ref": "Meilah 17a:9",
+      "membership_sha256": "52533b6c783135cabb1ee31b22f6d55e6a86eb25541f868c3b0400df8378fbcd"
+    },
+    {
+      "block_id": "block_000039",
+      "nonempty_ordinal_start": 390,
+      "nonempty_ordinal_end_exclusive": 400,
+      "first_ref": "Meilah 17a:10",
+      "last_ref": "Meilah 17b:4",
+      "membership_sha256": "21bcc2a8358297715500ae9618031810745a3bb4e6d6e357dfd8845e9ace4df5"
+    },
+    {
+      "block_id": "block_000040",
+      "nonempty_ordinal_start": 400,
+      "nonempty_ordinal_end_exclusive": 410,
+      "first_ref": "Meilah 17b:5",
+      "last_ref": "Meilah 18a:1",
+      "membership_sha256": "0d712c68e2d85844295f068c81a163120efcf8364103fadfb7d82f873ca9a6d4"
+    },
+    {
+      "block_id": "block_000041",
+      "nonempty_ordinal_start": 410,
+      "nonempty_ordinal_end_exclusive": 420,
+      "first_ref": "Meilah 18a:2",
+      "last_ref": "Meilah 18a:11",
+      "membership_sha256": "b28ee32af105f7c609c7f1eff1b5d7bdffde3f0f6fb17d67ca7edd0ee13c56b1"
+    },
+    {
+      "block_id": "block_000042",
+      "nonempty_ordinal_start": 420,
+      "nonempty_ordinal_end_exclusive": 430,
+      "first_ref": "Meilah 18a:12",
+      "last_ref": "Meilah 18b:7",
+      "membership_sha256": "b3b2a85f8255eb28e0c542c17fe29a0f8795a575690433804446d42597b0134b"
+    },
+    {
+      "block_id": "block_000043",
+      "nonempty_ordinal_start": 430,
+      "nonempty_ordinal_end_exclusive": 440,
+      "first_ref": "Meilah 18b:8",
+      "last_ref": "Meilah 19a:5",
+      "membership_sha256": "648230e324b05a43c47eac398a5fea62a36a7e40d9a08a3afebe709c609f578c"
+    },
+    {
+      "block_id": "block_000044",
+      "nonempty_ordinal_start": 440,
+      "nonempty_ordinal_end_exclusive": 450,
+      "first_ref": "Meilah 19a:6",
+      "last_ref": "Meilah 19b:4",
+      "membership_sha256": "0a3f73c605d3dfffe7378aee68edda69b4f2d14c4adde57ded4f7a7fe81cc457"
+    },
+    {
+      "block_id": "block_000045",
+      "nonempty_ordinal_start": 450,
+      "nonempty_ordinal_end_exclusive": 460,
+      "first_ref": "Meilah 19b:5",
+      "last_ref": "Meilah 20a:2",
+      "membership_sha256": "8d49ed05afcf9e6084d21f449e9ad85023271833328cc77677850ce204965d72"
+    },
+    {
+      "block_id": "block_000046",
+      "nonempty_ordinal_start": 460,
+      "nonempty_ordinal_end_exclusive": 470,
+      "first_ref": "Meilah 20a:3",
+      "last_ref": "Meilah 20a:12",
+      "membership_sha256": "192742d38ce751a07061809731b3a43bb950e93cf8d38672ca879968a0ca922d"
+    },
+    {
+      "block_id": "block_000047",
+      "nonempty_ordinal_start": 470,
+      "nonempty_ordinal_end_exclusive": 480,
+      "first_ref": "Meilah 20a:13",
+      "last_ref": "Meilah 20b:9",
+      "membership_sha256": "1f05466768982de754367eeec6db11a5c1ffa0aad5b4106c2b4236ff556aa608"
+    },
+    {
+      "block_id": "block_000048",
+      "nonempty_ordinal_start": 480,
+      "nonempty_ordinal_end_exclusive": 490,
+      "first_ref": "Meilah 20b:10",
+      "last_ref": "Meilah 21a:8",
+      "membership_sha256": "3e9913d673a3abaf1cb9a3dd018b1b870b6acfce31b3737f04c527f7258bd95a"
+    },
+    {
+      "block_id": "block_000049",
+      "nonempty_ordinal_start": 490,
+      "nonempty_ordinal_end_exclusive": 500,
+      "first_ref": "Meilah 21a:9",
+      "last_ref": "Meilah 21b:2",
+      "membership_sha256": "039a8b5e91b4798b724b86a36209794eac45cc526e4dd9f64ad6eb53832c3fde"
+    },
+    {
+      "block_id": "block_000050",
+      "nonempty_ordinal_start": 500,
+      "nonempty_ordinal_end_exclusive": 510,
+      "first_ref": "Meilah 21b:3",
+      "last_ref": "Meilah 21b:12",
+      "membership_sha256": "3a8df46212b0ccbe6f55b30130b4fb9cfd958379386cd220d4e0463905fed8b4"
+    },
+    {
+      "block_id": "block_000051",
+      "nonempty_ordinal_start": 510,
+      "nonempty_ordinal_end_exclusive": 515,
+      "first_ref": "Meilah 21b:13",
+      "last_ref": "Meilah 22a:4",
+      "membership_sha256": "469f23ac426bf9d1f98f8426de115da44a55224b6e966e0b2314fd1685903c94"
+    }
+  ],
+  "review_blocks": [
+    {
+      "block_id": "block_000000",
+      "spans": [
+        {
+          "ref": "Meilah 2a:1",
+          "page_index": 2,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            111
+          ],
+          "span_sha256_utf8": "a05ca26c4c02c4bfe662672e924539c3f57c3ee0a965bfdc1193be75e8ee6fd6",
+          "nonempty_ordinal": 0
+        },
+        {
+          "ref": "Meilah 2a:2",
+          "page_index": 2,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "eec382aac7931f6fe15c332421e1ebc1acc90439ab0eab0399a7ee22048feba3",
+          "nonempty_ordinal": 1
+        },
+        {
+          "ref": "Meilah 2a:3",
+          "page_index": 2,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "30661844afa0da6189ef9437f8ac79f9aee4cb7a900249b71678fa93fc33e89e",
+          "nonempty_ordinal": 2
+        },
+        {
+          "ref": "Meilah 2a:4",
+          "page_index": 2,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            52
+          ],
+          "span_sha256_utf8": "c077799a52e834cb539c796c639a1fd311b8f92a93a35d817a0b9e302d7c174d",
+          "nonempty_ordinal": 3
+        },
+        {
+          "ref": "Meilah 2a:5",
+          "page_index": 2,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "span_sha256_utf8": "b58bfbeaefd0ecbd2d6e52e28d796f001411d24ee45b299214c59915d7b1b84f",
+          "nonempty_ordinal": 4
+        },
+        {
+          "ref": "Meilah 2a:6",
+          "page_index": 2,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            115
+          ],
+          "span_sha256_utf8": "948898976f39deb7a73c161dd28ba4b980d7ebfe9caaf30707f2ad916b47923f",
+          "nonempty_ordinal": 5
+        },
+        {
+          "ref": "Meilah 2a:7",
+          "page_index": 2,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            118
+          ],
+          "span_sha256_utf8": "b35094b5e0f137e7ac72a454c816b572b7ba6103f8fc483cb7d2ead02bb7e310",
+          "nonempty_ordinal": 6
+        },
+        {
+          "ref": "Meilah 2a:8",
+          "page_index": 2,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            88
+          ],
+          "span_sha256_utf8": "1f5105ccf52bc0bb3d78dff20c361269d24e8b0eaba622b43c4b57a40239c5b2",
+          "nonempty_ordinal": 7
+        },
+        {
+          "ref": "Meilah 2a:9",
+          "page_index": 2,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            18
+          ],
+          "span_sha256_utf8": "4fbc2c4349cb382818678eb423950167a17d1b90815bc319f58e16166bbbc886",
+          "nonempty_ordinal": 8
+        },
+        {
+          "ref": "Meilah 2a:10",
+          "page_index": 2,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            148
+          ],
+          "span_sha256_utf8": "19d51aa39eeb4de72139c131fe30b653027cbf7691a190680b30a353ee45473d",
+          "nonempty_ordinal": 9
+        }
+      ],
+      "roles": [
+        "opening_check"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 1.0
+    },
+    {
+      "block_id": "block_000001",
+      "spans": [
+        {
+          "ref": "Meilah 2a:11",
+          "page_index": 2,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            119
+          ],
+          "span_sha256_utf8": "6162abbef4bf2448f9e8ec1e07f51a5c81d1905eabe99171e862b2d81281a32e",
+          "nonempty_ordinal": 10
+        },
+        {
+          "ref": "Meilah 2a:12",
+          "page_index": 2,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            155
+          ],
+          "span_sha256_utf8": "15dc92622fa04983783859951ad20cc4afac9a580f600156837007d1be00b657",
+          "nonempty_ordinal": 11
+        },
+        {
+          "ref": "Meilah 2a:13",
+          "page_index": 2,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            30
+          ],
+          "span_sha256_utf8": "4ec6fe2db45ac2c4970dcba5805e32883db72c5f218e7884e46e88b03fa2b0a9",
+          "nonempty_ordinal": 12
+        },
+        {
+          "ref": "Meilah 2a:14",
+          "page_index": 2,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            21
+          ],
+          "span_sha256_utf8": "c945d67756c8eeefcbb86346a5dcce878495715b69ec550313107bb4e3431420",
+          "nonempty_ordinal": 13
+        },
+        {
+          "ref": "Meilah 2b:1",
+          "page_index": 3,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            74
+          ],
+          "span_sha256_utf8": "e34099455a372b4fe992e44a82dc2fba90f80af3b986982b93536214fc6f5c1d",
+          "nonempty_ordinal": 14
+        },
+        {
+          "ref": "Meilah 2b:2",
+          "page_index": 3,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "41bd91335a1cc73e334febd2603dd2f2ca21c4482f52998b69e0e4ea11472ba2",
+          "nonempty_ordinal": 15
+        },
+        {
+          "ref": "Meilah 2b:3",
+          "page_index": 3,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "span_sha256_utf8": "9f063d7388336359e3c9b12420bc1018b1f839d9ba7beb4d0ae29d941cce5a94",
+          "nonempty_ordinal": 16
+        },
+        {
+          "ref": "Meilah 2b:4",
+          "page_index": 3,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            71
+          ],
+          "span_sha256_utf8": "d0965ebbae81ca3fa3e3cb5a60caacd4da809afc083b664b40a3b1ab3e371d4a",
+          "nonempty_ordinal": 17
+        },
+        {
+          "ref": "Meilah 2b:5",
+          "page_index": 3,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "span_sha256_utf8": "524bb26ce4a271ad873fc3b7cd30a749fed92f84bf84b7b559376780f5ee1cc4",
+          "nonempty_ordinal": 18
+        },
+        {
+          "ref": "Meilah 2b:6",
+          "page_index": 3,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            57
+          ],
+          "span_sha256_utf8": "46a876eb06dc6d1e1ed66c698c95994eef9a806c51e5a2eacc08f6a0b64635a1",
+          "nonempty_ordinal": 19
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000004",
+      "spans": [
+        {
+          "ref": "Meilah 3b:7",
+          "page_index": 5,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "eb3bdd23178eb82ebb39f4d47c812a7c1f760fa75df9a01f713c07a796d80d29",
+          "nonempty_ordinal": 40
+        },
+        {
+          "ref": "Meilah 3b:8",
+          "page_index": 5,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            98
+          ],
+          "span_sha256_utf8": "56755e28d76b1f0fee3e4a6df3c7646052e6a8e12c5aeb05957ce3f352019882",
+          "nonempty_ordinal": 41
+        },
+        {
+          "ref": "Meilah 3b:9",
+          "page_index": 5,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            101
+          ],
+          "span_sha256_utf8": "3f7c78d5eccd76ac57c9646d00309aebeb0d233d6f5fde8f6653a877190f70ce",
+          "nonempty_ordinal": 42
+        },
+        {
+          "ref": "Meilah 3b:10",
+          "page_index": 5,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "span_sha256_utf8": "0032429708e2621e65023457ac4afb393fdfaab8f8a8f54c94e0107c984882df",
+          "nonempty_ordinal": 43
+        },
+        {
+          "ref": "Meilah 3b:11",
+          "page_index": 5,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            37
+          ],
+          "span_sha256_utf8": "cb8deb2cefccbbb1b5f7d16582e6e2b595704c2c9cbfeaebae275e4881737350",
+          "nonempty_ordinal": 44
+        },
+        {
+          "ref": "Meilah 3b:12",
+          "page_index": 5,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            36
+          ],
+          "span_sha256_utf8": "aaa8034e64314ad0d30bc1d9c5eab23938046f403278e52ffd542106b8c53f8f",
+          "nonempty_ordinal": 45
+        },
+        {
+          "ref": "Meilah 3b:13",
+          "page_index": 5,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            75
+          ],
+          "span_sha256_utf8": "7a321c089153901753ce7c91068e450028135879080b0a29491d5e84fdc4cdf3",
+          "nonempty_ordinal": 46
+        },
+        {
+          "ref": "Meilah 3b:14",
+          "page_index": 5,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            18
+          ],
+          "span_sha256_utf8": "213b01d027f63ea4c96a9f838e103a7eb34e22f07ef7f5e615b48d86b6ee1244",
+          "nonempty_ordinal": 47
+        },
+        {
+          "ref": "Meilah 3b:15",
+          "page_index": 5,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            32
+          ],
+          "span_sha256_utf8": "d88c24ea80f5012bf112cfb4b0d7ad57aa6defe11c14e59b7061d83834089da1",
+          "nonempty_ordinal": 48
+        },
+        {
+          "ref": "Meilah 4a:1",
+          "page_index": 6,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            50
+          ],
+          "span_sha256_utf8": "5bafcd5dbbbca24e43b639eb1099c0b789848d6bf487f216a009e2c5e3f8ed30",
+          "nonempty_ordinal": 49
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000011",
+      "spans": [
+        {
+          "ref": "Meilah 6a:9",
+          "page_index": 10,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            61
+          ],
+          "span_sha256_utf8": "cac61dbd3756de05a3f92d7aecb5f8ab35e6a2eee0c55310e784c3f194723eb7",
+          "nonempty_ordinal": 110
+        },
+        {
+          "ref": "Meilah 6a:10",
+          "page_index": 10,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            44
+          ],
+          "span_sha256_utf8": "e5df0d4f20e57f0963ecf52a22b68f824a4db76124c26ccf03c9136ed692af7f",
+          "nonempty_ordinal": 111
+        },
+        {
+          "ref": "Meilah 6a:11",
+          "page_index": 10,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "span_sha256_utf8": "f04783ef50336b705cfa378f956b1fc05ad4bbcabf18064ebf4a0c2f60d1ab24",
+          "nonempty_ordinal": 112
+        },
+        {
+          "ref": "Meilah 6a:12",
+          "page_index": 10,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            72
+          ],
+          "span_sha256_utf8": "bcf858497e52c6b5414bad475c8c36281435dcb237df6ec3dc4000b60dfecf77",
+          "nonempty_ordinal": 113
+        },
+        {
+          "ref": "Meilah 6a:13",
+          "page_index": 10,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            60
+          ],
+          "span_sha256_utf8": "9ea7854f1daec9cc10515491111858427ca105fb576a684849dfce656ff3df90",
+          "nonempty_ordinal": 114
+        },
+        {
+          "ref": "Meilah 6a:14",
+          "page_index": 10,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            45
+          ],
+          "span_sha256_utf8": "cc4b24a1e511927723770fe764e3c523b31cc3d935161388449f3abcaa475891",
+          "nonempty_ordinal": 115
+        },
+        {
+          "ref": "Meilah 6a:15",
+          "page_index": 10,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            81
+          ],
+          "span_sha256_utf8": "2cc4a876e9a27fd8d2b5336a3f9cbef45f67ab6ca6a35a328978c17621d7e264",
+          "nonempty_ordinal": 116
+        },
+        {
+          "ref": "Meilah 6a:16",
+          "page_index": 10,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            75
+          ],
+          "span_sha256_utf8": "73b70e1baec5ad00e0ff781a18baae7de1f48307321f9364253311fd5404053a",
+          "nonempty_ordinal": 117
+        },
+        {
+          "ref": "Meilah 6a:17",
+          "page_index": 10,
+          "segment_index": 16,
+          "offsets_codepoints": [
+            0,
+            35
+          ],
+          "span_sha256_utf8": "55efd8ce38f67adfd9b3a2e60c8d8238edd7f92fefbca002bd4447ec5ee16d81",
+          "nonempty_ordinal": 118
+        },
+        {
+          "ref": "Meilah 6a:18",
+          "page_index": 10,
+          "segment_index": 17,
+          "offsets_codepoints": [
+            0,
+            69
+          ],
+          "span_sha256_utf8": "e98d7fbe3e063d8747e9be60faac135b5bcd951f22bb784075f65023008dfacb",
+          "nonempty_ordinal": 119
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000012",
+      "spans": [
+        {
+          "ref": "Meilah 6a:19",
+          "page_index": 10,
+          "segment_index": 18,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "span_sha256_utf8": "15d1f48e1b7667d98988264f18a3054721dd6a4a295c697f4ce04b22d8bf3235",
+          "nonempty_ordinal": 120
+        },
+        {
+          "ref": "Meilah 6b:1",
+          "page_index": 11,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "dbe4c3366b3d383334bbd313067fbc333bc54d07fe203852c193ebf7db3c48a8",
+          "nonempty_ordinal": 121
+        },
+        {
+          "ref": "Meilah 6b:2",
+          "page_index": 11,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "71cd526ab14ee72fc71dbd683c5790c03e579e1792e49c3f6c4c29879494f070",
+          "nonempty_ordinal": 122
+        },
+        {
+          "ref": "Meilah 6b:3",
+          "page_index": 11,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "span_sha256_utf8": "6575ff476dd3c4021942f59990e25825997309902ac10e244908daa05aad5b44",
+          "nonempty_ordinal": 123
+        },
+        {
+          "ref": "Meilah 6b:4",
+          "page_index": 11,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "span_sha256_utf8": "0d769ac92226271503dc024050dc060f9bb995395a85150d04a45c6d95a5e428",
+          "nonempty_ordinal": 124
+        },
+        {
+          "ref": "Meilah 6b:5",
+          "page_index": 11,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            49
+          ],
+          "span_sha256_utf8": "a75d4f1f5be4ac56162e402823d313b24bb0273c8b7c8e133166b1c428cd8fab",
+          "nonempty_ordinal": 125
+        },
+        {
+          "ref": "Meilah 6b:6",
+          "page_index": 11,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            59
+          ],
+          "span_sha256_utf8": "885beef88d8c202c910e780d352b0f2e84873045389b3c5418aa6c56a9f93361",
+          "nonempty_ordinal": 126
+        },
+        {
+          "ref": "Meilah 6b:7",
+          "page_index": 11,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            39
+          ],
+          "span_sha256_utf8": "bc1f5e4d4d5368ce13b3fffae514d3136ec3507f573b7fd39b1b4f988f1de96a",
+          "nonempty_ordinal": 127
+        },
+        {
+          "ref": "Meilah 6b:8",
+          "page_index": 11,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            130
+          ],
+          "span_sha256_utf8": "36d6ec63d3a3dd08fcf34b8b92b09c26fedea2860c3f029416dfe8a94ec14a17",
+          "nonempty_ordinal": 128
+        },
+        {
+          "ref": "Meilah 6b:9",
+          "page_index": 11,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            48
+          ],
+          "span_sha256_utf8": "44f8067e79b87756d4eca9795a1242c7fdaff5ec24eb84dcc3c2f172937b611b",
+          "nonempty_ordinal": 129
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000013",
+      "spans": [
+        {
+          "ref": "Meilah 6b:10",
+          "page_index": 11,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            133
+          ],
+          "span_sha256_utf8": "e019e21e4f15f14bf5b4f726432f8d76f49968561774e1a3a6d27a02ef920cd1",
+          "nonempty_ordinal": 130
+        },
+        {
+          "ref": "Meilah 6b:11",
+          "page_index": 11,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "span_sha256_utf8": "684dca3733314c8c6c2a5208d233eab83436e6762629e3aa15693c6b3f2dd22a",
+          "nonempty_ordinal": 131
+        },
+        {
+          "ref": "Meilah 6b:12",
+          "page_index": 11,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            114
+          ],
+          "span_sha256_utf8": "60f2d56fa28f7de5775f7284fd0611c92752a5be13cf3c33ddb51f0f426355b0",
+          "nonempty_ordinal": 132
+        },
+        {
+          "ref": "Meilah 6b:13",
+          "page_index": 11,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "dab90f965e2bee0663e908204250b1a996073c1f8354e2435e8b51fe6f3a8e7d",
+          "nonempty_ordinal": 133
+        },
+        {
+          "ref": "Meilah 6b:14",
+          "page_index": 11,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            83
+          ],
+          "span_sha256_utf8": "e8febbdf67d19c829b40e85d7c6d7002fd348bc492a5428abbfb45a8171a95b8",
+          "nonempty_ordinal": 134
+        },
+        {
+          "ref": "Meilah 6b:15",
+          "page_index": 11,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            47
+          ],
+          "span_sha256_utf8": "53e926ef9e677b27c1477db95494a198f3f7dd9dcd37e2468b56dc779f5266ea",
+          "nonempty_ordinal": 135
+        },
+        {
+          "ref": "Meilah 7a:1",
+          "page_index": 12,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            25
+          ],
+          "span_sha256_utf8": "7959b6170eac3d9399741227bbe89aabd7cdf889e21b85beaca5dc0a1e6fa5c4",
+          "nonempty_ordinal": 136
+        },
+        {
+          "ref": "Meilah 7a:2",
+          "page_index": 12,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            50
+          ],
+          "span_sha256_utf8": "e2aa4d2e77af0f1cd8db0b9586227db3fb3f47eed83bb283460c3de808e18193",
+          "nonempty_ordinal": 137
+        },
+        {
+          "ref": "Meilah 7a:3",
+          "page_index": 12,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "91bd1e12226f3e4c0aca265a009526d1762e2383d6acf3fd9a29dac3107ff6ed",
+          "nonempty_ordinal": 138
+        },
+        {
+          "ref": "Meilah 7a:4",
+          "page_index": 12,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            76
+          ],
+          "span_sha256_utf8": "4d0bec39bc2b696d0a2826f8ea2419c5726039af7fb8ddc01bb67afeca6d9d3f",
+          "nonempty_ordinal": 139
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000015",
+      "spans": [
+        {
+          "ref": "Meilah 7b:3",
+          "page_index": 13,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "span_sha256_utf8": "16de50276c0a5b3d458b7d64db5e4d9d53d91c1336194ba1cbed8b250de65f72",
+          "nonempty_ordinal": 150
+        },
+        {
+          "ref": "Meilah 7b:4",
+          "page_index": 13,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            46
+          ],
+          "span_sha256_utf8": "fa3f5a6a9b05a04b851082aef4b6b0a17070072587bf89bb50feddcfd21aa8e4",
+          "nonempty_ordinal": 151
+        },
+        {
+          "ref": "Meilah 7b:5",
+          "page_index": 13,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            44
+          ],
+          "span_sha256_utf8": "23ef174c093ea0fa09fe21f1bb3252c5d7767de39c71cfa310912c428c4fc69a",
+          "nonempty_ordinal": 152
+        },
+        {
+          "ref": "Meilah 7b:6",
+          "page_index": 13,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            108
+          ],
+          "span_sha256_utf8": "173d89e555c1b773c07eff5ef87215ffe8de05831538cb47f2d3c3a745b6dffd",
+          "nonempty_ordinal": 153
+        },
+        {
+          "ref": "Meilah 7b:7",
+          "page_index": 13,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            111
+          ],
+          "span_sha256_utf8": "a4e0b1a714d1db3e9a83689f84c39795d2411987943575df912c41ee638fdfb3",
+          "nonempty_ordinal": 154
+        },
+        {
+          "ref": "Meilah 7b:8",
+          "page_index": 13,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "span_sha256_utf8": "5f88164d8dd8af31ec219c7c630b791d6e0baa2b92e8bbb33ec87ae4fca6b2a4",
+          "nonempty_ordinal": 155
+        },
+        {
+          "ref": "Meilah 7b:9",
+          "page_index": 13,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            99
+          ],
+          "span_sha256_utf8": "cd66637a4ccf56492bac9d6ce516a0d7afc951dc48416fe4f6298d236d7854a6",
+          "nonempty_ordinal": 156
+        },
+        {
+          "ref": "Meilah 7b:10",
+          "page_index": 13,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            104
+          ],
+          "span_sha256_utf8": "26460c36581f894d0ebbc70402e27ff9b484bc723d81020a0da0aab5c827ba21",
+          "nonempty_ordinal": 157
+        },
+        {
+          "ref": "Meilah 7b:11",
+          "page_index": 13,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "span_sha256_utf8": "d0e6f16a2985aaf87f19f9c5b0f377ce33c69a424d3cf8957d253acb278cc4e7",
+          "nonempty_ordinal": 158
+        },
+        {
+          "ref": "Meilah 7b:12",
+          "page_index": 13,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            137
+          ],
+          "span_sha256_utf8": "b83e28aba004371e7c7428052e5fd0ad44ab282a01d420b845a943ade74ae8da",
+          "nonempty_ordinal": 159
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000016",
+      "spans": [
+        {
+          "ref": "Meilah 7b:13",
+          "page_index": 13,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "span_sha256_utf8": "e3c505ab0d4987d793088f8b9283022ca296dbf99dcf296158a48001f00ff699",
+          "nonempty_ordinal": 160
+        },
+        {
+          "ref": "Meilah 7b:14",
+          "page_index": 13,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            107
+          ],
+          "span_sha256_utf8": "22f6b3c435802058642cd94a2685de1c6f024aacc59ab64c9a4a8d15b049d10a",
+          "nonempty_ordinal": 161
+        },
+        {
+          "ref": "Meilah 7b:15",
+          "page_index": 13,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            51
+          ],
+          "span_sha256_utf8": "dde2924f63e8499b0be0e308040399c39847d385d649a2bd09622f53e27d1c05",
+          "nonempty_ordinal": 162
+        },
+        {
+          "ref": "Meilah 7b:16",
+          "page_index": 13,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            185
+          ],
+          "span_sha256_utf8": "2286c018cb54d027ae7182e6a97e45e68fdff8601026cc82d0752d6ca63094c9",
+          "nonempty_ordinal": 163
+        },
+        {
+          "ref": "Meilah 7b:17",
+          "page_index": 13,
+          "segment_index": 16,
+          "offsets_codepoints": [
+            0,
+            56
+          ],
+          "span_sha256_utf8": "837e1249b8fc7fb8cf61d0fc05a5557ffdc94d123f9e8bf1cab25e046cccb701",
+          "nonempty_ordinal": 164
+        },
+        {
+          "ref": "Meilah 7b:18",
+          "page_index": 13,
+          "segment_index": 17,
+          "offsets_codepoints": [
+            0,
+            29
+          ],
+          "span_sha256_utf8": "4436f3c1ef16c8bfd4e120213c1308baae73957ad6c04e258a84c58fdf9d475b",
+          "nonempty_ordinal": 165
+        },
+        {
+          "ref": "Meilah 7b:19",
+          "page_index": 13,
+          "segment_index": 18,
+          "offsets_codepoints": [
+            0,
+            35
+          ],
+          "span_sha256_utf8": "8d7ee79674a84efcb6651ee9075c0b60c90d9ff36fd68d6f28b8bd5efe3f383e",
+          "nonempty_ordinal": 166
+        },
+        {
+          "ref": "Meilah 8a:1",
+          "page_index": 14,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            23
+          ],
+          "span_sha256_utf8": "3129c551f1b869f1fb3e3dd177c22821ce5a3f2063c078ccb3d1185eb2daff34",
+          "nonempty_ordinal": 167
+        },
+        {
+          "ref": "Meilah 8a:2",
+          "page_index": 14,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "c346d26218bbb2a3fddcde01f0d82600bef77cfafae8be3737cf44aea5225e43",
+          "nonempty_ordinal": 168
+        },
+        {
+          "ref": "Meilah 8a:3",
+          "page_index": 14,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            113
+          ],
+          "span_sha256_utf8": "ab1b543fc5fab2484986a8223ba8d6d910897e9403b0a3324debd9a092052770",
+          "nonempty_ordinal": 169
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000017",
+      "spans": [
+        {
+          "ref": "Meilah 8a:4",
+          "page_index": 14,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "span_sha256_utf8": "fcae78c9a85d7e0e67b434874867c4afabda53a411bce63dae6b103f9b12982e",
+          "nonempty_ordinal": 170
+        },
+        {
+          "ref": "Meilah 8a:5",
+          "page_index": 14,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "span_sha256_utf8": "16766c25446a05a759c6dcfd6f9c408bb32f185f68a676f2ed04d860417fabc2",
+          "nonempty_ordinal": 171
+        },
+        {
+          "ref": "Meilah 8a:6",
+          "page_index": 14,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            49
+          ],
+          "span_sha256_utf8": "b423975e65796997853504bbabde4f932c592a1b475e16ed3a98026dd42146e4",
+          "nonempty_ordinal": 172
+        },
+        {
+          "ref": "Meilah 8b:1",
+          "page_index": 15,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            9
+          ],
+          "span_sha256_utf8": "123c2f1c4c9a7cf797630e8491aa7bb0a4728a38666d536b7a13b2df3aae1967",
+          "nonempty_ordinal": 173
+        },
+        {
+          "ref": "Meilah 8b:2",
+          "page_index": 15,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            115
+          ],
+          "span_sha256_utf8": "3c3c6504f0fc2383f35039e2b3de62b53cb7d077cf9815c48dc254802515aa63",
+          "nonempty_ordinal": 174
+        },
+        {
+          "ref": "Meilah 8b:3",
+          "page_index": 15,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "d7216485f3ee12a0a0ffe3b42a793eb54bae4eb860acbc0e9d8333e1efba63c7",
+          "nonempty_ordinal": 175
+        },
+        {
+          "ref": "Meilah 8b:4",
+          "page_index": 15,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "9df203f6988a7e4ba0bad32c6e57e5247fcc975f98fe32f1d752983b4a48870c",
+          "nonempty_ordinal": 176
+        },
+        {
+          "ref": "Meilah 8b:5",
+          "page_index": 15,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "d7d81f226f9d58aee0cba2c55f7f39cf2f171c5e398c4761aecd595e8d8bf467",
+          "nonempty_ordinal": 177
+        },
+        {
+          "ref": "Meilah 8b:6",
+          "page_index": 15,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            69
+          ],
+          "span_sha256_utf8": "b2946f2b2668597c5f64462a4871827d487f9ea373948b6369031ca32904eec8",
+          "nonempty_ordinal": 178
+        },
+        {
+          "ref": "Meilah 8b:7",
+          "page_index": 15,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            61
+          ],
+          "span_sha256_utf8": "5f4c6273cf21433f1fe786ec1fc8822ac61263b1a367ee6b045d4588b9eb5e56",
+          "nonempty_ordinal": 179
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000021",
+      "spans": [
+        {
+          "ref": "Meilah 9b:8",
+          "page_index": 17,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            164
+          ],
+          "span_sha256_utf8": "14b159014d6c6014026112126240da3c972021afddcc8271858186a5039e09c0",
+          "nonempty_ordinal": 210
+        },
+        {
+          "ref": "Meilah 9b:9",
+          "page_index": 17,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            144
+          ],
+          "span_sha256_utf8": "21ee150237d725090fc772272b1d9aefe1cffdbbb8b8769075dfcb5bbdcaedcf",
+          "nonempty_ordinal": 211
+        },
+        {
+          "ref": "Meilah 9b:10",
+          "page_index": 17,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            48
+          ],
+          "span_sha256_utf8": "db4058d553507751ffe99124458cbae5a74911b965c61339c25be74d8237e010",
+          "nonempty_ordinal": 212
+        },
+        {
+          "ref": "Meilah 10a:1",
+          "page_index": 18,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "span_sha256_utf8": "516292378aa65fc3f2f17f2d0c1430055e38e169c6625ed4e1ee451ccb9c9354",
+          "nonempty_ordinal": 213
+        },
+        {
+          "ref": "Meilah 10a:2",
+          "page_index": 18,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            98
+          ],
+          "span_sha256_utf8": "7e3e028d74678236d36c606353f975f10aebae7cd7eb2a40285850ed55267acf",
+          "nonempty_ordinal": 214
+        },
+        {
+          "ref": "Meilah 10a:3",
+          "page_index": 18,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            18
+          ],
+          "span_sha256_utf8": "18d8a2a9fbe3ddf09156cf383f3e2e06eb3cf2c86830ee9744ab01c8509e6a16",
+          "nonempty_ordinal": 215
+        },
+        {
+          "ref": "Meilah 10a:4",
+          "page_index": 18,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            109
+          ],
+          "span_sha256_utf8": "a2ee47ede88392b04c6a471ac930089fe87e6bdb151da0d6383ec6a336189dd9",
+          "nonempty_ordinal": 216
+        },
+        {
+          "ref": "Meilah 10a:5",
+          "page_index": 18,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            132
+          ],
+          "span_sha256_utf8": "28f7bee2399299b94cc6ef86c1b48f61971d8784b6eb85b64769a4440af18a6d",
+          "nonempty_ordinal": 217
+        },
+        {
+          "ref": "Meilah 10a:6",
+          "page_index": 18,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            114
+          ],
+          "span_sha256_utf8": "97f17f07f181547baccdf6665fa187ad22cba3125d3bdfdbf775510e18b9f3f4",
+          "nonempty_ordinal": 218
+        },
+        {
+          "ref": "Meilah 10a:7",
+          "page_index": 18,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "span_sha256_utf8": "9475d337f97aadf666eac25aa026d5fd952934c6c19da64a758ad4865097a399",
+          "nonempty_ordinal": 219
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000022",
+      "spans": [
+        {
+          "ref": "Meilah 10a:8",
+          "page_index": 18,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            80
+          ],
+          "span_sha256_utf8": "9728738e3502f676416e27fcac04c28adfdd61cd50aa39680ba5fbaab89fae8c",
+          "nonempty_ordinal": 220
+        },
+        {
+          "ref": "Meilah 10a:9",
+          "page_index": 18,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            76
+          ],
+          "span_sha256_utf8": "e384e45823a70ef73b874b421c1aea62a712bef08a9f383b3f50d344dc434fd0",
+          "nonempty_ordinal": 221
+        },
+        {
+          "ref": "Meilah 10b:1",
+          "page_index": 19,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "span_sha256_utf8": "4aeadc0d578980583cdca526750214527c88d08fe164139725b713b0a9f21b2e",
+          "nonempty_ordinal": 222
+        },
+        {
+          "ref": "Meilah 10b:2",
+          "page_index": 19,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            97
+          ],
+          "span_sha256_utf8": "1dd71bb3ba29a8862efe9ebf18b02110a913516ab5cf601ff1f5dafefa2a43d4",
+          "nonempty_ordinal": 223
+        },
+        {
+          "ref": "Meilah 10b:3",
+          "page_index": 19,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "span_sha256_utf8": "d95b7d14ac3aafb16c8403ab1a507277750ba3b1d0faae45d5d737d30fe2e748",
+          "nonempty_ordinal": 224
+        },
+        {
+          "ref": "Meilah 10b:4",
+          "page_index": 19,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            145
+          ],
+          "span_sha256_utf8": "6895beeb2329587044025ac9b1ae3319326ba752005d7d9e7df5f77b5db30fc5",
+          "nonempty_ordinal": 225
+        },
+        {
+          "ref": "Meilah 10b:5",
+          "page_index": 19,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            138
+          ],
+          "span_sha256_utf8": "90bcefc5b1369786d4d566edfb2f86b16b6ffa9b027cc67d921001dc463e3145",
+          "nonempty_ordinal": 226
+        },
+        {
+          "ref": "Meilah 10b:6",
+          "page_index": 19,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "aa3b9ddb4019fb8792787f576495b4b14e4c8b6f3056281b096adabb8ab28b94",
+          "nonempty_ordinal": 227
+        },
+        {
+          "ref": "Meilah 10b:7",
+          "page_index": 19,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "e65957847bd30719fc834a5fa0475c6bc42ca3d650bb72d44be6163c054abb9e",
+          "nonempty_ordinal": 228
+        },
+        {
+          "ref": "Meilah 10b:8",
+          "page_index": 19,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "4be6c169c57666e5429a7fc27a554659c170f82c773bee576c3c084dc2175f5b",
+          "nonempty_ordinal": 229
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000024",
+      "spans": [
+        {
+          "ref": "Meilah 11a:11",
+          "page_index": 20,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            101
+          ],
+          "span_sha256_utf8": "821772858e7d760c956a51102932b61d5d8f00c3598f3ba9848f067d6bdd766e",
+          "nonempty_ordinal": 240
+        },
+        {
+          "ref": "Meilah 11a:12",
+          "page_index": 20,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "6c59656d7e6ae850369aa011ad6071d57818db88e70d5643d4767226d169b2a2",
+          "nonempty_ordinal": 241
+        },
+        {
+          "ref": "Meilah 11a:13",
+          "page_index": 20,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "9641b434ec00e942bb3dd6b1f842a39db4f88c3a00ff76ae749aa0f95e8c491f",
+          "nonempty_ordinal": 242
+        },
+        {
+          "ref": "Meilah 11a:14",
+          "page_index": 20,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            123
+          ],
+          "span_sha256_utf8": "03726b0a048f98fad7f4180b1fc414299c07f14ae68c8641d41417e52c8594f8",
+          "nonempty_ordinal": 243
+        },
+        {
+          "ref": "Meilah 11a:15",
+          "page_index": 20,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            135
+          ],
+          "span_sha256_utf8": "1ab8e1ec0aadf0669b61d683045f51258a78aaddc70835919b9ab0d77e89b8dd",
+          "nonempty_ordinal": 244
+        },
+        {
+          "ref": "Meilah 11a:16",
+          "page_index": 20,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "span_sha256_utf8": "049f781e058356692a35c869f70f600417fc318c133b51c9874d1907af4deb66",
+          "nonempty_ordinal": 245
+        },
+        {
+          "ref": "Meilah 11a:17",
+          "page_index": 20,
+          "segment_index": 16,
+          "offsets_codepoints": [
+            0,
+            47
+          ],
+          "span_sha256_utf8": "e56de97a8792be412f314b773abbe56c10a04db908fad486bd7b3b1b9841ea6b",
+          "nonempty_ordinal": 246
+        },
+        {
+          "ref": "Meilah 11b:1",
+          "page_index": 21,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            39
+          ],
+          "span_sha256_utf8": "b448af2f5b1ec22ffacc21d2bfbc726013d39f0b61598a920e388ffd394c31b2",
+          "nonempty_ordinal": 247
+        },
+        {
+          "ref": "Meilah 11b:2",
+          "page_index": 21,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            102
+          ],
+          "span_sha256_utf8": "8c0cf04fbbe8b1263437147ce2e704ae53de07565d50de66071322cb9088c06b",
+          "nonempty_ordinal": 248
+        },
+        {
+          "ref": "Meilah 11b:3",
+          "page_index": 21,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            82
+          ],
+          "span_sha256_utf8": "1b5fb1680ce88c0b9dfcba6931593e48fd486beb7f732108f37538a0999cdadd",
+          "nonempty_ordinal": 249
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000025",
+      "spans": [
+        {
+          "ref": "Meilah 11b:4",
+          "page_index": 21,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            95
+          ],
+          "span_sha256_utf8": "436de67c5bdb58e6812c3be6d75dec25ae3567794074762c438bb8a64f2a7d9f",
+          "nonempty_ordinal": 250
+        },
+        {
+          "ref": "Meilah 11b:5",
+          "page_index": 21,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            69
+          ],
+          "span_sha256_utf8": "ed186d981ac4839539fb9c736ee2310888dd69b4fa0db81328bd48952ad9890d",
+          "nonempty_ordinal": 251
+        },
+        {
+          "ref": "Meilah 11b:6",
+          "page_index": 21,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            60
+          ],
+          "span_sha256_utf8": "c1851a1daeb34711894195df94d7c95dcf23903ae01926d0e745962f50e75a75",
+          "nonempty_ordinal": 252
+        },
+        {
+          "ref": "Meilah 11b:7",
+          "page_index": 21,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            54
+          ],
+          "span_sha256_utf8": "79b3dbe24b1e23e25846b5bad620da8d2f009718975a51e52585fe6808a4ca4a",
+          "nonempty_ordinal": 253
+        },
+        {
+          "ref": "Meilah 11b:8",
+          "page_index": 21,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            53
+          ],
+          "span_sha256_utf8": "a3f7b9511edbd1e0e5ac6b1570db4bcc21b59659e105382abe67fc212fd0ab69",
+          "nonempty_ordinal": 254
+        },
+        {
+          "ref": "Meilah 11b:9",
+          "page_index": 21,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            46
+          ],
+          "span_sha256_utf8": "fcc234e986c1c36ebddbd520da2752083dd630c25ff3bb0d15372d08e67b90be",
+          "nonempty_ordinal": 255
+        },
+        {
+          "ref": "Meilah 11b:10",
+          "page_index": 21,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            60
+          ],
+          "span_sha256_utf8": "ed5915d3f9d8c5c3ff337d566376575d3eb20fd4b14cf9e40fc9e5542847c413",
+          "nonempty_ordinal": 256
+        },
+        {
+          "ref": "Meilah 11b:11",
+          "page_index": 21,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "9c72a14fa8713773d077275859936200773c76240089e2b723673a42ac73fadf",
+          "nonempty_ordinal": 257
+        },
+        {
+          "ref": "Meilah 11b:12",
+          "page_index": 21,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            242
+          ],
+          "span_sha256_utf8": "f88cdee7b074e741f7baf97d970974e0fb7bf4ebdfce7fb6f2aab49609afa4e6",
+          "nonempty_ordinal": 258
+        },
+        {
+          "ref": "Meilah 11b:13",
+          "page_index": 21,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "span_sha256_utf8": "109e1f69a23a6b87050a4cf8aadb48d11f26ac19c00219a6dab50fbaee463d09",
+          "nonempty_ordinal": 259
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000026",
+      "spans": [
+        {
+          "ref": "Meilah 11b:14",
+          "page_index": 21,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            40
+          ],
+          "span_sha256_utf8": "b0b9cc2bc114b90206f745385b791ef51c66d80737fcbad7f770979a639eb7ee",
+          "nonempty_ordinal": 260
+        },
+        {
+          "ref": "Meilah 11b:15",
+          "page_index": 21,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            39
+          ],
+          "span_sha256_utf8": "23437a2e14b3629099f72961a7d629b9c7e2c33d95ced869e576c2484a14a540",
+          "nonempty_ordinal": 261
+        },
+        {
+          "ref": "Meilah 11b:16",
+          "page_index": 21,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            50
+          ],
+          "span_sha256_utf8": "c5521f1f09c7b062879f5de76bb759e1eef1942c0f1a7fafec70139b1e460abe",
+          "nonempty_ordinal": 262
+        },
+        {
+          "ref": "Meilah 11b:17",
+          "page_index": 21,
+          "segment_index": 16,
+          "offsets_codepoints": [
+            0,
+            39
+          ],
+          "span_sha256_utf8": "e04abc33b544d0bee8e97b5fc32aeb3ffc241be67a37ed06490b8eebf34c485d",
+          "nonempty_ordinal": 263
+        },
+        {
+          "ref": "Meilah 11b:18",
+          "page_index": 21,
+          "segment_index": 17,
+          "offsets_codepoints": [
+            0,
+            168
+          ],
+          "span_sha256_utf8": "0424aad74c7b5552e3b9346e2d7c22809d4cbdd7d0e0d04c1a2d1b3f33d3bebc",
+          "nonempty_ordinal": 264
+        },
+        {
+          "ref": "Meilah 11b:19",
+          "page_index": 21,
+          "segment_index": 18,
+          "offsets_codepoints": [
+            0,
+            37
+          ],
+          "span_sha256_utf8": "83352aa0b93b091079b7bf5aa6923b70314621d2db359eac8dcb01962f3b1de1",
+          "nonempty_ordinal": 265
+        },
+        {
+          "ref": "Meilah 12a:1",
+          "page_index": 22,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            67
+          ],
+          "span_sha256_utf8": "b880fa8d95bac2236ad21a0f263cfb7fec304dacf6a498e9f6eed27aa5a0a2e0",
+          "nonempty_ordinal": 266
+        },
+        {
+          "ref": "Meilah 12a:2",
+          "page_index": 22,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            104
+          ],
+          "span_sha256_utf8": "41b0b759df70841025c434006f4139c128781c43c6a2a6c08c18d6f4f7581441",
+          "nonempty_ordinal": 267
+        },
+        {
+          "ref": "Meilah 12a:3",
+          "page_index": 22,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "span_sha256_utf8": "792cf717960a1476a6024397600c06c4e31557b1f598a8a34fccd763cb4c1e99",
+          "nonempty_ordinal": 268
+        },
+        {
+          "ref": "Meilah 12a:4",
+          "page_index": 22,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "span_sha256_utf8": "d47f59c4cb82ca60ba3f0e74e99a0fd1455c5b1d24d99b56a23b6370281bc70c",
+          "nonempty_ordinal": 269
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000031",
+      "spans": [
+        {
+          "ref": "Meilah 13b:6",
+          "page_index": 25,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            69
+          ],
+          "span_sha256_utf8": "7ceac2c9b3a197e6233e62bee5aaee52c106ba23a6e8a05d63d9147b497669e8",
+          "nonempty_ordinal": 310
+        },
+        {
+          "ref": "Meilah 13b:7",
+          "page_index": 25,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "span_sha256_utf8": "1b971fb3ecaa5e18c7b51bdb0246ed4730838bf046685eaa6da69fd3b85cbae8",
+          "nonempty_ordinal": 311
+        },
+        {
+          "ref": "Meilah 13b:8",
+          "page_index": 25,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "span_sha256_utf8": "0363b54b4df72a56773d4d9e9ddf895a9f022b2446176995acf7e3c1c09d644b",
+          "nonempty_ordinal": 312
+        },
+        {
+          "ref": "Meilah 13b:9",
+          "page_index": 25,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            109
+          ],
+          "span_sha256_utf8": "47ac8f9b8249dd8b49f3f8f811395fec55f6f79a6f02141828a0fdf08c2273e1",
+          "nonempty_ordinal": 313
+        },
+        {
+          "ref": "Meilah 13b:10",
+          "page_index": 25,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            156
+          ],
+          "span_sha256_utf8": "98f83d3fab793ac8ba08c703d606c2c363ef88b7a3f6749ad77724aa87a34d2a",
+          "nonempty_ordinal": 314
+        },
+        {
+          "ref": "Meilah 14a:1",
+          "page_index": 26,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            67
+          ],
+          "span_sha256_utf8": "920a022261a1e23db71b03fbf61bc808602d3a9026cdef353d0e5bb915f9f03d",
+          "nonempty_ordinal": 315
+        },
+        {
+          "ref": "Meilah 14a:2",
+          "page_index": 26,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "64209ee55c9ebb0d456b7896ee5a5556e4aabccc497499337ab36a8451f28f0c",
+          "nonempty_ordinal": 316
+        },
+        {
+          "ref": "Meilah 14a:3",
+          "page_index": 26,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            91
+          ],
+          "span_sha256_utf8": "4f2552f4f985b4817519a2422e1244d8696423f1ed34fc1398977476fd5cfd9a",
+          "nonempty_ordinal": 317
+        },
+        {
+          "ref": "Meilah 14a:4",
+          "page_index": 26,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            57
+          ],
+          "span_sha256_utf8": "90f28848741cca13f1ce05f697651fa63fb18868c0b4f5eead4c716e8c8aebd6",
+          "nonempty_ordinal": 318
+        },
+        {
+          "ref": "Meilah 14a:5",
+          "page_index": 26,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            41
+          ],
+          "span_sha256_utf8": "738c9418f2245715856d7ecb61039cbd129614ee57e70516a420041704430fc7",
+          "nonempty_ordinal": 319
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000032",
+      "spans": [
+        {
+          "ref": "Meilah 14a:6",
+          "page_index": 26,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            54
+          ],
+          "span_sha256_utf8": "eec25c6018f79690017a134bd7d13d0f13ea5f7fbe2dd2e1a1e367ff42fb848d",
+          "nonempty_ordinal": 320
+        },
+        {
+          "ref": "Meilah 14a:7",
+          "page_index": 26,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "204d81c41d660da2a5d8a976611eeb3f33644464b16399b06f1d61a6fa64182f",
+          "nonempty_ordinal": 321
+        },
+        {
+          "ref": "Meilah 14a:8",
+          "page_index": 26,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            65
+          ],
+          "span_sha256_utf8": "f78653c7ca8d24d80256c8e29b6d848b0b50590510ac5359450458e334add2a8",
+          "nonempty_ordinal": 322
+        },
+        {
+          "ref": "Meilah 14a:9",
+          "page_index": 26,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            118
+          ],
+          "span_sha256_utf8": "b75dae95bd81adcf0a048beaca2665665d4fa3c7cd53cfc5b2f23829b4562e79",
+          "nonempty_ordinal": 323
+        },
+        {
+          "ref": "Meilah 14a:10",
+          "page_index": 26,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            99
+          ],
+          "span_sha256_utf8": "46c375e33b53d18fb3f49b661872bc023c4efb754f06cc7f8b6bfc18f1369de2",
+          "nonempty_ordinal": 324
+        },
+        {
+          "ref": "Meilah 14a:11",
+          "page_index": 26,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            67
+          ],
+          "span_sha256_utf8": "f25e489c2694678140054aafa454322ef7935678b4cda214ed674e1d30d0e9d7",
+          "nonempty_ordinal": 325
+        },
+        {
+          "ref": "Meilah 14a:12",
+          "page_index": 26,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            61
+          ],
+          "span_sha256_utf8": "3198a30f4687271032311c6ae39ac85aefbc083e4f3bef39bdc2026081024c9a",
+          "nonempty_ordinal": 326
+        },
+        {
+          "ref": "Meilah 14a:13",
+          "page_index": 26,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            24
+          ],
+          "span_sha256_utf8": "827967199e40df4114968ecdec62e28e3ca99342e9ff4e9f573c288a50c13f59",
+          "nonempty_ordinal": 327
+        },
+        {
+          "ref": "Meilah 14b:1",
+          "page_index": 27,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "8a26235dc03ef1851d01939f19e501305a3ebfe3ac305f9de0c796f69c13a282",
+          "nonempty_ordinal": 328
+        },
+        {
+          "ref": "Meilah 14b:2",
+          "page_index": 27,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            82
+          ],
+          "span_sha256_utf8": "832b6ddd4f80447e0a043457e2f26c64c6fe0e8a5b13603ae60aa2c50e523fbe",
+          "nonempty_ordinal": 329
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000033",
+      "spans": [
+        {
+          "ref": "Meilah 14b:3",
+          "page_index": 27,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            18
+          ],
+          "span_sha256_utf8": "7da4d168a5fbfc78b1c6a73ed39ae147399e755f1e1efa8f6d15e1d3d400b0b9",
+          "nonempty_ordinal": 330
+        },
+        {
+          "ref": "Meilah 14b:4",
+          "page_index": 27,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "span_sha256_utf8": "4f971c7e874b58b5a03cda769aa7f0bc8b98fe11c7f3b01ce6aef33d5cacfba6",
+          "nonempty_ordinal": 331
+        },
+        {
+          "ref": "Meilah 14b:5",
+          "page_index": 27,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "aa062b0cba78dfca5ab17110b6a92452772c57f059bb3b2b3e8300fdc3389ee5",
+          "nonempty_ordinal": 332
+        },
+        {
+          "ref": "Meilah 14b:6",
+          "page_index": 27,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            126
+          ],
+          "span_sha256_utf8": "b295e3fd4210a00c46f70de8a561ee9b88577b0bd6261c2551ada12bcd509de3",
+          "nonempty_ordinal": 333
+        },
+        {
+          "ref": "Meilah 14b:7",
+          "page_index": 27,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            71
+          ],
+          "span_sha256_utf8": "15263562bfb65f4afb2813b9013dacbfcb21c6aef60299823fa80c36038d3350",
+          "nonempty_ordinal": 334
+        },
+        {
+          "ref": "Meilah 14b:8",
+          "page_index": 27,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "span_sha256_utf8": "61236b7497a754448ea2abb5f6623973f36ae1d7eae7ce23be5b9d197bc3cf47",
+          "nonempty_ordinal": 335
+        },
+        {
+          "ref": "Meilah 14b:9",
+          "page_index": 27,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "450119c65e1a924182ffe7669ee079f2d3a59576a2c1ae6f3579385a62fb59b2",
+          "nonempty_ordinal": 336
+        },
+        {
+          "ref": "Meilah 14b:10",
+          "page_index": 27,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "f77df6520cdf33c135d0456517e777442889a6be8aa074f7a1f3041f5a6b958e",
+          "nonempty_ordinal": 337
+        },
+        {
+          "ref": "Meilah 15a:1",
+          "page_index": 28,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            190
+          ],
+          "span_sha256_utf8": "c1754637b59d0b5bc7a03018059a803d2b937fea34d3e4877535ded270e830a9",
+          "nonempty_ordinal": 338
+        },
+        {
+          "ref": "Meilah 15a:2",
+          "page_index": 28,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            172
+          ],
+          "span_sha256_utf8": "9c8bddeba94b972bbf8bdf1d60ae893f94e3a7c4edc731c9dab211adae6deecb",
+          "nonempty_ordinal": 339
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000035",
+      "spans": [
+        {
+          "ref": "Meilah 15a:13",
+          "page_index": 28,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "span_sha256_utf8": "c7d240000e480dc5a74daac90be16fa582b7732401fe82e52cb1d6735384e793",
+          "nonempty_ordinal": 350
+        },
+        {
+          "ref": "Meilah 15b:1",
+          "page_index": 29,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            145
+          ],
+          "span_sha256_utf8": "9d47ecdeb4be26f733c4b73bfc34510224436348633f94101642a7723eb3a175",
+          "nonempty_ordinal": 351
+        },
+        {
+          "ref": "Meilah 15b:2",
+          "page_index": 29,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            193
+          ],
+          "span_sha256_utf8": "2026f9561dd147a74c69645df10828595906b1fe9cca240db253c56903dd4da3",
+          "nonempty_ordinal": 352
+        },
+        {
+          "ref": "Meilah 15b:3",
+          "page_index": 29,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "668a31418729ab55117a05169ddaeffe042a46d5ecdbd1f84c786d7532f86b89",
+          "nonempty_ordinal": 353
+        },
+        {
+          "ref": "Meilah 15b:4",
+          "page_index": 29,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            141
+          ],
+          "span_sha256_utf8": "66acdd4739f58c7ac8d7b0d227241e86bf18294f0c08bf930c0ee50cae5cd0e2",
+          "nonempty_ordinal": 354
+        },
+        {
+          "ref": "Meilah 15b:5",
+          "page_index": 29,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "3711b90ba1174d79c809aa648430e9f6d34d39836a8299067a7f2c329ef3b58a",
+          "nonempty_ordinal": 355
+        },
+        {
+          "ref": "Meilah 15b:6",
+          "page_index": 29,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "span_sha256_utf8": "c5f6a42fea94f33ca0c03d17340ee91808f9a17851f1a8d57862fe4eff441016",
+          "nonempty_ordinal": 356
+        },
+        {
+          "ref": "Meilah 15b:7",
+          "page_index": 29,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            37
+          ],
+          "span_sha256_utf8": "9a700f36e8e26e92a7ee925dcc7bcd3398c9a4aee043d7a281e0b6db2c6114b2",
+          "nonempty_ordinal": 357
+        },
+        {
+          "ref": "Meilah 15b:8",
+          "page_index": 29,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            151
+          ],
+          "span_sha256_utf8": "639a85d3275e65043aacfd303bb79b2824b66ddd8731956d2b9d4fa393ea8e1d",
+          "nonempty_ordinal": 358
+        },
+        {
+          "ref": "Meilah 15b:9",
+          "page_index": 29,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "span_sha256_utf8": "4c3a9d5b1c2afbab4ae48a4d1d6dffd47445feb4d755e431c6608942d4a2d6be",
+          "nonempty_ordinal": 359
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000037",
+      "spans": [
+        {
+          "ref": "Meilah 16a:5",
+          "page_index": 30,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            102
+          ],
+          "span_sha256_utf8": "c824537f6d9f0e0d3f586b6766d6739b6ff22d76729aad6c884925c07c294a94",
+          "nonempty_ordinal": 370
+        },
+        {
+          "ref": "Meilah 16a:6",
+          "page_index": 30,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            171
+          ],
+          "span_sha256_utf8": "5373e9237cbd55f229314aa779296283c99e6a85f51a3cfb7da33d7fdab5436c",
+          "nonempty_ordinal": 371
+        },
+        {
+          "ref": "Meilah 16a:7",
+          "page_index": 30,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "span_sha256_utf8": "3d2b6db880a02e808943b88828fb874ae5b32e4cedaa7573b4d56709341feecf",
+          "nonempty_ordinal": 372
+        },
+        {
+          "ref": "Meilah 16b:1",
+          "page_index": 31,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            71
+          ],
+          "span_sha256_utf8": "27441e9e588e0a68077ab6601af699c31f4ed7cd8c838aad7b16025ec05f714a",
+          "nonempty_ordinal": 373
+        },
+        {
+          "ref": "Meilah 16b:2",
+          "page_index": 31,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            213
+          ],
+          "span_sha256_utf8": "69064f41c087af0a0c0e6cba55e0b6e917f2e286507a78f14ca432f8a5945dea",
+          "nonempty_ordinal": 374
+        },
+        {
+          "ref": "Meilah 16b:3",
+          "page_index": 31,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            59
+          ],
+          "span_sha256_utf8": "78a197dcf07713cdcaa9bc614c797089484ccc98308d34fa249fa1cbc8ea0585",
+          "nonempty_ordinal": 375
+        },
+        {
+          "ref": "Meilah 16b:4",
+          "page_index": 31,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            29
+          ],
+          "span_sha256_utf8": "9f7cedc1e3beaccaf5be82a68525431eafb3f4ce24cfb2d7963e74261e85d4bc",
+          "nonempty_ordinal": 376
+        },
+        {
+          "ref": "Meilah 16b:5",
+          "page_index": 31,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            156
+          ],
+          "span_sha256_utf8": "1191df720fc4789660919ecfd92f5da2421ab041f1c5db926a07e9bcc4957f06",
+          "nonempty_ordinal": 377
+        },
+        {
+          "ref": "Meilah 16b:6",
+          "page_index": 31,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "span_sha256_utf8": "0a9098adc381eb50eac5299d02f69218e04f3a9eeae8c47eabd31fff00a7117e",
+          "nonempty_ordinal": 378
+        },
+        {
+          "ref": "Meilah 16b:7",
+          "page_index": 31,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            26
+          ],
+          "span_sha256_utf8": "76ec18bbbb7d93468390df3bcdd582ba1c74b8964dfd5a36f84db3f63ed07c10",
+          "nonempty_ordinal": 379
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000038",
+      "spans": [
+        {
+          "ref": "Meilah 16b:8",
+          "page_index": 31,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            74
+          ],
+          "span_sha256_utf8": "8f9f8982bf995ed0dd3246c7f194e688d099aeafdbc7da0821bfbe4bea59a0ce",
+          "nonempty_ordinal": 380
+        },
+        {
+          "ref": "Meilah 17a:1",
+          "page_index": 32,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "f242f2f02b96264f7495fb809afccf78e75f4a2cedbe27fb587af2db1e745cbf",
+          "nonempty_ordinal": 381
+        },
+        {
+          "ref": "Meilah 17a:2",
+          "page_index": 32,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            114
+          ],
+          "span_sha256_utf8": "53bb074003da3a8bcf1882728ac944e140acd90e102bdcbeaf490e97d73767ee",
+          "nonempty_ordinal": 382
+        },
+        {
+          "ref": "Meilah 17a:3",
+          "page_index": 32,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "be9ec8096f32604e9812577ad2186469f354470a2873e3c1179ba678eb55b445",
+          "nonempty_ordinal": 383
+        },
+        {
+          "ref": "Meilah 17a:4",
+          "page_index": 32,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            60
+          ],
+          "span_sha256_utf8": "ea2240d3d097be017a39c6e903cde9256bc4213ea4f84d1b035e51e39161830e",
+          "nonempty_ordinal": 384
+        },
+        {
+          "ref": "Meilah 17a:5",
+          "page_index": 32,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            107
+          ],
+          "span_sha256_utf8": "9806f0ac652aa2b42c18fd12fc4ef84009afaf734c93d9dd4bae8eacae0d958e",
+          "nonempty_ordinal": 385
+        },
+        {
+          "ref": "Meilah 17a:6",
+          "page_index": 32,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            40
+          ],
+          "span_sha256_utf8": "3428fbc1536b33dbfbd8710c16670fbddc4d578075afee57165c101c51680012",
+          "nonempty_ordinal": 386
+        },
+        {
+          "ref": "Meilah 17a:7",
+          "page_index": 32,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "span_sha256_utf8": "836b16e839e4dde45de10e0db0e3d19dd0aa6bdebe6c1039c2d630dfa22c77db",
+          "nonempty_ordinal": 387
+        },
+        {
+          "ref": "Meilah 17a:8",
+          "page_index": 32,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            75
+          ],
+          "span_sha256_utf8": "611cf985c9a50900b0b40bcbf8a32106974c0092eb8a9c13f3b3f7544e3282c6",
+          "nonempty_ordinal": 388
+        },
+        {
+          "ref": "Meilah 17a:9",
+          "page_index": 32,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            42
+          ],
+          "span_sha256_utf8": "8a3b637debe649a02cce42031413c3e80a1103d7dbc3b8611f8e06666ca9e5a3",
+          "nonempty_ordinal": 389
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000039",
+      "spans": [
+        {
+          "ref": "Meilah 17a:10",
+          "page_index": 32,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            120
+          ],
+          "span_sha256_utf8": "c229774bccfd6753ae4e05a14144f3b19d6c9156ee85c418d6d590db3d3b8cae",
+          "nonempty_ordinal": 390
+        },
+        {
+          "ref": "Meilah 17a:11",
+          "page_index": 32,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            162
+          ],
+          "span_sha256_utf8": "33a3b826decf3dfae6c9d145704c0cc4cfeb93978257fedaf2acb5c75063e2e4",
+          "nonempty_ordinal": 391
+        },
+        {
+          "ref": "Meilah 17a:12",
+          "page_index": 32,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            172
+          ],
+          "span_sha256_utf8": "3a8ed1827f1849315f127dedf8c6e318b3d8585c57178d816e222b66da71e03b",
+          "nonempty_ordinal": 392
+        },
+        {
+          "ref": "Meilah 17a:13",
+          "page_index": 32,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            123
+          ],
+          "span_sha256_utf8": "b8688c12db554f4c2fec6e43f007f737f6d9198df1bb1ac784fe38b0dc1adaf5",
+          "nonempty_ordinal": 393
+        },
+        {
+          "ref": "Meilah 17a:14",
+          "page_index": 32,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "4bc7890d461b36fe9513e913223a2586d029820f2622d4203db2dfaa3104e767",
+          "nonempty_ordinal": 394
+        },
+        {
+          "ref": "Meilah 17a:15",
+          "page_index": 32,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            52
+          ],
+          "span_sha256_utf8": "2d5c4f65f1a5ee93218441ce019323ac6cc8d6395903e14593f5cb2b583591bf",
+          "nonempty_ordinal": 395
+        },
+        {
+          "ref": "Meilah 17b:1",
+          "page_index": 33,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "span_sha256_utf8": "85feeff8c3ab4b8bd44e3efe2dd7322ae860789d46e5ee35f1d5ba446c50c183",
+          "nonempty_ordinal": 396
+        },
+        {
+          "ref": "Meilah 17b:2",
+          "page_index": 33,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            148
+          ],
+          "span_sha256_utf8": "043fa290d109a38d6a7d16b9fc911969e90906475efc68d4006de4ad045c98db",
+          "nonempty_ordinal": 397
+        },
+        {
+          "ref": "Meilah 17b:3",
+          "page_index": 33,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            99
+          ],
+          "span_sha256_utf8": "e72fd590e228d6f129e51165811abc9f65ddf88baefe1ba26108a7bdda817203",
+          "nonempty_ordinal": 398
+        },
+        {
+          "ref": "Meilah 17b:4",
+          "page_index": 33,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            200
+          ],
+          "span_sha256_utf8": "6055997aade1d11e478374c86005502b58314deb6343a397a9b1bb29976e5bc2",
+          "nonempty_ordinal": 399
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000042",
+      "spans": [
+        {
+          "ref": "Meilah 18a:12",
+          "page_index": 34,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            27
+          ],
+          "span_sha256_utf8": "421d27133ab4ca06048374c1cf2c47ce099a89848e1b0edb230282e8e567ae8d",
+          "nonempty_ordinal": 420
+        },
+        {
+          "ref": "Meilah 18a:13",
+          "page_index": 34,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            53
+          ],
+          "span_sha256_utf8": "bcdf1d6f5cbdeb3329e5164fcbe2176e84871d40dde1da1e1214eeea8592a6eb",
+          "nonempty_ordinal": 421
+        },
+        {
+          "ref": "Meilah 18a:14",
+          "page_index": 34,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            143
+          ],
+          "span_sha256_utf8": "9c2f2da962f769dd48a034a5387aa0ddfee1999fe052b68d6220ea17a405908c",
+          "nonempty_ordinal": 422
+        },
+        {
+          "ref": "Meilah 18b:1",
+          "page_index": 35,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            25
+          ],
+          "span_sha256_utf8": "836d63ff90f2410f20d6526a8d5bd27513174f01b33f5e3f15434f692113baa0",
+          "nonempty_ordinal": 423
+        },
+        {
+          "ref": "Meilah 18b:2",
+          "page_index": 35,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            33
+          ],
+          "span_sha256_utf8": "c1d5873c9f5173c744340816b744f6368fe0ef4a950137a0afb38db04f3c2716",
+          "nonempty_ordinal": 424
+        },
+        {
+          "ref": "Meilah 18b:3",
+          "page_index": 35,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            33
+          ],
+          "span_sha256_utf8": "f0607414242ea9e30f94b9714cca70d2824123e014ece653c115b21806fb216d",
+          "nonempty_ordinal": 425
+        },
+        {
+          "ref": "Meilah 18b:4",
+          "page_index": 35,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "c376016bb7e28790b88c3292d139d280ff70a03a7389f46835c600b6a25b28a8",
+          "nonempty_ordinal": 426
+        },
+        {
+          "ref": "Meilah 18b:5",
+          "page_index": 35,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            120
+          ],
+          "span_sha256_utf8": "d9202bcd2b6e44745635a79ffcaff07228d87c2f440dfe8f5d51f8f8c4b3772f",
+          "nonempty_ordinal": 427
+        },
+        {
+          "ref": "Meilah 18b:6",
+          "page_index": 35,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            120
+          ],
+          "span_sha256_utf8": "229c90a89a9d8e50d30cc723adda030f0a1b709d39d7ce9c10543639e97f786e",
+          "nonempty_ordinal": 428
+        },
+        {
+          "ref": "Meilah 18b:7",
+          "page_index": 35,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "span_sha256_utf8": "4b5f6470450431d13a63a0113b23d4f3823a06dd1e4cdedd0894fbaf72d5985f",
+          "nonempty_ordinal": 429
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000043",
+      "spans": [
+        {
+          "ref": "Meilah 18b:8",
+          "page_index": 35,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            111
+          ],
+          "span_sha256_utf8": "323c121b567bdc2ce961584004efb2696ccba4dcb3ab38f210c231e1c9a16056",
+          "nonempty_ordinal": 430
+        },
+        {
+          "ref": "Meilah 18b:9",
+          "page_index": 35,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            33
+          ],
+          "span_sha256_utf8": "6cae32dd753f565c60f57cbe96a1329ef240d4dc40fa76acbfeee511e49874d5",
+          "nonempty_ordinal": 431
+        },
+        {
+          "ref": "Meilah 18b:10",
+          "page_index": 35,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            151
+          ],
+          "span_sha256_utf8": "6dd02a67e10e39e19ba420efd16274f4cd3f94710421895a78bf5c512ce6b5e6",
+          "nonempty_ordinal": 432
+        },
+        {
+          "ref": "Meilah 18b:11",
+          "page_index": 35,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            119
+          ],
+          "span_sha256_utf8": "98e91f866109fbfdbc1ae14afef24cddb2d3c849cbc8dca20f90a00bd4354987",
+          "nonempty_ordinal": 433
+        },
+        {
+          "ref": "Meilah 18b:12",
+          "page_index": 35,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            22
+          ],
+          "span_sha256_utf8": "cc7fcc4d61df44dc9e86ec484b689fb222bbd1158be34426b1289cee2c767e3c",
+          "nonempty_ordinal": 434
+        },
+        {
+          "ref": "Meilah 19a:1",
+          "page_index": 36,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            20
+          ],
+          "span_sha256_utf8": "83232103a18cd7a475a5d5ac3f26c4c5efd620dc2e7b7a6076c77c6c5c4a416b",
+          "nonempty_ordinal": 435
+        },
+        {
+          "ref": "Meilah 19a:2",
+          "page_index": 36,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "span_sha256_utf8": "85a273b0e355d81cd1e9afec8ba86bbbf5fb7f8d8f9b02eafeb488d71a020721",
+          "nonempty_ordinal": 436
+        },
+        {
+          "ref": "Meilah 19a:3",
+          "page_index": 36,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            138
+          ],
+          "span_sha256_utf8": "4a99115bc792ad74fc6fc53b5cced253704261e505902837e3d245d193792197",
+          "nonempty_ordinal": 437
+        },
+        {
+          "ref": "Meilah 19a:4",
+          "page_index": 36,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "span_sha256_utf8": "1c2801f85493875ce6e4f93218657de046ef2307908fa36414764adf843947b1",
+          "nonempty_ordinal": 438
+        },
+        {
+          "ref": "Meilah 19a:5",
+          "page_index": 36,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            91
+          ],
+          "span_sha256_utf8": "7bae12088571083e3904cca5922d35f15d1b33c31f9ab66d5c5e60022d52f5af",
+          "nonempty_ordinal": 439
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000044",
+      "spans": [
+        {
+          "ref": "Meilah 19a:6",
+          "page_index": 36,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            97
+          ],
+          "span_sha256_utf8": "26ae912ed51f13105472e8b4bd60fdd495dfbeaac34089afaabdfd0e42eacfcf",
+          "nonempty_ordinal": 440
+        },
+        {
+          "ref": "Meilah 19a:7",
+          "page_index": 36,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            86
+          ],
+          "span_sha256_utf8": "49f81aaa0d42e38800a53ffd188cc34514667a253b21de50154ce3fc655d6c92",
+          "nonempty_ordinal": 441
+        },
+        {
+          "ref": "Meilah 19a:8",
+          "page_index": 36,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            102
+          ],
+          "span_sha256_utf8": "5addf30ae6ac8193061d49232ddfd14e45dd063feeb5b98daa054a218c584c56",
+          "nonempty_ordinal": 442
+        },
+        {
+          "ref": "Meilah 19a:9",
+          "page_index": 36,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            99
+          ],
+          "span_sha256_utf8": "9b0ae68a4df0030622b36ddc037969c7eb208af69ceed085884e5e984efb2ee0",
+          "nonempty_ordinal": 443
+        },
+        {
+          "ref": "Meilah 19a:10",
+          "page_index": 36,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            91
+          ],
+          "span_sha256_utf8": "132dc89ef2663ebc9147db166b1a29e3a46846965f5078de57c49dd376f35f9e",
+          "nonempty_ordinal": 444
+        },
+        {
+          "ref": "Meilah 19a:11",
+          "page_index": 36,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            82
+          ],
+          "span_sha256_utf8": "215f74c011c839b8a1b1fc12b5a072ca5a8211ab6ea4a87ea3ed6d75980ba0f6",
+          "nonempty_ordinal": 445
+        },
+        {
+          "ref": "Meilah 19b:1",
+          "page_index": 37,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            173
+          ],
+          "span_sha256_utf8": "84a8c0acabe05dd09d60ef08081da6e27978e1fedb75a96c683df5dd958de2dd",
+          "nonempty_ordinal": 446
+        },
+        {
+          "ref": "Meilah 19b:2",
+          "page_index": 37,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            263
+          ],
+          "span_sha256_utf8": "859da016256649a0b6d132207d6e6f3a9ef1b303bb2b02734eaf5d94ba6eacf9",
+          "nonempty_ordinal": 447
+        },
+        {
+          "ref": "Meilah 19b:3",
+          "page_index": 37,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            124
+          ],
+          "span_sha256_utf8": "914d60e097898f692376d8f3d5691e146963279f931782591154e41e4dd54220",
+          "nonempty_ordinal": 448
+        },
+        {
+          "ref": "Meilah 19b:4",
+          "page_index": 37,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "span_sha256_utf8": "23d9a4c73b634e37cc8e0e77a3abaed554667aaedc9d3e03808d53ecb276e1d9",
+          "nonempty_ordinal": 449
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000045",
+      "spans": [
+        {
+          "ref": "Meilah 19b:5",
+          "page_index": 37,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "span_sha256_utf8": "559fcc911f6b97085f8ad17c05b887b7785dd7bb421070bc43f7eca3854d8117",
+          "nonempty_ordinal": 450
+        },
+        {
+          "ref": "Meilah 19b:6",
+          "page_index": 37,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "span_sha256_utf8": "a9dfd2994ce029cd67a3db37a61f9ab690ec8e25f77fd0900dca952b21a4425b",
+          "nonempty_ordinal": 451
+        },
+        {
+          "ref": "Meilah 19b:7",
+          "page_index": 37,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "span_sha256_utf8": "af66f985d3caa1f53d49d551c27f6806649a6ac8f09081d17cd6efa9231b9094",
+          "nonempty_ordinal": 452
+        },
+        {
+          "ref": "Meilah 19b:8",
+          "page_index": 37,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            74
+          ],
+          "span_sha256_utf8": "ecb96ef1f02aa2cbb9e8944e4cd02a74b8ff5d0c46461750c8c81675bf926fba",
+          "nonempty_ordinal": 453
+        },
+        {
+          "ref": "Meilah 19b:9",
+          "page_index": 37,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "span_sha256_utf8": "6da3f223d566469203f0b09303bb78aa1887cff113e119f69744e1822a127e51",
+          "nonempty_ordinal": 454
+        },
+        {
+          "ref": "Meilah 19b:10",
+          "page_index": 37,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            66
+          ],
+          "span_sha256_utf8": "7503847ead3bd8685de915621db440149fc3406081044b7f16c2a89cd8961ae7",
+          "nonempty_ordinal": 455
+        },
+        {
+          "ref": "Meilah 19b:11",
+          "page_index": 37,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            11
+          ],
+          "span_sha256_utf8": "b724390dc7290bf58f9936ac2f04ae0c7407e42c2ba141cad2c18a50d7d2663b",
+          "nonempty_ordinal": 456
+        },
+        {
+          "ref": "Meilah 19b:12",
+          "page_index": 37,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            71
+          ],
+          "span_sha256_utf8": "d66dc7de8016e1e2be70feaaf9b8dead47928bde818e0be1a5311dca32d28c03",
+          "nonempty_ordinal": 457
+        },
+        {
+          "ref": "Meilah 20a:1",
+          "page_index": 38,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "span_sha256_utf8": "e0da92694b4afa880efdcae31acbc65f82646fdbadee63024b2d6bec2f954ba3",
+          "nonempty_ordinal": 458
+        },
+        {
+          "ref": "Meilah 20a:2",
+          "page_index": 38,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "span_sha256_utf8": "b2d21a8ed379242e6941b61cb50ea70369e3cd3adf98efe6ee5f48aa60ae4e1f",
+          "nonempty_ordinal": 459
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000046",
+      "spans": [
+        {
+          "ref": "Meilah 20a:3",
+          "page_index": 38,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "span_sha256_utf8": "ad65ea10ff3daef62bc63173ef6c2aafec263fb140cc7b896c4b14fa12c58011",
+          "nonempty_ordinal": 460
+        },
+        {
+          "ref": "Meilah 20a:4",
+          "page_index": 38,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "span_sha256_utf8": "48178af2246ec1f51a8ca04f45fb8c2fb301f0e4c359d5a750ff22ceb453b15c",
+          "nonempty_ordinal": 461
+        },
+        {
+          "ref": "Meilah 20a:5",
+          "page_index": 38,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "6cd57ec35474baf3e6907cee28e3e6517a851f949bf8b2960d7ce7b9a2633282",
+          "nonempty_ordinal": 462
+        },
+        {
+          "ref": "Meilah 20a:6",
+          "page_index": 38,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            67
+          ],
+          "span_sha256_utf8": "5f36bd645b9969e7aaf99f51d6217bc1db0edc449bfece477df70932dd7c8f6f",
+          "nonempty_ordinal": 463
+        },
+        {
+          "ref": "Meilah 20a:7",
+          "page_index": 38,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            52
+          ],
+          "span_sha256_utf8": "668cb51c85dbd678719a6ded2c8d945b5eb9e2890c15f2c6c7f483cb61faa32e",
+          "nonempty_ordinal": 464
+        },
+        {
+          "ref": "Meilah 20a:8",
+          "page_index": 38,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            89
+          ],
+          "span_sha256_utf8": "02fbc18b009a36460c980ced7147c20c846c621adf58ef98e65619dd9c7518cf",
+          "nonempty_ordinal": 465
+        },
+        {
+          "ref": "Meilah 20a:9",
+          "page_index": 38,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            127
+          ],
+          "span_sha256_utf8": "d11a780e35f2a2b9f97b490bc0c20e85840d02dcdb228ba4f70a682a4072db04",
+          "nonempty_ordinal": 466
+        },
+        {
+          "ref": "Meilah 20a:10",
+          "page_index": 38,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            33
+          ],
+          "span_sha256_utf8": "b64c4b8fbaf9e6bcc95fa1432f33a193f231472becff86cae9c8d4b82bfd2ced",
+          "nonempty_ordinal": 467
+        },
+        {
+          "ref": "Meilah 20a:11",
+          "page_index": 38,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            67
+          ],
+          "span_sha256_utf8": "10c6f5707c612cf20df71366bcb2e855eabd14e45eb62fde85a72e91c419f2c1",
+          "nonempty_ordinal": 468
+        },
+        {
+          "ref": "Meilah 20a:12",
+          "page_index": 38,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "span_sha256_utf8": "c8b757f5afb5f1a63fb3d43d85e346c3cc51ef26fe6c7fce0df9033f1602f083",
+          "nonempty_ordinal": 469
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000047",
+      "spans": [
+        {
+          "ref": "Meilah 20a:13",
+          "page_index": 38,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            135
+          ],
+          "span_sha256_utf8": "70ec8a520f74d643a976533847b849e14bce4430ce4997ca9573f9909dc9e2d9",
+          "nonempty_ordinal": 470
+        },
+        {
+          "ref": "Meilah 20b:1",
+          "page_index": 39,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            81
+          ],
+          "span_sha256_utf8": "8db2e7e9496bd66354534c40e8088db29798d83384d1b0f0c6535bd1e4604fde",
+          "nonempty_ordinal": 471
+        },
+        {
+          "ref": "Meilah 20b:2",
+          "page_index": 39,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "b123af02d8b825a6c1ded08673d00b008cae92101a8383c165f75946ef715cf7",
+          "nonempty_ordinal": 472
+        },
+        {
+          "ref": "Meilah 20b:3",
+          "page_index": 39,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "span_sha256_utf8": "50c3f8028766b715f0007dcaad9e13f5a318989b136db932a4f4d0916d27780f",
+          "nonempty_ordinal": 473
+        },
+        {
+          "ref": "Meilah 20b:4",
+          "page_index": 39,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            207
+          ],
+          "span_sha256_utf8": "e0a9c0ed398a6222d6bceb9615827645542e3a54466c0a4283ea325c9bdfb79f",
+          "nonempty_ordinal": 474
+        },
+        {
+          "ref": "Meilah 20b:5",
+          "page_index": 39,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            59
+          ],
+          "span_sha256_utf8": "d897a042b2bc45bc3ba871edc715eb3e8aaf91254dbcdb4edbbe73f48a8344fd",
+          "nonempty_ordinal": 475
+        },
+        {
+          "ref": "Meilah 20b:6",
+          "page_index": 39,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            147
+          ],
+          "span_sha256_utf8": "e16dd164ff076c028088d16f017684aa3c1845f95979a5f5ad0abdce7bca7329",
+          "nonempty_ordinal": 476
+        },
+        {
+          "ref": "Meilah 20b:7",
+          "page_index": 39,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            47
+          ],
+          "span_sha256_utf8": "814b953a3a07f1cabadf922edd32d048e00419c965890f56a2a501d6d7fdb065",
+          "nonempty_ordinal": 477
+        },
+        {
+          "ref": "Meilah 20b:8",
+          "page_index": 39,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            139
+          ],
+          "span_sha256_utf8": "8966db0b3bfff5aee6f92fc94a9c6ac1e9a3c636d0f4123fa90fc5a96e59643a",
+          "nonempty_ordinal": 478
+        },
+        {
+          "ref": "Meilah 20b:9",
+          "page_index": 39,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            59
+          ],
+          "span_sha256_utf8": "666cc52a7e4a9990855a27a46dd3ea14580369e7e96be7586a7e71364196b156",
+          "nonempty_ordinal": 479
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000048",
+      "spans": [
+        {
+          "ref": "Meilah 20b:10",
+          "page_index": 39,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            57
+          ],
+          "span_sha256_utf8": "2ef834f8a2ed994f0c9320e18e1e1a600287ac24c47b7e779af152c3703fd1b0",
+          "nonempty_ordinal": 480
+        },
+        {
+          "ref": "Meilah 20b:11",
+          "page_index": 39,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            45
+          ],
+          "span_sha256_utf8": "a645930efc68d70a73ce5ab350ef7a890327978c122b59b8e90eca2e9eadd18f",
+          "nonempty_ordinal": 481
+        },
+        {
+          "ref": "Meilah 21a:1",
+          "page_index": 40,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            49
+          ],
+          "span_sha256_utf8": "c008587719fbe344c0bac1203892240b82dddf112b7533bced81d927c05927f3",
+          "nonempty_ordinal": 482
+        },
+        {
+          "ref": "Meilah 21a:2",
+          "page_index": 40,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            231
+          ],
+          "span_sha256_utf8": "84bc5afaca8c04cedfd0ae09c7b6ad8534b109ad1f0da87ff11a0ae49bd7dea2",
+          "nonempty_ordinal": 483
+        },
+        {
+          "ref": "Meilah 21a:3",
+          "page_index": 40,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "span_sha256_utf8": "60e4b598005a00f6b0ad7832a95fec2eb0a3ede3aef27fffed34dc6830f2f485",
+          "nonempty_ordinal": 484
+        },
+        {
+          "ref": "Meilah 21a:4",
+          "page_index": 40,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            60
+          ],
+          "span_sha256_utf8": "94ffabb21f4b5a1bbf2f38f04b91dd5d225ea3f0fe7222585a6d3554de5de02a",
+          "nonempty_ordinal": 485
+        },
+        {
+          "ref": "Meilah 21a:5",
+          "page_index": 40,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "span_sha256_utf8": "062d3782563f626e18eaa681796a44bf660514c0804ec3ff922414f5db6e2b12",
+          "nonempty_ordinal": 486
+        },
+        {
+          "ref": "Meilah 21a:6",
+          "page_index": 40,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "0d448e927227e5f74275f594b36de984336fc67402ce3204fe41b2bf7c7a46fb",
+          "nonempty_ordinal": 487
+        },
+        {
+          "ref": "Meilah 21a:7",
+          "page_index": 40,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "53a9766b27850a3491d46cb58186f42a0e8214835c976b9b871f67bf0d95bca5",
+          "nonempty_ordinal": 488
+        },
+        {
+          "ref": "Meilah 21a:8",
+          "page_index": 40,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            31
+          ],
+          "span_sha256_utf8": "b2b087d0cd1e05f79adb40601178c836b68e6ac23465e1052109b7c5d7d02712",
+          "nonempty_ordinal": 489
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000049",
+      "spans": [
+        {
+          "ref": "Meilah 21a:9",
+          "page_index": 40,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            65
+          ],
+          "span_sha256_utf8": "1ba4823d67496e07b82e672499b69c79cba10a45857a28ebccc3eee731b078d5",
+          "nonempty_ordinal": 490
+        },
+        {
+          "ref": "Meilah 21a:10",
+          "page_index": 40,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            147
+          ],
+          "span_sha256_utf8": "3a4610fdb04dd5cfea2cd21fd23bdbcca71243926e40793d99d97c1acabb0dd6",
+          "nonempty_ordinal": 491
+        },
+        {
+          "ref": "Meilah 21a:11",
+          "page_index": 40,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            108
+          ],
+          "span_sha256_utf8": "0655e8ffdbb24ac7cea68f124bdf4ad9b37cf4149d6ec6a72355d54ec74048d0",
+          "nonempty_ordinal": 492
+        },
+        {
+          "ref": "Meilah 21a:12",
+          "page_index": 40,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            34
+          ],
+          "span_sha256_utf8": "d2cb047015ba5474c3f02be701d91b17f431f873672c669a0ffb3d639f7de57b",
+          "nonempty_ordinal": 493
+        },
+        {
+          "ref": "Meilah 21a:13",
+          "page_index": 40,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            221
+          ],
+          "span_sha256_utf8": "5aaec09743f1cb413199a32b76648f157a1bd8bc3001eac53a99c106b42a26d7",
+          "nonempty_ordinal": 494
+        },
+        {
+          "ref": "Meilah 21a:14",
+          "page_index": 40,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            130
+          ],
+          "span_sha256_utf8": "fc4f8873d8217f250ae92de1fee69d115fe62ecc99cd9d772226da7a6da4deb5",
+          "nonempty_ordinal": 495
+        },
+        {
+          "ref": "Meilah 21a:15",
+          "page_index": 40,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            171
+          ],
+          "span_sha256_utf8": "cf5c81d0290c682747758ab1324d8642c446db2279918551706e9394a40beeba",
+          "nonempty_ordinal": 496
+        },
+        {
+          "ref": "Meilah 21a:16",
+          "page_index": 40,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            39
+          ],
+          "span_sha256_utf8": "5ef9e513cfc33a585d4e181f944071c8ef447527a1780d4e6ada62811a9932e8",
+          "nonempty_ordinal": 497
+        },
+        {
+          "ref": "Meilah 21b:1",
+          "page_index": 41,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            125
+          ],
+          "span_sha256_utf8": "a137ec09f5cd6c6d8f12c151af01ae58bf1e83e31f078c6758be529de0a9ba28",
+          "nonempty_ordinal": 498
+        },
+        {
+          "ref": "Meilah 21b:2",
+          "page_index": 41,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            108
+          ],
+          "span_sha256_utf8": "dbae649c78551984fd7032c3fafe662b9dd4f531375bf84677777ba04e1c8cb9",
+          "nonempty_ordinal": 499
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000050",
+      "spans": [
+        {
+          "ref": "Meilah 21b:3",
+          "page_index": 41,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            45
+          ],
+          "span_sha256_utf8": "acc8918e18316ee7799ba78a1b659de4d71847bdf9eaa6651e383a63ea660b1b",
+          "nonempty_ordinal": 500
+        },
+        {
+          "ref": "Meilah 21b:4",
+          "page_index": 41,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            98
+          ],
+          "span_sha256_utf8": "2a2a0943d51017c49f5549e4966c264b827f94220a7149c822addb778ba3adfc",
+          "nonempty_ordinal": 501
+        },
+        {
+          "ref": "Meilah 21b:5",
+          "page_index": 41,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            48
+          ],
+          "span_sha256_utf8": "15d6f04e3eb51e5dd9e23562cd7023b1b33b61c89bb9c3c4a6184328b85c5a7b",
+          "nonempty_ordinal": 502
+        },
+        {
+          "ref": "Meilah 21b:6",
+          "page_index": 41,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "ea26c02c9caf0007baef3542faab3008433fa7c1e0db5d8b2e634e0eb48d2dd7",
+          "nonempty_ordinal": 503
+        },
+        {
+          "ref": "Meilah 21b:7",
+          "page_index": 41,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            130
+          ],
+          "span_sha256_utf8": "077817180df3135b747644aa0f25990035ddcaa2dc19c00117e9faee3e8d24fe",
+          "nonempty_ordinal": 504
+        },
+        {
+          "ref": "Meilah 21b:8",
+          "page_index": 41,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            245
+          ],
+          "span_sha256_utf8": "14bf51b0bbd228afc839862bd96e897e18954377032a6595cff3d5559c9c55e8",
+          "nonempty_ordinal": 505
+        },
+        {
+          "ref": "Meilah 21b:9",
+          "page_index": 41,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            127
+          ],
+          "span_sha256_utf8": "50bc77e667f46464a57d6cce7d8212f075847ff4ca86012ab1a41596685f5cc8",
+          "nonempty_ordinal": 506
+        },
+        {
+          "ref": "Meilah 21b:10",
+          "page_index": 41,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            82
+          ],
+          "span_sha256_utf8": "963b9560a8e972b133bd1b53a4ddc78ab3ddc4497514e91b39ad2a027e7a04bf",
+          "nonempty_ordinal": 507
+        },
+        {
+          "ref": "Meilah 21b:11",
+          "page_index": 41,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "span_sha256_utf8": "73d0b72478b60bb90c9c3423704ddbd374af97a083cc5cebdf90e105fbf07b0c",
+          "nonempty_ordinal": 508
+        },
+        {
+          "ref": "Meilah 21b:12",
+          "page_index": 41,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "span_sha256_utf8": "6dc7575e46b192b89fb7d8720a877f6a89f4c8a9eff760e23f006dfd2dd5ef39",
+          "nonempty_ordinal": 509
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 0.5769230769230769
+    },
+    {
+      "block_id": "block_000051",
+      "spans": [
+        {
+          "ref": "Meilah 21b:13",
+          "page_index": 41,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "span_sha256_utf8": "85c074889e74a5dd608433d37c9f10669f8c148b7249510c1594d737af13d9f2",
+          "nonempty_ordinal": 510
+        },
+        {
+          "ref": "Meilah 22a:1",
+          "page_index": 42,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "span_sha256_utf8": "1ea176af6757e0dcd8e3bc6726468c8ae9990407479ae361954f227fdc3bd903",
+          "nonempty_ordinal": 511
+        },
+        {
+          "ref": "Meilah 22a:2",
+          "page_index": 42,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            100
+          ],
+          "span_sha256_utf8": "c33d331030af4d1c97719ff218dd5531c7a85a1e2ff4f6fc4875295903ce873d",
+          "nonempty_ordinal": 512
+        },
+        {
+          "ref": "Meilah 22a:3",
+          "page_index": 42,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "span_sha256_utf8": "5b9547eee7f76a783716b7cb0e9025439dc887f6d61b7ad9d85009998a64123d",
+          "nonempty_ordinal": 513
+        },
+        {
+          "ref": "Meilah 22a:4",
+          "page_index": 42,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "span_sha256_utf8": "bd9b6235ad04b615759ad45b42e920d7dd68cd4a763923a34644daea24ffd58b",
+          "nonempty_ordinal": 514
+        }
+      ],
+      "roles": [
+        "probability_sample",
+        "closing_check"
+      ],
+      "inclusion_probability": 0.5769230769230769,
+      "review_union_inclusion_probability": 1.0
+    }
+  ],
+  "reader_context_policy": "Expansion to full discussions is a later, separately logged reader event; context does not inflate sampled core counts",
+  "review_policy": "No worker annotations or flags used. No sugya counts exist until independent reading. AI review is not human certification.",
+  "plan_hash_contract": {
+    "algorithm": "SHA-256",
+    "domain": "bavli-source-only-review-plan-v1",
+    "domain_separator": "one NUL byte",
+    "canonicalization": "UTF-8 JSON; sorted keys; compact separators; ensure_ascii=false; no NaN",
+    "excluded_top_level_field": "plan_sha256"
+  },
+  "plan_sha256": "4ce2921d1ce6bd53f14ded140b07a303c8f7fc4ca5c96d818b094b0dcd326788"
+}
