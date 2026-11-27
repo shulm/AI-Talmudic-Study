@@ -1,3 +1,11 @@
+# Latest targeted repair checkpoint — 2026-11-27
+
+Correction053 addresses delegated020 P01–P05; exact independent recheck is pending. CURRENT `ac7c9ec619b963f05c6dc32c42e16511808f6256dea63937f5b5f8e5e96e5cf4`; proposal `23819ba4040a0057738fb2cf23a5f962a0dacdc74c6dd4af29e48aa5169501d2`. See CHECKPOINT_053.json and REVIEW_CORRECTION_053.json for issue mapping and immutable supersession IDs. Replay, export hashes, nine frozen production files, active links and superseded embedded scopes passed. 9,039 active / 9,176 total records. Coverage unchanged697/895, next24b14,198remaining. No further promotion; writer inactive pending parent authorization and repair recheck. Owner epoch3 unchanged. Full tractate remains unfinished. Next production builder number054.
+
+Export: `F:\Sefaria_QA\bavli_production_run_20261125_01\L04\bavli_taanit\exports\repair020_053_ac7c9ec6`. No prior exact acceptance is inherited.
+
+## Preserved preceding checkpoint context
+
 # Taanit resumable producer checkpoint — 2026-11-27
 
 Partial: **697/895 segments in all eight required layers**, through **Taanit24b:13**. Next **Taanit24b:14**; **198 remain per layer**. Full production and independent review remain unfinished.

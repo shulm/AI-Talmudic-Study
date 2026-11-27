@@ -3,7 +3,7 @@
 **PARTIAL_REQUIRED_WORK_REMAINS**. All eight layers cover **253/709** source segments, through **Makkot 10a:9**. Next is **10a:10**; **456 segments per layer remain**. Source context was read through 10a:24, not counted as coverage. No new independent review is claimed.
 
 Canonical job: `F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_makkot`.
-Owner remains `L04/makkot_resume_20261126`, epoch 3. CURRENT is `83703222712ce4dda8a900326878ea0351e44318321431771ea10deb69e635a1`. There are 2,221 active records, 106 superseded records and 2,327 total versions. No open structure tails at this boundary.
+Owner remains `L04/makkot_resume_20261126`, epoch 3. CURRENT after targeted review correction022 is `e333dd7cc2439e0580d6bb28174c5fe73d28f413663b508fdfbdbf2b5d6345fd`. There are 2,231 active records, 116 superseded records and 2,347 total versions. No open structure tails at this boundary.
 
 Parent requested a bounded production hold to match independent review capacity. **This producer has ceased canonical writes at this checkpoint.** No owner transfer occurred. Resume on lane-lead dispatch, after checking OWNER/CURRENT and replay; never infer continued background work.
 
@@ -13,7 +13,7 @@ Parent requested a bounded production hold to match independent review capacity.
 
 Accepted new source proposals: 013b, 014b, 015b, 016, 017d, 018, 019, 021. Typographic correction 020 repairs a malformed English Rav Hisda label, revising all five affected/dependent records and affected coverage. It changes no source interpretation. Historical initial attempts remain preserved as separate scripts; prevalidation-rejected proposals 013/014/017c are in external staging. Exact-span assertion failures 015/017/017b never yielded full proposals and their original scripts remain preserved.
 
-`author_lib_cont2.py` serializes explicit semantic selections only and records agent `/root/makkot_continuation_2`. Its question default is `none`; scripts explicitly set `partial` only for represented source-supported reply inventories. No enum certifies exhaustive alternatives or choice eligibility. Do not rerun historical author scripts against a changed state; replay frozen accepted proposal bytes. The next available author prefix is 022.
+`author_lib_cont2.py` serializes explicit semantic selections only and records agent `/root/makkot_continuation_2`. Its question default is `none`; scripts explicitly set `partial` only for represented source-supported reply inventories. No enum certifies exhaustive alternatives or choice eligibility. Do not rerun historical author scripts against a changed state; replay frozen accepted proposal bytes. The next available author prefix is 023.
 
 ## Source cautions added in this wave
 
@@ -33,3 +33,9 @@ Accepted new source proposals: 013b, 014b, 015b, 016, 017d, 018, 019, 021. Typog
 Preserve citing-speaker versus original-holder distinctions. A named objection citing a baraita does not assign that baraita’s underlying rule to the citer. Composite units remain provisional and unqualified for atomic evaluation. Earlier opening review applies only to its recorded scope/version; no acceptance extends to this wave.
 
 The preceding checkpoint handoff is preserved in `RESUME_146.md`. Original corpus, common runner/schema/protocol and global registries were not modified. No paid API, commit or push occurred.
+
+## Targeted review correction 022
+
+On explicit lane-lead dispatch, corrected the delegated020 findings without new source coverage. Ten source-supported relations were added; the negative propositions at 5a:11 and 5a:13 now correctly remain asserted, with composite explanatory utterances and aligned positions. Ten record versions were superseded with full graph, content-ID, embedded-scope and coverage closure. Existing answer edges still target the respective פשיטא questions. The proclamation relation includes both 4b:12 and 5a:1.
+
+Proposal: `f6522f7c73ad80da50d40fa889f147bedc49e123ffe375c862f6bcc1af2496bc`. See `CORRECTION_022_ISSUE_MAP.json` for all twelve issues and preserved reader qualifications; `CORRECTION_022_AUDIT.json` for replay, graph checks and byte-identical exports. Export: `exports/review022_253` in the canonical job. The original comparison remains bound to its original snapshot; comparator verification-order deviation remains recorded. No fresh reading credit, review inheritance or acceptance is asserted. Canonical writes ceased again pending independent targeted recheck.

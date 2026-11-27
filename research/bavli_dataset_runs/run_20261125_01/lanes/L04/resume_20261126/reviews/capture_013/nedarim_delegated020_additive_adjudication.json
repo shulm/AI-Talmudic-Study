@@ -1,0 +1,454 @@
+{
+  "artifact_kind": "immutable_additive_comparator_adjudication",
+  "execution": {
+    "agent_id": "/root/nedarim_compare020",
+    "role": "NONBLIND comparator; same agent additive self-correction"
+  },
+  "bindings": {
+    "initial_comparison": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\nedarim_delegated020_exact_version.json",
+      "sha256": "373312a4a37864c8a883db2245573979d39c0019888a848da3cab80d7418dd38"
+    },
+    "initial_verdict": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\nedarim_delegated020_v2_verdict.json",
+      "sha256": "2ee810abafccf1a47ac6725e6ff22e22752516cf8b9521b4abd16217d46578c5"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_nedarim\\snapshots\\d34c7be2fd11ac6af344a3d49a15486b294390b51c6132e8a41984328f786a81.json",
+      "sha256": "d34c7be2fd11ac6af344a3d49a15486b294390b51c6132e8a41984328f786a81"
+    },
+    "reading": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\nedarim_delegated020.json",
+      "sha256": "35ce2cc2e0200fbaf1d7aa9374f4870e463b18e52b3203ef120ef3bea7ba0ac7"
+    },
+    "audit_script": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\nedarim_delegated020_adjudication_audit.py",
+      "sha256": "ed1b2a99bb63c3d405ba5cabecc801ad9e13c5ba71aeaa44bebac45e29ec22e2"
+    }
+  },
+  "supersedes_prior_bytes": false,
+  "adjudication_events": [
+    {
+      "id": "ND020-ADJ01",
+      "original_issue": "ND020-P04",
+      "original_classification": "confirmed_producer_typed_edge_omission",
+      "corrected_classification": "reasonable_granularity_with_restricted_graph_equivalence",
+      "reason": "Answer edges from the two compatibility responses to the parallel-dispute question already express rejection of the forced alignment in a supported question-level graph. A separate direct objection edge to mapping.c would improve a particular graph query but is not independently required in addition to this supported representation. The initial comparator overclassified a typed nonmatch as confirmed omission.",
+      "required_action": "No mandatory producer change for P04. Preserve missing exact endpoint match; do not count it as exact typed agreement."
+    },
+    {
+      "id": "ND020-ADJ02",
+      "reader_id": "nd020.0092",
+      "classification": "reader_context_local_status_error",
+      "reason": "The reader composite claim reports both an assignment of the baraita to Judah and the fact of Abaye retracting his compatibility assertion, then labels the whole report retracted. The report of a retraction is itself maintained; only prior compatibility is retracted.",
+      "required_action": "Split assignment and retraction report or retain asserted report with retraction edge targeting nd020.0038."
+    },
+    {
+      "id": "ND020-ADJ03",
+      "reader_id": "nd020.0402",
+      "classification": "reasonable_granularity",
+      "reason": "Context explanation of לחולין is represented by initial.c with explicit סברוה scope; no direct qualification edge to list.c. Preserve typed gap without claiming new core omission."
+    },
+    {
+      "id": "ND020-ADJ04",
+      "reader_id": "nd020.0403",
+      "classification": "reasonable_granularity",
+      "reason": "Reader objection targets the כירושלים core comparison; producer objection targets all.c, the assignment of whole Mishnah to Judah, supported by the alternative teaching. Both source levels supported; producer does not suppress divergent reports."
+    },
+    {
+      "id": "ND020-ADJ05",
+      "reader_id": "nd020.0102",
+      "classification": "reasonable_granularity",
+      "reason": "Reader treats reiterated Rava response as support of earlier response. Producer repeats its own claim with answer to current question and its own rationale; no literal repeat-support edge, no substance omission."
+    }
+  ],
+  "context_claim_comparison": [
+    {
+      "reader_id": "nd020.0092",
+      "reader_content": {
+        "proposition": "The baraita is R. Judah; Abaye retracts his prior claim to agree even with R. Judah.",
+        "conditions": [],
+        "scope": "Nedarim 6a:6",
+        "assertion_mode": "retracted"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 6a:6",
+          "start_char": 0,
+          "end_char": 89,
+          "quote": "אמר לך אביי  הא מני ר' יהודה היא  והא אביי הוא דאמר  אנא דאמרי אפילו לרבי יהודה  הדר ביה "
+        }
+      ],
+      "producer_ids": [
+        "nd.r005.assign.c",
+        "nd.r005.retract.c"
+      ],
+      "producer_contents": [
+        {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The reply in Abaye’s voice assigns this teaching to Rabbi Yehuda.",
+          "scope": "Dialectical answer to sin/guilt-offering objection"
+        },
+        {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The discussion states that Abaye withdrew his prior claim of compatibility with Rabbi Yehuda.",
+          "scope": "Retraction targets immediately challenged compatibility assertion; no unsupported broader reversal of principal position"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0098",
+      "reader_content": {
+        "proposition": "Rava still agrees even with the Rabbis: their get ruling relies on the fact that a man does not divorce his fellow’s wife; elsewhere demonstrative handles are required.",
+        "conditions": [],
+        "scope": "Nedarim 6a:8",
+        "assertion_mode": "asserted"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 6a:8",
+          "start_char": 0,
+          "end_char": 145,
+          "quote": "אמר לך רבא  אנא דאמרי אפילו לרבנן  עד כאן לא קאמרי רבנן דלא בעינן ידים מוכיחות אלא גבי גט דאין אדם מגרש את אשת חבירו אבל בעלמא בעינן ידים מוכיחות"
+        }
+      ],
+      "producer_ids": [
+        "nd.r005.again.c",
+        "nd.r005.special.c",
+        "nd.r005.general.c"
+      ],
+      "producer_contents": [
+        {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The reply in Rava’s voice maintains compatibility even with the sages.",
+          "scope": "Explicit repeated response, not deduplicated away"
+        },
+        {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "divorce setting"
+          ],
+          "proposition": "The repeated rationale confines the sages’ divorce leniency to the fact that no one divorces another man’s wife.",
+          "scope": "Rava’s local argument about the sages"
+        },
+        {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "Outside that setting, the response requires indicative abbreviated expressions.",
+          "scope": "Rava’s account compatible with sages; no unqualified historical attribution to every sage"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0386",
+      "reader_content": {
+        "proposition": "לחולין is initially read as not ordinary, but rather a sacrifice.",
+        "conditions": [],
+        "scope": "Nedarim 11a:1",
+        "assertion_mode": "hypothetical"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 11a:1",
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "<big><strong>גמ׳</strong></big> סברוה מאי לחולין לא לחולין ליהוי אלא קרבן"
+        }
+      ],
+      "producer_ids": [
+        "nd.r011.initial.c"
+      ],
+      "producer_contents": [
+        {
+          "assertion_mode": "hypothetical",
+          "conditions": [],
+          "proposition": "The initial reading interprets לחולין as “not unconsecrated, but an offering.”",
+          "scope": "Explicit סברוה interpretation used in ensuing attribution argument"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0390",
+      "reader_content": {
+        "proposition": "The Mishnah can all be R. Judah, with the ending read as explaining his position.",
+        "conditions": [],
+        "scope": "Nedarim 11a:4",
+        "assertion_mode": "reconciled"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 11a:4",
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "כולה רבי יהודה היא והכי קתני שרבי יהודה אומר האומר ירושלים לא אמר כלום"
+        }
+      ],
+      "producer_ids": [
+        "nd.r011.all.c"
+      ],
+      "producer_contents": [
+        {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The reply attributes the entire Mishnah to Rabbi Yehuda and reads the ending as a supporting “for Rabbi Yehuda says.”",
+          "scope": "Explicit proposed reading שרבי יהודה, not silent emendation"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0394",
+      "reader_content": {
+        "proposition": "Even כירושלים accomplishes nothing unless one vows by something offered in Jerusalem.",
+        "conditions": [],
+        "scope": "Nedarim 11a:5",
+        "assertion_mode": "asserted"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 11a:5",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "וכי אמר כירושלים לרבי יהודה מי מיתסר והתניא רבי יהודה אומר האומר כירושלים לא אמר כלום עד שידור בדבר הקרב בירושלים"
+        }
+      ],
+      "producer_ids": [
+        "nd.r011.other.c"
+      ],
+      "producer_contents": [
+        {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "must vow by something offered in Jerusalem"
+          ],
+          "proposition": "Another teaching reports Rabbi Yehuda giving כירושלים no effect unless the vow refers to something offered in Jerusalem.",
+          "scope": "Distinct reported position, not harmonized with the printed Mishnah by deleting כ"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0398",
+      "reader_content": {
+        "proposition": "There are two tannaitic reports of R. Judah.",
+        "conditions": [],
+        "scope": "Nedarim 11a:6",
+        "assertion_mode": "reconciled"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 11a:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "כולה רבי יהודה היא ותרי תנאי אליבא דרבי יהודה"
+        }
+      ],
+      "producer_ids": [
+        "nd.r011.two.c"
+      ],
+      "producer_contents": [
+        {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The reply maintains Rabbi Yehuda attribution and identifies two tannaitic reports of his view.",
+          "scope": "Explicit divergent reports, no historical final choice inferred"
+        }
+      ]
+    }
+  ],
+  "context_edge_comparison": [
+    {
+      "reader_id": "nd020.0096",
+      "reader_content": {
+        "source_id": "nd020.0092",
+        "target_id": "nd020.0038",
+        "relation": "retraction",
+        "explicitness": "source_explicit"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 6a:6",
+          "start_char": 0,
+          "end_char": 89,
+          "quote": "אמר לך אביי  הא מני ר' יהודה היא  והא אביי הוא דאמר  אנא דאמרי אפילו לרבי יהודה  הדר ביה "
+        }
+      ],
+      "producer_ids": [
+        "nd.r005.retract.correction"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "nd.r005.retract.c",
+          "target_id": "nd.r005.aboth.c"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0097",
+      "reader_content": {
+        "source_id": "nd020.0092",
+        "target_id": "nd020.0090",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 6a:6",
+          "start_char": 0,
+          "end_char": 89,
+          "quote": "אמר לך אביי  הא מני ר' יהודה היא  והא אביי הוא דאמר  אנא דאמרי אפילו לרבי יהודה  הדר ביה "
+        }
+      ],
+      "producer_ids": [
+        "nd.r005.assign.answer"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "nd.r005.assign.c",
+          "target_id": "nd.r005.sin.c"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0102",
+      "reader_content": {
+        "source_id": "nd020.0098",
+        "target_id": "nd020.0044",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 6a:8",
+          "start_char": 0,
+          "end_char": 145,
+          "quote": "אמר לך רבא  אנא דאמרי אפילו לרבנן  עד כאן לא קאמרי רבנן דלא בעינן ידים מוכיחות אלא גבי גט דאין אדם מגרש את אשת חבירו אבל בעלמא בעינן ידים מוכיחות"
+        }
+      ],
+      "producer_ids": [
+        "nd.r005.again.answer",
+        "nd.r005.special.support"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "nd.r005.again.c",
+          "target_id": "nd.r005.rq.q"
+        },
+        {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "nd.r005.special.c",
+          "target_id": "nd.r005.again.c"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0402",
+      "reader_content": {
+        "source_id": "nd020.0386",
+        "target_id": "nd020.0322",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 11a:1",
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "<big><strong>גמ׳</strong></big> סברוה מאי לחולין לא לחולין ליהוי אלא קרבן"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": []
+    },
+    {
+      "reader_id": "nd020.0403",
+      "reader_content": {
+        "source_id": "nd020.0394",
+        "target_id": "nd020.0374",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 11a:5",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "וכי אמר כירושלים לרבי יהודה מי מיתסר והתניא רבי יהודה אומר האומר כירושלים לא אמר כלום עד שידור בדבר הקרב בירושלים"
+        }
+      ],
+      "producer_ids": [
+        "nd.r011.other.support",
+        "nd.r011.kyq.objection"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "nd.r011.other.c",
+          "target_id": "nd.r011.kyq.q"
+        },
+        {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "nd.r011.kyq.q",
+          "target_id": "nd.r011.all.c"
+        }
+      ]
+    },
+    {
+      "reader_id": "nd020.0404",
+      "reader_content": {
+        "source_id": "nd020.0398",
+        "target_id": "nd020.0394",
+        "relation": "local_resolution",
+        "explicitness": "source_explicit"
+      },
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 11a:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "כולה רבי יהודה היא ותרי תנאי אליבא דרבי יהודה"
+        }
+      ],
+      "producer_ids": [
+        "nd.r011.two.answer"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "nd.r011.two.c",
+          "target_id": "nd.r011.kyq.q"
+        }
+      ]
+    }
+  ],
+  "context_core_credit": 0,
+  "comparator_source_reread_limit": "Only source_read_context_refs in initial comparison independently reread here. Reader longer11b–13a context outcomes are preserved as reader statements, not independently certified wholesale.",
+  "operative_verdict": "REWORK_TARGETED",
+  "operative_required_producer_issue_ids": [
+    "ND020-P01",
+    "ND020-P02",
+    "ND020-P03",
+    "ND020-P05"
+  ],
+  "operative_required_fixes": [
+    "Restore Rabbi Shimon continuation attribution at10b:2.",
+    "Add explicit10b:1 derivation question and answer edge.",
+    "Add10b:10 corrected-form stage correction edge while preserving unresolved מהו.",
+    "Retain repeated10b:11 Mishnah lemma as a distinct traceable occurrence."
+  ],
+  "all_original_versions_retained": true,
+  "task_eligibility": false,
+  "full_tractate_admission": false,
+  "later_version_acceptance": false
+}

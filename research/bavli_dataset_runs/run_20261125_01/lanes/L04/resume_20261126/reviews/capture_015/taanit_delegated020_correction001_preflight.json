@@ -1,0 +1,8 @@
+{
+  "event": "audit_checker_assumption_failure",
+  "production_failure": false,
+  "location": "ta.gemara001.opening.attributions.50.r20261126",
+  "scope": "ta.gemara001.opening.claims.49; scriptural source citation only; no person identified",
+  "reason": "Schema scope is free text; initial audit wrongly assumed a literal foreign key. Corrective proposal replay itself had passed before this supplemental check. No receipt or production mutation occurred.",
+  "correction": "Validate actual links and typed endpoints; recognize exact-ID or known semicolon-delimited ID prefix in attribution scope; disclose other freeform scopes."
+}

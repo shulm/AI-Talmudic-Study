@@ -1,20 +1,28 @@
 # L04 exact-version partial production checkpoint
 
-Checkpoint 008 contains actual semantic annotations and preserved review evidence for **3,142 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
+Checkpoint 009 contains actual semantic annotations and preserved review evidence for **3,265 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
 
-The selected package versions are in [LANE_CHECKPOINT_008.json](LANE_CHECKPOINT_008.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
+The selected package versions are in [LANE_CHECKPOINT_009.json](LANE_CHECKPOINT_009.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
 
 | Tractate | Covered in each of eight layers | Denominator | Next source |
 |---|---:|---:|---|
-| Taanit | 658 | 895 | 23b:8 |
+| Taanit | 697 | 895 | 24b:14 |
 | Bava Batra | 310 | 3,804 | 12b:9 |
 | Pesachim | 236 | 3,519 | 9b:10 |
 | Avodah Zarah | 195 | 2,131 | 8a:5 |
-| Nedarim | 1,033 | 1,509 | 60a:4 |
-| Moed Katan | 496 | 1,026 | 15b:5 |
-| Makkot | 214 | 709 | 9a:2 |
+| Nedarim | 1,062 | 1,509 | 61b:5 |
+| Moed Katan | 512 | 1,026 | 16a:3 |
+| Makkot | 253 | 709 | 10a:10 |
 
 Coverage means the producer recorded a source pass for structure, utterances, claims, attribution/transmission, questions, positions, edges, and reconciliation. It does not establish exhaustive recall or scholarly correctness. Reconciliation can correctly have zero records while retaining a source-reread rationale. Tables preserve superseded records; consumers must filter `release_state == "valid"` for the current graph. Per-sugya exports use segment-overlap context, not certified semantic containment.
+
+## Additive correction wave after review release015
+
+Captures012–013 preserve the exact Taanit, Nedarim and Makkot comparisons of ninety previously frozen original probability cores. All original verdicts remain `REWORK_TARGETED`. Nedarim's mandatory additive adjudication withdraws P04; only four producer issues are operative. Makkot's context addendum and the disclosed ordering of comparator validation remain attached. Reader polarity, attribution and condition-representation qualifications are retained; corrections are not new sampled cores.
+
+[Capture014](reviews/capture_014/MANIFEST.json) preserves the independent bounded passes for Makkot022 (all twelve core/context issues) and Nedarim065 (four operative issues). Nedarim retains nonblocking duplicated introducer evidence and stale coverage prose observations. Neither receipt grants whole-snapshot acceptance. [Capture015](reviews/capture_015/MANIFEST.json) preserves Taanit053's independent closure of all five repair groups. The actual replay contains55 proposals, correcting the reviewer's earlier checkpoint-based count of53. Its saved preflight diagnostic records a corrected checker assumption about historical free-text scope fields. All new source windows remain outside these correction checks.
+
+Coordinator review release015 is frozen. These corrections are additive next-version evidence; they do not revise release015 or its exclusions. All489 files in that review delivery were byte-verified. The current assembly freeze holds further production briefly, while the full seven-tractate assignment remains active. Bava Batra source-only reservation037 is prepared but has not launched. After assembly publication and capacity confirmation, resume one existing producer with matched independent review, preserving owners and epochs. See [next actions](NEXT_ACTIONS_012.json).
 
 ## Exact inputs and ownership
 

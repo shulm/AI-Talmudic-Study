@@ -7,11 +7,14 @@ from author_remaining_openings_001 import r
 from pathlib import Path
 import argparse,json
 
-p=argparse.ArgumentParser();p.add_argument('--source-root',type=Path);args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--source-root',type=Path);p.add_argument('--snapshot',action='append',default=[],help='Verify only this exact packaged snapshot; repeat for multiple new packages. Omit to verify all.');args=p.parse_args()
+requested=set(args.snapshot)
+assert all(len(h)==64 and all(c in '0123456789abcdef' for c in h) for h in requested),'Expected exact lowercase SHA256 values'
 base=Path(__file__).parent
 results=[]
 for receipt_path in sorted((base/'packages').glob('*/*/PACKAGE.json')):
     out=receipt_path.parent;receipt=r.read(receipt_path)
+    if requested and receipt['snapshot_sha256'] not in requested:continue
     for relative,h in receipt['files'].items():
         path=out/relative
         assert path.resolve().is_relative_to(out.resolve()),relative
@@ -46,4 +49,6 @@ for receipt_path in sorted((base/'packages').glob('*/*/PACKAGE.json')):
     assert {x.relative_to(export).as_posix() for x in export.rglob('*') if x.is_file()}==set(expected)
     for relative,raw in expected.items():assert (export/relative).read_bytes()==raw,relative
     results.append(dict(slug=receipt['slug'],snapshot_sha256=h,replay_pass=True,exact_export_pass=True,source_sha256=meta['source_sha256'],completed_by_layer=r.report(state,segments)['completed_by_layer']))
-print(json.dumps(dict(engineering_pass=True,scholarly_accuracy_certified=False,packages=results),ensure_ascii=False,indent=2))
+assert results,'No packages selected'
+assert not requested or {x['snapshot_sha256'] for x in results}==requested,'Requested snapshot not packaged'
+print(json.dumps(dict(engineering_pass=True,scholarly_accuracy_certified=False,requested_snapshots=sorted(requested),packages=results),ensure_ascii=False,indent=2))
