@@ -1,0 +1,128 @@
+{
+  "status": "PREPARED_NOT_SUBMITTED",
+  "prior_snapshot_sha256": "e3820a8f1a9958659f65f5fd706c5ba00b7c2962a74e4157aee272ec18ccd165",
+  "proposal_sha256": "ac4357ee0db1293711926f389c8dfbbd14ecd028a79fce08b0baa9c3fc6b6993",
+  "new_segments": 20,
+  "new_records": 167,
+  "new_records_by_layer": {
+    "structure": 2,
+    "claims": 34,
+    "attributions": 47,
+    "positions": 27,
+    "questions": 10,
+    "utterances": 21,
+    "edges": 26
+  },
+  "preview_total_records": 737,
+  "preview_coverage_each_layer": 72,
+  "source_denominator": 4393,
+  "scope": [
+    "Chullin 3b:20",
+    "Chullin 4a:18"
+  ],
+  "context_read": [
+    "Chullin 4a:19",
+    "Chullin 6a:1"
+  ],
+  "context_coverage_credit": 0,
+  "source_path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Kodashim\\Chullin\\Hebrew\\Wikisource Talmud Bavli.json",
+  "source_sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
+  "source_schema_sha256": "f03d36904257793448b31eb72a50b5008e9e17ffb4d358b030d4e4a767c53838",
+  "coordination_active": {
+    "assignment_ledger": "research/bavli_dataset_runs/run_20261125_01/ASSIGNMENT_LEDGER.json",
+    "assignment_revision": 5,
+    "contract_commit": "53bfbacb8f95d625f5036b73109eef738277e7e7",
+    "contract_path": "research/bavli_dataset_runs/run_20261125_01/RUN_CONTRACT.json",
+    "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+    "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "run_id": "run_20261125_01"
+  },
+  "coordinator_assignment": {
+    "checkpoint": {
+      "accepted_proposal_count": 6,
+      "snapshot_sha256": "e3820a8f1a9958659f65f5fd706c5ba00b7c2962a74e4157aee272ec18ccd165"
+    },
+    "completed_source_segments_by_layer": {
+      "attributions": 52,
+      "claims": 52,
+      "edges": 52,
+      "positions": 52,
+      "questions": 52,
+      "reconciliation": 52,
+      "structure": 52,
+      "utterances": 52
+    },
+    "epoch": 2,
+    "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin",
+    "job_id": "bavli_chullin",
+    "lane_id": "L05",
+    "legacy_note": "No inherited pilot",
+    "owner": "L05/chullin",
+    "source_segments": 4393,
+    "source_sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
+    "state": "captured_partial",
+    "tractate": "Chullin"
+  },
+  "production_files_verified": {
+    "research/bavli_production_v1/.gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+    "research/bavli_production_v1/PROTOCOL.md": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+    "research/bavli_production_v1/README.md": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+    "research/bavli_production_v1/runner.py": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+    "research/bavli_production_v1/schema.json": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+    "research/bavli_production_v1/test_runner.py": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+    "research/bavli_source_access_v1/README.md": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+    "research/bavli_source_access_v1/SOURCE_ACCESS_AUDIT.json": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+    "research/bavli_source_access_v1/source_packages.py": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8"
+  },
+  "owner": {
+    "owner": "L05/chullin",
+    "epoch": 2
+  },
+  "all_570_prior_records_unchanged": true,
+  "addressee_record_preserved": {
+    "content": {
+      "candidates": [
+        "רב אשי"
+      ],
+      "role": "quoted_authority",
+      "scope": "Named addressee, not asserted holder of the opening anonymous interpretation",
+      "surface": "רב אשי",
+      "transmission_chain": []
+    },
+    "evidence": [
+      {
+        "end_char": 32,
+        "quote": "לרב אשי",
+        "segment_id": "seg_577405bef7b937a57d8f",
+        "start_char": 25
+      }
+    ],
+    "id": "ch01_a_ashi_addressee",
+    "layer": "attributions",
+    "links": [
+      "ch01_u_acha"
+    ],
+    "ml_eligible": false,
+    "origin": "source_paraphrase",
+    "release_state": "valid",
+    "review_state": "unreviewed",
+    "uncertainty": [
+      "Schema lacks addressee role; quoted_authority is a coarse container, scope explicitly limits it to addressee."
+    ]
+  },
+  "inherited_open_tails_preserved": [
+    "ch01_s_m",
+    "ch02_s",
+    "ch03_s"
+  ],
+  "new_open_tail": "ch.s2709.mumar",
+  "independent_review_completed": false,
+  "tractate_delivered": false,
+  "ml_eligible": false,
+  "next_step": "Await root session08 archive release before submit; then replay/export and exact comparison. Next unprocessed after this proposed batch is Chullin4a19.",
+  "notes": [
+    "No source-review artifacts accessed.",
+    "No changes to external addressee eligibility gate.",
+    "Future Kuti prohibition and Rav Anan idolatry refutation are separate occurrences, not silently applied to this local baraita or Rava appetite-motive permission."
+  ]
+}
