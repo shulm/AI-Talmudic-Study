@@ -1,0 +1,1 @@
+Arakhin AR01/AR02 repaired; exact 18bb932d660d694686e98f376d9aa8e2feeedb8e1e328affb1cd3ab0cee49cf5. Independent recheck pending. No new core coverage;30/pass. Next2b:14; reuse context rows ar.e1.r002.initial/objection/freeing/retraction and close/continue ar.e1.b002.s3. Preserve original REWORK verdict and source reading.
