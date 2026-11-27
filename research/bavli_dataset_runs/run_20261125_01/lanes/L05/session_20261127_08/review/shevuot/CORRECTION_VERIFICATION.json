@@ -1,0 +1,168 @@
+{
+  "format": "targeted-correction-verification-v1",
+  "reviewer": "/root/horayot_review",
+  "nonblind_comparator": true,
+  "initial_report": {
+    "path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\review_session20261127_08\\shevuot\\EXACT_VERSION_COMPARISON.json",
+    "sha256": "5c85c983190d2eea0fb088eabe45fc4d4ba49750955260be45a593804b9102b6",
+    "preserved": true
+  },
+  "pins": {
+    "prior": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\snapshots\\1f5c0a7b34d9e2110928c94c3ef16a89e4f66b557347fe965b5dc8a54aeb46b4.json",
+      "sha256": "1f5c0a7b34d9e2110928c94c3ef16a89e4f66b557347fe965b5dc8a54aeb46b4"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\snapshots\\0315c06d454f7a05a4be1535e7e6d17a357cac91fa000e933562c4d770b00593.json",
+      "sha256": "0315c06d454f7a05a4be1535e7e6d17a357cac91fa000e933562c4d770b00593"
+    },
+    "proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\proposals\\3d7032a92b8b19979ce46439cbaac784559ce6ef3f77660433e66588d8175a4b.json",
+      "sha256": "3d7032a92b8b19979ce46439cbaac784559ce6ef3f77660433e66588d8175a4b"
+    }
+  },
+  "finding": "S08-R01",
+  "outcome": "closed for the precise corrected reporting-role attribution and position rows",
+  "semantic_verification": [
+    "Anonymous meta-conclusion attribution now has anonymous role and no named candidates.",
+    "Position on finalreport now has empty holder_candidates and explicitly excludes Rabbi personal endorsement.",
+    "Separate existing transmitter role records Rabbi solely as compiler/reporter of Akiva oath teaching; empty transmission_chain avoids inventing an oral chain.",
+    "Finalreport and finaldisagree claims, Rabbi negative personal stance, and linked graph unchanged. No blanket role qualification conferred."
+  ],
+  "new_records": [
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "Anonymous meta-conclusion that Rabbi compiles the oath teaching according to Rabbi Akiva without personally agreeing; not Rabbi endorsing that substantive oath position",
+        "surface": "Anonymous Gemara conclusion",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 105,
+          "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+          "segment_id": "seg_c8f0b33f2456d047de28",
+          "start_char": 0
+        }
+      ],
+      "id": "she.s2708.finalreport.a.s08r01",
+      "layer": "attributions",
+      "links": [
+        "she.s2708.finalreport"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "supersedes": "she.s2708.finalreport.a",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "candidates": [
+          "רבי"
+        ],
+        "role": "transmitter",
+        "scope": "Compiler/reporting role only: Rabbi presents the oath teaching according to Rabbi Akiva while expressly not agreeing personally; this is not an asserted oral transmission chain",
+        "surface": "רבי ... בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 105,
+          "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+          "segment_id": "seg_c8f0b33f2456d047de28",
+          "start_char": 0
+        }
+      ],
+      "id": "she.s2708.finalreport.compiler.s08r01",
+      "layer": "attributions",
+      "links": [
+        "she.s2708.finalreport"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "claim_id": "she.s2708.finalreport",
+        "conditions": [
+          "Oaths"
+        ],
+        "holder_candidates": [],
+        "local_status": "Anonymous meta-conclusion about Rabbi’s compilation/reporting role; no personal endorsement of Rabbi Akiva’s oath position assigned to Rabbi",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 105,
+          "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+          "segment_id": "seg_c8f0b33f2456d047de28",
+          "start_char": 0
+        }
+      ],
+      "id": "she.s2708.finalreport.p.s08r01",
+      "layer": "positions",
+      "links": [
+        "she.s2708.finalreport"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "supersedes": "she.s2708.finalreport.p",
+      "uncertainty": []
+    }
+  ],
+  "integrity": {
+    "historical_records": 689,
+    "new_records": 3,
+    "prior686changes_only_two_release_states": [
+      {
+        "id": "she.s2708.finalreport.a",
+        "changes": {
+          "release_state": [
+            "valid",
+            "superseded"
+          ]
+        }
+      },
+      {
+        "id": "she.s2708.finalreport.p",
+        "changes": {
+          "release_state": [
+            "valid",
+            "superseded"
+          ]
+        }
+      }
+    ],
+    "prior_claim_content_unchanged": true,
+    "prior_evidence_links_content_unchanged": true,
+    "active_references_to_superseded_rows": [],
+    "new_evidence_spans_exact_raw": 3,
+    "raw_source_sha256": "a3b0bb25746aa3683e9dd9da551b66670ab1fb57e1ac9c2bd1583d4aa984edd9",
+    "completed_coverage_by_layer": {
+      "attributions": 77,
+      "claims": 77,
+      "edges": 77,
+      "positions": 77,
+      "questions": 77,
+      "reconciliation": 77,
+      "structure": 77,
+      "utterances": 77
+    },
+    "all_record_ml_eligible_false": true
+  },
+  "remaining_mandatory_repairs_for_S08_R01": [],
+  "qualifications": [
+    "Correction-only verification; original error remains in immutable initial report",
+    "No new probability or source-first credit",
+    "No global role accuracy, atomicity, or task eligibility qualification",
+    "No source or production mutation by comparator"
+  ]
+}
