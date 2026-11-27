@@ -1,0 +1,986 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 11,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 11,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 42,
+    "probability_core_segments": 420,
+    "source_nonempty_segments": 4171,
+    "source_segment_positions": 4171,
+    "union_blocks": 44,
+    "union_core_segments": 431
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_sanhedrin.json",
+    "sha256": "94497f195e6c71ba8d41d15816b40c42131e2526a5d56f3103aa8adaaa6b69b6"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_sanhedrin",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_sanhedrin.json",
+    "sha256": "94497f195e6c71ba8d41d15816b40c42131e2526a5d56f3103aa8adaaa6b69b6"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Sanhedrin.json",
+    "sha256": "5d7dc7d87e3740899f3c2fbef1b79f7dcfd5ec5e561cf19bb42f4a624f3ee3c2"
+  },
+  "plan_sha256": "d580ec2c5c931f43c7040d8165725584133511370564b47371b9931a7d9c7e72",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 418,
+    "inclusion_probability_denominator": 418,
+    "inclusion_probability_numerator": 42,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000010",
+      "block_000015",
+      "block_000025",
+      "block_000026",
+      "block_000030",
+      "block_000059",
+      "block_000071",
+      "block_000079",
+      "block_000100",
+      "block_000101",
+      "block_000125",
+      "block_000173",
+      "block_000184",
+      "block_000188",
+      "block_000198",
+      "block_000199",
+      "block_000206",
+      "block_000222",
+      "block_000226",
+      "block_000241",
+      "block_000246",
+      "block_000247",
+      "block_000277",
+      "block_000278",
+      "block_000284",
+      "block_000300",
+      "block_000301",
+      "block_000310",
+      "block_000313",
+      "block_000319",
+      "block_000333",
+      "block_000347",
+      "block_000352",
+      "block_000366",
+      "block_000367",
+      "block_000371",
+      "block_000376",
+      "block_000379",
+      "block_000385",
+      "block_000404",
+      "block_000411",
+      "block_000416"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 42
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Sanhedrin 2a:1",
+        "Sanhedrin 2a:2",
+        "Sanhedrin 2a:3",
+        "Sanhedrin 2a:4",
+        "Sanhedrin 2a:5",
+        "Sanhedrin 2a:6",
+        "Sanhedrin 2a:7",
+        "Sanhedrin 2a:8",
+        "Sanhedrin 2a:9",
+        "Sanhedrin 2a:10"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000010",
+      "core_refs": [
+        "Sanhedrin 5b:3",
+        "Sanhedrin 5b:4",
+        "Sanhedrin 5b:5",
+        "Sanhedrin 5b:6",
+        "Sanhedrin 5b:7",
+        "Sanhedrin 5b:8",
+        "Sanhedrin 5b:9",
+        "Sanhedrin 5b:10",
+        "Sanhedrin 5b:11",
+        "Sanhedrin 5b:12"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000015",
+      "core_refs": [
+        "Sanhedrin 7a:14",
+        "Sanhedrin 7a:15",
+        "Sanhedrin 7a:16",
+        "Sanhedrin 7a:17",
+        "Sanhedrin 7a:18",
+        "Sanhedrin 7a:19",
+        "Sanhedrin 7b:1",
+        "Sanhedrin 7b:2",
+        "Sanhedrin 7b:3",
+        "Sanhedrin 7b:4"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000025",
+      "core_refs": [
+        "Sanhedrin 11a:14",
+        "Sanhedrin 11b:1",
+        "Sanhedrin 11b:2",
+        "Sanhedrin 11b:3",
+        "Sanhedrin 11b:4",
+        "Sanhedrin 11b:5",
+        "Sanhedrin 11b:6",
+        "Sanhedrin 11b:7",
+        "Sanhedrin 11b:8",
+        "Sanhedrin 11b:9"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000026",
+      "core_refs": [
+        "Sanhedrin 11b:10",
+        "Sanhedrin 12a:1",
+        "Sanhedrin 12a:2",
+        "Sanhedrin 12a:3",
+        "Sanhedrin 12a:4",
+        "Sanhedrin 12a:5",
+        "Sanhedrin 12a:6",
+        "Sanhedrin 12a:7",
+        "Sanhedrin 12a:8",
+        "Sanhedrin 12a:9"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000030",
+      "core_refs": [
+        "Sanhedrin 13b:1",
+        "Sanhedrin 13b:2",
+        "Sanhedrin 13b:3",
+        "Sanhedrin 13b:4",
+        "Sanhedrin 13b:5",
+        "Sanhedrin 13b:6",
+        "Sanhedrin 13b:7",
+        "Sanhedrin 13b:8",
+        "Sanhedrin 13b:9",
+        "Sanhedrin 13b:10"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000059",
+      "core_refs": [
+        "Sanhedrin 21b:22",
+        "Sanhedrin 21b:23",
+        "Sanhedrin 21b:24",
+        "Sanhedrin 21b:25",
+        "Sanhedrin 22a:1",
+        "Sanhedrin 22a:2",
+        "Sanhedrin 22a:3",
+        "Sanhedrin 22a:4",
+        "Sanhedrin 22a:5",
+        "Sanhedrin 22a:6"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000071",
+      "core_refs": [
+        "Sanhedrin 24a:23",
+        "Sanhedrin 24a:24",
+        "Sanhedrin 24a:25",
+        "Sanhedrin 24a:26",
+        "Sanhedrin 24a:27",
+        "Sanhedrin 24b:1",
+        "Sanhedrin 24b:2",
+        "Sanhedrin 24b:3",
+        "Sanhedrin 24b:4",
+        "Sanhedrin 24b:5"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000079",
+      "core_refs": [
+        "Sanhedrin 26a:11",
+        "Sanhedrin 26a:12",
+        "Sanhedrin 26a:13",
+        "Sanhedrin 26a:14",
+        "Sanhedrin 26a:15",
+        "Sanhedrin 26a:16",
+        "Sanhedrin 26a:17",
+        "Sanhedrin 26a:18",
+        "Sanhedrin 26a:19",
+        "Sanhedrin 26a:20"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000100",
+      "core_refs": [
+        "Sanhedrin 30a:4",
+        "Sanhedrin 30a:5",
+        "Sanhedrin 30a:6",
+        "Sanhedrin 30a:7",
+        "Sanhedrin 30a:8",
+        "Sanhedrin 30a:9",
+        "Sanhedrin 30a:10",
+        "Sanhedrin 30a:11",
+        "Sanhedrin 30a:12",
+        "Sanhedrin 30a:13"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000101",
+      "core_refs": [
+        "Sanhedrin 30a:14",
+        "Sanhedrin 30a:15",
+        "Sanhedrin 30a:16",
+        "Sanhedrin 30a:17",
+        "Sanhedrin 30a:18",
+        "Sanhedrin 30a:19",
+        "Sanhedrin 30a:20",
+        "Sanhedrin 30a:21",
+        "Sanhedrin 30a:22",
+        "Sanhedrin 30a:23"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000125",
+      "core_refs": [
+        "Sanhedrin 36a:12",
+        "Sanhedrin 36a:13",
+        "Sanhedrin 36a:14",
+        "Sanhedrin 36a:15",
+        "Sanhedrin 36a:16",
+        "Sanhedrin 36b:1",
+        "Sanhedrin 36b:2",
+        "Sanhedrin 36b:3",
+        "Sanhedrin 36b:4",
+        "Sanhedrin 36b:5"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000173",
+      "core_refs": [
+        "Sanhedrin 49a:12",
+        "Sanhedrin 49a:13",
+        "Sanhedrin 49a:14",
+        "Sanhedrin 49a:15",
+        "Sanhedrin 49a:16",
+        "Sanhedrin 49a:17",
+        "Sanhedrin 49b:1",
+        "Sanhedrin 49b:2",
+        "Sanhedrin 49b:3",
+        "Sanhedrin 49b:4"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000184",
+      "core_refs": [
+        "Sanhedrin 51b:8",
+        "Sanhedrin 51b:9",
+        "Sanhedrin 51b:10",
+        "Sanhedrin 51b:11",
+        "Sanhedrin 51b:12",
+        "Sanhedrin 51b:13",
+        "Sanhedrin 51b:14",
+        "Sanhedrin 51b:15",
+        "Sanhedrin 51b:16",
+        "Sanhedrin 51b:17"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000188",
+      "core_refs": [
+        "Sanhedrin 52a:25",
+        "Sanhedrin 52a:26",
+        "Sanhedrin 52a:27",
+        "Sanhedrin 52b:1",
+        "Sanhedrin 52b:2",
+        "Sanhedrin 52b:3",
+        "Sanhedrin 52b:4",
+        "Sanhedrin 52b:5",
+        "Sanhedrin 52b:6",
+        "Sanhedrin 52b:7"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000198",
+      "core_refs": [
+        "Sanhedrin 54b:4",
+        "Sanhedrin 54b:5",
+        "Sanhedrin 54b:6",
+        "Sanhedrin 54b:7",
+        "Sanhedrin 54b:8",
+        "Sanhedrin 54b:9",
+        "Sanhedrin 54b:10",
+        "Sanhedrin 54b:11",
+        "Sanhedrin 54b:12",
+        "Sanhedrin 54b:13"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000199",
+      "core_refs": [
+        "Sanhedrin 54b:14",
+        "Sanhedrin 54b:15",
+        "Sanhedrin 54b:16",
+        "Sanhedrin 54b:17",
+        "Sanhedrin 54b:18",
+        "Sanhedrin 54b:19",
+        "Sanhedrin 54b:20",
+        "Sanhedrin 54b:21",
+        "Sanhedrin 54b:22",
+        "Sanhedrin 54b:23"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000206",
+      "core_refs": [
+        "Sanhedrin 56b:3",
+        "Sanhedrin 56b:4",
+        "Sanhedrin 56b:5",
+        "Sanhedrin 56b:6",
+        "Sanhedrin 56b:7",
+        "Sanhedrin 56b:8",
+        "Sanhedrin 56b:9",
+        "Sanhedrin 56b:10",
+        "Sanhedrin 56b:11",
+        "Sanhedrin 56b:12"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000222",
+      "core_refs": [
+        "Sanhedrin 60a:7",
+        "Sanhedrin 60a:8",
+        "Sanhedrin 60a:9",
+        "Sanhedrin 60a:10",
+        "Sanhedrin 60a:11",
+        "Sanhedrin 60a:12",
+        "Sanhedrin 60a:13",
+        "Sanhedrin 60a:14",
+        "Sanhedrin 60a:15",
+        "Sanhedrin 60a:16"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000226",
+      "core_refs": [
+        "Sanhedrin 61a:2",
+        "Sanhedrin 61a:3",
+        "Sanhedrin 61a:4",
+        "Sanhedrin 61a:5",
+        "Sanhedrin 61a:6",
+        "Sanhedrin 61a:7",
+        "Sanhedrin 61a:8",
+        "Sanhedrin 61a:9",
+        "Sanhedrin 61a:10",
+        "Sanhedrin 61a:11"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000241",
+      "core_refs": [
+        "Sanhedrin 64a:14",
+        "Sanhedrin 64a:15",
+        "Sanhedrin 64a:16",
+        "Sanhedrin 64a:17",
+        "Sanhedrin 64a:18",
+        "Sanhedrin 64a:19",
+        "Sanhedrin 64a:20",
+        "Sanhedrin 64b:1",
+        "Sanhedrin 64b:2",
+        "Sanhedrin 64b:3"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000246",
+      "core_refs": [
+        "Sanhedrin 65a:22",
+        "Sanhedrin 65a:23",
+        "Sanhedrin 65a:24",
+        "Sanhedrin 65b:1",
+        "Sanhedrin 65b:2",
+        "Sanhedrin 65b:3",
+        "Sanhedrin 65b:4",
+        "Sanhedrin 65b:5",
+        "Sanhedrin 65b:6",
+        "Sanhedrin 65b:7"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000247",
+      "core_refs": [
+        "Sanhedrin 65b:8",
+        "Sanhedrin 65b:9",
+        "Sanhedrin 65b:10",
+        "Sanhedrin 65b:11",
+        "Sanhedrin 65b:12",
+        "Sanhedrin 65b:13",
+        "Sanhedrin 65b:14",
+        "Sanhedrin 65b:15",
+        "Sanhedrin 65b:16",
+        "Sanhedrin 65b:17"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000277",
+      "core_refs": [
+        "Sanhedrin 73b:4",
+        "Sanhedrin 73b:5",
+        "Sanhedrin 73b:6",
+        "Sanhedrin 73b:7",
+        "Sanhedrin 73b:8",
+        "Sanhedrin 73b:9",
+        "Sanhedrin 73b:10",
+        "Sanhedrin 73b:11",
+        "Sanhedrin 73b:12",
+        "Sanhedrin 73b:13"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000278",
+      "core_refs": [
+        "Sanhedrin 73b:14",
+        "Sanhedrin 73b:15",
+        "Sanhedrin 74a:1",
+        "Sanhedrin 74a:2",
+        "Sanhedrin 74a:3",
+        "Sanhedrin 74a:4",
+        "Sanhedrin 74a:5",
+        "Sanhedrin 74a:6",
+        "Sanhedrin 74a:7",
+        "Sanhedrin 74a:8"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000284",
+      "core_refs": [
+        "Sanhedrin 75b:6",
+        "Sanhedrin 75b:7",
+        "Sanhedrin 75b:8",
+        "Sanhedrin 75b:9",
+        "Sanhedrin 75b:10",
+        "Sanhedrin 75b:11",
+        "Sanhedrin 75b:12",
+        "Sanhedrin 75b:13",
+        "Sanhedrin 75b:14",
+        "Sanhedrin 75b:15"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000300",
+      "core_refs": [
+        "Sanhedrin 81a:4",
+        "Sanhedrin 81a:5",
+        "Sanhedrin 81a:6",
+        "Sanhedrin 81a:7",
+        "Sanhedrin 81a:8",
+        "Sanhedrin 81a:9",
+        "Sanhedrin 81a:10",
+        "Sanhedrin 81a:11",
+        "Sanhedrin 81a:12",
+        "Sanhedrin 81a:13"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000301",
+      "core_refs": [
+        "Sanhedrin 81a:14",
+        "Sanhedrin 81b:1",
+        "Sanhedrin 81b:2",
+        "Sanhedrin 81b:3",
+        "Sanhedrin 81b:4",
+        "Sanhedrin 81b:5",
+        "Sanhedrin 81b:6",
+        "Sanhedrin 81b:7",
+        "Sanhedrin 81b:8",
+        "Sanhedrin 81b:9"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000310",
+      "core_refs": [
+        "Sanhedrin 84a:2",
+        "Sanhedrin 84a:3",
+        "Sanhedrin 84a:4",
+        "Sanhedrin 84a:5",
+        "Sanhedrin 84a:6",
+        "Sanhedrin 84a:7",
+        "Sanhedrin 84a:8",
+        "Sanhedrin 84a:9",
+        "Sanhedrin 84a:10",
+        "Sanhedrin 84a:11"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000313",
+      "core_refs": [
+        "Sanhedrin 84b:14",
+        "Sanhedrin 84b:15",
+        "Sanhedrin 84b:16",
+        "Sanhedrin 84b:17",
+        "Sanhedrin 84b:18",
+        "Sanhedrin 84b:19",
+        "Sanhedrin 85a:1",
+        "Sanhedrin 85a:2",
+        "Sanhedrin 85a:3",
+        "Sanhedrin 85a:4"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000319",
+      "core_refs": [
+        "Sanhedrin 86a:13",
+        "Sanhedrin 86a:14",
+        "Sanhedrin 86a:15",
+        "Sanhedrin 86a:16",
+        "Sanhedrin 86a:17",
+        "Sanhedrin 86a:18",
+        "Sanhedrin 86a:19",
+        "Sanhedrin 86a:20",
+        "Sanhedrin 86b:1",
+        "Sanhedrin 86b:2"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000333",
+      "core_refs": [
+        "Sanhedrin 89b:19",
+        "Sanhedrin 89b:20",
+        "Sanhedrin 89b:21",
+        "Sanhedrin 89b:22",
+        "Sanhedrin 90a:1",
+        "Sanhedrin 90a:2",
+        "Sanhedrin 90a:3",
+        "Sanhedrin 90a:4",
+        "Sanhedrin 90a:5",
+        "Sanhedrin 90a:6"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000347",
+      "core_refs": [
+        "Sanhedrin 93b:3",
+        "Sanhedrin 93b:4",
+        "Sanhedrin 93b:5",
+        "Sanhedrin 93b:6",
+        "Sanhedrin 93b:7",
+        "Sanhedrin 93b:8",
+        "Sanhedrin 93b:9",
+        "Sanhedrin 93b:10",
+        "Sanhedrin 93b:11",
+        "Sanhedrin 93b:12"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000352",
+      "core_refs": [
+        "Sanhedrin 94b:18",
+        "Sanhedrin 94b:19",
+        "Sanhedrin 94b:20",
+        "Sanhedrin 95a:1",
+        "Sanhedrin 95a:2",
+        "Sanhedrin 95a:3",
+        "Sanhedrin 95a:4",
+        "Sanhedrin 95a:5",
+        "Sanhedrin 95a:6",
+        "Sanhedrin 95a:7"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000366",
+      "core_refs": [
+        "Sanhedrin 99a:7",
+        "Sanhedrin 99a:8",
+        "Sanhedrin 99a:9",
+        "Sanhedrin 99a:10",
+        "Sanhedrin 99a:11",
+        "Sanhedrin 99a:12",
+        "Sanhedrin 99a:13",
+        "Sanhedrin 99a:14",
+        "Sanhedrin 99a:15",
+        "Sanhedrin 99a:16"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000367",
+      "core_refs": [
+        "Sanhedrin 99a:17",
+        "Sanhedrin 99a:18",
+        "Sanhedrin 99a:19",
+        "Sanhedrin 99a:20",
+        "Sanhedrin 99a:21",
+        "Sanhedrin 99a:22",
+        "Sanhedrin 99a:23",
+        "Sanhedrin 99b:1",
+        "Sanhedrin 99b:2",
+        "Sanhedrin 99b:3"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000371",
+      "core_refs": [
+        "Sanhedrin 100a:15",
+        "Sanhedrin 100a:16",
+        "Sanhedrin 100a:17",
+        "Sanhedrin 100a:18",
+        "Sanhedrin 100b:1",
+        "Sanhedrin 100b:2",
+        "Sanhedrin 100b:3",
+        "Sanhedrin 100b:4",
+        "Sanhedrin 100b:5",
+        "Sanhedrin 100b:6"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000376",
+      "core_refs": [
+        "Sanhedrin 101b:15",
+        "Sanhedrin 102a:1",
+        "Sanhedrin 102a:2",
+        "Sanhedrin 102a:3",
+        "Sanhedrin 102a:4",
+        "Sanhedrin 102a:5",
+        "Sanhedrin 102a:6",
+        "Sanhedrin 102a:7",
+        "Sanhedrin 102a:8",
+        "Sanhedrin 102a:9"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000379",
+      "core_refs": [
+        "Sanhedrin 102b:12",
+        "Sanhedrin 102b:13",
+        "Sanhedrin 102b:14",
+        "Sanhedrin 102b:15",
+        "Sanhedrin 102b:16",
+        "Sanhedrin 102b:17",
+        "Sanhedrin 102b:18",
+        "Sanhedrin 102b:19",
+        "Sanhedrin 102b:20",
+        "Sanhedrin 103a:1"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000385",
+      "core_refs": [
+        "Sanhedrin 104b:2",
+        "Sanhedrin 104b:3",
+        "Sanhedrin 104b:4",
+        "Sanhedrin 104b:5",
+        "Sanhedrin 104b:6",
+        "Sanhedrin 104b:7",
+        "Sanhedrin 104b:8",
+        "Sanhedrin 104b:9",
+        "Sanhedrin 104b:10",
+        "Sanhedrin 104b:11"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000404",
+      "core_refs": [
+        "Sanhedrin 109b:2",
+        "Sanhedrin 109b:3",
+        "Sanhedrin 109b:4",
+        "Sanhedrin 109b:5",
+        "Sanhedrin 109b:6",
+        "Sanhedrin 109b:7",
+        "Sanhedrin 109b:8",
+        "Sanhedrin 109b:9",
+        "Sanhedrin 109b:10",
+        "Sanhedrin 109b:11"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000411",
+      "core_refs": [
+        "Sanhedrin 111b:12",
+        "Sanhedrin 111b:13",
+        "Sanhedrin 111b:14",
+        "Sanhedrin 111b:15",
+        "Sanhedrin 111b:16",
+        "Sanhedrin 111b:17",
+        "Sanhedrin 111b:18",
+        "Sanhedrin 111b:19",
+        "Sanhedrin 112a:1",
+        "Sanhedrin 112a:2"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000416",
+      "core_refs": [
+        "Sanhedrin 113a:10",
+        "Sanhedrin 113a:11",
+        "Sanhedrin 113a:12",
+        "Sanhedrin 113a:13",
+        "Sanhedrin 113a:14",
+        "Sanhedrin 113a:15",
+        "Sanhedrin 113a:16",
+        "Sanhedrin 113b:1",
+        "Sanhedrin 113b:2",
+        "Sanhedrin 113b:3"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 0.10047846889952153,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000417",
+      "core_refs": [
+        "Sanhedrin 113b:4"
+      ],
+      "inclusion_probability": 0.10047846889952153,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nezikin/Sanhedrin/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "bf0e4b682965e2de25969841f69354a90afceaa38e84ad32782d24d26f1ba2aa"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Sanhedrin"
+}

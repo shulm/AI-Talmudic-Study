@@ -1,0 +1,448 @@
+{
+  "source_worktree": "F:\\Sefaria_QA\\worktrees\\bavli-sugya-continuation-pr10",
+  "head": "1b9741601cd27a8e1d8b25638af379d4d5117f00",
+  "branch": "research/bavli-sugya-continuation-pr10",
+  "status": " M research/bavli_sugya_corpus_v1/HANDOFF.md\n M research/bavli_sugya_corpus_v1/block_ledger.json\n M research/bavli_sugya_corpus_v1/context/segments.jsonl\n M research/bavli_sugya_corpus_v1/context/windows.jsonl\n M research/bavli_sugya_corpus_v1/continuation.py\n M research/bavli_sugya_corpus_v1/data/relations.jsonl\n M research/bavli_sugya_corpus_v1/data/review_queue.jsonl\n M research/bavli_sugya_corpus_v1/data/scholars.jsonl\n M research/bavli_sugya_corpus_v1/data/segments.jsonl\n M research/bavli_sugya_corpus_v1/data/statements.jsonl\n M research/bavli_sugya_corpus_v1/data/sugyot.jsonl\n M research/bavli_sugya_corpus_v1/delivery_manifest.json\n M research/bavli_sugya_corpus_v1/export_reader.py\n M research/bavli_sugya_corpus_v1/exports/berakhot_index.json\n M research/bavli_sugya_corpus_v1/exports/berakhot_sugya_reader.html\n M research/bavli_sugya_corpus_v1/exports/berakhot_sugyot_cumulative.jsonl\n M research/bavli_sugya_corpus_v1/exports/verify_reader.cjs\n M research/bavli_sugya_corpus_v1/progress_manifest.json\n M research/bavli_sugya_corpus_v1/qa_report.json\n M research/bavli_sugya_corpus_v1/reproduction_report.json\n M research/bavli_sugya_corpus_v1/revisions_ledger.jsonl\n M research/bavli_sugya_corpus_v1/test_reproduction.py\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/comparison.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/comparison.md\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/independent_review_initial.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/input_packet.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/proposal.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/proposal_initial.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/comparison.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/comparison.md\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/independent_review_initial.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/input_packet.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/proposal.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/proposal_initial.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/comparison.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/comparison.md\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/independent_review_initial.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/input_packet.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/proposal.json\n?? research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/proposal_initial.json\n",
+  "files": [
+    {
+      "path": "research/bavli_sugya_corpus_v1/.gitattributes",
+      "sha256": "5d2c66adb84298fd3a0322767edd663cc96af4554d31257ad64fd2d4ddbd70c6",
+      "bytes": 31
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/.gitignore",
+      "sha256": "a8b304dc333f13c6c533a046380f4ada56175808256142df14bc9c93d8a16737",
+      "bytes": 25
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/annotation_completion.py",
+      "sha256": "94fc356681e476885ebbdbad3f5c87826f46488ca13cf47d04327903b056f62e",
+      "bytes": 11844
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/annotation_initial.py",
+      "sha256": "cb4033f66c23e24e8cd80523291a952aa5c597f8b3358555abf84887c8d7c569",
+      "bytes": 26224
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/annotation_manifest.json",
+      "sha256": "bc09abb975b1cb778bb37c38a773fedd7851981761cdedbaff8dc687a85aeb63",
+      "bytes": 1167
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/block_ledger.json",
+      "sha256": "e707803898f0b8f53a362f7ace7c1aefbdedd46e97aade74061cfd7637124f60",
+      "bytes": 9728
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/compile_annotations.py",
+      "sha256": "04ada7add665de8faa3767b8065bd62b12abe023b39bbd2e07da083c504df675",
+      "bytes": 9224
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/continuation.py",
+      "sha256": "2d9c96d49a657546ccc60ab41da28b9029f3dcd407543734e360da3a1e855d7e",
+      "bytes": 62964
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/continuation_test_report.json",
+      "sha256": "d579c348350ba62dec25ffccc35180ce01748d1e04f6e7904eecd96522e5271f",
+      "bytes": 409
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/continue_corpus.py",
+      "sha256": "1c92ba3ef87ff0ddc7f8a0e88fea600954e0e4a16c9b953f1198d11ef61f7168",
+      "bytes": 3840
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/delivery_manifest.json",
+      "sha256": "a4e868716b3f1cbfb8311760611b9dfcdaf04241b56283c684e3bf55c43ce8fa",
+      "bytes": 8440
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/examples.py",
+      "sha256": "7b8930ba108c8e392fc63e1425fdb6c9a536d1156bce69fc0521a7a5165723d9",
+      "bytes": 1693
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/export_reader.py",
+      "sha256": "c79531005d5b11a8b3891f8485a2847afc7accc562dea6cf22cd2d2b15fee565",
+      "bytes": 29756
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/HANDOFF.md",
+      "sha256": "54dae51f24536491b12d768975b05b3b2ade9daa593d41e2d7779e72234f330b",
+      "bytes": 5762
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/make_schema.py",
+      "sha256": "670466a8587de9c81881cc3b60c5c3f21ee33b6ca5a36c5c33aede2798db5337",
+      "bytes": 3688
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/make_schema_v1_1.py",
+      "sha256": "832903a2ad88ac07b677e4fd0c174079091565d8814c74a3a8c6e8d7581444a0",
+      "bytes": 8769
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/mapping_review.json",
+      "sha256": "a46ecdb29e550a6a377c5c55e7836e8ce70dc2f5cc9121c7c672c1fbc2099806",
+      "bytes": 77576
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/mapping_review.md",
+      "sha256": "4742ff873dfe1ca4e2e09b6d24b1a4f7f526d64d1eac10198c813ec5043414aa",
+      "bytes": 3195
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/pipeline.py",
+      "sha256": "3488e0c2004a82911f8d8d84cd87013d6aec682d99c412e83967a4dd4113ec37",
+      "bytes": 5908
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/progress_manifest.json",
+      "sha256": "16478c3d8bd2190d788706e97252e72c507bad3d299bee29a79c0b062c9aac38",
+      "bytes": 15253
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/QA.md",
+      "sha256": "f1b79514568c8526559ef78d2ed6adcfb554e9433976675b90b2e471b46e9afb",
+      "bytes": 4277
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/qa_report.json",
+      "sha256": "ae99686902d4a137983ec78a8232767472c3329e678c0e8382e64d4b59450b98",
+      "bytes": 1041
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/README.md",
+      "sha256": "9c2f0427c28285632a897af616a1b2a0f0e1ddc64696bc0e878859c8ff10652f",
+      "bytes": 2960
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/REPRODUCE.md",
+      "sha256": "7c56163f142fb06a1ff41f31294cbf9cb1b6aa93dfa3ad70288d5f74482763c2",
+      "bytes": 1704
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/reproduction_report.json",
+      "sha256": "27d179e3b6e01a82e8ad2867b94cf53d9b1a88eb309470717399229b86d2d250",
+      "bytes": 857
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/revisions.json",
+      "sha256": "80501a48aebd49f2538153f9d802e6423d056951c5c6d309eb7faeb7eb2a9512",
+      "bytes": 4023
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/revisions_ledger.jsonl",
+      "sha256": "982fc87dc8bf550a8e1003c6b8f952960f4956a3b16ef61599912720f4a8a101",
+      "bytes": 17949
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/RUN_LEDGER.md",
+      "sha256": "1fccfd640122916c1a9fc279cd6366405120f0b05df08a037a24bcc61bdf1206",
+      "bytes": 2668
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/SCHEMA_NOTES.md",
+      "sha256": "7f1a285f13f7c46d51b740ef8df371cc40e81ee242c702868a30812efd125593",
+      "bytes": 2736
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/schema_v1.json",
+      "sha256": "68e9aed76d0b2eb111fa4356558a94f129809d9c6768c5d1ad05c6eaff9029e8",
+      "bytes": 19707
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/schema_v1_1.json",
+      "sha256": "b1ef94d7ec11331812c52b30b50447c74f91eae576c6b4cde743ad40f021ea68",
+      "bytes": 39850
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/SOURCE_ATTRIBUTION.md",
+      "sha256": "b0054a730f6b5dede8724dfceb12cbc7a87d7e4f63ca008bfd3c7bf8a0d5d4fd",
+      "bytes": 1924
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/source_manifest.json",
+      "sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "bytes": 63626
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/test_continuation.py",
+      "sha256": "ff61e5835069a82cc8bab7340eae8759c0442458f612c91778c6349335695a9c",
+      "bytes": 9645
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/test_pipeline.py",
+      "sha256": "3ae2b44c57a9781bc082e22850a05bae7288d7084e878b63cb2e41a719dcad38",
+      "bytes": 1784
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/test_report.json",
+      "sha256": "4d93c450b9b11c05a8b6593055dc2ae7c945984eb7e140f74dc67ab7cf8536b0",
+      "bytes": 387
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/test_reproduction.py",
+      "sha256": "7a7f6661a3f123b244e72e94700b66835f3e90ba47d6c3a723737e8e2c89d467",
+      "bytes": 2773
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/validate.py",
+      "sha256": "9993b7a46bd99ac7a6b9e060fbd559d53ef4d957271cb8d67497204fa21cf08d",
+      "bytes": 11090
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/verify_manifest.py",
+      "sha256": "fad808bf295cac8526df92591f4030740c8d1a1b1a31cfd249afa152395f62da",
+      "bytes": 401
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/context/segments.jsonl",
+      "sha256": "390a00c2fd8ab37c5c498475474d31d0c65b5a0a8fdf6de6ec5b498b93093bad",
+      "bytes": 39625
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/context/windows.jsonl",
+      "sha256": "3b0788961e062b61d834bf57028e8a59086a3c4dcf27f15b38b87b24eb35fd35",
+      "bytes": 32519
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/positions.jsonl",
+      "sha256": "0251989361dd03bf5d76e5e04e6501adcfc6fc72822ac96506e738045738ea35",
+      "bytes": 103424
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/questions.jsonl",
+      "sha256": "4cf2b68d922f027e04eb2d58d4db96442196757b48cbe194124a924f244cc04d",
+      "bytes": 41811
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/relations.jsonl",
+      "sha256": "85b2ed9efad8f3da75755cba538e3e9fb468ba564d79966286db53670ee241e4",
+      "bytes": 65333
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/review_queue.jsonl",
+      "sha256": "3f76494dfdfc9f04909a8f34db63e837b5146cf0a3bd962eb83f6dd19ed8314e",
+      "bytes": 248767
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/scholars.jsonl",
+      "sha256": "5e32866eb47ecf4b8041481e1925157601e944faa03ecae3181ecf62073db452",
+      "bytes": 68098
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/segments.jsonl",
+      "sha256": "2bb827e78053f812487267cfe46f258512bc2b1828247d2090f490bbd79acade",
+      "bytes": 267154
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/statements.jsonl",
+      "sha256": "187fb48bd762e057bae45623b242008a5c046cf828a0fc5c97d10f93c536457d",
+      "bytes": 336674
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/data/sugyot.jsonl",
+      "sha256": "c823134454ad9fc51b83d51f49527155e766e226614c519c212887b9dc1dfb66",
+      "bytes": 290748
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/exports/berakhot_index.json",
+      "sha256": "eb2d069b03ad4810fa94aa0fa9848f753ead46a2b5668f3ac652c40cc6ea1ca1",
+      "bytes": 44162
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/exports/berakhot_sugya_reader.html",
+      "sha256": "6157a23bc27c018b9a0cdfb4d17421ddb84a886c224b073480ae690508fdc215",
+      "bytes": 500399
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/exports/berakhot_sugyot_cumulative.jsonl",
+      "sha256": "d99acf8d401e1e6311022906be62fc51a8435357d7d3aad94b51a5dabc8200d9",
+      "bytes": 434549
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/exports/verify_reader.cjs",
+      "sha256": "df1fcb9a30b2315fbfc42a0130443378cc119282b1f5b743b773971c83194373",
+      "bytes": 3790
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/local_data/berakhot_5a_6b_reading.txt",
+      "sha256": "8eabb842f88fa8a3560c35a552cfa504bebea500d90b24cf1bf5dfd5e0b39d39",
+      "bytes": 30832
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/local_data/berakhot_6a_7b_reading.txt",
+      "sha256": "615780772633fd7466e9906e2ac04c64482015da7d7e85d755fbe980671c1637",
+      "bytes": 34199
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/local_data/berakhot_7a_8b_reading.txt",
+      "sha256": "24e06884fd6252a552fdf95bfaf3541d31ed08c7bd853ff87773a7cee3db747a",
+      "bytes": 33345
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/local_data/berakhot_8a_9b_reading.txt",
+      "sha256": "96528ab178fb2846633324b447a1bdf01fd9aefa34ff8af97eebdf795e462a37",
+      "bytes": 29624
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/review/comparison.json",
+      "sha256": "a3af87f397a8522fee28b23450dfbdad3851c5a6bf24851d89429db4cd0c68c4",
+      "bytes": 19478
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/review/comparison.md",
+      "sha256": "87b8ede8105bea1828100e6816e8d6b55f5a4eba7fa840af34fb97963ad8c131",
+      "bytes": 3628
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/review/final_review.json",
+      "sha256": "d7e416d4b4ec26c8e79bacc84c2147404e16be8ed4af8b8f0541843fb87ba936",
+      "bytes": 9865
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/review/final_review.md",
+      "sha256": "4effbace491458048e97698c91f6631ea70e3cd3771c609260befb14c005a0da",
+      "bytes": 3448
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/review/independent_bm_initial.json",
+      "sha256": "72219e2588b45d1183d41e525fe373287514c700c762a2041e089bba71e64044",
+      "bytes": 31207
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_5b_6a/comparison.json",
+      "sha256": "3989089468c0cf35440c9a4d25edd9be98edddaaed2cccbfbb97fd810bb39c17",
+      "bytes": 1661
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_5b_6a/comparison.md",
+      "sha256": "fb965b267606e699269bb8a057bd4fda4257dcebed91cefe175cb62660a1ac73",
+      "bytes": 4420
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_5b_6a/independent_review_initial.json",
+      "sha256": "0ccf779caa6347a0d9ff58e10ccbfe6bc2415ca22a953ccb7d332e09fec6ee22",
+      "bytes": 46439
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_5b_6a/input_packet.json",
+      "sha256": "78c2fedf5b60b4bee50e7c451e1c10bbd1ecfc6eb332d89795a17c4fbc45e703",
+      "bytes": 109316
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_5b_6a/proposal.json",
+      "sha256": "76ea0e66e571afcb5379a408bd6c4179ab30c0ed93534c351b45b030140cd266",
+      "bytes": 35089
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_5b_6a/proposal_initial.json",
+      "sha256": "8c81a424917cc05b18c2635140719d7bb987d72079928396c78ba5686a63eef9",
+      "bytes": 34358
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/comparison.json",
+      "sha256": "0c51ff30ef57f3d157f69ae4cffb69f7e764fdb0365aac6e0772209d8cf059a1",
+      "bytes": 501
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/comparison.md",
+      "sha256": "f5bc86d43a4770e17a4de260b7b7edcf3c67e250922bd1904a3d4a12835edf72",
+      "bytes": 856
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/independent_review_initial.json",
+      "sha256": "c448e15e36f3e4d973cda979a20a0d867d3ca1b5d490792a5458916e1476983a",
+      "bytes": 48483
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/input_packet.json",
+      "sha256": "6e7f6dd9d90dd6d9f402d01657cd39caf40b022d1dd821543f5c455fd252a9ec",
+      "bytes": 120735
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/proposal.json",
+      "sha256": "3e824301644db4a766aa727c65f43ea01d923565adfafab5d0b07adbec708137",
+      "bytes": 56870
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_6b_7a/proposal_initial.json",
+      "sha256": "88aacd829f4d0ec4a8e091631b322009d8b828224e501d8b364c6b925f212f35",
+      "bytes": 45730
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/comparison.json",
+      "sha256": "f29fdea5b80e01eb9d8ee7a8a0a9ebd187b25797b9e53c9e4e84e7e5030b450d",
+      "bytes": 370
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/comparison.md",
+      "sha256": "1cf2f7a399a44c4995d8defbecf85e2d60f0751074585ae6a1bbe1e61f317265",
+      "bytes": 817
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/independent_review_initial.json",
+      "sha256": "cd293837008869cd1227050ed70c311e7eb660aeb7e99363f5d7f5f73f671c8f",
+      "bytes": 43868
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/input_packet.json",
+      "sha256": "4bfda2d9b5b0644e16efeb482c00ceeb46cfb43d73a213af2cfa062aaf3a397e",
+      "bytes": 114646
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/proposal.json",
+      "sha256": "666df339543cc46ff05d1e87dbc1a1183090711271cdd24f678197d7a5df4bfd",
+      "bytes": 50381
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_7b_8a/proposal_initial.json",
+      "sha256": "93b73be1f481e952f4329851ef5875cea8813d7615408da0efea3ecf692f4a3b",
+      "bytes": 41341
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/comparison.json",
+      "sha256": "7175ec90e0ed3e07f98946fa66a631b47ded337ca2523b3872f8e90763fbd179",
+      "bytes": 370
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/comparison.md",
+      "sha256": "c30a1eb19e486d6955653095696530538d543a8f1691a75e512444d3736fac8f",
+      "bytes": 1097
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/independent_review_initial.json",
+      "sha256": "358e7d7a6f0f38067525f13e6ca6c1f2a01839af008c7116720de103fb83ff6d",
+      "bytes": 34853
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/input_packet.json",
+      "sha256": "a34f17222684329686944f86b4b54ac11438e492bcb77f9f85cd81640700712a",
+      "bytes": 105656
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/proposal.json",
+      "sha256": "ca344821ce7db68b0eb814c67a3a5914d2d29522f81159d2cb1b470cc5b626a5",
+      "bytes": 35004
+    },
+    {
+      "path": "research/bavli_sugya_corpus_v1/blocks/berakhot_8b_9a/proposal_initial.json",
+      "sha256": "0b3379929979dc3b125506abf9666cb2f2e8a8b9b34aa76a34a1ea69bd493afe",
+      "bytes": 29050
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "c0ef7975de09425d085270c87f07f4b348236a8f5c8b1c19b21604873f08b0ff",
+      "bytes": 1510
+    },
+    {
+      "path": "AGENT_HANDOFF.md",
+      "sha256": "cbfb90349fa543bff004d470c84e642c97572098f51843ce20359f87dda0a6df",
+      "bytes": 17339
+    }
+  ]
+}

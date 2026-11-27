@@ -1,0 +1,738 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 15,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 15,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 30,
+    "probability_core_segments": 300,
+    "source_nonempty_segments": 895,
+    "source_segment_positions": 895,
+    "union_blocks": 32,
+    "union_core_segments": 315
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_taanit.json",
+    "sha256": "440364840dc8e02cee080bddf39e9e154c0acd8de384459acd37af00d492eb42"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_taanit",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_taanit.json",
+    "sha256": "440364840dc8e02cee080bddf39e9e154c0acd8de384459acd37af00d492eb42"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Taanit.json",
+    "sha256": "8cedfa50e980e451d827cdb5ee15f000d9c0df88749284b8995ad691ff58d0b0"
+  },
+  "plan_sha256": "cdfdbac9d4e337b1d5fcd7dd6db0e256b5f2fb0c6f966b1530fdbfc801d2c20d",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 90,
+    "inclusion_probability_denominator": 90,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000004",
+      "block_000005",
+      "block_000010",
+      "block_000013",
+      "block_000015",
+      "block_000016",
+      "block_000017",
+      "block_000021",
+      "block_000022",
+      "block_000023",
+      "block_000026",
+      "block_000031",
+      "block_000032",
+      "block_000036",
+      "block_000038",
+      "block_000045",
+      "block_000047",
+      "block_000050",
+      "block_000060",
+      "block_000061",
+      "block_000068",
+      "block_000070",
+      "block_000071",
+      "block_000073",
+      "block_000078",
+      "block_000080",
+      "block_000084",
+      "block_000085",
+      "block_000086",
+      "block_000087"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Taanit 2a:1",
+        "Taanit 2a:2",
+        "Taanit 2a:3",
+        "Taanit 2a:4",
+        "Taanit 2a:5",
+        "Taanit 2a:6",
+        "Taanit 2a:7",
+        "Taanit 2a:8",
+        "Taanit 2a:9",
+        "Taanit 2a:10"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000004",
+      "core_refs": [
+        "Taanit 3a:11",
+        "Taanit 3a:12",
+        "Taanit 3a:13",
+        "Taanit 3a:14",
+        "Taanit 3b:1",
+        "Taanit 3b:2",
+        "Taanit 3b:3",
+        "Taanit 3b:4",
+        "Taanit 3b:5",
+        "Taanit 3b:6"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000005",
+      "core_refs": [
+        "Taanit 3b:7",
+        "Taanit 3b:8",
+        "Taanit 3b:9",
+        "Taanit 3b:10",
+        "Taanit 3b:11",
+        "Taanit 3b:12",
+        "Taanit 3b:13",
+        "Taanit 4a:1",
+        "Taanit 4a:2",
+        "Taanit 4a:3"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000010",
+      "core_refs": [
+        "Taanit 5a:10",
+        "Taanit 5a:11",
+        "Taanit 5a:12",
+        "Taanit 5a:13",
+        "Taanit 5a:14",
+        "Taanit 5b:1",
+        "Taanit 5b:2",
+        "Taanit 5b:3",
+        "Taanit 5b:4",
+        "Taanit 5b:5"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000013",
+      "core_refs": [
+        "Taanit 6b:1",
+        "Taanit 6b:2",
+        "Taanit 6b:3",
+        "Taanit 6b:4",
+        "Taanit 6b:5",
+        "Taanit 6b:6",
+        "Taanit 6b:7",
+        "Taanit 6b:8",
+        "Taanit 6b:9",
+        "Taanit 6b:10"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000015",
+      "core_refs": [
+        "Taanit 7a:4",
+        "Taanit 7a:5",
+        "Taanit 7a:6",
+        "Taanit 7a:7",
+        "Taanit 7a:8",
+        "Taanit 7a:9",
+        "Taanit 7a:10",
+        "Taanit 7a:11",
+        "Taanit 7a:12",
+        "Taanit 7a:13"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000016",
+      "core_refs": [
+        "Taanit 7a:14",
+        "Taanit 7a:15",
+        "Taanit 7a:16",
+        "Taanit 7a:17",
+        "Taanit 7a:18",
+        "Taanit 7b:1",
+        "Taanit 7b:2",
+        "Taanit 7b:3",
+        "Taanit 7b:4",
+        "Taanit 7b:5"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000017",
+      "core_refs": [
+        "Taanit 7b:6",
+        "Taanit 7b:7",
+        "Taanit 7b:8",
+        "Taanit 7b:9",
+        "Taanit 7b:10",
+        "Taanit 7b:11",
+        "Taanit 7b:12",
+        "Taanit 7b:13",
+        "Taanit 7b:14",
+        "Taanit 7b:15"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000021",
+      "core_refs": [
+        "Taanit 8b:12",
+        "Taanit 8b:13",
+        "Taanit 8b:14",
+        "Taanit 8b:15",
+        "Taanit 8b:16",
+        "Taanit 8b:17",
+        "Taanit 9a:1",
+        "Taanit 9a:2",
+        "Taanit 9a:3",
+        "Taanit 9a:4"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000022",
+      "core_refs": [
+        "Taanit 9a:5",
+        "Taanit 9a:6",
+        "Taanit 9a:7",
+        "Taanit 9a:8",
+        "Taanit 9a:9",
+        "Taanit 9a:10",
+        "Taanit 9a:11",
+        "Taanit 9a:12",
+        "Taanit 9a:13",
+        "Taanit 9a:14"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000023",
+      "core_refs": [
+        "Taanit 9b:1",
+        "Taanit 9b:2",
+        "Taanit 9b:3",
+        "Taanit 9b:4",
+        "Taanit 9b:5",
+        "Taanit 9b:6",
+        "Taanit 9b:7",
+        "Taanit 9b:8",
+        "Taanit 9b:9",
+        "Taanit 9b:10"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000026",
+      "core_refs": [
+        "Taanit 10a:15",
+        "Taanit 10a:16",
+        "Taanit 10a:17",
+        "Taanit 10a:18",
+        "Taanit 10a:19",
+        "Taanit 10b:1",
+        "Taanit 10b:2",
+        "Taanit 10b:3",
+        "Taanit 10b:4",
+        "Taanit 10b:5"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000031",
+      "core_refs": [
+        "Taanit 12a:7",
+        "Taanit 12a:8",
+        "Taanit 12a:9",
+        "Taanit 12a:10",
+        "Taanit 12a:11",
+        "Taanit 12a:12",
+        "Taanit 12b:1",
+        "Taanit 12b:2",
+        "Taanit 12b:3",
+        "Taanit 12b:4"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000032",
+      "core_refs": [
+        "Taanit 12b:5",
+        "Taanit 12b:6",
+        "Taanit 12b:7",
+        "Taanit 12b:8",
+        "Taanit 12b:9",
+        "Taanit 12b:10",
+        "Taanit 12b:11",
+        "Taanit 12b:12",
+        "Taanit 12b:13",
+        "Taanit 12b:14"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Taanit 14a:2",
+        "Taanit 14a:3",
+        "Taanit 14a:4",
+        "Taanit 14a:5",
+        "Taanit 14a:6",
+        "Taanit 14a:7",
+        "Taanit 14a:8",
+        "Taanit 14a:9",
+        "Taanit 14a:10",
+        "Taanit 14a:11"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000038",
+      "core_refs": [
+        "Taanit 14b:8",
+        "Taanit 14b:9",
+        "Taanit 14b:10",
+        "Taanit 14b:11",
+        "Taanit 14b:12",
+        "Taanit 14b:13",
+        "Taanit 14b:14",
+        "Taanit 14b:15",
+        "Taanit 15a:1",
+        "Taanit 15a:2"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000045",
+      "core_refs": [
+        "Taanit 17a:4",
+        "Taanit 17a:5",
+        "Taanit 17a:6",
+        "Taanit 17a:7",
+        "Taanit 17a:8",
+        "Taanit 17a:9",
+        "Taanit 17a:10",
+        "Taanit 17a:11",
+        "Taanit 17a:12",
+        "Taanit 17a:13"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000047",
+      "core_refs": [
+        "Taanit 17b:9",
+        "Taanit 17b:10",
+        "Taanit 17b:11",
+        "Taanit 17b:12",
+        "Taanit 17b:13",
+        "Taanit 18a:1",
+        "Taanit 18a:2",
+        "Taanit 18a:3",
+        "Taanit 18a:4",
+        "Taanit 18a:5"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000050",
+      "core_refs": [
+        "Taanit 18b:13",
+        "Taanit 18b:14",
+        "Taanit 18b:15",
+        "Taanit 19a:1",
+        "Taanit 19a:2",
+        "Taanit 19a:3",
+        "Taanit 19a:4",
+        "Taanit 19a:5",
+        "Taanit 19a:6",
+        "Taanit 19a:7"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000060",
+      "core_refs": [
+        "Taanit 22a:4",
+        "Taanit 22a:5",
+        "Taanit 22a:6",
+        "Taanit 22a:7",
+        "Taanit 22a:8",
+        "Taanit 22a:9",
+        "Taanit 22a:10",
+        "Taanit 22a:11",
+        "Taanit 22a:12",
+        "Taanit 22a:13"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000061",
+      "core_refs": [
+        "Taanit 22a:14",
+        "Taanit 22a:15",
+        "Taanit 22a:16",
+        "Taanit 22a:17",
+        "Taanit 22b:1",
+        "Taanit 22b:2",
+        "Taanit 22b:3",
+        "Taanit 22b:4",
+        "Taanit 22b:5",
+        "Taanit 22b:6"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000068",
+      "core_refs": [
+        "Taanit 24a:15",
+        "Taanit 24a:16",
+        "Taanit 24a:17",
+        "Taanit 24a:18",
+        "Taanit 24b:1",
+        "Taanit 24b:2",
+        "Taanit 24b:3",
+        "Taanit 24b:4",
+        "Taanit 24b:5",
+        "Taanit 24b:6"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000070",
+      "core_refs": [
+        "Taanit 25a:3",
+        "Taanit 25a:4",
+        "Taanit 25a:5",
+        "Taanit 25a:6",
+        "Taanit 25a:7",
+        "Taanit 25a:8",
+        "Taanit 25a:9",
+        "Taanit 25a:10",
+        "Taanit 25a:11",
+        "Taanit 25a:12"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000071",
+      "core_refs": [
+        "Taanit 25a:13",
+        "Taanit 25a:14",
+        "Taanit 25a:15",
+        "Taanit 25a:16",
+        "Taanit 25a:17",
+        "Taanit 25a:18",
+        "Taanit 25a:19",
+        "Taanit 25a:20",
+        "Taanit 25b:1",
+        "Taanit 25b:2"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000073",
+      "core_refs": [
+        "Taanit 25b:13",
+        "Taanit 25b:14",
+        "Taanit 25b:15",
+        "Taanit 25b:16",
+        "Taanit 26a:1",
+        "Taanit 26a:2",
+        "Taanit 26a:3",
+        "Taanit 26a:4",
+        "Taanit 26a:5",
+        "Taanit 26a:6"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000078",
+      "core_refs": [
+        "Taanit 27b:4",
+        "Taanit 27b:5",
+        "Taanit 27b:6",
+        "Taanit 27b:7",
+        "Taanit 27b:8",
+        "Taanit 27b:9",
+        "Taanit 27b:10",
+        "Taanit 27b:11",
+        "Taanit 27b:12",
+        "Taanit 27b:13"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000080",
+      "core_refs": [
+        "Taanit 28a:9",
+        "Taanit 28a:10",
+        "Taanit 28a:11",
+        "Taanit 28a:12",
+        "Taanit 28a:13",
+        "Taanit 28a:14",
+        "Taanit 28a:15",
+        "Taanit 28a:16",
+        "Taanit 28a:17",
+        "Taanit 28a:18"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000084",
+      "core_refs": [
+        "Taanit 29a:15",
+        "Taanit 29a:16",
+        "Taanit 29a:17",
+        "Taanit 29a:18",
+        "Taanit 29b:1",
+        "Taanit 29b:2",
+        "Taanit 29b:3",
+        "Taanit 29b:4",
+        "Taanit 29b:5",
+        "Taanit 29b:6"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000085",
+      "core_refs": [
+        "Taanit 29b:7",
+        "Taanit 29b:8",
+        "Taanit 29b:9",
+        "Taanit 29b:10",
+        "Taanit 29b:11",
+        "Taanit 29b:12",
+        "Taanit 29b:13",
+        "Taanit 30a:1",
+        "Taanit 30a:2",
+        "Taanit 30a:3"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000086",
+      "core_refs": [
+        "Taanit 30a:4",
+        "Taanit 30a:5",
+        "Taanit 30a:6",
+        "Taanit 30a:7",
+        "Taanit 30a:8",
+        "Taanit 30a:9",
+        "Taanit 30a:10",
+        "Taanit 30a:11",
+        "Taanit 30a:12",
+        "Taanit 30a:13"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000087",
+      "core_refs": [
+        "Taanit 30a:14",
+        "Taanit 30a:15",
+        "Taanit 30b:1",
+        "Taanit 30b:2",
+        "Taanit 30b:3",
+        "Taanit 30b:4",
+        "Taanit 30b:5",
+        "Taanit 30b:6",
+        "Taanit 30b:7",
+        "Taanit 30b:8"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 0.3333333333333333,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000089",
+      "core_refs": [
+        "Taanit 31a:6",
+        "Taanit 31a:7",
+        "Taanit 31a:8",
+        "Taanit 31a:9",
+        "Taanit 31a:10"
+      ],
+      "inclusion_probability": 0.3333333333333333,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Taanit/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Taanit"
+}

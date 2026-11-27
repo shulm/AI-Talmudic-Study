@@ -1,0 +1,40 @@
+{
+  "delivery_manifest_sha256": "5611b9a20a632c81f5860e2182e306f4f132e49ab0af4747171aab3a27004f90",
+  "full_tractate_admission": false,
+  "new_task_eligibility": false,
+  "routes": [
+    {
+      "comparison_path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\taanit_batch001_exact_version.json",
+      "comparison_sha256": "7a41648b3f217c6fb3223373a533497e32b99af1556896d1349c68694732757f",
+      "dispatch_state": "durable_owner_inbox_pending_acknowledgment",
+      "inbox_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_inbox\\55fc544f8307572e000ce4170244b7308cbc250417db59cddb7815a1db0d7fe2.json",
+      "inbox_sha256": "55fc544f8307572e000ce4170244b7308cbc250417db59cddb7815a1db0d7fe2",
+      "instruction": "Verify exact source and frozen comparison; propose immutable targeted corrections and dependency closure; retain initial readings and quarantine. No full acceptance. Verify current ownership before any write.",
+      "job_id": "bavli_taanit",
+      "lane": "L04",
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/taanit"
+      },
+      "ownership_note": "Runtime owner epoch2 differs from ledger revision4; owner contact/handoff reconciliation required before coordinator-controlled promotion."
+    },
+    {
+      "comparison_path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\chullin_batch001_exact_version.json",
+      "comparison_sha256": "30065eb2a285fbbe07fb027985f2db87d2e5fb69bc751822968daa57e626ae63",
+      "dispatch_state": "durable_owner_inbox_pending_acknowledgment",
+      "inbox_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\review_inbox\\7f1c2fc46e288093636840bb6e941b7396bd54d3e4cd59e6b491ede77a4d3b3d.json",
+      "inbox_sha256": "7f1c2fc46e288093636840bb6e941b7396bd54d3e4cd59e6b491ede77a4d3b3d",
+      "instruction": "Verify exact source and frozen comparison; propose immutable targeted corrections and dependency closure; retain initial readings and quarantine. No full acceptance. Verify current ownership before any write.",
+      "job_id": "bavli_chullin",
+      "lane": "L05",
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L05/chullin"
+      },
+      "ownership_note": "Runtime owner epoch2 differs from ledger revision4; owner contact/handoff reconciliation required before coordinator-controlled promotion."
+    }
+  ],
+  "verification_scope": "All listed relative paths contained, byte counts and SHA256 verified before copying; source and semantic review claims remain attributed to review lead.",
+  "verified_bytes": 10234291,
+  "verified_files": 128
+}

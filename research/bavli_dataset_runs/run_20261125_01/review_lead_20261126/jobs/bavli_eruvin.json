@@ -1,0 +1,886 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 16,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 16,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 37,
+    "probability_core_segments": 370,
+    "source_nonempty_segments": 3646,
+    "source_segment_positions": 3646,
+    "union_blocks": 39,
+    "union_core_segments": 386
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_eruvin.json",
+    "sha256": "eb7c411e0f9cbf7800a111e1073a35052d6ac079a3c4dca030caec98b75eed3d"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_eruvin",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_eruvin.json",
+    "sha256": "eb7c411e0f9cbf7800a111e1073a35052d6ac079a3c4dca030caec98b75eed3d"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Eruvin.json",
+    "sha256": "ccda4139c24cc304f94a2acd5095c0c06d649630a0e2a041c3acd99677f0a86a"
+  },
+  "plan_sha256": "802d46943d94dd059e99737aca20f9694253e033d8789e3a46eecb1bfadb3d91",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 365,
+    "inclusion_probability_denominator": 365,
+    "inclusion_probability_numerator": 37,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000015",
+      "block_000019",
+      "block_000020",
+      "block_000025",
+      "block_000043",
+      "block_000046",
+      "block_000052",
+      "block_000060",
+      "block_000080",
+      "block_000084",
+      "block_000112",
+      "block_000151",
+      "block_000170",
+      "block_000174",
+      "block_000184",
+      "block_000191",
+      "block_000194",
+      "block_000200",
+      "block_000206",
+      "block_000210",
+      "block_000218",
+      "block_000222",
+      "block_000225",
+      "block_000226",
+      "block_000236",
+      "block_000252",
+      "block_000255",
+      "block_000265",
+      "block_000267",
+      "block_000292",
+      "block_000304",
+      "block_000307",
+      "block_000309",
+      "block_000311",
+      "block_000347",
+      "block_000353",
+      "block_000354"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 37
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Eruvin 2a:1",
+        "Eruvin 2a:2",
+        "Eruvin 2a:3",
+        "Eruvin 2a:4",
+        "Eruvin 2a:5",
+        "Eruvin 2a:6",
+        "Eruvin 2a:7",
+        "Eruvin 2a:8",
+        "Eruvin 2a:9",
+        "Eruvin 2a:10"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000015",
+      "core_refs": [
+        "Eruvin 6a:12",
+        "Eruvin 6b:1",
+        "Eruvin 6b:2",
+        "Eruvin 6b:3",
+        "Eruvin 6b:4",
+        "Eruvin 6b:5",
+        "Eruvin 6b:6",
+        "Eruvin 6b:7",
+        "Eruvin 6b:8",
+        "Eruvin 6b:9"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000019",
+      "core_refs": [
+        "Eruvin 8a:4",
+        "Eruvin 8a:5",
+        "Eruvin 8a:6",
+        "Eruvin 8a:7",
+        "Eruvin 8a:8",
+        "Eruvin 8a:9",
+        "Eruvin 8a:10",
+        "Eruvin 8a:11",
+        "Eruvin 8a:12",
+        "Eruvin 8a:13"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000020",
+      "core_refs": [
+        "Eruvin 8a:14",
+        "Eruvin 8a:15",
+        "Eruvin 8a:16",
+        "Eruvin 8a:17",
+        "Eruvin 8a:18",
+        "Eruvin 8a:19",
+        "Eruvin 8a:20",
+        "Eruvin 8b:1",
+        "Eruvin 8b:2",
+        "Eruvin 8b:3"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000025",
+      "core_refs": [
+        "Eruvin 9b:7",
+        "Eruvin 9b:8",
+        "Eruvin 9b:9",
+        "Eruvin 9b:10",
+        "Eruvin 9b:11",
+        "Eruvin 9b:12",
+        "Eruvin 9b:13",
+        "Eruvin 9b:14",
+        "Eruvin 10a:1",
+        "Eruvin 10a:2"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000043",
+      "core_refs": [
+        "Eruvin 14a:8",
+        "Eruvin 14a:9",
+        "Eruvin 14a:10",
+        "Eruvin 14a:11",
+        "Eruvin 14a:12",
+        "Eruvin 14a:13",
+        "Eruvin 14a:14",
+        "Eruvin 14a:15",
+        "Eruvin 14a:16",
+        "Eruvin 14a:17"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000046",
+      "core_refs": [
+        "Eruvin 14b:15",
+        "Eruvin 14b:16",
+        "Eruvin 14b:17",
+        "Eruvin 14b:18",
+        "Eruvin 14b:19",
+        "Eruvin 14b:20",
+        "Eruvin 15a:1",
+        "Eruvin 15a:2",
+        "Eruvin 15a:3",
+        "Eruvin 15a:4"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000052",
+      "core_refs": [
+        "Eruvin 16a:13",
+        "Eruvin 16a:14",
+        "Eruvin 16a:15",
+        "Eruvin 16a:16",
+        "Eruvin 16a:17",
+        "Eruvin 16a:18",
+        "Eruvin 16b:1",
+        "Eruvin 16b:2",
+        "Eruvin 16b:3",
+        "Eruvin 16b:4"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000060",
+      "core_refs": [
+        "Eruvin 18a:4",
+        "Eruvin 18a:5",
+        "Eruvin 18a:6",
+        "Eruvin 18a:7",
+        "Eruvin 18a:8",
+        "Eruvin 18a:9",
+        "Eruvin 18a:10",
+        "Eruvin 18a:11",
+        "Eruvin 18a:12",
+        "Eruvin 18a:13"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000080",
+      "core_refs": [
+        "Eruvin 22a:20",
+        "Eruvin 22a:21",
+        "Eruvin 22a:22",
+        "Eruvin 22a:23",
+        "Eruvin 22a:24",
+        "Eruvin 22a:25",
+        "Eruvin 22a:26",
+        "Eruvin 22a:27",
+        "Eruvin 22a:28",
+        "Eruvin 22b:1"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000084",
+      "core_refs": [
+        "Eruvin 23a:10",
+        "Eruvin 23a:11",
+        "Eruvin 23a:12",
+        "Eruvin 23a:13",
+        "Eruvin 23a:14",
+        "Eruvin 23a:15",
+        "Eruvin 23a:16",
+        "Eruvin 23b:1",
+        "Eruvin 23b:2",
+        "Eruvin 23b:3"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000112",
+      "core_refs": [
+        "Eruvin 31a:10",
+        "Eruvin 31a:11",
+        "Eruvin 31a:12",
+        "Eruvin 31b:1",
+        "Eruvin 31b:2",
+        "Eruvin 31b:3",
+        "Eruvin 31b:4",
+        "Eruvin 31b:5",
+        "Eruvin 31b:6",
+        "Eruvin 31b:7"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000151",
+      "core_refs": [
+        "Eruvin 43b:14",
+        "Eruvin 43b:15",
+        "Eruvin 43b:16",
+        "Eruvin 43b:17",
+        "Eruvin 43b:18",
+        "Eruvin 43b:19",
+        "Eruvin 44a:1",
+        "Eruvin 44a:2",
+        "Eruvin 44a:3",
+        "Eruvin 44a:4"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000170",
+      "core_refs": [
+        "Eruvin 48b:1",
+        "Eruvin 48b:2",
+        "Eruvin 48b:3",
+        "Eruvin 48b:4",
+        "Eruvin 48b:5",
+        "Eruvin 48b:6",
+        "Eruvin 48b:7",
+        "Eruvin 48b:8",
+        "Eruvin 48b:9",
+        "Eruvin 49a:1"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000174",
+      "core_refs": [
+        "Eruvin 49b:7",
+        "Eruvin 49b:8",
+        "Eruvin 49b:9",
+        "Eruvin 49b:10",
+        "Eruvin 49b:11",
+        "Eruvin 49b:12",
+        "Eruvin 49b:13",
+        "Eruvin 49b:14",
+        "Eruvin 50a:1",
+        "Eruvin 50a:2"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000184",
+      "core_refs": [
+        "Eruvin 52b:13",
+        "Eruvin 52b:14",
+        "Eruvin 52b:15",
+        "Eruvin 52b:16",
+        "Eruvin 53a:1",
+        "Eruvin 53a:2",
+        "Eruvin 53a:3",
+        "Eruvin 53a:4",
+        "Eruvin 53a:5",
+        "Eruvin 53a:6"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000191",
+      "core_refs": [
+        "Eruvin 54a:18",
+        "Eruvin 54a:19",
+        "Eruvin 54a:20",
+        "Eruvin 54a:21",
+        "Eruvin 54a:22",
+        "Eruvin 54a:23",
+        "Eruvin 54a:24",
+        "Eruvin 54a:25",
+        "Eruvin 54a:26",
+        "Eruvin 54a:27"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000194",
+      "core_refs": [
+        "Eruvin 54b:21",
+        "Eruvin 54b:22",
+        "Eruvin 54b:23",
+        "Eruvin 54b:24",
+        "Eruvin 54b:25",
+        "Eruvin 55a:1",
+        "Eruvin 55a:2",
+        "Eruvin 55a:3",
+        "Eruvin 55a:4",
+        "Eruvin 55a:5"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000200",
+      "core_refs": [
+        "Eruvin 56b:9",
+        "Eruvin 56b:10",
+        "Eruvin 56b:11",
+        "Eruvin 56b:12",
+        "Eruvin 57a:1",
+        "Eruvin 57a:2",
+        "Eruvin 57a:3",
+        "Eruvin 57a:4",
+        "Eruvin 57a:5",
+        "Eruvin 57a:6"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000206",
+      "core_refs": [
+        "Eruvin 58b:7",
+        "Eruvin 58b:8",
+        "Eruvin 58b:9",
+        "Eruvin 58b:10",
+        "Eruvin 58b:11",
+        "Eruvin 58b:12",
+        "Eruvin 58b:13",
+        "Eruvin 59a:1",
+        "Eruvin 59a:2",
+        "Eruvin 59a:3"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000210",
+      "core_refs": [
+        "Eruvin 60a:8",
+        "Eruvin 60a:9",
+        "Eruvin 60a:10",
+        "Eruvin 60a:11",
+        "Eruvin 60a:12",
+        "Eruvin 60a:13",
+        "Eruvin 60a:14",
+        "Eruvin 60a:15",
+        "Eruvin 60a:16",
+        "Eruvin 60a:17"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000218",
+      "core_refs": [
+        "Eruvin 62b:4",
+        "Eruvin 62b:5",
+        "Eruvin 62b:6",
+        "Eruvin 62b:7",
+        "Eruvin 62b:8",
+        "Eruvin 62b:9",
+        "Eruvin 62b:10",
+        "Eruvin 62b:11",
+        "Eruvin 62b:12",
+        "Eruvin 62b:13"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000222",
+      "core_refs": [
+        "Eruvin 63b:5",
+        "Eruvin 63b:6",
+        "Eruvin 63b:7",
+        "Eruvin 63b:8",
+        "Eruvin 63b:9",
+        "Eruvin 63b:10",
+        "Eruvin 63b:11",
+        "Eruvin 63b:12",
+        "Eruvin 63b:13",
+        "Eruvin 63b:14"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000225",
+      "core_refs": [
+        "Eruvin 64b:8",
+        "Eruvin 64b:9",
+        "Eruvin 64b:10",
+        "Eruvin 64b:11",
+        "Eruvin 64b:12",
+        "Eruvin 64b:13",
+        "Eruvin 64b:14",
+        "Eruvin 64b:15",
+        "Eruvin 64b:16",
+        "Eruvin 64b:17"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000226",
+      "core_refs": [
+        "Eruvin 64b:18",
+        "Eruvin 64b:19",
+        "Eruvin 64b:20",
+        "Eruvin 64b:21",
+        "Eruvin 65a:1",
+        "Eruvin 65a:2",
+        "Eruvin 65a:3",
+        "Eruvin 65a:4",
+        "Eruvin 65a:5",
+        "Eruvin 65a:6"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000236",
+      "core_refs": [
+        "Eruvin 67b:16",
+        "Eruvin 67b:17",
+        "Eruvin 67b:18",
+        "Eruvin 67b:19",
+        "Eruvin 68a:1",
+        "Eruvin 68a:2",
+        "Eruvin 68a:3",
+        "Eruvin 68a:4",
+        "Eruvin 68a:5",
+        "Eruvin 68a:6"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000252",
+      "core_refs": [
+        "Eruvin 72b:18",
+        "Eruvin 73a:1",
+        "Eruvin 73a:2",
+        "Eruvin 73a:3",
+        "Eruvin 73a:4",
+        "Eruvin 73a:5",
+        "Eruvin 73a:6",
+        "Eruvin 73a:7",
+        "Eruvin 73a:8",
+        "Eruvin 73a:9"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000255",
+      "core_refs": [
+        "Eruvin 73b:12",
+        "Eruvin 73b:13",
+        "Eruvin 73b:14",
+        "Eruvin 73b:15",
+        "Eruvin 73b:16",
+        "Eruvin 73b:17",
+        "Eruvin 73b:18",
+        "Eruvin 74a:1",
+        "Eruvin 74a:2",
+        "Eruvin 74a:3"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000265",
+      "core_refs": [
+        "Eruvin 77a:11",
+        "Eruvin 77a:12",
+        "Eruvin 77a:13",
+        "Eruvin 77a:14",
+        "Eruvin 77a:15",
+        "Eruvin 77a:16",
+        "Eruvin 77a:17",
+        "Eruvin 77a:18",
+        "Eruvin 77b:1",
+        "Eruvin 77b:2"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000267",
+      "core_refs": [
+        "Eruvin 78a:3",
+        "Eruvin 78a:4",
+        "Eruvin 78a:5",
+        "Eruvin 78a:6",
+        "Eruvin 78a:7",
+        "Eruvin 78a:8",
+        "Eruvin 78a:9",
+        "Eruvin 78a:10",
+        "Eruvin 78a:11",
+        "Eruvin 78a:12"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000292",
+      "core_refs": [
+        "Eruvin 84b:1",
+        "Eruvin 84b:2",
+        "Eruvin 84b:3",
+        "Eruvin 84b:4",
+        "Eruvin 84b:5",
+        "Eruvin 84b:6",
+        "Eruvin 84b:7",
+        "Eruvin 85a:1",
+        "Eruvin 85a:2",
+        "Eruvin 85a:3"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000304",
+      "core_refs": [
+        "Eruvin 88a:17",
+        "Eruvin 88a:18",
+        "Eruvin 88a:19",
+        "Eruvin 88a:20",
+        "Eruvin 88b:1",
+        "Eruvin 88b:2",
+        "Eruvin 88b:3",
+        "Eruvin 88b:4",
+        "Eruvin 88b:5",
+        "Eruvin 88b:6"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000307",
+      "core_refs": [
+        "Eruvin 89a:4",
+        "Eruvin 89a:5",
+        "Eruvin 89a:6",
+        "Eruvin 89a:7",
+        "Eruvin 89a:8",
+        "Eruvin 89a:9",
+        "Eruvin 89a:10",
+        "Eruvin 89a:11",
+        "Eruvin 89a:12",
+        "Eruvin 89a:13"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000309",
+      "core_refs": [
+        "Eruvin 89b:7",
+        "Eruvin 89b:8",
+        "Eruvin 89b:9",
+        "Eruvin 89b:10",
+        "Eruvin 89b:11",
+        "Eruvin 89b:12",
+        "Eruvin 89b:13",
+        "Eruvin 90a:1",
+        "Eruvin 90a:2",
+        "Eruvin 90a:3"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000311",
+      "core_refs": [
+        "Eruvin 90b:3",
+        "Eruvin 90b:4",
+        "Eruvin 90b:5",
+        "Eruvin 90b:6",
+        "Eruvin 90b:7",
+        "Eruvin 90b:8",
+        "Eruvin 90b:9",
+        "Eruvin 90b:10",
+        "Eruvin 91a:1",
+        "Eruvin 91a:2"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000347",
+      "core_refs": [
+        "Eruvin 100b:18",
+        "Eruvin 100b:19",
+        "Eruvin 100b:20",
+        "Eruvin 100b:21",
+        "Eruvin 100b:22",
+        "Eruvin 100b:23",
+        "Eruvin 100b:24",
+        "Eruvin 100b:25",
+        "Eruvin 100b:26",
+        "Eruvin 100b:27"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000353",
+      "core_refs": [
+        "Eruvin 102a:18",
+        "Eruvin 102a:19",
+        "Eruvin 102a:20",
+        "Eruvin 102b:1",
+        "Eruvin 102b:2",
+        "Eruvin 102b:3",
+        "Eruvin 102b:4",
+        "Eruvin 102b:5",
+        "Eruvin 102b:6",
+        "Eruvin 102b:7"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000354",
+      "core_refs": [
+        "Eruvin 102b:8",
+        "Eruvin 102b:9",
+        "Eruvin 102b:10",
+        "Eruvin 102b:11",
+        "Eruvin 102b:12",
+        "Eruvin 102b:13",
+        "Eruvin 102b:14",
+        "Eruvin 102b:15",
+        "Eruvin 102b:16",
+        "Eruvin 102b:17"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 0.10136986301369863,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000364",
+      "core_refs": [
+        "Eruvin 105a:7",
+        "Eruvin 105a:8",
+        "Eruvin 105a:9",
+        "Eruvin 105a:10",
+        "Eruvin 105a:11",
+        "Eruvin 105a:12"
+      ],
+      "inclusion_probability": 0.10136986301369863,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Eruvin/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "704da1ef8bd3b5748fc57c714c783744b67a16687fd1a83afecde18786953fed"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Eruvin"
+}

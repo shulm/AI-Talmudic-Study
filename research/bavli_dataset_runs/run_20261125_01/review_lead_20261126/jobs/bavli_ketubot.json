@@ -1,0 +1,762 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 18,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 18,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 31,
+    "probability_core_segments": 310,
+    "source_nonempty_segments": 3038,
+    "source_segment_positions": 3038,
+    "union_blocks": 33,
+    "union_core_segments": 328
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_ketubot.json",
+    "sha256": "115e7554255939304ed43024ec44ac4aa63a827368d0d9181e155062e187951f"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_ketubot",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_ketubot.json",
+    "sha256": "115e7554255939304ed43024ec44ac4aa63a827368d0d9181e155062e187951f"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Ketubot.json",
+    "sha256": "76ed81a80b84903165ba0f2ccdf95756aa99f1d17ad3c1a6aac97b825534d043"
+  },
+  "plan_sha256": "5d15d4b6ff0c66b0a9564cb1986e7e2cbb6db0ef6ec2915105c509764dabf3bd",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 304,
+    "inclusion_probability_denominator": 304,
+    "inclusion_probability_numerator": 31,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000005",
+      "block_000010",
+      "block_000039",
+      "block_000059",
+      "block_000074",
+      "block_000078",
+      "block_000084",
+      "block_000102",
+      "block_000114",
+      "block_000122",
+      "block_000146",
+      "block_000149",
+      "block_000156",
+      "block_000158",
+      "block_000159",
+      "block_000160",
+      "block_000171",
+      "block_000172",
+      "block_000192",
+      "block_000198",
+      "block_000212",
+      "block_000217",
+      "block_000234",
+      "block_000235",
+      "block_000237",
+      "block_000254",
+      "block_000255",
+      "block_000269",
+      "block_000286",
+      "block_000287",
+      "block_000302"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 31
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Ketubot 2a:1",
+        "Ketubot 2a:2",
+        "Ketubot 2a:3",
+        "Ketubot 2a:4",
+        "Ketubot 2a:5",
+        "Ketubot 2a:6",
+        "Ketubot 2a:7",
+        "Ketubot 2a:8",
+        "Ketubot 2a:9",
+        "Ketubot 2a:10"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000005",
+      "core_refs": [
+        "Ketubot 4a:3",
+        "Ketubot 4a:4",
+        "Ketubot 4a:5",
+        "Ketubot 4a:6",
+        "Ketubot 4a:7",
+        "Ketubot 4a:8",
+        "Ketubot 4a:9",
+        "Ketubot 4a:10",
+        "Ketubot 4b:1",
+        "Ketubot 4b:2"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000010",
+      "core_refs": [
+        "Ketubot 6a:7",
+        "Ketubot 6a:8",
+        "Ketubot 6b:1",
+        "Ketubot 6b:2",
+        "Ketubot 6b:3",
+        "Ketubot 6b:4",
+        "Ketubot 6b:5",
+        "Ketubot 6b:6",
+        "Ketubot 6b:7",
+        "Ketubot 6b:8"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000039",
+      "core_refs": [
+        "Ketubot 16b:11",
+        "Ketubot 16b:12",
+        "Ketubot 17a:1",
+        "Ketubot 17a:2",
+        "Ketubot 17a:3",
+        "Ketubot 17a:4",
+        "Ketubot 17a:5",
+        "Ketubot 17a:6",
+        "Ketubot 17a:7",
+        "Ketubot 17a:8"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000059",
+      "core_refs": [
+        "Ketubot 25a:7",
+        "Ketubot 25a:8",
+        "Ketubot 25a:9",
+        "Ketubot 25a:10",
+        "Ketubot 25a:11",
+        "Ketubot 25b:1",
+        "Ketubot 25b:2",
+        "Ketubot 25b:3",
+        "Ketubot 25b:4",
+        "Ketubot 25b:5"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000074",
+      "core_refs": [
+        "Ketubot 31b:10",
+        "Ketubot 31b:11",
+        "Ketubot 31b:12",
+        "Ketubot 32a:1",
+        "Ketubot 32a:2",
+        "Ketubot 32a:3",
+        "Ketubot 32a:4",
+        "Ketubot 32a:5",
+        "Ketubot 32a:6",
+        "Ketubot 32a:7"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000078",
+      "core_refs": [
+        "Ketubot 33b:12",
+        "Ketubot 33b:13",
+        "Ketubot 33b:14",
+        "Ketubot 34a:1",
+        "Ketubot 34a:2",
+        "Ketubot 34a:3",
+        "Ketubot 34a:4",
+        "Ketubot 34a:5",
+        "Ketubot 34a:6",
+        "Ketubot 34a:7"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000084",
+      "core_refs": [
+        "Ketubot 36b:14",
+        "Ketubot 36b:15",
+        "Ketubot 37a:1",
+        "Ketubot 37a:2",
+        "Ketubot 37a:3",
+        "Ketubot 37a:4",
+        "Ketubot 37a:5",
+        "Ketubot 37a:6",
+        "Ketubot 37a:7",
+        "Ketubot 37a:8"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000102",
+      "core_refs": [
+        "Ketubot 44a:13",
+        "Ketubot 44b:1",
+        "Ketubot 44b:2",
+        "Ketubot 44b:3",
+        "Ketubot 44b:4",
+        "Ketubot 44b:5",
+        "Ketubot 44b:6",
+        "Ketubot 44b:7",
+        "Ketubot 44b:8",
+        "Ketubot 44b:9"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000114",
+      "core_refs": [
+        "Ketubot 48b:12",
+        "Ketubot 48b:13",
+        "Ketubot 48b:14",
+        "Ketubot 48b:15",
+        "Ketubot 48b:16",
+        "Ketubot 49a:1",
+        "Ketubot 49a:2",
+        "Ketubot 49a:3",
+        "Ketubot 49a:4",
+        "Ketubot 49a:5"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000122",
+      "core_refs": [
+        "Ketubot 51b:12",
+        "Ketubot 51b:13",
+        "Ketubot 51b:14",
+        "Ketubot 51b:15",
+        "Ketubot 51b:16",
+        "Ketubot 51b:17",
+        "Ketubot 51b:18",
+        "Ketubot 51b:19",
+        "Ketubot 51b:20",
+        "Ketubot 52a:1"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000146",
+      "core_refs": [
+        "Ketubot 60a:5",
+        "Ketubot 60a:6",
+        "Ketubot 60a:7",
+        "Ketubot 60a:8",
+        "Ketubot 60a:9",
+        "Ketubot 60a:10",
+        "Ketubot 60a:11",
+        "Ketubot 60a:12",
+        "Ketubot 60a:13",
+        "Ketubot 60a:14"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000149",
+      "core_refs": [
+        "Ketubot 61a:6",
+        "Ketubot 61a:7",
+        "Ketubot 61a:8",
+        "Ketubot 61a:9",
+        "Ketubot 61a:10",
+        "Ketubot 61a:11",
+        "Ketubot 61a:12",
+        "Ketubot 61a:13",
+        "Ketubot 61a:14",
+        "Ketubot 61a:15"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000156",
+      "core_refs": [
+        "Ketubot 63b:9",
+        "Ketubot 64a:1",
+        "Ketubot 64a:2",
+        "Ketubot 64a:3",
+        "Ketubot 64a:4",
+        "Ketubot 64a:5",
+        "Ketubot 64a:6",
+        "Ketubot 64a:7",
+        "Ketubot 64a:8",
+        "Ketubot 64a:9"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000158",
+      "core_refs": [
+        "Ketubot 64b:7",
+        "Ketubot 64b:8",
+        "Ketubot 64b:9",
+        "Ketubot 64b:10",
+        "Ketubot 64b:11",
+        "Ketubot 64b:12",
+        "Ketubot 64b:13",
+        "Ketubot 64b:14",
+        "Ketubot 64b:15",
+        "Ketubot 64b:16"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000159",
+      "core_refs": [
+        "Ketubot 64b:17",
+        "Ketubot 64b:18",
+        "Ketubot 65a:1",
+        "Ketubot 65a:2",
+        "Ketubot 65a:3",
+        "Ketubot 65a:4",
+        "Ketubot 65a:5",
+        "Ketubot 65a:6",
+        "Ketubot 65a:7",
+        "Ketubot 65a:8"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000160",
+      "core_refs": [
+        "Ketubot 65a:9",
+        "Ketubot 65a:10",
+        "Ketubot 65a:11",
+        "Ketubot 65a:12",
+        "Ketubot 65a:13",
+        "Ketubot 65a:14",
+        "Ketubot 65a:15",
+        "Ketubot 65a:16",
+        "Ketubot 65b:1",
+        "Ketubot 65b:2"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000171",
+      "core_refs": [
+        "Ketubot 68b:12",
+        "Ketubot 68b:13",
+        "Ketubot 69a:1",
+        "Ketubot 69a:2",
+        "Ketubot 69a:3",
+        "Ketubot 69a:4",
+        "Ketubot 69a:5",
+        "Ketubot 69a:6",
+        "Ketubot 69a:7",
+        "Ketubot 69a:8"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000172",
+      "core_refs": [
+        "Ketubot 69a:9",
+        "Ketubot 69a:10",
+        "Ketubot 69a:11",
+        "Ketubot 69a:12",
+        "Ketubot 69a:13",
+        "Ketubot 69a:14",
+        "Ketubot 69a:15",
+        "Ketubot 69a:16",
+        "Ketubot 69a:17",
+        "Ketubot 69b:1"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000192",
+      "core_refs": [
+        "Ketubot 77a:2",
+        "Ketubot 77a:3",
+        "Ketubot 77a:4",
+        "Ketubot 77a:5",
+        "Ketubot 77a:6",
+        "Ketubot 77a:7",
+        "Ketubot 77a:8",
+        "Ketubot 77a:9",
+        "Ketubot 77a:10",
+        "Ketubot 77a:11"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000198",
+      "core_refs": [
+        "Ketubot 79a:10",
+        "Ketubot 79a:11",
+        "Ketubot 79a:12",
+        "Ketubot 79a:13",
+        "Ketubot 79a:14",
+        "Ketubot 79b:1",
+        "Ketubot 79b:2",
+        "Ketubot 79b:3",
+        "Ketubot 79b:4",
+        "Ketubot 79b:5"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000212",
+      "core_refs": [
+        "Ketubot 84a:16",
+        "Ketubot 84a:17",
+        "Ketubot 84a:18",
+        "Ketubot 84b:1",
+        "Ketubot 84b:2",
+        "Ketubot 84b:3",
+        "Ketubot 84b:4",
+        "Ketubot 84b:5",
+        "Ketubot 84b:6",
+        "Ketubot 84b:7"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000217",
+      "core_refs": [
+        "Ketubot 86a:8",
+        "Ketubot 86a:9",
+        "Ketubot 86a:10",
+        "Ketubot 86b:1",
+        "Ketubot 86b:2",
+        "Ketubot 86b:3",
+        "Ketubot 86b:4",
+        "Ketubot 86b:5",
+        "Ketubot 86b:6",
+        "Ketubot 86b:7"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000234",
+      "core_refs": [
+        "Ketubot 91b:10",
+        "Ketubot 91b:11",
+        "Ketubot 91b:12",
+        "Ketubot 91b:13",
+        "Ketubot 91b:14",
+        "Ketubot 91b:15",
+        "Ketubot 91b:16",
+        "Ketubot 91b:17",
+        "Ketubot 91b:18",
+        "Ketubot 92a:1"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000235",
+      "core_refs": [
+        "Ketubot 92a:2",
+        "Ketubot 92a:3",
+        "Ketubot 92a:4",
+        "Ketubot 92a:5",
+        "Ketubot 92a:6",
+        "Ketubot 92a:7",
+        "Ketubot 92a:8",
+        "Ketubot 92a:9",
+        "Ketubot 92a:10",
+        "Ketubot 92b:1"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000237",
+      "core_refs": [
+        "Ketubot 93a:8",
+        "Ketubot 93a:9",
+        "Ketubot 93a:10",
+        "Ketubot 93a:11",
+        "Ketubot 93a:12",
+        "Ketubot 93a:13",
+        "Ketubot 93a:14",
+        "Ketubot 93a:15",
+        "Ketubot 93a:16",
+        "Ketubot 93a:17"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000254",
+      "core_refs": [
+        "Ketubot 99a:6",
+        "Ketubot 99a:7",
+        "Ketubot 99a:8",
+        "Ketubot 99a:9",
+        "Ketubot 99a:10",
+        "Ketubot 99a:11",
+        "Ketubot 99a:12",
+        "Ketubot 99a:13",
+        "Ketubot 99a:14",
+        "Ketubot 99b:1"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000255",
+      "core_refs": [
+        "Ketubot 99b:2",
+        "Ketubot 99b:3",
+        "Ketubot 99b:4",
+        "Ketubot 99b:5",
+        "Ketubot 99b:6",
+        "Ketubot 99b:7",
+        "Ketubot 99b:8",
+        "Ketubot 99b:9",
+        "Ketubot 99b:10",
+        "Ketubot 99b:11"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000269",
+      "core_refs": [
+        "Ketubot 103a:13",
+        "Ketubot 103a:14",
+        "Ketubot 103a:15",
+        "Ketubot 103a:16",
+        "Ketubot 103a:17",
+        "Ketubot 103a:18",
+        "Ketubot 103a:19",
+        "Ketubot 103a:20",
+        "Ketubot 103a:21",
+        "Ketubot 103a:22"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000286",
+      "core_refs": [
+        "Ketubot 107b:7",
+        "Ketubot 107b:8",
+        "Ketubot 107b:9",
+        "Ketubot 107b:10",
+        "Ketubot 107b:11",
+        "Ketubot 107b:12",
+        "Ketubot 107b:13",
+        "Ketubot 107b:14",
+        "Ketubot 107b:15",
+        "Ketubot 107b:16"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000287",
+      "core_refs": [
+        "Ketubot 107b:17",
+        "Ketubot 108a:1",
+        "Ketubot 108a:2",
+        "Ketubot 108a:3",
+        "Ketubot 108a:4",
+        "Ketubot 108a:5",
+        "Ketubot 108a:6",
+        "Ketubot 108b:1",
+        "Ketubot 108b:2",
+        "Ketubot 108b:3"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000302",
+      "core_refs": [
+        "Ketubot 112a:5",
+        "Ketubot 112a:6",
+        "Ketubot 112a:7",
+        "Ketubot 112a:8",
+        "Ketubot 112a:9",
+        "Ketubot 112a:10",
+        "Ketubot 112a:11",
+        "Ketubot 112a:12",
+        "Ketubot 112a:13",
+        "Ketubot 112a:14"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 0.10197368421052631,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000303",
+      "core_refs": [
+        "Ketubot 112a:15",
+        "Ketubot 112a:16",
+        "Ketubot 112a:17",
+        "Ketubot 112a:18",
+        "Ketubot 112b:1",
+        "Ketubot 112b:2",
+        "Ketubot 112b:3",
+        "Ketubot 112b:4"
+      ],
+      "inclusion_probability": 0.10197368421052631,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nashim/Ketubot/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "f736ba10fa498bbe884bd4243f334fec4b8ccd2161b6a29cbe8cc58649451d4a"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Ketubot"
+}

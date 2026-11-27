@@ -1,0 +1,251 @@
+{
+  "artifact_type": "independent_targeted_correction_verification",
+  "reviewer_agent_id": "/root/verify_corrections_13",
+  "model_id": null,
+  "route": "interactive_agent",
+  "created_at_utc": "2026-11-25T20:11:20.830578+00:00",
+  "status": "AI provisional; not human verified; not eligible for ML",
+  "independence": {
+    "blind_initial_review": false,
+    "review_type": "Correction verification after reading frozen initial review, comparison, producer receipts and correction proposals",
+    "producer_agent_id": "/root/lead_l01_l03",
+    "reviewer_distinct_from_producer": true
+  },
+  "scope": "Only L01 Berakhot and L03 Rosh Hashanah targeted_review_correction1 corrections to seven frozen exceptions; not a fresh full-sugya or full-tractate review.",
+  "hashes": {
+    "initial_review": "f6adc3a4ad004ac5fdf231e0cee2b906f61880c7e437eca22d678810741394ca",
+    "comparison": "e4c5069a5f8e8b85b1a75c2128027368ac283bf1867f8d13b70bd54db07afce5",
+    "L01": {
+      "receipt_sha256": "76a34a28fd84f4ecc8be3884f206f361bceeaeebcda675f2ce8bc761d3cc9f30",
+      "proposal_sha256": "0c736551887749ed66481bae529c87d2566e250c02c7f16396b3fd824570fa98",
+      "snapshot_sha256": "0d4c319e766f089d6845b4c81c85e50ff67c9d27c4bfa4495b278df6f3e28aa1",
+      "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+      "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "export_hashes": {
+        "attributions.jsonl": "09d3f9e65d589a10b61297d811e7041325eb1b168ffcf90c09e4cf6da951d23c",
+        "claims.jsonl": "4213a89ad8a39b0eb93e179761c8da0da1759d855ea6f4155a27ed592af0642b",
+        "coverage.json": "228e707add3f30ba30949de91d662539858e0cbec7a419c5e7aa56c53ee379ba",
+        "edges.jsonl": "d85bb0f06cffb7ff21b7805a3ff7fae48fc3d42cc1f78274fd0696bae22c696c",
+        "manifest.json": "3d2727930977b91197a33c71be65ef33d9288372f5cba5da603eaccb2163337a",
+        "positions.jsonl": "36598eaabd04d5fabe87a5038238c11baa5ac45d9dcf012e37720f6b6d7625c5",
+        "qualification.json": "4f86234049856b8736bf514063663dc28ecaf004da14f5a2b5ff8f6eb992d6f0",
+        "questions.jsonl": "90b4f0a3703da17fa30bd23666a508f791f1f7fe3e4cb6533377eb370493ae63",
+        "structure.jsonl": "76858fbfbcbb74aa3383e34dbc0e8d53a991a5c15ab7c7d18bea967b0a972e27",
+        "unresolved.json": "45c4ffe28cffdc9c8ad44c2f78d8c359effe63e3096646efeac36c3353e1b361",
+        "utterances.jsonl": "a90844db2d4c47d6c825f35b9f68cf569981672922e26542e913076865b32b19",
+        "per_sugya\\7795d5c579ded08cd848ffb54093492f3196d3e9651585486dca3a0b55bbae5c.json": "0d832bf38f1c01c0c9c22d9b68f066d3f2e16990c99e92f8c02f3ad6c464a94f",
+        "per_sugya\\ab394cd3e984ca38a93bcbff06f9fe2e386e546fa90666033e4d17e364bb3014.json": "055b0cd153684a47fd66d9e3f86c00a06fb935855808981be4e10523e5ffceba",
+        "per_sugya\\fc8b4648365aa153accbe94075dd9ed1147b0813d26953181a148767b9e2aeec.json": "46764d20e44e26c1cdeff7ad8be1fead9b338693360e1b902f8cee63e67d97ec"
+      }
+    },
+    "L03": {
+      "receipt_sha256": "bed0e95cbd5d15a6d7150ac2b904fc279343efc5fa56cbe2c9b289ec5f44ae23",
+      "proposal_sha256": "71d28f30b161fe7b16c2c7a9d48457406109e00a6def832e14335ff4084d3f4b",
+      "snapshot_sha256": "924117868d17ebb8454c6b15e1e0b0843d8d4cd9e045370acedd95d0ece49b01",
+      "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+      "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "export_hashes": {
+        "attributions.jsonl": "4e06aef2cae97cf2c412c8731b73852c12d529950c39d42c4d5c7a7b0e65330a",
+        "claims.jsonl": "06ac6daf6fc16fdbd4c805f27bc6df2c5f46a739764e77db7d952fbcb79d79ee",
+        "coverage.json": "2a002fa0b468c2bf22b7a7cfe3c65bf2f75769e967aa45bc2fe46e5060c3631f",
+        "edges.jsonl": "270b1d5127649c2ba4f856e0c0cc8b4196c2ff20d8a74360410f42493984ce9d",
+        "manifest.json": "d8b9485f34942015b7fb33cefdf499be289b54d6e7cb5a7d4bf9be4ba2461af8",
+        "positions.jsonl": "f81d86804b00ebd1fe6765e17a29ba68d91cbe68799f6db3f8a9d1beda63acc7",
+        "qualification.json": "73b4d48835e77850b97e8520e7e2d199894229261dcd28897a76c7631bf121cd",
+        "questions.jsonl": "2f635a461048b4f90577134adba9abe29ae088025176164449a40ca6a4dd2ccb",
+        "structure.jsonl": "c3e360e6c0ad1f6ab678e16b42280f56ce5d3817461fab771e18a48ae21fdb67",
+        "unresolved.json": "69f4e9d11a6306799b4c822a82c9a9735c76a4a74542d6b763098f9645161e26",
+        "utterances.jsonl": "c3968771cb11551e8e36fd2d2c15e25c15f8f2765d049e966c85e4b9d7fdcc4d",
+        "per_sugya\\16312d34465a748b44cf10b6e84290be21eb6b6f7c91c8ba269125755908d92d.json": "4b76e6dcb032a2c4b4659c9e2b8d83c3d37f480ddda45ebe6b37ca3dbe763f81",
+        "per_sugya\\803fa9a8ca462251ff9dbe2c99c8aa4dfae40555fa729483dd0777d45d180197.json": "7609172965f2e5eabc161d2673188305fba6d1a1089f0f3a32938f7126a086a7"
+      }
+    }
+  },
+  "source_refs_read": [
+    "Berakhot 2a:1-14",
+    "Rosh Hashanah 2a:1-8",
+    "Rosh Hashanah 2b:1-13"
+  ],
+  "decision": "ACCEPT_TARGETED_CORRECTIONS",
+  "verdicts": [
+    {
+      "exception_id": "L01-C01",
+      "verdict": "ADDRESSED",
+      "finding": "Separate morning and evening claims/positions have exact clause evidence, shared quotation role and separate support edges to the ordering objection. Composite records are superseded and dependent active links updated.",
+      "source_evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 18,
+          "end_char": 50,
+          "quote": "בשחר מברך שתים לפניה ואחת לאחריה"
+        },
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 51,
+          "end_char": 85,
+          "quote": "ובערב מברך שתים לפניה ושתים לאחריה"
+        }
+      ]
+    },
+    {
+      "exception_id": "L01-C02",
+      "verdict": "ADDRESSED",
+      "finding": "Generalization position and utterance explicitly retain the speech-boundary uncertainty, with Rabban Gamliel a possible continuing speaker. Explicit sons-duty position still names Rabban Gamliel and retains dawn condition.",
+      "source_evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 95,
+          "end_char": 133,
+          "quote": "ולא זו בלבד אמרו אלא כל מה שאמרו חכמים"
+        },
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 116,
+          "end_char": 166,
+          "quote": "כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ]
+    },
+    {
+      "exception_id": "L01-C03",
+      "verdict": "ADDRESSED",
+      "finding": "Objection edge is editorial inference/reconstruction with explicit warning that creation target is provisional and nonexclusive; scriptural ordering rationale remains possible.",
+      "source_evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא."
+        }
+      ]
+    },
+    {
+      "exception_id": "L03-C01",
+      "verdict": "ADDRESSED",
+      "finding": "Added c.son to q.split answer edge and p.son.question_id. Prior Adar appointment, hereditary status, Nisan accession, existing qualification edge, and rejected hypothetical rationale are retained.",
+      "source_evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 66,
+          "end_char": 107,
+          "quote": "לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא"
+        }
+      ]
+    },
+    {
+      "exception_id": "L03-C02",
+      "verdict": "ADDRESSED",
+      "finding": "Added appointment-to-Nisan qualification edge with exact 2b:2 evidence. This is a case extension, not an exclusive restriction of the general Nisan rule to prior appointment.",
+      "source_evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "לא צריכא דאימנו עליה מאדר"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ]
+    },
+    {
+      "exception_id": "L03-C03",
+      "verdict": "ADDRESSED",
+      "finding": "Added attribution scope for c.late, c.nisan, c.both_nisan and c.split using quotation-introduction evidence. Anonymous role, empty named candidates and empty chains introduce no named transmitter.",
+      "source_evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 4,
+          "quote": "דתנן"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "תנו רבנן"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 0,
+          "end_char": 3,
+          "quote": "ת\"ר"
+        }
+      ]
+    },
+    {
+      "exception_id": "L03-C04",
+      "verdict": "ADDRESSED",
+      "finding": "Claim and position conditions now preserve same-Adar, same-Nisan, and cross-month appointment/heredity cases. Claim modes remain rejected; dependent edges target replacement IDs.",
+      "source_evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:4",
+          "start_char": 60,
+          "end_char": 95,
+          "quote": "מהו דתימא שתא לבי תרי לא מנינן קמ\"ל"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 55,
+          "end_char": 134,
+          "quote": "מהו דתימא כי אמרינן יום אחד בשנה חשוב שנה בסוף שנה אבל בתחלת שנה לא אמרינן קמ\"ל"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 108,
+          "end_char": 143,
+          "quote": "מהו דתימא נימנו לי' תרתין שנין קמ\"ל"
+        }
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "lane": "L01",
+      "proposal_records_checked": 11,
+      "active_export_records": 93,
+      "historical_superseded_records": 28,
+      "exact_raw_source_offsets": "passed",
+      "receipt_proposal_snapshot_export_hashes": "passed",
+      "proposal_active_export_equality": "passed",
+      "replacement_history_and_active_link_integrity": "passed",
+      "ml_eligibility_remains_false": true
+    },
+    {
+      "lane": "L03",
+      "proposal_records_checked": 19,
+      "active_export_records": 108,
+      "historical_superseded_records": 15,
+      "exact_raw_source_offsets": "passed",
+      "receipt_proposal_snapshot_export_hashes": "passed",
+      "proposal_active_export_equality": "passed",
+      "replacement_history_and_active_link_integrity": "passed",
+      "ml_eligibility_remains_false": true
+    }
+  ],
+  "remaining_exceptions": [],
+  "retained_uncertainties": [
+    {
+      "exception_id": "L01-C02",
+      "uncertainty": "Generalization speech boundary remains unresolved; recording uncertainty addresses the exception without determining the speaker."
+    },
+    {
+      "exception_id": "L01-C03",
+      "uncertainty": "Exclusive attachment of אי הכי to creation is unestablished; provisional target and scope warning remain."
+    }
+  ],
+  "limitations": [
+    "Not a blind initial review or human scholarly certification.",
+    "No full tractate, full probability sample, or ML qualification follows.",
+    "Snapshot/export hashes verified; production replay was not independently rerun. Export JSONL includes historical superseded rows; active checks filter release_state=valid.",
+    "No source corpus, schema, runner, ownership or producer receipt modification, and no commit performed."
+  ],
+  "full_tractate_certification": false,
+  "whole_probability_sample_complete": false,
+  "ml_eligible": false
+}

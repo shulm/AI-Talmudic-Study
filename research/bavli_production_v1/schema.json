@@ -1,0 +1,556 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0-production"
+    },
+    "tractate": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "epoch": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_sha256": {
+      "type": "string"
+    },
+    "protocol_sha256": {
+      "type": "string"
+    },
+    "schema_sha256": {
+      "type": "string"
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "route": {
+          "const": "interactive_agent"
+        },
+        "agent_id": {
+          "type": "string"
+        },
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "route",
+        "agent_id",
+        "model_id"
+      ]
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]+$"
+          },
+          "layer": {
+            "enum": [
+              "structure",
+              "utterances",
+              "claims",
+              "attributions",
+              "questions",
+              "positions",
+              "edges"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "segment_id": {
+                  "type": "string"
+                },
+                "start_char": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end_char": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "quote": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "segment_id",
+                "start_char",
+                "end_char",
+                "quote"
+              ]
+            },
+            "minItems": 1
+          },
+          "content": {},
+          "origin": {
+            "enum": [
+              "literal",
+              "source_paraphrase",
+              "editorial_inference"
+            ]
+          },
+          "uncertainty": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "supersedes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "layer",
+          "evidence",
+          "content",
+          "origin",
+          "uncertainty",
+          "links"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "layer": {
+                  "const": "structure"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "primary": {
+                      "type": "boolean"
+                    },
+                    "boundary": {
+                      "enum": [
+                        "closed",
+                        "open_left",
+                        "open_right",
+                        "open_both"
+                      ]
+                    },
+                    "legacy_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "primary",
+                    "boundary",
+                    "legacy_ids"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "layer": {
+                  "const": "utterances"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "textual_voice": {
+                      "type": "string"
+                    },
+                    "discourse_role": {
+                      "type": "string"
+                    },
+                    "composition": {
+                      "enum": [
+                        "atomic",
+                        "composite",
+                        "uncertain"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "textual_voice",
+                    "discourse_role",
+                    "composition"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "layer": {
+                  "const": "claims"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "proposition": {
+                      "type": "string"
+                    },
+                    "conditions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "scope": {
+                      "type": "string"
+                    },
+                    "assertion_mode": {
+                      "enum": [
+                        "asserted",
+                        "hypothetical",
+                        "queried",
+                        "challenged",
+                        "rejected",
+                        "retracted",
+                        "conditional",
+                        "reconciled",
+                        "unresolved"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "proposition",
+                    "conditions",
+                    "scope",
+                    "assertion_mode"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "layer": {
+                  "const": "attributions"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "surface": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "enum": [
+                        "speaker",
+                        "position_holder",
+                        "transmitter",
+                        "quoted_authority",
+                        "collective",
+                        "anonymous"
+                      ]
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "scope": {
+                      "type": "string"
+                    },
+                    "transmission_chain": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "surface",
+                    "role",
+                    "candidates",
+                    "scope",
+                    "transmission_chain"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "layer": {
+                  "const": "questions"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "formulation": {
+                      "type": "string"
+                    },
+                    "question_origin": {
+                      "enum": [
+                        "explicit",
+                        "editorial_reconstruction"
+                      ]
+                    },
+                    "conditions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "answer_set_status": {
+                      "enum": [
+                        "none",
+                        "partial",
+                        "topic_inventory",
+                        "unreviewed_alternatives"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "formulation",
+                    "question_origin",
+                    "conditions",
+                    "answer_set_status"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "layer": {
+                  "const": "positions"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "holder_candidates": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "claim_id": {
+                      "type": "string"
+                    },
+                    "question_id": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "conditions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "local_status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "holder_candidates",
+                    "claim_id",
+                    "question_id",
+                    "conditions",
+                    "local_status"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "layer": {
+                  "const": "edges"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "source_id": {
+                      "type": "string"
+                    },
+                    "target_id": {
+                      "type": "string"
+                    },
+                    "relation": {
+                      "enum": [
+                        "support",
+                        "objection",
+                        "answer",
+                        "qualification",
+                        "distinction",
+                        "analogy",
+                        "quotation",
+                        "correction",
+                        "retraction",
+                        "local_resolution",
+                        "unresolved_outcome",
+                        "continuation"
+                      ]
+                    },
+                    "explicitness": {
+                      "enum": [
+                        "source_explicit",
+                        "editorial_reconstruction"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "target_id",
+                    "relation",
+                    "explicitness"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "segment_id": {
+            "type": "string"
+          },
+          "layer": {
+            "enum": [
+              "structure",
+              "utterances",
+              "claims",
+              "attributions",
+              "questions",
+              "positions",
+              "edges",
+              "reconciliation"
+            ]
+          },
+          "extraction_state": {
+            "enum": [
+              "not_started",
+              "in_progress",
+              "completed"
+            ]
+          },
+          "extraction_result": {
+            "enum": [
+              null,
+              "records_found",
+              "none_found_after_pass",
+              "abstained_ambiguous",
+              "not_applicable"
+            ]
+          },
+          "record_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "segment_id",
+          "layer",
+          "extraction_state",
+          "extraction_result",
+          "record_ids",
+          "rationale"
+        ]
+      }
+    },
+    "open_tails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "tractate",
+    "owner",
+    "epoch",
+    "source_sha256",
+    "protocol_sha256",
+    "schema_sha256",
+    "execution",
+    "records",
+    "coverage",
+    "open_tails"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

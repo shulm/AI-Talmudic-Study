@@ -1,0 +1,147 @@
+{
+  "status": "CORRECTION_SUBMITTED_AWAITING_INDEPENDENT_VERIFICATION",
+  "lane": "L04",
+  "owner": "/root/lead_l02_l04",
+  "epoch": 1,
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "source_sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "comparison_sha256": "36463490e10931c9c92610d21ec70af501217bba015238adb4af3e8c40c9202d",
+  "finding": "L04-F01",
+  "proposal_path": "research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L04\\ta_review_correction_003.json",
+  "proposal_sha256": "227ad240899781734058f6350684d9a67ee056495aa242fac50c873b763f88e8",
+  "snapshot_sha256": "3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7",
+  "replay_pass": true,
+  "coverage": {
+    "source_segments": 895,
+    "semantic_records": 209,
+    "completed_by_layer": {
+      "structure": 15,
+      "utterances": 15,
+      "claims": 15,
+      "attributions": 15,
+      "questions": 15,
+      "positions": 15,
+      "edges": 15,
+      "reconciliation": 15
+    },
+    "outcomes_by_layer": {
+      "structure": {
+        "records_found": 15,
+        "none_found_after_pass": 0,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "utterances": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "claims": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "attributions": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "questions": {
+        "records_found": 10,
+        "none_found_after_pass": 5,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "positions": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "edges": {
+        "records_found": 13,
+        "none_found_after_pass": 2,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "reconciliation": {
+        "records_found": 0,
+        "none_found_after_pass": 15,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      }
+    },
+    "independent_review_completed": false,
+    "tractate_delivered": false,
+    "next_unprocessed_by_layer": {
+      "structure": "Taanit 2b:3",
+      "utterances": "Taanit 2b:3",
+      "claims": "Taanit 2b:3",
+      "attributions": "Taanit 2b:3",
+      "questions": "Taanit 2b:3",
+      "positions": "Taanit 2b:3",
+      "edges": "Taanit 2b:3",
+      "reconciliation": "Taanit 2b:3"
+    }
+  },
+  "new_source_segments": 0,
+  "immutable_revisions": [
+    {
+      "old": "ta.gemara001.opening.positions.145",
+      "new": "ta.gemara001.opening.positions.145.reviewfix1",
+      "layer": "positions"
+    },
+    {
+      "old": "ta.gemara001.opening.utterances.142",
+      "new": "ta.gemara001.opening.utterances.142.reviewfix1",
+      "layer": "utterances"
+    },
+    {
+      "old": "ta.gemara001.opening.claims.143",
+      "new": "ta.gemara001.opening.claims.143.reviewfix1",
+      "layer": "claims"
+    },
+    {
+      "old": "ta.gemara001.opening.attributions.144",
+      "new": "ta.gemara001.opening.attributions.144.reviewfix1",
+      "layer": "attributions"
+    },
+    {
+      "old": "ta.gemara001.opening.attributions.134",
+      "new": "ta.gemara001.opening.attributions.134.reviewfix1",
+      "layer": "attributions"
+    },
+    {
+      "old": "ta.gemara001.opening.edges.146",
+      "new": "ta.gemara001.opening.edges.146.reviewfix1",
+      "layer": "edges"
+    },
+    {
+      "old": "ta.gemara001.opening.edges.147",
+      "new": "ta.gemara001.opening.edges.147.reviewfix1",
+      "layer": "edges"
+    }
+  ],
+  "coverage_rows_updated": 6,
+  "export_manifest_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\exports\\correction003\\manifest.json",
+  "export_manifest_sha256": "90422f40a4eb52ab8539c59148e940264a47b82114497708f8bd4e9febb888e2",
+  "original_judgments_preserved": true,
+  "review_verdict": null,
+  "ml_eligible": false,
+  "commands_passed": [
+    "submit",
+    "replay",
+    "export"
+  ],
+  "disagreements": [],
+  "nonblocking_actions": {
+    "collective_role": "Western sages attribution134 revised to collective",
+    "cross_amud_relation": "Preserved qualification with caveat because frozen runner restricts continuation endpoints to structure; no schema change or unsupported claim relation introduced."
+  }
+}

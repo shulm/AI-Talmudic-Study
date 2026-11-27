@@ -1,0 +1,362 @@
+{
+  "artifact_type": "hash_bound_targeted_independent_comparison",
+  "reviewer_agent_id": "/root/review_l01_l03",
+  "model_id": null,
+  "initial_review_sha256": "f6adc3a4ad004ac5fdf231e0cee2b906f61880c7e437eca22d678810741394ca",
+  "producer_snapshots": {
+    "Berakhot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\debfcb90f8d5e77e1d690fd9b3553b26ec8914d446c638173a850c423558954d.json",
+      "sha256": "debfcb90f8d5e77e1d690fd9b3553b26ec8914d446c638173a850c423558954d"
+    },
+    "Rosh Hashanah": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L03\\bavli_rosh_hashanah\\snapshots\\43b129227acc4beeca9ac053abc23a39dbde17b689b77ceb72c6683200cec828.json",
+      "sha256": "43b129227acc4beeca9ac053abc23a39dbde17b689b77ceb72c6683200cec828"
+    }
+  },
+  "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+  "source_hashes": {
+    "Berakhot": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+    "Rosh Hashanah": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f"
+  },
+  "core_refs": [
+    "Berakhot 2a:1",
+    "Berakhot 2a:2",
+    "Berakhot 2a:3",
+    "Berakhot 2a:4",
+    "Berakhot 2a:5",
+    "Berakhot 2a:6",
+    "Berakhot 2a:7",
+    "Berakhot 2a:8",
+    "Berakhot 2a:9",
+    "Berakhot 2a:10",
+    "Berakhot 2a:11",
+    "Rosh Hashanah 2a:5",
+    "Rosh Hashanah 2a:6",
+    "Rosh Hashanah 2a:7",
+    "Rosh Hashanah 2a:8",
+    "Rosh Hashanah 2b:1",
+    "Rosh Hashanah 2b:2",
+    "Rosh Hashanah 2b:3",
+    "Rosh Hashanah 2b:4",
+    "Rosh Hashanah 2b:5",
+    "Rosh Hashanah 2b:6"
+  ],
+  "decision": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "full_tractate_certification": false,
+  "whole_probability_sample_complete": false,
+  "ml_eligible": false,
+  "summary": "The 21-segment targeted cohorts preserve the main source propositions, named speakers, alternatives, rejected suppositions, and critical conditions. No confirmed wrong substantive law or named-speaker substitution found. Exceptions concern atomic granularity, uncertainty and graph/attribution completeness; they must not be treated as fully qualified data until addressed.",
+  "confirmed_semantic_errors": [],
+  "exceptions": [
+    {
+      "id": "L01-C01",
+      "category": "granularity",
+      "severity": "targeted_exception",
+      "producer_record_ids": [
+        "bk.order.pass2.c.later",
+        "bk.order.pass2.p.later"
+      ],
+      "initial_finding_ids": [
+        "bc14",
+        "bc15"
+      ],
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 18,
+          "end_char": 50,
+          "quote": "בשחר מברך שתים לפניה ואחת לאחריה"
+        },
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 51,
+          "end_char": 85,
+          "quote": "ובערב מברך שתים לפניה ושתים לאחריה"
+        }
+      ],
+      "description": "Both blessing prescriptions are accurately preserved, but one claim bundles morning and evening prescriptions despite the atomic-claim requirement. This is not a wrong quotation or wrong law.",
+      "action": "Split into morning and evening claims/positions with exact clause evidence; preserve their shared quotation role and support to the ordering objection. Supersede the composite claim and update dependent edges."
+    },
+    {
+      "id": "L01-C02",
+      "category": "attribution_uncertainty",
+      "severity": "targeted_exception",
+      "producer_record_ids": [
+        "bk.opening.pass1.p.general",
+        "bk.opening.pass1.u.4"
+      ],
+      "initial_finding_ids": [
+        "ba6",
+        "bc7"
+      ],
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 95,
+          "end_char": 133,
+          "quote": "ולא זו בלבד אמרו אלא כל מה שאמרו חכמים"
+        },
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 116,
+          "end_char": 166,
+          "quote": "כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "description": "The generalized midnight/dawn tail is assigned to Rabban Gamliel in narrative continuation with no uncertainty entry. This is a plausible reading, not a confirmed attribution error, but the source has no fresh named speech marker at ולא זו בלבד.",
+      "action": "Record the attribution-boundary uncertainty explicitly or represent the holder as Mishnah continuation with Rabban Gamliel as a possible continuation. Retain the explicit named attribution of אמר להם for the sons’ obligation."
+    },
+    {
+      "id": "L01-C03",
+      "category": "edge_scope_uncertainty",
+      "severity": "targeted_exception",
+      "producer_record_ids": [
+        "bk.order.pass2.edge.objection"
+      ],
+      "initial_finding_ids": [
+        "bn1",
+        "bq5"
+      ],
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא."
+        }
+      ],
+      "description": "The edge attaches אי הכי exclusively to the creation answer. The local adjacency supports this, but the objection can challenge evening-first ordering generally, also addressed by the scripture answer. The frozen independent review itself retains this provisional edge plus an explicit warning.",
+      "action": "Add scope uncertainty or model the common ordering rationale; do not present exclusive target selection as settled by the source."
+    },
+    {
+      "id": "L03-C01",
+      "category": "graph_omission",
+      "severity": "targeted_exception",
+      "producer_record_ids": [
+        "rh.kings.pass1.c.son",
+        "rh.kings.pass1.p.son",
+        "rh.kings.pass1.answer_split",
+        "rh.kings.pass1.son"
+      ],
+      "initial_finding_ids": [
+        "rc16",
+        "re9",
+        "re10"
+      ],
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 66,
+          "end_char": 107,
+          "quote": "לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא"
+        }
+      ],
+      "description": "The prior-Adar-appointment and king’s-son answer is accurately extracted, with both conditions retained, and qualifies c.split. However no answer edge or position question_id connects c.son to q.split. The existing answer edge uses the rejected hypothetical c.hyp_split. This leaves the explicit לא צריכא answer disconnected from its question.",
+      "action": "Add c.son → q.split answer edge and bind p.son.question_id to q.split; keep the existing hypothetical rationale and qualification edge."
+    },
+    {
+      "id": "L03-C02",
+      "category": "graph_omission",
+      "severity": "targeted_exception",
+      "producer_record_ids": [
+        "rh.kings.pass1.c.appointment",
+        "rh.kings.pass1.c.nisan",
+        "rh.kings.pass1.appointment"
+      ],
+      "initial_finding_ids": [
+        "rc8",
+        "re6"
+      ],
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "לא צריכא דאימנו עליה מאדר"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "description": "The prior appointment condition is retained and linked as an answer to q.obvious1. The graph lacks a qualification edge from that condition record to the Nisan-accession rule it restricts. This is missing graph structure, not missing textual content.",
+      "action": "Add c.appointment → c.nisan qualification edge with 2b:2 evidence."
+    },
+    {
+      "id": "L03-C03",
+      "category": "attribution_scope_omission",
+      "severity": "targeted_exception",
+      "producer_record_ids": [
+        "rh.kings.pass1.mishnah",
+        "rh.kings.pass1.baraita1",
+        "rh.kings.pass1.baraita2"
+      ],
+      "initial_finding_ids": [
+        "ra2",
+        "ra3",
+        "ra4"
+      ],
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 4,
+          "quote": "דתנן"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "תנו רבנן"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 0,
+          "end_char": 3,
+          "quote": "ת\"ר"
+        }
+      ],
+      "description": "Each quotation attribution scopes only the first claim: Mishnah only c.early, first baraita only c.adar, second baraita only c.both_adar. Later claims retain correct quoted holders in positions/utterances, so the identities are not lost globally. Attribution-layer scope is nonetheless incomplete for c.late, c.nisan, c.both_nisan and c.split.",
+      "action": "Supply attribution records scoped to the remaining claims, or scope the quotation attribution to a shared utterance/group covering all quoted claims. Do not invent named transmitters."
+    },
+    {
+      "id": "L03-C04",
+      "category": "structured_condition_granularity",
+      "severity": "advisory",
+      "producer_record_ids": [
+        "rh.kings.pass1.c.hyp_adar",
+        "rh.kings.pass1.c.hyp_nisan",
+        "rh.kings.pass1.c.hyp_split",
+        "rh.kings.pass1.p.hyp_adar",
+        "rh.kings.pass1.p.hyp_nisan",
+        "rh.kings.pass1.p.hyp_split"
+      ],
+      "initial_finding_ids": [
+        "rc13",
+        "rc14",
+        "rc17"
+      ],
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:4",
+          "start_char": 60,
+          "end_char": 95,
+          "quote": "מהו דתימא שתא לבי תרי לא מנינן קמ\"ל"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 55,
+          "end_char": 134,
+          "quote": "מהו דתימא כי אמרינן יום אחד בשנה חשוב שנה בסוף שנה אבל בתחלת שנה לא אמרינן קמ\"ל"
+        },
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 108,
+          "end_char": 143,
+          "quote": "מהו דתימא נימנו לי' תרתין שנין קמ\"ל"
+        }
+      ],
+      "description": "Rejected hypotheticals have empty conditions arrays. The propositions preserve the important content, and c.son retains the hereditary/appointment condition, so this is not substantive condition deletion. Consumers relying only on typed conditions cannot recover all case restrictions directly.",
+      "action": "Populate conditions arrays for same-Adar, same-Nisan, and cross-month appointment/heredity cases, preserving rejected assertion status."
+    }
+  ],
+  "claim_correspondence": {
+    "bc1": "bk.opening.pass1.c.start",
+    "bc2": "bk.opening.pass1.c.re",
+    "bc3": "bk.opening.pass1.c.sages",
+    "bc4": "bk.opening.pass1.c.rg",
+    "bc5": "bk.opening.pass1.c.sons",
+    "bc6": "bk.opening.pass1.c.duty",
+    "bc7": "bk.opening.pass1.c.general",
+    "bc8": "bk.opening.pass1.c.fats",
+    "bc9": "bk.opening.pass1.c.eaten",
+    "bc10": "bk.opening.pass1.c.safeguard",
+    "bc11": "bk.order.pass2.c.scripture",
+    "bc12": "bk.order.pass2.c.restatement",
+    "bc13": "bk.order.pass2.c.creation",
+    "bc14": "bk.order.pass2.c.later",
+    "bc15": "bk.order.pass2.c.later",
+    "bc16": "bk.order.pass2.c.sequence",
+    "rc1": "rh.kings.pass1.c.documents",
+    "rc2": "rh.kings.pass1.c.early",
+    "rc3": "rh.kings.pass1.c.late",
+    "rc4": "rh.kings.pass1.c.adar",
+    "rc5": "rh.kings.pass1.c.nisan",
+    "rc6": "rh.kings.pass1.c.newyear",
+    "rc7": "rh.kings.pass1.c.day",
+    "rc8": "rh.kings.pass1.c.appointment",
+    "rc9": "rh.kings.pass1.c.hyp_two",
+    "rc10": "rh.kings.pass1.c.both_adar",
+    "rc11": "rh.kings.pass1.c.both_nisan",
+    "rc12": "rh.kings.pass1.c.split",
+    "rc13": "rh.kings.pass1.c.hyp_adar",
+    "rc14": "rh.kings.pass1.c.hyp_nisan",
+    "rc15": "rh.kings.pass1.c.hyp_nisan",
+    "rc16": "rh.kings.pass1.c.son",
+    "rc17": "rh.kings.pass1.c.hyp_split"
+  },
+  "question_correspondence": {
+    "bq1": "bk.opening.pass1.q.time",
+    "bq2": "bk.opening.pass1.q.midnight",
+    "bq3": "bk.order.pass2.q.foundation",
+    "bq4": "bk.order.pass2.q.order",
+    "bq5": "bk.order.pass2.q.objection",
+    "rq1": "rh.kings.pass1.q.application",
+    "rq2": "rh.kings.pass1.q.obvious1",
+    "rq3": "rh.kings.pass1.q.adar",
+    "rq4": "rh.kings.pass1.q.nisan",
+    "rq5": "rh.kings.pass1.q.split"
+  },
+  "comparison_notes": [
+    "Rosh Hashanah beginning-of-year positive consequence (initial rc15) is preserved through rejection of the end-only distinction in c.hyp_nisan, with c.both_nisan and reject_nisan. A separate positive claim is an optional granularity choice, not a confirmed omission.",
+    "Primary producer structure spans 2a:8–2b:1 within one larger unit; it does not close at the page break. The initial per-segment ownership envelopes differ in granularity only.",
+    "Conditional duty is marked asserted in producer but includes the if-dawn condition in both proposition and conditions; no false unconditional duty was introduced.",
+    "Empty candidates arrays with a named surface label do not prove identity loss when positions explicitly preserve the named holder; no invented canonical identity required.",
+    "No named transmission chain appears in these core ranges. Rav Hisda is correctly kept distinct from Rav.",
+    "An initial unfiltered snapshot display exposed outside-core B24 and RH opening records after authorized unblinding; those records are excluded from every finding, count and decision here."
+  ],
+  "validation": [
+    {
+      "tractate": "Berakhot",
+      "active_core_records": 68,
+      "exact_offset_check": "passed",
+      "primary_partition_check": "complete core full segments, no overlaps"
+    },
+    {
+      "tractate": "Rosh Hashanah",
+      "active_core_records": 69,
+      "exact_offset_check": "passed",
+      "primary_partition_check": "complete core full segments, no overlaps"
+    }
+  ],
+  "producer_segment_ref_mapping": {
+    "seg_c8bdecebbaecc5d7762b": "Berakhot 2a:1",
+    "seg_affbfc187561b4c6db56": "Berakhot 2a:2",
+    "seg_3176b27f4c3896255c78": "Berakhot 2a:3",
+    "seg_60ee4773ccee2b2b063e": "Berakhot 2a:4",
+    "seg_8a4eb8b6f71020b82fbb": "Berakhot 2a:5",
+    "seg_53d5eea0c7415cc00767": "Berakhot 2a:6",
+    "seg_89c3f1b14efeb0de146c": "Berakhot 2a:7",
+    "seg_14a303ff961bf4a85d73": "Berakhot 2a:8",
+    "seg_21080d7ae52960c91e68": "Berakhot 2a:9",
+    "seg_260000b714277eafa776": "Berakhot 2a:10",
+    "seg_5763c01691003b6e5f6f": "Berakhot 2a:11",
+    "seg_323569d0b85eb4389ac3": "Rosh Hashanah 2a:5",
+    "seg_a31ee290b2b57a4424d2": "Rosh Hashanah 2a:6",
+    "seg_38b07d16e8bf34bd0765": "Rosh Hashanah 2a:7",
+    "seg_b71fcd3a6ba8cb3c9d53": "Rosh Hashanah 2a:8",
+    "seg_1063cb889e35cdd266b5": "Rosh Hashanah 2b:1",
+    "seg_749b15b9a84a267ff4a1": "Rosh Hashanah 2b:2",
+    "seg_f336c147c81bbcf97d69": "Rosh Hashanah 2b:3",
+    "seg_6ff9601b8f9158792750": "Rosh Hashanah 2b:4",
+    "seg_dd66ed219edb34167a9f": "Rosh Hashanah 2b:5",
+    "seg_ce7eeb1066ea1abdce8c": "Rosh Hashanah 2b:6"
+  },
+  "limitations": [
+    "Targeted opening/risk review only, no full tractate or sample certification.",
+    "Comparison is AI provisional, not human scholarly validation.",
+    "No producer mutation, qualification promotion or commit performed."
+  ]
+}

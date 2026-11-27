@@ -1,0 +1,890 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 20,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 20,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 37,
+    "probability_core_segments": 370,
+    "source_nonempty_segments": 3660,
+    "source_segment_positions": 3660,
+    "union_blocks": 39,
+    "union_core_segments": 390
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_bava_metzia.json",
+    "sha256": "0f4b8a1ab3db1cf069841a3bbae12804de54480f26a9418a97a89d188f0c5eee"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_bava_metzia",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_bava_metzia.json",
+    "sha256": "0f4b8a1ab3db1cf069841a3bbae12804de54480f26a9418a97a89d188f0c5eee"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Bava_Metzia.json",
+    "sha256": "21fb46d7bedd3ce06c12678addc3edb9fc09fa2adc1aef2ebef8ea1d02e8bcd0"
+  },
+  "plan_sha256": "8d0a4c9096c9f98f97540e75f87e0cf2986217e59b8704aa43280432dda369b5",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 366,
+    "inclusion_probability_denominator": 366,
+    "inclusion_probability_numerator": 37,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000032",
+      "block_000040",
+      "block_000042",
+      "block_000048",
+      "block_000061",
+      "block_000073",
+      "block_000077",
+      "block_000096",
+      "block_000102",
+      "block_000111",
+      "block_000125",
+      "block_000128",
+      "block_000130",
+      "block_000133",
+      "block_000148",
+      "block_000149",
+      "block_000165",
+      "block_000193",
+      "block_000199",
+      "block_000208",
+      "block_000210",
+      "block_000213",
+      "block_000215",
+      "block_000221",
+      "block_000270",
+      "block_000271",
+      "block_000282",
+      "block_000287",
+      "block_000292",
+      "block_000297",
+      "block_000299",
+      "block_000324",
+      "block_000343",
+      "block_000345",
+      "block_000347",
+      "block_000353",
+      "block_000357"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 37
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Bava Metzia 2a:1",
+        "Bava Metzia 2a:2",
+        "Bava Metzia 2a:3",
+        "Bava Metzia 2a:4",
+        "Bava Metzia 2a:5",
+        "Bava Metzia 2a:6",
+        "Bava Metzia 2a:7",
+        "Bava Metzia 2a:8",
+        "Bava Metzia 2a:9",
+        "Bava Metzia 2a:10"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000032",
+      "core_refs": [
+        "Bava Metzia 11a:12",
+        "Bava Metzia 11a:13",
+        "Bava Metzia 11a:14",
+        "Bava Metzia 11a:15",
+        "Bava Metzia 11a:16",
+        "Bava Metzia 11a:17",
+        "Bava Metzia 11a:18",
+        "Bava Metzia 11a:19",
+        "Bava Metzia 11a:20",
+        "Bava Metzia 11a:21"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000040",
+      "core_refs": [
+        "Bava Metzia 13b:4",
+        "Bava Metzia 13b:5",
+        "Bava Metzia 13b:6",
+        "Bava Metzia 13b:7",
+        "Bava Metzia 13b:8",
+        "Bava Metzia 13b:9",
+        "Bava Metzia 14a:1",
+        "Bava Metzia 14a:2",
+        "Bava Metzia 14a:3",
+        "Bava Metzia 14a:4"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000042",
+      "core_refs": [
+        "Bava Metzia 14b:3",
+        "Bava Metzia 14b:4",
+        "Bava Metzia 14b:5",
+        "Bava Metzia 14b:6",
+        "Bava Metzia 14b:7",
+        "Bava Metzia 14b:8",
+        "Bava Metzia 14b:9",
+        "Bava Metzia 14b:10",
+        "Bava Metzia 14b:11",
+        "Bava Metzia 14b:12"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000048",
+      "core_refs": [
+        "Bava Metzia 16a:2",
+        "Bava Metzia 16a:3",
+        "Bava Metzia 16a:4",
+        "Bava Metzia 16a:5",
+        "Bava Metzia 16a:6",
+        "Bava Metzia 16a:7",
+        "Bava Metzia 16a:8",
+        "Bava Metzia 16a:9",
+        "Bava Metzia 16a:10",
+        "Bava Metzia 16a:11"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000061",
+      "core_refs": [
+        "Bava Metzia 19b:7",
+        "Bava Metzia 19b:8",
+        "Bava Metzia 19b:9",
+        "Bava Metzia 19b:10",
+        "Bava Metzia 19b:11",
+        "Bava Metzia 19b:12",
+        "Bava Metzia 19b:13",
+        "Bava Metzia 19b:14",
+        "Bava Metzia 19b:15",
+        "Bava Metzia 19b:16"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000073",
+      "core_refs": [
+        "Bava Metzia 23a:11",
+        "Bava Metzia 23a:12",
+        "Bava Metzia 23a:13",
+        "Bava Metzia 23a:14",
+        "Bava Metzia 23a:15",
+        "Bava Metzia 23b:1",
+        "Bava Metzia 23b:2",
+        "Bava Metzia 23b:3",
+        "Bava Metzia 23b:4",
+        "Bava Metzia 23b:5"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000077",
+      "core_refs": [
+        "Bava Metzia 24b:8",
+        "Bava Metzia 24b:9",
+        "Bava Metzia 24b:10",
+        "Bava Metzia 24b:11",
+        "Bava Metzia 24b:12",
+        "Bava Metzia 25a:1",
+        "Bava Metzia 25a:2",
+        "Bava Metzia 25a:3",
+        "Bava Metzia 25a:4",
+        "Bava Metzia 25a:5"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000096",
+      "core_refs": [
+        "Bava Metzia 30a:5",
+        "Bava Metzia 30a:6",
+        "Bava Metzia 30a:7",
+        "Bava Metzia 30a:8",
+        "Bava Metzia 30a:9",
+        "Bava Metzia 30a:10",
+        "Bava Metzia 30a:11",
+        "Bava Metzia 30a:12",
+        "Bava Metzia 30a:13",
+        "Bava Metzia 30a:14"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000102",
+      "core_refs": [
+        "Bava Metzia 31b:4",
+        "Bava Metzia 31b:5",
+        "Bava Metzia 31b:6",
+        "Bava Metzia 31b:7",
+        "Bava Metzia 31b:8",
+        "Bava Metzia 31b:9",
+        "Bava Metzia 31b:10",
+        "Bava Metzia 31b:11",
+        "Bava Metzia 31b:12",
+        "Bava Metzia 31b:13"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000111",
+      "core_refs": [
+        "Bava Metzia 34a:5",
+        "Bava Metzia 34a:6",
+        "Bava Metzia 34a:7",
+        "Bava Metzia 34a:8",
+        "Bava Metzia 34a:9",
+        "Bava Metzia 34a:10",
+        "Bava Metzia 34a:11",
+        "Bava Metzia 34a:12",
+        "Bava Metzia 34a:13",
+        "Bava Metzia 34a:14"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000125",
+      "core_refs": [
+        "Bava Metzia 38b:13",
+        "Bava Metzia 38b:14",
+        "Bava Metzia 38b:15",
+        "Bava Metzia 38b:16",
+        "Bava Metzia 38b:17",
+        "Bava Metzia 38b:18",
+        "Bava Metzia 38b:19",
+        "Bava Metzia 38b:20",
+        "Bava Metzia 39a:1",
+        "Bava Metzia 39a:2"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000128",
+      "core_refs": [
+        "Bava Metzia 40a:1",
+        "Bava Metzia 40a:2",
+        "Bava Metzia 40a:3",
+        "Bava Metzia 40a:4",
+        "Bava Metzia 40a:5",
+        "Bava Metzia 40a:6",
+        "Bava Metzia 40a:7",
+        "Bava Metzia 40a:8",
+        "Bava Metzia 40a:9",
+        "Bava Metzia 40a:10"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000130",
+      "core_refs": [
+        "Bava Metzia 40b:2",
+        "Bava Metzia 40b:3",
+        "Bava Metzia 40b:4",
+        "Bava Metzia 40b:5",
+        "Bava Metzia 40b:6",
+        "Bava Metzia 40b:7",
+        "Bava Metzia 40b:8",
+        "Bava Metzia 40b:9",
+        "Bava Metzia 40b:10",
+        "Bava Metzia 40b:11"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000133",
+      "core_refs": [
+        "Bava Metzia 41a:16",
+        "Bava Metzia 41a:17",
+        "Bava Metzia 41a:18",
+        "Bava Metzia 41b:1",
+        "Bava Metzia 41b:2",
+        "Bava Metzia 41b:3",
+        "Bava Metzia 41b:4",
+        "Bava Metzia 41b:5",
+        "Bava Metzia 41b:6",
+        "Bava Metzia 41b:7"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000148",
+      "core_refs": [
+        "Bava Metzia 47a:10",
+        "Bava Metzia 47a:11",
+        "Bava Metzia 47a:12",
+        "Bava Metzia 47a:13",
+        "Bava Metzia 47a:14",
+        "Bava Metzia 47a:15",
+        "Bava Metzia 47a:16",
+        "Bava Metzia 47a:17",
+        "Bava Metzia 47a:18",
+        "Bava Metzia 47b:1"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000149",
+      "core_refs": [
+        "Bava Metzia 47b:2",
+        "Bava Metzia 47b:3",
+        "Bava Metzia 47b:4",
+        "Bava Metzia 47b:5",
+        "Bava Metzia 47b:6",
+        "Bava Metzia 47b:7",
+        "Bava Metzia 47b:8",
+        "Bava Metzia 47b:9",
+        "Bava Metzia 47b:10",
+        "Bava Metzia 47b:11"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000165",
+      "core_refs": [
+        "Bava Metzia 53b:1",
+        "Bava Metzia 53b:2",
+        "Bava Metzia 53b:3",
+        "Bava Metzia 53b:4",
+        "Bava Metzia 53b:5",
+        "Bava Metzia 53b:6",
+        "Bava Metzia 53b:7",
+        "Bava Metzia 53b:8",
+        "Bava Metzia 53b:9",
+        "Bava Metzia 53b:10"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000193",
+      "core_refs": [
+        "Bava Metzia 63a:4",
+        "Bava Metzia 63a:5",
+        "Bava Metzia 63a:6",
+        "Bava Metzia 63a:7",
+        "Bava Metzia 63a:8",
+        "Bava Metzia 63a:9",
+        "Bava Metzia 63a:10",
+        "Bava Metzia 63a:11",
+        "Bava Metzia 63a:12",
+        "Bava Metzia 63b:1"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000199",
+      "core_refs": [
+        "Bava Metzia 65b:5",
+        "Bava Metzia 65b:6",
+        "Bava Metzia 65b:7",
+        "Bava Metzia 65b:8",
+        "Bava Metzia 65b:9",
+        "Bava Metzia 65b:10",
+        "Bava Metzia 65b:11",
+        "Bava Metzia 65b:12",
+        "Bava Metzia 65b:13",
+        "Bava Metzia 66a:1"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000208",
+      "core_refs": [
+        "Bava Metzia 68b:7",
+        "Bava Metzia 68b:8",
+        "Bava Metzia 68b:9",
+        "Bava Metzia 68b:10",
+        "Bava Metzia 68b:11",
+        "Bava Metzia 68b:12",
+        "Bava Metzia 68b:13",
+        "Bava Metzia 68b:14",
+        "Bava Metzia 68b:15",
+        "Bava Metzia 69a:1"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000210",
+      "core_refs": [
+        "Bava Metzia 69a:12",
+        "Bava Metzia 69a:13",
+        "Bava Metzia 69a:14",
+        "Bava Metzia 69b:1",
+        "Bava Metzia 69b:2",
+        "Bava Metzia 69b:3",
+        "Bava Metzia 69b:4",
+        "Bava Metzia 69b:5",
+        "Bava Metzia 69b:6",
+        "Bava Metzia 69b:7"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000213",
+      "core_refs": [
+        "Bava Metzia 70b:4",
+        "Bava Metzia 70b:5",
+        "Bava Metzia 70b:6",
+        "Bava Metzia 70b:7",
+        "Bava Metzia 70b:8",
+        "Bava Metzia 70b:9",
+        "Bava Metzia 70b:10",
+        "Bava Metzia 70b:11",
+        "Bava Metzia 70b:12",
+        "Bava Metzia 70b:13"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000215",
+      "core_refs": [
+        "Bava Metzia 71a:11",
+        "Bava Metzia 71a:12",
+        "Bava Metzia 71a:13",
+        "Bava Metzia 71a:14",
+        "Bava Metzia 71a:15",
+        "Bava Metzia 71a:16",
+        "Bava Metzia 71a:17",
+        "Bava Metzia 71a:18",
+        "Bava Metzia 71a:19",
+        "Bava Metzia 71a:20"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000221",
+      "core_refs": [
+        "Bava Metzia 73a:9",
+        "Bava Metzia 73a:10",
+        "Bava Metzia 73a:11",
+        "Bava Metzia 73a:12",
+        "Bava Metzia 73b:1",
+        "Bava Metzia 73b:2",
+        "Bava Metzia 73b:3",
+        "Bava Metzia 73b:4",
+        "Bava Metzia 73b:5",
+        "Bava Metzia 73b:6"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000270",
+      "core_refs": [
+        "Bava Metzia 89b:11",
+        "Bava Metzia 90a:1",
+        "Bava Metzia 90a:2",
+        "Bava Metzia 90a:3",
+        "Bava Metzia 90a:4",
+        "Bava Metzia 90a:5",
+        "Bava Metzia 90a:6",
+        "Bava Metzia 90a:7",
+        "Bava Metzia 90a:8",
+        "Bava Metzia 90a:9"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000271",
+      "core_refs": [
+        "Bava Metzia 90a:10",
+        "Bava Metzia 90a:11",
+        "Bava Metzia 90a:12",
+        "Bava Metzia 90a:13",
+        "Bava Metzia 90a:14",
+        "Bava Metzia 90a:15",
+        "Bava Metzia 90a:16",
+        "Bava Metzia 90b:1",
+        "Bava Metzia 90b:2",
+        "Bava Metzia 90b:3"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000282",
+      "core_refs": [
+        "Bava Metzia 93a:20",
+        "Bava Metzia 93b:1",
+        "Bava Metzia 93b:2",
+        "Bava Metzia 93b:3",
+        "Bava Metzia 93b:4",
+        "Bava Metzia 93b:5",
+        "Bava Metzia 93b:6",
+        "Bava Metzia 93b:7",
+        "Bava Metzia 93b:8",
+        "Bava Metzia 93b:9"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000287",
+      "core_refs": [
+        "Bava Metzia 94b:13",
+        "Bava Metzia 94b:14",
+        "Bava Metzia 94b:15",
+        "Bava Metzia 94b:16",
+        "Bava Metzia 94b:17",
+        "Bava Metzia 94b:18",
+        "Bava Metzia 94b:19",
+        "Bava Metzia 94b:20",
+        "Bava Metzia 94b:21",
+        "Bava Metzia 94b:22"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000292",
+      "core_refs": [
+        "Bava Metzia 95b:13",
+        "Bava Metzia 95b:14",
+        "Bava Metzia 95b:15",
+        "Bava Metzia 95b:16",
+        "Bava Metzia 95b:17",
+        "Bava Metzia 95b:18",
+        "Bava Metzia 96a:1",
+        "Bava Metzia 96a:2",
+        "Bava Metzia 96a:3",
+        "Bava Metzia 96a:4"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000297",
+      "core_refs": [
+        "Bava Metzia 97a:1",
+        "Bava Metzia 97a:2",
+        "Bava Metzia 97a:3",
+        "Bava Metzia 97a:4",
+        "Bava Metzia 97a:5",
+        "Bava Metzia 97a:6",
+        "Bava Metzia 97a:7",
+        "Bava Metzia 97a:8",
+        "Bava Metzia 97a:9",
+        "Bava Metzia 97a:10"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000299",
+      "core_refs": [
+        "Bava Metzia 97b:7",
+        "Bava Metzia 97b:8",
+        "Bava Metzia 98a:1",
+        "Bava Metzia 98a:2",
+        "Bava Metzia 98a:3",
+        "Bava Metzia 98a:4",
+        "Bava Metzia 98a:5",
+        "Bava Metzia 98a:6",
+        "Bava Metzia 98a:7",
+        "Bava Metzia 98a:8"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000324",
+      "core_refs": [
+        "Bava Metzia 105a:1",
+        "Bava Metzia 105a:2",
+        "Bava Metzia 105a:3",
+        "Bava Metzia 105a:4",
+        "Bava Metzia 105a:5",
+        "Bava Metzia 105a:6",
+        "Bava Metzia 105a:7",
+        "Bava Metzia 105a:8",
+        "Bava Metzia 105a:9",
+        "Bava Metzia 105a:10"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000343",
+      "core_refs": [
+        "Bava Metzia 111a:8",
+        "Bava Metzia 111a:9",
+        "Bava Metzia 111a:10",
+        "Bava Metzia 111a:11",
+        "Bava Metzia 111a:12",
+        "Bava Metzia 111a:13",
+        "Bava Metzia 111a:14",
+        "Bava Metzia 111a:15",
+        "Bava Metzia 111a:16",
+        "Bava Metzia 111a:17"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000345",
+      "core_refs": [
+        "Bava Metzia 111b:8",
+        "Bava Metzia 111b:9",
+        "Bava Metzia 111b:10",
+        "Bava Metzia 111b:11",
+        "Bava Metzia 111b:12",
+        "Bava Metzia 111b:13",
+        "Bava Metzia 111b:14",
+        "Bava Metzia 111b:15",
+        "Bava Metzia 111b:16",
+        "Bava Metzia 111b:17"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000347",
+      "core_refs": [
+        "Bava Metzia 112a:11",
+        "Bava Metzia 112a:12",
+        "Bava Metzia 112a:13",
+        "Bava Metzia 112a:14",
+        "Bava Metzia 112a:15",
+        "Bava Metzia 112b:1",
+        "Bava Metzia 112b:2",
+        "Bava Metzia 112b:3",
+        "Bava Metzia 112b:4",
+        "Bava Metzia 112b:5"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000353",
+      "core_refs": [
+        "Bava Metzia 114b:8",
+        "Bava Metzia 114b:9",
+        "Bava Metzia 114b:10",
+        "Bava Metzia 115a:1",
+        "Bava Metzia 115a:2",
+        "Bava Metzia 115a:3",
+        "Bava Metzia 115a:4",
+        "Bava Metzia 115a:5",
+        "Bava Metzia 115a:6",
+        "Bava Metzia 115a:7"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000357",
+      "core_refs": [
+        "Bava Metzia 116b:5",
+        "Bava Metzia 116b:6",
+        "Bava Metzia 116b:7",
+        "Bava Metzia 116b:8",
+        "Bava Metzia 116b:9",
+        "Bava Metzia 116b:10",
+        "Bava Metzia 116b:11",
+        "Bava Metzia 116b:12",
+        "Bava Metzia 116b:13",
+        "Bava Metzia 116b:14"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 0.10109289617486339,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000365",
+      "core_refs": [
+        "Bava Metzia 118b:11",
+        "Bava Metzia 118b:12",
+        "Bava Metzia 118b:13",
+        "Bava Metzia 118b:14",
+        "Bava Metzia 119a:1",
+        "Bava Metzia 119a:2",
+        "Bava Metzia 119a:3",
+        "Bava Metzia 119a:4",
+        "Bava Metzia 119a:5",
+        "Bava Metzia 119a:6"
+      ],
+      "inclusion_probability": 0.10109289617486339,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nezikin/Bava Metzia/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Bava Metzia"
+}

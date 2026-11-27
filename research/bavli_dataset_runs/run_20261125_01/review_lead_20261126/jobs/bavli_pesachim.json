@@ -1,0 +1,868 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 19,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 19,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 36,
+    "probability_core_segments": 360,
+    "source_nonempty_segments": 3519,
+    "source_segment_positions": 3519,
+    "union_blocks": 38,
+    "union_core_segments": 379
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_pesachim.json",
+    "sha256": "fa258b0646a44b09a5d9641fbbc76c407df441d9d3e6f82c09c6a939bd9aaa73"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_pesachim",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_pesachim.json",
+    "sha256": "fa258b0646a44b09a5d9641fbbc76c407df441d9d3e6f82c09c6a939bd9aaa73"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Pesachim.json",
+    "sha256": "fa7a469dfcc83348baae0a9759a9175fe008e5da78a55c177a9b2c86a0191122"
+  },
+  "plan_sha256": "f95276a4b1a7ac96c17060d0c5d10e101930e66f2013ab569265ebc02b954103",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 352,
+    "inclusion_probability_denominator": 352,
+    "inclusion_probability_numerator": 36,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000020",
+      "block_000025",
+      "block_000029",
+      "block_000036",
+      "block_000040",
+      "block_000047",
+      "block_000057",
+      "block_000064",
+      "block_000072",
+      "block_000093",
+      "block_000098",
+      "block_000103",
+      "block_000108",
+      "block_000109",
+      "block_000115",
+      "block_000135",
+      "block_000141",
+      "block_000142",
+      "block_000160",
+      "block_000164",
+      "block_000165",
+      "block_000195",
+      "block_000202",
+      "block_000205",
+      "block_000206",
+      "block_000216",
+      "block_000239",
+      "block_000243",
+      "block_000244",
+      "block_000247",
+      "block_000251",
+      "block_000254",
+      "block_000258",
+      "block_000268",
+      "block_000304",
+      "block_000334"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 36
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Pesachim 2a:1",
+        "Pesachim 2a:2",
+        "Pesachim 2a:3",
+        "Pesachim 2a:4",
+        "Pesachim 2a:5",
+        "Pesachim 2a:6",
+        "Pesachim 2a:7",
+        "Pesachim 2a:8",
+        "Pesachim 2a:9",
+        "Pesachim 2b:1"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000020",
+      "core_refs": [
+        "Pesachim 8b:2",
+        "Pesachim 8b:3",
+        "Pesachim 8b:4",
+        "Pesachim 8b:5",
+        "Pesachim 8b:6",
+        "Pesachim 8b:7",
+        "Pesachim 8b:8",
+        "Pesachim 8b:9",
+        "Pesachim 8b:10",
+        "Pesachim 8b:11"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000025",
+      "core_refs": [
+        "Pesachim 10a:9",
+        "Pesachim 10a:10",
+        "Pesachim 10a:11",
+        "Pesachim 10a:12",
+        "Pesachim 10a:13",
+        "Pesachim 10a:14",
+        "Pesachim 10a:15",
+        "Pesachim 10b:1",
+        "Pesachim 10b:2",
+        "Pesachim 10b:3"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000029",
+      "core_refs": [
+        "Pesachim 11a:14",
+        "Pesachim 11a:15",
+        "Pesachim 11a:16",
+        "Pesachim 11a:17",
+        "Pesachim 11a:18",
+        "Pesachim 11a:19",
+        "Pesachim 11a:20",
+        "Pesachim 11a:21",
+        "Pesachim 11b:1",
+        "Pesachim 11b:2"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Pesachim 13a:17",
+        "Pesachim 13b:1",
+        "Pesachim 13b:2",
+        "Pesachim 13b:3",
+        "Pesachim 13b:4",
+        "Pesachim 13b:5",
+        "Pesachim 13b:6",
+        "Pesachim 13b:7",
+        "Pesachim 13b:8",
+        "Pesachim 13b:9"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000040",
+      "core_refs": [
+        "Pesachim 14b:8",
+        "Pesachim 14b:9",
+        "Pesachim 14b:10",
+        "Pesachim 14b:11",
+        "Pesachim 14b:12",
+        "Pesachim 15a:1",
+        "Pesachim 15a:2",
+        "Pesachim 15a:3",
+        "Pesachim 15a:4",
+        "Pesachim 15a:5"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000047",
+      "core_refs": [
+        "Pesachim 17a:8",
+        "Pesachim 17a:9",
+        "Pesachim 17a:10",
+        "Pesachim 17a:11",
+        "Pesachim 17a:12",
+        "Pesachim 17a:13",
+        "Pesachim 17a:14",
+        "Pesachim 17a:15",
+        "Pesachim 17a:16",
+        "Pesachim 17a:17"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000057",
+      "core_refs": [
+        "Pesachim 20b:7",
+        "Pesachim 20b:8",
+        "Pesachim 20b:9",
+        "Pesachim 20b:10",
+        "Pesachim 20b:11",
+        "Pesachim 20b:12",
+        "Pesachim 20b:13",
+        "Pesachim 20b:14",
+        "Pesachim 20b:15",
+        "Pesachim 20b:16"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000064",
+      "core_refs": [
+        "Pesachim 23a:2",
+        "Pesachim 23a:3",
+        "Pesachim 23a:4",
+        "Pesachim 23a:5",
+        "Pesachim 23a:6",
+        "Pesachim 23a:7",
+        "Pesachim 23a:8",
+        "Pesachim 23a:9",
+        "Pesachim 23a:10",
+        "Pesachim 23a:11"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000072",
+      "core_refs": [
+        "Pesachim 25b:11",
+        "Pesachim 26a:1",
+        "Pesachim 26a:2",
+        "Pesachim 26a:3",
+        "Pesachim 26a:4",
+        "Pesachim 26a:5",
+        "Pesachim 26a:6",
+        "Pesachim 26a:7",
+        "Pesachim 26a:8",
+        "Pesachim 26a:9"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000093",
+      "core_refs": [
+        "Pesachim 34b:5",
+        "Pesachim 34b:6",
+        "Pesachim 34b:7",
+        "Pesachim 34b:8",
+        "Pesachim 34b:9",
+        "Pesachim 34b:10",
+        "Pesachim 34b:11",
+        "Pesachim 34b:12",
+        "Pesachim 34b:13",
+        "Pesachim 35a:1"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000098",
+      "core_refs": [
+        "Pesachim 36a:7",
+        "Pesachim 36a:8",
+        "Pesachim 36a:9",
+        "Pesachim 36a:10",
+        "Pesachim 36a:11",
+        "Pesachim 36a:12",
+        "Pesachim 36a:13",
+        "Pesachim 36a:14",
+        "Pesachim 36a:15",
+        "Pesachim 36a:16"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000103",
+      "core_refs": [
+        "Pesachim 37b:4",
+        "Pesachim 37b:5",
+        "Pesachim 37b:6",
+        "Pesachim 37b:7",
+        "Pesachim 37b:8",
+        "Pesachim 37b:9",
+        "Pesachim 37b:10",
+        "Pesachim 37b:11",
+        "Pesachim 38a:1",
+        "Pesachim 38a:2"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000108",
+      "core_refs": [
+        "Pesachim 39a:14",
+        "Pesachim 39a:15",
+        "Pesachim 39a:16",
+        "Pesachim 39a:17",
+        "Pesachim 39b:1",
+        "Pesachim 39b:2",
+        "Pesachim 39b:3",
+        "Pesachim 39b:4",
+        "Pesachim 39b:5",
+        "Pesachim 39b:6"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000109",
+      "core_refs": [
+        "Pesachim 39b:7",
+        "Pesachim 39b:8",
+        "Pesachim 39b:9",
+        "Pesachim 39b:10",
+        "Pesachim 39b:11",
+        "Pesachim 39b:12",
+        "Pesachim 39b:13",
+        "Pesachim 39b:14",
+        "Pesachim 39b:15",
+        "Pesachim 39b:16"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000115",
+      "core_refs": [
+        "Pesachim 41a:15",
+        "Pesachim 41a:16",
+        "Pesachim 41a:17",
+        "Pesachim 41a:18",
+        "Pesachim 41a:19",
+        "Pesachim 41a:20",
+        "Pesachim 41a:21",
+        "Pesachim 41a:22",
+        "Pesachim 41b:1",
+        "Pesachim 41b:2"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000135",
+      "core_refs": [
+        "Pesachim 46b:3",
+        "Pesachim 46b:4",
+        "Pesachim 46b:5",
+        "Pesachim 46b:6",
+        "Pesachim 46b:7",
+        "Pesachim 46b:8",
+        "Pesachim 46b:9",
+        "Pesachim 46b:10",
+        "Pesachim 46b:11",
+        "Pesachim 47a:1"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000141",
+      "core_refs": [
+        "Pesachim 48b:12",
+        "Pesachim 48b:13",
+        "Pesachim 48b:14",
+        "Pesachim 48b:15",
+        "Pesachim 48b:16",
+        "Pesachim 49a:1",
+        "Pesachim 49a:2",
+        "Pesachim 49a:3",
+        "Pesachim 49a:4",
+        "Pesachim 49a:5"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000142",
+      "core_refs": [
+        "Pesachim 49a:6",
+        "Pesachim 49a:7",
+        "Pesachim 49a:8",
+        "Pesachim 49a:9",
+        "Pesachim 49a:10",
+        "Pesachim 49a:11",
+        "Pesachim 49a:12",
+        "Pesachim 49a:13",
+        "Pesachim 49a:14",
+        "Pesachim 49a:15"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000160",
+      "core_refs": [
+        "Pesachim 55a:9",
+        "Pesachim 55a:10",
+        "Pesachim 55a:11",
+        "Pesachim 55a:12",
+        "Pesachim 55a:13",
+        "Pesachim 55a:14",
+        "Pesachim 55a:15",
+        "Pesachim 55a:16",
+        "Pesachim 55b:1",
+        "Pesachim 55b:2"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000164",
+      "core_refs": [
+        "Pesachim 56b:5",
+        "Pesachim 56b:6",
+        "Pesachim 56b:7",
+        "Pesachim 56b:8",
+        "Pesachim 56b:9",
+        "Pesachim 56b:10",
+        "Pesachim 57a:1",
+        "Pesachim 57a:2",
+        "Pesachim 57a:3",
+        "Pesachim 57a:4"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000165",
+      "core_refs": [
+        "Pesachim 57a:5",
+        "Pesachim 57a:6",
+        "Pesachim 57a:7",
+        "Pesachim 57a:8",
+        "Pesachim 57a:9",
+        "Pesachim 57a:10",
+        "Pesachim 57a:11",
+        "Pesachim 57b:1",
+        "Pesachim 57b:2",
+        "Pesachim 57b:3"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000195",
+      "core_refs": [
+        "Pesachim 68a:11",
+        "Pesachim 68a:12",
+        "Pesachim 68a:13",
+        "Pesachim 68a:14",
+        "Pesachim 68a:15",
+        "Pesachim 68a:16",
+        "Pesachim 68a:17",
+        "Pesachim 68a:18",
+        "Pesachim 68a:19",
+        "Pesachim 68b:1"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000202",
+      "core_refs": [
+        "Pesachim 70a:18",
+        "Pesachim 70b:1",
+        "Pesachim 70b:2",
+        "Pesachim 70b:3",
+        "Pesachim 70b:4",
+        "Pesachim 70b:5",
+        "Pesachim 70b:6",
+        "Pesachim 70b:7",
+        "Pesachim 70b:8",
+        "Pesachim 70b:9"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000205",
+      "core_refs": [
+        "Pesachim 71b:2",
+        "Pesachim 71b:3",
+        "Pesachim 71b:4",
+        "Pesachim 71b:5",
+        "Pesachim 71b:6",
+        "Pesachim 71b:7",
+        "Pesachim 71b:8",
+        "Pesachim 71b:9",
+        "Pesachim 71b:10",
+        "Pesachim 71b:11"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000206",
+      "core_refs": [
+        "Pesachim 71b:12",
+        "Pesachim 71b:13",
+        "Pesachim 71b:14",
+        "Pesachim 72a:1",
+        "Pesachim 72a:2",
+        "Pesachim 72a:3",
+        "Pesachim 72a:4",
+        "Pesachim 72a:5",
+        "Pesachim 72a:6",
+        "Pesachim 72a:7"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000216",
+      "core_refs": [
+        "Pesachim 75a:3",
+        "Pesachim 75a:4",
+        "Pesachim 75a:5",
+        "Pesachim 75a:6",
+        "Pesachim 75a:7",
+        "Pesachim 75a:8",
+        "Pesachim 75a:9",
+        "Pesachim 75a:10",
+        "Pesachim 75a:11",
+        "Pesachim 75a:12"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000239",
+      "core_refs": [
+        "Pesachim 81a:4",
+        "Pesachim 81a:5",
+        "Pesachim 81a:6",
+        "Pesachim 81a:7",
+        "Pesachim 81a:8",
+        "Pesachim 81a:9",
+        "Pesachim 81a:10",
+        "Pesachim 81a:11",
+        "Pesachim 81a:12",
+        "Pesachim 81a:13"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000243",
+      "core_refs": [
+        "Pesachim 82a:6",
+        "Pesachim 82a:7",
+        "Pesachim 82a:8",
+        "Pesachim 82a:9",
+        "Pesachim 82a:10",
+        "Pesachim 82a:11",
+        "Pesachim 82a:12",
+        "Pesachim 82a:13",
+        "Pesachim 82a:14",
+        "Pesachim 82a:15"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000244",
+      "core_refs": [
+        "Pesachim 82b:1",
+        "Pesachim 82b:2",
+        "Pesachim 82b:3",
+        "Pesachim 82b:4",
+        "Pesachim 82b:5",
+        "Pesachim 82b:6",
+        "Pesachim 82b:7",
+        "Pesachim 82b:8",
+        "Pesachim 82b:9",
+        "Pesachim 82b:10"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000247",
+      "core_refs": [
+        "Pesachim 83a:13",
+        "Pesachim 83a:14",
+        "Pesachim 83b:1",
+        "Pesachim 83b:2",
+        "Pesachim 83b:3",
+        "Pesachim 83b:4",
+        "Pesachim 83b:5",
+        "Pesachim 83b:6",
+        "Pesachim 83b:7",
+        "Pesachim 83b:8"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000251",
+      "core_refs": [
+        "Pesachim 84b:9",
+        "Pesachim 84b:10",
+        "Pesachim 84b:11",
+        "Pesachim 84b:12",
+        "Pesachim 84b:13",
+        "Pesachim 84b:14",
+        "Pesachim 84b:15",
+        "Pesachim 84b:16",
+        "Pesachim 84b:17",
+        "Pesachim 84b:18"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000254",
+      "core_refs": [
+        "Pesachim 85a:18",
+        "Pesachim 85a:19",
+        "Pesachim 85b:1",
+        "Pesachim 85b:2",
+        "Pesachim 85b:3",
+        "Pesachim 85b:4",
+        "Pesachim 85b:5",
+        "Pesachim 85b:6",
+        "Pesachim 85b:7",
+        "Pesachim 85b:8"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000258",
+      "core_refs": [
+        "Pesachim 86b:10",
+        "Pesachim 86b:11",
+        "Pesachim 86b:12",
+        "Pesachim 86b:13",
+        "Pesachim 87a:1",
+        "Pesachim 87a:2",
+        "Pesachim 87a:3",
+        "Pesachim 87a:4",
+        "Pesachim 87a:5",
+        "Pesachim 87a:6"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000268",
+      "core_refs": [
+        "Pesachim 89a:18",
+        "Pesachim 89a:19",
+        "Pesachim 89a:20",
+        "Pesachim 89a:21",
+        "Pesachim 89a:22",
+        "Pesachim 89a:23",
+        "Pesachim 89a:24",
+        "Pesachim 89b:1",
+        "Pesachim 89b:2",
+        "Pesachim 89b:3"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000304",
+      "core_refs": [
+        "Pesachim 102a:3",
+        "Pesachim 102a:4",
+        "Pesachim 102a:5",
+        "Pesachim 102a:6",
+        "Pesachim 102a:7",
+        "Pesachim 102a:8",
+        "Pesachim 102b:1",
+        "Pesachim 102b:2",
+        "Pesachim 102b:3",
+        "Pesachim 102b:4"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000334",
+      "core_refs": [
+        "Pesachim 116a:1",
+        "Pesachim 116a:2",
+        "Pesachim 116a:3",
+        "Pesachim 116a:4",
+        "Pesachim 116a:5",
+        "Pesachim 116a:6",
+        "Pesachim 116a:7",
+        "Pesachim 116a:8",
+        "Pesachim 116a:9",
+        "Pesachim 116a:10"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 0.10227272727272728,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000351",
+      "core_refs": [
+        "Pesachim 121a:1",
+        "Pesachim 121a:2",
+        "Pesachim 121a:3",
+        "Pesachim 121a:4",
+        "Pesachim 121a:5",
+        "Pesachim 121a:6",
+        "Pesachim 121b:1",
+        "Pesachim 121b:2",
+        "Pesachim 121b:3"
+      ],
+      "inclusion_probability": 0.10227272727272728,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Pesachim/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "991fdf80c9e63aa181875439631c2a08b49a8b9fb2b0118ccb44754d96da073e"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Pesachim"
+}

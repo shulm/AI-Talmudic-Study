@@ -1,0 +1,1011 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 1,
+    "endpoint_added_core_segments": 3,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 13,
+    "endpoint_overlap_blocks": 1,
+    "endpoint_overlap_core_segments": 10,
+    "probability_blocks": 44,
+    "probability_core_segments": 440,
+    "source_nonempty_segments": 4393,
+    "source_segment_positions": 4393,
+    "union_blocks": 45,
+    "union_core_segments": 443
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_chullin.json",
+    "sha256": "b2a73464cb0f62ab3d817b499e913594fde9190ec1e7c3e8f4c7a4353f69dfc3"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_chullin",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_chullin.json",
+    "sha256": "b2a73464cb0f62ab3d817b499e913594fde9190ec1e7c3e8f4c7a4353f69dfc3"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Chullin.json",
+    "sha256": "f03d36904257793448b31eb72a50b5008e9e17ffb4d358b030d4e4a767c53838"
+  },
+  "plan_sha256": "91ff51e55eb4fd5c8faa62b9ab8faf3b1be85f85f33111df29403cd04b1d9af8",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 440,
+    "inclusion_probability_denominator": 440,
+    "inclusion_probability_numerator": 44,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000000",
+      "block_000006",
+      "block_000013",
+      "block_000035",
+      "block_000041",
+      "block_000076",
+      "block_000094",
+      "block_000098",
+      "block_000107",
+      "block_000108",
+      "block_000111",
+      "block_000134",
+      "block_000135",
+      "block_000147",
+      "block_000151",
+      "block_000154",
+      "block_000158",
+      "block_000171",
+      "block_000176",
+      "block_000194",
+      "block_000201",
+      "block_000212",
+      "block_000228",
+      "block_000252",
+      "block_000253",
+      "block_000263",
+      "block_000265",
+      "block_000267",
+      "block_000278",
+      "block_000300",
+      "block_000322",
+      "block_000341",
+      "block_000371",
+      "block_000372",
+      "block_000379",
+      "block_000380",
+      "block_000383",
+      "block_000389",
+      "block_000399",
+      "block_000401",
+      "block_000415",
+      "block_000422",
+      "block_000428",
+      "block_000429"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 44
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Chullin 2a:1",
+        "Chullin 2a:2",
+        "Chullin 2a:3",
+        "Chullin 2a:4",
+        "Chullin 2a:5",
+        "Chullin 2a:6",
+        "Chullin 2b:1",
+        "Chullin 2b:2",
+        "Chullin 2b:3",
+        "Chullin 2b:4"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000006",
+      "core_refs": [
+        "Chullin 4a:7",
+        "Chullin 4a:8",
+        "Chullin 4a:9",
+        "Chullin 4a:10",
+        "Chullin 4a:11",
+        "Chullin 4a:12",
+        "Chullin 4a:13",
+        "Chullin 4a:14",
+        "Chullin 4a:15",
+        "Chullin 4a:16"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000013",
+      "core_refs": [
+        "Chullin 6a:12",
+        "Chullin 6a:13",
+        "Chullin 6a:14",
+        "Chullin 6a:15",
+        "Chullin 6a:16",
+        "Chullin 6a:17",
+        "Chullin 6a:18",
+        "Chullin 6a:19",
+        "Chullin 6b:1",
+        "Chullin 6b:2"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000035",
+      "core_refs": [
+        "Chullin 14b:14",
+        "Chullin 14b:15",
+        "Chullin 14b:16",
+        "Chullin 15a:1",
+        "Chullin 15a:2",
+        "Chullin 15a:3",
+        "Chullin 15a:4",
+        "Chullin 15a:5",
+        "Chullin 15a:6",
+        "Chullin 15a:7"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000041",
+      "core_refs": [
+        "Chullin 16b:13",
+        "Chullin 16b:14",
+        "Chullin 16b:15",
+        "Chullin 16b:16",
+        "Chullin 16b:17",
+        "Chullin 17a:1",
+        "Chullin 17a:2",
+        "Chullin 17a:3",
+        "Chullin 17a:4",
+        "Chullin 17a:5"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000076",
+      "core_refs": [
+        "Chullin 29a:11",
+        "Chullin 29a:12",
+        "Chullin 29a:13",
+        "Chullin 29a:14",
+        "Chullin 29a:15",
+        "Chullin 29a:16",
+        "Chullin 29a:17",
+        "Chullin 29a:18",
+        "Chullin 29a:19",
+        "Chullin 29a:20"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000094",
+      "core_refs": [
+        "Chullin 34a:9",
+        "Chullin 34a:10",
+        "Chullin 34a:11",
+        "Chullin 34a:12",
+        "Chullin 34b:1",
+        "Chullin 34b:2",
+        "Chullin 34b:3",
+        "Chullin 34b:4",
+        "Chullin 34b:5",
+        "Chullin 34b:6"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000098",
+      "core_refs": [
+        "Chullin 36a:4",
+        "Chullin 36a:5",
+        "Chullin 36a:6",
+        "Chullin 36a:7",
+        "Chullin 36a:8",
+        "Chullin 36a:9",
+        "Chullin 36a:10",
+        "Chullin 36a:11",
+        "Chullin 36a:12",
+        "Chullin 36a:13"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000107",
+      "core_refs": [
+        "Chullin 39b:3",
+        "Chullin 39b:4",
+        "Chullin 39b:5",
+        "Chullin 39b:6",
+        "Chullin 39b:7",
+        "Chullin 39b:8",
+        "Chullin 39b:9",
+        "Chullin 39b:10",
+        "Chullin 39b:11",
+        "Chullin 39b:12"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000108",
+      "core_refs": [
+        "Chullin 39b:13",
+        "Chullin 39b:14",
+        "Chullin 39b:15",
+        "Chullin 39b:16",
+        "Chullin 39b:17",
+        "Chullin 39b:18",
+        "Chullin 39b:19",
+        "Chullin 39b:20",
+        "Chullin 40a:1",
+        "Chullin 40a:2"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000111",
+      "core_refs": [
+        "Chullin 41a:8",
+        "Chullin 41a:9",
+        "Chullin 41b:1",
+        "Chullin 41b:2",
+        "Chullin 41b:3",
+        "Chullin 41b:4",
+        "Chullin 41b:5",
+        "Chullin 41b:6",
+        "Chullin 41b:7",
+        "Chullin 41b:8"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000134",
+      "core_refs": [
+        "Chullin 49b:1",
+        "Chullin 49b:2",
+        "Chullin 49b:3",
+        "Chullin 49b:4",
+        "Chullin 49b:5",
+        "Chullin 49b:6",
+        "Chullin 49b:7",
+        "Chullin 49b:8",
+        "Chullin 49b:9",
+        "Chullin 49b:10"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000135",
+      "core_refs": [
+        "Chullin 49b:11",
+        "Chullin 49b:12",
+        "Chullin 49b:13",
+        "Chullin 49b:14",
+        "Chullin 49b:15",
+        "Chullin 50a:1",
+        "Chullin 50a:2",
+        "Chullin 50a:3",
+        "Chullin 50a:4",
+        "Chullin 50a:5"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000147",
+      "core_refs": [
+        "Chullin 53b:1",
+        "Chullin 53b:2",
+        "Chullin 53b:3",
+        "Chullin 53b:4",
+        "Chullin 53b:5",
+        "Chullin 53b:6",
+        "Chullin 53b:7",
+        "Chullin 53b:8",
+        "Chullin 53b:9",
+        "Chullin 53b:10"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000151",
+      "core_refs": [
+        "Chullin 54b:9",
+        "Chullin 54b:10",
+        "Chullin 54b:11",
+        "Chullin 54b:12",
+        "Chullin 54b:13",
+        "Chullin 55a:1",
+        "Chullin 55a:2",
+        "Chullin 55a:3",
+        "Chullin 55a:4",
+        "Chullin 55a:5"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000154",
+      "core_refs": [
+        "Chullin 55b:16",
+        "Chullin 55b:17",
+        "Chullin 55b:18",
+        "Chullin 55b:19",
+        "Chullin 55b:20",
+        "Chullin 55b:21",
+        "Chullin 55b:22",
+        "Chullin 56a:1",
+        "Chullin 56a:2",
+        "Chullin 56a:3"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000158",
+      "core_refs": [
+        "Chullin 57a:6",
+        "Chullin 57a:7",
+        "Chullin 57a:8",
+        "Chullin 57a:9",
+        "Chullin 57a:10",
+        "Chullin 57b:1",
+        "Chullin 57b:2",
+        "Chullin 57b:3",
+        "Chullin 57b:4",
+        "Chullin 57b:5"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000171",
+      "core_refs": [
+        "Chullin 62a:9",
+        "Chullin 62b:1",
+        "Chullin 62b:2",
+        "Chullin 62b:3",
+        "Chullin 62b:4",
+        "Chullin 62b:5",
+        "Chullin 62b:6",
+        "Chullin 62b:7",
+        "Chullin 62b:8",
+        "Chullin 62b:9"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000176",
+      "core_refs": [
+        "Chullin 64a:8",
+        "Chullin 64a:9",
+        "Chullin 64b:1",
+        "Chullin 64b:2",
+        "Chullin 64b:3",
+        "Chullin 64b:4",
+        "Chullin 64b:5",
+        "Chullin 64b:6",
+        "Chullin 64b:7",
+        "Chullin 65a:1"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000194",
+      "core_refs": [
+        "Chullin 70b:1",
+        "Chullin 70b:2",
+        "Chullin 70b:3",
+        "Chullin 70b:4",
+        "Chullin 70b:5",
+        "Chullin 70b:6",
+        "Chullin 70b:7",
+        "Chullin 70b:8",
+        "Chullin 70b:9",
+        "Chullin 70b:10"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000201",
+      "core_refs": [
+        "Chullin 72b:5",
+        "Chullin 72b:6",
+        "Chullin 72b:7",
+        "Chullin 72b:8",
+        "Chullin 72b:9",
+        "Chullin 72b:10",
+        "Chullin 72b:11",
+        "Chullin 72b:12",
+        "Chullin 72b:13",
+        "Chullin 72b:14"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000212",
+      "core_refs": [
+        "Chullin 75b:14",
+        "Chullin 75b:15",
+        "Chullin 75b:16",
+        "Chullin 75b:17",
+        "Chullin 76a:1",
+        "Chullin 76a:2",
+        "Chullin 76a:3",
+        "Chullin 76a:4",
+        "Chullin 76a:5",
+        "Chullin 76a:6"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000228",
+      "core_refs": [
+        "Chullin 80b:5",
+        "Chullin 80b:6",
+        "Chullin 80b:7",
+        "Chullin 80b:8",
+        "Chullin 80b:9",
+        "Chullin 80b:10",
+        "Chullin 80b:11",
+        "Chullin 80b:12",
+        "Chullin 81a:1",
+        "Chullin 81a:2"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000252",
+      "core_refs": [
+        "Chullin 88b:3",
+        "Chullin 88b:4",
+        "Chullin 88b:5",
+        "Chullin 88b:6",
+        "Chullin 88b:7",
+        "Chullin 88b:8",
+        "Chullin 88b:9",
+        "Chullin 88b:10",
+        "Chullin 88b:11",
+        "Chullin 88b:12"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000253",
+      "core_refs": [
+        "Chullin 89a:1",
+        "Chullin 89a:2",
+        "Chullin 89a:3",
+        "Chullin 89a:4",
+        "Chullin 89a:5",
+        "Chullin 89a:6",
+        "Chullin 89a:7",
+        "Chullin 89a:8",
+        "Chullin 89a:9",
+        "Chullin 89a:10"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000263",
+      "core_refs": [
+        "Chullin 91b:11",
+        "Chullin 91b:12",
+        "Chullin 91b:13",
+        "Chullin 91b:14",
+        "Chullin 91b:15",
+        "Chullin 91b:16",
+        "Chullin 91b:17",
+        "Chullin 91b:18",
+        "Chullin 92a:1",
+        "Chullin 92a:2"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000265",
+      "core_refs": [
+        "Chullin 92a:13",
+        "Chullin 92a:14",
+        "Chullin 92a:15",
+        "Chullin 92a:16",
+        "Chullin 92a:17",
+        "Chullin 92a:18",
+        "Chullin 92a:19",
+        "Chullin 92a:20",
+        "Chullin 92a:21",
+        "Chullin 92b:1"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000267",
+      "core_refs": [
+        "Chullin 92b:12",
+        "Chullin 92b:13",
+        "Chullin 92b:14",
+        "Chullin 93a:1",
+        "Chullin 93a:2",
+        "Chullin 93a:3",
+        "Chullin 93a:4",
+        "Chullin 93a:5",
+        "Chullin 93a:6",
+        "Chullin 93a:7"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000278",
+      "core_refs": [
+        "Chullin 96a:2",
+        "Chullin 96a:3",
+        "Chullin 96a:4",
+        "Chullin 96a:5",
+        "Chullin 96a:6",
+        "Chullin 96a:7",
+        "Chullin 96a:8",
+        "Chullin 96a:9",
+        "Chullin 96a:10",
+        "Chullin 96a:11"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000300",
+      "core_refs": [
+        "Chullin 104a:7",
+        "Chullin 104a:8",
+        "Chullin 104a:9",
+        "Chullin 104b:1",
+        "Chullin 104b:2",
+        "Chullin 104b:3",
+        "Chullin 104b:4",
+        "Chullin 104b:5",
+        "Chullin 104b:6",
+        "Chullin 104b:7"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000322",
+      "core_refs": [
+        "Chullin 112b:1",
+        "Chullin 112b:2",
+        "Chullin 112b:3",
+        "Chullin 112b:4",
+        "Chullin 112b:5",
+        "Chullin 112b:6",
+        "Chullin 113a:1",
+        "Chullin 113a:2",
+        "Chullin 113a:3",
+        "Chullin 113a:4"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000341",
+      "core_refs": [
+        "Chullin 118a:21",
+        "Chullin 118a:22",
+        "Chullin 118a:23",
+        "Chullin 118a:24",
+        "Chullin 118a:25",
+        "Chullin 118a:26",
+        "Chullin 118a:27",
+        "Chullin 118a:28",
+        "Chullin 118a:29",
+        "Chullin 118b:1"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000371",
+      "core_refs": [
+        "Chullin 124b:15",
+        "Chullin 124b:16",
+        "Chullin 124b:17",
+        "Chullin 124b:18",
+        "Chullin 124b:19",
+        "Chullin 124b:20",
+        "Chullin 124b:21",
+        "Chullin 124b:22",
+        "Chullin 124b:23",
+        "Chullin 124b:24"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000372",
+      "core_refs": [
+        "Chullin 124b:25",
+        "Chullin 125a:1",
+        "Chullin 125a:2",
+        "Chullin 125a:3",
+        "Chullin 125a:4",
+        "Chullin 125a:5",
+        "Chullin 125a:6",
+        "Chullin 125a:7",
+        "Chullin 125a:8",
+        "Chullin 125a:9"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000379",
+      "core_refs": [
+        "Chullin 126b:20",
+        "Chullin 127a:1",
+        "Chullin 127a:2",
+        "Chullin 127a:3",
+        "Chullin 127a:4",
+        "Chullin 127a:5",
+        "Chullin 127a:6",
+        "Chullin 127a:7",
+        "Chullin 127a:8",
+        "Chullin 127a:9"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000380",
+      "core_refs": [
+        "Chullin 127a:10",
+        "Chullin 127a:11",
+        "Chullin 127a:12",
+        "Chullin 127a:13",
+        "Chullin 127a:14",
+        "Chullin 127a:15",
+        "Chullin 127a:16",
+        "Chullin 127a:17",
+        "Chullin 127a:18",
+        "Chullin 127a:19"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000383",
+      "core_refs": [
+        "Chullin 127b:20",
+        "Chullin 127b:21",
+        "Chullin 128a:1",
+        "Chullin 128a:2",
+        "Chullin 128a:3",
+        "Chullin 128a:4",
+        "Chullin 128a:5",
+        "Chullin 128a:6",
+        "Chullin 128a:7",
+        "Chullin 128a:8"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000389",
+      "core_refs": [
+        "Chullin 129a:17",
+        "Chullin 129b:1",
+        "Chullin 129b:2",
+        "Chullin 129b:3",
+        "Chullin 129b:4",
+        "Chullin 129b:5",
+        "Chullin 129b:6",
+        "Chullin 129b:7",
+        "Chullin 129b:8",
+        "Chullin 129b:9"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000399",
+      "core_refs": [
+        "Chullin 132a:12",
+        "Chullin 132a:13",
+        "Chullin 132a:14",
+        "Chullin 132a:15",
+        "Chullin 132a:16",
+        "Chullin 132a:17",
+        "Chullin 132a:18",
+        "Chullin 132a:19",
+        "Chullin 132a:20",
+        "Chullin 132b:1"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000401",
+      "core_refs": [
+        "Chullin 132b:12",
+        "Chullin 132b:13",
+        "Chullin 132b:14",
+        "Chullin 132b:15",
+        "Chullin 132b:16",
+        "Chullin 133a:1",
+        "Chullin 133a:2",
+        "Chullin 133a:3",
+        "Chullin 133a:4",
+        "Chullin 133a:5"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000415",
+      "core_refs": [
+        "Chullin 136a:14",
+        "Chullin 136a:15",
+        "Chullin 136a:16",
+        "Chullin 136a:17",
+        "Chullin 136a:18",
+        "Chullin 136a:19",
+        "Chullin 136a:20",
+        "Chullin 136a:21",
+        "Chullin 136a:22",
+        "Chullin 136a:23"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000422",
+      "core_refs": [
+        "Chullin 137b:11",
+        "Chullin 137b:12",
+        "Chullin 137b:13",
+        "Chullin 137b:14",
+        "Chullin 137b:15",
+        "Chullin 137b:16",
+        "Chullin 137b:17",
+        "Chullin 138a:1",
+        "Chullin 138a:2",
+        "Chullin 138a:3"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000428",
+      "core_refs": [
+        "Chullin 139b:3",
+        "Chullin 139b:4",
+        "Chullin 139b:5",
+        "Chullin 139b:6",
+        "Chullin 139b:7",
+        "Chullin 139b:8",
+        "Chullin 139b:9",
+        "Chullin 139b:10",
+        "Chullin 139b:11",
+        "Chullin 139b:12"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000429",
+      "core_refs": [
+        "Chullin 139b:13",
+        "Chullin 139b:14",
+        "Chullin 139b:15",
+        "Chullin 139b:16",
+        "Chullin 139b:17",
+        "Chullin 139b:18",
+        "Chullin 139b:19",
+        "Chullin 139b:20",
+        "Chullin 139b:21",
+        "Chullin 140a:1"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 0.1,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000439",
+      "core_refs": [
+        "Chullin 142a:8",
+        "Chullin 142a:9",
+        "Chullin 142a:10"
+      ],
+      "inclusion_probability": 0.1,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Kodashim/Chullin/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Chullin"
+}

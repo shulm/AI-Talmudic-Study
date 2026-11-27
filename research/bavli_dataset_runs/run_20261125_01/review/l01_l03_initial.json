@@ -1,0 +1,2642 @@
+{
+  "artifact_type": "frozen_source_first_targeted_initial_review",
+  "reviewer_agent_id": "/root/review_l01_l03",
+  "model_id": null,
+  "route": "interactive_agent",
+  "status": "AI provisional; not human verified; not eligible for ML",
+  "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+  "sources": {
+    "Berakhot": {
+      "source_path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\Wikisource Talmud Bavli.json",
+      "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38"
+    },
+    "Rosh Hashanah": {
+      "source_path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Rosh Hashanah\\Hebrew\\Wikisource Talmud Bavli.json",
+      "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f"
+    }
+  },
+  "core_refs": [
+    "Berakhot 2a:1",
+    "Berakhot 2a:2",
+    "Berakhot 2a:3",
+    "Berakhot 2a:4",
+    "Berakhot 2a:5",
+    "Berakhot 2a:6",
+    "Berakhot 2a:7",
+    "Berakhot 2a:8",
+    "Berakhot 2a:9",
+    "Berakhot 2a:10",
+    "Berakhot 2a:11",
+    "Rosh Hashanah 2a:5",
+    "Rosh Hashanah 2a:6",
+    "Rosh Hashanah 2a:7",
+    "Rosh Hashanah 2a:8",
+    "Rosh Hashanah 2b:1",
+    "Rosh Hashanah 2b:2",
+    "Rosh Hashanah 2b:3",
+    "Rosh Hashanah 2b:4",
+    "Rosh Hashanah 2b:5",
+    "Rosh Hashanah 2b:6"
+  ],
+  "context_refs_read": [
+    "Berakhot 2a:12",
+    "Berakhot 2a:13",
+    "Berakhot 2a:14",
+    "Berakhot 2b:1",
+    "Berakhot 2b:2",
+    "Berakhot 2b:3",
+    "Berakhot 2b:4",
+    "Berakhot 2b:5",
+    "Berakhot 2b:6",
+    "Berakhot 2b:7",
+    "Berakhot 2b:8",
+    "Berakhot 2b:9",
+    "Berakhot 2b:10",
+    "Berakhot 2b:11",
+    "Berakhot 2b:12",
+    "Berakhot 2b:13",
+    "Berakhot 2b:14",
+    "Berakhot 2b:15",
+    "Berakhot 2b:16",
+    "Berakhot 2b:17",
+    "Berakhot 2b:18",
+    "Berakhot 2b:19",
+    "Rosh Hashanah 2a:1",
+    "Rosh Hashanah 2a:2",
+    "Rosh Hashanah 2a:3",
+    "Rosh Hashanah 2a:4",
+    "Rosh Hashanah 2b:7",
+    "Rosh Hashanah 2b:8",
+    "Rosh Hashanah 2b:9",
+    "Rosh Hashanah 2b:10",
+    "Rosh Hashanah 2b:11",
+    "Rosh Hashanah 2b:12",
+    "Rosh Hashanah 2b:13"
+  ],
+  "context_note": "Original 2a and 2b of each tractate read. Context is not a complete semantic review of those pages. Rosh Hashanah 2b:7 introduces subsequent derivation; selected succession cohort resolves at 2b:6. Berakhot 2a:12 opens next wording inquiry.",
+  "scope_note": "Targeted opening/risk cohorts only; neither full probability sample nor full-tractate completion.",
+  "independence": {
+    "producer_artifacts_read_before_freeze": false,
+    "exposure": [
+      "AGENTS.md",
+      "production schema.json",
+      "production PROTOCOL.md",
+      "pinned source_manifest.json",
+      "original source arrays",
+      "First 45 lines AGENT_HANDOFF.md as required by direct user AGENTS instruction; unrelated prior index/model overview, no current producer records"
+    ]
+  },
+  "findings": [
+    {
+      "id": "bq1",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 19,
+          "end_char": 60,
+          "quote": "מאימתי</strong></big> קורין את שמע בערבין"
+        }
+      ],
+      "content": {
+        "formulation": "When does evening Shema begin?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "bc1",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 62,
+          "end_char": 95,
+          "quote": "משעה שהכהנים נכנסים לאכול בתרומתן"
+        }
+      ],
+      "content": {
+        "proposition": "Evening Shema begins when priests enter to eat their terumah.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc2",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 96,
+          "end_char": 134,
+          "quote": "עד סוף האשמורה הראשונה דברי רבי אליעזר"
+        }
+      ],
+      "content": {
+        "proposition": "Rabbi Eliezer gives the end of the first watch as the endpoint.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc3",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:2",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "וחכמים אומרים עד חצות."
+        }
+      ],
+      "content": {
+        "proposition": "The sages give midnight as the endpoint.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc4",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:3",
+          "start_char": 0,
+          "end_char": 35,
+          "quote": "רבן גמליאל אומר עד שיעלה עמוד השחר."
+        }
+      ],
+      "content": {
+        "proposition": "Rabban Gamliel gives dawn as the endpoint.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "ba1",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 119,
+          "end_char": 134,
+          "quote": "דברי רבי אליעזר"
+        }
+      ],
+      "content": {
+        "surface": "דברי רבי אליעזר",
+        "candidates": [
+          "רבי אליעזר"
+        ],
+        "role": "position_holder",
+        "scope": "bc2",
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "ba2",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:2",
+          "start_char": 0,
+          "end_char": 13,
+          "quote": "וחכמים אומרים"
+        }
+      ],
+      "content": {
+        "surface": "וחכמים אומרים",
+        "candidates": [
+          "חכמים"
+        ],
+        "role": "collective",
+        "scope": "bc3",
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "ba3",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:3",
+          "start_char": 0,
+          "end_char": 15,
+          "quote": "רבן גמליאל אומר"
+        }
+      ],
+      "content": {
+        "surface": "רבן גמליאל אומר",
+        "candidates": [
+          "רבן גמליאל"
+        ],
+        "role": "position_holder",
+        "scope": "bc4",
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "bp2",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 96,
+          "end_char": 134,
+          "quote": "עד סוף האשמורה הראשונה דברי רבי אליעזר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "רבי אליעזר"
+        ],
+        "claim_id": "bc2",
+        "question_id": null,
+        "local_status": "Mishnah endpoint; do not infer final practical ruling",
+        "conditions": []
+      }
+    },
+    {
+      "id": "bp3",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:2",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "וחכמים אומרים עד חצות."
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "חכמים"
+        ],
+        "claim_id": "bc3",
+        "question_id": null,
+        "local_status": "Mishnah endpoint; do not infer final practical ruling",
+        "conditions": []
+      }
+    },
+    {
+      "id": "bp4",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:3",
+          "start_char": 0,
+          "end_char": 35,
+          "quote": "רבן גמליאל אומר עד שיעלה עמוד השחר."
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "רבן גמליאל"
+        ],
+        "claim_id": "bc4",
+        "question_id": null,
+        "local_status": "Mishnah endpoint; do not infer final practical ruling",
+        "conditions": []
+      }
+    },
+    {
+      "id": "ba4",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 26,
+          "end_char": 49,
+          "quote": "אמרו לו לא קרינו את שמע"
+        }
+      ],
+      "content": {
+        "surface": "אמרו לו",
+        "role": "speaker",
+        "candidates": [
+          "בני רבן גמליאל"
+        ],
+        "scope": "their report that they did not recite Shema",
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "bc5",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 34,
+          "end_char": 49,
+          "quote": "לא קרינו את שמע"
+        }
+      ],
+      "content": {
+        "proposition": "The sons report they did not recite Shema.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc6",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 58,
+          "end_char": 94,
+          "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות"
+        }
+      ],
+      "content": {
+        "proposition": "They remain obligated to recite Shema.",
+        "conditions": [
+          "Dawn has not risen",
+          "Sons returning from the banquet have not recited"
+        ],
+        "assertion_mode": "conditional"
+      }
+    },
+    {
+      "id": "ba5",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 50,
+          "end_char": 57,
+          "quote": "אמר להם"
+        }
+      ],
+      "content": {
+        "surface": "אמר להם",
+        "candidates": [
+          "רבן גמליאל"
+        ],
+        "role": "speaker",
+        "scope": "bc6; antecedent resolved from 2a:3–4",
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "bp6",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 50,
+          "end_char": 94,
+          "quote": "אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "רבן גמליאל"
+        ],
+        "claim_id": "bc6",
+        "question_id": null,
+        "local_status": "asserted",
+        "conditions": [
+          "Dawn has not risen"
+        ]
+      }
+    },
+    {
+      "id": "bc7",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 116,
+          "end_char": 166,
+          "quote": "כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "content": {
+        "proposition": "Everything for which sages said until midnight has its mitzvah time until dawn.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc8",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 0,
+          "end_char": 42,
+          "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "content": {
+        "proposition": "Burning fats and limbs has its mitzvah time until dawn.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc9",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 43,
+          "end_char": 88,
+          "quote": "וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "content": {
+        "proposition": "Offerings eaten for one day have their mitzvah time until dawn.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bq2",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 89,
+          "end_char": 117,
+          "quote": "אם כן למה אמרו חכמים עד חצות"
+        }
+      ],
+      "content": {
+        "formulation": "Why did the sages say until midnight?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "bc10",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 118,
+          "end_char": 142,
+          "quote": "כדי להרחיק אדם מן העבירה"
+        }
+      ],
+      "content": {
+        "proposition": "The midnight limit serves to distance a person from transgression.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "be1",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 118,
+          "end_char": 142,
+          "quote": "כדי להרחיק אדם מן העבירה"
+        }
+      ],
+      "content": {
+        "source_id": "bc10",
+        "target_id": "bq2",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "ba6",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 95,
+          "end_char": 133,
+          "quote": "ולא זו בלבד אמרו אלא כל מה שאמרו חכמים"
+        }
+      ],
+      "content": {
+        "surface": "ולא זו בלבד אמרו",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bc7–bc10; continuation of Mishnah, not explicitly reintroduced as named speech",
+        "transmission_chain": []
+      },
+      "uncertainty": [
+        "Possible continuation of Rabban Gamliel’s speech; explicit attribution boundary is absent."
+      ]
+    },
+    {
+      "id": "bq3",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:6",
+          "start_char": 32,
+          "end_char": 57,
+          "quote": "תנא היכא קאי דקתני מאימתי"
+        }
+      ],
+      "content": {
+        "formulation": "On what prior text does the tanna stand when asking from when?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "bq4",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:7",
+          "start_char": 0,
+          "end_char": 47,
+          "quote": "ותו מאי שנא דתני בערבית ברישא לתני דשחרית ברישא"
+        }
+      ],
+      "content": {
+        "formulation": "Why teach evening first rather than morning?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "bc11",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:8",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "תנא אקרא קאי דכתיב בשכבך ובקומך"
+        }
+      ],
+      "content": {
+        "proposition": "The tanna stands on the verse when you lie down and when you rise.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc12",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:8",
+          "start_char": 32,
+          "end_char": 101,
+          "quote": "והכי קתני זמן קריאת שמע דשכיבה אימת משעה שהכהנים נכנסין לאכול בתרומתן"
+        }
+      ],
+      "content": {
+        "proposition": "The Mishnah asks when the lying-down Shema time starts and answers with priestly entry to eat terumah.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc13",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:9",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "ואי בעית אימא יליף מברייתו של עולם דכתיב ויהי ערב ויהי בקר יום אחד"
+        }
+      ],
+      "content": {
+        "proposition": "Alternatively the order derives from creation: evening precedes morning.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "be2",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:8",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "תנא אקרא קאי דכתיב בשכבך ובקומך"
+        }
+      ],
+      "content": {
+        "source_id": "bc11",
+        "target_id": "bq3",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "be3",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:8",
+          "start_char": 19,
+          "end_char": 31,
+          "quote": "בשכבך ובקומך"
+        }
+      ],
+      "content": {
+        "source_id": "bc11",
+        "target_id": "bq4",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "be4",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:9",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "ואי בעית אימא יליף מברייתו של עולם דכתיב ויהי ערב ויהי בקר יום אחד"
+        }
+      ],
+      "content": {
+        "source_id": "bc13",
+        "target_id": "bq4",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "bq5",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא."
+        }
+      ],
+      "content": {
+        "formulation": "If so why does the later blessing Mishnah teach morning before evening?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "bc14",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 18,
+          "end_char": 50,
+          "quote": "בשחר מברך שתים לפניה ואחת לאחריה"
+        }
+      ],
+      "content": {
+        "proposition": "The quoted later Mishnah prescribes two blessings before and one after morning Shema.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc15",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 51,
+          "end_char": 85,
+          "quote": "ובערב מברך שתים לפניה ושתים לאחריה"
+        }
+      ],
+      "content": {
+        "proposition": "The quoted later Mishnah prescribes two blessings before and two after evening Shema.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "bc16",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:11",
+          "start_char": 0,
+          "end_char": 85,
+          "quote": "תנא פתח בערבית והדר תני בשחרית עד דקאי בשחרית פריש מילי דשחרית והדר פריש מילי דערבית:"
+        }
+      ],
+      "content": {
+        "proposition": "Having opened with evening then moved to morning, the tanna elaborates morning while on it and then evening.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "be5",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:11",
+          "start_char": 0,
+          "end_char": 85,
+          "quote": "תנא פתח בערבית והדר תני בשחרית עד דקאי בשחרית פריש מילי דשחרית והדר פריש מילי דערבית:"
+        }
+      ],
+      "content": {
+        "source_id": "bc16",
+        "target_id": "bq5",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "be6",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "אי הכי"
+        }
+      ],
+      "content": {
+        "source_id": "bq5",
+        "target_id": "bc13",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "bn1",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא."
+        }
+      ],
+      "content": {
+        "finding": "The objection can address the prior ordering rationale generally; its attachment exclusively to creation is not forced. Preserve bq5 and both earlier answers; do not manufacture a named dispute."
+      }
+    },
+    {
+      "id": "rq1",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 32,
+          "end_char": 49,
+          "quote": "למלכים למאי הלכתא"
+        }
+      ],
+      "content": {
+        "formulation": "What legal purpose has the New Year for kings?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "rc1",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 50,
+          "end_char": 68,
+          "quote": "אמר רב חסדא לשטרות"
+        }
+      ],
+      "content": {
+        "proposition": "Rav Hisda explains that the kings’ New Year is relevant to documents.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "ra1",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 54,
+          "end_char": 61,
+          "quote": "רב חסדא"
+        }
+      ],
+      "content": {
+        "surface": "רב חסדא",
+        "candidates": [
+          "רב חסדא"
+        ],
+        "role": "position_holder",
+        "scope": "rc1",
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "rp1",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 50,
+          "end_char": 68,
+          "quote": "אמר רב חסדא לשטרות"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "רב חסדא"
+        ],
+        "claim_id": "rc1",
+        "question_id": "rq1",
+        "local_status": "asserted",
+        "conditions": []
+      }
+    },
+    {
+      "id": "re1",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 50,
+          "end_char": 68,
+          "quote": "אמר רב חסדא לשטרות"
+        }
+      ],
+      "content": {
+        "source_id": "rc1",
+        "target_id": "rq1",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "rc2",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 5,
+          "end_char": 29,
+          "quote": "שטרי חוב המוקדמין פסולין"
+        }
+      ],
+      "content": {
+        "proposition": "Predated debt documents are invalid.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc3",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 30,
+          "end_char": 45,
+          "quote": "והמאוחרין כשרין"
+        }
+      ],
+      "content": {
+        "proposition": "Postdated debt documents are valid.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "re2",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "דתנן שטרי חוב המוקדמין פסולין והמאוחרין כשרין"
+        }
+      ],
+      "content": {
+        "source_id": "rc2",
+        "target_id": "rc1",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "re3",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "דתנן שטרי חוב המוקדמין פסולין והמאוחרין כשרין"
+        }
+      ],
+      "content": {
+        "source_id": "rc3",
+        "target_id": "rc1",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "rc4",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 9,
+          "end_char": 68,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה"
+        }
+      ],
+      "content": {
+        "proposition": "A year is credited when Nisan 1 arrives.",
+        "conditions": [
+          "King began reign on Adar 29"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc5",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 69,
+          "end_char": 129,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "content": {
+        "proposition": "No year is credited until the next Nisan.",
+        "conditions": [
+          "King began reign on Nisan 1"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc6",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:1",
+          "start_char": 5,
+          "end_char": 21,
+          "quote": "דניסן ר\"ה למלכים"
+        }
+      ],
+      "content": {
+        "proposition": "Nisan is the New Year for kings.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc7",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:1",
+          "start_char": 22,
+          "end_char": 44,
+          "quote": "ויום אחד בשנה חשוב שנה"
+        }
+      ],
+      "content": {
+        "proposition": "One day in a year counts as a year.",
+        "conditions": [],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "re4",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:1",
+          "start_char": 0,
+          "end_char": 44,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה"
+        }
+      ],
+      "content": {
+        "source_id": "rc4",
+        "target_id": "rc7",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "rq2",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:1",
+          "start_char": 45,
+          "end_char": 111,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא"
+        }
+      ],
+      "content": {
+        "formulation": "Is it not obvious that accession on Nisan 1 requires the following Nisan?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "rc8",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "לא צריכא דאימנו עליה מאדר"
+        }
+      ],
+      "content": {
+        "proposition": "The case is needed where they appointed/agreed upon him already in Adar.",
+        "conditions": [
+          "Actual reign began on Nisan 1"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc9",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 26,
+          "end_char": 61,
+          "quote": "מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "proposition": "Counting two years on account of Adar appointment is a rejected hypothetical.",
+        "conditions": [
+          "Adar appointment",
+          "Nisan accession"
+        ],
+        "assertion_mode": "rejected"
+      }
+    },
+    {
+      "id": "re5",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "source_id": "rc8",
+        "target_id": "rq2",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "re6",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "source_id": "rc8",
+        "target_id": "rc5",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "rc10",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 4,
+          "end_char": 50,
+          "quote": "מת באדר ועמד אחר תחתיו באדר מונין שנה לזה ולזה"
+        }
+      ],
+      "content": {
+        "proposition": "A year is counted for each king.",
+        "conditions": [
+          "Predecessor died in Adar",
+          "Successor began in that Adar"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc11",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 51,
+          "end_char": 99,
+          "quote": "מת בניסן ועמד אחר תחתיו בניסן מונין שנה לזה ולזה"
+        }
+      ],
+      "content": {
+        "proposition": "A year is counted for each king.",
+        "conditions": [
+          "Predecessor died in Nisan",
+          "Successor began in that Nisan"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc12",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 100,
+          "end_char": 159,
+          "quote": "מת באדר ועמד אחר תחתיו בניסן מונין ראשונה לראשון ושניה לשני"
+        }
+      ],
+      "content": {
+        "proposition": "The first year is counted to the first king, the second to the second.",
+        "conditions": [
+          "Predecessor died in Adar",
+          "Successor began in Nisan"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rq3",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:4",
+          "start_char": 54,
+          "end_char": 59,
+          "quote": "פשיטא"
+        }
+      ],
+      "content": {
+        "formulation": "Why must the same-Adar succession rule be taught?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "rc13",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:4",
+          "start_char": 60,
+          "end_char": 95,
+          "quote": "מהו דתימא שתא לבי תרי לא מנינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "proposition": "The possibility of refusing to count one year to two kings is rejected.",
+        "conditions": [
+          "Same-Adar succession"
+        ],
+        "assertion_mode": "rejected"
+      }
+    },
+    {
+      "id": "re7",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:4",
+          "start_char": 60,
+          "end_char": 95,
+          "quote": "מהו דתימא שתא לבי תרי לא מנינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "source_id": "rc13",
+        "target_id": "rq3",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "rq4",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 49,
+          "end_char": 54,
+          "quote": "פשיטא"
+        }
+      ],
+      "content": {
+        "formulation": "Why must the same-Nisan succession rule be taught?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "rc14",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 55,
+          "end_char": 134,
+          "quote": "מהו דתימא כי אמרינן יום אחד בשנה חשוב שנה בסוף שנה אבל בתחלת שנה לא אמרינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "proposition": "Restricting one-day-as-year to the end of the year and excluding the beginning is rejected.",
+        "conditions": [
+          "Same-Nisan succession"
+        ],
+        "assertion_mode": "rejected"
+      }
+    },
+    {
+      "id": "rc15",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 106,
+          "end_char": 134,
+          "quote": "אבל בתחלת שנה לא אמרינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "proposition": "One day at the beginning of a year also counts as a year.",
+        "conditions": [
+          "Predecessor died in Nisan; context of same-Nisan succession"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "re8",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 55,
+          "end_char": 134,
+          "quote": "מהו דתימא כי אמרינן יום אחד בשנה חשוב שנה בסוף שנה אבל בתחלת שנה לא אמרינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "source_id": "rc14",
+        "target_id": "rq4",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "rq5",
+      "layer": "questions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 60,
+          "end_char": 65,
+          "quote": "פשיטא"
+        }
+      ],
+      "content": {
+        "formulation": "Why must the Adar-death/Nisan-successor distinction be taught?",
+        "question_origin": "explicit"
+      }
+    },
+    {
+      "id": "rc16",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 66,
+          "end_char": 107,
+          "quote": "לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא"
+        }
+      ],
+      "content": {
+        "proposition": "The needed case combines prior Adar appointment with the successor being a king’s son.",
+        "conditions": [
+          "Predecessor died in Adar",
+          "Successor began reign in Nisan"
+        ],
+        "assertion_mode": "asserted"
+      }
+    },
+    {
+      "id": "rc17",
+      "layer": "claims",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 108,
+          "end_char": 143,
+          "quote": "מהו דתימא נימנו לי' תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "proposition": "Counting two years to the successor is rejected even with both prior appointment and hereditary status.",
+        "conditions": [
+          "Adar appointment",
+          "Son of a king",
+          "Actual accession in Nisan"
+        ],
+        "assertion_mode": "rejected"
+      }
+    },
+    {
+      "id": "re9",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 66,
+          "end_char": 107,
+          "quote": "לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא"
+        }
+      ],
+      "content": {
+        "source_id": "rc16",
+        "target_id": "rq5",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "re10",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 66,
+          "end_char": 107,
+          "quote": "לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא"
+        }
+      ],
+      "content": {
+        "source_id": "rc16",
+        "target_id": "rc12",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "ra2",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 4,
+          "quote": "דתנן"
+        }
+      ],
+      "content": {
+        "surface": "דתנן",
+        "candidates": [],
+        "role": "quoted_authority",
+        "scope": [
+          "rc2",
+          "rc3"
+        ],
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "ra3",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "תנו רבנן"
+        }
+      ],
+      "content": {
+        "surface": "תנו רבנן",
+        "candidates": [],
+        "role": "quoted_authority",
+        "scope": [
+          "rc4",
+          "rc5"
+        ],
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "ra4",
+      "layer": "attributions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 0,
+          "end_char": 3,
+          "quote": "ת\"ר"
+        }
+      ],
+      "content": {
+        "surface": "ת\"ר",
+        "candidates": [],
+        "role": "quoted_authority",
+        "scope": [
+          "rc10",
+          "rc11",
+          "rc12"
+        ],
+        "transmission_chain": []
+      }
+    },
+    {
+      "id": "rp4",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 9,
+          "end_char": 68,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "rc4",
+        "question_id": null,
+        "local_status": "Anonymous baraita; no named holder supplied",
+        "conditions": [
+          "King began reign on Adar 29"
+        ]
+      }
+    },
+    {
+      "id": "rp5",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 69,
+          "end_char": 129,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "rc5",
+        "question_id": null,
+        "local_status": "Anonymous baraita; no named holder supplied",
+        "conditions": [
+          "King began reign on Nisan 1"
+        ]
+      }
+    },
+    {
+      "id": "rp10",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 4,
+          "end_char": 50,
+          "quote": "מת באדר ועמד אחר תחתיו באדר מונין שנה לזה ולזה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "rc10",
+        "question_id": null,
+        "local_status": "Anonymous baraita; no named holder supplied",
+        "conditions": [
+          "Predecessor died in Adar",
+          "Successor began in that Adar"
+        ]
+      }
+    },
+    {
+      "id": "rp11",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 51,
+          "end_char": 99,
+          "quote": "מת בניסן ועמד אחר תחתיו בניסן מונין שנה לזה ולזה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "rc11",
+        "question_id": null,
+        "local_status": "Anonymous baraita; no named holder supplied",
+        "conditions": [
+          "Predecessor died in Nisan",
+          "Successor began in that Nisan"
+        ]
+      }
+    },
+    {
+      "id": "rp12",
+      "layer": "positions",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 100,
+          "end_char": 159,
+          "quote": "מת באדר ועמד אחר תחתיו בניסן מונין ראשונה לראשון ושניה לשני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "rc12",
+        "question_id": null,
+        "local_status": "Anonymous baraita; no named holder supplied",
+        "conditions": [
+          "Predecessor died in Adar",
+          "Successor began in Nisan"
+        ]
+      }
+    },
+    {
+      "id": "bs0",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> קורין את שמע בערבין. משעה שהכהנים נכנסים לאכול בתרומתן עד סוף האשמורה הראשונה דברי רבי אליעזר."
+        }
+      ],
+      "content": {
+        "title": "Mishnah evening Shema",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu0",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> קורין את שמע בערבין. משעה שהכהנים נכנסים לאכול בתרומתן עד סוף האשמורה הראשונה דברי רבי אליעזר."
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah narrator and quoted named/collective positions",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "bs1",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:2",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "וחכמים אומרים עד חצות."
+        }
+      ],
+      "content": {
+        "title": "Mishnah evening Shema",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu1",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:2",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "וחכמים אומרים עד חצות."
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah narrator and quoted named/collective positions",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "atomic"
+      }
+    },
+    {
+      "id": "bs2",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:3",
+          "start_char": 0,
+          "end_char": 35,
+          "quote": "רבן גמליאל אומר עד שיעלה עמוד השחר."
+        }
+      ],
+      "content": {
+        "title": "Mishnah evening Shema",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu2",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:3",
+          "start_char": 0,
+          "end_char": 35,
+          "quote": "רבן גמליאל אומר עד שיעלה עמוד השחר."
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah narrator and quoted named/collective positions",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "atomic"
+      }
+    },
+    {
+      "id": "bs3",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 0,
+          "end_char": 166,
+          "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "content": {
+        "title": "Mishnah evening Shema",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu3",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 0,
+          "end_char": 166,
+          "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah narrator and quoted named/collective positions",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "bs4",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 0,
+          "end_char": 143,
+          "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר אם כן למה אמרו חכמים עד חצות כדי להרחיק אדם מן העבירה:"
+        }
+      ],
+      "content": {
+        "title": "Mishnah evening Shema",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu4",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 0,
+          "end_char": 143,
+          "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר אם כן למה אמרו חכמים עד חצות כדי להרחיק אדם מן העבירה:"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah narrator and quoted named/collective positions",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "bs5",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:6",
+          "start_char": 0,
+          "end_char": 57,
+          "quote": "<big><strong>גמ׳</strong></big> תנא היכא קאי דקתני מאימתי"
+        }
+      ],
+      "content": {
+        "title": "Explanation of Mishnah ordering",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu5",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:6",
+          "start_char": 0,
+          "end_char": 57,
+          "quote": "<big><strong>גמ׳</strong></big> תנא היכא קאי דקתני מאימתי"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "atomic"
+      }
+    },
+    {
+      "id": "bs6",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:7",
+          "start_char": 0,
+          "end_char": 47,
+          "quote": "ותו מאי שנא דתני בערבית ברישא לתני דשחרית ברישא"
+        }
+      ],
+      "content": {
+        "title": "Explanation of Mishnah ordering",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu6",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:7",
+          "start_char": 0,
+          "end_char": 47,
+          "quote": "ותו מאי שנא דתני בערבית ברישא לתני דשחרית ברישא"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "atomic"
+      }
+    },
+    {
+      "id": "bs7",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:8",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "תנא אקרא קאי דכתיב בשכבך ובקומך והכי קתני זמן קריאת שמע דשכיבה אימת משעה שהכהנים נכנסין לאכול בתרומתן"
+        }
+      ],
+      "content": {
+        "title": "Explanation of Mishnah ordering",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu7",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:8",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "תנא אקרא קאי דכתיב בשכבך ובקומך והכי קתני זמן קריאת שמע דשכיבה אימת משעה שהכהנים נכנסין לאכול בתרומתן"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "bs8",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:9",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "ואי בעית אימא יליף מברייתו של עולם דכתיב ויהי ערב ויהי בקר יום אחד"
+        }
+      ],
+      "content": {
+        "title": "Explanation of Mishnah ordering",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu8",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:9",
+          "start_char": 0,
+          "end_char": 66,
+          "quote": "ואי בעית אימא יליף מברייתו של עולם דכתיב ויהי ערב ויהי בקר יום אחד"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "atomic"
+      }
+    },
+    {
+      "id": "bs9",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא."
+        }
+      ],
+      "content": {
+        "title": "Explanation of Mishnah ordering",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu9",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא."
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "bs10",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:11",
+          "start_char": 0,
+          "end_char": 85,
+          "quote": "תנא פתח בערבית והדר תני בשחרית עד דקאי בשחרית פריש מילי דשחרית והדר פריש מילי דערבית:"
+        }
+      ],
+      "content": {
+        "title": "Explanation of Mishnah ordering",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "bu10",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:11",
+          "start_char": 0,
+          "end_char": 85,
+          "quote": "תנא פתח בערבית והדר תני בשחרית עד דקאי בשחרית פריש מילי דשחרית והדר פריש מילי דערבית:"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "atomic"
+      }
+    },
+    {
+      "id": "rs11",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> למלכים למאי הלכתא אמר רב חסדא לשטרות"
+        }
+      ],
+      "content": {
+        "title": "Purpose of kings New Year",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru11",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> למלכים למאי הלכתא אמר רב חסדא לשטרות"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara with Rav Hisda answer",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs12",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "דתנן שטרי חוב המוקדמין פסולין והמאוחרין כשרין"
+        }
+      ],
+      "content": {
+        "title": "Purpose of kings New Year",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru12",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "דתנן שטרי חוב המוקדמין פסולין והמאוחרין כשרין"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs13",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "תנו רבנן מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru13",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:7",
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "תנו רבנן מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs14",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:8",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru14",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:8",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "atomic"
+      }
+    },
+    {
+      "id": "rs15",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:1",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru15",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:1",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs16",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru16",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs17",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "ת\"ר מת באדר ועמד אחר תחתיו באדר מונין שנה לזה ולזה מת בניסן ועמד אחר תחתיו בניסן מונין שנה לזה ולזה מת באדר ועמד אחר תחתיו בניסן מונין ראשונה לראשון ושניה לשני"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru17",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:3",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "ת\"ר מת באדר ועמד אחר תחתיו באדר מונין שנה לזה ולזה מת בניסן ועמד אחר תחתיו בניסן מונין שנה לזה ולזה מת באדר ועמד אחר תחתיו בניסן מונין ראשונה לראשון ושניה לשני"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs18",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:4",
+          "start_char": 0,
+          "end_char": 95,
+          "quote": "אמר מר מת באדר ועמד אחר תחתיו באדר מונין שנה לזה ולזה פשיטא מהו דתימא שתא לבי תרי לא מנינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru18",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:4",
+          "start_char": 0,
+          "end_char": 95,
+          "quote": "אמר מר מת באדר ועמד אחר תחתיו באדר מונין שנה לזה ולזה פשיטא מהו דתימא שתא לבי תרי לא מנינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs19",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 0,
+          "end_char": 134,
+          "quote": "מת בניסן ועמד אחר תחתיו בניסן מונין שנה לזה ולזה פשיטא מהו דתימא כי אמרינן יום אחד בשנה חשוב שנה בסוף שנה אבל בתחלת שנה לא אמרינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru19",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 0,
+          "end_char": 134,
+          "quote": "מת בניסן ועמד אחר תחתיו בניסן מונין שנה לזה ולזה פשיטא מהו דתימא כי אמרינן יום אחד בשנה חשוב שנה בסוף שנה אבל בתחלת שנה לא אמרינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rs20",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 0,
+          "end_char": 143,
+          "quote": "מת באדר ועמד אחר תחתיו בניסן מונין ראשונה לראשון ושניה לשני פשיטא לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא מהו דתימא נימנו לי' תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "title": "Regnal-year cases and anonymous analysis",
+        "primary": true,
+        "boundary": "closed",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "ru20",
+      "layer": "utterances",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 0,
+          "end_char": 143,
+          "quote": "מת באדר ועמד אחר תחתיו בניסן מונין ראשונה לראשון ושניה לשני פשיטא לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא מהו דתימא נימנו לי' תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "textual_voice": "Anonymous Gemara quoting tannaitic material and analyzing it",
+        "discourse_role": "See separately anchored atomic claims, questions, attribution and edges",
+        "composition": "composite"
+      }
+    },
+    {
+      "id": "rn1",
+      "layer": "structure",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:8",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא"
+        }
+      ],
+      "content": {
+        "title": "Baraita repetition and explanation crosses folio: final הא joins קמ״ל at 2b:1",
+        "primary": false,
+        "boundary": "open_right",
+        "legacy_ids": []
+      }
+    },
+    {
+      "id": "re11",
+      "layer": "edges",
+      "origin": "source_paraphrase",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:1",
+          "start_char": 0,
+          "end_char": 44,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה"
+        }
+      ],
+      "content": {
+        "source_id": "rn1",
+        "target_id": "rc7",
+        "relation": "continuation",
+        "explicitness": "source_explicit"
+      }
+    },
+    {
+      "id": "bomit1",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:1",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> קורין את שמע בערבין. משעה שהכהנים נכנסים לאכול בתרומתן עד סוף האשמורה הראשונה דברי רבי אליעזר."
+        }
+      ],
+      "content": {
+        "finding": "Do not collapse onset and three endpoints into a single proposition or invent an explicit endpoint question; bq1 asks מאימתי."
+      }
+    },
+    {
+      "id": "bomit2",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:4",
+          "start_char": 0,
+          "end_char": 166,
+          "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר"
+        }
+      ],
+      "content": {
+        "finding": "Keep sons’ report, conditional obligation and generalized midnight/dawn statement separate. Named attribution of the generalized tail is less certain than the explicit אמר להם answer."
+      }
+    },
+    {
+      "id": "bomit3",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:5",
+          "start_char": 0,
+          "end_char": 143,
+          "quote": "הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר וכל הנאכלים ליום אחד מצותן עד שיעלה עמוד השחר אם כן למה אמרו חכמים עד חצות כדי להרחיק אדם מן העבירה:"
+        }
+      ],
+      "content": {
+        "finding": "Keep burning and eating claims separate; the text’s rationale is a safeguard. Do not infer that burning itself was subjected to a midnight decree merely from proximity."
+      }
+    },
+    {
+      "id": "bomit4",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:8",
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "תנא אקרא קאי דכתיב בשכבך ובקומך והכי קתני זמן קריאת שמע דשכיבה אימת משעה שהכהנים נכנסין לאכול בתרומתן"
+        }
+      ],
+      "content": {
+        "finding": "The verse answer addresses textual presupposition and ordering; creation is an alternative ordering answer. Neither is a named amoraic dispute."
+      }
+    },
+    {
+      "id": "bomit5",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Berakhot 2a:10",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אי הכי סיפא דקתני בשחר מברך שתים לפניה ואחת לאחריה ובערב מברך שתים לפניה ושתים לאחריה לתני דערבית ברישא."
+        }
+      ],
+      "content": {
+        "finding": "Embedded blessing numbers are source claims in a quoted Mishnah, alongside an objection; preserve both contexts."
+      }
+    },
+    {
+      "id": "romit1",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:5",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "<big><strong>גמ׳</strong></big> למלכים למאי הלכתא אמר רב חסדא לשטרות"
+        }
+      ],
+      "content": {
+        "finding": "Rav Hisda is not Rav. No transmitter chain or Rav–Shmuel dispute is present."
+      }
+    },
+    {
+      "id": "romit2",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2a:8",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא"
+        }
+      ],
+      "content": {
+        "finding": "הא at the page end is syntactically incomplete; continue through קמ״ל in 2b:1. Do not assert a closed argument boundary at the page break."
+      }
+    },
+    {
+      "id": "romit3",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:2",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "finding": "Prior Adar appointment differs from actual Nisan accession; hypothetical two-year counting is rejected, not a second accepted position."
+      }
+    },
+    {
+      "id": "romit4",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:5",
+          "start_char": 0,
+          "end_char": 134,
+          "quote": "מת בניסן ועמד אחר תחתיו בניסן מונין שנה לזה ולזה פשיטא מהו דתימא כי אמרינן יום אחד בשנה חשוב שנה בסוף שנה אבל בתחלת שנה לא אמרינן קמ\"ל"
+        }
+      ],
+      "content": {
+        "finding": "Preserve beginning-versus-end-of-year distinction and rejection of restricting the rule to year end."
+      }
+    },
+    {
+      "id": "romit5",
+      "layer": "reconciliation",
+      "origin": "editorial_inference",
+      "evidence": [
+        {
+          "segment_id": "Rosh Hashanah 2b:6",
+          "start_char": 0,
+          "end_char": 143,
+          "quote": "מת באדר ועמד אחר תחתיו בניסן מונין ראשונה לראשון ושניה לשני פשיטא לא צריכא דאימנו עליה מאדר ומלך בן מלך הוא מהו דתימא נימנו לי' תרתין שנין קמ\"ל"
+        }
+      ],
+      "content": {
+        "finding": "Both prior appointment and son-of-king conditions belong to the answer; neither may disappear. Same-Adar, same-Nisan and cross-month cases remain separate occurrences."
+      }
+    }
+  ],
+  "omission_pass": {
+    "performed": true,
+    "method": "Reread every core segment against independently enumerated atomic claims, speech/quotation boundaries, anonymous reasoning, conditions and response directions; retain warnings as evidence-anchored reconciliation records.",
+    "limitations": [
+      "Utterances use segment-level composite envelopes with separately anchored components; not a claim of exhaustive utterance-span atomization.",
+      "No exhaustive outside-core chain or tractate conclusions."
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "artifact_type": "bootstrap_source_first_comparison",
+  "created_utc": "2026-11-25T19:51:10.774045+00:00",
+  "reviewer": "/root/blind_review",
+  "authorization": "Coordinator authorized producer comparison only after initial artifact frozen.",
+  "initial_reading_binding": {
+    "path": "research/bavli_dataset_runs/run_20261125_01/review/bootstrap_blind_initial.json",
+    "sha256": "f66447b183bd9c878bac0fe8308912a543620d02d6c56ab23767c0310cdd0bc6"
+  },
+  "source_manifest_binding": {
+    "path": "research/bavli_sugya_corpus_v1/source_manifest.json",
+    "sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c"
+  },
+  "schema_binding": {
+    "path": "research/bavli_production_v1/schema.json",
+    "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+  },
+  "protocol_binding": {
+    "path": "research/bavli_production_v1/PROTOCOL.md",
+    "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+  },
+  "producer_bindings": [
+    {
+      "path": "research/bavli_dataset_runs/run_20261125_01/proposals/berakhot_b24_initial.json",
+      "sha256": "10416424dc80e214811d6261f35c502f0d9c35e2cdca4a42b2cb42cfc3ee2142",
+      "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38"
+    },
+    {
+      "path": "research/bavli_dataset_runs/run_20261125_01/proposals/rosh_hashanah_opening_initial.json",
+      "sha256": "e2a7de15b094c7da704220de9055f544495dbe35f20deba229ced624eac6aa8f",
+      "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f"
+    }
+  ],
+  "scope": [
+    {
+      "type": "targeted_bootstrap_inherited_continuation",
+      "core_refs": [
+        "Berakhot 5a:24",
+        "Berakhot 5b:1",
+        "Berakhot 5b:2",
+        "Berakhot 5b:3"
+      ],
+      "core_segments": 4
+    },
+    {
+      "type": "targeted_bootstrap_fresh_source",
+      "core_refs": [
+        "Rosh Hashanah 2a:1",
+        "Rosh Hashanah 2a:2",
+        "Rosh Hashanah 2a:3",
+        "Rosh Hashanah 2a:4"
+      ],
+      "core_segments": 4
+    }
+  ],
+  "context_read_separately": {
+    "Berakhot": [
+      "5a:1–23",
+      "5b:4–27"
+    ],
+    "Rosh Hashanah": [
+      "2a:5–8",
+      "2b:1–13"
+    ]
+  },
+  "checks": [
+    {
+      "proposal": "berakhot_b24_initial",
+      "exact_evidence_slices_checked": 27,
+      "failures": 0,
+      "source_ref_mapping": {
+        "seg_5698abf5c9370fa5209d": "Berakhot 5a:24",
+        "seg_fc41e9046ac6d14f7269": "Berakhot 5b:1",
+        "seg_89b768574dd16de8ed94": "Berakhot 5b:2",
+        "seg_39c2cc03129b52b64e17": "Berakhot 5b:3"
+      },
+      "record_count": 21
+    },
+    {
+      "proposal": "rosh_hashanah_opening_initial",
+      "exact_evidence_slices_checked": 38,
+      "failures": 0,
+      "source_ref_mapping": {
+        "seg_7d4d66450f72ea68b267": "Rosh Hashanah 2a:1",
+        "seg_38336ba7201acd221fb2": "Rosh Hashanah 2a:2",
+        "seg_93cb6aeea8d55586fe53": "Rosh Hashanah 2a:3",
+        "seg_91e82450d2fbfec98bf7": "Rosh Hashanah 2a:4"
+      },
+      "record_count": 33
+    }
+  ],
+  "findings": [
+    {
+      "id": "C01",
+      "classification": "structured_condition_normalization",
+      "severity": "minor_actionable",
+      "producer_ids": [
+        "bk.b24.semantic1.c1",
+        "bk.b24.semantic1.p1",
+        "bk.b24.semantic1.c5"
+      ],
+      "independent_ids": [
+        "b.c1",
+        "b.p1",
+        "b.c5"
+      ],
+      "evidence": [
+        {
+          "source_ref": "Berakhot 5a:24",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "תני תנא קמיה דר' יוחנן כל העוסק בתורה ובגמילות חסדים"
+        },
+        {
+          "source_ref": "Berakhot 5b:1",
+          "start_char": 0,
+          "end_char": 37,
+          "quote": "וקובר את בניו מוחלין לו על כל עונותיו"
+        },
+        {
+          "source_ref": "Berakhot 5b:3",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "תנא ליה ההוא סבא משום ר' שמעון בן יוחאי אתיא עון עון כתיב הכא בחסד ואמת יכופר עון וכתיב התם (ירמיהו לב, יח) ומשלם עון אבות אל חיק בניהם."
+        }
+      ],
+      "finding": "c1.conditions is one prose description rather than separately inspectable antecedents; p1.conditions is empty. c5.conditions contains a statement about provenance and no inferred motive, not an antecedent condition. The conjunction is correctly preserved in c1.proposition, so this is not a false source claim.",
+      "action": "In a new superseding revision encode Torah study, acts of kindness, and burying sons/children as c1 antecedents and carry these to p1 or explicitly document inheritance from claim. Set c5.conditions to [] and retain its explanatory metadata in scope or uncertainty. Preserve conjunction; do not assert independent sufficiency.",
+      "release_implication": "Does not invalidate quoted teaching; normalize before views that interpret empty position conditions as unconditional."
+    },
+    {
+      "id": "C02",
+      "classification": "granularity_difference",
+      "severity": "nonblocking",
+      "producer_ids": [
+        "rh.opening1.c.kings",
+        "rh.opening1.c.festivals",
+        "rh.opening1.c.years",
+        "rh.opening1.c.sabbatical",
+        "rh.opening1.c.jubilee",
+        "rh.opening1.c.planting",
+        "rh.opening1.c.vegetables"
+      ],
+      "independent_ids": [
+        "r.c1",
+        "r.c4"
+      ],
+      "finding": "Producer splits listed categories into individual claims where initial reader grouped them. All two Nisan and five Tishrei categories are present.",
+      "action": "None; do not count record-count disagreement as omission."
+    },
+    {
+      "id": "C03",
+      "classification": "editorial_abstraction_difference",
+      "severity": "nonblocking",
+      "producer_ids": [
+        "rh.opening1.p.animal",
+        "rh.opening1.p.animal_alt",
+        "rh.opening1.p.tree_bs",
+        "rh.opening1.p.tree_bh"
+      ],
+      "independent_ids": [
+        "r.q1",
+        "r.q2",
+        "r.e1",
+        "r.e2",
+        "r.e3",
+        "r.e4"
+      ],
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        },
+        {
+          "source_ref": "Rosh Hashanah 2a:4",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:"
+        }
+      ],
+      "finding": "Producer has no questions or edges in Mishnah; independent reader created two editorial topic questions and answer alignments. No explicit interrogative or directed proof argument occurs in core. The paired positions and holders are retained in producer.",
+      "action": "Optional topic-inventory enrichment may add reconstructed questions with editorial provenance and link corresponding positions. Do not invent explicit questions or label one view an objection to the other merely from sequence.",
+      "release_implication": "Not an explicit-source omission; topic-choice view remains unqualified without its own policy."
+    },
+    {
+      "id": "C04",
+      "classification": "directed_edge_granularity",
+      "severity": "nonblocking",
+      "producer_ids": [
+        "bk.b24.semantic1.e1",
+        "bk.b24.semantic1.e2",
+        "bk.b24.semantic1.e3",
+        "bk.b24.semantic1.e4"
+      ],
+      "independent_ids": [
+        "b.e1",
+        "b.e2",
+        "b.e3",
+        "b.e4",
+        "b.e5"
+      ],
+      "finding": "All four producer edge directions agree with source: explanatory concession supports teaching, kindness/truth interpretations support the concession, and derivation answers the question. Independent reader also gives derivation-to-original-claim support. Producer preserves the answer-to-question link and the question states the target clause.",
+      "action": "Optionally add c5 to c1 support with scope limited to burial clause; current absence is no reversal or missing answer."
+    },
+    {
+      "id": "C05",
+      "classification": "proof_granularity",
+      "severity": "nonblocking",
+      "producer_ids": [
+        "bk.b24.semantic1.c3",
+        "bk.b24.semantic1.c4",
+        "bk.b24.semantic1.u2"
+      ],
+      "independent_ids": [
+        "b.c3",
+        "b.c4"
+      ],
+      "finding": "Producer c3/c4 evidence contains the interpretive identifications but not their adjacent individual proof verses; full composite utterance and c2 evidence preserve the verses. Independent reader anchors each identification together with its verse.",
+      "action": "For granular proof retrieval, expand c3/c4 evidence or separately model supporting citations. No text is absent from the composite utterance."
+    },
+    {
+      "id": "C06",
+      "classification": "wording_precision",
+      "severity": "minor_optional",
+      "producer_ids": [
+        "rh.opening1.c.count"
+      ],
+      "independent_ids": [
+        "r.c0"
+      ],
+      "evidence": [
+        {
+          "source_ref": "Rosh Hashanah 2a:1",
+          "start_char": 6,
+          "end_char": 52,
+          "quote": "<big><strong>ארבעה</strong></big> ראשי שנים הם"
+        }
+      ],
+      "finding": "Four New Year dates is understandable shorthand, but can misleadingly imply that the union of dates across alternatives has cardinality four. The source says four new years.",
+      "action": "Prefer The Mishnah enumerates four new years, with locally stated date alternatives. No category or date correction is required."
+    }
+  ],
+  "agreement": {
+    "boundaries": "Both local units closed; Berakhot cross-folio teaching preserved; Mishnah distinguished from ensuing Gemara.",
+    "utterances": "Composite voices retained; no narrator or transmission role reversals.",
+    "claims_and_omissions": "No substantive core teaching/category omission found at represented granularity.",
+    "attribution": "Anonymous tanna, Rabbi Yohanan, elder transmitter and Rabbi Shimon ben Yohai authority correctly distinguished. Animal-tithe named pair, anonymous first view and schools correctly assigned; no patronymic invented.",
+    "conditions": "Conjunctive teaching remains in proposition; normalization issue C01. Category scopes remain in calendar propositions even though empty condition arrays are used.",
+    "questions": "Berakhot explicit question preserved and answered; Mishnah reconstruction difference C03.",
+    "positions": "No final halachic winner, rejection, retraction or historical decision invented.",
+    "edges": "Four producer Berakhot relations have supported direction; differences C03/C04.",
+    "exact_evidence": "All producer spans independently checked against pinned original strings; zero failures."
+  },
+  "targeted_verdict": {
+    "result": "source_content_agreement_with_minor_structured_field_correction",
+    "material_unsupported_claims_found": 0,
+    "material_attribution_errors_found": 0,
+    "material_source_omissions_found": 0,
+    "condition_normalization_required_for_standalone_condition_views": true,
+    "whole_tractates_reviewed": false,
+    "random_review": false,
+    "human_certified": false,
+    "ml_eligible": false,
+    "task_qualification_granted": false
+  },
+  "preservation": {
+    "initial_reading_modified": false,
+    "producer_proposals_modified": false,
+    "correction_policy": "New superseding proposal only; preserve original readings and this comparison."
+  }
+}

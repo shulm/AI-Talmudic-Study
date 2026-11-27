@@ -1,0 +1,81 @@
+{
+  "source_files_verified": 37,
+  "toc_verified": true,
+  "exact_segments_verified": {
+    "data/segments.jsonl": 450,
+    "context/segments.jsonl": 72
+  },
+  "canonical_json_block_hashes_verified": [
+    "blocks\\berakhot_5b_6a\\input_packet.json",
+    "blocks\\berakhot_5b_6a\\proposal.json",
+    "blocks\\berakhot_5b_6a\\independent_review_initial.json",
+    "blocks\\berakhot_6b_7a\\input_packet.json",
+    "blocks\\berakhot_6b_7a\\proposal.json",
+    "blocks\\berakhot_6b_7a\\independent_review_initial.json",
+    "blocks\\berakhot_7b_8a\\input_packet.json",
+    "blocks\\berakhot_7b_8a\\proposal.json",
+    "blocks\\berakhot_7b_8a\\independent_review_initial.json",
+    "blocks\\berakhot_8b_9a\\input_packet.json",
+    "blocks\\berakhot_8b_9a\\proposal.json",
+    "blocks\\berakhot_8b_9a\\independent_review_initial.json"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "validate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{'schema_contract_version': '1.1.0', 'mechanical_pass': True, 'records': {'segments': 450, 'sugyot': 88, 'scholars': 104, 'statements': 309, 'questions': 52, 'positions': 94, 'relations': 55, 'review_queue': 250}, 'processed_source_segments': 450, 'pilot_v1_segments': 215, 'continuation_core_segments': 235, 'context_only_segments': 72, 'primary_sugyot': 76, 'sub_sugyot': 12, 'evidence_spans_checked': 1208, 'primary_coverage_segments': 450, 'source_text_errors': 0, 'reference_errors': 0, 'duplicate_ids': 0, 'uncovered_segments': 0, 'segments_with_selected_statements': 297, 'segments_deferred_qa_extraction': 153, 'open_review_records': 250, 'ml_eligible_records': 0, 'human_expert_reviews': 0, 'semantic_completeness_pass': False, 'expansion_gate_pass': False, 'provisional_segmentation_phase_active': True, 'source_files_checked': 37, 'scope_note': 'Provisional sugya segmentation continuation; historical full-semantics/ML gate remains false.'}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "verify_manifest.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 81 public artifact hashes; semantic truth is not certified.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "test_reproduction.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{'passed': True, 'byte_identical_outputs': 21, 'outputs': ['source_manifest.json', 'schema_v1.json', 'schema_v1_1.json', 'annotation_manifest.json', 'revisions_ledger.jsonl', 'block_ledger.json', 'progress_manifest.json', 'qa_report.json', 'exports/berakhot_sugyot_cumulative.jsonl', 'exports/berakhot_index.json', 'exports/berakhot_sugya_reader.html', 'data/segments.jsonl', 'data/sugyot.jsonl', 'data/scholars.jsonl', 'data/statements.jsonl', 'data/questions.jsonl', 'data/positions.jsonl', 'data/relations.jsonl', 'data/review_queue.jsonl', 'context/segments.jsonl', 'context/windows.jsonl'], 'wall_seconds': 8.735569099895656, 'semantic_regeneration': False, 'note': 'Replays preserved pilot + immutable continuation block artifacts byte-for-byte.'}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "test_continuation.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"passed\": true, \"continuation_invariants_verified\": 7, \"tests\": [\"full_inherited_open_tail_beyond_default_context\", \"interrupted_write_rolls_back_cleanly\", \"partial_span_review_overclaim_rejected\", \"appending_preserves_unaffected_records_and_b24_lineage\", \"identical_block_replay_is_idempotent\", \"conflicting_block_proposal_rejected\", \"changed_source_hash_rejected\"]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "exports/verify_reader.cjs"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: Berakhot RTL reader verified (71 sugyot, 386 segments, daf=2a-9a, last_closed=Berakhot 9a:28, next=Berakhot 9b:1).\n",
+      "stderr": ""
+    }
+  ]
+}

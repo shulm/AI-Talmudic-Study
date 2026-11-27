@@ -1,0 +1,715 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 1,
+    "endpoint_added_core_segments": 10,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 11,
+    "endpoint_overlap_blocks": 1,
+    "endpoint_overlap_core_segments": 1,
+    "probability_blocks": 30,
+    "probability_core_segments": 291,
+    "source_nonempty_segments": 451,
+    "source_segment_positions": 451,
+    "union_blocks": 31,
+    "union_core_segments": 301
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_horayot.json",
+    "sha256": "a6a37155abcaf3ebea35b925cc5e083add27b12fdf2efcc018e114111ab751a2"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_horayot",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_horayot.json",
+    "sha256": "a6a37155abcaf3ebea35b925cc5e083add27b12fdf2efcc018e114111ab751a2"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Horayot.json",
+    "sha256": "03dd709ba2b2d5bbe748e5abdc3010381b0d8947ef6c46420ec325c1548b1928"
+  },
+  "plan_sha256": "8f63cfca984c5c793a7b860e2b6b5cc0fb0ea2c0ffe171666aafa2da2b23e7da",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 46,
+    "inclusion_probability_denominator": 46,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000002",
+      "block_000004",
+      "block_000005",
+      "block_000006",
+      "block_000007",
+      "block_000008",
+      "block_000009",
+      "block_000011",
+      "block_000014",
+      "block_000016",
+      "block_000017",
+      "block_000020",
+      "block_000021",
+      "block_000022",
+      "block_000023",
+      "block_000025",
+      "block_000026",
+      "block_000027",
+      "block_000028",
+      "block_000029",
+      "block_000031",
+      "block_000032",
+      "block_000033",
+      "block_000034",
+      "block_000036",
+      "block_000038",
+      "block_000041",
+      "block_000042",
+      "block_000043",
+      "block_000045"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Horayot 2a:1",
+        "Horayot 2a:2",
+        "Horayot 2a:3",
+        "Horayot 2a:4",
+        "Horayot 2a:5",
+        "Horayot 2a:6",
+        "Horayot 2a:7",
+        "Horayot 2a:8",
+        "Horayot 2a:9",
+        "Horayot 2a:10"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000002",
+      "core_refs": [
+        "Horayot 2b:1",
+        "Horayot 2b:2",
+        "Horayot 2b:3",
+        "Horayot 2b:4",
+        "Horayot 2b:5",
+        "Horayot 2b:6",
+        "Horayot 2b:7",
+        "Horayot 2b:8",
+        "Horayot 2b:9",
+        "Horayot 2b:10"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000004",
+      "core_refs": [
+        "Horayot 3a:4",
+        "Horayot 3a:5",
+        "Horayot 3a:6",
+        "Horayot 3a:7",
+        "Horayot 3a:8",
+        "Horayot 3a:9",
+        "Horayot 3a:10",
+        "Horayot 3a:11",
+        "Horayot 3a:12",
+        "Horayot 3a:13"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000005",
+      "core_refs": [
+        "Horayot 3a:14",
+        "Horayot 3a:15",
+        "Horayot 3a:16",
+        "Horayot 3a:17",
+        "Horayot 3a:18",
+        "Horayot 3a:19",
+        "Horayot 3a:20",
+        "Horayot 3a:21",
+        "Horayot 3a:22",
+        "Horayot 3b:1"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000006",
+      "core_refs": [
+        "Horayot 3b:2",
+        "Horayot 3b:3",
+        "Horayot 3b:4",
+        "Horayot 3b:5",
+        "Horayot 3b:6",
+        "Horayot 3b:7",
+        "Horayot 3b:8",
+        "Horayot 3b:9",
+        "Horayot 3b:10",
+        "Horayot 3b:11"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000007",
+      "core_refs": [
+        "Horayot 3b:12",
+        "Horayot 3b:13",
+        "Horayot 3b:14",
+        "Horayot 3b:15",
+        "Horayot 3b:16",
+        "Horayot 3b:17",
+        "Horayot 3b:18",
+        "Horayot 3b:19",
+        "Horayot 3b:20",
+        "Horayot 3b:21"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000008",
+      "core_refs": [
+        "Horayot 3b:22",
+        "Horayot 3b:23",
+        "Horayot 4a:1",
+        "Horayot 4a:2",
+        "Horayot 4a:3",
+        "Horayot 4a:4",
+        "Horayot 4a:5",
+        "Horayot 4a:6",
+        "Horayot 4a:7",
+        "Horayot 4a:8"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000009",
+      "core_refs": [
+        "Horayot 4a:9",
+        "Horayot 4a:10",
+        "Horayot 4a:11",
+        "Horayot 4a:12",
+        "Horayot 4a:13",
+        "Horayot 4a:14",
+        "Horayot 4a:15",
+        "Horayot 4a:16",
+        "Horayot 4a:17",
+        "Horayot 4a:18"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000011",
+      "core_refs": [
+        "Horayot 4b:8",
+        "Horayot 4b:9",
+        "Horayot 4b:10",
+        "Horayot 4b:11",
+        "Horayot 4b:12",
+        "Horayot 4b:13",
+        "Horayot 4b:14",
+        "Horayot 4b:15",
+        "Horayot 4b:16",
+        "Horayot 4b:17"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000014",
+      "core_refs": [
+        "Horayot 5b:1",
+        "Horayot 5b:2",
+        "Horayot 5b:3",
+        "Horayot 5b:4",
+        "Horayot 5b:5",
+        "Horayot 5b:6",
+        "Horayot 5b:7",
+        "Horayot 5b:8",
+        "Horayot 5b:9",
+        "Horayot 5b:10"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000016",
+      "core_refs": [
+        "Horayot 6a:4",
+        "Horayot 6a:5",
+        "Horayot 6a:6",
+        "Horayot 6a:7",
+        "Horayot 6a:8",
+        "Horayot 6a:9",
+        "Horayot 6a:10",
+        "Horayot 6a:11",
+        "Horayot 6a:12",
+        "Horayot 6a:13"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000017",
+      "core_refs": [
+        "Horayot 6a:14",
+        "Horayot 6b:1",
+        "Horayot 6b:2",
+        "Horayot 6b:3",
+        "Horayot 6b:4",
+        "Horayot 6b:5",
+        "Horayot 6b:6",
+        "Horayot 6b:7",
+        "Horayot 6b:8",
+        "Horayot 6b:9"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000020",
+      "core_refs": [
+        "Horayot 7b:1",
+        "Horayot 7b:2",
+        "Horayot 7b:3",
+        "Horayot 7b:4",
+        "Horayot 7b:5",
+        "Horayot 7b:6",
+        "Horayot 7b:7",
+        "Horayot 7b:8",
+        "Horayot 7b:9",
+        "Horayot 7b:10"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000021",
+      "core_refs": [
+        "Horayot 7b:11",
+        "Horayot 7b:12",
+        "Horayot 7b:13",
+        "Horayot 7b:14",
+        "Horayot 7b:15",
+        "Horayot 7b:16",
+        "Horayot 7b:17",
+        "Horayot 7b:18",
+        "Horayot 7b:19",
+        "Horayot 7b:20"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000022",
+      "core_refs": [
+        "Horayot 7b:21",
+        "Horayot 8a:1",
+        "Horayot 8a:2",
+        "Horayot 8a:3",
+        "Horayot 8a:4",
+        "Horayot 8a:5",
+        "Horayot 8a:6",
+        "Horayot 8a:7",
+        "Horayot 8a:8",
+        "Horayot 8a:9"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000023",
+      "core_refs": [
+        "Horayot 8a:10",
+        "Horayot 8a:11",
+        "Horayot 8a:12",
+        "Horayot 8a:13",
+        "Horayot 8a:14",
+        "Horayot 8a:15",
+        "Horayot 8a:16",
+        "Horayot 8a:17",
+        "Horayot 8a:18",
+        "Horayot 8a:19"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000025",
+      "core_refs": [
+        "Horayot 8b:8",
+        "Horayot 8b:9",
+        "Horayot 8b:10",
+        "Horayot 8b:11",
+        "Horayot 8b:12",
+        "Horayot 8b:13",
+        "Horayot 9a:1",
+        "Horayot 9a:2",
+        "Horayot 9a:3",
+        "Horayot 9a:4"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000026",
+      "core_refs": [
+        "Horayot 9a:5",
+        "Horayot 9a:6",
+        "Horayot 9a:7",
+        "Horayot 9a:8",
+        "Horayot 9a:9",
+        "Horayot 9a:10",
+        "Horayot 9a:11",
+        "Horayot 9a:12",
+        "Horayot 9a:13",
+        "Horayot 9a:14"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000027",
+      "core_refs": [
+        "Horayot 9b:1",
+        "Horayot 9b:2",
+        "Horayot 9b:3",
+        "Horayot 9b:4",
+        "Horayot 9b:5",
+        "Horayot 9b:6",
+        "Horayot 9b:7",
+        "Horayot 9b:8",
+        "Horayot 9b:9",
+        "Horayot 9b:10"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000028",
+      "core_refs": [
+        "Horayot 9b:11",
+        "Horayot 9b:12",
+        "Horayot 10a:1",
+        "Horayot 10a:2",
+        "Horayot 10a:3",
+        "Horayot 10a:4",
+        "Horayot 10a:5",
+        "Horayot 10a:6",
+        "Horayot 10a:7",
+        "Horayot 10a:8"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000029",
+      "core_refs": [
+        "Horayot 10a:9",
+        "Horayot 10a:10",
+        "Horayot 10a:11",
+        "Horayot 10a:12",
+        "Horayot 10a:13",
+        "Horayot 10a:14",
+        "Horayot 10a:15",
+        "Horayot 10a:16",
+        "Horayot 10a:17",
+        "Horayot 10a:18"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000031",
+      "core_refs": [
+        "Horayot 10b:8",
+        "Horayot 10b:9",
+        "Horayot 10b:10",
+        "Horayot 10b:11",
+        "Horayot 10b:12",
+        "Horayot 10b:13",
+        "Horayot 10b:14",
+        "Horayot 10b:15",
+        "Horayot 10b:16",
+        "Horayot 10b:17"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000032",
+      "core_refs": [
+        "Horayot 10b:18",
+        "Horayot 10b:19",
+        "Horayot 11a:1",
+        "Horayot 11a:2",
+        "Horayot 11a:3",
+        "Horayot 11a:4",
+        "Horayot 11a:5",
+        "Horayot 11a:6",
+        "Horayot 11a:7",
+        "Horayot 11a:8"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000033",
+      "core_refs": [
+        "Horayot 11a:9",
+        "Horayot 11a:10",
+        "Horayot 11a:11",
+        "Horayot 11a:12",
+        "Horayot 11a:13",
+        "Horayot 11a:14",
+        "Horayot 11a:15",
+        "Horayot 11a:16",
+        "Horayot 11a:17",
+        "Horayot 11a:18"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000034",
+      "core_refs": [
+        "Horayot 11a:19",
+        "Horayot 11a:20",
+        "Horayot 11b:1",
+        "Horayot 11b:2",
+        "Horayot 11b:3",
+        "Horayot 11b:4",
+        "Horayot 11b:5",
+        "Horayot 11b:6",
+        "Horayot 11b:7",
+        "Horayot 11b:8"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Horayot 12a:1",
+        "Horayot 12a:2",
+        "Horayot 12a:3",
+        "Horayot 12a:4",
+        "Horayot 12a:5",
+        "Horayot 12a:6",
+        "Horayot 12a:7",
+        "Horayot 12a:8",
+        "Horayot 12a:9",
+        "Horayot 12a:10"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000038",
+      "core_refs": [
+        "Horayot 12b:1",
+        "Horayot 12b:2",
+        "Horayot 12b:3",
+        "Horayot 12b:4",
+        "Horayot 12b:5",
+        "Horayot 12b:6",
+        "Horayot 12b:7",
+        "Horayot 12b:8",
+        "Horayot 12b:9",
+        "Horayot 12b:10"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000041",
+      "core_refs": [
+        "Horayot 13a:9",
+        "Horayot 13a:10",
+        "Horayot 13a:11",
+        "Horayot 13a:12",
+        "Horayot 13a:13",
+        "Horayot 13a:14",
+        "Horayot 13a:15",
+        "Horayot 13a:16",
+        "Horayot 13a:17",
+        "Horayot 13a:18"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000042",
+      "core_refs": [
+        "Horayot 13a:19",
+        "Horayot 13a:20",
+        "Horayot 13a:21",
+        "Horayot 13a:22",
+        "Horayot 13a:23",
+        "Horayot 13a:24",
+        "Horayot 13b:1",
+        "Horayot 13b:2",
+        "Horayot 13b:3",
+        "Horayot 13b:4"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000043",
+      "core_refs": [
+        "Horayot 13b:5",
+        "Horayot 13b:6",
+        "Horayot 13b:7",
+        "Horayot 13b:8",
+        "Horayot 13b:9",
+        "Horayot 13b:10",
+        "Horayot 13b:11",
+        "Horayot 13b:12",
+        "Horayot 13b:13",
+        "Horayot 13b:14"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 0.6521739130434783,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000045",
+      "core_refs": [
+        "Horayot 14a:7"
+      ],
+      "inclusion_probability": 0.6521739130434783,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nezikin/Horayot/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "10bacb499f453e1f64670867d8803692fd4bedeef66024c28a6d53601c28ca2e"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Horayot"
+}

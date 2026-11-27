@@ -1,0 +1,717 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 1,
+    "endpoint_added_core_segments": 10,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 13,
+    "endpoint_overlap_blocks": 1,
+    "endpoint_overlap_core_segments": 3,
+    "probability_blocks": 30,
+    "probability_core_segments": 293,
+    "source_nonempty_segments": 1183,
+    "source_segment_positions": 1183,
+    "union_blocks": 31,
+    "union_core_segments": 303
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_arakhin.json",
+    "sha256": "3e647175412651b6a73af6e0764807fd6ddefbc1b10a5ef5a92bbd659a62bf39"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_arakhin",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_arakhin.json",
+    "sha256": "3e647175412651b6a73af6e0764807fd6ddefbc1b10a5ef5a92bbd659a62bf39"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Arakhin.json",
+    "sha256": "b7839fc28149ac6d436991936a85057d1781596bba27365a916d0112e6430804"
+  },
+  "plan_sha256": "a436f44d4933bb6afc84a8649311083a4a1cd50c6603456d31e0226a524e89a1",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 119,
+    "inclusion_probability_denominator": 119,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000005",
+      "block_000011",
+      "block_000017",
+      "block_000018",
+      "block_000023",
+      "block_000030",
+      "block_000031",
+      "block_000034",
+      "block_000036",
+      "block_000042",
+      "block_000045",
+      "block_000049",
+      "block_000050",
+      "block_000054",
+      "block_000058",
+      "block_000060",
+      "block_000061",
+      "block_000062",
+      "block_000069",
+      "block_000070",
+      "block_000087",
+      "block_000098",
+      "block_000099",
+      "block_000103",
+      "block_000104",
+      "block_000109",
+      "block_000112",
+      "block_000113",
+      "block_000114",
+      "block_000118"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Arakhin 2a:1",
+        "Arakhin 2a:2",
+        "Arakhin 2a:3",
+        "Arakhin 2a:4",
+        "Arakhin 2a:5",
+        "Arakhin 2a:6",
+        "Arakhin 2a:7",
+        "Arakhin 2a:8",
+        "Arakhin 2a:9",
+        "Arakhin 2a:10"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000005",
+      "core_refs": [
+        "Arakhin 3a:16",
+        "Arakhin 3a:17",
+        "Arakhin 3b:1",
+        "Arakhin 3b:2",
+        "Arakhin 3b:3",
+        "Arakhin 3b:4",
+        "Arakhin 3b:5",
+        "Arakhin 3b:6",
+        "Arakhin 3b:7",
+        "Arakhin 3b:8"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000011",
+      "core_refs": [
+        "Arakhin 4b:22",
+        "Arakhin 4b:23",
+        "Arakhin 4b:24",
+        "Arakhin 4b:25",
+        "Arakhin 4b:26",
+        "Arakhin 4b:27",
+        "Arakhin 4b:28",
+        "Arakhin 5a:1",
+        "Arakhin 5a:2",
+        "Arakhin 5a:3"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000017",
+      "core_refs": [
+        "Arakhin 6a:13",
+        "Arakhin 6a:14",
+        "Arakhin 6a:15",
+        "Arakhin 6a:16",
+        "Arakhin 6b:1",
+        "Arakhin 6b:2",
+        "Arakhin 6b:3",
+        "Arakhin 6b:4",
+        "Arakhin 6b:5",
+        "Arakhin 6b:6"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000018",
+      "core_refs": [
+        "Arakhin 6b:7",
+        "Arakhin 6b:8",
+        "Arakhin 6b:9",
+        "Arakhin 6b:10",
+        "Arakhin 6b:11",
+        "Arakhin 6b:12",
+        "Arakhin 6b:13",
+        "Arakhin 6b:14",
+        "Arakhin 6b:15",
+        "Arakhin 6b:16"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000023",
+      "core_refs": [
+        "Arakhin 7b:18",
+        "Arakhin 7b:19",
+        "Arakhin 7b:20",
+        "Arakhin 7b:21",
+        "Arakhin 7b:22",
+        "Arakhin 7b:23",
+        "Arakhin 7b:24",
+        "Arakhin 8a:1",
+        "Arakhin 8a:2",
+        "Arakhin 8a:3"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000030",
+      "core_refs": [
+        "Arakhin 10a:11",
+        "Arakhin 10a:12",
+        "Arakhin 10a:13",
+        "Arakhin 10a:14",
+        "Arakhin 10b:1",
+        "Arakhin 10b:2",
+        "Arakhin 10b:3",
+        "Arakhin 10b:4",
+        "Arakhin 10b:5",
+        "Arakhin 10b:6"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000031",
+      "core_refs": [
+        "Arakhin 10b:7",
+        "Arakhin 10b:8",
+        "Arakhin 10b:9",
+        "Arakhin 10b:10",
+        "Arakhin 10b:11",
+        "Arakhin 10b:12",
+        "Arakhin 10b:13",
+        "Arakhin 10b:14",
+        "Arakhin 10b:15",
+        "Arakhin 10b:16"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000034",
+      "core_refs": [
+        "Arakhin 11a:19",
+        "Arakhin 11a:20",
+        "Arakhin 11b:1",
+        "Arakhin 11b:2",
+        "Arakhin 11b:3",
+        "Arakhin 11b:4",
+        "Arakhin 11b:5",
+        "Arakhin 11b:6",
+        "Arakhin 11b:7",
+        "Arakhin 11b:8"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Arakhin 11b:19",
+        "Arakhin 11b:20",
+        "Arakhin 11b:21",
+        "Arakhin 11b:22",
+        "Arakhin 11b:23",
+        "Arakhin 12a:1",
+        "Arakhin 12a:2",
+        "Arakhin 12a:3",
+        "Arakhin 12a:4",
+        "Arakhin 12a:5"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000042",
+      "core_refs": [
+        "Arakhin 13b:18",
+        "Arakhin 13b:19",
+        "Arakhin 13b:20",
+        "Arakhin 13b:21",
+        "Arakhin 14a:1",
+        "Arakhin 14a:2",
+        "Arakhin 14a:3",
+        "Arakhin 14a:4",
+        "Arakhin 14a:5",
+        "Arakhin 14a:6"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000045",
+      "core_refs": [
+        "Arakhin 14b:7",
+        "Arakhin 14b:8",
+        "Arakhin 14b:9",
+        "Arakhin 14b:10",
+        "Arakhin 14b:11",
+        "Arakhin 14b:12",
+        "Arakhin 14b:13",
+        "Arakhin 14b:14",
+        "Arakhin 14b:15",
+        "Arakhin 14b:16"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000049",
+      "core_refs": [
+        "Arakhin 15b:1",
+        "Arakhin 15b:2",
+        "Arakhin 15b:3",
+        "Arakhin 15b:4",
+        "Arakhin 15b:5",
+        "Arakhin 15b:6",
+        "Arakhin 15b:7",
+        "Arakhin 15b:8",
+        "Arakhin 15b:9",
+        "Arakhin 15b:10"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000050",
+      "core_refs": [
+        "Arakhin 15b:11",
+        "Arakhin 15b:12",
+        "Arakhin 15b:13",
+        "Arakhin 15b:14",
+        "Arakhin 15b:15",
+        "Arakhin 15b:16",
+        "Arakhin 15b:17",
+        "Arakhin 15b:18",
+        "Arakhin 15b:19",
+        "Arakhin 15b:20"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000054",
+      "core_refs": [
+        "Arakhin 16b:1",
+        "Arakhin 16b:2",
+        "Arakhin 16b:3",
+        "Arakhin 16b:4",
+        "Arakhin 16b:5",
+        "Arakhin 16b:6",
+        "Arakhin 16b:7",
+        "Arakhin 16b:8",
+        "Arakhin 16b:9",
+        "Arakhin 16b:10"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000058",
+      "core_refs": [
+        "Arakhin 17a:17",
+        "Arakhin 17a:18",
+        "Arakhin 17a:19",
+        "Arakhin 17a:20",
+        "Arakhin 17b:1",
+        "Arakhin 17b:2",
+        "Arakhin 17b:3",
+        "Arakhin 17b:4",
+        "Arakhin 17b:5",
+        "Arakhin 17b:6"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000060",
+      "core_refs": [
+        "Arakhin 17b:17",
+        "Arakhin 18a:1",
+        "Arakhin 18a:2",
+        "Arakhin 18a:3",
+        "Arakhin 18a:4",
+        "Arakhin 18a:5",
+        "Arakhin 18a:6",
+        "Arakhin 18a:7",
+        "Arakhin 18a:8",
+        "Arakhin 18a:9"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000061",
+      "core_refs": [
+        "Arakhin 18a:10",
+        "Arakhin 18a:11",
+        "Arakhin 18a:12",
+        "Arakhin 18a:13",
+        "Arakhin 18a:14",
+        "Arakhin 18a:15",
+        "Arakhin 18a:16",
+        "Arakhin 18a:17",
+        "Arakhin 18a:18",
+        "Arakhin 18b:1"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000062",
+      "core_refs": [
+        "Arakhin 18b:2",
+        "Arakhin 18b:3",
+        "Arakhin 18b:4",
+        "Arakhin 18b:5",
+        "Arakhin 18b:6",
+        "Arakhin 18b:7",
+        "Arakhin 18b:8",
+        "Arakhin 18b:9",
+        "Arakhin 18b:10",
+        "Arakhin 18b:11"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000069",
+      "core_refs": [
+        "Arakhin 20a:24",
+        "Arakhin 20a:25",
+        "Arakhin 20a:26",
+        "Arakhin 20a:27",
+        "Arakhin 20a:28",
+        "Arakhin 20a:29",
+        "Arakhin 20a:30",
+        "Arakhin 20a:31",
+        "Arakhin 20a:32",
+        "Arakhin 20b:1"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000070",
+      "core_refs": [
+        "Arakhin 20b:2",
+        "Arakhin 20b:3",
+        "Arakhin 20b:4",
+        "Arakhin 20b:5",
+        "Arakhin 20b:6",
+        "Arakhin 20b:7",
+        "Arakhin 20b:8",
+        "Arakhin 20b:9",
+        "Arakhin 20b:10",
+        "Arakhin 21a:1"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000087",
+      "core_refs": [
+        "Arakhin 25b:13",
+        "Arakhin 25b:14",
+        "Arakhin 25b:15",
+        "Arakhin 25b:16",
+        "Arakhin 25b:17",
+        "Arakhin 25b:18",
+        "Arakhin 25b:19",
+        "Arakhin 25b:20",
+        "Arakhin 25b:21",
+        "Arakhin 25b:22"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000098",
+      "core_refs": [
+        "Arakhin 28b:9",
+        "Arakhin 28b:10",
+        "Arakhin 28b:11",
+        "Arakhin 28b:12",
+        "Arakhin 28b:13",
+        "Arakhin 28b:14",
+        "Arakhin 29a:1",
+        "Arakhin 29a:2",
+        "Arakhin 29a:3",
+        "Arakhin 29a:4"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000099",
+      "core_refs": [
+        "Arakhin 29a:5",
+        "Arakhin 29a:6",
+        "Arakhin 29a:7",
+        "Arakhin 29a:8",
+        "Arakhin 29a:9",
+        "Arakhin 29a:10",
+        "Arakhin 29a:11",
+        "Arakhin 29a:12",
+        "Arakhin 29a:13",
+        "Arakhin 29a:14"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000103",
+      "core_refs": [
+        "Arakhin 30a:8",
+        "Arakhin 30a:9",
+        "Arakhin 30a:10",
+        "Arakhin 30a:11",
+        "Arakhin 30a:12",
+        "Arakhin 30a:13",
+        "Arakhin 30a:14",
+        "Arakhin 30a:15",
+        "Arakhin 30a:16",
+        "Arakhin 30a:17"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000104",
+      "core_refs": [
+        "Arakhin 30a:18",
+        "Arakhin 30a:19",
+        "Arakhin 30a:20",
+        "Arakhin 30b:1",
+        "Arakhin 30b:2",
+        "Arakhin 30b:3",
+        "Arakhin 30b:4",
+        "Arakhin 30b:5",
+        "Arakhin 30b:6",
+        "Arakhin 30b:7"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000109",
+      "core_refs": [
+        "Arakhin 31b:12",
+        "Arakhin 31b:13",
+        "Arakhin 31b:14",
+        "Arakhin 31b:15",
+        "Arakhin 31b:16",
+        "Arakhin 31b:17",
+        "Arakhin 31b:18",
+        "Arakhin 31b:19",
+        "Arakhin 32a:1",
+        "Arakhin 32a:2"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000112",
+      "core_refs": [
+        "Arakhin 32b:10",
+        "Arakhin 32b:11",
+        "Arakhin 32b:12",
+        "Arakhin 32b:13",
+        "Arakhin 32b:14",
+        "Arakhin 32b:15",
+        "Arakhin 32b:16",
+        "Arakhin 32b:17",
+        "Arakhin 32b:18",
+        "Arakhin 33a:1"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000113",
+      "core_refs": [
+        "Arakhin 33a:2",
+        "Arakhin 33a:3",
+        "Arakhin 33a:4",
+        "Arakhin 33a:5",
+        "Arakhin 33a:6",
+        "Arakhin 33a:7",
+        "Arakhin 33a:8",
+        "Arakhin 33a:9",
+        "Arakhin 33a:10",
+        "Arakhin 33a:11"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000114",
+      "core_refs": [
+        "Arakhin 33a:12",
+        "Arakhin 33a:13",
+        "Arakhin 33a:14",
+        "Arakhin 33a:15",
+        "Arakhin 33a:16",
+        "Arakhin 33a:17",
+        "Arakhin 33a:18",
+        "Arakhin 33a:19",
+        "Arakhin 33a:20",
+        "Arakhin 33a:21"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 0.25210084033613445,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000118",
+      "core_refs": [
+        "Arakhin 34a:7",
+        "Arakhin 34a:8",
+        "Arakhin 34a:9"
+      ],
+      "inclusion_probability": 0.25210084033613445,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "probability_sample",
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Kodashim/Arakhin/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "1a25d9524ec1d35eee64749794e158a24bfa10177bc9c6db56b4fca6adbc9ed4"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Arakhin"
+}

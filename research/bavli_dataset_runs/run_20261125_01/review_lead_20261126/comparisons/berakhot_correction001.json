@@ -1,0 +1,719 @@
+{
+  "artifact_kind": "targeted_correction_receipt_not_new_scope_admission",
+  "job_id": "bavli_berakhot",
+  "comparison_blind": false,
+  "bindings": {
+    "initial_comparison": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\berakhot_03622eb5_batch001.json",
+      "sha256": "51067df028d991c8750c6e08387174dba22d930e10e73c827591c64edcd07ade"
+    },
+    "initial_reading": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\berakhot_batch001.json",
+      "sha256": "583a9532d6b54631eafbe19fd941281d222e1fa43089537645fa7c95ad3436fb"
+    },
+    "initial_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e.json",
+      "sha256": "03622eb5170ef5507fa5846f93156fe872c2bd99f326f7d6c7641ade69050f1e"
+    },
+    "corrected_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\e13b2ef701f28d7823c5d9b271b6c3ece295194205efe92c9d86512e9c20e5e2.json",
+      "sha256": "e13b2ef701f28d7823c5d9b271b6c3ece295194205efe92c9d86512e9c20e5e2"
+    },
+    "source": {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Zeraim\\Berakhot\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38"
+    },
+    "run_contract": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\RUN_CONTRACT.json",
+      "sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "schema": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    "protocol": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    "frozen_plan": {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_berakhot.json",
+      "sha256": "4cb5b9baad10bc4fe7ff90f860e5d7716d90833248040e51a66c9dda4be5b3d1"
+    },
+    "owner_observed": {
+      "epoch": 4,
+      "owner": "/root/l01_berakhot_correction"
+    },
+    "owner_file": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\OWNER.json",
+      "sha256": "a92d5574302995d4195a0234ff44bd44aad762569e197b6c90b9fdf52f4f7f50"
+    },
+    "correction_proposals": [
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\proposals\\a6aaf8c1f102b1636acb0daee1b81db66e7ca2d6618afaad49e889339783551d.json",
+        "sha256": "a6aaf8c1f102b1636acb0daee1b81db66e7ca2d6618afaad49e889339783551d"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "BR-COND-001",
+      "state": "TARGETED_CORRECTION_VERIFIED",
+      "result": "Nonrecitation and dawn premises explicitly present in both new claim and dependent position; exact nonrecitation evidence added. Attribution and support edge retargeted to revised claim."
+    },
+    {
+      "id": "BR-QUESTION-002",
+      "state": "TARGETED_CORRECTION_VERIFIED",
+      "result": "Revised count positions have null question_id and only claim links. Earlier why-question associations preserved in superseded versions. No new common-count question or complete answer-set admission inferred."
+    },
+    {
+      "id": "BR-EDGE-003",
+      "state": "UNRESOLVED_SUPPORTED_ALTERNATIVES",
+      "result": "Objection labels retained provisionally with explicit qualification-versus-objection uncertainty. No exact edge-label agreement or demanding benchmark eligibility."
+    }
+  ],
+  "record_history": [
+    {
+      "new_record": {
+        "content": {
+          "candidates": [
+            "רבן גמליאל"
+          ],
+          "role": "speaker",
+          "scope": "bk.opening.pass1.c.duty.review20261126",
+          "surface": "אמר להם",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 57,
+            "quote": "אמר להם",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 50
+          }
+        ],
+        "id": "bk.opening.pass1.answer.review20261126",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.opening.pass1.answer",
+        "uncertainty": []
+      },
+      "new_record_sha256": "cf1d9f9491a175e066b0bcc48292fd485d651cbc390ab23ce5cf57d375c37604",
+      "initial_record": {
+        "content": {
+          "candidates": [
+            "רבן גמליאל"
+          ],
+          "role": "speaker",
+          "scope": "bk.opening.pass1.c.duty",
+          "surface": "אמר להם",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 57,
+            "quote": "אמר להם",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 50
+          }
+        ],
+        "id": "bk.opening.pass1.answer",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "7d2392e63c3437bd561899a2b07f6c6013d07cb0e3ac18d2118a5f50f151d137",
+      "current_old_release_state": "superseded"
+    },
+    {
+      "new_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "The sons have not yet recited Shema",
+            "Dawn has not risen"
+          ],
+          "proposition": "The sons, who have not yet recited Shema, remain obligated to recite if dawn has not risen.",
+          "scope": "Local passage; no later practical ruling inferred"
+        },
+        "evidence": [
+          {
+            "end_char": 94,
+            "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 58
+          },
+          {
+            "end_char": 49,
+            "quote": "לא קרינו את שמע",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 34
+          }
+        ],
+        "id": "bk.opening.pass1.c.duty.review20261126",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.opening.pass1.c.duty",
+        "uncertainty": []
+      },
+      "new_record_sha256": "749cca3f58619dd63391a9816c27afcd7ce9d067408e94eabfdada10dbe15bff",
+      "initial_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Dawn has not risen"
+          ],
+          "proposition": "The sons remain obligated to recite if dawn has not risen.",
+          "scope": "Local passage; no later practical ruling inferred"
+        },
+        "evidence": [
+          {
+            "end_char": 94,
+            "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 58
+          }
+        ],
+        "id": "bk.opening.pass1.c.duty",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "6f672785313ce1eb5bfc5c16e2ea25040796db3207e91764b6f1bd3bbfd819e4",
+      "current_old_release_state": "superseded"
+    },
+    {
+      "new_record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "bk.opening.pass1.c.general",
+          "target_id": "bk.opening.pass1.c.duty.review20261126"
+        },
+        "evidence": [
+          {
+            "end_char": 166,
+            "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.opening.pass1.general.review20261126",
+        "layer": "edges",
+        "links": [
+          "bk.opening.pass1.c.general",
+          "bk.opening.pass1.c.duty.review20261126"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.opening.pass1.general",
+        "uncertainty": []
+      },
+      "new_record_sha256": "708c5770e5a4e410906d0858c197d4455b4fab21dc7323b4bfb3a89f4a404bb6",
+      "initial_record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "bk.opening.pass1.c.general",
+          "target_id": "bk.opening.pass1.c.duty"
+        },
+        "evidence": [
+          {
+            "end_char": 166,
+            "quote": "מעשה ובאו בניו מבית המשתה אמרו לו לא קרינו את שמע אמר להם אם לא עלה עמוד השחר חייבין אתם לקרות ולא זו בלבד אמרו אלא כל מה שאמרו חכמים עד חצות מצותן עד שיעלה עמוד השחר",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.opening.pass1.general",
+        "layer": "edges",
+        "links": [
+          "bk.opening.pass1.c.general",
+          "bk.opening.pass1.c.duty"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "6a524867ffeb1857074663fcf6834a577fc53477a1b41aa1d542ad61bbed7c8f",
+      "current_old_release_state": "superseded"
+    },
+    {
+      "new_record": {
+        "content": {
+          "claim_id": "bk.opening.pass1.c.duty.review20261126",
+          "conditions": [
+            "The sons have not yet recited Shema",
+            "Dawn has not risen"
+          ],
+          "holder_candidates": [
+            "רבן גמליאל"
+          ],
+          "local_status": "Reported in this passage; no ruling beyond local text asserted",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 94,
+            "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 58
+          },
+          {
+            "end_char": 49,
+            "quote": "לא קרינו את שמע",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 34
+          }
+        ],
+        "id": "bk.opening.pass1.p.duty.review20261126",
+        "layer": "positions",
+        "links": [
+          "bk.opening.pass1.c.duty.review20261126"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.opening.pass1.p.duty",
+        "uncertainty": []
+      },
+      "new_record_sha256": "dff320cf2f261d1a331293fe7a67173faf98d28e012108d97b827eb2574df1d5",
+      "initial_record": {
+        "content": {
+          "claim_id": "bk.opening.pass1.c.duty",
+          "conditions": [
+            "Dawn has not risen"
+          ],
+          "holder_candidates": [
+            "רבן גמליאל"
+          ],
+          "local_status": "Reported in this passage; no ruling beyond local text asserted",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 94,
+            "quote": "אם לא עלה עמוד השחר חייבין אתם לקרות",
+            "segment_id": "seg_60ee4773ccee2b2b063e",
+            "start_char": 58
+          }
+        ],
+        "id": "bk.opening.pass1.p.duty",
+        "layer": "positions",
+        "links": [
+          "bk.opening.pass1.c.duty"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "386c6e734a9d805ade3984e211b642538d6a39e115f38355b8fff703018ffe58",
+      "current_old_release_state": "superseded"
+    },
+    {
+      "new_record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "bk.watch_dispute.20261125.c15sum",
+          "target_id": "bk.watch_dispute.20261125.c14a"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ורבי נתן סבר לה כרבי יהושע דתנן רבי יהושע אומר עד שלש שעות שכן דרך מלכים לעמוד בשלש שעות שית דליליא ותרתי דיממא הוו להו שתי משמרות",
+            "segment_id": "seg_2f1218c0eedf6f28f708",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.e15.review20261126",
+        "layer": "edges",
+        "links": [
+          "bk.watch_dispute.20261125.c15sum",
+          "bk.watch_dispute.20261125.c14a"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.watch_dispute.20261125.e15",
+        "uncertainty": [
+          "BR-EDGE-003: objection to the four-watch inference and qualification of the verse interpretation are supported relation-label alternatives. Objection retained provisionally; no exact-label agreement or demanding edge-label eligibility before adjudication."
+        ]
+      },
+      "new_record_sha256": "64b1636a96a31fcdad0d3893d46f354463b5aa9a2d418fd3aaea8ea477403d02",
+      "initial_record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "bk.watch_dispute.20261125.c15sum",
+          "target_id": "bk.watch_dispute.20261125.c14a"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ורבי נתן סבר לה כרבי יהושע דתנן רבי יהושע אומר עד שלש שעות שכן דרך מלכים לעמוד בשלש שעות שית דליליא ותרתי דיממא הוו להו שתי משמרות",
+            "segment_id": "seg_2f1218c0eedf6f28f708",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.e15",
+        "layer": "edges",
+        "links": [
+          "bk.watch_dispute.20261125.c15sum",
+          "bk.watch_dispute.20261125.c14a"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "b5fc17b64322e3af748428f85a73069be4905b039fbdf7379b155765d585e929",
+      "current_old_release_state": "superseded"
+    },
+    {
+      "new_record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "bk.watch_dispute.20261125.c16",
+          "target_id": "bk.watch_dispute.20261125.c14a"
+        },
+        "evidence": [
+          {
+            "end_char": 42,
+            "quote": "רב אשי אמר משמרה ופלגא נמי משמרות קרו להו:",
+            "segment_id": "seg_50a5ef45a56e3d2ce593",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.e16.review20261126",
+        "layer": "edges",
+        "links": [
+          "bk.watch_dispute.20261125.c16",
+          "bk.watch_dispute.20261125.c14a"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.watch_dispute.20261125.e16",
+        "uncertainty": [
+          "BR-EDGE-003: objection to the four-watch inference and qualification of the verse interpretation are supported relation-label alternatives. Objection retained provisionally; no exact-label agreement or demanding edge-label eligibility before adjudication."
+        ]
+      },
+      "new_record_sha256": "0b4d44542406052355643917a2d508a1920d47b7fe274c25ca7c37e52e8ec7a9",
+      "initial_record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "bk.watch_dispute.20261125.c16",
+          "target_id": "bk.watch_dispute.20261125.c14a"
+        },
+        "evidence": [
+          {
+            "end_char": 42,
+            "quote": "רב אשי אמר משמרה ופלגא נמי משמרות קרו להו:",
+            "segment_id": "seg_50a5ef45a56e3d2ce593",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.e16",
+        "layer": "edges",
+        "links": [
+          "bk.watch_dispute.20261125.c16",
+          "bk.watch_dispute.20261125.c14a"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "8125086d7950fe61f94124a74ebe0fce6ad6ea932151ed5be7352709a1b0f3fe",
+      "current_old_release_state": "superseded"
+    },
+    {
+      "new_record": {
+        "content": {
+          "claim_id": "bk.watch_dispute.20261125.c10n",
+          "conditions": [],
+          "holder_candidates": [
+            "רבי נתן"
+          ],
+          "local_status": "Reported three-watch position",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 56,
+            "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש",
+            "segment_id": "seg_7e74d76d3cf8500a3127",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.p10n.review20261126",
+        "layer": "positions",
+        "links": [
+          "bk.watch_dispute.20261125.c10n"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.watch_dispute.20261125.p10n",
+        "uncertainty": [
+          "BR-QUESTION-002: prior why-question link can represent discourse association, but is not a common comparable count-answer set. Null question_id avoids that conflation; no editorial count question is asserted here."
+        ]
+      },
+      "new_record_sha256": "483cdc1150f8a928852ca99a9a0c85cf08d047f3cd0681eb444f2bd0878d511d",
+      "initial_record": {
+        "content": {
+          "claim_id": "bk.watch_dispute.20261125.c10n",
+          "conditions": [],
+          "holder_candidates": [
+            "רבי נתן"
+          ],
+          "local_status": "Reported three-watch position",
+          "question_id": "bk.watch_dispute.20261125.q11"
+        },
+        "evidence": [
+          {
+            "end_char": 56,
+            "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש",
+            "segment_id": "seg_7e74d76d3cf8500a3127",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.p10n",
+        "layer": "positions",
+        "links": [
+          "bk.watch_dispute.20261125.c10n",
+          "bk.watch_dispute.20261125.q11"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "b60023c0da47adfbb52b77ca78d310352bea6d272b172febb24fab2f502c9585",
+      "current_old_release_state": "superseded"
+    },
+    {
+      "new_record": {
+        "content": {
+          "claim_id": "bk.watch_dispute.20261125.c10r",
+          "conditions": [],
+          "holder_candidates": [
+            "רבי"
+          ],
+          "local_status": "Reported four-watch position",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 56,
+            "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש",
+            "segment_id": "seg_7e74d76d3cf8500a3127",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.p10r.review20261126",
+        "layer": "positions",
+        "links": [
+          "bk.watch_dispute.20261125.c10r"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "bk.watch_dispute.20261125.p10r",
+        "uncertainty": [
+          "BR-QUESTION-002: prior why-question link can represent discourse association, but is not a common comparable count-answer set. Null question_id avoids that conflation; no editorial count question is asserted here."
+        ]
+      },
+      "new_record_sha256": "b01c189d3631232c04ed4b7504c31d7400b8c70e18d7567063e1cc054e5da4f4",
+      "initial_record": {
+        "content": {
+          "claim_id": "bk.watch_dispute.20261125.c10r",
+          "conditions": [],
+          "holder_candidates": [
+            "רבי"
+          ],
+          "local_status": "Reported four-watch position",
+          "question_id": "bk.watch_dispute.20261125.q14"
+        },
+        "evidence": [
+          {
+            "end_char": 56,
+            "quote": "תנו רבנן ארבע משמרות הוי הלילה דברי רבי רבי נתן אומר שלש",
+            "segment_id": "seg_7e74d76d3cf8500a3127",
+            "start_char": 0
+          }
+        ],
+        "id": "bk.watch_dispute.20261125.p10r",
+        "layer": "positions",
+        "links": [
+          "bk.watch_dispute.20261125.c10r",
+          "bk.watch_dispute.20261125.q14"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "initial_record_sha256": "10161611209a264ac2dac0a817ee7e7813da525cdb3f725f066f942e0ae5c65e",
+      "current_old_release_state": "superseded"
+    }
+  ],
+  "history_checks": {
+    "initial_snapshot_unchanged": true,
+    "initial_reading_unchanged": true,
+    "initial_comparison_unchanged": true,
+    "all_old_record_ids_retained": true,
+    "old_record_content_unchanged_except_release_state": true,
+    "old_proposals_preserved_as_prefix": true,
+    "old_record_count": 592,
+    "new_snapshot_record_count": 733,
+    "new_records_total": 141,
+    "targeted_revisions_checked": 8,
+    "all_changed_old_release_ids": [
+      "bk.opening.pass1.answer",
+      "bk.opening.pass1.c.duty",
+      "bk.opening.pass1.general",
+      "bk.opening.pass1.p.duty",
+      "bk.watch_dispute.20261125.e15",
+      "bk.watch_dispute.20261125.e16",
+      "bk.watch_dispute.20261125.p10n",
+      "bk.watch_dispute.20261125.p10r"
+    ],
+    "new_unreviewed_content_not_admitted": true
+  },
+  "qa": {
+    "all_corrected_snapshot_evidence_slices_validated": 834,
+    "replay": {
+      "replay_pass": true,
+      "snapshot_sha256": "e13b2ef701f28d7823c5d9b271b6c3ece295194205efe92c9d86512e9c20e5e2",
+      "source_segments": 2749,
+      "semantic_records": 733,
+      "completed_by_layer": {
+        "structure": 91,
+        "utterances": 91,
+        "claims": 91,
+        "attributions": 91,
+        "questions": 91,
+        "positions": 91,
+        "edges": 91,
+        "reconciliation": 91
+      },
+      "outcomes_by_layer": {
+        "structure": {
+          "records_found": 91,
+          "none_found_after_pass": 0,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "utterances": {
+          "records_found": 91,
+          "none_found_after_pass": 0,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "claims": {
+          "records_found": 81,
+          "none_found_after_pass": 10,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "attributions": {
+          "records_found": 47,
+          "none_found_after_pass": 44,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "questions": {
+          "records_found": 40,
+          "none_found_after_pass": 51,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "positions": {
+          "records_found": 66,
+          "none_found_after_pass": 25,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "edges": {
+          "records_found": 67,
+          "none_found_after_pass": 24,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "reconciliation": {
+          "records_found": 0,
+          "none_found_after_pass": 91,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        }
+      },
+      "independent_review_completed": false,
+      "tractate_delivered": false,
+      "next_unprocessed_by_layer": {
+        "structure": "Berakhot 4a:8",
+        "utterances": "Berakhot 4a:8",
+        "claims": "Berakhot 4a:8",
+        "attributions": "Berakhot 4a:8",
+        "questions": "Berakhot 4a:8",
+        "positions": "Berakhot 4a:8",
+        "edges": "Berakhot 4a:8",
+        "reconciliation": "Berakhot 4a:8"
+      }
+    },
+    "runner_unchanged": true,
+    "proposal_hashes_verified": 20
+  },
+  "denominators": "Targeted verification of2 requested fixes plus1 unresolved relation-label issue; does not extend original core/sample/risk denominators.",
+  "remaining": "BR-EDGE-003 remains unresolved. Earlier incomplete cohort/risk coverage and all new production content require separate review.",
+  "task_eligibility": {
+    "argument_extraction": false,
+    "attribution": false,
+    "ml": false,
+    "qa": false,
+    "retrieval": false,
+    "scholar_choice": false,
+    "segmentation": false
+  },
+  "tractate_accepted": false,
+  "full_review_receipt": false,
+  "human_certification": false,
+  "old_verdicts_modified": false
+}

@@ -1,0 +1,739 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 16,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 16,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 30,
+    "probability_core_segments": 300,
+    "source_nonempty_segments": 1026,
+    "source_segment_positions": 1026,
+    "union_blocks": 32,
+    "union_core_segments": 316
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_moed_katan.json",
+    "sha256": "f90f4ab143a6ef103be97786a055abfb5cb749481a87b80508b239620dbb5893"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_moed_katan",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_moed_katan.json",
+    "sha256": "f90f4ab143a6ef103be97786a055abfb5cb749481a87b80508b239620dbb5893"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Moed_Katan.json",
+    "sha256": "37e052de9306f676a29e3c201f66047278d4796f364c510fd38a070697223392"
+  },
+  "plan_sha256": "8d23d213c87bd923ff4bd3ce0e0d1d8d0992000497df3350ffb3691ad0748368",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 103,
+    "inclusion_probability_denominator": 103,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000001",
+      "block_000005",
+      "block_000008",
+      "block_000011",
+      "block_000021",
+      "block_000024",
+      "block_000025",
+      "block_000033",
+      "block_000034",
+      "block_000036",
+      "block_000037",
+      "block_000040",
+      "block_000041",
+      "block_000042",
+      "block_000044",
+      "block_000049",
+      "block_000052",
+      "block_000053",
+      "block_000055",
+      "block_000059",
+      "block_000065",
+      "block_000070",
+      "block_000072",
+      "block_000078",
+      "block_000083",
+      "block_000092",
+      "block_000094",
+      "block_000096",
+      "block_000097",
+      "block_000098"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 30
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Moed Katan 2a:1",
+        "Moed Katan 2a:2",
+        "Moed Katan 2a:3",
+        "Moed Katan 2a:4",
+        "Moed Katan 2a:5",
+        "Moed Katan 2a:6",
+        "Moed Katan 2a:7",
+        "Moed Katan 2a:8",
+        "Moed Katan 2a:9",
+        "Moed Katan 2a:10"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000001",
+      "core_refs": [
+        "Moed Katan 2a:11",
+        "Moed Katan 2a:12",
+        "Moed Katan 2a:13",
+        "Moed Katan 2a:14",
+        "Moed Katan 2a:15",
+        "Moed Katan 2b:1",
+        "Moed Katan 2b:2",
+        "Moed Katan 2b:3",
+        "Moed Katan 2b:4",
+        "Moed Katan 2b:5"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000005",
+      "core_refs": [
+        "Moed Katan 3a:17",
+        "Moed Katan 3a:18",
+        "Moed Katan 3a:19",
+        "Moed Katan 3a:20",
+        "Moed Katan 3a:21",
+        "Moed Katan 3a:22",
+        "Moed Katan 3b:1",
+        "Moed Katan 3b:2",
+        "Moed Katan 3b:3",
+        "Moed Katan 3b:4"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000008",
+      "core_refs": [
+        "Moed Katan 4a:12",
+        "Moed Katan 4a:13",
+        "Moed Katan 4a:14",
+        "Moed Katan 4a:15",
+        "Moed Katan 4a:16",
+        "Moed Katan 4a:17",
+        "Moed Katan 4a:18",
+        "Moed Katan 4a:19",
+        "Moed Katan 4a:20",
+        "Moed Katan 4a:21"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000011",
+      "core_refs": [
+        "Moed Katan 5a:2",
+        "Moed Katan 5a:3",
+        "Moed Katan 5a:4",
+        "Moed Katan 5a:5",
+        "Moed Katan 5a:6",
+        "Moed Katan 5a:7",
+        "Moed Katan 5a:8",
+        "Moed Katan 5a:9",
+        "Moed Katan 5a:10",
+        "Moed Katan 5a:11"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000021",
+      "core_refs": [
+        "Moed Katan 7b:11",
+        "Moed Katan 7b:12",
+        "Moed Katan 7b:13",
+        "Moed Katan 8a:1",
+        "Moed Katan 8a:2",
+        "Moed Katan 8a:3",
+        "Moed Katan 8a:4",
+        "Moed Katan 8a:5",
+        "Moed Katan 8a:6",
+        "Moed Katan 8a:7"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000024",
+      "core_refs": [
+        "Moed Katan 8b:8",
+        "Moed Katan 8b:9",
+        "Moed Katan 8b:10",
+        "Moed Katan 8b:11",
+        "Moed Katan 8b:12",
+        "Moed Katan 9a:1",
+        "Moed Katan 9a:2",
+        "Moed Katan 9a:3",
+        "Moed Katan 9a:4",
+        "Moed Katan 9a:5"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000025",
+      "core_refs": [
+        "Moed Katan 9a:6",
+        "Moed Katan 9a:7",
+        "Moed Katan 9a:8",
+        "Moed Katan 9a:9",
+        "Moed Katan 9a:10",
+        "Moed Katan 9a:11",
+        "Moed Katan 9a:12",
+        "Moed Katan 9a:13",
+        "Moed Katan 9a:14",
+        "Moed Katan 9a:15"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000033",
+      "core_refs": [
+        "Moed Katan 11a:11",
+        "Moed Katan 11a:12",
+        "Moed Katan 11a:13",
+        "Moed Katan 11a:14",
+        "Moed Katan 11a:15",
+        "Moed Katan 11a:16",
+        "Moed Katan 11a:17",
+        "Moed Katan 11a:18",
+        "Moed Katan 11a:19",
+        "Moed Katan 11a:20"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000034",
+      "core_refs": [
+        "Moed Katan 11a:21",
+        "Moed Katan 11b:1",
+        "Moed Katan 11b:2",
+        "Moed Katan 11b:3",
+        "Moed Katan 11b:4",
+        "Moed Katan 11b:5",
+        "Moed Katan 11b:6",
+        "Moed Katan 11b:7",
+        "Moed Katan 11b:8",
+        "Moed Katan 11b:9"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000036",
+      "core_refs": [
+        "Moed Katan 12a:7",
+        "Moed Katan 12a:8",
+        "Moed Katan 12a:9",
+        "Moed Katan 12a:10",
+        "Moed Katan 12a:11",
+        "Moed Katan 12a:12",
+        "Moed Katan 12a:13",
+        "Moed Katan 12a:14",
+        "Moed Katan 12a:15",
+        "Moed Katan 12a:16"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000037",
+      "core_refs": [
+        "Moed Katan 12a:17",
+        "Moed Katan 12a:18",
+        "Moed Katan 12a:19",
+        "Moed Katan 12b:1",
+        "Moed Katan 12b:2",
+        "Moed Katan 12b:3",
+        "Moed Katan 12b:4",
+        "Moed Katan 12b:5",
+        "Moed Katan 12b:6",
+        "Moed Katan 12b:7"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000040",
+      "core_refs": [
+        "Moed Katan 13a:5",
+        "Moed Katan 13a:6",
+        "Moed Katan 13a:7",
+        "Moed Katan 13a:8",
+        "Moed Katan 13a:9",
+        "Moed Katan 13a:10",
+        "Moed Katan 13a:11",
+        "Moed Katan 13a:12",
+        "Moed Katan 13a:13",
+        "Moed Katan 13a:14"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000041",
+      "core_refs": [
+        "Moed Katan 13a:15",
+        "Moed Katan 13a:16",
+        "Moed Katan 13a:17",
+        "Moed Katan 13b:1",
+        "Moed Katan 13b:2",
+        "Moed Katan 13b:3",
+        "Moed Katan 13b:4",
+        "Moed Katan 13b:5",
+        "Moed Katan 13b:6",
+        "Moed Katan 13b:7"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000042",
+      "core_refs": [
+        "Moed Katan 13b:8",
+        "Moed Katan 13b:9",
+        "Moed Katan 13b:10",
+        "Moed Katan 13b:11",
+        "Moed Katan 13b:12",
+        "Moed Katan 13b:13",
+        "Moed Katan 13b:14",
+        "Moed Katan 13b:15",
+        "Moed Katan 13b:16",
+        "Moed Katan 14a:1"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000044",
+      "core_refs": [
+        "Moed Katan 14a:12",
+        "Moed Katan 14a:13",
+        "Moed Katan 14a:14",
+        "Moed Katan 14a:15",
+        "Moed Katan 14a:16",
+        "Moed Katan 14a:17",
+        "Moed Katan 14b:1",
+        "Moed Katan 14b:2",
+        "Moed Katan 14b:3",
+        "Moed Katan 14b:4"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000049",
+      "core_refs": [
+        "Moed Katan 15a:24",
+        "Moed Katan 15a:25",
+        "Moed Katan 15b:1",
+        "Moed Katan 15b:2",
+        "Moed Katan 15b:3",
+        "Moed Katan 15b:4",
+        "Moed Katan 15b:5",
+        "Moed Katan 15b:6",
+        "Moed Katan 15b:7",
+        "Moed Katan 15b:8"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000052",
+      "core_refs": [
+        "Moed Katan 16a:11",
+        "Moed Katan 16a:12",
+        "Moed Katan 16a:13",
+        "Moed Katan 16a:14",
+        "Moed Katan 16a:15",
+        "Moed Katan 16a:16",
+        "Moed Katan 16a:17",
+        "Moed Katan 16a:18",
+        "Moed Katan 16a:19",
+        "Moed Katan 16a:20"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000053",
+      "core_refs": [
+        "Moed Katan 16a:21",
+        "Moed Katan 16a:22",
+        "Moed Katan 16a:23",
+        "Moed Katan 16b:1",
+        "Moed Katan 16b:2",
+        "Moed Katan 16b:3",
+        "Moed Katan 16b:4",
+        "Moed Katan 16b:5",
+        "Moed Katan 16b:6",
+        "Moed Katan 16b:7"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000055",
+      "core_refs": [
+        "Moed Katan 16b:18",
+        "Moed Katan 16b:19",
+        "Moed Katan 16b:20",
+        "Moed Katan 16b:21",
+        "Moed Katan 16b:22",
+        "Moed Katan 16b:23",
+        "Moed Katan 16b:24",
+        "Moed Katan 16b:25",
+        "Moed Katan 16b:26",
+        "Moed Katan 16b:27"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000059",
+      "core_refs": [
+        "Moed Katan 17b:3",
+        "Moed Katan 17b:4",
+        "Moed Katan 17b:5",
+        "Moed Katan 17b:6",
+        "Moed Katan 17b:7",
+        "Moed Katan 17b:8",
+        "Moed Katan 17b:9",
+        "Moed Katan 17b:10",
+        "Moed Katan 17b:11",
+        "Moed Katan 17b:12"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000065",
+      "core_refs": [
+        "Moed Katan 19a:3",
+        "Moed Katan 19a:4",
+        "Moed Katan 19a:5",
+        "Moed Katan 19a:6",
+        "Moed Katan 19a:7",
+        "Moed Katan 19a:8",
+        "Moed Katan 19a:9",
+        "Moed Katan 19a:10",
+        "Moed Katan 19a:11",
+        "Moed Katan 19b:1"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000070",
+      "core_refs": [
+        "Moed Katan 20b:12",
+        "Moed Katan 20b:13",
+        "Moed Katan 20b:14",
+        "Moed Katan 20b:15",
+        "Moed Katan 20b:16",
+        "Moed Katan 20b:17",
+        "Moed Katan 21a:1",
+        "Moed Katan 21a:2",
+        "Moed Katan 21a:3",
+        "Moed Katan 21a:4"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000072",
+      "core_refs": [
+        "Moed Katan 21a:15",
+        "Moed Katan 21a:16",
+        "Moed Katan 21b:1",
+        "Moed Katan 21b:2",
+        "Moed Katan 21b:3",
+        "Moed Katan 21b:4",
+        "Moed Katan 21b:5",
+        "Moed Katan 21b:6",
+        "Moed Katan 21b:7",
+        "Moed Katan 21b:8"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000078",
+      "core_refs": [
+        "Moed Katan 23a:2",
+        "Moed Katan 23a:3",
+        "Moed Katan 23a:4",
+        "Moed Katan 23a:5",
+        "Moed Katan 23a:6",
+        "Moed Katan 23a:7",
+        "Moed Katan 23a:8",
+        "Moed Katan 23a:9",
+        "Moed Katan 23a:10",
+        "Moed Katan 23b:1"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000083",
+      "core_refs": [
+        "Moed Katan 24b:12",
+        "Moed Katan 25a:1",
+        "Moed Katan 25a:2",
+        "Moed Katan 25a:3",
+        "Moed Katan 25a:4",
+        "Moed Katan 25a:5",
+        "Moed Katan 25a:6",
+        "Moed Katan 25a:7",
+        "Moed Katan 25a:8",
+        "Moed Katan 25a:9"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000092",
+      "core_refs": [
+        "Moed Katan 26b:24",
+        "Moed Katan 26b:25",
+        "Moed Katan 27a:1",
+        "Moed Katan 27a:2",
+        "Moed Katan 27a:3",
+        "Moed Katan 27a:4",
+        "Moed Katan 27a:5",
+        "Moed Katan 27a:6",
+        "Moed Katan 27a:7",
+        "Moed Katan 27a:8"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000094",
+      "core_refs": [
+        "Moed Katan 27a:19",
+        "Moed Katan 27a:20",
+        "Moed Katan 27a:21",
+        "Moed Katan 27a:22",
+        "Moed Katan 27a:23",
+        "Moed Katan 27a:24",
+        "Moed Katan 27a:25",
+        "Moed Katan 27b:1",
+        "Moed Katan 27b:2",
+        "Moed Katan 27b:3"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000096",
+      "core_refs": [
+        "Moed Katan 27b:14",
+        "Moed Katan 27b:15",
+        "Moed Katan 27b:16",
+        "Moed Katan 27b:17",
+        "Moed Katan 27b:18",
+        "Moed Katan 27b:19",
+        "Moed Katan 28a:1",
+        "Moed Katan 28a:2",
+        "Moed Katan 28a:3",
+        "Moed Katan 28a:4"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000097",
+      "core_refs": [
+        "Moed Katan 28a:5",
+        "Moed Katan 28a:6",
+        "Moed Katan 28a:7",
+        "Moed Katan 28a:8",
+        "Moed Katan 28a:9",
+        "Moed Katan 28a:10",
+        "Moed Katan 28a:11",
+        "Moed Katan 28a:12",
+        "Moed Katan 28a:13",
+        "Moed Katan 28a:14"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000098",
+      "core_refs": [
+        "Moed Katan 28a:15",
+        "Moed Katan 28a:16",
+        "Moed Katan 28a:17",
+        "Moed Katan 28a:18",
+        "Moed Katan 28a:19",
+        "Moed Katan 28a:20",
+        "Moed Katan 28a:21",
+        "Moed Katan 28a:22",
+        "Moed Katan 28a:23",
+        "Moed Katan 28a:24"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 0.2912621359223301,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000102",
+      "core_refs": [
+        "Moed Katan 29a:2",
+        "Moed Katan 29a:3",
+        "Moed Katan 29a:4",
+        "Moed Katan 29a:5",
+        "Moed Katan 29a:6",
+        "Moed Katan 29a:7"
+      ],
+      "inclusion_probability": 0.2912621359223301,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Moed Katan/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Moed Katan"
+}

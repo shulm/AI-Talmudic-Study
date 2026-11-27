@@ -1,0 +1,904 @@
+{
+  "artifact_kind": "neutral_source_only_review_job_not_a_reading",
+  "blindness_policy": "Fresh source-only context required; infrastructure verification is not independent semantic reading.",
+  "common_documents": [
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    }
+  ],
+  "completed_readings": 0,
+  "context_expansions": [],
+  "counts": {
+    "endpoint_added_blocks": 2,
+    "endpoint_added_core_segments": 13,
+    "endpoint_blocks": 2,
+    "endpoint_core_segments": 13,
+    "endpoint_overlap_blocks": 0,
+    "endpoint_overlap_core_segments": 0,
+    "probability_blocks": 38,
+    "probability_core_segments": 380,
+    "source_nonempty_segments": 3783,
+    "source_segment_positions": 3783,
+    "union_blocks": 40,
+    "union_core_segments": 393
+  },
+  "frozen_plan": {
+    "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_menachot.json",
+    "sha256": "80d13ef0d12d42139ca6a06f9f519600bf3095e559cfaeea2c943efab0b9a804"
+  },
+  "instructions": "Read selected cores and full relevant original continuations. Freeze source-anchored substantive findings before any producer comparison. Keep probability, endpoint, overlap, and context-expansion denominators separate.",
+  "job_id": "bavli_menachot",
+  "original_frozen_plan": {
+    "path": "C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_plans/bavli_menachot.json",
+    "sha256": "80d13ef0d12d42139ca6a06f9f519600bf3095e559cfaeea2c943efab0b9a804"
+  },
+  "original_source_schema": {
+    "path": "F:/Sefaria-Export-master/schemas/Menachot.json",
+    "sha256": "addceaa68b4edc9eb95591e9932753b1856907c19783791e49d61bc9c2d4b59c"
+  },
+  "plan_sha256": "d99056ecf3a088bc68ee81b833a62fa70dee37623db02d13a7959152cb2c858b",
+  "producer_annotations_included": false,
+  "risk_review": "NOT_SELECTED_OR_PERFORMED",
+  "run_id": "run_20261125_01",
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 379,
+    "inclusion_probability_denominator": 379,
+    "inclusion_probability_numerator": 38,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "probability_sample_block_ids": [
+      "block_000001",
+      "block_000015",
+      "block_000030",
+      "block_000061",
+      "block_000089",
+      "block_000110",
+      "block_000114",
+      "block_000117",
+      "block_000132",
+      "block_000160",
+      "block_000161",
+      "block_000177",
+      "block_000188",
+      "block_000200",
+      "block_000212",
+      "block_000248",
+      "block_000254",
+      "block_000262",
+      "block_000278",
+      "block_000281",
+      "block_000283",
+      "block_000285",
+      "block_000290",
+      "block_000293",
+      "block_000294",
+      "block_000297",
+      "block_000298",
+      "block_000300",
+      "block_000303",
+      "block_000307",
+      "block_000311",
+      "block_000327",
+      "block_000335",
+      "block_000337",
+      "block_000339",
+      "block_000342",
+      "block_000347",
+      "block_000364"
+    ],
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "sampled_blocks": 38
+  },
+  "seed": 20261125,
+  "selected_blocks": [
+    {
+      "block_id": "block_000000",
+      "core_refs": [
+        "Menachot 2a:1",
+        "Menachot 2a:2",
+        "Menachot 2a:3",
+        "Menachot 2a:4",
+        "Menachot 2a:5",
+        "Menachot 2a:6",
+        "Menachot 2a:7",
+        "Menachot 2b:1",
+        "Menachot 2b:2",
+        "Menachot 2b:3"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "opening_check"
+      ]
+    },
+    {
+      "block_id": "block_000001",
+      "core_refs": [
+        "Menachot 2b:4",
+        "Menachot 2b:5",
+        "Menachot 2b:6",
+        "Menachot 2b:7",
+        "Menachot 2b:8",
+        "Menachot 2b:9",
+        "Menachot 2b:10",
+        "Menachot 2b:11",
+        "Menachot 2b:12",
+        "Menachot 2b:13"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000015",
+      "core_refs": [
+        "Menachot 6a:7",
+        "Menachot 6a:8",
+        "Menachot 6a:9",
+        "Menachot 6a:10",
+        "Menachot 6a:11",
+        "Menachot 6a:12",
+        "Menachot 6a:13",
+        "Menachot 6a:14",
+        "Menachot 6a:15",
+        "Menachot 6a:16"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000030",
+      "core_refs": [
+        "Menachot 10a:2",
+        "Menachot 10a:3",
+        "Menachot 10a:4",
+        "Menachot 10a:5",
+        "Menachot 10a:6",
+        "Menachot 10a:7",
+        "Menachot 10a:8",
+        "Menachot 10a:9",
+        "Menachot 10a:10",
+        "Menachot 10a:11"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000061",
+      "core_refs": [
+        "Menachot 19a:12",
+        "Menachot 19a:13",
+        "Menachot 19a:14",
+        "Menachot 19a:15",
+        "Menachot 19a:16",
+        "Menachot 19a:17",
+        "Menachot 19a:18",
+        "Menachot 19a:19",
+        "Menachot 19a:20",
+        "Menachot 19a:21"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000089",
+      "core_refs": [
+        "Menachot 27a:24",
+        "Menachot 27a:25",
+        "Menachot 27a:26",
+        "Menachot 27a:27",
+        "Menachot 27a:28",
+        "Menachot 27a:29",
+        "Menachot 27a:30",
+        "Menachot 27a:31",
+        "Menachot 27b:1",
+        "Menachot 27b:2"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000110",
+      "core_refs": [
+        "Menachot 34a:9",
+        "Menachot 34a:10",
+        "Menachot 34a:11",
+        "Menachot 34a:12",
+        "Menachot 34a:13",
+        "Menachot 34a:14",
+        "Menachot 34a:15",
+        "Menachot 34a:16",
+        "Menachot 34a:17",
+        "Menachot 34b:1"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000114",
+      "core_refs": [
+        "Menachot 35b:6",
+        "Menachot 35b:7",
+        "Menachot 35b:8",
+        "Menachot 35b:9",
+        "Menachot 35b:10",
+        "Menachot 36a:1",
+        "Menachot 36a:2",
+        "Menachot 36a:3",
+        "Menachot 36a:4",
+        "Menachot 36a:5"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000117",
+      "core_refs": [
+        "Menachot 37a:6",
+        "Menachot 37a:7",
+        "Menachot 37a:8",
+        "Menachot 37b:1",
+        "Menachot 37b:2",
+        "Menachot 37b:3",
+        "Menachot 37b:4",
+        "Menachot 37b:5",
+        "Menachot 37b:6",
+        "Menachot 37b:7"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000132",
+      "core_refs": [
+        "Menachot 42a:21",
+        "Menachot 42a:22",
+        "Menachot 42a:23",
+        "Menachot 42b:1",
+        "Menachot 42b:2",
+        "Menachot 42b:3",
+        "Menachot 42b:4",
+        "Menachot 42b:5",
+        "Menachot 42b:6",
+        "Menachot 42b:7"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000160",
+      "core_refs": [
+        "Menachot 49b:1",
+        "Menachot 49b:2",
+        "Menachot 49b:3",
+        "Menachot 49b:4",
+        "Menachot 49b:5",
+        "Menachot 49b:6",
+        "Menachot 49b:7",
+        "Menachot 49b:8",
+        "Menachot 49b:9",
+        "Menachot 49b:10"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000161",
+      "core_refs": [
+        "Menachot 49b:11",
+        "Menachot 49b:12",
+        "Menachot 50a:1",
+        "Menachot 50a:2",
+        "Menachot 50a:3",
+        "Menachot 50a:4",
+        "Menachot 50a:5",
+        "Menachot 50a:6",
+        "Menachot 50a:7",
+        "Menachot 50a:8"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000177",
+      "core_refs": [
+        "Menachot 53b:15",
+        "Menachot 53b:16",
+        "Menachot 53b:17",
+        "Menachot 53b:18",
+        "Menachot 54a:1",
+        "Menachot 54a:2",
+        "Menachot 54a:3",
+        "Menachot 54a:4",
+        "Menachot 54a:5",
+        "Menachot 54a:6"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000188",
+      "core_refs": [
+        "Menachot 57b:3",
+        "Menachot 57b:4",
+        "Menachot 57b:5",
+        "Menachot 57b:6",
+        "Menachot 57b:7",
+        "Menachot 57b:8",
+        "Menachot 57b:9",
+        "Menachot 57b:10",
+        "Menachot 57b:11",
+        "Menachot 57b:12"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000200",
+      "core_refs": [
+        "Menachot 60b:15",
+        "Menachot 60b:16",
+        "Menachot 60b:17",
+        "Menachot 60b:18",
+        "Menachot 60b:19",
+        "Menachot 60b:20",
+        "Menachot 60b:21",
+        "Menachot 60b:22",
+        "Menachot 60b:23",
+        "Menachot 61a:1"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000212",
+      "core_refs": [
+        "Menachot 64a:20",
+        "Menachot 64b:1",
+        "Menachot 64b:2",
+        "Menachot 64b:3",
+        "Menachot 64b:4",
+        "Menachot 64b:5",
+        "Menachot 64b:6",
+        "Menachot 64b:7",
+        "Menachot 64b:8",
+        "Menachot 64b:9"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000248",
+      "core_refs": [
+        "Menachot 75b:1",
+        "Menachot 75b:2",
+        "Menachot 75b:3",
+        "Menachot 75b:4",
+        "Menachot 75b:5",
+        "Menachot 75b:6",
+        "Menachot 75b:7",
+        "Menachot 75b:8",
+        "Menachot 75b:9",
+        "Menachot 75b:10"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000254",
+      "core_refs": [
+        "Menachot 77b:1",
+        "Menachot 77b:2",
+        "Menachot 77b:3",
+        "Menachot 77b:4",
+        "Menachot 77b:5",
+        "Menachot 77b:6",
+        "Menachot 77b:7",
+        "Menachot 77b:8",
+        "Menachot 77b:9",
+        "Menachot 77b:10"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000262",
+      "core_refs": [
+        "Menachot 79a:17",
+        "Menachot 79a:18",
+        "Menachot 79a:19",
+        "Menachot 79a:20",
+        "Menachot 79b:1",
+        "Menachot 79b:2",
+        "Menachot 79b:3",
+        "Menachot 79b:4",
+        "Menachot 79b:5",
+        "Menachot 79b:6"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000278",
+      "core_refs": [
+        "Menachot 84b:6",
+        "Menachot 84b:7",
+        "Menachot 84b:8",
+        "Menachot 84b:9",
+        "Menachot 84b:10",
+        "Menachot 84b:11",
+        "Menachot 84b:12",
+        "Menachot 84b:13",
+        "Menachot 84b:14",
+        "Menachot 84b:15"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000281",
+      "core_refs": [
+        "Menachot 85b:2",
+        "Menachot 85b:3",
+        "Menachot 85b:4",
+        "Menachot 85b:5",
+        "Menachot 85b:6",
+        "Menachot 85b:7",
+        "Menachot 85b:8",
+        "Menachot 85b:9",
+        "Menachot 85b:10",
+        "Menachot 85b:11"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000283",
+      "core_refs": [
+        "Menachot 86a:3",
+        "Menachot 86a:4",
+        "Menachot 86a:5",
+        "Menachot 86a:6",
+        "Menachot 86a:7",
+        "Menachot 86a:8",
+        "Menachot 86a:9",
+        "Menachot 86a:10",
+        "Menachot 86a:11",
+        "Menachot 86a:12"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000285",
+      "core_refs": [
+        "Menachot 86a:23",
+        "Menachot 86a:24",
+        "Menachot 86a:25",
+        "Menachot 86a:26",
+        "Menachot 86a:27",
+        "Menachot 86a:28",
+        "Menachot 86a:29",
+        "Menachot 86b:1",
+        "Menachot 86b:2",
+        "Menachot 86b:3"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000290",
+      "core_refs": [
+        "Menachot 87b:5",
+        "Menachot 87b:6",
+        "Menachot 87b:7",
+        "Menachot 87b:8",
+        "Menachot 87b:9",
+        "Menachot 87b:10",
+        "Menachot 87b:11",
+        "Menachot 87b:12",
+        "Menachot 87b:13",
+        "Menachot 87b:14"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000293",
+      "core_refs": [
+        "Menachot 88a:12",
+        "Menachot 88a:13",
+        "Menachot 88a:14",
+        "Menachot 88a:15",
+        "Menachot 88a:16",
+        "Menachot 88a:17",
+        "Menachot 88a:18",
+        "Menachot 88a:19",
+        "Menachot 88a:20",
+        "Menachot 88a:21"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000294",
+      "core_refs": [
+        "Menachot 88b:1",
+        "Menachot 88b:2",
+        "Menachot 88b:3",
+        "Menachot 88b:4",
+        "Menachot 88b:5",
+        "Menachot 88b:6",
+        "Menachot 88b:7",
+        "Menachot 88b:8",
+        "Menachot 88b:9",
+        "Menachot 88b:10"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000297",
+      "core_refs": [
+        "Menachot 89a:11",
+        "Menachot 89a:12",
+        "Menachot 89a:13",
+        "Menachot 89a:14",
+        "Menachot 89a:15",
+        "Menachot 89a:16",
+        "Menachot 89a:17",
+        "Menachot 89a:18",
+        "Menachot 89a:19",
+        "Menachot 89a:20"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000298",
+      "core_refs": [
+        "Menachot 89b:1",
+        "Menachot 89b:2",
+        "Menachot 89b:3",
+        "Menachot 89b:4",
+        "Menachot 89b:5",
+        "Menachot 89b:6",
+        "Menachot 89b:7",
+        "Menachot 89b:8",
+        "Menachot 89b:9",
+        "Menachot 89b:10"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000300",
+      "core_refs": [
+        "Menachot 90a:2",
+        "Menachot 90a:3",
+        "Menachot 90a:4",
+        "Menachot 90a:5",
+        "Menachot 90a:6",
+        "Menachot 90a:7",
+        "Menachot 90a:8",
+        "Menachot 90a:9",
+        "Menachot 90a:10",
+        "Menachot 90a:11"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000303",
+      "core_refs": [
+        "Menachot 90b:13",
+        "Menachot 90b:14",
+        "Menachot 90b:15",
+        "Menachot 91a:1",
+        "Menachot 91a:2",
+        "Menachot 91a:3",
+        "Menachot 91a:4",
+        "Menachot 91a:5",
+        "Menachot 91a:6",
+        "Menachot 91a:7"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000307",
+      "core_refs": [
+        "Menachot 91b:10",
+        "Menachot 91b:11",
+        "Menachot 91b:12",
+        "Menachot 91b:13",
+        "Menachot 91b:14",
+        "Menachot 91b:15",
+        "Menachot 91b:16",
+        "Menachot 91b:17",
+        "Menachot 91b:18",
+        "Menachot 91b:19"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000311",
+      "core_refs": [
+        "Menachot 92b:8",
+        "Menachot 92b:9",
+        "Menachot 92b:10",
+        "Menachot 92b:11",
+        "Menachot 92b:12",
+        "Menachot 92b:13",
+        "Menachot 92b:14",
+        "Menachot 92b:15",
+        "Menachot 92b:16",
+        "Menachot 92b:17"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000327",
+      "core_refs": [
+        "Menachot 97b:6",
+        "Menachot 97b:7",
+        "Menachot 97b:8",
+        "Menachot 97b:9",
+        "Menachot 97b:10",
+        "Menachot 97b:11",
+        "Menachot 97b:12",
+        "Menachot 97b:13",
+        "Menachot 97b:14",
+        "Menachot 97b:15"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000335",
+      "core_refs": [
+        "Menachot 99b:9",
+        "Menachot 99b:10",
+        "Menachot 99b:11",
+        "Menachot 99b:12",
+        "Menachot 99b:13",
+        "Menachot 99b:14",
+        "Menachot 99b:15",
+        "Menachot 99b:16",
+        "Menachot 99b:17",
+        "Menachot 99b:18"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000337",
+      "core_refs": [
+        "Menachot 100a:8",
+        "Menachot 100a:9",
+        "Menachot 100a:10",
+        "Menachot 100a:11",
+        "Menachot 100a:12",
+        "Menachot 100a:13",
+        "Menachot 100a:14",
+        "Menachot 100a:15",
+        "Menachot 100a:16",
+        "Menachot 100a:17"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000339",
+      "core_refs": [
+        "Menachot 100b:9",
+        "Menachot 100b:10",
+        "Menachot 100b:11",
+        "Menachot 100b:12",
+        "Menachot 100b:13",
+        "Menachot 100b:14",
+        "Menachot 101a:1",
+        "Menachot 101a:2",
+        "Menachot 101a:3",
+        "Menachot 101a:4"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000342",
+      "core_refs": [
+        "Menachot 101b:8",
+        "Menachot 101b:9",
+        "Menachot 101b:10",
+        "Menachot 101b:11",
+        "Menachot 101b:12",
+        "Menachot 101b:13",
+        "Menachot 101b:14",
+        "Menachot 101b:15",
+        "Menachot 101b:16",
+        "Menachot 101b:17"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000347",
+      "core_refs": [
+        "Menachot 102b:17",
+        "Menachot 102b:18",
+        "Menachot 102b:19",
+        "Menachot 102b:20",
+        "Menachot 102b:21",
+        "Menachot 103a:1",
+        "Menachot 103a:2",
+        "Menachot 103a:3",
+        "Menachot 103a:4",
+        "Menachot 103a:5"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000364",
+      "core_refs": [
+        "Menachot 107a:16",
+        "Menachot 107a:17",
+        "Menachot 107a:18",
+        "Menachot 107a:19",
+        "Menachot 107a:20",
+        "Menachot 107a:21",
+        "Menachot 107b:1",
+        "Menachot 107b:2",
+        "Menachot 107b:3",
+        "Menachot 107b:4"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 0.10026385224274406,
+      "roles": [
+        "probability_sample"
+      ]
+    },
+    {
+      "block_id": "block_000378",
+      "core_refs": [
+        "Menachot 110a:22",
+        "Menachot 110a:23",
+        "Menachot 110a:24"
+      ],
+      "inclusion_probability": 0.10026385224274406,
+      "review_union_inclusion_probability": 1.0,
+      "roles": [
+        "closing_check"
+      ]
+    }
+  ],
+  "source": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Kodashim/Menachot/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "a785012ce1fdc713618bd37ef58e8141efd38e18f72e854d6535b3d8ea20dc30"
+  },
+  "status": "PENDING_SOURCE_FIRST_READING",
+  "tractate": "Menachot"
+}

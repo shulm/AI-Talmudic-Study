@@ -1,0 +1,3616 @@
+{
+  "review_id": "l02_l04_source_first_initial",
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/review_l02_l04",
+    "model_id": null
+  },
+  "status": "AI provisional independent source-first findings; no producer comparison yet",
+  "method": {
+    "source_manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+    "offsets": "Python Unicode codepoints, half-open, original markup retained",
+    "sampling": "Targeted opening windows and risk cohorts; no probability sample or complete-tractate claim",
+    "exposure": [
+      "AGENTS.md",
+      "AGENT_HANDOFF.md (required historical summaries; no findings in these windows)",
+      "production schema.json",
+      "production PROTOCOL.md",
+      "source manifest",
+      "directory filenames only; no lane/proposal/receipt/author contents"
+    ],
+    "prohibited_artifacts_read": false
+  },
+  "sources": {
+    "Taanit": {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Taanit\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+      "edition": {
+        "language": "he",
+        "title": "Taanit",
+        "versionSource": "http://he.wikisource.org/wiki/%D7%AA%D7%9C%D7%9E%D7%95%D7%93_%D7%91%D7%91%D7%9C%D7%99",
+        "versionTitle": "Wikisource Talmud Bavli",
+        "status": "locked",
+        "license": "CC-BY-SA",
+        "versionTitleInHebrew": "תלמוד בבלי (ויקיטקסט)",
+        "actualLanguage": "he",
+        "languageFamilyName": "hebrew",
+        "isSource": true,
+        "isPrimary": true,
+        "direction": "rtl",
+        "heTitle": "תענית",
+        "categories": [
+          "Talmud",
+          "Bavli",
+          "Seder Moed"
+        ],
+        "sectionNames": [
+          "Daf",
+          "Line"
+        ]
+      }
+    },
+    "Bava Metzia": {
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Bava Metzia\\Hebrew\\Wikisource Talmud Bavli.json",
+      "sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
+      "edition": {
+        "language": "he",
+        "title": "Bava Metzia",
+        "versionSource": "http://he.wikisource.org/wiki/%D7%AA%D7%9C%D7%9E%D7%95%D7%93_%D7%91%D7%91%D7%9C%D7%99",
+        "versionTitle": "Wikisource Talmud Bavli",
+        "status": "locked",
+        "license": "CC-BY-SA",
+        "versionTitleInHebrew": "תלמוד בבלי (ויקיטקסט)",
+        "actualLanguage": "he",
+        "languageFamilyName": "hebrew",
+        "isSource": true,
+        "isPrimary": true,
+        "direction": "rtl",
+        "heTitle": "בבא מציעא",
+        "categories": [
+          "Talmud",
+          "Bavli",
+          "Seder Nezikin"
+        ],
+        "sectionNames": [
+          "Daf",
+          "Line"
+        ]
+      }
+    }
+  },
+  "windows": [
+    {
+      "tractate": "Bava Metzia",
+      "core_refs": [
+        "Bava Metzia 2a:1",
+        "Bava Metzia 2a:2",
+        "Bava Metzia 2a:3",
+        "Bava Metzia 2a:4",
+        "Bava Metzia 2a:5",
+        "Bava Metzia 2a:6",
+        "Bava Metzia 2a:7",
+        "Bava Metzia 2a:8",
+        "Bava Metzia 2a:9",
+        "Bava Metzia 2a:10",
+        "Bava Metzia 2a:11",
+        "Bava Metzia 2a:12",
+        "Bava Metzia 2b:1",
+        "Bava Metzia 2b:2",
+        "Bava Metzia 2b:3"
+      ],
+      "context_refs_read": [
+        "Bava Metzia 2b:4",
+        "Bava Metzia 2b:5",
+        "Bava Metzia 2b:6",
+        "Bava Metzia 2b:7",
+        "Bava Metzia 2b:8",
+        "Bava Metzia 2b:9",
+        "Bava Metzia 2b:10",
+        "Bava Metzia 2b:11",
+        "Bava Metzia 2b:12",
+        "Bava Metzia 2b:13",
+        "Bava Metzia 2b:14",
+        "Bava Metzia 3a:1",
+        "Bava Metzia 3a:2",
+        "Bava Metzia 3a:3",
+        "Bava Metzia 3a:4",
+        "Bava Metzia 3a:5",
+        "Bava Metzia 3a:6",
+        "Bava Metzia 3a:7",
+        "Bava Metzia 3a:8",
+        "Bava Metzia 3a:9",
+        "Bava Metzia 3a:10",
+        "Bava Metzia 3a:11",
+        "Bava Metzia 3a:12",
+        "Bava Metzia 3a:13",
+        "Bava Metzia 3a:14",
+        "Bava Metzia 3a:15",
+        "Bava Metzia 3a:16",
+        "Bava Metzia 3a:17",
+        "Bava Metzia 3a:18",
+        "Bava Metzia 3b:1",
+        "Bava Metzia 3b:2",
+        "Bava Metzia 3b:3",
+        "Bava Metzia 3b:4",
+        "Bava Metzia 3b:5",
+        "Bava Metzia 3b:6",
+        "Bava Metzia 3b:7",
+        "Bava Metzia 3b:8",
+        "Bava Metzia 3b:9",
+        "Bava Metzia 3b:10",
+        "Bava Metzia 3b:11",
+        "Bava Metzia 3b:12",
+        "Bava Metzia 3b:13",
+        "Bava Metzia 3b:14"
+      ],
+      "boundary": "open_right: core ends before subsequent discussion of Mishnah is complete"
+    },
+    {
+      "tractate": "Taanit",
+      "core_refs": [
+        "Taanit 2a:1",
+        "Taanit 2a:2",
+        "Taanit 2a:3",
+        "Taanit 2a:4",
+        "Taanit 2a:5",
+        "Taanit 2a:6",
+        "Taanit 2a:7",
+        "Taanit 2a:8",
+        "Taanit 2a:9",
+        "Taanit 2a:10",
+        "Taanit 2a:11",
+        "Taanit 2a:12",
+        "Taanit 2a:13",
+        "Taanit 2b:1",
+        "Taanit 2b:2"
+      ],
+      "context_refs_read": [
+        "Taanit 2b:3",
+        "Taanit 2b:4",
+        "Taanit 2b:5",
+        "Taanit 2b:6",
+        "Taanit 2b:7",
+        "Taanit 2b:8",
+        "Taanit 2b:9",
+        "Taanit 2b:10",
+        "Taanit 2b:11",
+        "Taanit 2b:12",
+        "Taanit 2b:13",
+        "Taanit 2b:14",
+        "Taanit 2b:15",
+        "Taanit 2b:16",
+        "Taanit 2b:17",
+        "Taanit 3a:1",
+        "Taanit 3a:2",
+        "Taanit 3a:3",
+        "Taanit 3a:4",
+        "Taanit 3a:5",
+        "Taanit 3a:6",
+        "Taanit 3a:7",
+        "Taanit 3a:8",
+        "Taanit 3a:9",
+        "Taanit 3a:10",
+        "Taanit 3a:11",
+        "Taanit 3a:12",
+        "Taanit 3a:13",
+        "Taanit 3a:14",
+        "Taanit 3b:1",
+        "Taanit 3b:2",
+        "Taanit 3b:3",
+        "Taanit 3b:4",
+        "Taanit 3b:5",
+        "Taanit 3b:6",
+        "Taanit 3b:7",
+        "Taanit 3b:8",
+        "Taanit 3b:9",
+        "Taanit 3b:10",
+        "Taanit 3b:11",
+        "Taanit 3b:12",
+        "Taanit 3b:13"
+      ],
+      "boundary": "open_right: core ends before subsequent discussion of Mishnah is complete"
+    }
+  ],
+  "records": [
+    {
+      "id": "BM2a.1.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:1",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.1.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:1",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.2.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:2",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "זה אומר כולה שלי וזה אומר חציה שלי האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים והאומר חציה שלי ישבע שאין לו בה פחות מרביע זה נוטל שלשה חלקים וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.2.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:2",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "זה אומר כולה שלי וזה אומר חציה שלי האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים והאומר חציה שלי ישבע שאין לו בה פחות מרביע זה נוטל שלשה חלקים וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.3.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:3",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "היו שנים רוכבין על גבי בהמה או שהיה אחד רוכב ואחד מנהיג זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.3.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:3",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "היו שנים רוכבין על גבי בהמה או שהיה אחד רוכב ואחד מנהיג זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.4.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.4.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.5.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:5",
+          "start_char": 0,
+          "end_char": 196,
+          "quote": "<big><strong>גמ׳</strong></big> למה לי למתנא זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי ליתני חדא חדא קתני זה אומר אני מצאתיה וכולה שלי וזה אומר אני מצאתיה וכולה שלי"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.5.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:5",
+          "start_char": 0,
+          "end_char": 196,
+          "quote": "<big><strong>גמ׳</strong></big> למה לי למתנא זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי ליתני חדא חדא קתני זה אומר אני מצאתיה וכולה שלי וזה אומר אני מצאתיה וכולה שלי"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.6.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:6",
+          "start_char": 0,
+          "end_char": 147,
+          "quote": "וליתני אני מצאתיה ואנא ידענא דכולה שלי אי תנא אני מצאתיה הוה אמינא מאי מצאתיה ראיתיה אע\"ג דלא אתאי לידיה בראיה בעלמא קני תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.6.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:6",
+          "start_char": 0,
+          "end_char": 147,
+          "quote": "וליתני אני מצאתיה ואנא ידענא דכולה שלי אי תנא אני מצאתיה הוה אמינא מאי מצאתיה ראיתיה אע\"ג דלא אתאי לידיה בראיה בעלמא קני תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.7.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:7",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "ומי מצית אמרת מאי מצאתיה ראיתיה והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.7.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:7",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "ומי מצית אמרת מאי מצאתיה ראיתיה והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.8.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:8",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.8.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:8",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.9.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:9",
+          "start_char": 0,
+          "end_char": 162,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה אי תני כולה שלי הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני תנא אני מצאתיה והדר תנא כולה שלי דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.9.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:9",
+          "start_char": 0,
+          "end_char": 162,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה אי תני כולה שלי הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני תנא אני מצאתיה והדר תנא כולה שלי דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.10.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:10",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ומי מצית אמרת חדא קתני והא זה וזה קתני זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וכו'"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.10.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:10",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ומי מצית אמרת חדא קתני והא זה וזה קתני זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וכו'"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.11.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:11",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.11.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:11",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.12.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:12",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2a.12.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:12",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2b.1.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:1",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2b.1.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:1",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2b.2.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:2",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2b.2.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:2",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2b.3.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:3",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "BM2b.3.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:3",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.1.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> מזכירין גבורות גשמים רבי אליעזר אומר מיום טוב הראשון של חג ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.1.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> מזכירין גבורות גשמים רבי אליעזר אומר מיום טוב הראשון של חג ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.2.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.2.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.3.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:3",
+          "start_char": 0,
+          "end_char": 168,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים ר' יהודה אומר העובר לפני התיבה ביו\"ט האחרון של חג האחרון מזכיר הראשון אינו מזכיר ביו\"ט הראשון של פסח הראשון מזכיר האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.3.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:3",
+          "start_char": 0,
+          "end_char": 168,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים ר' יהודה אומר העובר לפני התיבה ביו\"ט האחרון של חג האחרון מזכיר הראשון אינו מזכיר ביו\"ט הראשון של פסח הראשון מזכיר האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.4.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:4",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "<big><strong>גמ׳</strong></big> תנא היכא קאי דקתני מאימתי תנא התם קאי"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.4.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:4",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "<big><strong>גמ׳</strong></big> תנא היכא קאי דקתני מאימתי תנא התם קאי"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.5.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:5",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "דקתני מזכירין גבורות גשמים בתחיית המתים ושואלין בברכת השנים והבדלה בחונן הדעת וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.5.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:5",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "דקתני מזכירין גבורות גשמים בתחיית המתים ושואלין בברכת השנים והבדלה בחונן הדעת וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.6.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:6",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "וליתני התם מ\"ש דשבקיה עד הכא"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.6.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:6",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "וליתני התם מ\"ש דשבקיה עד הכא"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.7.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:7",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.7.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:7",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.8.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:8",
+          "start_char": 0,
+          "end_char": 201,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים א\"ר יוחנן מפני שיורדין בגבורה שנאמר (איוב ה, ט) עושה גדולות עד אין חקר ונפלאות עד אין מספר וכתיב (איוב ה, י) הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.8.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:8",
+          "start_char": 0,
+          "end_char": 201,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים א\"ר יוחנן מפני שיורדין בגבורה שנאמר (איוב ה, ט) עושה גדולות עד אין חקר ונפלאות עד אין מספר וכתיב (איוב ה, י) הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.9.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:9",
+          "start_char": 0,
+          "end_char": 53,
+          "quote": "מאי משמע אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.9.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:9",
+          "start_char": 0,
+          "end_char": 53,
+          "quote": "מאי משמע אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.10.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:10",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.10.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:10",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.11.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:11",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.11.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:11",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.12.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:12",
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "אמר ר' יוחנן ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח ואלו הן מפתח של גשמים מפתח של חיה מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.12.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:12",
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "אמר ר' יוחנן ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח ואלו הן מפתח של גשמים מפתח של חיה מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.13.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:13",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מפתח של גשמים דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו מפתח של חיה מנין דכתיב ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2a.13.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:13",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מפתח של גשמים דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו מפתח של חיה מנין דכתיב ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2b.1.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:1",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2b.1.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:1",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2b.2.structure",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "title": "Original segment within opening sugya",
+        "primary": true,
+        "boundary": "open_both",
+        "legacy_ids": []
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "TA2b.2.utterance",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "textual_voice": "Mishnah, named authorities and/or anonymous discourse as separately annotated",
+        "discourse_role": "source segment; see atomic findings",
+        "composition": "composite"
+      },
+      "origin": "editorial_inference",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.equal",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:1",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "proposition": "Each claimant swears to owning at least half; divide equally",
+        "conditions": [
+          "Both hold garment",
+          "Each claims whole"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.unequal",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:2",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "זה אומר כולה שלי וזה אומר חציה שלי האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים והאומר חציה שלי ישבע שאין לו בה פחות מרביע זה נוטל שלשה חלקים וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "proposition": "Whole-claimant swears at least three quarters and takes three quarters; half-claimant swears at least quarter and takes quarter",
+        "conditions": [
+          "Both hold garment",
+          "One claims whole; other half"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.animal",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:3",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "היו שנים רוכבין על גבי בהמה או שהיה אחד רוכב ואחד מנהיג זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "proposition": "Both swear to at least half and divide",
+        "conditions": [
+          "Two riders OR rider and leader",
+          "Each claims whole animal"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.nooath",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "proposition": "Divide without oath",
+        "conditions": [
+          "Agreement OR witnesses"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.p.equal",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:1",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "anonymous Mishnah"
+        ],
+        "claim_id": "bm.equal",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.equal"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.p.unequal",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:2",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "זה אומר כולה שלי וזה אומר חציה שלי האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים והאומר חציה שלי ישבע שאין לו בה פחות מרביע זה נוטל שלשה חלקים וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "anonymous Mishnah"
+        ],
+        "claim_id": "bm.unequal",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.unequal"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.p.animal",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:3",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "היו שנים רוכבין על גבי בהמה או שהיה אחד רוכב ואחד מנהיג זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "anonymous Mishnah"
+        ],
+        "claim_id": "bm.animal",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.animal"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.p.nooath",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "anonymous Mishnah"
+        ],
+        "claim_id": "bm.nooath",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.nooath"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.dup.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:5",
+          "start_char": 32,
+          "end_char": 128,
+          "quote": "למה לי למתנא זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי ליתני חדא"
+        }
+      ],
+      "content": {
+        "formulation": "Why repeat found it and all mine?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.single",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:5",
+          "start_char": 129,
+          "end_char": 196,
+          "quote": "חדא קתני זה אומר אני מצאתיה וכולה שלי וזה אומר אני מצאתיה וכולה שלי"
+        }
+      ],
+      "content": {
+        "proposition": "Found it and all mine form one combined claim",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "rejected"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.single.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:5",
+          "start_char": 0,
+          "end_char": 196,
+          "quote": "<big><strong>גמ׳</strong></big> למה לי למתנא זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי ליתני חדא חדא קתני זה אומר אני מצאתיה וכולה שלי וזה אומר אני מצאתיה וכולה שלי"
+        }
+      ],
+      "content": {
+        "source_id": "bm.single",
+        "target_id": "bm.dup.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.single",
+        "bm.dup.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.found.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:6",
+          "start_char": 0,
+          "end_char": 38,
+          "quote": "וליתני אני מצאתיה ואנא ידענא דכולה שלי"
+        }
+      ],
+      "content": {
+        "formulation": "Why not teach only found it?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.sight",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:6",
+          "start_char": 121,
+          "end_char": 147,
+          "quote": "תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "proposition": "All mine prevents inference that seeing alone acquires",
+        "conditions": [
+          "Found it could colloquially mean saw it"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.sight.hyp",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:6",
+          "start_char": 105,
+          "end_char": 120,
+          "quote": "בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "proposition": "Seeing alone acquires",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.rabnai.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:7",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "ומי מצית אמרת מאי מצאתיה ראיתיה והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "formulation": "Can found it mean saw it given Rabnai’s scriptural interpretation?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.rabnai",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:7",
+          "start_char": 60,
+          "end_char": 83,
+          "quote": "ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "proposition": "Scriptural found it means came into his possession",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.rabnai.attr",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:7",
+          "start_char": 40,
+          "end_char": 45,
+          "quote": "רבנאי"
+        }
+      ],
+      "content": {
+        "surface": "רבנאי",
+        "role": "quoted_authority",
+        "candidates": [
+          "Rabnai"
+        ],
+        "scope": "bm.rabnai",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.colloquial",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:8",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "proposition": "Scriptural usage requires possession; Mishnah may use ordinary speech saw/found; seeing does not acquire",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.colloquial.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:8",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.colloquial",
+        "target_id": "bm.rabnai.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.colloquial",
+        "bm.rabnai.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.whole.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:9",
+          "start_char": 0,
+          "end_char": 34,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה"
+        }
+      ],
+      "content": {
+        "formulation": "Why not teach only all mine?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.redundancy",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:9",
+          "start_char": 0,
+          "end_char": 162,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה אי תני כולה שלי הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני תנא אני מצאתיה והדר תנא כולה שלי דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "proposition": "Redundant found it then all mine prevents interpreting other found-language as acquisition by sight",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.redundancy.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:9",
+          "start_char": 0,
+          "end_char": 162,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה אי תני כולה שלי הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני תנא אני מצאתיה והדר תנא כולה שלי דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "source_id": "bm.redundancy",
+        "target_id": "bm.whole.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.redundancy",
+        "bm.whole.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.single.objection",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:10",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ומי מצית אמרת חדא קתני והא זה וזה קתני זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וכו'"
+        }
+      ],
+      "content": {
+        "formulation": "Repeated this and this contradict treating the text as one combined clause",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.single.reject",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:10",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ומי מצית אמרת חדא קתני והא זה וזה קתני זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וכו'"
+        }
+      ],
+      "content": {
+        "source_id": "bm.single.objection",
+        "target_id": "bm.single",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.single.objection",
+        "bm.single"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.two.cases",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:11",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "proposition": "First clause concerns finding, latter buying/selling",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.alt.attr",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:11",
+          "start_char": 0,
+          "end_char": 46,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי"
+        }
+      ],
+      "content": {
+        "surface": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי",
+        "role": "speaker",
+        "candidates": [
+          "Rav Pappa",
+          "Rav Shimi bar Ashi",
+          "unattributed (כדי variant)"
+        ],
+        "scope": "bm.two.cases",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.two.pos",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:11",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rav Pappa",
+          "Rav Shimi bar Ashi",
+          "unattributed variant"
+        ],
+        "claim_id": "bm.two.cases",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "alternative reports; not three disagreeing positions"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.two.cases"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.two.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:11",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "source_id": "bm.two.cases",
+        "target_id": "bm.single.objection",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.two.cases",
+        "bm.single.objection"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.necessary",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2a:12",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        }
+      ],
+      "content": {
+        "proposition": "Both cases are necessary",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.find.need",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:1",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "proposition": "Finding-only might restrict oath to claimant rationalizing that friend lost nothing; purchase might otherwise lack oath",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.buy.need",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:2",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "proposition": "Purchase-only might restrict oath to claimant rationalizing both paid and friend can buy elsewhere; finding might otherwise lack oath",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.find.support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:1",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "source_id": "bm.find.need",
+        "target_id": "bm.necessary",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.find.need",
+        "bm.necessary"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.buy.support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:2",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "source_id": "bm.buy.need",
+        "target_id": "bm.necessary",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.buy.need",
+        "bm.necessary"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.money.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:3",
+          "start_char": 0,
+          "end_char": 29,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט"
+        }
+      ],
+      "content": {
+        "formulation": "Why not inspect whose payment the seller received?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.money.answer",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:3",
+          "start_char": 30,
+          "end_char": 116,
+          "quote": "לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "proposition": "Seller received payment from both, one willingly and one unwillingly, identity unknown",
+        "conditions": [
+          "Purchase case"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "bm.money.edge",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:3",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.money.answer",
+        "target_id": "bm.money.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "bm.money.answer",
+        "bm.money.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.start.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 19,
+          "end_char": 61,
+          "quote": "מאימתי</strong></big> מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "formulation": "When begin mentioning power of rain?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.el",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 62,
+          "end_char": 99,
+          "quote": "רבי אליעזר אומר מיום טוב הראשון של חג"
+        }
+      ],
+      "content": {
+        "proposition": "Begin first festival day",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.el.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> מזכירין גבורות גשמים רבי אליעזר אומר מיום טוב הראשון של חג ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Eliezer"
+        ],
+        "claim_id": "ta.el",
+        "question_id": "ta.start.q",
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.el",
+        "ta.start.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.el.a",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 62,
+          "end_char": 99,
+          "quote": "רבי אליעזר אומר מיום טוב הראשון של חג"
+        }
+      ],
+      "content": {
+        "surface": "רבי אליעזר אומר מיום טוב הראשון של חג",
+        "role": "position_holder",
+        "candidates": [
+          "Rabbi Eliezer"
+        ],
+        "scope": "ta.el",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.ye",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 100,
+          "end_char": 135,
+          "quote": "ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "proposition": "Begin last festival day",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.ye.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> מזכירין גבורות גשמים רבי אליעזר אומר מיום טוב הראשון של חג ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "claim_id": "ta.ye",
+        "question_id": "ta.start.q",
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.ye",
+        "ta.start.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.ye.a",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:1",
+          "start_char": 100,
+          "end_char": 135,
+          "quote": "ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "surface": "ר' יהושע אומר מיום טוב האחרון של חג",
+        "role": "position_holder",
+        "candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "scope": "ta.ye",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.curse.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 0,
+          "end_char": 65,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר"
+        }
+      ],
+      "content": {
+        "formulation": "Why mention rain when it is a curse during festival?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.mention",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 66,
+          "end_char": 144,
+          "quote": "אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו"
+        }
+      ],
+      "content": {
+        "proposition": "Mention wind/rain in its season, rather than petition for rain",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.mention.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Eliezer"
+        ],
+        "claim_id": "ta.mention",
+        "question_id": "ta.curse.q",
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.mention",
+        "ta.curse.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.mention.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "source_id": "ta.mention",
+        "target_id": "ta.curse.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.mention",
+        "ta.curse.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.always.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 145,
+          "end_char": 171,
+          "quote": "אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "formulation": "Then mention always?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.always.obj",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:2",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "source_id": "ta.always.q",
+        "target_id": "ta.mention",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.always.q",
+        "ta.mention"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.petition",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:3",
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים"
+        }
+      ],
+      "content": {
+        "proposition": "Petition only near rainy season",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.yehuda.autumn",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:3",
+          "start_char": 37,
+          "end_char": 117,
+          "quote": "ר' יהודה אומר העובר לפני התיבה ביו\"ט האחרון של חג האחרון מזכיר הראשון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "Latter prayer leader mentions; former does not",
+        "conditions": [
+          "Last festival day"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.yehuda.spring",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:3",
+          "start_char": 118,
+          "end_char": 168,
+          "quote": "ביו\"ט הראשון של פסח הראשון מזכיר האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "Former leader mentions; latter does not",
+        "conditions": [
+          "First day Pesach"
+        ],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.yehuda.autumn.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:3",
+          "start_char": 0,
+          "end_char": 168,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים ר' יהודה אומר העובר לפני התיבה ביו\"ט האחרון של חג האחרון מזכיר הראשון אינו מזכיר ביו\"ט הראשון של פסח הראשון מזכיר האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehuda"
+        ],
+        "claim_id": "ta.yehuda.autumn",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.yehuda.autumn"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.yehuda.spring.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:3",
+          "start_char": 0,
+          "end_char": 168,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים ר' יהודה אומר העובר לפני התיבה ביו\"ט האחרון של חג האחרון מזכיר הראשון אינו מזכיר ביו\"ט הראשון של פסח הראשון מזכיר האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehuda"
+        ],
+        "claim_id": "ta.yehuda.spring",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.yehuda.spring"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.location.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:4",
+          "start_char": 32,
+          "end_char": 57,
+          "quote": "תנא היכא קאי דקתני מאימתי"
+        }
+      ],
+      "content": {
+        "formulation": "What earlier teaching does when refer to?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.location.first",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:4",
+          "start_char": 58,
+          "end_char": 69,
+          "quote": "תנא התם קאי"
+        }
+      ],
+      "content": {
+        "proposition": "Refers to earlier liturgical Mishnah",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "rejected"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.liturgy",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:5",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "דקתני מזכירין גבורות גשמים בתחיית המתים ושואלין בברכת השנים והבדלה בחונן הדעת וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "proposition": "Rain-power in resurrection blessing, petition in years blessing, havdalah in knowledge blessing",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.liturgy.support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:5",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "דקתני מזכירין גבורות גשמים בתחיית המתים ושואלין בברכת השנים והבדלה בחונן הדעת וקתני מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.liturgy",
+        "target_id": "ta.location.first",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.liturgy",
+        "ta.location.first"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.delay.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:6",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "וליתני התם מ\"ש דשבקיה עד הכא"
+        }
+      ],
+      "content": {
+        "formulation": "Why defer when to here rather than there?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.delay.obj",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:6",
+          "start_char": 0,
+          "end_char": 28,
+          "quote": "וליתני התם מ\"ש דשבקיה עד הכא"
+        }
+      ],
+      "content": {
+        "source_id": "ta.delay.q",
+        "target_id": "ta.location.first",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.delay.q",
+        "ta.location.first"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.rh",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:7",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "proposition": "Continues Rosh Hashanah: judgment on water at festival motivates timing question",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.rh.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:7",
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "אלא תנא מראש השנה סליק דתנן ובחג נידונין על המים ואיידי דתנא ובחג נידונין על המים תנא מאימתי מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "source_id": "ta.rh",
+        "target_id": "ta.location.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.rh",
+        "ta.location.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.power.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:8",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים"
+        }
+      ],
+      "content": {
+        "formulation": "Why call rain powers?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.power",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:8",
+          "start_char": 49,
+          "end_char": 78,
+          "quote": "א\"ר יוחנן מפני שיורדין בגבורה"
+        }
+      ],
+      "content": {
+        "proposition": "Rain descends with might",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.power.attr",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:8",
+          "start_char": 51,
+          "end_char": 58,
+          "quote": "ר יוחנן"
+        }
+      ],
+      "content": {
+        "surface": "ר יוחנן",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "ta.power",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.power.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:8",
+          "start_char": 0,
+          "end_char": 201,
+          "quote": "וליתני מאימתי מזכירין על הגשמים מאי גבורות גשמים א\"ר יוחנן מפני שיורדין בגבורה שנאמר (איוב ה, ט) עושה גדולות עד אין חקר ונפלאות עד אין מספר וכתיב (איוב ה, י) הנותן מטר על פני ארץ ושולח מים על פני חוצות"
+        }
+      ],
+      "content": {
+        "source_id": "ta.power",
+        "target_id": "ta.power.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.power",
+        "ta.power.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.meaning.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:9",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "מאי משמע"
+        }
+      ],
+      "content": {
+        "formulation": "How does proof imply might?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.heqer",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:9",
+          "start_char": 9,
+          "end_char": 53,
+          "quote": "אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "proposition": "Derive via shared חקר with creation",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.heqer.attr",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:9",
+          "start_char": 13,
+          "end_char": 24,
+          "quote": "רבה בר שילא"
+        }
+      ],
+      "content": {
+        "surface": "רבה בר שילא",
+        "role": "speaker",
+        "candidates": [
+          "Rabbah bar Shila"
+        ],
+        "scope": "ta.heqer",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.heqer.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:9",
+          "start_char": 0,
+          "end_char": 53,
+          "quote": "מאי משמע אמר רבה בר שילא אתיא חקר חקר מברייתו של עולם"
+        }
+      ],
+      "content": {
+        "source_id": "ta.heqer",
+        "target_id": "ta.meaning.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.heqer",
+        "ta.meaning.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.heqer.proof",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:10",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "proposition": "Job/Isaiah חקר parallels and Psalms power/might support derivation",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.heqer.support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:10",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "כתיב הכא עושה גדולות עד אין חקר וכתיב התם (ישעיהו מ, כח) הלא ידעת אם לא שמעת אלהי עולם ה' בורא קצות הארץ לא ייעף ולא ייגע אין חקר לתבונתו וכתיב (תהלים סה, ז) מכין הרים בכחו נאזר בגבורה"
+        }
+      ],
+      "content": {
+        "source_id": "ta.heqer.proof",
+        "target_id": "ta.heqer",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.heqer.proof",
+        "ta.heqer"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.prayer.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:11",
+          "start_char": 0,
+          "end_char": 14,
+          "quote": "ומנא לן דבתפלה"
+        }
+      ],
+      "content": {
+        "formulation": "Whence placement in prayer?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.heart",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:11",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "proposition": "Service of heart is prayer; adjacent verse gives rain",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.heart.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:11",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "ומנא לן דבתפלה דתניא (דברים יא, יג) לאהבה את ה' אלהיכם ולעבדו בכל לבבכם איזו היא עבודה שהיא בלב הוי אומר זו תפלה וכתיב בתריה (דברים יא, יד) ונתתי מטר ארצכם בעתו יורה ומלקוש"
+        }
+      ],
+      "content": {
+        "source_id": "ta.heart",
+        "target_id": "ta.prayer.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.heart",
+        "ta.prayer.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.keys",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:12",
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "אמר ר' יוחנן ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח ואלו הן מפתח של גשמים מפתח של חיה מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "proposition": "Three keys retained by God and not handed to agent: rain, childbirth, resurrection",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.keys.attr",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:12",
+          "start_char": 0,
+          "end_char": 12,
+          "quote": "אמר ר' יוחנן"
+        }
+      ],
+      "content": {
+        "surface": "אמר ר' יוחנן",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "ta.keys",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.keys.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:12",
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "אמר ר' יוחנן ג' מפתחות בידו של הקב\"ה שלא נמסרו ביד שליח ואלו הן מפתח של גשמים מפתח של חיה מפתח של תחיית המתים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "ta.keys",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.keys"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.rain.proof",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:13",
+          "start_char": 0,
+          "end_char": 86,
+          "quote": "מפתח של גשמים דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו"
+        }
+      ],
+      "content": {
+        "proposition": "God opening heavenly store proves rain key",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.birth.proof",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:13",
+          "start_char": 87,
+          "end_char": 135,
+          "quote": "מפתח של חיה מנין דכתיב ויזכור אלהים את רחל וישמע"
+        },
+        {
+          "segment_id": "Taanit 2b:1",
+          "start_char": 0,
+          "end_char": 24,
+          "quote": "אליה אלהים ויפתח את רחמה"
+        }
+      ],
+      "content": {
+        "proposition": "Rachel womb-opening proves childbirth key; quotation continues across daf",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.resur.proof",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:1",
+          "start_char": 25,
+          "end_char": 106,
+          "quote": "מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "proposition": "Opening graves proves resurrection key",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.rain.support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:13",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מפתח של גשמים דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו מפתח של חיה מנין דכתיב ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "source_id": "ta.rain.proof",
+        "target_id": "ta.keys",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.rain.proof",
+        "ta.keys"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.birth.support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2a:13",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מפתח של גשמים דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב את השמים לתת מטר ארצך בעתו מפתח של חיה מנין דכתיב ויזכור אלהים את רחל וישמע"
+        }
+      ],
+      "content": {
+        "source_id": "ta.birth.proof",
+        "target_id": "ta.keys",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.birth.proof",
+        "ta.keys"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.resur.support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:1",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אליה אלהים ויפתח את רחמה מפתח של תחיית המתים מנין דכתיב (יחזקאל לז, יג) וידעתם כי אני ה' בפתחי את קברותיכם"
+        }
+      ],
+      "content": {
+        "source_id": "ta.resur.proof",
+        "target_id": "ta.keys",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.resur.proof",
+        "ta.keys"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.sustenance",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 0,
+          "end_char": 67,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו'"
+        }
+      ],
+      "content": {
+        "proposition": "West adds key of livelihood with opening hand proof",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.west.attr",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 0,
+          "end_char": 11,
+          "quote": "במערבא אמרי"
+        }
+      ],
+      "content": {
+        "surface": "במערבא אמרי",
+        "role": "collective",
+        "candidates": [
+          "sages in West"
+        ],
+        "scope": "ta.sustenance",
+        "transmission_chain": []
+      },
+      "origin": "literal",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.sustenance.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "sages in West"
+        ],
+        "claim_id": "ta.sustenance",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "asserted locally"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.sustenance"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.sustenance.q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 68,
+          "end_char": 101,
+          "quote": "ור' יוחנן מאי טעמא לא קא חשיב להא"
+        }
+      ],
+      "content": {
+        "formulation": "Why did Yohanan not count livelihood?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.rainislivelihood",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 102,
+          "end_char": 127,
+          "quote": "אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "proposition": "Rain is livelihood",
+        "conditions": [],
+        "scope": "local passage",
+        "assertion_mode": "reconciled"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.rainislivelihood.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "ta.rainislivelihood",
+        "question_id": "ta.sustenance.q",
+        "conditions": [],
+        "local_status": "anonymous reconstructed reply for Yohanan, not directly reported speech"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.rainislivelihood",
+        "ta.sustenance.q"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ta.livelihood.answer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:2",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:"
+        }
+      ],
+      "content": {
+        "source_id": "ta.rainislivelihood",
+        "target_id": "ta.sustenance.q",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ta.rainislivelihood",
+        "ta.sustenance.q"
+      ],
+      "uncertainty": []
+    }
+  ],
+  "omission_pass": [
+    {
+      "scope": "Bava Metzia core",
+      "result": "Rich findings cover four Mishnah cases, tentative combined reading, lexical objection and resolution, revised two-case reading, reciprocal necessity and payment condition. No named interpersonal dispute follows from alternative attribution.",
+      "risks": [
+        "Anonymous litigant rationalizations are hypothetical, not endorsed permissions",
+        "Seeing-acquires is rejected hypothetical, not accepted ruling",
+        "כדי preserves unattributed variant; Rav Shimi bar Ashi is not Rav Ashi"
+      ]
+    },
+    {
+      "scope": "Bava Metzia context only",
+      "evidence": [
+        {
+          "segment_id": "Bava Metzia 2b:6",
+          "start_char": 0,
+          "end_char": 104,
+          "quote": "אפילו תימא בן ננס התם ודאי איכא שבועת שוא הכא איכא למימר דליכא שבועת שוא אימור דתרוייהו בהדי הדדי אגבהוה"
+        },
+        {
+          "segment_id": "Bava Metzia 3a:2",
+          "start_char": 0,
+          "end_char": 148,
+          "quote": "אפילו תימא סומכוס שבועה זו מדרבנן היא כדרבי יוחנן דאמר ר' יוחנן שבועה זו תקנת חכמים היא שלא יהא כל אחד ואחד הולך ותוקף בטליתו של חבירו ואומר שלי הוא"
+        },
+        {
+          "segment_id": "Bava Metzia 3a:9",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "תינח מציאה מקח וממכר מאי איכא למימר אלא מחוורתא כדשנין מעיקרא"
+        }
+      ],
+      "result": "Ben Nannas reconciliation depends on possible simultaneous lifting. Sumakhos eventually reconciled by rabbinic oath instituted per Yohanan. Rabbi Yose alternative penalty explanation is rejected for purchase; prior explanation preferred. These qualify global interpretation of opening but are outside core extraction."
+    },
+    {
+      "scope": "Taanit core",
+      "result": "Covered timing disagreement, mention/petition distinction, seasonal and leader conditions, displaced-liturgical-link rejection, power/prayer derivations, all three keys/proofs, cross-daf quote and livelihood reconciliation.",
+      "risks": [
+        "Rabbah bar Shila is not Rabbah without patronymic",
+        "אמר לך is reconstructed answer; West and Yohanan need not conflict over divine control of livelihood",
+        "Anonymous baraita service-of-heart voice is not Yohanan"
+      ]
+    },
+    {
+      "scope": "Taanit context only",
+      "evidence": [
+        {
+          "segment_id": "Taanit 2b:5",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "תא שמע דאמר רבי אבהו לא למדה ר' אליעזר אלא מלולב איכא דאמרי ר' אבהו גמרא גמיר לה ואיכא דאמרי מתניתא שמיע ליה"
+        },
+        {
+          "segment_id": "Taanit 2b:8",
+          "start_char": 0,
+          "end_char": 290,
+          "quote": "אמר לו ר' יהושע והלא גשמים בחג אינו אלא סימן קללה אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר וכשם שתחיית המתים מזכיר כל השנה כולה ואינה אלא בזמנה כך מזכירים גבורות גשמים כל השנה ואינן אלא בזמנן לפיכך אם בא להזכיר כל השנה כולה מזכיר רבי אומר אומר אני משעה שמפסיק לשאלה כך מפסיק להזכרה"
+        },
+        {
+          "segment_id": "Taanit 3a:12",
+          "start_char": 0,
+          "end_char": 130,
+          "quote": "אמר רב נחמן בר יצחק תהא ברבי יהושע בן בתירה זמנין דקרי ליה בשמיה וזימנין דקרי ליה בשמיה דאבא והא מקמי דליסמכוהו והא לבתר דליסמכוהו"
+        }
+      ],
+      "result": "Eliezer lulav derivation reported by Abbahu with alternative source provenance (received tradition or heard baraita), not alternative ruling. Baraita expressly allows all-year mention for Eliezer; Yehoshua response at 2b:10–11 rejects rain/resurrection analogy by season. 3a:12 identifies transmitted Yehoshua/Ben Beteira teaching as Rabbi Yehoshua ben Beteira; do not retroactively conflate with Mishnah Rabbi Yehoshua."
+    }
+  ],
+  "limitations": [
+    "Not a formal production proposal; source-first reviewer inventory for subsequent adjudication.",
+    "Utterance and structure records retain segment-level composites; semantic findings are not claimed to exhaust every atomic proposition, Bible quotation or interjection.",
+    "Context read through 3b for both tractates; only selected context risk evidence recorded; no completed context extraction claim.",
+    "All independently generated findings remain provisional pending comparison/adjudication."
+  ]
+}
