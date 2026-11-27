@@ -1,0 +1,1466 @@
+{
+  "format": "bounded-exact-version-comparison-v1",
+  "reviewer": "/root/horayot_review",
+  "scope": "Shevuot 2b:12–3a:9, ten core segments; continuation to 5a:5 considered for revisions, with fresh context extending to 5a:13",
+  "provenance": {
+    "nonblind_comparator": true,
+    "prior_team_and_producer_exposure": true,
+    "fresh_reader": "/root/yoma_fresh_7",
+    "fresh_read_before_this_producer_comparison": true,
+    "fresh_record_count": 85,
+    "fresh_layer_counts": {
+      "questions": 3,
+      "claims": 20,
+      "edges": 12,
+      "structure": 10,
+      "utterances": 10,
+      "attributions": 10,
+      "positions": 20
+    },
+    "new_source_first_credit_for_comparator": false,
+    "new_probability_credit": false,
+    "context_not_core_credit": true
+  },
+  "pins": {
+    "prior": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\snapshots\\83746e4b7a9c884bb3cb3c79684f804cc5b85770bb15bd84aa85b753a8896489.json",
+      "sha256": "83746e4b7a9c884bb3cb3c79684f804cc5b85770bb15bd84aa85b753a8896489"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\snapshots\\d1b09a32eb74e36f033ec52491cfb4279ef68933f33b8a3030c34956a8d72250.json",
+      "sha256": "d1b09a32eb74e36f033ec52491cfb4279ef68933f33b8a3030c34956a8d72250"
+    },
+    "proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\proposals\\42673de65f069aa0aa0b2545ef4d4bd2b536af010ae15f17c1030732f4e00ab8.json",
+      "sha256": "42673de65f069aa0aa0b2545ef4d4bd2b536af010ae15f17c1030732f4e00ab8"
+    },
+    "fresh": {
+      "path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\review_session20261127_06\\shevuot\\FRESH_SOURCE_ONLY_FROZEN.json",
+      "sha256": "95d0b1d0ceab3398e5ef837a50cc194b5d28d4161d8073ded5fcb9e29f2da3be"
+    }
+  },
+  "integrity": {
+    "raw_source_path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Nezikin\\Shevuot\\Hebrew\\Wikisource Talmud Bavli.json",
+    "raw_source_sha256": "a3b0bb25746aa3683e9dd9da551b66670ab1fb57e1ac9c2bd1583d4aa984edd9",
+    "prior_records": 152,
+    "prior_records_object_equal": true,
+    "new_records": 74,
+    "total_records": 226,
+    "new_layer_counts": {
+      "claims": 25,
+      "attributions": 10,
+      "positions": 16,
+      "structure": 2,
+      "edges": 8,
+      "questions": 3,
+      "utterances": 10
+    },
+    "new_evidence_spans_exact_to_raw": 85,
+    "span_failures": 0,
+    "links_and_edge_endpoints_resolve": true,
+    "completed_coverage_by_layer": {
+      "attributions": 29,
+      "claims": 29,
+      "edges": 29,
+      "positions": 29,
+      "questions": 29,
+      "reconciliation": 29,
+      "structure": 29,
+      "utterances": 29
+    },
+    "all_ml_eligible_false": true,
+    "snapshot_review_state": "unreviewed"
+  },
+  "claim_question_mapping": [
+    {
+      "fresh_id": "c_head",
+      "fresh_content": {
+        "proposition": "The preceding teaching states two liabilities concerning the head, one on each side.",
+        "holder_candidates": [
+          "quoted preceding teaching as cited by anonymous sugya"
+        ],
+        "conditions": [
+          "quoted analogy supporting tractate order; not a new oath liability"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Head-side liability in quoted Makkot classification"
+            ],
+            "proposition": "For the head he is liable for two: one on this side and one on that side.",
+            "scope": "Quoted closing Makkot material used for sequence explanation; the core does not name a new holder"
+          },
+          "evidence": [
+            {
+              "end_char": 118,
+              "quote": "<big><strong>גמ׳</strong></big> מכדי תנא ממכות סליק מאי שנא דתני שבועות משום דתני חייב על הראש שתים אחת מיכן ואחת מיכן",
+              "segment_id": "seg_4a3123082a2609d2a060",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.head",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_beard",
+      "fresh_content": {
+        "proposition": "The same cited teaching gives two concerning the beard on each side and one below.",
+        "holder_candidates": [
+          "continuation of cited preceding teaching"
+        ],
+        "conditions": [
+          "five beard locations in the quoted count"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Beard liability in quoted Makkot classification"
+            ],
+            "proposition": "For the beard there are two on this side, two on that side, and one below.",
+            "scope": "Full continuation of quoted Makkot material across folio; all five locations retained"
+          },
+          "evidence": [
+            {
+              "end_char": 118,
+              "quote": "<big><strong>גמ׳</strong></big> מכדי תנא ממכות סליק מאי שנא דתני שבועות משום דתני חייב על הראש שתים אחת מיכן ואחת מיכן",
+              "segment_id": "seg_4a3123082a2609d2a060",
+              "start_char": 0
+            },
+            {
+              "end_char": 40,
+              "quote": "ועל הזקן שתים מיכן ושתים מיכן ואחת מלמטה",
+              "segment_id": "seg_945ac93e4735ee253e99",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.beard",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_transition",
+      "fresh_content": {
+        "proposition": "A single subject with doubled liability provides the transition to the formula oaths: two that are four.",
+        "holder_candidates": [
+          "anonymous explanation"
+        ],
+        "conditions": [
+          "linking numerical formula; do not invent a named editor"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Having taught one matter for which there are two liabilities, the tanna teaches oaths as two that are four.",
+            "scope": "Answer explaining sequence by repeated numerical form; head/beard quotation preserved, not interpreted as every case totaling two"
+          },
+          "evidence": [
+            {
+              "end_char": 118,
+              "quote": "<big><strong>גמ׳</strong></big> מכדי תנא ממכות סליק מאי שנא דתני שבועות משום דתני חייב על הראש שתים אחת מיכן ואחת מיכן",
+              "segment_id": "seg_4a3123082a2609d2a060",
+              "start_char": 0
+            },
+            {
+              "end_char": 40,
+              "quote": "ועל הזקן שתים מיכן ושתים מיכן ואחת מלמטה",
+              "segment_id": "seg_945ac93e4735ee253e99",
+              "start_char": 0
+            },
+            {
+              "end_char": 45,
+              "quote": "חדא דמיחייב עלה תרתי תנא שבועות שתים שהן ארבע",
+              "segment_id": "seg_f9d0e411c180eff7c6ae",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.sequenceanswer",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_adjacent",
+      "fresh_content": {
+        "proposition": "Oaths and awareness of impurity are written adjacent to one another.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Oaths and awareness of impurity are written adjacent to one another.",
+            "scope": "First reason for their joint teaching"
+          },
+          "evidence": [
+            {
+              "end_char": 117,
+              "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+              "segment_id": "seg_de9729a6bca6a08dd607",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.togetherwritten",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_sliding",
+      "fresh_content": {
+        "proposition": "They resemble one another in the sliding-scale offering.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Oaths and awareness of impurity resemble one another in the variable-value offering.",
+            "scope": "Second reason for joint teaching; קרבן עולה ויורד preserved without generalizing to every liability"
+          },
+          "evidence": [
+            {
+              "end_char": 117,
+              "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+              "segment_id": "seg_de9729a6bca6a08dd607",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.sameoffering",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_teach_together",
+      "fresh_content": {
+        "proposition": "Therefore they are taught together.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Oaths and awareness of impurity are therefore taught together.",
+            "scope": "Joint teaching based on textual proximity and shared offering"
+          },
+          "evidence": [
+            {
+              "end_char": 117,
+              "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+              "segment_id": "seg_de9729a6bca6a08dd607",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.teachpair",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_add_all",
+      "fresh_content": {
+        "proposition": "Having taught two such subjects, the tanna teaches all of them.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Once two classifications were taught, all were taught.",
+            "scope": "Answer why this opening includes the additional classifications"
+          },
+          "evidence": [
+            {
+              "end_char": 117,
+              "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+              "segment_id": "seg_de9729a6bca6a08dd607",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.allfour",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_short_first",
+      "fresh_content": {
+        "proposition": "Because awareness-of-impurity matters are fewer, the tanna completes them first.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Because the matters of impurity awareness are few, the tanna completes them first.",
+            "scope": "Explanation for order of detailed treatment"
+          },
+          "evidence": [
+            {
+              "end_char": 97,
+              "quote": "פתח בשבועות ומפרש ידיעות הטומאה איידי דזוטרין מילייהו פסיק שרי להו והדר תני שבועות דנפישן מילייהו",
+              "segment_id": "seg_c11720942028cfe42db3",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.shortfirst",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_long_later",
+      "fresh_content": {
+        "proposition": "Then teaches oaths, whose matters are more numerous.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Afterward he teaches oaths, whose matters are numerous.",
+            "scope": "Second part of ordering explanation, not a source omission"
+          },
+          "evidence": [
+            {
+              "end_char": 97,
+              "quote": "פתח בשבועות ומפרש ידיעות הטומאה איידי דזוטרין מילייהו פסיק שרי להו והדר תני שבועות דנפישן מילייהו",
+              "segment_id": "seg_c11720942028cfe42db3",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.oathlater",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_oath_two",
+      "fresh_content": {
+        "proposition": "The two oath categories are that I will eat and that I will not eat.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "prospective positive and negative oath formulations; not outcomes of violation"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oath formula שאוכל"
+            ],
+            "proposition": "The oath “I will eat” is one of the basic two.",
+            "scope": "Future affirmative member of שתים"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "שבועות שתים שהן ארבע שתים שאוכל ושלא אוכל שהן ארבע אכלתי ושלא אכלתי",
+              "segment_id": "seg_15e68b7983d145c5fedf",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.oathfutureeat",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oath formula שלא אוכל"
+            ],
+            "proposition": "The oath “I will not eat” is the other basic member.",
+            "scope": "Future negative member of שתים"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "שבועות שתים שהן ארבע שתים שאוכל ושלא אוכל שהן ארבע אכלתי ושלא אכלתי",
+              "segment_id": "seg_15e68b7983d145c5fedf",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.oathfuturenot",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_oath_four",
+      "fresh_content": {
+        "proposition": "The expansion to four adds I ate and I did not eat.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "retrospective positive and negative formulations",
+          "liability/authority analysis remains under discussion in continuation"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oath formula אכלתי"
+            ],
+            "proposition": "The oath “I ate” is included in the expanded four.",
+            "scope": "Past affirmative member added by שהן ארבע"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "שבועות שתים שהן ארבע שתים שאוכל ושלא אוכל שהן ארבע אכלתי ושלא אכלתי",
+              "segment_id": "seg_15e68b7983d145c5fedf",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.oathpasteat",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oath formula שלא אכלתי"
+            ],
+            "proposition": "The oath “I did not eat” is included in the expanded four.",
+            "scope": "Past negative member added by שהן ארבע"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "שבועות שתים שהן ארבע שתים שאוכל ושלא אוכל שהן ארבע אכלתי ושלא אכלתי",
+              "segment_id": "seg_15e68b7983d145c5fedf",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.oathpastnot",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_awareness_two",
+      "fresh_content": {
+        "proposition": "The two are expressed as ידיעת טומאת קדש and ידיעת טומאת מקדש.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "retain exact compressed categories; do not silently supply full case mechanics"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "ידיעת טומאת קדש is one of the two basic awareness categories.",
+            "scope": "Literal category label: awareness of impurity concerning sacred food; do not collapse with awareness of sacred status"
+          },
+          "evidence": [
+            {
+              "end_char": 86,
+              "quote": "ידיעות הטומאה שתים שהן ארבע שתים ידיעת טומאת קדש וידיעת טומאת מקדש שהן ארבע קדש ומקדש:",
+              "segment_id": "seg_7bf87c787a775a207bf0",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.impurityholy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "ידיעת טומאת מקדש is the other basic awareness category.",
+            "scope": "Literal category label: awareness of impurity concerning the Temple; distinct from awareness of Temple status"
+          },
+          "evidence": [
+            {
+              "end_char": 86,
+              "quote": "ידיעות הטומאה שתים שהן ארבע שתים ידיעת טומאת קדש וידיעת טומאת מקדש שהן ארבע קדש ומקדש:",
+              "segment_id": "seg_7bf87c787a775a207bf0",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.impuritytemple",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_awareness_four",
+      "fresh_content": {
+        "proposition": "The expansion to four is expressed elliptically as קדש ומקדש.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "not a self-contained explicit list of four fully described cases",
+          "continuation discusses forgetting impurity versus forgetting sanctuary"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "קדש is added in the expansion to four.",
+            "scope": "Awareness category concerning sacred status itself, as distinct from impurity; later העלם distinctions govern liability"
+          },
+          "evidence": [
+            {
+              "end_char": 86,
+              "quote": "ידיעות הטומאה שתים שהן ארבע שתים ידיעת טומאת קדש וידיעת טומאת מקדש שהן ארבע קדש ומקדש:",
+              "segment_id": "seg_7bf87c787a775a207bf0",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.holystatus",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "מקדש is added in the expansion to four.",
+            "scope": "Awareness category concerning Temple status itself, as distinct from impurity; later העלם distinctions govern liability"
+          },
+          "evidence": [
+            {
+              "end_char": 86,
+              "quote": "ידיעות הטומאה שתים שהן ארבע שתים ידיעת טומאת קדש וידיעת טומאת מקדש שהן ארבע קדש ומקדש:",
+              "segment_id": "seg_7bf87c787a775a207bf0",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.templestatus",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_out_poor",
+      "fresh_content": {
+        "proposition": "One primary Shabbat category is carrying out by the poor person.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "source’s named participant category"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Shabbat",
+              "Outward transfer",
+              "Poor person"
+            ],
+            "proposition": "The poor person’s carrying out is one of the basic two Shabbat transfers.",
+            "scope": "הוצאה דעני"
+          },
+          "evidence": [
+            {
+              "end_char": 94,
+              "quote": "יציאות שבת שתים שהן ארבע שתים הוצאה דעני והוצאה דבעל הבית שהן ארבע הכנסה דעני והכנסה דבעל הבית",
+              "segment_id": "seg_fae36e7bad06e36d94e1",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.poorout",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_out_owner",
+      "fresh_content": {
+        "proposition": "The other primary category is carrying out by the householder.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Shabbat",
+              "Outward transfer",
+              "Householder"
+            ],
+            "proposition": "The householder’s carrying out is the other basic Shabbat transfer.",
+            "scope": "הוצאה דבעל הבית"
+          },
+          "evidence": [
+            {
+              "end_char": 94,
+              "quote": "יציאות שבת שתים שהן ארבע שתים הוצאה דעני והוצאה דבעל הבית שהן ארבע הכנסה דעני והכנסה דבעל הבית",
+              "segment_id": "seg_fae36e7bad06e36d94e1",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.houseout",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_in_poor",
+      "fresh_content": {
+        "proposition": "The expansion includes bringing in by the poor person.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Shabbat",
+              "Inward transfer",
+              "Poor person"
+            ],
+            "proposition": "The poor person’s carrying in is added in the expansion to four.",
+            "scope": "הכנסה דעני"
+          },
+          "evidence": [
+            {
+              "end_char": 94,
+              "quote": "יציאות שבת שתים שהן ארבע שתים הוצאה דעני והוצאה דבעל הבית שהן ארבע הכנסה דעני והכנסה דבעל הבית",
+              "segment_id": "seg_fae36e7bad06e36d94e1",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.poorin",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_in_owner",
+      "fresh_content": {
+        "proposition": "The expansion includes bringing in by the householder.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Shabbat",
+              "Inward transfer",
+              "Householder"
+            ],
+            "proposition": "The householder’s carrying in is added in the expansion to four.",
+            "scope": "הכנסה דבעל הבית"
+          },
+          "evidence": [
+            {
+              "end_char": 94,
+              "quote": "יציאות שבת שתים שהן ארבע שתים הוצאה דעני והוצאה דבעל הבית שהן ארבע הכנסה דעני והכנסה דבעל הבית",
+              "segment_id": "seg_fae36e7bad06e36d94e1",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.housein",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_lesion_two",
+      "fresh_content": {
+        "proposition": "The two primary lesion appearances are se’et and baheret.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "no color details supplied here"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "שאת is one of the two primary appearances.",
+            "scope": "Source appearance taxonomy; no named author forced"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "מראות נגעים שנים שהן ארבעה שנים שאת ובהרת שהן ארבעה שאת ותולדתה בהרת ותולדתה",
+              "segment_id": "seg_05daf736226442bd27c8",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.seet",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "בהרת is the other primary appearance.",
+            "scope": "Source appearance taxonomy"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "מראות נגעים שנים שהן ארבעה שנים שאת ובהרת שהן ארבעה שאת ותולדתה בהרת ותולדתה",
+              "segment_id": "seg_05daf736226442bd27c8",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.baheret",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_seet_derivative",
+      "fresh_content": {
+        "proposition": "The fourfold listing includes se’et and its derivative.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "no derivative color name supplied in core"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "שאת together with its derivative forms one pair in the expanded four.",
+            "scope": "שאת ותולדתה; primary/derivative relationship retained"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "מראות נגעים שנים שהן ארבעה שנים שאת ובהרת שהן ארבעה שאת ותולדתה בהרת ותולדתה",
+              "segment_id": "seg_05daf736226442bd27c8",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.seetderived",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "c_baheret_derivative",
+      "fresh_content": {
+        "proposition": "It also includes baheret and its derivative.",
+        "holder_candidates": [
+          "anonymous classification"
+        ],
+        "conditions": [
+          "no derivative color name supplied in core"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "בהרת together with its derivative forms the other pair in the expanded four.",
+            "scope": "בהרת ותולדתה; primary/derivative relationship retained"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "מראות נגעים שנים שהן ארבעה שנים שאת ובהרת שהן ארבעה שאת ותולדתה בהרת ותולדתה",
+              "segment_id": "seg_05daf736226442bd27c8",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.baheretderived",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "These are the anonymous opening classifications. Full continuation3a10–5a5 revises proposed named holders and liability interpretations; do not assign the entire list to Rabbi Yishmael or Rabbi Akiva, or assume every item has identical sacrificial/lashes liability."
+          ]
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "q_order",
+      "fresh_content": {
+        "formulation": "Given that the tanna has just left Makkot, why teach Shevuot next?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Sequence of tractates",
+              "Opening of Gemara"
+            ],
+            "formulation": "Given that the tanna has just concluded Makkot, why does he teach Shevuot next?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 118,
+              "quote": "<big><strong>גמ׳</strong></big> מכדי תנא ממכות סליק מאי שנא דתני שבועות משום דתני חייב על הראש שתים אחת מיכן ואחת מיכן",
+              "segment_id": "seg_4a3123082a2609d2a060",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.q.order",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "q_all_here",
+      "fresh_content": {
+        "formulation": "Why are all these two-to-four subjects taught here, whereas the Shabbat carryings and lesion appearances settings do not list all of them?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Opening list of oaths, impurity awareness, Shabbat transfers and appearances"
+            ],
+            "formulation": "Why are all of these classifications taught here, whereas the passages on Shabbat transfers and leprous appearances do not teach all of them?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 84,
+              "quote": "מאי שנא הכא דתני להו לכולהו ומאי שנא גבי יציאות שבת ומראות נגעים דלא קתני להו לכולהו",
+              "segment_id": "seg_5ccddeb44744ad401d80",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.q.allhere",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    },
+    {
+      "fresh_id": "q_open_explain",
+      "fresh_content": {
+        "formulation": "Why begin with oaths but explain awareness of impurity?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Order of opening headings versus subsequent detailed treatment"
+            ],
+            "formulation": "Why begin with oaths but then explain awareness of impurity?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 97,
+              "quote": "פתח בשבועות ומפרש ידיעות הטומאה איידי דזוטרין מילייהו פסיק שרי להו והדר תני שבועות דנפישן מילייהו",
+              "segment_id": "seg_c11720942028cfe42db3",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2706.q.begin",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; categories split where appropriate, not a universal atomicity certification"
+    }
+  ],
+  "questions": {
+    "fresh_count": 3,
+    "producer_count": 3,
+    "missing_identified": [],
+    "assessment": "Tractate order, all-subjects-here contrast, and opened-with-oaths/explains-awareness question all represented. Last is interrogative discourse despite no question particle."
+  },
+  "semantic_checks": [
+    {
+      "topic": "Split numerical argument",
+      "assessment": "2b:12–3a:2 read as one argument. Head one+one and beard two+two+one retained; sequenceanswer uses numerical analogy without falsely totaling beard as two. Head support -> sequence answer -> question direction sound.",
+      "ids": [
+        "she.s2706.head",
+        "she.s2706.beard",
+        "she.s2706.sequenceanswer",
+        "she.s2706.e.0",
+        "she.s2706.e.1"
+      ]
+    },
+    {
+      "topic": "Grouping and order",
+      "assessment": "Textual adjacency and shared variable-value offering are distinct supports for joint teaching; extension from two groups to all groups and short-before-long explanation both preserved.",
+      "ids": [
+        "she.s2706.togetherwritten",
+        "she.s2706.sameoffering",
+        "she.s2706.teachpair",
+        "she.s2706.allfour",
+        "she.s2706.shortfirst",
+        "she.s2706.oathlater"
+      ]
+    },
+    {
+      "topic": "Oath categories",
+      "assessment": "Future/past and positive/negative formulations each separately retained. No assertion that all four share identical sacrifice/lashes outcomes or one directly named holder."
+    },
+    {
+      "topic": "Compressed awareness categories",
+      "assessment": "Exact Hebrew category labels retained. Sacred/Temple status distinction in scope is interpretive unpacking of קדש ומקדש and must not be exported as verbatim fully described cases. Fresh caution is narrower than producer explanation, but no invented full mechanism or unsupported fixed liability is asserted.",
+      "ids": [
+        "she.s2706.impurityholy",
+        "she.s2706.impuritytemple",
+        "she.s2706.holystatus",
+        "she.s2706.templestatus"
+      ]
+    },
+    {
+      "topic": "Transfer and appearance categories",
+      "assessment": "Poor/householder and outward/inward roles preserved; seet/baheret with respective derivatives retained without importing colors. No nearby named sage attached."
+    },
+    {
+      "topic": "Continuation revisions",
+      "assessment": "3a:10 onward tests all-Ishmael/all-Akiva and liability/exemption readings; lashes reconstruction later displaced. Rav Yosef compilation proposal, Rav Ashi reporting Rav Kahana own-reason correction, alternative 4b:3 version, and 5a:5 oath-specific return to borrowed Akiva view keep core classifications from premature named attribution. Producer uncertainty and u25/u26 record this limitation; these context claims were not counted as new production extractions."
+    }
+  ],
+  "graph_review": {
+    "new_edges": 8,
+    "fresh_edges": 12,
+    "assessment": "Eight producer answer/support edges checked. Fresh beard-continuation and taxonomy-expansion relations are carried in full evidence/claim wording and structure rather than dedicated graph edges; exact graph equivalence or exhaustive relation extraction is not claimed.",
+    "records": [
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2706.sequenceanswer",
+          "target_id": "she.s2706.q.order"
+        },
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "חדא דמיחייב עלה תרתי תנא שבועות שתים שהן ארבע",
+            "segment_id": "seg_f9d0e411c180eff7c6ae",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.0",
+        "layer": "edges",
+        "links": [
+          "she.s2706.sequenceanswer",
+          "she.s2706.q.order"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2706.head",
+          "target_id": "she.s2706.sequenceanswer"
+        },
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "חדא דמיחייב עלה תרתי תנא שבועות שתים שהן ארבע",
+            "segment_id": "seg_f9d0e411c180eff7c6ae",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.1",
+        "layer": "edges",
+        "links": [
+          "she.s2706.head",
+          "she.s2706.sequenceanswer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2706.togetherwritten",
+          "target_id": "she.s2706.teachpair"
+        },
+        "evidence": [
+          {
+            "end_char": 117,
+            "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+            "segment_id": "seg_de9729a6bca6a08dd607",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.2",
+        "layer": "edges",
+        "links": [
+          "she.s2706.togetherwritten",
+          "she.s2706.teachpair"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2706.sameoffering",
+          "target_id": "she.s2706.teachpair"
+        },
+        "evidence": [
+          {
+            "end_char": 117,
+            "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+            "segment_id": "seg_de9729a6bca6a08dd607",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.3",
+        "layer": "edges",
+        "links": [
+          "she.s2706.sameoffering",
+          "she.s2706.teachpair"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2706.teachpair",
+          "target_id": "she.s2706.q.allhere"
+        },
+        "evidence": [
+          {
+            "end_char": 117,
+            "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+            "segment_id": "seg_de9729a6bca6a08dd607",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.4",
+        "layer": "edges",
+        "links": [
+          "she.s2706.teachpair",
+          "she.s2706.q.allhere"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2706.allfour",
+          "target_id": "she.s2706.q.allhere"
+        },
+        "evidence": [
+          {
+            "end_char": 117,
+            "quote": "אמרי שבועות וידיעות הטומאה דגבי הדדי כתיבין ודמיין אהדדי בקרבן עולה ויורד תני להו גבי הדדי ואיידי דתנא תרתי תנא כולהו",
+            "segment_id": "seg_de9729a6bca6a08dd607",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.5",
+        "layer": "edges",
+        "links": [
+          "she.s2706.allfour",
+          "she.s2706.q.allhere"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2706.shortfirst",
+          "target_id": "she.s2706.q.begin"
+        },
+        "evidence": [
+          {
+            "end_char": 97,
+            "quote": "פתח בשבועות ומפרש ידיעות הטומאה איידי דזוטרין מילייהו פסיק שרי להו והדר תני שבועות דנפישן מילייהו",
+            "segment_id": "seg_c11720942028cfe42db3",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.6",
+        "layer": "edges",
+        "links": [
+          "she.s2706.shortfirst",
+          "she.s2706.q.begin"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2706.oathlater",
+          "target_id": "she.s2706.q.begin"
+        },
+        "evidence": [
+          {
+            "end_char": 97,
+            "quote": "פתח בשבועות ומפרש ידיעות הטומאה איידי דזוטרין מילייהו פסיק שרי להו והדר תני שבועות דנפישן מילייהו",
+            "segment_id": "seg_c11720942028cfe42db3",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2706.e.7",
+        "layer": "edges",
+        "links": [
+          "she.s2706.oathlater",
+          "she.s2706.q.begin"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "qualifications": [
+    {
+      "id": "S06-Q01",
+      "mandatory_repair": false,
+      "assessment": "Producer holystatus/templestatus explanatory scope goes beyond literal ellipsis. Preserve exact labels and continuation uncertainty; do not silently replace evidence with fully elaborated case mechanics."
+    },
+    {
+      "id": "S06-Q02",
+      "mandatory_repair": false,
+      "assessment": "Several utterances reuse broad textual_voice Anonymous Gemara and its quotation of preceding teaching. Segment discourse_role and anonymous attributions correctly distinguish the local explanations/classifications; do not treat this broad field as proof every later sentence quotes Makkot."
+    }
+  ],
+  "mandatory_repairs": [],
+  "outcome": "No mandatory producer repair identified in these ten cores. All source-first claims and questions substantively represented, with interpretive scope and graph non-equivalence retained.",
+  "no_production_mutations": true,
+  "no_eligibility_changes": true,
+  "no_blanket_atomicity_or_task_qualification": true
+}
