@@ -1,0 +1,41 @@
+{
+  "artifact_kind": "source_only_dispatch_checkpoint",
+  "active_fresh_readers": [
+    {
+      "agent": "/root/reader_moed_katan_batch003",
+      "fork_turns": "none",
+      "job": "jobs/bavli_moed_katan_batch003.json",
+      "cohort": "original_probability_sample",
+      "cores": 30
+    },
+    {
+      "agent": "/root/reader_moed_katan_batch004",
+      "fork_turns": "none",
+      "job": "jobs/bavli_moed_katan_batch004.json",
+      "cohort": "original_probability_sample",
+      "cores": 30
+    },
+    {
+      "agent": "/root/reader_meilah_supplement002",
+      "fork_turns": "none",
+      "job": "jobs/bavli_meilah_supplement002.json",
+      "cohort": "supplemental_coordinate_request",
+      "cores": 128,
+      "prior_direct_core_overlap": 19
+    }
+  ],
+  "prepared_not_dispatched": [
+    {
+      "job": "jobs/bavli_moed_katan_batch005.json",
+      "cores": 30,
+      "reason": "reader slot allocated to Meilah; no coveragecredit"
+    }
+  ],
+  "new_coverage_credit": 0,
+  "producer_pins_for_comparison_only_after_freeze": {
+    "moed_katan_batch003": "09908653624cc6ad0a45a5261a2ffa41b90fb6a681708943a5aedb814801304b",
+    "moed_katan_batch004": "new exactpin needed to cover all; no CURRENT substituted",
+    "meilah_supplement002": "a172bef8f41d754c30d756f69e09c34c46aa95d3171610dd605f9742359c4810"
+  },
+  "blind_reader_materials": "neutralcoordinates,originalsource,commoninstructions only; no producer summaries or initial annotated conversation"
+}
