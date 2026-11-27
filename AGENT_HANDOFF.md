@@ -1,5 +1,10 @@
 # Research handoff — updated 2026-11-24
 
+## Rolling Bavli integration — 2026-11-27, review015
+
+Current release pointer: `research/bavli_dataset_runs/run_20261125_01/releases/INTEGRATION_20261127_02_REVIEW015_POINTER.json`. Integration commit `0a8a901997db95590872dc596cfae287ce8a3c72` in draft PR30 records 10,519/81,793 segments per required pass, 84,263 included provisional records, 85,429 preserved versions and 21 exclusions. All 37 tractates remain incomplete; eligibility is zero. Two independent builds match 1,606 files and the export audit passed. Ledger revision 6 preserves within-lane ownership; later production/review work remains separate. Keep PRs unmerged.
+
+
 ## Bavli production coordination — 2026-11-25
 
 The active reusable Bavli dataset run is `run_20261125_01` on `dataset/bavli-coordination-v1`, draft PR #17. Start with [the immutable active-run pointer](research/bavli_dataset_runs/ACTIVE_RUN.json), [run evidence and resume instructions](research/bavli_dataset_runs/run_20261125_01/README.md), and [the exact unfinished-work matrix](research/bavli_dataset_runs/run_20261125_01/REMAINING_WORK.md). Preserve the other research tracks below.
