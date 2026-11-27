@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "core_count": 30,
+  "core_layer_rows": 240,
+  "context_annotated_count": 2,
+  "context_read_count": 34,
+  "record_counts": {
+    "questions": 23,
+    "utterances": 115,
+    "attributions": 119,
+    "claims": 72,
+    "positions": 63,
+    "edges": 79,
+    "structure": 32
+  },
+  "evidence_count": 503,
+  "checks": [
+    "all pinned byte hashes",
+    "canonical plan hash",
+    "selected-block membership and source-span bindings",
+    "common per-layer record schema",
+    "common coverage schema",
+    "exact original Unicode code-point slices",
+    "ID uniqueness and all links resolve",
+    "30 original cores x 8 layer status",
+    "nonoverlapping complete primary structure",
+    "context/core separation"
+  ],
+  "limitations": "Mechanical PASS does not certify semantic truth; no production comparison/admission or eligibility.",
+  "artifact_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\taanit_delegated055.json",
+  "artifact_sha256": "19e60727e4c13a8cecb90c13e2afe68a035368bfa18cc23b3ce19d67af8cdd3e",
+  "helper_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\author_validate055.py",
+  "helper_sha256": "e74f592fd93e1b9b9f268d9fcd910373b05b04abf91b3d9b99e94c84dc703243",
+  "receipt_id": "ta055.initialfreeze.validation.20261127",
+  "validation_route": "python jsonschema plus independent invariants; deterministic --verify reconstruction"
+}
