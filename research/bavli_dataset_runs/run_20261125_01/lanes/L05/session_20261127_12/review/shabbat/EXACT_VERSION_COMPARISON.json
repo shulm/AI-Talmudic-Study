@@ -1,0 +1,4206 @@
+{
+  "format": "bounded-exact-version-comparison-v1",
+  "reviewer": "/root/horayot_review",
+  "scope": "Shabbat5a:13–6a:3,20newcores; context6a:4–8 for rejected analogy and Ben Azzai limitation",
+  "provenance": {
+    "nonblind_comparator": true,
+    "prior_team_producer_exposure": true,
+    "fresh_reader": "/root/yoma_fresh_7",
+    "fresh_freeze_read_before_this_snapshot": true,
+    "fresh_mixed_records": 166,
+    "fresh_layer_counts": {
+      "claims": 41,
+      "questions": 15,
+      "attributions": 11,
+      "edges": 18,
+      "structure": 20,
+      "utterances": 20,
+      "positions": 41
+    },
+    "new_source_first_credit_for_comparator": false,
+    "new_probability_credit": false
+  },
+  "pins": {
+    "prior": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shabbat\\snapshots\\46dd992408c44bbb867794fe78417950200f4407391bb5e3e6cd1961903e22ed.json",
+      "sha256": "46dd992408c44bbb867794fe78417950200f4407391bb5e3e6cd1961903e22ed"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shabbat\\snapshots\\b77690862170d571563691364a79174be99fecf98cb41fad07490fa23bad5676.json",
+      "sha256": "b77690862170d571563691364a79174be99fecf98cb41fad07490fa23bad5676"
+    },
+    "proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shabbat\\proposals\\bdef9887b6979da43544b624e41a588332037e835b3a07257689bb7adc25a3bc.json",
+      "sha256": "bdef9887b6979da43544b624e41a588332037e835b3a07257689bb7adc25a3bc"
+    },
+    "fresh": {
+      "path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\review_session20261127_12\\shabbat\\FRESH_SOURCE_ONLY_FROZEN.json",
+      "sha256": "af5c4b4671b65d922c946c49fa8238c9d1c536e34b018e4af3feea3ef4789ec7"
+    }
+  },
+  "integrity": {
+    "raw_source_sha256": "7f0e982f0560b600515ef2de7c978537accacdff9f74d616e3c68a33ea60fd9e",
+    "prior473objects_equal": true,
+    "new_records": 231,
+    "historical_records": 704,
+    "new_layer_counts": {
+      "claims": 50,
+      "attributions": 62,
+      "positions": 33,
+      "edges": 43,
+      "structure": 3,
+      "questions": 20,
+      "utterances": 20
+    },
+    "new_evidence_spans_exact": 253,
+    "span_failures": 0,
+    "new_links_and_edge_endpoints_resolve": true,
+    "completed_coverage_by_layer": {
+      "attributions": 99,
+      "claims": 99,
+      "edges": 99,
+      "positions": 99,
+      "questions": 99,
+      "reconciliation": 99,
+      "structure": 99,
+      "utterances": 99
+    },
+    "all_record_ml_eligible_false": true
+  },
+  "mapping": [
+    {
+      "fresh_id": "c_hand",
+      "fresh_content": {
+        "proposition": "Throwing an object that rests in another’s hand incurs liability.",
+        "holder_candidates": [
+          "רבי יוחנן"
+        ],
+        "conditions": [
+          "object comes to rest in recipient hand; surrounding domain conditions not fully restated"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Thrown object rests in another’s hand"
+            ],
+            "proposition": "One who throws an object and it lands in another’s hand is liable.",
+            "scope": "Rabbi Yohanan’s reported rule"
+          },
+          "evidence": [
+            {
+              "end_char": 215,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+              "segment_id": "seg_d44075619c4ebe43c023",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.handcatch",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_hand_hyp",
+      "fresh_content": {
+        "proposition": "One might limit the rule to where he himself accorded importance to his hand, excluding where he did not.",
+        "holder_candidates": [
+          "anonymous hypothesis"
+        ],
+        "conditions": [],
+        "assertion_mode": "rejected as limiting inference"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "He himself gives significance to his hand"
+            ],
+            "proposition": "One might limit that rule to a case where he himself treated his own hand as significant.",
+            "scope": "Proposed limiting assumption rejected by new teaching"
+          },
+          "evidence": [
+            {
+              "end_char": 215,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+              "segment_id": "seg_d44075619c4ebe43c023",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.selfimportance",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_hand_extend",
+      "fresh_content": {
+        "proposition": "The teaching rejects that limitation.",
+        "holder_candidates": [
+          "anonymous explanation"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "No such self-designation of hand significance"
+            ],
+            "proposition": "The hand still counts even where he did not himself give his hand significance.",
+            "scope": "Novelty of received object in another’s hand; source pronouns retained"
+          },
+          "evidence": [
+            {
+              "end_char": 215,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+              "segment_id": "seg_d44075619c4ebe43c023",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.noimportance",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_stationary",
+      "fresh_content": {
+        "proposition": "If the recipient remained in place and received it, liability applies.",
+        "holder_candidates": [
+          "רבי יוחנן"
+        ],
+        "conditions": [
+          "recipient stationary; liability concerns thrower"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Receiver remains in original place"
+            ],
+            "proposition": "If the recipient remains in place and receives it, the thrower is liable.",
+            "scope": "Rabbi Yohanan’s rule; recipient’s movement distinguished"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור תניא נמי הכי אחרים אומרים עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור",
+              "segment_id": "seg_5cd3d50fa485c62a1a2e",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.stayscatch",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_moved",
+      "fresh_content": {
+        "proposition": "If the recipient moved from his place to receive it, exemption applies.",
+        "holder_candidates": [
+          "רבי יוחנן"
+        ],
+        "conditions": [
+          "recipient moved"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Receiver leaves original place before catching"
+            ],
+            "proposition": "If the recipient moves from his place and receives it, the thrower is exempt.",
+            "scope": "Rabbi Yohanan’s rule"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור תניא נמי הכי אחרים אומרים עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור",
+              "segment_id": "seg_5cd3d50fa485c62a1a2e",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.movescatch",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_others_parallel",
+      "fresh_content": {
+        "proposition": "A baraita in the name of Others gives the same stationary/moving distinction.",
+        "holder_candidates": [
+          "אחרים"
+        ],
+        "conditions": [
+          "parallel testimony, not new opposing ruling"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Recipient remains in place"
+            ],
+            "proposition": "If he remains in his place and catches, there is liability.",
+            "scope": "Corroborating baraita attributed to Aherim"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור תניא נמי הכי אחרים אומרים עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור",
+              "segment_id": "seg_5cd3d50fa485c62a1a2e",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.aherimstay",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Recipient changes place"
+            ],
+            "proposition": "If he moves from his place and catches, there is exemption.",
+            "scope": "Corroborating baraita attributed to Aherim"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור תניא נמי הכי אחרים אומרים עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור",
+              "segment_id": "seg_5cd3d50fa485c62a1a2e",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.aherimmove",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_twoforces",
+      "fresh_content": {
+        "proposition": "Rav Adda b. Ahava explains the issue as two forces in one person.",
+        "holder_candidates": [
+          "רב אדא בר אהבה"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The issue is two forces in one person.",
+            "scope": "Rav Adda bar Ahava’s explanation of question"
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+              "segment_id": "seg_b382617dc982e37d1e56",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.twoforces",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_oneperson_option",
+      "fresh_content": {
+        "proposition": "If the two forces count as one person’s act, he is liable.",
+        "holder_candidates": [
+          "question alternative"
+        ],
+        "conditions": [
+          "two forces one person"
+        ],
+        "assertion_mode": "queried"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "unresolved",
+            "conditions": [
+              "Two forces treated as one actor"
+            ],
+            "proposition": "If treated as one person, he would be liable.",
+            "scope": "Unresolved first alternative, not an adopted ruling"
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+              "segment_id": "seg_b382617dc982e37d1e56",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.oneforceoption",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_twoperson_option",
+      "fresh_content": {
+        "proposition": "If they count as two persons’ acts, he is exempt.",
+        "holder_candidates": [
+          "question alternative"
+        ],
+        "conditions": [],
+        "assertion_mode": "queried"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "unresolved",
+            "conditions": [
+              "Two forces treated as two actors"
+            ],
+            "proposition": "If treated as two people, he would be exempt.",
+            "scope": "Unresolved second alternative"
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+              "segment_id": "seg_b382617dc982e37d1e56",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.twoforceoption",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_teiku_self",
+      "fresh_content": {
+        "proposition": "The self-catching question remains unresolved.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The question remains unresolved: תיקו.",
+            "scope": "Explicit outcome, no chosen side"
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+              "segment_id": "seg_b382617dc982e37d1e56",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.selfteiku",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_rain_initial",
+      "fresh_content": {
+        "proposition": "Reported wording: inserting his hand into another’s courtyard, receiving rainwater and taking it out incurs liability.",
+        "holder_candidates": [
+          "רבי יוחנן reported by רבי אבין"
+        ],
+        "conditions": [
+          "initial wording subsequently corrected"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "challenged",
+            "conditions": [
+              "Hand into another courtyard",
+              "Receives rainwater",
+              "Takes it out"
+            ],
+            "proposition": "One who inserts his hand into another’s courtyard, receives rainwater, and takes it out is liable.",
+            "scope": "Initial Rabbi Yohanan report wording, amended from receiving to collecting and location clarified below"
+          },
+          "evidence": [
+            {
+              "end_char": 202,
+              "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+              "segment_id": "seg_f08edea66b3a619608f0",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.raininitial",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_collect_correction",
+      "fresh_content": {
+        "proposition": "Correct receiving to collecting.",
+        "holder_candidates": [
+          "anonymous corrective reading"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "reconciled",
+            "conditions": [],
+            "proposition": "Do not read “received”; read “collected” instead.",
+            "scope": "Explicit wording correction requires active collection"
+          },
+          "evidence": [
+            {
+              "end_char": 202,
+              "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+              "segment_id": "seg_f08edea66b3a619608f0",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.collectinstead",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_wall",
+      "fresh_content": {
+        "proposition": "Rabbi Hiyya son of Rav Huna proposes collecting from a wall.",
+        "holder_candidates": [
+          "רבי חייא בריה דרב הונא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "The case is collection from the wall.",
+            "scope": "Rabbi Hiyya son of Rav Huna’s proposed explanation, later replaced by pit-water case"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "אמר רבי חייא ברי' דרב הונא כגון שקלט מעל גבי הכותל על גבי כותל נמי והא לא נח כדאמר רבאבכותל משופע הכא נמי בכותל משופע והיכא איתמר דרבא אהא דתנן",
+              "segment_id": "seg_2b1977470c52589a6058",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.wallcollection",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_sloped_initial",
+      "fresh_content": {
+        "proposition": "Analogy proposes a sloping wall, as in Rava’s case.",
+        "holder_candidates": [
+          "anonymous analogy"
+        ],
+        "conditions": [
+          "original fused רבאבכותל preserved"
+        ],
+        "assertion_mode": "later rejected for water"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "The proposed answer uses a sloping wall, as in Rava’s explanation elsewhere.",
+            "scope": "Temporary analogy later rejected because water does not rest like scroll"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "אמר רבי חייא ברי' דרב הונא כגון שקלט מעל גבי הכותל על גבי כותל נמי והא לא נח כדאמר רבאבכותל משופע הכא נמי בכותל משופע והיכא איתמר דרבא אהא דתנן",
+              "segment_id": "seg_2b1977470c52589a6058",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.slopingwater",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_scroll_threshold",
+      "fresh_content": {
+        "proposition": "Reading a scroll on a threshold, if it rolls from his hand he rolls it back toward himself.",
+        "holder_candidates": [
+          "quoted Mishnah"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Reading on threshold",
+              "Scroll rolls from hand"
+            ],
+            "proposition": "One reading a scroll on the threshold whose scroll rolls from his hand may roll it back to himself.",
+            "scope": "First case of quoted Mishnah retained"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "היה קורא בספר על האיסקופה ונתגלגל הספר מידו גוללו אצלו היה קורא בראש הגג ונתגלגל הספר מידו עד שלא הגיע לי' טפחים גוללו אצלו משהגיע לי' טפחים הופכו על הכתב והוינן בה אמאי הופכו על הכתב הא לא נח",
+              "segment_id": "seg_5b3d6a819ec9ade632d8",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.thresholdscroll",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_scroll_above",
+      "fresh_content": {
+        "proposition": "From a rooftop, before the scroll reaches ten handbreadths he rolls it back.",
+        "holder_candidates": [
+          "quoted Mishnah"
+        ],
+        "conditions": [
+          "ten-handbreadth boundary"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Reading on roof",
+              "Rolled scroll not yet reached ten handbreadths"
+            ],
+            "proposition": "If reading on the roof, he may roll it back before it reaches ten handbreadths.",
+            "scope": "Quoted roof case, preserving threshold distinction"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "היה קורא בספר על האיסקופה ונתגלגל הספר מידו גוללו אצלו היה קורא בראש הגג ונתגלגל הספר מידו עד שלא הגיע לי' טפחים גוללו אצלו משהגיע לי' טפחים הופכו על הכתב והוינן בה אמאי הופכו על הכתב הא לא נח",
+              "segment_id": "seg_5b3d6a819ec9ade632d8",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.roofabove",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_scroll_below",
+      "fresh_content": {
+        "proposition": "Once it reaches ten handbreadths he turns it writing-side down.",
+        "holder_candidates": [
+          "quoted Mishnah"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Reading on roof",
+              "Scroll reaches ten handbreadths"
+            ],
+            "proposition": "Once it reaches ten handbreadths, he turns it onto the writing side (הופכו על הכתב).",
+            "scope": "Quoted הוראה הופכו על הכתב; exact original evidence retained"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "היה קורא בספר על האיסקופה ונתגלגל הספר מידו גוללו אצלו היה קורא בראש הגג ונתגלגל הספר מידו עד שלא הגיע לי' טפחים גוללו אצלו משהגיע לי' טפחים הופכו על הכתב והוינן בה אמאי הופכו על הכתב הא לא נח",
+              "segment_id": "seg_5b3d6a819ec9ade632d8",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.roofbelow",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_rava_sloped",
+      "fresh_content": {
+        "proposition": "Rava answers: a sloping wall.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [
+          "scroll case"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "It is a sloping wall.",
+            "scope": "Rava’s explanation of the scroll case, not final water explanation"
+          },
+          "evidence": [
+            {
+              "end_char": 72,
+              "quote": "ואמר רבא בכותל משופע אימור דאמר רבא בספר דעביד דנייח מים מי עבידי דנייחי",
+              "segment_id": "seg_182bb914c86c041bc19c",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.slopingscroll",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_pit",
+      "fresh_content": {
+        "proposition": "Rava instead explains collection from a pit.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [
+          "replaces sloped-wall interpretation of water"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Instead the case is collection from a pit.",
+            "scope": "Rava’s replacement interpretation of the rainwater report"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+              "segment_id": "seg_932146de1fd4dee40960",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.pitwater",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_water_hyp",
+      "fresh_content": {
+        "proposition": "One might think water on water is not resting.",
+        "holder_candidates": [
+          "anonymous hypothetical"
+        ],
+        "conditions": [],
+        "assertion_mode": "rejected"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "One might think water upon water is not considered resting.",
+            "scope": "Rejected limiting assumption explaining novelty"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+              "segment_id": "seg_932146de1fd4dee40960",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.waternotrestassumption",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_water_rest_yes",
+      "fresh_content": {
+        "proposition": "The teaching establishes it counts as resting.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Water upon water is considered resting.",
+            "scope": "Novelty of pit interpretation"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+              "segment_id": "seg_932146de1fd4dee40960",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.wateronwater",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_water_rule",
+      "fresh_content": {
+        "proposition": "Rava says water on water is its manner of resting.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Water upon water is its normal rest.",
+            "scope": "Repeated Rava rule supporting consistency, separate occurrence"
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+              "segment_id": "seg_badfd58c00475b477097",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.waterrests",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_nut_rule",
+      "fresh_content": {
+        "proposition": "A nut on water is not its manner of resting.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "A nut upon water is not at rest.",
+            "scope": "Rava’s contrasting rule"
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+              "segment_id": "seg_badfd58c00475b477097",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.nutnotrest",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_teiku_nut",
+      "fresh_content": {
+        "proposition": "The floating-vessel/nut question remains unresolved.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The nut-in-floating-vessel question remains unresolved: תיקו.",
+            "scope": "Explicit unresolved outcome"
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+              "segment_id": "seg_badfd58c00475b477097",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.nutteiku",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_oil_dispute",
+      "fresh_content": {
+        "proposition": "Oil floating on wine is associated with the dispute of Rabbi Yohanan b. Nuri and the rabbis.",
+        "holder_candidates": [
+          "anonymous comparison"
+        ],
+        "conditions": [
+          "quoted dispute is about impurity connection; do not invent explicit Shabbat rulings"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Oil floating on wine is a dispute between Rabbi Yohanan ben Nuri and the sages.",
+            "scope": "Connection/rest issue referred to purity Mishnah; no forced final Shabbat ruling"
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "שמן שצף ע\"ג יין מחלוקת ר' יוחנן בן נורי ורבנן דתנן שמן שצף ע\"ג יין ונגע טבול יום בשמן לא פסל אלא שמן בלבד ר' יוחנן בן נורי אומר שניהם מחוברים זה לזה",
+              "segment_id": "seg_53630a3def8f4123561a",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.oilwine",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_oil_only",
+      "fresh_content": {
+        "proposition": "A tevul yom touching floating oil invalidates only the oil according to the first opinion.",
+        "holder_candidates": [
+          "anonymous first opinion in Mishnah"
+        ],
+        "conditions": [
+          "oil over wine",
+          "contact with oil"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oil floating on wine",
+              "Tevul yom touches oil"
+            ],
+            "proposition": "If a tevul yom touches the oil floating on wine, only the oil is invalidated.",
+            "scope": "First/sages view in quoted Mishnah"
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "שמן שצף ע\"ג יין מחלוקת ר' יוחנן בן נורי ורבנן דתנן שמן שצף ע\"ג יין ונגע טבול יום בשמן לא פסל אלא שמן בלבד ר' יוחנן בן נורי אומר שניהם מחוברים זה לזה",
+              "segment_id": "seg_53630a3def8f4123561a",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.oilonly",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_connected",
+      "fresh_content": {
+        "proposition": "Rabbi Yohanan b. Nuri holds both connected.",
+        "holder_candidates": [
+          "רבי יוחנן בן נורי"
+        ],
+        "conditions": [
+          "distinct from amora רבי יוחנן"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oil floating on wine",
+              "Tevul yom touching oil"
+            ],
+            "proposition": "The oil and wine are connected to one another.",
+            "scope": "Rabbi Yohanan ben Nuri’s opposing purity position"
+          },
+          "evidence": [
+            {
+              "end_char": 148,
+              "quote": "שמן שצף ע\"ג יין מחלוקת ר' יוחנן בן נורי ורבנן דתנן שמן שצף ע\"ג יין ונגע טבול יום בשמן לא פסל אלא שמן בלבד ר' יוחנן בן נורי אומר שניהם מחוברים זה לזה",
+              "segment_id": "seg_53630a3def8f4123561a",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.bothconnected",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_loaded",
+      "fresh_content": {
+        "proposition": "Someone loaded with food/drink entering and leaving all day is not liable until stopping.",
+        "holder_candidates": [
+          "רבי יוחנן"
+        ],
+        "conditions": [
+          "qualified below: stopping to rest; initial lifting intention relevant"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Loaded with foods and drinks",
+              "Continuous entry and exit without qualifying rest"
+            ],
+            "proposition": "One loaded with foods and drinks who enters and exits all day is not liable until he stops.",
+            "scope": "Rabbi Yohanan’s reported necessary stopping condition, refined by rest purpose next; not immediate liability just for standing"
+          },
+          "evidence": [
+            {
+              "end_char": 97,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן היה טעון אוכלים ומשקין ונכנס ויוצא כל היום כולו אינו חייב עד שיעמוד",
+              "segment_id": "seg_8369ccad3aee18ac12b7",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.loadeduntilstop",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_rest_only",
+      "fresh_content": {
+        "proposition": "Abaye limits the stopping to resting.",
+        "holder_candidates": [
+          "אביי"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Stop to rest, not merely adjust load"
+            ],
+            "proposition": "The stopping must be to rest.",
+            "scope": "Abaye qualifies stop requirement, distinguishing load adjustment"
+          },
+          "evidence": [
+            {
+              "end_char": 110,
+              "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+              "segment_id": "seg_1bae2df2ee885436f3bd",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.restpurpose",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_within_rest",
+      "fresh_content": {
+        "proposition": "Within four cubits, stopping to rest yields exemption.",
+        "holder_candidates": [
+          "quoted teaching"
+        ],
+        "conditions": [
+          "within four cubits"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Within four cubits",
+              "Stops to rest"
+            ],
+            "proposition": "If he stops within four cubits to rest, he is exempt.",
+            "scope": "Quoted comparison supporting Abaye; outcome of the carrying course, not liability for an intermediate sub-four-cubit stop alone"
+          },
+          "evidence": [
+            {
+              "end_char": 110,
+              "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+              "segment_id": "seg_1bae2df2ee885436f3bd",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.insideRest",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_within_adjust",
+      "fresh_content": {
+        "proposition": "Stopping to adjust the load yields liability.",
+        "holder_candidates": [
+          "quoted teaching"
+        ],
+        "conditions": [
+          "within-four clause context; completing transfer afterward is implicit, not standalone liability merely for adjustment"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Within four cubits",
+              "Stops to adjust the load"
+            ],
+            "proposition": "If he stops within four cubits to adjust the load, he is liable.",
+            "scope": "Quoted comparison supporting Abaye; outcome of the carrying course, not liability for an intermediate sub-four-cubit stop alone"
+          },
+          "evidence": [
+            {
+              "end_char": 110,
+              "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+              "segment_id": "seg_1bae2df2ee885436f3bd",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.insideAdjust",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_outside_rest",
+      "fresh_content": {
+        "proposition": "Beyond four cubits, stopping to rest yields liability.",
+        "holder_candidates": [
+          "quoted teaching"
+        ],
+        "conditions": [
+          "outside four cubits"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Beyond four cubits",
+              "Stops to rest"
+            ],
+            "proposition": "If he stops beyond four cubits to rest, he is liable.",
+            "scope": "Quoted comparison supporting Abaye; outcome of the carrying course, not liability for an intermediate sub-four-cubit stop alone"
+          },
+          "evidence": [
+            {
+              "end_char": 110,
+              "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+              "segment_id": "seg_1bae2df2ee885436f3bd",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.outsideRest",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_outside_adjust",
+      "fresh_content": {
+        "proposition": "Stopping to adjust the load yields exemption.",
+        "holder_candidates": [
+          "quoted teaching"
+        ],
+        "conditions": [
+          "outside-four clause context"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Beyond four cubits",
+              "Stops to adjust the load"
+            ],
+            "proposition": "If he stops beyond four cubits to adjust the load, he is exempt.",
+            "scope": "Quoted comparison supporting Abaye; outcome of the carrying course, not liability for an intermediate sub-four-cubit stop alone"
+          },
+          "evidence": [
+            {
+              "end_char": 110,
+              "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+              "segment_id": "seg_1bae2df2ee885436f3bd",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.outsideAdjust",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_changed_intent",
+      "fresh_content": {
+        "proposition": "Rav Safra reports Rabbi Ami reporting Rabbi Yohanan: moving objects corner to corner then deciding to take them out is exempt because initial lifting was not for this purpose.",
+        "holder_candidates": [
+          "רבי יוחנן"
+        ],
+        "conditions": [
+          "changed intention after lifting"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Initially moves corner to corner",
+              "Subsequently decides to take outside"
+            ],
+            "proposition": "One who moves objects from corner to corner, then changes his mind and takes them out, is exempt.",
+            "scope": "Rabbi Yohanan’s other reported formulation"
+          },
+          "evidence": [
+            {
+              "end_char": 236,
+              "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+              "segment_id": "seg_73f414e99f2873ee0792",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.cornerchange",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The original lifting was not for that purpose.",
+            "scope": "Reason for exemption in changed-intention case"
+          },
+          "evidence": [
+            {
+              "end_char": 236,
+              "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+              "segment_id": "seg_73f414e99f2873ee0792",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.nopurpose",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_versions",
+      "fresh_content": {
+        "proposition": "Different amoraim transmitted the teaching in these two formulations.",
+        "holder_candidates": [
+          "anonymous reconciliation"
+        ],
+        "conditions": [
+          "versions, not two independently novel doctrines"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Different amoraim transmitted the teaching in different wordings.",
+            "scope": "Resolution of apparent duplication; not two independent rulings or new contradiction"
+          },
+          "evidence": [
+            {
+              "end_char": 236,
+              "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+              "segment_id": "seg_73f414e99f2873ee0792",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.tworeporters",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_shop_liable",
+      "fresh_content": {
+        "proposition": "Taking from shop to public plaza through a stoa incurs liability according to first opinion.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "path through stoa"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "From shop to plaza",
+              "Through stoa"
+            ],
+            "proposition": "One who takes an object from a shop to a plaza through a stoa is liable.",
+            "scope": "First tanna’s baraita ruling"
+          },
+          "evidence": [
+            {
+              "end_char": 51,
+              "quote": "ת\"ר המוציא מחנות לפלטיא דרך סטיו חייב ובן עזאי פוטר",
+              "segment_id": "seg_f6706fe4f70b8bfe9733",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.shopliable",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_benazzai",
+      "fresh_content": {
+        "proposition": "Ben Azzai exempts.",
+        "holder_candidates": [
+          "בן עזאי"
+        ],
+        "conditions": [
+          "carrying route; throwing qualification in continuation"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Carrying by walking from shop to plaza through stoa"
+            ],
+            "proposition": "Ben Azzai exempts that transfer.",
+            "scope": "Walking-transfer position; later6a8 excludes throwing/handing from exemption"
+          },
+          "evidence": [
+            {
+              "end_char": 51,
+              "quote": "ת\"ר המוציא מחנות לפלטיא דרך סטיו חייב ובן עזאי פוטר",
+              "segment_id": "seg_f6706fe4f70b8bfe9733",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.shopbenazzai",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_walking_standing",
+      "fresh_content": {
+        "proposition": "Ben Azzai treats walking as standing.",
+        "holder_candidates": [
+          "anonymous explanation of בן עזאי"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Ben Azzai considers walking like standing.",
+            "scope": "Explanation for intermediate stoa interruption"
+          },
+          "evidence": [
+            {
+              "end_char": 99,
+              "quote": "בשלמא בן עזאי קסבר מהלך כעומד דמי אלא רבנן נהי נמי דקסברי מהלך לאו כעומד דמי היכא אשכחנא כה\"ג דחייב",
+              "segment_id": "seg_36c3d34589dc36cbde35",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.walkingstanding",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_chain_open",
+      "fresh_content": {
+        "proposition": "Transmission formula introducing the next analogy: Rav Safra, Rabbi Ami, Rabbi Yohanan.",
+        "holder_candidates": [
+          "reporting formula"
+        ],
+        "conditions": [
+          "proposition continues at 6a:1"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "candidates": [
+              "רב ספרא"
+            ],
+            "role": "transmitter",
+            "scope": "Explicit report chain; original authority distinct from intermediaries",
+            "surface": "רב ספרא אמר רבי אמי אמר רבי יוחנן",
+            "transmission_chain": [
+              "רב ספרא",
+              "רבי אמי",
+              "רבי יוחנן"
+            ]
+          },
+          "evidence": [
+            {
+              "end_char": 26,
+              "quote": "א\"ר ספרא א\"ר אמי א\"ר יוחנן",
+              "segment_id": "seg_eeb2736a83600ff71e5d",
+              "start_char": 0
+            },
+            {
+              "end_char": 89,
+              "quote": "מידי דהוה אמעביר חפץ ברה\"ר התם לאו אע\"ג דכמה דנקיט ליה ואזיל פטור כי מנח לי' חייב ה\"נ ל\"ש",
+              "segment_id": "seg_f22ae4d644dacec85af0",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.chain95",
+          "layer": "attributions",
+          "links": [
+            "sha.s2712.publicanalogy"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_analogy1",
+      "fresh_content": {
+        "proposition": "First analogy: carrying in public domain is exempt during movement but liable upon placing; likewise here.",
+        "holder_candidates": [
+          "רבי יוחנן reported through רב ספרא and רבי אמי"
+        ],
+        "conditions": [
+          "subsequently challenged"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "It is like carrying an object in a public domain: while carrying he is exempt, but when he places it down he is liable.",
+            "scope": "Rabbi Yohanan’s initial analogy reported through Rav Safra and Rabbi Ammi; challenged next"
+          },
+          "evidence": [
+            {
+              "end_char": 26,
+              "quote": "א\"ר ספרא א\"ר אמי א\"ר יוחנן",
+              "segment_id": "seg_eeb2736a83600ff71e5d",
+              "start_char": 0
+            },
+            {
+              "end_char": 89,
+              "quote": "מידי דהוה אמעביר חפץ ברה\"ר התם לאו אע\"ג דכמה דנקיט ליה ואזיל פטור כי מנח לי' חייב ה\"נ ל\"ש",
+              "segment_id": "seg_f22ae4d644dacec85af0",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.publicanalogy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "c_analogy2",
+      "fresh_content": {
+        "proposition": "Revised analogy: carrying from beginning to end of four cubits; placement within four is exempt but at end is liable.",
+        "holder_candidates": [
+          "anonymous revised analogy"
+        ],
+        "conditions": [
+          "challenged in continuation 6a:4"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "Before end of four cubits versus completed four cubits"
+            ],
+            "proposition": "Instead it is like carrying from the beginning to the end of four cubits: placing within four is exempt, but placing at the end of four is liable.",
+            "scope": "Second analogy; rejected in context6a4 as person-relative exemption versus stoa exemption for everyone"
+          },
+          "evidence": [
+            {
+              "end_char": 121,
+              "quote": "אלא מידי דהוה אמעביר חפץ מתחלת ד' לסוף ד' התם לאו אע\"ג דאי מנח ליה בתוך ד' אמות פטור כי מנח ליה בסוף ד' אמות חייב ה\"נ ל\"ש",
+              "segment_id": "seg_e6b197ea81ad525c9452",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.fouranalogy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_hand_novel",
+      "fresh_content": {
+        "formulation": "What is new if Rabbi Yohanan already said a hand counts as four by four?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Reported thrown-object ruling"
+            ],
+            "formulation": "What does this teach—that a person’s hand counts as four by four?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 215,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+              "segment_id": "seg_d44075619c4ebe43c023",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.handnovel",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Apparent repetition of hand-as-four-by-four teaching"
+            ],
+            "formulation": "Did Rabbi Yohanan not already say this once?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 215,
+              "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+              "segment_id": "seg_d44075619c4ebe43c023",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.alreadyhand",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_selfcatch",
+      "fresh_content": {
+        "formulation": "Rabbi Yohanan asks about one who throws, moves from his place, and catches the object himself.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "unreviewed_alternatives",
+            "conditions": [
+              "Same person throws and catches after movement"
+            ],
+            "formulation": "What if one throws an object, moves from his place, and returns to catch it himself?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 53,
+              "quote": "בעי ר' יוחנן זרק חפץ ונעקר הוא ממקומו וחזר וקיבלו מהו",
+              "segment_id": "seg_b3c9307cf22d9cf97cf1",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.selfcatch",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_problem",
+      "fresh_content": {
+        "formulation": "What is the issue being asked?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Rabbi Yohanan self-catching case"
+            ],
+            "formulation": "What is the issue in his question?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+              "segment_id": "seg_b382617dc982e37d1e56",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.whatissue",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "unreviewed_alternatives",
+            "conditions": [
+              "One thrower moves and catches his own object"
+            ],
+            "formulation": "Are two forces in one person treated as one person, making him liable, or as two people, making him exempt?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 138,
+              "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+              "segment_id": "seg_b382617dc982e37d1e56",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.oneortwo",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_zeira",
+      "fresh_content": {
+        "formulation": "Rabbi Zeira objects: whether another person or heaven loaded his hand, he performed no lifting/removal.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Passive receipt of rainwater",
+              "He performs no lifting"
+            ],
+            "formulation": "What difference is there between a friend loading his hand and heaven loading it?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 202,
+              "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+              "segment_id": "seg_f08edea66b3a619608f0",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.heavenfriend",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "He did not perform a lifting.",
+            "scope": "Rabbi Zeira’s objection to passive-receipt wording"
+          },
+          "evidence": [
+            {
+              "end_char": 202,
+              "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+              "segment_id": "seg_f08edea66b3a619608f0",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.nolifting",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_four_place",
+      "fresh_content": {
+        "formulation": "But removal from a place of four is required and absent?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Revised collected-water wording"
+            ],
+            "formulation": "But is lifting from a four-by-four place not required, and absent here?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 202,
+              "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+              "segment_id": "seg_f08edea66b3a619608f0",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.fourplace",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_wall_rest",
+      "fresh_content": {
+        "formulation": "Even on a wall, has it rested?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Proposed wall collection"
+            ],
+            "formulation": "Even on the wall, has the water not failed to come to rest?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "אמר רבי חייא ברי' דרב הונא כגון שקלט מעל גבי הכותל על גבי כותל נמי והא לא נח כדאמר רבאבכותל משופע הכא נמי בכותל משופע והיכא איתמר דרבא אהא דתנן",
+              "segment_id": "seg_2b1977470c52589a6058",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.wallnotrest",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_rava_location",
+      "fresh_content": {
+        "formulation": "Where was Rava’s ruling said? The Mishnah continues next segment.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Invoked sloping-wall analogy"
+            ],
+            "formulation": "Where was Rava’s explanation stated?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 143,
+              "quote": "אמר רבי חייא ברי' דרב הונא כגון שקלט מעל גבי הכותל על גבי כותל נמי והא לא נח כדאמר רבאבכותל משופע הכא נמי בכותל משופע והיכא איתמר דרבא אהא דתנן",
+              "segment_id": "seg_2b1977470c52589a6058",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.whereRava",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_scroll_rest",
+      "fresh_content": {
+        "formulation": "Why turn it writing-side down if it has not rested?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Roof-scroll ten-handbreadth case"
+            ],
+            "formulation": "Why turn it onto the writing—has it not failed to come to rest?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "היה קורא בספר על האיסקופה ונתגלגל הספר מידו גוללו אצלו היה קורא בראש הגג ונתגלגל הספר מידו עד שלא הגיע לי' טפחים גוללו אצלו משהגיע לי' טפחים הופכו על הכתב והוינן בה אמאי הופכו על הכתב הא לא נח",
+              "segment_id": "seg_5b3d6a819ec9ade632d8",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.whyturn",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_water_rest",
+      "fresh_content": {
+        "formulation": "Rava’s scroll can rest; can water rest in that fashion?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Attempted analogy from scroll on sloping wall to water"
+            ],
+            "formulation": "Even if Rava says this for a scroll that can rest there, can water rest there?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 72,
+              "quote": "ואמר רבא בכותל משופע אימור דאמר רבא בספר דעביד דנייח מים מי עבידי דנייחי",
+              "segment_id": "seg_182bb914c86c041bc19c",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.waterrest",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The scroll can rest on that surface, whereas the water analogy fails.",
+            "scope": "Distinction rejects water-wall explanation"
+          },
+          "evidence": [
+            {
+              "end_char": 72,
+              "quote": "ואמר רבא בכותל משופע אימור דאמר רבא בספר דעביד דנייח מים מי עבידי דנייחי",
+              "segment_id": "seg_182bb914c86c041bc19c",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.scrollrestwaternot",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_pit_obvious",
+      "fresh_content": {
+        "formulation": "Is the pit case not obvious?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Water collected from pit"
+            ],
+            "formulation": "Is a pit case not obvious?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+              "segment_id": "seg_932146de1fd4dee40960",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.pitobvious",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_nut_vessel",
+      "fresh_content": {
+        "formulation": "Rava asks whether a nut in a vessel floating on water follows the resting nut or moving vessel.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "unreviewed_alternatives",
+            "conditions": [
+              "Nut in vessel",
+              "Vessel floating on water"
+            ],
+            "formulation": "For a nut in a vessel floating on water, do we follow the nut, which rests, or the vessel, which moves and does not rest?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+              "segment_id": "seg_badfd58c00475b477097",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.nutvessel",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "unresolved",
+            "conditions": [
+              "Consider nut relative to vessel"
+            ],
+            "proposition": "Following the nut treats it as resting.",
+            "scope": "Unresolved alternative"
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+              "segment_id": "seg_badfd58c00475b477097",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.nutperspective",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "unresolved",
+            "conditions": [
+              "Consider moving floating vessel"
+            ],
+            "proposition": "Following the vessel treats it as not resting because it moves.",
+            "scope": "Unresolved alternative"
+          },
+          "evidence": [
+            {
+              "end_char": 184,
+              "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+              "segment_id": "seg_badfd58c00475b477097",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.vesselperspective",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_rest_basis",
+      "fresh_content": {
+        "formulation": "From where this distinction?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Abaye distinction"
+            ],
+            "formulation": "From where is the rest-purpose qualification known?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 110,
+              "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+              "segment_id": "seg_1bae2df2ee885436f3bd",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.restsource",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_repeat",
+      "fresh_content": {
+        "formulation": "Is the novelty absence of initial lifting for this purpose, already stated by Rabbi Yohanan?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Loaded-entry/exit rule",
+              "Lifting intention at initial stage"
+            ],
+            "formulation": "What does this teach—that the original lifting was not initially for this purpose?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 236,
+              "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+              "segment_id": "seg_73f414e99f2873ee0792",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.intentnovel",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Apparent duplication of original-lifting-purpose rule"
+            ],
+            "formulation": "Did Rabbi Yohanan not already say this once?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 236,
+              "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+              "segment_id": "seg_73f414e99f2873ee0792",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.alreadyintent",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_rabbis_analogy",
+      "fresh_content": {
+        "formulation": "Even if rabbis do not treat walking as standing, where is an analogous liability case?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Sages shop-through-stoa liability"
+            ],
+            "formulation": "Where do we find a comparable case of liability, even granting walking is not standing?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 99,
+              "quote": "בשלמא בן עזאי קסבר מהלך כעומד דמי אלא רבנן נהי נמי דקסברי מהלך לאו כעומד דמי היכא אשכחנא כה\"ג דחייב",
+              "segment_id": "seg_36c3d34589dc36cbde35",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.analogywhere",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The sages consider walking unlike standing.",
+            "scope": "Conceded premise does not itself establish their liability analogy"
+          },
+          "evidence": [
+            {
+              "end_char": 99,
+              "quote": "בשלמא בן עזאי קסבר מהלך כעומד דמי אלא רבנן נהי נמי דקסברי מהלך לאו כעומד דמי היכא אשכחנא כה\"ג דחייב",
+              "segment_id": "seg_36c3d34589dc36cbde35",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.walkingnotstanding",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    },
+    {
+      "fresh_id": "q_analogy1",
+      "fresh_content": {
+        "formulation": "Is that comparable? There every location is potentially liability-bearing upon placement, while placement in the stoa is exempt.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Public-domain-carrying analogy for route through stoa"
+            ],
+            "formulation": "Are those cases comparable?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "מי דמי התם כל היכא דמנח ליה מקום חיוב הוא הכא אי מנח ליה בסטיו מקום פטור הוא",
+              "segment_id": "seg_1ffb526e703c83f732c9",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.q.firstcomparable",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "In the public-domain case, wherever he sets it down is a place of liability.",
+            "scope": "Distinguishing domain premise in objection"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "מי דמי התם כל היכא דמנח ליה מקום חיוב הוא הכא אי מנח ליה בסטיו מקום פטור הוא",
+              "segment_id": "seg_1ffb526e703c83f732c9",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.everywhereliable",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Sets down in stoa"
+            ],
+            "proposition": "If he sets it down in the stoa, it is a place of exemption.",
+            "scope": "Contrasting premise defeats first analogy"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "מי דמי התם כל היכא דמנח ליה מקום חיוב הוא הכא אי מנח ליה בסטיו מקום פטור הוא",
+              "segment_id": "seg_1ffb526e703c83f732c9",
+              "start_char": 0
+            }
+          ],
+          "id": "sha.s2712.stoaexempt",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented; unresolved alternatives, stage or reporting-only formula distinguished as appropriate"
+    }
+  ],
+  "producer_extra_source_supported": [
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "A person’s hand counts as four by four.",
+        "scope": "Premise invoked in novelty question"
+      },
+      "evidence": [
+        {
+          "end_char": 215,
+          "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+          "segment_id": "seg_d44075619c4ebe43c023",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2712.handfour",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "answer_set_status": "partial",
+        "conditions": [
+          "Second proposed analogy",
+          "Its comparability is rejected next at6a4"
+        ],
+        "formulation": "In a four-cubit carrying course, is it not true that setting down within four is exempt but setting down at its end is liable?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 121,
+          "quote": "אלא מידי דהוה אמעביר חפץ מתחלת ד' לסוף ד' התם לאו אע\"ג דאי מנח ליה בתוך ד' אמות פטור כי מנח ליה בסוף ד' אמות חייב ה\"נ ל\"ש",
+          "segment_id": "seg_e6b197ea81ad525c9452",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2712.q.fourcase",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "answer_set_status": "partial",
+        "conditions": [
+          "First proposed analogy",
+          "Carrying course fulfilling required transfer distance"
+        ],
+        "formulation": "In public-domain carrying, is it not true that he is exempt while carrying but liable when he sets it down?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 26,
+          "quote": "א\"ר ספרא א\"ר אמי א\"ר יוחנן",
+          "segment_id": "seg_eeb2736a83600ff71e5d",
+          "start_char": 0
+        },
+        {
+          "end_char": 89,
+          "quote": "מידי דהוה אמעביר חפץ ברה\"ר התם לאו אע\"ג דכמה דנקיט ליה ואזיל פטור כי מנח לי' חייב ה\"נ ל\"ש",
+          "segment_id": "seg_f22ae4d644dacec85af0",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2712.q.publiccase",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    }
+  ],
+  "question_review": {
+    "producer_questions": 20,
+    "fresh_questions": 15,
+    "missing_explicit_questions_identified": [],
+    "assessment": "Duplicate novelty questions split, two-forces alternatives and rhetorical public/four-cubit analogy questions explicit. Selfcatch/oneortwo/nutvessel answer_set_status unreviewed_alternatives does not mean source resolved: dedicated תיקו claims and unresolved_outcome edges record definitive source nonresolution."
+  },
+  "semantic_checks": [
+    "Hand-as-four-by-four and no self-designation restriction retained. Stationary versus moving recipient changes thrower liability; Others corroborating baraita is not an opposing opinion.",
+    "Self-catching one/two actor options explicitly unresolved, with selfteiku and unresolved_outcome edges. Floating nut/vessel alternatives likewise unresolved; no selected liability side.",
+    "Rain passive-receipt wording challenged for absent lifting, corrected to collection. Wall/sloping-wall water explanation rejected, scroll sloping-wall explanation retained, pit replaces water-wall case. Original fused raw רבאבכותל unchanged in evidence.",
+    "Threshold/roof scroll cases and ten-handbreadth boundary retained; no confusion of scroll and water resting. Water-on-water versus nut-on-water rules separate.",
+    "Oil/wine quotation retains tevul-yom contact, first opinion versus Rabbi Yohanan ben Nuri; no conflation with amora Yohanan or invented final Shabbat outcome.",
+    "Loaded entry/exit necessary-stop condition qualified by rest purpose. Four rest/load-adjustment cases preserve within/beyond four cubits; scope warns intermediate sub-four adjustment alone is not liability. Initial intent/corner-change and transmission variants explain apparent duplication.",
+    "First stoa analogy and second four-cubit analogy rejected at different stages, latter explicitly from6a4 context. Later public-side analogy with חיפופי qualification is context, not silently promoted as extracted core. Ben Azzai walking exemption scoped against6a8 throwing/handing liability."
+  ],
+  "role_review": {
+    "assessment": "Avin/Ilaai/Yohanan chains differ from Avin/Yohanan rain report. Safra/Ami/Yohanan chain crosses folio for first analogy. Rabbi Yohanan and Rava question-speakers distinct from Adda explanatory holder; Hiyya son of Huna wall proposal distinct from Rava pit correction. No unsupported reporter-to-holder conversion found.",
+    "chains": [
+      {
+        "content": {
+          "candidates": [
+            "רבי אבין"
+          ],
+          "role": "transmitter",
+          "scope": "Explicit report chain; original authority distinct from intermediaries",
+          "surface": "רבי אבין אמר רבי אילעאי אמר רבי יוחנן",
+          "transmission_chain": [
+            "רבי אבין",
+            "רבי אילעאי",
+            "רבי יוחנן"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 215,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+            "segment_id": "seg_d44075619c4ebe43c023",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.chain79",
+        "layer": "attributions",
+        "links": [
+          "sha.s2712.handcatch",
+          "sha.s2712.noimportance"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבי אבין"
+          ],
+          "role": "transmitter",
+          "scope": "Explicit report chain; original authority distinct from intermediaries",
+          "surface": "רבי אבין אמר רבי אילעאי אמר רבי יוחנן",
+          "transmission_chain": [
+            "רבי אבין",
+            "רבי אילעאי",
+            "רבי יוחנן"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 143,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור תניא נמי הכי אחרים אומרים עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור",
+            "segment_id": "seg_5cd3d50fa485c62a1a2e",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.chain80",
+        "layer": "attributions",
+        "links": [
+          "sha.s2712.stayscatch",
+          "sha.s2712.movescatch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבי אבין"
+          ],
+          "role": "transmitter",
+          "scope": "Explicit report chain; original authority distinct from intermediaries",
+          "surface": "רבי אבין אמר רבי יוחנן",
+          "transmission_chain": [
+            "רבי אבין",
+            "רבי יוחנן"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 202,
+            "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+            "segment_id": "seg_f08edea66b3a619608f0",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.chain83",
+        "layer": "attributions",
+        "links": [
+          "sha.s2712.raininitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבי אבין"
+          ],
+          "role": "transmitter",
+          "scope": "Explicit report chain; original authority distinct from intermediaries",
+          "surface": "רבי אבין אמר רבי אילעאי אמר רבי יוחנן",
+          "transmission_chain": [
+            "רבי אבין",
+            "רבי אילעאי",
+            "רבי יוחנן"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 97,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן היה טעון אוכלים ומשקין ונכנס ויוצא כל היום כולו אינו חייב עד שיעמוד",
+            "segment_id": "seg_8369ccad3aee18ac12b7",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.chain90",
+        "layer": "attributions",
+        "links": [
+          "sha.s2712.loadeduntilstop"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רב ספרא"
+          ],
+          "role": "transmitter",
+          "scope": "Explicit report chain; original authority distinct from intermediaries",
+          "surface": "רב ספרא אמר רבי אמי אמר רבי יוחנן",
+          "transmission_chain": [
+            "רב ספרא",
+            "רבי אמי",
+            "רבי יוחנן"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 236,
+            "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+            "segment_id": "seg_73f414e99f2873ee0792",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.chain92",
+        "layer": "attributions",
+        "links": [
+          "sha.s2712.cornerchange",
+          "sha.s2712.nopurpose"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רב ספרא"
+          ],
+          "role": "transmitter",
+          "scope": "Explicit report chain; original authority distinct from intermediaries",
+          "surface": "רב ספרא אמר רבי אמי אמר רבי יוחנן",
+          "transmission_chain": [
+            "רב ספרא",
+            "רבי אמי",
+            "רבי יוחנן"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 26,
+            "quote": "א\"ר ספרא א\"ר אמי א\"ר יוחנן",
+            "segment_id": "seg_eeb2736a83600ff71e5d",
+            "start_char": 0
+          },
+          {
+            "end_char": 89,
+            "quote": "מידי דהוה אמעביר חפץ ברה\"ר התם לאו אע\"ג דכמה דנקיט ליה ואזיל פטור כי מנח לי' חייב ה\"נ ל\"ש",
+            "segment_id": "seg_f22ae4d644dacec85af0",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.chain95",
+        "layer": "attributions",
+        "links": [
+          "sha.s2712.publicanalogy"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "graph_review": {
+    "producer_edges": 43,
+    "fresh_edges": 18,
+    "assessment": "Directions checked: corroborating claims support matching stationary/moving rules; correction/refutation not confused with unresolved_outcome; pit corrects wall interpretation; rest-purpose qualifies stopping; both rejected analogies retain status on answer/correction edges. No exact-edge or completeness certification.",
+    "records": [
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.noimportance",
+          "target_id": "sha.s2712.q.handnovel"
+        },
+        "evidence": [
+          {
+            "end_char": 215,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+            "segment_id": "seg_d44075619c4ebe43c023",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.0",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.noimportance",
+          "sha.s2712.q.handnovel"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.noimportance",
+          "target_id": "sha.s2712.q.alreadyhand"
+        },
+        "evidence": [
+          {
+            "end_char": 215,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+            "segment_id": "seg_d44075619c4ebe43c023",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.1",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.noimportance",
+          "sha.s2712.q.alreadyhand"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.q.heavenfriend",
+          "target_id": "sha.s2712.raininitial"
+        },
+        "evidence": [
+          {
+            "end_char": 202,
+            "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+            "segment_id": "seg_f08edea66b3a619608f0",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.10",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.q.heavenfriend",
+          "sha.s2712.raininitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "sha.s2712.collectinstead",
+          "target_id": "sha.s2712.raininitial"
+        },
+        "evidence": [
+          {
+            "end_char": 202,
+            "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+            "segment_id": "seg_f08edea66b3a619608f0",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.11",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.collectinstead",
+          "sha.s2712.raininitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.q.fourplace",
+          "target_id": "sha.s2712.collectinstead"
+        },
+        "evidence": [
+          {
+            "end_char": 202,
+            "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+            "segment_id": "seg_f08edea66b3a619608f0",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.12",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.q.fourplace",
+          "sha.s2712.collectinstead"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.wallcollection",
+          "target_id": "sha.s2712.q.fourplace"
+        },
+        "evidence": [
+          {
+            "end_char": 143,
+            "quote": "אמר רבי חייא ברי' דרב הונא כגון שקלט מעל גבי הכותל על גבי כותל נמי והא לא נח כדאמר רבאבכותל משופע הכא נמי בכותל משופע והיכא איתמר דרבא אהא דתנן",
+            "segment_id": "seg_2b1977470c52589a6058",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.13",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.wallcollection",
+          "sha.s2712.q.fourplace"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.slopingwater",
+          "target_id": "sha.s2712.q.wallnotrest"
+        },
+        "evidence": [
+          {
+            "end_char": 143,
+            "quote": "אמר רבי חייא ברי' דרב הונא כגון שקלט מעל גבי הכותל על גבי כותל נמי והא לא נח כדאמר רבאבכותל משופע הכא נמי בכותל משופע והיכא איתמר דרבא אהא דתנן",
+            "segment_id": "seg_2b1977470c52589a6058",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.14",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.slopingwater",
+          "sha.s2712.q.wallnotrest"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.slopingscroll",
+          "target_id": "sha.s2712.q.whyturn"
+        },
+        "evidence": [
+          {
+            "end_char": 72,
+            "quote": "ואמר רבא בכותל משופע אימור דאמר רבא בספר דעביד דנייח מים מי עבידי דנייחי",
+            "segment_id": "seg_182bb914c86c041bc19c",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.15",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.slopingscroll",
+          "sha.s2712.q.whyturn"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.slopingscroll",
+          "target_id": "sha.s2712.q.whereRava"
+        },
+        "evidence": [
+          {
+            "end_char": 72,
+            "quote": "ואמר רבא בכותל משופע אימור דאמר רבא בספר דעביד דנייח מים מי עבידי דנייחי",
+            "segment_id": "seg_182bb914c86c041bc19c",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.16",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.slopingscroll",
+          "sha.s2712.q.whereRava"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.q.waterrest",
+          "target_id": "sha.s2712.slopingwater"
+        },
+        "evidence": [
+          {
+            "end_char": 72,
+            "quote": "ואמר רבא בכותל משופע אימור דאמר רבא בספר דעביד דנייח מים מי עבידי דנייחי",
+            "segment_id": "seg_182bb914c86c041bc19c",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.17",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.q.waterrest",
+          "sha.s2712.slopingwater"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.scrollrestwaternot",
+          "target_id": "sha.s2712.slopingwater"
+        },
+        "evidence": [
+          {
+            "end_char": 72,
+            "quote": "ואמר רבא בכותל משופע אימור דאמר רבא בספר דעביד דנייח מים מי עבידי דנייחי",
+            "segment_id": "seg_182bb914c86c041bc19c",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.18",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.scrollrestwaternot",
+          "sha.s2712.slopingwater"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "sha.s2712.pitwater",
+          "target_id": "sha.s2712.wallcollection"
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+            "segment_id": "seg_932146de1fd4dee40960",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.19",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.pitwater",
+          "sha.s2712.wallcollection"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "sha.s2712.noimportance",
+          "target_id": "sha.s2712.selfimportance"
+        },
+        "evidence": [
+          {
+            "end_char": 215,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן זרק חפץ ונח בתוך ידו של חבירו חייב מאי קמ\"ל ידו של אדם חשובה לו כד' על ד' והא אמרה ר' יוחנן חדא זימנא מהו דתימא ה\"מ היכא דאחשבה הוא לידיה אבל היכא דלא אחשבה הוא לידיה אימא לא קא משמע לן",
+            "segment_id": "seg_d44075619c4ebe43c023",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.2",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.noimportance",
+          "sha.s2712.selfimportance"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.pitwater",
+          "target_id": "sha.s2712.q.fourplace"
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+            "segment_id": "seg_932146de1fd4dee40960",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.20",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.pitwater",
+          "sha.s2712.q.fourplace"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.wateronwater",
+          "target_id": "sha.s2712.q.pitobvious"
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+            "segment_id": "seg_932146de1fd4dee40960",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.21",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.wateronwater",
+          "sha.s2712.q.pitobvious"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "sha.s2712.wateronwater",
+          "target_id": "sha.s2712.waternotrestassumption"
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "אלא אמר רבא כגון שקלט מע\"ג גומא גומא פשיטא מהו דתימא מים ע\"ג מים לאו הנחה הוא קמ\"ל",
+            "segment_id": "seg_932146de1fd4dee40960",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.22",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.wateronwater",
+          "sha.s2712.waternotrestassumption"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "sha.s2712.waterrests",
+          "target_id": "sha.s2712.wateronwater"
+        },
+        "evidence": [
+          {
+            "end_char": 184,
+            "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+            "segment_id": "seg_badfd58c00475b477097",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.23",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.waterrests",
+          "sha.s2712.wateronwater"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "distinction",
+          "source_id": "sha.s2712.nutnotrest",
+          "target_id": "sha.s2712.waterrests"
+        },
+        "evidence": [
+          {
+            "end_char": 184,
+            "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+            "segment_id": "seg_badfd58c00475b477097",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.24",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.nutnotrest",
+          "sha.s2712.waterrests"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "unresolved_outcome",
+          "source_id": "sha.s2712.nutteiku",
+          "target_id": "sha.s2712.q.nutvessel"
+        },
+        "evidence": [
+          {
+            "end_char": 184,
+            "quote": "ואזדא רבא לטעמיה דאמר רבא מים ע\"ג מים היינו הנחתן אגוז ע\"ג מים לאו היינו הנחתו בעי רבא אגוז בכלי וכלי צף ע\"ג מים בתר אגוז אזלינן והא נייח או דילמא בתר כלי אזלינן והא לא נייח דנייד תיקו",
+            "segment_id": "seg_badfd58c00475b477097",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.25",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.nutteiku",
+          "sha.s2712.q.nutvessel"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "sha.s2712.oilonly",
+          "target_id": "sha.s2712.oilwine"
+        },
+        "evidence": [
+          {
+            "end_char": 148,
+            "quote": "שמן שצף ע\"ג יין מחלוקת ר' יוחנן בן נורי ורבנן דתנן שמן שצף ע\"ג יין ונגע טבול יום בשמן לא פסל אלא שמן בלבד ר' יוחנן בן נורי אומר שניהם מחוברים זה לזה",
+            "segment_id": "seg_53630a3def8f4123561a",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.26",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.oilonly",
+          "sha.s2712.oilwine"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "sha.s2712.bothconnected",
+          "target_id": "sha.s2712.oilwine"
+        },
+        "evidence": [
+          {
+            "end_char": 148,
+            "quote": "שמן שצף ע\"ג יין מחלוקת ר' יוחנן בן נורי ורבנן דתנן שמן שצף ע\"ג יין ונגע טבול יום בשמן לא פסל אלא שמן בלבד ר' יוחנן בן נורי אומר שניהם מחוברים זה לזה",
+            "segment_id": "seg_53630a3def8f4123561a",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.27",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.bothconnected",
+          "sha.s2712.oilwine"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "sha.s2712.restpurpose",
+          "target_id": "sha.s2712.loadeduntilstop"
+        },
+        "evidence": [
+          {
+            "end_char": 110,
+            "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+            "segment_id": "seg_1bae2df2ee885436f3bd",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.28",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.restpurpose",
+          "sha.s2712.loadeduntilstop"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.insideRest",
+          "target_id": "sha.s2712.q.restsource"
+        },
+        "evidence": [
+          {
+            "end_char": 110,
+            "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+            "segment_id": "seg_1bae2df2ee885436f3bd",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.29",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.insideRest",
+          "sha.s2712.q.restsource"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "sha.s2712.aherimstay",
+          "target_id": "sha.s2712.stayscatch"
+        },
+        "evidence": [
+          {
+            "end_char": 143,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור תניא נמי הכי אחרים אומרים עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור",
+            "segment_id": "seg_5cd3d50fa485c62a1a2e",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.3",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.aherimstay",
+          "sha.s2712.stayscatch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.insideAdjust",
+          "target_id": "sha.s2712.q.restsource"
+        },
+        "evidence": [
+          {
+            "end_char": 110,
+            "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+            "segment_id": "seg_1bae2df2ee885436f3bd",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.30",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.insideAdjust",
+          "sha.s2712.q.restsource"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.outsideRest",
+          "target_id": "sha.s2712.q.restsource"
+        },
+        "evidence": [
+          {
+            "end_char": 110,
+            "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+            "segment_id": "seg_1bae2df2ee885436f3bd",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.31",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.outsideRest",
+          "sha.s2712.q.restsource"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.outsideAdjust",
+          "target_id": "sha.s2712.q.restsource"
+        },
+        "evidence": [
+          {
+            "end_char": 110,
+            "quote": "אמר אביי והוא שעמד לפוש ממאי מדאמר מר תוך ד' אמות עמד לפוש פטור לכתף חייב חוץ לד' אמות עמד לפוש חייב לכתף פטור",
+            "segment_id": "seg_1bae2df2ee885436f3bd",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.32",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.outsideAdjust",
+          "sha.s2712.q.restsource"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "sha.s2712.nopurpose",
+          "target_id": "sha.s2712.cornerchange"
+        },
+        "evidence": [
+          {
+            "end_char": 236,
+            "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+            "segment_id": "seg_73f414e99f2873ee0792",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.33",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.nopurpose",
+          "sha.s2712.cornerchange"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.tworeporters",
+          "target_id": "sha.s2712.q.alreadyintent"
+        },
+        "evidence": [
+          {
+            "end_char": 236,
+            "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+            "segment_id": "seg_73f414e99f2873ee0792",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.34",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.tworeporters",
+          "sha.s2712.q.alreadyintent"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.nopurpose",
+          "target_id": "sha.s2712.q.intentnovel"
+        },
+        "evidence": [
+          {
+            "end_char": 236,
+            "quote": "מאי קמ\"ל שלא היתה עקירה משעה ראשונה לכך הא אמרה רבי יוחנן חדא זימנא דאמר רב ספרא א\"ר אמי א\"ר יוחנן המעביר חפצים מזוית לזוית ונמלך עליהן והוציאן פטור שלא היתה עקירה משעה ראשונה לכך אמוראי נינהו מר אמר לה בהאי לישנא ומר אמר לה בהאי לישנא:",
+            "segment_id": "seg_73f414e99f2873ee0792",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.35",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.nopurpose",
+          "sha.s2712.q.intentnovel"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "sha.s2712.walkingstanding",
+          "target_id": "sha.s2712.shopbenazzai"
+        },
+        "evidence": [
+          {
+            "end_char": 99,
+            "quote": "בשלמא בן עזאי קסבר מהלך כעומד דמי אלא רבנן נהי נמי דקסברי מהלך לאו כעומד דמי היכא אשכחנא כה\"ג דחייב",
+            "segment_id": "seg_36c3d34589dc36cbde35",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.36",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.walkingstanding",
+          "sha.s2712.shopbenazzai"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.publicanalogy",
+          "target_id": "sha.s2712.q.analogywhere"
+        },
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "מידי דהוה אמעביר חפץ ברה\"ר התם לאו אע\"ג דכמה דנקיט ליה ואזיל פטור כי מנח לי' חייב ה\"נ ל\"ש",
+            "segment_id": "seg_f22ae4d644dacec85af0",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.37",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.publicanalogy",
+          "sha.s2712.q.analogywhere"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.q.firstcomparable",
+          "target_id": "sha.s2712.publicanalogy"
+        },
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "מי דמי התם כל היכא דמנח ליה מקום חיוב הוא הכא אי מנח ליה בסטיו מקום פטור הוא",
+            "segment_id": "seg_1ffb526e703c83f732c9",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.38",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.q.firstcomparable",
+          "sha.s2712.publicanalogy"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.stoaexempt",
+          "target_id": "sha.s2712.publicanalogy"
+        },
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "מי דמי התם כל היכא דמנח ליה מקום חיוב הוא הכא אי מנח ליה בסטיו מקום פטור הוא",
+            "segment_id": "seg_1ffb526e703c83f732c9",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.39",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.stoaexempt",
+          "sha.s2712.publicanalogy"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "sha.s2712.aherimmove",
+          "target_id": "sha.s2712.movescatch"
+        },
+        "evidence": [
+          {
+            "end_char": 143,
+            "quote": "א\"ר אבין א\"ר אילעאי א\"ר יוחנן עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור תניא נמי הכי אחרים אומרים עמד במקומו וקיבל חייב עקר ממקומו וקיבל פטור",
+            "segment_id": "seg_5cd3d50fa485c62a1a2e",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.4",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.aherimmove",
+          "sha.s2712.movescatch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.everywhereliable",
+          "target_id": "sha.s2712.publicanalogy"
+        },
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "מי דמי התם כל היכא דמנח ליה מקום חיוב הוא הכא אי מנח ליה בסטיו מקום פטור הוא",
+            "segment_id": "seg_1ffb526e703c83f732c9",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.40",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.everywhereliable",
+          "sha.s2712.publicanalogy"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "sha.s2712.fouranalogy",
+          "target_id": "sha.s2712.publicanalogy"
+        },
+        "evidence": [
+          {
+            "end_char": 121,
+            "quote": "אלא מידי דהוה אמעביר חפץ מתחלת ד' לסוף ד' התם לאו אע\"ג דאי מנח ליה בתוך ד' אמות פטור כי מנח ליה בסוף ד' אמות חייב ה\"נ ל\"ש",
+            "segment_id": "seg_e6b197ea81ad525c9452",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.41",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.fouranalogy",
+          "sha.s2712.publicanalogy"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.fouranalogy",
+          "target_id": "sha.s2712.q.analogywhere"
+        },
+        "evidence": [
+          {
+            "end_char": 121,
+            "quote": "אלא מידי דהוה אמעביר חפץ מתחלת ד' לסוף ד' התם לאו אע\"ג דאי מנח ליה בתוך ד' אמות פטור כי מנח ליה בסוף ד' אמות חייב ה\"נ ל\"ש",
+            "segment_id": "seg_e6b197ea81ad525c9452",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.42",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.fouranalogy",
+          "sha.s2712.q.analogywhere"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "sha.s2712.twoforces",
+          "target_id": "sha.s2712.q.whatissue"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+            "segment_id": "seg_b382617dc982e37d1e56",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.5",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.twoforces",
+          "sha.s2712.q.whatissue"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "sha.s2712.twoforces",
+          "target_id": "sha.s2712.q.selfcatch"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+            "segment_id": "seg_b382617dc982e37d1e56",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.6",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.twoforces",
+          "sha.s2712.q.selfcatch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "unresolved_outcome",
+          "source_id": "sha.s2712.selfteiku",
+          "target_id": "sha.s2712.q.selfcatch"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+            "segment_id": "seg_b382617dc982e37d1e56",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.7",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.selfteiku",
+          "sha.s2712.q.selfcatch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "unresolved_outcome",
+          "source_id": "sha.s2712.selfteiku",
+          "target_id": "sha.s2712.q.oneortwo"
+        },
+        "evidence": [
+          {
+            "end_char": 138,
+            "quote": "מאי קמבעיא ליה אמר רב אדא בר אהבה שני כחות באדם אחד קא מבעיא ליה שני כחות באדם אחד כאדם אחד דמי וחייב או דילמא כשני בני אדם דמי ופטור תיקו",
+            "segment_id": "seg_b382617dc982e37d1e56",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.8",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.selfteiku",
+          "sha.s2712.q.oneortwo"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "sha.s2712.nolifting",
+          "target_id": "sha.s2712.raininitial"
+        },
+        "evidence": [
+          {
+            "end_char": 202,
+            "quote": "א\"ר אבין א\"ר יוחנן הכניס ידו לתוך חצר חבירו וקיבל מי גשמים והוציא חייב מתקיף לה ר' זירא מה לי הטעינו חבירו מה לי הטעינו שמים איהו לא עביד עקירה לא תימא קיבל אלא קלט והא בעינן עקירה מעל גבי מקום ד' וליכא",
+            "segment_id": "seg_f08edea66b3a619608f0",
+            "start_char": 0
+          }
+        ],
+        "id": "sha.s2712.e.9",
+        "layer": "edges",
+        "links": [
+          "sha.s2712.nolifting",
+          "sha.s2712.raininitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "reader_status_differences": [
+    "Fresh wall/first analogy locally asserted but context challenged; producer rejected marks final interpretive stage. Original frozen reading preserved.",
+    "Fresh reporting-formula c_chain_open represented as transmitter record rather than substantive claim, without loss of cross-folio source."
+  ],
+  "mandatory_repairs": [],
+  "outcome": "No mandatory new-core repair identified in bounded exact comparison.",
+  "qualifications": [
+    "No blanket atomicity, role, task or whole-tractate qualification.",
+    "Conditions and scope must accompany isolated claims; review does not authorize decontextualized legal extraction.",
+    "No eligibility change or production/source mutation; no probability credit."
+  ],
+  "context_findings": [
+    {
+      "evidence": [
+        {
+          "ref": "Shabbat 5a:12",
+          "segment_id": "seg_5f46e15cae1b5dc0a726",
+          "start_char": 0,
+          "end_char": 131,
+          "quote": "אמר רבא איכפל תנא לאשמעינן כל הני אלא אמר רבא ידו של אדם חשובה לו כד' על ד' וכן כי אתא רבין א\"ר יוחנן ידו של אדם חשובה לו כד' על ד'"
+        }
+      ],
+      "explanation": "Prior hand-as-four-by-four rule is stated by Rava and separately reported by Ravin in Rabbi Yohanan’s name. The duplicate-teaching objection in core refers to this."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Shabbat 6a:4",
+          "segment_id": "seg_3082bc5b153f6f5621a1",
+          "start_char": 0,
+          "end_char": 82,
+          "quote": "מי דמי התם. לגבי דהאי גברא מקום פטור הוא לכ\"ע מקום חיוב הוא הכא לכ\"ע מקום פטור הוא"
+        },
+        {
+          "ref": "Shabbat 6a:5",
+          "segment_id": "seg_4fedaf991b27c9988524",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "אלא מידי דהוה אמוציא מרה\"י לרה\"ר דרך צדי רה\"ר התם לאו אע\"ג דאי מנח ליה אצדי רה\"ר פטור וכי מנח ליה ברה\"ר חייב ה\"נ ל\"ש"
+        }
+      ],
+      "explanation": "The endpoint four-cubit analogy is challenged: exempt only relative to this person, whereas stoa is exempt for all. Revised analogy is taking private-to-public through sides of public domain."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Shabbat 6a:6",
+          "segment_id": "seg_508cf05a5deafc800729",
+          "start_char": 0,
+          "end_char": 120,
+          "quote": "מתקיף לה רב פפא הניחא לרבנן דאמרי צדי רה\"ר לאו כרה\"ר דמי אלא לר' אליעזר (בן יעקב) דאמר צדי רה\"ר כרה\"ר דמי מאי איכא למימר"
+        },
+        {
+          "ref": "Shabbat 6a:7",
+          "segment_id": "seg_36e25d32af5d30854fec",
+          "start_char": 0,
+          "end_char": 141,
+          "quote": "א\"ל רב אחא בריה דרב איקא אימור דשמעת לר\"א (בן יעקב) דאמר צדי רה\"ר כרה\"ר דמי היכא דליכא חיפופי אבל היכא דאיכא חיפופי מי שמעת ליה הלכך להא דמיא"
+        }
+      ],
+      "explanation": "Rav Pappa challenges applicability under Rabbi Eliezer (ben Yaakov, printed parenthetically) who treats public-domain sides like public domain. Rav Aha son of Rav Ika distinguishes absence/presence of חיפופי; with barriers the analogy remains applicable. Do not erase the textual patronymic parentheses or the condition."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Shabbat 6a:8",
+          "segment_id": "seg_e7367ee42d5332967293",
+          "start_char": 0,
+          "end_char": 175,
+          "quote": "א\"ר יוחנן ומודה בן עזאי בזורק תניא נמי הכי המוציא מחנות לפלטיא דרך סטיו חייב אחד המוציא ואחד המכניס ואחד הזורק ואחד המושיט בן עזאי אומר המוציא והמכניס פטור המושיט והזורק חייב:"
+        }
+      ],
+      "explanation": "Rabbi Yohanan says Ben Azzai concedes throwing; corroborating baraita distinguishes carrying out/in (Ben Azzai exempts) from passing/throwing (liable). Preserve both the narrower reported statement and fuller baraita."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Shabbat 6a:9",
+          "segment_id": "seg_f73d76cb3cf0a55f2a2a",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "ת\"ר ד' רשויות לשבת רה\"י ורה\"ר וכרמלית ומקום פטור"
+        }
+      ],
+      "explanation": "New topic lists four Shabbat domains; no subsequent reversal of the preceding qualified analogy is indicated at this boundary."
+    }
+  ]
+}
