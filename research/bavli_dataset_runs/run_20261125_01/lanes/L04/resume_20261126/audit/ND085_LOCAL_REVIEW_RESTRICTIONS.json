@@ -1,0 +1,364 @@
+{
+  "comparison_sha256": "50e17fef783347e9611a165471feb95d92f337633b3718f39aef5123f32408cf",
+  "preserved_findings": [
+    {
+      "id": "R01",
+      "classification": "reader_error",
+      "ref": "Nedarim 19a:1 / 19a:3",
+      "reader_record_ids": [
+        "nd081.edges.0003",
+        "nd081.edges.0005"
+      ],
+      "producer_record_ids": [],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [],
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 19a:1",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "כל שכן"
+        },
+        {
+          "segment_id": "Nedarim 19a:3",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "ותני עלה"
+        }
+      ],
+      "finding": "Common JSON-schema validation is preserved as PASS. These two continuation edges connect claims; frozen runner validate_apply explicitly requires both continuation endpoints to be structure. Thus they are incompatible with runner semantic foreign-key constraint, not JSON-schema failures.",
+      "proposed_action": "Preserve originals; future reader revision should use an allowed supported argument relation or structural continuation endpoints.",
+      "severity": "medium",
+      "resolution_state": "open_no_records_changed"
+    },
+    {
+      "id": "R02",
+      "classification": "reader_error",
+      "ref": "Nedarim 18b:6 / 20b:9",
+      "reader_record_ids": [
+        "nd081.attributions.0014",
+        "nd081.attributions.0015",
+        "nd081.attributions.0061"
+      ],
+      "producer_record_ids": [],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [],
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 18b:6",
+          "start_char": 87,
+          "end_char": 110,
+          "quote": "סתם חרמים ביהודה מותרין"
+        },
+        {
+          "segment_id": "Nedarim 18b:6",
+          "start_char": 111,
+          "end_char": 160,
+          "quote": "בגליל אסורין שאין אנשי גליל מכירין את חרמי הכהנים"
+        },
+        {
+          "segment_id": "Nedarim 20b:9",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "בני אימה"
+        }
+      ],
+      "finding": "Reader embeds editorial qualifiers in candidate identity strings (surface clause; reassigned..., inherited list). The prose communicates uncertainty, but these are not clean authority identities and must not become new scholars.",
+      "proposed_action": "Keep canonical surface identity separate from uncertainty/local-status prose; preserve Abaye reassignment.",
+      "severity": "medium",
+      "resolution_state": "open_no_records_changed"
+    },
+    {
+      "id": "U01",
+      "classification": "unresolved_uncertainty",
+      "ref": "Nedarim 18b:5",
+      "reader_record_ids": [
+        "nd081.attributions.0009",
+        "nd081.attributions.0010"
+      ],
+      "producer_record_ids": [
+        "nd.r018.chamber.a",
+        "nd.r018.produce.a",
+        "nd.r018.tunknown.a"
+      ],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [
+        {
+          "end_char": 40,
+          "quote": "הרי עלי כתרומה אם כתרומת הלשכה נדר  אסור",
+          "segment_id": "seg_1fc08714f9ff20c434a9",
+          "start_char": 0,
+          "ref": "Nedarim 18b:5"
+        },
+        {
+          "end_char": 57,
+          "quote": "ואם של גורן מותר",
+          "segment_id": "seg_1fc08714f9ff20c434a9",
+          "start_char": 41,
+          "ref": "Nedarim 18b:5"
+        },
+        {
+          "end_char": 85,
+          "quote": "ואם סתם  אסור דברי רבי מאיר",
+          "segment_id": "seg_1fc08714f9ff20c434a9",
+          "start_char": 58,
+          "ref": "Nedarim 18b:5"
+        }
+      ],
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 18b:5",
+          "start_char": 15,
+          "end_char": 40,
+          "quote": "אם כתרומת הלשכה נדר  אסור"
+        },
+        {
+          "segment_id": "Nedarim 18b:5",
+          "start_char": 41,
+          "end_char": 57,
+          "quote": "ואם של גורן מותר"
+        }
+      ],
+      "finding": "Reader extends דברי רבי מאיר to all terumah clauses; producer explicitly assigns only final unspecified clause. Grammar supports broader series scope, while controversy focuses unspecified cases. No witness/commentary analysis here resolves precise attribution span.",
+      "proposed_action": "Keep broader-scope possibility explicit; do not silently label either scope a confirmed false attribution.",
+      "severity": "low",
+      "resolution_state": "open_no_records_changed"
+    },
+    {
+      "id": "U02",
+      "classification": "unresolved_uncertainty",
+      "ref": "Nedarim 19a:6 / 19a:12",
+      "reader_record_ids": [
+        "nd081.questions.0004",
+        "nd081.questions.0006"
+      ],
+      "producer_record_ids": [
+        "nd.r018.impureq.q",
+        "nd.r018.conflict.q"
+      ],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [
+        {
+          "end_char": 34,
+          "quote": "ומי סבירא ליה לרבי אלעזר ליטמא טמא",
+          "segment_id": "seg_147ca82b453d5af92b3e",
+          "start_char": 0,
+          "ref": "Nedarim 19a:6"
+        },
+        {
+          "end_char": 72,
+          "quote": "ורמי דרבי יהודה אדרבי יהודה מי אמר רבי יהודה לא מעייל איניש נפשיה לספיקא",
+          "segment_id": "seg_5687d3f2259885990d1c",
+          "start_char": 0,
+          "ref": "Nedarim 19a:12"
+        }
+      ],
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 19a:6",
+          "start_char": 0,
+          "end_char": 34,
+          "quote": "ומי סבירא ליה לרבי אלעזר ליטמא טמא"
+        },
+        {
+          "segment_id": "Nedarim 19a:12",
+          "start_char": 28,
+          "end_char": 72,
+          "quote": "מי אמר רבי יהודה לא מעייל איניש נפשיה לספיקא"
+        }
+      ],
+      "finding": "Producer answer_set_status none coexists with subsequent challenges/answers; reader says partial. Schema enumerates labels without sufficient semantic definition to equate none with denial of later answers. Graph/context preserves replies.",
+      "proposed_action": "Clarify answer-set field semantics before using it as QA completeness; preserve both representations.",
+      "severity": "low",
+      "resolution_state": "open_no_records_changed"
+    },
+    {
+      "id": "G01",
+      "classification": "reasonable_granularity",
+      "ref": "Nedarim 18b:9–19a:1",
+      "reader_record_ids": [
+        "nd081.claims.0021",
+        "nd081.claims.0022"
+      ],
+      "producer_record_ids": [
+        "nd.r018.norisk.c"
+      ],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [
+        {
+          "end_char": 87,
+          "quote": "ומאן דאמר ממונו לא מעייל לספיקא גופיה (נמי)",
+          "segment_id": "seg_04ea8b3728e3d20b11d6",
+          "start_char": 44,
+          "ref": "Nedarim 18b:9"
+        },
+        {
+          "end_char": 23,
+          "quote": "כל שכן דלא מעייל לספיקא",
+          "segment_id": "seg_165047ffd2e97bdb4755",
+          "start_char": 0,
+          "ref": "Nedarim 19a:1"
+        }
+      ],
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 18b:9",
+          "start_char": 44,
+          "end_char": 87,
+          "quote": "ומאן דאמר ממונו לא מעייל לספיקא גופיה (נמי)"
+        },
+        {
+          "segment_id": "Nedarim 19a:1",
+          "start_char": 0,
+          "end_char": 23,
+          "quote": "כל שכן דלא מעייל לספיקא"
+        }
+      ],
+      "finding": "Reader splits a cross-page sentence; producer uses one claim with two evidence segments. No content omission.",
+      "proposed_action": "Keep occurrence-level evidence; do not count reader’s two units as two producer misses.",
+      "severity": "low",
+      "resolution_state": "open_no_records_changed"
+    },
+    {
+      "id": "G02",
+      "classification": "reasonable_granularity",
+      "ref": "Nedarim 20b:9 / 20b:14",
+      "reader_record_ids": [
+        "nd081.claims.0057",
+        "nd081.claims.0071"
+      ],
+      "producer_record_ids": [
+        "nd.r020.labels.c",
+        "nd.r021.four.c"
+      ],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [
+        {
+          "end_char": 104,
+          "quote": "בני אימה בני אנוסה בני שנואה בני נידוי בני תמורה בני מריבה בני שכרות בני גרושת הלב בני ערבוביא בני חצופה",
+          "segment_id": "seg_76ed4629578938fe4283",
+          "start_char": 0,
+          "ref": "Nedarim 20b:9"
+        },
+        {
+          "end_char": 105,
+          "quote": "נדרים התירו חכמים נדרי זרוזין ונדרי הבאי ונדרי שגגות ונדרי אונסין",
+          "segment_id": "seg_ca23c7c42784cbb133b6",
+          "start_char": 40,
+          "ref": "Nedarim 20b:14"
+        }
+      ],
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 20b:9",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "בני אימה"
+        },
+        {
+          "segment_id": "Nedarim 20b:14",
+          "start_char": 58,
+          "end_char": 69,
+          "quote": "נדרי זרוזין"
+        }
+      ],
+      "finding": "Ten list members and four vow classes are explicit in producer composites. Atomic reader inventory is useful, but all lexical content is present; list packaging alone is not a content omission. P04 separately concerns inherited holder.",
+      "proposed_action": "Preserve list members and refrain from multiplying omissions by reader row count.",
+      "severity": "low",
+      "resolution_state": "open_no_records_changed"
+    },
+    {
+      "id": "G03",
+      "classification": "reasonable_granularity",
+      "ref": "Nedarim 20b:13",
+      "reader_record_ids": [],
+      "producer_record_ids": [
+        "nd.r020.chapter.u",
+        "nd.r020.chapter.a"
+      ],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "<br><br><big><strong>הדרן עלך ואלו מותרין</strong></big><br><br>",
+          "segment_id": "seg_bed59a0f473b6351c766",
+          "start_char": 0,
+          "ref": "Nedarim 20b:13"
+        },
+        {
+          "end_char": 64,
+          "quote": "<br><br><big><strong>הדרן עלך ואלו מותרין</strong></big><br><br>",
+          "segment_id": "seg_bed59a0f473b6351c766",
+          "start_char": 0,
+          "ref": "Nedarim 20b:13"
+        }
+      ],
+      "reader_evidence": [],
+      "finding": "Reader uses structure-only for colophon; producer also creates an anonymous printed-formula utterance. Both preserve exact structure, no named sage or legal claim invented.",
+      "proposed_action": "Treat as annotation boundary convention, not fabricated halachic assertion.",
+      "severity": "low",
+      "resolution_state": "open_no_records_changed"
+    },
+    {
+      "id": "G04",
+      "classification": "reasonable_granularity",
+      "ref": "Nedarim 19a:4 / 20b:6",
+      "reader_record_ids": [
+        "nd081.claims.0025",
+        "nd081.claims.0053"
+      ],
+      "producer_record_ids": [
+        "nd.r018.automatic.q",
+        "nd.r020.rav.q"
+      ],
+      "producer_snapshot": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+      "evidence": [
+        {
+          "end_char": 59,
+          "quote": "אמר ליה אמאי קא מדמית קדושה הבאה מאליה לקדושה הבאה בידי אדם",
+          "segment_id": "seg_26715aed9f627096fdb3",
+          "start_char": 0,
+          "ref": "Nedarim 19a:4"
+        },
+        {
+          "end_char": 170,
+          "quote": "אמר מאי שנא מן ביניתא",
+          "segment_id": "seg_52a5d88bce5716063031",
+          "start_char": 149,
+          "ref": "Nedarim 20b:6"
+        }
+      ],
+      "reader_evidence": [
+        {
+          "segment_id": "Nedarim 19a:4",
+          "start_char": 22,
+          "end_char": 59,
+          "quote": "קדושה הבאה מאליה לקדושה הבאה בידי אדם"
+        },
+        {
+          "segment_id": "Nedarim 20b:6",
+          "start_char": 153,
+          "end_char": 170,
+          "quote": "מאי שנא מן ביניתא"
+        }
+      ],
+      "finding": "Rhetorical response is a question in producer versus an explanatory claim plus question in reader. Both retain response and speaker/evidence where explicit.",
+      "proposed_action": "Do not count missing duplicate claim as lost content.",
+      "severity": "low",
+      "resolution_state": "open_no_records_changed"
+    }
+  ],
+  "quarantine": {
+    "invalid_runner_relations": [
+      "nd081.edges.0003",
+      "nd081.edges.0005"
+    ],
+    "identity_strings": [
+      "nd081.attributions.0014",
+      "nd081.attributions.0015",
+      "nd081.attributions.0061"
+    ]
+  },
+  "policy": "Preserve frozen reading and findings unchanged. Do not use these reader relations as valid runner relations or editorial identity strings as new scholars. No global reading rejection; continue unaffected content. Granularity groups are not content errors; attribution span and answer-set semantics remain unresolved.",
+  "ml_eligible": false
+}

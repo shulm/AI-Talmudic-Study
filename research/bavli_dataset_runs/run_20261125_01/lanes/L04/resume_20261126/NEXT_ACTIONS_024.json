@@ -1,0 +1,33 @@
+{
+  "status": "ACTIVE_ND085_TARGETED_CORRECTIONS",
+  "published_checkpoint": "LANE_CHECKPOINT_011.json",
+  "published_head": "b5d3373feefdec0460ed946c8b920ab172dfbe26",
+  "current_covered_segments": 3308,
+  "remaining_segments": 10285,
+  "complete_tractates": 0,
+  "nedarim": {
+    "snapshot": "65c63fc9a312d505232e0044e5a68129015d8acba73c0b167a0af5eb305f0e8a",
+    "proposal": "30690a8d7b4bdc610e4d55ba7fd79667e5aae5a17b66323f752de170a03e7cec",
+    "covered": 1083,
+    "next": "Nedarim 62b:5",
+    "new_segments": 21,
+    "new_records": 306,
+    "new_window_review_state": "UNREVIEWED",
+    "producer": "/root/nedarim_continuation",
+    "producer_task": "Six ND085 targeted corrections, no further source advancement",
+    "comparator": "/root/nd_compare085",
+    "comparison": "reviews/capture_026/comparison_085.json",
+    "comparison_target": "26acf7ff70ba33f249b8e3f957edac6a932ce1d32c7e84996ad3b239e74bab01",
+    "reader": "reviews/capture_025/reading_initial.json",
+    "reader_restrictions": "audit/ND085_LOCAL_REVIEW_RESTRICTIONS.json"
+  },
+  "next": [
+    "Wait for immutable six-issue correction version; verify/preserve all new21 unchanged.",
+    "Dispatch original comparator bounded independent recheck; no new core credit.",
+    "Package corrected exact version, freeze checkpoint012, publish draft PR29.",
+    "Coordinate next bounded review/production scope and continue seven-tractate queue."
+  ],
+  "other_producers_held": true,
+  "owners_epoch3_unchanged": true,
+  "current015_unchanged": true
+}
