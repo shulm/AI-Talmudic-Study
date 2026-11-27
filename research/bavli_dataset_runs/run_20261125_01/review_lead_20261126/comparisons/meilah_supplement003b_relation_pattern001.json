@@ -1,0 +1,82 @@
+{
+  "artifact_kind": "additive_nonblind_repeated_pattern_assessment",
+  "bindings": {
+    "current": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\meilah_supplement003b_exact_version.json",
+      "sha256": "7eae624e55c5fe40d28aa73d62cea15cd690bfda30a54f75a98b20f68ca8b2e9"
+    },
+    "prior": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\meilah_supplement002_exact_version.json",
+      "sha256": "7b67e72832a17b63ec4aea7efe34de5b3592c4dc9b627f91172457f760ece89b"
+    },
+    "prior_correction": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\meilah_supplement002_correction001.json",
+      "sha256": "83dcd3381e767532be361abaa98d60cbda3a83edadb0732e9a4ed1acc4b1f58b"
+    }
+  },
+  "observed_pattern": "MS02-P01–P05 and MS03B-P01–P05 each identify explicit source objection relations missing from the typed graph while relevant question, claim and response content remains. Prior MS02 corrections are separately accepted only at their pinned snapshot; this is recurrence in different examined coordinates, not reversal of those corrections.",
+  "current_confirmed_occurrences": [
+    {
+      "id": "MS03B-P01",
+      "source_record": "l06.mei.blood.q.goat",
+      "target_record": "l06.mei.blood.c.goat",
+      "refs": [
+        "Meilah 11b:2",
+        "Meilah 11b:3",
+        "Meilah 11b:4"
+      ]
+    },
+    {
+      "id": "MS03B-P02",
+      "source_record": "l06.mei.blood.q.dosa",
+      "target_record": "l06.mei.blood.c.garments",
+      "refs": [
+        "Meilah 11b:4",
+        "Meilah 11b:5",
+        "Meilah 11b:6",
+        "Meilah 11b:7"
+      ]
+    },
+    {
+      "id": "MS03B-P03",
+      "source_record": "l06.mei.blood.q.general",
+      "target_record": "l06.mei.blood.c.heifer",
+      "refs": [
+        "Meilah 11b:7",
+        "Meilah 11b:8",
+        "Meilah 11b:9",
+        "Meilah 11b:10"
+      ]
+    },
+    {
+      "id": "MS03B-P04",
+      "source_record": "l06.mei.bloodletting.q.birds",
+      "target_record": "l06.mei.libations.c.birds",
+      "refs": [
+        "Meilah 11b:18",
+        "Meilah 12a:6",
+        "Meilah 12a:7",
+        "Meilah 12a:8",
+        "Meilah 12a:9"
+      ]
+    },
+    {
+      "id": "MS03B-P05",
+      "source_record": "l06.mei.growth.q.detached",
+      "target_record": "l06.mei.growth.c.thresher",
+      "refs": [
+        "Meilah 13a:13"
+      ]
+    }
+  ],
+  "cause_status": "Observed repeated output pattern; no shared extraction-rule or model-causal mechanism proven. No unexamined record is declared defective.",
+  "recommended_audit": "Lane owner should audit source-explicit objections across completed work and identify any process rule causing omitted challenge edges. Freeze separate source-grounded findings and exact correction snapshots.",
+  "argument_task_restriction": "The pinned68-core comparison is REWORK_TARGETED and not eligible for argument extraction or downstream graph completeness claims until these five scoped relations are repaired and exact-version rechecked. This receipt grants no eligibility to other tasks or unexamined lane coordinates. Lane-wide audit recommendation is not a lane-wide defect verdict.",
+  "reader_corrections_preserved": [
+    "MS03B-R01 opposite branch condition at11b3",
+    "MS03B-R02 opposite branch condition at11b8",
+    "MS03B-R03 reversed support direction at12b6"
+  ],
+  "new_coverage_credit": 0,
+  "full_admission": false
+}
