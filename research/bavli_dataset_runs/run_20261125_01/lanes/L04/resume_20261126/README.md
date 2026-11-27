@@ -1,12 +1,12 @@
 # L04 exact-version partial production checkpoint
 
-Checkpoint 012 contains actual semantic annotations and preserved review evidence for **3,308 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
+Checkpoint 013 contains actual semantic annotations and preserved review evidence for **3,317 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
 
-The selected package versions are in [LANE_CHECKPOINT_012.json](LANE_CHECKPOINT_012.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
+The selected package versions are in [LANE_CHECKPOINT_013.json](LANE_CHECKPOINT_013.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
 
 | Tractate | Covered in each of eight layers | Denominator | Next source |
 |---|---:|---:|---|
-| Taanit | 712 | 895 | 25a:15 |
+| Taanit | 721 | 895 | 25b:4 |
 | Bava Batra | 317 | 3,804 | 13a:2 |
 | Pesachim | 236 | 3,519 | 9b:10 |
 | Avodah Zarah | 195 | 2,131 | 8a:5 |
@@ -22,7 +22,7 @@ Captures012–013 preserve the exact Taanit, Nedarim and Makkot comparisons of n
 
 [Capture014](reviews/capture_014/MANIFEST.json) preserves the independent bounded passes for Makkot022 (all twelve core/context issues) and Nedarim065 (four operative issues). Nedarim retains nonblocking duplicated introducer evidence and stale coverage prose observations. Neither receipt grants whole-snapshot acceptance. [Capture015](reviews/capture_015/MANIFEST.json) preserves Taanit053's independent closure of all five repair groups. The actual replay contains55 proposals, correcting the reviewer's earlier checkpoint-based count of53. Its saved preflight diagnostic records a corrected checker assumption about historical free-text scope fields. All new source windows remain outside these correction checks.
 
-Coordinator review release015 is frozen. These corrections are additive next-version evidence; they do not revise release015 or its exclusions. All489 files in that review delivery were byte-verified. The coordinator published the frozen inputs/policy first, then the separate rolling assembly in draft PR30. Isolated next-release work resumed under explicit authorization; the full seven-tractate assignment remains active. Owners and epochs are unchanged. See [next actions](NEXT_ACTIONS_025.json).
+Coordinator review release015 is frozen. These corrections are additive next-version evidence; they do not revise release015 or its exclusions. All489 files in that review delivery were byte-verified. The coordinator published the frozen inputs/policy first, then the separate rolling assembly in draft PR30. Isolated next-release work resumed under explicit authorization; the full seven-tractate assignment remains active. Owners and epochs are unchanged. See [next actions](NEXT_ACTIONS_026.json).
 
 ## Bava Batra next-release window and review
 
@@ -47,6 +47,14 @@ All625 files in review delivery018 were verified. Current release015 is unchange
 Nedarim subsequently adds twenty-one segments,61b:5–62b:4, reaching1083; all306 new records remain unreviewed. Separate correction067 repairs typed holders, transmission, an omitted repeated ruling and quotation/question separation. [Capture027](reviews/capture_027/MANIFEST.json) verifies P01–P05 and P06 attribution, but preserves the residual RC01 wording error at4b131b8b: “neither” incorrectly presupposes a pair. That version is historical, not fully corrected. [Capture028](reviews/capture_028/MANIFEST.json) verifies the minimal successor atb6421aab: “none of them,” plus two dependent successors. Evidence and scope are unchanged. This closes RC01 only; it does not overwrite the failed intermediate receipt or grant broader acceptance. The comparator used exact delta replay against its previously fully replayed base; parent package checks separately cover full accepted-prefix replay and exact export.
 
 [Local reader restrictions](audit/ND085_LOCAL_REVIEW_RESTRICTIONS.json) exclude two claim-to-claim continuation edges from graph use and three editorial identity strings from authority normalization. The initial JSON-schema PASS remains valid; the continuation edges violate the runner's additional endpoint constraint. [Supplementary graph check](check_reader_graph.py) reproduces these two failures without rewriting the frozen reading or common implementation. Unaffected source content and review credit are retained; all task eligibility remains false.
+
+## Taanit057 correction and fresh review
+
+[Capture029](reviews/capture_029/MANIFEST.json) preserves the fresh TA101 source-only reading of thirty cores and four annotated context references. [Capture030](reviews/capture_030/MANIFEST.json) preserves the exact historical712 comparison, its initial version and additive auxiliary-record-ID correction. The comparator wrote to a different review directory than assigned; all original bytes are preserved. Pin checks preceded semantic inspection, but accepted-prefix replay followed it. Neither chronology is retroactively changed.
+
+Taanit adds nine segments,25a:15–25b:3, reaching721. Separate correction057 resolves five producer findings: a shared fear/exposure mistranslation, three speaker-layer omissions and one qualification relation. [Capture031](reviews/capture_031/MANIFEST.json) preserves the original comparator's bounded PASS after59-proposal replay. Parent package verification independently reproduces the full accepted prefix and exact exports. The latest nine segments and182records remain unchanged and UNREVIEWED; the correction grants no new review credit or eligibility.
+
+[Local restrictions](audit/TA105_LOCAL_REVIEW_RESTRICTIONS.json) preserve reader errors, unresolved scopes and reasonable granularity. The standalone reading also omits24open structures from its open-tail list: production adaptation fails until that metadata is supplied. Its source/graph checks do not establish production-adapter compatibility. The shared translation error is restricted locally; agreement is not certification. Separately hashed Rashi commentary supports the comparator's correction and is explicitly additional nonblind evidence.
 
 ## Exact inputs and ownership
 

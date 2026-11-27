@@ -1,5 +1,25 @@
 # Latest targeted repair checkpoint — 2026-11-27
 
+Correction057 addresses TA101-01–05 only; original comparator bounded recheck pending. CURRENT `13b774a3766f6b05e5f389181b3c07eebd62a4f48698a95c300b80f64a6d20b9`; proposal `22ca61d6af9eebf97d3118c0e2c99966816797a2a6922a210616cc5b662a9bd0`.11supersessions+3additions; one validated submission. CHECKPOINT_057.json and REVIEW_CORRECTION_057.json preserve exact issue mapping and comparator revision2/chronology bindings.
+
+Coverage721/895 in all8layers unchanged; next25b4;174remaining. Newnine/182records byte-equivalent and UNREVIEWED. Writer inactive, ownerepoch3 unchanged. Replay/export hashes/graph scope closure/nine implementation pins passed. Translation visible/exposed distinguishes added bound Rashi evidence from unchanged source spelling; child citation speaker remains distinct from quoted authority. Reader errors, unresolved scope and granularity findings remain preserved.
+
+Export `F:\Sefaria_QA\bavli_production_run_20261125_01\L04\bavli_taanit\exports\repair057_721_13b774a3`. No source/common/global/current015 changes or commits. Nextauthor058.
+
+## Preserved prior checkpoint context
+
+# Latest bounded production checkpoint — 2026-11-27
+
+**721/895segments in each8layers**, through25b3; next25b4;174remain. Authorized wave056 stops at coherent cedar-species resolution after9newsegments. Writer `/root/taanit_continuation_5` now inactive; no further window until coordinated. OwnerL04/taanit_resume_20261126 epoch3 unchanged.
+
+CURRENT `e85a80cd47c5b5bc79ec9e5b3346d8b58d5dcf7e53a1555e82862972535819d0`; proposal `cf9b60fb80478a0e872e46ac5f02faf180f16aaa2bfb7ae92676cbfab8e4b120`. CHECKPOINT_056.json records exact provenance, pins, closure and export.182newrecords;9,545active /9,719preserved total. Replay, export hashes, baseline preservation, links/scopes and9tools passed. No rejected attempt. All9newsegments UNREVIEWED, no historical acceptance inherited.
+
+Export `F:\Sefaria_QA\bavli_production_run_20261125_01\L04\bavli_taanit\exports\resume056_721_e85a80cd`. Source25b4–11 read for boundary/continuation only. Preserve existing qualifications and no forced25b7 here/here mapping on future work. Nextauthor057. No source/common/global/current015 changes, commits or paid calls.
+
+## Preserved prior checkpoint context
+
+# Latest targeted repair checkpoint — 2026-11-27
+
 Correction055 addresses TA062 six analogy graphs, four quoted proofs, narrative endpoint and two only-quantifier losses. CURRENT `663ea1da0f7ad381ee844fb537869ef1ebce15930d69048be7b85b064f48a086`; proposal `feb5147495135f0904423cc5ffc531f093188144ea8123a42cdd7fe75e363f75`. Submitted once after validation,37supersessions+50newrecords. See CHECKPOINT_055.json and REVIEW_CORRECTION_055.json.
 
 Coverage remains712/895 in all8layers; next25a15;183remaining. Newest15source records byte-equivalent and UNREVIEWED. Exact repair independent recheck pending; no acceptance inferred. Writer inactive, ownerepoch3 unchanged. Replay, export hashes, active graph/scopes and9frozen tools passed. Reader gloss/soil qualifications retained; handsome-learners objection scope remains unresolved.
