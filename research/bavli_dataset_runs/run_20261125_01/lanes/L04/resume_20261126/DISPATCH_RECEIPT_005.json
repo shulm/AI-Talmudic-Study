@@ -1,0 +1,16 @@
+{
+  "run_id": "run_20261125_01",
+  "same_ownership_epochs": true,
+  "global_ledger_modified": false,
+  "production": [
+    {"job": "bava_batra", "agent": "/root/bava_batra_continuation_2", "owner": "L04/bava_batra_resume_20261126", "epoch": 3, "starting_snapshot": "24a224cce5ace671d93b8c1b4e61a4b3c9705826e12ad7a126ce29f96f7f9b16", "previous_writer_stopped": true},
+    {"job": "taanit", "agent": "/root/taanit_continuation_3", "status": "Durable handoff at324; inactive pending fresh exclusive continuation"},
+    {"job": "nedarim", "agent": "/root/nedarim_continuation", "status": "Continues exclusive ownership"},
+    {"job": "moed_katan", "agent": "/root", "status": "Sole writer; source windows through8b:6,239segments"}
+  ],
+  "review": [
+    {"agent": "/root/source_review_moed_graves", "scope": "Fresh source-only risk cohort5b:2–6a:8, context5a:13–6b:4, freeze before comparison againstd16f0a518bcd7b7f24385fee06d10ecee2d465eda1aeb8bdad395e42766f8af0"},
+    {"agent": "independent_review_lead", "scope": "Additional frozen source cohorts and exact-version comparisons; source overlap remains separately recorded and deduplicated"}
+  ],
+  "policy": "Coordinator additive ANSWER_SET_STATUS_001 guidance read and dispatched. No schema migration, automatic candidate relabeling or eligibility clearance."
+}

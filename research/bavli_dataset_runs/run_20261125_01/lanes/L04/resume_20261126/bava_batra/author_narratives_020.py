@@ -1,0 +1,52 @@
+"""Preserve famine distributions and Tiberias levy narratives as source reports."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading,r
+a=ScopedReading('bava_batra','Bava Batra','bb.r020');c=a.claim;q=a.question;e=a.e
+parent='5c189705ec80354cd6452e67dab42bc8a7199a4963d8f2967fa84dc57d4c250c'
+a.structure('famine',['8a:8','8a:9'],'Rabbi’s famine distribution and Yonatan ben Amram’s concealed scholarship')
+a.structure('crown',['8a:10','8a:11'],'Tiberias crown levy, departures and Rabbi’s interpretation')
+c('stores','8a:8','רבי פתח אוצרות בשני בצורת','Rabbi opened his stores during famine years.',scope='Narrative report')
+admit=c('admit','8a:8','יכנסו בעלי מקרא בעלי משנה בעלי גמרא בעלי הלכה בעלי הגדה','Rabbi initially admits those versed in Scripture, Mishnah, Gemara, halakha or aggada.',candidates=['רבי'],conditions=['famine distribution'],composition='composite',scope='Initial policy later broadened in8a:9')
+exclude=c('exclude','8a:8','אבל עמי הארץ אל יכנסו','Rabbi initially excludes the unlearned.',candidates=['רבי'],conditions=['famine distribution'],mode='retracted',scope='Initial exclusion explicitly replaced by admission of everyone in8a:9')
+c('yonatan_enters','8a:8','דחק רבי יונתן בן עמרם ונכנס','Rabbi Yonatan ben Amram pressed his way inside.',scope='Narrative event')
+request=c('request','8a:8','אמר לו רבי פרנסני','Yonatan asks Rabbi to provide sustenance.',candidates=['רבי יונתן בן עמרם'])
+readq=q('read_q','8a:8','אמר לו בני קרית','Rabbi asks whether he has studied Scripture.',candidates=['רבי'])
+a.speech('denials','8a:8','אמר לו לאו שנית אמר לו לאו',candidates=['רבי יונתן בן עמרם','רבי'],composition='composite',act='alternating question and denial',uncertainty=['Two לאו responses belong to Yonatan; שנית is Rabbi’s intervening question. Individual claim/question nodes below separate their content.'])
+denial1=c('denial_scripture','8a:8','אמר לו בני קרית אמר לו לאו','Yonatan answers no to Rabbi’s question about Scripture.',candidates=['רבי יונתן בן עמרם'],scope='Reported denial concealing learning, not a factual finding that he was unlearned')
+studyq=q('study_q','8a:8','שנית','Rabbi asks whether he studied Mishnah.',candidates=['רבי'])
+denial2=c('denial_mishnah','8a:8','שנית אמר לו לאו','Yonatan answers no to the question about Mishnah.',candidates=['רבי יונתן בן עמרם'],scope='Reported denial; later disclosure identifies him as Rabbi’s student')
+why=q('why_q','8a:8','אם כן במה אפרנסך','Rabbi asks on what basis he should provide sustenance.',candidates=['רבי'])
+animal=c('animal','8a:8','פרנסני ככלב וכעורב','Yonatan asks to be fed like a dog or raven.',candidates=['רבי יונתן בן עמרם'],scope='His request for sustenance without claiming scholarly status')
+c('fed','8a:8','פרנסיה','Rabbi fed him.',scope='Narrative outcome of initial request')
+e('denial1_answer',denial1,readq,'answer','8a:8');e('denial2_answer',denial2,studyq,'answer','8a:8');e('animal_answer',animal,why,'answer','8a:8')
+c('regret_event','8a:9','בתר דנפק יתיב רבי וקא מצטער','After Yonatan left, Rabbi sat distressed.',scope='Narrative emotional report explicitly present in source')
+regret=c('regret','8a:9','אוי לי שנתתי פתי לעם הארץ','Rabbi regrets giving his bread to someone he thinks unlearned.',candidates=['רבי'],mode='challenged',scope='Mistaken identity premise corrected by the ensuing identification')
+maybe=c('maybe','8a:9','אמר לפניו ר\' שמעון בר רבי שמא יונתן בן עמרם תלמידך הוא','Rabbi Shimon son of Rabbi suggests that the recipient may be his student Yonatan ben Amram.',candidates=['ר\' שמעון בר רבי'],mode='hypothetical')
+avoid=c('avoid','8a:9','שאינו רוצה ליהנות מכבוד תורה מימיו','Rabbi Shimon reports that Yonatan never wishes to benefit from the honor of Torah.',candidates=['ר\' שמעון בר רבי'],scope='Reported reason for concealed identity, not speculative motive')
+checked=c('checked','8a:9','בדקו ואשכח','They investigated and confirmed the suggested identification.',scope='Narrative confirmation of identity')
+all_=c('all','8a:9','אמר רבי יכנסו הכל','Rabbi then admits everyone.',candidates=['רבי'],conditions=['this famine distribution'],scope='Changed policy after identity disclosure')
+e('maybe_correction',maybe,regret,'objection','8a:9');e('avoid_support',avoid,maybe,'support','8a:9');e('checked_support',checked,maybe,'support','8a:9');e('all_correction',all_,exclude,'correction','8a:9')
+blame=c('blame','8a:10','דאמר רבי אין פורענות בא לעולם אלא בשביל עמי הארץ','Rabbi says calamity comes into the world only because of the unlearned.',candidates=['רבי'],scope='Source-attributed theological claim; not the producer’s factual or ethical endorsement')
+e('blame_explanation',blame,exclude,'support','8a:10')
+c('levy','8a:10','כההוא דמי כלילא דשדו אטבריא','A crown levy was imposed on Tiberias.',scope='Narrative illustration introduced by the text')
+# Explicit speech roles distinguish unnamed townspeople from Rabbi.
+share=c('share','8a:10','ליתבו רבנן בהדן','The townspeople request that scholars contribute with them.',scope='First narrated petition; anonymous townspeople')
+refuse=c('refuse','8a:10','אמר להו לא','Rabbi refuses the request.',candidates=['רבי'])
+leave=c('leave','8a:10','אמרו ליה ערוקינן','The townspeople announce that they will flee.',scope='First exchange')
+allow=c('allow','8a:10','[אמר להו] ערוקו','Rabbi tells them to flee.',candidates=['רבי'],uncertainty=['Bracketed אמר להו retained as printed.'])
+c('half_leave','8a:10','ערקו פלגיהון','Half of them departed.',scope='Narrative event')
+c('half_levy','8a:10','דליוה פלגא','Half the levy was removed.',scope='Narrative sequence; no external historical verification')
+share2=c('share2','8a:11','אתו הנהו פלגא קמי דרבי א"ל ליתבו רבנן בהדן','The remaining half petition Rabbi that scholars contribute with them.',scope='Second occurrence, not merged with the first')
+refuse2=c('refuse2','8a:11','אמר להו לא','Rabbi again refuses.',candidates=['רבי'])
+c('leave2','8a:11','ערוקינן ערוקו','They say they will flee and Rabbi again tells them to flee.',composition='composite',scope='Alternating dialogue retained together, not one speaker’s assertion')
+c('everyone_left','8a:11','ערקו כולהו','All the remaining petitioners departed.',scope='Narrative event')
+c('launderer','8a:11','פש ההוא כובס שדיוה אכובס','One launderer remained and the levy was placed on him.',composition='composite',scope='Narrative event')
+c('launderer_left','8a:11','ערק כובס','The launderer fled.',scope='Narrative event')
+c('levy_ended','8a:11','פקע כלילא','The crown levy ceased.',scope='Narrative outcome')
+conclusion=c('conclusion','8a:11','א"ר ראיתם שאין פורענות בא לעולם אלא בשביל עמי הארץ','Rabbi presents the episode as confirming his claim that calamity comes because of the unlearned.',candidates=['רבי'],scope='Source speaker’s interpretation of events; not independently verified causal attribution')
+e('conclusion_support',conclusion,blame,'support','8a:11');e('refuse_answer',refuse,share,'answer','8a:10');e('refuse2_answer',refuse2,share2,'answer','8a:11')
+for row in a.rows:
+    if row['layer']=='questions':row['content']['answer_set_status']='partial'
+a.save_window(['8a:8','8a:9','8a:10','8a:11'],'narratives020.json','Reread famine and crown-levy narratives in full through8a:11, with assessment context before and residence discussion after. Retain changing admission policy, concealed learning, explicit emotions/motives, repeated petitions and narrated outcomes; do not endorse source theological blame as external fact.',parent)

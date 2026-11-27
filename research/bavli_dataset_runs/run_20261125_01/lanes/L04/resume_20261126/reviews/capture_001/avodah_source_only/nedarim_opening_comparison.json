@@ -1,0 +1,177 @@
+{
+  "tractate": "Nedarim",
+  "created_utc": "2026-11-26T20:00:05.183879+00:00",
+  "snapshot_sha256": "fc7d4ac6015806f832cf8c803c966f10314909d4c4402a8cb2f641337a211a71",
+  "source_sha256": "52a452f67441cc435f1908275e349834ddc53a2add513905d52e6a0a186e85a1",
+  "plan_sha256": "1b3a85e443f1c3e111edd72ade8b08f92e3a4d19e829805b0114daf8a460c136",
+  "frozen_reading_sha256": "fa8641ebef73e9310b2adf3470fc772b626ab4a4e15a39d131317512e1e7a098",
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "scope": "Opening core only; context informs local statuses. No whole-tractate endorsement.",
+  "claim_denominator": 12,
+  "represented_claims": 12,
+  "unrepresented_core_claims": 0,
+  "question_denominator": 4,
+  "core_questions_represented": 4,
+  "claim_comparison": [
+    {
+      "independent_claim_id": "ned_r1_c001",
+      "worker_ids": [
+        "nd.r001.vows.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c002",
+      "worker_ids": [
+        "nd.r001.herem.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c003",
+      "worker_ids": [
+        "nd.r001.oaths.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c004",
+      "worker_ids": [
+        "nd.r001.nazir.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c005",
+      "worker_ids": [
+        "nd.r001.formula.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c006",
+      "worker_ids": [
+        "nd.r001.akiva.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c007",
+      "worker_ids": [
+        "nd.r001.pair.c",
+        "nd.r001.all.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c008",
+      "worker_ids": [
+        "nd.r001.objectvow.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c009",
+      "worker_ids": [
+        "nd.r001.objectherem.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c010",
+      "worker_ids": [
+        "nd.r001.personoath.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c011",
+      "worker_ids": [
+        "nd.r001.order.q",
+        "nd.r001.missing.q"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "ned_r1_c012",
+      "worker_ids": [
+        "nd.r001.reconstruct.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    }
+  ],
+  "findings": [
+    {
+      "id": "ND-G01",
+      "category": "reasonable_granularity",
+      "severity": "informational",
+      "worker_records": [
+        "nd.r001.order.q",
+        "nd.r001.missing.q"
+      ],
+      "independent_record": "ned_r1_c011",
+      "disposition": "Same source content represented as questions rather than separate factual premise; not omission."
+    },
+    {
+      "id": "ND-L01",
+      "category": "remaining_review_limit",
+      "severity": "informational",
+      "worker_records": [
+        "nd.r001.formula.c"
+      ],
+      "disposition": "Both readings preserve printed formula without asserting independent sufficiency. Later detailed formula interpretation remains outside reviewed continuation."
+    }
+  ],
+  "layer_matrix": {
+    "total_source_segments": 1509,
+    "produced_segments_with_any_coverage": 22,
+    "producer_layer_records": {
+      "attributions": 39,
+      "claims": 30,
+      "positions": 30,
+      "utterances": 39,
+      "edges": 24,
+      "questions": 9,
+      "structure": 2
+    },
+    "review_core": {
+      "core_segments": 10,
+      "endpoint_segments": 10,
+      "probability_segments": 0,
+      "context_segments": 35,
+      "claims": 12,
+      "questions": 4,
+      "edges": 11
+    },
+    "task_eligible_counts": {
+      "all": 0
+    }
+  },
+  "mechanical": {
+    "exact_source_hash_match": true,
+    "evidence_spans_checked": 193,
+    "quote_errors": [],
+    "duplicate_ids": 0,
+    "missing_links": []
+  },
+  "limitations": [
+    "No runner replay/full validator executed by reviewer",
+    "Question/claim comparisons scoped to frozen independently identified inventory",
+    "No sample accuracy extrapolation",
+    "No human certification",
+    "No task-specific eligibility"
+  ],
+  "ml_eligible": false
+}

@@ -1,0 +1,213 @@
+{
+  "tractate": "Makkot",
+  "created_utc": "2026-11-26T20:00:05.228319+00:00",
+  "snapshot_sha256": "cf5d55dc03ac045ef89bda310ccdfbd2e70861b05866e8766efb88ef6309a6aa",
+  "source_sha256": "ca2b205e20bd401000af94a7f6d9da4ba9fa5208b9a0f78c5f50aa2bda618efd",
+  "plan_sha256": "89191c1947166cebaf4ee2e24ec03e8942b4011fab76203b8057be636aa54288",
+  "frozen_reading_sha256": "848192b47d3f832c4cbe68d78b1dcbfd2d931c2aff97bd79d4ea32c0c8cde07c",
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "scope": "Opening core only; context informs local statuses. No whole-tractate endorsement.",
+  "claim_denominator": 15,
+  "represented_claims": 15,
+  "unrepresented_core_claims": 0,
+  "question_denominator": 5,
+  "core_questions_represented": 5,
+  "claim_comparison": [
+    {
+      "independent_claim_id": "mak_r1_c001",
+      "worker_ids": [
+        "ma.r001.priestm.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c002",
+      "worker_ids": [
+        "ma.r001.exilem.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c003",
+      "worker_ids": [
+        "ma.r001.wording.q"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c004",
+      "worker_ids": [
+        "ma.r001.later.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c005",
+      "worker_ids": [
+        "ma.r001.ordinary.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c006",
+      "worker_ids": [
+        "ma.r001.special.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c007",
+      "worker_ids": [
+        "ma.r001.special.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c008",
+      "worker_ids": [
+        "ma.r001.seed.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c009",
+      "worker_ids": [
+        "ma.r001.mismatch.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c010",
+      "worker_ids": [
+        "ma.r001.pada.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c011",
+      "worker_ids": [
+        "ma.r001.ravina.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c012",
+      "worker_ids": [
+        "ma.r001.stoning.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c013",
+      "worker_ids": [
+        "ma.r001.original.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c014",
+      "worker_ids": [
+        "ma.r001.lakish.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    },
+    {
+      "independent_claim_id": "mak_r1_c015",
+      "worker_ids": [
+        "ma.r001.yohanan.c"
+      ],
+      "result": "represented",
+      "note": "Cross-layer representation counts as present where independent claim is an explicit question/premise."
+    }
+  ],
+  "findings": [
+    {
+      "id": "MA-G01",
+      "category": "reasonable_granularity",
+      "severity": "informational",
+      "worker_records": [
+        "ma.r001.stoning.c"
+      ],
+      "independent_record": "mak_r1_c012",
+      "disposition": "Reviewer hypothetical with rejection note vs producer rejected. Both preserve reductio rather than endorsed exemption."
+    },
+    {
+      "id": "MA-G02",
+      "category": "preserved_ambiguity",
+      "severity": "informational",
+      "worker_records": [
+        "ma.r001.seed.a",
+        "ma.r001.seed.p"
+      ],
+      "independent_record": "mak_r1_c008",
+      "disposition": "Candidate authorities preserve parenthetical attribution; no forced identity assignment."
+    },
+    {
+      "id": "MA-L01",
+      "category": "outside_independent_core_denominator",
+      "severity": "informational",
+      "worker_records": [
+        "ma.r001.ulla.a",
+        "ma.r001.ulla.q"
+      ],
+      "disposition": "Attribution of Ulla question is anonymous despite text אמר עולא; context-only observation after exposure, not part of blind core denominator. Recommend scope explicitly distinguish Ulla initial question from anonymous clarification.",
+      "source_ref": "Makkot 2b:5",
+      "resolution": "advisory_not_counted_as_blind_core_error"
+    }
+  ],
+  "layer_matrix": {
+    "total_source_segments": 709,
+    "produced_segments_with_any_coverage": 14,
+    "producer_layer_records": {
+      "structure": 5,
+      "attributions": 26,
+      "claims": 19,
+      "positions": 19,
+      "utterances": 26,
+      "questions": 7,
+      "edges": 14
+    },
+    "review_core": {
+      "core_segments": 10,
+      "endpoint_segments": 10,
+      "probability_segments": 10,
+      "endpoint_probability_overlap": 10,
+      "context_segments": 15,
+      "claims": 15,
+      "questions": 5,
+      "edges": 12
+    },
+    "task_eligible_counts": {
+      "all": 0
+    }
+  },
+  "mechanical": {
+    "exact_source_hash_match": true,
+    "evidence_spans_checked": 125,
+    "quote_errors": [],
+    "duplicate_ids": 0,
+    "missing_links": []
+  },
+  "limitations": [
+    "No runner replay/full validator executed by reviewer",
+    "Question/claim comparisons scoped to frozen independently identified inventory",
+    "No sample accuracy extrapolation",
+    "No human certification",
+    "No task-specific eligibility"
+  ],
+  "ml_eligible": false
+}

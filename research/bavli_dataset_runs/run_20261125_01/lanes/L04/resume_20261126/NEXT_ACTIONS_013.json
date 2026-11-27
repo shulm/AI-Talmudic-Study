@@ -1,0 +1,54 @@
+{
+  "status": "active_incomplete",
+  "published_head": "f2ef132b67739004306d00ecc38e7bf3944e21f7",
+  "selected_checkpoint": "LANE_CHECKPOINT_009.json",
+  "selected_segments": 3265,
+  "tractates_delivered": 0,
+  "authoritative_segments": {
+    "taanit": 697,
+    "bava_batra": 310,
+    "pesachim": 236,
+    "avodah_zarah": 195,
+    "nedarim": 1062,
+    "moed_katan": 512,
+    "makkot": 253
+  },
+  "promotion_hold": "Released for one bounded existing BB producer plus matched BB037 source-only review after integration0eae73e input/policy freeze publication. Final assembled review015 outputs still verifying. Other producers held for pacing.",
+  "active_comparators": [],
+  "comparison_reservation": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/L04_COMPARISON_RESERVATION_027.json",
+  "comparison_output": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/review_20261127_delegated020/comparisons",
+  "next_actions": [
+    "BB sole writer resumes from310 at12b9, maximum20 new segments in one coherent window then checkpoint.",
+    "Fresh BB037 reader freezes10original-probability cores before any comparison; preserve actual fork:none provenance.",
+    "Use available separate comparator after readerfreeze against exact produced historical package, with no latest-pointer substitution.",
+    "Address source-based findings with immutable targeted corrections and exact bounded rechecks.",
+    "Package bounded next-release progress and coordinate next source/review slot; all seven queues remain active incomplete."
+  ],
+  "capacity": "Some other agents reported usage limits, but three reserved comparator launches succeeded and have made progress. No retry loops on failed agents.",
+  "common_or_owner_changes": false,
+  "previous": "NEXT_ACTIONS_012.json",
+  "active_targeted_repair_writers": [],
+  "completed_comparisons": {
+    "taanit": "reviews/capture_013/taanit_delegated020_v2_verdict.json",
+    "nedarim": "reviews/capture_013/nedarim_delegated020_v2_verdict.json + mandatory additive_adjudication",
+    "makkot": "reviews/capture_012/makkot_delegated020_v2_verdict.json + context_addendum"
+  },
+  "bounded_pass_next_release": {
+    "makkot": "reviews/capture_014/makkot_delegated020_correction001_receipt.json",
+    "nedarim": "reviews/capture_014/nedarim_delegated020_correction001_receipt.json",
+    "taanit": "reviews/capture_015/taanit_delegated020_correction001_receipt.json"
+  },
+  "next_review_reservation": {
+    "tractate": "bava_batra",
+    "job": "bavli_bava_batra_delegated037.json",
+    "status": "LAUNCHED_NOT_FROZEN",
+    "cores": 10
+  },
+  "available_agent_slots": 3,
+  "active_production_writers": [
+    "/root/bava_batra_continuation_2"
+  ],
+  "active_source_readers": [
+    "/root/bb_source_review037"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PARTIAL_REVIEW_CHECKPOINT",
+  "source_only_first_readings_frozen_before_corresponding_labels": true,
+  "avodah": {
+    "reviewed_core_blocks": [
+      "block_000000",
+      "block_000011",
+      "block_000012",
+      "block_000021"
+    ],
+    "core_segments": 40,
+    "probability_segments": 30,
+    "endpoint_segments": 10,
+    "context_segments": 91,
+    "claims": 73,
+    "questions": 25,
+    "edges": 37,
+    "next_blind_block": "block_000029",
+    "remaining_planned_blocks": 27,
+    "snapshot_compared": "1da01cea71e0d09fa0c324319306fc6a507f3741b511caef2a862b4c0dfd8639",
+    "scope_compared": "first six segments only; 15 independent claims represented there; later blind readings do not imply production"
+  },
+  "other_tractates": {
+    "nedarim": {
+      "reviewed_core": "block_000000",
+      "next": "Continue remaining frozen-plan cores in new blind context if any corresponding labels have been exposed",
+      "frozen_file": "nedarim_opening_frozen.json",
+      "comparison_file": "nedarim_opening_comparison.json"
+    },
+    "moed_katan": {
+      "reviewed_core": "block_000000",
+      "next": "Continue remaining frozen-plan cores in new blind context if any corresponding labels have been exposed",
+      "frozen_file": "moed_katan_opening_frozen.json",
+      "comparison_file": "moed_katan_opening_comparison.json"
+    },
+    "makkot": {
+      "reviewed_core": "block_000000",
+      "next": "Continue remaining frozen-plan cores in new blind context if any corresponding labels have been exposed",
+      "frozen_file": "makkot_opening_frozen.json",
+      "comparison_file": "makkot_opening_comparison.json"
+    }
+  },
+  "verification": {
+    "plan_hashes": {
+      "avodah_zarah": "559014ff31b82223766acb5007578416e7a4e42277f06d154d9df2cfefd9d6bd",
+      "nedarim": "1b3a85e443f1c3e111edd72ade8b08f92e3a4d19e829805b0114daf8a460c136",
+      "moed_katan": "8d23d213c87bd923ff4bd3ce0e0d1d8d0992000497df3350ffb3691ad0748368",
+      "makkot": "89191c1947166cebaf4ee2e24ec03e8942b4011fab76203b8057be636aa54288"
+    },
+    "independent_quote_anchors_checked": 304,
+    "quote_failures": 0
+  },
+  "scope_limits": [
+    "Context is not sampled core coverage",
+    "Reading_002 is source-only with no producer records in corresponding scope at captured Avodah snapshot",
+    "Production changes require version-specific recheck",
+    "No human certification or ML eligibility",
+    "No production files modified"
+  ],
+  "written_files": {
+    "adjudication_event_001.json": "ff8d06b95ed19880159c8bdc4c8410716e9f2d3a6ae8a17a6075ae2aa13eaae8",
+    "captured_CURRENT.json": "f3e1210c1da3cadbe0c0b77d646cdab0603e588171f3abacb5744d0cff9f97d6",
+    "comparison_001.json": "f79c701200abfa560b3cc61680bf0c2e6d144e276d8013cc0250b9fde1d7c1c0",
+    "makkot_opening_comparison.json": "9594eaa0b6c573d90e5d6b9e9d154ac552bb9f1fb375850f6cee8ff311a7ab10",
+    "makkot_opening_frozen.json": "848192b47d3f832c4cbe68d78b1dcbfd2d931c2aff97bd79d4ea32c0c8cde07c",
+    "makkot_production_cf5d55dc03ac045ef89bda310ccdfbd2e70861b05866e8766efb88ef6309a6aa.json": "cf5d55dc03ac045ef89bda310ccdfbd2e70861b05866e8766efb88ef6309a6aa",
+    "moed_katan_opening_comparison.json": "50b208e78555258dff56c5f3b6cbdac5c29564baf6126bc004a788a0446e5ea3",
+    "moed_katan_opening_frozen.json": "edba0af9d4e93d99374caec76c471c1252a6b1a4d695eed6263bedea8b23cc74",
+    "moed_katan_production_9ae53d6bbc6414f0ba009f5b3aea11aeea8aaef974795a3b0ef73eb84266dec3.json": "9ae53d6bbc6414f0ba009f5b3aea11aeea8aaef974795a3b0ef73eb84266dec3",
+    "nedarim_opening_comparison.json": "cf4e2f816db73c57f68187343042228b4ba93bb3e5f72729cc782521cd03f032",
+    "nedarim_opening_frozen.json": "fa8641ebef73e9310b2adf3470fc772b626ab4a4e15a39d131317512e1e7a098",
+    "nedarim_production_fc7d4ac6015806f832cf8c803c966f10314909d4c4402a8cb2f641337a211a71.json": "fc7d4ac6015806f832cf8c803c966f10314909d4c4402a8cb2f641337a211a71",
+    "production_1da01cea71e0d09fa0c324319306fc6a507f3741b511caef2a862b4c0dfd8639.json": "1da01cea71e0d09fa0c324319306fc6a507f3741b511caef2a862b4c0dfd8639",
+    "reading_001_frozen.json": "69cdf23d831cdc0d9bd7bf57c8c0a08287a00a923b7df7f53e5b031c650aab4f",
+    "reading_002_frozen.json": "7121b0e54027f40e718ecc43dbd85147ca76fb9197b44d997fc0568230e71539"
+  }
+}

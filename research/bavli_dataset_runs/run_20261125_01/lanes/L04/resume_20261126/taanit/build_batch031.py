@@ -1,0 +1,66 @@
+"""Manual reading 15b:10–16a:8; paired attributions remain unassigned."""
+import pathlib
+helper=pathlib.Path(__file__).with_name('build_batch008.py').read_text(encoding='utf-8').split("A=c('yoreh.instruct'")[0]
+helper=helper.replace('bf269222667a2403dbfb6b92cfedcbe3f842f578ba83fdb2dd2ebe4d6975292a','d9d25aa206543c338b1ce01932b30eb783336e50d6aaab0615c368f47538bc7b').replace('ta.resume008.','ta.resume031.').replace('/root/taanit_continuation_2','/root/taanit_continuation_4')
+exec(compile(helper,__file__,'exec'))
+Aq=q('early.ritual.q','15b:10','ואפילו בקמייתא','Does the ark procession apply even to the early fasts?')
+A=c('first.middle.inside','15b:10','ורמינהו שלש תעניות ראשונות ושניות נכנסים לבית הכנסת ומתפללין כדרך שמתפללין כל השנה כולה','A contrary baraita says the first and middle three enter the synagogue and pray as throughout the year.',voice='baraita',cond=['first and middle three'],comp='composite')
+B=c('last.procession','15b:11','ובשבע אחרונות מוציאין את התיבה לרחובה של עיר ונותנין אפר על גבי התיבה ובראש הנשיא ובראש אב בית דין וכל אחד ואחד נוטל ונותן בראשו','The last seven instead take out the ark and place ashes on it, the leaders’ heads, and each individual’s head.',voice='baraita',cond=['last seven'],comp='composite')
+C=c('natan.burnt','15b:11','רבי נתן אומר אפר מקלה הן מביאין','Rabbi Natan specifies burnt ashes.',who='Rabbi Natan')
+D=c('pappa.last','15b:11','אמר רב פפא כי תנן נמי מתניתין אשבע אחרונות תנן:','Rav Pappa limits the Mishnah to the last seven.',who='Rav Pappa',cond=['last seven']);e('early.answer','15b:11',ix['15b:11']['text'],D,Aq,'answer');e('mishnah.scope','15b:11',ix['15b:11']['text'],D,'ta.resume030.ark.out','qualification')
+Eq=q('leaders.first.q','15b:12','איני','Is placing ashes on the nasi before everyone consistent with the order rule?')
+E=c('rabbi.order','15b:12','רבי אומר בגדולה מתחילין מן הגדול ובקללה מתחילין מן הקטן','Rabbi teaches starting with the greatest for honor and the smallest for a curse.',who='Rabbi',cond=['honor versus curse'],comp='composite');e('leaders.challenge','15b:12',ix['15b:12']['text'],E,Eq,'answer')
+F=c('honor.verse','15b:13','בגדולה מתחילין מן הגדול שנאמר (ויקרא י, ו) ויאמר משה אל אהרן ולאלעזר ולאיתמר','The honor order is supported by Moses addressing Aaron before Eleazar and Ithamar.',voice='quoted teaching citing Scripture',comp='composite')
+G=c('curse.order','15b:13','ובקללה מתחילין מן הקטן (דאמר מר) בתחלה נתקלל נחש ואחר כך נתקללה חוה ואח"כ נתקלל אדם','The curse order is supported by serpent first, then Eve, then Adam.',voice='quoted teaching',comp='composite');e('honor.support','15b:13',ix['15b:13']['text'],F,E);e('curse.support','15b:13',ix['15b:13']['text'],G,E)
+H=c('honored.petitioners','15b:14',ix['15b:14']['text'],'The reply calls the leaders’ ashes an honor: they are important enough to seek mercy for everyone.',status='interpretation of leadership priority');e('leaders.reply','15b:14',ix['15b:14']['text'],H,Eq,'answer');e('order.reconciliation','15b:14',ix['15b:14']['text'],H,E,'qualification')
+Hq=q('others.ashes.q','15b:15','נשיא ואב בית דין נמי נשקלו אינהו ונינחו בראשייהו מאי שנא דשקיל איניש אחרינא ומנח להו','Why do others put ashes on the leaders instead of their doing it themselves?')
+I=c('shame.others','16a:1','למתבייש מאחרים','Rabbi Abba of Caesarea distinguishes self-inflicted embarrassment from embarrassment imposed by others.',who='Rabbi Abba of Caesarea',comp='composite',status='sentence starts on prior folio')
+for z in P['records']:
+ if z['id'] in [I,I+'.u',I+'.a',I+'.p']:z['evidence'].insert(0,ev('15b:15','אמר רבי אבא דמן קסרי אינו דומה מתבייש מעצמו'))
+e('others.ashes.answer','16a:1','למתבייש מאחרים',I,Hq,'answer')
+Iq=q('ashes.where.q','16a:1','והיכא מנח להו','Where are the ashes placed?')
+J=c('tefillin.place','16a:1','אמר רבי יצחק במקום תפילין','Rabbi Yitzhak places them at the tefillin location.',who='Rabbi Yitzhak')
+K=c('beauty.ashes','16a:1','שנאמר (ישעיהו סא, ג) לשום לאבילי ציון לתת להם פאר תחת אפר:','Isaiah’s beauty in place of ashes supports the placement.',voice='Rabbi Yitzhak citing Scripture');e('ashes.where.answer','16a:1','אמר רבי יצחק במקום תפילין',J,Iq,'answer');e('tefillin.proof','16a:1',ix['16a:1']['text'],K,J)
+Lq=q('square.q','16a:2','למה יוצאין לרחוב','Why go out to the square?')
+L=c('public.shame','16a:2',ix['16a:2']['text'][ix['16a:2']['text'].index("ר' חייא"):],'Rabbi Hiyya bar Abba explains the symbolic declaration: private cries were unanswered, so they expose themselves to public shame.',who='Rabbi Hiyya bar Abba',comp='composite')
+M=c('exile.atones','16a:3','ריש לקיש אמר גלינו גלותינו מכפרת עלינו','Resh Lakish explains it as exile that atones.',who='Resh Lakish');e('square.answer1','16a:2',ix['16a:2']['text'],L,Lq,'answer');e('square.answer2','16a:3','ריש לקיש אמר גלינו גלותינו מכפרת עלינו',M,Lq,'answer')
+Mq=q('square.difference.q','16a:3','מאי בינייהו','What practical difference separates these explanations?')
+N=c('synagogue.move','16a:3','איכא בינייהו דגלי מבי כנישתא לבי כנישתא','The difference is moving from one synagogue to another.',cond=['move from synagogue to synagogue'],status='source states difference without explicitly allocating outcome');e('square.difference.answer','16a:3','איכא בינייהו דגלי מבי כנישתא לבי כנישתא',N,Mq,'answer')
+Nq=q('ark.why.q','16a:4','ולמה מוציאין את התיבה לרחובה של עיר','Why take the ark into the square?')
+O=c('ark.disgrace','16a:4',ix['16a:4']['text'][ix['16a:4']['text'].index('אמר'):],'Rabbi Yehoshua ben Levi says it signals that their once-private vessel has been disgraced through their sins.',who='Rabbi Yehoshua ben Levi');e('ark.why.answer','16a:4',ix['16a:4']['text'],O,Nq,'answer')
+Oq=q('sackcloth.q','16a:5','ולמה מתכסין בשקים','Why cover themselves in sackcloth?')
+P1=c('like.animals','16a:5',ix['16a:5']['text'][ix['16a:5']['text'].index("אמר ר' חייא"):ix['16a:5']['text'].index('ולמה נותנין')],'Rabbi Hiyya bar Abba explains that they count as animals.',who='Rabbi Hiyya bar Abba',status='symbolic humility, not literal identity');e('sackcloth.answer','16a:5',ix['16a:5']['text'],P1,Oq,'answer')
+Pq=q('ark.ashes.q','16a:5','ולמה נותנין אפר מקלה על גבי תיבה','Why put burnt ashes on the ark?')
+Q=c('pazi.distress','16a:5','אמר רבי יהודה בן פזי כלומר (תהלים צא, טו) עמו אנכי בצרה','Rabbi Yehuda ben Pazi explains through the Psalm declaring God with him in distress.',who='Rabbi Yehuda ben Pazi',status='theological symbolism using Scripture')
+R=c('lakish.distress','16a:5','ריש לקיש אמר (ישעיהו סג, ט) בכל צרתם לו צר','Resh Lakish cites Isaiah’s בכל צרתם לו צר.',who='Resh Lakish',status='scriptural formulation retained without textual-witness adjudication');e('ark.ashes.answer1','16a:5',ix['16a:5']['text'],Q,Pq,'answer');e('ark.ashes.answer2','16a:5',ix['16a:5']['text'],R,Pq,'answer')
+S=c('zeira.trembling','16a:5',ix['16a:5']['text'][ix['16a:5']['text'].index("אמר ר' זירא"):],'Rabbi Zeira reports that initially seeing ashes placed on the ark made his entire body tremble.',who='Rabbi Zeira',status='first-person remembered reaction')
+Sq=q('head.ashes.q','16a:6','ולמה נותנין אפר בראש כל אחד ואחד','Why put ashes on everyone’s head?')
+T=c('we.ashes','16a:6','חד אמר הרי אנו חשובין לפניך כאפר','One explanation says we count before God as ashes.',voice='unassigned member of Levi bar Hama/Hanina pair',unc=['Do not allocate by order; source leaves pair unassigned.'])
+U=c('isaac.ashes','16a:6','וחד אמר כדי שיזכור לנו אפרו של יצחק','The other seeks remembrance of Isaac’s ashes.',voice='unassigned member of Levi bar Hama/Hanina pair',status='source ritual/theological image, not independently asserted historical cremation',unc=['Do not allocate by order.'])
+Uq=q('ashes.difference.q','16a:6','מאי בינייהו','What distinguishes these explanations?')
+V=c('ordinary.earth','16a:6','איכא בינייהו עפר סתם','Ordinary earth is the differentiating case.',cond=['ordinary earth instead of ashes'],status='source supplies case without explicit name allocation');e('head.answer1','16a:6','חד אמר הרי אנו חשובין לפניך כאפר',T,Sq,'answer');e('head.answer2','16a:6','וחד אמר כדי שיזכור לנו אפרו של יצחק',U,Sq,'answer');e('ashes.difference.answer','16a:6','איכא בינייהו עפר סתם',V,Uq,'answer')
+Vq=q('cemetery.q','16a:7','למה יוצאין לבית הקברות','Why go to the cemetery?')
+W=c('like.dead','16a:7','חד אמר הרי אנו חשובין לפניך כמתים','One explanation says we count before God as dead.',voice='unassigned member of Levi bar Hama/Hanina pair',unc=['Speaker not allocated by source.'])
+X=c('dead.pray','16a:7','וחד אמר כדי שיבקשו עלינו מתים רחמים','The other seeks the dead’s pleas for mercy on the living.',voice='unassigned member of Levi bar Hama/Hanina pair',unc=['Speaker not allocated by source.'])
+Xq=q('cemetery.difference.q','16a:7','מאי בינייהו','What difference follows from these explanations?')
+Y=c('gentile.graves','16a:7','איכא בינייהו קברי עכו"ם','The distinguishing case is non-Jewish graves.',cond=['non-Jewish graves'],status='source states case without explicit named outcome allocation');e('cemetery.answer1','16a:7','חד אמר הרי אנו חשובין לפניך כמתים',W,Vq,'answer');e('cemetery.answer2','16a:7','וחד אמר כדי שיבקשו עלינו מתים רחמים',X,Vq,'answer');e('cemetery.difference.answer','16a:7','איכא בינייהו קברי עכו"ם',Y,Xq,'answer')
+Yq=q('moriah.q','16a:8','מאי (דברי הימים ב ג, א) הר המוריה','What does Mount Moriah signify?')
+Z=c('instruction','16a:8','חד אמר הר שיצא ממנו הוראה לישראל','One explains it as the mountain from which instruction came to Israel.',voice='unassigned member of Levi bar Hama/Hanina pair',unc=['No allocation by name order.'])
+AA=c('fear','16a:8','וחד אמר הר שיצא ממנו מורא לעובדי כוכבים:','The other explains it as the mountain from which fear came to idolaters.',voice='unassigned member of Levi bar Hama/Hanina pair',unc=['No allocation by name order.']);e('moriah.answer1','16a:8','חד אמר הר שיצא ממנו הוראה לישראל',Z,Yq,'answer');e('moriah.answer2','16a:8','וחד אמר הר שיצא ממנו מורא לעובדי כוכבים:',AA,Yq,'answer')
+for cid,ref in [(T,'16a:6'),(U,'16a:6'),(W,'16a:7'),(X,'16a:7'),(Z,'16a:8'),(AA,'16a:8')]:
+ a=next(z for z in P['records'] if z['id']==cid+'.a');a['content'].update(surface='רבי לוי בר חמא ורבי חנינא: חד אמר',role='speaker',candidates=['Rabbi Levi bar Hama','Rabbi Hanina']);a['evidence'].append(ev(ref))
+ pos=next(z for z in P['records'] if z['id']==cid+'.p');pos['content']['holder_candidates']=['Rabbi Levi bar Hama','Rabbi Hanina'];pos['evidence'].append(ev(ref))
+refs=list(ix);refs=refs[refs.index('15b:10'):refs.index('16a:8')+1]
+for k,title,first,last in [('ritualscope','Last-seven scope and honored/shamed leaders','15b:10','16a:1'),('symbolism','Public ritual symbolism and unassigned paired explanations','16a:2','16a:8')]:
+ add('structure.'+k,'structure',first,dict(title=title,primary=True,boundary='closed',legacy_ids=[]),origin='editorial_inference');P['records'][-1]['evidence']=[ev(r) for r in refs[refs.index(first):refs.index(last)+1]]
+notes={'15b:10':'Early-fast question and first/middle synagogue contrast retained.','15b:11':'All last-seven acts, Natan burnt-ashes detail and Pappa scope retained.','15b:12':'Leaders-first challenge and Rabbi honor/curse order retained.','15b:13':'Aaron/sons verse and serpent/Eve/Adam order retained.','15b:14':'Leadership treated as honor to request mercy for all retained.','15b:15':'Others versus self ashes question and Abba reply joined across folio; parenthetical Rav Ada source wording does not force universal attribution.','16a:1':'Shame reply continuation, placement question, Yitzhak answer and verse retained.','16a:2':'Mnemonic retained in structural evidence; public-square question and Hiyya explanation retained.','16a:3':'Lakish exile explanation, difference question and synagogue-to-synagogue case retained.','16a:4':'Ark question and Yehoshua ben Levi private-vessel shame explanation retained.','16a:5':'Sackcloth question/animal image, ark-ashes question/two verses and Zeira remembered trembling retained.','16a:6':'Head-ashes question, both unnamed views, difference question and ordinary-earth case retained.','16a:7':'Cemetery question, both unnamed views, difference question and non-Jewish grave case retained.','16a:8':'Moriah question and both wordplay explanations retained without assigning the named pair by order.'}
+for z in P['records']:
+ if z['layer']=='questions':z['uncertainty'].append('Partial inventory covers represented local source-supported responses only; no exhaustive choice set or task eligibility.')
+for ref in refs:
+ for layer in runner.LAYERS:
+  found=[r['id'] for r in P['records'] if r['layer']==layer and any(v['segment_id']==ix[ref]['id'] for v in r['evidence'])]
+  rationale=('Source reread and omission reconciliation: ' if layer=='reconciliation' else '')+notes[ref]
+  if not found:rationale+=' No distinct '+layer+' record warranted after this pass.'
+  P['coverage'].append(dict(segment_id=ix[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if found else 'none_found_after_pass',record_ids=found,rationale=rationale))
+runner.validate_apply(runner.current(JOB),P,ss,j)
+out=JOB/'staging_resume_20261126'/'batch031.json';runner.immutable(out,runner.encoded(P));print(json.dumps(dict(proposal=str(out),records=len(P['records']),segments=len(refs)),indent=2))

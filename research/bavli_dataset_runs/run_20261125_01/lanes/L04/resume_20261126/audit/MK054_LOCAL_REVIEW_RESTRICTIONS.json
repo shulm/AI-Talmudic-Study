@@ -1,0 +1,539 @@
+{
+  "verdict_sha256": "e55a09160f83a74e1b712186f2cd9b211c9a12217006c8e953820716553165b6",
+  "reader_findings": [
+    {
+      "id": "MK054-007",
+      "category": "reader_typed_question_omission",
+      "severity": "low",
+      "source_refs": [
+        "Moed Katan 13b:10",
+        "Moed Katan 13b:11"
+      ],
+      "reader_ids": [
+        "mk047.utterances.0034",
+        "mk047.utterances.0054"
+      ],
+      "producer_ids": [
+        "mk.r037.still.q",
+        "mk.r037.challenge.q"
+      ],
+      "reader_versions": [
+        {
+          "id": "mk047.utterances.0034",
+          "layer": "utterances",
+          "canonical_sha256": "794f9e8ef099314875162f6070e24daaeaf121fd9c440ae724504822b71d5796"
+        },
+        {
+          "id": "mk047.utterances.0054",
+          "layer": "utterances",
+          "canonical_sha256": "81b35268f432671d488b846197af5d505034ad0ca15c3548d1f266a5859f9ba9"
+        }
+      ],
+      "producer_versions": [
+        {
+          "id": "mk.r037.still.q",
+          "layer": "questions",
+          "canonical_sha256": "07dc74c8044e31bd90a1ee3645e0bbc2cb3b39902d31da7a798c4867ea685a08"
+        },
+        {
+          "id": "mk.r037.challenge.q",
+          "layer": "questions",
+          "canonical_sha256": "5940c56dedd447707ee55e0988995a4e43b98445c8f7d5d3967a9ea3a67696c1"
+        }
+      ],
+      "explanation": "Reader preserves objection substance in utterances/claims but omits separate question nodes for the כונתא grain challenge and Rav Kahana challenge. Producer explicitly records them. Raw reader question count is not complete recall denominator.",
+      "required_action": "Add two source-derived question inventory entries if typed objection questions are required; retain initial reader unchanged. The rhetorical formulation at 14a:14 is already in reader claim0137 and is a granularity difference.",
+      "resolution_state": "OPEN_FROZEN_FINDING_NOT_REPAIRED",
+      "evidence": [
+        {
+          "ref": "Moed Katan 13b:10",
+          "start_char": 0,
+          "end_char": 187,
+          "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא"
+        },
+        {
+          "ref": "Moed Katan 13b:11",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "רב הונא שרא להו להנהו כרופייתא למיזל לזבוני כי אורחייהו בשוקא איתיביה רב כהנא חנות פתוחה לסטיו פותח ונועל כדרכו"
+        }
+      ]
+    },
+    {
+      "id": "MK054-008",
+      "category": "reader_status_ambiguity",
+      "severity": "low",
+      "source_refs": [
+        "Moed Katan 14a:13",
+        "Moed Katan 14a:14"
+      ],
+      "reader_ids": [
+        "mk047.claims.0127",
+        "mk047.claims.0129",
+        "mk047.claims.0135",
+        "mk047.claims.0137"
+      ],
+      "producer_ids": [
+        "mk.r039.touring.c",
+        "mk.r039.livelihood.c",
+        "mk.r039.food2.c",
+        "mk.r039.profitq.q"
+      ],
+      "reader_versions": [
+        {
+          "id": "mk047.claims.0127",
+          "layer": "claims",
+          "canonical_sha256": "3e7fef4fcab74d9e0c67b1f33bb66e70e7161d5d482b021bb0590ac5ee485364"
+        },
+        {
+          "id": "mk047.claims.0129",
+          "layer": "claims",
+          "canonical_sha256": "6855b1b4172ea29365456f7bdcbc1f800217eca514e8a41627c43e858c3f8e44"
+        },
+        {
+          "id": "mk047.claims.0135",
+          "layer": "claims",
+          "canonical_sha256": "5af38b5f6b302809f3dca2107639b26e68a13be0f9488cc7a34fbe3ff1fe7d73"
+        },
+        {
+          "id": "mk047.claims.0137",
+          "layer": "claims",
+          "canonical_sha256": "5f5c8e7cc02313fbf3a2e8d1a45ab589df314afa5da76372757c30f7ab869ba1"
+        }
+      ],
+      "producer_versions": [
+        {
+          "id": "mk.r039.touring.c",
+          "layer": "claims",
+          "canonical_sha256": "f9022ce152714da3d3d1277632a6b0de8468c0acaee46090068545fb66e88cca"
+        },
+        {
+          "id": "mk.r039.livelihood.c",
+          "layer": "claims",
+          "canonical_sha256": "4e3867e522c1f0fc126363d7002e34f49619cff85bf2af9c79c2308b6f56be1e"
+        },
+        {
+          "id": "mk.r039.food2.c",
+          "layer": "claims",
+          "canonical_sha256": "31d89694d560d9cdcacff6d8d7a55a73d990f940c842252428cafa753d9adcd6"
+        },
+        {
+          "id": "mk.r039.profitq.q",
+          "layer": "questions",
+          "canonical_sha256": "213fce1f9a3de33483ccdfbd1f795233e7f737a2091838af3f90018c7a0ab8f4"
+        }
+      ],
+      "explanation": "Reader propositions describe rejection of candidate interpretations but assertion_mode rejected grammatically marks those descriptions rejected. Their intended local status is recoverable; candidate versus metaclaim should be distinguished. Producer challenged plus scope also needs contextual consumption.",
+      "required_action": "Express the candidate itself as rejected/hypothetical, or mark the metaclaim describing rejection asserted. Neither version is a maintained permission/prohibition.",
+      "resolution_state": "OPEN_FROZEN_FINDING_NOT_REPAIRED",
+      "evidence": [
+        {
+          "ref": "Moed Katan 14a:13",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "מיתיבי אמר ר' נראין דברי ר' יהודה כשיצא שלא ברשות ודברי חכמים כשיצא ברשות מאי שלא ברשות אילימא לשוט והאמרת דברי הכל אסור ואלא למזונות והאמרת דברי הכל מותר אלא פשיטא להרויחא"
+        },
+        {
+          "ref": "Moed Katan 14a:14",
+          "start_char": 0,
+          "end_char": 132,
+          "quote": "אימא סיפא נראין דברי חכמים כשיצא ברשות מאי ברשות אילימא למזונות הא אמרת דברי הכל מותר ואלא להרויחא והא אמרת נראין דברי רבי יהודה בהא"
+        }
+      ]
+    }
+  ],
+  "uncertainty_and_granularity": [
+    {
+      "id": "MK054-005",
+      "category": "restricted_atomic_and_condition_eligibility",
+      "severity": "low",
+      "source_refs": [
+        "Moed Katan 13b:10",
+        "Moed Katan 13b:15",
+        "Moed Katan 14a:13",
+        "Moed Katan 15b:1",
+        "Moed Katan 15b:3",
+        "Moed Katan 15b:6",
+        "Moed Katan 15b:8"
+      ],
+      "reader_ids": [],
+      "producer_ids": [
+        "mk.r037.vow.c",
+        "mk.r038.cut_nazir.c",
+        "mk.r039.report.c",
+        "mk.r043.kappara.c",
+        "mk.r043.night.c",
+        "mk.r045.bproof.c",
+        "mk.r045.sp.c"
+      ],
+      "reader_versions": [],
+      "producer_versions": [
+        {
+          "id": "mk.r037.vow.c",
+          "layer": "claims",
+          "canonical_sha256": "c36f2e8c60c2fe68a7674a35a18fc357b70c5709f1541cde3b1275a289d60468"
+        },
+        {
+          "id": "mk.r038.cut_nazir.c",
+          "layer": "claims",
+          "canonical_sha256": "f45b7735cfcb5cb52961a14a17a7292fe3a61959d40b83ade314ef6f3beda8b7"
+        },
+        {
+          "id": "mk.r039.report.c",
+          "layer": "claims",
+          "canonical_sha256": "9bf54cc63120b95d5516799f6084bd42f5cc3d370016622e8b35dfedaa3f4878"
+        },
+        {
+          "id": "mk.r043.kappara.c",
+          "layer": "claims",
+          "canonical_sha256": "7c7ace2517af1a46593bd6b603f49b84ad885f8e1f2cba9b53a30a3c02426dd6"
+        },
+        {
+          "id": "mk.r043.night.c",
+          "layer": "claims",
+          "canonical_sha256": "181e04f71d8e40517c93356e46589d28f471b67e724df9de8b51ba6847a2436c"
+        },
+        {
+          "id": "mk.r045.bproof.c",
+          "layer": "claims",
+          "canonical_sha256": "86c1840cafb981e8240f785e1d5c2fcf3bd7ab35dff3749b83bdc933784e60a3"
+        },
+        {
+          "id": "mk.r045.sp.c",
+          "layer": "claims",
+          "canonical_sha256": "683229911ceb53c350c0ff58b68e9cc16039a36a9176fc8e466a2323f88388d8"
+        }
+      ],
+      "explanation": "Composite units retain multiple rules and conditions in proposition/scope while typed condition arrays are often empty. Honest non-atomic warnings preserve limitations; they do not satisfy atomic claim or condition extraction.",
+      "required_action": "Keep ineligible for atomic/conditional modeling; split independent predicates with explicit applicability before any such use. No blanket source error assigned to every empty conditions array.",
+      "resolution_state": "OPEN_FROZEN_FINDING_NOT_REPAIRED",
+      "evidence": [
+        {
+          "ref": "Moed Katan 13b:10",
+          "start_char": 0,
+          "end_char": 187,
+          "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא"
+        },
+        {
+          "ref": "Moed Katan 13b:15",
+          "start_char": 0,
+          "end_char": 176,
+          "quote": "מתני׳ <big><strong>ואלו</strong></big> מגלחין במועד הבא ממדינת הים ומבית השביה והיוצא מבית האסורין והמנודה שהתירו לו חכמים וכן מי שנשאל לחכם והותר והנזיר והמצורע מטומאתו לטהרתו"
+        },
+        {
+          "ref": "Moed Katan 14a:13",
+          "start_char": 0,
+          "end_char": 172,
+          "quote": "מיתיבי אמר ר' נראין דברי ר' יהודה כשיצא שלא ברשות ודברי חכמים כשיצא ברשות מאי שלא ברשות אילימא לשוט והאמרת דברי הכל אסור ואלא למזונות והאמרת דברי הכל מותר אלא פשיטא להרויחא"
+        },
+        {
+          "ref": "Moed Katan 15b:1",
+          "start_char": 0,
+          "end_char": 91,
+          "quote": "דמות דיוקני נתתי בהן ובעונותיהם הפכתיה כפו מטותיהן עליה מנודה ומצורע מה הן בכפיית המטה תיקו"
+        },
+        {
+          "ref": "Moed Katan 15b:3",
+          "start_char": 0,
+          "end_char": 145,
+          "quote": "מנודה מהו בעשיית מלאכה אמר רב יוסף ת\"ש כשאמרו אסור בעשיית מלאכה לא אמרו אלא ביום אבל בלילה מותר וכן אתה מוצא במנודה ובאבל מאי לאו אכולהו לא אשארא"
+        },
+        {
+          "ref": "Moed Katan 15b:6",
+          "start_char": 0,
+          "end_char": 169,
+          "quote": "מנודה מהו ברחיצה אמר רב יוסף ת\"ש כשאמרו אסור ברחיצה לא אמרו אלא כל גופו אבל פניו ידיו ורגליו מותר וכן אתה מוצא במנודה ובאבל מאי לאו אכולהו לא אשארא מצורע מהו ברחיצה תיקו"
+        },
+        {
+          "ref": "Moed Katan 15b:8",
+          "start_char": 0,
+          "end_char": 184,
+          "quote": "מנודה מהו בנעילת הסנדל אמר רב יוסף תא שמע כשאמרו אסור בנעילת הסנדל לא אמרו אלא בעיר אבל בדרך מותר הא כיצד יצא לדרך נועל נכנס לעיר חולץ וכן אתה מוצא במנודה ובאבל מאי לאו אכולהו לא אשארא"
+        }
+      ]
+    },
+    {
+      "id": "MK054-006",
+      "category": "unresolved_attribution_and_scope",
+      "severity": "low",
+      "source_refs": [
+        "Moed Katan 13b:15",
+        "Moed Katan 14a:16",
+        "Moed Katan 14a:17"
+      ],
+      "reader_ids": [
+        "mk047.claims.0086",
+        "mk047.positions.0159",
+        "mk047.attributions.0165"
+      ],
+      "producer_ids": [
+        "mk.r038.cut_nazir.c",
+        "mk.r040.prison.a",
+        "mk.r040.proof.a",
+        "mk.r040.proof.p"
+      ],
+      "reader_versions": [
+        {
+          "id": "mk047.claims.0086",
+          "layer": "claims",
+          "canonical_sha256": "fc0f12849e2e5afb0b523c8aad17b58e54315a6383c15da5a137044d2537c346"
+        },
+        {
+          "id": "mk047.positions.0159",
+          "layer": "positions",
+          "canonical_sha256": "795b6ae10322f2de424596c6c9fa70655f376d6cb3d0d92b384d470033530d0d"
+        },
+        {
+          "id": "mk047.attributions.0165",
+          "layer": "attributions",
+          "canonical_sha256": "fd547c62e8566f9c93c66bffd4a0a168f0bf207e624b8a28abac1bc9335ddc5c"
+        }
+      ],
+      "producer_versions": [
+        {
+          "id": "mk.r038.cut_nazir.c",
+          "layer": "claims",
+          "canonical_sha256": "f45b7735cfcb5cb52961a14a17a7292fe3a61959d40b83ade314ef6f3beda8b7"
+        },
+        {
+          "id": "mk.r040.prison.a",
+          "layer": "attributions",
+          "canonical_sha256": "645c1bf377f22eaaa9d7534882d68a0bca1350fee905b4a22bc0e293580fe069"
+        },
+        {
+          "id": "mk.r040.proof.a",
+          "layer": "attributions",
+          "canonical_sha256": "15a7ff6e4a971788ef66ae474bc4ee1cecc85dd04584c6dc66c06f7b682fa17b"
+        },
+        {
+          "id": "mk.r040.proof.p",
+          "layer": "positions",
+          "canonical_sha256": "24481be3a7eaf4def1afa20bd72cbde618d9931474c06240bab3e8ba7b47f0c2"
+        }
+      ],
+      "explanation": "Purification qualifier attachment to nazir requires caution in both readings. Shmuel’s reason is within his sentence but may be explanatory framing; producer anonymizes it while reader assigns Shmuel. Pinhas clearly cites/objects, whereas quoted_authority can misleadingly suggest authorship of the underlying rule; producer proposition preserves that he objects.",
+      "required_action": "Retain uncertainty on reason and nazir qualifier; separate Pinhas as citer from anonymous source authority before attribution use. Do not manufacture a definite correction beyond the source.",
+      "resolution_state": "OPEN_FROZEN_FINDING_NOT_REPAIRED",
+      "evidence": [
+        {
+          "ref": "Moed Katan 13b:15",
+          "start_char": 0,
+          "end_char": 176,
+          "quote": "מתני׳ <big><strong>ואלו</strong></big> מגלחין במועד הבא ממדינת הים ומבית השביה והיוצא מבית האסורין והמנודה שהתירו לו חכמים וכן מי שנשאל לחכם והותר והנזיר והמצורע מטומאתו לטהרתו"
+        },
+        {
+          "ref": "Moed Katan 14a:16",
+          "start_char": 0,
+          "end_char": 90,
+          "quote": "אמר שמואל קטן הנולד במועד מותר לגלח במועד שאין לך בית האסורין גדול מזה במועד אין מעיקרא לא"
+        },
+        {
+          "ref": "Moed Katan 14a:17",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "מתיב ר' פנחס כל אלו שאמרו מותר לגלח במועד מותר לגלח בימי אבלו הא אסור לגלח במועד אסור לגלח בימי אבלו"
+        }
+      ]
+    },
+    {
+      "id": "MK054-009",
+      "category": "reasonable_granularity",
+      "severity": "low",
+      "source_refs": [
+        "Moed Katan 13b:14",
+        "Moed Katan 13b:9",
+        "Moed Katan 14b:3",
+        "Moed Katan 15b:1",
+        "Moed Katan 15b:5"
+      ],
+      "reader_ids": [],
+      "producer_ids": [
+        "mk.r037.marker.u",
+        "mk.r037.peeled.c",
+        "mk.r040.question.q",
+        "mk.r043.bedend.c",
+        "mk.r045.oil.c"
+      ],
+      "reader_versions": [],
+      "producer_versions": [
+        {
+          "id": "mk.r037.marker.u",
+          "layer": "utterances",
+          "canonical_sha256": "782c150d0846c0ad7cf1785a252aa8892ff4b386bc69007cb6b050a8863292b2"
+        },
+        {
+          "id": "mk.r037.peeled.c",
+          "layer": "claims",
+          "canonical_sha256": "fe2e44cd106721f6fbed07c503b4ac33f7fb9751478183660dd9db44607755bc"
+        },
+        {
+          "id": "mk.r040.question.q",
+          "layer": "questions",
+          "canonical_sha256": "0cee72625c914dcdce080540ff3003bc539a4c4b6ba52570acb9b73a7d69dfa7"
+        },
+        {
+          "id": "mk.r043.bedend.c",
+          "layer": "claims",
+          "canonical_sha256": "02a6a55c8b7c70ca1ed5ba3365c2d4b1db7f8dc02239133caae28cb990867f31"
+        },
+        {
+          "id": "mk.r045.oil.c",
+          "layer": "claims",
+          "canonical_sha256": "04cbe68b0559a9641e913c6c51ff0016d452ba7b0f33c4b4feb12f749bbdd6c2"
+        }
+      ],
+      "explanation": "Chapter paratext as nonlegal utterance versus structure-only; rhetorical negative assertion as question; paired unresolved outcomes; internal premise bundling are defensible coarse representations. Reader 43 edge rows are not 43 uniquely mandatory graph edges.",
+      "required_action": "Preserve alternative granularity; do not call these substance errors. For graph/atomic use split internal endpoints and retain explicit typing.",
+      "resolution_state": "OPEN_FROZEN_FINDING_NOT_REPAIRED",
+      "evidence": [
+        {
+          "ref": "Moed Katan 13b:14",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "<br><br><big><strong>הדרן עלך מי שהפך:</strong></big><br><br>"
+        },
+        {
+          "ref": "Moed Katan 13b:9",
+          "start_char": 0,
+          "end_char": 80,
+          "quote": "כגון דמיקלפן דאי לאו דשרא להו במיא לא הוה מיקלפא ואמאי קרי ליה חילקא דשקל חלקיהו"
+        },
+        {
+          "ref": "Moed Katan 14b:3",
+          "start_char": 0,
+          "end_char": 58,
+          "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר"
+        },
+        {
+          "ref": "Moed Katan 15b:1",
+          "start_char": 0,
+          "end_char": 91,
+          "quote": "דמות דיוקני נתתי בהן ובעונותיהם הפכתיה כפו מטותיהן עליה מנודה ומצורע מה הן בכפיית המטה תיקו"
+        },
+        {
+          "ref": "Moed Katan 15b:5",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "אבל אסור ברחיצה דכתיב (שמואל ב יד, ב) ואל תסוכי שמן ורחיצה בכלל סיכה"
+        }
+      ]
+    },
+    {
+      "id": "MK054-010",
+      "category": "restricted_holder_and_stage_eligibility",
+      "severity": "low",
+      "source_refs": [
+        "Moed Katan 14a:12",
+        "Moed Katan 14a:15",
+        "Moed Katan 14a:16",
+        "Moed Katan 14a:17",
+        "Moed Katan 14b:1",
+        "Moed Katan 14b:3",
+        "Moed Katan 15b:1"
+      ],
+      "reader_ids": [],
+      "producer_ids": [
+        "mk.r039.tour.p",
+        "mk.r039.food.p",
+        "mk.r039.compare.p",
+        "mk.r039.agree_y.p",
+        "mk.r039.agree_s.p",
+        "mk.r040.infer.p",
+        "mk.r040.negative.p",
+        "mk.r043.kappara.u"
+      ],
+      "reader_versions": [],
+      "producer_versions": [
+        {
+          "id": "mk.r039.tour.p",
+          "layer": "positions",
+          "canonical_sha256": "cb382f75956bd0317874cf2333ac4a6e70ee15c85b66d6213279644fa80fb4b3"
+        },
+        {
+          "id": "mk.r039.food.p",
+          "layer": "positions",
+          "canonical_sha256": "7fe2e4c9faa511182be185f317d5a12ac2707ca924504c39ce91d8318d6f748e"
+        },
+        {
+          "id": "mk.r039.compare.p",
+          "layer": "positions",
+          "canonical_sha256": "318569b2f005d88b32a0cd1eeed897051619a76da71055c86ea34a59f4ce047d"
+        },
+        {
+          "id": "mk.r039.agree_y.p",
+          "layer": "positions",
+          "canonical_sha256": "5ad0ac9358f70a88fc8977c33bc870d593ed3a340eccdacb0e8d8c3f10ae2eaa"
+        },
+        {
+          "id": "mk.r039.agree_s.p",
+          "layer": "positions",
+          "canonical_sha256": "17d9f748458e4c6ebcb81fcb0d9dfe37225fb042dc67efe186c10bbac4fbc9d3"
+        },
+        {
+          "id": "mk.r040.infer.p",
+          "layer": "positions",
+          "canonical_sha256": "7df32921ce000ec24dede9c2164e2443fe3f108802f1e0feafeb263d640b96c2"
+        },
+        {
+          "id": "mk.r040.negative.p",
+          "layer": "positions",
+          "canonical_sha256": "e726f330bf42687b6096df0cb09f6121ed397b11583cae2257d446ec3373edb1"
+        },
+        {
+          "id": "mk.r043.kappara.u",
+          "layer": "utterances",
+          "canonical_sha256": "5308a6efe565da44d4fa5b652bfbc9c9b7e2905c601a8e1e0c4633866f62f9ed"
+        }
+      ],
+      "explanation": "Rava owns the characterization, not the original tannaitic choices; typed named holders are absent from later concessions though prose identifies them. Challenged does not mean finally refuted: Rav Ashi defeats Pinhas’s converse in both versions. Bar Kappara teaches embedded divine speech; prose distinguishes levels while utterance remains coarse.",
+      "required_action": "No scholar-choice or direct-speech export from these isolated fields. Require contextual bundles and separately typed embedded authority/holder/stage if subsequently admitted.",
+      "resolution_state": "OPEN_FROZEN_FINDING_NOT_REPAIRED",
+      "evidence": [
+        {
+          "ref": "Moed Katan 14a:12",
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות"
+        },
+        {
+          "ref": "Moed Katan 14a:15",
+          "start_char": 0,
+          "end_char": 243,
+          "quote": "הכי קאמר נראין דברי ר' יהודה לרבנן כשיצא שלא ברשות ומאי ניהו לשוט שאפילו חכמים לא נחלקו עליו אלא להרויחא אבל לשוט מודו ליה ונראין דברי רבנן לר' יהודה כשיצא ברשות ומאי ניהו למזונות שאפילו רבי יהודה לא נחלק עליהם אלא להרויחא אבל למזונות מודה להו"
+        },
+        {
+          "ref": "Moed Katan 14a:16",
+          "start_char": 0,
+          "end_char": 90,
+          "quote": "אמר שמואל קטן הנולד במועד מותר לגלח במועד שאין לך בית האסורין גדול מזה במועד אין מעיקרא לא"
+        },
+        {
+          "ref": "Moed Katan 14a:17",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "מתיב ר' פנחס כל אלו שאמרו מותר לגלח במועד מותר לגלח בימי אבלו הא אסור לגלח במועד אסור לגלח בימי אבלו"
+        },
+        {
+          "ref": "Moed Katan 14b:1",
+          "start_char": 0,
+          "end_char": 51,
+          "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן"
+        },
+        {
+          "ref": "Moed Katan 14b:3",
+          "start_char": 0,
+          "end_char": 58,
+          "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר"
+        },
+        {
+          "ref": "Moed Katan 15b:1",
+          "start_char": 0,
+          "end_char": 91,
+          "quote": "דמות דיוקני נתתי בהן ובעונותיהם הפכתיה כפו מטותיהן עליה מנודה ומצורע מה הן בכפיית המטה תיקו"
+        }
+      ]
+    }
+  ],
+  "policy": "Preserve original bytes. Reader question count is incomplete; ambiguous status is not a maintained ruling. Restricted producer fields remain ineligible for atomic, conditional, scholar-choice or direct-speech modeling without required contextual adjudication. Four targeted producer corrections do not close these findings.",
+  "ml_eligible": false
+}

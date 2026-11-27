@@ -1,0 +1,171 @@
+{
+  "created_utc": "2026-11-26T20:03:58.013358+00:00",
+  "event": "additive_exact_version_correction_review",
+  "original_reviews_preserved": true,
+  "review_kind": "post_freeze_targeted_adjudication_not_new_blind_reading",
+  "reports": [
+    {
+      "tractate": "nedarim",
+      "snapshot_sha256": "b4ecb15b60af10125075497607065f2d16ab516486d1d26ae28927556e53d09b",
+      "source_sha256": "52a452f67441cc435f1908275e349834ddc53a2add513905d52e6a0a186e85a1",
+      "prior_frozen_reading_sha256": "fa8641ebef73e9310b2adf3470fc772b626ab4a4e15a39d131317512e1e7a098",
+      "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+      "scope": "Targeted revisions only; earlier independent-core coverage unchanged.",
+      "findings": [
+        {
+          "status": "qualification_verified_not_atomic_segmentation",
+          "records": [
+            "nd.r001.akiva.u.scope002",
+            "nd.r001.all.u.scope002",
+            "nd.r001.always.u.scope002",
+            "nd.r001.animal.u.scope002",
+            "nd.r001.begin.u.scope002",
+            "nd.r001.categories.u.scope002",
+            "nd.r001.definition.u.scope002",
+            "nd.r001.derived.u.scope002",
+            "nd.r001.direct.u.scope002",
+            "nd.r001.first.u.scope002",
+            "nd.r001.firstborn.u.scope002",
+            "nd.r001.flexible.u.scope002",
+            "nd.r001.foreign.u.scope002",
+            "nd.r001.formula.u.scope002",
+            "nd.r001.herem.u.scope002",
+            "nd.r001.inherit.u.scope002",
+            "nd.r001.insulation.u.scope002",
+            "nd.r001.invented.u.scope002",
+            "nd.r001.inventedquestion.u.scope002",
+            "nd.r001.last.u.scope002",
+            "nd.r001.lighting.u.scope002",
+            "nd.r001.many.u.scope002",
+            "nd.r001.missing.u.scope002",
+            "nd.r001.nazir.u.scope002",
+            "nd.r001.oathorder.u.scope002",
+            "nd.r001.oaths.u.scope002",
+            "nd.r001.objectherem.u.scope002",
+            "nd.r001.objectvow.u.scope002",
+            "nd.r001.oil.u.scope002",
+            "nd.r001.order.u.scope002",
+            "nd.r001.pair.u.scope002",
+            "nd.r001.personoath.u.scope002",
+            "nd.r001.presentation.u.scope002",
+            "nd.r001.printed.u.scope002",
+            "nd.r001.reconstruct.u.scope002",
+            "nd.r001.reorder.u.scope002",
+            "nd.r001.vows.u.scope002",
+            "nd.r001.wives.u.scope002",
+            "nd.r001.woman.u.scope002"
+          ],
+          "reason": "Composite discourse qualification and caution now avoid claiming broad evidence is certified atomic utterance. This conservative qualification is supported; it does not establish completed atomic segmentation. Akiva unresolved status and formula-combination uncertainty remain preserved."
+        }
+      ],
+      "mechanical": {
+        "active_records": 173,
+        "evidence_spans_checked": 193,
+        "quote_errors": []
+      },
+      "remaining_limits": [
+        "No full-tractate acceptance",
+        "No precise atomic-boundary qualification for composite records",
+        "Attribution content.scope strings retain prior IDs in several rows; revised links are the canonical links, not prose scope values",
+        "No task-specific eligibility or human review"
+      ]
+    },
+    {
+      "tractate": "moed_katan",
+      "snapshot_sha256": "c8eecd4ef19248e4ba184578531791c9dc28d598b5d0f463bd50bf443d26242f",
+      "source_sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7",
+      "prior_frozen_reading_sha256": "edba0af9d4e93d99374caec76c471c1252a6b1a4d695eed6263bedea8b23cc74",
+      "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+      "scope": "Targeted revisions only; earlier independent-core coverage unchanged.",
+      "findings": [
+        {
+          "previous_finding": "MK-001",
+          "status": "corrected_verified",
+          "records": [
+            "mk.r001.huna.c.scope002",
+            "mk.r001.huna.p.scope002"
+          ],
+          "reason": "Explicit rejected mode and replacement local status agree with frozen source reading and אלא אמר רב פפא."
+        },
+        {
+          "previous_finding": "MK-002",
+          "status": "corrected_verified",
+          "records": [
+            "mk.r002.pappa_replaces_huna"
+          ],
+          "reason": "Directed correction from revised Pappa claim to revised Huna claim is source-supported."
+        },
+        {
+          "status": "targeted_narrowing_verified",
+          "records": [
+            "mk.r001.abaye.u.scope002",
+            "mk.r001.azar.u.scope002",
+            "mk.r001.channelsages.u.scope002",
+            "mk.r001.channelzea.u.scope002",
+            "mk.r001.huna.u.scope002",
+            "mk.r001.meir.u.scope002",
+            "mk.r001.pappa.u.scope002",
+            "mk.r001.redirect.u.scope002",
+            "mk.r001.repair.u.scope002",
+            "mk.r001.tree.u.scope002",
+            "mk.r001.yehuda.u.scope002"
+          ],
+          "reason": "Named speeches now isolate Huna identification, Pappa identification, Abaye explanation, quoted tannaim, and Sages clauses; no entire multi-speaker segment assigned to one atomic speaker."
+        }
+      ],
+      "mechanical": {
+        "active_records": 181,
+        "evidence_spans_checked": 196,
+        "quote_errors": []
+      },
+      "remaining_limits": [
+        "No full-tractate acceptance",
+        "No precise atomic-boundary qualification for composite records",
+        "Attribution content.scope strings retain prior IDs in several rows; revised links are the canonical links, not prose scope values",
+        "No task-specific eligibility or human review"
+      ]
+    },
+    {
+      "tractate": "makkot",
+      "snapshot_sha256": "8490228f9f545094de23f8063eaa1fc16f87ebe52ddff5087dd9adc309be2874",
+      "source_sha256": "ca2b205e20bd401000af94a7f6d9da4ba9fa5208b9a0f78c5f50aa2bda618efd",
+      "prior_frozen_reading_sha256": "848192b47d3f832c4cbe68d78b1dcbfd2d931c2aff97bd79d4ea32c0c8cde07c",
+      "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+      "scope": "Targeted revisions only; earlier independent-core coverage unchanged.",
+      "findings": [
+        {
+          "previous_finding": "MA-L01",
+          "status": "corrected_verified_with_scope_limit",
+          "records": [
+            "ma.r001.ulla.a.scope002",
+            "ma.r001.ulla.u.scope002",
+            "ma.r001.ulla.q.scope002",
+            "ma.r001.explicit.u.scope002"
+          ],
+          "reason": "Ulla attribution now speaker; atomic utterance ends at initial question. Question warns anonymous clarification is not verbatim Ulla. Anonymous clarification utterance retains whole segment as composite containing quotations; acceptable contextual evidence, not precise anonymous-only segmentation."
+        },
+        {
+          "status": "targeted_narrowing_verified",
+          "records": [
+            "ma.r001.pada.u.scope002",
+            "ma.r001.ravina.u.scope002",
+            "ma.r001.lakish.u.scope002",
+            "ma.r001.verse.u.scope002"
+          ],
+          "reason": "Bar Padda, Ravina and Resh Lakish clauses isolated correctly; verse derivation separated from surrounding challenges. Ambiguous earlier attribution remains unresolved."
+        }
+      ],
+      "mechanical": {
+        "active_records": 116,
+        "evidence_spans_checked": 125,
+        "quote_errors": []
+      },
+      "remaining_limits": [
+        "No full-tractate acceptance",
+        "No precise atomic-boundary qualification for composite records",
+        "Attribution content.scope strings retain prior IDs in several rows; revised links are the canonical links, not prose scope values",
+        "No task-specific eligibility or human review"
+      ]
+    }
+  ]
+}

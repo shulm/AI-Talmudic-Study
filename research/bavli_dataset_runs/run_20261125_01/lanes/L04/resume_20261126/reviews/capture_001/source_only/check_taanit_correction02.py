@@ -1,0 +1,13 @@
+import pathlib,json,hashlib
+r=pathlib.Path('F:/Sefaria_QA/bavli_production_run_20261125_01/L04/review_20261126_resume/source_only'); job=r.parents[1]/'bavli_taanit';h=lambda b:hashlib.sha256(b).hexdigest(); can=lambda o:json.dumps(o,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode(); sh='463a44280cdb694e9606f11c4487280b0308f9013d9f0810c4509ac0f635dded'; ph='9e593cd66ef56b3a8308cdeb059c853334014a1a2fb18bb4c29acc1c534a101e'
+sb=(job/'snapshots'/(sh+'.json')).read_bytes(); pb=(job/'proposals'/(ph+'.json')).read_bytes(); assert h(sb)==sh and h(pb)==ph; s=json.loads(sb);p=json.loads(pb); idx={x['id']:x for x in s['records']}; inv={x['id']:x for x in json.loads((job/'source_inventory.json').read_text())}; src=json.loads(pathlib.Path('F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Taanit/Hebrew/Wikisource Talmud Bavli.json').read_text(encoding='utf-8'))['text']; checked=[]
+for x in p['records']:
+ old=x['supersedes'];assert idx[old]['release_state']=='superseded';assert idx[x['id']]['release_state']=='valid'
+ for e in x['evidence']:
+  i,j=inv[e['segment_id']]['source_index'];assert src[i][j][e['start_char']:e['end_char']]==e['quote']
+ if x['layer']=='attributions':assert not x['content']['candidates'] and x['content']['role'] in ['anonymous','quoted_authority']
+ if x['layer']=='positions':assert not x['content']['holder_candidates']
+ checked.append(dict(id=x['id'],supersedes=old,record_sha256=h(can(idx[x['id']])),record=idx[x['id']]))
+resids=['ta.gemara001.opening.positions.'+x for x in ['51','55','72','76']]; assert all(any(c['supersedes']==i for c in checked) for i in resids)
+o=dict(kind='nonblind_exact_correction_followup',prior_residual_receipt_sha256=h((r/'taanit_correction_check01.json').read_bytes()),snapshot_sha256=sh,proposal_sha256=ph,all33_revisions_source_slices_and_supersession_verified=True,checked_records=checked,residual_four_position_ids=resids,residual_status='CLOSED_FOR_CAPTURED_RECORDS: candidates cleared in new active revisions; prior erroneous/residual findings retained in prior immutable receipts.',additional_change_scope='Five other scriptural attribution/position pairs and anonymous holder normalization mechanically checked; candidate typing is appropriate. Structural-boundary revision is source-exact but no separate segmentation acceptance granted.',limits='No fresh blind reading, no complete export/replay recheck, no blanket task eligibility. Producer-reported replay not independently rerun here.',new_blind_core_segments=0)
+b=(json.dumps(o,ensure_ascii=False,indent=2)+'\n').encode();(r/'taanit_correction_check02.json').open('xb').write(b);(r/'taanit_correction_check02.sha256').open('x').write(h(b)+'  taanit_correction_check02.json\n');print(h(b))

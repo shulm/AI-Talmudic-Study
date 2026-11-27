@@ -1,0 +1,273 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Taanit",
+  "source_sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "owner": "/root/lead_l02_l04",
+  "epoch": 1,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/lead_l02_l04",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "claim_id": "ta.gemara001.opening.claims.143.reviewfix1",
+        "conditions": [],
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "local_status": "Inferred position offered for Rabbi Yohanan by anonymous Gemara; reconstructed reply, not independently transmitted Yohanan speech.",
+        "question_id": "ta.gemara001.opening.questions.141"
+      },
+      "evidence": [
+        {
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה",
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102
+        }
+      ],
+      "id": "ta.gemara001.opening.positions.145.reviewfix1",
+      "layer": "positions",
+      "links": [
+        "ta.gemara001.opening.claims.143.reviewfix1",
+        "ta.gemara001.opening.questions.141"
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "Holder inferred from the explicit question about Rabbi Yohanan followed by אמר לך; anonymous textual voice preserved."
+      ],
+      "supersedes": "ta.gemara001.opening.positions.145"
+    },
+    {
+      "content": {
+        "composition": "atomic",
+        "discourse_role": "reconstructed reply offered for Rabbi Yohanan",
+        "textual_voice": "anonymous Gemara"
+      },
+      "evidence": [
+        {
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה",
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102
+        }
+      ],
+      "id": "ta.gemara001.opening.utterances.142.reviewfix1",
+      "layer": "utterances",
+      "links": [],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "אמר לך is the discussion's offered answer, not an independently transmitted utterance of Yohanan."
+      ],
+      "supersedes": "ta.gemara001.opening.utterances.142"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Rain constitutes sustenance, explaining its inclusion without a separate key.",
+        "scope": "Taanit 2b:2"
+      },
+      "evidence": [
+        {
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה",
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102
+        }
+      ],
+      "id": "ta.gemara001.opening.claims.143.reviewfix1",
+      "layer": "claims",
+      "links": [
+        "ta.gemara001.opening.utterances.142.reviewfix1"
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "The source offers this as Yohanan's reconstructed answer; no independent direct transmission is claimed."
+      ],
+      "supersedes": "ta.gemara001.opening.claims.143"
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "ta.gemara001.opening.claims.143.reviewfix1",
+        "surface": "אמר לך",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 126,
+          "quote": "אמר לך גשמים היינו פרנסה",
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 102
+        }
+      ],
+      "id": "ta.gemara001.opening.attributions.144.reviewfix1",
+      "layer": "attributions",
+      "links": [
+        "ta.gemara001.opening.claims.143.reviewfix1"
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "Anonymous redactor is textual voice; inferred position holder is separately Rabbi Yohanan."
+      ],
+      "supersedes": "ta.gemara001.opening.attributions.144"
+    },
+    {
+      "content": {
+        "candidates": [
+          "Western sages"
+        ],
+        "role": "collective",
+        "scope": "ta.gemara001.opening.claims.133",
+        "surface": "Western sages",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 28,
+          "quote": "במערבא אמרי אף מפתח של פרנסה",
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0
+        }
+      ],
+      "id": "ta.gemara001.opening.attributions.134.reviewfix1",
+      "layer": "attributions",
+      "links": [
+        "ta.gemara001.opening.claims.133"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ta.gemara001.opening.attributions.134"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "ta.gemara001.opening.claims.143.reviewfix1",
+        "target_id": "ta.gemara001.opening.questions.141"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:",
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0
+        }
+      ],
+      "id": "ta.gemara001.opening.edges.146.reviewfix1",
+      "layer": "edges",
+      "links": [
+        "ta.gemara001.opening.claims.143.reviewfix1",
+        "ta.gemara001.opening.questions.141"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ta.gemara001.opening.edges.146"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "distinction",
+        "source_id": "ta.gemara001.opening.claims.143.reviewfix1",
+        "target_id": "ta.gemara001.opening.claims.133"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "במערבא אמרי אף מפתח של פרנסה דכתיב (תהלים קמה, טז) פותח את ידך וגו' ור' יוחנן מאי טעמא לא קא חשיב להא אמר לך גשמים היינו פרנסה:",
+          "segment_id": "seg_fbf660d7ed72e0a90054",
+          "start_char": 0
+        }
+      ],
+      "id": "ta.gemara001.opening.edges.147.reviewfix1",
+      "layer": "edges",
+      "links": [
+        "ta.gemara001.opening.claims.143.reviewfix1",
+        "ta.gemara001.opening.claims.133"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ta.gemara001.opening.edges.147"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending. Targeted frozen independent comparison rechecked original wording: candidate alternatives and/or anonymous voice versus inferred holder corrected with versioned dependency closure.",
+      "record_ids": [
+        "ta.gemara001.opening.attributions.134.reviewfix1",
+        "ta.gemara001.opening.attributions.138",
+        "ta.gemara001.opening.attributions.144.reviewfix1"
+      ],
+      "segment_id": "seg_fbf660d7ed72e0a90054"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending. Targeted frozen independent comparison rechecked original wording: candidate alternatives and/or anonymous voice versus inferred holder corrected with versioned dependency closure.",
+      "record_ids": [
+        "ta.gemara001.opening.claims.133",
+        "ta.gemara001.opening.claims.137",
+        "ta.gemara001.opening.claims.143.reviewfix1"
+      ],
+      "segment_id": "seg_fbf660d7ed72e0a90054"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending. Targeted frozen independent comparison rechecked original wording: candidate alternatives and/or anonymous voice versus inferred holder corrected with versioned dependency closure.",
+      "record_ids": [
+        "ta.gemara001.opening.edges.140",
+        "ta.gemara001.opening.edges.146.reviewfix1",
+        "ta.gemara001.opening.edges.147.reviewfix1"
+      ],
+      "segment_id": "seg_fbf660d7ed72e0a90054"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending. Targeted frozen independent comparison rechecked original wording: candidate alternatives and/or anonymous voice versus inferred holder corrected with versioned dependency closure.",
+      "record_ids": [
+        "ta.gemara001.opening.positions.135",
+        "ta.gemara001.opening.positions.139",
+        "ta.gemara001.opening.positions.145.reviewfix1"
+      ],
+      "segment_id": "seg_fbf660d7ed72e0a90054"
+    },
+    {
+      "extraction_result": "none_found_after_pass",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Reread Western addition, proof, question about Yohanan and anonymous reconstructed reply; addition not forced into substantive disagreement. Colon closes keys discussion; next lemma begins2b3. Targeted frozen independent comparison rechecked original wording: candidate alternatives and/or anonymous voice versus inferred holder corrected with versioned dependency closure.",
+      "record_ids": [],
+      "segment_id": "seg_fbf660d7ed72e0a90054"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "utterances",
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending. Targeted frozen independent comparison rechecked original wording: candidate alternatives and/or anonymous voice versus inferred holder corrected with versioned dependency closure.",
+      "record_ids": [
+        "ta.gemara001.opening.utterances.132",
+        "ta.gemara001.opening.utterances.136",
+        "ta.gemara001.opening.utterances.142.reviewfix1"
+      ],
+      "segment_id": "seg_fbf660d7ed72e0a90054"
+    }
+  ],
+  "open_tails": [
+    "ta.gemara001.opening.structure.148",
+    "ta.opening.structure.54"
+  ]
+}

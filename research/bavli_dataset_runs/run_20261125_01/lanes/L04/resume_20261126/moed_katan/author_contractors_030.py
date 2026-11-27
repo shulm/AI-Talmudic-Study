@@ -1,0 +1,52 @@
+"""Direct source reading12a:1–11 with subsequent work-loss context."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading
+a=ScopedReading('moed_katan','Moed Katan','mk.r030');c=a.claim;e=a.e
+refs=['12a:'+str(i) for i in range(1,12)]
+def q(*args,**kwargs):
+ v=a.question(*args,**kwargs);a.rows[-1]['content']['answer_set_status']='partial';a.rows[-1]['uncertainty'].append('Represented source reply only; no exhaustive set or qualification.');return v
+a.structure('contractors',refs[:7],'Location, visibility and status qualifications for contract work')
+a.structure('animals',refs[7:],'Animal breeding and field-manuring arrangements')
+inside=c('inside','12a:1','אמר שמואל מקבלי קיבולת בתוך התחום אסור','Shmuel prohibits contracted work within the boundary.',candidates=['שמואל'],conditions=['within the boundary'])
+outside=c('outside','12a:1','חוץ לתחום מותר','Shmuel permits it outside the boundary.',candidates=['שמואל'],conditions=['outside the boundary'],scope='Initial statement with subsequent locality and time qualifications')
+near=c('near','12a:2',"אמר רב פפא ואפי' חוץ לתחום לא אמרן אלא דליכא מתא דמקרבא להתם אבל איכא מתא דמקרבא להתם אסור",'Rav Pappa limits the outside-boundary permission to where no town is nearby; proximity to a town makes it prohibited.',candidates=['רב פפא'],conditions=['no nearby town required for permission'],composition='composite')
+e('near_limits',near,outside,'qualification','12a:2')
+holidays=c('holidays','12a:3','לא אמרן אלא בשבתות ובימים טובים דלא שכיחי אינשי דאזלי להתם','Rav Mesharshiya further limits permission to Sabbaths and festivals when people are not normally traveling there.',candidates=['רב משרשיא'],conditions=['no nearby town','Sabbaths or festival days','travel there uncommon'],scope='Qualification of the previous outside-boundary permission')
+intermediate=c('intermediate','12a:3','אבל בחוש"מ דשכיחי אינשי דאזלי ואתו להתם אסור','During the intermediate festival days, ordinary travel there makes the work prohibited.',candidates=['רב משרשיא'],conditions=['intermediate festival days','travel common'])
+e('holiday_limits',holidays,near,'qualification','12a:3');e('intermediate_limits',intermediate,outside,'qualification','12a:3')
+build=c('build','12a:4','מר זוטרא בריה דרב נחמן בנו ליה אפדנא מקבלי קיבולת חוץ לתחום','Contractors built a residence for Mar Zutra son of Rav Nahman outside the boundary.',scope='Narrative context, not itself an approval')
+visit=c('visit','12a:4','איקלע רב ספרא ורב הונא בר חיננא ולא עלו לגביה','Rav Safra and Rav Huna bar Hinnana came but did not enter to visit him.',scope='Narrative actions',composition='composite')
+himself=c('himself','12a:4','ואיכא דאמרי הוא נמי לא על בגוויה','An alternative account says he himself did not enter it either.',scope='Alternative narrative report; referent Mar Zutra from the context')
+challenge=q('challenge','12a:5','והאמר שמואל מקבלי קיבולת בתוך התחום אסור חוץ לתחום מותר','Why the avoidance, given Shmuel’s outside-boundary permission?')
+important=c('important','12a:5','אדם חשוב שאני','The answer distinguishes an important person.',conditions=['important person'],scope='Local answer explaining this narrative')
+straw=c('straw','12a:5','ואיכא דאמרי סיועי סייע בתיבנא בהדייהו','Another version explains that he helped them with straw.',scope='Alternative explanation for this particular building narrative')
+e('important_answer',important,challenge,'answer','12a:5');e('straw_answer',straw,challenge,'answer','12a:5')
+hama=c('hama','12a:6','רב חמא שרא להו לאבונגרי דבי ריש גלותא למיעבד להו עבידתא בחולא דמועדא','Rav Hama permitted the Exilarch household’s אבונגרי to perform their work during the intermediate festival days.',candidates=['רב חמא'],uncertainty=['אבונגרי role retained without an unsupported modern employment classification.'])
+reason=c('reason','12a:6','אמר כיון דאגר לא קא שקלי שרשויי הוא דקא משרשו ליה ולית לן בה','He explains that they take no wages and this is a benefit accruing to him, so there is no objection.',candidates=['רב חמא'],conditions=['no wages received'],scope='Source’s local rationale with idiom retained in evidence')
+e('hama_reason',reason,hama,'support','12a:6')
+contract=c('contract','12a:7','מקבלין קיבולת במועד לעשותה לאחר המועד ובמועד אסור','A baraita allows accepting a contract during the festival to perform after it, but prohibits performing it during the festival.',conditions=['performance after the festival'],composition='composite')
+can=c('can','12a:7','כל שהוא עושה אומר לנכרי ועושה','For work he may perform, he may instruct a non-Jew to perform it.',conditions=['work permitted to the instructing person'])
+cannot=c('cannot','12a:7','וכל שאינו עושה אינו אומר לנכרי ועושה','For work he may not perform, he may not instruct a non-Jew to perform it.',conditions=['work prohibited to the instructing person'])
+measure=c('measure','12a:7','ובלבד שלא ימדוד ושלא ישקול ושלא ימנה כדרך שהוא עושה בחול','The second baraita requires avoiding measuring, weighing and counting as on a weekday.',conditions=['contract accepted for after-festival performance'],composition='composite')
+e('measure_limits',measure,contract,'qualification','12a:7')
+breed=c('breed','12a:8','אין מרביעין בהמה בחולו של מועד','The baraita prohibits arranging animal mating during the intermediate festival days.')
+firstborn=c('firstborn','12a:8','כיוצא בו אין מרביעין בבכור ולא בפסולי המוקדשין','A parallel rule excludes mating with a firstborn or disqualified consecrated animal.',composition='composite',scope='Parallel category rule, not restricted to festival time by the text')
+e('firstborn_parallel',firstborn,breed,'analogy','12a:8')
+repeat=c('repeat','12a:9','תניא אידך אין מרביעין בהמה בחולו של מועד','A second baraita repeats the festival prohibition on arranging mating.',scope='Parallel source occurrence retained')
+e('breed_repeat',repeat,breed,'quotation','12a:9')
+donkey=c('donkey','12a:9',"ר' יהודה אומר חמורה שתבעה מרביעין עליה זכר בשביל שלא תצטנן",'Rabbi Yehuda permits mating a female donkey that is in heat so that it does not cool.',candidates=['רבי יהודה'],conditions=['female donkey in heat'],scope='Quoted source explanation, not husbandry advice')
+herd=c('herd','12a:9','ושאר כל הבהמות מכניסין אותן לבקרות','Other animals may be brought into the herd.',scope='Continuation of Rabbi Yehuda clause',candidates=['רבי יהודה'])
+e('donkey_exception',donkey,repeat,'qualification','12a:9')
+pen=c('pen','12a:10','אין מדיירין לא בשבתות ולא בימים טובים ולא בחולו של מועד','The baraita prohibits penning animals to manure the field on Sabbaths, festivals and intermediate festival days.',composition='composite')
+auto=c('auto','12a:10','ואם באו מאליהן מותר','If they come on their own it is permitted.',conditions=['arrive without being brought'])
+e('auto_exception',auto,pen,'qualification','12a:10')
+help=c('help','12a:11','ואין מסייעין אותן ואין מוסרין להם שומר לנער את צאנם','One does not help them or provide a guard to move their sheep.',composition='composite')
+period=c('period','12a:11','היה שכיר שבת שכיר חדש שכיר שנה שכיר שבוע מסייעין אותן ומוסרין להם שומר לנער את צאנם','If hired for a week, month, year or seven-year period, assistance and a guard are allowed.',conditions=['hire for one of the listed extended periods'],composition='composite')
+e('period_qualifies',period,help,'qualification','12a:11')
+for key,quote,text,condition in [('sabbath','ר\' אומר בשבת בטובה','Rabbi permits the Sabbath arrangement as a favor.','Sabbath: favor'),('festival','ביו"ט במזונות','On a festival he permits it for food.','festival: food'),('moed','במועד בשכר','During the intermediate days he permits it for pay.','intermediate days: pay')]:
+ c(key,'12a:11',quote,text,candidates=['רבי'],conditions=[condition],scope='Rabbi’s staged arrangement terms in the animal-penning discussion')
+ruling=c('ruling','12a:11','אמר רב יוסף הלכתא כרבי','Rav Yosef states the halakha follows Rabbi.',candidates=['רב יוסף'],scope='Explicit local outcome, not independent later adjudication')
+for key in ['sabbath','festival','moed']:e(key+'_outcome',ruling,'mk.r030.'+key+'.c','local_resolution','12a:11')
+a.save_window(refs,'resume_moed_katan_contractors030.json','Read12a–12b continuation, retain boundary/town/travel/status conditions, alternative building narrative, source wage rationale, both contract baraitot and ordinary-measure restriction, animal categories and every staged Rabbi term with explicit Rav Yosef outcome.','6bc8d8d570eadc31f62654032cc7b553cc2dc502257f523b52f9dd7eeb2384d1')

@@ -1,0 +1,2115 @@
+{
+  "kind": "exact_version_opening_comparison_after_blind_freeze",
+  "snapshot_sha256": "d1d07f9f2b678dcd1a0308e7a49bebf616eb9e162e6ad2aba1528736565559ff",
+  "snapshot_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_pesachim\\snapshots\\d1d07f9f2b678dcd1a0308e7a49bebf616eb9e162e6ad2aba1528736565559ff.json",
+  "snapshot_proposals": [
+    "92619a3e9adc3c9dcd1ec27961c8f0b10911459a20b33064bf065e4dec3ef7ed",
+    "27277b3fd5ff84417f8fb1043ea93f3eee87f0d1429dca79a75c7d22f70b68e4",
+    "6933c37f35654a2b6c70fa403319bbda8bd77b299dfac49c909c5e2eab2e952e",
+    "383f994b382513c84b90e2a64221777cf9361daf629c1085055164533129384f",
+    "b74d1b0faa6a0b605619ac027792958e30db22f023f04be13dd14e1f1c22bf04"
+  ],
+  "snapshot_capture": "CURRENT captured once after source reading freeze; no later pointer refresh",
+  "independent_reading_file": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261126_resume\\source_only\\bavli_pesachim_batch01.json",
+  "independent_reading_sha256": "cacce05b88e10855c227ea33157bdda915da98990c939fbe6ae760eb7dbca38a",
+  "source_sha256": "991fdf80c9e63aa181875439631c2a08b49a8b9fb2b0118ccb44754d96da073e",
+  "plan_sha256": "f95276a4b1a7ac96c17060d0c5d10e101930e66f2013ab569265ebc02b954103",
+  "claim_comparisons": [
+    {
+      "independent_claim_id": "C001",
+      "independent_reading": {
+        "id": "C001",
+        "evidence": [
+          {
+            "nonempty_ordinal": 0,
+            "ref": "Pesachim 2a:1",
+            "page_index": 2,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 251,
+            "quote": "מתני׳ <big><strong>אור</strong></big> לארבעה עשר בודקין את החמץ לאור הנר כל מקום שאין מכניסין בו חמץ אין צריך בדיקה ובמה אמרו ב' שורות במרתף מקום שמכניסין בו חמץ בית שמאי אומרים ב' שורות על פני כל המרתף ובית הלל אומרים שתי שורות החיצונות שהן העליונות:",
+            "quote_sha256": "6691d3f1656aef8e1cb1f544d3e8733377fdbb9643aa5837e3c19238d47bda57"
+          }
+        ],
+        "position_holder": "anonymous Mishnah",
+        "proposition_paraphrase": "Search for chametz on אור of fourteen.",
+        "conditions": [
+          "fourteenth of Nisan; אור resolved as night in continuation"
+        ],
+        "local_status": "asserted",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.time.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "fourteenth of Nisan"
+          ],
+          "proposition": "The leaven search is on אור of the fourteenth.",
+          "scope": "Mishnah timing"
+        },
+        "evidence": [
+          {
+            "end_char": 63,
+            "quote": "לארבעה עשר בודקין את החמץ",
+            "segment_id": "seg_1fbb3aa17d8fd8ffef90",
+            "start_char": 38
+          }
+        ],
+        "id": "pe.r001.time.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.time.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Night meaning established in later 3a:9; not inferred from word אור alone."
+        ]
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C002",
+      "independent_reading": {
+        "id": "C002",
+        "evidence": [
+          {
+            "nonempty_ordinal": 0,
+            "ref": "Pesachim 2a:1",
+            "page_index": 2,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 251,
+            "quote": "מתני׳ <big><strong>אור</strong></big> לארבעה עשר בודקין את החמץ לאור הנר כל מקום שאין מכניסין בו חמץ אין צריך בדיקה ובמה אמרו ב' שורות במרתף מקום שמכניסין בו חמץ בית שמאי אומרים ב' שורות על פני כל המרתף ובית הלל אומרים שתי שורות החיצונות שהן העליונות:",
+            "quote_sha256": "6691d3f1656aef8e1cb1f544d3e8733377fdbb9643aa5837e3c19238d47bda57"
+          }
+        ],
+        "position_holder": "anonymous Mishnah",
+        "proposition_paraphrase": "Use lamp light for search.",
+        "conditions": [
+          "chametz search"
+        ],
+        "local_status": "asserted",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.search.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "אור of the fourteenth; subsequent discussion 3a:9 establishes night"
+          ],
+          "proposition": "Search for leaven by candlelight.",
+          "scope": "Mishnah search for leaven"
+        },
+        "evidence": [
+          {
+            "end_char": 72,
+            "quote": "לאור הנר",
+            "segment_id": "seg_1fbb3aa17d8fd8ffef90",
+            "start_char": 64
+          }
+        ],
+        "id": "pe.r001.search.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.search.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C003",
+      "independent_reading": {
+        "id": "C003",
+        "evidence": [
+          {
+            "nonempty_ordinal": 0,
+            "ref": "Pesachim 2a:1",
+            "page_index": 2,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 251,
+            "quote": "מתני׳ <big><strong>אור</strong></big> לארבעה עשר בודקין את החמץ לאור הנר כל מקום שאין מכניסין בו חמץ אין צריך בדיקה ובמה אמרו ב' שורות במרתף מקום שמכניסין בו חמץ בית שמאי אומרים ב' שורות על פני כל המרתף ובית הלל אומרים שתי שורות החיצונות שהן העליונות:",
+            "quote_sha256": "6691d3f1656aef8e1cb1f544d3e8733377fdbb9643aa5837e3c19238d47bda57"
+          }
+        ],
+        "position_holder": "anonymous Mishnah",
+        "proposition_paraphrase": "No search required where chametz is not brought.",
+        "conditions": [
+          "place with no chametz introduction"
+        ],
+        "local_status": "asserted",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.exempt.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "leaven is not brought into the place"
+          ],
+          "proposition": "A place into which leaven is not brought needs no search.",
+          "scope": "Mishnah search scope"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "כל מקום שאין מכניסין בו חמץ אין צריך בדיקה",
+            "segment_id": "seg_1fbb3aa17d8fd8ffef90",
+            "start_char": 73
+          }
+        ],
+        "id": "pe.r001.exempt.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.exempt.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C004",
+      "independent_reading": {
+        "id": "C004",
+        "evidence": [
+          {
+            "nonempty_ordinal": 0,
+            "ref": "Pesachim 2a:1",
+            "page_index": 2,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 251,
+            "quote": "מתני׳ <big><strong>אור</strong></big> לארבעה עשר בודקין את החמץ לאור הנר כל מקום שאין מכניסין בו חמץ אין צריך בדיקה ובמה אמרו ב' שורות במרתף מקום שמכניסין בו חמץ בית שמאי אומרים ב' שורות על פני כל המרתף ובית הלל אומרים שתי שורות החיצונות שהן העליונות:",
+            "quote_sha256": "6691d3f1656aef8e1cb1f544d3e8733377fdbb9643aa5837e3c19238d47bda57"
+          }
+        ],
+        "position_holder": "anonymous Mishnah",
+        "proposition_paraphrase": "Two-row cellar rule applies where chametz is brought.",
+        "conditions": [
+          "cellar receiving chametz"
+        ],
+        "local_status": "scope condition",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.cellar.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "cellar where leaven is brought"
+          ],
+          "proposition": "The two-row cellar rule concerns a place into which leaven is brought.",
+          "scope": "Mishnah cellar scope"
+        },
+        "evidence": [
+          {
+            "end_char": 161,
+            "quote": "ובמה אמרו ב' שורות במרתף מקום שמכניסין בו חמץ",
+            "segment_id": "seg_1fbb3aa17d8fd8ffef90",
+            "start_char": 116
+          }
+        ],
+        "id": "pe.r001.cellar.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.cellar.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C005",
+      "independent_reading": {
+        "id": "C005",
+        "evidence": [
+          {
+            "nonempty_ordinal": 0,
+            "ref": "Pesachim 2a:1",
+            "page_index": 2,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 251,
+            "quote": "מתני׳ <big><strong>אור</strong></big> לארבעה עשר בודקין את החמץ לאור הנר כל מקום שאין מכניסין בו חמץ אין צריך בדיקה ובמה אמרו ב' שורות במרתף מקום שמכניסין בו חמץ בית שמאי אומרים ב' שורות על פני כל המרתף ובית הלל אומרים שתי שורות החיצונות שהן העליונות:",
+            "quote_sha256": "6691d3f1656aef8e1cb1f544d3e8733377fdbb9643aa5837e3c19238d47bda57"
+          }
+        ],
+        "position_holder": "בית שמאי",
+        "proposition_paraphrase": "Search two rows across entire cellar.",
+        "conditions": [
+          "cellar receiving chametz"
+        ],
+        "local_status": "asserted",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.bs.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "cellar where leaven is brought"
+          ],
+          "proposition": "Beit Shammai require two rows across the whole cellar.",
+          "scope": "Cellar rows; geometry not resolved here"
+        },
+        "evidence": [
+          {
+            "end_char": 202,
+            "quote": "בית שמאי אומרים ב' שורות על פני כל המרתף",
+            "segment_id": "seg_1fbb3aa17d8fd8ffef90",
+            "start_char": 162
+          }
+        ],
+        "id": "pe.r001.bs.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.bs.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C006",
+      "independent_reading": {
+        "id": "C006",
+        "evidence": [
+          {
+            "nonempty_ordinal": 0,
+            "ref": "Pesachim 2a:1",
+            "page_index": 2,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 251,
+            "quote": "מתני׳ <big><strong>אור</strong></big> לארבעה עשר בודקין את החמץ לאור הנר כל מקום שאין מכניסין בו חמץ אין צריך בדיקה ובמה אמרו ב' שורות במרתף מקום שמכניסין בו חמץ בית שמאי אומרים ב' שורות על פני כל המרתף ובית הלל אומרים שתי שורות החיצונות שהן העליונות:",
+            "quote_sha256": "6691d3f1656aef8e1cb1f544d3e8733377fdbb9643aa5837e3c19238d47bda57"
+          }
+        ],
+        "position_holder": "בית הלל",
+        "proposition_paraphrase": "Search two outer rows which are upper.",
+        "conditions": [
+          "cellar receiving chametz"
+        ],
+        "local_status": "asserted",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.bh.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "cellar where leaven is brought"
+          ],
+          "proposition": "Beit Hillel require the two outer rows that are uppermost.",
+          "scope": "Cellar rows; geometry not resolved here"
+        },
+        "evidence": [
+          {
+            "end_char": 250,
+            "quote": "ובית הלל אומרים שתי שורות החיצונות שהן העליונות",
+            "segment_id": "seg_1fbb3aa17d8fd8ffef90",
+            "start_char": 203
+          }
+        ],
+        "id": "pe.r001.bh.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.bh.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C007",
+      "independent_reading": {
+        "id": "C007",
+        "evidence": [
+          {
+            "nonempty_ordinal": 1,
+            "ref": "Pesachim 2a:2",
+            "page_index": 2,
+            "segment_index": 1,
+            "start_char": 0,
+            "end_char": 136,
+            "quote": "<big><strong>גמ׳</strong></big> מאי אור רב הונא אמר נגהי ורב יהודה אמר לילי קא סלקא דעתך דמאן דאמר נגהי נגהי ממש ומאן דאמר לילי לילי ממש",
+            "quote_sha256": "f88bad5a5830c30f36eb3f981da94672e5b39f0381d13a9549f277d2ffd4ed25"
+          }
+        ],
+        "position_holder": "רב הונא",
+        "proposition_paraphrase": "אור means נגהי.",
+        "conditions": [],
+        "local_status": "reported wording; not final day opinion",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.huna.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "reconciled",
+          "conditions": [],
+          "proposition": "Rav Huna glosses אור as נגהי.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 56,
+            "quote": "רב הונא אמר נגהי",
+            "segment_id": "seg_daee6ac822741741abc4",
+            "start_char": 40
+          }
+        ],
+        "id": "pe.r001.huna.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.huna.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "3a:9 identifies this as his local word for night; no maintained disagreement with Rav Yehuda."
+        ]
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C008",
+      "independent_reading": {
+        "id": "C008",
+        "evidence": [
+          {
+            "nonempty_ordinal": 1,
+            "ref": "Pesachim 2a:2",
+            "page_index": 2,
+            "segment_index": 1,
+            "start_char": 0,
+            "end_char": 136,
+            "quote": "<big><strong>גמ׳</strong></big> מאי אור רב הונא אמר נגהי ורב יהודה אמר לילי קא סלקא דעתך דמאן דאמר נגהי נגהי ממש ומאן דאמר לילי לילי ממש",
+            "quote_sha256": "f88bad5a5830c30f36eb3f981da94672e5b39f0381d13a9549f277d2ffd4ed25"
+          }
+        ],
+        "position_holder": "רב יהודה",
+        "proposition_paraphrase": "אור means לילי.",
+        "conditions": [],
+        "local_status": "reported wording",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.yehuda.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "reconciled",
+          "conditions": [],
+          "proposition": "Rav Yehuda glosses אור as לילי.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 75,
+            "quote": "ורב יהודה אמר לילי",
+            "segment_id": "seg_daee6ac822741741abc4",
+            "start_char": 57
+          }
+        ],
+        "id": "pe.r001.yehuda.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.yehuda.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "3a:9 explicitly says both mean night."
+        ]
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C009",
+      "independent_reading": {
+        "id": "C009",
+        "evidence": [
+          {
+            "nonempty_ordinal": 1,
+            "ref": "Pesachim 2a:2",
+            "page_index": 2,
+            "segment_index": 1,
+            "start_char": 0,
+            "end_char": 136,
+            "quote": "<big><strong>גמ׳</strong></big> מאי אור רב הונא אמר נגהי ורב יהודה אמר לילי קא סלקא דעתך דמאן דאמר נגהי נגהי ממש ומאן דאמר לילי לילי ממש",
+            "quote_sha256": "f88bad5a5830c30f36eb3f981da94672e5b39f0381d13a9549f277d2ffd4ed25"
+          }
+        ],
+        "position_holder": "anonymous Gemara",
+        "proposition_paraphrase": "נגהי means literally daytime.",
+        "conditions": [
+          "initial reading of Rav Huna"
+        ],
+        "local_status": "initial hypothesis rejected32",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.initial.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "rejected",
+          "conditions": [],
+          "proposition": "The initial supposition takes נגהי literally as day and לילי literally as night.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 136,
+            "quote": "קא סלקא דעתך דמאן דאמר נגהי נגהי ממש ומאן דאמר לילי לילי ממש",
+            "segment_id": "seg_daee6ac822741741abc4",
+            "start_char": 76
+          }
+        ],
+        "id": "pe.r001.initial.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.initial.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Rejected explicitly by 3a:9, which was read as context but is not counted as covered here."
+        ]
+      },
+      "assessment": "represented_composite_granularity"
+    },
+    {
+      "independent_claim_id": "C010",
+      "independent_reading": {
+        "id": "C010",
+        "evidence": [
+          {
+            "nonempty_ordinal": 1,
+            "ref": "Pesachim 2a:2",
+            "page_index": 2,
+            "segment_index": 1,
+            "start_char": 0,
+            "end_char": 136,
+            "quote": "<big><strong>גמ׳</strong></big> מאי אור רב הונא אמר נגהי ורב יהודה אמר לילי קא סלקא דעתך דמאן דאמר נגהי נגהי ממש ומאן דאמר לילי לילי ממש",
+            "quote_sha256": "f88bad5a5830c30f36eb3f981da94672e5b39f0381d13a9549f277d2ffd4ed25"
+          }
+        ],
+        "position_holder": "anonymous Gemara",
+        "proposition_paraphrase": "לילי means literally night.",
+        "conditions": [
+          "initial reading of Rav Yehuda"
+        ],
+        "local_status": "initial construal; lexical dispute ultimately denied",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.initial.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "rejected",
+          "conditions": [],
+          "proposition": "The initial supposition takes נגהי literally as day and לילי literally as night.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 136,
+            "quote": "קא סלקא דעתך דמאן דאמר נגהי נגהי ממש ומאן דאמר לילי לילי ממש",
+            "segment_id": "seg_daee6ac822741741abc4",
+            "start_char": 76
+          }
+        ],
+        "id": "pe.r001.initial.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.initial.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Rejected explicitly by 3a:9, which was read as context but is not counted as covered here."
+        ]
+      },
+      "assessment": "represented_composite_granularity"
+    },
+    {
+      "independent_claim_id": "C011",
+      "independent_reading": {
+        "id": "C011",
+        "evidence": [
+          {
+            "nonempty_ordinal": 2,
+            "ref": "Pesachim 2a:3",
+            "page_index": 2,
+            "segment_index": 2,
+            "start_char": 0,
+            "end_char": 188,
+            "quote": "מיתיבי (בראשית מד, ג) הבקר אור והאנשים שולחו אלמא אור יממא הוא מי כתיב האור בקר הבקר אור כתיב כמאן דאמר צפרא נהר וכדרב יהודה אמר רב דאמר רב יהודה אמר רב לעולם יכנס אדם בכי טוב ויצא בכי טוב",
+            "quote_sha256": "88f65f870c36c2a674815ae1dca6d43fde8efc57eece13a866943002ec636623"
+          }
+        ],
+        "position_holder": "anonymous objection",
+        "proposition_paraphrase": "Genesis הבקר אור suggests אור means day.",
+        "conditions": [],
+        "local_status": "attempted proof",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.genesis44.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "Genesis 44:3 is offered as evidence that אור denotes day.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "מיתיבי (בראשית מד, ג) הבקר אור והאנשים שולחו אלמא אור יממא הוא",
+            "segment_id": "seg_d475467507a9ae8c87ae",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.genesis44.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.genesis44.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C012",
+      "independent_reading": {
+        "id": "C012",
+        "evidence": [
+          {
+            "nonempty_ordinal": 2,
+            "ref": "Pesachim 2a:3",
+            "page_index": 2,
+            "segment_index": 2,
+            "start_char": 0,
+            "end_char": 188,
+            "quote": "מיתיבי (בראשית מד, ג) הבקר אור והאנשים שולחו אלמא אור יממא הוא מי כתיב האור בקר הבקר אור כתיב כמאן דאמר צפרא נהר וכדרב יהודה אמר רב דאמר רב יהודה אמר רב לעולם יכנס אדם בכי טוב ויצא בכי טוב",
+            "quote_sha256": "88f65f870c36c2a674815ae1dca6d43fde8efc57eece13a866943002ec636623"
+          }
+        ],
+        "position_holder": "anonymous reply",
+        "proposition_paraphrase": "הבקר אור says morning brightened, not that light is morning.",
+        "conditions": [],
+        "local_status": "reply rejects lexical inference",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.gen44reply.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "It says הבקר אור: the morning became light, not that אור means morning.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 112,
+            "quote": "הבקר אור כתיב כמאן דאמר צפרא נהר",
+            "segment_id": "seg_d475467507a9ae8c87ae",
+            "start_char": 80
+          }
+        ],
+        "id": "pe.r001.gen44reply.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.gen44reply.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C013",
+      "independent_reading": {
+        "id": "C013",
+        "evidence": [
+          {
+            "nonempty_ordinal": 2,
+            "ref": "Pesachim 2a:3",
+            "page_index": 2,
+            "segment_index": 2,
+            "start_char": 0,
+            "end_char": 188,
+            "quote": "מיתיבי (בראשית מד, ג) הבקר אור והאנשים שולחו אלמא אור יממא הוא מי כתיב האור בקר הבקר אור כתיב כמאן דאמר צפרא נהר וכדרב יהודה אמר רב דאמר רב יהודה אמר רב לעולם יכנס אדם בכי טוב ויצא בכי טוב",
+            "quote_sha256": "88f65f870c36c2a674815ae1dca6d43fde8efc57eece13a866943002ec636623"
+          }
+        ],
+        "position_holder": "רב reported by רב יהודה",
+        "proposition_paraphrase": "A person should enter during כי טוב.",
+        "conditions": [
+          "travel/entry"
+        ],
+        "local_status": "quoted rule; contextual daylight interpretation",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.travel.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "travel entry and departure"
+          ],
+          "proposition": "A person should enter and depart while it is light.",
+          "scope": "Travel in daylight; Rav Yehuda transmits Rav"
+        },
+        "evidence": [
+          {
+            "end_char": 188,
+            "quote": "וכדרב יהודה אמר רב דאמר רב יהודה אמר רב לעולם יכנס אדם בכי טוב ויצא בכי טוב",
+            "segment_id": "seg_d475467507a9ae8c87ae",
+            "start_char": 113
+          }
+        ],
+        "id": "pe.r001.travel.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.travel.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_composite_granularity"
+    },
+    {
+      "independent_claim_id": "C014",
+      "independent_reading": {
+        "id": "C014",
+        "evidence": [
+          {
+            "nonempty_ordinal": 2,
+            "ref": "Pesachim 2a:3",
+            "page_index": 2,
+            "segment_index": 2,
+            "start_char": 0,
+            "end_char": 188,
+            "quote": "מיתיבי (בראשית מד, ג) הבקר אור והאנשים שולחו אלמא אור יממא הוא מי כתיב האור בקר הבקר אור כתיב כמאן דאמר צפרא נהר וכדרב יהודה אמר רב דאמר רב יהודה אמר רב לעולם יכנס אדם בכי טוב ויצא בכי טוב",
+            "quote_sha256": "88f65f870c36c2a674815ae1dca6d43fde8efc57eece13a866943002ec636623"
+          }
+        ],
+        "position_holder": "רב reported by רב יהודה",
+        "proposition_paraphrase": "A person should depart during כי טוב.",
+        "conditions": [
+          "travel/departure"
+        ],
+        "local_status": "quoted rule",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.travel.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "travel entry and departure"
+          ],
+          "proposition": "A person should enter and depart while it is light.",
+          "scope": "Travel in daylight; Rav Yehuda transmits Rav"
+        },
+        "evidence": [
+          {
+            "end_char": 188,
+            "quote": "וכדרב יהודה אמר רב דאמר רב יהודה אמר רב לעולם יכנס אדם בכי טוב ויצא בכי טוב",
+            "segment_id": "seg_d475467507a9ae8c87ae",
+            "start_char": 113
+          }
+        ],
+        "id": "pe.r001.travel.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.travel.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_composite_granularity"
+    },
+    {
+      "independent_claim_id": "C015",
+      "independent_reading": {
+        "id": "C015",
+        "evidence": [
+          {
+            "nonempty_ordinal": 3,
+            "ref": "Pesachim 2a:4",
+            "page_index": 2,
+            "segment_index": 3,
+            "start_char": 0,
+            "end_char": 153,
+            "quote": "מיתיבי (שמואל ב כג, ד) וכאור בקר יזרח שמש אלמא אור יממא הוא מי כתיב אור בקר וכאור בקר כתיב והכי קאמר וכאור בקר בעולם הזה כעין זריחת שמש לצדיקים לעולם הבא",
+            "quote_sha256": "bb355c2201bfe9fa804fe850b95ea4e5f7697be9d59475f5daa34a66b1517d83"
+          }
+        ],
+        "position_holder": "anonymous objection",
+        "proposition_paraphrase": "וכאור בקר suggests אור means day.",
+        "conditions": [],
+        "local_status": "attempted proof",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.samuel23.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "II Samuel 23:4 is offered as evidence for the daytime sense.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "מיתיבי (שמואל ב כג, ד) וכאור בקר יזרח שמש אלמא אור יממא הוא",
+            "segment_id": "seg_1a8e89dae52427627d92",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.samuel23.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.samuel23.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C016",
+      "independent_reading": {
+        "id": "C016",
+        "evidence": [
+          {
+            "nonempty_ordinal": 3,
+            "ref": "Pesachim 2a:4",
+            "page_index": 2,
+            "segment_index": 3,
+            "start_char": 0,
+            "end_char": 153,
+            "quote": "מיתיבי (שמואל ב כג, ד) וכאור בקר יזרח שמש אלמא אור יממא הוא מי כתיב אור בקר וכאור בקר כתיב והכי קאמר וכאור בקר בעולם הזה כעין זריחת שמש לצדיקים לעולם הבא",
+            "quote_sha256": "bb355c2201bfe9fa804fe850b95ea4e5f7697be9d59475f5daa34a66b1517d83"
+          }
+        ],
+        "position_holder": "anonymous reply",
+        "proposition_paraphrase": "The verse compares morning light now to sunrise for the righteous in the coming world.",
+        "conditions": [],
+        "local_status": "reply; preserves comparative כ",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.sam23reply.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The comparative wording describes this-world morning light as resembling the sun shining for the righteous in the world to come.",
+          "scope": "Anonymous exposition of II Samuel 23:4"
+        },
+        "evidence": [
+          {
+            "end_char": 153,
+            "quote": "וכאור בקר כתיב והכי קאמר וכאור בקר בעולם הזה כעין זריחת שמש לצדיקים לעולם הבא",
+            "segment_id": "seg_1a8e89dae52427627d92",
+            "start_char": 76
+          }
+        ],
+        "id": "pe.r001.sam23reply.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.sam23reply.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C017",
+      "independent_reading": {
+        "id": "C017",
+        "evidence": [
+          {
+            "nonempty_ordinal": 4,
+            "ref": "Pesachim 2a:5",
+            "page_index": 2,
+            "segment_index": 4,
+            "start_char": 0,
+            "end_char": 169,
+            "quote": "מיתיבי (בראשית א, ה) ויקרא אלהים לאור יום אלמא אור יממא הוא הכי קאמר למאיר ובא קראו יום אלא מעתה ולחשך קרא לילה למחשיך ובא קרא לילה והא קיימא לן דעד צאת הכוכבים יממא הוא",
+            "quote_sha256": "4d2dc33ccbaf77bee0bccce5013fe27948098895bb05cb328100647904a2cf30"
+          }
+        ],
+        "position_holder": "anonymous objection",
+        "proposition_paraphrase": "Calling light day in Genesis proves אור means day.",
+        "conditions": [],
+        "local_status": "attempted proof",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.gen1.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "Genesis 1:5 is offered as evidence that אור means day.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 59,
+            "quote": "מיתיבי (בראשית א, ה) ויקרא אלהים לאור יום אלמא אור יממא הוא",
+            "segment_id": "seg_589fcb644659e322ad55",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.gen1.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.gen1.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C018",
+      "independent_reading": {
+        "id": "C018",
+        "evidence": [
+          {
+            "nonempty_ordinal": 4,
+            "ref": "Pesachim 2a:5",
+            "page_index": 2,
+            "segment_index": 4,
+            "start_char": 0,
+            "end_char": 169,
+            "quote": "מיתיבי (בראשית א, ה) ויקרא אלהים לאור יום אלמא אור יממא הוא הכי קאמר למאיר ובא קראו יום אלא מעתה ולחשך קרא לילה למחשיך ובא קרא לילה והא קיימא לן דעד צאת הכוכבים יממא הוא",
+            "quote_sha256": "4d2dc33ccbaf77bee0bccce5013fe27948098895bb05cb328100647904a2cf30"
+          }
+        ],
+        "position_holder": "anonymous reply first attempt",
+        "proposition_paraphrase": "God called the progressively brightening period day.",
+        "conditions": [],
+        "local_status": "rejected interpretation",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.dawn.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "rejected",
+          "conditions": [],
+          "proposition": "The first reply interprets day as that which progressively becomes light.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 87,
+            "quote": "הכי קאמר למאיר ובא קראו יום",
+            "segment_id": "seg_589fcb644659e322ad55",
+            "start_char": 60
+          }
+        ],
+        "id": "pe.r001.dawn.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.dawn.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C019",
+      "independent_reading": {
+        "id": "C019",
+        "evidence": [
+          {
+            "nonempty_ordinal": 4,
+            "ref": "Pesachim 2a:5",
+            "page_index": 2,
+            "segment_index": 4,
+            "start_char": 0,
+            "end_char": 169,
+            "quote": "מיתיבי (בראשית א, ה) ויקרא אלהים לאור יום אלמא אור יממא הוא הכי קאמר למאיר ובא קראו יום אלא מעתה ולחשך קרא לילה למחשיך ובא קרא לילה והא קיימא לן דעד צאת הכוכבים יממא הוא",
+            "quote_sha256": "4d2dc33ccbaf77bee0bccce5013fe27948098895bb05cb328100647904a2cf30"
+          }
+        ],
+        "position_holder": "anonymous challenge",
+        "proposition_paraphrase": "That reasoning would call progressive darkening night.",
+        "conditions": [
+          "parallel darkness verse"
+        ],
+        "local_status": "reductio",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.darkhyp.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "rejected",
+          "conditions": [
+            "apply the first reply to the parallel clause"
+          ],
+          "proposition": "The proposed analogy would classify the darkening period as night.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 131,
+            "quote": "אלא מעתה ולחשך קרא לילה למחשיך ובא קרא לילה",
+            "segment_id": "seg_589fcb644659e322ad55",
+            "start_char": 88
+          }
+        ],
+        "id": "pe.r001.darkhyp.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.darkhyp.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C020",
+      "independent_reading": {
+        "id": "C020",
+        "evidence": [
+          {
+            "nonempty_ordinal": 4,
+            "ref": "Pesachim 2a:5",
+            "page_index": 2,
+            "segment_index": 4,
+            "start_char": 0,
+            "end_char": 169,
+            "quote": "מיתיבי (בראשית א, ה) ויקרא אלהים לאור יום אלמא אור יממא הוא הכי קאמר למאיר ובא קראו יום אלא מעתה ולחשך קרא לילה למחשיך ובא קרא לילה והא קיימא לן דעד צאת הכוכבים יממא הוא",
+            "quote_sha256": "4d2dc33ccbaf77bee0bccce5013fe27948098895bb05cb328100647904a2cf30"
+          }
+        ],
+        "position_holder": "anonymous Gemara",
+        "proposition_paraphrase": "It remains day until stars appear.",
+        "conditions": [
+          "before emergence of stars"
+        ],
+        "local_status": "accepted premise defeating prior reply",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.starslimit.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "before emergence of stars"
+          ],
+          "proposition": "It is established here that daytime lasts until the stars emerge.",
+          "scope": "Day/night boundary cited against the first reply"
+        },
+        "evidence": [
+          {
+            "end_char": 169,
+            "quote": "והא קיימא לן דעד צאת הכוכבים יממא הוא",
+            "segment_id": "seg_589fcb644659e322ad55",
+            "start_char": 132
+          }
+        ],
+        "id": "pe.r001.starslimit.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.starslimit.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C021",
+      "independent_reading": {
+        "id": "C021",
+        "evidence": [
+          {
+            "nonempty_ordinal": 5,
+            "ref": "Pesachim 2a:6",
+            "page_index": 2,
+            "segment_index": 5,
+            "start_char": 0,
+            "end_char": 91,
+            "quote": "אלא הכי קאמר קרייה רחמנא לנהורא ופקדיה אמצותא דיממא וקרייה רחמנא לחשוכא ופקדיה אמצותא דלילה",
+            "quote_sha256": "f975032e32947b1c3a4b2649b5b8a1a5d86e88692c0f44b89ac34a7a0e2bf355"
+          }
+        ],
+        "position_holder": "anonymous revised reply",
+        "proposition_paraphrase": "God summoned light and assigned it daytime duty.",
+        "conditions": [],
+        "local_status": "replacement interpretation",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.lightcommand.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The revised exposition says God summoned light and assigned it daytime service.",
+          "scope": "Anonymous exposition of Genesis 1:5"
+        },
+        "evidence": [
+          {
+            "end_char": 51,
+            "quote": "אלא הכי קאמר קרייה רחמנא לנהורא ופקדיה אמצותא דיממא",
+            "segment_id": "seg_ff5e601f967415227bc6",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.lightcommand.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.lightcommand.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C022",
+      "independent_reading": {
+        "id": "C022",
+        "evidence": [
+          {
+            "nonempty_ordinal": 5,
+            "ref": "Pesachim 2a:6",
+            "page_index": 2,
+            "segment_index": 5,
+            "start_char": 0,
+            "end_char": 91,
+            "quote": "אלא הכי קאמר קרייה רחמנא לנהורא ופקדיה אמצותא דיממא וקרייה רחמנא לחשוכא ופקדיה אמצותא דלילה",
+            "quote_sha256": "f975032e32947b1c3a4b2649b5b8a1a5d86e88692c0f44b89ac34a7a0e2bf355"
+          }
+        ],
+        "position_holder": "anonymous revised reply",
+        "proposition_paraphrase": "God summoned darkness and assigned it nighttime duty.",
+        "conditions": [],
+        "local_status": "replacement interpretation",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.darkcommand.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "God summoned darkness and assigned it nighttime service.",
+          "scope": "Anonymous exposition of Genesis 1:5"
+        },
+        "evidence": [
+          {
+            "end_char": 91,
+            "quote": "וקרייה רחמנא לחשוכא ופקדיה אמצותא דלילה",
+            "segment_id": "seg_ff5e601f967415227bc6",
+            "start_char": 52
+          }
+        ],
+        "id": "pe.r001.darkcommand.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.darkcommand.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C023",
+      "independent_reading": {
+        "id": "C023",
+        "evidence": [
+          {
+            "nonempty_ordinal": 6,
+            "ref": "Pesachim 2a:7",
+            "page_index": 2,
+            "segment_index": 6,
+            "start_char": 0,
+            "end_char": 199,
+            "quote": "מיתיבי (תהלים קמח, ג) הללוהו כל כוכבי אור אלמא אור אורתא הוא הכי קאמר הללוהו כל כוכבים המאירים אלא מעתה כוכבים המאירים הוא דבעו שבוחי שאינן מאירין לא בעו שבוחי והא כתיב (תהלים קמח, ב) הללוהו כל צבאיו",
+            "quote_sha256": "58676148d1e1c2af77c7f014d4464ec09ffde8ccc7e2ec304ff21c0a27187247"
+          }
+        ],
+        "position_holder": "anonymous objection",
+        "proposition_paraphrase": "Stars of אור imply אור means night.",
+        "conditions": [],
+        "local_status": "attempted proof",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.ps148.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "The stars of אור verse is proposed as evidence that אור means night.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "מיתיבי (תהלים קמח, ג) הללוהו כל כוכבי אור אלמא אור אורתא הוא",
+            "segment_id": "seg_d5258846ae2f44950662",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.ps148.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.ps148.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C024",
+      "independent_reading": {
+        "id": "C024",
+        "evidence": [
+          {
+            "nonempty_ordinal": 6,
+            "ref": "Pesachim 2a:7",
+            "page_index": 2,
+            "segment_index": 6,
+            "start_char": 0,
+            "end_char": 199,
+            "quote": "מיתיבי (תהלים קמח, ג) הללוהו כל כוכבי אור אלמא אור אורתא הוא הכי קאמר הללוהו כל כוכבים המאירים אלא מעתה כוכבים המאירים הוא דבעו שבוחי שאינן מאירין לא בעו שבוחי והא כתיב (תהלים קמח, ב) הללוהו כל צבאיו",
+            "quote_sha256": "58676148d1e1c2af77c7f014d4464ec09ffde8ccc7e2ec304ff21c0a27187247"
+          }
+        ],
+        "position_holder": "anonymous reply first attempt",
+        "proposition_paraphrase": "The verse says all shining stars should praise.",
+        "conditions": [],
+        "local_status": "initial interpretation challenged",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.psreply.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "The reply reads the phrase as all shining stars.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 94,
+            "quote": "הכי קאמר הללוהו כל כוכבים המאירים",
+            "segment_id": "seg_d5258846ae2f44950662",
+            "start_char": 61
+          }
+        ],
+        "id": "pe.r001.psreply.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.psreply.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C025",
+      "independent_reading": {
+        "id": "C025",
+        "evidence": [
+          {
+            "nonempty_ordinal": 6,
+            "ref": "Pesachim 2a:7",
+            "page_index": 2,
+            "segment_index": 6,
+            "start_char": 0,
+            "end_char": 199,
+            "quote": "מיתיבי (תהלים קמח, ג) הללוהו כל כוכבי אור אלמא אור אורתא הוא הכי קאמר הללוהו כל כוכבים המאירים אלא מעתה כוכבים המאירים הוא דבעו שבוחי שאינן מאירין לא בעו שבוחי והא כתיב (תהלים קמח, ב) הללוהו כל צבאיו",
+            "quote_sha256": "58676148d1e1c2af77c7f014d4464ec09ffde8ccc7e2ec304ff21c0a27187247"
+          }
+        ],
+        "position_holder": "anonymous challenge",
+        "proposition_paraphrase": "That would exclude nonshining stars from praise.",
+        "conditions": [
+          "only shining stars interpretation"
+        ],
+        "local_status": "reductio, not maintained exclusion",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.nonshining.q",
+      "producer_record": {
+        "content": {
+          "answer_set_status": "none",
+          "conditions": [],
+          "formulation": "Would only shining stars need to praise, but nonshining stars not?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 159,
+            "quote": "אלא מעתה כוכבים המאירים הוא דבעו שבוחי שאינן מאירין לא בעו שבוחי",
+            "segment_id": "seg_d5258846ae2f44950662",
+            "start_char": 95
+          }
+        ],
+        "id": "pe.r001.nonshining.q",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_question_not_maintained_claim"
+    },
+    {
+      "independent_claim_id": "C026",
+      "independent_reading": {
+        "id": "C026",
+        "evidence": [
+          {
+            "nonempty_ordinal": 6,
+            "ref": "Pesachim 2a:7",
+            "page_index": 2,
+            "segment_index": 6,
+            "start_char": 0,
+            "end_char": 199,
+            "quote": "מיתיבי (תהלים קמח, ג) הללוהו כל כוכבי אור אלמא אור אורתא הוא הכי קאמר הללוהו כל כוכבים המאירים אלא מעתה כוכבים המאירים הוא דבעו שבוחי שאינן מאירין לא בעו שבוחי והא כתיב (תהלים קמח, ב) הללוהו כל צבאיו",
+            "quote_sha256": "58676148d1e1c2af77c7f014d4464ec09ffde8ccc7e2ec304ff21c0a27187247"
+          }
+        ],
+        "position_holder": "quoted Psalms via anonymous Gemara",
+        "proposition_paraphrase": "All God’s host is to praise.",
+        "conditions": [],
+        "local_status": "scriptural premise; book is not a person",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.allhosts.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The verse calls on all His hosts to praise, challenging an exclusive restriction to shining stars.",
+          "scope": "Anonymous citation of Psalms 148:2"
+        },
+        "evidence": [
+          {
+            "end_char": 199,
+            "quote": "והא כתיב (תהלים קמח, ב) הללוהו כל צבאיו",
+            "segment_id": "seg_d5258846ae2f44950662",
+            "start_char": 160
+          }
+        ],
+        "id": "pe.r001.allhosts.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.allhosts.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C027",
+      "independent_reading": {
+        "id": "C027",
+        "evidence": [
+          {
+            "nonempty_ordinal": 7,
+            "ref": "Pesachim 2a:8",
+            "page_index": 2,
+            "segment_index": 7,
+            "start_char": 0,
+            "end_char": 107,
+            "quote": "אלא הא קמ\"ל דאור דכוכבים נמי אור הוא למאי נפקא מינה לנודר מן האור (דתנן) הנודר מן האור אסור באורן של כוכבים",
+            "quote_sha256": "ef89fba0ea3c2d4ab99fc7b0ee98f3c5769e64a7c02db2807dd6ab65c66eb427"
+          }
+        ],
+        "position_holder": "anonymous revised reply",
+        "proposition_paraphrase": "Starlight also counts as light.",
+        "conditions": [],
+        "local_status": "asserted",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.starlight.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The phrase instead teaches that starlight also counts as light.",
+          "scope": "Meaning of light for vows"
+        },
+        "evidence": [
+          {
+            "end_char": 36,
+            "quote": "אלא הא קמ\"ל דאור דכוכבים נמי אור הוא",
+            "segment_id": "seg_20b8aed36c01adbf4592",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.starlight.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.starlight.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C028",
+      "independent_reading": {
+        "id": "C028",
+        "evidence": [
+          {
+            "nonempty_ordinal": 7,
+            "ref": "Pesachim 2a:8",
+            "page_index": 2,
+            "segment_index": 7,
+            "start_char": 0,
+            "end_char": 107,
+            "quote": "אלא הא קמ\"ל דאור דכוכבים נמי אור הוא למאי נפקא מינה לנודר מן האור (דתנן) הנודר מן האור אסור באורן של כוכבים",
+            "quote_sha256": "ef89fba0ea3c2d4ab99fc7b0ee98f3c5769e64a7c02db2807dd6ab65c66eb427"
+          }
+        ],
+        "position_holder": "quoted teaching introduced דתנן",
+        "proposition_paraphrase": "A person vowed from light is prohibited starlight.",
+        "conditions": [
+          "vow against light"
+        ],
+        "local_status": "application",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.vow.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "vow against light"
+          ],
+          "proposition": "One who vows against light is prohibited from starlight.",
+          "scope": "Quoted vow rule; source prints parenthetical דתנן"
+        },
+        "evidence": [
+          {
+            "end_char": 107,
+            "quote": "לנודר מן האור (דתנן) הנודר מן האור אסור באורן של כוכבים",
+            "segment_id": "seg_20b8aed36c01adbf4592",
+            "start_char": 52
+          }
+        ],
+        "id": "pe.r001.vow.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.vow.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C029",
+      "independent_reading": {
+        "id": "C029",
+        "evidence": [
+          {
+            "nonempty_ordinal": 8,
+            "ref": "Pesachim 2a:9",
+            "page_index": 2,
+            "segment_index": 8,
+            "start_char": 0,
+            "end_char": 67,
+            "quote": "מיתיבי (איוב כד, יד) לאור יקום רוצח יקטל עני ואביון ובלילה יהי כגנב",
+            "quote_sha256": "34e849ae0ddde3c46cec7f75ef085456b1f2267d28246241e6f30fa0babb9505"
+          }
+        ],
+        "position_holder": "quoted Job verse via anonymous objection",
+        "proposition_paraphrase": "A murderer rises לאור and is as thief at night.",
+        "conditions": [],
+        "local_status": "quoted evidence; no named scholar position",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.job24.u",
+      "producer_record": {
+        "content": {
+          "composition": "composite",
+          "discourse_role": "biblical evidence introduced as objection",
+          "textual_voice": "anonymous discussion quoting Job 24:14"
+        },
+        "evidence": [
+          {
+            "end_char": 67,
+            "quote": "מיתיבי (איוב כד, יד) לאור יקום רוצח יקטל עני ואביון ובלילה יהי כגנב",
+            "segment_id": "seg_c60f0d8851d3b7e36afc",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.job24.u",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_quoted_utterance_not_maintained_claim"
+    },
+    {
+      "independent_claim_id": "C030",
+      "independent_reading": {
+        "id": "C030",
+        "evidence": [
+          {
+            "nonempty_ordinal": 9,
+            "ref": "Pesachim 2b:1",
+            "page_index": 3,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 186,
+            "quote": "הא מדקאמר ובלילה יהי כגנב אלמא אור יממא הוא התם הכי קאמר אי פשיטא לך מילתא כנהורא דאנפשות קאתי רוצח הוא וניתן להצילו בנפשו ואי מספקא לך מילתא כליליא יהי בעיניך כגנב ולא ניתן להצילו בנפשו",
+            "quote_sha256": "5cec7eb9cca383d2ee22f4adc944e01aed18f20aea7c10b8059a0f559f596251"
+          }
+        ],
+        "position_holder": "anonymous objection continuation",
+        "proposition_paraphrase": "Contrast with night suggests אור means day.",
+        "conditions": [],
+        "local_status": "attempted lexical proof",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.jobinference.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "Contrasting אור with night in Job 24:14 is offered as proof that אור means day.",
+          "scope": "Local lexical argument about אור"
+        },
+        "evidence": [
+          {
+            "end_char": 43,
+            "quote": "הא מדקאמר ובלילה יהי כגנב אלמא אור יממא הוא",
+            "segment_id": "seg_bf4da4f89ea988860451",
+            "start_char": 0
+          }
+        ],
+        "id": "pe.r001.jobinference.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.jobinference.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented"
+    },
+    {
+      "independent_claim_id": "C031",
+      "independent_reading": {
+        "id": "C031",
+        "evidence": [
+          {
+            "nonempty_ordinal": 9,
+            "ref": "Pesachim 2b:1",
+            "page_index": 3,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 186,
+            "quote": "הא מדקאמר ובלילה יהי כגנב אלמא אור יממא הוא התם הכי קאמר אי פשיטא לך מילתא כנהורא דאנפשות קאתי רוצח הוא וניתן להצילו בנפשו ואי מספקא לך מילתא כליליא יהי בעיניך כגנב ולא ניתן להצילו בנפשו",
+            "quote_sha256": "5cec7eb9cca383d2ee22f4adc944e01aed18f20aea7c10b8059a0f559f596251"
+          }
+        ],
+        "position_holder": "anonymous reply",
+        "proposition_paraphrase": "The attacker is a murderer.",
+        "conditions": [
+          "clear as light that he comes to take life"
+        ],
+        "local_status": "conditional verse interpretation",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.sure.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "clear that the intruder comes to take life"
+          ],
+          "proposition": "If it is as clear as daylight that he comes to kill, he is a murderer and saving the threatened person by taking his life is permitted.",
+          "scope": "Metaphorical reading of Job 24:14"
+        },
+        "evidence": [
+          {
+            "end_char": 122,
+            "quote": "התם הכי קאמר אי פשיטא לך מילתא כנהורא דאנפשות קאתי רוצח הוא וניתן להצילו בנפשו",
+            "segment_id": "seg_bf4da4f89ea988860451",
+            "start_char": 44
+          }
+        ],
+        "id": "pe.r001.sure.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.sure.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_composite_granularity"
+    },
+    {
+      "independent_claim_id": "C032",
+      "independent_reading": {
+        "id": "C032",
+        "evidence": [
+          {
+            "nonempty_ordinal": 9,
+            "ref": "Pesachim 2b:1",
+            "page_index": 3,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 186,
+            "quote": "הא מדקאמר ובלילה יהי כגנב אלמא אור יממא הוא התם הכי קאמר אי פשיטא לך מילתא כנהורא דאנפשות קאתי רוצח הוא וניתן להצילו בנפשו ואי מספקא לך מילתא כליליא יהי בעיניך כגנב ולא ניתן להצילו בנפשו",
+            "quote_sha256": "5cec7eb9cca383d2ee22f4adc944e01aed18f20aea7c10b8059a0f559f596251"
+          }
+        ],
+        "position_holder": "anonymous reply",
+        "proposition_paraphrase": "One may save by taking the attacker’s life.",
+        "conditions": [
+          "clear as light that he comes to take life"
+        ],
+        "local_status": "conditional verse interpretation",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.sure.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "clear that the intruder comes to take life"
+          ],
+          "proposition": "If it is as clear as daylight that he comes to kill, he is a murderer and saving the threatened person by taking his life is permitted.",
+          "scope": "Metaphorical reading of Job 24:14"
+        },
+        "evidence": [
+          {
+            "end_char": 122,
+            "quote": "התם הכי קאמר אי פשיטא לך מילתא כנהורא דאנפשות קאתי רוצח הוא וניתן להצילו בנפשו",
+            "segment_id": "seg_bf4da4f89ea988860451",
+            "start_char": 44
+          }
+        ],
+        "id": "pe.r001.sure.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.sure.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_composite_granularity"
+    },
+    {
+      "independent_claim_id": "C033",
+      "independent_reading": {
+        "id": "C033",
+        "evidence": [
+          {
+            "nonempty_ordinal": 9,
+            "ref": "Pesachim 2b:1",
+            "page_index": 3,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 186,
+            "quote": "הא מדקאמר ובלילה יהי כגנב אלמא אור יממא הוא התם הכי קאמר אי פשיטא לך מילתא כנהורא דאנפשות קאתי רוצח הוא וניתן להצילו בנפשו ואי מספקא לך מילתא כליליא יהי בעיניך כגנב ולא ניתן להצילו בנפשו",
+            "quote_sha256": "5cec7eb9cca383d2ee22f4adc944e01aed18f20aea7c10b8059a0f559f596251"
+          }
+        ],
+        "position_holder": "anonymous reply",
+        "proposition_paraphrase": "View him as thief.",
+        "conditions": [
+          "matter doubtful as night"
+        ],
+        "local_status": "conditional interpretation",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.unsure.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "doubt about lethal intent"
+          ],
+          "proposition": "If the matter is doubtful like night, regard him as a thief and do not save by taking his life.",
+          "scope": "Metaphorical reading of Job 24:14"
+        },
+        "evidence": [
+          {
+            "end_char": 186,
+            "quote": "ואי מספקא לך מילתא כליליא יהי בעיניך כגנב ולא ניתן להצילו בנפשו",
+            "segment_id": "seg_bf4da4f89ea988860451",
+            "start_char": 123
+          }
+        ],
+        "id": "pe.r001.unsure.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.unsure.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_composite_granularity"
+    },
+    {
+      "independent_claim_id": "C034",
+      "independent_reading": {
+        "id": "C034",
+        "evidence": [
+          {
+            "nonempty_ordinal": 9,
+            "ref": "Pesachim 2b:1",
+            "page_index": 3,
+            "segment_index": 0,
+            "start_char": 0,
+            "end_char": 186,
+            "quote": "הא מדקאמר ובלילה יהי כגנב אלמא אור יממא הוא התם הכי קאמר אי פשיטא לך מילתא כנהורא דאנפשות קאתי רוצח הוא וניתן להצילו בנפשו ואי מספקא לך מילתא כליליא יהי בעיניך כגנב ולא ניתן להצילו בנפשו",
+            "quote_sha256": "5cec7eb9cca383d2ee22f4adc944e01aed18f20aea7c10b8059a0f559f596251"
+          }
+        ],
+        "position_holder": "anonymous reply",
+        "proposition_paraphrase": "One may not save by taking his life.",
+        "conditions": [
+          "matter doubtful as night"
+        ],
+        "local_status": "conditional interpretation; not generalized beyond sugya",
+        "cohort": "core",
+        "ml_eligible": false
+      },
+      "producer_id": "pe.r001.unsure.c",
+      "producer_record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "doubt about lethal intent"
+          ],
+          "proposition": "If the matter is doubtful like night, regard him as a thief and do not save by taking his life.",
+          "scope": "Metaphorical reading of Job 24:14"
+        },
+        "evidence": [
+          {
+            "end_char": 186,
+            "quote": "ואי מספקא לך מילתא כליליא יהי בעיניך כגנב ולא ניתן להצילו בנפשו",
+            "segment_id": "seg_bf4da4f89ea988860451",
+            "start_char": 123
+          }
+        ],
+        "id": "pe.r001.unsure.c",
+        "layer": "claims",
+        "links": [
+          "pe.r001.unsure.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "represented_composite_granularity"
+    }
+  ],
+  "critical_context_records": [
+    {
+      "content": {
+        "assertion_mode": "reconciled",
+        "conditions": [],
+        "proposition": "Both Rav Huna and Rav Yehuda mean night; they do not disagree.",
+        "scope": "Explicit resolution of initial lexical supposition"
+      },
+      "evidence": [
+        {
+          "end_char": 64,
+          "quote": "אלא בין רב הונא ובין רב יהודה דכולי עלמא אור אורתא הוא ולא פליגי",
+          "segment_id": "seg_f0194609cc159e63aa17",
+          "start_char": 0
+        }
+      ],
+      "id": "pe.r001.b2.agreement.c",
+      "layer": "claims",
+      "links": [
+        "pe.r001.b2.agreement.u"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Each uses local terminology: Rav Huna’s locale says נגהי and Rav Yehuda’s says לילי.",
+        "scope": "Explanation of lexical variation"
+      },
+      "evidence": [
+        {
+          "end_char": 141,
+          "quote": "מר כי אתריה ומר כי אתריה באתריה דרב הונא קרו נגהי ובאתריה דרב יהודה קרו לילי",
+          "segment_id": "seg_f0194609cc159e63aa17",
+          "start_char": 65
+        }
+      ],
+      "id": "pe.r001.b2.local.c",
+      "layer": "claims",
+      "links": [
+        "pe.r001.b2.local.u"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "correction",
+        "source_id": "pe.r001.b2.agreement.c",
+        "target_id": "pe.r001.initial.c"
+      },
+      "evidence": [
+        {
+          "end_char": 141,
+          "quote": "אלא בין רב הונא ובין רב יהודה דכולי עלמא אור אורתא הוא ולא פליגי מר כי אתריה ומר כי אתריה באתריה דרב הונא קרו נגהי ובאתריה דרב יהודה קרו לילי",
+          "segment_id": "seg_f0194609cc159e63aa17",
+          "start_char": 0
+        }
+      ],
+      "id": "pe.r001.b2.agreement.correction",
+      "layer": "edges",
+      "links": [
+        "pe.r001.b2.agreement.c",
+        "pe.r001.initial.c"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "local_resolution",
+        "source_id": "pe.r001.b2.agreement.c",
+        "target_id": "pe.r001.meaning.q"
+      },
+      "evidence": [
+        {
+          "end_char": 141,
+          "quote": "אלא בין רב הונא ובין רב יהודה דכולי עלמא אור אורתא הוא ולא פליגי מר כי אתריה ומר כי אתריה באתריה דרב הונא קרו נגהי ובאתריה דרב יהודה קרו לילי",
+          "segment_id": "seg_f0194609cc159e63aa17",
+          "start_char": 0
+        }
+      ],
+      "id": "pe.r001.b2.agreement.resolution",
+      "layer": "edges",
+      "links": [
+        "pe.r001.b2.agreement.c",
+        "pe.r001.meaning.q"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "expressions have equal length"
+        ],
+        "proposition": "When the expressions are of equal length, one uses clean language.",
+        "scope": "Qualification of the speech norm"
+      },
+      "evidence": [
+        {
+          "end_char": 68,
+          "quote": "אלא כל היכא דכי הדדי נינהו משתעי בלשון נקיה",
+          "segment_id": "seg_641a41c97ee2c884d0c0",
+          "start_char": 25
+        }
+      ],
+      "id": "pe.r001.b3.equal.c",
+      "layer": "claims",
+      "links": [
+        "pe.r001.b3.equal.u"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "clean expression adds words"
+        ],
+        "proposition": "When the clean expression is longer, one uses the shorter wording.",
+        "scope": "Brevity qualification"
+      },
+      "evidence": [
+        {
+          "end_char": 106,
+          "quote": "כל היכא דנפישין מילי משתעי בלשון קצרה",
+          "segment_id": "seg_641a41c97ee2c884d0c0",
+          "start_char": 69
+        }
+      ],
+      "id": "pe.r001.b3.longer.c",
+      "layer": "claims",
+      "links": [
+        "pe.r001.b3.longer.u"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "A person should always teach a student concisely; one version reports Rav Huna in Rav’s name, another Rav Huna in Rav’s name in Rabbi Meir’s name.",
+        "scope": "Two transmission versions of concise teaching"
+      },
+      "evidence": [
+        {
+          "end_char": 196,
+          "quote": "כדאמר רב הונא אמר רב ואמרי לה אמר רב הונא אמר רב משום ר\"מ לעולם ישנה אדם לתלמידו דרך קצרה",
+          "segment_id": "seg_641a41c97ee2c884d0c0",
+          "start_char": 107
+        }
+      ],
+      "id": "pe.r001.b3.short.c",
+      "layer": "claims",
+      "links": [
+        "pe.r001.b3.short.u"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": [
+        "Holder is Rav in first version; Rabbi Meir in second. Do not collapse versions into a single chain."
+      ]
+    }
+  ],
+  "denominators": {
+    "independent_core_claim_units": 34,
+    "core_claim_units_with_counterpart": 34,
+    "confirmed_core_omissions": 0,
+    "confirmed_wrong_attributions": 0,
+    "confirmed_condition_errors": 0,
+    "confirmed_semantic_errors": 0,
+    "core_questions_compared": 4,
+    "unique_core_segments": 10,
+    "core_characters": 1547,
+    "endpoint_segments": 10,
+    "probability_segments": 0,
+    "context_only_segments": 32,
+    "context_only_characters": 4367
+  },
+  "findings": [
+    {
+      "id": "PE-NO-DISPUTE",
+      "assessment": "agreement_verified",
+      "source_ref": "Pesachim 3a:9",
+      "producer_ids": [
+        "pe.r001.b2.agreement.c",
+        "pe.r001.b2.agreement.correction"
+      ],
+      "finding": "Final לא פליגי is explicit and preserved. Rav Huna daytime is initial anonymous hypothesis, not enduring scholar choice."
+    },
+    {
+      "id": "PE-CONDITIONS",
+      "assessment": "agreement_verified",
+      "source_ref": "Pesachim 2b:1",
+      "producer_ids": [
+        "pe.r001.sure.c",
+        "pe.r001.unsure.c"
+      ],
+      "finding": "Certainty of lethal intent versus doubt retained; classification and permission bundled per branch. Granularity differs without content loss."
+    },
+    {
+      "id": "PE-VERSE",
+      "assessment": "appropriate_typed_representation",
+      "source_ref": "Pesachim 2a:9",
+      "producer_ids": [
+        "pe.r001.job24.u",
+        "pe.r001.job24.authority"
+      ],
+      "finding": "Reviewer enumerated quoted verse as claim unit; producer retains utterance/quoted authority without treating Job as scholar. Not omission."
+    },
+    {
+      "id": "PE-INITIAL",
+      "assessment": "composite_status_caution_not_error",
+      "producer_ids": [
+        "pe.r001.initial.c"
+      ],
+      "finding": "Composite day/night supposition is rejected as a putative disagreement. Night component remains true; split any downstream atomic view rather than label both individual components false."
+    },
+    {
+      "id": "PE-REVIEWER-LIMIT",
+      "assessment": "measurement_limit",
+      "finding": "Independent34 denominator mixes proposition, quoted evidence and reductio units; no atomic precision/recall score inferred. Context extraction selective; no full-tractate acceptance."
+    }
+  ],
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "scope": "Opening10 endpoints plus selected critical continuations only. 32context segments are not sampled cores. Other Pesachim production labels were filtered out of displayed comparison.",
+  "eligibility": "No blanket eligibility or human certification. No error found in checked counterparts is not proof of exhaustive correctness.",
+  "validation": "Snapshot and source hashes checked; compared producer evidence slices equal original. Replay, whole graph and generated exports not independently rerun.",
+  "next_work": "Continue frozen probability blocks with fresh source-only reading before labels; no plan counted completed merely by existence."
+}

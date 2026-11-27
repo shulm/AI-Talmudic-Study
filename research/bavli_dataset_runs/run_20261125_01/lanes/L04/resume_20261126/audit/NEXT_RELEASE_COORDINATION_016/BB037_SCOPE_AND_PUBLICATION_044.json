@@ -1,0 +1,28 @@
+{
+  "artifact_kind": "next_phase_production_and_review_scope_clarification",
+  "reporting_thread": "01a21956-bd7a-7460-b00f-2c883bff697a",
+  "integration0eae73e": "Freezes currentassemblyinputs/policy015; finalassembledoutputs stillverifying. Do not describe finalassembly as completed.",
+  "next_phase_authorization": "Coordinator confirms oneexistingproducer plusmatchedreviewcapacity valid inisolatednextrelease.",
+  "producer_report": {
+    "agent_id": "/root/bava_batra_continuation_2",
+    "start_completed_core_count": 310,
+    "next_ref": "BavaBatra12b9",
+    "maximum_new_segments": 20,
+    "required_stop": "checkpoint_and_hold"
+  },
+  "source_only_reader_report": {
+    "agent_id": "/root/bb_source_review037",
+    "core_count": 10,
+    "block_id": "block_000028",
+    "source_range": "11b6–12a3",
+    "state": "active;freeze pending;no producerwork exposed"
+  },
+  "capacity_report": "L04 retainsoneunusedcomparisonslot; noMKscope launched.",
+  "scope_separation": "BB037reads existingproducedcoordinates280–289; producernewwindowbegins310. These are distinct scopes. No reviewacceptance or coverage ofnew20 inferred fromBB037reading/comparison.",
+  "comparison_rule": "After initialreadingfreeze, bind explicit immutableproducer snapshot and review only neutraljobcores plus documentedcontext. Never silently followCURRENT.",
+  "new_reading_credit": 0,
+  "new_comparison_credit": 0,
+  "full_admission": false,
+  "task_eligibility_change": false,
+  "current_release015_unchanged": true
+}

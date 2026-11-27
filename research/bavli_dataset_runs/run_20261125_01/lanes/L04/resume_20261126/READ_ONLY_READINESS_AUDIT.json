@@ -1,0 +1,497 @@
+{
+  "auditor": "/root/verify_l04",
+  "read_only_originals": true,
+  "utc": "2026-11-26T19:34:33.529644+00:00",
+  "pointer": {
+    "assignment_ledger": "research/bavli_dataset_runs/run_20261125_01/ASSIGNMENT_LEDGER.json",
+    "assignment_revision": 4,
+    "contract_commit": "53bfbacb8f95d625f5036b73109eef738277e7e7",
+    "contract_path": "research/bavli_dataset_runs/run_20261125_01/RUN_CONTRACT.json",
+    "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+    "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "run_id": "run_20261125_01"
+  },
+  "contract_hash_verified": true,
+  "production_files": [
+    {
+      "path": "research/bavli_production_v1/.gitignore",
+      "expected": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_production_v1/PROTOCOL.md",
+      "expected": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_production_v1/README.md",
+      "expected": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_production_v1/runner.py",
+      "expected": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_production_v1/schema.json",
+      "expected": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_production_v1/test_runner.py",
+      "expected": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_source_access_v1/README.md",
+      "expected": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_source_access_v1/SOURCE_ACCESS_AUDIT.json",
+      "expected": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+      "git_verified": true,
+      "local_verified": true
+    },
+    {
+      "path": "research/bavli_source_access_v1/source_packages.py",
+      "expected": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8",
+      "git_verified": true,
+      "local_verified": true
+    }
+  ],
+  "source_verification": {
+    "original_files_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L04 --source-root F:/Sefaria-Export-master",
+    "package_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L04 --package F:/Sefaria_QA/bavli_source_packages_v1/L04.zip",
+    "both_result": {
+      "status": "PASS",
+      "tractates": 7,
+      "segments": 13593
+    },
+    "package_sha256": "b027a02a43e48b5f16bff6a12886e5d812bcf2e1ca246767b8875896ed70f983"
+  },
+  "jobs": [
+    {
+      "ledger": {
+        "checkpoint": {
+          "accepted_proposal_count": 3,
+          "snapshot_sha256": "3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7"
+        },
+        "epoch": 1,
+        "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit",
+        "job_id": "bavli_taanit",
+        "lane_id": "L04",
+        "legacy_note": "No inherited pilot",
+        "owner": "/root/lead_l02_l04",
+        "source_segments": 895,
+        "source_sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+        "state": "verified_partial_activity_unconfirmed",
+        "tractate": "Taanit"
+      },
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/taanit"
+      },
+      "source_assignment": {
+        "job_id": "bavli_taanit",
+        "tractate": "Taanit",
+        "tractate_he": "תענית",
+        "lane_order": 1,
+        "pinned_toc_ordinal": 9,
+        "expected_source_segments": 895,
+        "expected_source_sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+        "source_path": "json/Talmud/Bavli/Seder Moed/Taanit/Hebrew/Wikisource Talmud Bavli.json",
+        "source_schema_sha256": "8cedfa50e980e451d827cdb5ee15f000d9c0df88749284b8995ad691ff58d0b0",
+        "source_schema_path": "schemas/Taanit.json",
+        "source_edition": "Wikisource Talmud Bavli",
+        "worker_instruction": "workers/09_taanit.md",
+        "historical_pilot_segments": 0,
+        "continuation_plan": {
+          "first_source_ref": "Taanit 2a:1",
+          "mode": "process_full_source_from_beginning",
+          "must_reverify_historical_pilot_before_reuse": true,
+          "resume_core_start_ref": "Taanit 2a:1",
+          "whole_tractate_target": true
+        }
+      },
+      "snapshot_sha256": "3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7",
+      "snapshot_hash_verified": true,
+      "accepted_proposals": 3,
+      "records": 209,
+      "unique_covered_segments": 15,
+      "layers": {
+        "attributions": 15,
+        "claims": 15,
+        "edges": 15,
+        "positions": 15,
+        "questions": 15,
+        "reconciliation": 15,
+        "structure": 15,
+        "utterances": 15
+      },
+      "open_tails": [
+        "ta.gemara001.opening.structure.148",
+        "ta.opening.structure.54"
+      ],
+      "review_state": "unreviewed",
+      "ml_eligible": false
+    },
+    {
+      "ledger": {
+        "checkpoint": {
+          "accepted_proposal_count": 0,
+          "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        },
+        "epoch": 1,
+        "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra",
+        "job_id": "bavli_bava_batra",
+        "lane_id": "L04",
+        "legacy_note": "No inherited pilot",
+        "owner": "/root/lead_l02_l04",
+        "source_segments": 3804,
+        "source_sha256": "efa311405538b4993cd84dc91aad0bb3ff792aac3a3b62df117948d8a3ee9dd3",
+        "state": "assigned_queued",
+        "tractate": "Bava Batra"
+      },
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/bava_batra"
+      },
+      "source_assignment": {
+        "job_id": "bavli_bava_batra",
+        "tractate": "Bava Batra",
+        "tractate_he": "בבא בתרא",
+        "lane_order": 2,
+        "pinned_toc_ordinal": 22,
+        "expected_source_segments": 3804,
+        "expected_source_sha256": "efa311405538b4993cd84dc91aad0bb3ff792aac3a3b62df117948d8a3ee9dd3",
+        "source_path": "json/Talmud/Bavli/Seder Nezikin/Bava Batra/Hebrew/Wikisource Talmud Bavli.json",
+        "source_schema_sha256": "83a4a3dab261bad3302a89620da14e49d69a10b09b64d3c45d147d6854b837b2",
+        "source_schema_path": "schemas/Bava_Batra.json",
+        "source_edition": "Wikisource Talmud Bavli",
+        "worker_instruction": "workers/22_bava_batra.md",
+        "historical_pilot_segments": 0,
+        "continuation_plan": {
+          "first_source_ref": "Bava Batra 2a:1",
+          "mode": "process_full_source_from_beginning",
+          "must_reverify_historical_pilot_before_reuse": true,
+          "resume_core_start_ref": "Bava Batra 2a:1",
+          "whole_tractate_target": true
+        }
+      },
+      "checkpoint": "NO_CURRENT_INITIALIZED_SOURCE_ONLY"
+    },
+    {
+      "ledger": {
+        "checkpoint": {
+          "accepted_proposal_count": 0,
+          "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        },
+        "epoch": 1,
+        "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_pesachim",
+        "job_id": "bavli_pesachim",
+        "lane_id": "L04",
+        "legacy_note": "No inherited pilot",
+        "owner": "/root/lead_l02_l04",
+        "source_segments": 3519,
+        "source_sha256": "991fdf80c9e63aa181875439631c2a08b49a8b9fb2b0118ccb44754d96da073e",
+        "state": "assigned_queued",
+        "tractate": "Pesachim"
+      },
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/pesachim"
+      },
+      "source_assignment": {
+        "job_id": "bavli_pesachim",
+        "tractate": "Pesachim",
+        "tractate_he": "פסחים",
+        "lane_order": 3,
+        "pinned_toc_ordinal": 4,
+        "expected_source_segments": 3519,
+        "expected_source_sha256": "991fdf80c9e63aa181875439631c2a08b49a8b9fb2b0118ccb44754d96da073e",
+        "source_path": "json/Talmud/Bavli/Seder Moed/Pesachim/Hebrew/Wikisource Talmud Bavli.json",
+        "source_schema_sha256": "fa7a469dfcc83348baae0a9759a9175fe008e5da78a55c177a9b2c86a0191122",
+        "source_schema_path": "schemas/Pesachim.json",
+        "source_edition": "Wikisource Talmud Bavli",
+        "worker_instruction": "workers/04_pesachim.md",
+        "historical_pilot_segments": 0,
+        "continuation_plan": {
+          "first_source_ref": "Pesachim 2a:1",
+          "mode": "process_full_source_from_beginning",
+          "must_reverify_historical_pilot_before_reuse": true,
+          "resume_core_start_ref": "Pesachim 2a:1",
+          "whole_tractate_target": true
+        }
+      },
+      "checkpoint": "NO_CURRENT_INITIALIZED_SOURCE_ONLY"
+    },
+    {
+      "ledger": {
+        "checkpoint": {
+          "accepted_proposal_count": 0,
+          "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        },
+        "epoch": 1,
+        "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_avodah_zarah",
+        "job_id": "bavli_avodah_zarah",
+        "lane_id": "L04",
+        "legacy_note": "No inherited pilot",
+        "owner": "/root/lead_l02_l04",
+        "source_segments": 2131,
+        "source_sha256": "2ec254680a7711f122b072f08e556174ec536a48b0b9ac1f575994bf06aaa7a0",
+        "state": "assigned_queued",
+        "tractate": "Avodah Zarah"
+      },
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/avodah_zarah"
+      },
+      "source_assignment": {
+        "job_id": "bavli_avodah_zarah",
+        "tractate": "Avodah Zarah",
+        "tractate_he": "עבודה זרה",
+        "lane_order": 4,
+        "pinned_toc_ordinal": 26,
+        "expected_source_segments": 2131,
+        "expected_source_sha256": "2ec254680a7711f122b072f08e556174ec536a48b0b9ac1f575994bf06aaa7a0",
+        "source_path": "json/Talmud/Bavli/Seder Nezikin/Avodah Zarah/Hebrew/Wikisource Talmud Bavli.json",
+        "source_schema_sha256": "10a04f596e570e6a75d101acac5e56165385955f8831577e541e236191ee9e74",
+        "source_schema_path": "schemas/Avodah_Zarah.json",
+        "source_edition": "Wikisource Talmud Bavli",
+        "worker_instruction": "workers/26_avodah_zarah.md",
+        "historical_pilot_segments": 0,
+        "continuation_plan": {
+          "first_source_ref": "Avodah Zarah 2a:1",
+          "mode": "process_full_source_from_beginning",
+          "must_reverify_historical_pilot_before_reuse": true,
+          "resume_core_start_ref": "Avodah Zarah 2a:1",
+          "whole_tractate_target": true
+        }
+      },
+      "checkpoint": "NO_CURRENT_INITIALIZED_SOURCE_ONLY"
+    },
+    {
+      "ledger": {
+        "checkpoint": {
+          "accepted_proposal_count": 0,
+          "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        },
+        "epoch": 1,
+        "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_nedarim",
+        "job_id": "bavli_nedarim",
+        "lane_id": "L04",
+        "legacy_note": "No inherited pilot",
+        "owner": "/root/lead_l02_l04",
+        "source_segments": 1509,
+        "source_sha256": "52a452f67441cc435f1908275e349834ddc53a2add513905d52e6a0a186e85a1",
+        "state": "assigned_queued",
+        "tractate": "Nedarim"
+      },
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/nedarim"
+      },
+      "source_assignment": {
+        "job_id": "bavli_nedarim",
+        "tractate": "Nedarim",
+        "tractate_he": "נדרים",
+        "lane_order": 5,
+        "pinned_toc_ordinal": 15,
+        "expected_source_segments": 1509,
+        "expected_source_sha256": "52a452f67441cc435f1908275e349834ddc53a2add513905d52e6a0a186e85a1",
+        "source_path": "json/Talmud/Bavli/Seder Nashim/Nedarim/Hebrew/Wikisource Talmud Bavli.json",
+        "source_schema_sha256": "f102dfe1d1b2308e70f4657f3e4b2f9be414c73995341e9c1ec0288340e9a1e5",
+        "source_schema_path": "schemas/Nedarim.json",
+        "source_edition": "Wikisource Talmud Bavli",
+        "worker_instruction": "workers/15_nedarim.md",
+        "historical_pilot_segments": 0,
+        "continuation_plan": {
+          "first_source_ref": "Nedarim 2a:1",
+          "mode": "process_full_source_from_beginning",
+          "must_reverify_historical_pilot_before_reuse": true,
+          "resume_core_start_ref": "Nedarim 2a:1",
+          "whole_tractate_target": true
+        }
+      },
+      "checkpoint": "NO_CURRENT_INITIALIZED_SOURCE_ONLY"
+    },
+    {
+      "ledger": {
+        "checkpoint": {
+          "accepted_proposal_count": 0,
+          "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        },
+        "epoch": 1,
+        "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan",
+        "job_id": "bavli_moed_katan",
+        "lane_id": "L04",
+        "legacy_note": "No inherited pilot",
+        "owner": "/root/lead_l02_l04",
+        "source_segments": 1026,
+        "source_sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7",
+        "state": "assigned_queued",
+        "tractate": "Moed Katan"
+      },
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/moed_katan"
+      },
+      "source_assignment": {
+        "job_id": "bavli_moed_katan",
+        "tractate": "Moed Katan",
+        "tractate_he": "מועד קטן",
+        "lane_order": 6,
+        "pinned_toc_ordinal": 11,
+        "expected_source_segments": 1026,
+        "expected_source_sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7",
+        "source_path": "json/Talmud/Bavli/Seder Moed/Moed Katan/Hebrew/Wikisource Talmud Bavli.json",
+        "source_schema_sha256": "37e052de9306f676a29e3c201f66047278d4796f364c510fd38a070697223392",
+        "source_schema_path": "schemas/Moed_Katan.json",
+        "source_edition": "Wikisource Talmud Bavli",
+        "worker_instruction": "workers/11_moed_katan.md",
+        "historical_pilot_segments": 0,
+        "continuation_plan": {
+          "first_source_ref": "Moed Katan 2a:1",
+          "mode": "process_full_source_from_beginning",
+          "must_reverify_historical_pilot_before_reuse": true,
+          "resume_core_start_ref": "Moed Katan 2a:1",
+          "whole_tractate_target": true
+        }
+      },
+      "checkpoint": "NO_CURRENT_INITIALIZED_SOURCE_ONLY"
+    },
+    {
+      "ledger": {
+        "checkpoint": {
+          "accepted_proposal_count": 0,
+          "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+        },
+        "epoch": 1,
+        "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_makkot",
+        "job_id": "bavli_makkot",
+        "lane_id": "L04",
+        "legacy_note": "No inherited pilot",
+        "owner": "/root/lead_l02_l04",
+        "source_segments": 709,
+        "source_sha256": "ca2b205e20bd401000af94a7f6d9da4ba9fa5208b9a0f78c5f50aa2bda618efd",
+        "state": "assigned_queued",
+        "tractate": "Makkot"
+      },
+      "observed_owner": {
+        "epoch": 2,
+        "owner": "L04/makkot"
+      },
+      "source_assignment": {
+        "job_id": "bavli_makkot",
+        "tractate": "Makkot",
+        "tractate_he": "מכות",
+        "lane_order": 7,
+        "pinned_toc_ordinal": 24,
+        "expected_source_segments": 709,
+        "expected_source_sha256": "ca2b205e20bd401000af94a7f6d9da4ba9fa5208b9a0f78c5f50aa2bda618efd",
+        "source_path": "json/Talmud/Bavli/Seder Nezikin/Makkot/Hebrew/Wikisource Talmud Bavli.json",
+        "source_schema_sha256": "58e60c932d7fe0d5e68d573ae024649ca1dfdb574c9ef94cfdae6c72472bc3ae",
+        "source_schema_path": "schemas/Makkot.json",
+        "source_edition": "Wikisource Talmud Bavli",
+        "worker_instruction": "workers/24_makkot.md",
+        "historical_pilot_segments": 0,
+        "continuation_plan": {
+          "first_source_ref": "Makkot 2a:1",
+          "mode": "process_full_source_from_beginning",
+          "must_reverify_historical_pilot_before_reuse": true,
+          "resume_core_start_ref": "Makkot 2a:1",
+          "whole_tractate_target": true
+        }
+      },
+      "checkpoint": "NO_CURRENT_INITIALIZED_SOURCE_ONLY"
+    }
+  ],
+  "authority_note": "Remote ledger revision4 records epoch1 /root/lead_l02_l04 for L04; external OWNER files observed epoch2 L04/<tractate>, with epoch1 preserved in ownership_history/1.json. User-authorized lane resumption permits lane lead to record fresh within-lane dispatch; auditor did not change owners or global ledger.",
+  "taanit_replay": {
+    "replay_pass": true,
+    "snapshot_sha256": "3fb030057b574213d0dc4e92db0b4ac5c1fc0b1c6b62d22c077e7cebc9de5ea7",
+    "source_segments": 895,
+    "semantic_records": 209,
+    "completed_by_layer": {
+      "structure": 15,
+      "utterances": 15,
+      "claims": 15,
+      "attributions": 15,
+      "questions": 15,
+      "positions": 15,
+      "edges": 15,
+      "reconciliation": 15
+    },
+    "outcomes_by_layer": {
+      "structure": {
+        "records_found": 15,
+        "none_found_after_pass": 0,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "utterances": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "claims": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "attributions": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "questions": {
+        "records_found": 10,
+        "none_found_after_pass": 5,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "positions": {
+        "records_found": 14,
+        "none_found_after_pass": 1,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "edges": {
+        "records_found": 13,
+        "none_found_after_pass": 2,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      },
+      "reconciliation": {
+        "records_found": 0,
+        "none_found_after_pass": 15,
+        "abstained_ambiguous": 0,
+        "not_applicable": 0
+      }
+    },
+    "independent_review_completed": false,
+    "tractate_delivered": false,
+    "next_unprocessed_by_layer": {
+      "structure": "Taanit 2b:3",
+      "utterances": "Taanit 2b:3",
+      "claims": "Taanit 2b:3",
+      "attributions": "Taanit 2b:3",
+      "questions": "Taanit 2b:3",
+      "positions": "Taanit 2b:3",
+      "edges": "Taanit 2b:3",
+      "reconciliation": "Taanit 2b:3"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+"""Distinct Korha rulings and two versions of Rabbi Yehuda’s readmission rule."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading,r
+a=ScopedReading('avodah_zarah','Avodah Zarah','az.r017');a.agent_id='/root/avodah_continuation_2'
+c=a.claim;q=a.question;e=a.e
+parent='0c35b41f70229711abc10f541ba23c82e88e7379e78655291705e7b72446ce86'
+a.structure('evening',['7a:8'],'Evening-service request and ruling for Rabbi Yehoshua ben Korha')
+a.structure('authority',['7a:9','7a:10'],'Repeated consultation and conflicting authorities')
+a.structure('return',['7a:11','7b:1'],'Readmission of those who return: differing versions and paired lenient ruling')
+forbid=c('forbid','7a:8','ת"ר לא יאמר אדם לחבירו הנראה שתעמוד עמי לערב','The anonymous baraita prohibits asking another whether he will stand with the speaker that evening.',scope='Literal request formulation; the Sabbath setting is not expressly restated in this segment')
+allow=c('allow','7a:8','רבי יהושע בן קרחה אומר אומר אדם לחבירו הנראה שתעמוד עמי לערב','Rabbi Yehoshua ben Korha permits that wording.',candidates=['רבי יהושע בן קרחה'],scope='Opposed view in the baraita; no unspoken work details invented')
+rule=c('rule','7a:8','אמר רבה בר בר חנה א"ר יוחנן הלכתא כרבי יהושע בן קרחה','Rabbah bar bar Hana reports Rabbi Yohanan’s ruling for Rabbi Yehoshua ben Korha.',candidates=['רבי יוחנן'],chain=['רבה בר בר חנה'],scope='Ruling for the evening-request question, distinct from debt and authority-selection rulings')
+impure=c('impure','7a:9','הנשאל לחכם וטימא לא ישאל לחכם ויטהר','After a sage declares impure, the inquirer must not seek another sage to declare pure.',conditions=['first sage ruled impure'],scope='Baraita’s repeated-consultation rule')
+prohibit=c('prohibit','7a:9','לחכם ואסר לא ישאל לחכם ויתיר','After a sage prohibits, the inquirer must not seek another sage to permit.',conditions=['first sage prohibited'],scope='Parallel prohibition/permission case')
+conflict=c('conflict','7a:10','היו שנים אחד מטמא ואחד מטהר אחד אוסר ואחד מתיר','The next case has two authorities disagreeing on impurity/purity or prohibition/permission.',composition='composite',scope='Distinct simultaneous-conflict setup, not automatic permission to reverse an already requested ruling')
+greater=c('greater','7a:10','אם היה אחד מהם גדול מחבירו בחכמה ובמנין הלך אחריו','If one exceeds the other in wisdom and number, follow that one.',conditions=['one greater in wisdom and number'],scope='Initial anonymous baraita rule; meaning of מנין not silently resolved')
+strict=c('strict','7a:10','ואם לאו הלך אחר המחמיר','Otherwise follow the stricter one.',conditions=['neither established greater by preceding criterion'],scope='Initial anonymous rule')
+torah=c('torah','7a:10','ר\' יהושע בן קרחה אומר בשל תורה הלך אחר המחמיר','Rabbi Yehoshua ben Korha says to follow the stricter view in Torah matters.',candidates=['רבי יהושע בן קרחה'],conditions=['Torah matter'],scope='Alternative conflict-resolution rule')
+rabbinic=c('rabbinic','7a:10','בשל סופרים הלך אחר המיקל','In scribal/rabbinic matters he says to follow the lenient view.',candidates=['רבי יהושע בן קרחה'],conditions=['rabbinic matter'])
+yosef=c('yosef','7a:10','א"ר יוסף הלכתא כרבי יהושע בן קרחה','Rav Yosef rules for Rabbi Yehoshua ben Korha.',candidates=['רב יוסף'],scope='Ruling for this conflict-resolution baraita')
+meir=c('meir','7a:11','ת"ר וכולן שחזרו בהן אין מקבלין אותן עולמית דברי ר"מ','Rabbi Meir says those described as all of them who return are never readmitted.',candidates=['רבי מאיר'],conditions=['return after the unspecified preceding misconduct/category'],scope='Referent of וכולן not specified in this segment; no class invented',uncertainty=['The source begins וכולן without defining the group here; keep referent unresolved.'])
+private=c('private','7a:11','ר"י אומר חזרו בהן במטמוניות אין מקבלין אותן','In the first version Rabbi Yehuda refuses readmission when their return is in private.',candidates=['רבי יהודה'],conditions=['private return'],scope='Version1: publicity qualifies return, not original deeds')
+public=c('public','7a:11','בפרהסיא מקבלין אותן','The first version admits them when their return is public.',candidates=['רבי יהודה'],conditions=['public return'],scope='Version1 continuation')
+privateact=c('privateact','7a:11','א"ד עשו דבריהם במטמוניות מקבלין אותן','In the alternative version, they are readmitted when their original deeds were private.',candidates=['רבי יהודה'],conditions=['original deeds private'],scope='Version2: publicity modifies deeds, not return')
+publicact=c('publicact','7b:1','בפרהסיא אין מקבלין אותן','The alternative version refuses readmission when the original deeds were public.',candidates=['רבי יהודה'],naming_refs=['7a:11'],conditions=['original deeds public'],scope='Cross-page completion of version2, not a new unattributed rule')
+pair=c('pair','7b:1','ר"ש ור\' יהושע בן קרחה אומרים בין כך ובין כך מקבלין','Rabbi Shimon and Rabbi Yehoshua ben Korha permit readmission either way.',candidates=['רבי שמעון','רבי יהושע בן קרחה'],scope='Explicit joint position; applies across the preceding publicity distinctions')
+returnverse=c('returnverse','7b:1','שנאמר (ירמיהו ג, יד) שובו בנים שובבים','The pair’s proof cites Return, backsliding children.')
+pairrule=c('pairrule','7b:1','א"ר יצחק איש כפר עכו א"ר יוחנן הלכתא כאותו הזוג','Rabbi Yitzhak of Kefar Akko reports Rabbi Yohanan’s ruling for that pair.',candidates=['רבי יוחנן'],chain=['רבי יצחק איש כפר עכו'],scope='Ruling for readmission, not automatically each unrelated Korha ruling')
+e('rule_resolution',rule,allow,'local_resolution','7a:8');e('yosef_torah',yosef,torah,'local_resolution','7a:10');e('yosef_rabbinic',yosef,rabbinic,'local_resolution','7a:10');e('return_support',returnverse,pair,'support','7b:1');e('pair_resolution',pairrule,pair,'local_resolution','7b:1')
+a.save_window(['7a:8','7a:9','7a:10','7a:11','7b:1'],'authority017.json','Read original through8a:18; reread this entire authority/readmission sequence. Preserve separate Korha ruling scopes and transmission chains, wisdom/number uncertainty, Torah/rabbinic conditions, unresolved וכולן referent, both Rabbi Yehuda versions with opposite publicity scopes, joint pair and exact cross-page attribution. No explicit question in this window beyond quoted permitted/request wording, which is represented as content of the rule rather than a live query. All eight layers passed.',parent)

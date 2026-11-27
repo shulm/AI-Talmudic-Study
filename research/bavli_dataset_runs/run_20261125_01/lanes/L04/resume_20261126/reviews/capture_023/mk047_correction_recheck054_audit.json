@@ -1,0 +1,4588 @@
+{
+  "artifact_kind": "bounded_correction_independent_replay_audit",
+  "agent_id": "/root/mk_compare054",
+  "role": "NONBLIND_ORIGINAL_COMPARATOR_CORRECTION_RECHECK",
+  "new_fresh_reader": false,
+  "bindings": {
+    "initial_comparison": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated047\\comparisons\\mk047_exact_version_comparison054.json",
+      "sha256": "c3f33bf6c8cdf02f343cef43a444aa5b0e7ed718d2936d720e80b03a4e7fd655"
+    },
+    "initial_verdict": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated047\\comparisons\\mk047_v2_verdict054.json",
+      "sha256": "e55a09160f83a74e1b712186f2cd9b211c9a12217006c8e953820716553165b6"
+    },
+    "initial_reading": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated047\\moed_katan_delegated047.json",
+      "sha256": "0999da36b2aa03178d4e473d26fa26e346c2afe7ce8c63130b26c8af15e37e9d"
+    },
+    "prior_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\snapshots\\e5f88150985e9541e2f1a5def9b2975ab102767f3a5b5b2fe05770b5d3ae12e0.json",
+      "sha256": "e5f88150985e9541e2f1a5def9b2975ab102767f3a5b5b2fe05770b5d3ae12e0"
+    },
+    "corrected_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\snapshots\\74e823dfebc019ed21e3a5706bd2e8fbbeccb9272268637b1c506e4d7b8acc26.json",
+      "sha256": "74e823dfebc019ed21e3a5706bd2e8fbbeccb9272268637b1c506e4d7b8acc26"
+    },
+    "correction_proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\fd2feeb84813a2e22202d2b2b82aa01eb3987921daa8a7e610fbcbac5d8796f4.json",
+      "sha256": "fd2feeb84813a2e22202d2b2b82aa01eb3987921daa8a7e610fbcbac5d8796f4"
+    },
+    "source": {
+      "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Moed Katan/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7"
+    },
+    "common_and_plan": [
+      {
+        "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Moed Katan/Hebrew/Wikisource Talmud Bavli.json",
+        "sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+        "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+        "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+        "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_moed_katan.json",
+        "sha256": "f90f4ab143a6ef103be97786a055abfb5cb749481a87b80508b239620dbb5893"
+      },
+      {
+        "path": "F:/Sefaria-Export-master/schemas/Moed_Katan.json",
+        "sha256": "37e052de9306f676a29e3c201f66047278d4796f364c510fd38a070697223392"
+      }
+    ],
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "run_contract": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\RUN_CONTRACT.json",
+      "sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174"
+    },
+    "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "prior_readonly_replay": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated047\\comparisons\\mk047_validation_replay054.json",
+      "sha256": "c20ded4d3f4b7ac6fd6fa1f94b5e10f10d363273f90c273e34df04f051b1a38b"
+    },
+    "root_author_script": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l04-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L04\\resume_20261126\\moed_katan\\author_review054_047.py",
+      "sha256": "5fe2b7b67ca4f307fb69de53fdb9ad76e18809fadcf0ab548de65a18c844c3dd"
+    },
+    "root_prevalidation": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l04-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L04\\resume_20261126\\moed_katan\\REPAIR_MK054_047_PREVALIDATION.json",
+      "sha256": "f367fe4e694dd9ecbabadcd5a53da94e069cedb632794dab4b63094016386e4a"
+    },
+    "independent_recheck_helper": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated047\\comparisons\\mk047_correction_recheck054.py",
+      "sha256": "61861b9301aa1d713f9539f5c93b722a30f1f1dab7d45bf8a1dfdef8a2b8a4b1"
+    },
+    "prior_prefix": [
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\770ea28c5d4f28af211d040a2d8a1bdb7d234d3f7bdcc6b783851d51ea03cf20.json",
+        "sha256": "770ea28c5d4f28af211d040a2d8a1bdb7d234d3f7bdcc6b783851d51ea03cf20"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\a2a930a18fcce4d7b71b65365284ba76578701db885d1df3f75bdab9f24abf04.json",
+        "sha256": "a2a930a18fcce4d7b71b65365284ba76578701db885d1df3f75bdab9f24abf04"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\0e72c4da84c5ef386362ecb0647f9dc41063f4ebd13315099ffe265267bfa152.json",
+        "sha256": "0e72c4da84c5ef386362ecb0647f9dc41063f4ebd13315099ffe265267bfa152"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\0da0239fea24e6a203cee16b72db740dfdb7df45731b5efad7f59e7c7cef7249.json",
+        "sha256": "0da0239fea24e6a203cee16b72db740dfdb7df45731b5efad7f59e7c7cef7249"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\aa883cee86784e63c9be176b556945e6895cfd57470c7e47374b6ff93205dc9e.json",
+        "sha256": "aa883cee86784e63c9be176b556945e6895cfd57470c7e47374b6ff93205dc9e"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\b7c0dbce07a83879aadf884b6be115282721e23dcaad2103217e2d103ddca46c.json",
+        "sha256": "b7c0dbce07a83879aadf884b6be115282721e23dcaad2103217e2d103ddca46c"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\fc192fbfaf6ca70a44b4a625c62183ddee0bae2183e3db855cf257f8ce840527.json",
+        "sha256": "fc192fbfaf6ca70a44b4a625c62183ddee0bae2183e3db855cf257f8ce840527"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\3a72f81db3ff963c5dd64dd6da95126fe4b0dcb45634e58ea14ae2a6a57eb2f1.json",
+        "sha256": "3a72f81db3ff963c5dd64dd6da95126fe4b0dcb45634e58ea14ae2a6a57eb2f1"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\80a0c4d5c3aa7ba443d7c674b102f22dfab2623decd0089197630d250862e924.json",
+        "sha256": "80a0c4d5c3aa7ba443d7c674b102f22dfab2623decd0089197630d250862e924"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\b43daef49195b7de8f51312b7ac31fce71dfbcc5537c16270af436464975d55b.json",
+        "sha256": "b43daef49195b7de8f51312b7ac31fce71dfbcc5537c16270af436464975d55b"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\f5cf2f38818fbc75c6e135082d54f196570553ee92c58c83fa24d5c4d4fb6617.json",
+        "sha256": "f5cf2f38818fbc75c6e135082d54f196570553ee92c58c83fa24d5c4d4fb6617"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\382f6679db1c25df81196868f2b49cd850b0e4f605628d072e51ebf0280a54cc.json",
+        "sha256": "382f6679db1c25df81196868f2b49cd850b0e4f605628d072e51ebf0280a54cc"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\9ea74521761f19f6c2c1bcfbd9d7906dccec3acfdaa71065743e2a15eb600fef.json",
+        "sha256": "9ea74521761f19f6c2c1bcfbd9d7906dccec3acfdaa71065743e2a15eb600fef"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\bdf063ad21dad4c716f345c5a2249c1f9cecabdbf3eebdffe8d7dfbaf0bc840d.json",
+        "sha256": "bdf063ad21dad4c716f345c5a2249c1f9cecabdbf3eebdffe8d7dfbaf0bc840d"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\0d131f9ee2ef9244748155d78c99d5e3b1d0fdd80d61193b6b066e5b724648b3.json",
+        "sha256": "0d131f9ee2ef9244748155d78c99d5e3b1d0fdd80d61193b6b066e5b724648b3"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\7df629457686ef1a871fb2c0061082aa9c46432c25ed854930ad5912ef7ff9a5.json",
+        "sha256": "7df629457686ef1a871fb2c0061082aa9c46432c25ed854930ad5912ef7ff9a5"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\47b4648b426d734b7627a166df397834c6031c9abcfbe6214abbfe829db291cf.json",
+        "sha256": "47b4648b426d734b7627a166df397834c6031c9abcfbe6214abbfe829db291cf"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\f8384a0fb81c3add8c2b9bb88b394005f7003397df371a4e1e4c6c66b3631d2f.json",
+        "sha256": "f8384a0fb81c3add8c2b9bb88b394005f7003397df371a4e1e4c6c66b3631d2f"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\1ce1bc0c08eb1f62229190b9662126420213015f1d6c4e094e66a039e99a5e2e.json",
+        "sha256": "1ce1bc0c08eb1f62229190b9662126420213015f1d6c4e094e66a039e99a5e2e"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\35ad9706e54a573753cdafc66e169e655460e810a228a92ce3c5d32324e1f511.json",
+        "sha256": "35ad9706e54a573753cdafc66e169e655460e810a228a92ce3c5d32324e1f511"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\cc5345a684b7ea67ca09af437c9fc41eadfa4a51c79ddfbd871f7e48b7f6d7a5.json",
+        "sha256": "cc5345a684b7ea67ca09af437c9fc41eadfa4a51c79ddfbd871f7e48b7f6d7a5"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\1235be65851949e6ef62eafdb522a56fbec2ee2b112bfe8a9c795a14fb908e64.json",
+        "sha256": "1235be65851949e6ef62eafdb522a56fbec2ee2b112bfe8a9c795a14fb908e64"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\627b4a994bb93db0fcb79cc176b829738d8d10b923cb3b468552e65b0bffffb0.json",
+        "sha256": "627b4a994bb93db0fcb79cc176b829738d8d10b923cb3b468552e65b0bffffb0"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\b23f9af22952d601a714aa2d28be2941ec120b060ea5931648b5746d5fa2d32a.json",
+        "sha256": "b23f9af22952d601a714aa2d28be2941ec120b060ea5931648b5746d5fa2d32a"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\aace2066b9346474cdff9ffe88291108e8ba708d0357b50a8cd2674cfb096827.json",
+        "sha256": "aace2066b9346474cdff9ffe88291108e8ba708d0357b50a8cd2674cfb096827"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\f4f69c4146460df24a76d2a9cc099c7a54bf90bda28372b2d6e8ca92df45e196.json",
+        "sha256": "f4f69c4146460df24a76d2a9cc099c7a54bf90bda28372b2d6e8ca92df45e196"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\882f4c9361b1bbb3b0411b9adeacfc60a6f1964d54807ed28089310c11de90df.json",
+        "sha256": "882f4c9361b1bbb3b0411b9adeacfc60a6f1964d54807ed28089310c11de90df"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\5fafab951b7fd9a715358c62c2ce2656d30a4e1c30ccab0648d5cd8c1e834a4f.json",
+        "sha256": "5fafab951b7fd9a715358c62c2ce2656d30a4e1c30ccab0648d5cd8c1e834a4f"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\bf09b4b5ecd5a703d80c08bd7b7a87aaa213295bac75a2caed41e11a6926d3d2.json",
+        "sha256": "bf09b4b5ecd5a703d80c08bd7b7a87aaa213295bac75a2caed41e11a6926d3d2"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\ab2bfbac991c96eee43a7b043f71995a1052068e194712326c21f64b1b25d2d6.json",
+        "sha256": "ab2bfbac991c96eee43a7b043f71995a1052068e194712326c21f64b1b25d2d6"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\68f543e5d8a3d02ae35b34e0f3f8f6d9a3b4f65896d285be10ad8e7468c7a44c.json",
+        "sha256": "68f543e5d8a3d02ae35b34e0f3f8f6d9a3b4f65896d285be10ad8e7468c7a44c"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\12a1cd85cd09d79604b6a493075d867eedbd1404255a2e4a079e409e7fb8a858.json",
+        "sha256": "12a1cd85cd09d79604b6a493075d867eedbd1404255a2e4a079e409e7fb8a858"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\b67138016d94764d00935a4a7bbebe3a87c5c07347a08173b32e1c11646f1738.json",
+        "sha256": "b67138016d94764d00935a4a7bbebe3a87c5c07347a08173b32e1c11646f1738"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\99546ee44aed4c4c05835a18a561fd4f0c2b50d629672a13faf6b3f3902b1bb4.json",
+        "sha256": "99546ee44aed4c4c05835a18a561fd4f0c2b50d629672a13faf6b3f3902b1bb4"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\7108f5fb217596eeb480d57edc385385c8be902d62f134481876d8d48cda65dc.json",
+        "sha256": "7108f5fb217596eeb480d57edc385385c8be902d62f134481876d8d48cda65dc"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\6415a9904e26d45b5087de236bae7eab6e043a35e28bc3ee2e9cd631b22d1508.json",
+        "sha256": "6415a9904e26d45b5087de236bae7eab6e043a35e28bc3ee2e9cd631b22d1508"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\94b31ce41155a64c327f29af2110e88377b9126e3bbc05208a255134806a235f.json",
+        "sha256": "94b31ce41155a64c327f29af2110e88377b9126e3bbc05208a255134806a235f"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\8e45c5475df8a5323940796ee2c36af761daa542024a2db03d9b13fd7c6d9902.json",
+        "sha256": "8e45c5475df8a5323940796ee2c36af761daa542024a2db03d9b13fd7c6d9902"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\d05bc03457d4eca39772ec3460568377d5f241b89fc60f1793bb374a136f88c2.json",
+        "sha256": "d05bc03457d4eca39772ec3460568377d5f241b89fc60f1793bb374a136f88c2"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\8edb3f2e6fca424e15eec240c8d87e9b28c4aeff20b55ea6eb7cd341e792a2a1.json",
+        "sha256": "8edb3f2e6fca424e15eec240c8d87e9b28c4aeff20b55ea6eb7cd341e792a2a1"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\075cc0090b94078bdb930e24ee6509eb3e25ee8f11b0bbb016e4fc72e64abbd5.json",
+        "sha256": "075cc0090b94078bdb930e24ee6509eb3e25ee8f11b0bbb016e4fc72e64abbd5"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\e57e1a3cdd811d62006bee63d4012b19f3ecfc1a197bd875e53c569918027d3d.json",
+        "sha256": "e57e1a3cdd811d62006bee63d4012b19f3ecfc1a197bd875e53c569918027d3d"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\e33cc48a319a5d4a989b288133f617736635caf4b240c10f6cab6123eca9c3d0.json",
+        "sha256": "e33cc48a319a5d4a989b288133f617736635caf4b240c10f6cab6123eca9c3d0"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\d0266bddeead0e72841313d4a58cb2c2daf13bf80f2d5901d4596c419a66e7cc.json",
+        "sha256": "d0266bddeead0e72841313d4a58cb2c2daf13bf80f2d5901d4596c419a66e7cc"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\4852afb8d23ebfc0d17ea0c94fbebbcf50bd30c1919aa31d4f51a741e125c092.json",
+        "sha256": "4852afb8d23ebfc0d17ea0c94fbebbcf50bd30c1919aa31d4f51a741e125c092"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_moed_katan\\proposals\\b33d278fff31771cbee469dac0108c76560d7bd6df5ea4542c479a5c4c571d32.json",
+        "sha256": "b33d278fff31771cbee469dac0108c76560d7bd6df5ea4542c479a5c4c571d32"
+      }
+    ]
+  },
+  "checks": {
+    "exact_corrected_replay": true,
+    "base_prefix_count": 46,
+    "corrected_prefix_count": 47,
+    "proposal_exact_spans": 57,
+    "corrected_snapshot_exact_spans": 6749,
+    "all_old_records_preserved_except18_release_state_transitions": true,
+    "transitive_content_links_positions_edges_closure": true,
+    "existing_coverage_cells_revised": 36,
+    "new_coverage_cells": 0,
+    "completed_by_layer": {
+      "structure": 512,
+      "utterances": 512,
+      "claims": 512,
+      "attributions": 512,
+      "questions": 512,
+      "positions": 512,
+      "edges": 512,
+      "reconciliation": 512
+    },
+    "new_records_without_supersession": 32,
+    "superseding_records": 18,
+    "current_pointer_read": false
+  },
+  "supersession_mapping": {
+    "mk.r040.mixed.u": "mk.r040.mixed.u.review054",
+    "mk.r040.mixed.a": "mk.r040.mixed.a.review054",
+    "mk.r040.mixed.p": "mk.r040.mixed.p.review054",
+    "mk.r040.mixed2.u": "mk.r040.mixed2.u.review054",
+    "mk.r040.mixed2.a": "mk.r040.mixed2.a.review054",
+    "mk.r040.mixed2.p": "mk.r040.mixed2.p.review054",
+    "mk.r037.market.u": "mk.r037.market.u.review054",
+    "mk.r037.market.a": "mk.r037.market.a.review054",
+    "mk.r040.child.c": "mk.r040.child.c.review054",
+    "mk.r040.child.p": "mk.r040.child.p.review054",
+    "mk.r037.market.c": "mk.r037.market.c.review054",
+    "mk.r040.mixed.c": "mk.r040.mixed.c.review054",
+    "mk.r040.mixed2.c": "mk.r040.mixed2.c.review054",
+    "mk.r040.tear_objection": "mk.r040.tear_objection.review054",
+    "mk.r037.market.p": "mk.r037.market.p.review054",
+    "mk.r037.only_objection": "mk.r037.only_objection.review054",
+    "mk.r040.mixed2_answer": "mk.r040.mixed2_answer.review054",
+    "mk.r040.mixed_answer": "mk.r040.mixed_answer.review054"
+  },
+  "record_changes": [
+    {
+      "record": {
+        "content": {
+          "composition": "composite",
+          "discourse_role": "hypothetical",
+          "textual_voice": "רב אשי"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_f5f8771b6ea6d6ecc044",
+            "start_char": 29
+          }
+        ],
+        "id": "mk.r040.mixed.u.review054",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed.u",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.mixed.u.review054",
+        "layer": "utterances",
+        "canonical_sha256": "05a355ddaa04c5958f07df63c81d4a1083d6ed0d49fcb59624fc5c2b39f53ead"
+      },
+      "supersedes": "mk.r040.mixed.u",
+      "reviewed_for": [
+        "MK054-001"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [
+            "רב אשי"
+          ],
+          "role": "speaker",
+          "scope": "mk.r040.mixed.u.review054",
+          "surface": "רב אשי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_f5f8771b6ea6d6ecc044",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed.a.review054",
+        "layer": "attributions",
+        "links": [
+          "mk.r040.mixed.u.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed.a",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.mixed.a.review054",
+        "layer": "attributions",
+        "canonical_sha256": "9b42fec738a66156366b01aceb3dbae1f8f240ba0c089d8bfa0cbc2f15b5985b"
+      },
+      "supersedes": "mk.r040.mixed.a",
+      "reviewed_for": [
+        "MK054-001"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r040.mixed.c.review054",
+          "conditions": [],
+          "holder_candidates": [
+            "רב אשי"
+          ],
+          "local_status": "hypothetical in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_f5f8771b6ea6d6ecc044",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed.p.review054",
+        "layer": "positions",
+        "links": [
+          "mk.r040.mixed.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed.p",
+        "uncertainty": [
+          "Source list or paired formulation retained together; not certified as an atomic claim."
+        ]
+      },
+      "version": {
+        "id": "mk.r040.mixed.p.review054",
+        "layer": "positions",
+        "canonical_sha256": "7b60d5afba7225acf2e571cb63e94a14daf4c4cb1fb6736326f1f88dc14ff253"
+      },
+      "supersedes": "mk.r040.mixed.p",
+      "reviewed_for": [
+        "MK054-001"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "composite",
+          "discourse_role": "hypothetical",
+          "textual_voice": "רב אשי"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_a9b6650f1694e99b5bf5",
+            "start_char": 29
+          }
+        ],
+        "id": "mk.r040.mixed2.u.review054",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed2.u",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.mixed2.u.review054",
+        "layer": "utterances",
+        "canonical_sha256": "a1c194307f32b599450939303b3b0c75808eb5ba41035077afbbb5c0c7edbdd4"
+      },
+      "supersedes": "mk.r040.mixed2.u",
+      "reviewed_for": [
+        "MK054-001"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [
+            "רב אשי"
+          ],
+          "role": "speaker",
+          "scope": "mk.r040.mixed2.u.review054",
+          "surface": "רב אשי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_a9b6650f1694e99b5bf5",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed2.a.review054",
+        "layer": "attributions",
+        "links": [
+          "mk.r040.mixed2.u.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed2.a",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.mixed2.a.review054",
+        "layer": "attributions",
+        "canonical_sha256": "76012922b2aea4e4cce8033105bdc164742d36efa87dc60f5a47807a607a2f02"
+      },
+      "supersedes": "mk.r040.mixed2.a",
+      "reviewed_for": [
+        "MK054-001"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r040.mixed2.c.review054",
+          "conditions": [],
+          "holder_candidates": [
+            "רב אשי"
+          ],
+          "local_status": "hypothetical in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_a9b6650f1694e99b5bf5",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed2.p.review054",
+        "layer": "positions",
+        "links": [
+          "mk.r040.mixed2.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed2.p",
+        "uncertainty": [
+          "Source list or paired formulation retained together; not certified as an atomic claim."
+        ]
+      },
+      "version": {
+        "id": "mk.r040.mixed2.p.review054",
+        "layer": "positions",
+        "canonical_sha256": "699b56a3a2247fcf263239ed6b72e5795cc06f12bf0e18cad92a9bd21c44059c"
+      },
+      "supersedes": "mk.r040.mixed2.p",
+      "reviewed_for": [
+        "MK054-001"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "atomic",
+          "discourse_role": "narrative report of a ruling",
+          "textual_voice": "anonymous narrator"
+        },
+        "evidence": [
+          {
+            "end_char": 61,
+            "quote": "רב הונא שרא להו להנהו כרופייתא למיזל לזבוני כי אורחייהו בשוקא",
+            "segment_id": "seg_42db7a8c52244fda83d9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.market.u.review054",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r037.market.u",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r037.market.u.review054",
+        "layer": "utterances",
+        "canonical_sha256": "dafd2d49ae182a4d1aeb2d08675490ee98b93312dcfe3e9e3fc2de0f6b5a660d"
+      },
+      "supersedes": "mk.r037.market.u",
+      "reviewed_for": [
+        "MK054-004"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [
+            "רב הונא"
+          ],
+          "role": "position_holder",
+          "scope": "mk.r037.market.c.review054",
+          "surface": "רב הונא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 61,
+            "quote": "רב הונא שרא להו להנהו כרופייתא למיזל לזבוני כי אורחייהו בשוקא",
+            "segment_id": "seg_42db7a8c52244fda83d9",
+            "start_char": 0
+          },
+          {
+            "end_char": 111,
+            "quote": "רב הונא שרא להו להנהו כרופייתא למיזל לזבוני כי אורחייהו בשוקא איתיביה רב כהנא חנות פתוחה לסטיו פותח ונועל כדרכו",
+            "segment_id": "seg_42db7a8c52244fda83d9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.market.a.review054",
+        "layer": "attributions",
+        "links": [
+          "mk.r037.market.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r037.market.a",
+        "uncertainty": [
+          "Rav Huna is the reported ruling holder; the anonymous narrator reports שרא. No direct speech is reconstructed."
+        ]
+      },
+      "version": {
+        "id": "mk.r037.market.a.review054",
+        "layer": "attributions",
+        "canonical_sha256": "95f3226f8e68f1e2e8b9fd69019f17a0d80de0a6325d6eef9ba357023fd4c39d"
+      },
+      "supersedes": "mk.r037.market.a",
+      "reviewed_for": [
+        "MK054-004"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "hypothetical",
+          "conditions": [
+            "first-version restriction inferred for birth before the festival",
+            "the challenged converse from festival prohibition to mourning prohibition"
+          ],
+          "proposition": "If children differ by birth timing, the inference would make mourning restrictions apply to a child.",
+          "scope": "Conditional consequence in the objection, using both the first-version restrictive inference and Pinhas’s converse premise; Rav Ashi subsequently challenges that converse."
+        },
+        "evidence": [
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.child.c.review054",
+        "layer": "claims",
+        "links": [
+          "mk.r040.child.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.child.c",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.child.c.review054",
+        "layer": "claims",
+        "canonical_sha256": "45c2243165c42950027ccc53af9db0d79fbc753dc89e56239b17a36df7f2bdc1"
+      },
+      "supersedes": "mk.r040.child.c",
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r040.child.c.review054",
+          "conditions": [
+            "first-version restriction inferred for birth before the festival",
+            "the challenged converse from festival prohibition to mourning prohibition"
+          ],
+          "holder_candidates": [],
+          "local_status": "hypothetical in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.child.p.review054",
+        "layer": "positions",
+        "links": [
+          "mk.r040.child.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.child.p",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.child.p.review054",
+        "layer": "positions",
+        "canonical_sha256": "703574cdac7eee8ec1ada6ba502bef30357839c4ac3a38e1d7d2c1b91c0951bc"
+      },
+      "supersedes": "mk.r040.child.p",
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "Rav Huna permitted the כרופייתא sellers to sell in the market in their usual manner.",
+          "scope": "Narrative ruling, commodity clarified in following reply"
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "רב הונא שרא להו להנהו כרופייתא למיזל לזבוני כי אורחייהו בשוקא איתיביה רב כהנא חנות פתוחה לסטיו פותח ונועל כדרכו",
+            "segment_id": "seg_42db7a8c52244fda83d9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.market.c.review054",
+        "layer": "claims",
+        "links": [
+          "mk.r037.market.u.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r037.market.c",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r037.market.c.review054",
+        "layer": "claims",
+        "canonical_sha256": "74b2c305f1c463c5d0884007632bf6e6f5a77be5fc1d692684e8839baf7e4409"
+      },
+      "supersedes": "mk.r037.market.c",
+      "reviewed_for": [
+        "MK054-004"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "hypothetical",
+          "conditions": [],
+          "proposition": "Perhaps some excluded cases are prohibited during mourning and others permitted.",
+          "scope": "Rav Ashi’s rebuttal to the blanket inverse, not a complete list of cases"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_f5f8771b6ea6d6ecc044",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed.c.review054",
+        "layer": "claims",
+        "links": [
+          "mk.r040.mixed.u.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed.c",
+        "uncertainty": [
+          "Source list or paired formulation retained together; not certified as an atomic claim."
+        ]
+      },
+      "version": {
+        "id": "mk.r040.mixed.c.review054",
+        "layer": "claims",
+        "canonical_sha256": "143c392a22aecfe6692aed48e4124778137815a4d64a28de36b80fbc27a94c10"
+      },
+      "supersedes": "mk.r040.mixed.c",
+      "reviewed_for": [
+        "MK054-001 dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "hypothetical",
+          "conditions": [],
+          "proposition": "Perhaps some cases are prohibited and others permitted.",
+          "scope": "Second rebuttal of the blanket inverse, preserving repeated occurrence"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_a9b6650f1694e99b5bf5",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed2.c.review054",
+        "layer": "claims",
+        "links": [
+          "mk.r040.mixed2.u.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed2.c",
+        "uncertainty": [
+          "Source list or paired formulation retained together; not certified as an atomic claim."
+        ]
+      },
+      "version": {
+        "id": "mk.r040.mixed2.c.review054",
+        "layer": "claims",
+        "canonical_sha256": "a4a0e0d118b6d85130116f6a4e98c063bbbad4afc26319fa39ed70177f5f20bf"
+      },
+      "supersedes": "mk.r040.mixed2.c",
+      "reviewed_for": [
+        "MK054-001 dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "mk.r040.tear.c",
+          "target_id": "mk.r040.child.c.review054"
+        },
+        "evidence": [
+          {
+            "end_char": 32,
+            "quote": "והתניא מקרעין לקטן מפני עגמת נפש",
+            "segment_id": "seg_900b2d87428bd73b6546",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.tear_objection.review054",
+        "layer": "edges",
+        "links": [
+          "mk.r040.tear.c",
+          "mk.r040.child.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.tear_objection",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.tear_objection.review054",
+        "layer": "edges",
+        "canonical_sha256": "e7c0c66689809844c4b366ab4ffa5c9c08142d0e2fb90946685e21f9a909f463"
+      },
+      "supersedes": "mk.r040.tear_objection",
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r037.market.c.review054",
+          "conditions": [],
+          "holder_candidates": [
+            "רב הונא"
+          ],
+          "local_status": "asserted in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "רב הונא שרא להו להנהו כרופייתא למיזל לזבוני כי אורחייהו בשוקא איתיביה רב כהנא חנות פתוחה לסטיו פותח ונועל כדרכו",
+            "segment_id": "seg_42db7a8c52244fda83d9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.market.p.review054",
+        "layer": "positions",
+        "links": [
+          "mk.r037.market.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r037.market.p",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r037.market.p.review054",
+        "layer": "positions",
+        "canonical_sha256": "cdda16cdb791bac803f45f6afcb7575f619937f12fcec86cc8c67265a09565b5"
+      },
+      "supersedes": "mk.r037.market.p",
+      "reviewed_for": [
+        "MK054-004"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "mk.r037.only.c",
+          "target_id": "mk.r037.market.c.review054"
+        },
+        "evidence": [
+          {
+            "end_char": 156,
+            "quote": "פתוחה לרה\"ר פותח אחת ונועל אחת וערב יום טוב האחרון של חג מוציא ומעטר את שוקי העיר בפירות בשביל כבוד י\"ט האחרון מפני כבוד י\"ט האחרון אין שלא מפני כבוד י\"ט לא",
+            "segment_id": "seg_f613330683d6f8de2d86",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.only_objection.review054",
+        "layer": "edges",
+        "links": [
+          "mk.r037.only.c",
+          "mk.r037.market.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r037.only_objection",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r037.only_objection.review054",
+        "layer": "edges",
+        "canonical_sha256": "05ec44bd383030f8bf1abe4d6002b6495e678aa926278f3ed5c811c26c9f0982"
+      },
+      "supersedes": "mk.r037.only_objection",
+      "reviewed_for": [
+        "MK054-004 dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "mk.r040.mixed2.c.review054",
+          "target_id": "mk.r040.question2.q"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_a9b6650f1694e99b5bf5",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed2_answer.review054",
+        "layer": "edges",
+        "links": [
+          "mk.r040.mixed2.c.review054",
+          "mk.r040.question2.q"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed2_answer",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.mixed2_answer.review054",
+        "layer": "edges",
+        "canonical_sha256": "d056b89c95bdf357a238b0d5def7eddebfa345991847598ed2d4367e24a79978"
+      },
+      "supersedes": "mk.r040.mixed2_answer",
+      "reviewed_for": [
+        "MK054-001 dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "mk.r040.mixed.c.review054",
+          "target_id": "mk.r040.question.q"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב אשי מי קתני הא אסורין דלמא יש מהן אסור ויש מהן מותר",
+            "segment_id": "seg_f5f8771b6ea6d6ecc044",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.mixed_answer.review054",
+        "layer": "edges",
+        "links": [
+          "mk.r040.mixed.c.review054",
+          "mk.r040.question.q"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.mixed_answer",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r040.mixed_answer.review054",
+        "layer": "edges",
+        "canonical_sha256": "8c72a1d316570e505dc599bb8352c133fe463f7c65d1c9deaa9516042f8a2c5b"
+      },
+      "supersedes": "mk.r040.mixed_answer",
+      "reviewed_for": [
+        "MK054-001 dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "atomic",
+          "discourse_role": "asserted",
+          "textual_voice": "anonymous discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 24,
+            "quote": "מנודה שונה ושונין לו",
+            "segment_id": "seg_7640c0c60646b29d660e",
+            "start_char": 4
+          }
+        ],
+        "id": "mk.r047.teaching.u",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.teaching.u",
+        "layer": "utterances",
+        "canonical_sha256": "62ddc5887fdba3f51cd14e103dadd7cda86c94096048a83bf230602b0eae9bd4"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-002"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "mk.r047.teaching.u",
+          "surface": "",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 24,
+            "quote": "מנודה שונה ושונין לו",
+            "segment_id": "seg_7640c0c60646b29d660e",
+            "start_char": 4
+          }
+        ],
+        "id": "mk.r047.teaching.a",
+        "layer": "attributions",
+        "links": [
+          "mk.r047.teaching.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.teaching.a",
+        "layer": "attributions",
+        "canonical_sha256": "c7b9a03c98493c6a01cf4ce86e7b2f957bba9ea6dff72a5c416814c656b03401"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-002"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "person under niddui"
+          ],
+          "proposition": "Others may teach a person under niddui.",
+          "scope": "Anonymous cited baraita at this repeated15b:4 occurrence; separate from studying and the hiring permissions."
+        },
+        "evidence": [
+          {
+            "end_char": 77,
+            "quote": "ת\"ש מנודה שונה ושונין לו נשכר ונשכרין לו שמע מינה מצורע מהו בעשיית מלאכה תיקו",
+            "segment_id": "seg_7640c0c60646b29d660e",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.teaching.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.teaching.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.teaching.c",
+        "layer": "claims",
+        "canonical_sha256": "9122edddb648fa4596d456f1f770f0c3684059db5ee5e775a5e2e940ed1b4efe"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-002"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r047.teaching.c",
+          "conditions": [
+            "person under niddui"
+          ],
+          "holder_candidates": [],
+          "local_status": "asserted in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 77,
+            "quote": "ת\"ש מנודה שונה ושונין לו נשכר ונשכרין לו שמע מינה מצורע מהו בעשיית מלאכה תיקו",
+            "segment_id": "seg_7640c0c60646b29d660e",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.teaching.p",
+        "layer": "positions",
+        "links": [
+          "mk.r047.teaching.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.teaching.p",
+        "layer": "positions",
+        "canonical_sha256": "9d8471d9b481418b8b230851e7846e0d96be6e0c153d00aff61418a94907f558"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-002"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "atomic",
+          "discourse_role": "asserted",
+          "textual_voice": "anonymous discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "ומותר באורז בחילקא וטרגיס וטיסני",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 54
+          }
+        ],
+        "id": "mk.r047.vow_hilka.u",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_hilka.u",
+        "layer": "utterances",
+        "canonical_sha256": "edcd9fbfc07b6d4f26427057b77aaa694b1c7603b497b24fce2c83871e830282"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "mk.r047.vow_hilka.u",
+          "surface": "",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "ומותר באורז בחילקא וטרגיס וטיסני",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 54
+          }
+        ],
+        "id": "mk.r047.vow_hilka.a",
+        "layer": "attributions",
+        "links": [
+          "mk.r047.vow_hilka.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_hilka.a",
+        "layer": "attributions",
+        "canonical_sha256": "58d2bb14a8507bf05390c2e93ff59a9440e6d05ad4419d9a19c2b8c17de129f2"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "proposition": "חילקא is permitted under the cited vow against דגן.",
+          "scope": "Decomposition of mk.r037.vow.c at the same source occurrence; anonymous cited authority, not an additional topic."
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_hilka.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.vow_hilka.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_hilka.c",
+        "layer": "claims",
+        "canonical_sha256": "144f7d052683ae97913acf0af8302561f01e15c47484dee6bf37cf596aa5fa92"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r047.vow_hilka.c",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "holder_candidates": [],
+          "local_status": "asserted in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_hilka.p",
+        "layer": "positions",
+        "links": [
+          "mk.r047.vow_hilka.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_hilka.p",
+        "layer": "positions",
+        "canonical_sha256": "370c1d617ae0eab9e8b73cb62d9b9b0a28fa5b30334ad282ece9eba36cdb9438"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "atomic",
+          "discourse_role": "asserted",
+          "textual_voice": "anonymous discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "ומותר באורז בחילקא וטרגיס וטיסני",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 54
+          }
+        ],
+        "id": "mk.r047.vow_targis.u",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_targis.u",
+        "layer": "utterances",
+        "canonical_sha256": "6e2a9cc99c4f24963c59e333ec5986ee6d71f45461dd9a33f3eb6abc6b8e90e4"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "mk.r047.vow_targis.u",
+          "surface": "",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "ומותר באורז בחילקא וטרגיס וטיסני",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 54
+          }
+        ],
+        "id": "mk.r047.vow_targis.a",
+        "layer": "attributions",
+        "links": [
+          "mk.r047.vow_targis.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_targis.a",
+        "layer": "attributions",
+        "canonical_sha256": "01bcc23df683bf519c06c94d8c3a38ccb174303c4728429563271eeafa89dcc5"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "proposition": "טרגיס is permitted under the cited vow against דגן.",
+          "scope": "Decomposition of mk.r037.vow.c at the same source occurrence; anonymous cited authority, not an additional topic."
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_targis.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.vow_targis.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_targis.c",
+        "layer": "claims",
+        "canonical_sha256": "cd24fda05934cf358e885bdff6b649bab65ffd404832363932d579c1a3edaba1"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r047.vow_targis.c",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "holder_candidates": [],
+          "local_status": "asserted in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_targis.p",
+        "layer": "positions",
+        "links": [
+          "mk.r047.vow_targis.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_targis.p",
+        "layer": "positions",
+        "canonical_sha256": "44f2c942dcd5e8308d7c2925a185c4c60b081c70db1cc679c1c810e4dbd33485"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "atomic",
+          "discourse_role": "asserted",
+          "textual_voice": "anonymous discussion"
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "ומותר באורז בחילקא וטרגיס וטיסני",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 54
+          }
+        ],
+        "id": "mk.r047.vow_tisni.u",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_tisni.u",
+        "layer": "utterances",
+        "canonical_sha256": "dc995f44182dee84c4edf7c5370d1c51bb3c4beffdb8bdf65e7609c7b6936816"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "mk.r047.vow_tisni.u",
+          "surface": "",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "ומותר באורז בחילקא וטרגיס וטיסני",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 54
+          }
+        ],
+        "id": "mk.r047.vow_tisni.a",
+        "layer": "attributions",
+        "links": [
+          "mk.r047.vow_tisni.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_tisni.a",
+        "layer": "attributions",
+        "canonical_sha256": "235b98dc7a5e77a4d6a4dbf859ac60db60f73f5efba4822513f3c0d5cff83fb8"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "proposition": "טיסני is permitted under the cited vow against דגן.",
+          "scope": "Decomposition of mk.r037.vow.c at the same source occurrence; anonymous cited authority, not an additional topic."
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_tisni.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.vow_tisni.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_tisni.c",
+        "layer": "claims",
+        "canonical_sha256": "99fe65ad478f6c3955b58cc5b931ac4fbb548f16cdc934792b8d7b276046d1b9"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r047.vow_tisni.c",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "holder_candidates": [],
+          "local_status": "asserted in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_tisni.p",
+        "layer": "positions",
+        "links": [
+          "mk.r047.vow_tisni.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.vow_tisni.p",
+        "layer": "positions",
+        "canonical_sha256": "b5feef1a3e296bf72d7afbeeefcbd1107d9ccd2ae608edd86d8b9d46524de5d8"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "atomic",
+          "discourse_role": "asserted",
+          "textual_voice": "רבא"
+        },
+        "evidence": [
+          {
+            "end_char": 87,
+            "quote": "מר מדמי ליה כלשוט",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 70
+          }
+        ],
+        "id": "mk.r047.profit_tour.u",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_tour.u",
+        "layer": "utterances",
+        "canonical_sha256": "c0359f7c17811b8eb92894c37282b91f6099cf8eb874057044314414aa329882"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [
+            "רבא"
+          ],
+          "role": "speaker",
+          "scope": "mk.r047.profit_tour.u",
+          "surface": "רבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 87,
+            "quote": "מר מדמי ליה כלשוט",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 70
+          },
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_tour.a",
+        "layer": "attributions",
+        "links": [
+          "mk.r047.profit_tour.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_tour.a",
+        "layer": "attributions",
+        "canonical_sha256": "eba122e74b9fe5ff03d13146aa7c4378df68413c7e07fe0786f8c07a8592bc46"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "travel for profit"
+          ],
+          "proposition": "One side compares profit travel to touring.",
+          "scope": "Rava describes an opposing comparison; this is not Rava’s own tannaitic ruling. Decomposition of mk.r039.compare.c; individual tannaitic identity is not inferred from מר order."
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_tour.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.profit_tour.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_tour.c",
+        "layer": "claims",
+        "canonical_sha256": "f6eb76aa2b9268916a0b58025584fae349813aa42dc1689e852667c359dc5d94"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r047.profit_tour.c",
+          "conditions": [
+            "travel for profit"
+          ],
+          "holder_candidates": [],
+          "local_status": "asserted in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_tour.p",
+        "layer": "positions",
+        "links": [
+          "mk.r047.profit_tour.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Named citing/describing speaker is Rava; this comparison node does not assign an original tannaitic holder by order."
+        ]
+      },
+      "version": {
+        "id": "mk.r047.profit_tour.p",
+        "layer": "positions",
+        "canonical_sha256": "062815a970b0e7f8cb2b5e7aaf0827bce1dc685f5ac015f929827cbd20f9426a"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "composition": "atomic",
+          "discourse_role": "asserted",
+          "textual_voice": "רבא"
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 88
+          }
+        ],
+        "id": "mk.r047.profit_food.u",
+        "layer": "utterances",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_food.u",
+        "layer": "utterances",
+        "canonical_sha256": "ac31b4cf885fa1e81d2e45e920ad470209a4dcbd3fbbc20616f0d1a6c3465e74"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "candidates": [
+            "רבא"
+          ],
+          "role": "speaker",
+          "scope": "mk.r047.profit_food.u",
+          "surface": "רבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 88
+          },
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_food.a",
+        "layer": "attributions",
+        "links": [
+          "mk.r047.profit_food.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_food.a",
+        "layer": "attributions",
+        "canonical_sha256": "ed2a61eaa8bf7a899e2f980ccb3299545e6b3cf2f906ca5a207e179cac74fb8a"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "travel for profit"
+          ],
+          "proposition": "The other side compares profit travel to livelihood travel.",
+          "scope": "Rava describes an opposing comparison; this is not Rava’s own tannaitic ruling. Decomposition of mk.r039.compare.c; individual tannaitic identity is not inferred from מר order."
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_food.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.profit_food.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_food.c",
+        "layer": "claims",
+        "canonical_sha256": "a2bb3ba82d9a3d18ac808581dfc7e17e8b6b826beb75996b910f0c838df9f03e"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "claim_id": "mk.r047.profit_food.c",
+          "conditions": [
+            "travel for profit"
+          ],
+          "holder_candidates": [],
+          "local_status": "asserted in this source context",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_food.p",
+        "layer": "positions",
+        "links": [
+          "mk.r047.profit_food.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Named citing/describing speaker is Rava; this comparison node does not assign an original tannaitic holder by order."
+        ]
+      },
+      "version": {
+        "id": "mk.r047.profit_food.p",
+        "layer": "positions",
+        "canonical_sha256": "ac3e900f54c774d4f800adc222701ba0503b8967cbb36753096d76ae1139312e"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003 endpoint/dependency closure"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.wet.c",
+          "target_id": "mk.r037.impure.c"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "מיתיבי חילקא טרגיס וטיסני טמאין בכל מקום בשלמא למ\"ד חדא לתרתי לתלת ולארבעה משום הכי טמאין בכל מקום דאתכשור אלא למ\"ד כונתא אמאי טמאין בכל מקום הא לא איתכשור",
+            "segment_id": "seg_816c4baef0558783e52a",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.wet_support",
+        "layer": "edges",
+        "links": [
+          "mk.r037.wet.c",
+          "mk.r037.impure.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.wet_support",
+        "layer": "edges",
+        "canonical_sha256": "6ea12a17c833ba2a0cdbd65d68cd15b7ebe4c10d5b14c80332b37eebd9f2cad1"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.changed.c",
+          "target_id": "mk.r047.vow_hilka.c"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.changed_support_vow_hilka",
+        "layer": "edges",
+        "links": [
+          "mk.r037.changed.c",
+          "mk.r047.vow_hilka.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.changed_support_vow_hilka",
+        "layer": "edges",
+        "canonical_sha256": "6105db788c2b47ba7c7c33088688710b9ff590305aef2917c45070741ddf3bff"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.changed.c",
+          "target_id": "mk.r047.vow_targis.c"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.changed_support_vow_targis",
+        "layer": "edges",
+        "links": [
+          "mk.r037.changed.c",
+          "mk.r047.vow_targis.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.changed_support_vow_targis",
+        "layer": "edges",
+        "canonical_sha256": "94a85a9a122a1db44a6380346419aea4c9de316d710c233a33bb084b97dbaa86"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.changed.c",
+          "target_id": "mk.r047.vow_tisni.c"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.changed_support_vow_tisni",
+        "layer": "edges",
+        "links": [
+          "mk.r037.changed.c",
+          "mk.r047.vow_tisni.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.changed_support_vow_tisni",
+        "layer": "edges",
+        "canonical_sha256": "11ca5dfb519973e4c9115232a737855f3435ebef11a4125cd5b6b1e27d79b25c"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "analogy",
+          "source_id": "mk.r047.profit_tour.c",
+          "target_id": "mk.r039.tour.c"
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_tour_analogy",
+        "layer": "edges",
+        "links": [
+          "mk.r047.profit_tour.c",
+          "mk.r039.tour.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_tour_analogy",
+        "layer": "edges",
+        "canonical_sha256": "1ef9e74f33cb68113f83e7cd1139070104a9a14ee64fdc180314edf2483247ff"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "analogy",
+          "source_id": "mk.r047.profit_food.c",
+          "target_id": "mk.r039.food.c"
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_food_analogy",
+        "layer": "edges",
+        "links": [
+          "mk.r047.profit_food.c",
+          "mk.r039.food.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "version": {
+        "id": "mk.r047.profit_food_analogy",
+        "layer": "edges",
+        "canonical_sha256": "1578418b60706339ba81ed270cf565d73b524478ac6d610e188e9138d3f26d70"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "mk.r040.child.c.review054",
+          "target_id": "mk.r040.infer.c"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "אמר שמואל קטן הנולד במועד מותר לגלח במועד שאין לך בית האסורין גדול מזה במועד אין מעיקרא לא",
+            "segment_id": "seg_c7c330cae9ab774c1985",
+            "start_char": 0
+          },
+          {
+            "end_char": 100,
+            "quote": "מתיב ר' פנחס כל אלו שאמרו מותר לגלח במועד מותר לגלח בימי אבלו הא אסור לגלח במועד אסור לגלח בימי אבלו",
+            "segment_id": "seg_dacf54ea2903b50ad3e2",
+            "start_char": 0
+          },
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.child_objection",
+        "layer": "edges",
+        "links": [
+          "mk.r040.child.c.review054",
+          "mk.r040.infer.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Local hypothetical objection depends on both premises; this does not validate the converse after Rav Ashi’s response or assert child mourning obligations."
+        ]
+      },
+      "version": {
+        "id": "mk.r047.child_objection",
+        "layer": "edges",
+        "canonical_sha256": "e0dae642a364e14d1b8478f580d390cd611624bf1852cc1513ed246d84f75dec"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    },
+    {
+      "record": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r040.negative.c",
+          "target_id": "mk.r040.child.c.review054"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "אמר שמואל קטן הנולד במועד מותר לגלח במועד שאין לך בית האסורין גדול מזה במועד אין מעיקרא לא",
+            "segment_id": "seg_c7c330cae9ab774c1985",
+            "start_char": 0
+          },
+          {
+            "end_char": 100,
+            "quote": "מתיב ר' פנחס כל אלו שאמרו מותר לגלח במועד מותר לגלח בימי אבלו הא אסור לגלח במועד אסור לגלח בימי אבלו",
+            "segment_id": "seg_dacf54ea2903b50ad3e2",
+            "start_char": 0
+          },
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.converse_support",
+        "layer": "edges",
+        "links": [
+          "mk.r040.negative.c",
+          "mk.r040.child.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Local hypothetical objection depends on both premises; this does not validate the converse after Rav Ashi’s response or assert child mourning obligations."
+        ]
+      },
+      "version": {
+        "id": "mk.r047.converse_support",
+        "layer": "edges",
+        "canonical_sha256": "883853d12837d9f6d0108bbc5888b0ed85e60a47f315f9eb273f68a75c0ba24a"
+      },
+      "supersedes": null,
+      "reviewed_for": [
+        "MK054-003"
+      ]
+    }
+  ],
+  "typed_relation_endpoint_checks": [
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.wet.c",
+          "target_id": "mk.r037.impure.c"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "מיתיבי חילקא טרגיס וטיסני טמאין בכל מקום בשלמא למ\"ד חדא לתרתי לתלת ולארבעה משום הכי טמאין בכל מקום דאתכשור אלא למ\"ד כונתא אמאי טמאין בכל מקום הא לא איתכשור",
+            "segment_id": "seg_816c4baef0558783e52a",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.wet_support",
+        "layer": "edges",
+        "links": [
+          "mk.r037.wet.c",
+          "mk.r037.impure.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "Under the split-grain definition the impurity rule is understandable because they were made susceptible.",
+          "scope": "Compatibility argument, not an added finding of actual impurity for a particular item"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "מיתיבי חילקא טרגיס וטיסני טמאין בכל מקום בשלמא למ\"ד חדא לתרתי לתלת ולארבעה משום הכי טמאין בכל מקום דאתכשור אלא למ\"ד כונתא אמאי טמאין בכל מקום הא לא איתכשור",
+            "segment_id": "seg_816c4baef0558783e52a",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.wet.c",
+        "layer": "claims",
+        "links": [
+          "mk.r037.wet.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The cited baraita calls hilka, targis and tisni impure everywhere.",
+          "scope": "Source rule used as objection"
+        },
+        "evidence": [
+          {
+            "end_char": 155,
+            "quote": "מיתיבי חילקא טרגיס וטיסני טמאין בכל מקום בשלמא למ\"ד חדא לתרתי לתלת ולארבעה משום הכי טמאין בכל מקום דאתכשור אלא למ\"ד כונתא אמאי טמאין בכל מקום הא לא איתכשור",
+            "segment_id": "seg_816c4baef0558783e52a",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.impure.c",
+        "layer": "claims",
+        "links": [
+          "mk.r037.impure.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Source list or paired formulation retained together; not certified as an atomic claim."
+        ]
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    },
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.changed.c",
+          "target_id": "mk.r047.vow_hilka.c"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.changed_support_vow_hilka",
+        "layer": "edges",
+        "links": [
+          "mk.r037.changed.c",
+          "mk.r047.vow_hilka.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "Under split-grain definitions, the items have left the category of grain.",
+          "scope": "Compatibility explanation"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.changed.c",
+        "layer": "claims",
+        "links": [
+          "mk.r037.changed.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "proposition": "חילקא is permitted under the cited vow against דגן.",
+          "scope": "Decomposition of mk.r037.vow.c at the same source occurrence; anonymous cited authority, not an additional topic."
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_hilka.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.vow_hilka.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    },
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.changed.c",
+          "target_id": "mk.r047.vow_targis.c"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.changed_support_vow_targis",
+        "layer": "edges",
+        "links": [
+          "mk.r037.changed.c",
+          "mk.r047.vow_targis.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "Under split-grain definitions, the items have left the category of grain.",
+          "scope": "Compatibility explanation"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.changed.c",
+        "layer": "claims",
+        "links": [
+          "mk.r037.changed.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "proposition": "טרגיס is permitted under the cited vow against דגן.",
+          "scope": "Decomposition of mk.r037.vow.c at the same source occurrence; anonymous cited authority, not an additional topic."
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_targis.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.vow_targis.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    },
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r037.changed.c",
+          "target_id": "mk.r047.vow_tisni.c"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.changed_support_vow_tisni",
+        "layer": "edges",
+        "links": [
+          "mk.r037.changed.c",
+          "mk.r047.vow_tisni.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "Under split-grain definitions, the items have left the category of grain.",
+          "scope": "Compatibility explanation"
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r037.changed.c",
+        "layer": "claims",
+        "links": [
+          "mk.r037.changed.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "vow against דגן"
+          ],
+          "proposition": "טיסני is permitted under the cited vow against דגן.",
+          "scope": "Decomposition of mk.r037.vow.c at the same source occurrence; anonymous cited authority, not an additional topic."
+        },
+        "evidence": [
+          {
+            "end_char": 187,
+            "quote": "מיתיבי הנודר מן הדגן אסור אף בפול המצרי יבש ומותר בלח ומותר באורז בחילקא וטרגיס וטיסני בשלמא למ\"ד חדא לתרתי חדא לתלת וחדא לארבעה שפיר דנפקו להו מתורת דגן אלא למ\"ד כונתא דגן מעליא הוא קשיא",
+            "segment_id": "seg_02303096d763620936c9",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.vow_tisni.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.vow_tisni.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    },
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "analogy",
+          "source_id": "mk.r047.profit_tour.c",
+          "target_id": "mk.r039.tour.c"
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_tour_analogy",
+        "layer": "edges",
+        "links": [
+          "mk.r047.profit_tour.c",
+          "mk.r039.tour.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "travel for profit"
+          ],
+          "proposition": "One side compares profit travel to touring.",
+          "scope": "Rava describes an opposing comparison; this is not Rava’s own tannaitic ruling. Decomposition of mk.r039.compare.c; individual tannaitic identity is not inferred from מר order."
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_tour.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.profit_tour.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "touring"
+          ],
+          "proposition": "Rava says all agree that travel for touring entails prohibition.",
+          "scope": "Local source assertion; not a later practical ruling"
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r039.tour.c",
+        "layer": "claims",
+        "links": [
+          "mk.r039.tour.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    },
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "analogy",
+          "source_id": "mk.r047.profit_food.c",
+          "target_id": "mk.r039.food.c"
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_food_analogy",
+        "layer": "edges",
+        "links": [
+          "mk.r047.profit_food.c",
+          "mk.r039.food.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "travel for profit"
+          ],
+          "proposition": "The other side compares profit travel to livelihood travel.",
+          "scope": "Rava describes an opposing comparison; this is not Rava’s own tannaitic ruling. Decomposition of mk.r039.compare.c; individual tannaitic identity is not inferred from מר order."
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.profit_food.c",
+        "layer": "claims",
+        "links": [
+          "mk.r047.profit_food.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "livelihood"
+          ],
+          "proposition": "Rava says all agree that travel for livelihood entails permission.",
+          "scope": "Local source assertion; not a later practical ruling"
+        },
+        "evidence": [
+          {
+            "end_char": 109,
+            "quote": "אמר רבא לשוט דברי הכל אסור למזונות דברי הכל מותר לא נחלקו אלא להרויחא מר מדמי ליה כלשוט ומר מדמי ליה כלמזונות",
+            "segment_id": "seg_6611fbd9872970361bca",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r039.food.c",
+        "layer": "claims",
+        "links": [
+          "mk.r039.food.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    },
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "mk.r040.child.c.review054",
+          "target_id": "mk.r040.infer.c"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "אמר שמואל קטן הנולד במועד מותר לגלח במועד שאין לך בית האסורין גדול מזה במועד אין מעיקרא לא",
+            "segment_id": "seg_c7c330cae9ab774c1985",
+            "start_char": 0
+          },
+          {
+            "end_char": 100,
+            "quote": "מתיב ר' פנחס כל אלו שאמרו מותר לגלח במועד מותר לגלח בימי אבלו הא אסור לגלח במועד אסור לגלח בימי אבלו",
+            "segment_id": "seg_dacf54ea2903b50ad3e2",
+            "start_char": 0
+          },
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.child_objection",
+        "layer": "edges",
+        "links": [
+          "mk.r040.child.c.review054",
+          "mk.r040.infer.c"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Local hypothetical objection depends on both premises; this does not validate the converse after Rav Ashi’s response or assert child mourning obligations."
+        ]
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "hypothetical",
+          "conditions": [
+            "first-version restriction inferred for birth before the festival",
+            "the challenged converse from festival prohibition to mourning prohibition"
+          ],
+          "proposition": "If children differ by birth timing, the inference would make mourning restrictions apply to a child.",
+          "scope": "Conditional consequence in the objection, using both the first-version restrictive inference and Pinhas’s converse premise; Rav Ashi subsequently challenges that converse."
+        },
+        "evidence": [
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.child.c.review054",
+        "layer": "claims",
+        "links": [
+          "mk.r040.child.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.child.c",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "The discussion infers permission for birth during the festival but not beforehand.",
+          "scope": "Anonymous restrictive inference in first version"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "אמר שמואל קטן הנולד במועד מותר לגלח במועד שאין לך בית האסורין גדול מזה במועד אין מעיקרא לא",
+            "segment_id": "seg_c7c330cae9ab774c1985",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.infer.c",
+        "layer": "claims",
+        "links": [
+          "mk.r040.infer.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Source list or paired formulation retained together; not certified as an atomic claim."
+        ]
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    },
+    {
+      "edge": {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "mk.r040.negative.c",
+          "target_id": "mk.r040.child.c.review054"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "אמר שמואל קטן הנולד במועד מותר לגלח במועד שאין לך בית האסורין גדול מזה במועד אין מעיקרא לא",
+            "segment_id": "seg_c7c330cae9ab774c1985",
+            "start_char": 0
+          },
+          {
+            "end_char": 100,
+            "quote": "מתיב ר' פנחס כל אלו שאמרו מותר לגלח במועד מותר לגלח בימי אבלו הא אסור לגלח במועד אסור לגלח בימי אבלו",
+            "segment_id": "seg_dacf54ea2903b50ad3e2",
+            "start_char": 0
+          },
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r047.converse_support",
+        "layer": "edges",
+        "links": [
+          "mk.r040.negative.c",
+          "mk.r040.child.c.review054"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Local hypothetical objection depends on both premises; this does not validate the converse after Rav Ashi’s response or assert child mourning obligations."
+        ]
+      },
+      "source_endpoint": {
+        "content": {
+          "assertion_mode": "challenged",
+          "conditions": [],
+          "proposition": "The objection infers that those prohibited during the festival are prohibited during mourning.",
+          "scope": "Negative inference challenged by Rav Ashi below"
+        },
+        "evidence": [
+          {
+            "end_char": 100,
+            "quote": "מתיב ר' פנחס כל אלו שאמרו מותר לגלח במועד מותר לגלח בימי אבלו הא אסור לגלח במועד אסור לגלח בימי אבלו",
+            "segment_id": "seg_dacf54ea2903b50ad3e2",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.negative.c",
+        "layer": "claims",
+        "links": [
+          "mk.r040.negative.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "target_endpoint": {
+        "content": {
+          "assertion_mode": "hypothetical",
+          "conditions": [
+            "first-version restriction inferred for birth before the festival",
+            "the challenged converse from festival prohibition to mourning prohibition"
+          ],
+          "proposition": "If children differ by birth timing, the inference would make mourning restrictions apply to a child.",
+          "scope": "Conditional consequence in the objection, using both the first-version restrictive inference and Pinhas’s converse premise; Rav Ashi subsequently challenges that converse."
+        },
+        "evidence": [
+          {
+            "end_char": 51,
+            "quote": "ואי אמרת קטן אית ביה פלוגתא נמצאת אבילות נוהגת בקטן",
+            "segment_id": "seg_9390df137ab7671adbad",
+            "start_char": 0
+          }
+        ],
+        "id": "mk.r040.child.c.review054",
+        "layer": "claims",
+        "links": [
+          "mk.r040.child.u"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "mk.r040.child.c",
+        "uncertainty": []
+      },
+      "local_semantics": "source-supported typed relation under endpoint scopes/conditions; no new finality or scholar-choice interpretation"
+    }
+  ],
+  "source_refs_reread": [
+    "Moed Katan 13b:7",
+    "Moed Katan 13b:8",
+    "Moed Katan 13b:9",
+    "Moed Katan 13b:10",
+    "Moed Katan 13b:11",
+    "Moed Katan 13b:12",
+    "Moed Katan 13b:13",
+    "Moed Katan 14a:11",
+    "Moed Katan 14a:12",
+    "Moed Katan 14a:13",
+    "Moed Katan 14a:14",
+    "Moed Katan 14a:15",
+    "Moed Katan 14a:16",
+    "Moed Katan 14a:17",
+    "Moed Katan 14b:1",
+    "Moed Katan 14b:2",
+    "Moed Katan 14b:3",
+    "Moed Katan 14b:4",
+    "Moed Katan 14b:5",
+    "Moed Katan 14b:6",
+    "Moed Katan 14b:7",
+    "Moed Katan 15a:15",
+    "Moed Katan 15a:16",
+    "Moed Katan 15a:17",
+    "Moed Katan 15b:3",
+    "Moed Katan 15b:4"
+  ],
+  "source_evidence": [
+    {
+      "ref": "Moed Katan 13b:7",
+      "text_sha256": "0668601b8e19d195208462f33be489fb9479234ee411415d4e7cbf2e48f40a05",
+      "source_index": [
+        25,
+        6
+      ]
+    },
+    {
+      "ref": "Moed Katan 13b:8",
+      "text_sha256": "63a3b25d293888ce6a27cd177b98201eff95908074d705b387b300a926fa95ff",
+      "source_index": [
+        25,
+        7
+      ]
+    },
+    {
+      "ref": "Moed Katan 13b:9",
+      "text_sha256": "a180fc3238408452ea0170fa1d3a0a2c452bb53d432073e6c8f960ae87969b31",
+      "source_index": [
+        25,
+        8
+      ]
+    },
+    {
+      "ref": "Moed Katan 13b:10",
+      "text_sha256": "47928ad8bac3882d616ec13bb9597de148becec11caa620ae61c1c804aaf8dcb",
+      "source_index": [
+        25,
+        9
+      ]
+    },
+    {
+      "ref": "Moed Katan 13b:11",
+      "text_sha256": "5f02b154f35005930b9490b44a7073ff80bb4d33e55a0ea981618b848f4dd7ba",
+      "source_index": [
+        25,
+        10
+      ]
+    },
+    {
+      "ref": "Moed Katan 13b:12",
+      "text_sha256": "93d0f1c8387d27f5d85279c7619a6bd9d12e1697b7c3dabcc7c9cfb9728c0fc1",
+      "source_index": [
+        25,
+        11
+      ]
+    },
+    {
+      "ref": "Moed Katan 13b:13",
+      "text_sha256": "26e4834b8aca3f1b8ae71531844c4189ca6958adc62f646330479323b345738c",
+      "source_index": [
+        25,
+        12
+      ]
+    },
+    {
+      "ref": "Moed Katan 14a:11",
+      "text_sha256": "fcece22225031edb0f2a97867c08125038c08a4cd0b278abc2840a73744c0674",
+      "source_index": [
+        26,
+        10
+      ]
+    },
+    {
+      "ref": "Moed Katan 14a:12",
+      "text_sha256": "f5b97f31a717a6d028e4b994c93d6165f0f869c7857e822e8781d1d46dd4cf09",
+      "source_index": [
+        26,
+        11
+      ]
+    },
+    {
+      "ref": "Moed Katan 14a:13",
+      "text_sha256": "0e6d5f33ea4b84a394a8cecc33f41424424f15aa4ca2e4688cb23e85f46a0cf3",
+      "source_index": [
+        26,
+        12
+      ]
+    },
+    {
+      "ref": "Moed Katan 14a:14",
+      "text_sha256": "fbdb4b1880bf2dc0e4ce2a5c6001d59bd869f6d07066c8166270279f16d35b92",
+      "source_index": [
+        26,
+        13
+      ]
+    },
+    {
+      "ref": "Moed Katan 14a:15",
+      "text_sha256": "b186579b267fd80ec792e495a5e95934a819de4ce7b7029594bc401c9c2948ca",
+      "source_index": [
+        26,
+        14
+      ]
+    },
+    {
+      "ref": "Moed Katan 14a:16",
+      "text_sha256": "daad1edb88c466bf318d89ba95e2f1e5c73056509bce308dfecbef49af4eb092",
+      "source_index": [
+        26,
+        15
+      ]
+    },
+    {
+      "ref": "Moed Katan 14a:17",
+      "text_sha256": "6cbd392f35b46826373d280458499d4bd54c7b1d47a767ea5837235d8cf2b319",
+      "source_index": [
+        26,
+        16
+      ]
+    },
+    {
+      "ref": "Moed Katan 14b:1",
+      "text_sha256": "8b49000cb2d74bd75991cbd03ba7c959b3889d0c7cebc30a96079e4991a45b59",
+      "source_index": [
+        27,
+        0
+      ]
+    },
+    {
+      "ref": "Moed Katan 14b:2",
+      "text_sha256": "60a04fdc7f7a93623503010e68735d25779b6f5dd816be6a4f88625288df19de",
+      "source_index": [
+        27,
+        1
+      ]
+    },
+    {
+      "ref": "Moed Katan 14b:3",
+      "text_sha256": "c79ea29ab01cd0660e786204795c8f36209c6ed7205be672ab62b2fb14fe4aca",
+      "source_index": [
+        27,
+        2
+      ]
+    },
+    {
+      "ref": "Moed Katan 14b:4",
+      "text_sha256": "5e40f03f623581aaffa8845c9e0475ce817fe4ecd20f50599423dc7b2a37a740",
+      "source_index": [
+        27,
+        3
+      ]
+    },
+    {
+      "ref": "Moed Katan 14b:5",
+      "text_sha256": "bafd4323f040c4e48b3d1cad104afd2d9e27c9c84c25065df2d955b759d5d95a",
+      "source_index": [
+        27,
+        4
+      ]
+    },
+    {
+      "ref": "Moed Katan 14b:6",
+      "text_sha256": "9686f588ff23e114aa6b723e72de2585a43e555133507db3c7e04af90b1d10a2",
+      "source_index": [
+        27,
+        5
+      ]
+    },
+    {
+      "ref": "Moed Katan 14b:7",
+      "text_sha256": "c79ea29ab01cd0660e786204795c8f36209c6ed7205be672ab62b2fb14fe4aca",
+      "source_index": [
+        27,
+        6
+      ]
+    },
+    {
+      "ref": "Moed Katan 15a:15",
+      "text_sha256": "c1f42311712e3f3264222f007cbf945b4acc75ccf9022390528bcd6529f3bdce",
+      "source_index": [
+        28,
+        14
+      ]
+    },
+    {
+      "ref": "Moed Katan 15a:16",
+      "text_sha256": "928a1e4678b7616371fcccd5b406787774fd095474c48b74d36ac1c0003f79c2",
+      "source_index": [
+        28,
+        15
+      ]
+    },
+    {
+      "ref": "Moed Katan 15a:17",
+      "text_sha256": "edadabff7c0ce8509535bd7a3357fe003bb3fa4725ddd2953d9524e537f41570",
+      "source_index": [
+        28,
+        16
+      ]
+    },
+    {
+      "ref": "Moed Katan 15b:3",
+      "text_sha256": "ad9d170f885c413c3ee52bb12547afafcd709f28036618d299a6eb07d68175c0",
+      "source_index": [
+        29,
+        2
+      ]
+    },
+    {
+      "ref": "Moed Katan 15b:4",
+      "text_sha256": "aa9c4e1c3070604a61cc3210fe9d32705300a6096e2d9dc7ee6e724ddb026860",
+      "source_index": [
+        29,
+        3
+      ]
+    }
+  ],
+  "coverage_change_coordinates": [
+    {
+      "ref": "Moed Katan 13b:10",
+      "layer": "attributions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. attributions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.vow.a",
+          "mk.r037.changed.a",
+          "mk.r037.still.a",
+          "mk.r037.difficult.a"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. attributions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.changed.a",
+          "mk.r037.difficult.a",
+          "mk.r037.still.a",
+          "mk.r037.vow.a",
+          "mk.r047.vow_hilka.a",
+          "mk.r047.vow_targis.a",
+          "mk.r047.vow_tisni.a"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:10",
+      "layer": "claims",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. claims source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.vow.c",
+          "mk.r037.changed.c",
+          "mk.r037.difficult.c"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. claims surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.changed.c",
+          "mk.r037.difficult.c",
+          "mk.r037.vow.c",
+          "mk.r047.vow_hilka.c",
+          "mk.r047.vow_targis.c",
+          "mk.r047.vow_tisni.c"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:10",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.still_objection",
+          "mk.r037.difficult_outcome"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.difficult_outcome",
+          "mk.r037.still_objection",
+          "mk.r047.changed_support_vow_hilka",
+          "mk.r047.changed_support_vow_targis",
+          "mk.r047.changed_support_vow_tisni"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:10",
+      "layer": "positions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. positions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.vow.p",
+          "mk.r037.changed.p",
+          "mk.r037.difficult.p"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. positions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.changed.p",
+          "mk.r037.difficult.p",
+          "mk.r037.vow.p",
+          "mk.r047.vow_hilka.p",
+          "mk.r047.vow_targis.p",
+          "mk.r047.vow_tisni.p"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:10",
+      "layer": "utterances",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. utterances source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.vow.u",
+          "mk.r037.changed.u",
+          "mk.r037.still.u",
+          "mk.r037.difficult.u"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. utterances surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.changed.u",
+          "mk.r037.difficult.u",
+          "mk.r037.still.u",
+          "mk.r037.vow.u",
+          "mk.r047.vow_hilka.u",
+          "mk.r047.vow_targis.u",
+          "mk.r047.vow_tisni.u"
+        ],
+        "segment_id": "seg_02303096d763620936c9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:11",
+      "layer": "attributions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. attributions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.market.a",
+          "mk.r037.challenge.a",
+          "mk.r037.portico.a"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. attributions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.challenge.a",
+          "mk.r037.market.a.review054",
+          "mk.r037.portico.a"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:11",
+      "layer": "claims",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. claims source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.market.c",
+          "mk.r037.portico.c"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. claims surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.market.c.review054",
+          "mk.r037.portico.c"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:11",
+      "layer": "positions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. positions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.market.p",
+          "mk.r037.portico.p"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. positions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.market.p.review054",
+          "mk.r037.portico.p"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:11",
+      "layer": "utterances",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. utterances source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.market.u",
+          "mk.r037.challenge.u",
+          "mk.r037.portico.u"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. utterances surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.challenge.u",
+          "mk.r037.market.u.review054",
+          "mk.r037.portico.u"
+        ],
+        "segment_id": "seg_42db7a8c52244fda83d9"
+      }
+    },
+    {
+      "ref": "Moed Katan 14a:12",
+      "layer": "attributions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read through15a:25. Preserve Rava three-purpose distinctions, initial baraita wording, all rejected interpretations and intermediate profit assumption, and explicit reformulation of who concedes what. Do not invent a named mapping merely from מר/מר order. attributions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r039.tour.a",
+          "mk.r039.food.a",
+          "mk.r039.profit.a",
+          "mk.r039.compare.a"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. attributions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r039.compare.a",
+          "mk.r039.food.a",
+          "mk.r039.profit.a",
+          "mk.r039.tour.a",
+          "mk.r047.profit_food.a",
+          "mk.r047.profit_tour.a"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      }
+    },
+    {
+      "ref": "Moed Katan 14a:12",
+      "layer": "claims",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read through15a:25. Preserve Rava three-purpose distinctions, initial baraita wording, all rejected interpretations and intermediate profit assumption, and explicit reformulation of who concedes what. Do not invent a named mapping merely from מר/מר order. claims source pass: supported records retained.",
+        "record_ids": [
+          "mk.r039.tour.c",
+          "mk.r039.food.c",
+          "mk.r039.profit.c",
+          "mk.r039.compare.c"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. claims surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r039.compare.c",
+          "mk.r039.food.c",
+          "mk.r039.profit.c",
+          "mk.r039.tour.c",
+          "mk.r047.profit_food.c",
+          "mk.r047.profit_tour.c"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      }
+    },
+    {
+      "ref": "Moed Katan 14a:12",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read through15a:25. Preserve Rava three-purpose distinctions, initial baraita wording, all rejected interpretations and intermediate profit assumption, and explicit reformulation of who concedes what. Do not invent a named mapping merely from מר/מר order. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r039.rava_qualifies"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r039.rava_qualifies",
+          "mk.r047.profit_food_analogy",
+          "mk.r047.profit_tour_analogy"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      }
+    },
+    {
+      "ref": "Moed Katan 14a:12",
+      "layer": "positions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read through15a:25. Preserve Rava three-purpose distinctions, initial baraita wording, all rejected interpretations and intermediate profit assumption, and explicit reformulation of who concedes what. Do not invent a named mapping merely from מר/מר order. positions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r039.tour.p",
+          "mk.r039.food.p",
+          "mk.r039.profit.p",
+          "mk.r039.compare.p"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. positions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r039.compare.p",
+          "mk.r039.food.p",
+          "mk.r039.profit.p",
+          "mk.r039.tour.p",
+          "mk.r047.profit_food.p",
+          "mk.r047.profit_tour.p"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      }
+    },
+    {
+      "ref": "Moed Katan 14a:12",
+      "layer": "utterances",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read through15a:25. Preserve Rava three-purpose distinctions, initial baraita wording, all rejected interpretations and intermediate profit assumption, and explicit reformulation of who concedes what. Do not invent a named mapping merely from מר/מר order. utterances source pass: supported records retained.",
+        "record_ids": [
+          "mk.r039.tour.u",
+          "mk.r039.food.u",
+          "mk.r039.profit.u",
+          "mk.r039.compare.u"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. utterances surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r039.compare.u",
+          "mk.r039.food.u",
+          "mk.r039.profit.u",
+          "mk.r039.tour.u",
+          "mk.r047.profit_food.u",
+          "mk.r047.profit_tour.u"
+        ],
+        "segment_id": "seg_6611fbd9872970361bca"
+      }
+    },
+    {
+      "ref": "Moed Katan 15b:4",
+      "layer": "attributions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Readthrough16a:23. Preserve study/herem exceptions and repeated source occurrences, exact purification categories, biblical voices, each separate unresolved tearing/bed/labor question, Bar Kappara cross-page teaching and rejected broad comparison before the accepted labor proof. attributions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r043.repeat.a",
+          "mk.r043.leperlabor.a",
+          "mk.r043.laborend.a"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. attributions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r043.laborend.a",
+          "mk.r043.leperlabor.a",
+          "mk.r043.repeat.a",
+          "mk.r047.teaching.a"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      }
+    },
+    {
+      "ref": "Moed Katan 15b:4",
+      "layer": "claims",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Readthrough16a:23. Preserve study/herem exceptions and repeated source occurrences, exact purification categories, biblical voices, each separate unresolved tearing/bed/labor question, Bar Kappara cross-page teaching and rejected broad comparison before the accepted labor proof. claims source pass: supported records retained.",
+        "record_ids": [
+          "mk.r043.repeat.c",
+          "mk.r043.laborend.c"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. claims surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r043.laborend.c",
+          "mk.r043.repeat.c",
+          "mk.r047.teaching.c"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      }
+    },
+    {
+      "ref": "Moed Katan 15b:4",
+      "layer": "positions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Readthrough16a:23. Preserve study/herem exceptions and repeated source occurrences, exact purification categories, biblical voices, each separate unresolved tearing/bed/labor question, Bar Kappara cross-page teaching and rejected broad comparison before the accepted labor proof. positions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r043.repeat.p",
+          "mk.r043.laborend.p"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. positions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r043.laborend.p",
+          "mk.r043.repeat.p",
+          "mk.r047.teaching.p"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      }
+    },
+    {
+      "ref": "Moed Katan 15b:4",
+      "layer": "utterances",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Readthrough16a:23. Preserve study/herem exceptions and repeated source occurrences, exact purification categories, biblical voices, each separate unresolved tearing/bed/labor question, Bar Kappara cross-page teaching and rejected broad comparison before the accepted labor proof. utterances source pass: supported records retained.",
+        "record_ids": [
+          "mk.r043.repeat.u",
+          "mk.r043.leperlabor.u",
+          "mk.r043.laborend.u"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. utterances surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r043.laborend.u",
+          "mk.r043.leperlabor.u",
+          "mk.r043.repeat.u",
+          "mk.r047.teaching.u"
+        ],
+        "segment_id": "seg_7640c0c60646b29d660e"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:8",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.why_objection"
+        ],
+        "segment_id": "seg_816c4baef0558783e52a"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.why_objection",
+          "mk.r047.wet_support"
+        ],
+        "segment_id": "seg_816c4baef0558783e52a"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:2",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.tear_objection"
+        ],
+        "segment_id": "seg_900b2d87428bd73b6546"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.tear_objection.review054"
+        ],
+        "segment_id": "seg_900b2d87428bd73b6546"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:1",
+      "layer": "claims",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. claims source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.child.c"
+        ],
+        "segment_id": "seg_9390df137ab7671adbad"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. claims surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.child.c.review054"
+        ],
+        "segment_id": "seg_9390df137ab7671adbad"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:1",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "none_found_after_pass",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. edges source pass: no additional independent object found.",
+        "record_ids": [],
+        "segment_id": "seg_9390df137ab7671adbad"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r047.child_objection",
+          "mk.r047.converse_support"
+        ],
+        "segment_id": "seg_9390df137ab7671adbad"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:1",
+      "layer": "positions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. positions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.child.p"
+        ],
+        "segment_id": "seg_9390df137ab7671adbad"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. positions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.child.p.review054"
+        ],
+        "segment_id": "seg_9390df137ab7671adbad"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:7",
+      "layer": "attributions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. attributions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.question2.a",
+          "mk.r040.mixed2.a"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. attributions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed2.a.review054",
+          "mk.r040.question2.a"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:7",
+      "layer": "claims",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. claims source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.mixed2.c"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. claims surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed2.c.review054"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:7",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.question2_objection",
+          "mk.r040.mixed2_answer"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed2_answer.review054",
+          "mk.r040.question2_objection"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:7",
+      "layer": "positions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. positions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.mixed2.p"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. positions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed2.p.review054"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:7",
+      "layer": "utterances",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. utterances source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.question2.u",
+          "mk.r040.mixed2.u"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. utterances surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed2.u.review054",
+          "mk.r040.question2.u"
+        ],
+        "segment_id": "seg_a9b6650f1694e99b5bf5"
+      }
+    },
+    {
+      "ref": "Moed Katan 14a:16",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.prison_reason",
+          "mk.r040.infer_qualifies"
+        ],
+        "segment_id": "seg_c7c330cae9ab774c1985"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.infer_qualifies",
+          "mk.r040.prison_reason",
+          "mk.r047.child_objection",
+          "mk.r047.converse_support"
+        ],
+        "segment_id": "seg_c7c330cae9ab774c1985"
+      }
+    },
+    {
+      "ref": "Moed Katan 14a:17",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "none_found_after_pass",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. edges source pass: no additional independent object found.",
+        "record_ids": [],
+        "segment_id": "seg_dacf54ea2903b50ad3e2"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r047.child_objection",
+          "mk.r047.converse_support"
+        ],
+        "segment_id": "seg_dacf54ea2903b50ad3e2"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:3",
+      "layer": "attributions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. attributions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.question.a",
+          "mk.r040.mixed.a"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. attributions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed.a.review054",
+          "mk.r040.question.a"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:3",
+      "layer": "claims",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. claims source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.mixed.c"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "claims",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. claims surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed.c.review054"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:3",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.question_objection",
+          "mk.r040.mixed_answer"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed_answer.review054",
+          "mk.r040.question_objection"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:3",
+      "layer": "positions",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. positions source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.mixed.p"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. positions surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed.p.review054"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      }
+    },
+    {
+      "ref": "Moed Katan 14b:3",
+      "layer": "utterances",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read14a–15a continuation. Retain two Shmuel transmissions and explicit alternative transmitters, birth timing, prison analogy, opposed use of repeated mourning-category proof, both negative inferences and both Rav Ashi objections. No manufactured retraction or child mourning obligation. utterances source pass: supported records retained.",
+        "record_ids": [
+          "mk.r040.question.u",
+          "mk.r040.mixed.u"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "utterances",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. utterances surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r040.mixed.u.review054",
+          "mk.r040.question.u"
+        ],
+        "segment_id": "seg_f5f8771b6ea6d6ecc044"
+      }
+    },
+    {
+      "ref": "Moed Katan 13b:12",
+      "layer": "edges",
+      "old": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Read13b through14a continuation. Preserve unassigned paired definitions and baraita support, all self-imposed city/trade examples, grain technical uncertainty, conditional impurity response, unresolved vow challenge, market visibility/occasion rules and chapter marker. edges source pass: supported records retained.",
+        "record_ids": [
+          "mk.r037.only_objection"
+        ],
+        "segment_id": "seg_f613330683d6f8de2d86"
+      },
+      "new": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "edges",
+        "proposal_execution": {
+          "agent_id": "/root",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Targeted MK054 source reread: preserve named Rav Ashi replies, anonymous narration/reported Rav Huna holder, repeated teaching permission, atomic relation endpoints and conditional argument stages. Existing source window only; unresolved reader/granularity/attribution restrictions remain. edges surviving inventory reconciled.",
+        "record_ids": [
+          "mk.r037.only_objection.review054"
+        ],
+        "segment_id": "seg_f613330683d6f8de2d86"
+      }
+    }
+  ],
+  "new_core_credit": 0
+}

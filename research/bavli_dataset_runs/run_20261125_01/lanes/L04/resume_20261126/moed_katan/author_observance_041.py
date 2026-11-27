@@ -1,0 +1,46 @@
+"""Direct reading14b:8–20: mourning, ban and leprosy during the festival."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading
+a=ScopedReading('moed_katan','Moed Katan','mk.r041');c=a.claim;e=a.e
+refs=['14b:'+str(i) for i in range(8,21)]
+def q(*args,**kwargs):
+ v=a.question(*args,**kwargs);a.rows[-1]['content']['answer_set_status']='partial';a.rows[-1]['uncertainty'].append('Only local source replies and contested proofs; no exhaustive choice inventory.');return v
+a.structure('mourning',refs[:2],'Collective festival joy and private mourning')
+a.structure('ban',refs[2:10],'Ban observance, judicial proceedings and the reading of permitted release')
+a.structure('leprosy',refs[10:],'Leprosy observance: rejected proof and High Priest derivation')
+mourning=c('mourning','14b:8','אבל אינו נוהג אבילותו ברגל','A mourner does not practice mourning during the festival.')
+verse=c('verse','14b:8','שנאמר (דברים טז, יד) ושמחת בחגך','The source cites ושמחת בחגך as the basis.')
+prior=c('prior','14b:9','אי אבילות דמעיקרא הוא אתי עשה דרבים ודחי עשה דיחיד','For preexisting mourning, the collective positive command overrides the individual one.',conditions=['mourning began before festival'])
+new=c('new','14b:9','ואי אבילות דהשתא הוא לא אתי עשה דיחיד ודחי עשה דרבים','For mourning arising now, the individual command does not override the collective one.',conditions=['mourning begins during festival'])
+e('verse_support',verse,mourning,'support','14b:8');e('prior_reason',prior,mourning,'support','14b:9');e('new_reason',new,mourning,'support','14b:9')
+banq=q('banq','14b:10','מנודה מהו שינהוג נידויו ברגל','Does a person under a ban observe the ban during the festival?')
+judge=c('judge','14b:10','אמר רב יוסף תא שמע דנין דיני נפשות ודיני מכות ודיני ממונות','Rav Yosef adduces the rule that capital, corporal and financial cases are judged.',candidates=['רב יוסף'],role='quoted_authority',composition='composite',scope='Historical judicial source quoted in ban argument')
+disobey=c('disobey','14b:10','ואי לא ציית דינא משמתינן ליה','If one does not obey judgment, a ban is imposed.',scope='Consequence in Rav Yosef’s proof')
+inference=q('inference','14b:11','משומת ואתי מעיקרא אתי רגל דחי ליה השתא משמתינן ליה אנן','If the festival cancels an existing ban, would a new ban be imposed now?')
+examine=c('examine','14b:12','א"ל אביי ודלמא לעיוני בדיניה','Abaye suggests the rule may mean only examining the case.',candidates=['אביי'],mode='hypothetical',scope='Challenge to inference from adjudication to immediate implementation')
+killq=q('killq','14b:12','דאי לא תימא הכי דיני נפשות דקתני ה"נ דקטלין ליה','Otherwise, would the capital-case clause mean execution during the festival?',candidates=['אביי'])
+joy=c('joy','14b:13','והא קא מימנעי משמחת יום טוב','That would prevent participation in festival joy.',scope='Objection concerning the judges’ required abstention')
+akiva=c('akiva','14b:13','דתניא ר"ע אומר מנין לסנהדרין (שראו בא\') שהרגו את הנפש שאין טועמין כל אותו היום','Rabbi Akiva’s baraita says the Sanhedrin that executes a person does not eat all that day.',candidates=['רבי עקיבא'],role='quoted_authority',conditions=['court executed a person','that day'],uncertainty=['Parenthetical (שראו בא\') retained as printed, not silently normalized.'])
+blood=c('blood','14b:13','ת"ל (ויקרא יט, כו) לא תאכלו על הדם','The baraita derives this from לא תאכלו על הדם.')
+only=c('only','14b:14','אלא לעיוני בדיניה ה"נ לעיוני בדיניה','The proposed conclusion is that both cases refer only to examining the case.',mode='challenged',scope='Abaye-side interpretation, challenged by delay objection')
+delayq=q('delayq','14b:14','א"ל אם כן נמצאת מענה את דינו','Would that not prolong the defendant’s judgment?')
+schedule=c('schedule','14b:15','אתו מצפרא ומעייני בדיניה ועיילי ואכלי ושתו כולי יומא והדר אתו בשקיעת החמה וגמרינן לדיניה וקטלו ליה','The reply describes morning examination, eating and drinking during the day, then returning near sunset to conclude and carry out the sentence.',composition='composite',scope='Historical legal argument preserving its sequence, not contemporary procedural advice')
+e('judge_proof',judge,banq,'answer','14b:10');e('inference_reason',inference,disobey,'support','14b:11');e('examine_objection',examine,judge,'objection','14b:12');e('joy_objection',joy,killq,'support','14b:13');e('blood_support',blood,akiva,'support','14b:13');e('akiva_support',akiva,joy,'support','14b:13');e('only_answer',only,killq,'answer','14b:14');e('delay_objection',delayq,only,'objection','14b:14');e('schedule_answer',schedule,delayq,'answer','14b:15')
+abaye=c('abaye','14b:16','אמר אביי ת"ש ומנודה שהתירו לו חכמים','Abaye adduces the Mishnah’s category of the banned person whom the sages permitted.',candidates=['אביי'],role='quoted_authority',scope='Second proposed proof in ban-observance discussion')
+wordq=q('wordq','14b:17','אמר רבא מי קתני שהתירוהו חכמים','Rava asks whether the text says the sages actually released him.',candidates=['רבא'])
+word=c('word','14b:17','שהתירו לו חכמים קתני','It instead says that the sages permitted for him.',candidates=['רבא'],scope='Exact grammatical distinction in reply')
+reconcile=c('reconcile','14b:17','דאזל ופייסיה לבעל דיניה ואתי קמי דרבנן ושרו ליה','The case is one who appeased the opposing litigant and came before the sages, who released him.',conditions=['appeased opposing litigant','appeared before sages'],scope='Rava’s contextual account; no automatic lapse of ban inferred')
+e('abaye_answer',abaye,banq,'answer','14b:16');e('wordq_objection',wordq,abaye,'objection','14b:17');e('word_answer',word,wordq,'answer','14b:17');e('reconcile_explains',reconcile,word,'qualification','14b:17')
+leperq=q('leperq','14b:18','מצורע מהו שינהיג צרעתו ברגל','Does a leper observe leprosy restrictions during the festival?')
+proof=c('proof','14b:18','אמר אביי תא שמע והנזיר והמצורע מטומאתו לטהרתו','Abaye cites the nazir and leper moving from impurity to purity.',candidates=['אביי'],role='quoted_authority')
+impure=c('impure','14b:18','הא בימי טומאתו נהיג','He infers continued observance during impurity.',mode='challenged',scope='Inference from the Mishnah, not yet the final proof')
+notonly=c('notonly','14b:19','לא מיבעיא קאמר לא מיבעיא בימי טומאתו דלא נהיג','The reply proposes a not-only reading: in impurity he would not observe the restrictions.',mode='hypothetical',scope='Alternative reading defeating Abaye’s proof, not final ruling')
+delay=c('delay','14b:19','אבל לטהרתו ניגזור שמא ישהה קרבנותיו קמ"ל','For purification one might have prohibited lest offerings be delayed; the Mishnah teaches otherwise.',mode='hypothetical',scope='Counterfactual concern in the alternative reading')
+high=c('high','14b:20','אמר רבא ת"ש (ויקרא יג, מה) והצרוע לרבות כהן גדול','Rava adduces the derivation including the High Priest in leprosy observance.',candidates=['רבא'])
+analogy=c('analogy','14b:20','והא כה"ג דכל השנה כרגל לכולי עלמא דמי','The High Priest’s whole year is compared to the festival for everyone else.',scope='Local analogy, with specific cited mourning/service evidence')
+offering=c('offering','14b:20','דתנן כהן גדול מקריב אונן ואינו אוכל','The Mishnah says the High Priest offers while an onen but does not eat.',composition='composite')
+conclusion=c('conclusion','14b:20','שמע מינה נוהג צרעתו ברגל שמע מינה','The conclusion is that leprosy observance applies during the festival.')
+e('impure_answer',impure,leperq,'answer','14b:18');e('proof_support',proof,impure,'support','14b:18');e('notonly_objection',notonly,impure,'objection','14b:19');e('delay_explains',delay,notonly,'qualification','14b:19');e('offering_support',offering,analogy,'support','14b:20');e('high_support',high,conclusion,'support','14b:20');e('analogy_support',analogy,conclusion,'analogy','14b:20');e('conclusion_answer',conclusion,leperq,'answer','14b:20')
+a.save_window(refs,'resume_moed_katan_observance041.json','Readthrough15a:25. Preserve prior/new mourning distinction, contested ban proofs, full judicial timing sequence, parenthetical source wording, Rava grammatical qualification, rejected leprosy inference and final High Priest proof without making each intermediate statement a final ruling.','c08f6a1cef33d84d599aad7fd482822e0483a81f6099d1a423545f3336d544c6')

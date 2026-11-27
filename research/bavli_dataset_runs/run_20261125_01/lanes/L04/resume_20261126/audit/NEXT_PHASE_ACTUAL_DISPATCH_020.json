@@ -1,0 +1,39 @@
+{
+  "utc": "2026-11-27T11:38:21.000593+00:00",
+  "gates_before_launch": {
+    "MK047_root_intake_sha256": "6d6aa38d05f179bd7f9abc71943f3f83ea42994a7ef8b509ba49b96fcffb05b5",
+    "BB036_intake": "056",
+    "no_duplicate_dispatch": true
+  },
+  "actual_launches": [
+    {
+      "agent": "/root/mk_compare054",
+      "fork_turns": "none",
+      "role": "NONBLIND_COMPARATOR",
+      "snapshot": "e5f88150985e9541e2f1a5def9b2975ab102767f3a5b5b2fe05770b5d3ae12e0",
+      "reading": "0999da36b2aa03178d4e473d26fa26e346c2afe7ce8c63130b26c8af15e37e9d"
+    },
+    {
+      "agent": "/root/ta_source_review055",
+      "fork_turns": "none",
+      "role": "SOURCE_ONLY",
+      "job_sha256": "56b184adee73bf0bb185586419c42f72b395a9a761ede0d2fd8645b70d5ba81b",
+      "core_count": 30,
+      "producer_exposure": false
+    },
+    {
+      "agent": "/root/taanit_continuation_5",
+      "role": "EXISTING_SOLE_PRODUCER",
+      "owner": "L04/taanit_resume_20261126",
+      "epoch": 3,
+      "start_snapshot": "ac7c9ec619b963f05c6dc32c42e16511808f6256dea63937f5b5f8e5e96e5cf4",
+      "start_coverage": 697,
+      "next_source": "Taanit 24b:14",
+      "max_new_segments": 30,
+      "stop": "Earlier coherent boundary or cap then checkpoint/hold",
+      "new_window_review_state": "UNREVIEWED"
+    }
+  ],
+  "current015_modified": false,
+  "new_review_credit": 0
+}

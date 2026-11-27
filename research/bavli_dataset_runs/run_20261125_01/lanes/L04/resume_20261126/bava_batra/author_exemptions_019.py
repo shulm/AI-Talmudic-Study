@@ -1,0 +1,55 @@
+"""Explicit source reading: scholarly exemption proofs and communal water works."""
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scoped_reading import ScopedReading,r
+a=ScopedReading('bava_batra','Bava Batra','bb.r019');c=a.claim;q=a.question;e=a.e
+parent='7eaa64753d3d8aab49cf0676dd61fd56ca0f6e9deb6152a43b7c740d6d5c8e99'
+a.structure('wall_tax',['7b:14','7b:15','7b:16','8a:1'],'Scholars and city-wall assessment: Resh Lakish and Rabbi Yohanan’s scriptural readings')
+a.structure('head_tax',['8a:'+str(i) for i in range(2,6)],'Rav Nahman bar Yitzhak objects to taxing scholars with Torah, Prophets and Writings proofs')
+a.structure('water',['8a:6','8a:7'],'Orphans and scholars in communal protection and water expenditure')
+c('wall_levy','7b:14','רבי יהודה נשיאה רמא דשורא אדרבנן','Rabbi Yehuda Nesia imposed a city-wall levy on scholars.',scope='Narrated assessment event')
+exempt=c('exempt','7b:14','אמר ריש לקיש רבנן לא צריכי נטירותא','Resh Lakish says scholars do not require protection.',candidates=['ריש לקיש'],scope='Reason to exempt scholars from the wall levy; preserve source claim, not independent empirical assertion')
+verse=c('count_verse','7b:14','דכתיב (תהלים קלט, יח) אספרם מחול ירבון','Resh Lakish cites the verse saying that counting them exceeds the sand.',candidates=['ריש לקיש'],scope='Cited scriptural proof; biblical wording is not a separate maintained sage position')
+countq=q('count_q','7b:14','אספרם למאן','Whom does the verse count?',uncertainty=['Within discussion of Resh Lakish’s cited proof; the question itself lacks a fresh explicit speaker label.'])
+countbad=c('count_bad','7b:14','אילימא לצדיקים דנפישי מחלא','The proposed reading counts righteous people as more numerous than sand.',mode='rejected',scope='Rejected interpretation of the cited verse')
+israel=c('israel','7b:14','השתא כולהו ישראל כתיב בה  (בראשית כב, יז) כחול אשר על שפת הים צדיקים עצמם מחול ירבון','The objection contrasts the whole of Israel being compared to seaside sand with the claim that the righteous alone exceed sand.',scope='Anonymous objection to proposed reading',composition='composite')
+deeds=c('deeds','7b:15','אלא הכי קאמר אספרם למעשיהם של צדיקים מחול ירבון','The interpretation counts the deeds of the righteous as exceeding sand.',scope='Replacement interpretation of the proof verse')
+sand=c('sand','7b:15','ומה חול שמועט מגין על הים','Sand, though less numerous, protects against the sea.',scope='Source premise in the a fortiori argument')
+protection=c('protection','7b:15','מעשיהם של צדיקים שהם מרובים לא כל שכן שמגינים עליהם','The argument infers that the more numerous righteous deeds protect their practitioners.',scope='Source a fortiori inference, not independently established causal claim')
+e('israel_objection',israel,countbad,'objection','7b:14');e('deeds_correction',deeds,countbad,'correction','7b:15');e('deeds_answer',deeds,countq,'answer','7b:15');e('sand_support',sand,protection,'support','7b:15');e('deeds_support',deeds,protection,'support','7b:15');e('protection_support',protection,exempt,'support','7b:15');e('verse_support',verse,exempt,'support','7b:14')
+better=q('better_q','7b:16','אמר ליה מאי טעמא לא תימא ליה מהא','Rabbi Yohanan asks why the objection was not made from the following verse.',candidates=['רבי יוחנן'])
+torah=c('torah_wall','7b:16','אני חומה זו תורה','Rabbi Yohanan interprets “I am a wall” as Torah.',candidates=['רבי יוחנן'],scope='Rabbinic interpretation of cited Song of Songs wording')
+scholars=c('scholars_towers','8a:1','אלו ת"ח','Rabbi Yohanan’s preceding comparison of breasts to towers refers to scholars.',candidates=['רבי יוחנן'],naming_refs=['7b:16'],scope='Syntactic continuation of Rabbi Yohanan’s interpretation from preceding page')
+rlreading=c('rl_reading','8a:1','ור"ל סבר לה כדדרש רבא','The text explains that Resh Lakish follows Rava’s interpretation of this verse.',candidates=['ר"ל'],role='position_holder',uncertainty=['Anonymous report of alignment, not a direct Resh Lakish utterance.'])
+israelwall=c('israel_wall','8a:1','אני חומה זו כנסת ישראל','Rava interprets the wall as the congregation of Israel.',candidates=['רבא'],scope='Alternate interpretation explaining why Resh Lakish uses another proof')
+synagogues=c('synagogues','8a:1','ושדי כמגדלות אלו בתי כנסיות ובתי מדרשות','Rava interprets the towers as synagogues and study houses.',candidates=['רבא'],composition='composite')
+e('torah_answer',torah,better,'answer','7b:16');e('scholars_support',scholars,torah,'support','8a:1');e('israel_reading',israelwall,rlreading,'support','8a:1');e('synagogue_reading',synagogues,rlreading,'support','8a:1');e('reading_contrast',israelwall,torah,'distinction','8a:1')
+c('head_levy','8a:2','רב נחמן בר רב חסדא רמא כרגא ארבנן','Rav Nahman bar Rav Hisda imposed כרגא on scholars.',scope='Narrated levy event')
+violation=c('violation','8a:2','א"ל רב נחמן בר יצחק עברת אדאורייתא ואדנביאי ואדכתובי','Rav Nahman bar Yitzhak objects that this violates Torah, Prophets and Writings.',candidates=['רב נחמן בר יצחק'],composition='composite',scope='His scriptural objection to taxing scholars')
+torahproof=c('torah_proof','8a:3','אמר משה לפני הקב"ה רבונו של עולם אפילו בשעה שאתה מחבב עמים כל קדושיו יהיו בידך','The Torah exposition presents Moses asking that even when God favors nations, the holy ones remain in His hand.',scope='Moses as a figure within reported biblical exposition; no direct present-day position attributed to Moses')
+josef=c('josef','8a:3','תני רב יוסף אלו תלמידי חכמים שמכתתים רגליהם מעיר לעיר וממדינה למדינה ללמוד תורה','Rav Yosef teaches that those at His feet are scholars who travel between cities and lands to study Torah.',candidates=['רב יוסף'],scope='Quoted exegetical teaching')
+debate=c('debate','8a:3','ישא מדברותיך לישא וליתן בדבורותיו של מקום','The exposition interprets carrying His words as discussion of divine teachings.',scope='Continuation of Torah exposition; no new independent speaker assigned')
+ulla=c('ulla_aramaic','8a:4','אמר עולא פסוק זה בלשון ארמית נאמר','Ulla says this verse is expressed in Aramaic.',candidates=['עולא'],scope='His interpretive reading of the cited Hosea verse')
+allstudy=c('all_study','8a:4','אי תנו כולהו עתה אקבצם','Ulla interprets that if all study, God will now gather them.',candidates=['עולא'],conditions=['all study'],scope='Conditional prophetic interpretation')
+fewstudy=c('few_study','8a:4','ואם מעט מהם יחלו ממשא מלך ושרים','If only a few study, Ulla reads that they are relieved of the burden of king and princes.',candidates=['עולא'],conditions=['only a few study'],scope='Second branch of prophetic interpretation')
+ezra=c('ezra','8a:5','מנדה בלו והלך לא שליט למרמא עליהם','The Writings proof cites prohibition of imposing מנדה, בלו and הלך on them.',scope='Quoted Ezra wording in the scholars’ exemption argument; not an unqualified rule for all people',composition='composite')
+for key,quote,text in [('minda','מנדה זו מנת המלך','Rav Yehuda identifies מנדה as the king’s portion.'),('belo','בלו זו כסף גולגלתא','Rav Yehuda identifies בלו as the poll tax.'),('halakh','והלך זו ארנונא','Rav Yehuda identifies הלך as ארנונא.')]:
+    x=c(key,'8a:5',quote,text,candidates=['רב יהודה'],scope='Lexical explanation of cited tax categories');e(key+'_explain',x,ezra,'qualification','8a:5')
+for i,(x,ref) in enumerate([(torahproof,'8a:3'),(josef,'8a:3'),(debate,'8a:3'),(fewstudy,'8a:4'),(ezra,'8a:5')]):e('proof'+str(i),x,violation,'support',ref)
+c('new_water','8a:6','רב פפא רמא כריא חדתא איתמי','Rav Pappa assessed orphans for a new water excavation.',scope='Narrated assessment; source term כריא חדתא retained')
+waterq=q('water_q','8a:6','א"ל רב שישא בריה דרב אידי לרב פפא ודילמא לא מידויל','Rav Shisha son of Rav Idi asks Rav Pappa whether water might not be obtained.',candidates=['רב שישא בריה דרב אידי'])
+collect=c('collect','8a:6','מישקל שקילנא מנייהו','Rav Pappa says he collects from them.',candidates=['רב פפא'])
+success=c('success','8a:6','אי מידויל מידויל','If water is obtained, that benefit is secured.',candidates=['רב פפא'],conditions=['water obtained'])
+refund=c('refund','8a:6','ואי לא מהדרנא לה ניהלייהו','If no water is obtained, Rav Pappa will return the payment to them.',candidates=['רב פפא'],conditions=['no water obtained'])
+e('refund_answer',refund,waterq,'answer','8a:6');e('success_qualification',success,collect,'qualification','8a:6');e('refund_qualification',refund,collect,'qualification','8a:6')
+gates=c('gates','8a:7','אמר רב יהודה הכל לאגלי גפא אפילו מיתמי','Rav Yehuda includes everyone, even orphans, in the אגלי גפא assessment.',candidates=['רב יהודה'],scope='Communal protective works; printed technical phrase retained')
+exempt2=c('exempt2','8a:7','אבל רבנן לא צריכי נטירותא','Scholars are excepted because they do not require protection.',candidates=['רב יהודה'],scope='Exception within transmitted assessment ruling')
+water=c('water','8a:7','הכל לכריא פתיא אפילו מרבנן','Everyone, even scholars, contributes to כריא פתיא.',candidates=['רב יהודה'],scope='Communal water work; printed technical term retained')
+labor=c('labor','8a:7','ולא אמרן אלא דלא נפקי באכלוזא','This inclusion applies when people do not go out as a labor group.',conditions=['not collective physical labor'],scope='Anonymous qualification of scholar water-work obligation')
+laborout=c('labor_out','8a:7','אבל נפקי באכלוזא רבנן לאו בני מיפק באכלוזא נינהו','When the public goes out in a labor group, scholars do not go out with it.',conditions=['collective physical labor'],scope='Anonymous exception for scholars; not a blanket water-work exemption')
+e('exempt2_qualification',exempt2,gates,'qualification','8a:7');e('labor_qualification',labor,water,'qualification','8a:7');e('laborout_qualification',laborout,water,'qualification','8a:7')
+for row in a.rows:
+    if row['layer']=='questions':row['content']['answer_set_status']='partial'
+a.save_window(['7b:14','7b:15','7b:16']+['8a:'+str(i) for i in range(1,8)],'exemptions019b.json','Read7b:14–8a:18 with8b:1–5 continuation before extraction. Preserve cross-page exegesis, rejected literal-count interpretation, quoted authorities, named transmitters and conditional orphan refund; source assertions are not modern empirical claims. Reconciliation reread covers all eight layers.',parent)
+

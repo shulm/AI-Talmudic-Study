@@ -1,0 +1,111 @@
+{
+  "review_status": "TARGETED_REVIEW_FINDINGS_NO_TRACTATE_ACCEPTANCE",
+  "reviewer": "/root/source_review_moed_marking",
+  "created_at_utc": "2026-11-26T20:55:17.677812+00:00",
+  "independent_freeze_sha256": "8da454f6786c0f043d8c8963df93184e653528eeff1b2b5de35f7672fb16af4a",
+  "immutable_snapshot_sha256": "8fc9976cc33de5e7d5bfec044e42b7d5eb329a0aad1e5d7f2b0209537b88a40e",
+  "target": "Moed Katan 5a:13–5b:1",
+  "context": "Moed Katan 5a:1–5b:20",
+  "sample_design": "targeted risk cohort; no probability estimate; no tractate acceptance",
+  "record_count": 117,
+  "layers": {
+    "attributions": 24,
+    "claims": 20,
+    "positions": 20,
+    "utterances": 24,
+    "edges": 23,
+    "questions": 4,
+    "structure": 2
+  },
+  "quote_offset_errors": [],
+  "findings": [
+    {
+      "id": "MM01",
+      "status": "confirmed_omission",
+      "refs": [
+        "Moed Katan 5a:18"
+      ],
+      "record_ids": [
+        "mk.r010.double.u",
+        "mk.r010.double.c"
+      ],
+      "exact_evidence": "א\"כ ליכתוב וטמא יקרא מאי וטמא טמא שמעת מינה תרתי",
+      "detail": "Explicit rhetorical question מאי וטמא טמא is absent from questions layer, whose segment coverage says completed/none_found_after_pass. Its argumentative substance is preserved in double.c, so this is a typed question omission, not lost conclusion.",
+      "suggested_revision": "Add explicit rhetorical question and answer relation to doubled-word resolution; preserve counterfactual one-word premise."
+    },
+    {
+      "id": "MM02",
+      "status": "confirmed_explicitness_overstatement",
+      "refs": [
+        "Moed Katan 5a:23",
+        "Moed Katan 5a:24",
+        "Moed Katan 5b:1"
+      ],
+      "record_ids": [
+        "mk.r010.student_example"
+      ],
+      "exact_evidence": "רבי ינאי הוה ליה ההוא תלמידא דכל יומא הוה מקשי ליה בשבתא דריגלא לא הוה מקשי ליה",
+      "detail": "student_example labels narrative→R. Yehoshua ben Levi homily support as source_explicit. This is a plausible thematic interpretation of juxtaposition/common Psalm; there is no explicit connector asserting that the anecdote proves that named homily. The cited evidence contains only the anecdote opening, not the verse application.",
+      "suggested_revision": "Retain plausible support as editorial_reconstruction, with 5b:1 evidence and an inference note."
+    },
+    {
+      "id": "MM03",
+      "status": "relation_refinement",
+      "refs": [
+        "Moed Katan 5a:24",
+        "Moed Katan 5b:1"
+      ],
+      "record_ids": [
+        "mk.r010.praise_narrative"
+      ],
+      "exact_evidence": "קרי עליה (תהלים נ, כג) ושם דרך אראנו בישע אלהים",
+      "detail": "The cross-page connection is captured, but relation qualification misdescribes a narrative continuation/application: praise does not restrict the earlier report.",
+      "suggested_revision": "Prefer continuation; keep verse application content. No narrative omission claimed."
+    },
+    {
+      "id": "MM04",
+      "status": "attribution_uncertainty",
+      "refs": [
+        "Moed Katan 5a:14",
+        "Moed Katan 5a:15"
+      ],
+      "record_ids": [
+        "mk.r010.analogy_q.a",
+        "mk.r010.tradition.a",
+        "mk.r010.mark_tradition.a"
+      ],
+      "exact_evidence": "א\"ל רבינא לרב אשי הא מקמי דליתי יחזקאל מאן אמר וליטעמיך",
+      "detail": "Anonymous treatment of reply avoids fabricated explicit attribution, but omits plausible Rav Ashi conversational candidate. Source itself does not reintroduce respondent by name.",
+      "suggested_revision": "Record ambiguity/inferred respondent Rav Ashi if schema permits; do not turn this into an explicit named transmission."
+    },
+    {
+      "id": "MM05",
+      "status": "graph_refinement",
+      "refs": [
+        "Moed Katan 5a:15",
+        "Moed Katan 5a:16"
+      ],
+      "record_ids": [
+        "mk.r010.trad_analogy",
+        "mk.r010.uzziel_support"
+      ],
+      "exact_evidence": "הכא נמי גמרא גמירי לה ואתא יחזקאל ואסמכה אקרא; וכן אמר רבי עוזיאל בר בריה דרבי עוזיאל רבה",
+      "detail": "trad_analogy uses generic support where explicit analogy is available. Uzziel agreement with Abbahu is retained in claim wording but graph connects only to lemma; no false dispute.",
+      "suggested_revision": "Prefer analogy for trad_analogy; optionally encode same-reading support between Uzziel and Abbahu. Not an omitted substantive claim."
+    }
+  ],
+  "retained_correctly": [
+    "13 source segments have primary structure, including 5b:1 narrative tail.",
+    "Named alternative derivations are separate; no invented practical disagreement.",
+    "Rav Hisda is quoted authority, not holder of grave-marking reply.",
+    "Prior tradition versus Ezekiel scriptural support is preserved for both rules.",
+    "Abbahu/Uzziel, anonymous baraita prayer claim, double-word resolution are retained.",
+    "Yannai student narrative, festival exception, cross-page verse application and moral homily are present."
+  ],
+  "limitations": [
+    "Review is AI provisional and bounded, not human certification.",
+    "Not a probability sample; no recall/precision or full-tractate acceptance.",
+    "Question answer_set_status none despite answer edges is a schema-convention uncertainty, not independently declared erroneous.",
+    "No production/source writes performed."
+  ]
+}

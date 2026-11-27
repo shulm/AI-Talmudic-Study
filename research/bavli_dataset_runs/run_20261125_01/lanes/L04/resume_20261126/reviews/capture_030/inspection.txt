@@ -1,0 +1,1187 @@
+
+### Taanit 7b:6
+אמר רב חסדא אין הגשמים נעצרין אלא בשביל ביטול תרומות ומעשרות שנאמר ציה גם חום יגזלו מימי שלג מאי משמע תנא דבי רבי ישמעאל בשביל דברים שצויתי אתכם בימות החמה ולא עשיתם יגזלו מכם מימי שלג בימות הגשמים
+R ta101.structure.0001 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Withholding rain for neglected tithes and seasonal exegesis"}
+R ta101.utterances.0001 utterances {"composition": "atomic", "discourse_role": "causal teaching", "textual_voice": "רב חסדא"}
+R ta101.attributions.0001 attributions {"candidates": ["רב חסדא"], "role": "speaker", "scope": "ta101.utterances.0001", "surface": "רב חסדא", "transmission_chain": []}
+R ta101.claims.0001 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain is withheld because terumot and tithes are neglected.", "scope": "causal teaching"}
+R ta101.positions.0001 positions {"claim_id": "ta101.claims.0001", "conditions": [], "holder_candidates": ["רב חסדא"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0002 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0002 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0002", "surface": "", "transmission_chain": []}
+R ta101.edges.0001 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0002", "target_id": "ta101.claims.0001"}
+R ta101.utterances.0003 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0003 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0003", "surface": "", "transmission_chain": []}
+R ta101.questions.0001 questions {"answer_set_status": "partial", "conditions": [], "formulation": "How does the verse imply this?", "question_origin": "explicit"}
+R ta101.utterances.0004 utterances {"composition": "atomic", "discourse_role": "seasonal interpretation", "textual_voice": "תנא דבי רבי ישמעאל"}
+R ta101.attributions.0004 attributions {"candidates": ["תנא דבי רבי ישמעאל"], "role": "collective", "scope": "ta101.utterances.0004", "surface": "תנא דבי רבי ישמעאל", "transmission_chain": []}
+R ta101.claims.0002 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Because commands for summer were not performed, winter snow water is taken away.", "scope": "seasonal interpretation"}
+R ta101.positions.0002 positions {"claim_id": "ta101.claims.0002", "conditions": [], "holder_candidates": ["תנא דבי רבי ישמעאל"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0002 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0002", "target_id": "ta101.questions.0001"}
+R ta101.edges.0003 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0002", "target_id": "ta101.claims.0001"}
+P ta.resume011.school.summer claims {"assertion_mode": "asserted", "conditions": ["summer commandments unperformed"], "proposition": "The school of Rabbi Yishmael explains: because commandments for summer were not performed, snow waters are taken away in the rainy season.", "scope": "Taanit 7b:6 local discussion"}
+P ta.resume011.school.summer.a attributions {"candidates": [], "role": "collective", "scope": "ta.resume011.school.summer", "surface": "תנא דבי רבי ישמעאל", "transmission_chain": []}
+P ta.resume011.school.summer.p positions {"claim_id": "ta.resume011.school.summer", "conditions": ["summer commandments unperformed"], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.school.summer.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "school of Rabbi Yishmael"}
+P ta.resume011.structure.sins structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Neglected gifts, evil speech and brazenness"}
+P ta.resume011.tithes.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume011.school.summer", "target_id": "ta.resume011.tithes.derivation.q"}
+P ta.resume011.tithes.derivation.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "How does the verse imply this?", "question_origin": "explicit"}
+P ta.resume011.tithes.derivation.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume011.tithes.derivation.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume011.tithes.derivation.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "anonymous discussion"}
+P ta.resume011.tithes.drought claims {"assertion_mode": "asserted", "conditions": ["neglected terumot and tithes"], "proposition": "Rav Hisda attributes withholding rain to neglect of terumot and tithes.", "scope": "Taanit 7b:6 local discussion"}
+P ta.resume011.tithes.drought.a attributions {"candidates": ["Rav Hisda"], "role": "speaker", "scope": "ta.resume011.tithes.drought", "surface": "Rav Hisda", "transmission_chain": []}
+P ta.resume011.tithes.drought.p positions {"claim_id": "ta.resume011.tithes.drought", "conditions": ["neglected terumot and tithes"], "holder_candidates": ["Rav Hisda"], "local_status": "homiletic causal assertion", "question_id": null}
+P ta.resume011.tithes.drought.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Hisda"}
+P ta.resume011.tithes.explanation edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.school.summer", "target_id": "ta.resume011.tithes.drought"}
+P ta.resume011.tithes.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.tithes.verse", "target_id": "ta.resume011.tithes.drought"}
+P ta.resume011.tithes.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The same dryness/heat and snow-water verse is cited for neglected gifts.", "scope": "Taanit 7b:6 local discussion"}
+P ta.resume011.tithes.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume011.tithes.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume011.tithes.verse.p positions {"claim_id": "ta.resume011.tithes.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.tithes.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+
+### Taanit 7b:7
+אמר רבי שמעון בן פזי אין הגשמים נעצרין אלא בשביל מספרי לשון הרע שנאמר (משלי כה, כג) רוח צפון תחולל גשם ופנים נזעמים לשון סתר
+R ta101.structure.0002 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Withholding rain for slander"}
+R ta101.utterances.0005 utterances {"composition": "atomic", "discourse_role": "causal teaching", "textual_voice": "רבי שמעון בן פזי"}
+R ta101.attributions.0005 attributions {"candidates": ["רבי שמעון בן פזי"], "role": "speaker", "scope": "ta101.utterances.0005", "surface": "רבי שמעון בן פזי", "transmission_chain": []}
+R ta101.claims.0003 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain is withheld because of speakers of slander.", "scope": "causal teaching"}
+R ta101.positions.0003 positions {"claim_id": "ta101.claims.0003", "conditions": [], "holder_candidates": ["רבי שמעון בן פזי"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0006 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0006 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0006", "surface": "", "transmission_chain": []}
+R ta101.edges.0004 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0006", "target_id": "ta101.claims.0003"}
+P ta.resume011.slander.drought claims {"assertion_mode": "asserted", "conditions": ["evil speech"], "proposition": "Rabbi Shimon ben Pazi attributes withholding rain to speakers of evil speech.", "scope": "Taanit 7b:7 local discussion"}
+P ta.resume011.slander.drought.a attributions {"candidates": ["Rabbi Shimon ben Pazi"], "role": "speaker", "scope": "ta.resume011.slander.drought", "surface": "Rabbi Shimon ben Pazi", "transmission_chain": []}
+P ta.resume011.slander.drought.p positions {"claim_id": "ta.resume011.slander.drought", "conditions": ["evil speech"], "holder_candidates": ["Rabbi Shimon ben Pazi"], "local_status": "homiletic causal assertion", "question_id": null}
+P ta.resume011.slander.drought.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Shimon ben Pazi"}
+P ta.resume011.slander.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.slander.verse", "target_id": "ta.resume011.slander.drought"}
+P ta.resume011.slander.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Proverbs links a north wind and rain with angry faces and secret speech.", "scope": "Taanit 7b:7 local discussion"}
+P ta.resume011.slander.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume011.slander.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume011.slander.verse.p positions {"claim_id": "ta.resume011.slander.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.slander.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume011.structure.sins structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Neglected gifts, evil speech and brazenness"}
+
+### Taanit 7b:8
+אמר רב סלא אמר רב המנונא אין הגשמים נעצרין אלא בשביל עזי פנים שנאמר (ירמיהו ג, ג) וימנעו רביבים ומלקוש לא היה ומצח אשה זונה היה לך וגו' ואמר רב סלא אמר רב המנונא כל אדם שיש לו עזות פנים סוף נכשל בעבירה שנאמר ומצח אשה זונה היה לך רב נחמן אמר בידוע שנכשל בעבירה שנאמר היה לך ולא נאמר יהיה לך
+R ta101.structure.0003 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Impudence, withholding rain and past versus future sin"}
+R ta101.utterances.0007 utterances {"composition": "atomic", "discourse_role": "causal teaching", "textual_voice": "רב המנונא"}
+R ta101.attributions.0007 attributions {"candidates": ["רב המנונא"], "role": "speaker", "scope": "ta101.utterances.0007", "surface": "רב המנונא", "transmission_chain": ["רב סלא", "רב המנונא"]}
+R ta101.attributions.0008 attributions {"candidates": ["רב סלא"], "role": "transmitter", "scope": "ta101.utterances.0007", "surface": "רב סלא", "transmission_chain": ["רב סלא", "רב המנונא"]}
+R ta101.claims.0004 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain is withheld because of brazen people.", "scope": "causal teaching"}
+R ta101.positions.0004 positions {"claim_id": "ta101.claims.0004", "conditions": [], "holder_candidates": ["רב המנונא"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0008 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0009 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0008", "surface": "", "transmission_chain": []}
+R ta101.edges.0005 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0008", "target_id": "ta101.claims.0004"}
+R ta101.utterances.0009 utterances {"composition": "atomic", "discourse_role": "future consequence", "textual_voice": "רב המנונא"}
+R ta101.attributions.0010 attributions {"candidates": ["רב המנונא"], "role": "speaker", "scope": "ta101.utterances.0009", "surface": "רב המנונא", "transmission_chain": ["רב סלא", "רב המנונא"]}
+R ta101.attributions.0011 attributions {"candidates": ["רב סלא"], "role": "transmitter", "scope": "ta101.utterances.0009", "surface": "רב סלא", "transmission_chain": ["רב סלא", "רב המנונא"]}
+R ta101.claims.0005 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "A brazen person will eventually stumble in transgression.", "scope": "future consequence"}
+R ta101.positions.0005 positions {"claim_id": "ta101.claims.0005", "conditions": [], "holder_candidates": ["רב המנונא"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0010 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0012 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0010", "surface": "", "transmission_chain": []}
+R ta101.edges.0006 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0010", "target_id": "ta101.claims.0005"}
+R ta101.utterances.0011 utterances {"composition": "atomic", "discourse_role": "alternative temporal position", "textual_voice": "רב נחמן"}
+R ta101.attributions.0013 attributions {"candidates": ["רב נחמן"], "role": "speaker", "scope": "ta101.utterances.0011", "surface": "רב נחמן", "transmission_chain": []}
+R ta101.claims.0006 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "A brazen person is known already to have stumbled in transgression.", "scope": "alternative temporal position"}
+R ta101.positions.0006 positions {"claim_id": "ta101.claims.0006", "conditions": [], "holder_candidates": ["רב נחמן"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0012 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0014 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0012", "surface": "", "transmission_chain": []}
+R ta101.edges.0007 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0012", "target_id": "ta101.claims.0006"}
+R ta101.edges.0008 edges {"explicitness": "editorial_reconstruction", "relation": "objection", "source_id": "ta101.claims.0006", "target_id": "ta101.claims.0005"}
+P ta.resume011.brazen.drought claims {"assertion_mode": "asserted", "conditions": ["brazenness"], "proposition": "Rav Hamnuna, transmitted by Rav Salla, attributes withholding rain to brazen people.", "scope": "Taanit 7b:8 local discussion"}
+P ta.resume011.brazen.drought.a attributions {"candidates": ["Rav Hamnuna"], "role": "speaker", "scope": "ta.resume011.brazen.drought", "surface": "Rav Hamnuna", "transmission_chain": ["Rav Salla", "Rav Hamnuna"]}
+P ta.resume011.brazen.drought.p positions {"claim_id": "ta.resume011.brazen.drought", "conditions": ["brazenness"], "holder_candidates": ["Rav Hamnuna"], "local_status": "homiletic causal assertion", "question_id": null}
+P ta.resume011.brazen.drought.tx0 attributions {"candidates": ["Rav Salla"], "role": "transmitter", "scope": "ta.resume011.brazen.drought", "surface": "Rav Salla", "transmission_chain": ["Rav Salla", "Rav Hamnuna"]}
+P ta.resume011.brazen.drought.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Hamnuna"}
+P ta.resume011.brazen.future claims {"assertion_mode": "asserted", "conditions": ["brazenness"], "proposition": "In another Rav Salla transmission, Rav Hamnuna says a brazen person will eventually stumble in transgression.", "scope": "Taanit 7b:8 local discussion"}
+P ta.resume011.brazen.future.a attributions {"candidates": ["Rav Hamnuna"], "role": "speaker", "scope": "ta.resume011.brazen.future", "surface": "Rav Hamnuna", "transmission_chain": ["Rav Salla", "Rav Hamnuna"]}
+P ta.resume011.brazen.future.p positions {"claim_id": "ta.resume011.brazen.future", "conditions": ["brazenness"], "holder_candidates": ["Rav Hamnuna"], "local_status": "source assertion about future transgression", "question_id": null}
+P ta.resume011.brazen.future.tx0 attributions {"candidates": ["Rav Salla"], "role": "transmitter", "scope": "ta.resume011.brazen.future", "surface": "Rav Salla", "transmission_chain": ["Rav Salla", "Rav Hamnuna"]}
+P ta.resume011.brazen.future.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Hamnuna"}
+P ta.resume011.brazen.future.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The forehead-of-a-harlot clause is cited.", "scope": "Taanit 7b:8 local discussion"}
+P ta.resume011.brazen.future.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume011.brazen.future.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume011.brazen.future.verse.p positions {"claim_id": "ta.resume011.brazen.future.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.brazen.future.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume011.brazen.past claims {"assertion_mode": "asserted", "conditions": ["brazenness"], "proposition": "Rav Nahman says such a person is known already to have stumbled in transgression.", "scope": "Taanit 7b:8 local discussion"}
+P ta.resume011.brazen.past.a attributions {"candidates": ["Rav Nahman"], "role": "speaker", "scope": "ta.resume011.brazen.past", "surface": "Rav Nahman", "transmission_chain": []}
+P ta.resume011.brazen.past.p positions {"claim_id": "ta.resume011.brazen.past", "conditions": ["brazenness"], "holder_candidates": ["Rav Nahman"], "local_status": "alternative to the preceding future formulation", "question_id": null}
+P ta.resume011.brazen.past.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Nahman"}
+P ta.resume011.brazen.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.brazen.verse", "target_id": "ta.resume011.brazen.drought"}
+P ta.resume011.brazen.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Jeremiah joins withheld rain and absent malkosh with the forehead of a harlot.", "scope": "Taanit 7b:8 local discussion"}
+P ta.resume011.brazen.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume011.brazen.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume011.brazen.verse.p positions {"claim_id": "ta.resume011.brazen.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.brazen.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume011.future.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.brazen.future.verse", "target_id": "ta.resume011.brazen.future"}
+P ta.resume011.past.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.past.tense", "target_id": "ta.resume011.brazen.past"}
+P ta.resume011.past.tense claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rav Nahman emphasizes past היה לך rather than future יהיה לך.", "scope": "Taanit 7b:8 local discussion"}
+P ta.resume011.past.tense.a attributions {"candidates": ["Rav Nahman"], "role": "speaker", "scope": "ta.resume011.past.tense", "surface": "Rav Nahman", "transmission_chain": []}
+P ta.resume011.past.tense.p positions {"claim_id": "ta.resume011.past.tense", "conditions": [], "holder_candidates": ["Rav Nahman"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.past.tense.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Nahman"}
+P ta.resume011.structure.sins structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Neglected gifts, evil speech and brazenness"}
+
+### Taanit 7b:9
+אמר רבה בר רב הונא כל אדם שיש לו עזות פנים מותר לקרותו רשע שנאמר (משלי כא, כט) העז איש רשע בפניו רב נחמן בר יצחק אמר מותר לשנאותו שנאמר (קהלת ח, א) ועז פניו ישונא אל תקרי ישונא אלא ישנא
+R ta101.structure.0004 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Calling the brazen wicked and hating them"}
+R ta101.utterances.0013 utterances {"composition": "atomic", "discourse_role": "permission", "textual_voice": "רבה בר רב הונא"}
+R ta101.attributions.0015 attributions {"candidates": ["רבה בר רב הונא"], "role": "speaker", "scope": "ta101.utterances.0013", "surface": "רבה בר רב הונא", "transmission_chain": []}
+R ta101.claims.0007 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "One may call a brazen person wicked.", "scope": "permission"}
+R ta101.positions.0007 positions {"claim_id": "ta101.claims.0007", "conditions": [], "holder_candidates": ["רבה בר רב הונא"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0014 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0016 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0014", "surface": "", "transmission_chain": []}
+R ta101.edges.0009 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0014", "target_id": "ta101.claims.0007"}
+R ta101.utterances.0015 utterances {"composition": "atomic", "discourse_role": "permission", "textual_voice": "רב נחמן בר יצחק"}
+R ta101.attributions.0017 attributions {"candidates": ["רב נחמן בר יצחק"], "role": "speaker", "scope": "ta101.utterances.0015", "surface": "רב נחמן בר יצחק", "transmission_chain": []}
+R ta101.claims.0008 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "One may hate a brazen person.", "scope": "permission"}
+R ta101.positions.0008 positions {"claim_id": "ta101.claims.0008", "conditions": [], "holder_candidates": ["רב נחמן בר יצחק"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0016 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0018 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0016", "surface": "", "transmission_chain": []}
+R ta101.edges.0010 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0016", "target_id": "ta101.claims.0008"}
+P ta.resume011.call.wicked claims {"assertion_mode": "asserted", "conditions": ["brazenness"], "proposition": "Rabbah bar Rav Huna permits calling a brazen person wicked.", "scope": "Taanit 7b:9 local discussion"}
+P ta.resume011.call.wicked.a attributions {"candidates": ["Rabbah bar Rav Huna"], "role": "speaker", "scope": "ta.resume011.call.wicked", "surface": "Rabbah bar Rav Huna", "transmission_chain": []}
+P ta.resume011.call.wicked.p positions {"claim_id": "ta.resume011.call.wicked", "conditions": ["brazenness"], "holder_candidates": ["Rabbah bar Rav Huna"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.call.wicked.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbah bar Rav Huna"}
+P ta.resume011.hate.brazen claims {"assertion_mode": "asserted", "conditions": ["brazenness"], "proposition": "Rav Nahman bar Yitzhak permits hating him.", "scope": "Taanit 7b:9 local discussion"}
+P ta.resume011.hate.brazen.a attributions {"candidates": ["Rav Nahman bar Yitzhak"], "role": "speaker", "scope": "ta.resume011.hate.brazen", "surface": "Rav Nahman bar Yitzhak", "transmission_chain": []}
+P ta.resume011.hate.brazen.p positions {"claim_id": "ta.resume011.hate.brazen", "conditions": ["brazenness"], "holder_candidates": ["Rav Nahman bar Yitzhak"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.hate.brazen.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Nahman bar Yitzhak"}
+P ta.resume011.hate.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.hate.reading", "target_id": "ta.resume011.hate.brazen"}
+P ta.resume011.hate.reading claims {"assertion_mode": "asserted", "conditions": [], "proposition": "His derivation rereads ישונא as ישנא.", "scope": "Taanit 7b:9 local discussion"}
+P ta.resume011.hate.reading.a attributions {"candidates": ["Rav Nahman bar Yitzhak"], "role": "speaker", "scope": "ta.resume011.hate.reading", "surface": "Rav Nahman bar Yitzhak", "transmission_chain": []}
+P ta.resume011.hate.reading.p positions {"claim_id": "ta.resume011.hate.reading", "conditions": [], "holder_candidates": ["Rav Nahman bar Yitzhak"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.hate.reading.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Nahman bar Yitzhak"}
+P ta.resume011.structure.sins structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Neglected gifts, evil speech and brazenness"}
+P ta.resume011.wicked.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.wicked.verse", "target_id": "ta.resume011.call.wicked"}
+P ta.resume011.wicked.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Proverbs describes the wicked man’s brazen face.", "scope": "Taanit 7b:9 local discussion"}
+P ta.resume011.wicked.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume011.wicked.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume011.wicked.verse.p positions {"claim_id": "ta.resume011.wicked.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.wicked.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+
+### Taanit 7b:10
+אמר רב קטינא אין הגשמים נעצרין אלא בשביל ביטול תורה שנאמר (קהלת י, יח) בעצלתים ימך המקרה בשביל עצלות שהיה בישראל שלא עסקו בתורה נעשה שונאו של הקב"ה מך ואין מך אלא עני שנאמר (ויקרא כז, ח) ואם מך הוא מערכך ואין מקרה אלא הקב"ה שנאמר (תהלים קד, ג) המקרה במים עליותיו
+R ta101.structure.0005 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Torah neglect and exegetical poverty"}
+R ta101.utterances.0017 utterances {"composition": "atomic", "discourse_role": "causal teaching", "textual_voice": "רב קטינא"}
+R ta101.attributions.0019 attributions {"candidates": ["רב קטינא"], "role": "speaker", "scope": "ta101.utterances.0017", "surface": "רב קטינא", "transmission_chain": []}
+R ta101.claims.0009 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain is withheld because Torah study is neglected.", "scope": "causal teaching"}
+R ta101.positions.0009 positions {"claim_id": "ta101.claims.0009", "conditions": [], "holder_candidates": ["רב קטינא"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0018 utterances {"composition": "composite", "discourse_role": "verse and word interpretations", "textual_voice": "anonymous"}
+R ta101.attributions.0020 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0018", "surface": "", "transmission_chain": []}
+R ta101.claims.0010 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The verse בעצלתים ימך המקרה is interpreted through Israel’s idleness in Torah study.", "scope": "verse and word interpretations"}
+R ta101.positions.0010 positions {"claim_id": "ta101.claims.0010", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0011 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The euphemistic שונאו של הקב\"ה becomes poor in this exposition.", "scope": "verse and word interpretations"}
+R ta101.positions.0011 positions {"claim_id": "ta101.claims.0011", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0012 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "מך means poor, supported by Leviticus 27:8.", "scope": "verse and word interpretations"}
+R ta101.positions.0012 positions {"claim_id": "ta101.claims.0012", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0013 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "מקרה refers to the Holy One, supported by Psalms 104:3.", "scope": "verse and word interpretations"}
+R ta101.positions.0013 positions {"claim_id": "ta101.claims.0013", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0011 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0018", "target_id": "ta101.claims.0009"}
+R ta101.edges.0058 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0005", "target_id": "ta101.structure.0006"}
+P ta.resume011.laziness.poverty claims {"assertion_mode": "asserted", "conditions": ["Israel’s neglect of Torah"], "proposition": "The exposition reads Ecclesiastes as Israel’s laziness in Torah making the enemy of the Holy One low/poor, preserving the source euphemism.", "scope": "Taanit 7b:10 local discussion"}
+P ta.resume011.laziness.poverty.a attributions {"candidates": ["Rav Ketina"], "role": "speaker", "scope": "ta.resume011.laziness.poverty", "surface": "Rav Ketina", "transmission_chain": []}
+P ta.resume011.laziness.poverty.p positions {"claim_id": "ta.resume011.laziness.poverty", "conditions": ["Israel’s neglect of Torah"], "holder_candidates": ["Rav Ketina"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.laziness.poverty.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Rav Ketina"}
+P ta.resume011.mak.poor claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The exposition equates מך with poor through Leviticus.", "scope": "Taanit 7b:10 local discussion"}
+P ta.resume011.mak.poor.a attributions {"candidates": ["Rav Ketina"], "role": "speaker", "scope": "ta.resume011.mak.poor", "surface": "Rav Ketina", "transmission_chain": []}
+P ta.resume011.mak.poor.p positions {"claim_id": "ta.resume011.mak.poor", "conditions": [], "holder_candidates": ["Rav Ketina"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.mak.poor.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Ketina"}
+P ta.resume011.mak.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.mak.poor", "target_id": "ta.resume011.laziness.poverty"}
+P ta.resume011.mekareh.god claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The exposition identifies מקרה with God through the verse about roofing chambers in water.", "scope": "Taanit 7b:10 local discussion"}
+P ta.resume011.mekareh.god.a attributions {"candidates": ["Rav Ketina"], "role": "speaker", "scope": "ta.resume011.mekareh.god", "surface": "Rav Ketina", "transmission_chain": []}
+P ta.resume011.mekareh.god.p positions {"claim_id": "ta.resume011.mekareh.god", "conditions": [], "holder_candidates": ["Rav Ketina"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.mekareh.god.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Ketina"}
+P ta.resume011.mekareh.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.mekareh.god", "target_id": "ta.resume011.laziness.poverty"}
+P ta.resume011.structure.torah structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Neglected Torah and the clearing sky"}
+P ta.resume011.torah.drought claims {"assertion_mode": "asserted", "conditions": ["neglect of Torah"], "proposition": "Rav Ketina attributes withholding rain to neglect of Torah.", "scope": "Taanit 7b:10 local discussion"}
+P ta.resume011.torah.drought.a attributions {"candidates": ["Rav Ketina"], "role": "speaker", "scope": "ta.resume011.torah.drought", "surface": "Rav Ketina", "transmission_chain": []}
+P ta.resume011.torah.drought.p positions {"claim_id": "ta.resume011.torah.drought", "conditions": ["neglect of Torah"], "holder_candidates": ["Rav Ketina"], "local_status": "homiletic causal assertion", "question_id": null}
+P ta.resume011.torah.drought.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Ketina"}
+P ta.resume011.torah.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.laziness.poverty", "target_id": "ta.resume011.torah.drought"}
+
+### Taanit 7b:11
+רב יוסף אמר מהכא (איוב לז, כא) ועתה לא ראו אור בהיר הוא בשחקים ורוח עברה ותטהרם ואין אור אלא תורה שנאמר (משלי ו, כג) כי נר מצוה ותורה אור בהיר הוא בשחקים תנא דבי ר' ישמעאל אפילו בשעה שרקיע נעשה בהורין בהורין להוריד טל ומטר רוח עברה ותטהרם
+R ta101.structure.0006 structure {"boundary": "open_both", "legacy_ids": [], "primary": true, "title": "Alternative proof for Torah neglect and clouds cleared away"}
+R ta101.utterances.0019 utterances {"composition": "composite", "discourse_role": "alternative proof", "textual_voice": "רב יוסף"}
+R ta101.attributions.0021 attributions {"candidates": ["רב יוסף"], "role": "speaker", "scope": "ta101.utterances.0019", "surface": "רב יוסף", "transmission_chain": []}
+R ta101.claims.0014 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Job 37:21 provides another proof for the preceding teaching.", "scope": "alternative proof"}
+R ta101.positions.0014 positions {"claim_id": "ta101.claims.0014", "conditions": [], "holder_candidates": ["רב יוסף"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0015 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "אור is interpreted as Torah, supported by Proverbs 6:23.", "scope": "alternative proof"}
+R ta101.positions.0015 positions {"claim_id": "ta101.claims.0015", "conditions": [], "holder_candidates": ["רב יוסף"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0012 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0019", "target_id": "ta101.claims.0009"}
+R ta101.utterances.0020 utterances {"composition": "atomic", "discourse_role": "cloud interpretation", "textual_voice": "תנא דבי ר' ישמעאל"}
+R ta101.attributions.0022 attributions {"candidates": ["תנא דבי ר' ישמעאל"], "role": "collective", "scope": "ta101.utterances.0020", "surface": "תנא דבי ר' ישמעאל", "transmission_chain": []}
+R ta101.claims.0016 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Even when the sky has formations ready to bring dew and rain, the wind passes and clears them.", "scope": "cloud interpretation"}
+R ta101.positions.0016 positions {"claim_id": "ta101.claims.0016", "conditions": [], "holder_candidates": ["תנא דבי ר' ישמעאל"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0013 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0016", "target_id": "ta101.claims.0014"}
+R ta101.edges.0058 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0005", "target_id": "ta101.structure.0006"}
+P ta.resume011.clearing.explains edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.cloud.clearing", "target_id": "ta.resume011.yosef.light"}
+P ta.resume011.cloud.clearing claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The school of Rabbi Yishmael teaches that even when the sky develops בהורין בהורין to give dew and rain, wind passes and clears it.", "scope": "Taanit 7b:11 local discussion"}
+P ta.resume011.cloud.clearing.a attributions {"candidates": [], "role": "collective", "scope": "ta.resume011.cloud.clearing", "surface": "תנא דבי ר' ישמעאל", "transmission_chain": []}
+P ta.resume011.cloud.clearing.p positions {"claim_id": "ta.resume011.cloud.clearing", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.cloud.clearing.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "school of Rabbi Yishmael"}
+P ta.resume011.structure.torah structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Neglected Torah and the clearing sky"}
+P ta.resume011.yosef.alternative edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.yosef.light", "target_id": "ta.resume011.torah.drought"}
+P ta.resume011.yosef.light claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rav Yosef offers Job’s failure to see light as another proof, identifying light with Torah through Proverbs.", "scope": "Taanit 7b:11 local discussion"}
+P ta.resume011.yosef.light.a attributions {"candidates": ["Rav Yosef"], "role": "speaker", "scope": "ta.resume011.yosef.light", "surface": "Rav Yosef", "transmission_chain": []}
+P ta.resume011.yosef.light.p positions {"claim_id": "ta.resume011.yosef.light", "conditions": [], "holder_candidates": ["Rav Yosef"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.yosef.light.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Rav Yosef"}
+
+### Taanit 7b:12
+אמר ר' אמי אין הגשמים נעצרין אלא בעון גזל שנאמר (איוב לו, לב) על כפים כסה אור בעון כפים כסה אור ואין כפים אלא חמס שנאמר (יונה ג, ח) ומן החמס אשר בכפיהם ואין אור אלא מטר שנאמר (איוב לז, יא) יפיץ ענן אורו
+R ta101.structure.0007 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Robbery as cause of withheld rain"}
+R ta101.utterances.0021 utterances {"composition": "atomic", "discourse_role": "causal teaching", "textual_voice": "ר' אמי"}
+R ta101.attributions.0023 attributions {"candidates": ["ר' אמי"], "role": "speaker", "scope": "ta101.utterances.0021", "surface": "ר' אמי", "transmission_chain": []}
+R ta101.claims.0017 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain is withheld because of robbery.", "scope": "causal teaching"}
+R ta101.positions.0017 positions {"claim_id": "ta101.claims.0017", "conditions": [], "holder_candidates": ["ר' אמי"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0022 utterances {"composition": "composite", "discourse_role": "scriptural derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0024 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0022", "surface": "", "transmission_chain": []}
+R ta101.claims.0018 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "כפים is interpreted as violence, supported by Jonah 3:8.", "scope": "scriptural derivation"}
+R ta101.positions.0018 positions {"claim_id": "ta101.claims.0018", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0019 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "אור is interpreted as rain, supported by Job 37:11.", "scope": "scriptural derivation"}
+R ta101.positions.0019 positions {"claim_id": "ta101.claims.0019", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0020 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Job 36:32 is read as covering light because of the sin of hands.", "scope": "scriptural derivation"}
+R ta101.positions.0020 positions {"claim_id": "ta101.claims.0020", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0014 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0022", "target_id": "ta101.claims.0017"}
+R ta101.edges.0059 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0007", "target_id": "ta101.structure.0008"}
+P ta.resume011.hands.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.palms.violence", "target_id": "ta.resume011.palms.cover"}
+P ta.resume011.light.rain claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Light here is read as rain, citing the cloud spreading its light.", "scope": "Taanit 7b:12 local discussion"}
+P ta.resume011.light.rain.a attributions {"candidates": ["Rabbi Ami"], "role": "speaker", "scope": "ta.resume011.light.rain", "surface": "Rabbi Ami", "transmission_chain": []}
+P ta.resume011.light.rain.p positions {"claim_id": "ta.resume011.light.rain", "conditions": [], "holder_candidates": ["Rabbi Ami"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.light.rain.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Ami"}
+P ta.resume011.palms.cover claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The exposition reads covering light as due to the sin of hands.", "scope": "Taanit 7b:12 local discussion"}
+P ta.resume011.palms.cover.a attributions {"candidates": ["Rabbi Ami"], "role": "speaker", "scope": "ta.resume011.palms.cover", "surface": "Rabbi Ami", "transmission_chain": []}
+P ta.resume011.palms.cover.p positions {"claim_id": "ta.resume011.palms.cover", "conditions": [], "holder_candidates": ["Rabbi Ami"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.palms.cover.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Ami"}
+P ta.resume011.palms.violence claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Hands are linked to violence through Jonah’s violence in their hands.", "scope": "Taanit 7b:12 local discussion"}
+P ta.resume011.palms.violence.a attributions {"candidates": ["Rabbi Ami"], "role": "speaker", "scope": "ta.resume011.palms.violence", "surface": "Rabbi Ami", "transmission_chain": []}
+P ta.resume011.palms.violence.p positions {"claim_id": "ta.resume011.palms.violence", "conditions": [], "holder_candidates": ["Rabbi Ami"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.palms.violence.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Ami"}
+P ta.resume011.rain.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.light.rain", "target_id": "ta.resume011.palms.cover"}
+P ta.resume011.robbery.drought claims {"assertion_mode": "asserted", "conditions": ["robbery"], "proposition": "Rabbi Ami attributes withholding rain to robbery.", "scope": "Taanit 7b:12 local discussion"}
+P ta.resume011.robbery.drought.a attributions {"candidates": ["Rabbi Ami"], "role": "speaker", "scope": "ta.resume011.robbery.drought", "surface": "Rabbi Ami", "transmission_chain": []}
+P ta.resume011.robbery.drought.p positions {"claim_id": "ta.resume011.robbery.drought", "conditions": ["robbery"], "holder_candidates": ["Rabbi Ami"], "local_status": "homiletic causal assertion", "question_id": null}
+P ta.resume011.robbery.drought.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Ami"}
+P ta.resume011.robbery.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.palms.cover", "target_id": "ta.resume011.robbery.drought"}
+P ta.resume011.structure.robbery structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Robbery, rain and prayer remedy"}
+
+### Taanit 7b:13
+מאי תקנתיה ירבה בתפלה שנאמר (איוב לו, לב) ויצו עליה במפגיע ואין פגיעה אלא תפלה שנאמר (ירמיהו ז, טז) ואתה אל תתפלל בעד העם הזה [וגו'] ואל תפגע בי
+R ta101.structure.0008 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Prayer as remedy"}
+R ta101.utterances.0023 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0025 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0023", "surface": "", "transmission_chain": []}
+R ta101.questions.0002 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is the remedy?", "question_origin": "explicit"}
+R ta101.utterances.0024 utterances {"composition": "atomic", "discourse_role": "remedy", "textual_voice": "anonymous"}
+R ta101.attributions.0026 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0024", "surface": "", "transmission_chain": []}
+R ta101.claims.0021 claims {"assertion_mode": "asserted", "conditions": ["Rain withheld in preceding robbery discussion."], "proposition": "Increase prayer.", "scope": "remedy"}
+R ta101.positions.0021 positions {"claim_id": "ta101.claims.0021", "conditions": ["Rain withheld in preceding robbery discussion."], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0015 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0021", "target_id": "ta101.questions.0002"}
+R ta101.utterances.0025 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0027 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0025", "surface": "", "transmission_chain": []}
+R ta101.edges.0016 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0025", "target_id": "ta101.claims.0021"}
+R ta101.edges.0059 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0007", "target_id": "ta101.structure.0008"}
+P ta.resume011.more.prayer claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The reply is to increase prayer.", "scope": "Taanit 7b:13 local discussion"}
+P ta.resume011.more.prayer.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume011.more.prayer", "surface": "anonymous", "transmission_chain": []}
+P ta.resume011.more.prayer.p positions {"claim_id": "ta.resume011.more.prayer", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.more.prayer.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous discussion"}
+P ta.resume011.prayer.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume011.more.prayer", "target_id": "ta.resume011.robbery.remedy.q"}
+P ta.resume011.prayer.derivation claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The argument reads מפגיע as prayer, using Jeremiah’s parallel prohibitions of prayer and intercession.", "scope": "Taanit 7b:13 local discussion"}
+P ta.resume011.prayer.derivation.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume011.prayer.derivation", "surface": "anonymous", "transmission_chain": []}
+P ta.resume011.prayer.derivation.p positions {"claim_id": "ta.resume011.prayer.derivation", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.prayer.derivation.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "anonymous discussion"}
+P ta.resume011.prayer.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume011.prayer.derivation", "target_id": "ta.resume011.more.prayer"}
+P ta.resume011.robbery.remedy.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is the remedy in this discussion?", "question_origin": "explicit"}
+P ta.resume011.robbery.remedy.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume011.robbery.remedy.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume011.robbery.remedy.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "anonymous discussion"}
+P ta.resume011.structure.robbery structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Robbery, rain and prayer remedy"}
+
+### Taanit 7b:14
+וא"ר אמי מאי דכתיב (קהלת י, י) אם קהה הברזל והוא לא פנים קלקל אם ראית רקיע שקיהה כברזל מלהוריד טל ומטר בשביל מעשה הדור שהן מקולקלין שנא' והוא לא פנים קלקל
+R ta101.structure.0009 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Ironlike sky and corrupted deeds"}
+R ta101.utterances.0026 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0028 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0026", "surface": "", "transmission_chain": []}
+R ta101.questions.0003 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is meant by Ecclesiastes 10:10?", "question_origin": "explicit"}
+R ta101.utterances.0027 utterances {"composition": "atomic", "discourse_role": "conditional interpretation", "textual_voice": "ר' אמי"}
+R ta101.attributions.0029 attributions {"candidates": ["ר' אמי"], "role": "speaker", "scope": "ta101.utterances.0027", "surface": "ר' אמי", "transmission_chain": []}
+R ta101.claims.0022 claims {"assertion_mode": "conditional", "conditions": ["Sky appears like iron, withholding dew and rain."], "proposition": "If the sky is dull as iron and withholds dew and rain, the generation’s corrupted deeds are the cause.", "scope": "conditional interpretation"}
+R ta101.positions.0022 positions {"claim_id": "ta101.claims.0022", "conditions": ["Sky appears like iron, withholding dew and rain."], "holder_candidates": ["ר' אמי"], "local_status": "conditional; local passage only", "question_id": null}
+R ta101.edges.0017 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0022", "target_id": "ta101.questions.0003"}
+R ta101.edges.0060 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0009", "target_id": "ta101.structure.0010"}
+P ta.resume011.corrupt.generation claims {"assertion_mode": "asserted", "conditions": ["sky withholds dew and rain"], "proposition": "An iron-dull sky withholding dew and rain is explained by the generation’s corrupt deeds.", "scope": "Taanit 7b:14 local discussion"}
+P ta.resume011.corrupt.generation.a attributions {"candidates": ["Rabbi Ami"], "role": "speaker", "scope": "ta.resume011.corrupt.generation", "surface": "Rabbi Ami", "transmission_chain": []}
+P ta.resume011.corrupt.generation.p positions {"claim_id": "ta.resume011.corrupt.generation", "conditions": ["sky withholds dew and rain"], "holder_candidates": ["Rabbi Ami"], "local_status": "homiletic conditional explanation", "question_id": null}
+P ta.resume011.corrupt.generation.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Rabbi Ami"}
+P ta.resume011.iron.sky.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Rabbi Ami asks the meaning of the blunt-iron verse.", "question_origin": "explicit"}
+P ta.resume011.iron.sky.q.a attributions {"candidates": ["Rabbi Ami"], "role": "speaker", "scope": "ta.resume011.iron.sky.q", "surface": "Rabbi Ami", "transmission_chain": []}
+P ta.resume011.iron.sky.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "Rabbi Ami"}
+P ta.resume011.sky.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume011.corrupt.generation", "target_id": "ta.resume011.iron.sky.q"}
+P ta.resume011.structure.iron structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Blunt-iron exegeses: generation, student preparation and teacher relation"}
+
+### Taanit 7b:15
+מה תקנתן יתגברו ברחמים שנא' (קהלת י, י) וחילים יגבר ויתרון הכשיר חכמה כל שכן אם הוכשרו מעשיהן מעיקרא
+R ta101.structure.0010 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Prayer and prior rectification"}
+R ta101.utterances.0028 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0030 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0028", "surface": "", "transmission_chain": []}
+R ta101.questions.0004 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is their remedy?", "question_origin": "explicit"}
+R ta101.utterances.0029 utterances {"composition": "atomic", "discourse_role": "remedy", "textual_voice": "anonymous"}
+R ta101.attributions.0031 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0029", "surface": "", "transmission_chain": []}
+R ta101.claims.0023 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "They should strengthen their pleas for mercy, as וחילים יגבר is read.", "scope": "remedy"}
+R ta101.positions.0023 positions {"claim_id": "ta101.claims.0023", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0018 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0023", "target_id": "ta101.questions.0004"}
+R ta101.utterances.0030 utterances {"composition": "atomic", "discourse_role": "a fortiori preference", "textual_voice": "anonymous"}
+R ta101.attributions.0032 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0030", "surface": "", "transmission_chain": []}
+R ta101.claims.0024 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "All the more so if their deeds had been proper from the outset.", "scope": "a fortiori preference"}
+R ta101.positions.0024 positions {"claim_id": "ta101.claims.0024", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0019 edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta101.claims.0024", "target_id": "ta101.claims.0023"}
+R ta101.edges.0060 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0009", "target_id": "ta101.structure.0010"}
+P ta.resume011.deeds.before claims {"assertion_mode": "conditional", "conditions": ["deeds proper from outset"], "proposition": "The exposition adds that it is better still if their deeds had been proper from the outset.", "scope": "Taanit 7b:15 local discussion"}
+P ta.resume011.deeds.before.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume011.deeds.before", "surface": "anonymous", "transmission_chain": []}
+P ta.resume011.deeds.before.p positions {"claim_id": "ta.resume011.deeds.before", "conditions": ["deeds proper from outset"], "holder_candidates": [], "local_status": "conditional locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.deeds.before.u utterances {"composition": "atomic", "discourse_role": "conditional", "textual_voice": "anonymous discussion"}
+P ta.resume011.generation.remedy.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is their remedy?", "question_origin": "explicit"}
+P ta.resume011.generation.remedy.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume011.generation.remedy.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume011.generation.remedy.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "anonymous discussion"}
+P ta.resume011.mercy.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume011.mercy.strengthen", "target_id": "ta.resume011.generation.remedy.q"}
+P ta.resume011.mercy.strengthen claims {"assertion_mode": "asserted", "conditions": [], "proposition": "They should intensify appeals for mercy, supported by וחילים יגבר.", "scope": "Taanit 7b:15 local discussion"}
+P ta.resume011.mercy.strengthen.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume011.mercy.strengthen", "surface": "anonymous", "transmission_chain": []}
+P ta.resume011.mercy.strengthen.p positions {"claim_id": "ta.resume011.mercy.strengthen", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume011.mercy.strengthen.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous discussion"}
+P ta.resume011.structure.iron structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Blunt-iron exegeses: generation, student preparation and teacher relation"}
+
+### Taanit 8b:12
+ואמר רבי יצחק שמש בשבת צדקה לעניים שנאמר (מלאכי ג, כ) וזרחה לכם יראי שמי שמש צדקה ומרפא ואמר רבי יצחק גדול יום הגשמים שאפילו פרוטה שבכיס מתברכת בו שנאמר (דברים כח, יב) לתת מטר ארצך בעתו ולברך את כל מעשה ידיך
+R ta101.structure.0011 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Sabbath sunshine and blessing of money in rain"}
+R ta101.utterances.0031 utterances {"composition": "atomic", "discourse_role": "sunshine teaching", "textual_voice": "רבי יצחק"}
+R ta101.attributions.0033 attributions {"candidates": ["רבי יצחק"], "role": "speaker", "scope": "ta101.utterances.0031", "surface": "רבי יצחק", "transmission_chain": []}
+R ta101.claims.0025 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Sabbath sunshine is charity to the poor.", "scope": "sunshine teaching"}
+R ta101.positions.0025 positions {"claim_id": "ta101.claims.0025", "conditions": [], "holder_candidates": ["רבי יצחק"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0032 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0034 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0032", "surface": "", "transmission_chain": []}
+R ta101.edges.0020 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0032", "target_id": "ta101.claims.0025"}
+R ta101.utterances.0033 utterances {"composition": "atomic", "discourse_role": "rain blessing", "textual_voice": "רבי יצחק"}
+R ta101.attributions.0035 attributions {"candidates": ["רבי יצחק"], "role": "speaker", "scope": "ta101.utterances.0033", "surface": "רבי יצחק", "transmission_chain": []}
+R ta101.claims.0026 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The day of rain is great: even a coin in one’s purse is blessed.", "scope": "rain blessing"}
+R ta101.positions.0026 positions {"claim_id": "ta101.claims.0026", "conditions": [], "holder_candidates": ["רבי יצחק"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0034 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0036 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0034", "surface": "", "transmission_chain": []}
+R ta101.edges.0021 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0034", "target_id": "ta101.claims.0026"}
+P ta.resume015.coin.blessing claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yitzhak says a rainy day is so great that even a coin in the purse is blessed.", "scope": "Taanit 8b:12 local discussion"}
+P ta.resume015.coin.blessing.a attributions {"candidates": ["Rabbi Yitzhak"], "role": "speaker", "scope": "ta.resume015.coin.blessing", "surface": "Rabbi Yitzhak", "transmission_chain": []}
+P ta.resume015.coin.blessing.p positions {"claim_id": "ta.resume015.coin.blessing", "conditions": [], "holder_candidates": ["Rabbi Yitzhak"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.coin.blessing.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yitzhak"}
+P ta.resume015.coin.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.rain.work.verse", "target_id": "ta.resume015.coin.blessing"}
+P ta.resume015.rain.work.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The proof joins timely rain with blessing all one’s work.", "scope": "Taanit 8b:12 local discussion"}
+P ta.resume015.rain.work.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume015.rain.work.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume015.rain.work.verse.p positions {"claim_id": "ta.resume015.rain.work.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.rain.work.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume015.sabbath.sun claims {"assertion_mode": "asserted", "conditions": ["sunshine on Sabbath"], "proposition": "Rabbi Yitzhak calls Sabbath sunshine charity for the poor.", "scope": "Taanit 8b:12 local discussion"}
+P ta.resume015.sabbath.sun.a attributions {"candidates": ["Rabbi Yitzhak"], "role": "speaker", "scope": "ta.resume015.sabbath.sun", "surface": "Rabbi Yitzhak", "transmission_chain": []}
+P ta.resume015.sabbath.sun.p positions {"claim_id": "ta.resume015.sabbath.sun", "conditions": ["sunshine on Sabbath"], "holder_candidates": ["Rabbi Yitzhak"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.sabbath.sun.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yitzhak"}
+P ta.resume015.structure.rain structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain hardships, Sabbath sun and blessings hidden from sight"}
+P ta.resume015.sun.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.sun.verse", "target_id": "ta.resume015.sabbath.sun"}
+P ta.resume015.sun.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Malachi’s sun of righteousness and healing is quoted.", "scope": "Taanit 8b:12 local discussion"}
+P ta.resume015.sun.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume015.sun.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume015.sun.verse.p positions {"claim_id": "ta.resume015.sun.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.sun.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+
+### Taanit 8b:13
+ואמר רבי יצחק אין הברכה מצויה אלא בדבר הסמוי מן העין שנאמר (דברים כח, ח) יצו ה' אתך את הברכה באסמיך תנא דבי ר' ישמעאל אין הברכה מצויה אלא בדבר שאין העין שולטת בו שנאמר יצו ה' אתך את הברכה באסמיך
+R ta101.structure.0012 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Blessing in hidden things"}
+R ta101.utterances.0035 utterances {"composition": "atomic", "discourse_role": "hidden blessing", "textual_voice": "רבי יצחק"}
+R ta101.attributions.0037 attributions {"candidates": ["רבי יצחק"], "role": "speaker", "scope": "ta101.utterances.0035", "surface": "רבי יצחק", "transmission_chain": []}
+R ta101.claims.0027 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Blessing is found only in what is hidden from the eye.", "scope": "hidden blessing"}
+R ta101.positions.0027 positions {"claim_id": "ta101.claims.0027", "conditions": [], "holder_candidates": ["רבי יצחק"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0036 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0038 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0036", "surface": "", "transmission_chain": []}
+R ta101.edges.0022 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0036", "target_id": "ta101.claims.0027"}
+R ta101.utterances.0037 utterances {"composition": "atomic", "discourse_role": "parallel hidden blessing", "textual_voice": "תנא דבי ר' ישמעאל"}
+R ta101.attributions.0039 attributions {"candidates": ["תנא דבי ר' ישמעאל"], "role": "collective", "scope": "ta101.utterances.0037", "surface": "תנא דבי ר' ישמעאל", "transmission_chain": []}
+R ta101.claims.0028 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Blessing is found only in what the eye does not control.", "scope": "parallel hidden blessing"}
+R ta101.positions.0028 positions {"claim_id": "ta101.claims.0028", "conditions": [], "holder_candidates": ["תנא דבי ר' ישמעאל"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0038 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0040 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0038", "surface": "", "transmission_chain": []}
+R ta101.edges.0023 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0038", "target_id": "ta101.claims.0028"}
+P ta.resume015.hidden.blessing claims {"assertion_mode": "asserted", "conditions": ["hidden from sight"], "proposition": "Rabbi Yitzhak says blessing is found only in what is hidden from sight.", "scope": "Taanit 8b:13 local discussion"}
+P ta.resume015.hidden.blessing.a attributions {"candidates": ["Rabbi Yitzhak"], "role": "speaker", "scope": "ta.resume015.hidden.blessing", "surface": "Rabbi Yitzhak", "transmission_chain": []}
+P ta.resume015.hidden.blessing.p positions {"claim_id": "ta.resume015.hidden.blessing", "conditions": ["hidden from sight"], "holder_candidates": ["Rabbi Yitzhak"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.hidden.blessing.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yitzhak"}
+P ta.resume015.hidden.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.stores.verse", "target_id": "ta.resume015.hidden.blessing"}
+P ta.resume015.school.hidden claims {"assertion_mode": "asserted", "conditions": ["eye does not rule over the thing"], "proposition": "The school of Rabbi Yishmael similarly locates blessing only where the eye does not rule.", "scope": "Taanit 8b:13 local discussion"}
+P ta.resume015.school.hidden.a attributions {"candidates": [], "role": "collective", "scope": "ta.resume015.school.hidden", "surface": "דבי ר' ישמעאל", "transmission_chain": []}
+P ta.resume015.school.hidden.p positions {"claim_id": "ta.resume015.school.hidden", "conditions": ["eye does not rule over the thing"], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.school.hidden.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "school of Rabbi Yishmael"}
+P ta.resume015.school.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.school.verse", "target_id": "ta.resume015.school.hidden"}
+P ta.resume015.school.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The school likewise cites blessing in storehouses.", "scope": "Taanit 8b:13 local discussion"}
+P ta.resume015.school.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume015.school.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume015.school.verse.p positions {"claim_id": "ta.resume015.school.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.school.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume015.stores.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The proof quotes blessing in one’s storehouses.", "scope": "Taanit 8b:13 local discussion"}
+P ta.resume015.stores.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume015.stores.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume015.stores.verse.p positions {"claim_id": "ta.resume015.stores.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.stores.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume015.structure.rain structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain hardships, Sabbath sun and blessings hidden from sight"}
+
+### Taanit 8b:14
+ת"ר הנכנס למוד את גרנו אומר יר"מ ה' אלהינו שתשלח ברכה במעשה ידינו התחיל למוד אומר ברוך השולח ברכה בכרי הזה מדד ואח"כ בירך הרי זו תפלת שוא לפי שאין הברכה מצויה לא בדבר השקול ולא בדבר המדוד ולא בדבר המנוי אלא בדבר הסמוי מן העין:
+R ta101.structure.0013 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Prayer before, during and after measuring grain"}
+R ta101.utterances.0039 utterances {"composition": "atomic", "discourse_role": "prayer before measuring", "textual_voice": "ת\"ר"}
+R ta101.attributions.0041 attributions {"candidates": ["ת\"ר"], "role": "collective", "scope": "ta101.utterances.0039", "surface": "ת\"ר", "transmission_chain": []}
+R ta101.claims.0029 claims {"assertion_mode": "asserted", "conditions": ["Before beginning measurement."], "proposition": "On entering to measure one’s threshing floor, ask God to send blessing to the work of our hands.", "scope": "prayer before measuring"}
+R ta101.positions.0029 positions {"claim_id": "ta101.claims.0029", "conditions": ["Before beginning measurement."], "holder_candidates": ["ת\"ר"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0040 utterances {"composition": "atomic", "discourse_role": "prayer while measuring", "textual_voice": "ת\"ר"}
+R ta101.attributions.0042 attributions {"candidates": ["ת\"ר"], "role": "collective", "scope": "ta101.utterances.0040", "surface": "ת\"ר", "transmission_chain": []}
+R ta101.claims.0030 claims {"assertion_mode": "asserted", "conditions": ["Measurement begun."], "proposition": "Once measurement has begun, say: Blessed is He who sends blessing into this heap.", "scope": "prayer while measuring"}
+R ta101.positions.0030 positions {"claim_id": "ta101.claims.0030", "conditions": ["Measurement begun."], "holder_candidates": ["ת\"ר"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0041 utterances {"composition": "atomic", "discourse_role": "prayer after measuring", "textual_voice": "ת\"ר"}
+R ta101.attributions.0043 attributions {"candidates": ["ת\"ר"], "role": "collective", "scope": "ta101.utterances.0041", "surface": "ת\"ר", "transmission_chain": []}
+R ta101.claims.0031 claims {"assertion_mode": "asserted", "conditions": ["Measurement already completed."], "proposition": "A blessing uttered after measuring is a vain prayer.", "scope": "prayer after measuring"}
+R ta101.positions.0031 positions {"claim_id": "ta101.claims.0031", "conditions": ["Measurement already completed."], "holder_candidates": ["ת\"ר"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0042 utterances {"composition": "composite", "discourse_role": "reason for timing", "textual_voice": "ת\"ר"}
+R ta101.attributions.0044 attributions {"candidates": ["ת\"ר"], "role": "collective", "scope": "ta101.utterances.0042", "surface": "ת\"ר", "transmission_chain": []}
+R ta101.claims.0032 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Blessing is not found in something weighed.", "scope": "reason for timing"}
+R ta101.positions.0032 positions {"claim_id": "ta101.claims.0032", "conditions": [], "holder_candidates": ["ת\"ר"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0033 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Blessing is not found in something measured.", "scope": "reason for timing"}
+R ta101.positions.0033 positions {"claim_id": "ta101.claims.0033", "conditions": [], "holder_candidates": ["ת\"ר"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0034 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Blessing is not found in something counted.", "scope": "reason for timing"}
+R ta101.positions.0034 positions {"claim_id": "ta101.claims.0034", "conditions": [], "holder_candidates": ["ת\"ר"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0035 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Blessing is found in something hidden from the eye.", "scope": "reason for timing"}
+R ta101.positions.0035 positions {"claim_id": "ta101.claims.0035", "conditions": [], "holder_candidates": ["ת\"ר"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0024 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0042", "target_id": "ta101.claims.0031"}
+P ta.resume015.after.measure claims {"assertion_mode": "asserted", "conditions": ["measurement completed before blessing"], "proposition": "If one first measured and only then blessed, this is a vain prayer.", "scope": "Taanit 8b:14 local discussion"}
+P ta.resume015.after.measure.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume015.after.measure", "surface": "anonymous", "transmission_chain": []}
+P ta.resume015.after.measure.p positions {"claim_id": "ta.resume015.after.measure", "conditions": ["measurement completed before blessing"], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.after.measure.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous baraita"}
+P ta.resume015.after.reason edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.measured.exclusion", "target_id": "ta.resume015.after.measure"}
+P ta.resume015.before.measure claims {"assertion_mode": "asserted", "conditions": ["entering to measure grain"], "proposition": "The baraita prescribes, on entering to measure one’s grain, a prayer that God send blessing in the work of our hands.", "scope": "Taanit 8b:14 local discussion"}
+P ta.resume015.before.measure.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume015.before.measure", "surface": "anonymous", "transmission_chain": []}
+P ta.resume015.before.measure.p positions {"claim_id": "ta.resume015.before.measure", "conditions": ["entering to measure grain"], "holder_candidates": [], "local_status": "prescribed prayer wording", "question_id": null}
+P ta.resume015.before.measure.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous baraita"}
+P ta.resume015.during.measure claims {"assertion_mode": "asserted", "conditions": ["measurement has begun"], "proposition": "Once measuring begins, one says: Blessed is the One who sends blessing in this heap.", "scope": "Taanit 8b:14 local discussion"}
+P ta.resume015.during.measure.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume015.during.measure", "surface": "anonymous", "transmission_chain": []}
+P ta.resume015.during.measure.p positions {"claim_id": "ta.resume015.during.measure", "conditions": ["measurement has begun"], "holder_candidates": [], "local_status": "prescribed blessing wording", "question_id": null}
+P ta.resume015.during.measure.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous baraita"}
+P ta.resume015.measured.exclusion claims {"assertion_mode": "asserted", "conditions": ["hidden from sight; not already weighed, measured or counted"], "proposition": "The baraita excludes weighed, measured and counted things from blessing, restricting it to what is hidden from sight.", "scope": "Taanit 8b:14 local discussion"}
+P ta.resume015.measured.exclusion.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume015.measured.exclusion", "surface": "anonymous", "transmission_chain": []}
+P ta.resume015.measured.exclusion.p positions {"claim_id": "ta.resume015.measured.exclusion", "conditions": ["hidden from sight; not already weighed, measured or counted"], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.measured.exclusion.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "anonymous baraita"}
+P ta.resume015.structure.rain structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain hardships, Sabbath sun and blessings hidden from sight"}
+
+### Taanit 8b:15
+קיבוץ גייסות צדקה (מעשה) פרנס סימן: אמר רבי יוחנן גדול יום הגשמים כיום קבוץ גליות שנאמר (תהלים קכו, ד) שובה ה' את שביתנו כאפיקים בנגב ואין אפיקים אלא מטר שנאמר (שמואל ב כב, טז) ויראו אפיקי ים
+R ta101.structure.0014 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Mnemonic and comparison to ingathering"}
+R ta101.utterances.0043 utterances {"composition": "atomic", "discourse_role": "mnemonic; parenthetical מעשה preserved", "textual_voice": "anonymous"}
+R ta101.attributions.0045 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0043", "surface": "", "transmission_chain": []}
+R ta101.utterances.0044 utterances {"composition": "atomic", "discourse_role": "rain comparison", "textual_voice": "רבי יוחנן"}
+R ta101.attributions.0046 attributions {"candidates": ["רבי יוחנן"], "role": "speaker", "scope": "ta101.utterances.0044", "surface": "רבי יוחנן", "transmission_chain": []}
+R ta101.claims.0036 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The day of rain is as great as the day of ingathering exiles.", "scope": "rain comparison"}
+R ta101.positions.0036 positions {"claim_id": "ta101.claims.0036", "conditions": [], "holder_candidates": ["רבי יוחנן"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0045 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0047 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0045", "surface": "", "transmission_chain": []}
+R ta101.edges.0025 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0045", "target_id": "ta101.claims.0036"}
+P ta.resume015.channels.rain claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The exposition identifies אפיקים with rain by citing the revealed channels of the sea.", "scope": "Taanit 8b:15 local discussion"}
+P ta.resume015.channels.rain.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume015.channels.rain", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume015.channels.rain.p positions {"claim_id": "ta.resume015.channels.rain", "conditions": [], "holder_candidates": ["Rabbi Yohanan"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.channels.rain.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Rabbi Yohanan"}
+P ta.resume015.channels.support edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.channels.rain", "target_id": "ta.resume015.ingathering"}
+P ta.resume015.ingathering claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yohanan likens the greatness of a rainy day to the ingathering of exiles.", "scope": "Taanit 8b:15 local discussion"}
+P ta.resume015.ingathering.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume015.ingathering", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume015.ingathering.p positions {"claim_id": "ta.resume015.ingathering", "conditions": [], "holder_candidates": ["Rabbi Yohanan"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.ingathering.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.return.verse", "target_id": "ta.resume015.ingathering"}
+P ta.resume015.ingathering.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yohanan"}
+P ta.resume015.mnemonic utterances {"composition": "composite", "discourse_role": "mnemonic", "textual_voice": "editorial mnemonic"}
+P ta.resume015.return.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The proof quotes return of captivity like channels in the Negev.", "scope": "Taanit 8b:15 local discussion"}
+P ta.resume015.return.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume015.return.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume015.return.verse.p positions {"claim_id": "ta.resume015.return.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.return.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume015.structure.yohanan structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, ingathering, troops and unpaid charity pledges"}
+
+### Taanit 8b:16
+ואמר רבי יוחנן גדול יום הגשמים שאפילו גייסות פוסקות בו שנאמר (תהלים סה, יא) תלמיה רוה נחת גדודיה ואמר רבי יוחנן אין הגשמים נעצרין אלא בשביל פוסקי צדקה ברבים ואין נותנין שנאמר (משלי כה, יד) נשיאים ורוח וגשם אין איש מתהלל במתת שקר
+R ta101.structure.0015 structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Armies and unfulfilled charity pledges"}
+R ta101.utterances.0046 utterances {"composition": "atomic", "discourse_role": "rain benefit", "textual_voice": "רבי יוחנן"}
+R ta101.attributions.0048 attributions {"candidates": ["רבי יוחנן"], "role": "speaker", "scope": "ta101.utterances.0046", "surface": "רבי יוחנן", "transmission_chain": []}
+R ta101.claims.0037 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The day of rain is great because even armies cease on it.", "scope": "rain benefit"}
+R ta101.positions.0037 positions {"claim_id": "ta101.claims.0037", "conditions": [], "holder_candidates": ["רבי יוחנן"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0047 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0049 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0047", "surface": "", "transmission_chain": []}
+R ta101.edges.0026 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0047", "target_id": "ta101.claims.0037"}
+R ta101.utterances.0048 utterances {"composition": "atomic", "discourse_role": "withheld rain", "textual_voice": "רבי יוחנן"}
+R ta101.attributions.0050 attributions {"candidates": ["רבי יוחנן"], "role": "speaker", "scope": "ta101.utterances.0048", "surface": "רבי יוחנן", "transmission_chain": []}
+R ta101.claims.0038 claims {"assertion_mode": "asserted", "conditions": ["Public charity pledge not fulfilled."], "proposition": "Rain is withheld because people publicly pledge charity and fail to give.", "scope": "withheld rain"}
+R ta101.positions.0038 positions {"claim_id": "ta101.claims.0038", "conditions": ["Public charity pledge not fulfilled."], "holder_candidates": ["רבי יוחנן"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0049 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0051 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0049", "surface": "", "transmission_chain": []}
+R ta101.edges.0027 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0049", "target_id": "ta101.claims.0038"}
+P ta.resume015.false.gift claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Proverbs compares clouds and wind without rain to boasting of a false gift.", "scope": "Taanit 8b:16 local discussion"}
+P ta.resume015.false.gift.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume015.false.gift", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume015.false.gift.p positions {"claim_id": "ta.resume015.false.gift", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.false.gift.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume015.pledges claims {"assertion_mode": "asserted", "conditions": ["charity publicly pledged but not paid"], "proposition": "Rabbi Yohanan attributes withheld rain to those who publicly pledge charity but do not give.", "scope": "Taanit 8b:16 local discussion"}
+P ta.resume015.pledges.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume015.pledges", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume015.pledges.p positions {"claim_id": "ta.resume015.pledges", "conditions": ["charity publicly pledged but not paid"], "holder_candidates": ["Rabbi Yohanan"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.pledges.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.false.gift", "target_id": "ta.resume015.pledges"}
+P ta.resume015.pledges.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yohanan"}
+P ta.resume015.structure.yohanan structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, ingathering, troops and unpaid charity pledges"}
+P ta.resume015.troops claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yohanan says the rainy day is great because even troops cease on it.", "scope": "Taanit 8b:16 local discussion"}
+P ta.resume015.troops.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume015.troops", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume015.troops.p positions {"claim_id": "ta.resume015.troops", "conditions": [], "holder_candidates": ["Rabbi Yohanan"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.troops.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume015.troops.verse", "target_id": "ta.resume015.troops"}
+P ta.resume015.troops.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yohanan"}
+P ta.resume015.troops.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The proof quotes watering furrows and settling גדודיה.", "scope": "Taanit 8b:16 local discussion"}
+P ta.resume015.troops.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume015.troops.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume015.troops.verse.p positions {"claim_id": "ta.resume015.troops.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume015.troops.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+
+### Taanit 8b:17
+וא"ר יוחנן מאי דכתיב
+R ta101.structure.0016 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Opening attribution and question continued on next page"}
+R ta101.utterances.0050 utterances {"composition": "atomic", "discourse_role": "attribution and opening question continued across page", "textual_voice": "רבי יוחנן"}
+R ta101.attributions.0052 attributions {"candidates": ["רבי יוחנן"], "role": "speaker", "scope": "ta101.utterances.0050", "surface": "רבי יוחנן", "transmission_chain": []}
+R ta101.questions.0005 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is meant by עשר תעשר?", "question_origin": "explicit"}
+R ta101.edges.0028 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0039", "target_id": "ta101.questions.0005"}
+R ta101.edges.0061 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0016", "target_id": "ta101.structure.0017"}
+P ta.resume016.structure.tithes structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Tithing, wealth and the first encounter with Resh Lakish’s child"}
+P ta.resume016.tithe.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Rabbi Yohanan asks the meaning of the verse continued on the next folio.", "question_origin": "explicit"}
+P ta.resume016.tithe.q.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume016.tithe.q", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume016.tithe.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "Rabbi Yohanan"}
+P ta.resume016.tithe.wealth.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume016.tithe.wealth", "surface": "Rabbi Yohanan", "transmission_chain": []}
+
+### Taanit 9a:1
+(דברים יד, כב) עשר תעשר עשר בשביל שתתעשר
+R ta101.structure.0017 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Tithe to become wealthy"}
+R ta101.questions.0005 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is meant by עשר תעשר?", "question_origin": "explicit"}
+R ta101.utterances.0051 utterances {"composition": "atomic", "discourse_role": "scripture quoted under preceding question", "textual_voice": "anonymous"}
+R ta101.attributions.0053 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0051", "surface": "", "transmission_chain": []}
+R ta101.utterances.0052 utterances {"composition": "atomic", "discourse_role": "inherited answer", "textual_voice": "רבי יוחנן"}
+R ta101.attributions.0054 attributions {"candidates": ["רבי יוחנן"], "role": "speaker", "scope": "ta101.utterances.0052", "surface": "רבי יוחנן", "transmission_chain": []}
+R ta101.claims.0039 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Tithe so that you become wealthy.", "scope": "inherited answer"}
+R ta101.positions.0039 positions {"claim_id": "ta101.claims.0039", "conditions": [], "holder_candidates": ["רבי יוחנן"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0028 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0039", "target_id": "ta101.questions.0005"}
+R ta101.edges.0061 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0016", "target_id": "ta101.structure.0017"}
+P ta.resume016.structure.tithes structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Tithing, wealth and the first encounter with Resh Lakish’s child"}
+P ta.resume016.tithe.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.tithe.wealth", "target_id": "ta.resume016.tithe.q"}
+P ta.resume016.tithe.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Rabbi Yohanan asks the meaning of the verse continued on the next folio.", "question_origin": "explicit"}
+P ta.resume016.tithe.wealth claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yohanan reads tithe so that you become wealthy.", "scope": "Taanit 9a:1 local discussion"}
+P ta.resume016.tithe.wealth.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume016.tithe.wealth", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume016.tithe.wealth.p positions {"claim_id": "ta.resume016.tithe.wealth", "conditions": [], "holder_candidates": ["Rabbi Yohanan"], "local_status": "homiletic interpretation; named introduction on preceding folio", "question_id": null}
+P ta.resume016.tithe.wealth.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yohanan"}
+
+### Taanit 9a:2
+אשכחיה ר' יוחנן לינוקא דריש לקיש אמר ליה אימא לי פסוקיך א"ל עשר תעשר א"ל ומאי עשר תעשר א"ל עשר בשביל שתתעשר אמר ליה מנא לך א"ל זיל נסי
+R ta101.structure.0018 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "First encounter with Resh Lakish’s child"}
+R ta101.utterances.0053 utterances {"composition": "atomic", "discourse_role": "narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0055 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0053", "surface": "", "transmission_chain": []}
+R ta101.claims.0040 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yoḥanan encountered Resh Lakish’s child.", "scope": "narrative"}
+R ta101.utterances.0054 utterances {"composition": "atomic", "discourse_role": "request for recited verse", "textual_voice": "רבי יוחנן / ינוקא דריש לקיש"}
+R ta101.attributions.0056 attributions {"candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "role": "speaker", "scope": "ta101.utterances.0054", "surface": "רבי יוחנן / ינוקא דריש לקיש", "transmission_chain": []}
+R ta101.claims.0041 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "A dialogue participant asks the child to recite his verse.", "scope": "request for recited verse"}
+R ta101.utterances.0055 utterances {"composition": "atomic", "discourse_role": "verse response", "textual_voice": "רבי יוחנן / ינוקא דריש לקיש"}
+R ta101.attributions.0057 attributions {"candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "role": "speaker", "scope": "ta101.utterances.0055", "surface": "רבי יוחנן / ינוקא דריש לקיש", "transmission_chain": []}
+R ta101.claims.0042 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The verse recited is עשר תעשר.", "scope": "verse response"}
+R ta101.utterances.0056 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0058 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0056", "surface": "", "transmission_chain": []}
+R ta101.questions.0006 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is meant by עשר תעשר?", "question_origin": "explicit"}
+R ta101.utterances.0057 utterances {"composition": "atomic", "discourse_role": "explanation in dialogue", "textual_voice": "רבי יוחנן / ינוקא דריש לקיש"}
+R ta101.attributions.0059 attributions {"candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "role": "speaker", "scope": "ta101.utterances.0057", "surface": "רבי יוחנן / ינוקא דריש לקיש", "transmission_chain": []}
+R ta101.claims.0043 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Tithe so that you become wealthy.", "scope": "explanation in dialogue"}
+R ta101.positions.0040 positions {"claim_id": "ta101.claims.0043", "conditions": [], "holder_candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0029 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0043", "target_id": "ta101.questions.0006"}
+R ta101.utterances.0058 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0060 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0058", "surface": "", "transmission_chain": []}
+R ta101.questions.0007 questions {"answer_set_status": "partial", "conditions": [], "formulation": "Whence do you know this?", "question_origin": "explicit"}
+R ta101.utterances.0059 utterances {"composition": "atomic", "discourse_role": "invitation to test", "textual_voice": "רבי יוחנן / ינוקא דריש לקיש"}
+R ta101.attributions.0061 attributions {"candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "role": "speaker", "scope": "ta101.utterances.0059", "surface": "רבי יוחנן / ינוקא דריש לקיש", "transmission_chain": []}
+R ta101.claims.0044 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Go and test it.", "scope": "invitation to test"}
+R ta101.positions.0041 positions {"claim_id": "ta101.claims.0044", "conditions": [], "holder_candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0030 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0044", "target_id": "ta101.questions.0007"}
+R ta101.edges.0062 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0018", "target_id": "ta101.structure.0019"}
+P ta.resume016.basis.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "The interlocutor asks for the basis.", "question_origin": "explicit"}
+P ta.resume016.basis.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.basis.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.basis.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "unnamed dialogue turn"}
+P ta.resume016.child.encounter claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yohanan encountered Resh Lakish’s child.", "scope": "Taanit 9a:2 local discussion"}
+P ta.resume016.child.encounter.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.child.encounter", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.child.encounter.p positions {"claim_id": "ta.resume016.child.encounter", "conditions": [], "holder_candidates": [], "local_status": "narrative setting", "question_id": null}
+P ta.resume016.child.encounter.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}
+P ta.resume016.child.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The child recites עשר תעשר.", "scope": "Taanit 9a:2 local discussion"}
+P ta.resume016.child.verse.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.child.verse", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.child.verse.p positions {"claim_id": "ta.resume016.child.verse", "conditions": [], "holder_candidates": [], "local_status": "quoted verse in dialogue", "question_id": null}
+P ta.resume016.child.verse.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Resh Lakish’s child"}
+P ta.resume016.meaning.answer claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The reply interprets it as tithing to become wealthy.", "scope": "Taanit 9a:2 local discussion"}
+P ta.resume016.meaning.answer.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.meaning.answer", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.meaning.answer.p positions {"claim_id": "ta.resume016.meaning.answer", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.meaning.answer.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "unnamed dialogue turn"}
+P ta.resume016.meaning.edge edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.meaning.answer", "target_id": "ta.resume016.meaning.q"}
+P ta.resume016.meaning.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "The interlocutor asks what עשר תעשר means.", "question_origin": "explicit"}
+P ta.resume016.meaning.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.meaning.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.meaning.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "unnamed dialogue turn"}
+P ta.resume016.recite.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.child.verse", "target_id": "ta.resume016.recite.q"}
+P ta.resume016.recite.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Yohanan asks the child to recite his verse.", "question_origin": "explicit"}
+P ta.resume016.recite.q.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume016.recite.q", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume016.recite.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "Rabbi Yohanan"}
+P ta.resume016.structure.tithes structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Tithing, wealth and the first encounter with Resh Lakish’s child"}
+P ta.resume016.try claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The reply directs the questioner to try it.", "scope": "Taanit 9a:2 local discussion"}
+P ta.resume016.try.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.try", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.try.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.try", "target_id": "ta.resume016.basis.q"}
+P ta.resume016.try.p positions {"claim_id": "ta.resume016.try", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.try.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "unnamed dialogue turn"}
+
+### Taanit 9a:3
+אמר ליה ומי שרי לנסוייה להקב"ה והכתיב (דברים ו, טז) לא תנסו את ה' א"ל הכי אמר רבי הושעיא חוץ מזו שנאמר (מלאכי ג, י) הביאו את כל המעשר אל בית האוצר ויהי טרף בביתי ובחנוני נא בזאת אמר ה' צבאות אם לא אפתח לכם את ארובות השמים והריקותי לכם ברכה עד בלי די
+R ta101.structure.0019 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Testing God: objection and tithe exception"}
+R ta101.utterances.0060 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0062 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0060", "surface": "", "transmission_chain": []}
+R ta101.questions.0008 questions {"answer_set_status": "partial", "conditions": [], "formulation": "Is testing the Holy One permitted, given לא תנסו?", "question_origin": "explicit"}
+R ta101.edges.0031 edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta101.questions.0008", "target_id": "ta101.claims.0044"}
+R ta101.utterances.0061 utterances {"composition": "atomic", "discourse_role": "exception reported in dialogue", "textual_voice": "רבי הושעיא"}
+R ta101.attributions.0063 attributions {"candidates": ["רבי הושעיא"], "role": "speaker", "scope": "ta101.utterances.0061", "surface": "רבי הושעיא", "transmission_chain": []}
+R ta101.claims.0045 claims {"assertion_mode": "asserted", "conditions": ["Testing the promise concerning tithing."], "proposition": "The tithe case is excepted from the prohibition on testing God.", "scope": "exception reported in dialogue"}
+R ta101.positions.0042 positions {"claim_id": "ta101.claims.0045", "conditions": ["Testing the promise concerning tithing."], "holder_candidates": ["רבי הושעיא"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.attributions.0064 attributions {"candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "role": "transmitter", "scope": "ta101.utterances.0061", "surface": "א\"ל", "transmission_chain": ["רבי הושעיא"]}
+R ta101.utterances.0062 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0065 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0062", "surface": "", "transmission_chain": []}
+R ta101.edges.0032 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0062", "target_id": "ta101.claims.0045"}
+R ta101.edges.0033 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0045", "target_id": "ta101.questions.0008"}
+R ta101.edges.0062 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0018", "target_id": "ta101.structure.0019"}
+R ta101.edges.0063 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0019", "target_id": "ta101.structure.0020"}
+P ta.resume016.exception.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.hoshaya.exception", "target_id": "ta.resume016.testing.q"}
+P ta.resume016.exception.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.malachi.test", "target_id": "ta.resume016.hoshaya.exception"}
+P ta.resume016.exception.qualifies edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta.resume016.hoshaya.exception", "target_id": "ta.resume016.testing.prohibition"}
+P ta.resume016.hoshaya.exception claims {"assertion_mode": "asserted", "conditions": ["this tithe case"], "proposition": "The reply reports Rabbi Hoshaya’s exception for this case of tithes.", "scope": "Taanit 9a:3 local discussion"}
+P ta.resume016.hoshaya.exception.a attributions {"candidates": ["Rabbi Hoshaya"], "role": "speaker", "scope": "ta.resume016.hoshaya.exception", "surface": "Rabbi Hoshaya", "transmission_chain": ["unnamed dialogue respondent", "Rabbi Hoshaya"]}
+P ta.resume016.hoshaya.exception.p positions {"claim_id": "ta.resume016.hoshaya.exception", "conditions": ["this tithe case"], "holder_candidates": ["Rabbi Hoshaya"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.hoshaya.exception.tx0 attributions {"candidates": ["unnamed dialogue respondent"], "role": "transmitter", "scope": "ta.resume016.hoshaya.exception", "surface": "unnamed dialogue respondent", "transmission_chain": ["unnamed dialogue respondent", "Rabbi Hoshaya"]}
+P ta.resume016.hoshaya.exception.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Hoshaya"}
+P ta.resume016.malachi.test claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Malachi invites bringing the full tithe to the storehouse and testing the promised abundant blessing.", "scope": "Taanit 9a:3 local discussion"}
+P ta.resume016.malachi.test.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume016.malachi.test", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume016.malachi.test.p positions {"claim_id": "ta.resume016.malachi.test", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.malachi.test.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume016.structure.tithes structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Tithing, wealth and the first encounter with Resh Lakish’s child"}
+P ta.resume016.testing.objection edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta.resume016.testing.prohibition", "target_id": "ta.resume016.try"}
+P ta.resume016.testing.prohibition claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The challenge quotes the prohibition against testing God.", "scope": "Taanit 9a:3 local discussion"}
+P ta.resume016.testing.prohibition.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume016.testing.prohibition", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume016.testing.prohibition.p positions {"claim_id": "ta.resume016.testing.prohibition", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.testing.prohibition.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume016.testing.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "The interlocutor challenges whether testing God is permitted.", "question_origin": "explicit"}
+P ta.resume016.testing.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.testing.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.testing.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "unnamed dialogue turn"}
+
+### Taanit 9a:4
+מאי עד בלי די אמר רמי בר חמא אמר רב עד שיבלו שפתותיכם מלומר די א"ל אי הות מטי התם להאי פסוקא לא הוית צריכנא לך ולהושעיא רבך
+R ta101.structure.0020 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Until lips wear out and child’s reply"}
+R ta101.utterances.0063 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0066 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0063", "surface": "", "transmission_chain": []}
+R ta101.questions.0009 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What is meant by עד בלי די?", "question_origin": "explicit"}
+R ta101.utterances.0064 utterances {"composition": "atomic", "discourse_role": "verse interpretation", "textual_voice": "רב"}
+R ta101.attributions.0067 attributions {"candidates": ["רב"], "role": "speaker", "scope": "ta101.utterances.0064", "surface": "רב", "transmission_chain": ["רמי בר חמא", "רב"]}
+R ta101.attributions.0068 attributions {"candidates": ["רמי בר חמא"], "role": "transmitter", "scope": "ta101.utterances.0064", "surface": "רמי בר חמא", "transmission_chain": ["רמי בר חמא", "רב"]}
+R ta101.claims.0046 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Until your lips wear out from saying enough.", "scope": "verse interpretation"}
+R ta101.positions.0043 positions {"claim_id": "ta101.claims.0046", "conditions": [], "holder_candidates": ["רב"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0034 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0046", "target_id": "ta101.questions.0009"}
+R ta101.utterances.0065 utterances {"composition": "atomic", "discourse_role": "dialogue reply", "textual_voice": "רבי יוחנן / ינוקא דריש לקיש"}
+R ta101.attributions.0069 attributions {"candidates": ["רבי יוחנן", "ינוקא דריש לקיש"], "role": "speaker", "scope": "ta101.utterances.0065", "surface": "רבי יוחנן / ינוקא דריש לקיש", "transmission_chain": []}
+R ta101.claims.0047 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Had I reached that verse, I would not have needed you and Hoshaya your teacher.", "scope": "dialogue reply"}
+R ta101.edges.0063 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0019", "target_id": "ta101.structure.0020"}
+P ta.resume016.limit.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.lips.weary", "target_id": "ta.resume016.limit.q"}
+P ta.resume016.limit.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "What does עד בלי די mean?", "question_origin": "explicit"}
+P ta.resume016.limit.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.limit.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.limit.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "anonymous discussion"}
+P ta.resume016.lips.weary claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rav, reported by Rami bar Hama, interprets this as until your lips wear out from saying enough.", "scope": "Taanit 9a:4 local discussion"}
+P ta.resume016.lips.weary.a attributions {"candidates": ["Rav"], "role": "speaker", "scope": "ta.resume016.lips.weary", "surface": "Rav", "transmission_chain": ["Rami bar Hama", "Rav"]}
+P ta.resume016.lips.weary.p positions {"claim_id": "ta.resume016.lips.weary", "conditions": [], "holder_candidates": ["Rav"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.lips.weary.tx0 attributions {"candidates": ["Rami bar Hama"], "role": "transmitter", "scope": "ta.resume016.lips.weary", "surface": "Rami bar Hama", "transmission_chain": ["Rami bar Hama", "Rav"]}
+P ta.resume016.lips.weary.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav"}
+P ta.resume016.structure.tithes structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Tithing, wealth and the first encounter with Resh Lakish’s child"}
+P ta.resume016.unneeded.teacher claims {"assertion_mode": "conditional", "conditions": ["counterfactual prior encounter with the verse"], "proposition": "The dialogue speaker says that, had he reached that verse, he would not have needed the respondent or the respondent’s teacher Hoshaya.", "scope": "Taanit 9a:4 local discussion"}
+P ta.resume016.unneeded.teacher.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.unneeded.teacher", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.unneeded.teacher.p positions {"claim_id": "ta.resume016.unneeded.teacher", "conditions": ["counterfactual prior encounter with the verse"], "holder_candidates": [], "local_status": "narrative reply", "question_id": null}
+P ta.resume016.unneeded.teacher.u utterances {"composition": "composite", "discourse_role": "conditional", "textual_voice": "unnamed dialogue turn"}
+
+### Taanit 9a:5
+ותו אשכחיה ר' יוחנן לינוקיה דריש לקיש דיתיב ואמר (משלי יט, ג) אולת אדם תסלף דרכו ועל ה' יזעף לבו
+R ta101.structure.0021 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Second encounter: the child quotes Proverbs"}
+R ta101.utterances.0066 utterances {"composition": "atomic", "discourse_role": "second encounter narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0070 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0066", "surface": "", "transmission_chain": []}
+R ta101.claims.0048 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yoḥanan again encountered Resh Lakish’s child.", "scope": "second encounter narrative"}
+R ta101.utterances.0067 utterances {"composition": "atomic", "discourse_role": "child recites scripture", "textual_voice": "ינוקיה דריש לקיש"}
+R ta101.attributions.0071 attributions {"candidates": ["ינוקיה דריש לקיש"], "role": "speaker", "scope": "ta101.utterances.0067", "surface": "ינוקיה דריש לקיש", "transmission_chain": []}
+R ta101.claims.0049 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "A person’s folly distorts his way, while his heart rages against God.", "scope": "child recites scripture"}
+R ta101.edges.0036 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0051", "target_id": "ta101.claims.0049"}
+R ta101.edges.0064 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0021", "target_id": "ta101.structure.0022"}
+P ta.resume016.folly.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The child recites that human folly distorts one’s way, yet one’s heart rages against God.", "scope": "Taanit 9a:5 local discussion"}
+P ta.resume016.folly.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume016.folly.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume016.folly.verse.p positions {"claim_id": "ta.resume016.folly.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.folly.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume016.second.encounter claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Yohanan again encounters Resh Lakish’s child, sitting and reciting.", "scope": "Taanit 9a:5 local discussion"}
+P ta.resume016.second.encounter.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.second.encounter", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.second.encounter.p positions {"claim_id": "ta.resume016.second.encounter", "conditions": [], "holder_candidates": [], "local_status": "second encounter", "question_id": null}
+P ta.resume016.second.encounter.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}
+P ta.resume016.structure.child structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Second encounter: folly, Torah hint and mother’s warning"}
+
+### Taanit 9a:6
+יתיב רבי יוחנן וקא מתמה אמר מי איכא מידי דכתיבי בכתובי דלא רמיזי באורייתא א"ל אטו הא מי לא רמיזי והכתיב (בראשית מב, כח) ויצא לבם ויחרדו איש אל אחיו לאמר מה זאת עשה אלהים לנו
+R ta101.structure.0022 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Torah antecedent of the Proverbs statement"}
+R ta101.utterances.0068 utterances {"composition": "atomic", "discourse_role": "narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0072 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0068", "surface": "", "transmission_chain": []}
+R ta101.claims.0050 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yoḥanan sat wondering.", "scope": "narrative"}
+R ta101.utterances.0069 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0073 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0069", "surface": "", "transmission_chain": []}
+R ta101.questions.0010 questions {"answer_set_status": "partial", "conditions": [], "formulation": "Is anything written in Writings not alluded to in Torah?", "question_origin": "explicit"}
+R ta101.attributions.0074 attributions {"candidates": ["רבי יוחנן"], "role": "speaker", "scope": "ta101.questions.0010", "surface": "רבי יוחנן", "transmission_chain": []}
+R ta101.utterances.0070 utterances {"composition": "atomic", "discourse_role": "counter-question and cited Torah antecedent", "textual_voice": "ינוקיה דריש לקיש"}
+R ta101.attributions.0075 attributions {"candidates": ["ינוקיה דריש לקיש"], "role": "speaker", "scope": "ta101.utterances.0070", "surface": "ינוקיה דריש לקיש", "transmission_chain": []}
+R ta101.claims.0051 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Genesis 42:28, where the brothers ask what God has done to them, supplies a Torah allusion to the Proverbs teaching.", "scope": "counter-question and cited Torah antecedent"}
+R ta101.positions.0044 positions {"claim_id": "ta101.claims.0051", "conditions": [], "holder_candidates": ["ינוקיה דריש לקיש"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0071 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0076 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0071", "surface": "", "transmission_chain": []}
+R ta101.questions.0011 questions {"answer_set_status": "partial", "conditions": [], "formulation": "Is this not alluded to in Torah?", "question_origin": "explicit"}
+R ta101.edges.0035 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0051", "target_id": "ta101.questions.0010"}
+R ta101.edges.0036 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0051", "target_id": "ta101.claims.0049"}
+R ta101.edges.0064 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0021", "target_id": "ta101.structure.0022"}
+R ta101.edges.0065 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0022", "target_id": "ta101.structure.0023"}
+P ta.resume016.brothers.proof claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The child cites the brothers’ fear and question about what God has done to them.", "scope": "Taanit 9a:6 local discussion"}
+P ta.resume016.brothers.proof.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.brothers.proof", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.brothers.proof.p positions {"claim_id": "ta.resume016.brothers.proof", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.brothers.proof.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Resh Lakish’s child"}
+P ta.resume016.hint.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.brothers.proof", "target_id": "ta.resume016.torah.hint.q"}
+P ta.resume016.hint.challenge.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "The child challenges: is this not hinted there?", "question_origin": "explicit"}
+P ta.resume016.hint.challenge.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.hint.challenge.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.hint.challenge.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "Resh Lakish’s child"}
+P ta.resume016.hint.support edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.brothers.proof", "target_id": "ta.resume016.hint.challenge.q"}
+P ta.resume016.structure.child structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Second encounter: folly, Torah hint and mother’s warning"}
+P ta.resume016.torah.hint.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Yohanan wonders whether anything written in the Writings is not hinted in the Torah.", "question_origin": "explicit"}
+P ta.resume016.torah.hint.q.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume016.torah.hint.q", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume016.torah.hint.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "Rabbi Yohanan"}
+
+### Taanit 9a:7
+דל עיניה וחזא ביה אתיא אימיה אפיקתיה אמרה ליה תא מקמיה דלא ליעבד לך כדעבד לאבוך
+R ta101.structure.0023 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Gaze, removal and mother’s warning"}
+R ta101.utterances.0072 utterances {"composition": "composite", "discourse_role": "narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0077 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0072", "surface": "", "transmission_chain": []}
+R ta101.claims.0052 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "He raised his eyes and looked at him.", "scope": "narrative"}
+R ta101.claims.0053 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The child’s mother came and took him away.", "scope": "narrative"}
+R ta101.utterances.0073 utterances {"composition": "atomic", "discourse_role": "mother’s warning", "textual_voice": "אימיה"}
+R ta101.attributions.0078 attributions {"candidates": ["אימיה"], "role": "speaker", "scope": "ta101.utterances.0073", "surface": "אימיה", "transmission_chain": []}
+R ta101.claims.0054 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Come away from him lest he do to you as he did to your father.", "scope": "mother’s warning"}
+R ta101.edges.0065 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0022", "target_id": "ta101.structure.0023"}
+P ta.resume016.mother.removes claims {"assertion_mode": "asserted", "conditions": [], "proposition": "He lifts his eyes and looks at the child; the child’s mother comes and takes him out.", "scope": "Taanit 9a:7 local discussion"}
+P ta.resume016.mother.removes.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.mother.removes", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.mother.removes.p positions {"claim_id": "ta.resume016.mother.removes", "conditions": [], "holder_candidates": [], "local_status": "narrative event", "question_id": null}
+P ta.resume016.mother.removes.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}
+P ta.resume016.mother.warning claims {"assertion_mode": "conditional", "conditions": ["fear of a repetition of what happened to father"], "proposition": "The mother tells the child to leave his presence lest he do to him what he did to his father.", "scope": "Taanit 9a:7 local discussion"}
+P ta.resume016.mother.warning.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.mother.warning", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.mother.warning.p positions {"claim_id": "ta.resume016.mother.warning", "conditions": ["fear of a repetition of what happened to father"], "holder_candidates": [], "local_status": "character’s warning; not independent narrator assertion of causal responsibility", "question_id": null}
+P ta.resume016.mother.warning.u utterances {"composition": "atomic", "discourse_role": "conditional", "textual_voice": "child’s mother"}
+P ta.resume016.structure.child structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Second encounter: folly, Torah hint and mother’s warning"}
+
+### Taanit 9a:8
+(א"ר יוחנן מטר בשביל יחיד פרנסה בשביל רבים מטר בשביל יחיד דכתיב (דברים כח, יב) יפתח ה' לך את אוצרו הטוב לתת מטר ארצך פרנסה בשביל רבים דכתיב (שמות טז, ד) הנני ממטיר לכם לחם
+R ta101.structure.0024 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Rain for an individual; sustenance for many"}
+R ta101.utterances.0074 utterances {"composition": "composite", "discourse_role": "rain and sustenance distinction", "textual_voice": "רבי יוחנן"}
+R ta101.attributions.0079 attributions {"candidates": ["רבי יוחנן"], "role": "speaker", "scope": "ta101.utterances.0074", "surface": "רבי יוחנן", "transmission_chain": []}
+R ta101.claims.0055 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain can come for an individual.", "scope": "rain and sustenance distinction"}
+R ta101.positions.0045 positions {"claim_id": "ta101.claims.0055", "conditions": [], "holder_candidates": ["רבי יוחנן"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0056 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Sustenance comes for many.", "scope": "rain and sustenance distinction"}
+R ta101.positions.0046 positions {"claim_id": "ta101.claims.0056", "conditions": [], "holder_candidates": ["רבי יוחנן"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0075 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0080 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0075", "surface": "", "transmission_chain": []}
+R ta101.edges.0037 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0075", "target_id": "ta101.claims.0055"}
+R ta101.utterances.0076 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0081 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0076", "surface": "", "transmission_chain": []}
+R ta101.edges.0038 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0076", "target_id": "ta101.claims.0056"}
+R ta101.edges.0066 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0024", "target_id": "ta101.structure.0025"}
+P ta.resume016.bread.plural.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.bread.plural.verse", "target_id": "ta.resume016.livelihood.many"}
+P ta.resume016.bread.plural.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The sustenance proof uses the plural לכם in the promise of bread.", "scope": "Taanit 9a:8 local discussion"}
+P ta.resume016.bread.plural.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume016.bread.plural.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume016.bread.plural.verse.p positions {"claim_id": "ta.resume016.bread.plural.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.bread.plural.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume016.livelihood.many claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Yohanan says sustenance comes on account of many.", "scope": "Taanit 9a:8 local discussion"}
+P ta.resume016.livelihood.many.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume016.livelihood.many", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume016.livelihood.many.p positions {"claim_id": "ta.resume016.livelihood.many", "conditions": [], "holder_candidates": ["Rabbi Yohanan"], "local_status": "claim challenged and qualified by Moses case below", "question_id": null}
+P ta.resume016.livelihood.many.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yohanan"}
+P ta.resume016.rain.individual claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yohanan says rain comes on account of an individual.", "scope": "Taanit 9a:8 local discussion"}
+P ta.resume016.rain.individual.a attributions {"candidates": ["Rabbi Yohanan"], "role": "speaker", "scope": "ta.resume016.rain.individual", "surface": "Rabbi Yohanan", "transmission_chain": []}
+P ta.resume016.rain.individual.p positions {"claim_id": "ta.resume016.rain.individual", "conditions": [], "holder_candidates": ["Rabbi Yohanan"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.rain.individual.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yohanan"}
+P ta.resume016.rain.singular.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.rain.singular.verse", "target_id": "ta.resume016.rain.individual"}
+P ta.resume016.rain.singular.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The rain proof uses the singular לך and ארצך.", "scope": "Taanit 9a:8 local discussion"}
+P ta.resume016.rain.singular.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume016.rain.singular.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume016.rain.singular.verse.p positions {"claim_id": "ta.resume016.rain.singular.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.rain.singular.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume016.structure.sustenance structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, sustenance, three providers and Moses qualification"}
+
+### Taanit 9a:9
+מיתיבי ר' יוסי בר' יהודה אומר שלשה פרנסים טובים עמדו לישראל אלו הן משה ואהרן ומרים וג' מתנות טובות ניתנו על ידם ואלו הן באר וענן ומן באר בזכות מרים עמוד ענן בזכות אהרן מן בזכות משה מתה מרים נסתלק הבאר שנאמר (במדבר כ, א) ותמת שם מרים וכתיב בתריה ולא היה מים לעדה וחזרה בזכות שניהן
+R ta101.structure.0025 structure {"boundary": "open_both", "legacy_ids": [], "primary": true, "title": "Objection: three leaders and gifts; Miriam’s well"}
+R ta101.utterances.0077 utterances {"composition": "atomic", "discourse_role": "objection introduction", "textual_voice": "anonymous"}
+R ta101.attributions.0082 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0077", "surface": "", "transmission_chain": []}
+R ta101.utterances.0078 utterances {"composition": "composite", "discourse_role": "baraita offered as objection", "textual_voice": "ר' יוסי בר' יהודה"}
+R ta101.attributions.0083 attributions {"candidates": ["ר' יוסי בר' יהודה"], "role": "speaker", "scope": "ta101.utterances.0078", "surface": "ר' יוסי בר' יהודה", "transmission_chain": []}
+R ta101.claims.0057 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Three good leaders arose for Israel: Moses, Aaron and Miriam.", "scope": "baraita offered as objection"}
+R ta101.positions.0047 positions {"claim_id": "ta101.claims.0057", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0058 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Three gifts were given through them: well, cloud and manna.", "scope": "baraita offered as objection"}
+R ta101.positions.0048 positions {"claim_id": "ta101.claims.0058", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0059 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The well was in Miriam’s merit.", "scope": "baraita offered as objection"}
+R ta101.positions.0049 positions {"claim_id": "ta101.claims.0059", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0060 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The cloud pillar was in Aaron’s merit.", "scope": "baraita offered as objection"}
+R ta101.positions.0050 positions {"claim_id": "ta101.claims.0060", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0061 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Manna was in Moses’s merit.", "scope": "baraita offered as objection"}
+R ta101.positions.0051 positions {"claim_id": "ta101.claims.0061", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0039 edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta101.claims.0061", "target_id": "ta101.claims.0056"}
+R ta101.utterances.0079 utterances {"composition": "composite", "discourse_role": "baraita continuation", "textual_voice": "ר' יוסי בר' יהודה"}
+R ta101.attributions.0084 attributions {"candidates": ["ר' יוסי בר' יהודה"], "role": "speaker", "scope": "ta101.utterances.0079", "surface": "ר' יוסי בר' יהודה", "transmission_chain": []}
+R ta101.claims.0062 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "When Miriam died, the well disappeared, as adjoining verses about her death and the lack of water indicate.", "scope": "baraita continuation"}
+R ta101.positions.0052 positions {"claim_id": "ta101.claims.0062", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0063 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The well returned in the merit of the other two.", "scope": "baraita continuation"}
+R ta101.positions.0053 positions {"claim_id": "ta101.claims.0063", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0066 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0024", "target_id": "ta101.structure.0025"}
+R ta101.edges.0067 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0025", "target_id": "ta101.structure.0026"}
+P ta.resume016.aaron.cloud claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The cloud pillar was in Aaron’s merit.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.aaron.cloud.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.aaron.cloud", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.aaron.cloud.p positions {"claim_id": "ta.resume016.aaron.cloud", "conditions": [], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.aaron.cloud.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+P ta.resume016.gifts claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Three good gifts came through them: well, cloud and manna.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.gifts.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.gifts", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.gifts.p positions {"claim_id": "ta.resume016.gifts", "conditions": [], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.gifts.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+P ta.resume016.manna.objection edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta.resume016.moses.manna", "target_id": "ta.resume016.livelihood.many"}
+P ta.resume016.miriam.death claims {"assertion_mode": "asserted", "conditions": ["Miriam died"], "proposition": "When Miriam died the well departed.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.miriam.death.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.miriam.death", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.miriam.death.p positions {"claim_id": "ta.resume016.miriam.death", "conditions": ["Miriam died"], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.miriam.death.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+P ta.resume016.miriam.proof claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Miriam’s death is followed by the congregation having no water.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.miriam.proof.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume016.miriam.proof", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume016.miriam.proof.p positions {"claim_id": "ta.resume016.miriam.proof", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.miriam.proof.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume016.miriam.support edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.miriam.proof", "target_id": "ta.resume016.miriam.death"}
+P ta.resume016.miriam.well claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The well was in Miriam’s merit.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.miriam.well.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.miriam.well", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.miriam.well.p positions {"claim_id": "ta.resume016.miriam.well", "conditions": [], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.miriam.well.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+P ta.resume016.moses.manna claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The manna was in Moses’ merit.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.moses.manna.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.moses.manna", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.moses.manna.p positions {"claim_id": "ta.resume016.moses.manna", "conditions": [], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.moses.manna.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+P ta.resume016.providers claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Yosi son of Rabbi Yehuda names Moses, Aaron and Miriam as Israel’s three good providers.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.providers.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.providers", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.providers.p positions {"claim_id": "ta.resume016.providers", "conditions": [], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.providers.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+P ta.resume016.structure.sustenance structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, sustenance, three providers and Moses qualification"}
+P ta.resume016.sustenance.challenge questions {"answer_set_status": "partial", "conditions": [], "formulation": "An objection is raised from Rabbi Yosi son of Rabbi Yehuda’s teaching.", "question_origin": "explicit"}
+P ta.resume016.sustenance.challenge.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.sustenance.challenge", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.sustenance.challenge.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "anonymous discussion"}
+P ta.resume016.well.returns claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The well returned through the merit of the other two.", "scope": "Taanit 9a:9 local discussion"}
+P ta.resume016.well.returns.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.well.returns", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.well.returns.p positions {"claim_id": "ta.resume016.well.returns", "conditions": [], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.well.returns.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+
+### Taanit 9a:10
+מת אהרן נסתלקו ענני כבוד שנאמר (במדבר כא, א) וישמע הכנעני מלך ערד מה שמועה שמע שמע שמת אהרן ונסתלקו ענני כבוד וכסבור ניתנה לו רשות להלחם בישראל והיינו דכתיב (במדבר כ, כט) ויראו כל העדה כי גוע אהרן
+R ta101.structure.0026 structure {"boundary": "open_both", "legacy_ids": [], "primary": true, "title": "Aaron’s death and the clouds"}
+R ta101.utterances.0080 utterances {"composition": "atomic", "discourse_role": "baraita continuation", "textual_voice": "ר' יוסי בר' יהודה"}
+R ta101.attributions.0085 attributions {"candidates": ["ר' יוסי בר' יהודה"], "role": "speaker", "scope": "ta101.utterances.0080", "surface": "ר' יוסי בר' יהודה", "transmission_chain": []}
+R ta101.claims.0064 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "When Aaron died, the clouds of glory disappeared.", "scope": "baraita continuation"}
+R ta101.positions.0054 positions {"claim_id": "ta101.claims.0064", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0081 utterances {"composition": "composite", "discourse_role": "scriptural exposition", "textual_voice": "anonymous"}
+R ta101.attributions.0086 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0081", "surface": "", "transmission_chain": []}
+R ta101.claims.0065 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The king of Arad heard that Aaron died and the clouds had disappeared.", "scope": "scriptural exposition"}
+R ta101.positions.0055 positions {"claim_id": "ta101.claims.0065", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0066 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "He supposed permission had been given him to wage war against Israel.", "scope": "scriptural exposition"}
+R ta101.positions.0056 positions {"claim_id": "ta101.claims.0066", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0082 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0087 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0082", "surface": "", "transmission_chain": []}
+R ta101.questions.0012 questions {"answer_set_status": "partial", "conditions": [], "formulation": "What report did the king hear?", "question_origin": "explicit"}
+R ta101.edges.0040 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0065", "target_id": "ta101.questions.0012"}
+R ta101.utterances.0083 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0088 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0083", "surface": "", "transmission_chain": []}
+R ta101.edges.0041 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0083", "target_id": "ta101.claims.0064"}
+R ta101.edges.0042 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0067", "target_id": "ta101.claims.0064"}
+R ta101.edges.0067 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0025", "target_id": "ta101.structure.0026"}
+R ta101.edges.0068 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0026", "target_id": "ta101.structure.0027"}
+P ta.resume016.aaron.death claims {"assertion_mode": "asserted", "conditions": ["Aaron died"], "proposition": "When Aaron died the clouds of glory departed.", "scope": "Taanit 9a:10 local discussion"}
+P ta.resume016.aaron.death.a attributions {"candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "role": "speaker", "scope": "ta.resume016.aaron.death", "surface": "Rabbi Yosi son of Rabbi Yehuda", "transmission_chain": []}
+P ta.resume016.aaron.death.p positions {"claim_id": "ta.resume016.aaron.death", "conditions": ["Aaron died"], "holder_candidates": ["Rabbi Yosi son of Rabbi Yehuda"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.aaron.death.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Yosi son of Rabbi Yehuda"}
+P ta.resume016.aaron.support edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.aaron.verses", "target_id": "ta.resume016.aaron.death"}
+P ta.resume016.aaron.verses claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The exposition combines the king hearing with the congregation seeing that Aaron had died.", "scope": "Taanit 9a:10 local discussion"}
+P ta.resume016.aaron.verses.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.aaron.verses", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.aaron.verses.p positions {"claim_id": "ta.resume016.aaron.verses", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.aaron.verses.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "quoted exposition combining scriptural excerpts"}
+P ta.resume016.news.answer claims {"assertion_mode": "asserted", "conditions": [], "proposition": "He heard Aaron had died and the clouds had departed, and supposed he had permission to attack Israel.", "scope": "Taanit 9a:10 local discussion"}
+P ta.resume016.news.answer.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.news.answer", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.news.answer.p positions {"claim_id": "ta.resume016.news.answer", "conditions": [], "holder_candidates": [], "local_status": "king’s supposition, not divine permission established by narrator", "question_id": null}
+P ta.resume016.news.answer.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "quoted exposition"}
+P ta.resume016.news.edge edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.news.answer", "target_id": "ta.resume016.news.q"}
+P ta.resume016.news.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "What news did the Canaanite king of Arad hear?", "question_origin": "explicit"}
+P ta.resume016.news.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.news.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.news.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "quoted exposition"}
+P ta.resume016.structure.sustenance structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, sustenance, three providers and Moses qualification"}
+
+### Taanit 9a:11
+אמר ר' אבהו אל תקרי ויראו אלא וייראו כדדריש ר"ל דאר"ל כי משמש בארבע לשונות אי דלמא אלא דהא
+R ta101.structure.0027 structure {"boundary": "open_both", "legacy_ids": [], "primary": true, "title": "Fear reading and four functions of כי"}
+R ta101.utterances.0084 utterances {"composition": "atomic", "discourse_role": "alternate reading", "textual_voice": "ר' אבהו"}
+R ta101.attributions.0089 attributions {"candidates": ["ר' אבהו"], "role": "speaker", "scope": "ta101.utterances.0084", "surface": "ר' אבהו", "transmission_chain": []}
+R ta101.claims.0067 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Read וייראו, they feared, rather than ויראו, they saw.", "scope": "alternate reading"}
+R ta101.positions.0057 positions {"claim_id": "ta101.claims.0067", "conditions": [], "holder_candidates": ["ר' אבהו"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0042 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0067", "target_id": "ta101.claims.0064"}
+R ta101.utterances.0085 utterances {"composition": "atomic", "discourse_role": "lexical teaching", "textual_voice": "ר\"ל"}
+R ta101.attributions.0090 attributions {"candidates": ["ר\"ל"], "role": "speaker", "scope": "ta101.utterances.0085", "surface": "ר\"ל", "transmission_chain": []}
+R ta101.claims.0068 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "כי functions with four senses: אי, דלמא, אלא, דהא.", "scope": "lexical teaching"}
+R ta101.positions.0058 positions {"claim_id": "ta101.claims.0068", "conditions": [], "holder_candidates": ["ר\"ל"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0043 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0068", "target_id": "ta101.claims.0067"}
+R ta101.edges.0068 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0026", "target_id": "ta101.structure.0027"}
+R ta101.edges.0069 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0027", "target_id": "ta101.structure.0028"}
+P ta.resume016.abahu.rereading claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rabbi Abahu rereads ויראו as וייראו, they feared.", "scope": "Taanit 9a:11 local discussion"}
+P ta.resume016.abahu.rereading.a attributions {"candidates": ["Rabbi Abahu"], "role": "speaker", "scope": "ta.resume016.abahu.rereading", "surface": "Rabbi Abahu", "transmission_chain": []}
+P ta.resume016.abahu.rereading.p positions {"claim_id": "ta.resume016.abahu.rereading", "conditions": [], "holder_candidates": ["Rabbi Abahu"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.abahu.rereading.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rabbi Abahu"}
+P ta.resume016.ki.senses claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Resh Lakish lists four uses of כי: if, perhaps, rather, because.", "scope": "Taanit 9a:11 local discussion"}
+P ta.resume016.ki.senses.a attributions {"candidates": ["Resh Lakish"], "role": "speaker", "scope": "ta.resume016.ki.senses", "surface": "Resh Lakish", "transmission_chain": []}
+P ta.resume016.ki.senses.p positions {"claim_id": "ta.resume016.ki.senses", "conditions": [], "holder_candidates": ["Resh Lakish"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.ki.senses.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Resh Lakish"}
+P ta.resume016.ki.support edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.ki.senses", "target_id": "ta.resume016.abahu.rereading"}
+P ta.resume016.structure.sustenance structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, sustenance, three providers and Moses qualification"}
+
+### Taanit 9a:12
+חזרו שניהם בזכות משה מת משה נסתלקו כולן שנאמר (זכריה יא, ח) ואכחיד את שלשת הרועים בירח אחד וכי בירח אחד מתו והלא מרים מתה בניסן ואהרן באב ומשה באדר אלא מלמד שנתבטלו ג' מתנות טובות שנתנו על ידן ונסתלקו כולן בירח אחד
+R ta101.structure.0028 structure {"boundary": "open_both", "legacy_ids": [], "primary": true, "title": "Moses’s merit and simultaneous loss of gifts"}
+R ta101.utterances.0086 utterances {"composition": "composite", "discourse_role": "baraita continuation", "textual_voice": "ר' יוסי בר' יהודה"}
+R ta101.attributions.0091 attributions {"candidates": ["ר' יוסי בר' יהודה"], "role": "speaker", "scope": "ta101.utterances.0086", "surface": "ר' יוסי בר' יהודה", "transmission_chain": []}
+R ta101.claims.0069 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Both the well and clouds returned through Moses’s merit.", "scope": "baraita continuation"}
+R ta101.positions.0059 positions {"claim_id": "ta101.claims.0069", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0070 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "When Moses died all the gifts disappeared.", "scope": "baraita continuation"}
+R ta101.positions.0060 positions {"claim_id": "ta101.claims.0070", "conditions": [], "holder_candidates": ["ר' יוסי בר' יהודה"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0087 utterances {"composition": "atomic", "discourse_role": "Zechariah prooftext", "textual_voice": "anonymous"}
+R ta101.attributions.0092 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0087", "surface": "", "transmission_chain": []}
+R ta101.claims.0071 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Zechariah 11:8 says the three shepherds were removed in one month.", "scope": "Zechariah prooftext"}
+R ta101.utterances.0088 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0093 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0088", "surface": "", "transmission_chain": []}
+R ta101.questions.0013 questions {"answer_set_status": "partial", "conditions": [], "formulation": "Did they die in a single month, when Miriam died in Nisan, Aaron in Av, Moses in Adar?", "question_origin": "explicit"}
+R ta101.utterances.0089 utterances {"composition": "composite", "discourse_role": "chronological objection", "textual_voice": "anonymous"}
+R ta101.attributions.0094 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0089", "surface": "", "transmission_chain": []}
+R ta101.claims.0072 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Miriam died in Nisan.", "scope": "chronological objection"}
+R ta101.positions.0061 positions {"claim_id": "ta101.claims.0072", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0073 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Aaron died in Av.", "scope": "chronological objection"}
+R ta101.positions.0062 positions {"claim_id": "ta101.claims.0073", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.claims.0074 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Moses died in Adar.", "scope": "chronological objection"}
+R ta101.positions.0063 positions {"claim_id": "ta101.claims.0074", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.edges.0044 edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta101.utterances.0089", "target_id": "ta101.claims.0071"}
+R ta101.utterances.0090 utterances {"composition": "atomic", "discourse_role": "resolution of verse", "textual_voice": "anonymous"}
+R ta101.attributions.0095 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0090", "surface": "", "transmission_chain": []}
+R ta101.claims.0075 claims {"assertion_mode": "reconciled", "conditions": [], "proposition": "The three good gifts given through them were all removed in a single month.", "scope": "resolution of verse"}
+R ta101.positions.0064 positions {"claim_id": "ta101.claims.0075", "conditions": [], "holder_candidates": [], "local_status": "reconciled; local passage only", "question_id": null}
+R ta101.edges.0045 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0075", "target_id": "ta101.questions.0013"}
+R ta101.edges.0046 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0075", "target_id": "ta101.claims.0070"}
+R ta101.edges.0047 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0069", "target_id": "ta101.claims.0076"}
+R ta101.edges.0069 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0027", "target_id": "ta101.structure.0028"}
+R ta101.edges.0070 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0028", "target_id": "ta101.structure.0029"}
+P ta.resume016.both.return claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Both gifts returned in Moses’ merit.", "scope": "Taanit 9a:12 local discussion"}
+P ta.resume016.both.return.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.both.return", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.both.return.p positions {"claim_id": "ta.resume016.both.return", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.both.return.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "continued quoted exposition"}
+P ta.resume016.different.months claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Miriam died in Nisan, Aaron in Av and Moses in Adar.", "scope": "Taanit 9a:12 local discussion"}
+P ta.resume016.different.months.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.different.months", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.different.months.p positions {"claim_id": "ta.resume016.different.months", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.different.months.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "quoted exposition"}
+P ta.resume016.gifts.one.month claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The verse instead teaches that all three gifts were annulled and departed in one month.", "scope": "Taanit 9a:12 local discussion"}
+P ta.resume016.gifts.one.month.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.gifts.one.month", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.gifts.one.month.p positions {"claim_id": "ta.resume016.gifts.one.month", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.gifts.one.month.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "quoted exposition"}
+P ta.resume016.month.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.gifts.one.month", "target_id": "ta.resume016.month.q"}
+P ta.resume016.month.challenge edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta.resume016.different.months", "target_id": "ta.resume016.shepherds.verse"}
+P ta.resume016.month.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Did all three die in one month?", "question_origin": "explicit"}
+P ta.resume016.month.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.month.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.month.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "quoted exposition"}
+P ta.resume016.month.qualifies edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta.resume016.gifts.one.month", "target_id": "ta.resume016.shepherds.verse"}
+P ta.resume016.moses.death claims {"assertion_mode": "asserted", "conditions": ["Moses died"], "proposition": "When Moses died all the gifts departed.", "scope": "Taanit 9a:12 local discussion"}
+P ta.resume016.moses.death.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.moses.death", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.moses.death.p positions {"claim_id": "ta.resume016.moses.death", "conditions": ["Moses died"], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.moses.death.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "continued quoted exposition"}
+P ta.resume016.moses.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume016.gifts.one.month", "target_id": "ta.resume016.moses.death"}
+P ta.resume016.shepherds.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Zechariah speaks of removing three shepherds in one month.", "scope": "Taanit 9a:12 local discussion"}
+P ta.resume016.shepherds.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume016.shepherds.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume016.shepherds.verse.p positions {"claim_id": "ta.resume016.shepherds.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.shepherds.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume016.structure.sustenance structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, sustenance, three providers and Moses qualification"}
+
+### Taanit 9a:13
+אלמא אשכחן פרנסה בשביל יחיד שאני משה כיון דלרבים הוא בעי כרבים דמי
+R ta101.structure.0029 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Objection articulated; Moses counts as many"}
+R ta101.utterances.0091 utterances {"composition": "atomic", "discourse_role": "objection inference", "textual_voice": "anonymous"}
+R ta101.attributions.0096 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0091", "surface": "", "transmission_chain": []}
+R ta101.claims.0076 claims {"assertion_mode": "challenged", "conditions": [], "proposition": "Thus sustenance is found to come for an individual.", "scope": "objection inference"}
+R ta101.positions.0065 positions {"claim_id": "ta101.claims.0076", "conditions": [], "holder_candidates": [], "local_status": "challenged; local passage only", "question_id": null}
+R ta101.edges.0047 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0069", "target_id": "ta101.claims.0076"}
+R ta101.edges.0048 edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta101.claims.0076", "target_id": "ta101.claims.0056"}
+R ta101.utterances.0092 utterances {"composition": "atomic", "discourse_role": "distinction resolving objection", "textual_voice": "anonymous"}
+R ta101.attributions.0097 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0092", "surface": "", "transmission_chain": []}
+R ta101.claims.0077 claims {"assertion_mode": "reconciled", "conditions": ["Moses requests sustenance for the many."], "proposition": "Moses is different: since he sought for the many, he counts as many.", "scope": "distinction resolving objection"}
+R ta101.positions.0066 positions {"claim_id": "ta101.claims.0077", "conditions": ["Moses requests sustenance for the many."], "holder_candidates": [], "local_status": "reconciled; local passage only", "question_id": null}
+R ta101.edges.0049 edges {"explicitness": "source_explicit", "relation": "local_resolution", "source_id": "ta101.claims.0077", "target_id": "ta101.claims.0076"}
+R ta101.edges.0050 edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta101.claims.0077", "target_id": "ta101.claims.0056"}
+R ta101.edges.0070 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0028", "target_id": "ta101.structure.0029"}
+P ta.resume016.individual.inference claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The argument infers that sustenance can be on account of an individual.", "scope": "Taanit 9a:13 local discussion"}
+P ta.resume016.individual.inference.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.individual.inference", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.individual.inference.p positions {"claim_id": "ta.resume016.individual.inference", "conditions": [], "holder_candidates": [], "local_status": "objection from Moses case, qualified immediately", "question_id": null}
+P ta.resume016.individual.inference.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous discussion"}
+P ta.resume016.individual.objection edges {"explicitness": "source_explicit", "relation": "objection", "source_id": "ta.resume016.individual.inference", "target_id": "ta.resume016.livelihood.many"}
+P ta.resume016.moses.public claims {"assertion_mode": "reconciled", "conditions": ["Moses petitions for the many"], "proposition": "Moses is exceptional: because he petitions for many, he counts as many.", "scope": "Taanit 9a:13 local discussion"}
+P ta.resume016.moses.public.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.moses.public", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.moses.public.p positions {"claim_id": "ta.resume016.moses.public", "conditions": ["Moses petitions for the many"], "holder_candidates": [], "local_status": "reconciled locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume016.moses.public.u utterances {"composition": "atomic", "discourse_role": "reconciled", "textual_voice": "anonymous discussion"}
+P ta.resume016.public.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume016.moses.public", "target_id": "ta.resume016.sustenance.challenge"}
+P ta.resume016.public.original edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta.resume016.moses.public", "target_id": "ta.resume016.livelihood.many"}
+P ta.resume016.public.qualification edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta.resume016.moses.public", "target_id": "ta.resume016.individual.inference"}
+P ta.resume016.structure.sustenance structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rain, sustenance, three providers and Moses qualification"}
+
+### Taanit 9a:14
+רב הונא בר מנוח ורב שמואל בר אידי ורב חייא מווסתניא הוו שכיחי קמיה דרבא כי נח נפשיה דרבא אתו לקמיה דרב פפא כל אימת דהוה אמר להו שמעתא ולא הוה מסתברא להו הוו מרמזי אהדדי חלש דעתיה
+R ta101.structure.0030 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Three pupils’ gestures hurt Rav Pappa"}
+R ta101.utterances.0093 utterances {"composition": "composite", "discourse_role": "narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0098 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0093", "surface": "", "transmission_chain": []}
+R ta101.claims.0078 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rav Huna bar Manoaḥ, Rav Shemuel bar Idi and Rav Ḥiyya of Vastanya regularly attended Rava.", "scope": "narrative"}
+R ta101.claims.0079 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "After Rava’s death they came to Rav Pappa.", "scope": "narrative"}
+R ta101.utterances.0094 utterances {"composition": "composite", "discourse_role": "narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0099 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0094", "surface": "", "transmission_chain": []}
+R ta101.claims.0080 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "When Rav Pappa taught something they found unconvincing, they gestured to each other.", "scope": "narrative"}
+R ta101.claims.0081 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "This distressed him.", "scope": "narrative"}
+R ta101.edges.0071 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0030", "target_id": "ta101.structure.0031"}
+P ta.resume016.structure.students structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rav Pappa and his students: signals, dream and questioning"}
+P ta.resume016.students.move claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rav Huna bar Manoah, Rav Shmuel bar Idi and Rav Hiyya of Vastanya studied before Rava and came to Rav Pappa after Rava died.", "scope": "Taanit 9a:14 local discussion"}
+P ta.resume016.students.move.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.students.move", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.students.move.p positions {"claim_id": "ta.resume016.students.move", "conditions": [], "holder_candidates": [], "local_status": "narrative event", "question_id": null}
+P ta.resume016.students.move.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}
+P ta.resume016.students.signal claims {"assertion_mode": "asserted", "conditions": ["teaching did not appear reasonable to students"], "proposition": "Whenever his teaching did not seem reasonable to them, they signaled to each other, distressing Rav Pappa.", "scope": "Taanit 9a:14 local discussion"}
+P ta.resume016.students.signal.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.students.signal", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.students.signal.p positions {"claim_id": "ta.resume016.students.signal", "conditions": ["teaching did not appear reasonable to students"], "holder_candidates": [], "local_status": "narrative recurrent event", "question_id": null}
+P ta.resume016.students.signal.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}
+
+### Taanit 9b:1
+אקרויה בחלמיה (זכריה יא, ח) ואכחיד את שלשת הרועים למחר כי הוו מיפטרי מיניה אמר להו ליזלו רבנן בשלמא:
+R ta101.structure.0031 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Dream and farewell complete the pupils narrative"}
+R ta101.utterances.0095 utterances {"composition": "atomic", "discourse_role": "dream narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0100 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0095", "surface": "", "transmission_chain": []}
+R ta101.claims.0082 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "In his dream the verse ואכחיד את שלשת הרועים was read to him.", "scope": "dream narrative"}
+R ta101.utterances.0096 utterances {"composition": "atomic", "discourse_role": "farewell narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0101 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0096", "surface": "", "transmission_chain": []}
+R ta101.claims.0083 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The next day, when they departed from him, he spoke to them.", "scope": "farewell narrative"}
+R ta101.utterances.0097 utterances {"composition": "atomic", "discourse_role": "farewell", "textual_voice": "רב פפא"}
+R ta101.attributions.0102 attributions {"candidates": ["רב פפא"], "role": "speaker", "scope": "ta101.utterances.0097", "surface": "רב פפא", "transmission_chain": []}
+R ta101.claims.0084 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Let the rabbis go in peace.", "scope": "farewell"}
+R ta101.edges.0071 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0030", "target_id": "ta101.structure.0031"}
+P ta.resume016.dream claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The three-shepherds verse was read to Rav Pappa in a dream.", "scope": "Taanit 9b:1 local discussion"}
+P ta.resume016.dream.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume016.dream", "surface": "anonymous", "transmission_chain": []}
+P ta.resume016.dream.p positions {"claim_id": "ta.resume016.dream", "conditions": [], "holder_candidates": [], "local_status": "reported dream, not asserted prediction", "question_id": null}
+P ta.resume016.dream.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}
+P ta.resume016.peace.sendoff claims {"assertion_mode": "asserted", "conditions": ["next-day departure"], "proposition": "The next day, when they departed, Rav Pappa told the rabbis to go in peace.", "scope": "Taanit 9b:1 local discussion"}
+P ta.resume016.peace.sendoff.a attributions {"candidates": ["Rav Pappa"], "role": "speaker", "scope": "ta.resume016.peace.sendoff", "surface": "Rav Pappa", "transmission_chain": []}
+P ta.resume016.peace.sendoff.p positions {"claim_id": "ta.resume016.peace.sendoff", "conditions": ["next-day departure"], "holder_candidates": ["Rav Pappa"], "local_status": "narrative speech", "question_id": null}
+P ta.resume016.peace.sendoff.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Rav Pappa"}
+P ta.resume016.structure.students structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Rav Pappa and his students: signals, dream and questioning"}
+
+### Taanit 9b:3
+ואף ר"ל סבר מטר בשביל יחיד דאמר ר"ל מנין למטר בשביל יחיד דכתיב (זכריה י, א) שאלו מה' מטר בעת מלקוש ה' עושה חזיזים ומטר גשם יתן להם לאיש עשב בשדה
+R ta101.structure.0032 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Resh Lakish likewise: rain for an individual"}
+R ta101.utterances.0098 utterances {"composition": "atomic", "discourse_role": "editorial agreement", "textual_voice": "anonymous"}
+R ta101.attributions.0103 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0098", "surface": "", "transmission_chain": []}
+R ta101.claims.0085 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Resh Lakish too holds that rain may come for an individual.", "scope": "editorial agreement"}
+R ta101.positions.0067 positions {"claim_id": "ta101.claims.0085", "conditions": [], "holder_candidates": [], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0099 utterances {"composition": "atomic", "discourse_role": "explicit question", "textual_voice": "anonymous"}
+R ta101.attributions.0104 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0099", "surface": "", "transmission_chain": []}
+R ta101.questions.0014 questions {"answer_set_status": "partial", "conditions": [], "formulation": "Whence is rain for an individual derived?", "question_origin": "explicit"}
+R ta101.utterances.0100 utterances {"composition": "atomic", "discourse_role": "rain for individual", "textual_voice": "ר\"ל"}
+R ta101.attributions.0105 attributions {"candidates": ["ר\"ל"], "role": "speaker", "scope": "ta101.utterances.0100", "surface": "ר\"ל", "transmission_chain": []}
+R ta101.claims.0086 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain can come for an individual.", "scope": "rain for individual"}
+R ta101.positions.0068 positions {"claim_id": "ta101.claims.0086", "conditions": [], "holder_candidates": ["ר\"ל"], "local_status": "asserted; local passage only", "question_id": null}
+R ta101.utterances.0101 utterances {"composition": "atomic", "discourse_role": "cited scripture / textual derivation", "textual_voice": "anonymous"}
+R ta101.attributions.0106 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0101", "surface": "", "transmission_chain": []}
+R ta101.edges.0051 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.utterances.0101", "target_id": "ta101.claims.0086"}
+R ta101.edges.0052 edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta101.claims.0086", "target_id": "ta101.questions.0014"}
+R ta101.edges.0053 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0086", "target_id": "ta101.claims.0055"}
+R ta101.edges.0072 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0032", "target_id": "ta101.structure.0033"}
+P ta.resume017.individual claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Resh Lakish too holds that rain comes on account of an individual.", "scope": "Taanit 9b:3 local discussion"}
+P ta.resume017.individual.a attributions {"candidates": ["Resh Lakish"], "role": "speaker", "scope": "ta.resume017.individual", "surface": "Resh Lakish", "transmission_chain": []}
+P ta.resume017.individual.agreement edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume017.individual", "target_id": "ta.resume016.rain.individual"}
+P ta.resume017.individual.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume017.individual.verse", "target_id": "ta.resume017.individual.q"}
+P ta.resume017.individual.p positions {"claim_id": "ta.resume017.individual", "conditions": [], "holder_candidates": ["Resh Lakish"], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume017.individual.proof edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume017.individual.verse", "target_id": "ta.resume017.individual"}
+P ta.resume017.individual.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Resh Lakish asks the source for rain on account of an individual.", "question_origin": "explicit"}
+P ta.resume017.individual.q.a attributions {"candidates": ["Resh Lakish"], "role": "speaker", "scope": "ta.resume017.individual.q", "surface": "Resh Lakish", "transmission_chain": []}
+P ta.resume017.individual.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "Resh Lakish"}
+P ta.resume017.individual.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "Resh Lakish"}
+P ta.resume017.individual.verse claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Zechariah’s rain request culminates in rain given to an individual, vegetation in the field.", "scope": "Taanit 9b:3 local discussion"}
+P ta.resume017.individual.verse.a attributions {"candidates": [], "role": "quoted_authority", "scope": "ta.resume017.individual.verse", "surface": "scriptural quotation", "transmission_chain": []}
+P ta.resume017.individual.verse.p positions {"claim_id": "ta.resume017.individual.verse", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume017.individual.verse.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "biblical quotation"}
+P ta.resume017.structure.individual structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Individual rain and the garden illustration"}
+
+### Taanit 9b:4
+יכול לכל תלמוד לומר לאיש ותניא אי לאיש יכול לכל שדותיו ת"ל שדה אי שדה יכול לכל השדה ת"ל עשב
+R ta101.structure.0033 structure {"boundary": "open_right", "legacy_ids": [], "primary": true, "title": "Rain narrowed to field and grass"}
+R ta101.utterances.0102 utterances {"composition": "atomic", "discourse_role": "scriptural delimitation", "textual_voice": "anonymous"}
+R ta101.attributions.0107 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0102", "surface": "", "transmission_chain": []}
+R ta101.claims.0087 claims {"assertion_mode": "rejected", "conditions": [], "proposition": "The possibility that rain must be for everyone is excluded by לאיש.", "scope": "scriptural delimitation"}
+R ta101.positions.0069 positions {"claim_id": "ta101.claims.0087", "conditions": [], "holder_candidates": [], "local_status": "rejected; local passage only", "question_id": null}
+R ta101.utterances.0103 utterances {"composition": "atomic", "discourse_role": "baraita delimitation", "textual_voice": "anonymous"}
+R ta101.attributions.0108 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0103", "surface": "", "transmission_chain": []}
+R ta101.claims.0088 claims {"assertion_mode": "rejected", "conditions": [], "proposition": "The possibility that all one’s fields must receive rain is excluded by שדה.", "scope": "baraita delimitation"}
+R ta101.positions.0070 positions {"claim_id": "ta101.claims.0088", "conditions": [], "holder_candidates": [], "local_status": "rejected; local passage only", "question_id": null}
+R ta101.utterances.0104 utterances {"composition": "atomic", "discourse_role": "baraita delimitation", "textual_voice": "anonymous"}
+R ta101.attributions.0109 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0104", "surface": "", "transmission_chain": []}
+R ta101.claims.0089 claims {"assertion_mode": "rejected", "conditions": [], "proposition": "The possibility that the entire field must receive rain is excluded by עשב.", "scope": "baraita delimitation"}
+R ta101.positions.0071 positions {"claim_id": "ta101.claims.0089", "conditions": [], "holder_candidates": [], "local_status": "rejected; local passage only", "question_id": null}
+R ta101.edges.0054 edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta101.claims.0087", "target_id": "ta101.claims.0086"}
+R ta101.edges.0055 edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta101.claims.0088", "target_id": "ta101.claims.0086"}
+R ta101.edges.0056 edges {"explicitness": "source_explicit", "relation": "qualification", "source_id": "ta101.claims.0089", "target_id": "ta101.claims.0086"}
+R ta101.edges.0072 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0032", "target_id": "ta101.structure.0033"}
+R ta101.edges.0073 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0033", "target_id": "ta101.structure.0034"}
+P ta.resume017.all.fields.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Could an individual’s rain apply to all his fields?", "question_origin": "explicit"}
+P ta.resume017.all.fields.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.all.fields.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.all.fields.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "quoted baraita"}
+P ta.resume017.all.people.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Could the rain be for everyone?", "question_origin": "explicit"}
+P ta.resume017.all.people.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.all.people.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.all.people.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "quoted exposition"}
+P ta.resume017.field claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The word field narrows the scope.", "scope": "Taanit 9b:4 local discussion"}
+P ta.resume017.field.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.field", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.field.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume017.field", "target_id": "ta.resume017.all.fields.q"}
+P ta.resume017.field.p positions {"claim_id": "ta.resume017.field", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume017.field.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "quoted baraita"}
+P ta.resume017.person claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The exposition limits the reference through לאיש, for an individual.", "scope": "Taanit 9b:4 local discussion"}
+P ta.resume017.person.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.person", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.person.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume017.person", "target_id": "ta.resume017.all.people.q"}
+P ta.resume017.person.p positions {"claim_id": "ta.resume017.person", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume017.person.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "quoted exposition"}
+P ta.resume017.structure.individual structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Individual rain and the garden illustration"}
+P ta.resume017.vegetation claims {"assertion_mode": "asserted", "conditions": [], "proposition": "The word vegetation further narrows the scope.", "scope": "Taanit 9b:4 local discussion"}
+P ta.resume017.vegetation.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.vegetation", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.vegetation.answer edges {"explicitness": "source_explicit", "relation": "answer", "source_id": "ta.resume017.vegetation", "target_id": "ta.resume017.whole.field.q"}
+P ta.resume017.vegetation.p positions {"claim_id": "ta.resume017.vegetation", "conditions": [], "holder_candidates": [], "local_status": "asserted locally; no later halakhic adjudication inferred", "question_id": null}
+P ta.resume017.vegetation.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "quoted baraita"}
+P ta.resume017.whole.field.q questions {"answer_set_status": "partial", "conditions": [], "formulation": "Could this mean the whole field?", "question_origin": "explicit"}
+P ta.resume017.whole.field.q.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.whole.field.q", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.whole.field.q.u utterances {"composition": "atomic", "discourse_role": "question", "textual_voice": "quoted baraita"}
+
+### Taanit 9b:5
+כי הא דרב דניאל בר קטינא הוה ליה ההיא גינתא כל יומא הוה אזיל וסייר לה אמר הא מישרא בעיא מיא והא מישרא לא בעיא מיא ואתא מיטרא וקמשקי כל היכא דמיבעי ליה מיא
+R ta101.structure.0034 structure {"boundary": "open_left", "legacy_ids": [], "primary": true, "title": "Rav Daniel’s selectively watered garden"}
+R ta101.utterances.0105 utterances {"composition": "atomic", "discourse_role": "garden narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0110 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0105", "surface": "", "transmission_chain": []}
+R ta101.claims.0090 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rav Daniel bar Qetina had a garden and inspected it every day.", "scope": "garden narrative"}
+R ta101.utterances.0106 utterances {"composition": "atomic", "discourse_role": "garden assessment", "textual_voice": "רב דניאל בר קטינא"}
+R ta101.attributions.0111 attributions {"candidates": ["רב דניאל בר קטינא"], "role": "speaker", "scope": "ta101.utterances.0106", "surface": "רב דניאל בר קטינא", "transmission_chain": []}
+R ta101.claims.0091 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "This bed needs water, while that bed does not.", "scope": "garden assessment"}
+R ta101.utterances.0107 utterances {"composition": "atomic", "discourse_role": "garden narrative", "textual_voice": "anonymous"}
+R ta101.attributions.0112 attributions {"candidates": [], "role": "anonymous", "scope": "ta101.utterances.0107", "surface": "", "transmission_chain": []}
+R ta101.claims.0092 claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rain came and watered wherever water was needed.", "scope": "garden narrative"}
+R ta101.edges.0057 edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta101.claims.0092", "target_id": "ta101.claims.0089"}
+R ta101.edges.0073 edges {"explicitness": "source_explicit", "relation": "continuation", "source_id": "ta101.structure.0033", "target_id": "ta101.structure.0034"}
+P ta.resume017.beds.need claims {"assertion_mode": "asserted", "conditions": [], "proposition": "He identified one garden bed as needing water and another as not needing it.", "scope": "Taanit 9b:5 local discussion"}
+P ta.resume017.beds.need.a attributions {"candidates": ["Rav Daniel bar Katina"], "role": "speaker", "scope": "ta.resume017.beds.need", "surface": "Rav Daniel bar Katina", "transmission_chain": []}
+P ta.resume017.beds.need.p positions {"claim_id": "ta.resume017.beds.need", "conditions": [], "holder_candidates": ["Rav Daniel bar Katina"], "local_status": "narrative speech", "question_id": null}
+P ta.resume017.beds.need.u utterances {"composition": "composite", "discourse_role": "asserted", "textual_voice": "Rav Daniel bar Katina"}
+P ta.resume017.garden.example edges {"explicitness": "source_explicit", "relation": "support", "source_id": "ta.resume017.targeted.rain", "target_id": "ta.resume017.vegetation"}
+P ta.resume017.garden.visits claims {"assertion_mode": "asserted", "conditions": [], "proposition": "Rav Daniel bar Katina had a garden which he inspected every day.", "scope": "Taanit 9b:5 local discussion"}
+P ta.resume017.garden.visits.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.garden.visits", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.garden.visits.p positions {"claim_id": "ta.resume017.garden.visits", "conditions": [], "holder_candidates": [], "local_status": "narrative routine", "question_id": null}
+P ta.resume017.garden.visits.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}
+P ta.resume017.structure.individual structure {"boundary": "closed", "legacy_ids": [], "primary": true, "title": "Individual rain and the garden illustration"}
+P ta.resume017.targeted.rain claims {"assertion_mode": "asserted", "conditions": ["location needs water"], "proposition": "Rain came and watered wherever water was needed.", "scope": "Taanit 9b:5 local discussion"}
+P ta.resume017.targeted.rain.a attributions {"candidates": [], "role": "anonymous", "scope": "ta.resume017.targeted.rain", "surface": "anonymous", "transmission_chain": []}
+P ta.resume017.targeted.rain.p positions {"claim_id": "ta.resume017.targeted.rain", "conditions": ["location needs water"], "holder_candidates": [], "local_status": "narrative outcome", "question_id": null}
+P ta.resume017.targeted.rain.u utterances {"composition": "atomic", "discourse_role": "asserted", "textual_voice": "anonymous narrator"}

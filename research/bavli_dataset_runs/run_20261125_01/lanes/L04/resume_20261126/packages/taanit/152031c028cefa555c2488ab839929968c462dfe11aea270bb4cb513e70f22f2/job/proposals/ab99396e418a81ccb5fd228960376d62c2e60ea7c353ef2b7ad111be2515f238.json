@@ -1,0 +1,1646 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Taanit",
+  "source_sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "owner": "/root/lead_l02_l04",
+  "epoch": 1,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/lead_l02_l04",
+    "model_id": null
+  },
+  "records": [
+    {
+      "id": "ta.opening.questions.1",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 19,
+          "end_char": 61,
+          "quote": "מאימתי</strong></big> מזכירין גבורות גשמים"
+        }
+      ],
+      "content": {
+        "formulation": "From when does one mention the powers of rain?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.opening.utterances.2",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 62,
+          "end_char": 99,
+          "quote": "רבי אליעזר אומר מיום טוב הראשון של חג"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Eliezer",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.3",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 62,
+          "end_char": 99,
+          "quote": "רבי אליעזר אומר מיום טוב הראשון של חג"
+        }
+      ],
+      "content": {
+        "proposition": "Begin mentioning rain on the first festival day of Sukkot.",
+        "conditions": [],
+        "scope": "Taanit 2a:1",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.utterances.2"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.4",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 62,
+          "end_char": 99,
+          "quote": "רבי אליעזר אומר מיום טוב הראשון של חג"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Eliezer",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Eliezer"
+        ],
+        "scope": "ta.opening.claims.3",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.3"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.5",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 62,
+          "end_char": 99,
+          "quote": "רבי אליעזר אומר מיום טוב הראשון של חג"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Eliezer"
+        ],
+        "claim_id": "ta.opening.claims.3",
+        "question_id": "ta.opening.questions.1",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.3",
+        "ta.opening.questions.1"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.6",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 100,
+          "end_char": 135,
+          "quote": "ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yehoshua",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.7",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 100,
+          "end_char": 135,
+          "quote": "ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "proposition": "Begin mentioning rain on the last festival day of Sukkot.",
+        "conditions": [],
+        "scope": "Taanit 2a:1",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.utterances.6"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.8",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 100,
+          "end_char": 135,
+          "quote": "ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yehoshua",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "scope": "ta.opening.claims.7",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.7"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.9",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 100,
+          "end_char": 135,
+          "quote": "ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "claim_id": "ta.opening.claims.7",
+        "question_id": "ta.opening.questions.1",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.7",
+        "ta.opening.questions.1"
+      ]
+    },
+    {
+      "id": "ta.opening.edges.10",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> מזכירין גבורות גשמים רבי אליעזר אומר מיום טוב הראשון של חג ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "source_id": "ta.opening.claims.3",
+        "target_id": "ta.opening.questions.1",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.3",
+        "ta.opening.questions.1"
+      ]
+    },
+    {
+      "id": "ta.opening.edges.11",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> מזכירין גבורות גשמים רבי אליעזר אומר מיום טוב הראשון של חג ר' יהושע אומר מיום טוב האחרון של חג"
+        }
+      ],
+      "content": {
+        "source_id": "ta.opening.claims.7",
+        "target_id": "ta.opening.questions.1",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.7",
+        "ta.opening.questions.1"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.12",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 16,
+          "end_char": 51,
+          "quote": "הואיל ואין הגשמים אלא סימן קללה בחג"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yehoshua",
+        "discourse_role": "objection premise",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.13",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 16,
+          "end_char": 51,
+          "quote": "הואיל ואין הגשמים אלא סימן קללה בחג"
+        }
+      ],
+      "content": {
+        "proposition": "Rain on Sukkot is a sign of curse.",
+        "conditions": [],
+        "scope": "Taanit 2a:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.utterances.12"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.14",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 16,
+          "end_char": 51,
+          "quote": "הואיל ואין הגשמים אלא סימן קללה בחג"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yehoshua",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "scope": "ta.opening.claims.13",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.13"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.15",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 16,
+          "end_char": 51,
+          "quote": "הואיל ואין הגשמים אלא סימן קללה בחג"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "claim_id": "ta.opening.claims.13",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.13"
+      ]
+    },
+    {
+      "id": "ta.opening.questions.16",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 52,
+          "end_char": 65,
+          "quote": "למה הוא מזכיר"
+        }
+      ],
+      "content": {
+        "formulation": "Why mention rain during Sukkot, when it signals a curse?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.opening.edges.17",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "source_id": "ta.opening.claims.13",
+        "target_id": "ta.opening.questions.16",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.13",
+        "ta.opening.questions.16"
+      ]
+    },
+    {
+      "id": "ta.opening.edges.18",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "source_id": "ta.opening.questions.16",
+        "target_id": "ta.opening.claims.3",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.questions.16",
+        "ta.opening.claims.3"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.19",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 83,
+          "end_char": 115,
+          "quote": "אף אני לא אמרתי לשאול אלא להזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Eliezer",
+        "discourse_role": "distinction",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Continuation2b8 permits all-year mention; this is not a request for out-of-season rain."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.20",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 83,
+          "end_char": 115,
+          "quote": "אף אני לא אמרתי לשאול אלא להזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "I prescribe mention, not requesting rain.",
+        "conditions": [],
+        "scope": "Taanit 2a:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Continuation2b8 permits all-year mention; this is not a request for out-of-season rain."
+      ],
+      "links": [
+        "ta.opening.utterances.19"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.21",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 83,
+          "end_char": 115,
+          "quote": "אף אני לא אמרתי לשאול אלא להזכיר"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Eliezer",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Eliezer"
+        ],
+        "scope": "ta.opening.claims.20",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Continuation2b8 permits all-year mention; this is not a request for out-of-season rain."
+      ],
+      "links": [
+        "ta.opening.claims.20"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.22",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 83,
+          "end_char": 115,
+          "quote": "אף אני לא אמרתי לשאול אלא להזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Eliezer"
+        ],
+        "claim_id": "ta.opening.claims.20",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Continuation2b8 permits all-year mention; this is not a request for out-of-season rain."
+      ],
+      "links": [
+        "ta.opening.claims.20"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.23",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 116,
+          "end_char": 144,
+          "quote": "משיב הרוח ומוריד הגשם בעונתו"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Eliezer",
+        "discourse_role": "formula explanation",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.24",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 116,
+          "end_char": 144,
+          "quote": "משיב הרוח ומוריד הגשם בעונתו"
+        }
+      ],
+      "content": {
+        "proposition": "Mention that God makes wind blow and rain fall in its season.",
+        "conditions": [],
+        "scope": "Taanit 2a:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.utterances.23"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.25",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 116,
+          "end_char": 144,
+          "quote": "משיב הרוח ומוריד הגשם בעונתו"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Eliezer",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Eliezer"
+        ],
+        "scope": "ta.opening.claims.24",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.24"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.26",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 116,
+          "end_char": 144,
+          "quote": "משיב הרוח ומוריד הגשם בעונתו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Eliezer"
+        ],
+        "claim_id": "ta.opening.claims.24",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.24"
+      ]
+    },
+    {
+      "id": "ta.opening.edges.27",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "source_id": "ta.opening.claims.20",
+        "target_id": "ta.opening.questions.16",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.20",
+        "ta.opening.questions.16"
+      ]
+    },
+    {
+      "id": "ta.opening.edges.28",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "source_id": "ta.opening.claims.24",
+        "target_id": "ta.opening.claims.20",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.24",
+        "ta.opening.claims.20"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.29",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 152,
+          "end_char": 171,
+          "quote": "א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yehoshua",
+        "discourse_role": "consequential objection",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Implicit final אמר לו resolved by dialogue turn, not repeated name;2b8 shows Eliezer accepts permissibility."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.30",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 152,
+          "end_char": 171,
+          "quote": "א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "On that reasoning, mention should be year-round.",
+        "conditions": [
+          "if mentioning differs from requesting"
+        ],
+        "scope": "Taanit 2a:2",
+        "assertion_mode": "challenged"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Implicit final אמר לו resolved by dialogue turn, not repeated name;2b8 shows Eliezer accepts permissibility."
+      ],
+      "links": [
+        "ta.opening.utterances.29"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.31",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 152,
+          "end_char": 171,
+          "quote": "א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yehoshua",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "scope": "ta.opening.claims.30",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Implicit final אמר לו resolved by dialogue turn, not repeated name;2b8 shows Eliezer accepts permissibility."
+      ],
+      "links": [
+        "ta.opening.claims.30"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.32",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 152,
+          "end_char": 171,
+          "quote": "א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehoshua"
+        ],
+        "claim_id": "ta.opening.claims.30",
+        "question_id": null,
+        "conditions": [
+          "if mentioning differs from requesting"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Implicit final אמר לו resolved by dialogue turn, not repeated name;2b8 shows Eliezer accepts permissibility."
+      ],
+      "links": [
+        "ta.opening.claims.30"
+      ]
+    },
+    {
+      "id": "ta.opening.edges.33",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        }
+      ],
+      "content": {
+        "source_id": "ta.opening.claims.30",
+        "target_id": "ta.opening.claims.20",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.30",
+        "ta.opening.claims.20"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.34",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.35",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים"
+        }
+      ],
+      "content": {
+        "proposition": "Request rain only near the rainy season.",
+        "conditions": [
+          "requesting rather than mentioning"
+        ],
+        "scope": "Taanit 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.utterances.34"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.36",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "ta.opening.claims.35",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.35"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.37",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "ta.opening.claims.35",
+        "question_id": null,
+        "conditions": [
+          "requesting rather than mentioning"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ta.opening.claims.35"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.38",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 87,
+          "end_char": 99,
+          "quote": "האחרון מזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yehudah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.39",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 87,
+          "end_char": 99,
+          "quote": "האחרון מזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "Last prayer leader mentions rain.",
+        "conditions": [
+          "last festival day of Sukkot"
+        ],
+        "scope": "Taanit 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.utterances.38"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.40",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 87,
+          "end_char": 99,
+          "quote": "האחרון מזכיר"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yehudah",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yehudah"
+        ],
+        "scope": "ta.opening.claims.39",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.39"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.41",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 87,
+          "end_char": 99,
+          "quote": "האחרון מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehudah"
+        ],
+        "claim_id": "ta.opening.claims.39",
+        "question_id": null,
+        "conditions": [
+          "last festival day of Sukkot"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.39"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.42",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 100,
+          "end_char": 117,
+          "quote": "הראשון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yehudah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.43",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 100,
+          "end_char": 117,
+          "quote": "הראשון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "First prayer leader does not mention rain.",
+        "conditions": [
+          "last festival day of Sukkot"
+        ],
+        "scope": "Taanit 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.utterances.42"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.44",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 100,
+          "end_char": 117,
+          "quote": "הראשון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yehudah",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yehudah"
+        ],
+        "scope": "ta.opening.claims.43",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.43"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.45",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 100,
+          "end_char": 117,
+          "quote": "הראשון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehudah"
+        ],
+        "claim_id": "ta.opening.claims.43",
+        "question_id": null,
+        "conditions": [
+          "last festival day of Sukkot"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.43"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.46",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 138,
+          "end_char": 150,
+          "quote": "הראשון מזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yehudah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.47",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 138,
+          "end_char": 150,
+          "quote": "הראשון מזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "First prayer leader mentions rain.",
+        "conditions": [
+          "first festival day of Passover"
+        ],
+        "scope": "Taanit 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.utterances.46"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.48",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 138,
+          "end_char": 150,
+          "quote": "הראשון מזכיר"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yehudah",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yehudah"
+        ],
+        "scope": "ta.opening.claims.47",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.47"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.49",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 138,
+          "end_char": 150,
+          "quote": "הראשון מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehudah"
+        ],
+        "claim_id": "ta.opening.claims.47",
+        "question_id": null,
+        "conditions": [
+          "first festival day of Passover"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.47"
+      ]
+    },
+    {
+      "id": "ta.opening.utterances.50",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 151,
+          "end_char": 168,
+          "quote": "האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rabbi Yehudah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": []
+    },
+    {
+      "id": "ta.opening.claims.51",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 151,
+          "end_char": 168,
+          "quote": "האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "proposition": "Last prayer leader does not mention rain.",
+        "conditions": [
+          "first festival day of Passover"
+        ],
+        "scope": "Taanit 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.utterances.50"
+      ]
+    },
+    {
+      "id": "ta.opening.attributions.52",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 151,
+          "end_char": 168,
+          "quote": "האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "surface": "Rabbi Yehudah",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yehudah"
+        ],
+        "scope": "ta.opening.claims.51",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.51"
+      ]
+    },
+    {
+      "id": "ta.opening.positions.53",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 151,
+          "end_char": 168,
+          "quote": "האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yehudah"
+        ],
+        "claim_id": "ta.opening.claims.51",
+        "question_id": null,
+        "conditions": [
+          "first festival day of Passover"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "First/last retained literally; standard prayer names not inserted as source words."
+      ],
+      "links": [
+        "ta.opening.claims.51"
+      ]
+    },
+    {
+      "id": "ta.opening.structure.54",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "seg_3d335ec25afcd3a7e753",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "מתני׳ <big><strong>מאימתי</strong></big> מזכירין גבורות גשמים רבי אליעזר אומר מיום טוב הראשון של חג ר' יהושע אומר מיום טוב האחרון של חג"
+        },
+        {
+          "segment_id": "seg_8fe3f9e214fd090f88cf",
+          "start_char": 0,
+          "end_char": 171,
+          "quote": "אמר לו ר' יהושע הואיל ואין הגשמים אלא סימן קללה בחג למה הוא מזכיר אמר לו ר' אליעזר אף אני לא אמרתי לשאול אלא להזכיר משיב הרוח ומוריד הגשם בעונתו אמר לו א\"כ לעולם יהא מזכיר"
+        },
+        {
+          "segment_id": "seg_975c12aeb21f044427a8",
+          "start_char": 0,
+          "end_char": 168,
+          "quote": "אין שואלין את הגשמים אלא סמוך לגשמים ר' יהודה אומר העובר לפני התיבה ביו\"ט האחרון של חג האחרון מזכיר הראשון אינו מזכיר ביו\"ט הראשון של פסח הראשון מזכיר האחרון אינו מזכיר"
+        }
+      ],
+      "content": {
+        "title": "Opening rain-mention Mishnah and its distinction from requesting; exposition continues",
+        "primary": true,
+        "boundary": "open_right",
+        "legacy_ids": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    }
+  ],
+  "coverage": [
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.structure.54"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.utterances.2",
+        "ta.opening.utterances.6"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.claims.3",
+        "ta.opening.claims.7"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.attributions.4",
+        "ta.opening.attributions.8"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.questions.1"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.positions.5",
+        "ta.opening.positions.9"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.edges.10",
+        "ta.opening.edges.11"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_3d335ec25afcd3a7e753",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread opening: explicit timing question and separate named answers; no final ruling. Continuation2b3–11 read including lulav, permission all-year, and rebuttal of resurrection analogy."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.structure.54"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.utterances.12",
+        "ta.opening.utterances.19",
+        "ta.opening.utterances.23",
+        "ta.opening.utterances.29"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.claims.13",
+        "ta.opening.claims.20",
+        "ta.opening.claims.24",
+        "ta.opening.claims.30"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.attributions.14",
+        "ta.opening.attributions.21",
+        "ta.opening.attributions.25",
+        "ta.opening.attributions.31"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.questions.16"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.positions.15",
+        "ta.opening.positions.22",
+        "ta.opening.positions.26",
+        "ta.opening.positions.32"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.edges.17",
+        "ta.opening.edges.18",
+        "ta.opening.edges.27",
+        "ta.opening.edges.28",
+        "ta.opening.edges.33"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_8fe3f9e214fd090f88cf",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread dialogue: curse premise, explicit challenge, mention/request distinction, seasonal formulation and consequential objection all retained. Implicit reply speaker identified by dialogue with uncertainty; continuation2b8–11 constrains interpretation."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.structure.54"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.utterances.34",
+        "ta.opening.utterances.38",
+        "ta.opening.utterances.42",
+        "ta.opening.utterances.46",
+        "ta.opening.utterances.50"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.claims.35",
+        "ta.opening.claims.39",
+        "ta.opening.claims.43",
+        "ta.opening.claims.47",
+        "ta.opening.claims.51"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.attributions.36",
+        "ta.opening.attributions.40",
+        "ta.opening.attributions.44",
+        "ta.opening.attributions.48",
+        "ta.opening.attributions.52"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "ta.opening.positions.37",
+        "ta.opening.positions.41",
+        "ta.opening.positions.45",
+        "ta.opening.positions.49",
+        "ta.opening.positions.53"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit edges found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_975c12aeb21f044427a8",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread ending: request timing is anonymous; four distinct prayer-leader rules have festival conditions and negations. Rabbi Yehudah here not silently recast as transmitter, though parallel2b9 explicitly reports him in Rabbi Yehoshua name."
+    }
+  ],
+  "open_tails": [
+    "ta.opening.structure.54"
+  ]
+}

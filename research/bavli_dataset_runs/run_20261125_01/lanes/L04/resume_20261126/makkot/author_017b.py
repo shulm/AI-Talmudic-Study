@@ -1,0 +1,43 @@
+from author_lib_cont2 import Author
+a=Author('r017b');c=a.c;q=a.q;e=a.edge
+old_ev=a.ev
+def chosen_ev(ref,quote=None):
+ if ref=='8b:9' and quote=='דגמיר':
+  segment=a.refs[ref];start=segment['text'].index(quote)
+  return dict(segment_id=segment['id'],start_char=start,end_char=start+len(quote),quote=quote)
+ return old_ev(ref,quote)
+a.ev=chosen_ev
+# Explicitly selected first דגמיר is the initial reply, not the quoted objection.
+a.structure('mishnah' ,['8b:8'],'Father, son, Israelite and resident alien exile cases')
+a.structure('father',['8b:9','8b:10'],'Father’s nonmandatory second-trade discipline')
+a.structure('son',['8b:11','8b:12','8b:13','8b:14'],'Killing versus wounding a father and competing explanations')
+a.structure('all',['8b:15','8b:16','8b:17','9a:1'],'Slave and kuti homicide and lashes for a strike below monetary value')
+c('family','8b:8','האב גולה על ידי הבן והבן גולה ע"י האב','Father and son may incur exile for killing each other.',voice='Mishnah',conditions=['accidental killing'],composition='composite')
+c('allm','8b:8','הכל גולין על ידי ישראל וישראל גולין על ידיהן חוץ מגר תושב','All incur exile through killing an Israelite and an Israelite through killing them, except a resident alien.',voice='Mishnah',scope='Exception clarified9a2–3',composition='composite')
+c('resident','8b:8','וגר תושב אינו גולה אלא על ידי גר תושב:','A resident alien incurs exile only through killing another resident alien.',voice='Mishnah',conditions=['resident alien victim'])
+fq=q('fatherq','8b:9','האב גולה ע"י הבן והאמרת יצא האב המכה את בנו','How can the father incur exile when paternal discipline was exempt?')
+learned=c('learned','8b:9','דגמיר','The initial answer proposes a son who has already learned.',mode='challenged');e('learned.answer',learned,fq,'answer','8b:9','דגמיר')
+lq=q('learnedq','8b:9','והאמרת אע"ג דגמיר מצוה קעביד','Was it not said that discipline remains a commandment even for one who learned?');e('learnedq.objection',lq,learned,'objection','8b:9','והאמרת אע"ג דגמיר מצוה קעביד')
+craft=c('craft','8b:9','בשוליא דנגרי','The case is a carpenter’s apprentice.',mode='challenged');e('craft.answer',craft,lq,'answer','8b:9','בשוליא דנגרי')
+cq=q('craftq','8b:10','שוליא דנגרי חיותא היא דלמדיה','Does teaching carpentry not provide the child’s livelihood?')
+second=c('second','8b:10','דגמיר אומנותא אחריתי:','He has already learned another trade.',conditions=['already possesses another livelihood skill']);e('second.answer',second,cq,'answer','8b:10','דגמיר אומנותא אחריתי:')
+sq=q('sonq','8b:11','ורמינהי (במדבר לה, יא) מכה נפש פרט למכה אביו','How does the son’s exile fit the baraita excluding one who strikes his father?')
+kah=c('kahana','8b:11','אמר רב כהנא לא קשיא הא ר"ש והא רבנן','Rav Kahana distinguishes Rabbi Shimon from the Sages.',voice='רב כהנא');e('kahana.answer',kah,sq,'answer','8b:11','לא קשיא הא ר"ש והא רבנן')
+rs=c('shimon','8b:12','לר"ש דאמר חנק חמור מסייף שגגת סייף ניתנה לכפרה שגגת חנק לא ניתנה לכפרה','For Rabbi Shimon, strangulation is more severe than the sword; accidental sword-liability has atonement, accidental strangulation-liability does not.',voice='anonymous explanation of ר"ש',holder='ר"ש',conditions=['Rabbi Shimon’s hierarchy'],scope='Explanation of Rav Kahana’s distinction',composition='composite')
+ra=c('rabbis','8b:13','לרבנן דאמרי סייף חמור מחנק הורג אביו [בשוגג] שגגת סייף הוא ושגגת סייף ניתנה לכפרה','For the Sages, the sword is more severe than strangulation; accidentally killing one’s father is accidental sword-liability and receives atonement.',voice='anonymous explanation of רבנן',holder='רבנן',conditions=['Sages’ hierarchy'],composition='composite');e('hierarchy.distinction',ra,rs,'distinction','8b:13','לרבנן דאמרי סייף חמור מחנק')
+rava=c('rava','8b:14','רבא אמר פרט לעושה חבורה באביו בשוגג ס"ד אמינא כיון דבמזיד בר קטלא הוא בשוגג נמי ליגלי קמ"ל:','Rava instead applies the exclusion to accidentally wounding a father, rejecting the supposition that a deliberate capital offense implies exile when accidental.',voice='רבא',conditions=['wounding without killing'],composition='composite');e('rava.answer',rava,sq,'answer','8b:14','פרט לעושה חבורה באביו בשוגג')
+aq=q('allq','8b:15','הכל גולין על ידי ישראל לאיתויי מאי?','Whom does “all” include?')
+incl=c('include','8b:15','לאיתויי עבד וכותי','It includes a slave and a kuti.');e('include.answer',incl,aq,'answer','8b:15','לאיתויי עבד וכותי')
+bar=c('bar','8b:15','תנינא להא דת"ר עבד וכותי גולה ולוקה ע"י ישראל וישראל גולה ולוקה ע"י כותי ועבד','The baraita says a slave or kuti incurs exile and lashes through an Israelite and vice versa.',voice='quoted baraita',scope='Meaning of lashes tested and restricted8b16–9a1',composition='composite')
+first=c('first','8b:16','בשלמא עבד וכותי גולה ע"י ישראל ולוקה גולה דקטליה ולוקה דלטייה','The discussion initially explains exile for killing an Israelite and lashes for cursing him.',scope='Initial interpretation before strike-based answer',composition='composite')
+lashq=q('lashq','8b:16','אלא ישראל גולה ולוקה ע"י כותי בשלמא גולה דקטליה אלא לוקה אמאי דלטייה (שמות כב, כז) ונשיא בעמך לא תאור בעושה מעשה עמך','Exile for an Israelite killing a kuti is understood; but why lashes for cursing, when the verse is restricted to one who acts as your people?',composition='composite')
+witness=c('witness','8b:17','אלא אמר רב אחא בר יעקב כגון שהעיד בו והוזם','Rav Aha bar Yaakov proposes lashes for testimony against him followed by hazama.',voice='רב אחא בר יעקב',mode='rejected',scope='Rejected by slave-witness objection');e('witness.answer',witness,lashq,'answer','8b:17','כגון שהעיד בו והוזם')
+wq=q('witnessq','8b:17','דכוותיה גבי עבד שהעיד בו והוזם עבד בר עדות הוא','The analogous slave case would require the slave to testify; is a slave eligible as a witness?');e('witnessq.objection',wq,witness,'objection','8b:17','עבד בר עדות הוא')
+strike=c('strike','8b:17','אלא אמר רב אחא בריה דרב איקא הכא במאי עסקינן כגון שהכהו הכאה','Rav Aha son of Rav Ika instead identifies a striking case.',voice='רב אחא בריה דרב איקא',scope='Necessary sub-peruta condition continued9a1');e('strike.answer',strike,lashq,'answer','8b:17','כגון שהכהו הכאה')
+value=c('value','9a:1','שאין בה שוה פרוטה','The strike has damage valued at less than a peruta.',conditions=['below peruta value']);e('value.continuation',value,strike,'continuation','9a:1','שאין בה שוה פרוטה')
+ami=c('ami','9a:1','דא"ר אמי א"ר יוחנן הכהו הכאה שאין בה שוה פרוטה לוקה','Rabbi Ami reports Rabbi Yohanan: a strike worth less than a peruta incurs lashes.',voice='רבי אמי reporting רבי יוחנן',holder='רבי יוחנן',chain=['רבי אמי','רבי יוחנן'],conditions=['below peruta value']);e('ami.support',ami,strike,'support','9a:1','דא"ר אמי א"ר יוחנן הכהו הכאה שאין בה שוה פרוטה לוקה')
+c('noanalogy','9a:1','ולא מקשינן הכאה לקללה:','Striking is not analogized to cursing for the disputed exclusion.')
+for row in a.rows:
+ if row['id'] in {fq,lq,cq,sq,aq,lashq}:row['content']['answer_set_status']='partial'
+a.notes={ref:'Source reread8b8–9b3 with complete relevant continuations. Preserve parent/child injury versus killing, second-trade qualification, rival hierarchy and Rava alternative, both Rav Aha identities, rejected witness account and sub-peruta continuation.' for ref in ['8b:'+str(i) for i in range(8,18)]+['9a:1']}
+a.save()
