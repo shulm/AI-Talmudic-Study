@@ -1,0 +1,67 @@
+{
+  "verdict": "Targeted Y27Q01/Y27Q02/Y27A01 corrections verified; original findings preserved. No wider qualification.",
+  "initial_report_sha256": "a8d47c1ff69ef4466d4dd105f9bc98515b6e028caa295a928396d1116b613c8d",
+  "prior_snapshot_sha256": "f851c9b375713b38304ecf608a397ea529aa63992ecbfca1d40759d05b3354a6",
+  "corrected_snapshot_sha256": "a8f543fdd362915e59d5a82024392b70066950e32225901b5c594d58d0f17ccb",
+  "canonical_correction_proposal_sha256": "7d249fdd71d93fc0cc77f2975527dc2b2de7dba52c16b073a03cc90ca220c7bf",
+  "hashes_verified": true,
+  "preliminary_unsubmitted_draft": "Not read or used; comparison is canonical correction only.",
+  "integrity": {
+    "prior_objects_unchanged": 739,
+    "new_records": 10,
+    "total_records": 749,
+    "exact_evidence_spans_checked": 14,
+    "all_added_links_resolve": true,
+    "coverage_scope_unchanged": true,
+    "completed_per_layer": {
+      "attributions": 108,
+      "claims": 108,
+      "edges": 108,
+      "positions": 108,
+      "questions": 108,
+      "reconciliation": 108,
+      "structure": 108,
+      "utterances": 108
+    }
+  },
+  "checks": [
+    {
+      "finding": "Y27Q01",
+      "verdict": "addressed",
+      "records": [
+        "yom.s2703.fix.q_future",
+        "yom.s2703.fix.future_challenge",
+        "yom.s2703.fix.future_purpose_answer"
+      ],
+      "detail": "Elliptical future-purpose challenge now explicit question with proper scenario; objection points to rejected future reformulation; exegetical purpose answers it. Existing declarative rejection retained."
+    },
+    {
+      "finding": "Y27Q02",
+      "verdict": "addressed",
+      "records": [
+        "yom.s2703.fix.q_akiva",
+        "yom.s2703.fix.alignment_proposal",
+        "yom.s2703.fix.alignment_qualification"
+      ],
+      "detail": "Explicit according-to-whom question preserved with corrected retrospective discovery context. Tentative Akiva alignment and Rav Hisda broader compatibility both linked as dialectical answers."
+    },
+    {
+      "finding": "Y27A01",
+      "verdict": "addressed",
+      "records": [
+        "yom.s2703.fix.akiva_rule",
+        "yom.s2703.fix.akiva_rule.a",
+        "yom.s2703.fix.akiva_rule.p",
+        "yom.s2703.fix.akiva_support"
+      ],
+      "detail": "Separate quoted Akiva rule and holder now present, preserving אחר אחר/חד אחר distinction without numeric timing invention. Rabbis-before-Hisda remain holder of separate meta-inference. Support edge targets that meta-inference, not final exclusive identification."
+    }
+  ],
+  "limitations": [
+    "No initial error counts removed; initial report immutable hash rechecked.",
+    "Original source-first basis remains fresh reader SHA1bd65974...; comparator nonblind exposure disclosed in original report.",
+    "This closes listed corrections only; no global graph completeness, atomic export, population accuracy or task/ML eligibility granted.",
+    "No further source wave reviewed or producer annotations inspected under this correction check."
+  ],
+  "production_mutated_by_reviewer": false
+}
