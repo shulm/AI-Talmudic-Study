@@ -1,0 +1,49 @@
+{
+  "verdict": "REWORK_TARGETED",
+  "snapshot_sha256": "3837f096c33950a008a08ac518e704fd68e5dd192cbccfb46bea1d037cde062a",
+  "proposal_sha256": "77450e789621b3d831bf281466fde9f9456859f7e05ab2b977789ac800630de8",
+  "reader_sha256": "493cd5c7fcf9c93b13ff9696edbac7e2705db19e1e3910ad31b8ba00a64b2042",
+  "agent_id": "/root/blind_review",
+  "model": null,
+  "required_repairs": [
+    "RH013-MIKAN-DIRECTION"
+  ],
+  "findings": [
+    {
+      "id": "RH013-MIKAN-DIRECTION",
+      "snapshot_sha256": "3837f096c33950a008a08ac518e704fd68e5dd192cbccfb46bea1d037cde062a",
+      "record_ids": [
+        "rh.e3.b013.e7"
+      ],
+      "category": "source_explicit_argument_direction",
+      "severity": "medium",
+      "status": "confirmed localized repair required",
+      "source_refs": [
+        "Rosh Hashanah8b:9",
+        "Rosh Hashanah8b:10"
+      ],
+      "judgment": "e7 asserts source-explicit support from no_service to from_start. The text first derives sanctity from the year beginning, then says מכאן אמר introducing the interim slave rule. Explicit derivational direction is from_start→no_service. Reverse corroboration could be editorial inference but is not the source-explicit direction recorded.",
+      "required_action": "Immutably revise e7 to source from_start, target no_service, support/source_explicit, with evidence spanning8b9 conclusion and8b10 מכאן אמר and interim condition. Update dependent edge coverage; no claim or coverage growth required."
+    }
+  ],
+  "core_scope": "Rosh Hashanah8b6–9b5,20cores",
+  "core_findings_represented": 31,
+  "core_findings_total": 31,
+  "new_rows": 207,
+  "completed_per_pass": 222,
+  "source_segments": 1025,
+  "remaining_per_pass": 803,
+  "context_coverage_added": 0,
+  "open_tails": [
+    "rh.e3.b013.s4"
+  ],
+  "next_ref": "Rosh Hashanah9b:6",
+  "ml_eligible": false,
+  "task_eligible_count": 0,
+  "new_random_cohort_credit": 0,
+  "limitations": [
+    "One explicit-direction edge requires repair; no other confirmed semantic defect within bounded comparison.",
+    "Context semantic rows must be reused on next coverage pass; unproduced9b8 lexical material still needs production.",
+    "Same reader earlier RH exposure documented. No whole-tractate acceptance, fresh randomcohort or human certification."
+  ]
+}

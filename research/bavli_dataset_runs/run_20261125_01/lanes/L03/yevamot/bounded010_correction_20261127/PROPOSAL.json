@@ -1,0 +1,742 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Yevamot",
+  "source_sha256": "e3f2ddea9c75119de9dd032ca9cf91108d55c332ca8eeab4fb0997ed1eca5a07",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "owner": "L03/yevamot",
+  "epoch": 2,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/yevamot",
+    "model_id": null
+  },
+  "open_tails": [
+    "yev010.sacrifices"
+  ],
+  "records": [
+    {
+      "id": "yvfix010.individual_threshold_support.threshold",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_30aae45882be1e0d54cb",
+          "start_char": 0,
+          "end_char": 179,
+          "quote": "דת\"ר (ויקרא ד, יד) ונודעה החטאת אשר חטאו עליה רבי אומר נאמר כאן עליה ונאמר להלן עליה מה להלן דבר שחייבים על זדונו כרת ועל שגגתו חטאת אף כאן דבר שחייבין על זדונו כרת ועל שגגתו חטאת"
+        },
+        {
+          "segment_id": "seg_26300d3e44faca208e9f",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "יחיד ונשיא אתיא מצות מצות"
+        }
+      ],
+      "content": {
+        "proposition": "For the individual in ordinary commandments, the derived liability criteria are intentional karet and unwitting sin-offering liability.",
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "ordinary commandments"
+        ],
+        "scope": "Liability threshold only; does not derive the offering animal species",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "yvfix010.individual_threshold_support.threshold.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_30aae45882be1e0d54cb",
+          "start_char": 0,
+          "end_char": 179,
+          "quote": "דת\"ר (ויקרא ד, יד) ונודעה החטאת אשר חטאו עליה רבי אומר נאמר כאן עליה ונאמר להלן עליה מה להלן דבר שחייבים על זדונו כרת ועל שגגתו חטאת אף כאן דבר שחייבין על זדונו כרת ועל שגגתו חטאת"
+        },
+        {
+          "segment_id": "seg_26300d3e44faca208e9f",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "יחיד ונשיא אתיא מצות מצות"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi derivation as explained by anonymous Gemara"
+        ],
+        "claim_id": "yvfix010.individual_threshold_support.threshold",
+        "question_id": null,
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "ordinary commandments"
+        ],
+        "local_status": "Threshold derivation only; offering-species rules separately preserved"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yvfix010.individual_threshold_support.threshold"
+      ]
+    },
+    {
+      "id": "yvfix010.individual_threshold_support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "end_char": 25,
+          "quote": "יחיד ונשיא אתיא מצות מצות",
+          "segment_id": "seg_26300d3e44faca208e9f",
+          "start_char": 0
+        }
+      ],
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "yev010.mitzvot_analogy",
+        "target_id": "yvfix010.individual_threshold_support.threshold"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yev010.mitzvot_analogy",
+        "yvfix010.individual_threshold_support.threshold"
+      ],
+      "supersedes": "yev010.individual_threshold_support"
+    },
+    {
+      "id": "yvfix010.leader_threshold_support.threshold",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_30aae45882be1e0d54cb",
+          "start_char": 0,
+          "end_char": 179,
+          "quote": "דת\"ר (ויקרא ד, יד) ונודעה החטאת אשר חטאו עליה רבי אומר נאמר כאן עליה ונאמר להלן עליה מה להלן דבר שחייבים על זדונו כרת ועל שגגתו חטאת אף כאן דבר שחייבין על זדונו כרת ועל שגגתו חטאת"
+        },
+        {
+          "segment_id": "seg_26300d3e44faca208e9f",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "יחיד ונשיא אתיא מצות מצות"
+        }
+      ],
+      "content": {
+        "proposition": "For the leader in ordinary commandments, the derived liability criteria are intentional karet and unwitting sin-offering liability.",
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "ordinary commandments"
+        ],
+        "scope": "Liability threshold only; does not derive the offering animal species",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "yvfix010.leader_threshold_support.threshold.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_30aae45882be1e0d54cb",
+          "start_char": 0,
+          "end_char": 179,
+          "quote": "דת\"ר (ויקרא ד, יד) ונודעה החטאת אשר חטאו עליה רבי אומר נאמר כאן עליה ונאמר להלן עליה מה להלן דבר שחייבים על זדונו כרת ועל שגגתו חטאת אף כאן דבר שחייבין על זדונו כרת ועל שגגתו חטאת"
+        },
+        {
+          "segment_id": "seg_26300d3e44faca208e9f",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "יחיד ונשיא אתיא מצות מצות"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi derivation as explained by anonymous Gemara"
+        ],
+        "claim_id": "yvfix010.leader_threshold_support.threshold",
+        "question_id": null,
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "ordinary commandments"
+        ],
+        "local_status": "Threshold derivation only; offering-species rules separately preserved"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yvfix010.leader_threshold_support.threshold"
+      ]
+    },
+    {
+      "id": "yvfix010.leader_threshold_support",
+      "layer": "edges",
+      "evidence": [
+        {
+          "end_char": 25,
+          "quote": "יחיד ונשיא אתיא מצות מצות",
+          "segment_id": "seg_26300d3e44faca208e9f",
+          "start_char": 0
+        }
+      ],
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "yev010.mitzvot_analogy",
+        "target_id": "yvfix010.leader_threshold_support.threshold"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yev010.mitzvot_analogy",
+        "yvfix010.leader_threshold_support.threshold"
+      ],
+      "supersedes": "yev010.leader_threshold_support"
+    },
+    {
+      "id": "yvfix010.individual_idol_source0.threshold",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_2eb80d04089a755c6e1c",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "ולא בעבודת כוכבים אלא על דבר שחייבין על זדונו כרת ועל שגגתו חטאת צבור בעבודת כוכבים יליף מעיני מעיני"
+        },
+        {
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון"
+        },
+        {
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0,
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון"
+        }
+      ],
+      "content": {
+        "proposition": "For the individual in idolatry, the derived liability criteria are intentional karet and unwitting sin-offering liability.",
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "idolatry"
+        ],
+        "scope": "Liability threshold only; does not derive the offering animal species",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "yvfix010.individual_idol_source0.threshold.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_2eb80d04089a755c6e1c",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "ולא בעבודת כוכבים אלא על דבר שחייבין על זדונו כרת ועל שגגתו חטאת צבור בעבודת כוכבים יליף מעיני מעיני"
+        },
+        {
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון"
+        },
+        {
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0,
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi derivation as explained by anonymous Gemara"
+        ],
+        "claim_id": "yvfix010.individual_idol_source0.threshold",
+        "question_id": null,
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "idolatry"
+        ],
+        "local_status": "Threshold derivation only; offering-species rules separately preserved"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yvfix010.individual_idol_source0.threshold"
+      ]
+    },
+    {
+      "id": "yvfix010.individual_idol_source0",
+      "layer": "edges",
+      "evidence": [
+        {
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון",
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0
+        },
+        {
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון",
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0
+        }
+      ],
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "yev010.vav_down",
+        "target_id": "yvfix010.individual_idol_source0.threshold"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yev010.vav_down",
+        "yvfix010.individual_idol_source0.threshold"
+      ],
+      "supersedes": "yev010.individual_idol_source0"
+    },
+    {
+      "id": "yvfix010.individual_idol_source1.threshold",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_2eb80d04089a755c6e1c",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "ולא בעבודת כוכבים אלא על דבר שחייבין על זדונו כרת ועל שגגתו חטאת צבור בעבודת כוכבים יליף מעיני מעיני"
+        },
+        {
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון"
+        },
+        {
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0,
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון"
+        }
+      ],
+      "content": {
+        "proposition": "For the leader in idolatry, the derived liability criteria are intentional karet and unwitting sin-offering liability.",
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "idolatry"
+        ],
+        "scope": "Liability threshold only; does not derive the offering animal species",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "yvfix010.individual_idol_source1.threshold.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_2eb80d04089a755c6e1c",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "ולא בעבודת כוכבים אלא על דבר שחייבין על זדונו כרת ועל שגגתו חטאת צבור בעבודת כוכבים יליף מעיני מעיני"
+        },
+        {
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון"
+        },
+        {
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0,
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi derivation as explained by anonymous Gemara"
+        ],
+        "claim_id": "yvfix010.individual_idol_source1.threshold",
+        "question_id": null,
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "idolatry"
+        ],
+        "local_status": "Threshold derivation only; offering-species rules separately preserved"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yvfix010.individual_idol_source1.threshold"
+      ]
+    },
+    {
+      "id": "yvfix010.individual_idol_source1",
+      "layer": "edges",
+      "evidence": [
+        {
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון",
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0
+        },
+        {
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון",
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0
+        }
+      ],
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "yev010.vav_down",
+        "target_id": "yvfix010.individual_idol_source1.threshold"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yev010.vav_down",
+        "yvfix010.individual_idol_source1.threshold"
+      ],
+      "supersedes": "yev010.individual_idol_source1"
+    },
+    {
+      "id": "yvfix010.individual_idol_source2.threshold",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_2eb80d04089a755c6e1c",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "ולא בעבודת כוכבים אלא על דבר שחייבין על זדונו כרת ועל שגגתו חטאת צבור בעבודת כוכבים יליף מעיני מעיני"
+        },
+        {
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון"
+        },
+        {
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0,
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון"
+        }
+      ],
+      "content": {
+        "proposition": "For the anointed priest in idolatry, the derived liability criteria are intentional karet and unwitting sin-offering liability.",
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "idolatry"
+        ],
+        "scope": "Liability threshold only; does not derive the offering animal species",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "yvfix010.individual_idol_source2.threshold.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_2eb80d04089a755c6e1c",
+          "start_char": 0,
+          "end_char": 100,
+          "quote": "ולא בעבודת כוכבים אלא על דבר שחייבין על זדונו כרת ועל שגגתו חטאת צבור בעבודת כוכבים יליף מעיני מעיני"
+        },
+        {
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון"
+        },
+        {
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0,
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi derivation as explained by anonymous Gemara"
+        ],
+        "claim_id": "yvfix010.individual_idol_source2.threshold",
+        "question_id": null,
+        "conditions": [
+          "Intentional violation incurs karet",
+          "Unwitting violation incurs a sin offering",
+          "idolatry"
+        ],
+        "local_status": "Threshold derivation only; offering-species rules separately preserved"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yvfix010.individual_idol_source2.threshold"
+      ]
+    },
+    {
+      "id": "yvfix010.individual_idol_source2",
+      "layer": "edges",
+      "evidence": [
+        {
+          "end_char": 103,
+          "quote": "יחיד נשיא ומשיח (במדבר טו, כז) מואם נפש אחת אחד יחיד ואחד נשיא ואחד משיח במשמע וי\"ו מוסיף על ענין ראשון",
+          "segment_id": "seg_7048c8e2be2b0c95f853",
+          "start_char": 0
+        },
+        {
+          "end_char": 21,
+          "quote": "וילמד תחתון מן העליון",
+          "segment_id": "seg_915d9ceb036e5875650d",
+          "start_char": 0
+        }
+      ],
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "yev010.vav_down",
+        "target_id": "yvfix010.individual_idol_source2.threshold"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "yev010.vav_down",
+        "yvfix010.individual_idol_source2.threshold"
+      ],
+      "supersedes": "yev010.individual_idol_source2"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Individual and leader from מצות analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked claims findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.mitzvot_analogy",
+        "yvfix010.individual_threshold_support.threshold",
+        "yvfix010.leader_threshold_support.threshold"
+      ],
+      "segment_id": "seg_26300d3e44faca208e9f"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Individual and leader from מצות analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked edges findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yvfix010.individual_threshold_support",
+        "yvfix010.leader_threshold_support"
+      ],
+      "segment_id": "seg_26300d3e44faca208e9f"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Individual and leader from מצות analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked positions findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.mitzvot_analogy.p",
+        "yvfix010.individual_threshold_support.threshold.p",
+        "yvfix010.leader_threshold_support.threshold.p"
+      ],
+      "segment_id": "seg_26300d3e44faca208e9f"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Individual and leader from מצות analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked reconciliation findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.sacrifices",
+        "yev010.mitzvot_analogy",
+        "yvfix010.individual_threshold_support",
+        "yvfix010.leader_threshold_support"
+      ],
+      "segment_id": "seg_26300d3e44faca208e9f"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Public idolatry from מעיני analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked claims findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.idol_eyes",
+        "yvfix010.individual_idol_source0.threshold",
+        "yvfix010.individual_idol_source1.threshold",
+        "yvfix010.individual_idol_source2.threshold"
+      ],
+      "segment_id": "seg_2eb80d04089a755c6e1c"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Public idolatry from מעיני analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked positions findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.idol_eyes.p",
+        "yvfix010.individual_idol_source0.threshold.p",
+        "yvfix010.individual_idol_source1.threshold.p",
+        "yvfix010.individual_idol_source2.threshold.p"
+      ],
+      "segment_id": "seg_2eb80d04089a755c6e1c"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Rabbi עליה analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked claims findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.aleyha_analogy",
+        "yvfix010.individual_threshold_support.threshold",
+        "yvfix010.leader_threshold_support.threshold"
+      ],
+      "segment_id": "seg_30aae45882be1e0d54cb"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Rabbi עליה analogy. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked positions findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.aleyha_analogy.p",
+        "yvfix010.individual_threshold_support.threshold.p",
+        "yvfix010.leader_threshold_support.threshold.p"
+      ],
+      "segment_id": "seg_30aae45882be1e0d54cb"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Individual leader priest included in נפש and conjunction. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked claims findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.nefesh_classes",
+        "yev010.vav_down",
+        "yvfix010.individual_idol_source0.threshold",
+        "yvfix010.individual_idol_source1.threshold",
+        "yvfix010.individual_idol_source2.threshold"
+      ],
+      "segment_id": "seg_7048c8e2be2b0c95f853"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Individual leader priest included in נפש and conjunction. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked edges findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.classes_support",
+        "yvfix010.individual_idol_source0",
+        "yvfix010.individual_idol_source1",
+        "yvfix010.individual_idol_source2"
+      ],
+      "segment_id": "seg_7048c8e2be2b0c95f853"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Individual leader priest included in נפש and conjunction. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked positions findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.nefesh_classes.p",
+        "yev010.vav_down.p",
+        "yvfix010.individual_idol_source0.threshold.p",
+        "yvfix010.individual_idol_source1.threshold.p",
+        "yvfix010.individual_idol_source2.threshold.p"
+      ],
+      "segment_id": "seg_7048c8e2be2b0c95f853"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Individual leader priest included in נפש and conjunction. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked reconciliation findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.sacrifices",
+        "yev010.nefesh_classes",
+        "yev010.vav_down",
+        "yev010.classes_support",
+        "yvfix010.individual_idol_source0",
+        "yvfix010.individual_idol_source1",
+        "yvfix010.individual_idol_source2"
+      ],
+      "segment_id": "seg_7048c8e2be2b0c95f853"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Lower passage learns from upper passage. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked claims findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.vav_down",
+        "yvfix010.individual_idol_source0.threshold",
+        "yvfix010.individual_idol_source1.threshold",
+        "yvfix010.individual_idol_source2.threshold"
+      ],
+      "segment_id": "seg_915d9ceb036e5875650d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Lower passage learns from upper passage. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked edges findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yvfix010.individual_idol_source0",
+        "yvfix010.individual_idol_source1",
+        "yvfix010.individual_idol_source2"
+      ],
+      "segment_id": "seg_915d9ceb036e5875650d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Lower passage learns from upper passage. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked positions findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.vav_down.p",
+        "yvfix010.individual_idol_source0.threshold.p",
+        "yvfix010.individual_idol_source1.threshold.p",
+        "yvfix010.individual_idol_source2.threshold.p"
+      ],
+      "segment_id": "seg_915d9ceb036e5875650d"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Lower passage learns from upper passage. Original indices preserved. Source-first reread plus continuation through9a18; named attribution, alternatives, conditions and omission check performed. Evidence-linked reconciliation findings. Targeted review repair: threshold inference distinguished from unchanged species propositions.",
+      "record_ids": [
+        "yev010.sacrifices",
+        "yev010.vav_down",
+        "yvfix010.individual_idol_source0",
+        "yvfix010.individual_idol_source1",
+        "yvfix010.individual_idol_source2"
+      ],
+      "segment_id": "seg_915d9ceb036e5875650d"
+    }
+  ]
+}
