@@ -1,0 +1,3421 @@
+{
+  "format": "bounded-exact-version-comparison-v1",
+  "reviewer": "/root/horayot_review",
+  "scope": "Yoma 8a:6–8b:5, 15 new cores, plus separate Y04-W01 successor correction",
+  "provenance": {
+    "nonblind_comparator": true,
+    "prior_producer_exposure": true,
+    "prior_raw_context_overlap": true,
+    "independent_source_reader": "/root/yoma_fresh_7",
+    "fresh_freeze_sha256": "32b9aa00db49a419b660fb1a633ef1b9765a29de241c7648119abd054b5acf58",
+    "fresh_findings_read_before_new_producer_comparison": true,
+    "fresh_mixed_records": 138,
+    "fresh_layer_counts": {
+      "questions": 9,
+      "claims": 38,
+      "attributions": 5,
+      "edges": 18,
+      "structure": 15,
+      "utterances": 15,
+      "positions": 38
+    },
+    "new_source_first_credit_for_comparator": false,
+    "new_probability_credit": false,
+    "context_refs": [
+      "Yoma 7b:3",
+      "Yoma 8a:5",
+      "Yoma 8b:6",
+      "Yoma 8b:7"
+    ]
+  },
+  "pins": {
+    "prior": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_yoma\\snapshots\\38e1e5028acd9bc8a7ebd24cd9870ac58a30450fa4ab79306fab9137e9a1c7a6.json",
+      "sha256": "38e1e5028acd9bc8a7ebd24cd9870ac58a30450fa4ab79306fab9137e9a1c7a6"
+    },
+    "correction_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_yoma\\snapshots\\81508d3e6d6c18572df97ef759c1e45868080c86b9868a06f4bedf8ea15ba24b.json",
+      "sha256": "81508d3e6d6c18572df97ef759c1e45868080c86b9868a06f4bedf8ea15ba24b"
+    },
+    "final_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_yoma\\snapshots\\0076dc58395deeada80a786ed07b970e05f66fb3fb8312042034318d84455a82.json",
+      "sha256": "0076dc58395deeada80a786ed07b970e05f66fb3fb8312042034318d84455a82"
+    },
+    "correction_proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_yoma\\proposals\\11104dbefcb64835bcd9b8eac10f5af53191c5a6fb8bd8567d9aa401f023ef10.json",
+      "sha256": "11104dbefcb64835bcd9b8eac10f5af53191c5a6fb8bd8567d9aa401f023ef10"
+    },
+    "continuation_proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_yoma\\proposals\\9269097af203b13671cdb12832c37ce6a738eb26a3bdfc49be04713df9e9ebc3.json",
+      "sha256": "9269097af203b13671cdb12832c37ce6a738eb26a3bdfc49be04713df9e9ebc3"
+    },
+    "fresh": {
+      "path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\review_session20261127_05\\yoma\\FRESH_SOURCE_ONLY_FROZEN.json",
+      "sha256": "32b9aa00db49a419b660fb1a633ef1b9765a29de241c7648119abd054b5acf58"
+    }
+  },
+  "integrity": {
+    "source_sha256": "52311dd2a84d80173e8ee0c0a2e236f41482bc6377f96bd0ca6b035f22dc52e2",
+    "prior_records": 1032,
+    "after_precision_records": 1036,
+    "final_historical_records": 1218,
+    "precision_additions": 4,
+    "continuation_additions": 182,
+    "continuation_layer_counts": {
+      "claims": 44,
+      "attributions": 48,
+      "positions": 36,
+      "edges": 28,
+      "questions": 10,
+      "structure": 1,
+      "utterances": 15
+    },
+    "prior_object_differences_at_precision_step": [
+      {
+        "id": "yom.s2704.e.48",
+        "changes": {
+          "release_state": [
+            "valid",
+            "superseded"
+          ]
+        }
+      },
+      {
+        "id": "yom.s2704.touch",
+        "changes": {
+          "release_state": [
+            "valid",
+            "superseded"
+          ]
+        }
+      },
+      {
+        "id": "yom.s2704.touch.a",
+        "changes": {
+          "release_state": [
+            "valid",
+            "superseded"
+          ]
+        }
+      },
+      {
+        "id": "yom.s2704.touch.p",
+        "changes": {
+          "release_state": [
+            "valid",
+            "superseded"
+          ]
+        }
+      }
+    ],
+    "all_prior_content_evidence_and_links_preserved": true,
+    "all_1036_objects_equal_across_continuation_step": true,
+    "precision_evidence_spans_exact": 7,
+    "continuation_evidence_spans_exact": 210,
+    "evidence_failures": 0,
+    "completed_coverage_by_layer": {
+      "attributions": 150,
+      "claims": 150,
+      "edges": 150,
+      "positions": 150,
+      "questions": 150,
+      "reconciliation": 150,
+      "structure": 150,
+      "utterances": 150
+    },
+    "all_record_ml_eligible_false": true,
+    "snapshot_ml_eligible": false,
+    "snapshot_review_state": "unreviewed"
+  },
+  "precision_correction": {
+    "finding": "Y04-W01",
+    "status": "closed for successor wording and linked dependencies",
+    "successor_records": [
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2704.manynames",
+          "target_id": "yom.s2705.precision.touch"
+        },
+        "evidence": [
+          {
+            "end_char": 114,
+            "quote": "ומה ציץ שאין בו אלא אזכרה אחת אמרה תורה על מצחו תמיד שלא יסיח דעתו ממנו תפילין שיש בהן אזכרות הרבה על אחת כמה וכמה",
+            "segment_id": "seg_831745d0b3a27206a358",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.precision.e.48",
+        "layer": "edges",
+        "links": [
+          "yom.s2704.manynames",
+          "yom.s2705.precision.touch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "yom.s2704.e.48",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "A person must touch his tefillin בכל שעה ושעה (continually).",
+          "scope": "Rabbah bar Rav Huna’s statement, derived a fortiori from plate"
+        },
+        "evidence": [
+          {
+            "end_char": 139,
+            "quote": "ולרבי יהודה נמי הא כתיב תמיד ההוא תמיד שלא יסיח דעתו ממנו כדרבה בר רב הונא דאמר רבה בר רב הונא חייב אדם למשמש בתפיליו בכל שעה ושעה ק\"ו מציץ",
+            "segment_id": "seg_0ded66e75b3d4d98ddb0",
+            "start_char": 0
+          },
+          {
+            "end_char": 114,
+            "quote": "ומה ציץ שאין בו אלא אזכרה אחת אמרה תורה על מצחו תמיד שלא יסיח דעתו ממנו תפילין שיש בהן אזכרות הרבה על אחת כמה וכמה",
+            "segment_id": "seg_831745d0b3a27206a358",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.precision.touch",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "yom.s2704.touch",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבה בר רב הונא"
+          ],
+          "role": "position_holder",
+          "scope": "Rabbah bar Rav Huna’s statement, derived a fortiori from plate",
+          "surface": "רבה בר רב הונא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 139,
+            "quote": "ולרבי יהודה נמי הא כתיב תמיד ההוא תמיד שלא יסיח דעתו ממנו כדרבה בר רב הונא דאמר רבה בר רב הונא חייב אדם למשמש בתפיליו בכל שעה ושעה ק\"ו מציץ",
+            "segment_id": "seg_0ded66e75b3d4d98ddb0",
+            "start_char": 0
+          },
+          {
+            "end_char": 114,
+            "quote": "ומה ציץ שאין בו אלא אזכרה אחת אמרה תורה על מצחו תמיד שלא יסיח דעתו ממנו תפילין שיש בהן אזכרות הרבה על אחת כמה וכמה",
+            "segment_id": "seg_831745d0b3a27206a358",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.precision.touch.a",
+        "layer": "attributions",
+        "links": [
+          "yom.s2705.precision.touch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "yom.s2704.touch.a",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "claim_id": "yom.s2705.precision.touch",
+          "conditions": [],
+          "holder_candidates": [
+            "רבה בר רב הונא"
+          ],
+          "local_status": "asserted; Rabbah bar Rav Huna’s statement, derived a fortiori from plate",
+          "question_id": null
+        },
+        "evidence": [
+          {
+            "end_char": 139,
+            "quote": "ולרבי יהודה נמי הא כתיב תמיד ההוא תמיד שלא יסיח דעתו ממנו כדרבה בר רב הונא דאמר רבה בר רב הונא חייב אדם למשמש בתפיליו בכל שעה ושעה ק\"ו מציץ",
+            "segment_id": "seg_0ded66e75b3d4d98ddb0",
+            "start_char": 0
+          },
+          {
+            "end_char": 114,
+            "quote": "ומה ציץ שאין בו אלא אזכרה אחת אמרה תורה על מצחו תמיד שלא יסיח דעתו ממנו תפילין שיש בהן אזכרות הרבה על אחת כמה וכמה",
+            "segment_id": "seg_831745d0b3a27206a358",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.precision.touch.p",
+        "layer": "positions",
+        "links": [
+          "yom.s2705.precision.touch"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "supersedes": "yom.s2704.touch.p",
+        "uncertainty": []
+      }
+    ],
+    "historical_predecessors_retained_superseded": [
+      "yom.s2704.e.48",
+      "yom.s2704.touch",
+      "yom.s2704.touch.a",
+      "yom.s2704.touch.p"
+    ],
+    "remaining_active_links_or_content_references_to_superseded_four": [],
+    "assessment": "New claim preserves בכל שעה ושעה with continually; same holder and full cross-folio evidence retained. Attribution/position/support edge point to successor. No fixed-sixty-minute cadence asserted."
+  },
+  "source_claim_question_mapping": [
+    {
+      "fresh_id": "c_meir_days",
+      "fresh_content": {
+        "proposition": "Rabbi Meir requires sprinkling on both priests throughout seven days from all available purification waters/ashes.",
+        "holder_candidates": [
+          "רבי מאיר"
+        ],
+        "conditions": [
+          "both red-heifer priest and Yom Kippur high priest",
+          "מכל חטאות שהיו שם preserved literally",
+          "seven-day wording later qualified by Shabbat and day four"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.meirdays"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "High priest before Yom Kippur or priest burning red heifer"
+            ],
+            "proposition": "Both priests receive sprinkling on all seven days, from all the purification ashes that were there.",
+            "scope": "Rabbi Meir’s baraita; all seven qualified below by Sabbath and fourth-day exclusions"
+          },
+          "evidence": [
+            {
+              "end_char": 248,
+              "quote": "נימא הני תנאי כהני תנאי דתניא אחד זה ואחד זה מזין עליו כל שבעה מכל חטאות שהיו שם דברי רבי מאיר רבי יוסי אומר אין מזין עליו אלא שלישי ושביעי בלבד ר' חנינא סגן הכהנים אומר כהן השורף את הפרה מזין עליו כל שבעה כה\"ג ביוה\"כ אין מזין עליו אלא שלישי ושביעי",
+              "segment_id": "seg_b5629522544084c75aff",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.meirdays",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_yosi_days",
+      "fresh_content": {
+        "proposition": "Rabbi Yosi requires sprinkling only on the third and seventh days.",
+        "holder_candidates": [
+          "רבי יוסי"
+        ],
+        "conditions": [
+          "both priests; source comparison scope"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.yosidays"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "High priest before Yom Kippur or priest burning red heifer"
+            ],
+            "proposition": "Both priests receive sprinkling only on the third and seventh days.",
+            "scope": "Rabbi Yosi’s baraita position"
+          },
+          "evidence": [
+            {
+              "end_char": 248,
+              "quote": "נימא הני תנאי כהני תנאי דתניא אחד זה ואחד זה מזין עליו כל שבעה מכל חטאות שהיו שם דברי רבי מאיר רבי יוסי אומר אין מזין עליו אלא שלישי ושביעי בלבד ר' חנינא סגן הכהנים אומר כהן השורף את הפרה מזין עליו כל שבעה כה\"ג ביוה\"כ אין מזין עליו אלא שלישי ושביעי",
+              "segment_id": "seg_b5629522544084c75aff",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.yosidays",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_hanina_red",
+      "fresh_content": {
+        "proposition": "Rabbi Hanina deputy of priests requires sprinkling throughout seven days for the red-heifer priest.",
+        "holder_candidates": [
+          "רבי חנינא סגן הכהנים"
+        ],
+        "conditions": [
+          "red-heifer priest",
+          "seven-day wording later qualified"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.seganheifer"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Priest burning red heifer"
+            ],
+            "proposition": "The priest burning the red heifer receives sprinkling all seven days.",
+            "scope": "Rabbi Hanina Segan HaKohanim; later day exceptions apply"
+          },
+          "evidence": [
+            {
+              "end_char": 248,
+              "quote": "נימא הני תנאי כהני תנאי דתניא אחד זה ואחד זה מזין עליו כל שבעה מכל חטאות שהיו שם דברי רבי מאיר רבי יוסי אומר אין מזין עליו אלא שלישי ושביעי בלבד ר' חנינא סגן הכהנים אומר כהן השורף את הפרה מזין עליו כל שבעה כה\"ג ביוה\"כ אין מזין עליו אלא שלישי ושביעי",
+              "segment_id": "seg_b5629522544084c75aff",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.seganheifer",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_hanina_yk",
+      "fresh_content": {
+        "proposition": "For the Yom Kippur high priest, Rabbi Hanina requires only third- and seventh-day sprinkling.",
+        "holder_candidates": [
+          "רבי חנינא סגן הכהנים"
+        ],
+        "conditions": [
+          "Yom Kippur high priest"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.seganyk"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "High priest before Yom Kippur"
+            ],
+            "proposition": "The high priest before Yom Kippur receives sprinkling only on the third and seventh days.",
+            "scope": "Rabbi Hanina Segan HaKohanim"
+          },
+          "evidence": [
+            {
+              "end_char": 248,
+              "quote": "נימא הני תנאי כהני תנאי דתניא אחד זה ואחד זה מזין עליו כל שבעה מכל חטאות שהיו שם דברי רבי מאיר רבי יוסי אומר אין מזין עליו אלא שלישי ושביעי בלבד ר' חנינא סגן הכהנים אומר כהן השורף את הפרה מזין עליו כל שבעה כה\"ג ביוה\"כ אין מזין עליו אלא שלישי ושביעי",
+              "segment_id": "seg_b5629522544084c75aff",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.seganyk",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_meir_initial",
+      "fresh_content": {
+        "proposition": "Proposed explanation assigns overridden impurity to Rabbi Meir.",
+        "holder_candidates": [
+          "רבי מאיר as anonymously proposed"
+        ],
+        "conditions": [
+          "communal-service impurity"
+        ],
+        "assertion_mode": "hypothesis rejected as the basis of disagreement"
+      },
+      "producer_ids": [
+        "yom.s2705.initialmeir"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "The first explanation assigns overridden communal impurity to Rabbi Meir.",
+            "scope": "Provisional explanation subsequently rejected as basis of this dispute"
+          },
+          "evidence": [
+            {
+              "end_char": 87,
+              "quote": "מאי לאו בהא קא מיפלגי ר\"מ סבר טומאה דחויה היא בציבור ור' יוסי סבר טומאה היתר היא בציבור",
+              "segment_id": "seg_77a9dc183147b076b31a",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.initialmeir",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_yosi_initial",
+      "fresh_content": {
+        "proposition": "Proposed explanation assigns permitted impurity to Rabbi Yosi.",
+        "holder_candidates": [
+          "רבי יוסי as anonymously proposed"
+        ],
+        "conditions": [
+          "communal-service impurity"
+        ],
+        "assertion_mode": "rejected"
+      },
+      "producer_ids": [
+        "yom.s2705.initialyosi"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "The first explanation assigns permitted communal impurity to Rabbi Yosi.",
+            "scope": "Provisional assignment explicitly rejected next"
+          },
+          "evidence": [
+            {
+              "end_char": 87,
+              "quote": "מאי לאו בהא קא מיפלגי ר\"מ סבר טומאה דחויה היא בציבור ור' יוסי סבר טומאה היתר היא בציבור",
+              "segment_id": "seg_77a9dc183147b076b31a",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.initialyosi",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_all_overridden",
+      "fresh_content": {
+        "proposition": "Instead all these tannaim hold impurity overridden in communal service.",
+        "holder_candidates": [
+          "anonymous local conclusion"
+        ],
+        "conditions": [
+          "these tannaim; no universal claim about every sage",
+          "impurity discussion originates in corpse impurity"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.alloverridden"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "All these tannaim hold that communal impurity is overridden.",
+            "scope": "Corrected common ground, not earlier proposed alignment"
+          },
+          "evidence": [
+            {
+              "end_char": 106,
+              "quote": "ותסברא אי סבר רבי יוסי היתר היא בציבור הזאה כלל למה לי אלא דכולי עלמא הני תנאי סברי טומאה דחויה היא בציבור",
+              "segment_id": "seg_d25114797fffce120da7",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.alloverridden",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_meir_immersion_initial",
+      "fresh_content": {
+        "proposition": "Second proposed explanation: Rabbi Meir holds timely immersion is a mitzvah.",
+        "holder_candidates": [
+          "רבי מאיר as anonymously proposed"
+        ],
+        "conditions": [],
+        "assertion_mode": "superseded as contrast; positive component retained"
+      },
+      "producer_ids": [
+        "yom.s2705.secondmeir"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "hypothetical",
+            "conditions": [],
+            "proposition": "The second explanation assigns to Rabbi Meir the principle that immersion at its proper time is a mitzvah.",
+            "scope": "Interim explanation of the schedule dispute; Meir’s principle remains but proposed contrast rejected"
+          },
+          "evidence": [
+            {
+              "end_char": 89,
+              "quote": "והכא בהא קמיפלגי ר\"מ סבר אמרינן טבילה בזמנה מצוה ורבי יוסי סבר לא אמרינן טבילה בזמנה מצוה",
+              "segment_id": "seg_6da558e7f64ef3d8ece3",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.secondmeir",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_yosi_immersion_initial",
+      "fresh_content": {
+        "proposition": "Second proposed explanation: Rabbi Yosi does not hold timely immersion a mitzvah.",
+        "holder_candidates": [
+          "רבי יוסי as anonymously proposed"
+        ],
+        "conditions": [],
+        "assertion_mode": "rejected"
+      },
+      "producer_ids": [
+        "yom.s2705.secondyosi"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "The second explanation assigns to Rabbi Yosi denial that immersion at its proper time is a mitzvah.",
+            "scope": "Interim assignment rejected by contrary baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 89,
+              "quote": "והכא בהא קמיפלגי ר\"מ סבר אמרינן טבילה בזמנה מצוה ורבי יוסי סבר לא אמרינן טבילה בזמנה מצוה",
+              "segment_id": "seg_6da558e7f64ef3d8ece3",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.secondyosi",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_name_bathing",
+      "fresh_content": {
+        "proposition": "When a divine name is written on the skin, one must not bathe, anoint, or stand in a filthy place.",
+        "holder_candidates": [
+          "anonymous cited baraita"
+        ],
+        "conditions": [
+          "divine name written on skin"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.namewash",
+        "yom.s2705.nameanoint",
+        "yom.s2705.namefilth"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Divine name written on his flesh"
+            ],
+            "proposition": "A person may not wash.",
+            "scope": "Opening rule of quoted baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "וסבר רבי יוסי לא אמרינן טבילה בזמנה מצוה והתניא הרי שהיה שם כתוב על בשרו הרי זה לא ירחץ ולא יסוך ולא יעמוד במקום הטנופת נזדמנה לו טבילה של מצוה כורך עליו גמי וטובל רבי יוסי אומר יורד וטובל כדרכו ובלבד שלא ישפשף",
+              "segment_id": "seg_8fb0638ab803661ca46d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.namewash",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Divine name written on his flesh"
+            ],
+            "proposition": "A person may not anoint.",
+            "scope": "Opening rule of quoted baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "וסבר רבי יוסי לא אמרינן טבילה בזמנה מצוה והתניא הרי שהיה שם כתוב על בשרו הרי זה לא ירחץ ולא יסוך ולא יעמוד במקום הטנופת נזדמנה לו טבילה של מצוה כורך עליו גמי וטובל רבי יוסי אומר יורד וטובל כדרכו ובלבד שלא ישפשף",
+              "segment_id": "seg_8fb0638ab803661ca46d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.nameanoint",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Divine name written on his flesh"
+            ],
+            "proposition": "A person may not stand in a filthy place.",
+            "scope": "Opening rule of quoted baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "וסבר רבי יוסי לא אמרינן טבילה בזמנה מצוה והתניא הרי שהיה שם כתוב על בשרו הרי זה לא ירחץ ולא יסוך ולא יעמוד במקום הטנופת נזדמנה לו טבילה של מצוה כורך עליו גמי וטובל רבי יוסי אומר יורד וטובל כדרכו ובלבד שלא ישפשף",
+              "segment_id": "seg_8fb0638ab803661ca46d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.namefilth",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_name_wrap",
+      "fresh_content": {
+        "proposition": "If mitzvah immersion arises, he wraps reed over it and immerses.",
+        "holder_candidates": [
+          "first opinion in cited baraita"
+        ],
+        "conditions": [
+          "mitzvah immersion",
+          "divine name on skin"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.reed"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Divine name written on flesh",
+              "Mitzvah immersion"
+            ],
+            "proposition": "When a mitzvah immersion is occasioned, he wraps a reed around it and immerses.",
+            "scope": "First tanna’s prescribed protection"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "וסבר רבי יוסי לא אמרינן טבילה בזמנה מצוה והתניא הרי שהיה שם כתוב על בשרו הרי זה לא ירחץ ולא יסוך ולא יעמוד במקום הטנופת נזדמנה לו טבילה של מצוה כורך עליו גמי וטובל רבי יוסי אומר יורד וטובל כדרכו ובלבד שלא ישפשף",
+              "segment_id": "seg_8fb0638ab803661ca46d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.reed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_name_yosi",
+      "fresh_content": {
+        "proposition": "Rabbi Yosi permits ordinary descent and immersion provided he does not rub.",
+        "holder_candidates": [
+          "רבי יוסי"
+        ],
+        "conditions": [
+          "must not rub",
+          "divine name on skin and mitzvah immersion"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.yosidip"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Divine name written on flesh",
+              "Mitzvah immersion",
+              "Does not rub"
+            ],
+            "proposition": "He goes down and immerses in his usual way, provided he does not rub.",
+            "scope": "Rabbi Yosi’s alternative; no removal of no-rubbing condition"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "וסבר רבי יוסי לא אמרינן טבילה בזמנה מצוה והתניא הרי שהיה שם כתוב על בשרו הרי זה לא ירחץ ולא יסוך ולא יעמוד במקום הטנופת נזדמנה לו טבילה של מצוה כורך עליו גמי וטובל רבי יוסי אומר יורד וטובל כדרכו ובלבד שלא ישפשף",
+              "segment_id": "seg_8fb0638ab803661ca46d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.yosidip",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_name_tk_reason",
+      "fresh_content": {
+        "proposition": "The known explanation assigns denial of timely immersion as a mitzvah to the first opinion in the name-on-skin baraita.",
+        "holder_candidates": [
+          "תנא קמא of name-on-skin baraita"
+        ],
+        "conditions": [
+          "do not identify this anonymous authority as Rabbi Meir"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.tkprinciple"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The established explanation of that baraita assigns to its first tanna denial that immersion at its proper time is a mitzvah.",
+            "scope": "Quoted-baraita first tanna, not Rabbi Meir by name"
+          },
+          "evidence": [
+            {
+              "end_char": 166,
+              "quote": "וקיימא לן דבטבילה בזמנה מצוה קא מיפלגי דתנא קמא סבר לא אמרינן טבילה בזמנה מצוה. ורבי יוסי סבר אמרינן טבילה בזמנה מצוה אלא דכולי עלמא להני תנאי אמרינן טבילה בזמנה מצוה",
+              "segment_id": "seg_cdf8e562f74034718f23",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.tkprinciple",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_name_yosi_reason",
+      "fresh_content": {
+        "proposition": "That explanation assigns affirmation of timely immersion as a mitzvah to Rabbi Yosi.",
+        "holder_candidates": [
+          "רבי יוסי"
+        ],
+        "conditions": [
+          "name-on-skin baraita"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.yosiprinciple"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The established explanation assigns to Rabbi Yosi the principle that immersion at its proper time is a mitzvah.",
+            "scope": "Contradicts earlier proposed denial"
+          },
+          "evidence": [
+            {
+              "end_char": 166,
+              "quote": "וקיימא לן דבטבילה בזמנה מצוה קא מיפלגי דתנא קמא סבר לא אמרינן טבילה בזמנה מצוה. ורבי יוסי סבר אמרינן טבילה בזמנה מצוה אלא דכולי עלמא להני תנאי אמרינן טבילה בזמנה מצוה",
+              "segment_id": "seg_cdf8e562f74034718f23",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.yosiprinciple",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_all_immersion",
+      "fresh_content": {
+        "proposition": "Revised conclusion: these sprinkling tannaim all affirm timely immersion as a mitzvah.",
+        "holder_candidates": [
+          "anonymous local conclusion"
+        ],
+        "conditions": [
+          "sprinkling tannaim; excludes anonymous first opinion of the separate baraita"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.alltimed"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "All the tannaim of the sprinkling discussion accept immersion at its proper time as a mitzvah.",
+            "scope": "Revised common ground; does not erase first tanna of name-on-flesh baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 166,
+              "quote": "וקיימא לן דבטבילה בזמנה מצוה קא מיפלגי דתנא קמא סבר לא אמרינן טבילה בזמנה מצוה. ורבי יוסי סבר אמרינן טבילה בזמנה מצוה אלא דכולי עלמא להני תנאי אמרינן טבילה בזמנה מצוה",
+              "segment_id": "seg_cdf8e562f74034718f23",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.alltimed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_meir_compare",
+      "fresh_content": {
+        "proposition": "Rabbi Meir compares sprinkling to immersion.",
+        "holder_candidates": [
+          "רבי מאיר"
+        ],
+        "conditions": [
+          "final explanation of seven-day sprinkling requirement"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.meiranalogy"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Sprinkling is compared to immersion.",
+            "scope": "Final explanation of Rabbi Meir’s scheduling position"
+          },
+          "evidence": [
+            {
+              "end_char": 83,
+              "quote": "והכא בהא קמיפלגי רבי מאיר סבר מקשינן הזאה לטבילה ור' יוסי סבר לא מקשינן הזאה לטבילה",
+              "segment_id": "seg_7170c7a6d6cf028d1bf6",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.meiranalogy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_yosi_no_compare",
+      "fresh_content": {
+        "proposition": "Rabbi Yosi does not compare sprinkling to immersion.",
+        "holder_candidates": [
+          "רבי יוסי"
+        ],
+        "conditions": [
+          "final explanation"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.yosinoanalogy"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Sprinkling is not compared to immersion.",
+            "scope": "Final explanation of Rabbi Yosi’s scheduling position"
+          },
+          "evidence": [
+            {
+              "end_char": 83,
+              "quote": "והכא בהא קמיפלגי רבי מאיר סבר מקשינן הזאה לטבילה ור' יוסי סבר לא מקשינן הזאה לטבילה",
+              "segment_id": "seg_7170c7a6d6cf028d1bf6",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.yosinoanalogy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_hanina_no_compare",
+      "fresh_content": {
+        "proposition": "Rabbi Hanina does not compare sprinkling to immersion.",
+        "holder_candidates": [
+          "רבי חנינא סגן הכהנים as explained anonymously"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.segannoanalogy"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi Hanina Segan HaKohanim does not compare sprinkling to immersion.",
+            "scope": "Answer to dilemma"
+          },
+          "evidence": [
+            {
+              "end_char": 43,
+              "quote": "לעולם לא מקיש וכהן השורף את הפרה מעלה בעלמא",
+              "segment_id": "seg_0d38077986fc5a0e7096",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.segannoanalogy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_hanina_elevation",
+      "fresh_content": {
+        "proposition": "The extra requirement for the red-heifer priest is an added standard.",
+        "holder_candidates": [
+          "explanation of רבי חנינא סגן הכהנים"
+        ],
+        "conditions": [
+          "red-heifer priest only"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.seganextra"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Priest burning red heifer"
+            ],
+            "proposition": "The additional requirement for the priest burning the red heifer is a mere extra standard.",
+            "scope": "מעלה בעלמא rather than comparison to immersion"
+          },
+          "evidence": [
+            {
+              "end_char": 43,
+              "quote": "לעולם לא מקיש וכהן השורף את הפרה מעלה בעלמא",
+              "segment_id": "seg_0d38077986fc5a0e7096",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.seganextra",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_only_difference_start",
+      "fresh_content": {
+        "proposition": "The baraita states there is no difference between the two priests except the distinction continued at 8b:1.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "sentence continues across daf boundary"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.q.baraitaholder"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Baraita states only a separation-purpose and touching difference",
+              "Question and full content cross folio"
+            ],
+            "formulation": "Whose view does the baraita limiting the difference between the two priests follow?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 75,
+              "quote": "כמאן אזלא הא דתנו רבנן אין בין כהן השורף את הפרה לכהן גדול ביום הכפורים אלא",
+              "segment_id": "seg_5c9612321c470ac58cc4",
+              "start_char": 0
+            },
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.baraitaholder",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_red_separation",
+      "fresh_content": {
+        "proposition": "The red-heifer priest separates for sanctity and fellow priests touch him.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "first זה resolved from preceding order in 8a:15"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.heiferpure",
+        "yom.s2705.heifernotouch"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Priest burning red heifer"
+            ],
+            "proposition": "The red-heifer priest’s separation is for purity.",
+            "scope": "Only-difference baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 75,
+              "quote": "כמאן אזלא הא דתנו רבנן אין בין כהן השורף את הפרה לכהן גדול ביום הכפורים אלא",
+              "segment_id": "seg_5c9612321c470ac58cc4",
+              "start_char": 0
+            },
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.heiferpure",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Priest burning red heifer"
+            ],
+            "proposition": "His fellow priests do not touch the priest burning the red heifer during separation.",
+            "scope": "Only-difference baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 75,
+              "quote": "כמאן אזלא הא דתנו רבנן אין בין כהן השורף את הפרה לכהן גדול ביום הכפורים אלא",
+              "segment_id": "seg_5c9612321c470ac58cc4",
+              "start_char": 0
+            },
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.heifernotouch",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "fresh reader referent inversion; producer supported by separately pinned Rashi (Y05-R01)"
+    },
+    {
+      "fresh_id": "c_yk_separation",
+      "fresh_content": {
+        "proposition": "The Yom Kippur high priest separates for purity and fellow priests do not touch him.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "second זה resolved from preceding order"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.ykholy",
+        "yom.s2705.yktouch"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "High priest before Yom Kippur"
+            ],
+            "proposition": "The high priest’s separation is for sanctity.",
+            "scope": "Only-difference baraita, not Rabbi Hanina’s additional schedule distinction"
+          },
+          "evidence": [
+            {
+              "end_char": 75,
+              "quote": "כמאן אזלא הא דתנו רבנן אין בין כהן השורף את הפרה לכהן גדול ביום הכפורים אלא",
+              "segment_id": "seg_5c9612321c470ac58cc4",
+              "start_char": 0
+            },
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.ykholy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "High priest before Yom Kippur"
+            ],
+            "proposition": "His fellow priests may touch the high priest during separation.",
+            "scope": "Only-difference baraita"
+          },
+          "evidence": [
+            {
+              "end_char": 75,
+              "quote": "כמאן אזלא הא דתנו רבנן אין בין כהן השורף את הפרה לכהן גדול ביום הכפורים אלא",
+              "segment_id": "seg_5c9612321c470ac58cc4",
+              "start_char": 0
+            },
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.yktouch",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "fresh reader referent inversion; producer supported by separately pinned Rashi (Y05-R01)"
+    },
+    {
+      "fresh_id": "c_baraita_fits",
+      "fresh_content": {
+        "proposition": "This fits either Rabbi Meir or Rabbi Yosi.",
+        "holder_candidates": [
+          "anonymous conclusion"
+        ],
+        "conditions": [
+          "alternative compatibility; do not choose a unique author"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.baraitameiryosi"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Their schedules do not distinguish between the two priests"
+            ],
+            "proposition": "The baraita can follow either Rabbi Meir or Rabbi Yosi.",
+            "scope": "Alternative compatible holders, not unique named assignment"
+          },
+          "evidence": [
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.baraitameiryosi",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_baraita_not_hanina",
+      "fresh_content": {
+        "proposition": "It does not fit Rabbi Hanina deputy of priests, who adds the sprinkling-schedule difference.",
+        "holder_candidates": [
+          "anonymous conclusion"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.notsegan"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "It cannot follow Rabbi Hanina Segan HaKohanim, because on his view the sprinkling schedules also differ.",
+            "scope": "Rejection based on baraita’s only-difference assertion"
+          },
+          "evidence": [
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.notsegan",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_timing0",
+      "fresh_content": {
+        "proposition": "Separation day 1 could be impurity day 3; this makes sprinkling intelligible.",
+        "holder_candidates": [
+          "רבי יוסי ברבי חנינא"
+        ],
+        "conditions": [
+          "uncertain prior impurity date",
+          "possibility, not assertion that all days are simultaneously third/seventh"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.day1"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Uncertainty about prior impurity timing"
+            ],
+            "proposition": "Separation day 1 may be the third day of impurity.",
+            "scope": "Rabbi Yosi son of Rabbi Hanina acknowledges these sprinklings"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "מתקיף לה רבי יוסי ברבי חנינא בשלמא ראשון שמא שלישי שני שמא שלישי שלישי שמא שלישי חמישי שמא שביעי ששי שמא שביעי שביעי שמא שביעי",
+              "segment_id": "seg_954f489c686fcf90bbfe",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.day1",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_timing1",
+      "fresh_content": {
+        "proposition": "Separation day 2 could be impurity day 3; this makes sprinkling intelligible.",
+        "holder_candidates": [
+          "רבי יוסי ברבי חנינא"
+        ],
+        "conditions": [
+          "uncertain prior impurity date",
+          "possibility, not assertion that all days are simultaneously third/seventh"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.day2"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Uncertainty about prior impurity timing"
+            ],
+            "proposition": "Separation day 2 may be the third day of impurity.",
+            "scope": "Rabbi Yosi son of Rabbi Hanina acknowledges these sprinklings"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "מתקיף לה רבי יוסי ברבי חנינא בשלמא ראשון שמא שלישי שני שמא שלישי שלישי שמא שלישי חמישי שמא שביעי ששי שמא שביעי שביעי שמא שביעי",
+              "segment_id": "seg_954f489c686fcf90bbfe",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.day2",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_timing2",
+      "fresh_content": {
+        "proposition": "Separation day 3 could be impurity day 3; this makes sprinkling intelligible.",
+        "holder_candidates": [
+          "רבי יוסי ברבי חנינא"
+        ],
+        "conditions": [
+          "uncertain prior impurity date",
+          "possibility, not assertion that all days are simultaneously third/seventh"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.day3"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Uncertainty about prior impurity timing"
+            ],
+            "proposition": "Separation day 3 may be the third day of impurity.",
+            "scope": "Rabbi Yosi son of Rabbi Hanina acknowledges these sprinklings"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "מתקיף לה רבי יוסי ברבי חנינא בשלמא ראשון שמא שלישי שני שמא שלישי שלישי שמא שלישי חמישי שמא שביעי ששי שמא שביעי שביעי שמא שביעי",
+              "segment_id": "seg_954f489c686fcf90bbfe",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.day3",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_timing3",
+      "fresh_content": {
+        "proposition": "Separation day 5 could be impurity day 7; this makes sprinkling intelligible.",
+        "holder_candidates": [
+          "רבי יוסי ברבי חנינא"
+        ],
+        "conditions": [
+          "uncertain prior impurity date",
+          "possibility, not assertion that all days are simultaneously third/seventh"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.day5"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Uncertainty about prior impurity timing"
+            ],
+            "proposition": "Separation day 5 may be the seventh day of impurity.",
+            "scope": "Rabbi Yosi son of Rabbi Hanina acknowledges these sprinklings"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "מתקיף לה רבי יוסי ברבי חנינא בשלמא ראשון שמא שלישי שני שמא שלישי שלישי שמא שלישי חמישי שמא שביעי ששי שמא שביעי שביעי שמא שביעי",
+              "segment_id": "seg_954f489c686fcf90bbfe",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.day5",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_timing4",
+      "fresh_content": {
+        "proposition": "Separation day 6 could be impurity day 7; this makes sprinkling intelligible.",
+        "holder_candidates": [
+          "רבי יוסי ברבי חנינא"
+        ],
+        "conditions": [
+          "uncertain prior impurity date",
+          "possibility, not assertion that all days are simultaneously third/seventh"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.day6"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Uncertainty about prior impurity timing"
+            ],
+            "proposition": "Separation day 6 may be the seventh day of impurity.",
+            "scope": "Rabbi Yosi son of Rabbi Hanina acknowledges these sprinklings"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "מתקיף לה רבי יוסי ברבי חנינא בשלמא ראשון שמא שלישי שני שמא שלישי שלישי שמא שלישי חמישי שמא שביעי ששי שמא שביעי שביעי שמא שביעי",
+              "segment_id": "seg_954f489c686fcf90bbfe",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.day6",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_timing5",
+      "fresh_content": {
+        "proposition": "Separation day 7 could be impurity day 7; this makes sprinkling intelligible.",
+        "holder_candidates": [
+          "רבי יוסי ברבי חנינא"
+        ],
+        "conditions": [
+          "uncertain prior impurity date",
+          "possibility, not assertion that all days are simultaneously third/seventh"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.day7"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Uncertainty about prior impurity timing"
+            ],
+            "proposition": "Separation day 7 may be the seventh day of impurity.",
+            "scope": "Rabbi Yosi son of Rabbi Hanina acknowledges these sprinklings"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "מתקיף לה רבי יוסי ברבי חנינא בשלמא ראשון שמא שלישי שני שמא שלישי שלישי שמא שלישי חמישי שמא שביעי ששי שמא שביעי שביעי שמא שביעי",
+              "segment_id": "seg_954f489c686fcf90bbfe",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.day7",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_fourth_no",
+      "fresh_content": {
+        "proposition": "Day four cannot be in doubt as either impurity day three or seven.",
+        "holder_candidates": [
+          "רבי יוסי ברבי חנינא continuation"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.fourthneither"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The fourth separation day is not a possible third or seventh impurity day.",
+            "scope": "Rabbi Yosi son of Rabbi Hanina’s objection; distinct from Rabbi Yosi the tanna"
+          },
+          "evidence": [
+            {
+              "end_char": 70,
+              "quote": "אלא רביעי למה לי הזאה כלל לא בשלישי איכא לספוקי ולא בשביעי איכא לספוקי",
+              "segment_id": "seg_4aa39267bdbb317db001",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.fourthneither",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_shabbat",
+      "fresh_content": {
+        "proposition": "Sprinkling is a shevut and does not override Shabbat.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.shevut",
+        "yom.s2705.noshabbat"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Sprinkling is a shevut.",
+            "scope": "Established rule invoked against literal seven days"
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+              "segment_id": "seg_7593cda5a18627ae4a51",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.shevut",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Shabbat"
+            ],
+            "proposition": "Sprinkling does not override Shabbat.",
+            "scope": "Established restriction"
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+              "segment_id": "seg_7593cda5a18627ae4a51",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.noshabbat",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_except_shabbat",
+      "fresh_content": {
+        "proposition": "Seven-day language must already mean excluding Shabbat.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.sevenexceptshabbat"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Shabbat within separation days"
+            ],
+            "proposition": "The all-seven-days wording must mean seven apart from Shabbat.",
+            "scope": "Necessary qualification of literal wording"
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+              "segment_id": "seg_7593cda5a18627ae4a51",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.sevenexceptshabbat",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_except_fourth",
+      "fresh_content": {
+        "proposition": "Likewise it excludes the fourth day.",
+        "holder_candidates": [
+          "anonymous answer"
+        ],
+        "conditions": [
+          "day four exception coexists with Shabbat exception"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.sevenexceptfourth"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Fourth separation day"
+            ],
+            "proposition": "Likewise the wording means seven apart from the fourth day.",
+            "scope": "Answer to fourth-day objection"
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+              "segment_id": "seg_7593cda5a18627ae4a51",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.sevenexceptfourth",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_rava_calendar",
+      "fresh_content": {
+        "proposition": "The Yom Kippur high priest’s schedule depends on calendar determination, not discretionary human choice.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.ykcalendar"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Preparation for Yom Kippur"
+            ],
+            "proposition": "The high priest’s timing depends on the fixed calendar date, not our choice.",
+            "scope": "Rava’s distinction in scheduling"
+          },
+          "evidence": [
+            {
+              "end_char": 241,
+              "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+              "segment_id": "seg_493415e58f4d32824299",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.ykcalendar",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_rava_tishrei",
+      "fresh_content": {
+        "proposition": "Separate him on the third of Tishrei, whatever weekday it falls.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [
+          "Yom Kippur high priest",
+          "third of Tishrei"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.ykthird",
+        "yom.s2705.ykweekday"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Preparation for Yom Kippur"
+            ],
+            "proposition": "The high priest must be separated on the third of Tishrei.",
+            "scope": "Rava’s calendar consequence"
+          },
+          "evidence": [
+            {
+              "end_char": 241,
+              "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+              "segment_id": "seg_493415e58f4d32824299",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.ykthird",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Whatever weekday third of Tishrei falls"
+            ],
+            "proposition": "He is separated whenever the third of Tishrei falls.",
+            "scope": "Rava: day of week does not move this date"
+          },
+          "evidence": [
+            {
+              "end_char": 241,
+              "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+              "segment_id": "seg_493415e58f4d32824299",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.ykweekday",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_rava_red",
+      "fresh_content": {
+        "proposition": "For the red-heifer priest, whose date is discretionary, start separation on Wednesday.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [
+          "red-heifer priest",
+          "start on fourth weekday, not fourth separation day"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.heiferchoice",
+        "yom.s2705.heiferwednesday"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Red-heifer preparation"
+            ],
+            "proposition": "The timing for the priest burning the red heifer is in our control.",
+            "scope": "Rava’s contrast with fixed calendar service"
+          },
+          "evidence": [
+            {
+              "end_char": 241,
+              "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+              "segment_id": "seg_493415e58f4d32824299",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.heiferchoice",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Red-heifer preparation"
+            ],
+            "proposition": "The red-heifer priest is separated on Wednesday.",
+            "scope": "Rava’s chosen schedule"
+          },
+          "evidence": [
+            {
+              "end_char": 241,
+              "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+              "segment_id": "seg_493415e58f4d32824299",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.heiferwednesday",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "c_rava_alignment",
+      "fresh_content": {
+        "proposition": "This makes his fourth separation day fall on Shabbat.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [
+          "align two non-sprinkling exceptions"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_ids": [
+        "yom.s2705.fourthshabbat"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Wednesday start"
+            ],
+            "proposition": "That schedule makes his fourth separation day fall on Shabbat.",
+            "scope": "Rava’s purpose in Wednesday start; combines two non-sprinkling exclusions"
+          },
+          "evidence": [
+            {
+              "end_char": 241,
+              "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+              "segment_id": "seg_493415e58f4d32824299",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.fourthshabbat",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_align",
+      "fresh_content": {
+        "formulation": "Shall these tannaitic disputes be aligned?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.parallel"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Prior permitted/overridden communal-impurity dispute",
+              "Proposed identification tested and rejected"
+            ],
+            "formulation": "Shall we identify these tannaim with the tannaim of the following sprinkling dispute?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 248,
+              "quote": "נימא הני תנאי כהני תנאי דתניא אחד זה ואחד זה מזין עליו כל שבעה מכל חטאות שהיו שם דברי רבי מאיר רבי יוסי אומר אין מזין עליו אלא שלישי ושביעי בלבד ר' חנינא סגן הכהנים אומר כהן השורף את הפרה מזין עליו כל שבעה כה\"ג ביוה\"כ אין מזין עליו אלא שלישי ושביעי",
+              "segment_id": "seg_b5629522544084c75aff",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.parallel",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_impurity_alignment",
+      "fresh_content": {
+        "formulation": "Is their disagreement not permitted versus overridden impurity?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.impurityexplain"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Proposed explanation of Meir versus Yosi sprinkling schedules"
+            ],
+            "formulation": "Do they not disagree whether communal impurity is overridden or permitted?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 87,
+              "quote": "מאי לאו בהא קא מיפלגי ר\"מ סבר טומאה דחויה היא בציבור ור' יוסי סבר טומאה היתר היא בציבור",
+              "segment_id": "seg_77a9dc183147b076b31a",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.impurityexplain",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_any_sprinkle",
+      "fresh_content": {
+        "formulation": "If Rabbi Yosi held impurity permitted, why require any sprinkling?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.anysprinkling"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "First proposed alignment",
+              "Rabbi Yosi still requires third and seventh days"
+            ],
+            "formulation": "If Rabbi Yosi holds communal impurity permitted, why require any sprinkling at all?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 106,
+              "quote": "ותסברא אי סבר רבי יוסי היתר היא בציבור הזאה כלל למה לי אלא דכולי עלמא הני תנאי סברי טומאה דחויה היא בציבור",
+              "segment_id": "seg_d25114797fffce120da7",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.anysprinkling",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_yosi_immersion",
+      "fresh_content": {
+        "formulation": "Does Rabbi Yosi really deny timely immersion as a mitzvah?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.yosidenial"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Second explanation",
+              "Contrary baraita about a divine name on the flesh"
+            ],
+            "formulation": "Does Rabbi Yosi really deny that immersion at its proper time is a mitzvah?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "וסבר רבי יוסי לא אמרינן טבילה בזמנה מצוה והתניא הרי שהיה שם כתוב על בשרו הרי זה לא ירחץ ולא יסוך ולא יעמוד במקום הטנופת נזדמנה לו טבילה של מצוה כורך עליו גמי וטובל רבי יוסי אומר יורד וטובל כדרכו ובלבד שלא ישפשף",
+              "segment_id": "seg_8fb0638ab803661ca46d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.yosidenial",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_hanina_if",
+      "fresh_content": {
+        "formulation": "If Rabbi Hanina compares sprinkling to immersion, why not require the same for the Yom Kippur priest?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.seganif"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "His differing red-heifer and high-priest schedules",
+              "Hypothesis: comparison accepted"
+            ],
+            "formulation": "If Rabbi Hanina Segan HaKohanim compares sprinkling to immersion, why not require the same for the high priest on Yom Kippur?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "ורבי חנינא סגן הכהנים אי מקיש הזאה לטבילה אפילו כהן ביוה\"כ נמי אי לא מקיש הזאה לטבילה אפי' כהן השורף את הפרה נמי לא",
+              "segment_id": "seg_2d38283da941b3d2412d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.seganif",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_hanina_ifnot",
+      "fresh_content": {
+        "formulation": "If he does not compare them, why require it for the red-heifer priest?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.seganifnot"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "His differing schedules",
+              "Hypothesis: comparison rejected"
+            ],
+            "formulation": "If he does not compare sprinkling to immersion, why require it for the priest burning the red heifer?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "ורבי חנינא סגן הכהנים אי מקיש הזאה לטבילה אפילו כהן ביוה\"כ נמי אי לא מקיש הזאה לטבילה אפי' כהן השורף את הפרה נמי לא",
+              "segment_id": "seg_2d38283da941b3d2412d",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.seganifnot",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_baraita_holder",
+      "fresh_content": {
+        "formulation": "Whose position fits the following only-difference baraita?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.baraitaholder"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Baraita states only a separation-purpose and touching difference",
+              "Question and full content cross folio"
+            ],
+            "formulation": "Whose view does the baraita limiting the difference between the two priests follow?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 75,
+              "quote": "כמאן אזלא הא דתנו רבנן אין בין כהן השורף את הפרה לכהן גדול ביום הכפורים אלא",
+              "segment_id": "seg_5c9612321c470ac58cc4",
+              "start_char": 0
+            },
+            {
+              "end_char": 147,
+              "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+              "segment_id": "seg_98ff22fe22838ccd4ab5",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.baraitaholder",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_fourth",
+      "fresh_content": {
+        "formulation": "Why sprinkle at all on the fourth day?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.fourth"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "All-seven-days formulation",
+              "Fourth separation day cannot be a suspected third or seventh impurity day"
+            ],
+            "formulation": "Why is sprinkling required on the fourth day at all?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "מתקיף לה רבי יוסי ברבי חנינא בשלמא ראשון שמא שלישי שני שמא שלישי שלישי שמא שלישי חמישי שמא שביעי ששי שמא שביעי שביעי שמא שביעי",
+              "segment_id": "seg_954f489c686fcf90bbfe",
+              "start_char": 0
+            },
+            {
+              "end_char": 70,
+              "quote": "אלא רביעי למה לי הזאה כלל לא בשלישי איכא לספוקי ולא בשביעי איכא לספוקי",
+              "segment_id": "seg_4aa39267bdbb317db001",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.fourth",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    },
+    {
+      "fresh_id": "q_every_day",
+      "fresh_content": {
+        "formulation": "Can there actually be sprinkling on every one of the seven days?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_ids": [
+        "yom.s2705.q.sevenliteral",
+        "yom.s2705.q.sevenmeaning"
+      ],
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Literal all-seven-days wording",
+              "Known Sabbath exception"
+            ],
+            "formulation": "On your reasoning, is sprinkling really performed on all seven days?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+              "segment_id": "seg_7593cda5a18627ae4a51",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.sevenliteral",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Sprinkling cannot override Shabbat",
+              "Reply invokes a necessary exception before parallel fourth-day exception"
+            ],
+            "formulation": "What must you then say the seven-day expression means?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 130,
+              "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+              "segment_id": "seg_7593cda5a18627ae4a51",
+              "start_char": 0
+            }
+          ],
+          "id": "yom.s2705.q.sevenmeaning",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; not one-to-one atom or edge equivalence"
+    }
+  ],
+  "producer_unmapped_claims": [],
+  "question_coverage": {
+    "fresh": 9,
+    "producer": 10,
+    "missing_explicit_question_identified": [],
+    "additional_question": "q.sevenmeaning explicitly captures אלא מאי אית לך למימר, beyond fresh combined every-day question; כמאן repeated around cross-folio baraita remains one question with full spanning evidence.",
+    "conditions": "Both Hanina dilemma branches preserve premises; impurity permission and timely-immersion denials clearly tested, not accepted."
+  },
+  "findings": [
+    {
+      "id": "Y05-R01",
+      "type": "fresh_reader_error_preserved",
+      "mandatory_production_repair": false,
+      "ref": "Yoma 8b:1",
+      "fresh_ids": [
+        "c_red_separation",
+        "c_yk_separation"
+      ],
+      "fresh_error": "First/second זה assigned by preceding noun order, reversing sanctity/touch and purity/no-touch. Associated fresh positions inherit the same error. Original source-only file remains immutable.",
+      "producer_ids": [
+        "yom.s2705.ykholy",
+        "yom.s2705.yktouch",
+        "yom.s2705.heiferpure",
+        "yom.s2705.heifernotouch"
+      ],
+      "raw_text": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+      "resolution": "Producer reading retained: YK priest sanctity/touch, red-heifer priest purity/no-touch. This is a referent interpretation, not an explicit named replacement within the raw זה clauses. Separate primary commentary disambiguates purity by red-heifer deliberate impurity/immersion procedure and sanctity by entry to divine presence.",
+      "supplemental_source": {
+        "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Rishonim on Talmud\\Rashi\\Seder Moed\\Rashi on Yoma\\Hebrew\\Vilna Edition.json",
+        "sha256": "31a26b14f02bc9a92b76523a13ea23ced403b21369380d79bbb4fb1cc8b78af4",
+        "versionTitle": "Vilna Edition",
+        "location": "Rashi on Yoma 8b:1, text[15][0][0:2]",
+        "exact_quotes": [
+          "שזה פרישתו לקדושה - ליכנס למחנה שכינה ולא יהא לבו זחה עליו ויהא נבדל מכל קלות ראש שחלה עליו אימה בהבדלתו מן הבריות:",
+          "וזה פרישתו לטהרה - להחמיר בטהרתו מפני קל שעושין בו לטמאו בו ביום להטבילו להוציא מלבן של צדוקים לכן החמירו בטהרתו שלא יהא אדם נוגע בו:"
+        ],
+        "consulted_after_discrepancy": true,
+        "not_part_of_fresh_raw_only_reading": true
+      }
+    }
+  ],
+  "semantic_checks": [
+    "Meir-overridden/Yosi-permitted first contrast is rejected; all these local tannaim overridden, not every sage universally. Meir positive component can remain true while contrast rejected.",
+    "Second Meir/Yosi timely-immersion contrast is rejected; all sprinkling tannaim affirm timely immersion. Anonymous first opinion of separate name-on-flesh baraita is not identified as Meir or erased.",
+    "Final comparison versus noncomparison of sprinkling and immersion retained; Hanina extra red-heifer standard separated from analogy.",
+    "Name-on-flesh conditions and no-rubbing proviso retained; washing/anointing/filthy-location prohibitions split into three source-supported claims.",
+    "Meir or Yosi alternative compatibility preserved; no unique author invented.",
+    "Rabbi Yosi bar Rabbi Hanina is distinct from Rabbi Yosi the tanna and Hanina Segan HaKohanim. Rava calendar statements retained as Rava, not Rav.",
+    "Six possible impurity-day cases are separate, explicitly uncertain; fourth-day and Sabbath exclusions qualify both Meir all-seven and Hanina red-heifer schedules.",
+    "Third of Tishrei fixed date distinguished from discretionary Wednesday red-heifer start; fourth separation day landing on Sabbath is consequence, not fourth weekday confusion."
+  ],
+  "graph_review": {
+    "new_edges": 28,
+    "fresh_edges": 18,
+    "assessment": "Directions, conditions and revision targets checked. e.2/e.7 correct rejected Yosi assignments; e.8/e.9 final analogies support respective schedules; e.19–22 qualify both relevant all-seven schedules. e.10 answers first Hanina branch by rejecting premise, e.11 answers second via added standard. e.continue links prior structure to continuation, not reversed argument.",
+    "exact_edge_equivalence_claimed": false,
+    "edge_records": [
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "yom.s2705.q.impurityexplain",
+          "target_id": "yom.s2705.q.parallel"
+        },
+        "evidence": [
+          {
+            "end_char": 87,
+            "quote": "מאי לאו בהא קא מיפלגי ר\"מ סבר טומאה דחויה היא בציבור ור' יוסי סבר טומאה היתר היא בציבור",
+            "segment_id": "seg_77a9dc183147b076b31a",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.0",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.q.impurityexplain",
+          "yom.s2705.q.parallel"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "yom.s2705.q.anysprinkling",
+          "target_id": "yom.s2705.initialyosi"
+        },
+        "evidence": [
+          {
+            "end_char": 106,
+            "quote": "ותסברא אי סבר רבי יוסי היתר היא בציבור הזאה כלל למה לי אלא דכולי עלמא הני תנאי סברי טומאה דחויה היא בציבור",
+            "segment_id": "seg_d25114797fffce120da7",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.1",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.q.anysprinkling",
+          "yom.s2705.initialyosi"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.segannoanalogy",
+          "target_id": "yom.s2705.q.seganif"
+        },
+        "evidence": [
+          {
+            "end_char": 43,
+            "quote": "לעולם לא מקיש וכהן השורף את הפרה מעלה בעלמא",
+            "segment_id": "seg_0d38077986fc5a0e7096",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.10",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.segannoanalogy",
+          "yom.s2705.q.seganif"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.seganextra",
+          "target_id": "yom.s2705.q.seganifnot"
+        },
+        "evidence": [
+          {
+            "end_char": 43,
+            "quote": "לעולם לא מקיש וכהן השורף את הפרה מעלה בעלמא",
+            "segment_id": "seg_0d38077986fc5a0e7096",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.11",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.seganextra",
+          "yom.s2705.q.seganifnot"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.seganextra",
+          "target_id": "yom.s2705.seganheifer"
+        },
+        "evidence": [
+          {
+            "end_char": 43,
+            "quote": "לעולם לא מקיש וכהן השורף את הפרה מעלה בעלמא",
+            "segment_id": "seg_0d38077986fc5a0e7096",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.12",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.seganextra",
+          "yom.s2705.seganheifer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.baraitameiryosi",
+          "target_id": "yom.s2705.q.baraitaholder"
+        },
+        "evidence": [
+          {
+            "end_char": 147,
+            "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+            "segment_id": "seg_98ff22fe22838ccd4ab5",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.13",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.baraitameiryosi",
+          "yom.s2705.q.baraitaholder"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.notsegan",
+          "target_id": "yom.s2705.q.baraitaholder"
+        },
+        "evidence": [
+          {
+            "end_char": 147,
+            "quote": "שזה פרישתו לקדושה ואחיו הכהנים נוגעין בו וזה פרישתו לטהרה ואין אחיו הכהנים נוגעין בו כמאן או ר\"מ או רבי יוסי דאי ר' חנינא סגן הכהנים הא איכא נמי הא",
+            "segment_id": "seg_98ff22fe22838ccd4ab5",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.14",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.notsegan",
+          "yom.s2705.q.baraitaholder"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.fourthneither",
+          "target_id": "yom.s2705.q.fourth"
+        },
+        "evidence": [
+          {
+            "end_char": 70,
+            "quote": "אלא רביעי למה לי הזאה כלל לא בשלישי איכא לספוקי ולא בשביעי איכא לספוקי",
+            "segment_id": "seg_4aa39267bdbb317db001",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.15",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.fourthneither",
+          "yom.s2705.q.fourth"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.noshabbat",
+          "target_id": "yom.s2705.q.sevenliteral"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+            "segment_id": "seg_7593cda5a18627ae4a51",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.16",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.noshabbat",
+          "yom.s2705.q.sevenliteral"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.sevenexceptshabbat",
+          "target_id": "yom.s2705.q.sevenmeaning"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+            "segment_id": "seg_7593cda5a18627ae4a51",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.17",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.sevenexceptshabbat",
+          "yom.s2705.q.sevenmeaning"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.sevenexceptfourth",
+          "target_id": "yom.s2705.q.fourth"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+            "segment_id": "seg_7593cda5a18627ae4a51",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.18",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.sevenexceptfourth",
+          "yom.s2705.q.fourth"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "yom.s2705.sevenexceptshabbat",
+          "target_id": "yom.s2705.meirdays"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+            "segment_id": "seg_7593cda5a18627ae4a51",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.19",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.sevenexceptshabbat",
+          "yom.s2705.meirdays"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "yom.s2705.alloverridden",
+          "target_id": "yom.s2705.initialyosi"
+        },
+        "evidence": [
+          {
+            "end_char": 106,
+            "quote": "ותסברא אי סבר רבי יוסי היתר היא בציבור הזאה כלל למה לי אלא דכולי עלמא הני תנאי סברי טומאה דחויה היא בציבור",
+            "segment_id": "seg_d25114797fffce120da7",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.2",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.alloverridden",
+          "yom.s2705.initialyosi"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "yom.s2705.sevenexceptshabbat",
+          "target_id": "yom.s2705.seganheifer"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+            "segment_id": "seg_7593cda5a18627ae4a51",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.20",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.sevenexceptshabbat",
+          "yom.s2705.seganheifer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "yom.s2705.sevenexceptfourth",
+          "target_id": "yom.s2705.meirdays"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+            "segment_id": "seg_7593cda5a18627ae4a51",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.21",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.sevenexceptfourth",
+          "yom.s2705.meirdays"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "yom.s2705.sevenexceptfourth",
+          "target_id": "yom.s2705.seganheifer"
+        },
+        "evidence": [
+          {
+            "end_char": 130,
+            "quote": "ולטעמיך הזאה כל שבעה מי איכא והא קיימא לן דהזאה שבות ואינה דוחה את השבת אלא מאי אית לך למימר שבעה לבר משבת הכא נמי שבעה לבר מרביעי",
+            "segment_id": "seg_7593cda5a18627ae4a51",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.22",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.sevenexceptfourth",
+          "yom.s2705.seganheifer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.ykcalendar",
+          "target_id": "yom.s2705.ykthird"
+        },
+        "evidence": [
+          {
+            "end_char": 241,
+            "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+            "segment_id": "seg_493415e58f4d32824299",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.23",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.ykcalendar",
+          "yom.s2705.ykthird"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.ykcalendar",
+          "target_id": "yom.s2705.ykweekday"
+        },
+        "evidence": [
+          {
+            "end_char": 241,
+            "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+            "segment_id": "seg_493415e58f4d32824299",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.24",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.ykcalendar",
+          "yom.s2705.ykweekday"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.heiferchoice",
+          "target_id": "yom.s2705.heiferwednesday"
+        },
+        "evidence": [
+          {
+            "end_char": 241,
+            "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+            "segment_id": "seg_493415e58f4d32824299",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.25",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.heiferchoice",
+          "yom.s2705.heiferwednesday"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.fourthshabbat",
+          "target_id": "yom.s2705.heiferwednesday"
+        },
+        "evidence": [
+          {
+            "end_char": 241,
+            "quote": "אמר רבא הלכך כהן גדול ביום הכפורים דלא בדידן תליא מילתא אלא בקביעא דירחא תליא מילתא בתלתא בתשרי בעי לאפרושי וכל אימת דמתרמי תלתא בתשרי מפרשינן ליה אבל כהן השורף את הפרה דבדידן תליא מילתא מפרשינן ליה ברביעי בשבת כי היכי דניתרמי רביעי שלו בשבת",
+            "segment_id": "seg_493415e58f4d32824299",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.26",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.fourthshabbat",
+          "yom.s2705.heiferwednesday"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.alloverridden",
+          "target_id": "yom.s2705.q.parallel"
+        },
+        "evidence": [
+          {
+            "end_char": 106,
+            "quote": "ותסברא אי סבר רבי יוסי היתר היא בציבור הזאה כלל למה לי אלא דכולי עלמא הני תנאי סברי טומאה דחויה היא בציבור",
+            "segment_id": "seg_d25114797fffce120da7",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.3",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.alloverridden",
+          "yom.s2705.q.parallel"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "yom.s2705.q.yosidenial",
+          "target_id": "yom.s2705.secondyosi"
+        },
+        "evidence": [
+          {
+            "end_char": 210,
+            "quote": "וסבר רבי יוסי לא אמרינן טבילה בזמנה מצוה והתניא הרי שהיה שם כתוב על בשרו הרי זה לא ירחץ ולא יסוך ולא יעמוד במקום הטנופת נזדמנה לו טבילה של מצוה כורך עליו גמי וטובל רבי יוסי אומר יורד וטובל כדרכו ובלבד שלא ישפשף",
+            "segment_id": "seg_8fb0638ab803661ca46d",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.4",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.q.yosidenial",
+          "yom.s2705.secondyosi"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "yom.s2705.yosiprinciple",
+          "target_id": "yom.s2705.q.yosidenial"
+        },
+        "evidence": [
+          {
+            "end_char": 166,
+            "quote": "וקיימא לן דבטבילה בזמנה מצוה קא מיפלגי דתנא קמא סבר לא אמרינן טבילה בזמנה מצוה. ורבי יוסי סבר אמרינן טבילה בזמנה מצוה אלא דכולי עלמא להני תנאי אמרינן טבילה בזמנה מצוה",
+            "segment_id": "seg_cdf8e562f74034718f23",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.5",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.yosiprinciple",
+          "yom.s2705.q.yosidenial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "yom.s2705.yosiprinciple",
+          "target_id": "yom.s2705.secondyosi"
+        },
+        "evidence": [
+          {
+            "end_char": 166,
+            "quote": "וקיימא לן דבטבילה בזמנה מצוה קא מיפלגי דתנא קמא סבר לא אמרינן טבילה בזמנה מצוה. ורבי יוסי סבר אמרינן טבילה בזמנה מצוה אלא דכולי עלמא להני תנאי אמרינן טבילה בזמנה מצוה",
+            "segment_id": "seg_cdf8e562f74034718f23",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.6",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.yosiprinciple",
+          "yom.s2705.secondyosi"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "yom.s2705.alltimed",
+          "target_id": "yom.s2705.secondyosi"
+        },
+        "evidence": [
+          {
+            "end_char": 166,
+            "quote": "וקיימא לן דבטבילה בזמנה מצוה קא מיפלגי דתנא קמא סבר לא אמרינן טבילה בזמנה מצוה. ורבי יוסי סבר אמרינן טבילה בזמנה מצוה אלא דכולי עלמא להני תנאי אמרינן טבילה בזמנה מצוה",
+            "segment_id": "seg_cdf8e562f74034718f23",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.7",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.alltimed",
+          "yom.s2705.secondyosi"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.meiranalogy",
+          "target_id": "yom.s2705.meirdays"
+        },
+        "evidence": [
+          {
+            "end_char": 83,
+            "quote": "והכא בהא קמיפלגי רבי מאיר סבר מקשינן הזאה לטבילה ור' יוסי סבר לא מקשינן הזאה לטבילה",
+            "segment_id": "seg_7170c7a6d6cf028d1bf6",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.8",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.meiranalogy",
+          "yom.s2705.meirdays"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "yom.s2705.yosinoanalogy",
+          "target_id": "yom.s2705.yosidays"
+        },
+        "evidence": [
+          {
+            "end_char": 83,
+            "quote": "והכא בהא קמיפלגי רבי מאיר סבר מקשינן הזאה לטבילה ור' יוסי סבר לא מקשינן הזאה לטבילה",
+            "segment_id": "seg_7170c7a6d6cf028d1bf6",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.9",
+        "layer": "edges",
+        "links": [
+          "yom.s2705.yosinoanalogy",
+          "yom.s2705.yosidays"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "continuation",
+          "source_id": "yom.s2704.public",
+          "target_id": "yom.s2705.sprinkling"
+        },
+        "evidence": [
+          {
+            "end_char": 248,
+            "quote": "נימא הני תנאי כהני תנאי דתניא אחד זה ואחד זה מזין עליו כל שבעה מכל חטאות שהיו שם דברי רבי מאיר רבי יוסי אומר אין מזין עליו אלא שלישי ושביעי בלבד ר' חנינא סגן הכהנים אומר כהן השורף את הפרה מזין עליו כל שבעה כה\"ג ביוה\"כ אין מזין עליו אלא שלישי ושביעי",
+            "segment_id": "seg_b5629522544084c75aff",
+            "start_char": 0
+          }
+        ],
+        "id": "yom.s2705.e.continue",
+        "layer": "edges",
+        "links": [
+          "yom.s2704.public",
+          "yom.s2705.sprinkling"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "mandatory_repairs": [],
+  "qualification": {
+    "bounded_outcome": "No mandatory producer repair identified; Y04-W01 closed; one substantive fresh-reader error documented and preserved.",
+    "no_blanket_task_or_atomicity_pass": true,
+    "no_eligibility_changes": true,
+    "no_production_mutations_by_comparator": true,
+    "no_raw_source_mutations": true,
+    "fresh_findings_not_atomic_denominator": true
+  }
+}
