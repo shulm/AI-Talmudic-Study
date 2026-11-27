@@ -1,8 +1,8 @@
 # L04 exact-version partial production checkpoint
 
-Checkpoint 013 contains actual semantic annotations and preserved review evidence for **3,317 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
+Checkpoint 014 contains actual semantic annotations and preserved review evidence for **3,339 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
 
-The selected package versions are in [LANE_CHECKPOINT_013.json](LANE_CHECKPOINT_013.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
+The selected package versions are in [LANE_CHECKPOINT_014.json](LANE_CHECKPOINT_014.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
 
 | Tractate | Covered in each of eight layers | Denominator | Next source |
 |---|---:|---:|---|
@@ -10,7 +10,7 @@ The selected package versions are in [LANE_CHECKPOINT_013.json](LANE_CHECKPOINT_
 | Bava Batra | 317 | 3,804 | 13a:2 |
 | Pesachim | 236 | 3,519 | 9b:10 |
 | Avodah Zarah | 195 | 2,131 | 8a:5 |
-| Nedarim | 1,083 | 1,509 | 62b:5 |
+| Nedarim | 1,105 | 1,509 | 64a:1 |
 | Moed Katan | 512 | 1,026 | 16a:3 |
 | Makkot | 253 | 709 | 10a:10 |
 
@@ -22,7 +22,7 @@ Captures012–013 preserve the exact Taanit, Nedarim and Makkot comparisons of n
 
 [Capture014](reviews/capture_014/MANIFEST.json) preserves the independent bounded passes for Makkot022 (all twelve core/context issues) and Nedarim065 (four operative issues). Nedarim retains nonblocking duplicated introducer evidence and stale coverage prose observations. Neither receipt grants whole-snapshot acceptance. [Capture015](reviews/capture_015/MANIFEST.json) preserves Taanit053's independent closure of all five repair groups. The actual replay contains55 proposals, correcting the reviewer's earlier checkpoint-based count of53. Its saved preflight diagnostic records a corrected checker assumption about historical free-text scope fields. All new source windows remain outside these correction checks.
 
-Coordinator review release015 is frozen. These corrections are additive next-version evidence; they do not revise release015 or its exclusions. All489 files in that review delivery were byte-verified. The coordinator published the frozen inputs/policy first, then the separate rolling assembly in draft PR30. Isolated next-release work resumed under explicit authorization; the full seven-tractate assignment remains active. Owners and epochs are unchanged. See [next actions](NEXT_ACTIONS_026.json).
+Coordinator review release015 is frozen. These corrections are additive next-version evidence; they do not revise release015 or its exclusions. All489 files in that review delivery were byte-verified. The coordinator published the frozen inputs/policy first, then the separate rolling assembly in draft PR30. Isolated next-release work resumed under explicit authorization; the full seven-tractate assignment remains active. Owners and epochs are unchanged. See [next actions](NEXT_ACTIONS_029.json).
 
 ## Bava Batra next-release window and review
 
@@ -55,6 +55,16 @@ Nedarim subsequently adds twenty-one segments,61b:5–62b:4, reaching1083; all30
 Taanit adds nine segments,25a:15–25b:3, reaching721. Separate correction057 resolves five producer findings: a shared fear/exposure mistranslation, three speaker-layer omissions and one qualification relation. [Capture031](reviews/capture_031/MANIFEST.json) preserves the original comparator's bounded PASS after59-proposal replay. Parent package verification independently reproduces the full accepted prefix and exact exports. The latest nine segments and182records remain unchanged and UNREVIEWED; the correction grants no new review credit or eligibility.
 
 [Local restrictions](audit/TA105_LOCAL_REVIEW_RESTRICTIONS.json) preserve reader errors, unresolved scopes and reasonable granularity. The standalone reading also omits24open structures from its open-tail list: production adaptation fails until that metadata is supplied. Its source/graph checks do not establish production-adapter compatibility. The shared translation error is restricted locally; agreement is not certification. Separately hashed Rashi commentary supports the comparator's correction and is explicitly additional nonblind evidence.
+
+## Nedarim070 correction and fresh review
+
+[Capture032](reviews/capture_032/MANIFEST.json) freezes ND118's fresh source-only reading of thirty cores and fifteen reviewed context segments; thirty-eight incidental displays are excluded. Parent mechanical checks and review-lead intake preceded a fresh NONBLIND comparator. [Capture033](reviews/capture_033/MANIFEST.json) preserves its exact1083 comparison: ninety-one reader claims, fifty-four relations,240core and120context layer cells. Production semantic inspection followed the70-proposal replay; incidental reader-helper exposure occurred earlier. The optional dump branch failed after a successful validation receipt and was recovered with an additive helper.
+
+Nedarim adds twenty-two segments,62b:5–63b:9, reaching1105 at the chapter boundary. Its initial069 staging proposal failed duplicate-ID prevalidation and was never submitted; corrected069b alone entered production. The original bytes and a later reproduced-failure receipt remain bound in [failure lineage](nedarim/CONTINUATION069_FAILURE_LINEAGE.json).
+
+Separate correction070 resolves D1–D4: a repeated question, an interpretive premise, typed attribution roles and six argument relations, including two context relations reported separately. [Capture034](reviews/capture_034/MANIFEST.json) preserves the original comparator's bounded PASS with72-proposal replay and reference closure. Parent full-prefix replay/export checks pass. The newer233records and176coverage cells remain unchanged and UNREVIEWED.
+
+[Local restrictions](audit/ND121_LOCAL_REVIEW_RESTRICTIONS.json) preserve a reader context-question omission, status/granularity uncertainty and the explicit source-only adapter limitation. Nine answer-status cases and optional question links are not treated as confirmed schema violations. [Coordinator policy](audit/ND121_ENGINEERING_POLICY/ANSWER_SET_STATUS_ND121_002.json) confirms conservative interpretation without bulk relabeling or inferred eligibility; future normative definitions require a versioned contract. Later policy exposure is recorded additively in the recheck.
 
 ## Exact inputs and ownership
 
