@@ -1,0 +1,249 @@
+{
+  "format": "bounded-correction-verification-v1",
+  "reviewer": "/root/horayot_review",
+  "provenance": "Nonblind correction verification; no fresh source-only or probability credit.",
+  "verdict": "S20-R01_CLOSED_FOR_EXACT_CORRECTED_VERSION",
+  "prior_snapshot": "cbde7a93ad653416ca08da65f4182401c672bc4eddd9d560c948f190b41ce7ff",
+  "corrected_snapshot": "819a5e04756cae383719b35be694e08e4a410e6b8074c99a428da109a1b66f83",
+  "proposal": "5669ea0934f7ad5de508795aa9ab70b6dc5e9e079892377c23f174b8f0c76da0",
+  "initial_review_sha256": "fb0be9e5e46cbb39a418fa2d16ad7dc51f3b5fc2a4aa15112ea2c78f51ac21ce",
+  "source_path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Moed\\Yoma\\Hebrew\\Wikisource Talmud Bavli.json",
+  "source_sha256": "52311dd2a84d80173e8ee0c0a2e236f41482bc6377f96bd0ca6b035f22dc52e2",
+  "semantic_result": "Rav Yosef is now explicitly transmitter of the recited teaching with exact תני surface and no invented chain. Underlying position holder is unspecified, not Rav Yosef or an assigned side of the Simai/Simon-versus-sages alternatives. Claim and answer/support edges remain unchanged.",
+  "integrity": {
+    "prior_records": 1579,
+    "identical_prior": 1577,
+    "release_only_changes": [
+      "yom.s2720.yosefpersia.a",
+      "yom.s2720.yosefpersia.p"
+    ],
+    "additions": 2,
+    "historical_records": 1581,
+    "exact_successor_evidence_spans": 2,
+    "original_evidence_preserved": true,
+    "active_dangling_refs": [],
+    "coverage_updates": 3,
+    "coverage_keys_states_results_unchanged": true,
+    "coverage_by_layer": {
+      "attributions": 180,
+      "claims": 180,
+      "edges": 180,
+      "positions": 180,
+      "questions": 180,
+      "reconciliation": 180,
+      "structure": 180,
+      "utterances": 180
+    },
+    "open_tails_unchanged": true,
+    "all_prior_claims_and_edges_identical": true
+  },
+  "successors": [
+    {
+      "content": {
+        "candidates": [
+          "רב יוסף"
+        ],
+        "role": "transmitter",
+        "scope": "Recites the teaching Tiras is Persia; not evidence assigning personal endorsement or either unnamed disputed side to Rav Yosef",
+        "surface": "תני רב יוסף תירס זו פרס",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 292,
+          "quote": "ופרסאי מנא לן דמיפת קאתו דכתיב (בראשית י, ב) בני יפת גומר ומגוג ומדי ויון ותובל ומשך ותירס גומר זה גרממיא מגוג זו קנדיא מדי זו מקדוניא יון כמשמעו תובל זה בית אונייקי משך זו מוסיא תירס פליגי בה ר' סימאי ורבנן ואמרי לה רבי סימון ורבנן חד אמר זו בית תרייקי וחד אמר זו פרס תני רב יוסף תירס זו פרס",
+          "segment_id": "seg_e63b98f1c8e796787f6d",
+          "start_char": 0
+        }
+      ],
+      "id": "yom.s2720.yosefpersia.a.s20r01",
+      "layer": "attributions",
+      "links": [
+        "yom.s2720.yosefpersia"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "supersedes": "yom.s2720.yosefpersia.a",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "claim_id": "yom.s2720.yosefpersia",
+        "conditions": [],
+        "holder_candidates": [],
+        "local_status": "Teaching recited by Rav Yosef; underlying personal position holder unspecified; no assignment of unnamed Simai/Simon versus sages alternatives",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 292,
+          "quote": "ופרסאי מנא לן דמיפת קאתו דכתיב (בראשית י, ב) בני יפת גומר ומגוג ומדי ויון ותובל ומשך ותירס גומר זה גרממיא מגוג זו קנדיא מדי זו מקדוניא יון כמשמעו תובל זה בית אונייקי משך זו מוסיא תירס פליגי בה ר' סימאי ורבנן ואמרי לה רבי סימון ורבנן חד אמר זו בית תרייקי וחד אמר זו פרס תני רב יוסף תירס זו פרס",
+          "segment_id": "seg_e63b98f1c8e796787f6d",
+          "start_char": 0
+        }
+      ],
+      "id": "yom.s2720.yosefpersia.p.s20r01",
+      "layer": "positions",
+      "links": [
+        "yom.s2720.yosefpersia"
+      ],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "supersedes": "yom.s2720.yosefpersia.p",
+      "uncertainty": []
+    }
+  ],
+  "coverage_changes": [
+    {
+      "prior": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root/shabbat",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Direct attributions pass: PersianJapheth-lineage question; six geographic mappings in Hebrew no modern renaming. Tiras alternatives ביתתרייקי/Persia remain unnamed; Simai/Simon reported identityvariant distinct; RavYosef explicitly Persia supports one view without resolving disputed attribution.10a3–12 context read through later imperial-prediction arguments, no import into20core coverage.",
+        "record_ids": [
+          "yom.s2720.tiraspair",
+          "yom.s2720.yosefpersia.a",
+          "yom.s2720.anon179"
+        ],
+        "segment_id": "seg_e63b98f1c8e796787f6d"
+      },
+      "corrected": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "attributions",
+        "proposal_execution": {
+          "agent_id": "/root/shabbat",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Direct attributions pass: PersianJapheth-lineage question; six geographic mappings in Hebrew no modern renaming. Tiras alternatives ביתתרייקי/Persia remain unnamed; Simai/Simon reported identityvariant distinct; RavYosef explicitly Persia supports one view without resolving disputed attribution.10a3–12 context read through later imperial-prediction arguments, no import into20core coverage. S20-R01 distinguishes Rav Yosef recitation from personal holder endorsement; claim and argument edges unchanged.",
+        "record_ids": [
+          "yom.s2720.tiraspair",
+          "yom.s2720.yosefpersia.a.s20r01",
+          "yom.s2720.anon179"
+        ],
+        "segment_id": "seg_e63b98f1c8e796787f6d"
+      }
+    },
+    {
+      "prior": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root/shabbat",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Direct positions pass: PersianJapheth-lineage question; six geographic mappings in Hebrew no modern renaming. Tiras alternatives ביתתרייקי/Persia remain unnamed; Simai/Simon reported identityvariant distinct; RavYosef explicitly Persia supports one view without resolving disputed attribution.10a3–12 context read through later imperial-prediction arguments, no import into20core coverage.",
+        "record_ids": [
+          "yom.s2720.yosefpersia.p",
+          "yom.s2720.tirasthrace.p",
+          "yom.s2720.tiraspersia.p"
+        ],
+        "segment_id": "seg_e63b98f1c8e796787f6d"
+      },
+      "corrected": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "positions",
+        "proposal_execution": {
+          "agent_id": "/root/shabbat",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Direct positions pass: PersianJapheth-lineage question; six geographic mappings in Hebrew no modern renaming. Tiras alternatives ביתתרייקי/Persia remain unnamed; Simai/Simon reported identityvariant distinct; RavYosef explicitly Persia supports one view without resolving disputed attribution.10a3–12 context read through later imperial-prediction arguments, no import into20core coverage. S20-R01 distinguishes Rav Yosef recitation from personal holder endorsement; claim and argument edges unchanged.",
+        "record_ids": [
+          "yom.s2720.yosefpersia.p.s20r01",
+          "yom.s2720.tirasthrace.p",
+          "yom.s2720.tiraspersia.p"
+        ],
+        "segment_id": "seg_e63b98f1c8e796787f6d"
+      }
+    },
+    {
+      "prior": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "reconciliation",
+        "proposal_execution": {
+          "agent_id": "/root/shabbat",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Source-first omission reread: PersianJapheth-lineage question; six geographic mappings in Hebrew no modern renaming. Tiras alternatives ביתתרייקי/Persia remain unnamed; Simai/Simon reported identityvariant distinct; RavYosef explicitly Persia supports one view without resolving disputed attribution.10a3–12 context read through later imperial-prediction arguments, no import into20core coverage.",
+        "record_ids": [
+          "yom.s2720.nations",
+          "yom.s2720.q.persiajapheth",
+          "yom.s2720.gomer",
+          "yom.s2720.magog",
+          "yom.s2720.madai",
+          "yom.s2720.yavan",
+          "yom.s2720.tuval",
+          "yom.s2720.meshekh",
+          "yom.s2720.tirasthrace",
+          "yom.s2720.tiraspersia",
+          "yom.s2720.tiraspair",
+          "yom.s2720.yosefpersia",
+          "yom.s2720.yosefpersia.a",
+          "yom.s2720.yosefpersia.p",
+          "yom.s2720.tirasthrace.p",
+          "yom.s2720.tiraspersia.p",
+          "yom.s2720.e.47",
+          "yom.s2720.e.48",
+          "yom.s2720.u179",
+          "yom.s2720.anon179"
+        ],
+        "segment_id": "seg_e63b98f1c8e796787f6d"
+      },
+      "corrected": {
+        "extraction_result": "records_found",
+        "extraction_state": "completed",
+        "layer": "reconciliation",
+        "proposal_execution": {
+          "agent_id": "/root/shabbat",
+          "model_id": null,
+          "route": "interactive_agent"
+        },
+        "rationale": "Source-first omission reread: PersianJapheth-lineage question; six geographic mappings in Hebrew no modern renaming. Tiras alternatives ביתתרייקי/Persia remain unnamed; Simai/Simon reported identityvariant distinct; RavYosef explicitly Persia supports one view without resolving disputed attribution.10a3–12 context read through later imperial-prediction arguments, no import into20core coverage. S20-R01 distinguishes Rav Yosef recitation from personal holder endorsement; claim and argument edges unchanged.",
+        "record_ids": [
+          "yom.s2720.nations",
+          "yom.s2720.q.persiajapheth",
+          "yom.s2720.gomer",
+          "yom.s2720.magog",
+          "yom.s2720.madai",
+          "yom.s2720.yavan",
+          "yom.s2720.tuval",
+          "yom.s2720.meshekh",
+          "yom.s2720.tirasthrace",
+          "yom.s2720.tiraspersia",
+          "yom.s2720.tiraspair",
+          "yom.s2720.yosefpersia",
+          "yom.s2720.yosefpersia.a.s20r01",
+          "yom.s2720.yosefpersia.p.s20r01",
+          "yom.s2720.tirasthrace.p",
+          "yom.s2720.tiraspersia.p",
+          "yom.s2720.e.47",
+          "yom.s2720.e.48",
+          "yom.s2720.u179",
+          "yom.s2720.anon179"
+        ],
+        "segment_id": "seg_e63b98f1c8e796787f6d"
+      }
+    }
+  ],
+  "mandatory_remaining_repairs": [],
+  "qualifications": [
+    "Closes only S20-R01 in this exact version; original comparison remains immutable.",
+    "No task eligibility changes or blanket qualification. Prior bounded semantic findings and context assessment remain applicable."
+  ]
+}
