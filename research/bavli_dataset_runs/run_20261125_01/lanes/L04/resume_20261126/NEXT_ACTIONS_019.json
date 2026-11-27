@@ -1,0 +1,73 @@
+{
+  "status": "active_incomplete",
+  "published_head": "acc843bd06684ffe2f67474a12ebbd2abdd5980b",
+  "selected_checkpoint": "LANE_CHECKPOINT_010.json",
+  "selected_segments": 3272,
+  "tractates_delivered": 0,
+  "authoritative_segments": {
+    "taanit": 697,
+    "bava_batra": 317,
+    "pesachim": 236,
+    "avodah_zarah": 195,
+    "nedarim": 1062,
+    "moed_katan": 512,
+    "makkot": 253
+  },
+  "promotion_hold": "Released for one bounded existing BB producer plus matched BB037 source-only review after integration0eae73e input/policy freeze publication. Final assembled review015 outputs still verifying. Other producers held for pacing.",
+  "active_comparators": [],
+  "comparison_reservation": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/L04_COMPARISON_RESERVATION_027.json",
+  "comparison_output": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/review_20261127_delegated020/comparisons",
+  "next_actions": [
+    "Waitrequiredrootintakebefore nextlaunches; all3childslotsidle.",
+    "LaunchonefreshMK054comparator afterintake.",
+    "LaunchonefreshTA055source-onlyreader and existingTAproducer atmost30newsegments under gates; then checkpoint/hold.",
+    "Continue remainingqueues with noeligibilityinheritance/current015change."
+  ],
+  "capacity": "Some other agents reported usage limits, but three reserved comparator launches succeeded and have made progress. No retry loops on failed agents.",
+  "common_or_owner_changes": false,
+  "previous": "NEXT_ACTIONS_018.json",
+  "active_targeted_repair_writers": [],
+  "completed_comparisons": {
+    "taanit": "reviews/capture_013/taanit_delegated020_v2_verdict.json",
+    "nedarim": "reviews/capture_013/nedarim_delegated020_v2_verdict.json + mandatory additive_adjudication",
+    "makkot": "reviews/capture_012/makkot_delegated020_v2_verdict.json + context_addendum"
+  },
+  "bounded_pass_next_release": {
+    "makkot": "reviews/capture_014/makkot_delegated020_correction001_receipt.json",
+    "nedarim": "reviews/capture_014/nedarim_delegated020_correction001_receipt.json",
+    "taanit": "reviews/capture_015/taanit_delegated020_correction001_receipt.json"
+  },
+  "next_review_reservation": {
+    "tractate": "bava_batra",
+    "status": "SOURCE_READING_FROZEN_COMPARISON_ACTIVE",
+    "cores": 10,
+    "effective_reading": "reviews/capture_016/bava_batra_delegated037.r2.json"
+  },
+  "available_agent_slots": 3,
+  "active_production_writers": [],
+  "active_source_readers": [],
+  "bounded_bb_next_release": {
+    "snapshot": "45510ebd6b2486c0695e120808be45afa55e373ebad4eacae6d6fd2171842a9d",
+    "new_segments": 7,
+    "first": "Bava Batra 12b:9",
+    "last": "Bava Batra 13a:1",
+    "next": "Bava Batra 13a:2",
+    "review_state": "UNREVIEWED",
+    "producer_stopped": true
+  },
+  "bb_repair_snapshot": "ee2e62cbfe215a12296b48c06f4aee841b358f41f2f652cf53fea1343706660f",
+  "current_assembly": {
+    "pr": 30,
+    "published_head": "b5d37d0f52498dc0a4b23655b68a5d1ada3a38b0",
+    "release_commit": "0a8a901997db95590872dc596cfae287ce8a3c72",
+    "status": "PUBLISHED_DRAFT_UNMERGED",
+    "no_next_version_acceptance_inherited": true
+  },
+  "bb_repair_recheck": "reviews/capture_018/bb037_correction001_receipt.json",
+  "mk047_reading": "reviews/capture_019/moed_katan_delegated047.json",
+  "gates": {
+    "MK054_comparator": "Wait rootMK047intake; then freshfork:none NONBLIND at exact512",
+    "TA055_reader": "Wait BB036intake and MK047intake;verifyneutraldescriptor/no duplicate;one freshsource-onlytractate",
+    "TA_producer": "Samegates+matchedcapacity; atmost30newsegments from697 or earlier coherent boundary"
+  }
+}

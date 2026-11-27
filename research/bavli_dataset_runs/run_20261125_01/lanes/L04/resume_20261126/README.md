@@ -1,12 +1,12 @@
 # L04 exact-version partial production checkpoint
 
-Checkpoint 010 contains actual semantic annotations and preserved review evidence for **3,272 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
+Checkpoint 011 contains actual semantic annotations and preserved review evidence for **3,287 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
 
-The selected package versions are in [LANE_CHECKPOINT_010.json](LANE_CHECKPOINT_010.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
+The selected package versions are in [LANE_CHECKPOINT_011.json](LANE_CHECKPOINT_011.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
 
 | Tractate | Covered in each of eight layers | Denominator | Next source |
 |---|---:|---:|---|
-| Taanit | 697 | 895 | 24b:14 |
+| Taanit | 712 | 895 | 25a:15 |
 | Bava Batra | 317 | 3,804 | 13a:2 |
 | Pesachim | 236 | 3,519 | 9b:10 |
 | Avodah Zarah | 195 | 2,131 | 8a:5 |
@@ -30,7 +30,15 @@ Bava Batra adds seven source segments,12b:9–13a:1, and stops at317; those seve
 
 [Capture017](reviews/capture_017/MANIFEST.json) records the NONBLIND comparison against exact historical310, with two confirmed omissions: a repeated lemma occurrence and a typed four-cubit distinction. [Capture018](reviews/capture_018/MANIFEST.json) preserves the independent bounded pass on correction036: eight additive records, no supersessions or historical record changes, coverage317unchanged. This does not accept the intervening seven segments. [Local exclusions](audit/BB037_LOCAL_REVIEW_EXCLUSIONS.json) retain the reader's invalid reconstruction endpoint and restrictions on the coarse tomb formulation and uncertain explanatory attribution. Original findings and reading bytes remain unchanged.
 
-All532 files in review-lead delivery016 were byte-verified. Its next-release scope is distinct from current015. The fresh30-core Moed Katan047 reading is active with zero credit pending freeze/intake; no additional production promotion follows merely from that reservation.
+All532 files in review-lead delivery016 were byte-verified. Its next-release scope is distinct from current015. The fresh 30-core Moed Katan047 reading and its exact comparison are now frozen in captures019 and021. The separately fresh 30-core Taanit055 reading and comparison are frozen in captures020 and022. Context does not add sampled-core credit.
+
+## Moed Katan and Taanit correction rechecks
+
+Taanit adds fifteen source segments, 24b:14–25a:14, reaching712. Those fifteen remain unreviewed. Its initial author054 proposal used an unsupported relation enum and was preserved unsubmitted; corrected054b was accepted once. The fresh TA055 comparison examines historical697 only and identifies thirteen targeted defects: six analogy relations, four proof steps, one narrative endpoint, and two quantifier restrictions. Correction055 preserves the newer fifteen segments and coverage712. [Capture024](reviews/capture_024/MANIFEST.json) preserves its independent bounded pass on all thirteen findings at663ea1da; reader gloss/soil qualifications and unresolved objection scope remain.
+
+Moed Katan's comparison identifies four producer issue groups: Rav Ashi's typed attribution, a repeated teaching permission, six missing relation patterns, and the distinction between anonymous narration and Rav Huna as ruling holder. Correction047 adds32 records and supersedes18 with dependency closure. [Capture023](reviews/capture_023/MANIFEST.json) preserves the independent bounded pass at74e823df. All eight layers remain512. [Retained restrictions](audit/MK054_LOCAL_REVIEW_RESTRICTIONS.json) preserve reader question/status defects, atomicity limits, uncertain qualifier/authority attachment, alternative granularity, and holder/stage restrictions. These corrections do not certify the whole snapshot.
+
+All625 files in review delivery018 were verified. Current release015 is unchanged. Both targeted rechecks are complete; matched next production/review capacity is being coordinated; the seven-tractate assignment remains incomplete and active. Exact-version packages include accepted proposals, snapshot, layer exports, unresolved records, and qualification records. Parent replay/export checks cover the new TA054, TA055 and MK047 packages.
 
 ## Exact inputs and ownership
 
