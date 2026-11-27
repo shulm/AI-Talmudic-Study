@@ -1,0 +1,730 @@
+{
+  "verdict": "REWORK_TARGETED",
+  "reviewer": "/root/yevamot",
+  "snapshot_sha256": "ba1f70d54bbedde5f67dd7abae5927dee2afdfb0dfbe50dea41d556d7c278995",
+  "proposal_sha256": "566afbb79316926357096dc48a5bfa4fc9bf39094536b053726981abf1a0d13f",
+  "receipt_sha256": "663949cd9991a5196536d0b55507419620546ea78ace13b4a3d2048ed0229535",
+  "producer_manifest_sha256": "a98d47318665b17259a0362e485ca652a3726339ba9619b1534fa3f54278b2bc",
+  "source_reading_sha256": "7a90eb3991e76abdd02f5c543d32db5bc8cb9775410f7b567003df132eb66091",
+  "review_exposure": {
+    "new_tamid006_producer_labels_seen": false,
+    "prior_tamid004_labels_seen": true,
+    "prior_tamid005_source_reading_authored": true,
+    "prior_core70_to79_context_read": true,
+    "fresh_blind_cohort": false,
+    "random_cohort": false,
+    "production_authorship": "No Tamid production authored"
+  },
+  "method": "Frozen source reading preceded new producer labels; compared accepted candidate and retained failed initial candidate separately. No Tamid production authored. Prior review exposure disclosed, no fresh blind/random cohort.",
+  "source_reader_qualification": "Initial reader expanded א\"ר יהודה as Rabbi Yehuda without disambiguating witness. This is not certified; raw abbreviation now controls review. Producer expansion Rav Yehuda similarly needs qualification rather than replacement with an equally unpinned Rabbi expansion.",
+  "findings": [
+    {
+      "id": "T006-01",
+      "snapshot_sha256": "ba1f70d54bbedde5f67dd7abae5927dee2afdfb0dfbe50dea41d556d7c278995",
+      "refs": [
+        "Tamid28b6"
+      ],
+      "raw_surface": "א\"ר יהודה",
+      "records": [
+        "tam006.hot_water",
+        "tam006.hot_water.p",
+        "tam006.yehuda.a",
+        "tam006.u78",
+        "tam006.frame78"
+      ],
+      "judgment": "Producer categorically expands printed abbreviated א\"ר יהודה to Rav Yehuda and supplies surface רב יהודה absent from pinned raw text. No disambiguating provenance is included. This finding does not claim Rav Yehuda is historically wrong; reader initial Rabbi Yehuda expansion was also unpinned and is preserved as an initial reading requiring qualification.",
+      "required_action": "Preserve printed א\"ר יהודה in surface and make identity candidate/uncertainty explicit across dependent claim/position/narrative labels, or supply pinned disambiguating evidence. Preserve all initial bytes; no coverage increase.",
+      "severity": "medium",
+      "reviewer": "/root/yevamot"
+    }
+  ],
+  "mapping": [
+    {
+      "reader_id": "tam006.f001",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.split",
+        "tam006.east",
+        "tam006.west",
+        "tam006.inspect"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f002",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.peace"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f003",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.cake_start",
+        "tam006.hot_water",
+        "tam006.water_scope"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f004",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.winner"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f005",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.warning"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f006",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.shovel_location"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f007",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.alone"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f008",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.no_lamp",
+        "tam006.fire_light"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f009",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.unseen",
+        "tam006.unheard"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f010",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.unheard"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f011",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.time_call"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f012",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.wash",
+        "tam006.silver_shovel",
+        "tam006.ascend"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f013",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.move_coals",
+        "tam006.inner_coals"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f014",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.descend",
+        "tam006.face_north",
+        "tam006.east_ramp"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f015",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.pile_floor"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f016",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.bird_crop",
+        "tam006.inner_ashes",
+        "tam006.lamp_ashes"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f017",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.arcade_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f018",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.no_arcades",
+        "tam006.verse_arcade",
+        "tam006.eliezer.a"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f019",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.tree_verse"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f020",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.masonry",
+        "tam006.hisda.a"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f021",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.masonry_answer",
+        "tam006.masonry_east",
+        "tam006.masonry_west"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f022",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.cakes_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f023",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.tamid_first",
+        "tam006.olah_verse",
+        "tam006.verse_first"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f024",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.first_gloss",
+        "tam006.rabbah.a"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f025",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.hot_water",
+        "tam006.hot_water.p",
+        "tam006.yehuda.a"
+      ],
+      "disposition": "substance_represented_attribution_provenance_repair_T006_01"
+    },
+    {
+      "reader_id": "tam006.f026",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.water_answer",
+        "tam006.water_corrects",
+        "tam006.water_scope"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f027",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.chapter_marker",
+        "tam006.u79"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f028",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.altar_structure"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f029",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.brothers_see",
+        "tam006.brothers_run",
+        "tam006.brothers_wash"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f030",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.tools",
+        "tam006.brothers_ascend"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f031",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.limbs_sides"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f032",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.limbs_overflow"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f033",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.mound_ash",
+        "tam006.mound_middle"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f034",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.mound_quantity",
+        "tam006.mound_hyper"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f035",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.festival",
+        "tam006.adornment",
+        "tam006.festival_reason"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f036",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.never_lazy"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f037",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.logs"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f038",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.wood_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f039",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.all_woods",
+        "tam006.vine_excluded",
+        "tam006.olive_excluded"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f040",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.fig_usual",
+        "tam006.nut_usual",
+        "tam006.oil_usual"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f041",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.main_east",
+        "tam006.opening_east"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f042",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.inner_touch"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f043",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.gap",
+        "tam006.kindling_gap"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f044",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.choose_fig",
+        "tam006.second_incense"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f045",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.second_position"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f046",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.five_seah"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f047",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.eight_seah",
+        "tam006.frankincense",
+        "tam006.sabbath_reason"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f048",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.return_limbs"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f049",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.ignite",
+        "tam006.descend_chamber"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f050",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.rava_mound"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f051",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.rava_cup"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f052",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.ami_torah"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f053",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.ami_prophets"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f054",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.ami_sages"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f055",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.heaven_verse",
+        "tam006.heaven_hyper",
+        "tam006.heaven_example"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f056",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.mound_sages",
+        "tam006.cup_sages"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f057",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.earth_verse",
+        "tam006.prophetic_example"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f058",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.shmuel_three",
+        "tam006.shmuel_chain"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f059",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.shmuel_cup",
+        "tam006.wealth_cup",
+        "tam006.no_poverty"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f060",
+      "scope": "core",
+      "producer_ids": [
+        "tam006.cup_dispute"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f061",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.vine_case"
+      ],
+      "disposition": "partial_context_only_remainder_future_core_not_current_omission"
+    },
+    {
+      "reader_id": "tam006.f062",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.vine_case",
+        "tam006.vine_hyper",
+        "tam006.elazar.a"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f063",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.curtain_chain"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f064",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.curtain_case",
+        "tam006.curtain_hyper"
+      ],
+      "disposition": "partial_context_only_remainder_future_core_not_current_omission"
+    },
+    {
+      "reader_id": "tam006.f065",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.wood_knots",
+        "tam006.pappa.a"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f066",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.wood_settlement",
+        "tam006.aha.a"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f067",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_produced_no_current_coverage_claim"
+    },
+    {
+      "reader_id": "tam006.f068",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_produced_no_current_coverage_claim"
+    },
+    {
+      "reader_id": "tam006.f069",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_produced_no_current_coverage_claim"
+    },
+    {
+      "reader_id": "tam006.f070",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.fruitless",
+        "tam006.fruitless_fig",
+        "tam006.fruitless_reason"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f071",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_produced_no_current_coverage_claim"
+    },
+    {
+      "reader_id": "tam006.f072",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.wind",
+        "tam006.lighting",
+        "tam006.huna_hisda"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f073",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.gap_objection",
+        "tam006.multiple_places",
+        "tam006.places_resolution"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "tam006.f074",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_produced_no_current_coverage_claim"
+    },
+    {
+      "reader_id": "tam006.f075",
+      "scope": "context",
+      "producer_ids": [
+        "tam006.cup_text"
+      ],
+      "disposition": "represented"
+    }
+  ],
+  "core_findings": 55,
+  "core_substantive_findings_represented": 55,
+  "context_findings": 20,
+  "integrity": {
+    "source_spans": 317,
+    "proposal_rows": 281,
+    "source_indices": true,
+    "live_dependencies": true,
+    "coverage_refs": true,
+    "producer_manifest": true,
+    "export_files": 34,
+    "exact_replay": true,
+    "completed_by_layer": {
+      "structure": 90,
+      "utterances": 90,
+      "claims": 90,
+      "attributions": 90,
+      "questions": 90,
+      "positions": 90,
+      "edges": 90,
+      "reconciliation": 90
+    }
+  },
+  "limitations": [
+    "Context vine donations/curtain measurements/wood dialectic details read but only selected context produced; not additional core coverage or current omission claim.",
+    "All eight core passes bounded only;117source segments per pass remain.",
+    "Spatial בסובב על הכבש preserved with uncertainty; wood דקטרי lexical ambiguity and Huna/Hisda assignment preserved."
+  ],
+  "next_ref": "Tamid29a8",
+  "open_tails": [
+    "tam006.exaggeration_structure"
+  ],
+  "ml_eligible": false,
+  "tractate_acceptance": false,
+  "resume": "Producer alone corrects T006-01 immutably, no added coverage. Recheck exact corrected version."
+}

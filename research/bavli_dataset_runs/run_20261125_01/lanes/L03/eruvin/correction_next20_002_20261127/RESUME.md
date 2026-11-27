@@ -1,0 +1,1 @@
+150/3646 each layer unchanged; next Eruvin6a12. ER002_SCOPE01 adds required context qualification without changing initial records. Open er022.public_structure. Independent recheck pending; no full-tractate delivery.
