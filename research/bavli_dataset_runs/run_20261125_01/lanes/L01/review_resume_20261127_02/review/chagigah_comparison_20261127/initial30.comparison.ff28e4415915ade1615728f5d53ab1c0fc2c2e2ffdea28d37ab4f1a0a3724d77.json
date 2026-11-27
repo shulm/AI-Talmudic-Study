@@ -1,0 +1,666 @@
+{
+  "coverage": {
+    "context_only": 12,
+    "endpoint_core": 10,
+    "endpoint_probability_overlap": 0,
+    "new_source_only_reading_credit": 0,
+    "probability_core": 20,
+    "unique_core": 30
+  },
+  "defects": [
+    {
+      "category": "condition_polarity",
+      "evidence": [
+        {
+          "end_char": 190,
+          "quote": "איזהו קטן כל שאינו יכול לרכוב על כתפיו של אביו ולעלות מירושלים להר הבית דברי בית שמאי  ובית הלל אומרים כל שאינו יכול לאחוז בידו של אביו ולעלות מירושלים להר הבית שנאמר (שמות כג, יד) שלש רגלים",
+          "ref": "Chagigah 2a:2",
+          "segment_id": "seg_35bd988b8e68bf77fc32",
+          "start_char": 0
+        }
+      ],
+      "id": "C30-D01",
+      "issue": "Exemption conditions specify positive ability although propositions and source require inability.",
+      "record_ids": [
+        "chg.e2.c003",
+        "chg.e2.c003.p",
+        "chg.e2.c004",
+        "chg.e2.c004.p"
+      ],
+      "refs": [
+        "Chagigah 2a:2"
+      ],
+      "required_action": "Use explicit inability conditions in claim and position records; keep separate school-specific capacities.",
+      "resolution_state": "OPEN",
+      "severity": "medium",
+      "source_reading_findings": [
+        "f014",
+        "f015"
+      ],
+      "worker_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "יכולת רכיבה על כתפי אביו מירושלים להר הבית"
+            ],
+            "proposition": "קטן שאינו יכול לרכוב על כתפי אביו מירושלים להר הבית פטור",
+            "scope": "Chagigah 2a:2"
+          },
+          "evidence": [
+            {
+              "end_char": 85,
+              "quote": "כל שאינו יכול לרכוב על כתפיו של אביו ולעלות מירושלים להר הבית דברי בית שמאי",
+              "segment_id": "seg_35bd988b8e68bf77fc32",
+              "start_char": 10
+            }
+          ],
+          "id": "chg.e2.c003",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "chg.e2.c003",
+            "conditions": [
+              "יכולת רכיבה על כתפי אביו מירושלים להר הבית"
+            ],
+            "holder_candidates": [
+              "בית שמאי"
+            ],
+            "local_status": "source assertion; not independently reviewed",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 85,
+              "quote": "כל שאינו יכול לרכוב על כתפיו של אביו ולעלות מירושלים להר הבית דברי בית שמאי",
+              "segment_id": "seg_35bd988b8e68bf77fc32",
+              "start_char": 10
+            }
+          ],
+          "id": "chg.e2.c003.p",
+          "layer": "positions",
+          "links": [
+            "chg.e2.c003"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "יכולת הליכה תוך אחיזת יד אביו"
+            ],
+            "proposition": "קטן שאינו יכול לעלות תוך אחיזת יד אביו מירושלים להר הבית פטור",
+            "scope": "Chagigah 2a:2"
+          },
+          "evidence": [
+            {
+              "end_char": 160,
+              "quote": "ובית הלל אומרים כל שאינו יכול לאחוז בידו של אביו ולעלות מירושלים להר הבית",
+              "segment_id": "seg_35bd988b8e68bf77fc32",
+              "start_char": 87
+            }
+          ],
+          "id": "chg.e2.c004",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "chg.e2.c004",
+            "conditions": [
+              "יכולת הליכה תוך אחיזת יד אביו"
+            ],
+            "holder_candidates": [
+              "בית הלל"
+            ],
+            "local_status": "source assertion; not independently reviewed",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 160,
+              "quote": "ובית הלל אומרים כל שאינו יכול לאחוז בידו של אביו ולעלות מירושלים להר הבית",
+              "segment_id": "seg_35bd988b8e68bf77fc32",
+              "start_char": 87
+            }
+          ],
+          "id": "chg.e2.c004.p",
+          "layer": "positions",
+          "links": [
+            "chg.e2.c004"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    },
+    {
+      "category": "local_status",
+      "evidence": [
+        {
+          "end_char": 131,
+          "quote": "אמר מר זוטרא קרי ביה למען ילמדו רב אשי אמר ודאי למען ילמדו הוא דאי סלקא דעתך למען ילמדו וכיון דלא משתעי לא גמר וכיון דלא שמע לא גמר",
+          "ref": "Chagigah 3a:6",
+          "segment_id": "seg_9313248c3853204874be",
+          "start_char": 0
+        },
+        {
+          "end_char": 136,
+          "quote": "והאי באזניהם מבעי ליה באזניהם דכולהו ישראל ההוא מנגד כל ישראל נפקא אי מנגד כל ישראל הוה אמינא אע\"ג דלא שמעי כתב רחמנא באזניהם והוא דשמעי",
+          "ref": "Chagigah 3a:9",
+          "segment_id": "seg_ee3964bdcd56d0443b1b",
+          "start_char": 0
+        }
+      ],
+      "id": "C30-D02",
+      "issue": "Position local_status says source assertion although linked claims are hypothetical/challenged.",
+      "record_ids": [
+        "chg.e2.c055.p",
+        "chg.e2.c060.p"
+      ],
+      "refs": [
+        "Chagigah 3a:6",
+        "Chagigah 3a:9"
+      ],
+      "required_action": "Preserve hypothetical reductio premise for c055 and challenged objection answered at3a:10 for c060; inspect related nonasserted claims for same position-template mismatch.",
+      "resolution_state": "OPEN",
+      "severity": "medium",
+      "source_reading_findings": [
+        "f036",
+        "f038"
+      ],
+      "worker_records": [
+        {
+          "content": {
+            "claim_id": "chg.e2.c055",
+            "conditions": [],
+            "holder_candidates": [
+              "רב אשי"
+            ],
+            "local_status": "source assertion; not independently reviewed",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 131,
+              "quote": "דאי סלקא דעתך למען ילמדו וכיון דלא משתעי לא גמר וכיון דלא שמע לא גמר",
+              "segment_id": "seg_9313248c3853204874be",
+              "start_char": 63
+            }
+          ],
+          "id": "chg.e2.c055.p",
+          "layer": "positions",
+          "links": [
+            "chg.e2.c055"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "chg.e2.c060",
+            "conditions": [],
+            "holder_candidates": [],
+            "local_status": "source assertion; not independently reviewed",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 136,
+              "quote": "אי מנגד כל ישראל הוה אמינא אע\"ג דלא שמעי כתב רחמנא באזניהם והוא דשמעי",
+              "segment_id": "seg_ee3964bdcd56d0443b1b",
+              "start_char": 67
+            }
+          ],
+          "id": "chg.e2.c060.p",
+          "layer": "positions",
+          "links": [
+            "chg.e2.c060"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    },
+    {
+      "category": "omitted_utterance_attribution",
+      "evidence": [
+        {
+          "end_char": 304,
+          "quote": "רבי אמי כי מטי להאי קרא בכי (איכה ג, כט) יתן בעפר פיהו אולי יש תקוה אמר כולי האי ואולי רבי אמי כי מטי להאי קרא בכי (צפניה ב, ג) בקשו צדק בקשו ענוה אולי תסתרו ביום אף ה' אמר כולי האי ואולי רבי אסי כי מטי להאי קרא בכי (עמוס ה, טו) שנאו רע ואהבו טוב והציגו בשער משפט אולי יחנן ה' [אלהי] צבאות כולי האי ואולי",
+          "ref": "Chagigah 4b:10",
+          "segment_id": "seg_f56f95f91f64bf1dee14",
+          "start_char": 0
+        }
+      ],
+      "id": "C30-D03",
+      "issue": "Only first Ami direct response is represented separately (c172 evidence68:86). Second Ami and Asi responses lack separate utterance/holder records. c171 evidence188:215 excludes the verse and response that support its paraphrase.",
+      "record_ids": [
+        "chg.e2.c170",
+        "chg.e2.c171",
+        "chg.e2.c172",
+        "chg.e2.c172.a"
+      ],
+      "refs": [
+        "Chagigah 4b:10"
+      ],
+      "required_action": "Keep three occurrences; add second Ami and Asi direct-response records with exact spans, appropriate holders, and evidence for verse-specific narrative paraphrase.",
+      "resolution_state": "OPEN",
+      "severity": "medium",
+      "source_reading_findings": [
+        "f046",
+        "f047"
+      ],
+      "worker_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "רבי אמי בכה מפני שאחרי בקשת צדק וענווה ההסתרה עדיין אולי",
+            "scope": "Chagigah 4b:10"
+          },
+          "evidence": [
+            {
+              "end_char": 168,
+              "quote": "רבי אמי כי מטי להאי קרא בכי (צפניה ב, ג) בקשו צדק בקשו ענוה אולי תסתרו ביום אף ה'",
+              "segment_id": "seg_f56f95f91f64bf1dee14",
+              "start_char": 87
+            }
+          ],
+          "id": "chg.e2.c170",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "רבי אסי בכה מפני שאחרי שנאת רע ואהבת טוב החנינה עדיין אולי",
+            "scope": "Chagigah 4b:10"
+          },
+          "evidence": [
+            {
+              "end_char": 215,
+              "quote": "רבי אסי כי מטי להאי קרא בכי",
+              "segment_id": "seg_f56f95f91f64bf1dee14",
+              "start_char": 188
+            }
+          ],
+          "id": "chg.e2.c171",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "אחרי כל המאמץ המתואר התוצאה עדיין מסויגת באולי",
+            "scope": "Chagigah 4b:10"
+          },
+          "evidence": [
+            {
+              "end_char": 86,
+              "quote": "אמר כולי האי ואולי",
+              "segment_id": "seg_f56f95f91f64bf1dee14",
+              "start_char": 68
+            }
+          ],
+          "id": "chg.e2.c172",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "candidates": [
+              "רבי אמי"
+            ],
+            "role": "position_holder",
+            "scope": "אחרי כל המאמץ המתואר התוצאה עדיין מסויגת באולי",
+            "surface": "רבי אמי",
+            "transmission_chain": []
+          },
+          "evidence": [
+            {
+              "end_char": 86,
+              "quote": "אמר כולי האי ואולי",
+              "segment_id": "seg_f56f95f91f64bf1dee14",
+              "start_char": 68
+            }
+          ],
+          "id": "chg.e2.c172.a",
+          "layer": "attributions",
+          "links": [
+            "chg.e2.c172"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    },
+    {
+      "category": "omitted_question_speaker",
+      "evidence": [
+        {
+          "end_char": 220,
+          "quote": "רב יוסף כי מטי להאי קרא בכי (משלי יג, כג) ויש נספה בלא משפט אמר מי איכא דאזיל בלא זמניה אין כי הא דרב ביבי בר אביי הוה שכיח גביה מלאך המות אמר ליה לשלוחיה זיל אייתי לי מרים מגדלא שיער נשייא אזל אייתי ליה מרים מגדלא דרדקי",
+          "ref": "Chagigah 4b:11",
+          "segment_id": "seg_f644b552e1677c11c7dc",
+          "start_char": 0
+        },
+        {
+          "end_char": 119,
+          "quote": "א\"ל רב ביבי בר אביי אית לכו רשותא למיעבד הכי אמר ליה ולא כתיב ויש נספה בלא משפט א\"ל והכתיב (קהלת א, ד) דור הולך ודור בא",
+          "ref": "Chagigah 5a:2",
+          "segment_id": "seg_525e9a1591a5b143a874",
+          "start_char": 0
+        },
+        {
+          "end_char": 151,
+          "quote": "אמר דרעינא להו אנא עד דמלו להו לדרא והדר משלימנא ליה לדומה א\"ל סוף סוף שניה מאי עבדת אמר אי איכא צורבא מרבנן דמעביר במיליה מוסיפנא להו ליה והויא חלופיה",
+          "ref": "Chagigah 5a:3",
+          "segment_id": "seg_94d5c119083ceeb83eb5",
+          "start_char": 0
+        },
+        {
+          "end_char": 193,
+          "quote": "רבי יוחנן כי מטי להאי קרא בכי (איוב ב, ג) ותסיתני בו לבלעו חנם עבד שרבו מסיתין לו וניסת תקנה יש לו רבי יוחנן כי מטי להאי קרא בכי (איוב טו, טו) הן בקדושיו לא יאמין אי בקדושיו לא יאמין במאן יאמין",
+          "ref": "Chagigah 5a:4",
+          "segment_id": "seg_75f5e2164f4accbdf38b",
+          "start_char": 0
+        }
+      ],
+      "id": "C30-D04",
+      "issue": "Questions retain wording but no linked attribution/utterance identifies named question speakers.",
+      "record_ids": [
+        "chg.e2.q043",
+        "chg.e2.q045",
+        "chg.e2.q046",
+        "chg.e2.q047",
+        "chg.e2.q048",
+        "chg.e2.q049"
+      ],
+      "refs": [
+        "Chagigah 4b:11",
+        "Chagigah 5a:2",
+        "Chagigah 5a:3",
+        "Chagigah 5a:4"
+      ],
+      "required_action": "Add question-speaker attributions: q043 Rav Yosef; q045/q046 Rav Bibi bar Abaye; q047 inherited Rav Bibi; q048/q049 Rabbi Yohanan. Do not turn rhetorical questions into maintained factual positions.",
+      "resolution_state": "OPEN",
+      "severity": "medium",
+      "source_reading_findings": [
+        "f048",
+        "f050",
+        "f051",
+        "f052",
+        "f053",
+        "f054"
+      ],
+      "worker_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "האם יש מי שמת לפני זמנו?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 87,
+              "quote": "מי איכא דאזיל בלא זמניה",
+              "segment_id": "seg_f644b552e1677c11c7dc",
+              "start_char": 64
+            }
+          ],
+          "id": "chg.e2.q043",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "האם מותר למלאך המוות ליטול כך לפני הזמן?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 44,
+              "quote": "אית לכו רשותא למיעבד הכי",
+              "segment_id": "seg_525e9a1591a5b143a874",
+              "start_char": 20
+            }
+          ],
+          "id": "chg.e2.q045",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "כיצד נטילה לפני הזמן מתיישבת עם דור הולך ודור בא?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 119,
+              "quote": "והכתיב (קהלת א, ד) דור הולך ודור בא",
+              "segment_id": "seg_525e9a1591a5b143a874",
+              "start_char": 84
+            }
+          ],
+          "id": "chg.e2.q046",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "מה נעשה בשנותיה שנותרו?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 84,
+              "quote": "סוף סוף שניה מאי עבדת",
+              "segment_id": "seg_94d5c119083ceeb83eb5",
+              "start_char": 63
+            }
+          ],
+          "id": "chg.e2.q047",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "האם לעבד שרבו ניסת נגדו יש תקנה?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 98,
+              "quote": "עבד שרבו מסיתין לו וניסת תקנה יש לו",
+              "segment_id": "seg_75f5e2164f4accbdf38b",
+              "start_char": 63
+            }
+          ],
+          "id": "chg.e2.q048",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "אם אין אמון בקדושים במי יאמין?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 193,
+              "quote": "אי בקדושיו לא יאמין במאן יאמין",
+              "segment_id": "seg_75f5e2164f4accbdf38b",
+              "start_char": 163
+            }
+          ],
+          "id": "chg.e2.q049",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    }
+  ],
+  "full_tractate_admission": false,
+  "hash_checks": [
+    {
+      "actual_sha256": "c6e3f171f3bdd96ddcd00ddff9d7ac2549f6af63425772fbf15d13d8b374d23c",
+      "passed": true,
+      "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Chagigah/Hebrew/Wikisource Talmud Bavli.json",
+      "sha256": "c6e3f171f3bdd96ddcd00ddff9d7ac2549f6af63425772fbf15d13d8b374d23c"
+    },
+    {
+      "actual_sha256": "dea59ca730f008f02b0079b5c3658741a601e32887be5175a5667a9c5b0dc415",
+      "passed": true,
+      "path": "F:/Sefaria-Export-master/schemas/Chagigah.json",
+      "sha256": "dea59ca730f008f02b0079b5c3658741a601e32887be5175a5667a9c5b0dc415"
+    },
+    {
+      "actual_sha256": "16dee418e866e23a9a5b30d2a778117e7ed704517031aadf5fa695465bd6004a",
+      "passed": true,
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_chagigah.json",
+      "sha256": "16dee418e866e23a9a5b30d2a778117e7ed704517031aadf5fa695465bd6004a"
+    },
+    {
+      "actual_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "passed": true,
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "actual_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "passed": true,
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "actual_sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2",
+      "passed": true,
+      "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+      "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+    },
+    {
+      "actual": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "expected": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "passed": true,
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\schema.json"
+    },
+    {
+      "actual": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "expected": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "passed": true,
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\PROTOCOL.md"
+    },
+    {
+      "actual": "b527ff784649a62554eeece55d9b60cea933a564e09f27db7a53309b251a2c47",
+      "canonical_plan": "b527ff784649a62554eeece55d9b60cea933a564e09f27db7a53309b251a2c47",
+      "passed": true
+    }
+  ],
+  "human_scholarly_certification": false,
+  "kind": "immutable_initial30_comparison",
+  "ml_eligible": false,
+  "notes": [
+    "Comparison reviewer is label-exposed; source-only credit belongs solely to preserved initial reader.",
+    "Initial frozen reader is not modified. All56 findings inspected; context-only findings030-033 and supporting4a:12 require explicit supplemental production comparison before claimed as core agreement.",
+    "Major core transmission chains, Ravina reconciliation, Beit Hillel retraction, biblical Samuel identity, separate Miriams, angel/agent dialogue, conditional years transfer and Alexandri distinction agree; granularity differences retained."
+  ],
+  "reading_path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\chagigah_batch001.json",
+  "reading_sha256": "143758738f91db082d1332181043ecc53b4cdf6610567b082f29286b21049db2",
+  "replay": {
+    "all_eight_layers_completed": 735,
+    "pass": true,
+    "semantic_records": 8122,
+    "source_segments": 735
+  },
+  "review_contract_sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2",
+  "snapshot_sha256": "66fff5277fd5ae728f817bbdc9b6752b773c80908d617c6b64887f4ae65f38ed",
+  "verdict": "REWORK_TARGETED"
+}
