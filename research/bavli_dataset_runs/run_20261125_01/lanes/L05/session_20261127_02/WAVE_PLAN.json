@@ -1,0 +1,36 @@
+{
+  "status": "BOUNDED_LOCAL_SLOTS_RESERVED",
+  "job_id": "bavli_yoma",
+  "owner": {
+    "epoch": 2,
+    "owner": "L05/yoma"
+  },
+  "prior_snapshot": {
+    "snapshot_sha256": "77ea378ff99bf75a36d849e39a9e88ac404114541f33c54a6aa3e516df77f0bf"
+  },
+  "prior_review_sha256": "7d25b6790d44f9e408a890fe9e9dc426841e02214569b6cbf041803678e0cc5c",
+  "production_agent": "/root/shabbat",
+  "reviewer": "/root/horayot_review",
+  "new_core_refs": [
+    "Yoma 5a:13",
+    "Yoma 5b:1",
+    "Yoma 5b:2",
+    "Yoma 5b:3",
+    "Yoma 5b:4",
+    "Yoma 5b:5",
+    "Yoma 5b:6"
+  ],
+  "new_core_count": 7,
+  "correction_scope": [
+    "Split invest/mixed atom representations with lineage",
+    "Direct support relations for three practical-difference arguments"
+  ],
+  "proposals": "Separate correction and continuation hashes; preserve exact intermediate snapshot",
+  "reviewer_prior_exposure": "Comparator /root/horayot_review disclosed prior5a13–5b9context and legacy q12/r25 exposure; not annotation-naive. Separate no-history reader /root/yoma_fresh_7 receives only raw source/schema/protocol and freezes before comparison.",
+  "new_probability_credit": 0,
+  "central_reader_slot_claimed": false,
+  "stop_after": "Yoma 5b:6",
+  "funding": "No new metered API funds; usage-limited workers not retried",
+  "fresh_source_reader": "/root/yoma_fresh_7",
+  "reviewer_role": "Nonblind exact-version comparator, using existing prior wave freeze plus new independent reader freeze"
+}
