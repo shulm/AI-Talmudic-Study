@@ -1,0 +1,3096 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Nazir",
+  "source_sha256": "29a2a4347221c24b248de9b131523cb8354dcbf78d7975167c12ab7c13d43bef",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "owner": "/root/lead_l01_l03",
+  "epoch": 1,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/yevamot",
+    "model_id": null
+  },
+  "open_tails": [
+    "naz001.order"
+  ],
+  "records": [
+    {
+      "id": "nazfix001.aha_example",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "nazfix001.aha_yad",
+        "target_id": "nazfix001.yadot_rule"
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.aha_yad",
+        "nazfix001.yadot_rule"
+      ],
+      "supersedes": "naz001.aha_example"
+    },
+    {
+      "id": "nazfix001.aha_yad",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "אהא is presented as an example of a yad in that reconstruction.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.aha_yad"
+    },
+    {
+      "id": "nazfix001.aha_yad.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.aha_yad",
+        "conditions": [],
+        "holder_candidates": [
+          "Rava, with unresolved alternative attribution כדי"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.aha_yad"
+      ],
+      "supersedes": "naz001.aha_yad.p"
+    },
+    {
+      "id": "nazfix001.birds_meir",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Bird declaration interpreted in the alternative source explanations; no unconditional rule inferred from the bare Mishnah.",
+          "Rabbi Yohanan: a pure nazirite passes before the speaker (3b:4); even explicit birds-adjacent-to-hair wording still requires a passing nazirite (3b:6).",
+          "Resh Lakish: birds adjacent to hair in the verse can be intended (3a:11–12); explicit birds-adjacent-to-hair wording works even without a passing nazirite (3b:6)."
+        ],
+        "proposition": "Saying הרי עלי ציפורים establishes nazirite status according to Rabbi Meir.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:",
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "These are distinct explanations of Rabbi Meir; Rabbi Yohanan’s passing-nazirite condition is not imposed on Resh Lakish."
+      ],
+      "links": [],
+      "supersedes": "naz001.birds_meir"
+    },
+    {
+      "id": "nazfix001.birds_meir.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.birds_meir",
+        "conditions": [
+          "Bird declaration interpreted in the alternative source explanations; no unconditional rule inferred from the bare Mishnah.",
+          "Rabbi Yohanan: a pure nazirite passes before the speaker (3b:4); even explicit birds-adjacent-to-hair wording still requires a passing nazirite (3b:6).",
+          "Resh Lakish: birds adjacent to hair in the verse can be intended (3a:11–12); explicit birds-adjacent-to-hair wording works even without a passing nazirite (3b:6)."
+        ],
+        "holder_candidates": [
+          "Rabbi Meir"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:",
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "These are distinct explanations of Rabbi Meir; Rabbi Yohanan’s passing-nazirite condition is not imposed on Resh Lakish."
+      ],
+      "links": [
+        "nazfix001.birds_meir"
+      ],
+      "supersedes": "naz001.birds_meir.p"
+    },
+    {
+      "id": "nazfix001.birds_sages",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Bird formulation"
+        ],
+        "proposition": "Saying הרי עלי ציפורים does not establish nazirite status according to the sages.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:",
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Resh Lakish explains the sages by rejection of adjacency-based designation (3b:1); Rabbi Yohanan says all reject such designation and offers another basis for Rabbi Meir (3b:2)."
+      ],
+      "links": [],
+      "supersedes": "naz001.birds_sages"
+    },
+    {
+      "id": "nazfix001.birds_sages.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.birds_sages",
+        "conditions": [
+          "Bird formulation"
+        ],
+        "holder_candidates": [
+          "sages"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:",
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Resh Lakish explains the sages by rejection of adjacency-based designation (3b:1); Rabbi Yohanan says all reject such designation and offers another basis for Rabbi Meir (3b:2)."
+      ],
+      "links": [
+        "nazfix001.birds_sages"
+      ],
+      "supersedes": "naz001.birds_sages.p"
+    },
+    {
+      "id": "nazfix001.context.aha",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Shmuel construes אהא where a nazirite is passing before the speaker.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 79,
+          "quote": "האומר אהא הרי זה נזיר: דלמא אהא בתענית קאמר אמר שמואל כגון שהיה נזיר עובר לפניו",
+          "segment_id": "seg_9469f34e52df7c4fb281",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.aha"
+    },
+    {
+      "id": "nazfix001.context.aha.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.aha",
+        "conditions": [],
+        "holder_candidates": [
+          "Shmuel"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 79,
+          "quote": "האומר אהא הרי זה נזיר: דלמא אהא בתענית קאמר אמר שמואל כגון שהיה נזיר עובר לפניו",
+          "segment_id": "seg_9469f34e52df7c4fb281",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.aha"
+      ],
+      "supersedes": "naz001.context.aha.p"
+    },
+    {
+      "id": "nazfix001.context.beautiful",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Shmuel construes the beauty declaration while the speaker grasps his hair.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 31,
+          "quote": "אמר שמואל שתפוס בשערו ואמר אנאה",
+          "segment_id": "seg_6551f9ced8e20eb76b1f",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.beautiful"
+    },
+    {
+      "id": "nazfix001.context.beautiful.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.beautiful",
+        "conditions": [],
+        "holder_candidates": [
+          "Shmuel"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 31,
+          "quote": "אמר שמואל שתפוס בשערו ואמר אנאה",
+          "segment_id": "seg_6551f9ced8e20eb76b1f",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.beautiful"
+      ],
+      "supersedes": "naz001.context.beautiful.p"
+    },
+    {
+      "id": "nazfix001.context.like_this",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Shmuel construes הריני כזה where a nazirite passes before him.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 84,
+          "quote": "הריני כזה: נהי נמי דתפוס בשערו הריני כזה לא אמר אמר שמואל כגון שהיה נזיר עובר לפניו:",
+          "segment_id": "seg_ad8fa6f06a9e21b10cef",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.like_this"
+    },
+    {
+      "id": "nazfix001.context.like_this.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.like_this",
+        "conditions": [],
+        "holder_candidates": [
+          "Shmuel"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 84,
+          "quote": "הריני כזה: נהי נמי דתפוס בשערו הריני כזה לא אמר אמר שמואל כגון שהיה נזיר עובר לפניו:",
+          "segment_id": "seg_ad8fa6f06a9e21b10cef",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.like_this"
+      ],
+      "supersedes": "naz001.context.like_this.p"
+    },
+    {
+      "id": "nazfix001.context.localreason",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Yadot are explained first because they are derived by exposition and valued; the opening nevertheless begins with the primary offering formulation.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 81,
+          "quote": "אלא [הכא] לפרוש כינויי ברישא אלא היינו טעם ידות הואיל ואתיין ליה מדרשא חביבין ליה",
+          "segment_id": "seg_c4bc25897303516898d3",
+          "start_char": 0
+        },
+        {
+          "end_char": 78,
+          "quote": "וליפתח בהון ברישא תנא כי מתחיל מתחיל בעיקר קרבן ולענין פירושי מפרש ידות ברישא:",
+          "segment_id": "seg_6e6c0b242ff1883d9099",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.localreason"
+    },
+    {
+      "id": "nazfix001.context.localreason.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.localreason",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 81,
+          "quote": "אלא [הכא] לפרוש כינויי ברישא אלא היינו טעם ידות הואיל ואתיין ליה מדרשא חביבין ליה",
+          "segment_id": "seg_c4bc25897303516898d3",
+          "start_char": 0
+        },
+        {
+          "end_char": 78,
+          "quote": "וליפתח בהון ברישא תנא כי מתחיל מתחיל בעיקר קרבן ולענין פירושי מפרש ידות ברישא:",
+          "segment_id": "seg_6e6c0b242ff1883d9099",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.localreason"
+      ],
+      "supersedes": "naz001.context.localreason.p"
+    },
+    {
+      "id": "nazfix001.context.mekalkel",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Shmuel construes הריני מכלכל while the speaker grasps his hair, answering the sustenance alternative.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 97,
+          "quote": "אימא מיזן עניי כדכתיב (בראשית מז, יב) ויכלכל יוסף את אביו ואת אחיו אמר שמואל הכא נמי שתפוס בשערו:",
+          "segment_id": "seg_7df398679a69e4215338",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.mekalkel"
+    },
+    {
+      "id": "nazfix001.context.mekalkel.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.mekalkel",
+        "conditions": [],
+        "holder_candidates": [
+          "Shmuel"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 97,
+          "quote": "אימא מיזן עניי כדכתיב (בראשית מז, יב) ויכלכל יוסף את אביו ואת אחיו אמר שמואל הכא נמי שתפוס בשערו:",
+          "segment_id": "seg_7df398679a69e4215338",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.mekalkel"
+      ],
+      "supersedes": "naz001.context.mekalkel.p"
+    },
+    {
+      "id": "nazfix001.context.mesalsel",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Shmuel construes הריני מסלסל while the speaker grasps his hair, answering the Torah alternative.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 72,
+          "quote": "אימא תורה דכתיב (משלי ד, ח) סלסלה ותרוממך אמר שמואל הכא נמי שתפוס בשערו:",
+          "segment_id": "seg_dc63311b307913827af3",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.mesalsel"
+    },
+    {
+      "id": "nazfix001.context.mesalsel.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.mesalsel",
+        "conditions": [],
+        "holder_candidates": [
+          "Shmuel"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 72,
+          "quote": "אימא תורה דכתיב (משלי ד, ח) סלסלה ותרוממך אמר שמואל הכא נמי שתפוס בשערו:",
+          "segment_id": "seg_dc63311b307913827af3",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.mesalsel"
+      ],
+      "supersedes": "naz001.context.mesalsel.p"
+    },
+    {
+      "id": "nazfix001.context.pera",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The growth reading of לשלח פרע is supported by פרע analogy; alternatively the water-sending verse also denotes growth.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "הרי עלי לשלח פרע הרי זה נזיר: ממאי דהדין שילוח ריבויא הוא דכתיב (שיר השירים ד, יג) שלחיך פרדס רמונים",
+          "segment_id": "seg_81723d885310e52b7209",
+          "start_char": 0
+        },
+        {
+          "end_char": 58,
+          "quote": "אימא מידי דעבורי כדכתיב (איוב ה, י) ושולח מים על פני חוצות",
+          "segment_id": "seg_70e5426c14bbbb12e58d",
+          "start_char": 0
+        },
+        {
+          "end_char": 109,
+          "quote": "תנא פרע פרע יליף כתיב הכא (במדבר ו, ה) קדוש יהיה גדל פרע וכתיב התם גבי כהן הדיוט (יחזקאל מד, כ) ופרע לא ישלחו",
+          "segment_id": "seg_0a1e4b716ce3d45fccad",
+          "start_char": 0
+        },
+        {
+          "end_char": 87,
+          "quote": "ואיבעית אימא האי שולח מים נמי ריבוי הוא (כדמתרגם רב יוסף) דכד משקין ליה מיא לפירא ורבי:",
+          "segment_id": "seg_1269932beeb95e106ea8",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.pera"
+    },
+    {
+      "id": "nazfix001.context.pera.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.pera",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "הרי עלי לשלח פרע הרי זה נזיר: ממאי דהדין שילוח ריבויא הוא דכתיב (שיר השירים ד, יג) שלחיך פרדס רמונים",
+          "segment_id": "seg_81723d885310e52b7209",
+          "start_char": 0
+        },
+        {
+          "end_char": 58,
+          "quote": "אימא מידי דעבורי כדכתיב (איוב ה, י) ושולח מים על פני חוצות",
+          "segment_id": "seg_70e5426c14bbbb12e58d",
+          "start_char": 0
+        },
+        {
+          "end_char": 109,
+          "quote": "תנא פרע פרע יליף כתיב הכא (במדבר ו, ה) קדוש יהיה גדל פרע וכתיב התם גבי כהן הדיוט (יחזקאל מד, כ) ופרע לא ישלחו",
+          "segment_id": "seg_0a1e4b716ce3d45fccad",
+          "start_char": 0
+        },
+        {
+          "end_char": 87,
+          "quote": "ואיבעית אימא האי שולח מים נמי ריבוי הוא (כדמתרגם רב יוסף) דכד משקין ליה מיא לפירא ורבי:",
+          "segment_id": "seg_1269932beeb95e106ea8",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.pera"
+      ],
+      "supersedes": "naz001.context.pera.p"
+    },
+    {
+      "id": "nazfix001.context.variable",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Animal-going-out and inheritance examples show both ordering patterns occur; the universal last-mentioned-first explanation is rejected.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 57,
+          "quote": "והתנן במה בהמה יוצאה ובמה אינה יוצאה ומפרש יוצא גמל ברישא",
+          "segment_id": "seg_669ec0b2b58bce7d287f",
+          "start_char": 0
+        },
+        {
+          "end_char": 110,
+          "quote": "יש נוחלין ומנחילין נוחלין ולא מנחילין מנחילין ולא נוחלין לא נוחלין ולא מנחילין ומפרש אלו נוחלין ומנחילין ברישא",
+          "segment_id": "seg_a3cab8af82e3463b7f6e",
+          "start_char": 0
+        },
+        {
+          "end_char": 26,
+          "quote": "אלא לעולם תני הכי ותני הכי",
+          "segment_id": "seg_329c4a574115a9bc1fd3",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.context.variable"
+    },
+    {
+      "id": "nazfix001.context.variable.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.context.variable",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 57,
+          "quote": "והתנן במה בהמה יוצאה ובמה אינה יוצאה ומפרש יוצא גמל ברישא",
+          "segment_id": "seg_669ec0b2b58bce7d287f",
+          "start_char": 0
+        },
+        {
+          "end_char": 110,
+          "quote": "יש נוחלין ומנחילין נוחלין ולא מנחילין מנחילין ולא נוחלין לא נוחלין ולא מנחילין ומפרש אלו נוחלין ומנחילין ברישא",
+          "segment_id": "seg_a3cab8af82e3463b7f6e",
+          "start_char": 0
+        },
+        {
+          "end_char": 26,
+          "quote": "אלא לעולם תני הכי ותני הכי",
+          "segment_id": "seg_329c4a574115a9bc1fd3",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.variable"
+      ],
+      "supersedes": "naz001.context.variable.p"
+    },
+    {
+      "id": "nazfix001.example.goingout",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The woman-going-out Mishnah announces permission and prohibition, then begins with what she may not wear out.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 52,
+          "quote": "במה אשה יוצאה ובמה אינה יוצאה ומפרש לא תצא אשה ברישא",
+          "segment_id": "seg_bed87e7412b27d239b13",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.example.goingout"
+    },
+    {
+      "id": "nazfix001.example.goingout.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.example.goingout",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 52,
+          "quote": "במה אשה יוצאה ובמה אינה יוצאה ומפרש לא תצא אשה ברישא",
+          "segment_id": "seg_bed87e7412b27d239b13",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.example.goingout"
+      ],
+      "supersedes": "naz001.example.goingout.p"
+    },
+    {
+      "id": "nazfix001.example.insulation",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The insulation Mishnah announces permitted and prohibited materials, then explains prohibited materials first.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 49,
+          "quote": "במה טומנין ובמה אין טומנין ומפרש אין טומנין ברישא",
+          "segment_id": "seg_3dc388de5d5fa7702050",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.example.insulation"
+    },
+    {
+      "id": "nazfix001.example.insulation.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.example.insulation",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 49,
+          "quote": "במה טומנין ובמה אין טומנין ומפרש אין טומנין ברישא",
+          "segment_id": "seg_3dc388de5d5fa7702050",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.example.insulation"
+      ],
+      "supersedes": "naz001.example.insulation.p"
+    },
+    {
+      "id": "nazfix001.example.lighting",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The lighting Mishnah announces permitted and prohibited materials, then explains prohibited materials first.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 110,
+          "quote": "במה מדליקין ובמה אין מדליקין ומפרש אין מדליקין ברישא",
+          "segment_id": "seg_1ca0bd674b0fee898d95",
+          "start_char": 58
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.example.lighting"
+    },
+    {
+      "id": "nazfix001.example.lighting.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.example.lighting",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 110,
+          "quote": "במה מדליקין ובמה אין מדליקין ומפרש אין מדליקין ברישא",
+          "segment_id": "seg_1ca0bd674b0fee898d95",
+          "start_char": 58
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.example.lighting"
+      ],
+      "supersedes": "naz001.example.lighting.p"
+    },
+    {
+      "id": "nazfix001.example_support.goingout",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "nazfix001.example.goingout",
+        "target_id": "naz001.last_first"
+      },
+      "evidence": [
+        {
+          "end_char": 52,
+          "quote": "במה אשה יוצאה ובמה אינה יוצאה ומפרש לא תצא אשה ברישא",
+          "segment_id": "seg_bed87e7412b27d239b13",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.example.goingout",
+        "naz001.last_first"
+      ],
+      "supersedes": "naz001.example_support.goingout"
+    },
+    {
+      "id": "nazfix001.example_support.insulation",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "nazfix001.example.insulation",
+        "target_id": "naz001.last_first"
+      },
+      "evidence": [
+        {
+          "end_char": 49,
+          "quote": "במה טומנין ובמה אין טומנין ומפרש אין טומנין ברישא",
+          "segment_id": "seg_3dc388de5d5fa7702050",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.example.insulation",
+        "naz001.last_first"
+      ],
+      "supersedes": "naz001.example_support.insulation"
+    },
+    {
+      "id": "nazfix001.example_support.lighting",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "nazfix001.example.lighting",
+        "target_id": "naz001.last_first"
+      },
+      "evidence": [
+        {
+          "end_char": 110,
+          "quote": "במה מדליקין ובמה אין מדליקין ומפרש אין מדליקין ברישא",
+          "segment_id": "seg_1ca0bd674b0fee898d95",
+          "start_char": 58
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.example.lighting",
+        "naz001.last_first"
+      ],
+      "supersedes": "naz001.example_support.lighting"
+    },
+    {
+      "id": "nazfix001.local_reason",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "nazfix001.context.localreason",
+        "target_id": "naz001.kinuyim_first"
+      },
+      "evidence": [
+        {
+          "end_char": 110,
+          "quote": "ולפרוש כינויי ברישא תנא מההוא דסליק ההוא מפרש ברישא כדתנן במה מדליקין ובמה אין מדליקין ומפרש אין מדליקין ברישא",
+          "segment_id": "seg_1ca0bd674b0fee898d95",
+          "start_char": 0
+        },
+        {
+          "end_char": 81,
+          "quote": "אלא [הכא] לפרוש כינויי ברישא אלא היינו טעם ידות הואיל ואתיין ליה מדרשא חביבין ליה",
+          "segment_id": "seg_c4bc25897303516898d3",
+          "start_char": 0
+        },
+        {
+          "end_char": 78,
+          "quote": "וליפתח בהון ברישא תנא כי מתחיל מתחיל בעיקר קרבן ולענין פירושי מפרש ידות ברישא:",
+          "segment_id": "seg_6e6c0b242ff1883d9099",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.localreason",
+        "naz001.kinuyim_first"
+      ],
+      "supersedes": "naz001.local_reason"
+    },
+    {
+      "id": "nazfix001.order_correction",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "correction",
+        "source_id": "nazfix001.context.variable",
+        "target_id": "naz001.last_first"
+      },
+      "evidence": [
+        {
+          "end_char": 110,
+          "quote": "ולפרוש כינויי ברישא תנא מההוא דסליק ההוא מפרש ברישא כדתנן במה מדליקין ובמה אין מדליקין ומפרש אין מדליקין ברישא",
+          "segment_id": "seg_1ca0bd674b0fee898d95",
+          "start_char": 0
+        },
+        {
+          "end_char": 57,
+          "quote": "והתנן במה בהמה יוצאה ובמה אינה יוצאה ומפרש יוצא גמל ברישא",
+          "segment_id": "seg_669ec0b2b58bce7d287f",
+          "start_char": 0
+        },
+        {
+          "end_char": 110,
+          "quote": "יש נוחלין ומנחילין נוחלין ולא מנחילין מנחילין ולא נוחלין לא נוחלין ולא מנחילין ומפרש אלו נוחלין ומנחילין ברישא",
+          "segment_id": "seg_a3cab8af82e3463b7f6e",
+          "start_char": 0
+        },
+        {
+          "end_char": 26,
+          "quote": "אלא לעולם תני הכי ותני הכי",
+          "segment_id": "seg_329c4a574115a9bc1fd3",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.variable",
+        "naz001.last_first"
+      ],
+      "supersedes": "naz001.order_correction"
+    },
+    {
+      "id": "nazfix001.pera_support",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "nazfix001.context.pera",
+        "target_id": "naz001.form.pera"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "האומר אהא הרי זה נזיר או אהא נאה נזיר נזיק נזיח פזיח הרי זה נזיר הריני כזה הריני מסלסל הריני מכלכל הרי עלי לשלח פרע הרי זה נזיר",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 0
+        },
+        {
+          "end_char": 109,
+          "quote": "תנא פרע פרע יליף כתיב הכא (במדבר ו, ה) קדוש יהיה גדל פרע וכתיב התם גבי כהן הדיוט (יחזקאל מד, כ) ופרע לא ישלחו",
+          "segment_id": "seg_0a1e4b716ce3d45fccad",
+          "start_char": 0
+        },
+        {
+          "end_char": 87,
+          "quote": "ואיבעית אימא האי שולח מים נמי ריבוי הוא (כדמתרגם רב יוסף) דכד משקין ליה מיא לפירא ורבי:",
+          "segment_id": "seg_1269932beeb95e106ea8",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.pera",
+        "naz001.form.pera"
+      ],
+      "supersedes": "naz001.pera_support"
+    },
+    {
+      "id": "nazfix001.placement_answer",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "nazfix001.verse_basis",
+        "target_id": "naz001.placement_q"
+      },
+      "evidence": [
+        {
+          "end_char": 143,
+          "quote": "תנא אקרא קאי (דברים כד, א) והיה אם לא תמצא חן בעיניו כי מצא בה ערות דבר וה\"ק מי גרם לה לעבירה יין וקאמר כל הרואה סוטה בקלקולה יזיר עצמו מן היין",
+          "segment_id": "seg_bf8515fbc4b6768aaef4",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.verse_basis",
+        "naz001.placement_q"
+      ],
+      "supersedes": "naz001.placement_answer"
+    },
+    {
+      "id": "nazfix001.placement_link",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "nazfix001.sotah_abstain",
+        "target_id": "naz001.placement_q"
+      },
+      "evidence": [
+        {
+          "end_char": 143,
+          "quote": "תנא אקרא קאי (דברים כד, א) והיה אם לא תמצא חן בעיניו כי מצא בה ערות דבר וה\"ק מי גרם לה לעבירה יין וקאמר כל הרואה סוטה בקלקולה יזיר עצמו מן היין",
+          "segment_id": "seg_bf8515fbc4b6768aaef4",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.sotah_abstain",
+        "naz001.placement_q"
+      ],
+      "supersedes": "naz001.placement_link"
+    },
+    {
+      "id": "nazfix001.qualify.aha",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "nazfix001.context.aha",
+        "target_id": "naz001.form.aha"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "האומר אהא הרי זה נזיר או אהא נאה נזיר נזיק נזיח פזיח הרי זה נזיר הריני כזה הריני מסלסל הריני מכלכל הרי עלי לשלח פרע הרי זה נזיר",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 0
+        },
+        {
+          "end_char": 79,
+          "quote": "האומר אהא הרי זה נזיר: דלמא אהא בתענית קאמר אמר שמואל כגון שהיה נזיר עובר לפניו",
+          "segment_id": "seg_9469f34e52df7c4fb281",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.aha",
+        "naz001.form.aha"
+      ],
+      "supersedes": "naz001.qualify.aha"
+    },
+    {
+      "id": "nazfix001.qualify.beautiful",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "nazfix001.context.beautiful",
+        "target_id": "naz001.form.beautiful"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "האומר אהא הרי זה נזיר או אהא נאה נזיר נזיק נזיח פזיח הרי זה נזיר הריני כזה הריני מסלסל הריני מכלכל הרי עלי לשלח פרע הרי זה נזיר",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 0
+        },
+        {
+          "end_char": 31,
+          "quote": "אמר שמואל שתפוס בשערו ואמר אנאה",
+          "segment_id": "seg_6551f9ced8e20eb76b1f",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.beautiful",
+        "naz001.form.beautiful"
+      ],
+      "supersedes": "naz001.qualify.beautiful"
+    },
+    {
+      "id": "nazfix001.qualify.like_this",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "nazfix001.context.like_this",
+        "target_id": "naz001.form.like_this"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "האומר אהא הרי זה נזיר או אהא נאה נזיר נזיק נזיח פזיח הרי זה נזיר הריני כזה הריני מסלסל הריני מכלכל הרי עלי לשלח פרע הרי זה נזיר",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 0
+        },
+        {
+          "end_char": 84,
+          "quote": "הריני כזה: נהי נמי דתפוס בשערו הריני כזה לא אמר אמר שמואל כגון שהיה נזיר עובר לפניו:",
+          "segment_id": "seg_ad8fa6f06a9e21b10cef",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.like_this",
+        "naz001.form.like_this"
+      ],
+      "supersedes": "naz001.qualify.like_this"
+    },
+    {
+      "id": "nazfix001.qualify.mekalkel",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "nazfix001.context.mekalkel",
+        "target_id": "naz001.form.mekalkel"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "האומר אהא הרי זה נזיר או אהא נאה נזיר נזיק נזיח פזיח הרי זה נזיר הריני כזה הריני מסלסל הריני מכלכל הרי עלי לשלח פרע הרי זה נזיר",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 0
+        },
+        {
+          "end_char": 97,
+          "quote": "אימא מיזן עניי כדכתיב (בראשית מז, יב) ויכלכל יוסף את אביו ואת אחיו אמר שמואל הכא נמי שתפוס בשערו:",
+          "segment_id": "seg_7df398679a69e4215338",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.mekalkel",
+        "naz001.form.mekalkel"
+      ],
+      "supersedes": "naz001.qualify.mekalkel"
+    },
+    {
+      "id": "nazfix001.qualify.mesalsel",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "nazfix001.context.mesalsel",
+        "target_id": "naz001.form.mesalsel"
+      },
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "האומר אהא הרי זה נזיר או אהא נאה נזיר נזיק נזיח פזיח הרי זה נזיר הריני כזה הריני מסלסל הריני מכלכל הרי עלי לשלח פרע הרי זה נזיר",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 0
+        },
+        {
+          "end_char": 72,
+          "quote": "אימא תורה דכתיב (משלי ד, ח) סלסלה ותרוממך אמר שמואל הכא נמי שתפוס בשערו:",
+          "segment_id": "seg_dc63311b307913827af3",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.context.mesalsel",
+        "naz001.form.mesalsel"
+      ],
+      "supersedes": "naz001.qualify.mesalsel"
+    },
+    {
+      "id": "nazfix001.reconstruct_answer",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "nazfix001.reconstruction",
+        "target_id": "naz001.kinuyim_yadot"
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.reconstruction",
+        "naz001.kinuyim_yadot"
+      ],
+      "supersedes": "naz001.reconstruct_answer"
+    },
+    {
+      "id": "nazfix001.reconstruct_content",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "nazfix001.yadot_rule",
+        "target_id": "nazfix001.reconstruction"
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.yadot_rule",
+        "nazfix001.reconstruction"
+      ],
+      "supersedes": "naz001.reconstruct_content"
+    },
+    {
+      "id": "nazfix001.reconstruction",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The transmitted Mishnah is reconstructed to include both kinuyim and yadot as effective naziriteship, followed by examples of yadot.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.reconstruction"
+    },
+    {
+      "id": "nazfix001.reconstruction.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.reconstruction",
+        "conditions": [],
+        "holder_candidates": [
+          "Rava, with unresolved alternative attribution כדי"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.reconstruction"
+      ],
+      "supersedes": "naz001.reconstruction.p"
+    },
+    {
+      "id": "nazfix001.sotah_abstain",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Seeing the sotah in her disgrace"
+        ],
+        "proposition": "Whoever sees a sotah in her disgrace should abstain from wine.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 143,
+          "quote": "תנא אקרא קאי (דברים כד, א) והיה אם לא תמצא חן בעיניו כי מצא בה ערות דבר וה\"ק מי גרם לה לעבירה יין וקאמר כל הרואה סוטה בקלקולה יזיר עצמו מן היין",
+          "segment_id": "seg_bf8515fbc4b6768aaef4",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.sotah_abstain"
+    },
+    {
+      "id": "nazfix001.sotah_abstain.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.sotah_abstain",
+        "conditions": [
+          "Seeing the sotah in her disgrace"
+        ],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 143,
+          "quote": "תנא אקרא קאי (דברים כד, א) והיה אם לא תמצא חן בעיניו כי מצא בה ערות דבר וה\"ק מי גרם לה לעבירה יין וקאמר כל הרואה סוטה בקלקולה יזיר עצמו מן היין",
+          "segment_id": "seg_bf8515fbc4b6768aaef4",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.sotah_abstain"
+      ],
+      "supersedes": "naz001.sotah_abstain.p"
+    },
+    {
+      "id": "nazfix001.substitute.naziah",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "naz001.form.naziah",
+        "target_id": "nazfix001.substitutes"
+      },
+      "evidence": [
+        {
+          "end_char": 58,
+          "quote": "מתני׳ <big><strong>כל</strong></big> כינויי נזירות כנזירות",
+          "segment_id": "seg_19ca08fc0cf2b4de0032",
+          "start_char": 0
+        },
+        {
+          "end_char": 47,
+          "quote": "נזיח",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 43
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "naz001.form.naziah",
+        "nazfix001.substitutes"
+      ],
+      "supersedes": "naz001.substitute.naziah"
+    },
+    {
+      "id": "nazfix001.substitute.nazik",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "naz001.form.nazik",
+        "target_id": "nazfix001.substitutes"
+      },
+      "evidence": [
+        {
+          "end_char": 58,
+          "quote": "מתני׳ <big><strong>כל</strong></big> כינויי נזירות כנזירות",
+          "segment_id": "seg_19ca08fc0cf2b4de0032",
+          "start_char": 0
+        },
+        {
+          "end_char": 42,
+          "quote": "נזיק",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 38
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "naz001.form.nazik",
+        "nazfix001.substitutes"
+      ],
+      "supersedes": "naz001.substitute.nazik"
+    },
+    {
+      "id": "nazfix001.substitute.paziah",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "naz001.form.paziah",
+        "target_id": "nazfix001.substitutes"
+      },
+      "evidence": [
+        {
+          "end_char": 58,
+          "quote": "מתני׳ <big><strong>כל</strong></big> כינויי נזירות כנזירות",
+          "segment_id": "seg_19ca08fc0cf2b4de0032",
+          "start_char": 0
+        },
+        {
+          "end_char": 52,
+          "quote": "פזיח",
+          "segment_id": "seg_8b44440ece405d9af3ba",
+          "start_char": 48
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "naz001.form.paziah",
+        "nazfix001.substitutes"
+      ],
+      "supersedes": "naz001.substitute.paziah"
+    },
+    {
+      "id": "nazfix001.substitutes",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "All substitute expressions for naziriteship have the effect of naziriteship.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 58,
+          "quote": "מתני׳ <big><strong>כל</strong></big> כינויי נזירות כנזירות",
+          "segment_id": "seg_19ca08fc0cf2b4de0032",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.substitutes"
+    },
+    {
+      "id": "nazfix001.substitutes.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.substitutes",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Mishnah"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 58,
+          "quote": "מתני׳ <big><strong>כל</strong></big> כינויי נזירות כנזירות",
+          "segment_id": "seg_19ca08fc0cf2b4de0032",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.substitutes"
+      ],
+      "supersedes": "naz001.substitutes.p"
+    },
+    {
+      "id": "nazfix001.verse_basis",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The tanna’s placement is tied to Deuteronomy 24:1 and its reference to sexual misconduct.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 143,
+          "quote": "תנא אקרא קאי (דברים כד, א) והיה אם לא תמצא חן בעיניו כי מצא בה ערות דבר וה\"ק מי גרם לה לעבירה יין וקאמר כל הרואה סוטה בקלקולה יזיר עצמו מן היין",
+          "segment_id": "seg_bf8515fbc4b6768aaef4",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.verse_basis"
+    },
+    {
+      "id": "nazfix001.verse_basis.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.verse_basis",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 143,
+          "quote": "תנא אקרא קאי (דברים כד, א) והיה אם לא תמצא חן בעיניו כי מצא בה ערות דבר וה\"ק מי גרם לה לעבירה יין וקאמר כל הרואה סוטה בקלקולה יזיר עצמו מן היין",
+          "segment_id": "seg_bf8515fbc4b6768aaef4",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.verse_basis"
+      ],
+      "supersedes": "naz001.verse_basis.p"
+    },
+    {
+      "id": "nazfix001.wine_reason",
+      "layer": "edges",
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "naz001.wine_cause",
+        "target_id": "nazfix001.sotah_abstain"
+      },
+      "evidence": [
+        {
+          "end_char": 143,
+          "quote": "תנא אקרא קאי (דברים כד, א) והיה אם לא תמצא חן בעיניו כי מצא בה ערות דבר וה\"ק מי גרם לה לעבירה יין וקאמר כל הרואה סוטה בקלקולה יזיר עצמו מן היין",
+          "segment_id": "seg_bf8515fbc4b6768aaef4",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "naz001.wine_cause",
+        "nazfix001.sotah_abstain"
+      ],
+      "supersedes": "naz001.wine_reason"
+    },
+    {
+      "id": "nazfix001.yadot_rule",
+      "layer": "claims",
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Incomplete nazirite declarations are effective naziriteship in the reconstructed wording.",
+        "scope": "Opening Mishnah formulations and opening editorial discussion; continuation qualifiers explicitly identified"
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "naz001.yadot_rule"
+    },
+    {
+      "id": "nazfix001.yadot_rule.p",
+      "layer": "positions",
+      "content": {
+        "claim_id": "nazfix001.yadot_rule",
+        "conditions": [],
+        "holder_candidates": [
+          "Rava, with unresolved alternative attribution כדי"
+        ],
+        "local_status": "asserted at this source stage; later explanations separately retained",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 123,
+          "quote": "אמר רבא ואיתימא כדי חסורי מיחסרא והכי קתני כל כינויי נזירות כנזירות וידות נזירות כנזירות ואלו הן ידות האומר אהא הרי זה נזיר",
+          "segment_id": "seg_e0d07a8c8eeac727985a",
+          "start_char": 0
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "nazfix001.yadot_rule"
+      ],
+      "supersedes": "naz001.yadot_rule.p"
+    },
+    {
+      "id": "nazfix001.context.lakish_meir",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_6d62959968a4d102ebdb",
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הרי עלי ציפרין רבי מאיר אומר נזיר: מאי טעמא דרבי מאיר אמר ריש לקיש ציפרין סמוכין לשיער קיבל עליו דכתיב (דניאל ד, ל) עד די שעריה כנשרין רבה וטפרוהי כצפרין"
+        },
+        {
+          "segment_id": "seg_3de225a9adc60b83b4a3",
+          "start_char": 0,
+          "end_char": 40,
+          "quote": "רבי מאיר סבר מתפיס איניש במידי דסמיך ליה"
+        }
+      ],
+      "content": {
+        "proposition": "Resh Lakish explains Rabbi Meir by the speaker accepting the birds adjacent to hair in Daniel; Rabbi Meir allows designation by an adjacent subject.",
+        "conditions": [
+          "Bird declaration construed through scriptural birds/hair adjacency"
+        ],
+        "scope": "Continuation interpretation of opening bird declaration; context only, no added source coverage",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.lakish_meir.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_6d62959968a4d102ebdb",
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הרי עלי ציפרין רבי מאיר אומר נזיר: מאי טעמא דרבי מאיר אמר ריש לקיש ציפרין סמוכין לשיער קיבל עליו דכתיב (דניאל ד, ל) עד די שעריה כנשרין רבה וטפרוהי כצפרין"
+        },
+        {
+          "segment_id": "seg_3de225a9adc60b83b4a3",
+          "start_char": 0,
+          "end_char": 40,
+          "quote": "רבי מאיר סבר מתפיס איניש במידי דסמיך ליה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Meir as explained by Resh Lakish"
+        ],
+        "claim_id": "nazfix001.context.lakish_meir",
+        "question_id": null,
+        "conditions": [
+          "Bird declaration construed through scriptural birds/hair adjacency"
+        ],
+        "local_status": "Alternative explanation preserved; no choice-task qualification"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.lakish_meir"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.lakish_sages",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_1be420b7738070bc1dae",
+          "start_char": 0,
+          "end_char": 41,
+          "quote": "ורבנן סברי לא מתפיס איניש במידי דסמיך ליה"
+        }
+      ],
+      "content": {
+        "proposition": "In Resh Lakish’s account the sages do not allow designation by a subject merely adjacent in the verse.",
+        "conditions": [
+          "Resh Lakish explanation of the bird declaration"
+        ],
+        "scope": "Continuation interpretation of opening bird declaration; context only, no added source coverage",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.lakish_sages.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_1be420b7738070bc1dae",
+          "start_char": 0,
+          "end_char": 41,
+          "quote": "ורבנן סברי לא מתפיס איניש במידי דסמיך ליה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "sages as explained by Resh Lakish"
+        ],
+        "claim_id": "nazfix001.context.lakish_sages",
+        "question_id": null,
+        "conditions": [
+          "Resh Lakish explanation of the bird declaration"
+        ],
+        "local_status": "Alternative explanation preserved; no choice-task qualification"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.lakish_sages"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.yohanan",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_20d14412f685aa30245f",
+          "start_char": 0,
+          "end_char": 84,
+          "quote": "ר' יוחנן אמר דכ\"ע לא מתפיס אלא היינו טעמא דר\"מ דחיישינן שמא צפורי נזיר טמא קיבל עליו"
+        },
+        {
+          "segment_id": "seg_8d37f815b5fb815072f3",
+          "start_char": 0,
+          "end_char": 128,
+          "quote": "ודלמא הרי עלי צפורי מצורע קאמר  כגון שהיה נזיר עובר לפניו ודלמא נזיר טמא ולפוטרו מן קרבנותיו קאמר כגון שהיה נזיר טהור עובר לפניו"
+        }
+      ],
+      "content": {
+        "proposition": "Rabbi Yohanan says all reject adjacency-based designation; Rabbi Meir fears that the speaker accepted birds of an impure nazirite, in the case where a pure nazirite passes before him.",
+        "conditions": [
+          "A pure nazirite passes before the speaker; excludes intent merely to pay an already impure nazirite’s offerings",
+          "Concern about accepting nazirite obligations, not a statement that the passing nazirite is impure"
+        ],
+        "scope": "Continuation interpretation of opening bird declaration; context only, no added source coverage",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.yohanan.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_20d14412f685aa30245f",
+          "start_char": 0,
+          "end_char": 84,
+          "quote": "ר' יוחנן אמר דכ\"ע לא מתפיס אלא היינו טעמא דר\"מ דחיישינן שמא צפורי נזיר טמא קיבל עליו"
+        },
+        {
+          "segment_id": "seg_8d37f815b5fb815072f3",
+          "start_char": 0,
+          "end_char": 128,
+          "quote": "ודלמא הרי עלי צפורי מצורע קאמר  כגון שהיה נזיר עובר לפניו ודלמא נזיר טמא ולפוטרו מן קרבנותיו קאמר כגון שהיה נזיר טהור עובר לפניו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Meir as explained by Rabbi Yohanan"
+        ],
+        "claim_id": "nazfix001.context.yohanan",
+        "question_id": null,
+        "conditions": [
+          "A pure nazirite passes before the speaker; excludes intent merely to pay an already impure nazirite’s offerings",
+          "Concern about accepting nazirite obligations, not a statement that the passing nazirite is impure"
+        ],
+        "local_status": "Alternative explanation preserved; no choice-task qualification"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.yohanan"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.yohanan_difference",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b784dc8197c923c2f755",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "איכא בינייהו כגון דאמר ציפרין הסמוכין לשער עלי לר' יוחנן אע\"ג דאמר הכי אי נזיר עובר לפניו אין אי לא לא לרשב\"ל אע\"ג דאין נזיר עובר לפניו"
+        }
+      ],
+      "content": {
+        "proposition": "For Rabbi Yohanan even explicit birds-adjacent-to-hair wording establishes the nazirite reading only if a nazirite passes before him.",
+        "conditions": [
+          "Speaker explicitly says birds adjacent to hair are upon me",
+          "A nazirite passes before him; if none passes the reading does not follow"
+        ],
+        "scope": "Continuation interpretation of opening bird declaration; context only, no added source coverage",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.yohanan_difference.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b784dc8197c923c2f755",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "איכא בינייהו כגון דאמר ציפרין הסמוכין לשער עלי לר' יוחנן אע\"ג דאמר הכי אי נזיר עובר לפניו אין אי לא לא לרשב\"ל אע\"ג דאין נזיר עובר לפניו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rabbi Yohanan"
+        ],
+        "claim_id": "nazfix001.context.yohanan_difference",
+        "question_id": null,
+        "conditions": [
+          "Speaker explicitly says birds adjacent to hair are upon me",
+          "A nazirite passes before him; if none passes the reading does not follow"
+        ],
+        "local_status": "Alternative explanation preserved; no choice-task qualification"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.yohanan_difference"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.lakish_difference",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b784dc8197c923c2f755",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "איכא בינייהו כגון דאמר ציפרין הסמוכין לשער עלי לר' יוחנן אע\"ג דאמר הכי אי נזיר עובר לפניו אין אי לא לא לרשב\"ל אע\"ג דאין נזיר עובר לפניו"
+        }
+      ],
+      "content": {
+        "proposition": "For Resh Lakish explicit birds-adjacent-to-hair wording establishes the reading even when no nazirite passes before him.",
+        "conditions": [
+          "Speaker explicitly says birds adjacent to hair are upon me",
+          "Passing nazirite not required in this explicit-wording case"
+        ],
+        "scope": "Continuation interpretation of opening bird declaration; context only, no added source coverage",
+        "assertion_mode": "conditional"
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.lakish_difference.p",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b784dc8197c923c2f755",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "איכא בינייהו כגון דאמר ציפרין הסמוכין לשער עלי לר' יוחנן אע\"ג דאמר הכי אי נזיר עובר לפניו אין אי לא לא לרשב\"ל אע\"ג דאין נזיר עובר לפניו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Resh Lakish"
+        ],
+        "claim_id": "nazfix001.context.lakish_difference",
+        "question_id": null,
+        "conditions": [
+          "Speaker explicitly says birds adjacent to hair are upon me",
+          "Passing nazirite not required in this explicit-wording case"
+        ],
+        "local_status": "Alternative explanation preserved; no choice-task qualification"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.lakish_difference"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.lakish_qualifier",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:"
+        },
+        {
+          "segment_id": "seg_6d62959968a4d102ebdb",
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הרי עלי ציפרין רבי מאיר אומר נזיר: מאי טעמא דרבי מאיר אמר ריש לקיש ציפרין סמוכין לשיער קיבל עליו דכתיב (דניאל ד, ל) עד די שעריה כנשרין רבה וטפרוהי כצפרין"
+        },
+        {
+          "segment_id": "seg_3de225a9adc60b83b4a3",
+          "start_char": 0,
+          "end_char": 40,
+          "quote": "רבי מאיר סבר מתפיס איניש במידי דסמיך ליה"
+        }
+      ],
+      "content": {
+        "source_id": "nazfix001.context.lakish_meir",
+        "target_id": "nazfix001.birds_meir",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.lakish_meir",
+        "nazfix001.birds_meir"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.sages_qualifier",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:"
+        },
+        {
+          "segment_id": "seg_1be420b7738070bc1dae",
+          "start_char": 0,
+          "end_char": 41,
+          "quote": "ורבנן סברי לא מתפיס איניש במידי דסמיך ליה"
+        }
+      ],
+      "content": {
+        "source_id": "nazfix001.context.lakish_sages",
+        "target_id": "nazfix001.birds_sages",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.lakish_sages",
+        "nazfix001.birds_sages"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.yohanan_qualifier",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:"
+        },
+        {
+          "segment_id": "seg_20d14412f685aa30245f",
+          "start_char": 0,
+          "end_char": 84,
+          "quote": "ר' יוחנן אמר דכ\"ע לא מתפיס אלא היינו טעמא דר\"מ דחיישינן שמא צפורי נזיר טמא קיבל עליו"
+        },
+        {
+          "segment_id": "seg_8d37f815b5fb815072f3",
+          "start_char": 0,
+          "end_char": 128,
+          "quote": "ודלמא הרי עלי צפורי מצורע קאמר  כגון שהיה נזיר עובר לפניו ודלמא נזיר טמא ולפוטרו מן קרבנותיו קאמר כגון שהיה נזיר טהור עובר לפניו"
+        }
+      ],
+      "content": {
+        "source_id": "nazfix001.context.yohanan",
+        "target_id": "nazfix001.birds_meir",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.yohanan",
+        "nazfix001.birds_meir"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.yohanan_scope",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:"
+        },
+        {
+          "segment_id": "seg_b784dc8197c923c2f755",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "איכא בינייהו כגון דאמר ציפרין הסמוכין לשער עלי לר' יוחנן אע\"ג דאמר הכי אי נזיר עובר לפניו אין אי לא לא לרשב\"ל אע\"ג דאין נזיר עובר לפניו"
+        }
+      ],
+      "content": {
+        "source_id": "nazfix001.context.yohanan_difference",
+        "target_id": "nazfix001.birds_meir",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.yohanan_difference",
+        "nazfix001.birds_meir"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.lakish_scope",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_e1480b346e2dbecb3991",
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "הרי עלי ציפורים ר\"מ אומר נזיר וחכמים אומרים אינו נזיר:"
+        },
+        {
+          "segment_id": "seg_b784dc8197c923c2f755",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "איכא בינייהו כגון דאמר ציפרין הסמוכין לשער עלי לר' יוחנן אע\"ג דאמר הכי אי נזיר עובר לפניו אין אי לא לא לרשב\"ל אע\"ג דאין נזיר עובר לפניו"
+        }
+      ],
+      "content": {
+        "source_id": "nazfix001.context.lakish_difference",
+        "target_id": "nazfix001.birds_meir",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "nazfix001.context.lakish_difference",
+        "nazfix001.birds_meir"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.attribution.lakish",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_6d62959968a4d102ebdb",
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הרי עלי ציפרין רבי מאיר אומר נזיר: מאי טעמא דרבי מאיר אמר ריש לקיש ציפרין סמוכין לשיער קיבל עליו דכתיב (דניאל ד, ל) עד די שעריה כנשרין רבה וטפרוהי כצפרין"
+        },
+        {
+          "segment_id": "seg_3de225a9adc60b83b4a3",
+          "start_char": 0,
+          "end_char": 40,
+          "quote": "רבי מאיר סבר מתפיס איניש במידי דסמיך ליה"
+        },
+        {
+          "segment_id": "seg_1be420b7738070bc1dae",
+          "start_char": 0,
+          "end_char": 41,
+          "quote": "ורבנן סברי לא מתפיס איניש במידי דסמיך ליה"
+        }
+      ],
+      "content": {
+        "surface": "אמר ריש לקיש",
+        "role": "speaker",
+        "candidates": [
+          "Resh Lakish"
+        ],
+        "scope": "Explanation of Rabbi Meir and sages through adjacency",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.attribution.yohanan",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_20d14412f685aa30245f",
+          "start_char": 0,
+          "end_char": 84,
+          "quote": "ר' יוחנן אמר דכ\"ע לא מתפיס אלא היינו טעמא דר\"מ דחיישינן שמא צפורי נזיר טמא קיבל עליו"
+        },
+        {
+          "segment_id": "seg_8d37f815b5fb815072f3",
+          "start_char": 0,
+          "end_char": 128,
+          "quote": "ודלמא הרי עלי צפורי מצורע קאמר  כגון שהיה נזיר עובר לפניו ודלמא נזיר טמא ולפוטרו מן קרבנותיו קאמר כגון שהיה נזיר טהור עובר לפניו"
+        }
+      ],
+      "content": {
+        "surface": "ר' יוחנן אמר",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan"
+        ],
+        "scope": "Alternative rejecting adjacency and requiring the passing pure nazirite",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    },
+    {
+      "id": "nazfix001.context.attribution.difference",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_b784dc8197c923c2f755",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "איכא בינייהו כגון דאמר ציפרין הסמוכין לשער עלי לר' יוחנן אע\"ג דאמר הכי אי נזיר עובר לפניו אין אי לא לא לרשב\"ל אע\"ג דאין נזיר עובר לפניו"
+        }
+      ],
+      "content": {
+        "surface": "לר' יוחנן ... לרשב״ל",
+        "role": "speaker",
+        "candidates": [
+          "Rabbi Yohanan",
+          "Resh Lakish"
+        ],
+        "scope": "Explicitly attributed differing conditions; not a transmission chain",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "links": [],
+      "uncertainty": []
+    }
+  ],
+  "coverage": [
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.mishnah"
+      ],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u0"
+      ],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.substitutes"
+      ],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a0"
+      ],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Actual questions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.substitutes.p"
+      ],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.substitute.nazik",
+        "nazfix001.substitute.naziah",
+        "nazfix001.substitute.paziah"
+      ],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Completed edges pass."
+    },
+    {
+      "segment_id": "seg_19ca08fc0cf2b4de0032",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.mishnah",
+        "naz001.u0",
+        "naz001.a0",
+        "nazfix001.substitutes",
+        "nazfix001.substitutes.p",
+        "nazfix001.substitute.nazik",
+        "nazfix001.substitute.naziah",
+        "nazfix001.substitute.paziah"
+      ],
+      "rationale": "General kinuyim rule distinguished from the later reconstructed yadot clause. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.mishnah"
+      ],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u1"
+      ],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.form.aha",
+        "naz001.form.beautiful",
+        "naz001.form.nazik",
+        "naz001.form.naziah",
+        "naz001.form.paziah",
+        "naz001.form.like_this",
+        "naz001.form.mesalsel",
+        "naz001.form.mekalkel",
+        "naz001.form.pera"
+      ],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a1"
+      ],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Actual questions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.form.aha.p",
+        "naz001.form.beautiful.p",
+        "naz001.form.nazik.p",
+        "naz001.form.naziah.p",
+        "naz001.form.paziah.p",
+        "naz001.form.like_this.p",
+        "naz001.form.mesalsel.p",
+        "naz001.form.mekalkel.p",
+        "naz001.form.pera.p"
+      ],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.substitute.nazik",
+        "nazfix001.substitute.naziah",
+        "nazfix001.substitute.paziah",
+        "nazfix001.qualify.aha",
+        "nazfix001.qualify.beautiful",
+        "nazfix001.qualify.like_this",
+        "nazfix001.qualify.mesalsel",
+        "nazfix001.qualify.mekalkel",
+        "naz001.intent_qualification",
+        "nazfix001.pera_support"
+      ],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Completed edges pass."
+    },
+    {
+      "segment_id": "seg_8b44440ece405d9af3ba",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.mishnah",
+        "naz001.u1",
+        "naz001.a1",
+        "naz001.form.aha",
+        "naz001.form.aha.p",
+        "naz001.form.beautiful",
+        "naz001.form.beautiful.p",
+        "naz001.form.nazik",
+        "naz001.form.nazik.p",
+        "nazfix001.substitute.nazik",
+        "naz001.form.naziah",
+        "naz001.form.naziah.p",
+        "nazfix001.substitute.naziah",
+        "naz001.form.paziah",
+        "naz001.form.paziah.p",
+        "nazfix001.substitute.paziah",
+        "naz001.form.like_this",
+        "naz001.form.like_this.p",
+        "naz001.form.mesalsel",
+        "naz001.form.mesalsel.p",
+        "naz001.form.mekalkel",
+        "naz001.form.mekalkel.p",
+        "naz001.form.pera",
+        "naz001.form.pera.p",
+        "nazfix001.qualify.aha",
+        "nazfix001.qualify.beautiful",
+        "nazfix001.qualify.like_this",
+        "nazfix001.qualify.mesalsel",
+        "nazfix001.qualify.mekalkel",
+        "naz001.intent_qualification",
+        "nazfix001.pera_support"
+      ],
+      "rationale": "All nine formula occurrences separately preserved; אהא נאה is one formula, following נזיר is its result; Shmuel’s later context conditions attached without counting context coverage. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.mishnah"
+      ],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u2"
+      ],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.birds_meir",
+        "nazfix001.birds_sages"
+      ],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a2",
+        "naz001.meir",
+        "naz001.sages"
+      ],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Actual questions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.birds_meir.p",
+        "nazfix001.birds_sages.p"
+      ],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.context.lakish_qualifier",
+        "nazfix001.context.sages_qualifier",
+        "nazfix001.context.yohanan_qualifier",
+        "nazfix001.context.yohanan_scope",
+        "nazfix001.context.lakish_scope"
+      ],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Actual edges pass found no separate item."
+    },
+    {
+      "segment_id": "seg_e1480b346e2dbecb3991",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.mishnah",
+        "naz001.u2",
+        "naz001.a2",
+        "naz001.meir",
+        "naz001.sages",
+        "nazfix001.birds_meir",
+        "nazfix001.birds_meir.p",
+        "nazfix001.birds_sages",
+        "nazfix001.birds_sages.p"
+      ],
+      "rationale": "Rabbi Meir and sages remain distinct contrary positions; no final pesak or single later explanatory rationale forced. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.placement"
+      ],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u3"
+      ],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Actual claims pass found no separate item."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a3"
+      ],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.placement_q"
+      ],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Completed questions pass."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Actual positions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Actual edges pass found no separate item."
+    },
+    {
+      "segment_id": "seg_787bcd8729a6a18a0a60",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.placement",
+        "naz001.u3",
+        "naz001.a3",
+        "naz001.placement_q"
+      ],
+      "rationale": "Explicit placement question retained without an invented legal dispute. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.placement"
+      ],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u4"
+      ],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.verse_basis",
+        "naz001.wine_cause",
+        "nazfix001.sotah_abstain"
+      ],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a4"
+      ],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Actual questions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.verse_basis.p",
+        "naz001.wine_cause.p",
+        "nazfix001.sotah_abstain.p"
+      ],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.placement_answer",
+        "nazfix001.wine_reason",
+        "nazfix001.placement_link"
+      ],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Completed edges pass."
+    },
+    {
+      "segment_id": "seg_bf8515fbc4b6768aaef4",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.placement",
+        "naz001.u4",
+        "naz001.a4",
+        "nazfix001.verse_basis",
+        "nazfix001.verse_basis.p",
+        "naz001.wine_cause",
+        "naz001.wine_cause.p",
+        "nazfix001.sotah_abstain",
+        "nazfix001.sotah_abstain.p",
+        "nazfix001.placement_answer",
+        "nazfix001.wine_reason",
+        "nazfix001.placement_link"
+      ],
+      "rationale": "Verse, wine rationale and conditional sotah exhortation kept distinct and attributed to exposition. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order"
+      ],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u5"
+      ],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Actual claims pass found no separate item."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a5"
+      ],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.kinuyim_yadot"
+      ],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Completed questions pass."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Actual positions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Actual edges pass found no separate item."
+    },
+    {
+      "segment_id": "seg_3fbd4788a449cde3ffab",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order",
+        "naz001.u5",
+        "naz001.a5",
+        "naz001.kinuyim_yadot"
+      ],
+      "rationale": "Implicit interrogative challenge about kinuyim/yadot preserved. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order"
+      ],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u6"
+      ],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.reconstruction",
+        "nazfix001.yadot_rule",
+        "nazfix001.aha_yad"
+      ],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.rava_variant"
+      ],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Actual questions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.reconstruction.p",
+        "nazfix001.yadot_rule.p",
+        "nazfix001.aha_yad.p"
+      ],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.reconstruct_answer",
+        "nazfix001.reconstruct_content",
+        "nazfix001.aha_example"
+      ],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Completed edges pass."
+    },
+    {
+      "segment_id": "seg_e0d07a8c8eeac727985a",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order",
+        "naz001.u6",
+        "naz001.rava_variant",
+        "nazfix001.reconstruction",
+        "nazfix001.reconstruction.p",
+        "nazfix001.yadot_rule",
+        "nazfix001.yadot_rule.p",
+        "nazfix001.aha_yad",
+        "nazfix001.aha_yad.p",
+        "nazfix001.reconstruct_answer",
+        "nazfix001.reconstruct_content",
+        "nazfix001.aha_example"
+      ],
+      "rationale": "חסורי מיחסרא is Gemara reconstruction, not silent alteration of source Mishnah; ואיתימא כדי unresolved. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u7"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.last_first",
+        "nazfix001.example.lighting"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a7"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.kinuyim_first"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Completed questions pass."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.last_first.p",
+        "nazfix001.example.lighting.p"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order_answer",
+        "nazfix001.example_support.lighting",
+        "nazfix001.order_correction",
+        "nazfix001.local_reason"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Completed edges pass."
+    },
+    {
+      "segment_id": "seg_1ca0bd674b0fee898d95",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order",
+        "naz001.u7",
+        "naz001.a7",
+        "naz001.kinuyim_first",
+        "naz001.last_first",
+        "naz001.last_first.p",
+        "naz001.order_answer",
+        "nazfix001.example.lighting",
+        "nazfix001.example.lighting.p",
+        "nazfix001.example_support.lighting",
+        "nazfix001.order_correction",
+        "nazfix001.local_reason"
+      ],
+      "rationale": "First-last ordering answer and lighting support preserved as challenged in light of continuation; later correction attached. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order"
+      ],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u8"
+      ],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.example.insulation"
+      ],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a8"
+      ],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Actual questions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.example.insulation.p"
+      ],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.example_support.insulation"
+      ],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Completed edges pass."
+    },
+    {
+      "segment_id": "seg_3dc388de5d5fa7702050",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order",
+        "naz001.u8",
+        "naz001.a8",
+        "nazfix001.example.insulation",
+        "nazfix001.example.insulation.p",
+        "nazfix001.example_support.insulation"
+      ],
+      "rationale": "Insulation example is support for an interim generalization, not a new binding halakhic rule. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order"
+      ],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Completed structure pass."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.u9"
+      ],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Completed utterances pass."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.example.goingout"
+      ],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Completed claims pass."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.a9"
+      ],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Completed attributions pass."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Actual questions pass found no separate item."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.example.goingout.p"
+      ],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Completed positions pass."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "nazfix001.example_support.goingout"
+      ],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Completed edges pass."
+    },
+    {
+      "segment_id": "seg_bed87e7412b27d239b13",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "naz001.order",
+        "naz001.u9",
+        "naz001.a9",
+        "nazfix001.example.goingout",
+        "nazfix001.example.goingout.p",
+        "nazfix001.example_support.goingout"
+      ],
+      "rationale": "Woman-going-out example is support; next source supplies counterexamples. Core boundary is not semantic closure. Continuation read through 4a:1; only ten core segments count. Source-based omission and continuation reconciliation reread completed."
+    }
+  ]
+}
