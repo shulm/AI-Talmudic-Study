@@ -1,0 +1,39 @@
+{
+  "artifact_kind": "local_review_evidence_exclusions",
+  "scope": "BB037 nextrelease only; preserves source-only bytes and comparator findings",
+  "verdict_sha256": "6f8e2c1f1156fc36a56e3cebc76cb070d22bed07fad3f8d34081fe6072cec2d3",
+  "exclusions": [
+    {
+      "artifact_sha256": "b8f404704770c73b6bdd7cd3126b3b59ef8292bd18e8a8dbf9c34b82c598508f",
+      "scope": "Historical initial reading superseded in full as effective input by r2",
+      "reason": "Reader self-audit found repeated-substring lodging evidence anchor; preserve initialbytes and self-audit history",
+      "effective_replacement": "32d1af8ed4df70800334179165e3d1d8901bdeb79cb6b844f28e290f1da083ba"
+    },
+    {
+      "artifact_sha256": "32d1af8ed4df70800334179165e3d1d8901bdeb79cb6b844f28e290f1da083ba",
+      "record_id": "bb037r2.repair",
+      "reason": "BB037-R001 correction endpoint wrongly targets unchanged Rabbi Shimon proposition; do not use as correct edge evidence",
+      "replacement_record": null,
+      "required_correction": "A later additive reader correction event must scope reconstruction to incomplete quotation, not unchanged proposition."
+    }
+  ],
+  "restrictions": [
+    {
+      "issue": "BB037-G001",
+      "producer_ids": [
+        "bb.r032.tomb.c",
+        "bb.r032.tomb.p",
+        "bb.r032.tomb.u"
+      ],
+      "restriction": "Non-atomic paired formulation, lacks explicit outcome polarity/typed branch relation; no atomicQA/argumenteligibility; retain parenthetical וסתמו condition."
+    },
+    {
+      "issue": "BB037-U001",
+      "restriction": "Preserve Yohanan holder and Rabbah bar bar Hana reporter, but explanatory-branch voice uncertain; no forced named attribution."
+    }
+  ],
+  "mutation_of_originals": false,
+  "production_modified": false,
+  "new_core_credit": 0,
+  "ml_eligible": false
+}

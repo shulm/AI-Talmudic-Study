@@ -1,13 +1,13 @@
 # L04 exact-version partial production checkpoint
 
-Checkpoint 009 contains actual semantic annotations and preserved review evidence for **3,265 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
+Checkpoint 010 contains actual semantic annotations and preserved review evidence for **3,272 of 13,593 source segments**. **Zero of seven tractates are delivered.** Required extraction and independent review remain incomplete; all machine-learning and human-certification eligibility remains false. This is a resumable draft, not acceptance of the lane assignment.
 
-The selected package versions are in [LANE_CHECKPOINT_009.json](LANE_CHECKPOINT_009.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
+The selected package versions are in [LANE_CHECKPOINT_010.json](LANE_CHECKPOINT_010.json). [Checkpoint 001](LANE_CHECKPOINT_001.json) preserves the earlier 460-segment selection; [checkpoint 002](LANE_CHECKPOINT_002.json) preserves 829 segments. Later production may advance beyond these immutable packages. Earlier versions retain known pre-correction errors and are historical evidence, not preferred training inputs.
 
 | Tractate | Covered in each of eight layers | Denominator | Next source |
 |---|---:|---:|---|
 | Taanit | 697 | 895 | 24b:14 |
-| Bava Batra | 310 | 3,804 | 12b:9 |
+| Bava Batra | 317 | 3,804 | 13a:2 |
 | Pesachim | 236 | 3,519 | 9b:10 |
 | Avodah Zarah | 195 | 2,131 | 8a:5 |
 | Nedarim | 1,062 | 1,509 | 61b:5 |
@@ -22,7 +22,15 @@ Captures012–013 preserve the exact Taanit, Nedarim and Makkot comparisons of n
 
 [Capture014](reviews/capture_014/MANIFEST.json) preserves the independent bounded passes for Makkot022 (all twelve core/context issues) and Nedarim065 (four operative issues). Nedarim retains nonblocking duplicated introducer evidence and stale coverage prose observations. Neither receipt grants whole-snapshot acceptance. [Capture015](reviews/capture_015/MANIFEST.json) preserves Taanit053's independent closure of all five repair groups. The actual replay contains55 proposals, correcting the reviewer's earlier checkpoint-based count of53. Its saved preflight diagnostic records a corrected checker assumption about historical free-text scope fields. All new source windows remain outside these correction checks.
 
-Coordinator review release015 is frozen. These corrections are additive next-version evidence; they do not revise release015 or its exclusions. All489 files in that review delivery were byte-verified. The current assembly freeze holds further production briefly, while the full seven-tractate assignment remains active. Bava Batra source-only reservation037 is prepared but has not launched. After assembly publication and capacity confirmation, resume one existing producer with matched independent review, preserving owners and epochs. See [next actions](NEXT_ACTIONS_012.json).
+Coordinator review release015 is frozen. These corrections are additive next-version evidence; they do not revise release015 or its exclusions. All489 files in that review delivery were byte-verified. The coordinator published the frozen inputs/policy first, then the separate rolling assembly in draft PR30. Isolated next-release work resumed under explicit authorization; the full seven-tractate assignment remains active. Owners and epochs are unchanged. See [next actions](NEXT_ACTIONS_018.json).
+
+## Bava Batra next-release window and review
+
+Bava Batra adds seven source segments,12b:9–13a:1, and stops at317; those seven remain unreviewed. [Capture016](reviews/capture_016/MANIFEST.json) preserves the separate fresh source-only10-core block11b:6–12a:3, including the immutable initial reading and its pre-comparison repeated-substring correction. Parent validation preceded comparator launch; review-lead intake completed afterward, as recorded in the chronology.
+
+[Capture017](reviews/capture_017/MANIFEST.json) records the NONBLIND comparison against exact historical310, with two confirmed omissions: a repeated lemma occurrence and a typed four-cubit distinction. [Capture018](reviews/capture_018/MANIFEST.json) preserves the independent bounded pass on correction036: eight additive records, no supersessions or historical record changes, coverage317unchanged. This does not accept the intervening seven segments. [Local exclusions](audit/BB037_LOCAL_REVIEW_EXCLUSIONS.json) retain the reader's invalid reconstruction endpoint and restrictions on the coarse tomb formulation and uncertain explanatory attribution. Original findings and reading bytes remain unchanged.
+
+All532 files in review-lead delivery016 were byte-verified. Its next-release scope is distinct from current015. The fresh30-core Moed Katan047 reading is active with zero credit pending freeze/intake; no additional production promotion follows merely from that reservation.
 
 ## Exact inputs and ownership
 
