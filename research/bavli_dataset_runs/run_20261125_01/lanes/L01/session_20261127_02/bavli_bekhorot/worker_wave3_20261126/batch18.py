@@ -1,0 +1,65 @@
+from pathlib import Path
+helper=(Path(r'F:/Sefaria_QA/bavli_production_run_20261125_01/L01/bavli_berakhot/worker_wave2_20261126/batch01.py')).read_text(encoding='utf-8').split("refs=['4a:'")[0]
+exec(compile(helper,'serialization_helpers','exec'))
+pre='beh.fish.20261126w3.'
+assert r.sha(r.encoded(state))=='2d9852e1251ed1251f38690a5b8f4b0b7724124fff010cdd12c5089ea85c1958'
+refs=['7b:'+str(n) for n in range(15,21)]+['8a:'+str(n) for n in range(1,12)]
+add('s1','structure',refs[:5],dict(title='Swallowed fish: identifying external origin and four explanations',primary=True,boundary='closed',legacy_ids=[]))
+add('s2','structure',refs[5:],dict(title='Reported reproduction patterns, corrected anatomical test and festival egg application',primary=True,boundary='closed',legacy_ids=[]))
+for ref,v,role in [('7b:15','Mishnah','Swallowed fish eating rules'),('7b:16','Anonymous Gemara','Observation inference'),('7b:17','Baraita and anonymous objection','Reproduction claim and swallowed-fish identity doubt'),('7b:18','Rav Sheshet, Rav Pappa, Rav Nahman','Three identifying circumstances'),('7b:19','Rav Ashi','Same-kind reproduction majority'),('7b:20','Baraita','Fish and nourishment patterns'),('8a:1','Baraita and Rav Yehuda','Dolfinin account and identification'),('8a:2','Baraita formulation','Initial anatomical reproduction rule'),('8a:3','Shmuel and Abaye, anonymous objection','Geese counterexample'),('8a:4','Anonymous correction','Revised genital-location rule'),('8a:5','Baraita','Mating and birth times'),('8a:6','Explanatory examples','Rooster, bat and human examples'),('8a:7','Anonymous question and Rav Mari son of Rav Kahana','Festival egg application'),('8a:8','Anonymous answer and Rabbi Yohanan','Prior majority emergence alternative'),('8a:9','Baraita','Mating/gestation similarity and positions'),('8a:10','Rav Dimi reporting western explanation','Divine speech reason'),('8a:11','Unnamed tanna','Camel position exception')]:add('u'+ref.replace(':','_'),'utterances',[ref],dict(textual_voice=v,discourse_role=role,composition='composite'))
+c('c15pure','7b:15','A pure fish swallowed by an impure fish is permitted to eat.',cond=['Pure fish swallowed by impure fish'])
+c('c15impure','7b:15','An impure fish swallowed by a pure fish is forbidden to eat.',cond=['Impure fish swallowed by pure fish'])
+c('c15reason','7b:15','The swallowed fish is not a product of the swallowing fish’s growth.')
+c('c16','7b:16','The Gemara initially infers that permission depends on seeing swallowing; without observation the inner fish might be offspring.',mode='challenged')
+q('q17source','7b:17','What supports the concern that an impure fish gives birth?')
+c('c17impure','7b:17','The baraita states that impure fish produce live offspring.')
+c('c17pure','7b:17','It states that pure fish lay eggs.')
+q('q17','7b:17','Even if swallowing was seen, why not say that swallowed fish was digested and the present fish is offspring?')
+c('c18sheshet','7b:18','Rav Sheshet explains the case as finding the fish by the excrement passage.',cond=['Inner fish found through the excrement route'])
+c('c18pappa','7b:18','Rav Pappa explains finding it by the swallowing passage.',cond=['Inner fish found by the swallowing passage'])
+c('c18nahman','7b:18','Rav Nahman explains finding it intact.',cond=['Inner fish intact'])
+c('c19majority','7b:19','Rav Ashi states that most fish reproduce their own kind.')
+c('c19status','7b:19','On that basis the different-kind inner fish is treated as though swallowing was observed.')
+c('c20impure','7b:20','The repeated baraita states that impure fish produce live offspring.')
+c('c20pure','7b:20','It states that pure fish lay eggs.')
+c('c20live','7b:20','Its generalization says those giving live birth nurse their offspring.')
+c('c20eggs','7b:20','Its generalization says egg-layers gather food for their offspring.')
+c('c20bat','7b:20','It reports a bat exception, describing it as laying eggs yet nursing.')
+c('c1','8a:1','The source reports that dolfinin reproduce like humans.')
+c('c1id','8a:1','Rav Yehuda identifies dolfinin as bene yamma.')
+rows[-1]['uncertainty'].append('Source terms דולפנין and בני ימא retained; modern species identification not imposed.')
+c('c2out','8a:2','The initial formulation says externally situated testicles indicate live birth.',mode='challenged')
+c('c2in','8a:2','It says internal testicles indicate laying eggs.',mode='challenged')
+c('c3shmuel','8a:3','Shmuel says goose and wild goose are diverse kinds for kilayim.')
+q('q3reason','8a:3','What is the reason for distinguishing the two geese?')
+c('c3abaye','8a:3','Abaye explains that one has external and the other internal testicles.')
+c('c3both','8a:3','The objection notes that both lay eggs, defeating the initial anatomical rule.')
+c('c4out','8a:4','The corrected formulation associates external male genital placement with live birth.')
+c('c4in','8a:4','It associates internal male genital placement with egg-laying.')
+for k,prop,condition in [('day','Those mating by day give birth by day.','Mating by day'),('night','Those mating by night give birth by night.','Mating by night'),('both','Those mating both by day and night give birth at either time.','Mating at either time')]:c('c5'+k,'8a:5','The source generalizes: '+prop,cond=[condition])
+for k,prop in [('rooster','The rooster exemplifies daytime mating and daytime birth.'),('bat','The bat exemplifies nighttime mating and nighttime birth.'),('human','Humans and similar creatures exemplify mating and birth at either time.')]:c('c6'+k,'8a:6','The source states: '+prop)
+q('q7','8a:7','What practical difference follows from the daytime-birth rule?')
+c('c7permit','8a:7','Rav Mari son of Rav Kahana permits on the festival an egg found early in the morning after checking the nest before the festival and finding none.',cond=['Nest checked before festival','Egg found early following morning'])
+c('c7check','8a:7','The initial explanation supposes the earlier check was inadequate.',mode='hypothetical')
+q('q8','8a:8','What if the prior check was adequate?')
+c('c8emerge','8a:8','The alternative supposes most of the egg emerged before the festival and returned.',mode='hypothetical')
+c('c8yohanan','8a:8','Rabbi Yohanan permits an egg whose majority emerged before the festival and returned.',cond=['Majority emerged before festival then returned'])
+c('c9same','8a:9','The baraita reports that creatures alike in mating and gestation reproduce and raise offspring from each other.')
+c('c9general','8a:9','It states a general mating position of face toward back.')
+for k,animal in [('fish','fish'),('human','human'),('snake','snake')]:c('c9'+k,'8a:9','It names '+animal+' as a face-to-face exception.')
+q('q10','8a:10','Why are these three exceptions?')
+c('c10','8a:10','Rav Dimi reports the western explanation that the Divine Presence spoke with them.')
+c('c11','8a:11','The tanna gives camel mating as back-to-back.')
+for k,ref,surf,role,cands,scope in [('a18s','7b:18','רב ששת','speaker',['רב ששת'],'Excrement-route case'),('a18p','7b:18','רב פפא','speaker',['רב פפא'],'Swallowing-route case'),('a18n','7b:18','רב נחמן','speaker',['רב נחמן'],'Intact fish case'),('a19','7b:19','רב אשי','speaker',['רב אשי'],'Majority explanation'),('a1','8a:1','רב יהודה','speaker',['רב יהודה'],'Bene yamma identification'),('a3s','8a:3','שמואל','quoted_authority',['שמואל'],'Goose kilayim'),('a3a','8a:3','אביי','speaker',['אביי'],'Geese distinction'),('a7','8a:7','רב מרי בריה דרב כהנא','quoted_authority',['רב מרי בריה דרב כהנא'],'Festival egg permission'),('a8','8a:8','רבי יוחנן','quoted_authority',['רבי יוחנן'],'Majority emergence'),('a10','8a:10','רב דימי','transmitter',['רב דימי'],'Western explanation'),('a10west','8a:10','אמרי במערבא','collective',['Unnamed western authorities'],'Reason for mating positions')]:att(k,ref,surf,role,cands,scope,['Unnamed western authorities','רב דימי'] if k in ['a10','a10west'] else [])
+for k,ref,cl,h,st,qu in [('p15p','7b:15','c15pure',['Anonymous Mishnah'],'Permission',None),('p15i','7b:15','c15impure',['Anonymous Mishnah'],'Prohibition',None),('p18s','7b:18','c18sheshet',['רב ששת'],'Case explanation','q17'),('p18p','7b:18','c18pappa',['רב פפא'],'Case explanation','q17'),('p18n','7b:18','c18nahman',['רב נחמן'],'Case explanation','q17'),('p19','7b:19','c19status',['רב אשי'],'Majority explanation','q17'),('p3','8a:3','c3shmuel',['שמואל'],'Kilayim distinction',None),('p3a','8a:3','c3abaye',['אביי'],'Explanation','q3reason'),('p4o','8a:4','c4out',['Anonymous Gemara'],'Corrected formulation',None),('p4i','8a:4','c4in',['Anonymous Gemara'],'Corrected formulation',None),('p7','8a:7','c7permit',['רב מרי בריה דרב כהנא'],'Festival permission','q7'),('p8','8a:8','c8yohanan',['רבי יוחנן'],'Conditional festival permission',None),('p10','8a:10','c10',['Unnamed western authorities'],'Reported explanation','q10')]:
+ cr=next(x for x in rows if x['id']==pre+cl);pos(k,ref,cl,h,st,qu,cr['content']['conditions'])
+for k,ref,a,b,rel in [('e15p','7b:15','c15reason','c15pure','support'),('e15i','7b:15','c15reason','c15impure','support'),('e17s','7b:17','c17impure','q17source','answer'),('e17','7b:17','q17','c16','objection'),('e18s','7b:18','c18sheshet','q17','answer'),('e18p','7b:18','c18pappa','q17','answer'),('e18n','7b:18','c18nahman','q17','answer'),('e19','7b:19','c19majority','c19status','support'),('e19a','7b:19','c19status','q17','answer'),('e20','7b:20','c20bat','c20eggs','qualification'),('e3a','8a:3','c3abaye','q3reason','answer'),('e3o','8a:3','c3both','c2out','objection'),('e4o','8a:4','c4out','c2out','correction'),('e4i','8a:4','c4in','c2in','correction'),('e7','8a:7','c7permit','q7','answer'),('e7c','8a:7','c7check','c7permit','support'),('e8q','8a:8','q8','c7check','objection'),('e8','8a:8','c8emerge','q8','answer'),('e8y','8a:8','c8yohanan','c8emerge','support'),('e10','8a:10','c10','q10','answer'),('e11','8a:11','c11','c9general','qualification')]:edge(k,ref,a,b,rel)
+for x in rows:
+ if x['layer']=='claims':x['content']['scope']='Local source claims about swallowed fish and reproduction, not contemporary zoological certification. Corrected anatomical rule retained with initial formulation. Alternative case explanations and egg conditions kept separate.'
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Source read through8b21 and omission reread7b15–8a11. Four fish-case explanations, reported zoological assertions, explicit anatomical correction, egg prior-check challenge and prior-emergence answer, transmission from western authorities retained. Completed '+layer+' pass.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/l01_bekhorot',epoch=2,execution=dict(route='interactive_agent',agent_id='/root',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch18_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch18_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch18_receipt.json',r.encoded(out));print(r.encoded(out).decode())

@@ -1,0 +1,51 @@
+from pathlib import Path
+exec(compile((Path(__file__).parent/'helpers.py').read_text(encoding='utf8'),'helpers','exec'))
+pre='bk.farewell_humility.20261127e5.'
+assert r.sha(r.encoded(state))=='75412efd7d05ccaa6e87c466cea78028a6eb1a7733d63292557836d0a99a7a2d'
+refs=['17a:'+str(i) for i in range(15,18)]+['17b:'+str(i) for i in range(1,12)]
+for k,rr,title in [('farewell',refs[:4],'Farewell blessings and unassigned Psalm interpretations'),('strong',refs[4:8],'Strong-hearted verse: unassigned pair and contrary exposition'),('groom',refs[8:13],'Bridegroom Shema and ostentation: reversal or distinction'),('close',refs[13:],'Chapter closing formula')]:add('s'+k,'structure',rr,dict(title=title,primary=True,boundary='closed',legacy_ids=[]))
+voices=['Sages’ farewell with alternative host attribution','Sages’ farewell with alternative host attribution','Unassigned Rav/Shmuel or Rabbi Yohanan/Rabbi Eleazar pair','Anonymous continuation of Psalm prayer','Second unassigned pair','Rav Yehuda reporting Rav','Rav Yehuda contrary interpretation and Rav Yosef support','Rav Ashi','Mishnah lemma','Anonymous inferred ostentation positions and contrary Mishnah','Anonymous double contradiction','Rabbi Yohanan reversal and Rav Shisha no-reversal answer','Rav Shisha continuation','Chapter closure']
+for ref,voice in zip(refs,voices):add('u'+ref.replace(':','_'),'utterances',[ref],dict(textual_voice=voice,discourse_role='Blessing, unassigned interpretation or dialectical reconciliation',composition='composite'))
+def claim(k,ref,text,holders,cond=(),status='Reported locally',unc=()):
+ c('c'+k,ref,text,cond=cond);pos('p'+k,ref,'c'+k,holders,status,cond=cond,unc=unc)
+ if unc:rows[-2]['uncertainty'].extend(unc)
+pair=['רב','שמואל','רבי יוחנן','רבי אלעזר']
+u=['Two alternative named pairs: Rav/Shmuel or Rabbi Yohanan/Rabbi Eleazar. חד אמר/וחד אמר unassigned; continuation does not identify which member holds this view. Candidate union is not joint authorship.']
+claim('15','17a:15','Departing sages bless Rabbi Ammi, alternatively Rabbi Hanina, to see his world in life and have an end in the world to come, enduring hope, understanding, wisdom and song, straight gaze and Torah-lit eyes, radiant face, knowledge, upright joy and feet running to hear the Ancient of Days.',['Departing sages'],status='Farewell blessing with alternative recipient report',unc=['Recipient versions preserved; no assignment to one host exclusively.'])
+claim('16','17a:16','Departing sages from Rav Hisda, alternatively Rabbi Shmuel bar Nahmani, say the verse our leaders are burdened.',['Departing sages'],status='Separate farewell occurrence with alternative host')
+claim('17first','17a:17','One interpretation reads our leaders in Torah and burdened with commandments. ',pair,status='First unassigned view',unc=u)
+claim('17second','17a:17','The other reads leaders in Torah and commandments and burdened with suffering.',pair,status='Second unassigned view',unc=u)
+claim('1david','17b:1','No breach asks that our company not resemble David’s, from which Ahithophel emerged.',['Anonymous exposition'],status='Continuation of farewell verse interpretation')
+claim('1saul','17b:1','No going out asks that our company not resemble Saul’s, from which Doeg the Edomite emerged.',['Anonymous exposition'])
+claim('1elisha','17b:1','No outcry asks that our company not resemble Elisha’s, from which Gehazi emerged.',['Anonymous exposition'])
+claim('1public','17b:1','In our streets asks that no son or student publicly spoil his dish.',['Anonymous exposition'],status='Figurative request against public misconduct; no further named identification invented')
+claim('2first','17b:2','One interpretation of strong-hearted far from charity says the whole world is sustained by charity while they are sustained by strength.',pair,status='First unassigned view of a separate verse',unc=u)
+claim('2second','17b:2','The other says the whole world is sustained by their merit while they are not sustained even by their own merit.',pair,status='Second unassigned view of a separate verse',unc=u)
+claim('3','17b:3','Rav through Rav Yehuda reports a daily heavenly voice from Horeb: the world is sustained because of Hanina, while Hanina suffices with a kav of carobs from one Sabbath eve to the next.',['Rav'],status='Support for second unassigned interpretation, not identification of its speaker')
+claim('4yehuda','17b:4','The preceding interpretation disagrees with Rav Yehuda, who identifies the strong-hearted as foolish Goveans.',['Rav Yehuda'],status='Explicit contrary interpretation',unc=['Local גובאי טפשאי phrase retained as group designation; no modern population generalization.'])
+claim('4yosef','17b:4','Rav Yosef supports this by saying no convert from among them converted.',['Rav Yosef'],status='Source’s local claim used as support, not independently verified demographic fact')
+claim('5','17b:5','Rav Ashi calls the people of Mata Mehasya strong-hearted because they see Torah’s honor twice yearly yet no convert from among them converts.',['Rav Ashi'],status='Local rhetorical application')
+claim('7inference','17b:7','The discussion infers from bridegroom Shema that Rabban Shimon ben Gamliel worries about ostentation and the sages do not.',['Anonymous Gemara'],status='Inference from printed Mishnah, challenged by another source')
+claim('7custom','17b:7','The cited Mishnah makes Ninth of Av work depend on local custom, with scholars abstaining everywhere.',['Anonymous cited Mishnah'])
+claim('7rsg','17b:7','Rabban Shimon ben Gamliel says everyone should always make himself like a scholar in that work-abstention context.',['Rabban Shimon ben Gamliel'],status='Printed second-source position')
+q('q8','17b:8','The sages seem to contradict themselves and Rabban Shimon ben Gamliel likewise regarding ostentation.')
+claim('9yoh','17b:9','Rabbi Yohanan says the positions are reversed.',['Rabbi Yohanan'],status='Attribution-reversal solution',unc=['מוחלפת השיטה does not here spell out a fully restated mapping or which source text to emend; do not silently overwrite either printed Mishnah assignment.'])
+claim('9shisha','17b:9','Rav Shisha son of Rav Idi says not to reverse: for the sages, reciting Shema with everyone is not ostentation, whereas abstaining from work while everyone works appears ostentatious.',['Rav Shisha son of Rav Idi'],status='No-reversal solution, sages side')
+claim('10','17b:10','For Rabban Shimon ben Gamliel, Shema depends on intention and the groom cannot direct it; work abstention can be seen as simply having no work, like idle people in the market.',['Rav Shisha son of Rav Idi'],status='No-reversal solution, Rabban Shimon ben Gamliel side')
+att('a15','17a:15',"ר' אמי ואמרי לה מבי ר' חנינא",'speaker',['רבי אמי','רבי חנינא'],'Alternative farewell recipients, not speakers of blessing',unc=['Role content explicitly recipient; alternatives unresolved.'])
+att('a16','17a:16',"רב חסדא ואמרי לה מבי ר' שמואל בר נחמני",'speaker',['רב חסדא','רבי שמואל בר נחמני'],'Alternative farewell recipients, not blessing authors',unc=['Recipient reports unresolved.'])
+att('a17','17a:17',"רב ושמואל ואמרי לה רבי יוחנן ור' אלעזר",'speaker',pair,'Alternative unassigned speaker pairs for two interpretations',unc=u)
+att('a2','17b:2','רב ושמואל ואמרי לה רבי יוחנן ורבי אלעזר','speaker',pair,'Separate unassigned pair occurrence',unc=u)
+att('a3','17b:3','רב יהודה אמר רב','transmitter',['רב יהודה'],'Rav heavenly-voice report; distinct from Rav Yehuda own contrary exposition',chain=['רב יהודה','רב'])
+for k,ref,surface,name in [('4y','17b:4','רב יהודה','רב יהודה'),('4j','17b:4','רב יוסף','רב יוסף'),('5','17b:5','רב אשי','רב אשי'),('7','17b:7','רבן שמעון בן גמליאל','רבן שמעון בן גמליאל'),('9y','17b:9','רבי יוחנן','רבי יוחנן'),('9s','17b:9','רב שישא בריה דרב אידי','רב שישא בריה דרב אידי')]:att('a'+k,ref,surface,'speaker',[name],'Local explicit speaker')
+for k,ref,a,b,rel in [('17','17a:17','c17first','c17second','distinction'),('2','17b:2','c2first','c2second','distinction'),('3','17b:3','c3','c2second','support'),('4','17b:4','c4yehuda','c2second','distinction'),('4j','17b:4','c4yosef','c4yehuda','support'),('8','17b:8','q8','c7inference','objection'),('9y','17b:9','c9yoh','q8','answer'),('9s','17b:9','c9shisha','q8','answer'),('9d','17b:9','c9shisha','c9yoh','distinction'),('10','17b:10','c10','q8','answer')]:edge('e'+k,ref,a,b,rel)
+for x in rows:
+ if x['id']==pre+'e4':x['uncertainty'].append('פליגא explicitly contrasts Rav Yehuda with preceding righteous-person interpretation; edge to second view is representative and does not select a named holder or historical objection direction.')
+ if x['layer']=='claims':x['content']['scope']='Local farewell expositions and ostentation reconciliation. Two חד אמר occurrences stay unassigned under alternative pairs; reported communal characterizations are source claims only. Reversal and preservation solutions both retained.'
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Read17a15–17b17; reread core17a15–17b11 for both farewell-host alternatives, both independent unassigned speaker pairs, all four Psalm clauses, Hanina support without speaker inference, explicit contrary Rav Yehuda exposition, ostentation contradiction and both reversal/no-reversal solutions. Chapter closing formula has no invented claim. Completed '+layer+' pass.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/blind_reader_wave3',epoch=5,execution=dict(route='interactive_agent',agent_id='/root/blind_reader_wave3',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch34_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch34_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch34_receipt.json',r.encoded(out));print(r.encoded(out).decode())

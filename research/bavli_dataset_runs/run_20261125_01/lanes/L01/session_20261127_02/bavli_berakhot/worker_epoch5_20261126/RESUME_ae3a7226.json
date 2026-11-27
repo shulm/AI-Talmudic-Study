@@ -1,0 +1,40 @@
+{
+  "coverage_each_required_layer": 858,
+  "epoch": 5,
+  "export_directory": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\worker_epoch5_20261126\\export_ae3a7226",
+  "export_files_verified": 193,
+  "export_receipt_sha256": "b909c41fdc931cc582a462016a9a7a0bec66c5765148ceecb7201bf4680f09e0",
+  "last_accepted": "Berakhot 18a:12",
+  "latest_accepted_batch": 35,
+  "latest_accepted_proposal_sha256": "4899a1c70a3f82acd480508b890f9a59352adb395473ac969d0afcaad8f716dd",
+  "limitations": [
+    "Partial tractate; independent review incomplete.",
+    "17b13 printed bearer clause repeats צורך בהם; uncertainty retained rather than silent emendation.",
+    "17a17 and17b2 named pairs remain unassigned;17b9 reversal alternative retained.",
+    "Chapter3 batch35 accepted before coordinator hold reached worker. Staged batch36 is not accepted coverage."
+  ],
+  "next_unprocessed": "Berakhot 18a:13",
+  "owner": "/root/blind_reader_wave3",
+  "replay_pass": true,
+  "replay_sha256": "6381b4828c97cec4504accd81747bef71924cd3dbe61c51dbcd33444b20fe2fb",
+  "resume": [
+    "Wait for explicit L01 release of hold.",
+    "Verify OWNER epoch5 and CURRENT exact858 snapshot, source/schema/protocol/code contract.",
+    "Do not rerun authoring batch36 as if fresh; immutable validated proposal is saved. Read it then submit exact bytes with runner submit after release, save receipt.",
+    "After accepted batch36 next core is19a5. Read full continuation for excommunication/authority discussion before authoring batch37.",
+    "Preserve all legacy and reviews. Producer additions are unreviewed, not source-only review."
+  ],
+  "semantic_records": 5127,
+  "snapshot_sha256": "ae3a7226846547de55b82729014b18a8d3dbc05dc0fc27d82f1bbc625a504e37",
+  "source_read_through": "Berakhot 19a:23",
+  "source_segments": 2749,
+  "staged_unpromoted": {
+    "core": "Berakhot 18a:13–19a:4",
+    "expected_result_coverage": 881,
+    "file": "batch36_proposal.json",
+    "initial_draft_validation_failure": "Duplicate local edge ID; fixed before immutable proposal freeze; no rejected submission or promotion.",
+    "records": 125,
+    "sha256": "c56f8bab79276bc188a6e235f6437696415fcf559df2545457eb457e76116b91"
+  },
+  "status": "HOLD_FOR_REVIEW_PACING"
+}

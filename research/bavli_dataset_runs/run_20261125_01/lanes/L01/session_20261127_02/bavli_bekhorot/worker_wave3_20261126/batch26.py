@@ -1,0 +1,82 @@
+from pathlib import Path
+helper=(Path(r'F:/Sefaria_QA/bavli_production_run_20261125_01/L01/bavli_berakhot/worker_wave2_20261126/batch01.py')).read_text(encoding='utf-8').split("refs=['4a:'")[0]
+exec(compile(helper,'serialization_helpers','exec'))
+pre='beh.titheownership.20261126w3.'
+assert r.sha(r.encoded(state))=='c7e44e22384be9fc9b1d1ac5a165d6c9e6ad920b56889bf6dda53924f9d8868c'
+refs=['11a:'+str(n) for n in range(17,27)]+['11b:'+str(n) for n in range(1,12)]
+add('s1','structure',refs[:9],dict(title='Redemption sheep and inherited priestly rights: tithing with retention',primary=True,boundary='closed',legacy_ids=[]))
+add('s2','structure',refs[9:19],dict(title='Processed untithed produce from gentiles and different priestly gifts',primary=True,boundary='closed',legacy_ids=[]))
+add('s3','structure',refs[19:],dict(title='Dead redemption sheep and priestly title from separation',primary=True,boundary='closed',legacy_ids=[]))
+q('q17','11a:17','How does the redemption sheep enter the pen for animal tithing?')
+c('c18not','11a:18','The case cannot be the sheep after transfer to a priest.')
+c('c18bought','11a:18','A purchased animal is exempt from animal tithe.')
+c('c18gift','11a:18','An animal received as a gift is exempt from animal tithe.')
+c('c18separate','11a:18','An Israelite with ten doubtful firstborn donkeys separates ten sheep.',cond=['Ten doubtful firstborn donkeys held by an Israelite'])
+c('c18tithe','11a:18','He tithes those sheep.',cond=['Sheep separated for ten doubtful firstborn donkeys'])
+c('c18retain','11a:18','He retains those sheep.',cond=['Sheep separated for ten doubtful firstborn donkeys'])
+c('c19separate','11a:19','Rav Nahman reports Rabba bar Avuha requiring ten sheep for an Israelite’s ten doubtful firstborn donkeys.')
+c('c19tithe','11a:19','That report requires tithing the sheep.')
+c('c19retain','11a:19','It says the sheep remain his.')
+cond20=['Israelite inherited ten definite firstborn donkeys from his priest maternal grandfather','That priest had inherited them from his Israelite maternal grandfather']
+c('c20history','11a:20','Rav Nahman reports Rabba bar Avuha’s case of ten definite firstborn donkeys passing from an Israelite ancestor through a priest ancestor to an Israelite descendant.',cond=cond20)
+c('c21sep','11a:21','The descendant separates ten sheep.',cond=cond20)
+c('c21tithe','11a:21','He tithes those sheep.',cond=cond20)
+c('c21retain','11a:21','He retains the sheep.',cond=cond20)
+cond22=['Processed untithed produce held by an Israelite','Inherited from priest maternal grandfather who inherited from Israelite maternal grandfather']
+c('c22tithe','11a:22','Rav Nahman reports Rabba bar Avuha requiring tithing processed untithed produce with the analogous inheritance history.',cond=cond22)
+c('c22retain','11a:22','The descendant retains the separated gifts in that case.',cond=cond22)
+c('c23','11a:23','One might limit the first teaching to a case treated as already separated.',mode='hypothetical')
+c('c24','11a:24','One might exclude produce because gifts not yet separated are treated as unseparated.',mode='hypothetical')
+c('c25produce','11a:25','Conversely, produce can be tithed from itself because it is already present.')
+c('c25donkey','11a:25','The donkey case needs an externally supplied sheep, so the retention outcome might not be inferred from produce.',mode='hypothetical')
+c('c25need','11a:25','Both teachings are therefore necessary.')
+c('c26intro','11a:26','Rabbi Shmuel bar Natan reports Rabbi Hanina’s rule concerning one buying processed untithed produce.')
+c('c1tithe','11b:1','When bought from a gentile, that produce is tithed.')
+c('c1retain','11b:1','The buyer retains the separated gifts in the stated case.')
+q('q2','11b:2','Who performed the processing?')
+c('c2gentile','11b:2','If the gentile processed it, your grain excludes gentile grain from the requirement.')
+c('c3israel','11b:3','The case is an Israelite’s processing while it was in gentile ownership.')
+c('c3land','11b:3','Tithing is required because gentile acquisition in the Land of Israel does not remove the tithe obligation.')
+c('c3retain','11b:3','The buyer retains the gifts because he derives title from one against whom the priest could not enforce the claim.')
+c('c4tithe','11b:4','Produce deposited with a Samaritan or am haaretz retains its former tithe status.',cond=['Deposit with Samaritan or am haaretz'])
+c('c4seventh','11b:4','It retains its former seventh-year status.',cond=['Deposit with Samaritan or am haaretz'])
+c('c5first','11b:5','For a gentile deposit, the first tanna treats it as the gentile’s own produce.')
+c('c5shimon','11b:5','Rabbi Shimon treats the gentile deposit as doubtful untithed produce.')
+c('c6separate','11b:6','The explanation says all agree gifts must be separated.')
+c('c6first','11b:6','The first tanna assumes definite substitution and requires giving the gifts to a priest.')
+c('c6shimon','11b:6','Rabbi Shimon regards substitution as doubtful, affecting transfer to the priest.')
+q('q7','11b:7','Abaye asks Rav Dimi: if certain substitution requires giving to the priest, how does that fit the report allowing retention of gifts from processed produce bought from a gentile?')
+c('c8','11b:8','The proposed answer distinguishes great terumah from terumat maaser.')
+c('c9recall','11b:9','The response recalls Rabbi Yehoshua ben Levi’s derivation.')
+c('c9israel','11b:9','For processed untithed produce bought from Israelites, terumat maaser is separated and given to a priest.')
+c('c9gentile','11b:9','For such produce bought from a gentile, terumat maaser is not separated-and-given to the priest in that combined sense; the preceding discussion still requires separation.')
+rows[-1]['uncertainty'].append('The negative formulation includes both separating and giving; interpreted in immediate context of universal separation, not as abolishing separation.')
+q('q10','11b:10','Where did the redemption sheep die, and who benefits from it?')
+c('c10priest','11b:10','Death in the priest’s possession would make priestly benefit obvious, since it is his property.')
+c('c10owner','11b:10','The discussed case is death in the original owner’s possession with benefit belonging to the priest.')
+c('c11hyp','11b:11','One might think the priest acquires nothing before delivery.',mode='hypothetical')
+c('c11','11b:11','The teaching establishes that the sheep is in the priest’s ownership from separation.')
+for ref,v,role in [('11a:17','Anonymous Gemara and baraita','Animal-tithe case inquiry'),('11a:18','Baraita','Gift exclusion and doubtful-donkey case'),('11a:19','Rav Nahman reporting Rabba bar Avuha','Parallel doubtful-donkey report'),('11a:20','Rav Nahman reporting Rabba bar Avuha','Definite-donkey inheritance history'),('11a:21','Report continuation','Separate, tithe and retain'),('11a:22','Rav Nahman reporting Rabba bar Avuha','Parallel processed-produce inheritance'),('11a:23','Anonymous explanation','First teaching alone insufficient'),('11a:24','Anonymous explanation','Unseparated-gifts distinction'),('11a:25','Anonymous explanation','Reverse distinction and necessity'),('11a:26','Rabbi Shmuel bar Natan reporting Rabbi Hanina','Produce-purchase report begins'),('11b:1','Report continuation','Tithing and retention'),('11b:2','Anonymous Gemara','Processor identity inquiry'),('11b:3','Anonymous answer','Israelite processing and derivative title'),('11b:4','Quoted Mishnah','Samaritan/amhaaretz deposits'),('11b:5','First tanna and Rabbi Shimon','Gentile deposits'),('11b:6','Abbreviated R A attribution','Separation versus delivery distinction'),('11b:7','Rav Dimi and Abaye','Substitution/retention challenge'),('11b:8','Dialogue continuation','Different gift categories'),('11b:9','Dialogue continuation quoting Rabbi Yehoshua ben Levi','Terumat-maaser derivation'),('11b:10','Anonymous Gemara','Place of sheep death inquiry'),('11b:11','Anonymous answer','Priestly ownership from separation')]:add('u'+ref.replace(':','_'),'utterances',[ref],dict(textual_voice=v,discourse_role=role,composition='composite'))
+for ref in ['11a:19','11a:20','11a:22']:
+ att('an'+ref.replace(':','_'),ref,'רב נחמן','transmitter',['רב נחמן'],'Inheritance/tithe report',['רב נחמן','רבה בר אבוה'])
+ att('ar'+ref.replace(':','_'),ref,'רבה בר אבוה','quoted_authority',['רבה בר אבוה'],'Inheritance/tithe report',['רב נחמן','רבה בר אבוה'])
+att('a26s','11a:26','רבי שמואל בר נתן','transmitter',['רבי שמואל בר נתן'],'Processed-produce rule',['רבי שמואל בר נתן','רבי חנינא'])
+att('a26h','11a:26','רבי חנינא','quoted_authority',['רבי חנינא'],'Processed-produce rule',['רבי שמואל בר נתן','רבי חנינא'])
+att('a5','11b:5','ר"ש','position_holder',['רבי שמעון'],'Doubtful gentile substitution')
+att('a6','11b:6','אר"א','speaker',['רבי אלעזר','רבי אליעזר'],'Separation/delivery distinction',unc=['Source abbreviation not expanded by name-order inference; exact surface preserved.'])
+att('a7d','11b:7','רב דימי','transmitter',['רב דימי'],'Presenting the teaching to Abaye')
+att('a7a','11b:7','אביי','speaker',['אביי'],'Substitution versus purchase challenge')
+att('a7s','11b:7',"ר' שמואל",'transmitter',['רבי שמואל'],'Repeated shortened report attribution',["רבי שמואל",'רבי חנינא'],['Immediate report repeats11a26 but printed shortened surface preserved.'])
+att('a9','11b:9','יהושע בן לוי','quoted_authority',['רבי יהושע בן לוי'],'Terumat-maaser source')
+for k,ref,cl,h,st,qu in [('p18','11a:18','c18retain',['Anonymous baraita'],'Retention in doubtful cases','q17'),('p21','11a:21','c21retain',['רבה בר אבוה via רב נחמן'],'Inherited priestly right',None),('p22','11a:22','c22retain',['רבה בר אבוה via רב נחמן'],'Analogous produce retention',None),('p1','11b:1','c1retain',['רבי חנינא via רבי שמואל בר נתן'],'Retention later scoped',None),('p3','11b:3','c3israel',['Anonymous Gemara'],'Processing case restriction','q2'),('p5f','11b:5','c5first',['First tanna'],'Definite substitution',None),('p5s','11b:5','c5shimon',['רבי שמעון'],'Doubtful substitution',None),('p6','11b:6','c6separate',['Abbreviated R A'],'Common separation requirement',None),('p8','11b:8','c8',['Dialogue voice not explicitly named'],'Gift-category distinction','q7'),('p9','11b:9','c9gentile',['רבי יהושע בן לוי'],'No priestly transfer of terumat-maaser',None),('p11','11b:11','c11',['Anonymous Gemara'],'Priestly title before delivery','q10')]:
+ cr=next(x for x in rows if x['id']==pre+cl);pos(k,ref,cl,h,st,qu,cr['content']['conditions'],cr['uncertainty'])
+for k,ref,a,b,rel in [('e18b','11a:18','c18bought','c18not','support'),('e18g','11a:18','c18gift','c18not','support'),('e18','11a:18','c18tithe','q17','answer'),('e19','11a:19','c18tithe','c19tithe','support'),('e25','11a:25','c25donkey','c25need','support'),('e3','11b:3','c3israel','q2','answer'),('e3l','11b:3','c3land','c1tithe','support'),('e3r','11b:3','c3retain','c1retain','support'),('e5','11b:5','c5shimon','c5first','distinction'),('e6f','11b:6','c6first','c5first','qualification'),('e6s','11b:6','c6shimon','c5shimon','qualification'),('e7','11b:7','q7','c6first','objection'),('e8','11b:8','c8','q7','answer'),('e9','11b:9','c9gentile','c8','support'),('e11','11b:11','c11','c11hyp','objection'),('e11a','11b:11','c11','q10','answer')]:edge(k,ref,a,b,rel)
+for x in rows:
+ if x['layer']=='claims':x['content']['scope']='Local separation-versus-giving and inherited priestly property discussion. Produce processing, origin, land obligation and enforceable gift claim are separate conditions. Abbreviated authority and dialogue turn uncertainty preserved.'
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Read11a17–12a25 and omission reread11a17–11b11. Two-generation inheritance conditions retained; separate/tithe/retain distinct. Page-break report integrated, gifts distinguished from obligation to separate, deposit certainty and priest ownership at separation preserved. Completed '+layer+' pass.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/l01_bekhorot',epoch=2,execution=dict(route='interactive_agent',agent_id='/root',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch26_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch26_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch26_receipt.json',r.encoded(out));print(r.encoded(out).decode())
