@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "study_id": "uncapped_single_history_confirmation_v1",
+  "assignment_stages": [
+    "I0",
+    "I1",
+    "I2",
+    "I3",
+    "I4"
+  ],
+  "status": "REVIEWED_DESIGN_RESERVED_SEEDS_NO_CONFIRMATION_EXECUTION",
+  "reviewed_commit": "16ef28b105ff6c28ee3f822b1409f076fa895318",
+  "historical_run_commit": "f18255c5fad37f704881ff1f9ad50cd113497236",
+  "shared_fixture_evidence_source_commit": "f18255c5fad37f704881ff1f9ad50cd113497236",
+  "personal_solver_source_commit": "16ef28b105ff6c28ee3f822b1409f076fa895318",
+  "historical_qualification": false,
+  "paths": {
+    "lab": "labs/decision_functions_uncapped_single_history_confirmation_v1",
+    "run": "research/decision_functions_2026-11-24/runs/uncapped_single_history_confirmation_v1"
+  },
+  "primary": {
+    "method": "ES_UNCAPPED",
+    "history": "H1",
+    "unit": "independent_world",
+    "target": "Probability the fixed isolated per-world procedure returns a verified numerically qualified H1 joint PASS; not conditioned on algorithmic success.",
+    "world_count": 82,
+    "world_ids": [
+      "U000",
+      "U001",
+      "U002",
+      "U003",
+      "U004",
+      "U005",
+      "U006",
+      "U007",
+      "U008",
+      "U009",
+      "U010",
+      "U011",
+      "U012",
+      "U013",
+      "U014",
+      "U015",
+      "U016",
+      "U017",
+      "U018",
+      "U019",
+      "U020",
+      "U021",
+      "U022",
+      "U023",
+      "U024",
+      "U025",
+      "U026",
+      "U027",
+      "U028",
+      "U029",
+      "U030",
+      "U031",
+      "U032",
+      "U033",
+      "U034",
+      "U035",
+      "U036",
+      "U037",
+      "U038",
+      "U039",
+      "U040",
+      "U041",
+      "U042",
+      "U043",
+      "U044",
+      "U045",
+      "U046",
+      "U047",
+      "U048",
+      "U049",
+      "U050",
+      "U051",
+      "U052",
+      "U053",
+      "U054",
+      "U055",
+      "U056",
+      "U057",
+      "U058",
+      "U059",
+      "U060",
+      "U061",
+      "U062",
+      "U063",
+      "U064",
+      "U065",
+      "U066",
+      "U067",
+      "U068",
+      "U069",
+      "U070",
+      "U071",
+      "U072",
+      "U073",
+      "U074",
+      "U075",
+      "U076",
+      "U077",
+      "U078",
+      "U079",
+      "U080",
+      "U081"
+    ],
+    "null_success_probability": 0.8,
+    "planning_alternative": 0.9,
+    "alpha": 0.05,
+    "required_successes": 72,
+    "tail": "greater",
+    "confidence_level": 0.95,
+    "interval": "one_sided_Clopper_Pearson",
+    "count_test_size": 0.04584810111222398,
+    "count_test_power": 0.8057063959899639,
+    "lower_bound_at_72": 0.8019263987400118,
+    "power_scope": "Binomial success-count component only; overall qualification power with additional vetoes is not established.",
+    "complete_82_required": true,
+    "all_H1_joint_outcomes_resolved_required": true,
+    "numerical_integrity_resource_gates_required": true,
+    "no_imputation_for_unstarted_worlds": true,
+    "no_optional_stopping": true,
+    "no_extension": true,
+    "gates": {
+      "active_expected_nll_gain_min": 0.05,
+      "active_oracle_gap_recovery_min": 0.5,
+      "active_contrast_nrmse_max": 0.5,
+      "inactive_signed_expected_excess_max": 0.01
+    },
+    "classification": {
+      "gate_pass": "lower_margin >= 0",
+      "gate_fail": "upper_margin < 0",
+      "gate_unresolved": "otherwise; recovery also unresolved if positive baseline oracle gap is not established",
+      "joint_pass": "all four pass and reference denominator valid",
+      "joint_fail": "at least one definitive failed gate",
+      "joint_unresolved": "otherwise"
+    },
+    "oracle_reference": "fixed computed oracle probabilities/loss/contrast; personal residual enclosure excludes their rounding and all shared/evidence error"
+  },
+  "seeds": {
+    "file": "SEEDS.json",
+    "sha256": "6834495ff9525445714befbd6d0d35126aa1dd108604d79a870cb241d2169428",
+    "roles": [
+      "generator",
+      "label",
+      "mask",
+      "H1_support",
+      "H2_support"
+    ],
+    "count": 410,
+    "integer_format": "uint64_decimal_string",
+    "derivation": "First 8 bytes big-endian of SHA256(namespace + '/' + world_id + '/' + role)",
+    "namespace": "AI-Talmudic-Study/uncapped_single_history_confirmation_v1/2026-11-26",
+    "rng": "numpy.random.Generator(numpy.random.PCG64(int(seed)))",
+    "bank_generated_without_rng": true,
+    "collision_behavior": "STOP; do not replace or redraw",
+    "known_historical_distinct_values_checked": 245,
+    "pr18_reserved_values_checked": 216,
+    "modeling_assumption": "Distinct domain-separated streams treated as independent under the declared pseudorandom simulation law."
+  },
+  "generator": {
+    "source": "labs/decision_functions_evidence_shrinkage_v1/fixture.py",
+    "people": {
+      "total": 192,
+      "training": 96,
+      "unused": 48,
+      "evaluation": 48,
+      "active_evaluation": 24,
+      "inactive_evaluation": 24
+    },
+    "groups": {
+      "total": 64,
+      "training": 40,
+      "unused": 12,
+      "query": 12,
+      "support_pool": 32,
+      "questions_per_group": 3
+    },
+    "questions": {
+      "total": 192,
+      "training": 120,
+      "query": 36,
+      "support_pool": 96
+    },
+    "dimensions": 2,
+    "classes": 3,
+    "rank": 2,
+    "base_scale": 0.25,
+    "interaction_scale": 2.5,
+    "bias_sd": 0.12,
+    "pairs": "adjacent; shared centered bias; opposite unit interaction phase; whole-pair activity balanced in each people partition",
+    "labels": "one response matrix per world; overlapping H1/H2 cells reuse original responses",
+    "support": {
+      "histories": [
+        "H1",
+        "H2"
+      ],
+      "labels_per_history": 16,
+      "law": "uniform permutation of sorted 32 group IDs; then 32 independent uniform phases; zip by permutation position; concatenate cyclic triplets and take first16",
+      "same_panel_all_people": true,
+      "no_overlap_rejection": true,
+      "gram_eigenvalues": [
+        0.46875,
+        0.53125
+      ],
+      "geometry_absolute_tolerance": 1e-12,
+      "history_pooling": false
+    }
+  },
+  "method": {
+    "shared": {
+      "seeds": [
+        11,
+        29,
+        47
+      ],
+      "rho": 0.01,
+      "lambda_b": 0.1,
+      "rank": 2,
+      "optimizer": "L-BFGS-B",
+      "maxiter": 1000,
+      "ftol": 1e-12,
+      "gtol": 1e-8,
+      "maxls": 50,
+      "success_and_finite_required": true,
+      "global_optimum_claim": false
+    },
+    "personal": {
+      "initialization": "zero",
+      "rho": 0.06,
+      "lambda_b": 0.6,
+      "solver": "PR27 D-scaled personwise Newton",
+      "residual_target": 1e-10,
+      "max_accepted_steps": 100,
+      "armijo_candidates": 40,
+      "armijo_coefficient": 0.0001,
+      "roundoff_guard": "unchanged PR27 full-step guard",
+      "query_based_stopping": false,
+      "retries": 0
+    },
+    "evidence": {
+      "atoms_per_seed": 192,
+      "prior": "uniform over +/- all96 training U vectors",
+      "conditional_counts": true,
+      "seed_evalue_aggregation": "arithmetic via logsumexp",
+      "M1_prediction_aggregation": "arithmetic probability mean",
+      "alpha": 0.009,
+      "h": "0.009*max(E-1,0)",
+      "log_beta": "-h",
+      "cap": null,
+      "stable_log_coefficient_required": true,
+      "nonfinite_behavior": "STOP; no replacement cap"
+    },
+    "main_methods": [
+      "B1",
+      "B2",
+      "B3",
+      "M1",
+      "FIXED_MIX",
+      "ES",
+      "ES_UNCAPPED"
+    ],
+    "own_components": [
+      "M1_11",
+      "M1_29",
+      "M1_47"
+    ],
+    "controls": {
+      "B1": "(history class counts + 4*training_prior)/20",
+      "B2": "softmax(g)",
+      "B3": "personal offset with known g",
+      "M1": "mean of three personal interaction-head probabilities",
+      "FIXED_MIX": "0.1*B3+0.9*M1",
+      "ES": "historical capped rule min(h,log(10))"
+    },
+    "donor": "row xor1 within each history, complete history-derived state and weight, no additional solves"
+  },
+  "inventory": {
+    "shared_fits": 246,
+    "personal_wrappers": 656,
+    "B3_personal_solves": 7872,
+    "M1_personal_solves": 23616,
+    "all_personal_solves": 31488,
+    "heads_per_history": [
+      "B3",
+      "M1_11",
+      "M1_29",
+      "M1_47"
+    ],
+    "people_per_wrapper": 48,
+    "probability_arrays_per_history": 17,
+    "probability_arrays_per_world": 34,
+    "probability_arrays_total": 2788,
+    "stable_uncapped_log_arrays_per_world": 4,
+    "stable_uncapped_log_arrays_total": 328,
+    "probability_and_log_shape": [
+      48,
+      36,
+      3
+    ],
+    "dtype": "float64",
+    "exact_other_roles_keys_shapes": "must be enumerated in pre-fit EXPECTED.json; no optional evidence may be necessary for qualification",
+    "new_scientific_batch_invariance_refits": 0,
+    "new_preflight_optimizer_calls": 0,
+    "no_scientific_generation_in_this_review": true
+  },
+  "numerical": {
+    "gradient_comparison_allowance": "a=1e-12*max(1,||r1||inf,||r2||inf)",
+    "independent_R_required_max": 1e-10,
+    "R_used": "R+a*sqrt(sum(1/diag(D)))",
+    "R_used_stopping_threshold": false,
+    "K": "||P A_q D^(-1/2)||2, P=I-11'/3",
+    "probability_bound": "0.5*K*R_used",
+    "log_probability_bound": "sqrt(2)*K*R_used",
+    "propagated_scope": "personal optimization, fixed shared models/evidence/history/weights/computed oracle references",
+    "directed_rounding": false,
+    "floor": 1e-12,
+    "floor_renormalize": false,
+    "canonical_score": "-mean_{s,q} sum_c oracle * log(max(saved_probability,1e-12))",
+    "stable_log_floor_comparison_absolute_tolerance": 1e-12,
+    "forward_probability_absolute_tolerance": 1e-12,
+    "scalar_replay_absolute_tolerance": 1e-10,
+    "contrast": {
+      "class_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "person_pairs": "adjacent within stratum",
+      "reference_query": "first ordered heldout query",
+      "include_zero_reference_term": true,
+      "aggregate": "mean squared errors, then normalize and sqrt"
+    }
+  },
+  "secondary": {
+    "histories": [
+      "H2"
+    ],
+    "old_two_history_aggregate": true,
+    "both_history_conjunction": true,
+    "aggregate_hides_history_failure_counts": true,
+    "own_donor": true,
+    "metrics": [
+      "sampled_NLL",
+      "accuracy",
+      "Brier",
+      "inactive_signed_expected_excess",
+      "inactive_positive_part_excess",
+      "inactive_excess_tails",
+      "weight_and_evidence_distributions",
+      "beta_underflow",
+      "all_four_primary_metric_distributions"
+    ],
+    "inference": "descriptive paired world summaries; no secondary significance claims",
+    "person_or_question_bootstrap": false,
+    "rescue_primary": false,
+    "quantile_method": "linear",
+    "world_summaries": [
+      "mean",
+      "sample_standard_deviation",
+      "min",
+      "median",
+      "q10",
+      "q90",
+      "max",
+      "all82values"
+    ]
+  },
+  "execution": {
+    "stages": [
+      "zero_fit_preflight",
+      "publish_and_read_back_prefit_freeze",
+      "execute_once",
+      "independent_saved_artifact_verification",
+      "report_and_stop"
+    ],
+    "materialization_before_readback": false,
+    "order": "U000 through U081",
+    "continue_on": [
+      "scientific_gate_failure",
+      "endpoint_straddle"
+    ],
+    "stop_on": [
+      "solver_failure",
+      "integrity_failure",
+      "nonfinite_arithmetic",
+      "resource_failure"
+    ],
+    "numerical_threads": 1,
+    "accounted_cpu_ceiling_seconds": 3600,
+    "sampled_peak_process_tree_RSS_ceiling_bytes": 4294967296,
+    "resource_scope": "required commands including preflight, failures, execution, verification and reporting; sampled gaps disclosed; missing required-command records block compliance",
+    "resource_sampling_is_exact_hard_bound": false,
+    "retries": 0,
+    "automatic_resume": false,
+    "replace_worlds": false,
+    "mock_roots_separate": true,
+    "actual_executor_supervisor_terminal_preflight": true,
+    "durable_attempt_starts": true,
+    "cleanup_terminate_and_wait": true,
+    "reporting_only_recovery": "predeclared; existing evidence only; no fitting/prediction generation",
+    "prediction_hashes_before_evaluator_load": true,
+    "private_artifacts": [
+      "responses",
+      "model_parameters",
+      "gradients",
+      "parameter_traces",
+      "per_cell_predictions"
+    ],
+    "public_artifacts": [
+      "source",
+      "seeds",
+      "manifests",
+      "aggregate_per_world_metrics",
+      "scalar_status_receipts",
+      "failures",
+      "verification",
+      "resources",
+      "handoff"
+    ],
+    "external_downloads": 0,
+    "GPU": 0,
+    "paid_calls": 0,
+    "human_evaluations": 0,
+    "merges": 0
+  },
+  "completion": {
+    "positive": "all completion/numerical/integrity/resource conditions, allH1resolved, S>=72",
+    "primary_failure": "verified complete and resolved, S<72",
+    "numerical_unresolved": "any unresolved H1 joint status; qualificationfalse even if count favorable",
+    "incomplete": "missing execution/evidence, no partial confirmation conclusion",
+    "historical_PR20": "INCOMPLETE / NUMERICALLY_UNRESOLVED",
+    "historical_PR27": "DIAGNOSTIC_COMPLETE / DESCRIPTIVE_ABLATION / qualificationfalse"
+  },
+  "coordination": {
+    "pr18": "separate open draft planning package; no execution or seed reuse",
+    "corpus": "separate ongoing track; no duplicate/change",
+    "post_study": "end automatic same-family synthetic loop; proposal only for next empirical representation/estimated-g admission study"
+  }
+}
