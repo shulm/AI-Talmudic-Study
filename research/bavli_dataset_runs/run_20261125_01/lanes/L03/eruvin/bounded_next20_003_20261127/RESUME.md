@@ -1,0 +1,1 @@
+Partial170/3646 each8passes. NextEruvin7a5 original[12,4]. Owner L03/eruvin epoch2. Open er023.combination_structure, continuation through7a11 required. Independent003 comparison pending; no tractate delivery or ML eligibility. Replay pinned canonical job; export F:/Sefaria_QA/bavli_l03_exports_20261127/eruvin_next20_003.

@@ -1,0 +1,25 @@
+{
+  "verdict": "REWORK_TARGETED",
+  "snapshot_sha256": "5b4f960d585e827735da16439a30e2218ea2378fc2fe1ed29e56225297b507c5",
+  "proposal_sha256": "918fc1b03b8450ce8e843b4da983fbdedb843afea4e1ae3c662eec13c896e1e7",
+  "reader_sha256": "5e65001b3a65145ae49ab148367ef071991a8504e2c3bad355b23f6a507e9a81",
+  "agent_id": "/root/blind_review",
+  "model_id": null,
+  "confirmed_issues": [
+    {
+      "id": "ER003_01",
+      "record_id": "er023.yehoshua.a",
+      "source_ref": "Eruvin7a1",
+      "quote": "ורבי יהושע היא דלא משגח בבת קול",
+      "issue": "Attribution role speaker treats Rabbi Yehoshua as direct speaker of the anonymous characterization. The Gemara identifies the position with him; no direct Rabbi Yehoshua utterance occurs here. The companion position correctly says as characterized by the Gemara.",
+      "minimum_repair": "Immutable attribution revision to quoted_authority (or equivalent supported non-speaker attribution), explicitly identifying anonymous Gemara attribution; refresh dependent coverage, preserve existing correct position and alternatives.",
+      "severity": "localized_attribution_role"
+    }
+  ],
+  "otherwise": "Core content37/37 and seven context findings represented. Reused context and immutable splits/dependencies preserved. No other confirmed defect in options, versions, conditions, door capability, contradictory-stringency exception or Rav alternative transmission.",
+  "limitations": [
+    "Same-reader purposive repeated continuation, not fresh blind cohort.",
+    "All20cores were previous source context and earlier context-label exposure is disclosed.",
+    "No whole-tractate acceptance, human certification or ML eligibility."
+  ]
+}

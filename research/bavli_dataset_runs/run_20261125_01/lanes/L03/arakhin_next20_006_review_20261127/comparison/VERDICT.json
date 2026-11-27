@@ -1,0 +1,680 @@
+{
+  "verdict": "ACCEPT_BOUNDED_WITH_LIMITATIONS",
+  "reviewer": "/root/yevamot",
+  "snapshot_sha256": "d0cd03e6e004bc52fb484ba3c653528854fdf1e95a54682e7e0066f661ac5ea5",
+  "proposal_sha256": "795309f6c98ff2e09bb2543683141cf2d855a29135227af8c842ff6c9d407354",
+  "receipt_sha256": "a683deff9b634161d96140703e6b19ca233400780bd155df8aad73aa2568b101",
+  "producer_manifest_sha256": "bd88a35f1f93e84aa685ebe4ac9bf85843e930e661206ad656d787c6ce49d0c4",
+  "source_reading_sha256": "5c117884f5cec95c3e84a7bffcbd7de7954b2922ac01743d339df1cef6a5be8a",
+  "review_exposure": {
+    "new_arakhin006_producer_labels_seen": false,
+    "prior_arakhin001_and004_comparisons_seen": true,
+    "prior004_context_through4a19_seen": true,
+    "fresh_blind_cohort": false,
+    "random_cohort": false,
+    "arakhin_production_authorship": false
+  },
+  "method": "Frozen source-only preparation before new labels; manual semantic comparison then source/graph/schema/exact-apply/replay/export checks. Prior001/004 comparison exposure disclosed; no new blind/random cohort.",
+  "findings": [],
+  "mapping": [
+    {
+      "reader_id": "ark006.f001",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.disfigured_derivation"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f002",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.afflicted_derivation"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f003",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.market_dependency"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f004",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.disfigured_correct",
+        "ar.e1.b006.afflicted_correct"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f005",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.tumtum_damim"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f006",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.androgynos_damim"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f007",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.tumtum_no_damim_hyp",
+        "ar.e1.b006.androgynos_no_damim_hyp"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f008",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.tumtum_damim_correct",
+        "ar.e1.b006.androgynos_damim_correct"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f009",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.tumtum_male_excluded",
+        "ar.e1.b006.androgynos_male_excluded"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f010",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.tumtum_female_hyp",
+        "ar.e1.b006.androgynos_female_hyp"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f011",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.definite_male",
+        "ar.e1.b006.definite_female",
+        "ar.e1.b006.tumtum_female_correct",
+        "ar.e1.b006.androgynos_female_correct"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f012",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.unspecified_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f013",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.unspecified_three"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f014",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.unspecified_three"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f015",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.fifty_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f016",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.minimum_principle",
+        "ar.e1.b005.fifty_answer"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f017",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.one_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f018",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.one_means"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f019",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.fifty_answer",
+        "ar.e1.b005.one_answer"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f020",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.verse_purpose"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f021",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.no_means"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f022",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.no_means_reason"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f023",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.explicit_first"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f024",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.explicit_reason",
+        "ar.e1.b006.explicit_answer"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f025",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.means"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f026",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.means_obvious"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f027",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.explicit_alt_hyp",
+        "ar.e1.b006.means_correct"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f028",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.means_chain1",
+        "ar.e1.b006.means_chain2",
+        "ar.e1.b005.means_variant"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f029",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.whole_repeat",
+        "ar.e1.b006.limbs_repeat"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f030",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.word_expended"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f031",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.word_forms",
+        "ar.e1.b006.word_answer"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f032",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.vital_repeat",
+        "ar.e1.b006.vital_repeat_scope"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f033",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.dead_repeat"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f034",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.soul_expended"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f035",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.soul_forms",
+        "ar.e1.b006.soul_answer"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f036",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.moribund_repeat"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f037",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.dead_standing_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f038",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.dead_standing",
+        "ar.e1.b006.dead_standing_answer"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f039",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.soul_purpose"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f040",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.u14",
+        "ar.e1.b006.soul_purpose_answer",
+        "ar.e1.b006.dead_repeat_scope"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f041",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.hundred_repeat"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f042",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.woman_man_repeat"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f043",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.woman_woman_repeat"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f044",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.man_man_repeat",
+        "ar.e1.b006.man_woman_repeat"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f045",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.verse_reused"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f046",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.balanced_no_verse"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f047",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b005.verse_needed"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f048",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.hundred_repeat_scope",
+        "ar.e1.b006.woman_man_repeat_scope",
+        "ar.e1.b006.woman_woman_repeat_scope",
+        "ar.e1.b006.disfigured_required",
+        "ar.e1.b006.afflicted_required"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f049",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.damim_verse_q"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f050",
+      "scope": "core",
+      "producer_ids": [
+        "ar.e1.b006.palm_value"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f051",
+      "scope": "context",
+      "producer_ids": [
+        "ar.e1.b006.honor_answer",
+        "ar.e1.b006.honor_answer_edge",
+        "ar.e1.b006.rava_honor"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f052",
+      "scope": "context",
+      "producer_ids": [
+        "ar.e1.b006.honor_dependency_hyp",
+        "ar.e1.b006.honor_correct"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f053",
+      "scope": "context",
+      "producer_ids": [
+        "ar.e1.b006.abaye_honor_q",
+        "ar.e1.b006.abaye_honor"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f054",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f055",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f056",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f057",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f058",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f059",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f060",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f061",
+      "scope": "context",
+      "producer_ids": [
+        "ar.e1.b006.slave_counter",
+        "ar.e1.b006.slave_reply"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f062",
+      "scope": "context",
+      "producer_ids": [
+        "ar.e1.b006.dedication_domains",
+        "ar.e1.b006.dedication_answer"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f063",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f064",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f065",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f066",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f067",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f068",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f069",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f070",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f071",
+      "scope": "context",
+      "producer_ids": [
+        "ar.e1.b006.blemished_case"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f072",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f073",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f074",
+      "scope": "context",
+      "producer_ids": [
+        "ar.e1.b006.head_value_unresolved",
+        "ar.e1.b006.head_value_teiku",
+        "ar.e1.b006.head_teiku",
+        "ar.e1.b006.rabbah_inquiry"
+      ],
+      "disposition": "represented"
+    },
+    {
+      "reader_id": "ark006.f075",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f076",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    },
+    {
+      "reader_id": "ark006.f077",
+      "scope": "context",
+      "producer_ids": [],
+      "disposition": "future_context_not_yet_extracted_no_core_omission_claim"
+    }
+  ],
+  "core_findings": 50,
+  "core_findings_represented": 50,
+  "context_findings": 27,
+  "context_findings_represented": 7,
+  "integrity": {
+    "source_spans": 217,
+    "proposal_rows": 178,
+    "source_indices": true,
+    "live_dependencies": true,
+    "coverage_refs": true,
+    "prior_records_preserved_except_declared_release_states": true,
+    "superseded_count": 3,
+    "exact_apply": true,
+    "producer_manifest": true,
+    "export_files": 35,
+    "exact_replay": true,
+    "completed_by_layer": {
+      "structure": 110,
+      "utterances": 110,
+      "claims": 110,
+      "attributions": 110,
+      "questions": 110,
+      "positions": 110,
+      "edges": 110,
+      "reconciliation": 110
+    }
+  },
+  "qualifications": [
+    "Opposite means-assessment reports preserve same transmitter/authority chain and separate version conditions.",
+    "Repeated baraita occurrences and prior context rows remain source-evidenced; final verse allocation qualifies earlier assignments rather than rejecting inclusion conclusions.",
+    "Final core question is answered by scoped Rava context; whole-person assessment is not asserted as universal altar rule.",
+    "Twenty additional frozen context findings remain unextracted, including detailed head/limb cases and intermediate qualifications. These receive no current core coverage.",
+    "Context dedication-domain answer is a local stage; intrinsic/monetary and whole/limb distinctions must be captured when future cores are processed.",
+    "Chronological resolution at5a10 and renewed explicit תיקו at5a11–12 must both remain when those future cores are extracted; do not silently harmonize.",
+    "Sages abbreviated names in unproduced context remain unpinned by this review.",
+    "No full-tractate acceptance, human certification or model-training eligibility."
+  ],
+  "next_ref": "Arakhin 4b:22",
+  "next_source_index": [
+    7,
+    21
+  ],
+  "open_tails": [
+    "ar.e1.b006.whole_value"
+  ],
+  "ml_eligible": false,
+  "tractate_acceptance": false,
+  "resume": "Bounded exact version accepted. Next core4b22; reuse scoped context, extract all currently uncounted future argument stages and preserve uncertainty.1073original segments remain per pass; root controls scheduling."
+}

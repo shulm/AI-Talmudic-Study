@@ -1,0 +1,41 @@
+import json,hashlib,subprocess
+from pathlib import Path
+root=Path.cwd();lane=root/'research/bavli_dataset_runs/run_20261125_01/lanes/L03';out=Path(__file__).parent;b=lane/'arakhin/bounded_006_20261127';job=Path('F:/Sefaria_QA/bavli_production_run_20261125_01/L03/bavli_arakhin');r=lambda p:json.loads(p.read_text(encoding='utf-8-sig'));h=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();sha='d0cd03e6e004bc52fb484ba3c653528854fdf1e95a54682e7e0066f661ac5ea5';assert h(job/'snapshots'/(sha+'.json'))==sha;state=r(job/'snapshots'/(sha+'.json'));p=r(b/'INITIAL_PROPOSAL.json');assert h(b/'INITIAL_PROPOSAL.json')=='795309f6c98ff2e09bb2543683141cf2d855a29135227af8c842ff6c9d407354';reading=r(out.parent/'SOURCE_READING.json');assert h(out.parent/'SOURCE_READING.json')=='5c117884f5cec95c3e84a7bffcbd7de7954b2922ac01743d339df1cef6a5be8a';raw=r(Path(reading['source']['path']))['text'];assert h(Path(reading['source']['path']))==reading['source']['sha256'];inv=r(job/'source_inventory.json');by={s['id']:s for s in inv};active={x['id']:x for x in state['records'] if x['release_state']!='superseded'};spans=0
+for x in p['records']:
+ for e in x['evidence']:
+  s=by[e['segment_id']];i,j=s['source_index'];assert raw[i][j]==s['text'];assert s['text'][e['start_char']:e['end_char']]==e['quote'];spans+=1
+for x in active.values():
+ for k in x['links']:assert k in active
+ for key in ['claim_id','question_id','source_id','target_id']:
+  if x['content'].get(key):assert x['content'][key] in active
+for c in state['coverage']:
+ for k in c['record_ids']:assert k in active and any(e['segment_id']==c['segment_id'] for e in active[k]['evidence'])
+for name,hs in r(b/'MANIFEST.json')['files'].items():assert h(b/name)==hs
+ex=r(b/'EXPORT.json');exp=job/'exports/bounded_006_20261127'
+for name,hs in ex['files'].items():assert h(exp/name)==hs
+rp=json.loads(subprocess.check_output(['python','research/bavli_production_v1/runner.py','replay','--job-dir',str(job)]));assert rp['replay_pass'] and rp['snapshot_sha256']==sha;assert set(rp['completed_by_layer'].values())=={110};(out/'REPLAY.json').write_text(json.dumps(rp,indent=2)+'\n',encoding='utf-8')
+# Manually mapped semantic correspondence; prefixes explicitly retain reused prior-context rows.
+keys=[
+'5.disfigured_derivation','5.afflicted_derivation','6.market_dependency','6.disfigured_correct 6.afflicted_correct','6.tumtum_damim','6.androgynos_damim','6.tumtum_no_damim_hyp 6.androgynos_no_damim_hyp','6.tumtum_damim_correct 6.androgynos_damim_correct','6.tumtum_male_excluded 6.androgynos_male_excluded','6.tumtum_female_hyp 6.androgynos_female_hyp','6.definite_male 6.definite_female 6.tumtum_female_correct 6.androgynos_female_correct','6.unspecified_q','5.unspecified_three','5.unspecified_three','5.fifty_q','5.minimum_principle 5.fifty_answer','5.one_q','5.one_means','5.fifty_answer 5.one_answer','6.verse_purpose','5.no_means','6.no_means_reason','6.explicit_first','6.explicit_reason 6.explicit_answer','5.means','6.means_obvious','6.explicit_alt_hyp 6.means_correct','6.means_chain1 6.means_chain2 5.means_variant','6.whole_repeat 6.limbs_repeat','6.word_expended','5.word_forms 6.word_answer','6.vital_repeat 6.vital_repeat_scope','6.dead_repeat','6.soul_expended','5.soul_forms 6.soul_answer','6.moribund_repeat','6.dead_standing_q','5.dead_standing 6.dead_standing_answer','6.soul_purpose','6.u14 6.soul_purpose_answer 6.dead_repeat_scope','6.hundred_repeat','6.woman_man_repeat','6.woman_woman_repeat','6.man_man_repeat 6.man_woman_repeat','5.verse_reused','5.balanced_no_verse','5.verse_needed','6.hundred_repeat_scope 6.woman_man_repeat_scope 6.woman_woman_repeat_scope 6.disfigured_required 6.afflicted_required','6.damim_verse_q','6.palm_value']
+assert len(keys)==50
+contextmap={51:'6.honor_answer 6.honor_answer_edge 6.rava_honor',52:'6.honor_dependency_hyp 6.honor_correct',53:'6.abaye_honor_q 6.abaye_honor',61:'6.slave_counter 6.slave_reply',62:'6.dedication_domains 6.dedication_answer',71:'6.blemished_case',74:'6.head_value_unresolved 6.head_value_teiku 6.head_teiku 6.rabbah_inquiry'}
+def expand(s):return ['ar.e1.b00'+k for k in s.split()]
+mapping=[]
+for i,f in enumerate(reading['findings'],1):
+ ids=expand(keys[i-1] if i<=50 else contextmap.get(i,''));assert all(k in active for k in ids)
+ mapping.append(dict(reader_id=f['id'],scope=f['scope'],producer_ids=ids,disposition='represented' if ids else 'future_context_not_yet_extracted_no_core_omission_claim'))
+base=r(job/'snapshots'/(r(b/'PINS.json')['base_snapshot_sha256']+'.json'));now={x['id']:x for x in state['records']};revised={x['supersedes'] for x in p['records'] if 'supersedes'in x}
+for x in base['records']:
+ expected=dict(x)
+ if x['id'] in revised:expected['release_state']='superseded'
+ assert now[x['id']]==expected
+import sys,copy
+sys.path.insert(0,str(root/'research/bavli_production_v1'));import runner
+j,segments=runner.load(job);ap=runner.validate_apply(copy.deepcopy(base),p,segments,j);ap['proposals']=base['proposals']+[h(b/'INITIAL_PROPOSAL.json')];assert runner.sha(runner.encoded(ap))==sha
+# Check occurrence-specific core evidence for each mapped finding; rows may be reused from earlier context.
+for f,m in zip(reading['findings'][:50],mapping[:50]):
+ srcids={e['segment_id'] for e in f['evidence']};eids={e['segment_id'] for k in m['producer_ids'] for e in active[k]['evidence']};assert srcids&eids,(f['id'],m)
+v=dict(verdict='ACCEPT_BOUNDED_WITH_LIMITATIONS',reviewer='/root/yevamot',snapshot_sha256=sha,proposal_sha256=h(b/'INITIAL_PROPOSAL.json'),receipt_sha256=h(b/'RECEIPT.json'),producer_manifest_sha256=h(b/'MANIFEST.json'),source_reading_sha256=h(out.parent/'SOURCE_READING.json'),review_exposure=reading['blindness'],method='Frozen source-only preparation before new labels; manual semantic comparison then source/graph/schema/exact-apply/replay/export checks. Prior001/004 comparison exposure disclosed; no new blind/random cohort.',findings=[],mapping=mapping,core_findings=50,core_findings_represented=50,context_findings=27,context_findings_represented=7,integrity=dict(source_spans=spans,proposal_rows=len(p['records']),source_indices=True,live_dependencies=True,coverage_refs=True,prior_records_preserved_except_declared_release_states=True,superseded_count=len(revised),exact_apply=True,producer_manifest=True,export_files=len(ex['files']),exact_replay=True,completed_by_layer=rp['completed_by_layer']),qualifications=['Opposite means-assessment reports preserve same transmitter/authority chain and separate version conditions.','Repeated baraita occurrences and prior context rows remain source-evidenced; final verse allocation qualifies earlier assignments rather than rejecting inclusion conclusions.','Final core question is answered by scoped Rava context; whole-person assessment is not asserted as universal altar rule.','Twenty additional frozen context findings remain unextracted, including detailed head/limb cases and intermediate qualifications. These receive no current core coverage.','Context dedication-domain answer is a local stage; intrinsic/monetary and whole/limb distinctions must be captured when future cores are processed.','Chronological resolution at5a10 and renewed explicit תיקו at5a11–12 must both remain when those future cores are extracted; do not silently harmonize.','Sages abbreviated names in unproduced context remain unpinned by this review.','No full-tractate acceptance, human certification or model-training eligibility.'],next_ref=inv[110]['ref'],next_source_index=inv[110]['source_index'],open_tails=state['open_tails'],ml_eligible=False,tractate_acceptance=False,resume='Bounded exact version accepted. Next core4b22; reuse scoped context, extract all currently uncounted future argument stages and preserve uncertainty.1073original segments remain per pass; root controls scheduling.')
+(out/'VERDICT.json').write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(out/'MANIFEST.json').write_text(json.dumps({f.name:h(f) for f in out.iterdir() if f.is_file() and f.name!='MANIFEST.json'},indent=2)+'\n',encoding='utf-8')
+print(json.dumps(dict(verdict=h(out/'VERDICT.json'),manifest=h(out/'MANIFEST.json'),spans=spans,exports=len(ex['files']),core_represented=50)))
