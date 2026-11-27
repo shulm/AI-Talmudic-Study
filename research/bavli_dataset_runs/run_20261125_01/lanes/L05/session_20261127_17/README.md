@@ -1,0 +1,15 @@
+# L05 session17 partial checkpoint
+
+Chullin 6a:10–7a:3 adds 20 original source segments in each required layer, reaching 148/4,393. L05 totals 709/13,598 per layer; 0/6 tractates delivered. Exact-version comparison a85f58f6b99954691d1b3a9114a2b25173750924b5e694aa3e7deea89113902b found no mandatory new-core repair: all 203 new evidence spans matched raw source. S17-W01 recommends boundary reconciliation, implemented separately below.
+
+Proposal b9a7311ae0d7c710d5753b9ada0d786128d4e22874a0bd426355dc7d6c067b22 creates initial snapshot 257511a70118b2e07c628d189d88a24981620d7515797368e2b18388ab5b9f91: 182 new records (52 claims, 13 questions, 42 edges), 1,459 total, all 1,277 prior records preserved. Continuations distinguish domain rights, demai preparation and inference conditions, and Beit Shean testimony and later contextual qualifications.
+
+Source-first freeze 66ba223cae1b0d5d305b80e87f1bf33d02c01ac53c793cf0aaa0af27d42ec1da contains 127 mixed findings; prior raw exposure disclosed, no producer-label access. Comparator nonblind; no new probability sampling credit, task eligibility, full-tractate review or human certification claimed. Context-only segments do not increase coverage.
+
+CHECKPOINTS.json pins all six snapshots, per-layer coverage, open tails, source/schema/protocol and normalized export manifests. All six replays pass. COORDINATOR_RECHECK.json preserves the revision6 verification from this preparation wave; owners remain epoch2. Canonical sources and shared tooling unchanged. All inherited role and task gates remain open; no false quarantine or independent composite/child counts.
+
+Use the pinned shared runner replay command for each job and verify export manifest hashes. package_wave.py requires the recorded live checkpoints; never rerun author scripts against advanced jobs. archive_partial.py verifies every archived member; ARTIFACT_RECEIPT.json binds external zip bytes. Full source inventories remain outside Git. Draft remains unmerged. New metered API allowance zero; cost/token telemetry unknown.
+
+Next source: Chullin 7a:4. Session18 may prepare before review, but promotion waits for session17 review and archive verification. No tractate is complete.
+
+S17-W01 correction proposal 7cc37900f63088f0d6ffac675487e9a339e5b76421da096a56541fab5f4d02a6 creates snapshot 39a4882c2af119f876ae8173604a8ffe491f1453dd33a4fdb38748748a17e734. Two successors close the source-complete ch.s2716.decrees boundary and remap its continuation edge, with 26 coverage references updated (24 predecessor structure/reconciliation references plus edge/reconciliation at6a:10). All 1,459 prior records remain, two superseded; total1,461 historical records. Coverage stays148 per layer. Older tails unchanged. PRE_CORRECTION_CHECKPOINTS.json and original comparison retain the initial state. Correction verification ea91fde299a7660c04ffb196a928cbda0ffbe94765a000b70bc6d7655bb1126d confirms exact successor evidence (13 spans), states/results unchanged, no active dangling references and seven other tails preserved.
