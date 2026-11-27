@@ -1,0 +1,387 @@
+{
+  "format": "immutable-review-clarification-v1",
+  "reviewer": "/root/horayot_review",
+  "initial_report_sha256": "8edf4e1ac71533247ae74ecdeaa9b86659c1efd3a697cae5ebab27d44dbe6485",
+  "snapshot_sha256": "416ad648fd0580e4cde06178b7a21deb50d8197eabd2c50444622a34cd38ab0d",
+  "verdict": "S19-R01_BOUNDED_CONTINUATION_PRESERVATION_REPAIR_REQUIRED",
+  "reviewer_error": "Initial report accurately noticed threshold standalone condition limitations but incorrectly treated an eligibility caveat as sufficient. Full needed continuations exist in frozen reading/review context, not in accepted production evidence. Initial no-mandatory-new-core verdict is qualified/revised here; original file remains immutable.",
+  "production_evidence_scan": {
+    "all_records_scanned": 926,
+    "any_8b_or_9a_evidence": [],
+    "threshold_evidence_only": "6a14 [0,136) or6a15 [0,125); exact affected originals below."
+  },
+  "required_repair": {
+    "id": "S19-R01",
+    "scope": "Bounded threshold context repair, preserve local baraita statements and original versions; no new core coverage.",
+    "source_conditions": [
+      "8b10–14 rejects public/private/karmelit interpretations and resolves first threshold as מקום פטור lacking4x4; Rav Dimi reports Yohanan permission for both domains to use it, but no exchange.",
+      "8b15–9a1 distinguishes actual resting here from Rava continuous passage, necessary for all-three exemption.",
+      "9a2–6 Others threshold: Rav Yehuda reporting Rav interprets alley threshold half roofed/half unroofed with roof inward. Rav Ashi gives alternative house threshold with two beams each under4, gap under3 and door between. Do not combine alternatives as simultaneous requirements.",
+      "9a7 high10wide4 independent threshold supports Meir reported by Yitzhak bar Avdimi: prohibition on shouldering onto high10wide4 column in private domain, decree because mound in public domain. Keep domain identity distinct from permitted use."
+    ],
+    "implementation": "Add exact original context evidence plus bounded qualification/reconciliation claims and directed links. Revise affected local claims/positions only as needed to bind their contextual conditions/scope explicitly; preserve source paraphrase vs interpretive inference and named reporting roles. Use new successor IDs and supersedes for revised records. Update affected dependent refs and original-core coverage; do not promote context-only segments as extracted cores.",
+    "affected_claim_ids": [
+      "sha.s2719.doorclosed",
+      "sha.s2719.dooropen",
+      "sha.s2719.nocrossowner",
+      "sha.s2719.nocrosspoor",
+      "sha.s2719.threeexempt",
+      "sha.s2719.thresholdindependent",
+      "sha.s2719.thresholdowner",
+      "sha.s2719.thresholdpoor",
+      "sha.s2719.thresholdtwo"
+    ],
+    "direct_dependent_ids": [
+      "sha.s2719.doorclosed.a",
+      "sha.s2719.doorclosed.p",
+      "sha.s2719.dooropen.a",
+      "sha.s2719.dooropen.p",
+      "sha.s2719.e.19",
+      "sha.s2719.e.20",
+      "sha.s2719.e.21",
+      "sha.s2719.e.22",
+      "sha.s2719.thresholdindependent.a",
+      "sha.s2719.thresholdindependent.p",
+      "sha.s2719.thresholdtwo.a",
+      "sha.s2719.thresholdtwo.p"
+    ],
+    "other_scope": "u109/u110 may receive successors to state continuation-derived scope; not required to supersede unaffected structures or other core claims. Do not change initial source quotation to erase baraita formulation."
+  },
+  "full_context_evidence": [
+    {
+      "ref": "Shabbat 8b:10",
+      "segment_id": "seg_1b63eb05064ba0267a17",
+      "start_char": 0,
+      "end_char": 81,
+      "quote": "אמר מר אדם עומד על האסקופה נוטל מבעה\"ב ונותן לו נוטל מעני ונותן לו האי אסקופה מאי"
+    },
+    {
+      "ref": "Shabbat 8b:11",
+      "segment_id": "seg_c148a1a31262b155cb7d",
+      "start_char": 0,
+      "end_char": 53,
+      "quote": "אילימא אסקופת רה\"ר נוטל מבעל הבית הא מפיק מרה\"י לרה\"ר"
+    },
+    {
+      "ref": "Shabbat 8b:12",
+      "segment_id": "seg_314a1e0748a92250f10b",
+      "start_char": 0,
+      "end_char": 53,
+      "quote": "ואלא אסקופת רה\"י נוטל מן העני הא קא מעייל מרה\"ר לרה\"י"
+    },
+    {
+      "ref": "Shabbat 8b:13",
+      "segment_id": "seg_c2fd95c24f4bb39571a6",
+      "start_char": 0,
+      "end_char": 60,
+      "quote": "אלא אסקופת כרמלית נוטל ונותן לכתחלה סוף סוף איסורא מיהא איתא"
+    },
+    {
+      "ref": "Shabbat 8b:14",
+      "segment_id": "seg_8c56116b03888bcb7c60",
+      "start_char": 0,
+      "end_char": 183,
+      "quote": "אלא אסקופה מקום פטור בעלמא הוא כגון דלית ביה ד' על ד' וכי הא דכי אתא רב דימי אמר רבי יוחנן מקום שאין בו ד' על ד' טפחים מותר לבני רשות היחיד ולבני רשות הרבים לכתף עליו ובלבד שלא יחליפו"
+    },
+    {
+      "ref": "Shabbat 8b:15",
+      "segment_id": "seg_522588c19dabb3cd8072",
+      "start_char": 0,
+      "end_char": 175,
+      "quote": "אמר מר ובלבד שלא יטול מבעל הבית ונותן לעני מעני ונותן לבעל הבית ואם נטל ונתן שלשתן פטורין לימא תיהוי תיובתא דרבא דאמר רבא המעביר חפץ מתחילת ד' לסוף ד' ברשות הרבים אע\"פ שהעבירו"
+    },
+    {
+      "ref": "Shabbat 9a:1",
+      "segment_id": "seg_36f49056ecb2c1a22c57",
+      "start_char": 0,
+      "end_char": 31,
+      "quote": "דרך עליו חייב התם לא נח הכא נח:"
+    },
+    {
+      "ref": "Shabbat 9a:2",
+      "segment_id": "seg_2cdea6328cc3973af26c",
+      "start_char": 0,
+      "end_char": 74,
+      "quote": "אחרים אומרים אסקופה משמשת שתי רשויות בזמן שהפתח פתוח כלפנים פתח נעול כלחוץ"
+    },
+    {
+      "ref": "Shabbat 9a:3",
+      "segment_id": "seg_804d81f283fb906d2150",
+      "start_char": 0,
+      "end_char": 80,
+      "quote": "ואף על גב דלית ליה לחי והאמר רב חמא בר גוריא אמר רב תוך הפתח צריך לחי אחר להתירו"
+    },
+    {
+      "ref": "Shabbat 9a:4",
+      "segment_id": "seg_7204a32b60d08fdd1137",
+      "start_char": 0,
+      "end_char": 106,
+      "quote": "וכי תימא דלית ביה ד' על ד' והאמר רב חמא בר גוריא אמר רב תוך הפתח אע\"פ שאין בו ד' על ד' צריך לחי אחר להתירו"
+    },
+    {
+      "ref": "Shabbat 9a:5",
+      "segment_id": "seg_6a0330dde160b1c27d2e",
+      "start_char": 0,
+      "end_char": 122,
+      "quote": "אמר רב יהודה אמר רב הכא באיסקופת מבוי עסקינן חציו מקורה וחציו שאינו מקורה וקירויו כלפי פנים פתח פתוח כלפנים פתח נעול כלחוץ"
+    },
+    {
+      "ref": "Shabbat 9a:6",
+      "segment_id": "seg_ee06d2e8e8a3bbb16c9c",
+      "start_char": 0,
+      "end_char": 153,
+      "quote": "רב אשי אמר לעולם באיסקופת בית עסקינן וכגון שקירה בשתי קורות שאין בזו ארבעה ואין בזו ארבעה ואין בין זו לזו שלשה ודלת באמצע פתח פתוח כלפנים פתח נעול כלחוץ:"
+    },
+    {
+      "ref": "Shabbat 9a:7",
+      "segment_id": "seg_f5728e8afc0db64f0d11",
+      "start_char": 0,
+      "end_char": 231,
+      "quote": "ואם היתה איסקופה גבוהה י' ורחבה ד' הרי זו רשות לעצמה מסייע ליה לרב יצחק בר אבדימי דאמר רב יצחק בר אבדימי אומר היה רבי מאיר כל מקום שאתה מוצא ב' רשויות והן רשות אחת כגון עמוד ברה\"י גבוה י' ורחב ד' אסור לכתף עליו גזירה משום תל ברה\"ר:"
+    }
+  ],
+  "affected_original_records": [
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Door shut"
+        ],
+        "proposition": "When the door is shut, it is like the outside.",
+        "scope": "Others opposite condition"
+      },
+      "evidence": [
+        {
+          "end_char": 125,
+          "quote": "אחרים אומרים איסקופה משמשת ב' רשויות בזמן שהפתח פתוח כלפנים פתח נעול כלחוץ ואם היתה איסקופה גבוהה י' ורחבה ד' ה\"ז רשות לעצמה.",
+          "segment_id": "seg_a61a0a986680852e4062",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.doorclosed",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Door open"
+        ],
+        "proposition": "When the door is open, it is like the inside.",
+        "scope": "Others conditional classification"
+      },
+      "evidence": [
+        {
+          "end_char": 125,
+          "quote": "אחרים אומרים איסקופה משמשת ב' רשויות בזמן שהפתח פתוח כלפנים פתח נעול כלחוץ ואם היתה איסקופה גבוהה י' ורחבה ד' ה\"ז רשות לעצמה.",
+          "segment_id": "seg_a61a0a986680852e4062",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.dooropen",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Threshold intermediary",
+          "Householder to poor person"
+        ],
+        "proposition": "He must not take from the householder and give to the poor person.",
+        "scope": "Cross-domain relay restriction"
+      },
+      "evidence": [
+        {
+          "end_char": 136,
+          "quote": "אדם עומד על האיסקופה נוטל מבע\"ה ונותן לו נוטל מעני ונותן לו ובלבד שלא יטול מבעה\"ב ונותן לעני מעני ונותן לבעה\"ב ואם נטל ונתן שלשתן פטורים",
+          "segment_id": "seg_a47264b787301f014026",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.nocrossowner",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Threshold intermediary",
+          "Poor person to householder"
+        ],
+        "proposition": "He must not take from the poor person and give to the householder.",
+        "scope": "Reverse relay restriction"
+      },
+      "evidence": [
+        {
+          "end_char": 136,
+          "quote": "אדם עומד על האיסקופה נוטל מבע\"ה ונותן לו נוטל מעני ונותן לו ובלבד שלא יטול מבעה\"ב ונותן לעני מעני ונותן לבעה\"ב ואם נטל ונתן שלשתן פטורים",
+          "segment_id": "seg_a47264b787301f014026",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.nocrosspoor",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Forbidden cross relay performed"
+        ],
+        "proposition": "If he did take and give, all three are exempt.",
+        "scope": "Explicit all-three liability outcome despite prohibition"
+      },
+      "evidence": [
+        {
+          "end_char": 136,
+          "quote": "אדם עומד על האיסקופה נוטל מבע\"ה ונותן לו נוטל מעני ונותן לו ובלבד שלא יטול מבעה\"ב ונותן לעני מעני ונותן לבעה\"ב ואם נטל ונתן שלשתן פטורים",
+          "segment_id": "seg_a47264b787301f014026",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.threeexempt",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Height ten",
+          "Width four"
+        ],
+        "proposition": "If the threshold is ten high and four wide, it is a domain of its own.",
+        "scope": "Independent threshold dimensions rule"
+      },
+      "evidence": [
+        {
+          "end_char": 125,
+          "quote": "אחרים אומרים איסקופה משמשת ב' רשויות בזמן שהפתח פתוח כלפנים פתח נעול כלחוץ ואם היתה איסקופה גבוהה י' ורחבה ד' ה\"ז רשות לעצמה.",
+          "segment_id": "seg_a61a0a986680852e4062",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.thresholdindependent",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Person stands on threshold",
+          "Exchange with householder"
+        ],
+        "proposition": "A person standing on the threshold may take from the householder and give back to him.",
+        "scope": "Threshold baraita first view; later discussion determines its type"
+      },
+      "evidence": [
+        {
+          "end_char": 136,
+          "quote": "אדם עומד על האיסקופה נוטל מבע\"ה ונותן לו נוטל מעני ונותן לו ובלבד שלא יטול מבעה\"ב ונותן לעני מעני ונותן לבעה\"ב ואם נטל ונתן שלשתן פטורים",
+          "segment_id": "seg_a47264b787301f014026",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.thresholdowner",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Person stands on threshold",
+          "Exchange with poor person"
+        ],
+        "proposition": "He may take from the poor person and give back to him.",
+        "scope": "Separate side"
+      },
+      "evidence": [
+        {
+          "end_char": 136,
+          "quote": "אדם עומד על האיסקופה נוטל מבע\"ה ונותן לו נוטל מעני ונותן לו ובלבד שלא יטול מבעה\"ב ונותן לעני מעני ונותן לבעה\"ב ואם נטל ונתן שלשתן פטורים",
+          "segment_id": "seg_a47264b787301f014026",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.thresholdpoor",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "Others say a threshold serves two domains.",
+        "scope": "Alternative view, not anonymously merged with preceding view"
+      },
+      "evidence": [
+        {
+          "end_char": 125,
+          "quote": "אחרים אומרים איסקופה משמשת ב' רשויות בזמן שהפתח פתוח כלפנים פתח נעול כלחוץ ואם היתה איסקופה גבוהה י' ורחבה ד' ה\"ז רשות לעצמה.",
+          "segment_id": "seg_a61a0a986680852e4062",
+          "start_char": 0
+        }
+      ],
+      "id": "sha.s2719.thresholdtwo",
+      "layer": "claims",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    }
+  ],
+  "qualifications": [
+    "Nonblind root-triggered recheck, no new independent source credit.",
+    "Task/ML eligibility remains false and does not replace evidence preservation.",
+    "No production mutation by reviewer; corrected exact snapshot must be independently verified."
+  ]
+}
