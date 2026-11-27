@@ -1,0 +1,196 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Berakhot",
+  "source_sha256": "dd24d48aef18159564471380f7ba200302cc9889b22380aef724d2fb086a9d38",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "owner": "/root/berakhot",
+  "epoch": 3,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/berakhot",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "answer_set_status": "partial",
+        "conditions": [],
+        "formulation": "Rabbi Yehudah’s objection appears sound; how does Rabbi Meir answer?",
+        "question_origin": "editorial_reconstruction"
+      },
+      "evidence": [
+        {
+          "end_char": 33,
+          "quote": "שפיר קאמר ליה רבי יהודה לרבי מאיר",
+          "segment_id": "seg_9d8ce5a6cb2ca8f4f964",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.starttimes.20261125.q18.v2",
+      "layer": "questions",
+      "links": [],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "Source explicitly endorses objection with שפיר קאמר ליה; the interrogative formulation is an editorial reconstruction of its argumentative function, not a literal source question."
+      ],
+      "supersedes": "bk.starttimes.20261125.q18"
+    },
+    {
+      "content": {
+        "claim_id": "bk.starttimes.20261125.c17",
+        "conditions": [],
+        "holder_candidates": [
+          "רבי יהודה"
+        ],
+        "local_status": "Repeated objection; answered by distinction",
+        "question_id": "bk.starttimes.20261125.q18.v2"
+      },
+      "evidence": [
+        {
+          "end_char": 55,
+          "quote": "אמר מר אמר ליה רבי יהודה והלא כהנים מבעוד יום הם טובלים",
+          "segment_id": "seg_3d8512bf882ef0d802b5",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.starttimes.20261125.p17.v2",
+      "layer": "positions",
+      "links": [
+        "bk.starttimes.20261125.c17",
+        "bk.starttimes.20261125.q18.v2"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bk.starttimes.20261125.p17"
+    },
+    {
+      "content": {
+        "claim_id": "bk.starttimes.20261125.c19a",
+        "conditions": [],
+        "holder_candidates": [
+          "רבי מאיר"
+        ],
+        "local_status": "Anonymous editorial reconstruction of reply, not a separately transmitted direct quotation",
+        "question_id": "bk.starttimes.20261125.q18.v2"
+      },
+      "evidence": [
+        {
+          "end_char": 167,
+          "quote": "ורבי מאיר הכי קאמר ליה מי סברת דאנא אבין השמשות דידך קא אמינא אנא אבין השמשות דרבי יוסי קא אמינא דאמר רבי יוסי בין השמשות כהרף עין זה נכנס וזה יוצא ואי אפשר לעמוד עליו",
+          "segment_id": "seg_0390c01d93b8edab8335",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.starttimes.20261125.p19a.v2",
+      "layer": "positions",
+      "links": [
+        "bk.starttimes.20261125.c19a",
+        "bk.starttimes.20261125.q18.v2"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bk.starttimes.20261125.p19a"
+    },
+    {
+      "content": {
+        "claim_id": "bk.starttimes.20261125.c19b",
+        "conditions": [],
+        "holder_candidates": [
+          "רבי מאיר"
+        ],
+        "local_status": "Anonymous editorial reconstruction of reply using Rabbi Yose twilight",
+        "question_id": "bk.starttimes.20261125.q18.v2"
+      },
+      "evidence": [
+        {
+          "end_char": 167,
+          "quote": "ורבי מאיר הכי קאמר ליה מי סברת דאנא אבין השמשות דידך קא אמינא אנא אבין השמשות דרבי יוסי קא אמינא דאמר רבי יוסי בין השמשות כהרף עין זה נכנס וזה יוצא ואי אפשר לעמוד עליו",
+          "segment_id": "seg_0390c01d93b8edab8335",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.starttimes.20261125.p19b.v2",
+      "layer": "positions",
+      "links": [
+        "bk.starttimes.20261125.c19b",
+        "bk.starttimes.20261125.q18.v2"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bk.starttimes.20261125.p19b"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "bk.starttimes.20261125.c19b",
+        "target_id": "bk.starttimes.20261125.q18.v2"
+      },
+      "evidence": [
+        {
+          "end_char": 167,
+          "quote": "ורבי מאיר הכי קאמר ליה מי סברת דאנא אבין השמשות דידך קא אמינא אנא אבין השמשות דרבי יוסי קא אמינא דאמר רבי יוסי בין השמשות כהרף עין זה נכנס וזה יוצא ואי אפשר לעמוד עליו",
+          "segment_id": "seg_0390c01d93b8edab8335",
+          "start_char": 0
+        }
+      ],
+      "id": "bk.starttimes.20261125.e19.v2",
+      "layer": "edges",
+      "links": [
+        "bk.starttimes.20261125.c19b",
+        "bk.starttimes.20261125.q18.v2"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "bk.starttimes.20261125.e19"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Self-reconciliation correction: distinguish editorial question reconstruction from explicit interrogative; dependent links revised without changing source coverage.",
+      "record_ids": [
+        "bk.starttimes.20261125.e19.v2",
+        "bk.starttimes.20261125.e19b",
+        "bk.starttimes.20261125.e19c"
+      ],
+      "segment_id": "seg_0390c01d93b8edab8335"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Self-reconciliation correction: distinguish editorial question reconstruction from explicit interrogative; dependent links revised without changing source coverage.",
+      "record_ids": [
+        "bk.starttimes.20261125.p19a.v2",
+        "bk.starttimes.20261125.p19b.v2",
+        "bk.starttimes.20261125.p19c"
+      ],
+      "segment_id": "seg_0390c01d93b8edab8335"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Self-reconciliation correction: distinguish editorial question reconstruction from explicit interrogative; dependent links revised without changing source coverage.",
+      "record_ids": [
+        "bk.starttimes.20261125.p17.v2"
+      ],
+      "segment_id": "seg_3d8512bf882ef0d802b5"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "questions",
+      "rationale": "Self-reconciliation correction: distinguish editorial question reconstruction from explicit interrogative; dependent links revised without changing source coverage.",
+      "record_ids": [
+        "bk.starttimes.20261125.q18.v2"
+      ],
+      "segment_id": "seg_9d8ce5a6cb2ca8f4f964"
+    }
+  ],
+  "open_tails": []
+}

@@ -1,0 +1,92 @@
+{
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Direct source reading over this segment and surrounding continuation; findings anchored below.",
+      "record_ids": [
+        "rh.opening2.c.count",
+        "rh.opening1.c.kings",
+        "rh.opening1.c.festivals"
+      ],
+      "segment_id": "seg_7d4d66450f72ea68b267"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Direct source reading over this segment and surrounding continuation; findings anchored below.",
+      "record_ids": [
+        "rh.opening2.p.count",
+        "rh.opening1.p.kings",
+        "rh.opening1.p.festivals"
+      ],
+      "segment_id": "seg_7d4d66450f72ea68b267"
+    }
+  ],
+  "epoch": 1,
+  "execution": {
+    "agent_id": "/root:review-correction-1",
+    "model_id": null,
+    "route": "interactive_agent"
+  },
+  "open_tails": [],
+  "owner": "GLOBAL_COORDINATOR_BOOTSTRAP",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "records": [
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The Mishnah enumerates four new years.",
+        "scope": "Local passage; no later practical ruling inferred"
+      },
+      "evidence": [
+        {
+          "end_char": 82,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> ראשי שנים הם באחד בניסן ר\"ה למלכים ולרגלים",
+          "segment_id": "seg_7d4d66450f72ea68b267",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.opening2.c.count",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "supersedes": "rh.opening1.c.count",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "claim_id": "rh.opening2.c.count",
+        "conditions": [],
+        "holder_candidates": [
+          "Mishnah anonymous voice"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 82,
+          "quote": "מתני׳ <big><strong>ארבעה</strong></big> ראשי שנים הם באחד בניסן ר\"ה למלכים ולרגלים",
+          "segment_id": "seg_7d4d66450f72ea68b267",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.opening2.p.count",
+      "layer": "positions",
+      "links": [
+        "rh.opening2.c.count"
+      ],
+      "origin": "source_paraphrase",
+      "supersedes": "rh.opening1.p.count",
+      "uncertainty": []
+    }
+  ],
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "schema_version": "2.0.0-production",
+  "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+  "tractate": "Rosh Hashanah"
+}
