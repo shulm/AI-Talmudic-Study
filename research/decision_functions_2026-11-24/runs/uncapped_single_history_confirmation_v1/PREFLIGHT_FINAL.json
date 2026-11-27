@@ -1,0 +1,613 @@
+{
+  "passed": true,
+  "checks": {
+    "derivatives_fixed_inputs": true,
+    "enumerated_evidence": true,
+    "saved_engineering_trace_points": 1704,
+    "boundary/success": true,
+    "boundary/scientific": true,
+    "boundary/numerical": true,
+    "boundary/incomplete": true,
+    "boundary/child-failure": true,
+    "boundary/collision": true,
+    "boundary/launch": true,
+    "boundary/resource": true,
+    "boundary/interrupt": true,
+    "boundary/output_collision": true,
+    "statistical_boundaries": true,
+    "exact_planning_arithmetic": true,
+    "fail_closed": true
+  },
+  "forbidden_invocations": [],
+  "zero_confirmation_generation": true,
+  "zero_optimizer_calls": true,
+  "mock_root": "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02",
+  "entrypoint_sha256": "8950430b6e2b9cab4f22d3262c3b79d9c40f2e4ec88913fbeab491182a9f0525",
+  "supervisor_sha256": "3a3037325eaeadf2ec640b86bf44e4b434c4960d4cfb62c06c6b90fc53de7094",
+  "boundary_sha256": "5d972b6e1fb1d2f2e6456020fa3a27f4d98eec8b99234d9f69dd42a277089d9e",
+  "mock_receipts": {
+    "child-failure\\EXECUTION_START.json": {
+      "sha256": "15803f5ccba478bcbdb3516465ea1782142bd92e650aa45ece0c43e8519085ee",
+      "record": {
+        "id": "MOCK_ONLY",
+        "optimizer_stub": true
+      }
+    },
+    "child-failure\\EXECUTION_TERMINAL.json": {
+      "sha256": "0c34920565060de8e6c97626d016c543a512e58d6a425f6684ac51216031346f",
+      "record": {
+        "completed": 0,
+        "expected": 1,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "UNRESOLVED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "RuntimeError('mock child failure')",
+        "qualification": false
+      }
+    },
+    "child-failure-account\\SUPERVISOR_STOP_1795776732624003000.json": {
+      "sha256": "db84b7c0253842a6bbbab1999c519a536c3426c4a1bc9d4768dfd43493096c80",
+      "record": {
+        "completed": 0,
+        "expected": 82,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "NOT_ESTABLISHED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "CHILD_FAILURE",
+        "qualification": false
+      }
+    },
+    "collision\\EXECUTION_START.json": {
+      "sha256": "15803f5ccba478bcbdb3516465ea1782142bd92e650aa45ece0c43e8519085ee",
+      "record": {
+        "id": "MOCK_ONLY",
+        "optimizer_stub": true
+      }
+    },
+    "collision\\EXECUTION_TERMINAL.json": {
+      "sha256": "60b8ed220f0bd805eb0d39acf72f59303c90236e486d0edf6e17ad6e8727949a",
+      "record": {
+        "completed": 1,
+        "expected": 1,
+        "inventory_complete": true,
+        "integrity": "INCOMPLETE",
+        "numerical": "UNRESOLVED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "ValueError('Protected terminal field collision')",
+        "qualification": false
+      }
+    },
+    "collision-account\\SUPERVISOR_STOP_1795776733943590700.json": {
+      "sha256": "db84b7c0253842a6bbbab1999c519a536c3426c4a1bc9d4768dfd43493096c80",
+      "record": {
+        "completed": 0,
+        "expected": 82,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "NOT_ESTABLISHED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "CHILD_FAILURE",
+        "qualification": false
+      }
+    },
+    "incomplete\\EXECUTION_START.json": {
+      "sha256": "15803f5ccba478bcbdb3516465ea1782142bd92e650aa45ece0c43e8519085ee",
+      "record": {
+        "id": "MOCK_ONLY",
+        "optimizer_stub": true
+      }
+    },
+    "incomplete\\EXECUTION_TERMINAL.json": {
+      "sha256": "ec562b7a275f964be415aa190f8378920949042ba1826a062a0b2046cfa421c9",
+      "record": {
+        "completed": 0,
+        "expected": 1,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "PASS",
+        "scientific": "PASS",
+        "reason": "incomplete",
+        "qualification": false
+      }
+    },
+    "interrupt\\EXECUTION_START.json": {
+      "sha256": "15803f5ccba478bcbdb3516465ea1782142bd92e650aa45ece0c43e8519085ee",
+      "record": {
+        "id": "MOCK_ONLY",
+        "optimizer_stub": true
+      }
+    },
+    "interrupt-account\\SUPERVISOR_STOP_1795776735344687900.json": {
+      "sha256": "5618b6f49dd75d88b3b14c58fe4a6273c4279bebd947907bf14c684b88ee6692",
+      "record": {
+        "completed": 0,
+        "expected": 82,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "NOT_ESTABLISHED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "KeyboardInterrupt('mock supervisor interruption')",
+        "qualification": false
+      }
+    },
+    "launch\\SUPERVISOR_STOP_1795776735233224400.json": {
+      "sha256": "f5561d72797c9776234477799b9e0167d5d8ab75673dd9aa5c0709dd26614455",
+      "record": {
+        "completed": 0,
+        "expected": 82,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "NOT_ESTABLISHED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)",
+        "qualification": false
+      }
+    },
+    "numerical\\EXECUTION_START.json": {
+      "sha256": "15803f5ccba478bcbdb3516465ea1782142bd92e650aa45ece0c43e8519085ee",
+      "record": {
+        "id": "MOCK_ONLY",
+        "optimizer_stub": true
+      }
+    },
+    "numerical\\EXECUTION_TERMINAL.json": {
+      "sha256": "126b69de52085ac3f99996e432d02aa95321073fd7186be4e8602da28644e2e3",
+      "record": {
+        "completed": 1,
+        "expected": 1,
+        "inventory_complete": true,
+        "integrity": "PASS",
+        "numerical": "FAIL",
+        "scientific": "PASS",
+        "reason": "numerical",
+        "qualification": false
+      }
+    },
+    "output-collision\\SUPERVISOR_STOP_1795776736567336100.json": {
+      "sha256": "db84b7c0253842a6bbbab1999c519a536c3426c4a1bc9d4768dfd43493096c80",
+      "record": {
+        "completed": 0,
+        "expected": 82,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "NOT_ESTABLISHED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "CHILD_FAILURE",
+        "qualification": false
+      }
+    },
+    "resource-account\\SUPERVISOR_STOP_1795776735272185300.json": {
+      "sha256": "8d482c1cf300e8664d80077e1587b75b79ab262afe95d2c8691f82fc0d91e9ee",
+      "record": {
+        "completed": 0,
+        "expected": 82,
+        "inventory_complete": false,
+        "integrity": "INCOMPLETE",
+        "numerical": "NOT_ESTABLISHED",
+        "scientific": "NOT_ESTABLISHED",
+        "reason": "RuntimeError('RESOURCE_STOP')",
+        "qualification": false
+      }
+    },
+    "scientific\\EXECUTION_START.json": {
+      "sha256": "15803f5ccba478bcbdb3516465ea1782142bd92e650aa45ece0c43e8519085ee",
+      "record": {
+        "id": "MOCK_ONLY",
+        "optimizer_stub": true
+      }
+    },
+    "scientific\\EXECUTION_TERMINAL.json": {
+      "sha256": "923e1407bf0e48bc33d6433c6041f28af07f545cf2383e0b4af12b76efcf368f",
+      "record": {
+        "completed": 1,
+        "expected": 1,
+        "inventory_complete": true,
+        "integrity": "PASS",
+        "numerical": "PASS",
+        "scientific": "FAIL",
+        "reason": "scientific",
+        "qualification": false
+      }
+    },
+    "success\\EXECUTION_START.json": {
+      "sha256": "15803f5ccba478bcbdb3516465ea1782142bd92e650aa45ece0c43e8519085ee",
+      "record": {
+        "id": "MOCK_ONLY",
+        "optimizer_stub": true
+      }
+    },
+    "success\\EXECUTION_TERMINAL.json": {
+      "sha256": "f9e6e7b2c45d2706bd0d9bfe9c5a3a538a149b0fda754c55ae67d1d1bc23b6e5",
+      "record": {
+        "completed": 1,
+        "expected": 1,
+        "inventory_complete": true,
+        "integrity": "PASS",
+        "numerical": "PASS",
+        "scientific": "PASS",
+        "reason": null,
+        "qualification": true
+      }
+    },
+    "child-failure-account\\commands\\1795776732624003000.complete.json": {
+      "sha256": "37654e433ca10bc4e847e7204334d7700d9d16a6a5968484c2642efdf30451b6",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\child-failure",
+          "--scenario",
+          "child-failure"
+        ],
+        "exit_code": 1,
+        "reason": "CHILD_FAILURE",
+        "cpu_seconds_sampled": 0.859375,
+        "wall_seconds": 1.2969999997876585,
+        "peak_process_tree_rss_bytes_sampled": 67121152,
+        "sampling_seconds": 0.02,
+        "child_pid": 88108,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "child-failure-account\\commands\\1795776732624003000.start.json": {
+      "sha256": "4ea662c3c32ccc6ef904ad79050860905c6431fd54f0e497b5100f66eaee9284",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\child-failure",
+          "--scenario",
+          "child-failure"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776732.6240032
+      }
+    },
+    "collision-account\\commands\\1795776733943590700.complete.json": {
+      "sha256": "23b7703e762f12ceadd4e70efcab13eb871416f0bcd3b42f40898d62ce54394d",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\collision",
+          "--scenario",
+          "collision"
+        ],
+        "exit_code": 1,
+        "reason": "CHILD_FAILURE",
+        "cpu_seconds_sampled": 0.6875,
+        "wall_seconds": 1.2659999998286366,
+        "peak_process_tree_rss_bytes_sampled": 67166208,
+        "sampling_seconds": 0.02,
+        "child_pid": 100924,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "collision-account\\commands\\1795776733943590700.start.json": {
+      "sha256": "68426d5dcf93e6f2f12934ee7be8cbc89d27ada4241f16140d7fb0ce5cd2777c",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\collision",
+          "--scenario",
+          "collision"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776733.9435906
+      }
+    },
+    "incomplete-account\\commands\\1795776731329659700.complete.json": {
+      "sha256": "3108c2ff18aad6c16446b93dbbb5288f84cf8dd9fd7663680dc1640c7866c4c1",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\incomplete",
+          "--scenario",
+          "incomplete"
+        ],
+        "exit_code": 0,
+        "reason": null,
+        "cpu_seconds_sampled": 0.8125,
+        "wall_seconds": 1.2809999999590218,
+        "peak_process_tree_rss_bytes_sampled": 67219456,
+        "sampling_seconds": 0.02,
+        "child_pid": 72728,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "incomplete-account\\commands\\1795776731329659700.start.json": {
+      "sha256": "cf843f4559eebd659e904d890b43e20e32ecca486322be51f30480f0b766ab8a",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\incomplete",
+          "--scenario",
+          "incomplete"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776731.3296597
+      }
+    },
+    "interrupt-account\\commands\\1795776735344687900.complete.json": {
+      "sha256": "9021007e6234443982c329b58576383ceefa5721f5e406dffa992eae2d500456",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\interrupt",
+          "--scenario",
+          "sleep"
+        ],
+        "exit_code": 1,
+        "reason": "KeyboardInterrupt('mock supervisor interruption')",
+        "cpu_seconds_sampled": 0.875,
+        "wall_seconds": 1.203999999910593,
+        "peak_process_tree_rss_bytes_sampled": 66985984,
+        "sampling_seconds": 0.02,
+        "child_pid": 78500,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "interrupt-account\\commands\\1795776735344687900.start.json": {
+      "sha256": "5b2ee6c398cdcd5ed32c869a9e9184a6e8d18d13f047128f1ee1e84f3d3e6760",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\interrupt",
+          "--scenario",
+          "sleep"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776735.344688
+      }
+    },
+    "launch\\commands\\1795776735233224400.complete.json": {
+      "sha256": "36b81099c7be2bbdfb7ee01cfb5b20fd2d44e45192e683ca87d5853e94edb2fd",
+      "record": {
+        "command": [
+          "THIS_EXECUTABLE_DOES_NOT_EXIST"
+        ],
+        "exit_code": null,
+        "reason": "FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)",
+        "cpu_seconds_sampled": 0,
+        "wall_seconds": 0.0,
+        "peak_process_tree_rss_bytes_sampled": 0,
+        "sampling_seconds": 0.02,
+        "child_pid": null,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "launch\\commands\\1795776735233224400.start.json": {
+      "sha256": "d4bbaf1646ad31dcea7030e589b9bdae385eff5acec07bbaf018552a54065c1d",
+      "record": {
+        "command": [
+          "THIS_EXECUTABLE_DOES_NOT_EXIST"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776735.2332244
+      }
+    },
+    "numerical-account\\commands\\1795776729999451300.complete.json": {
+      "sha256": "c15cd4b2dd139057ba685c17348c6078ed87b4bee5ad38a6db05986c2675547b",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\numerical",
+          "--scenario",
+          "numerical"
+        ],
+        "exit_code": 0,
+        "reason": null,
+        "cpu_seconds_sampled": 0.8125,
+        "wall_seconds": 1.3119999999180436,
+        "peak_process_tree_rss_bytes_sampled": 67108864,
+        "sampling_seconds": 0.02,
+        "child_pid": 84088,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "numerical-account\\commands\\1795776729999451300.start.json": {
+      "sha256": "a49546e61da76e1914e6498c7844da396fd564e97db54c89f68af07abffb9a9d",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\numerical",
+          "--scenario",
+          "numerical"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776729.9994514
+      }
+    },
+    "output-collision\\commands\\1795776736567336100.complete.json": {
+      "sha256": "1035bb40fe67f374fb6f80250b2e901a9fc6c3efdfeb4794d34995708fc6f9b7",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\success",
+          "--scenario",
+          "success"
+        ],
+        "exit_code": 1,
+        "reason": "CHILD_FAILURE",
+        "cpu_seconds_sampled": 0.875,
+        "wall_seconds": 1.3279999997466803,
+        "peak_process_tree_rss_bytes_sampled": 67215360,
+        "sampling_seconds": 0.02,
+        "child_pid": 87296,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "output-collision\\commands\\1795776736567336100.start.json": {
+      "sha256": "d109a45381fa3ad07960a4687600566b2dd67d1ef6521a1d395f176513e75c7b",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\success",
+          "--scenario",
+          "success"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776736.567336
+      }
+    },
+    "resource-account\\commands\\1795776735272185300.complete.json": {
+      "sha256": "7e439e83f66e0a0a41bdb25f21730292d43c52e3757bb9fd65119d629769e139",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\resource",
+          "--scenario",
+          "sleep"
+        ],
+        "exit_code": 1,
+        "reason": "RuntimeError('RESOURCE_STOP')",
+        "cpu_seconds_sampled": 0.03125,
+        "wall_seconds": 0.06300000008195639,
+        "peak_process_tree_rss_bytes_sampled": 8568832,
+        "sampling_seconds": 0.02,
+        "child_pid": 78548,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "resource-account\\commands\\1795776735272185300.start.json": {
+      "sha256": "98cb4e7a82eb56950366e865593838389d2f14c9a2e1c3cb2b0f79faa267f7bc",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\resource",
+          "--scenario",
+          "sleep"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776735.2721853
+      }
+    },
+    "scientific-account\\commands\\1795776728726573500.complete.json": {
+      "sha256": "8f2694d40a896845d6855c5ed7daf43e855cc6a77795e15fbec854f637bab649",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\scientific",
+          "--scenario",
+          "scientific"
+        ],
+        "exit_code": 0,
+        "reason": null,
+        "cpu_seconds_sampled": 0.84375,
+        "wall_seconds": 1.2659999998286366,
+        "peak_process_tree_rss_bytes_sampled": 67264512,
+        "sampling_seconds": 0.02,
+        "child_pid": 89892,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "scientific-account\\commands\\1795776728726573500.start.json": {
+      "sha256": "1bca7abb5aa7115d925a2144c581152914380954179cbd482f9a9996fcc5a525",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\scientific",
+          "--scenario",
+          "scientific"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776728.7265735
+      }
+    },
+    "success-account\\commands\\1795776727414741800.complete.json": {
+      "sha256": "18619dfc14666b4119515e47af35cb2e5c4f4fb89cf31b4eebb6c90249acb61c",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\success",
+          "--scenario",
+          "success"
+        ],
+        "exit_code": 0,
+        "reason": null,
+        "cpu_seconds_sampled": 0.96875,
+        "wall_seconds": 1.3119999999180436,
+        "peak_process_tree_rss_bytes_sampled": 67223552,
+        "sampling_seconds": 0.02,
+        "child_pid": 63428,
+        "child_reaped": true,
+        "scope": "process tree; retained observed CPU per PID/create-time; startup/exit CPU and short-lived processes/transient RSS may be missed"
+      }
+    },
+    "success-account\\commands\\1795776727414741800.start.json": {
+      "sha256": "341c2a91e1d479eb2082788d5598fd8d23e2d6058783e6cd1b8c906af11637b9",
+      "record": {
+        "command": [
+          "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\labs\\decision_functions_uncapped_single_history_confirmation_v1\\cli.py",
+          "mock",
+          "--output-root",
+          "C:\\Users\\David\\.cache\\decision_functions\\uncapped_single_history_confirmation_v1_preflight_02\\success",
+          "--scenario",
+          "success"
+        ],
+        "prior_cpu": 0,
+        "time": 1795776727.4147418
+      }
+    }
+  }
+}

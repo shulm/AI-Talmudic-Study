@@ -1,5 +1,15 @@
 # Research handoff — updated 2026-11-25
 
+## Completed single-history confirmation — draft PR #32, 2026-11-27
+
+Executed I0–I4 from assignment ae74b9e5604b4905804d25b296097467f6794f14. Pre-fit46b33884885f59a830c8a511091c39e9dcf51f0d was published and read back before generating U000. Read [results](research/decision_functions_2026-11-24/runs/uncapped_single_history_confirmation_v1/RESULTS.md), [handoff](research/decision_functions_2026-11-24/runs/uncapped_single_history_confirmation_v1/NEXT_HANDOFF.md), [verification](research/decision_functions_2026-11-24/runs/uncapped_single_history_confirmation_v1/VERIFICATION.json), and [resources](research/decision_functions_2026-11-24/runs/uncapped_single_history_confirmation_v1/RESOURCE_USAGE_FINAL.json).
+
+**VERIFIED_COMPLETE / PRIMARY_FAILURE**, qualification false. All82 worlds completed:40 H1 PASS,42 FAIL,0 UNRESOLVED; required72. Exact one-sided binomial p=.99999999992784; one-sided95% lower bound=.39242887100891427. H1 mean gain=.514928104, recovery=.771076282, contrast NRMSE=.502822336, inactive excess=.000361043. All42 H1 failures fail contrast; U056 also fails inactive excess at.018628829239286437. H2 passes42, both histories pass25;39 aggregate successes include14 hiding a history failure. No secondary rescue.
+
+Exactly246 shared fits,656 wrappers,31,488 personal solves,2,788 probability arrays and328 log arrays; no retries. All32,229 frozen verification groups and31,817 supplementary receipt/inference checks pass;2,271 historical blobs preserved. Accounted usage1,856.0625 sampled CPU seconds and158,326,784 bytes sampled peak process-tree RSS, with sampling/orchestration limitations disclosed. Preserve PR20 as INCOMPLETE / NUMERICALLY_UNRESOLVED and PR27 as post hoc, including E/101's failure and its reporting recovery. No human/text evaluation, downloads, paid calls, PR18 execution, corpus changes or merge.
+
+This ends the automatic same-family oracle-generator sequence. The handoff proposes only one next empirical text-representation/estimated-g admission study, with outcome-blind TID-8 CommitmentBank admission prerequisites and fixed B1/B2/B3 controls. Do not start it, retune this method or generate replacement worlds. Stop for review at [draft PR #32](https://github.com/shulm/AI-Talmudic-Study/pull/32).
+
 ## PR #27 reviewed; next assignment I0–I4 — 2026-11-26
 
 Read the [review](research/decision_functions_2026-11-24/reviews/post_es_diagnostics_v1_2026-11-26/REVIEW.md), [next agent prompt](research/decision_functions_2026-11-24/reviews/post_es_diagnostics_v1_2026-11-26/NEXT_AGENT_PROMPT.md), [fixed confirmation protocol](research/decision_functions_2026-11-24/reviews/post_es_diagnostics_v1_2026-11-26/CONFIRMATION_PROTOCOL.md), and [machine design](research/decision_functions_2026-11-24/reviews/post_es_diagnostics_v1_2026-11-26/DESIGN.json). This is the next modeling assignment after the PR #27 review stop; read its immutable assignment SHA from issue #2 before claiming it.
