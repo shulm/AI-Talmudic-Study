@@ -1,0 +1,94 @@
+{
+  "artifact_kind": "independent_exact_version_single_edge_delta_verification",
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "bounded_correction_outcome": "RH-ATOMIC-PREMISE-EDGE-01_RESOLVED_AT_PINNED_VERSION",
+  "execution": {
+    "agent_id": "/root/blind_review",
+    "model_id": null,
+    "route": "interactive_agent"
+  },
+  "review_mode": "Independent nonblind correction verification; no new blind reading.",
+  "snapshot_sha256": "70289b2e7db5c109fda8a29821a7a52a08d0e08d1dcce54c1811c223a2a2958c",
+  "bindings": {
+    "RESPONSE.json": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_delta_20261127\\RESPONSE.json",
+      "sha256": "5379e5c3c12fba3748633c25a94db2749c6868bf7af845b51498960d5f9a3895"
+    },
+    "proposal.json": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_delta_20261127\\proposal.json",
+      "sha256": "3033457803a2874ea7e2a93f5e37119cec55cab41e195fff838c29c2a2ed983c"
+    }
+  },
+  "prior_verdict": {
+    "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\review_correction_verification_20261126\\RH_VERDICT.json",
+    "sha256": "f14fee3744b19f756ba5128690b11c334d096dbd3c42d0dc0ef57036b6433e0d",
+    "preserved": true
+  },
+  "checks": {
+    "snapshot_sha256": "70289b2e7db5c109fda8a29821a7a52a08d0e08d1dcce54c1811c223a2a2958c",
+    "base_snapshot_sha256": "bca6251d36e7add916efa684013eb2a6fcb701e500f42dbc9d9e17c214f3fd79",
+    "prior_reviewed_snapshot_sha256": "685478e47cbad58e38ac2a3436738429439adaa04b4e4d4f222905f883e93620",
+    "proposal_sha256": "3033457803a2874ea7e2a93f5e37119cec55cab41e195fff838c29c2a2ed983c",
+    "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+    "new_rows": 1,
+    "new_evidence_spans_verified": 1,
+    "prior_bounded_rows_checked": 72,
+    "prior_bounded_rows_byte_content_unchanged": 71,
+    "prior_bounded_row_status_only_change": 1,
+    "all_other_base_records_unchanged": true,
+    "correct_last_to_eighth_support_unchanged": true,
+    "active_endpoints_and_coverage_references_valid": true,
+    "coverage_added_by_delta": 0,
+    "completed_per_layer": {
+      "reconciliation": 183,
+      "utterances": 183,
+      "structure": 183,
+      "claims": 183,
+      "edges": 183,
+      "questions": 183,
+      "attributions": 183,
+      "positions": 183
+    },
+    "newer_batches010_011_semantically_reviewed": false
+  },
+  "record_review": {
+    "id": "rh.e3.review20261127.last_day_qualification",
+    "record_sha256": "0e5b346477311517b5c3992572edfd0e491d5af6e271827e3bd73b8107b26452",
+    "decision": "supported_with_stated_scope",
+    "interpretation": "At4b:14 the explicit ויום טוב האחרון של חג includes the last festival day alongside the general כל הרגל clause. The new last-day→throughout qualification edge is acceptable as an inclusive scope clarification, not a restriction, independent proof of eighth-day compensation, or assertion of final halakha. The separate last-day→eighth-compensation support remains unchanged and supplies that narrower conclusion.",
+    "evidence": [
+      {
+        "end_char": 73,
+        "quote": "דתנן מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג",
+        "segment_id": "seg_aa765167c5a1af35d4b1",
+        "start_char": 0,
+        "ref": "Rosh Hashanah 4b:14",
+        "source_index": [
+          7,
+          13
+        ]
+      }
+    ]
+  },
+  "remaining_issues_within_one_row_repair": [],
+  "unresolved_integrity_critical_count_within_repair": 0,
+  "prior_supported_scope_preservation": "All72 earlier bounded correction rows checked:71 unchanged in all fields; the defective edge alone changes release_state to superseded. Prior reviewer caveats, atomic claims, conditions, transmissions and correctly targeted last-day support remain intact.",
+  "limitations": [
+    "Only single-edge correction and preservation of earlier bounded review are accepted provisionally.",
+    "Batches010/011 and their new semantic scope are not accepted or reviewed by this delta;183/pass is production coverage only.",
+    "No new315-core comparison, whole-tractate acceptance, human certification, source-pass coverage or task eligibility.",
+    "Original685 verdict remains immutable REWORK_TARGETED for that exact version; this delta resolves the named issue only at70289."
+  ],
+  "tractate_accepted": false,
+  "full_review_receipt": false,
+  "human_certification": false,
+  "ml_eligible": false,
+  "task_eligibility": {
+    "retrieval": false,
+    "segmentation": false,
+    "attribution": false,
+    "argument_extraction": false,
+    "qa": false,
+    "scholar_choice": false
+  }
+}

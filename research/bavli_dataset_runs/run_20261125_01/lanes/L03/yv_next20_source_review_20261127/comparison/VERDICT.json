@@ -1,0 +1,54 @@
+{
+  "verdict": "REWORK_TARGETED",
+  "snapshot_sha256": "bcc3be6031cc0a19e1f31b1182be44a41771b2e4ead8c8c95e88d460da012e73",
+  "proposal_sha256": "c1c1a59dded49beb34b9aa6ff8169b04a05ba2562c65e83935ef01b910375184",
+  "reader_sha256": "abb7d9543d444082b1d1c5f7ea27d89d739a120b79969d3f72df1f4fc3863f2a",
+  "agent_id": "/root/blind_review",
+  "model": null,
+  "required_repairs": [
+    "YV010-THRESHOLD-EDGE"
+  ],
+  "findings": [
+    {
+      "id": "YV010-THRESHOLD-EDGE",
+      "snapshot_sha256": "bcc3be6031cc0a19e1f31b1182be44a41771b2e4ead8c8c95e88d460da012e73",
+      "category": "premise_target_scope",
+      "severity": "medium",
+      "status": "confirmed localized repair required",
+      "record_ids": [
+        "yev010.individual_threshold_support",
+        "yev010.leader_threshold_support",
+        "yev010.individual_idol_source0",
+        "yev010.individual_idol_source1",
+        "yev010.individual_idol_source2"
+      ],
+      "source_refs": [
+        "Yevamot9a:5",
+        "Yevamot9a:7–8"
+      ],
+      "judgment": "The source premises derive karet/hattat liability criteria, but these five support edges target claims specifying animal species (ewe/female goat, male goat, female goat). The derivations do not establish species. Conditions on target rows do not make their full animal-offering propositions follow from threshold-only premises.",
+      "required_action": "Keep supported offering claims unchanged. Rewire to separate individual/leader and idolatry individual/leader/priest threshold claims, or replace these edges with explicitly scoped qualification relations applying only liability criteria. Preserve exact source evidence and update edge coverage immutably.",
+      "unaffected": "Offering tables, positive/negative yibbum conditions, Rabbi/sages derivation directions, context responses remain substantively represented; full checks still in progress."
+    }
+  ],
+  "core_scope": "Yevamot8b10–9a13,20cores",
+  "core_findings_represented": 31,
+  "core_findings_total": 31,
+  "new_rows": 199,
+  "completed_per_pass": 198,
+  "source_segments": 3869,
+  "remaining_per_pass": 3671,
+  "context_coverage_added": 0,
+  "open_tails": [
+    "yev010.sacrifices"
+  ],
+  "next_ref": "Yevamot9a:14",
+  "ml_eligible": false,
+  "task_eligible_count": 0,
+  "new_random_cohort_credit": 0,
+  "limitations": [
+    "Five edge records are one localized threshold-to-species scope defect. Supported offering claims remain unchanged.",
+    "Context9a14–18 structured but uncounted; reuse next batch.",
+    "Composite findings do not establish exhaustive atomic recall. No whole tractate acceptance or human certification."
+  ]
+}

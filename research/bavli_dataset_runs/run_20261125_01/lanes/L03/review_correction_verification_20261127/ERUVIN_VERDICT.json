@@ -1,0 +1,227 @@
+{
+  "artifact_kind": "independent_exact_version_correction_verification",
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "bounded_correction_outcome": "ER-WIDTH-CONTEXT_RESOLVED_AT_PINNED_VERSION",
+  "execution": {
+    "agent_id": "/root/blind_review",
+    "model_id": null,
+    "route": "interactive_agent"
+  },
+  "review_mode": "Independent correction verification, not blind source-first reading; producer rows and prior comparison exposed.",
+  "snapshot_sha256": "6d0d2c6635723481dec4f853702b48908057bbb439c18c8734000dd9f0766680",
+  "source_sha256": "704da1ef8bd3b5748fc57c714c783744b67a16687fd1a83afecde18786953fed",
+  "bindings": {
+    "RESPONSE.json": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\eruvin\\review_correction_20261126\\RESPONSE.json",
+      "sha256": "b37eeb7b0c00dd72bc95d1d7a29e0f41aad83a07d3b1456cfdf13c1743d24d96"
+    },
+    "proposal.json": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\eruvin\\review_correction_20261126\\proposal.json",
+      "sha256": "59681da7ab3e13f8a2abd2e4d41adc5138cc259ca71417d02b54ebd3a4b7d583"
+    },
+    "reader_frozen.json": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\eruvin\\review_correction_20261126\\reader_frozen.json",
+      "sha256": "54b0d0919bbfd68d73e0a407a7764102958a157f9f45382a96c12a01dc642c4e"
+    },
+    "comparison_frozen.json": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\eruvin\\review_correction_20261126\\comparison_frozen.json",
+      "sha256": "019e1b313538c18de5ee3c10a48684f9013a70fefd7fc6b26904789f8404e115"
+    },
+    "verdict_frozen.json": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\eruvin\\review_correction_20261126\\verdict_frozen.json",
+      "sha256": "0a4c23c83ea42cd84fd9c4f452f8558e54eab1a908f438857dc7412aa2950b5f"
+    }
+  },
+  "checks": {
+    "snapshot_sha256": "6d0d2c6635723481dec4f853702b48908057bbb439c18c8734000dd9f0766680",
+    "source_sha256": "704da1ef8bd3b5748fc57c714c783744b67a16687fd1a83afecde18786953fed",
+    "proposal_sha256": "59681da7ab3e13f8a2abd2e4d41adc5138cc259ca71417d02b54ebd3a4b7d583",
+    "inventory_segments_verified": 3646,
+    "snapshot_records": 694,
+    "snapshot_evidence_spans_verified": 813,
+    "new_rows": 4,
+    "new_evidence_spans_verified": 5,
+    "superseded_rows_preserved": 3,
+    "original_correction_unchanged": true,
+    "opening_claim_and_position_link_correction": true,
+    "active_typed_dependencies_valid": true,
+    "coverage_references_active": true,
+    "coverage_unchanged": true,
+    "completed_per_layer": {
+      "reconciliation": 110,
+      "edges": 110,
+      "positions": 110,
+      "attributions": 110,
+      "utterances": 110,
+      "questions": 110,
+      "claims": 110,
+      "structure": 110
+    },
+    "source_and_frozen_artifact_hashes_verified": true
+  },
+  "row_reviews": [
+    {
+      "record_id": "er.review20261126.er.opening.001.width.form",
+      "record_sha256": "ed8a8c851bf1cc734c57beeb60ab08133cccf7f7e913b3deecff22400e2642b5",
+      "decision": "supported_with_stated_scope",
+      "interpretation": "Supported printed Mishnah exception: doorway form and width over ten remain conditions. Scope names contrary Rav reading without replacing printed text or asserting final ruling.",
+      "evidence": [
+        {
+          "end_char": 79,
+          "quote": "והרחב מעשר אמות ימעט ואם יש לו צורת הפתח אע\"פ שהוא רחב מעשר אמות אין צריך למעט:",
+          "segment_id": "seg_9cbe185f03a9c938d62a",
+          "start_char": 0,
+          "ref": "Eruvin 2a:2",
+          "source_index": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "er.review20261126.er.opening.001.p.width.form",
+      "record_sha256": "6dbb7ce038295300455430b8755ab8f5ccc83c24afa8ec9f7818656229f8d92f",
+      "decision": "supported_with_stated_scope",
+      "interpretation": "Anonymous Mishnah holder remains distinct from Rav. Direct correction link and explicit local status make conflict available from position retrieval. 2b:15 evidence supports caveat, not attribution of exemption to Rav.",
+      "evidence": [
+        {
+          "end_char": 79,
+          "quote": "והרחב מעשר אמות ימעט ואם יש לו צורת הפתח אע\"פ שהוא רחב מעשר אמות אין צריך למעט:",
+          "segment_id": "seg_9cbe185f03a9c938d62a",
+          "start_char": 0,
+          "ref": "Eruvin 2a:2",
+          "source_index": [
+            2,
+            1
+          ]
+        },
+        {
+          "end_char": 100,
+          "quote": "מידי הוא טעמא אלא לרב הא מתני ליה רב יהודה לחייא בר רב קמיה דרב אינו צריך למעט וא\"ל אתנייה צריך למעט",
+          "segment_id": "seg_6290b8821100ff576581",
+          "start_char": 0,
+          "ref": "Eruvin 2b:15",
+          "source_index": [
+            3,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "er.review20261126.er.opening.001.e.width.exception",
+      "record_sha256": "a4ae6cfa9e74f55841b0dce0c8390a0015aceceb1e4a7fcbad49dd40188516c2",
+      "decision": "supported_with_stated_scope",
+      "interpretation": "Printed exception qualifies printed width rule in correct direction. Uncertainty confines edge to printed Mishnah.",
+      "evidence": [
+        {
+          "end_char": 79,
+          "quote": "והרחב מעשר אמות ימעט ואם יש לו צורת הפתח אע\"פ שהוא רחב מעשר אמות אין צריך למעט:",
+          "segment_id": "seg_9cbe185f03a9c938d62a",
+          "start_char": 0,
+          "ref": "Eruvin 2a:2",
+          "source_index": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "er.review20261126.reported_textual_correction",
+      "record_sha256": "ae7f8f172d3e814137102980559b64ab800ca05c6ef156fb4b2b549340ae9d18",
+      "decision": "supported_with_stated_scope",
+      "interpretation": "2b:14 objects to Temple analogy; 2b:15 answers under Rav through instruction to teach צריך למעט. Report-to-exception edge is a reported textual correction, not global supersession. Rav Yehuda teaches Hiyya bar Rav before Rav; Hiyya is recipient, not correction authority.",
+      "evidence": [
+        {
+          "end_char": 100,
+          "quote": "מידי הוא טעמא אלא לרב הא מתני ליה רב יהודה לחייא בר רב קמיה דרב אינו צריך למעט וא\"ל אתנייה צריך למעט",
+          "segment_id": "seg_6290b8821100ff576581",
+          "start_char": 0,
+          "ref": "Eruvin 2b:15",
+          "source_index": [
+            3,
+            14
+          ]
+        }
+      ]
+    }
+  ],
+  "context_refs": [
+    "Eruvin 2a:1–14",
+    "Eruvin 2b:1–16",
+    "Eruvin 3a:1–15"
+  ],
+  "independently_rechecked_source_scope": "Four correction records; original2a:2 and2b:14–15 plus Temple-analogy context. No new probability cohort or broad semantic review.",
+  "reader_corrections_preserved": [
+    "c01/c03/c05/c06 omit condition arrays although height/width conditions occur in prose. Producer conditions preserve these; the two nonempty reader arrays are not a condition-completeness denominator.",
+    "c08 combines three propositions; c13/c14/c15 combine sanctity premises and verse interpretations. Producer separate claims are not hallucinations and reader fifteen is not an atomic gold standard.",
+    "c09/c10 identify Rav as explaining the views, not as independently ruling with either side. Producer distinguishes Rav Yehuda transmitter, Rav origin, Sages and Rabbi Yehuda holders.",
+    "q02 is explicitly editorial reconstruction. Missing an identical producer question is not an explicit-source omission.",
+    "c25 labels Rav misled; this is Rav Hisda’s statement, not an independently established historical fact or recorded Rav retraction. Producer attribution/status is more precise.",
+    "Reader c27 shorthand tells Rav Yehuda omits Hiyya bar Rav as recipient in the quoted narrative; producer retains Hiyya and distinguishes instruction from reported authority.",
+    "No reader relation uses opening-core evidence. This is reader graph sparsity: producer explicitly records q01 answers, width qualification and derivational support. Zero reader core edges cannot establish edge completeness."
+  ],
+  "uncertainties_preserved_not_newly_resolved": [
+    {
+      "issue": "Raw source has Rav Yehuda in one phrase amid Rabbi Yehuda discussion; do not silently normalize original or treat it as a new named position.",
+      "refs": [
+        "Eruvin 2b:10"
+      ]
+    },
+    {
+      "issue": "Report initially names Rav; continuation classifies amaltera teaching as baraita. Preserve report and local challenge without flattening transmission.",
+      "refs": [
+        "Eruvin 3a:4",
+        "Eruvin 3a:5",
+        "Eruvin 3a:6"
+      ]
+    },
+    {
+      "issue": "Megufot retained as shut; detailed physical reconstruction is not certified.",
+      "refs": [
+        "Eruvin 6b:8"
+      ]
+    },
+    {
+      "issue": "Rav Sheshet interlocutor alternates Rav Shmuel bar Abba / Rav Yosef bar Abba; neither is Shmuel himself.",
+      "refs": [
+        "Eruvin 7b:3"
+      ]
+    },
+    {
+      "issue": "Reconciliation permits Rav attribution; retrospective discussion of initial assumption is not a final dispute reinstatement.",
+      "refs": [
+        "Eruvin 7b:4",
+        "Eruvin 8a:1"
+      ]
+    },
+    {
+      "issue": "Two versions are separate occurrences of reporting within one local question; no independent topic double-count.",
+      "refs": [
+        "Eruvin 8a:12"
+      ]
+    }
+  ],
+  "remaining_issues_within_four_row_repair": [],
+  "unresolved_integrity_critical_count_within_repair": 0,
+  "limitations": [
+    "Only this bounded correction accepted provisionally; extraction remains110/3646 per pass at pinned version.",
+    "Prior ten-core comparison and pending twenty probability cores not expanded.",
+    "Other reader caveats preserved; unrelated later uncertainties not re-adjudicated.",
+    "No production mutation, human certification, full tractate acceptance or task eligibility."
+  ],
+  "tractate_accepted": false,
+  "full_review_receipt": false,
+  "human_certification": false,
+  "task_eligibility": {
+    "retrieval": false,
+    "segmentation": false,
+    "attribution": false,
+    "argument_extraction": false,
+    "qa": false,
+    "scholar_choice": false,
+    "ml": false
+  }
+}

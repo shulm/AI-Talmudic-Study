@@ -1,0 +1,69 @@
+{
+  "status": "TARGETED_CORRECTION_AWAITING_INDEPENDENT_RECHECK",
+  "review_findings_addressed": [
+    "N01",
+    "N02"
+  ],
+  "snapshot_sha256": "e2896b8c1d248f54ff5e233460c4fd5183f6c31e18302f425f262828d0e4a486",
+  "proposal_sha256": "83d804b00c4251ac6e2e002f2702dd52c9909afca7f5935da851875d41b99c2f",
+  "source_sha256": "29a2a4347221c24b248de9b131523cb8354dcbf78d7975167c12ab7c13d43bef",
+  "owner": {
+    "epoch": 1,
+    "owner": "/root/lead_l01_l03"
+  },
+  "execution": {
+    "agent_id": "/root/yevamot",
+    "route": "interactive_agent",
+    "model_id": null
+  },
+  "scope": "Nazir 2a:1–10 only; continuation qualifications 3a:11–3b:6",
+  "completed_by_layer": {
+    "structure": 10,
+    "utterances": 10,
+    "claims": 10,
+    "attributions": 10,
+    "questions": 10,
+    "positions": 10,
+    "edges": 10,
+    "reconciliation": 10
+  },
+  "source_segments": 1299,
+  "remaining_per_layer": 1289,
+  "next_source": "Nazir 2a:11",
+  "open_tails": [
+    "naz001.order"
+  ],
+  "preserved_superseded_records": 58,
+  "active_records": 135,
+  "total_records": 193,
+  "changes": "34 unrelated uncertainty rows cleaned; bird metadata deduplicated and conditions structured; all transitive dependencies revised (58 revisions total). 18 context records add distinct qualifications, positions, edges and scoped attributions. Fresh copied lists in correction helpers.",
+  "export_directory": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L03\\bavli_nazir\\exports\\correction_001_20261127",
+  "export_manifest_sha256": "887b7ec49ab83aec89d2c7ce6722e7286dbe5e705cb53cd8a3a2cab6b156a45e",
+  "export_files": {
+    "attributions.jsonl": "78f37892ba4db077fc0730767a0005c756e56487b5e6f7c4dc9d896316470c37",
+    "claims.jsonl": "5de1c64032dd6263eb66999737c368c25de6ee17db8f95d41c7a46ec67ad309e",
+    "coverage.json": "109fc11806189d09d89d75d03c9f11d794da16a709b154c89f1cfd625228c8a1",
+    "edges.jsonl": "b8b1a2bf3966dbd352501ed670173ca282557012fe2ec68711783a5712273c79",
+    "manifest.json": "887b7ec49ab83aec89d2c7ce6722e7286dbe5e705cb53cd8a3a2cab6b156a45e",
+    "positions.jsonl": "29b963017a3c1a0e813df38655134772f498d08da3c5c509670a47a62100bda6",
+    "qualification.json": "1c6c083b71a951b69958fa2c1dd2414d6b103b16e60308889d1601f11f8f3d93",
+    "questions.jsonl": "16b31d2e6e52a6a61eb6621caa11c5e3b4714513d3d10b06abe7e7200b9be578",
+    "structure.jsonl": "7672a5c45119620558012d8d77dbbfee963a7356fad5a99ab29ef6268cbb92f4",
+    "unresolved.json": "321c0d2af93b565e6da14aa1174edc571742658ff919716f7282144d748a483d",
+    "utterances.jsonl": "b7386ce30686a52da258a36f09a3eea267411d25f769c14ef12aaabb6ead46bf",
+    "per_sugya\\b09ffbe1d5e52d2596056d587e7eb79cc2fa9b6d434b39319b19eaad67728a27.json": "e0422755406fc6344da4f014ea881af6f7714e7f0d5e67e19afe948141a61017",
+    "per_sugya\\d1679ac4892b70a7ca043987b85579445b88d04158afd39f841643f11e5ca01b.json": "17fda3910fe8689b173bceae6fef6d5bca45a3e9e845ab1f22602486b0cee66a",
+    "per_sugya\\d4f4b5cb803cc02fe12cd89619077761c8df1d3cf71085e88b93d5138b7e1791.json": "fc564e3b20a6a2950c2cbe97f97bf1a06bfa3a9788edf474a2a48ae3fb19b5ca"
+  },
+  "replay_pass": true,
+  "coverage_increase": 0,
+  "independent_recheck": false,
+  "ml_eligible": false,
+  "tractate_delivered": false,
+  "unresolved": [
+    "Ordering structure naz001.order remains open at core boundary.",
+    "N03 shared editorial question and choice-task admission deferred.",
+    "No adjudication selecting Rabbi Yohanan over Resh Lakish."
+  ],
+  "resume": "Independent reviewer should recheck exact corrected snapshot against frozen verdict b3f2608959583881d0936a09cbcb56e8aeb358ad836c3057b70765c989c2f63a. Do not rerun initial builder or correction builder against changed CURRENT. Resume production only after lead review wave instruction at 2a:11. Replay/export via frozen runner; existing owner epoch1 unchanged. No commits or merge."
+}

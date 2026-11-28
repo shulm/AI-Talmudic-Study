@@ -1,0 +1,2121 @@
+{
+  "artifact_kind": "independent_exact_version_correction_verification",
+  "verdict": "REWORK_TARGETED",
+  "execution": {
+    "agent_id": "/root/blind_review",
+    "model_id": null,
+    "route": "interactive_agent"
+  },
+  "review_mode": "Independent nonblind correction verification; producer correction and another frozen reader/comparison exposed. Original315-core source-first readings remain untouched.",
+  "snapshot_sha256": "685478e47cbad58e38ac2a3436738429439adaa04b4e4d4f222905f883e93620",
+  "checks": {
+    "snapshot_sha256": "685478e47cbad58e38ac2a3436738429439adaa04b4e4d4f222905f883e93620",
+    "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+    "inventory_segments_checked": 1025,
+    "new_rows": 72,
+    "new_rows_active": 71,
+    "new_rows_superseded_in_same_correction": 1,
+    "dispositions": 67,
+    "evidence_counts": {
+      "snapshot": 1175,
+      "new_rows": 78,
+      "reader": 137
+    },
+    "coverage_completed_per_layer": {
+      "reconciliation": 144,
+      "utterances": 144,
+      "positions": 144,
+      "questions": 144,
+      "claims": 144,
+      "edges": 144,
+      "structure": 144,
+      "attributions": 144
+    },
+    "coverage_added": 0,
+    "all_new_row_content_matches_snapshot": true,
+    "all_new_typed_endpoints_active": true,
+    "all_snapshot_links_resolve": true,
+    "bindings": {
+      "reader_frozen.json": {
+        "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_correction_20261126\\reader_frozen.json",
+        "sha256": "5de8fea6c41aa903b8699f32ec7e85189e6ba20f722a49846239e8a8f97b56c0"
+      },
+      "comparison_frozen.json": {
+        "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_correction_20261126\\comparison_frozen.json",
+        "sha256": "068d0b0e2321796a6ae4106025dc7c36b70b258a7343453bb6324ce360a38e8d"
+      },
+      "verdict_frozen.json": {
+        "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_correction_20261126\\verdict_frozen.json",
+        "sha256": "29d9aec3b229dd14b6d3aab1cf106ff6ed60c2e6f474340589db62442561c07f"
+      },
+      "RESPONSE_scope_fix.json": {
+        "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_correction_20261126\\RESPONSE_scope_fix.json",
+        "sha256": "d53e3dce3e69bfc2eac0b88b989ad0585392cf2c10d3e5a1102f2d47b111b390"
+      },
+      "proposal.json": {
+        "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_correction_20261126\\proposal.json",
+        "sha256": "5ec227fe5f54fc80ef42767acebb13cabd70dcacd4c57ee5db651ea40d31576b"
+      },
+      "proposal_scope_fix.json": {
+        "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l03-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L03\\rosh_hashanah\\review_correction_20261126\\proposal_scope_fix.json",
+        "sha256": "7f7bfef0960260163305b5e887a3d1683ff68aaf699ac20455c0451e30afd189"
+      }
+    }
+  },
+  "new_row_reviews": [
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.c.adar",
+      "record_sha256": "0e490b73d4b67fea6e67bff2420fe6cc52d4f6aa1315a2dd652fb708b9834e69",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Original Adar accession occurrence restricted to 2a:7; date condition and anonymous baraita holder retained.",
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 9,
+          "end_char": 68,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה",
+          "ref": "Rosh Hashanah 2a:7",
+          "source_index": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.p.adar",
+      "record_sha256": "bc19b78261abe543856a004cc78ab4aec60c12264a80e786a8b776f507965e4b",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Original Adar accession occurrence restricted to 2a:7; date condition and anonymous baraita holder retained.",
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 9,
+          "end_char": 68,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה",
+          "ref": "Rosh Hashanah 2a:7",
+          "source_index": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.adar.repeat",
+      "record_sha256": "0911ac123a4f366a19d391ee64b42d34cda207ace19fdc48715b4751e3587cc6",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Repeated Adar lemma gets separate occurrence at 2a:8; not a new unique topic.",
+      "evidence": [
+        {
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 7,
+          "end_char": 66,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה",
+          "ref": "Rosh Hashanah 2a:8",
+          "source_index": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.adar.repeat.pos",
+      "record_sha256": "aa67f3901a51ffc266884dd76bfaa8310da87d8dc282fb6371dbfb3ca15be697",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Repeated Adar lemma gets separate occurrence at 2a:8; not a new unique topic.",
+      "evidence": [
+        {
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 7,
+          "end_char": 66,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה",
+          "ref": "Rosh Hashanah 2a:8",
+          "source_index": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.teaching1",
+      "record_sha256": "1aef9f64b0b9918dc8e3a6357c15f0fb9c86e12ee09a7a5a674d6f86475ace44",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Cross-page הא קמל explicitly supports both Nisan boundary and single-day-year teachings; cumulative, not competing answers.",
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:8",
+          "source_index": [
+            2,
+            7
+          ]
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2b:1",
+          "source_index": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.teaching2",
+      "record_sha256": "737f3f0e6cc9d58215270878b0ba932acf810cd3525a16ddf864d4aa72aa61f6",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Cross-page הא קמל explicitly supports both Nisan boundary and single-day-year teachings; cumulative, not competing answers.",
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:8",
+          "source_index": [
+            2,
+            7
+          ]
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2b:1",
+          "source_index": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan",
+      "record_sha256": "f87260b379343051d89dc0c83891340b2f191b886cf5fc9a20ab367f36f31af2",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Original Nisan accession clause restricted to 2a:7; next-Nisan limit retained.",
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 69,
+          "end_char": 129,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר",
+          "ref": "Rosh Hashanah 2a:7",
+          "source_index": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.p.nisan",
+      "record_sha256": "13eb126a2cab6914fbcea678bb6e4ec22b0ae9586d894313855c8f874f28bfd7",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Original Nisan accession clause restricted to 2a:7; next-Nisan limit retained.",
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 69,
+          "end_char": 129,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר",
+          "ref": "Rosh Hashanah 2a:7",
+          "source_index": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.nisan.repeat",
+      "record_sha256": "f6f812ad0178cffdcf2efa7193e755fb4ace54c5f7d1cf8555020cd353cd2869",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Repeated Nisan lemma separately anchored at 2b:1, preserving its occurrence denominator.",
+      "evidence": [
+        {
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 45,
+          "end_char": 105,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר",
+          "ref": "Rosh Hashanah 2b:1",
+          "source_index": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.nisan.repeat.pos",
+      "record_sha256": "1db72bd7cef00d85591a5b4e5448e1c0b8da7a8b1621c340d7e29e535ed20c63",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Repeated Nisan lemma separately anchored at 2b:1, preserving its occurrence denominator.",
+      "evidence": [
+        {
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 45,
+          "end_char": 105,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר",
+          "ref": "Rosh Hashanah 2b:1",
+          "source_index": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.rejecttwo",
+      "record_sha256": "e51f6130219d8784fb63328462128e7f2335b649496409ad8981a1658d08b027",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "2b:2 kamashma-lan rejects two-year hypothesis; separate asserted resolution and rejected position now distinguish actual accession from prior appointment.",
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2b:2",
+          "source_index": [
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.p.hyp_two",
+      "record_sha256": "8c09356d6da2fc5f36606fd991720f2b6801f7ffbbcc47cc8f5cd2caa17cefa3",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "2b:2 kamashma-lan rejects two-year hypothesis; separate asserted resolution and rejected position now distinguish actual accession from prior appointment.",
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2b:2",
+          "source_index": [
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.selection.resolution",
+      "record_sha256": "e1d20228028db2a9f52540ae3701e751c0de2a3dca84ca73aeac44fee54566d1",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "2b:2 kamashma-lan rejects two-year hypothesis; separate asserted resolution and rejected position now distinguish actual accession from prior appointment.",
+      "evidence": [
+        {
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "ref": "Rosh Hashanah 2b:2",
+          "source_index": [
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.selection.resolution.pos",
+      "record_sha256": "f4e1c5c47016c943adadcc69a84366f5c52b2b9463818e7928f2c639ec33d5fc",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "2b:2 kamashma-lan rejects two-year hypothesis; separate asserted resolution and rejected position now distinguish actual accession from prior appointment.",
+      "evidence": [
+        {
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "ref": "Rosh Hashanah 2b:2",
+          "source_index": [
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.jonah.use",
+      "record_sha256": "6da8c66893185aa907f61a8d975c9754da1c8c5412ed1f155c1a28f8caaa92dc",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Rabbis use the verse for Yonah teaching; distinct from Yonah as holder of the following teaching.",
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "ורבנן ההוא לכדרבי יונה",
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c20.pos",
+      "record_sha256": "5f921e71fd5f4df633962a89f5bafc46600fdc7c5ec707e8ff7e6afc1f62e2ce",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Rabbis use the verse for Yonah teaching; distinct from Yonah as holder of the following teaching.",
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "ורבנן ההוא לכדרבי יונה",
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.jonah.comparison",
+      "record_sha256": "0476db6292dbd674ad314f78fbe5f675ab8d0424d33adf8c994a140ef08dbe8b",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Festivals comparison is independently stated and attributed to Yonah.",
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 37,
+          "end_char": 65,
+          "quote": "הוקשו כל המועדים כולם זה לזה",
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.jonah.comparison.pos",
+      "record_sha256": "a3096a40267f5ceb76e5982c4c72a5afacb9a41de6aaddd759aea3fc01fb8adf",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Festivals comparison is independently stated and attributed to Yonah.",
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 37,
+          "end_char": 65,
+          "quote": "הוקשו כל המועדים כולם זה לזה",
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.jonah.atonement",
+      "record_sha256": "1ad56a422d755f073aad5ae6a28a8a27a250d39787ae172a276574b4285e38a0",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Atonement for Temple/sacred-things impurity is independently stated and attributed to Yonah.",
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 66,
+          "end_char": 99,
+          "quote": "שכולן מכפרים על טומאת מקדש וקדשיו",
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.jonah.atonement.pos",
+      "record_sha256": "c6bd2e5e932438cfc3cf4e3bcd02e58d991b8bd6e7fa806e1b4dc3f8d3eb7b4f",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Atonement for Temple/sacred-things impurity is independently stated and attributed to Yonah.",
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 66,
+          "end_char": 99,
+          "quote": "שכולן מכפרים על טומאת מקדש וקדשיו",
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.jonah.inference",
+      "record_sha256": "9742e98125c095a9b8897ffddbb152cdce1ebe0a5613fc582415b5cea94e2e83",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Comparison-to-common-atonement link supported by הוקשו...שכולן; scope remains common atonement, not identical details of every rite.",
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ורבנן ההוא לכדרבי יונה דאמר רבי יונה הוקשו כל המועדים כולם זה לזה שכולן מכפרים על טומאת מקדש וקדשיו",
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c21",
+      "record_sha256": "dc995a8f53861123477d10c827acb2607f247503f49e82d5a7d0ae9e79841a6d",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Explicit Sukkot-passed condition restored, with Eleazar son of Shimon distinct from Eliezer son of Yaakov.",
+      "evidence": [
+        {
+          "end_char": 118,
+          "quote": "למה נאמר לומר שזה גורם",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 96,
+          "ref": "Rosh Hashanah 4b:10",
+          "source_index": [
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c21.pos",
+      "record_sha256": "4a985d54090ae705a1e0b237c719034b56eb0dbfc5ae33faf3ebf3a334c7b9f8",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Explicit Sukkot-passed condition restored, with Eleazar son of Shimon distinct from Eliezer son of Yaakov.",
+      "evidence": [
+        {
+          "end_char": 118,
+          "quote": "למה נאמר לומר שזה גורם",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 96,
+          "ref": "Rosh Hashanah 4b:10",
+          "source_index": [
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.festival.list.use",
+      "record_sha256": "e9482de70d051949d2c8b48ea4f255b13b45336dc7407e6a41136a8268583305",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Separate list-use claim recovers Meir/Eliezer purpose; pronouns require preceding named context in4b:11.",
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 82,
+          "end_char": 118,
+          "quote": "מיבעי להו לכדרבי אלעזר אמר ר' אושעיא",
+          "ref": "Rosh Hashanah 4b:11",
+          "source_index": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.festival.list.use.pos",
+      "record_sha256": "6e8ed153c536fb929d20f958dfe19fed61f3b0fc6d313eea909b716ead9b4ccd",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Separate list-use claim recovers Meir/Eliezer purpose; pronouns require preceding named context in4b:11.",
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 82,
+          "end_char": 118,
+          "quote": "מיבעי להו לכדרבי אלעזר אמר ר' אושעיא",
+          "ref": "Rosh Hashanah 4b:11",
+          "source_index": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.passover.premise",
+      "record_sha256": "d98ecd523ba0d8d37c4aaf63acf101c0ef94e1841635b40328c8c1106fab34d1",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Passover premise separated; Elazar-to-Oshaya transmission retained; explicit comparison supports Shavuot conclusion.",
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 254,
+          "end_char": 287,
+          "quote": "מה חג המצות יש לו תשלומין כל שבעה",
+          "ref": "Rosh Hashanah 4b:11",
+          "source_index": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.passover.premise.pos",
+      "record_sha256": "e9c507a928e8f1dce9e25960ef739531cb839873afbe74d92251ebde731d92f2",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Passover premise separated; Elazar-to-Oshaya transmission retained; explicit comparison supports Shavuot conclusion.",
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 254,
+          "end_char": 287,
+          "quote": "מה חג המצות יש לו תשלומין כל שבעה",
+          "ref": "Rosh Hashanah 4b:11",
+          "source_index": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.passover.chain",
+      "record_sha256": "c6a98d06332ed3e82959332fa82409bd8c582ead5cf1cb12280e2e1cefd9de05",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Passover premise separated; Elazar-to-Oshaya transmission retained; explicit comparison supports Shavuot conclusion.",
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 119,
+          "end_char": 146,
+          "quote": "דאמר ר' אלעזר אמר ר' אושעיא",
+          "ref": "Rosh Hashanah 4b:11",
+          "source_index": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.passover.analogy",
+      "record_sha256": "c9c050d16d5803bc14c6b427c4cb06ad5cb86d83a180f5f89072b6e4a4c4de99",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Passover premise separated; Elazar-to-Oshaya transmission retained; explicit comparison supports Shavuot conclusion.",
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 0,
+          "end_char": 323,
+          "quote": "ורבי מאיר ורבי אליעזר בן יעקב האי בחג המצות ובחג השבועות ובחג הסוכות מאי דרשו ביה מיבעי להו לכדרבי אלעזר אמר ר' אושעיא דאמר ר' אלעזר אמר ר' אושעיא מניין לעצרת שיש לה תשלומין כל שבעה תלמוד לומר בחג המצות ובחג השבועות ובחג הסוכות מקיש חג השבועות לחג המצות מה חג המצות יש לו תשלומין כל שבעה אף חג השבועות יש לו תשלומין כל שבעה",
+          "ref": "Rosh Hashanah 4b:11",
+          "source_index": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.list.answer",
+      "record_sha256": "405de7fa7fbf1ed6862831a326fbc465db31fd50744f4389ff4f28d0817568bc",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "List-use proposition answers named tannaim verse-use question, distinct from proving seven-day result.",
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 0,
+          "end_char": 323,
+          "quote": "ורבי מאיר ורבי אליעזר בן יעקב האי בחג המצות ובחג השבועות ובחג הסוכות מאי דרשו ביה מיבעי להו לכדרבי אלעזר אמר ר' אושעיא דאמר ר' אלעזר אמר ר' אושעיא מניין לעצרת שיש לה תשלומין כל שבעה תלמוד לומר בחג המצות ובחג השבועות ובחג הסוכות מקיש חג השבועות לחג המצות מה חג המצות יש לו תשלומין כל שבעה אף חג השבועות יש לו תשלומין כל שבעה",
+          "ref": "Rosh Hashanah 4b:11",
+          "source_index": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.eighth.compensation",
+      "record_sha256": "751f8e457bbd4c98bc8bc20cd2661157971e0cab850f65ced4409defc41b4658",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Eighth-day compensation consensus retained independently of mnemonic exception.",
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 50,
+          "end_char": 96,
+          "quote": "אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא",
+          "ref": "Rosh Hashanah 4b:13",
+          "source_index": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c24.pos",
+      "record_sha256": "476d6ffa6803b01c40ef9b8c5c1221afa40dbd78e611d266db7b7d38ed7997ff",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Eighth-day compensation consensus retained independently of mnemonic exception.",
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 50,
+          "end_char": 96,
+          "quote": "אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא",
+          "ref": "Rosh Hashanah 4b:13",
+          "source_index": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.eighth.mnemonic",
+      "record_sha256": "b4636d91913817e23f88d39b02d2efe3804fb2fb024b547f9ff2d4fd920f4b38",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Mnemonic independence qualification retained; does not entail absence of eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0,
+          "end_char": 49,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב",
+          "ref": "Rosh Hashanah 4b:13",
+          "source_index": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.eighth.mnemonic.pos",
+      "record_sha256": "bc7a28adf52df9c1d2065182b12acc993534346cba4bda4542591f4680bb35b9",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Mnemonic independence qualification retained; does not entail absence of eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0,
+          "end_char": 49,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב",
+          "ref": "Rosh Hashanah 4b:13",
+          "source_index": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.mnemonic.qualifies",
+      "record_sha256": "fe8cb5ee13c01001adaa8b76511343f9424148cd8d35b92f5f21289d7d00dc9b",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Mnemonic independence qualification retained; does not entail absence of eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0,
+          "end_char": 96,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא",
+          "ref": "Rosh Hashanah 4b:13",
+          "source_index": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.makeup.last",
+      "record_sha256": "d488d1d22f6ba99ff338f546da374082ebb75dfc36c24caa74ac78f5b0af211a",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Explicit last-day offering claim, conditioned on missing first day, preserves relevant proof for eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 73,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג",
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c25.pos",
+      "record_sha256": "bae813623bcd8d6b575825ead5788868e36f12068f57752beeeef976a7c0c75f",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Explicit last-day offering claim, conditioned on missing first day, preserves relevant proof for eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 73,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג",
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.makeup.throughout",
+      "record_sha256": "32525b9513cb8147ceda3ce6a1ef648754000e932f09621d23a3f1790a0dc2b1",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Throughout-festival offering claim is separately source-supported and conditioned; alone it does not identify the eighth day.",
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 51,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל",
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.makeup.throughout.pos",
+      "record_sha256": "11e67e20175ad1eb670c0295e8a6b5351a3a1a5044bb8660bee44ab1b84c724a",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Throughout-festival offering claim is separately source-supported and conditioned; alone it does not identify the eighth day.",
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 51,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל",
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.throughout.support",
+      "record_sha256": "d3866d10ca131500d7c7d089d641a86470d7b68e74c0996950d3905695f5bfe6",
+      "active": true,
+      "decision": "REWORK_TARGETED",
+      "interpretation": "Narrowed premise does not support the eighth-day target by itself; full evidence quotation includes a second atomic premise omitted from source node. Rework edge; preserve claims.",
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "דתנן מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג",
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.inference.smaller",
+      "record_sha256": "3707fdec1a2594dec2bd10ba40fe85c1ab36f5d0c69c26f4b3f3c13b65e82540",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Smaller-secure and larger-insecure inference principles are separately source-supported; local answer chooses seven, not denial of Sukkot eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 19,
+          "end_char": 33,
+          "quote": "תפשת מועט תפשת",
+          "ref": "Rosh Hashanah 4b:15",
+          "source_index": [
+            7,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c26.pos",
+      "record_sha256": "c765c3b591a2b519d5341232ece3c3988750d2df7b68de19dc0af57bd94d4a9e",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Smaller-secure and larger-insecure inference principles are separately source-supported; local answer chooses seven, not denial of Sukkot eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 19,
+          "end_char": 33,
+          "quote": "תפשת מועט תפשת",
+          "ref": "Rosh Hashanah 4b:15",
+          "source_index": [
+            7,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.inference.larger",
+      "record_sha256": "ada240011e41ce19d714ffc0e4f0bc4b8643497387e6cca2fffbfc9134140067",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Smaller-secure and larger-insecure inference principles are separately source-supported; local answer chooses seven, not denial of Sukkot eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0,
+          "end_char": 18,
+          "quote": "תפשת מרובה לא תפשת",
+          "ref": "Rosh Hashanah 4b:15",
+          "source_index": [
+            7,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.inference.larger.pos",
+      "record_sha256": "d8790ce8853f9ac4dccc20cf658b0e500104ce1a9184d29959863c21545d2310",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Smaller-secure and larger-insecure inference principles are separately source-supported; local answer chooses seven, not denial of Sukkot eighth-day compensation.",
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0,
+          "end_char": 18,
+          "quote": "תפשת מרובה לא תפשת",
+          "ref": "Rosh Hashanah 4b:15",
+          "source_index": [
+            7,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.larger.objection",
+      "record_sha256": "8dc6fc7a344f4b5fd1d23b36474659a5c34eb13f1de54c659c8c8c8edd2569ab",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Larger-insecure rule answers why not use eight-day analogy; identifier says objection but typed relation answer is appropriate.",
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0,
+          "end_char": 33,
+          "quote": "תפשת מרובה לא תפשת תפשת מועט תפשת",
+          "ref": "Rosh Hashanah 4b:15",
+          "source_index": [
+            7,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.q.animal",
+      "record_sha256": "b6b3d94de112db649b696a407973f9051c0ccb0337f2932f74af00b24a4eeaec",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial animal-tithe question links two preserved holders/dates; topic inventory does not qualify comparable task set.",
+      "evidence": [
+        {
+          "segment_id": "seg_38336ba7201acd221fb2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי",
+          "ref": "Rosh Hashanah 2a:2",
+          "source_index": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.opening1.p.animal",
+      "record_sha256": "bf71f9cebb7c064d57ccc53fa1e5d7b045d2cadb7f45d3243ab96b60cf16d98f",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial animal-tithe question links two preserved holders/dates; topic inventory does not qualify comparable task set.",
+      "evidence": [
+        {
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי",
+          "segment_id": "seg_38336ba7201acd221fb2",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:2",
+          "source_index": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.opening1.p.animal_alt",
+      "record_sha256": "e1ae8a6ff2331d37adddd2cc6fe8fa4a135cc4333d2fb8ef174efeb8b3f1098e",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial animal-tithe question links two preserved holders/dates; topic inventory does not qualify comparable task set.",
+      "evidence": [
+        {
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי",
+          "segment_id": "seg_38336ba7201acd221fb2",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:2",
+          "source_index": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.q.tree",
+      "record_sha256": "310609ab7418aaaa4bc592e3c8e6410c64f8e0591708dae891f206540584e9de",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial tree-year question links Beit Shammai/Hillel dates without fabricated final ruling.",
+      "evidence": [
+        {
+          "segment_id": "seg_91e82450d2fbfec98bf7",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:",
+          "ref": "Rosh Hashanah 2a:4",
+          "source_index": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.opening1.p.tree_bs",
+      "record_sha256": "244d567e8695e2d3f8cecf0e420f32438931e4d3a0af30fd04117e6a44154b51",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial tree-year question links Beit Shammai/Hillel dates without fabricated final ruling.",
+      "evidence": [
+        {
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:",
+          "segment_id": "seg_91e82450d2fbfec98bf7",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:4",
+          "source_index": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.opening1.p.tree_bh",
+      "record_sha256": "ab9c9da70779917fbbc6831778c441e05828327108e5b3041674914def9a7a3a",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial tree-year question links Beit Shammai/Hillel dates without fabricated final ruling.",
+      "evidence": [
+        {
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:",
+          "segment_id": "seg_91e82450d2fbfec98bf7",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:4",
+          "source_index": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.q.teachings",
+      "record_sha256": "a7fb4f9e5326e3b1254196747e6de24ef0a6e8d615599e2c2cedef16f3ac1109",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial Adar-teaching question has cumulative answers; regnal condition retained for single-day rule.",
+      "evidence": [
+        {
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "ref": "Rosh Hashanah 2a:8",
+          "source_index": [
+            2,
+            7
+          ]
+        },
+        {
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "ref": "Rosh Hashanah 2b:1",
+          "source_index": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.p.newyear",
+      "record_sha256": "dd750d0b653e8dc8b1c8e0aa25ecfd0dcf0bca0dc183758e3ffcd38208037931",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial Adar-teaching question has cumulative answers; regnal condition retained for single-day rule.",
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:8",
+          "source_index": [
+            2,
+            7
+          ]
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2b:1",
+          "source_index": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.kings.pass1.p.day",
+      "record_sha256": "67581a0e762da25ac937ed742ed67c07b94564a2525a6417ed69a0ad330b0f0b",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial Adar-teaching question has cumulative answers; regnal condition retained for single-day rule.",
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:8",
+          "source_index": [
+            2,
+            7
+          ]
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2b:1",
+          "source_index": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.q.deadline",
+      "record_sha256": "beca9d4f61605b98748672a4d5d72b8e3cb90c13f6db863e3de96390d9c579cd",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial delay-threshold inventory preserves five holders and distinct one/two/three/ordered/Sukkot conditions; no certified answer-set eligibility.",
+      "evidence": [
+        {
+          "segment_id": "seg_497f7ba8013bcb6937f0",
+          "start_char": 0,
+          "end_char": 102,
+          "quote": "לקט שכחה ופאה כיון שעברו עליהן שלשה רגלים עובר בבל תאחר רבי שמעון אומר שלשה רגלים כסדרן וחג המצות תחלה",
+          "ref": "Rosh Hashanah 4b:1",
+          "source_index": [
+            7,
+            0
+          ]
+        },
+        {
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 0,
+          "end_char": 187,
+          "quote": "ר' מאיר אומר כיון שעבר עליהן רגל אחד עובר בבל תאחר רבי אליעזר בן יעקב אומר כיון שעברו עליהן שני רגלים עובר בבל תאחר רבי אלעזר ברבי שמעון אומר כיון שעבר עליהן חג הסוכות עובר עליהן בבל תאחר",
+          "ref": "Rosh Hashanah 4b:2",
+          "source_index": [
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c9.pos",
+      "record_sha256": "253ad3cfaa05af793fff624cf7b741f6668b73a168fb37fabf8c7665e2d85fd8",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial delay-threshold inventory preserves five holders and distinct one/two/three/ordered/Sukkot conditions; no certified answer-set eligibility.",
+      "evidence": [
+        {
+          "end_char": 55,
+          "quote": "לקט שכחה ופאה כיון שעברו עליהן שלשה רגלים עובר בבל תאחר",
+          "segment_id": "seg_497f7ba8013bcb6937f0",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:1",
+          "source_index": [
+            7,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c10.pos",
+      "record_sha256": "a82fac9c964d3b13b87ac5c437c64941829dd862024f49f96e3a43d0fafb0df5",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial delay-threshold inventory preserves five holders and distinct one/two/three/ordered/Sukkot conditions; no certified answer-set eligibility.",
+      "evidence": [
+        {
+          "end_char": 102,
+          "quote": "רבי שמעון אומר שלשה רגלים כסדרן וחג המצות תחלה",
+          "segment_id": "seg_497f7ba8013bcb6937f0",
+          "start_char": 56,
+          "ref": "Rosh Hashanah 4b:1",
+          "source_index": [
+            7,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c11.pos",
+      "record_sha256": "6bce07f49277fe63436c27c1aa6bdc304f5bf5bc3a7ee1747b8d961795ba6efe",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial delay-threshold inventory preserves five holders and distinct one/two/three/ordered/Sukkot conditions; no certified answer-set eligibility.",
+      "evidence": [
+        {
+          "end_char": 50,
+          "quote": "ר' מאיר אומר כיון שעבר עליהן רגל אחד עובר בבל תאחר",
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:2",
+          "source_index": [
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c12.pos",
+      "record_sha256": "976a5cf587a07aae8a0da810e442caef702775749e89afe90e8ac9ed701cd84f",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial delay-threshold inventory preserves five holders and distinct one/two/three/ordered/Sukkot conditions; no certified answer-set eligibility.",
+      "evidence": [
+        {
+          "end_char": 115,
+          "quote": "רבי אליעזר בן יעקב אומר כיון שעברו עליהן שני רגלים עובר בבל תאחר",
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 51,
+          "ref": "Rosh Hashanah 4b:2",
+          "source_index": [
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.c13.pos",
+      "record_sha256": "42d48aa37664018bfe1d9bda8fae67991e834ad56b94e57fb8120d21a23e4ebc",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Editorial delay-threshold inventory preserves five holders and distinct one/two/three/ordered/Sukkot conditions; no certified answer-set eligibility.",
+      "evidence": [
+        {
+          "end_char": 187,
+          "quote": "רבי אלעזר ברבי שמעון אומר כיון שעבר עליהן חג הסוכות עובר עליהן בבל תאחר",
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 116,
+          "ref": "Rosh Hashanah 4b:2",
+          "source_index": [
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.kings.qualify",
+      "record_sha256": "e6a056b30be690798c7bc9f13415613d805c3c1fa90c3666e28b9e49bd52baf7",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Rav Hisda3a:14 explicitly restricts opening regnal rule; qualification edge preserves printed lemma and later scope.",
+      "evidence": [
+        {
+          "segment_id": "seg_ed4b08ed2f17f1e17683",
+          "start_char": 0,
+          "end_char": 193,
+          "quote": "א\"ר חסדא לא שנו אלא למלכי ישראל אבל למלכי אומות העולם מתשרי מנינן שנא' (נחמיה א, א) דברי נחמיה בן חכליה ויהי בחדש כסליו שנת עשרים וגו' וכתיב (נחמיה ב, א) ויהי בחדש ניסן שנת עשרי' לארתחשסתא וגו'",
+          "ref": "Rosh Hashanah 3a:14",
+          "source_index": [
+            4,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.festivals.qualify",
+      "record_sha256": "b441a332ba6e5de675fb434a1c022eb9c0cb1e1e44ab2d84799a37c503313f82",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Rav Hisda4a:12 explicitly interprets festival within Nisan; edge does not invent first-Nisan festival date.",
+      "evidence": [
+        {
+          "segment_id": "seg_f6836ea695173176a4a8",
+          "start_char": 0,
+          "end_char": 85,
+          "quote": "ולרגלים: רגלים באחד בניסן הוא בחמשה עשר בניסן הוא אמר רב חסדא רגל שבו ראש השנה לרגלים",
+          "ref": "Rosh Hashanah 4a:12",
+          "source_index": [
+            6,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.e13",
+      "record_sha256": "07c392e3dee81d6c38ec2f2aaa295beef13092a00365920babe2a3070a98e29e",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Rabbis verse-use differs from two-festival inference; distinction direction and narrowed source claim appropriate.",
+      "evidence": [
+        {
+          "end_char": 99,
+          "quote": "ורבנן ההוא לכדרבי יונה דאמר רבי יונה הוקשו כל המועדים כולם זה לזה שכולן מכפרים על טומאת מקדש וקדשיו",
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:9",
+          "source_index": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.e14",
+      "record_sha256": "8b777c4aa87dd9d3bf85fdad7c1b179d16bc5ff24362845fa8609b610e717c86",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Sukkot decisive derivation answers reason question and supports prior Sukkot threshold claim.",
+      "evidence": [
+        {
+          "end_char": 119,
+          "quote": " ורבי אלעזר ברבי שמעון מאי טעמא דתניא רבי אלעזר בר' שמעון אומר לא יאמר חג הסוכות שבו דיבר הכתוב למה נאמר לומר שזה גורם ",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:10",
+          "source_index": [
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.e15",
+      "record_sha256": "8dd53005aaa411c71683f7b54075a0e9f941192f77f292ab5d1c1c8dbd8b2308",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Sukkot decisive derivation answers reason question and supports prior Sukkot threshold claim.",
+      "evidence": [
+        {
+          "end_char": 119,
+          "quote": " ורבי אלעזר ברבי שמעון מאי טעמא דתניא רבי אלעזר בר' שמעון אומר לא יאמר חג הסוכות שבו דיבר הכתוב למה נאמר לומר שזה גורם ",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:10",
+          "source_index": [
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.e20",
+      "record_sha256": "3f25dcd21a9a93b89e74793a41eb1502ce0115ad1b85cb3cfe24d88d3734b707",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Compensation consensus qualifies independent-eighth-day answer; does not globally reject festival independence.",
+      "evidence": [
+        {
+          "end_char": 96,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא",
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:13",
+          "source_index": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.e21",
+      "record_sha256": "805ae94f7cce7eaa136e2bffb9347fa6e00c252a40efce31fcb940d1199aac42",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Last-day clause provides direct support for eighth-day compensation; this retained edge is the sufficient correctly targeted support.",
+      "evidence": [
+        {
+          "end_char": 73,
+          "quote": "דתנן מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג",
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.e3.b007.e22",
+      "record_sha256": "2634f20d2ef72e40c7b01965e795b4edb446e315e8a2e803996e5aa200140d42",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Smaller-inference principle answers seven/eight question with correct direction.",
+      "evidence": [
+        {
+          "end_char": 33,
+          "quote": "תפשת מרובה לא תפשת תפשת מועט תפשת",
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:15",
+          "source_index": [
+            7,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.reviewfix1.a.baraita1_nisan",
+      "record_sha256": "1aa3bc8e93c11083a519aa013126e54cd597579d419c3ee24b926e2917af1f1b",
+      "active": false,
+      "decision": "preserved_superseded_history",
+      "interpretation": "Intermediate stale attribution scope is preserved as superseded history; scopefix.1 replaces it and is active. Not counted as supported current row.",
+      "evidence": [
+        {
+          "end_char": 8,
+          "quote": "תנו רבנן",
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:7",
+          "source_index": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.rev.rh.reviewfix1.e.appointment_qualification",
+      "record_sha256": "d63294dc63b40c0dad9acd79627c3b7418a2665be20966ca2ba929c16649c9af",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Prior-Adar appointment qualifies the original Nisan clause, with active successor target.",
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2b:2",
+          "source_index": [
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.scopefix.1",
+      "record_sha256": "5f7fcfe2f6c1d781212c43b0d9c24639efecc180762025e2a30fc8a14d05f9b1",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Anonymous תנו רבנן attribution now points to active original-occurrence Nisan/Adar claim; repeated lemma remains separate.",
+      "evidence": [
+        {
+          "end_char": 8,
+          "quote": "תנו רבנן",
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:7",
+          "source_index": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "rh.e3.review20261126.scopefix.2",
+      "record_sha256": "f46301e7295b6ab85b8f0d58517f48a3938c74330d85e898c1add0184ea96727",
+      "active": true,
+      "decision": "supported_with_scope",
+      "interpretation": "Anonymous תנו רבנן attribution now points to active original-occurrence Nisan/Adar claim; repeated lemma remains separate.",
+      "evidence": [
+        {
+          "end_char": 8,
+          "quote": "תנו רבנן",
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 2a:7",
+          "source_index": [
+            2,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "dispositions": [
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c01",
+      "producer_disposition_preserved": "Reader caveat preserved: retain producer scope/typing; do not adopt overstrong count, unscoped year rule, generalized explicit question, or source-explicit objection.",
+      "independent_assessment": "Keep four new years, not four distinct dates; reader wording corrected.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c02",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Opening kings lemma retained with new3a:14 qualification connection.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c03",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Opening festivals lemma retained with4a:12 within-month interpretation connection.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c04",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Anonymous first Elul animal-tithe claim preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c05",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Elazar and Shimon first Tishri animal-tithe claim preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c06",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "First Tishri for years preserved as opening Mishnah wording.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c07",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "First Tishri for sabbaticals preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c08",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "First Tishri for jubilees preserved as opening wording, not full later jubilee analysis.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c09",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "First Tishri for planting preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c10",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "First Tishri for vegetables preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c11",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Beit Shammai first Shevat preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c12",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Beit Hillel fifteenth Shevat preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c13",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Rav Hisda documents explanation preserved; not itself document-validity Mishnah holder.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c14",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Antedated debt-document invalidity preserved as quoted Mishnah.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c15",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Postdated debt-document validity preserved as quoted Mishnah.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c16",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Original Adar occurrence now separate.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c17",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Original Nisan occurrence now separate.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c18",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Repeated Adar occurrence recovered as adar.repeat, not merely original successor.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c19",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Nisan calendar teaching retained as one of two cumulative consequences.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c20",
+      "producer_disposition_preserved": "Reader caveat preserved: retain producer scope/typing; do not adopt overstrong count, unscoped year rule, generalized explicit question, or source-explicit objection.",
+      "independent_assessment": "Single-day principle remains regnal-case scoped; reader empty conditions not adopted.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c21",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Repeated Nisan occurrence recovered as nisan.repeat.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c22",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Prior appointment versus actual accession condition preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c23",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Rejected two-year hypothetical explicitly rejected in both claim and position.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c24",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "New selection.resolution represents rejection separately from rejected hypothesis.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c25",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Meir negative-delay inference remains anonymously explained, with commanded-but-not-brought conditions; one-festival timing supplied by linked ruling.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c26",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Eliezer b.Yaakov plural-minimum-two derivation preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c27",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Yonah comparison split from Rabbis verse-use and atonement result.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c28",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Yonah atonement result split with correct holder.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c29",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Rabbis verse-use split with correct anonymous explanatory attribution.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c30",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Sukkot trigger condition added to derivational claim and position.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c31",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "List-use claim now separate from question and Shavuot result.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c32",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Shavuot seven-day conclusion retained with Elazar/Oshaya chain.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c33",
+      "producer_disposition_preserved": "Added separate Passover premise and analogy, preserving Elazar-to-Oshaya transmission rather than reader empty chain.",
+      "independent_assessment": "Passover premise separate; reader missing chain caveat preserved.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c34",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Eight-day alternative remains explicit question/objection, not maintained position.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c35",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Independent-eighth reply remains locally insufficient, not globally false.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c36",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Mnemonic independence separated from compensation consensus.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c37",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Compensation consensus separated from mnemonic qualification.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c38",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Throughout-festival claim separately anchored; associated support edge needs narrower target or fuller premise.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c39",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Last-day claim separate and sufficient support for eighth-day compensation.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c40",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Larger-insecure principle separated.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c41",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Smaller-secure principle separated.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "claim_comparisons",
+      "reader_id": "c42",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Cross-folio lodging result remains complete through5a:1.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q01",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Animal question correctly editorial topic inventory.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q02",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Tree question correctly editorial topic inventory.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q03",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Explicit practical-regnal question and documents answer retained.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q04",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Adar common question correctly editorial, two cumulative teachings.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q05",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Explicit obviousness question retains appointment qualification and rejection.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q06",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Five-way delay inventory editorial and ineligible, with prior contextual positions.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q07",
+      "producer_disposition_preserved": "Reader caveat preserved: retain producer scope/typing; do not adopt overstrong count, unscoped year rule, generalized explicit question, or source-explicit objection.",
+      "independent_assessment": "Reader generalized explicit-use question overstates actual narrow question; caveat retained.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q08",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Seven/eight explicit challenge remains partial answer sequence.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "question_comparisons",
+      "reader_id": "q09",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Sukkot-use question completed by cross-page lodging claim.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e01",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Antedated rule supports document relevance.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e02",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Postdated complementary rule supports document relevance.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e03",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Adar appointment explains non-obvious Nisan clause.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e04",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Separate selection resolution now corrects rejected two-year hypothesis.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e07",
+      "producer_disposition_preserved": "Reader caveat preserved: retain producer scope/typing; do not adopt overstrong count, unscoped year rule, generalized explicit question, or source-explicit objection.",
+      "independent_assessment": "Keep reader opposition as editorial; producer Meir-reason support edge is faithful.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e08",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Revised Rabbis verse-use source supports distinction from Eliezer inference.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e09",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "New Passover-premise to Shavuot-result analogy explicit and correctly directed.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e10",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Eight-day proposal objects to seven-day result.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e11",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Independent-eighth initial reply answers eight-day proposal but remains qualified.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e12",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Compensation qualifies mnemonic independence; objection/qualification granularity acceptable.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e13",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Unresolved narrowed-premise mismatch: throughout.support repeats reader e13 overreach; last-day clause, not throughout-only node, supplies eighth-day proof.",
+      "resolution": "REWORK_TARGETED"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e14",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "Revised e21 uses makeup.last and supports eighth.compensation correctly.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e15",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Smaller-inference answer retained; answer versus local_resolution granularity acceptable.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "edge_comparisons",
+      "reader_id": "e16",
+      "producer_disposition_preserved": "Retained existing source-faithful representation; no automatic import of reader wording.",
+      "independent_assessment": "Lodging cross-folio answer retained.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "context_edge_comparisons",
+      "reader_id": "e05",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "New explicit kings qualification links context to opening; not core-edge denominator inflation.",
+      "resolution": "accepted_with_recorded_caveats"
+    },
+    {
+      "group": "context_edge_comparisons",
+      "reader_id": "e06",
+      "producer_disposition_preserved": "Supported representation correction included; see revision_map, split_lineage and proposal evidence.",
+      "independent_assessment": "New explicit festivals qualification links context to opening; not core-edge denominator inflation.",
+      "resolution": "accepted_with_recorded_caveats"
+    }
+  ],
+  "remaining_issues": [
+    {
+      "id": "RH-ATOMIC-PREMISE-EDGE-01",
+      "severity": "targeted_argument_edge",
+      "resolution": "open_at_pinned_snapshot",
+      "record_id": "rh.e3.review20261126.throughout.support",
+      "record_sha256": "d3866d10ca131500d7c7d089d641a86470d7b68e74c0996950d3905695f5bfe6",
+      "source_id": "rh.e3.review20261126.makeup.throughout",
+      "target_id": "rh.e3.review20261126.eighth.compensation",
+      "interpretation": "The source claim only states offering throughout the festival and ends before ויום טוב האחרון של חג. Its typed support target specifically asserts eighth-day compensation. Whole quoted sentence supports that target through the separate last-day proposition, but that cannot make the narrowed throughout-only node independently sufficient. The old reader e13 has the same overreach; preserve and correct its assessment rather than treating reader agreement as validation.",
+      "evidence": [
+        {
+          "end_char": 51,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל",
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        },
+        {
+          "end_char": 73,
+          "quote": "דתנן מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג",
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 0,
+          "ref": "Rosh Hashanah 4b:14",
+          "source_index": [
+            7,
+            13
+          ]
+        }
+      ],
+      "correct_existing_support_record": "rh.e3.review20261126.rev.rh.e3.b007.e21",
+      "required_change": "Supersede or quarantine this extra edge, or give it a properly matched broader/generic target or explicitly composite premise. Retain the separate last-day support edge and both valid claims. Do not modify frozen readings.",
+      "regression": "No qualified edge independently derives eighth-day compensation solely from the throughout-festival node; correctly matched last-day→eighth support remains."
+    }
+  ],
+  "preserved_reader_caveats": [
+    "c01 four distinct dates wording overstrong; use four new years.",
+    "c20 is scoped to regnal count; reader conditions empty while producer explicitly scopes case.",
+    "c33 transmission_chain empty despite holder stating transmission.",
+    "q07 generalized explicit-question label and e07 source_explicit objection overconfident; classify reconstruction."
+  ],
+  "additional_reader_caveat": "Reader e13 has the same narrowed-premise mismatch; source evidence does not independently prove eighth-day conclusion from c38 alone.",
+  "representation_limits": [
+    "Schema lacks typed split-lineage and repeated-occurrence relation: explicit split_lineage in response preserves one-to-many history; supersedes supplies one primary successor.",
+    "Common questions use topic_inventory, not a certified comparable answer-set policy; qualification remains false."
+  ],
+  "counts": {
+    "new_rows_reviewed": 72,
+    "active_rows_supported_with_scope": 70,
+    "active_rows_requiring_targeted_rework": 1,
+    "superseded_intermediate_rows_preserved": 1,
+    "dispositions_reviewed": 67,
+    "dispositions_requiring_targeted_rework": 1
+  },
+  "omission_comparison_scope": "Correction-specific recovery checked against42 frozen reader claims; not a new full-tractate or315-core omission pass.",
+  "tractate_accepted": false,
+  "full_review_receipt": false,
+  "human_certification": false,
+  "ml_eligible": false,
+  "task_eligibility": {
+    "retrieval": false,
+    "segmentation": false,
+    "attribution": false,
+    "argument_extraction": false,
+    "qa": false,
+    "scholar_choice": false
+  },
+  "limitations": [
+    "No broad production pause recommended; only affected edge and dependent argument views need repair/exclusion.",
+    "All eight passes remain144/1025 at pinned snapshot; no new source coverage.",
+    "No full315-core comparison performed in this correction wave.",
+    "Mechanical quote/link checks do not certify semantic accuracy beyond explicit bounded reviews."
+  ]
+}

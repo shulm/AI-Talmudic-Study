@@ -1,0 +1,80 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Rosh Hashanah",
+  "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "owner": "L03/rosh_hashanah",
+  "epoch": 3,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/rosh_hashanah/review_correction_20261126",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan",
+        "surface": "תנו רבנן",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 8,
+          "quote": "תנו רבנן",
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.scopefix.1",
+      "layer": "attributions",
+      "links": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.review20261126.rev.rh.reviewfix1.a.baraita1_nisan"
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "rh.e3.review20261126.rev.rh.kings.pass1.c.adar",
+        "surface": "תנו רבנן",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 8,
+          "quote": "תנו רבנן",
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.scopefix.2",
+      "layer": "attributions",
+      "links": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.adar"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.baraita1"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Scope-reference correction only: anonymous baraita attribution points to active original-occurrence claim rather than superseded aggregate; no new coverage.",
+      "record_ids": [
+        "rh.e3.review20261126.scopefix.2",
+        "rh.e3.review20261126.scopefix.1"
+      ],
+      "segment_id": "seg_38b07d16e8bf34bd0765"
+    }
+  ],
+  "open_tails": []
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Kiddushin",
+  "source_sha256": "daf594dcc08ac2763187d84655f905d14fe94be566b723bff6bb95e6c33f138f",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "owner": "/root/lead_l01_l03",
+  "epoch": 1,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/yevamot",
+    "model_id": null
+  },
+  "open_tails": [
+    "kid004.intercourse_derivation"
+  ],
+  "records": [
+    {
+      "id": "kid004fix.sale_corrects",
+      "layer": "edges",
+      "evidence": [
+        {
+          "end_char": 127,
+          "quote": "אלא אמר מר בר רב אשי לא נצרכה אלא לעיקר זבינא דאילונית סד\"א דאתיא סימני נערות הוי זבינא דלא אתיא סימני נערות לא הוי זבינה זבינא",
+          "segment_id": "seg_9ff62390a9fb864f8641",
+          "start_char": 0
+        },
+        {
+          "end_char": 32,
+          "quote": "קמ\"ל (שמות כא, יא) ויצאה חנם כו'",
+          "segment_id": "seg_01ad3e562da7c724b377",
+          "start_char": 0
+        }
+      ],
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "correction",
+        "source_id": "kid003.context.aylonit_sale",
+        "target_id": "kid004.no_signs_no_sale"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "kid003.context.aylonit_sale",
+        "kid004.no_signs_no_sale"
+      ],
+      "supersedes": "kid004.revised.kid003.sale_corrects"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Crossfolio verse confirms original sale. Source-first reread through4b13, next deed topic5a1 inspected. Exact prior context reused/split, originalindices retained. Evidence-bearing edges rows after omission check. K004-01 correction target is no-signs-invalid-sale branch; positive proposed branch retained.",
+      "record_ids": [
+        "kid003.sale_answer",
+        "kid004fix.sale_corrects"
+      ],
+      "segment_id": "seg_01ad3e562da7c724b377"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Crossfolio verse confirms original sale. Source-first reread through4b13, next deed topic5a1 inspected. Exact prior context reused/split, originalindices retained. Evidence-bearing reconciliation rows after omission check. K004-01 correction target is no-signs-invalid-sale branch; positive proposed branch retained.",
+      "record_ids": [
+        "kid003.context.aylonit_sale",
+        "kid003.sale_answer",
+        "kid004.revised.kid003.exit_ages",
+        "kid004fix.sale_corrects"
+      ],
+      "segment_id": "seg_01ad3e562da7c724b377"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Original aylonit sale explanation and rejected no-sale hypothesis. Source-first reread through4b13, next deed topic5a1 inspected. Exact prior context reused/split, originalindices retained. Evidence-bearing edges rows after omission check. K004-01 correction target is no-signs-invalid-sale branch; positive proposed branch retained.",
+      "record_ids": [
+        "kid003.sale_answer",
+        "kid004.revised.kid003.prefer_sale",
+        "kid004fix.sale_corrects"
+      ],
+      "segment_id": "seg_9ff62390a9fb864f8641"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Original aylonit sale explanation and rejected no-sale hypothesis. Source-first reread through4b13, next deed topic5a1 inspected. Exact prior context reused/split, originalindices retained. Evidence-bearing reconciliation rows after omission check. K004-01 correction target is no-signs-invalid-sale branch; positive proposed branch retained.",
+      "record_ids": [
+        "kid003.context.aylonit_sale",
+        "kid003.sale_answer",
+        "kid004.no_signs_no_sale",
+        "kid004.revised.kid003.exit_ages",
+        "kid004.revised.kid003.context.no_sale_hyp",
+        "kid004.revised.kid003.prefer_sale",
+        "kid004fix.sale_corrects"
+      ],
+      "segment_id": "seg_9ff62390a9fb864f8641"
+    }
+  ]
+}

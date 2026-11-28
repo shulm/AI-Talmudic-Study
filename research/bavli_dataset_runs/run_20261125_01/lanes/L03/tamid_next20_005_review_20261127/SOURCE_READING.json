@@ -1,0 +1,1828 @@
+{
+  "artifact_kind": "source_first_review_preparation_with_disclosed_prior_context",
+  "reviewer": "/root/yevamot",
+  "model_id": null,
+  "blindness": {
+    "new_tamid005_producer_labels_seen": false,
+    "prior_tamid004_labels_seen": true,
+    "prior_tamid27b10_context_labels_seen": true,
+    "other_tamid005_reader_labels_seen": false,
+    "fresh_blind_cohort": false,
+    "random_cohort": false,
+    "production_authorship": "No Tamid production authored; earlier Tamid004 source/comparison reviewer"
+  },
+  "source": {
+    "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Kodashim\\Tamid\\Hebrew\\Wikisource Talmud Bavli.json",
+    "sha256": "d37fab6314d84a21da855c5b5d8b91f8bfc594b336817e13393e383ffdcd453d",
+    "schema_path": "F:\\Sefaria-Export-master\\schemas\\Tamid.json",
+    "schema_sha256": "22f679c21fa0c12eab0e3a686a4069b0a628415290b7204e57ac92d368de60f9",
+    "denominator": 207
+  },
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "scope": {
+    "first": "Tamid 27b:10",
+    "last": "Tamid 28a:11",
+    "core_count": 20,
+    "inventory_indices": [
+      50,
+      69
+    ],
+    "original_indices": [
+      [
+        53,
+        9
+      ],
+      [
+        53,
+        10
+      ],
+      [
+        53,
+        11
+      ],
+      [
+        53,
+        12
+      ],
+      [
+        53,
+        13
+      ],
+      [
+        53,
+        14
+      ],
+      [
+        53,
+        15
+      ],
+      [
+        53,
+        16
+      ],
+      [
+        53,
+        17
+      ],
+      [
+        54,
+        0
+      ],
+      [
+        54,
+        1
+      ],
+      [
+        54,
+        2
+      ],
+      [
+        54,
+        3
+      ],
+      [
+        54,
+        4
+      ],
+      [
+        54,
+        5
+      ],
+      [
+        54,
+        6
+      ],
+      [
+        54,
+        7
+      ],
+      [
+        54,
+        8
+      ],
+      [
+        54,
+        9
+      ],
+      [
+        54,
+        10
+      ]
+    ],
+    "next_ref": "Tamid 28a:12",
+    "context_through": "Tamid28b8"
+  },
+  "findings": [
+    {
+      "id": "tam005.f001",
+      "refs": [
+        "Tamid 27b:10"
+      ],
+      "kind": "claim",
+      "proposition": "The Mishnah route supports Rabbi Yohanan’s statement that the tunnels were not sanctified.",
+      "status": "asserted",
+      "holder": "Rabbi Yohanan",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_5fcc5df05b14f1534429",
+          "ref": "Tamid 27b:10",
+          "source_index": [
+            53,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 72,
+          "quote": "מסייע ליה לר' יוחנן דאמר מחילות לא נתקדשו ובעל קרי משתלח חוץ לשני מחנות:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f002",
+      "refs": [
+        "Tamid 27b:10"
+      ],
+      "kind": "claim",
+      "proposition": "A person with seminal emission is sent outside two camps.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Baal keri"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_5fcc5df05b14f1534429",
+          "ref": "Tamid 27b:10",
+          "source_index": [
+            53,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 72,
+          "quote": "מסייע ליה לר' יוחנן דאמר מחילות לא נתקדשו ובעל קרי משתלח חוץ לשני מחנות:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f003",
+      "refs": [
+        "Tamid 27b:10"
+      ],
+      "kind": "reconciliation",
+      "proposition": "Reuse prior context records for these two statements; now the segment becomes core. Do not count the supporting Mishnah route twice.",
+      "status": "review_instruction",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_5fcc5df05b14f1534429",
+          "ref": "Tamid 27b:10",
+          "source_index": [
+            53,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 72,
+          "quote": "מסייע ליה לר' יוחנן דאמר מחילות לא נתקדשו ובעל קרי משתלח חוץ לשני מחנות:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f004",
+      "refs": [
+        "Tamid 27b:11"
+      ],
+      "kind": "utterance",
+      "proposition": "The lamps incipit quotes the earlier Mishnah, introducing a lavatory narrative.",
+      "status": "lemma",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_7751b53fb904ef20ff93",
+          "ref": "Tamid 27b:11",
+          "source_index": [
+            53,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 88,
+          "quote": "והנרות דולקין מכאן ומכאן כו': רב ספרא הוה יתיב בבית הכסא אתא ר' אבא נחר ליה א\"ל ליעול מר"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f005",
+      "refs": [
+        "Tamid 27b:11"
+      ],
+      "kind": "narrative",
+      "proposition": "Rav Safra was sitting in the lavatory when Rabbi Abba arrived and made a throat-clearing signal.",
+      "status": "reported",
+      "holder": "anonymous narrator",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_7751b53fb904ef20ff93",
+          "ref": "Tamid 27b:11",
+          "source_index": [
+            53,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 88,
+          "quote": "והנרות דולקין מכאן ומכאן כו': רב ספרא הוה יתיב בבית הכסא אתא ר' אבא נחר ליה א\"ל ליעול מר"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f006",
+      "refs": [
+        "Tamid 27b:11"
+      ],
+      "kind": "utterance",
+      "proposition": "Rav Safra told Rabbi Abba ליעול מר, inviting him to enter.",
+      "status": "reported",
+      "holder": "Rav Safra",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_7751b53fb904ef20ff93",
+          "ref": "Tamid 27b:11",
+          "source_index": [
+            53,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 88,
+          "quote": "והנרות דולקין מכאן ומכאן כו': רב ספרא הוה יתיב בבית הכסא אתא ר' אבא נחר ליה א\"ל ליעול מר"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f007",
+      "refs": [
+        "Tamid 27b:12"
+      ],
+      "kind": "utterance",
+      "proposition": "After Rav Safra emerged, Rabbi Abba rebuked him with the Seir phrase; retain the phrase as reported reproach, not a universal ethnographic fact.",
+      "status": "reported",
+      "holder": "Rabbi Abba",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_b34116dc4502afd77be2",
+          "ref": "Tamid 27b:12",
+          "source_index": [
+            53,
+            11
+          ],
+          "start_char": 0,
+          "end_char": 121,
+          "quote": "בתר דנפיק א\"ל ר' אבא ע\"כ לא סליקת לשעיר גמרת מילי דשעיר לאו הכי תנן מצאו נעול בידוע שיש שם אדם למימרא דלא מיבעי ליה למיעל"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f008",
+      "refs": [
+        "Tamid 27b:12"
+      ],
+      "kind": "claim",
+      "proposition": "The cited Mishnah says a locked door means someone is inside.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_b34116dc4502afd77be2",
+          "ref": "Tamid 27b:12",
+          "source_index": [
+            53,
+            11
+          ],
+          "start_char": 0,
+          "end_char": 121,
+          "quote": "בתר דנפיק א\"ל ר' אבא ע\"כ לא סליקת לשעיר גמרת מילי דשעיר לאו הכי תנן מצאו נעול בידוע שיש שם אדם למימרא דלא מיבעי ליה למיעל"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f009",
+      "refs": [
+        "Tamid 27b:12"
+      ],
+      "kind": "relation",
+      "proposition": "Rabbi Abba uses the locked-door teaching to oppose entering an occupied lavatory.",
+      "status": "objection",
+      "holder": "Rabbi Abba",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_b34116dc4502afd77be2",
+          "ref": "Tamid 27b:12",
+          "source_index": [
+            53,
+            11
+          ],
+          "start_char": 0,
+          "end_char": 121,
+          "quote": "בתר דנפיק א\"ל ר' אבא ע\"כ לא סליקת לשעיר גמרת מילי דשעיר לאו הכי תנן מצאו נעול בידוע שיש שם אדם למימרא דלא מיבעי ליה למיעל"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f010",
+      "refs": [
+        "Tamid 27b:13"
+      ],
+      "kind": "claim",
+      "proposition": "Rav Safra’s reason was concern that the waiting man might be in danger.",
+      "status": "asserted",
+      "holder": "Rav Safra",
+      "conditions": [
+        "Possible danger, דלמא, not certainty"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_bbd054633ac73a23e3ba",
+          "ref": "Tamid 27b:13",
+          "source_index": [
+            53,
+            12
+          ],
+          "start_char": 0,
+          "end_char": 117,
+          "quote": "ורב ספרא סבר דלמא מסוכן הוא כדתני' רשב\"ג אומר עמוד החוזר מביא את האדם לידי הדרוקן סילון החוזר מביא את האדם לידי ירקון"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f011",
+      "refs": [
+        "Tamid 27b:13"
+      ],
+      "kind": "claim",
+      "proposition": "The cited רשב״ג teaching associates a returning/retained solid discharge with הדרוקן.",
+      "status": "quoted",
+      "holder": "רשב״ג (printed abbreviation)",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_bbd054633ac73a23e3ba",
+          "ref": "Tamid 27b:13",
+          "source_index": [
+            53,
+            12
+          ],
+          "start_char": 0,
+          "end_char": 117,
+          "quote": "ורב ספרא סבר דלמא מסוכן הוא כדתני' רשב\"ג אומר עמוד החוזר מביא את האדם לידי הדרוקן סילון החוזר מביא את האדם לידי ירקון"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f012",
+      "refs": [
+        "Tamid 27b:13"
+      ],
+      "kind": "claim",
+      "proposition": "The cited רשב״ג teaching associates a returning/retained urinary stream with ירקון.",
+      "status": "quoted",
+      "holder": "רשב״ג (printed abbreviation)",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_bbd054633ac73a23e3ba",
+          "ref": "Tamid 27b:13",
+          "source_index": [
+            53,
+            12
+          ],
+          "start_char": 0,
+          "end_char": 117,
+          "quote": "ורב ספרא סבר דלמא מסוכן הוא כדתני' רשב\"ג אומר עמוד החוזר מביא את האדם לידי הדרוקן סילון החוזר מביא את האדם לידי ירקון"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f013",
+      "refs": [
+        "Tamid 27b:13"
+      ],
+      "kind": "relation",
+      "proposition": "Those two bodily-risk statements support Rav Safra’s exceptional invitation; not a general rejection of privacy.",
+      "status": "support",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_bbd054633ac73a23e3ba",
+          "ref": "Tamid 27b:13",
+          "source_index": [
+            53,
+            12
+          ],
+          "start_char": 0,
+          "end_char": 117,
+          "quote": "ורב ספרא סבר דלמא מסוכן הוא כדתני' רשב\"ג אומר עמוד החוזר מביא את האדם לידי הדרוקן סילון החוזר מביא את האדם לידי ירקון"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f014",
+      "refs": [
+        "Tamid 27b:14"
+      ],
+      "kind": "attribution",
+      "proposition": "Two parallel instructions: Rav speaks to Hiyya his son; Rav Huna speaks to Rabbah his son. They are not a chain or a dispute.",
+      "status": "reported",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_2eb38039ad9dbef2009c",
+          "ref": "Tamid 27b:14",
+          "source_index": [
+            53,
+            13
+          ],
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "א\"ל רב לחייא בריה וכן א\"ל רב הונא לרבה בריה חשיך תקין נפשך וקדים תקין נפשך כי היכי דלא תרחק תוב וגלי כסי וקום"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f015",
+      "refs": [
+        "Tamid 27b:14"
+      ],
+      "kind": "claim",
+      "proposition": "The instruction is to prepare oneself at night and early, so as not to have to go far.",
+      "status": "advice",
+      "holder": "Rav to Hiyya and Rav Huna to Rabbah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_2eb38039ad9dbef2009c",
+          "ref": "Tamid 27b:14",
+          "source_index": [
+            53,
+            13
+          ],
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "א\"ל רב לחייא בריה וכן א\"ל רב הונא לרבה בריה חשיך תקין נפשך וקדים תקין נפשך כי היכי דלא תרחק תוב וגלי כסי וקום"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f016",
+      "refs": [
+        "Tamid 27b:14"
+      ],
+      "kind": "claim",
+      "proposition": "Sit before uncovering.",
+      "status": "advice",
+      "holder": "Same two father/son instruction occurrences",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_2eb38039ad9dbef2009c",
+          "ref": "Tamid 27b:14",
+          "source_index": [
+            53,
+            13
+          ],
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "א\"ל רב לחייא בריה וכן א\"ל רב הונא לרבה בריה חשיך תקין נפשך וקדים תקין נפשך כי היכי דלא תרחק תוב וגלי כסי וקום"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f017",
+      "refs": [
+        "Tamid 27b:14"
+      ],
+      "kind": "claim",
+      "proposition": "Cover before standing.",
+      "status": "advice",
+      "holder": "Same two father/son instruction occurrences",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_2eb38039ad9dbef2009c",
+          "ref": "Tamid 27b:14",
+          "source_index": [
+            53,
+            13
+          ],
+          "start_char": 0,
+          "end_char": 109,
+          "quote": "א\"ל רב לחייא בריה וכן א\"ל רב הונא לרבה בריה חשיך תקין נפשך וקדים תקין נפשך כי היכי דלא תרחק תוב וגלי כסי וקום"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f018",
+      "refs": [
+        "Tamid 27b:15"
+      ],
+      "kind": "claim",
+      "proposition": "Rinse and drink; [rinse] and put down. Preserve the bracketed second שטוף and do not add an unstated object as literal quote.",
+      "status": "advice",
+      "holder": "Continuation of preceding instructions",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_7c9132e54728752a009c",
+          "ref": "Tamid 27b:15",
+          "source_index": [
+            53,
+            14
+          ],
+          "start_char": 0,
+          "end_char": 64,
+          "quote": "שטוף ושתי [שטוף] ואחית וכשאתה שותה מים שפוך מהן ואח\"כ תן לתלמידך"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f019",
+      "refs": [
+        "Tamid 27b:15"
+      ],
+      "kind": "claim",
+      "proposition": "After drinking water, pour some away before giving it to your student.",
+      "status": "advice",
+      "holder": "Continuation of preceding instructions",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_7c9132e54728752a009c",
+          "ref": "Tamid 27b:15",
+          "source_index": [
+            53,
+            14
+          ],
+          "start_char": 0,
+          "end_char": 64,
+          "quote": "שטוף ושתי [שטוף] ואחית וכשאתה שותה מים שפוך מהן ואח\"כ תן לתלמידך"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f020",
+      "refs": [
+        "Tamid 27b:16"
+      ],
+      "kind": "claim",
+      "proposition": "The baraita forbids drinking water and handing it to one’s student without first pouring some away.",
+      "status": "quoted",
+      "holder": "anonymous baraita",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e428e1cc9d4de69dfb38",
+          "ref": "Tamid 27b:16",
+          "source_index": [
+            53,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 267,
+          "quote": "כדתניא לא ישתה אדם מים ויתן לתלמידו אלא אם כן שפך מהן ומעשה באחד ששתה מים ולא שפך מהן ונתן לתלמידו ואותו תלמיד איסטניס היה ולא רצה לשתות ומת בצמא באותה שעה אמרו לא ישתה אדם מים ויתן לתלמידו אא\"כ שפך מהן רב אשי אמר הילכך האי תלמידא דשפיך קמי רביה לית ביה משום אפקירותא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f021",
+      "refs": [
+        "Tamid 27b:16"
+      ],
+      "kind": "narrative",
+      "proposition": "A person drank, did not pour away water, and gave it to his student.",
+      "status": "reported",
+      "holder": "anonymous baraita narrative",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e428e1cc9d4de69dfb38",
+          "ref": "Tamid 27b:16",
+          "source_index": [
+            53,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 267,
+          "quote": "כדתניא לא ישתה אדם מים ויתן לתלמידו אלא אם כן שפך מהן ומעשה באחד ששתה מים ולא שפך מהן ונתן לתלמידו ואותו תלמיד איסטניס היה ולא רצה לשתות ומת בצמא באותה שעה אמרו לא ישתה אדם מים ויתן לתלמידו אא\"כ שפך מהן רב אשי אמר הילכך האי תלמידא דשפיך קמי רביה לית ביה משום אפקירותא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f022",
+      "refs": [
+        "Tamid 27b:16"
+      ],
+      "kind": "narrative",
+      "proposition": "The student was fastidious, refused to drink, and died of thirst in the narrated account.",
+      "status": "reported",
+      "holder": "anonymous baraita narrative",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e428e1cc9d4de69dfb38",
+          "ref": "Tamid 27b:16",
+          "source_index": [
+            53,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 267,
+          "quote": "כדתניא לא ישתה אדם מים ויתן לתלמידו אלא אם כן שפך מהן ומעשה באחד ששתה מים ולא שפך מהן ונתן לתלמידו ואותו תלמיד איסטניס היה ולא רצה לשתות ומת בצמא באותה שעה אמרו לא ישתה אדם מים ויתן לתלמידו אא\"כ שפך מהן רב אשי אמר הילכך האי תלמידא דשפיך קמי רביה לית ביה משום אפקירותא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f023",
+      "refs": [
+        "Tamid 27b:16"
+      ],
+      "kind": "claim",
+      "proposition": "The narrative is followed by the rule requiring pouring away some before giving water to the student.",
+      "status": "reported",
+      "holder": "anonymous baraita",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e428e1cc9d4de69dfb38",
+          "ref": "Tamid 27b:16",
+          "source_index": [
+            53,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 267,
+          "quote": "כדתניא לא ישתה אדם מים ויתן לתלמידו אלא אם כן שפך מהן ומעשה באחד ששתה מים ולא שפך מהן ונתן לתלמידו ואותו תלמיד איסטניס היה ולא רצה לשתות ומת בצמא באותה שעה אמרו לא ישתה אדם מים ויתן לתלמידו אא\"כ שפך מהן רב אשי אמר הילכך האי תלמידא דשפיך קמי רביה לית ביה משום אפקירותא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f024",
+      "refs": [
+        "Tamid 27b:16"
+      ],
+      "kind": "claim",
+      "proposition": "Rav Ashi concludes that a student who pours away water before his teacher is not thereby disrespectful.",
+      "status": "asserted",
+      "holder": "Rav Ashi",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e428e1cc9d4de69dfb38",
+          "ref": "Tamid 27b:16",
+          "source_index": [
+            53,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 267,
+          "quote": "כדתניא לא ישתה אדם מים ויתן לתלמידו אלא אם כן שפך מהן ומעשה באחד ששתה מים ולא שפך מהן ונתן לתלמידו ואותו תלמיד איסטניס היה ולא רצה לשתות ומת בצמא באותה שעה אמרו לא ישתה אדם מים ויתן לתלמידו אא\"כ שפך מהן רב אשי אמר הילכך האי תלמידא דשפיך קמי רביה לית ביה משום אפקירותא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f025",
+      "refs": [
+        "Tamid 27b:16"
+      ],
+      "kind": "relation",
+      "proposition": "The rule/narrative supports Rav Ashi’s permissive conclusion about the student’s conduct.",
+      "status": "support",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e428e1cc9d4de69dfb38",
+          "ref": "Tamid 27b:16",
+          "source_index": [
+            53,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 267,
+          "quote": "כדתניא לא ישתה אדם מים ויתן לתלמידו אלא אם כן שפך מהן ומעשה באחד ששתה מים ולא שפך מהן ונתן לתלמידו ואותו תלמיד איסטניס היה ולא רצה לשתות ומת בצמא באותה שעה אמרו לא ישתה אדם מים ויתן לתלמידו אא\"כ שפך מהן רב אשי אמר הילכך האי תלמידא דשפיך קמי רביה לית ביה משום אפקירותא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f026",
+      "refs": [
+        "Tamid 27b:17"
+      ],
+      "kind": "claim",
+      "proposition": "Do not spit out things before your teacher, subject to the stated exceptions.",
+      "status": "advice",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3fd13da14b8ee2594497",
+          "ref": "Tamid 27b:17",
+          "source_index": [
+            53,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "כל מילי לא תיפלוט באפי רבך בר מקרא ודייסא דכפתילה של אבר דמו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f027",
+      "refs": [
+        "Tamid 27b:17"
+      ],
+      "kind": "claim",
+      "proposition": "Gourd and porridge are exceptions because they are compared to a lead wick in their harmful effect.",
+      "status": "advice",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "מקרא ודייסא as printed; no contemporary medical recommendation"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_3fd13da14b8ee2594497",
+          "ref": "Tamid 27b:17",
+          "source_index": [
+            53,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "כל מילי לא תיפלוט באפי רבך בר מקרא ודייסא דכפתילה של אבר דמו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f028",
+      "refs": [
+        "Tamid 27b:18"
+      ],
+      "kind": "claim",
+      "proposition": "The Temple Mount officer circulated among each watch, with torches burning before him.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_944a2b3890f5431d4aa5",
+          "ref": "Tamid 27b:18",
+          "source_index": [
+            53,
+            17
+          ],
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "תנן התם איש הר הבית היה מחזר על כל משמר ומשמר ואבוקות דולקות לפניו וכל משמר שאינו עומד וא\"ל איש הר הבית"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f029",
+      "refs": [
+        "Tamid 27b:18",
+        "Tamid 28a:1"
+      ],
+      "kind": "claim",
+      "proposition": "The cross-folio passage describes a guard who does not stand as the officer greets him; his sleep becomes apparent.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_944a2b3890f5431d4aa5",
+          "ref": "Tamid 27b:18",
+          "source_index": [
+            53,
+            17
+          ],
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "תנן התם איש הר הבית היה מחזר על כל משמר ומשמר ואבוקות דולקות לפניו וכל משמר שאינו עומד וא\"ל איש הר הבית"
+        },
+        {
+          "segment_id": "seg_d2c035e4900fbf1f8518",
+          "ref": "Tamid 28a:1",
+          "source_index": [
+            54,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 200,
+          "quote": "שלום עליך ניכר שהוא ישן חובטו במקלו ורשות היתה לו לשרוף את כסותו והם אומרים מה קול בעזרה קול בן לוי לוקה ובגדיו נשרפין שישן לו על משמר ר' אליעזר בן יעקב אומר פעם אחת מצאו את אחי אמי ישן ושרפו את כסותו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f030",
+      "refs": [
+        "Tamid 28a:1"
+      ],
+      "kind": "claim",
+      "proposition": "The officer strikes the sleeping guard with his staff.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [
+        "Guard found sleeping at watch"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_d2c035e4900fbf1f8518",
+          "ref": "Tamid 28a:1",
+          "source_index": [
+            54,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 200,
+          "quote": "שלום עליך ניכר שהוא ישן חובטו במקלו ורשות היתה לו לשרוף את כסותו והם אומרים מה קול בעזרה קול בן לוי לוקה ובגדיו נשרפין שישן לו על משמר ר' אליעזר בן יעקב אומר פעם אחת מצאו את אחי אמי ישן ושרפו את כסותו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f031",
+      "refs": [
+        "Tamid 28a:1"
+      ],
+      "kind": "claim",
+      "proposition": "The officer had permission to burn that guard’s clothing.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [
+        "Guard found sleeping at watch"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_d2c035e4900fbf1f8518",
+          "ref": "Tamid 28a:1",
+          "source_index": [
+            54,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 200,
+          "quote": "שלום עליך ניכר שהוא ישן חובטו במקלו ורשות היתה לו לשרוף את כסותו והם אומרים מה קול בעזרה קול בן לוי לוקה ובגדיו נשרפין שישן לו על משמר ר' אליעזר בן יעקב אומר פעם אחת מצאו את אחי אמי ישן ושרפו את כסותו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f032",
+      "refs": [
+        "Tamid 28a:1"
+      ],
+      "kind": "utterance",
+      "proposition": "The reported courtyard voices identify the noise as a Levite being beaten and his garments burned because he slept on watch.",
+      "status": "quoted",
+      "holder": "Reported voices within Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_d2c035e4900fbf1f8518",
+          "ref": "Tamid 28a:1",
+          "source_index": [
+            54,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 200,
+          "quote": "שלום עליך ניכר שהוא ישן חובטו במקלו ורשות היתה לו לשרוף את כסותו והם אומרים מה קול בעזרה קול בן לוי לוקה ובגדיו נשרפין שישן לו על משמר ר' אליעזר בן יעקב אומר פעם אחת מצאו את אחי אמי ישן ושרפו את כסותו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f033",
+      "refs": [
+        "Tamid 28a:1"
+      ],
+      "kind": "narrative",
+      "proposition": "Rabbi Eliezer ben Yaakov reports that his maternal uncle was once found asleep and his clothing was burned.",
+      "status": "reported",
+      "holder": "Rabbi Eliezer ben Yaakov",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_d2c035e4900fbf1f8518",
+          "ref": "Tamid 28a:1",
+          "source_index": [
+            54,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 200,
+          "quote": "שלום עליך ניכר שהוא ישן חובטו במקלו ורשות היתה לו לשרוף את כסותו והם אומרים מה קול בעזרה קול בן לוי לוקה ובגדיו נשרפין שישן לו על משמר ר' אליעזר בן יעקב אומר פעם אחת מצאו את אחי אמי ישן ושרפו את כסותו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f034",
+      "refs": [
+        "Tamid 28a:2"
+      ],
+      "kind": "attribution",
+      "proposition": "Rabbi Hiyya bar Abba reports Rabbi Yohanan’s response when reaching this teaching. Preserve reporter and speaker separately.",
+      "status": "transmitted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_0045c2b17cfea4b144e2",
+          "ref": "Tamid 28a:2",
+          "source_index": [
+            54,
+            1
+          ],
+          "start_char": 0,
+          "end_char": 130,
+          "quote": "א\"ר חייא בר אבא כי מטי רבי יוחנן בהא מתניתא אמר הכי אשריהם לראשונים שאפילו על אונס שינה עושין דין שלא על אונס שינה על אחת כמה וכמה"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f035",
+      "refs": [
+        "Tamid 28a:2"
+      ],
+      "kind": "claim",
+      "proposition": "Rabbi Yohanan praises earlier people for imposing judgment even for involuntary sleep.",
+      "status": "reported",
+      "holder": "Rabbi Yohanan",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_0045c2b17cfea4b144e2",
+          "ref": "Tamid 28a:2",
+          "source_index": [
+            54,
+            1
+          ],
+          "start_char": 0,
+          "end_char": 130,
+          "quote": "א\"ר חייא בר אבא כי מטי רבי יוחנן בהא מתניתא אמר הכי אשריהם לראשונים שאפילו על אונס שינה עושין דין שלא על אונס שינה על אחת כמה וכמה"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f036",
+      "refs": [
+        "Tamid 28a:2"
+      ],
+      "kind": "claim",
+      "proposition": "He draws an a fortiori inference for cases not caused by involuntary sleep.",
+      "status": "reported",
+      "holder": "Rabbi Yohanan",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_0045c2b17cfea4b144e2",
+          "ref": "Tamid 28a:2",
+          "source_index": [
+            54,
+            1
+          ],
+          "start_char": 0,
+          "end_char": 130,
+          "quote": "א\"ר חייא בר אבא כי מטי רבי יוחנן בהא מתניתא אמר הכי אשריהם לראשונים שאפילו על אונס שינה עושין דין שלא על אונס שינה על אחת כמה וכמה"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f037",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "question",
+      "proposition": "What is the straight path a person should choose?",
+      "status": "questioned",
+      "holder": "רבי in quoted baraita",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f038",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "claim",
+      "proposition": "Rabbi answers: love rebukes.",
+      "status": "quoted",
+      "holder": "רבי (no further name expansion)",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f039",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "claim",
+      "proposition": "While rebukes exist, tranquility comes to the world.",
+      "status": "quoted",
+      "holder": "רבי",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f040",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "claim",
+      "proposition": "Goodness and blessing come while rebukes exist.",
+      "status": "quoted",
+      "holder": "רבי",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f041",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "claim",
+      "proposition": "Evil departs while rebukes exist.",
+      "status": "quoted",
+      "holder": "רבי",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f042",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "relation",
+      "proposition": "ולמוכיחים ינעם ועליהם תבא ברכת טוב is cited in support of the rebuke account.",
+      "status": "support",
+      "holder": "רבי",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f043",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "claim",
+      "proposition": "An anonymous יש אומרים alternative advises holding to exceptional faithfulness.",
+      "status": "alternative",
+      "holder": "יש אומרים",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f044",
+      "refs": [
+        "Tamid 28a:3"
+      ],
+      "kind": "relation",
+      "proposition": "עיני בנאמני ארץ לשבת עמדי supports the faithfulness alternative.",
+      "status": "support",
+      "holder": "יש אומרים",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9181c028aa4eb776e5c7",
+          "ref": "Tamid 28a:3",
+          "source_index": [
+            54,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 280,
+          "quote": "תניא רבי אומר איזו היא דרך ישרה שיבור לו האדם יאהב את התוכחות שכל זמן שתוכחות בעולם נחת רוח באה לעולם טובה וברכה באין לעולם ורעה מסתלקת מן העולם שנאמר (משלי כד, כה) ולמוכיחים ינעם ועליהם תבא ברכת טוב ויש אומרים יחזיק באמונה יתירה שנאמר (תהלים קא, ו) עיני בנאמני ארץ לשבת עמדי וגו'"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f045",
+      "refs": [
+        "Tamid 28a:4"
+      ],
+      "kind": "attribution",
+      "proposition": "Rabbi Shmuel bar Nahmani reports Rabbi Yonatan; the claims are not assigned to the reporter alone.",
+      "status": "transmitted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_42de4cc41c907b621a2f",
+          "ref": "Tamid 28a:4",
+          "source_index": [
+            54,
+            3
+          ],
+          "start_char": 0,
+          "end_char": 204,
+          "quote": "אמר רבי שמואל בר נחמני אמר ר' יונתן כל המוכיח את חבירו לשם שמים זוכה לחלקו של הקדוש ברוך הוא שנאמר (משלי כח, כג) מוכיח אדם אחרי ולא עוד אלא שמושכין עליו חוט של חסד שנאמר (משלי כח, כג) חן ימצא ממחליק לשון:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f046",
+      "refs": [
+        "Tamid 28a:4"
+      ],
+      "kind": "claim",
+      "proposition": "One who rebukes his fellow for the sake of Heaven merits the portion of the Holy One, blessed be He.",
+      "status": "quoted",
+      "holder": "Rabbi Yonatan",
+      "conditions": [
+        "Rebuke לשם שמים"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_42de4cc41c907b621a2f",
+          "ref": "Tamid 28a:4",
+          "source_index": [
+            54,
+            3
+          ],
+          "start_char": 0,
+          "end_char": 204,
+          "quote": "אמר רבי שמואל בר נחמני אמר ר' יונתן כל המוכיח את חבירו לשם שמים זוכה לחלקו של הקדוש ברוך הוא שנאמר (משלי כח, כג) מוכיח אדם אחרי ולא עוד אלא שמושכין עליו חוט של חסד שנאמר (משלי כח, כג) חן ימצא ממחליק לשון:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f047",
+      "refs": [
+        "Tamid 28a:4"
+      ],
+      "kind": "claim",
+      "proposition": "In addition a thread of grace is drawn over such a rebuker.",
+      "status": "quoted",
+      "holder": "Rabbi Yonatan",
+      "conditions": [
+        "Rebuke לשם שמים"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_42de4cc41c907b621a2f",
+          "ref": "Tamid 28a:4",
+          "source_index": [
+            54,
+            3
+          ],
+          "start_char": 0,
+          "end_char": 204,
+          "quote": "אמר רבי שמואל בר נחמני אמר ר' יונתן כל המוכיח את חבירו לשם שמים זוכה לחלקו של הקדוש ברוך הוא שנאמר (משלי כח, כג) מוכיח אדם אחרי ולא עוד אלא שמושכין עליו חוט של חסד שנאמר (משלי כח, כג) חן ימצא ממחליק לשון:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f048",
+      "refs": [
+        "Tamid 28a:4"
+      ],
+      "kind": "relation",
+      "proposition": "מוכיח אדם אחרי supports the first reward; חן ימצא ממחליק לשון supports the additional grace.",
+      "status": "support",
+      "holder": "Rabbi Yonatan",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_42de4cc41c907b621a2f",
+          "ref": "Tamid 28a:4",
+          "source_index": [
+            54,
+            3
+          ],
+          "start_char": 0,
+          "end_char": 204,
+          "quote": "אמר רבי שמואל בר נחמני אמר ר' יונתן כל המוכיח את חבירו לשם שמים זוכה לחלקו של הקדוש ברוך הוא שנאמר (משלי כח, כג) מוכיח אדם אחרי ולא עוד אלא שמושכין עליו חוט של חסד שנאמר (משלי כח, כג) חן ימצא ממחליק לשון:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f049",
+      "refs": [
+        "Tamid 28a:5"
+      ],
+      "kind": "question",
+      "proposition": "The Mishnah first sounds as though willing early immersion suffices, but later calls for a lottery: apparent contradiction.",
+      "status": "questioned",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_dd9591726896912848f2",
+          "ref": "Tamid 28a:5",
+          "source_index": [
+            54,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 199,
+          "quote": "מצאו נעול יודע וכו' מי שהוא רוצה לתרום את המזבח [וכו']: הא גופא קשיא אמרת מי שהוא רוצה לתרום את המזבח משכים וטובל עד שלא יבא הממונה אלמא לאו בפייס תליא מילתא והדר תני יבא ויפייס אלמא בפייס תליא מילתא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f050",
+      "refs": [
+        "Tamid 28a:5"
+      ],
+      "kind": "claim",
+      "proposition": "The first inference is that ash removal does not depend on a lottery.",
+      "status": "provisional",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_dd9591726896912848f2",
+          "ref": "Tamid 28a:5",
+          "source_index": [
+            54,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 199,
+          "quote": "מצאו נעול יודע וכו' מי שהוא רוצה לתרום את המזבח [וכו']: הא גופא קשיא אמרת מי שהוא רוצה לתרום את המזבח משכים וטובל עד שלא יבא הממונה אלמא לאו בפייס תליא מילתא והדר תני יבא ויפייס אלמא בפייס תליא מילתא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f051",
+      "refs": [
+        "Tamid 28a:5"
+      ],
+      "kind": "claim",
+      "proposition": "The later clause implies that ash removal does depend on a lottery.",
+      "status": "provisional",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_dd9591726896912848f2",
+          "ref": "Tamid 28a:5",
+          "source_index": [
+            54,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 199,
+          "quote": "מצאו נעול יודע וכו' מי שהוא רוצה לתרום את המזבח [וכו']: הא גופא קשיא אמרת מי שהוא רוצה לתרום את המזבח משכים וטובל עד שלא יבא הממונה אלמא לאו בפייס תליא מילתא והדר תני יבא ויפייס אלמא בפייס תליא מילתא"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f052",
+      "refs": [
+        "Tamid 28a:6"
+      ],
+      "kind": "claim",
+      "proposition": "Abaye distinguishes before the ordinance from after the ordinance.",
+      "status": "asserted",
+      "holder": "Abaye",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_cad932cc73f0600eb707",
+          "ref": "Tamid 28a:6",
+          "source_index": [
+            54,
+            5
+          ],
+          "start_char": 0,
+          "end_char": 44,
+          "quote": "אמר אביי לא קשיא כאן קודם תקנה כאן לאחר תקנה"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f053",
+      "refs": [
+        "Tamid 28a:7"
+      ],
+      "kind": "claim",
+      "proposition": "Initially anyone wishing to remove the ashes could do so.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_04ecf9ab75895b2119a6",
+          "ref": "Tamid 28a:7",
+          "source_index": [
+            54,
+            6
+          ],
+          "start_char": 0,
+          "end_char": 151,
+          "quote": "דתנן בראשונה כל מי שרוצה לתרום את המזבח תורם בזמן שהן מרובין רצין ועולין בכבש כל הקודם את חבירו בתוך ארבע אמות זכה היו שנים שוין הממונה אומר להם הצביעו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f054",
+      "refs": [
+        "Tamid 28a:7"
+      ],
+      "kind": "claim",
+      "proposition": "If many wished, they ran up the ramp and the one preceding another into4cubits won.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_04ecf9ab75895b2119a6",
+          "ref": "Tamid 28a:7",
+          "source_index": [
+            54,
+            6
+          ],
+          "start_char": 0,
+          "end_char": 151,
+          "quote": "דתנן בראשונה כל מי שרוצה לתרום את המזבח תורם בזמן שהן מרובין רצין ועולין בכבש כל הקודם את חבירו בתוך ארבע אמות זכה היו שנים שוין הממונה אומר להם הצביעו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f055",
+      "refs": [
+        "Tamid 28a:7"
+      ],
+      "kind": "claim",
+      "proposition": "If two tied, the officer told them to extend fingers.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_04ecf9ab75895b2119a6",
+          "ref": "Tamid 28a:7",
+          "source_index": [
+            54,
+            6
+          ],
+          "start_char": 0,
+          "end_char": 151,
+          "quote": "דתנן בראשונה כל מי שרוצה לתרום את המזבח תורם בזמן שהן מרובין רצין ועולין בכבש כל הקודם את חבירו בתוך ארבע אמות זכה היו שנים שוין הממונה אומר להם הצביעו"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f056",
+      "refs": [
+        "Tamid 28a:8"
+      ],
+      "kind": "claim",
+      "proposition": "They extend one or two fingers.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_b9f2714f12345c2ff61e",
+          "ref": "Tamid 28a:8",
+          "source_index": [
+            54,
+            7
+          ],
+          "start_char": 0,
+          "end_char": 50,
+          "quote": "ומה הן מוציאין אחת או שתים ואין מוציאין גודל במקדש"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f057",
+      "refs": [
+        "Tamid 28a:8"
+      ],
+      "kind": "claim",
+      "proposition": "They do not extend a thumb in the Temple.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_b9f2714f12345c2ff61e",
+          "ref": "Tamid 28a:8",
+          "source_index": [
+            54,
+            7
+          ],
+          "start_char": 0,
+          "end_char": 50,
+          "quote": "ומה הן מוציאין אחת או שתים ואין מוציאין גודל במקדש"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f058",
+      "refs": [
+        "Tamid 28a:9"
+      ],
+      "kind": "narrative",
+      "proposition": "Two were running equally up the ramp; one pushed the other and the latter’s leg broke.",
+      "status": "reported",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_6f34f99e143fcb443154",
+          "ref": "Tamid 28a:9",
+          "source_index": [
+            54,
+            8
+          ],
+          "start_char": 0,
+          "end_char": 142,
+          "quote": "מעשה ב' היו שוין רצין עולין בכבש ודחף אחד מהם את חבירו ונשברה רגלו וכשראו בית דין שהיו באים לידי סכנה התקינו שלא יהו תורמין את המזבח אלא בפייס"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f059",
+      "refs": [
+        "Tamid 28a:9"
+      ],
+      "kind": "claim",
+      "proposition": "Seeing the danger, the court instituted that ash removal must be selected only by lottery.",
+      "status": "quoted",
+      "holder": "quoted anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_6f34f99e143fcb443154",
+          "ref": "Tamid 28a:9",
+          "source_index": [
+            54,
+            8
+          ],
+          "start_char": 0,
+          "end_char": 142,
+          "quote": "מעשה ב' היו שוין רצין עולין בכבש ודחף אחד מהם את חבירו ונשברה רגלו וכשראו בית דין שהיו באים לידי סכנה התקינו שלא יהו תורמין את המזבח אלא בפייס"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f060",
+      "refs": [
+        "Tamid 28a:9"
+      ],
+      "kind": "relation",
+      "proposition": "The dangerous incident motivates the ordinance and supports Abaye’s before/after distinction.",
+      "status": "support",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_6f34f99e143fcb443154",
+          "ref": "Tamid 28a:9",
+          "source_index": [
+            54,
+            8
+          ],
+          "start_char": 0,
+          "end_char": 142,
+          "quote": "מעשה ב' היו שוין רצין עולין בכבש ודחף אחד מהם את חבירו ונשברה רגלו וכשראו בית דין שהיו באים לידי סכנה התקינו שלא יהו תורמין את המזבח אלא בפייס"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f061",
+      "refs": [
+        "Tamid 28a:10"
+      ],
+      "kind": "claim",
+      "proposition": "Rava says both Mishnah clauses concern after the ordinance.",
+      "status": "alternative",
+      "holder": "Rava",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_cf119682fbd6530ff483",
+          "ref": "Tamid 28a:10",
+          "source_index": [
+            54,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 93,
+          "quote": "רבא אמר אידי ואידי לאחר תקנה והכי קתני מי שהוא רוצה לבא ולפייס משכים וטובל עד שלא יבא הממונה:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f062",
+      "refs": [
+        "Tamid 28a:10"
+      ],
+      "kind": "claim",
+      "proposition": "Rava reads the early immersion as preparation by anyone wishing to come and participate in the lottery, before the officer arrives.",
+      "status": "asserted",
+      "holder": "Rava",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_cf119682fbd6530ff483",
+          "ref": "Tamid 28a:10",
+          "source_index": [
+            54,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 93,
+          "quote": "רבא אמר אידי ואידי לאחר תקנה והכי קתני מי שהוא רוצה לבא ולפייס משכים וטובל עד שלא יבא הממונה:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f063",
+      "refs": [
+        "Tamid 28a:10"
+      ],
+      "kind": "relation",
+      "proposition": "Abaye and Rava offer distinct reconciliations; do not collapse them or declare one rejected without source support.",
+      "status": "reconciliation",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_cf119682fbd6530ff483",
+          "ref": "Tamid 28a:10",
+          "source_index": [
+            54,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 93,
+          "quote": "רבא אמר אידי ואידי לאחר תקנה והכי קתני מי שהוא רוצה לבא ולפייס משכים וטובל עד שלא יבא הממונה:"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f064",
+      "refs": [
+        "Tamid 28a:11"
+      ],
+      "kind": "narrative",
+      "proposition": "The new Mishnah says he took the key and opened the wicket. The local subject is pronominal; do not invent a named priest.",
+      "status": "quoted",
+      "holder": "anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_a8d6db6d843b5738375d",
+          "ref": "Tamid 28a:11",
+          "source_index": [
+            54,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "<big><strong>מתני׳</strong></big> נטל את המפתח ופתח את הפשפש ונכנס מבית המוקד לעזרה ונכנסו הכהנים אחריו ושתי אבוקות של אור בידם"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f065",
+      "refs": [
+        "Tamid 28a:11"
+      ],
+      "kind": "narrative",
+      "proposition": "He entered from the Chamber of the Hearth into the courtyard.",
+      "status": "quoted",
+      "holder": "anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_a8d6db6d843b5738375d",
+          "ref": "Tamid 28a:11",
+          "source_index": [
+            54,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "<big><strong>מתני׳</strong></big> נטל את המפתח ופתח את הפשפש ונכנס מבית המוקד לעזרה ונכנסו הכהנים אחריו ושתי אבוקות של אור בידם"
+        }
+      ]
+    },
+    {
+      "id": "tam005.f066",
+      "refs": [
+        "Tamid 28a:11"
+      ],
+      "kind": "narrative",
+      "proposition": "The priests entered after him with two burning torches in their hands.",
+      "status": "quoted",
+      "holder": "anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_a8d6db6d843b5738375d",
+          "ref": "Tamid 28a:11",
+          "source_index": [
+            54,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "<big><strong>מתני׳</strong></big> נטל את המפתח ופתח את הפשפש ונכנס מבית המוקד לעזרה ונכנסו הכהנים אחריו ושתי אבוקות של אור בידם"
+        }
+      ]
+    }
+  ],
+  "context": [
+    {
+      "refs": "Tamid27b9",
+      "observation": "Prior incipit continues into first core; prior reader/producer context27b10 already viewed and now explicitly disclosed."
+    },
+    {
+      "refs": "Tamid25b3–26a4",
+      "observation": "Earlier Mishnah route, locked lavatory and early immersion/lottery wording read previously; supports current comparisons."
+    },
+    {
+      "refs": "Tamid28a12–28b2",
+      "observation": "Continuation of new Mishnah: groups east/west inspect to meal-offering makers; ash-remover alone after sanctifying hands/feet; shovel/firelight and deposit details. New core ends at28a11 and must remain open."
+    },
+    {
+      "refs": "Tamid28b3–6",
+      "observation": "Gemara qualifies porticoes as masonry (Rav Hisda), and preparatory hot water for revikhah (Rabbi Yehuda) rather than meal offering preceding morning tamid. Preserve these context restrictions on following Mishnah interpretations."
+    },
+    {
+      "refs": "Tamid28b7–8",
+      "observation": "Chapter-end text then new Mishnah boundary inspected; not additional covered core."
+    }
+  ],
+  "structure": [
+    {
+      "refs": "27b10",
+      "status": "Closes emission/tunnel continuation from previous lemma"
+    },
+    {
+      "refs": "27b11–17",
+      "status": "Lavatory conduct and related practical instructions; distinct voices and narrative supports"
+    },
+    {
+      "refs": "27b18–28a4",
+      "status": "Watch discipline with narrative/rebuke teaching extension; crossfolio preserved"
+    },
+    {
+      "refs": "28a5–10",
+      "status": "Lottery contradiction with two unrejected reconciliations"
+    },
+    {
+      "refs": "28a11",
+      "status": "New Mishnah open-right; full continuation read to chapter boundary"
+    }
+  ],
+  "layer_checks": {
+    "structure": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    },
+    "utterances": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    },
+    "claims": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    },
+    "attributions": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    },
+    "questions": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    },
+    "positions": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    },
+    "edges": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    },
+    "reconciliation": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "findings": "Manually recorded source statements, stages, actors and relations; no production certification"
+    }
+  },
+  "omission_priorities": [
+    "Do not merge Rav/Rav Huna parallel father-to-son sayings into a chain.",
+    "Rav Safra danger reasoning is possible risk, not certain diagnosis or universal privacy waiver.",
+    "Preserve narrative deaths/punishments as source reports; do not assert them as verified events or current advice.",
+    "Crossfolio watch discipline58–59 and two lottery interpretations remain connected.",
+    "Reported Hiyya→Yohanan and ShmuelbarNahmani→Yonatan preserve actual attribution.",
+    "Bracketed שטוף and unresolved רשב״ג retained; no unpinned identity expansion.",
+    "New opening-Mishnah core69 does not cover following procedure."
+  ],
+  "eligibility": {
+    "ml_eligible": false,
+    "tractate_acceptance": false,
+    "human_certification": false
+  },
+  "resume": "Freeze before Tamid005 producer output. Compare exact future snapshot against these findings, with disclosed prior27b10context/earlierreview exposure. Preserve source-first evidence and original indices, no fresh blind/random credit."
+}

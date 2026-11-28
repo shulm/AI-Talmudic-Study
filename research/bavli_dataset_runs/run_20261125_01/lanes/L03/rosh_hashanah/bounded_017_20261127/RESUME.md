@@ -1,0 +1,3 @@
+Next13a8 under coordinator instructions; reuse context through13b2 without duplication. Extend open third structure immutably; initial harvest proof remains withdrawn, alternative precision challenge and swift-land reply unresolved as argument endpoint. Independent review remains pending.
+Snapshot 85052d7ae9cd0a063765ac9901879eefa9d8007554035778c5f0c635587ecf11; proposal 4c708f64434a4c9c1233edbf7d8c6ddae0c912ee388de8e04c1774afaa739eb7
+302/1025 each pass,723 remain. OwnerL03/rosh_hashanah epoch3. Replay frozen runner before continuation; export F:\Sefaria_QA\bavli_production_run_20261125_01\L03\bavli_rosh_hashanah\exports\bounded_017_20261127

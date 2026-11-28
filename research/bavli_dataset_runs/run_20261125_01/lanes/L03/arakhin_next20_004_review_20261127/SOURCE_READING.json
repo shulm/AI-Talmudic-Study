@@ -1,0 +1,1781 @@
+{
+  "artifact_kind": "independent_source_only_preparation",
+  "reviewer": "/root/yevamot",
+  "model_id": null,
+  "blindness": {
+    "new_arakhin004_producer_labels_seen": false,
+    "prior_opening_arakhin001_source_and_labels_seen": true,
+    "earlier_source_cohort": "Prior opening comparison used existing reader_l03_remaining_wave5; this is a new bounded source preparation, not a new blind cohort",
+    "fresh_blind_cohort": false,
+    "random_cohort": false,
+    "arakhin_production_authorship": false
+  },
+  "source": {
+    "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Kodashim\\Arakhin\\Hebrew\\Wikisource Talmud Bavli.json",
+    "sha256": "1a25d9524ec1d35eee64749794e158a24bfa10177bc9c6db56b4fca6adbc9ed4",
+    "schema_path": "F:\\Sefaria-Export-master\\schemas\\Arakhin.json",
+    "schema_sha256": "b7839fc28149ac6d436991936a85057d1781596bba27365a916d0112e6430804",
+    "edition": "Wikisource Talmud Bavli",
+    "denominator": 1183
+  },
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "actual_active_run": {
+    "assignment_ledger": "research/bavli_dataset_runs/run_20261125_01/ASSIGNMENT_LEDGER.json",
+    "assignment_revision": 6,
+    "contract_commit": "53bfbacb8f95d625f5036b73109eef738277e7e7",
+    "contract_path": "research/bavli_dataset_runs/run_20261125_01/RUN_CONTRACT.json",
+    "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+    "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "run_id": "run_20261125_01"
+  },
+  "scope": {
+    "first": "Arakhin 3a:16",
+    "last": "Arakhin 4a:1",
+    "core_count": 20,
+    "inventory_indices": [
+      50,
+      69
+    ],
+    "original_indices": [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        5,
+        15
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "next_ref": "Arakhin 4a:2",
+    "next_source_index": [
+      6,
+      1
+    ],
+    "context_read": "Prior3a14–15; following4a2–19; pertinent next-topic argument through4a15, boundary4a16"
+  },
+  "findings": [
+    {
+      "id": "ark004.f001",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "What does הכל שוחטין include?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_225ae25d1a2ea365b6f7",
+          "ref": "Arakhin 3a:16",
+          "source_index": [
+            4,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "הכל שוחטין לאתויי מאי חדא לאתויי כותי וחדא לאתויי ישראל מומר"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f002",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "One occurrence includes a Samaritan slaughterer; the other includes an apostate Israelite. Distinguish the two inclusions, not two named opinions.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Local unspecified הכל occurrences; do not invent their external references or detailed eligibility conditions"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_225ae25d1a2ea365b6f7",
+          "ref": "Arakhin 3a:16",
+          "source_index": [
+            4,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "הכל שוחטין לאתויי מאי חדא לאתויי כותי וחדא לאתויי ישראל מומר"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f003",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "What is included by הכל מעלין לארץ ישראל? The question continues acrossfolio.",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3b5d8d1aca37e6025c72",
+          "ref": "Arakhin 3a:17",
+          "source_index": [
+            4,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "הכל מעלין לא\"י לאתויי מאי"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f004",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "The inclusion is slaves, under the version which does not expressly list them.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3b5d8d1aca37e6025c72",
+          "ref": "Arakhin 3a:17",
+          "source_index": [
+            4,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "הכל מעלין לא\"י לאתויי מאי"
+        },
+        {
+          "segment_id": "seg_ccf1f57e43762ff6d79e",
+          "ref": "Arakhin 3b:1",
+          "source_index": [
+            5,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "לאתויי עבדים ולמאן דתני עבדים בהדיא לאתויי מאי לאתויי מנוה היפה לנוה הרעה"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f005",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "For the version explicitly listing slaves, what does הכל add?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_ccf1f57e43762ff6d79e",
+          "ref": "Arakhin 3b:1",
+          "source_index": [
+            5,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "לאתויי עבדים ולמאן דתני עבדים בהדיא לאתויי מאי לאתויי מנוה היפה לנוה הרעה"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f006",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "That version includes moving from a good residence to an inferior residence.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Moving to the land of Israel; alternate textual version"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_ccf1f57e43762ff6d79e",
+          "ref": "Arakhin 3b:1",
+          "source_index": [
+            5,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "לאתויי עבדים ולמאן דתני עבדים בהדיא לאתויי מאי לאתויי מנוה היפה לנוה הרעה"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f007",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "אין הכל מוציאין includes a slave who escaped from outside the land into the land; this is an exclusion from taking out, not an inclusion in removal.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_4923669beaf533bddcb8",
+          "ref": "Arakhin 3b:2",
+          "source_index": [
+            5,
+            1
+          ],
+          "start_char": 0,
+          "end_char": 43,
+          "quote": "ואין הכל מוציאין לאתויי עבד שברח מח\"ל לארץ:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f008",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "הכל מעלין לירושלים includes moving from good residence to inferior residence.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Move to Jerusalem"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_8d06230e5e113f95d358",
+          "ref": "Arakhin 3b:3",
+          "source_index": [
+            5,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "הכל מעלין לירושלים לאתויי מנוה היפה לנוה הרעה ואין הכל מוציאין לאתויי מאי לאתויי מנוה הרעה לנוה היפה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f009",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "What does ואין הכל מוציאין add for Jerusalem?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_8d06230e5e113f95d358",
+          "ref": "Arakhin 3b:3",
+          "source_index": [
+            5,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "הכל מעלין לירושלים לאתויי מנוה היפה לנוה הרעה ואין הכל מוציאין לאתויי מאי לאתויי מנוה הרעה לנוה היפה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f010",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "It includes not taking out even from inferior residence to good residence.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Leaving Jerusalem"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_8d06230e5e113f95d358",
+          "ref": "Arakhin 3b:3",
+          "source_index": [
+            5,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 101,
+          "quote": "הכל מעלין לירושלים לאתויי מנוה היפה לנוה הרעה ואין הכל מוציאין לאתויי מאי לאתויי מנוה הרעה לנוה היפה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f011",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests, Levites and Israelites are obligated in sukkah.",
+      "status": "quoted",
+      "holder": "cited anonymous teaching",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_4135506b6c950b458f18",
+          "ref": "Arakhin 3b:4",
+          "source_index": [
+            5,
+            3
+          ],
+          "start_char": 0,
+          "end_char": 71,
+          "quote": "הכל חייבין בסוכה כהנים לוים וישראלים פשיטא אי הני לא מחייבי מאן מיחייבי"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f012",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "Why state these obligations; if these groups are not obligated who is?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_4135506b6c950b458f18",
+          "ref": "Arakhin 3b:4",
+          "source_index": [
+            5,
+            3
+          ],
+          "start_char": 0,
+          "end_char": 71,
+          "quote": "הכל חייבין בסוכה כהנים לוים וישראלים פשיטא אי הני לא מחייבי מאן מיחייבי"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f013",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests are the group for whom explicit inclusion is needed.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_8e3625f4262658870596",
+          "ref": "Arakhin 3b:5",
+          "source_index": [
+            5,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 177,
+          "quote": "כהנים איצטריכא ליה סד\"א הואיל וכתיב (ויקרא כג, מב) בסוכות תשבו ואמר מר תשבו שבעת ימים כעין תדורו מה דירה איש ואשתו אף סוכה איש ואשתו והני כהנים הואיל ובני עבודה נינהו לא ליחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f014",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "תשבו is expounded as dwelling: just as a residence has husband and wife, so sukkah.",
+      "status": "quoted",
+      "holder": "unnamed authority introduced אמר מר",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_8e3625f4262658870596",
+          "ref": "Arakhin 3b:5",
+          "source_index": [
+            5,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 177,
+          "quote": "כהנים איצטריכא ליה סד\"א הואיל וכתיב (ויקרא כג, מב) בסוכות תשבו ואמר מר תשבו שבעת ימים כעין תדורו מה דירה איש ואשתו אף סוכה איש ואשתו והני כהנים הואיל ובני עבודה נינהו לא ליחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f015",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "The initial proposal exempts priests because they perform Temple service under the husband-and-wife dwelling comparison.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Proposed exemption, not conclusion"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_8e3625f4262658870596",
+          "ref": "Arakhin 3b:5",
+          "source_index": [
+            5,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 177,
+          "quote": "כהנים איצטריכא ליה סד\"א הואיל וכתיב (ויקרא כג, מב) בסוכות תשבו ואמר מר תשבו שבעת ימים כעין תדורו מה דירה איש ואשתו אף סוכה איש ואשתו והני כהנים הואיל ובני עבודה נינהו לא ליחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f016",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests are exempt from sukkah during service.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Actual service time"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_464f3106cba2ad5d009e",
+          "ref": "Arakhin 3b:6",
+          "source_index": [
+            5,
+            5
+          ],
+          "start_char": 0,
+          "end_char": 144,
+          "quote": "קא משמע לן נהי דפטירי בשעת עבודה בלא שעת עבודה חיובי מיחייבי מידי דהוה אהולכי דרכים דאמר מר הולכי דרכים ביום פטורין מן הסוכה ביום וחייבים בלילה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f017",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Outside service time priests are obligated in sukkah.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Outside service time"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_464f3106cba2ad5d009e",
+          "ref": "Arakhin 3b:6",
+          "source_index": [
+            5,
+            5
+          ],
+          "start_char": 0,
+          "end_char": 144,
+          "quote": "קא משמע לן נהי דפטירי בשעת עבודה בלא שעת עבודה חיובי מיחייבי מידי דהוה אהולכי דרכים דאמר מר הולכי דרכים ביום פטורין מן הסוכה ביום וחייבים בלילה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f018",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Daytime travelers are exempt from sukkah during the day.",
+      "status": "quoted",
+      "holder": "unnamed authority introduced אמר מר",
+      "conditions": [
+        "Travel by day"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_464f3106cba2ad5d009e",
+          "ref": "Arakhin 3b:6",
+          "source_index": [
+            5,
+            5
+          ],
+          "start_char": 0,
+          "end_char": 144,
+          "quote": "קא משמע לן נהי דפטירי בשעת עבודה בלא שעת עבודה חיובי מיחייבי מידי דהוה אהולכי דרכים דאמר מר הולכי דרכים ביום פטורין מן הסוכה ביום וחייבים בלילה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f019",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Those daytime travelers remain obligated at night.",
+      "status": "quoted",
+      "holder": "unnamed authority introduced אמר מר",
+      "conditions": [
+        "Nighttime"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_464f3106cba2ad5d009e",
+          "ref": "Arakhin 3b:6",
+          "source_index": [
+            5,
+            5
+          ],
+          "start_char": 0,
+          "end_char": 144,
+          "quote": "קא משמע לן נהי דפטירי בשעת עבודה בלא שעת עבודה חיובי מיחייבי מידי דהוה אהולכי דרכים דאמר מר הולכי דרכים ביום פטורין מן הסוכה ביום וחייבים בלילה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f020",
+      "scope": "core",
+      "kind": "relation",
+      "proposition": "The travelers analogy supports time-limited exemption, rejecting the blanket priestly exemption.",
+      "status": "analogy",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_8e3625f4262658870596",
+          "ref": "Arakhin 3b:5",
+          "source_index": [
+            5,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 177,
+          "quote": "כהנים איצטריכא ליה סד\"א הואיל וכתיב (ויקרא כג, מב) בסוכות תשבו ואמר מר תשבו שבעת ימים כעין תדורו מה דירה איש ואשתו אף סוכה איש ואשתו והני כהנים הואיל ובני עבודה נינהו לא ליחייבו"
+        },
+        {
+          "segment_id": "seg_464f3106cba2ad5d009e",
+          "ref": "Arakhin 3b:6",
+          "source_index": [
+            5,
+            5
+          ],
+          "start_char": 0,
+          "end_char": 144,
+          "quote": "קא משמע לן נהי דפטירי בשעת עבודה בלא שעת עבודה חיובי מיחייבי מידי דהוה אהולכי דרכים דאמר מר הולכי דרכים ביום פטורין מן הסוכה ביום וחייבים בלילה:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f021",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests, Levites and Israelites are obligated in tzitzit.",
+      "status": "quoted",
+      "holder": "cited anonymous teaching",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_a403813c105788de33b3",
+          "ref": "Arakhin 3b:7",
+          "source_index": [
+            5,
+            6
+          ],
+          "start_char": 0,
+          "end_char": 43,
+          "quote": "הכל חייבין בציצית כהנים לוים וישראלים פשיטא"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f022",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "Why is the obligation necessary to state?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_a403813c105788de33b3",
+          "ref": "Arakhin 3b:7",
+          "source_index": [
+            5,
+            6
+          ],
+          "start_char": 0,
+          "end_char": 43,
+          "quote": "הכל חייבין בציצית כהנים לוים וישראלים פשיטא"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f023",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests are the non-obvious inclusion in the tzitzit teaching.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_fa0a04e4001d36d6b21b",
+          "ref": "Arakhin 3b:8",
+          "source_index": [
+            5,
+            7
+          ],
+          "start_char": 0,
+          "end_char": 183,
+          "quote": "כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים כב, יא) לא תלבש שעטנז גדילים תעשה לך מאן דלא אישתרי כלאים לגביה בלבישה הוא דמחייב במצות ציצית והני כהנים הואיל ואשתרי כלאים לגבייהו לא לחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f024",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Juxtaposition of shaatnez prohibition and tassels suggests a proposal: only those barred from mixed-fabric clothing are obligated in tzitzit.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Provisional inference from verses"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_fa0a04e4001d36d6b21b",
+          "ref": "Arakhin 3b:8",
+          "source_index": [
+            5,
+            7
+          ],
+          "start_char": 0,
+          "end_char": 183,
+          "quote": "כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים כב, יא) לא תלבש שעטנז גדילים תעשה לך מאן דלא אישתרי כלאים לגביה בלבישה הוא דמחייב במצות ציצית והני כהנים הואיל ואשתרי כלאים לגבייהו לא לחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f025",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "On that provisional inference, priests permitted mixed fabrics would be exempt from tzitzit.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_fa0a04e4001d36d6b21b",
+          "ref": "Arakhin 3b:8",
+          "source_index": [
+            5,
+            7
+          ],
+          "start_char": 0,
+          "end_char": 183,
+          "quote": "כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים כב, יא) לא תלבש שעטנז גדילים תעשה לך מאן דלא אישתרי כלאים לגביה בלבישה הוא דמחייב במצות ציצית והני כהנים הואיל ואשתרי כלאים לגבייהו לא לחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f026",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Mixed fabrics are permitted to priests during service.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Service time"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_82baf5b4cfc04c78b640",
+          "ref": "Arakhin 3b:9",
+          "source_index": [
+            5,
+            8
+          ],
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "קמ\"ל נהי דאישתרי בעידן עבודה בלא עידן עבודה לא אישתרי:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f027",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Outside service time mixed fabrics are not permitted in this argument.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Outside service time"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_82baf5b4cfc04c78b640",
+          "ref": "Arakhin 3b:9",
+          "source_index": [
+            5,
+            8
+          ],
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "קמ\"ל נהי דאישתרי בעידן עבודה בלא עידן עבודה לא אישתרי:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f028",
+      "scope": "core",
+      "kind": "relation",
+      "proposition": "The service-time limitation rejects the proposed general tzitzit exemption.",
+      "status": "answer",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_fa0a04e4001d36d6b21b",
+          "ref": "Arakhin 3b:8",
+          "source_index": [
+            5,
+            7
+          ],
+          "start_char": 0,
+          "end_char": 183,
+          "quote": "כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים כב, יא) לא תלבש שעטנז גדילים תעשה לך מאן דלא אישתרי כלאים לגביה בלבישה הוא דמחייב במצות ציצית והני כהנים הואיל ואשתרי כלאים לגבייהו לא לחייבו"
+        },
+        {
+          "segment_id": "seg_82baf5b4cfc04c78b640",
+          "ref": "Arakhin 3b:9",
+          "source_index": [
+            5,
+            8
+          ],
+          "start_char": 0,
+          "end_char": 54,
+          "quote": "קמ\"ל נהי דאישתרי בעידן עבודה בלא עידן עבודה לא אישתרי:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f029",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests, Levites and Israelites are obligated in tefillin.",
+      "status": "quoted",
+      "holder": "cited anonymous teaching",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3afc082708a5861feb7b",
+          "ref": "Arakhin 3b:10",
+          "source_index": [
+            5,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 170,
+          "quote": "הכל חייבין בתפילין כהנים לוים וישראלים פשיטא כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים ו, ח) וקשרתם לאות על ידך והיו לטוטפות בין עינך כל דאיתיה במצוה דיד איתיה במצוה דראש"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f030",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "Why mention the apparent obvious tefillin obligation?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3afc082708a5861feb7b",
+          "ref": "Arakhin 3b:10",
+          "source_index": [
+            5,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 170,
+          "quote": "הכל חייבין בתפילין כהנים לוים וישראלים פשיטא כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים ו, ח) וקשרתם לאות על ידך והיו לטוטפות בין עינך כל דאיתיה במצוה דיד איתיה במצוה דראש"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f031",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "A proposed linkage of arm and head tefillin from וקשרתם ... והיו would make head obligation depend on arm obligation.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3afc082708a5861feb7b",
+          "ref": "Arakhin 3b:10",
+          "source_index": [
+            5,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 170,
+          "quote": "הכל חייבין בתפילין כהנים לוים וישראלים פשיטא כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים ו, ח) וקשרתם לאות על ידך והיו לטוטפות בין עינך כל דאיתיה במצוה דיד איתיה במצוה דראש"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f032",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "ילבש על בשרו requires no interposition between priestly garment and flesh.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Priestly clothing in service"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_d5a43bf6b12d6eb5da04",
+          "ref": "Arakhin 3b:11",
+          "source_index": [
+            5,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "והני כהנים הואיל וליתנהו במצוה דיד דכתיב (ויקרא ו, ג) ילבש על בשרו שלא יהא דבר חוצץ בינו ובין בשרו אימא במצוה דראש נמי לא ליחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f033",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Because arm tefillin would interpose in this service context, the provisional argument would exempt the priest from head tefillin as well.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "During priestly service; not a permanent arm-tefillin exemption"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_3afc082708a5861feb7b",
+          "ref": "Arakhin 3b:10",
+          "source_index": [
+            5,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 170,
+          "quote": "הכל חייבין בתפילין כהנים לוים וישראלים פשיטא כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים ו, ח) וקשרתם לאות על ידך והיו לטוטפות בין עינך כל דאיתיה במצוה דיד איתיה במצוה דראש"
+        },
+        {
+          "segment_id": "seg_d5a43bf6b12d6eb5da04",
+          "ref": "Arakhin 3b:11",
+          "source_index": [
+            5,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "והני כהנים הואיל וליתנהו במצוה דיד דכתיב (ויקרא ו, ג) ילבש על בשרו שלא יהא דבר חוצץ בינו ובין בשרו אימא במצוה דראש נמי לא ליחייבו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f034",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Absence of arm tefillin does not prevent head tefillin.",
+      "status": "quoted",
+      "holder": "anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_d20cdd57b2f44d7cb73c",
+          "ref": "Arakhin 3b:12",
+          "source_index": [
+            5,
+            11
+          ],
+          "start_char": 0,
+          "end_char": 80,
+          "quote": "קמ\"ל דלא מעכבי אהדדי כדתנן תפלה של יד אינה מעכבת של ראש ושל ראש אינה מעכבת של יד"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f035",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Absence of head tefillin does not prevent arm tefillin.",
+      "status": "quoted",
+      "holder": "anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_d20cdd57b2f44d7cb73c",
+          "ref": "Arakhin 3b:12",
+          "source_index": [
+            5,
+            11
+          ],
+          "start_char": 0,
+          "end_char": 80,
+          "quote": "קמ\"ל דלא מעכבי אהדדי כדתנן תפלה של יד אינה מעכבת של ראש ושל ראש אינה מעכבת של יד"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f036",
+      "scope": "core",
+      "kind": "relation",
+      "proposition": "The two independent tefillin obligations answer the proposed dependency exemption.",
+      "status": "answer",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3afc082708a5861feb7b",
+          "ref": "Arakhin 3b:10",
+          "source_index": [
+            5,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 170,
+          "quote": "הכל חייבין בתפילין כהנים לוים וישראלים פשיטא כהנים איצטריך ליה סד\"א הואיל וכתיב (דברים ו, ח) וקשרתם לאות על ידך והיו לטוטפות בין עינך כל דאיתיה במצוה דיד איתיה במצוה דראש"
+        },
+        {
+          "segment_id": "seg_d5a43bf6b12d6eb5da04",
+          "ref": "Arakhin 3b:11",
+          "source_index": [
+            5,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "והני כהנים הואיל וליתנהו במצוה דיד דכתיב (ויקרא ו, ג) ילבש על בשרו שלא יהא דבר חוצץ בינו ובין בשרו אימא במצוה דראש נמי לא ליחייבו"
+        },
+        {
+          "segment_id": "seg_d20cdd57b2f44d7cb73c",
+          "ref": "Arakhin 3b:12",
+          "source_index": [
+            5,
+            11
+          ],
+          "start_char": 0,
+          "end_char": 80,
+          "quote": "קמ\"ל דלא מעכבי אהדדי כדתנן תפלה של יד אינה מעכבת של ראש ושל ראש אינה מעכבת של יד"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f037",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "Why does arm-tefillin interposition differ from head tefillin, given the turban must be on his head?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_38640e8fda0210b9ddce",
+          "ref": "Arakhin 3b:13",
+          "source_index": [
+            5,
+            12
+          ],
+          "start_char": 0,
+          "end_char": 77,
+          "quote": "ומאי שנא דיד דכתיב ילבש על בשרו ראש נמי כתיב (שמות כט, ו) ושמת המצנפת על ראשו"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f038",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "The teaching says hair remained visible between frontplate and turban, where tefillin were placed.",
+      "status": "quoted",
+      "holder": "unnamed tanna",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_8901bf6a9714e0227d42",
+          "ref": "Arakhin 3b:14",
+          "source_index": [
+            5,
+            13
+          ],
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "תנא שערו היה נראה בין ציץ למצנפת ששם מניח תפילין"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f039",
+      "scope": "core",
+      "kind": "relation",
+      "proposition": "The exposed hair position answers the head-interposition objection; do not invent measurements.",
+      "status": "answer",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_38640e8fda0210b9ddce",
+          "ref": "Arakhin 3b:13",
+          "source_index": [
+            5,
+            12
+          ],
+          "start_char": 0,
+          "end_char": 77,
+          "quote": "ומאי שנא דיד דכתיב ילבש על בשרו ראש נמי כתיב (שמות כט, ו) ושמת המצנפת על ראשו"
+        },
+        {
+          "segment_id": "seg_8901bf6a9714e0227d42",
+          "ref": "Arakhin 3b:14",
+          "source_index": [
+            5,
+            13
+          ],
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "תנא שערו היה נראה בין ציץ למצנפת ששם מניח תפילין"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f040",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests, Levites and Israelites are obligated in shofar blowing.",
+      "status": "quoted",
+      "holder": "cited anonymous teaching",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_adc042a3741e52a4e4be",
+          "ref": "Arakhin 3b:15",
+          "source_index": [
+            5,
+            14
+          ],
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הכל חייבין בתקיעת שופר כהנים לוים וישראלים פשיטא כהנים איצטריכא ליה סד\"א הואיל וכתיב (במדבר כט, א) יום תרועה יהיה לכם מאן דליתיה אלא בתקיעה דחד יומא חייב"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f041",
+      "scope": "core",
+      "kind": "question",
+      "proposition": "Why state this apparently obvious obligation?",
+      "status": "queried",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_adc042a3741e52a4e4be",
+          "ref": "Arakhin 3b:15",
+          "source_index": [
+            5,
+            14
+          ],
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הכל חייבין בתקיעת שופר כהנים לוים וישראלים פשיטא כהנים איצטריכא ליה סד\"א הואיל וכתיב (במדבר כט, א) יום תרועה יהיה לכם מאן דליתיה אלא בתקיעה דחד יומא חייב"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f042",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Initial proposal reads יום תרועה as obligating only one whose blowing is confined to one day.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_adc042a3741e52a4e4be",
+          "ref": "Arakhin 3b:15",
+          "source_index": [
+            5,
+            14
+          ],
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הכל חייבין בתקיעת שופר כהנים לוים וישראלים פשיטא כהנים איצטריכא ליה סד\"א הואיל וכתיב (במדבר כט, א) יום תרועה יהיה לכם מאן דליתיה אלא בתקיעה דחד יומא חייב"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f043",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Priests have trumpet blowing throughout the year over offerings, supported by ותקעתם בחצוצרות על עולותיכם.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_47f281b06cf94dd13554",
+          "ref": "Arakhin 3b:16",
+          "source_index": [
+            5,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 132,
+          "quote": "והני כהנים הואיל ואיתנהו בתקיעה כוליה שתא דכתיב (במדבר י, י) ותקעתם בחצוצרות על עולותיכם אימא לא ליחייבו מי דמי התם חצוצרות הכא שופר"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f044",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "The initial proposal would exempt priests from the one-day obligation because of their year-round blowing.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_adc042a3741e52a4e4be",
+          "ref": "Arakhin 3b:15",
+          "source_index": [
+            5,
+            14
+          ],
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "הכל חייבין בתקיעת שופר כהנים לוים וישראלים פשיטא כהנים איצטריכא ליה סד\"א הואיל וכתיב (במדבר כט, א) יום תרועה יהיה לכם מאן דליתיה אלא בתקיעה דחד יומא חייב"
+        },
+        {
+          "segment_id": "seg_47f281b06cf94dd13554",
+          "ref": "Arakhin 3b:16",
+          "source_index": [
+            5,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 132,
+          "quote": "והני כהנים הואיל ואיתנהו בתקיעה כוליה שתא דכתיב (במדבר י, י) ותקעתם בחצוצרות על עולותיכם אימא לא ליחייבו מי דמי התם חצוצרות הכא שופר"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f045",
+      "scope": "core",
+      "kind": "relation",
+      "proposition": "מי דמי rejects that analogy: the service instrument is trumpets whereas the current obligation is shofar.",
+      "status": "objection",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_47f281b06cf94dd13554",
+          "ref": "Arakhin 3b:16",
+          "source_index": [
+            5,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 132,
+          "quote": "והני כהנים הואיל ואיתנהו בתקיעה כוליה שתא דכתיב (במדבר י, י) ותקעתם בחצוצרות על עולותיכם אימא לא ליחייבו מי דמי התם חצוצרות הכא שופר"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f046",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "A new proposal uses the teaching that Jubilee and Rosh Hashanah are equal for blowing and blessings.",
+      "status": "quoted",
+      "holder": "anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e7057a67ab1457d57b75",
+          "ref": "Arakhin 3b:17",
+          "source_index": [
+            5,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 208,
+          "quote": "איצטריך סלקא דעתך אמינא הואיל ותנן שוה היובל לראש השנה לתקיעה ולברכות דאיתיה במצות יובל איתיה במצות ראש השנה דליתיה במצות יובל ליתיה במצות ר\"ה והני כהני הואיל וליתנהו במצות דיובל דתנן כהנים ולוים מוכרין לעולם"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f047",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "The new proposed inference makes Rosh Hashanah obligation depend on Jubilee obligation.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e7057a67ab1457d57b75",
+          "ref": "Arakhin 3b:17",
+          "source_index": [
+            5,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 208,
+          "quote": "איצטריך סלקא דעתך אמינא הואיל ותנן שוה היובל לראש השנה לתקיעה ולברכות דאיתיה במצות יובל איתיה במצות ראש השנה דליתיה במצות יובל ליתיה במצות ר\"ה והני כהני הואיל וליתנהו במצות דיובל דתנן כהנים ולוים מוכרין לעולם"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f048",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "The cited teaching says priests and Levites sell perpetually and redeem perpetually; the latter phrase crossesfolio.",
+      "status": "quoted",
+      "holder": "anonymous Mishnah",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e7057a67ab1457d57b75",
+          "ref": "Arakhin 3b:17",
+          "source_index": [
+            5,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 208,
+          "quote": "איצטריך סלקא דעתך אמינא הואיל ותנן שוה היובל לראש השנה לתקיעה ולברכות דאיתיה במצות יובל איתיה במצות ראש השנה דליתיה במצות יובל ליתיה במצות ר\"ה והני כהני הואיל וליתנהו במצות דיובל דתנן כהנים ולוים מוכרין לעולם"
+        },
+        {
+          "segment_id": "seg_221ea97bdbb5cc56abf9",
+          "ref": "Arakhin 4a:1",
+          "source_index": [
+            6,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "וגואלין לעולם אימא במצות ר\"ה נמי לא ליחייבו קמשמע לן נהי דליתנהו בהשמטת קרקע בהשמטת כספים בשילוח עבדים מיהא איתנהו:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f049",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "The new proposed inference would exempt priests from Rosh Hashanah because they are outside the relevant land-release rule.",
+      "status": "rejected",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Proposed overextension from land rule to entire Jubilee participation"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_e7057a67ab1457d57b75",
+          "ref": "Arakhin 3b:17",
+          "source_index": [
+            5,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 208,
+          "quote": "איצטריך סלקא דעתך אמינא הואיל ותנן שוה היובל לראש השנה לתקיעה ולברכות דאיתיה במצות יובל איתיה במצות ראש השנה דליתיה במצות יובל ליתיה במצות ר\"ה והני כהני הואיל וליתנהו במצות דיובל דתנן כהנים ולוים מוכרין לעולם"
+        },
+        {
+          "segment_id": "seg_221ea97bdbb5cc56abf9",
+          "ref": "Arakhin 4a:1",
+          "source_index": [
+            6,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "וגואלין לעולם אימא במצות ר\"ה נמי לא ליחייבו קמשמע לן נהי דליתנהו בהשמטת קרקע בהשמטת כספים בשילוח עבדים מיהא איתנהו:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f050",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "Although outside that land-release rule, they participate in release of debts.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [
+        "Source says בהשמטת כספים; do not silently rewrite as a new Jubilee-year debt law"
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_221ea97bdbb5cc56abf9",
+          "ref": "Arakhin 4a:1",
+          "source_index": [
+            6,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "וגואלין לעולם אימא במצות ר\"ה נמי לא ליחייבו קמשמע לן נהי דליתנהו בהשמטת קרקע בהשמטת כספים בשילוח עבדים מיהא איתנהו:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f051",
+      "scope": "core",
+      "kind": "claim",
+      "proposition": "They also participate in release of slaves.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_221ea97bdbb5cc56abf9",
+          "ref": "Arakhin 4a:1",
+          "source_index": [
+            6,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "וגואלין לעולם אימא במצות ר\"ה נמי לא ליחייבו קמשמע לן נהי דליתנהו בהשמטת קרקע בהשמטת כספים בשילוח עבדים מיהא איתנהו:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f052",
+      "scope": "core",
+      "kind": "relation",
+      "proposition": "Their participation in debt/slave release defeats the proposed blanket exclusion from the Rosh Hashanah commandment.",
+      "status": "answer",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_e7057a67ab1457d57b75",
+          "ref": "Arakhin 3b:17",
+          "source_index": [
+            5,
+            16
+          ],
+          "start_char": 0,
+          "end_char": 208,
+          "quote": "איצטריך סלקא דעתך אמינא הואיל ותנן שוה היובל לראש השנה לתקיעה ולברכות דאיתיה במצות יובל איתיה במצות ראש השנה דליתיה במצות יובל ליתיה במצות ר\"ה והני כהני הואיל וליתנהו במצות דיובל דתנן כהנים ולוים מוכרין לעולם"
+        },
+        {
+          "segment_id": "seg_221ea97bdbb5cc56abf9",
+          "ref": "Arakhin 4a:1",
+          "source_index": [
+            6,
+            0
+          ],
+          "start_char": 0,
+          "end_char": 115,
+          "quote": "וגואלין לעולם אימא במצות ר\"ה נמי לא ליחייבו קמשמע לן נהי דליתנהו בהשמטת קרקע בהשמטת כספים בשילוח עבדים מיהא איתנהו:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f053",
+      "scope": "context",
+      "kind": "structure",
+      "proposition": "Megillah obligation begins the next independent הכל topic; no unresolved shofar reply follows the core endpoint.",
+      "status": "boundary",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3b1a4f508f4dbba490da",
+          "ref": "Arakhin 4a:2",
+          "source_index": [
+            6,
+            1
+          ],
+          "start_char": 0,
+          "end_char": 195,
+          "quote": "הכל חייבים במקרא מגילה כהנים לוים וישראלים פשיטא לא צריכא ליבטיל עבודתם וכדרב יהודה אמר שמואל דאמר רב יהודה אמר שמואל כהנים בעבודתם ולוים בדוכנן וישראל במעמדן מבטלין עבודתם ובאין לשמוע מקרא מגילה"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f054",
+      "scope": "context",
+      "kind": "attribution",
+      "proposition": "Rav Yehuda reports Shmuel: priests at service, Levites on platform and Israelites at their stations suspend work to hear Megillah. Do not collapse transmitter and authority.",
+      "status": "quoted",
+      "holder": "Rav Yehuda → Shmuel",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3b1a4f508f4dbba490da",
+          "ref": "Arakhin 4a:2",
+          "source_index": [
+            6,
+            1
+          ],
+          "start_char": 0,
+          "end_char": 195,
+          "quote": "הכל חייבים במקרא מגילה כהנים לוים וישראלים פשיטא לא צריכא ליבטיל עבודתם וכדרב יהודה אמר שמואל דאמר רב יהודה אמר שמואל כהנים בעבודתם ולוים בדוכנן וישראל במעמדן מבטלין עבודתם ובאין לשמוע מקרא מגילה"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f055",
+      "scope": "context",
+      "kind": "claim",
+      "proposition": "Sacred-food consumption is still eating/satiation despite its atonement function, so zimmun obligation remains.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_7ef7d0ca1f543b29e9bf",
+          "ref": "Arakhin 4a:3",
+          "source_index": [
+            6,
+            2
+          ],
+          "start_char": 0,
+          "end_char": 131,
+          "quote": "הכל חייבין בזימון כהנים לוים וישראלים פשיטא לא צריכא דקאכלי קדשים סד\"א (שמות כט, לג) ואכלו אותם אשר כופר בהם אמר רחמנא והא כפרה היא"
+        },
+        {
+          "segment_id": "seg_af401d328dbecccd86bd",
+          "ref": "Arakhin 4a:4",
+          "source_index": [
+            6,
+            3
+          ],
+          "start_char": 0,
+          "end_char": 51,
+          "quote": "קמ\"ל (דברים ח, י) ואכלת ושבעת אמר רחמנא והא איתנהו:"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f056",
+      "scope": "context",
+      "kind": "claim",
+      "proposition": "Priest eating terumah or consecrated food joins an ordinary eater: although the outsider cannot eat his food, the priest can eat the outsider’s food. Preserve direction of access.",
+      "status": "asserted",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_9cdd5aa29ec9c1ed0dcd",
+          "ref": "Arakhin 4a:5",
+          "source_index": [
+            6,
+            4
+          ],
+          "start_char": 0,
+          "end_char": 97,
+          "quote": "הכל מצטרפין לזימון כהנים לוים וישראלים פשיטא לא צריכא דקאכלי כהנים תרומה או קדשים וזר קאכיל חולין"
+        },
+        {
+          "segment_id": "seg_23690eaac60732194e97",
+          "ref": "Arakhin 4a:6",
+          "source_index": [
+            6,
+            5
+          ],
+          "start_char": 0,
+          "end_char": 118,
+          "quote": "סד\"א הואיל ואי בעי זר למיכל בהדי כהן לא מצי אכיל אימא לא ליצטרף קמ\"ל נהי דזר בהדי כהן לא מצי אכיל כהן בהדי זר מצי אכיל"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f057",
+      "scope": "context",
+      "kind": "claim",
+      "proposition": "Rava’s first explanation invokes Ben Bukhri’s shekel position; competing Yohanan ben Zakkai obligation and public transfer explanation are distinct stages. Context only; do not import into prior commandments.",
+      "status": "provisional",
+      "holder": "Rava",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_8d6b20eafb11ed735963",
+          "ref": "Arakhin 4a:7",
+          "source_index": [
+            6,
+            6
+          ],
+          "start_char": 0,
+          "end_char": 126,
+          "quote": "הכל מעריכין כהנים לוים וישראלים פשיטא אמר רבא לא נצרכא אלא לבן בוכרי דתנן א\"ר יהודה העיד בן בוכרי ביבנה כל כהן ששוקל אינו חוטא"
+        },
+        {
+          "segment_id": "seg_122db57fc5ca8eb1ec1c",
+          "ref": "Arakhin 4a:8",
+          "source_index": [
+            6,
+            7
+          ],
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "אמר לו רבן יוחנן בן זכאי לא כן אלא כל כהן שאינו שוקל חוטא אלא שהכהנים דורשין מקרא זה לעצמן (ויקרא ו, טז) וכל מנחת כהן כליל תהיה לא תאכל"
+        },
+        {
+          "segment_id": "seg_4b930132d332af1215eb",
+          "ref": "Arakhin 4a:9",
+          "source_index": [
+            6,
+            8
+          ],
+          "start_char": 0,
+          "end_char": 55,
+          "quote": "הואיל ועומר ושתי הלחם ולחם הפנים שלנו הם היאך הם נאכלין"
+        },
+        {
+          "segment_id": "seg_871755a4dd1d0e2bff4b",
+          "ref": "Arakhin 4a:10",
+          "source_index": [
+            6,
+            9
+          ],
+          "start_char": 0,
+          "end_char": 113,
+          "quote": "ולבן בוכרי נמי כיון דלכתחילה לא מיחייבי לאיתויי כי מייתי נמי חוטא הוא דקא מעייל חולין לעזרה דמייתי להו ומסר לצבור"
+        },
+        {
+          "segment_id": "seg_21c914576f251e61a2c3",
+          "ref": "Arakhin 4a:11",
+          "source_index": [
+            6,
+            10
+          ],
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "סד\"א הואיל וכתיב (ויקרא כז, כה) וכל ערכך יהי' בשקל הקדש כל דאיתיה בשקלים איתי' בערכין והני כהנים הואיל וליתנהו בשקלים ליתנהו בערכין קמ\"ל"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f058",
+      "scope": "context",
+      "kind": "relation",
+      "proposition": "Abaye objects that וכל ערכך supplies the minimum sela valuation rather than the proposed shekel linkage.",
+      "status": "objection",
+      "holder": "Abaye",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_294f3e493c7027b5420d",
+          "ref": "Arakhin 4a:12",
+          "source_index": [
+            6,
+            11
+          ],
+          "start_char": 0,
+          "end_char": 70,
+          "quote": "א\"ל אביי האי וכל ערכך לכל ערכין שאתה מעריך לא יהו פחותין מסלע הוא דאתא"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f059",
+      "scope": "context",
+      "kind": "claim",
+      "proposition": "Abaye proposes a firstborn-redemption linkage as the reason priests require explicit inclusion in valuation.",
+      "status": "provisional",
+      "holder": "Abaye",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_3b0ad1536be8485f036a",
+          "ref": "Arakhin 4a:13",
+          "source_index": [
+            6,
+            12
+          ],
+          "start_char": 0,
+          "end_char": 167,
+          "quote": "אלא אמר אביי איצטריך סד\"א הואיל וכתיב (במדבר יח, טז) ופדויו מבן חדש תפדה בערכך כל דאיתיה בפדיון הבן איתיה בערכין והני כהנים הואיל וליתנהו בפדיון הבן ליתנהו בערכין קמ\"ל"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f060",
+      "scope": "context",
+      "kind": "relation",
+      "proposition": "Rava challenges Abaye using the ram guilt-offering occurrence of בערכך and the consequences for tumtum/androgynos.",
+      "status": "objection",
+      "holder": "Rava",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_11c65ca47daed043b584",
+          "ref": "Arakhin 4a:14",
+          "source_index": [
+            6,
+            13
+          ],
+          "start_char": 0,
+          "end_char": 178,
+          "quote": "א\"ל רבא אלא מעתה גבי איל אשם דכתיב (ויקרא ה, כה) ואת אשמו יביא לה' איל תמים מן הצאן בערכך ה\"נ דכל דאיתיה בערכין איתיה באיל האשם טומטום ואנדרוגינוס דליתנהו בערכין ליתנהו באיל האשם"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f061",
+      "scope": "context",
+      "kind": "claim",
+      "proposition": "Final explanation is attributed to Rava, or some say Rav Ashi: standing before a priest might have excluded priest-before-priest, but does not. Preserve attribution alternative.",
+      "status": "asserted",
+      "holder": "Rava / Rav Ashi alternative version",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_c52f19da40074111d090",
+          "ref": "Arakhin 4a:15",
+          "source_index": [
+            6,
+            14
+          ],
+          "start_char": 0,
+          "end_char": 105,
+          "quote": "אלא אמר רבא ואיתימא רב אשי איצטריך סד\"א הואיל וכתיב (ויקרא כז, ח) והעמידו לפני הכהן ולא כהן לפני כהן קמ\"ל"
+        }
+      ]
+    },
+    {
+      "id": "ark004.f062",
+      "scope": "context",
+      "kind": "structure",
+      "proposition": "נערכין starts the next valuation inclusion lemma after these explanations.",
+      "status": "boundary",
+      "holder": "anonymous Gemara",
+      "conditions": [],
+      "evidence": [
+        {
+          "segment_id": "seg_b89fdc6d54432aeba3d3",
+          "ref": "Arakhin 4a:16",
+          "source_index": [
+            6,
+            15
+          ],
+          "start_char": 0,
+          "end_char": 36,
+          "quote": "נערכין לאתויי מנוול ומוכה שחין מנה\"מ"
+        }
+      ]
+    }
+  ],
+  "structure": [
+    "3a16 closes slaughter inclusion; two inclusions not assigned to speakers.",
+    "3a17–3b3 relocation inclusions with textual-version condition and separate Jerusalem route.",
+    "3b4–6 sukkah proposed exemption and time-limited answer.",
+    "3b7–9 tzitzit proposal rejected through service limitation.",
+    "3b10–14 tefillin independence plus interposition objection/reply.",
+    "3b15–4a1 shofar first analogy rejected then Jubilee-based proposal answered acrossfolio.",
+    "4a2 begins new Megillah topic; later valuation alternatives cannot retroactively modify shofar."
+  ],
+  "layer_checks": {
+    "structure": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    },
+    "utterances": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    },
+    "claims": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    },
+    "attributions": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    },
+    "questions": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    },
+    "positions": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    },
+    "edges": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    },
+    "reconciliation": {
+      "core_segments_read": 20,
+      "production_coverage_added": 0,
+      "method": "Manually recorded claims, conditions, questions, voice, provenance, supported relations and omission checks against raw source"
+    }
+  },
+  "omission_priorities": [
+    "Do not turn rejected priestly exemptions into final positions.",
+    "Preserve service-time restriction for sukkah and mixed fabrics.",
+    "Separate head/arm tefillin absence directions; exposed hair answers only head-interposition.",
+    "Trumpets and shofar distinction rejects initial rationale before the Jubilee rationale.",
+    "Debt-release wording retained with uncertain calendar inference; no extra historical/legal rule invented.",
+    "Do not assign generic אמר מר to a named sage.",
+    "Moving out negative scope must remain negative even where לאתויי occurs.",
+    "Version that already includes slaves needs different inclusion.",
+    "Crossfolio phrases3a17–3b1 and3b17–4a1 retain original indices."
+  ],
+  "eligibility": {
+    "ml_eligible": false,
+    "tractate_acceptance": false,
+    "human_certification": false
+  },
+  "resume": "Compare future exact Arakhin004 initial snapshot against frozen findings. No source coverage or production state changed; next core4a2."
+}

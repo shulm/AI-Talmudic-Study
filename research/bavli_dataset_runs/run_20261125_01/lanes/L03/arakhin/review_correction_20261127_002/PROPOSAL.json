@@ -1,0 +1,729 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Arakhin",
+  "owner": "/root/lead_l01_l03",
+  "epoch": 1,
+  "source_sha256": "1a25d9524ec1d35eee64749794e158a24bfa10177bc9c6db56b4fca6adbc9ed4",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/blind_review",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Shared verse for foreigner and other person"
+        ],
+        "proposition": "Under the second alternative, one of the two remaining קרבנו occurrences excludes the father’s offering.",
+        "scope": "Local inclusive-formula discussion: heirs, minor mitzvah capacities and festival appearance; no claim of later practical ruling"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_506deeea40903d586fb0",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "ורבי יהודה לרבות כל בעלי חוברין לסמיכה לית ליה ואי נמי אית ליה"
+        },
+        {
+          "segment_id": "seg_c8f00d95036855f7eadc",
+          "start_char": 47,
+          "end_char": 69,
+          "quote": "חד קרבנו ולא קרבן אביו"
+        }
+      ],
+      "id": "ar.e1.r002.father",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ar.e1.b002.c16"
+    },
+    {
+      "content": {
+        "claim_id": "ar.e1.r002.father",
+        "conditions": [
+          "Shared verse for foreigner and other person"
+        ],
+        "holder_candidates": [
+          "anonymous explanation of רבי יהודה"
+        ],
+        "local_status": "Allocation under second alternative",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_506deeea40903d586fb0",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "ורבי יהודה לרבות כל בעלי חוברין לסמיכה לית ליה ואי נמי אית ליה"
+        },
+        {
+          "segment_id": "seg_c8f00d95036855f7eadc",
+          "start_char": 47,
+          "end_char": 69,
+          "quote": "חד קרבנו ולא קרבן אביו"
+        }
+      ],
+      "id": "ar.e1.r002.father.pos",
+      "layer": "positions",
+      "links": [
+        "ar.e1.r002.father"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ar.e1.b002.c16.pos"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Shared verse for foreigner and other person"
+        ],
+        "proposition": "Under the second alternative, the other remaining קרבנו occurrence includes all joint owners for semikhah.",
+        "scope": "Local inclusive-formula discussion: heirs, minor mitzvah capacities and festival appearance; no claim of later practical ruling"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_506deeea40903d586fb0",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "ורבי יהודה לרבות כל בעלי חוברין לסמיכה לית ליה ואי נמי אית ליה"
+        },
+        {
+          "segment_id": "seg_c8f00d95036855f7eadc",
+          "start_char": 70,
+          "end_char": 103,
+          "quote": "ואידך לרבות כל בעלי חוברין לסמיכה"
+        }
+      ],
+      "id": "ar.e1.r002.coowners",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "claim_id": "ar.e1.r002.coowners",
+        "conditions": [
+          "Shared verse for foreigner and other person"
+        ],
+        "holder_candidates": [
+          "anonymous explanation of רבי יהודה"
+        ],
+        "local_status": "Allocation under second alternative",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_506deeea40903d586fb0",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "ורבי יהודה לרבות כל בעלי חוברין לסמיכה לית ליה ואי נמי אית ליה"
+        },
+        {
+          "segment_id": "seg_c8f00d95036855f7eadc",
+          "start_char": 70,
+          "end_char": 103,
+          "quote": "ואידך לרבות כל בעלי חוברין לסמיכה"
+        }
+      ],
+      "id": "ar.e1.r002.coowners.pos",
+      "layer": "positions",
+      "links": [
+        "ar.e1.r002.coowners"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "ar.e1.b002.c15",
+        "target_id": "ar.e1.r002.father"
+      },
+      "evidence": [
+        {
+          "end_char": 62,
+          "quote": "ורבי יהודה לרבות כל בעלי חוברין לסמיכה לית ליה ואי נמי אית ליה",
+          "segment_id": "seg_506deeea40903d586fb0",
+          "start_char": 0
+        },
+        {
+          "end_char": 103,
+          "quote": "עובד כוכבים וחבירו מחד קרא נפקי אייתרי להו תרי חד קרבנו ולא קרבן אביו ואידך לרבות כל בעלי חוברין לסמיכה",
+          "segment_id": "seg_c8f00d95036855f7eadc",
+          "start_char": 0
+        }
+      ],
+      "id": "ar.e1.r002.father.support",
+      "layer": "edges",
+      "links": [
+        "ar.e1.b002.c15",
+        "ar.e1.r002.father"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ar.e1.b002.e13"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "ar.e1.b002.c15",
+        "target_id": "ar.e1.r002.coowners"
+      },
+      "evidence": [
+        {
+          "end_char": 62,
+          "quote": "ורבי יהודה לרבות כל בעלי חוברין לסמיכה לית ליה ואי נמי אית ליה",
+          "segment_id": "seg_506deeea40903d586fb0",
+          "start_char": 0
+        },
+        {
+          "end_char": 103,
+          "quote": "עובד כוכבים וחבירו מחד קרא נפקי אייתרי להו תרי חד קרבנו ולא קרבן אביו ואידך לרבות כל בעלי חוברין לסמיכה",
+          "segment_id": "seg_c8f00d95036855f7eadc",
+          "start_char": 0
+        }
+      ],
+      "id": "ar.e1.r002.coowners.support",
+      "layer": "edges",
+      "links": [
+        "ar.e1.b002.c15",
+        "ar.e1.r002.coowners"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [],
+        "proposition": "The apparent Ravina conflict is reconciled by distinguishing the earlier Mishnah from the later Mishnah.",
+        "scope": "Local inclusive-formula discussion: heirs, minor mitzvah capacities and festival appearance; no claim of later practical ruling"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_68eb7dadee0b745bf8c9",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "ואיבעית אימא לעולם לאיתויי מי שחציו עבד וחציו בן חורין ודקא קשיא לך דרבינא לא קשיא כאן במשנה ראשונה כאן במשנה אחרונה"
+        },
+        {
+          "segment_id": "seg_3dec4f03f310b6c21e0a",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "דתנן מי שחציו עבד וחציו בן חורין עובד את רבו יום אחד ואת עצמו יום אחד דברי ב\"ה"
+        },
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "id": "ar.e1.r002.chronology",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Earlier/later distinction retained without assigning Ravina and inclusion to precise stages beyond explicit text. Context2b14–16 not new completed core coverage."
+      ],
+      "supersedes": "ar.e1.b002.c35"
+    },
+    {
+      "content": {
+        "claim_id": "ar.e1.r002.chronology",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous Gemara"
+        ],
+        "local_status": "Context-anchored distinction: initial alternating service and explicit Beit Hillel retraction to freeing solution; no forced Ravina-stage allocation",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_68eb7dadee0b745bf8c9",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "ואיבעית אימא לעולם לאיתויי מי שחציו עבד וחציו בן חורין ודקא קשיא לך דרבינא לא קשיא כאן במשנה ראשונה כאן במשנה אחרונה"
+        },
+        {
+          "segment_id": "seg_3dec4f03f310b6c21e0a",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "דתנן מי שחציו עבד וחציו בן חורין עובד את רבו יום אחד ואת עצמו יום אחד דברי ב\"ה"
+        },
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "id": "ar.e1.r002.chronology.pos",
+      "layer": "positions",
+      "links": [
+        "ar.e1.r002.chronology"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Earlier/later distinction retained without assigning Ravina and inclusion to precise stages beyond explicit text. Context2b14–16 not new completed core coverage."
+      ],
+      "supersedes": "ar.e1.b002.c35.pos"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "ar.e1.r002.chronology",
+        "target_id": "ar.e1.b002.c28"
+      },
+      "evidence": [
+        {
+          "end_char": 116,
+          "quote": "ואיבעית אימא לעולם לאיתויי מי שחציו עבד וחציו בן חורין ודקא קשיא לך דרבינא לא קשיא כאן במשנה ראשונה כאן במשנה אחרונה",
+          "segment_id": "seg_68eb7dadee0b745bf8c9",
+          "start_char": 0
+        }
+      ],
+      "id": "ar.e1.r002.ravina.qualification",
+      "layer": "edges",
+      "links": [
+        "ar.e1.r002.chronology",
+        "ar.e1.b002.c28"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ar.e1.b002.e30"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "ar.e1.r002.chronology",
+        "target_id": "ar.e1.b002.c34"
+      },
+      "evidence": [
+        {
+          "end_char": 116,
+          "quote": "ואיבעית אימא לעולם לאיתויי מי שחציו עבד וחציו בן חורין ודקא קשיא לך דרבינא לא קשיא כאן במשנה ראשונה כאן במשנה אחרונה",
+          "segment_id": "seg_68eb7dadee0b745bf8c9",
+          "start_char": 0
+        }
+      ],
+      "id": "ar.e1.r002.restored.support",
+      "layer": "edges",
+      "links": [
+        "ar.e1.r002.chronology",
+        "ar.e1.b002.c34"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "ar.e1.b002.e31"
+    },
+    {
+      "id": "ar.e1.r002.initial",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_3dec4f03f310b6c21e0a",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "דתנן מי שחציו עבד וחציו בן חורין עובד את רבו יום אחד ואת עצמו יום אחד דברי ב\"ה"
+        }
+      ],
+      "content": {
+        "proposition": "The initial Beit Hillel view has the half-slave half-free person work for his master one day and for himself one day.",
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "scope": "Following Mishnah context only for2b13 earlier/later reconciliation",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ar.e1.r002.initial.pos",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_3dec4f03f310b6c21e0a",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "דתנן מי שחציו עבד וחציו בן חורין עובד את רבו יום אחד ואת עצמו יום אחד דברי ב\"ה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "בית הלל as cited"
+        ],
+        "claim_id": "ar.e1.r002.initial",
+        "question_id": null,
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "local_status": "Initial Mishnah view; explicitly retracted in2b16"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.initial"
+      ]
+    },
+    {
+      "id": "ar.e1.r002.objection",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_d2c1280b62e6a1c2f086",
+          "start_char": 0,
+          "end_char": 169,
+          "quote": "אמרו להם ב\"ש תיקנתם את רבו ואת עצמו לא תיקנתם לישא שפחה אינו יכול בת חורין אינו יכול יבטל והלא לא נברא העולם אלא לפריה ורביה שנאמר (ישעיהו מה, יח) לא תוהו בראה לשבת יצרה"
+        }
+      ],
+      "content": {
+        "proposition": "Beit Shammai objects that the initial arrangement leaves him unable to marry either a slave woman or a free woman, despite the creation purpose of procreation.",
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "scope": "Following Mishnah context only for2b13 earlier/later reconciliation",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ar.e1.r002.objection.pos",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_d2c1280b62e6a1c2f086",
+          "start_char": 0,
+          "end_char": 169,
+          "quote": "אמרו להם ב\"ש תיקנתם את רבו ואת עצמו לא תיקנתם לישא שפחה אינו יכול בת חורין אינו יכול יבטל והלא לא נברא העולם אלא לפריה ורביה שנאמר (ישעיהו מה, יח) לא תוהו בראה לשבת יצרה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "בית שמאי as cited"
+        ],
+        "claim_id": "ar.e1.r002.objection",
+        "question_id": null,
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "local_status": "Objection to initial alternating-service arrangement"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.objection"
+      ]
+    },
+    {
+      "id": "ar.e1.r002.freeing",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "content": {
+        "proposition": "For תיקון העולם the master is compelled to free him, and the person writes a debt instrument for half his value.",
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "scope": "Following Mishnah context only for2b13 earlier/later reconciliation",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ar.e1.r002.freeing.pos",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "בית שמאי in the cited continuation"
+        ],
+        "claim_id": "ar.e1.r002.freeing",
+        "question_id": null,
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "local_status": "Freeing solution subsequently accepted by Beit Hillel; paired procedural requirement retained"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.freeing"
+      ]
+    },
+    {
+      "id": "ar.e1.r002.retraction",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "content": {
+        "proposition": "Beit Hillel retracted and ruled in accordance with Beit Shammai.",
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "scope": "Following Mishnah context only for2b13 earlier/later reconciliation",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "ar.e1.r002.retraction.pos",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "cited Mishnah reporting בית הלל"
+        ],
+        "claim_id": "ar.e1.r002.retraction",
+        "question_id": null,
+        "conditions": [
+          "Person half slave and half free"
+        ],
+        "local_status": "Explicit retraction, not permanent opposed outcomes"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.retraction"
+      ]
+    },
+    {
+      "id": "ar.e1.r002.initial.objection",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_d2c1280b62e6a1c2f086",
+          "start_char": 0,
+          "end_char": 169,
+          "quote": "אמרו להם ב\"ש תיקנתם את רבו ואת עצמו לא תיקנתם לישא שפחה אינו יכול בת חורין אינו יכול יבטל והלא לא נברא העולם אלא לפריה ורביה שנאמר (ישעיהו מה, יח) לא תוהו בראה לשבת יצרה"
+        }
+      ],
+      "content": {
+        "source_id": "ar.e1.r002.objection",
+        "target_id": "ar.e1.r002.initial",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.objection",
+        "ar.e1.r002.initial"
+      ]
+    },
+    {
+      "id": "ar.e1.r002.initial.retracted",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "content": {
+        "source_id": "ar.e1.r002.retraction",
+        "target_id": "ar.e1.r002.initial",
+        "relation": "retraction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.retraction",
+        "ar.e1.r002.initial"
+      ]
+    },
+    {
+      "id": "ar.e1.r002.chronology.context",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_68eb7dadee0b745bf8c9",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "ואיבעית אימא לעולם לאיתויי מי שחציו עבד וחציו בן חורין ודקא קשיא לך דרבינא לא קשיא כאן במשנה ראשונה כאן במשנה אחרונה"
+        },
+        {
+          "segment_id": "seg_3dec4f03f310b6c21e0a",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "דתנן מי שחציו עבד וחציו בן חורין עובד את רבו יום אחד ואת עצמו יום אחד דברי ב\"ה"
+        },
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "content": {
+        "source_id": "ar.e1.r002.retraction",
+        "target_id": "ar.e1.r002.chronology",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.retraction",
+        "ar.e1.r002.chronology"
+      ]
+    },
+    {
+      "id": "ar.e1.r002.freeing.context",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_ffd0c11713f7f9591841",
+          "start_char": 0,
+          "end_char": 106,
+          "quote": "אלא מפני תיקון העולם כופין את רבו ועושה אותו בן חורין וכותב שטר על חצי דמיו וחזרו בית הלל להורות כדברי ב\"ש"
+        }
+      ],
+      "content": {
+        "source_id": "ar.e1.r002.freeing",
+        "target_id": "ar.e1.r002.chronology",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "ar.e1.r002.freeing",
+        "ar.e1.r002.chronology"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "AR01/AR02 immutable semantic correction and dependency replacement; no new source coverage.",
+      "record_ids": [
+        "ar.e1.r002.father.support",
+        "ar.e1.r002.coowners.support"
+      ],
+      "segment_id": "seg_506deeea40903d586fb0"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "AR01/AR02 immutable semantic correction and dependency replacement; no new source coverage.",
+      "record_ids": [
+        "ar.e1.b002.c34",
+        "ar.e1.r002.chronology"
+      ],
+      "segment_id": "seg_68eb7dadee0b745bf8c9"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "AR01/AR02 immutable semantic correction and dependency replacement; no new source coverage.",
+      "record_ids": [
+        "ar.e1.b002.e29",
+        "ar.e1.r002.ravina.qualification",
+        "ar.e1.r002.restored.support"
+      ],
+      "segment_id": "seg_68eb7dadee0b745bf8c9"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "AR01/AR02 immutable semantic correction and dependency replacement; no new source coverage.",
+      "record_ids": [
+        "ar.e1.b002.c34.pos",
+        "ar.e1.r002.chronology.pos"
+      ],
+      "segment_id": "seg_68eb7dadee0b745bf8c9"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "AR01/AR02 immutable semantic correction and dependency replacement; no new source coverage.",
+      "record_ids": [
+        "ar.e1.b002.c15",
+        "ar.e1.r002.father",
+        "ar.e1.r002.coowners"
+      ],
+      "segment_id": "seg_c8f00d95036855f7eadc"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "AR01/AR02 immutable semantic correction and dependency replacement; no new source coverage.",
+      "record_ids": [
+        "ar.e1.r002.father.support",
+        "ar.e1.r002.coowners.support"
+      ],
+      "segment_id": "seg_c8f00d95036855f7eadc"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "AR01/AR02 immutable semantic correction and dependency replacement; no new source coverage.",
+      "record_ids": [
+        "ar.e1.b002.c15.pos",
+        "ar.e1.r002.father.pos",
+        "ar.e1.r002.coowners.pos"
+      ],
+      "segment_id": "seg_c8f00d95036855f7eadc"
+    }
+  ],
+  "open_tails": [
+    "ar.e1.b002.s3"
+  ]
+}

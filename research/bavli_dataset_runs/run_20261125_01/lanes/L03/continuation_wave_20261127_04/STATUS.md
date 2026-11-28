@@ -1,0 +1,9 @@
+# L03 continuation through 810 source cores per pass
+
+Current counts: Rosh Hashanah242/1025; Yevamot218/3869; Eruvin130/3646; Kiddushin50/2406; Nazir50/1299; Arakhin50/1183; Tamid70/207. Total810/13635 across all eight required passes,12825 remaining,zero whole tractates delivered. REVIEW_BINDINGS.json pins exact current snapshots, owners, next refs, open tails and bounded review verdicts.
+
+This wave preserves RH014, YV011, Kiddushin003, Nazir003, Arakhin003, and Tamid004/005 initial proposals and source-first comparisons. YV011 outcome/scope repairs and Tamid005 father-to-son attribution repairs are separately versioned and independently rechecked. Tamid005’s locally schema-rejected candidate remains with its exact validation recovery. No source array positions were shifted or original corpora modified. Shared runner/schema/protocol are unchanged.
+
+Independent source readers/comparators differ from their tractate producers. Prior contextual exposure is explicit. There is no new random or fresh-blind cohort claim. Bounded acceptance does not certify all earlier extraction cores or task-specific atomic retrieval. Eruvin’s duplicate qualification relations, source abbreviations, grouped comparative premises, ambiguous identities and other limitations remain documented. Original source evidence, first proposals, rework findings, revisions and uncertainty are preserved.
+
+The next Eruvin20 source reading is frozen separately; it adds no production coverage. Production writers are held for checkpoint_20261127_03; resume after exact package validation and reconstruction. Canonical next refs: RH10b6,YV9b9,ER5b3,KI4a12,NA4a2,AR3a16,TA28a12. Reuse or immutably revise prior context records when they become cores. Do not rerun old builders against later pointers. Keep draftPR22 unmerged.

@@ -1,0 +1,31 @@
+{
+  "verdict": "REWORK_TARGETED",
+  "snapshot_sha256": "57051426b858b389c7e8f9df0a31dfa57c1314b24064e1ec6d14a62245672c8d",
+  "proposal_sha256": "11811f326f319c737eb9fdec63d26ce023ab347c8c734fbcbe29ac104cb3212f",
+  "reader_sha256": "0a12b1738f183660eb6ac8cfc3ddbef89e2f8f34eddc52d9f90d6490a6806b8a",
+  "agent_id": "/root/blind_review",
+  "model_id": null,
+  "confirmed_issues": [
+    {
+      "id": "RH016_01",
+      "severity": "localized_semantic_omission",
+      "source_ref": "Rosh Hashanah11b6",
+      "source_quote": "ואזדו לטעמייהו",
+      "finding_id": "rh.next20.016.015",
+      "affected_record_ids": [
+        "rh.e3.b016.u8",
+        "rh.e3.b016.ye_flood_date",
+        "rh.e3.b016.el_flood_date"
+      ],
+      "description": "The explicit framing alignment between the flood disagreement and the preceding views is absent from semantic annotation. Raw quote retention is not an extracted discourse relation. No direct contradiction in the extracted date claims is alleged.",
+      "minimum_repair": "Represent the anonymous framing that these authorities follow their earlier positions, anchored in11b6 with relevant earlier chronology context. A narrow discourse claim/utterance revision and valid links suffice; do not invent a calendrical causal proof or force a support edge from a narrower date premise. Refresh only dependent coverage; no extra cores."
+    }
+  ],
+  "otherwise": "No other confirmed defect in reviewed claims, attribution, atomic acts, questions, scope, or crossfolio harvest closure. Sarah proof has both remembrance and visitation evidence; Elazar is distinct from Eliezer; printed Kimah repetition retained.",
+  "limitations": [
+    "Independent provisional AI comparison of20purposive cores only.",
+    "16cores previously seen as context; no fresh blind cohort or unique-count inflation.",
+    "12b2–8 future derivation/boundary findings are not covered-core omissions.",
+    "No whole tractate acceptance, human certification or ML eligibility."
+  ]
+}

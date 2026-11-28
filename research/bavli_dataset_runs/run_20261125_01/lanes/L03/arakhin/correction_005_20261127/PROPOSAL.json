@@ -1,0 +1,275 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Arakhin",
+  "owner": "/root/lead_l01_l03",
+  "epoch": 1,
+  "source_sha256": "1a25d9524ec1d35eee64749794e158a24bfa10177bc9c6db56b4fca6adbc9ed4",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/blind_review",
+    "model_id": null
+  },
+  "open_tails": [
+    "ar.e1.b005.valuation_baraita"
+  ],
+  "records": [
+    {
+      "id": "ar.e1.b005fix.eating_q",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_122db57fc5ca8eb1ec1c",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "אמר לו רבן יוחנן בן זכאי לא כן אלא כל כהן שאינו שוקל חוטא אלא שהכהנים דורשין מקרא זה לעצמן (ויקרא ו, טז) וכל מנחת כהן כליל תהיה לא תאכל"
+        },
+        {
+          "segment_id": "seg_4b930132d332af1215eb",
+          "start_char": 0,
+          "end_char": 55,
+          "quote": "הואיל ועומר ושתי הלחם ולחם הפנים שלנו הם היאך הם נאכלין"
+        }
+      ],
+      "content": {
+        "formulation": "On the priests ownership argument, how can the omer, two loaves and showbread be eaten if their contribution makes them priestly offerings?",
+        "question_origin": "explicit",
+        "conditions": [
+          "Priests rationale reported by Rabban Yohanan ben Zakkai; not endorsed final prohibition"
+        ],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ar.e1.b005.priest_offering",
+        "ar.e1.b005.ownership_omer",
+        "ar.e1.b005.ownership_two_loaves",
+        "ar.e1.b005.ownership_showbread"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ar.e1.b005fix.offering_support_omer",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_122db57fc5ca8eb1ec1c",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "אמר לו רבן יוחנן בן זכאי לא כן אלא כל כהן שאינו שוקל חוטא אלא שהכהנים דורשין מקרא זה לעצמן (ויקרא ו, טז) וכל מנחת כהן כליל תהיה לא תאכל"
+        },
+        {
+          "segment_id": "seg_4b930132d332af1215eb",
+          "start_char": 0,
+          "end_char": 55,
+          "quote": "הואיל ועומר ושתי הלחם ולחם הפנים שלנו הם היאך הם נאכלין"
+        }
+      ],
+      "content": {
+        "source_id": "ar.e1.b005.priest_offering",
+        "target_id": "ar.e1.b005.ownership_omer",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ar.e1.b005.priest_offering",
+        "ar.e1.b005.ownership_omer"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ar.e1.b005fix.offering_support_two_loaves",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_122db57fc5ca8eb1ec1c",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "אמר לו רבן יוחנן בן זכאי לא כן אלא כל כהן שאינו שוקל חוטא אלא שהכהנים דורשין מקרא זה לעצמן (ויקרא ו, טז) וכל מנחת כהן כליל תהיה לא תאכל"
+        },
+        {
+          "segment_id": "seg_4b930132d332af1215eb",
+          "start_char": 0,
+          "end_char": 55,
+          "quote": "הואיל ועומר ושתי הלחם ולחם הפנים שלנו הם היאך הם נאכלין"
+        }
+      ],
+      "content": {
+        "source_id": "ar.e1.b005.priest_offering",
+        "target_id": "ar.e1.b005.ownership_two_loaves",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ar.e1.b005.priest_offering",
+        "ar.e1.b005.ownership_two_loaves"
+      ],
+      "uncertainty": []
+    },
+    {
+      "id": "ar.e1.b005fix.offering_support_showbread",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_122db57fc5ca8eb1ec1c",
+          "start_char": 0,
+          "end_char": 135,
+          "quote": "אמר לו רבן יוחנן בן זכאי לא כן אלא כל כהן שאינו שוקל חוטא אלא שהכהנים דורשין מקרא זה לעצמן (ויקרא ו, טז) וכל מנחת כהן כליל תהיה לא תאכל"
+        },
+        {
+          "segment_id": "seg_4b930132d332af1215eb",
+          "start_char": 0,
+          "end_char": 55,
+          "quote": "הואיל ועומר ושתי הלחם ולחם הפנים שלנו הם היאך הם נאכלין"
+        }
+      ],
+      "content": {
+        "source_id": "ar.e1.b005.priest_offering",
+        "target_id": "ar.e1.b005.ownership_showbread",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "links": [
+        "ar.e1.b005.priest_offering",
+        "ar.e1.b005.ownership_showbread"
+      ],
+      "uncertainty": []
+    },
+    {
+      "content": {
+        "candidates": [
+          "Ben Bukhri"
+        ],
+        "role": "transmitter",
+        "scope": "Ben Bukhri testimony at Yavneh reported by the printed א\"ר יהודה; title retained unexpanded",
+        "surface": "א\"ר יהודה העיד בן בוכרי ביבנה",
+        "transmission_chain": [
+          "א\"ר יהודה",
+          "בן בוכרי"
+        ]
+      },
+      "evidence": [
+        {
+          "end_char": 126,
+          "quote": "הכל מעריכין כהנים לוים וישראלים פשיטא אמר רבא לא נצרכא אלא לבן בוכרי דתנן א\"ר יהודה העיד בן בוכרי ביבנה כל כהן ששוקל אינו חוטא",
+          "segment_id": "seg_8d6b20eafb11ed735963",
+          "start_char": 0
+        }
+      ],
+      "id": "ar.e1.b005fix.bukhri_testimony",
+      "layer": "attributions",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Quoted Mishnah context supports a Rabbi Yehuda expansion as contextual inference, but this revision retains the raw abbreviated title and does not settle historical identity."
+      ],
+      "supersedes": "ar.e1.b005.bukhri_testimony"
+    },
+    {
+      "content": {
+        "claim_id": "ar.e1.b005.bukhri_pay",
+        "conditions": [],
+        "holder_candidates": [
+          "Ben Bukhri via printed א\"ר יהודה"
+        ],
+        "local_status": "asserted locally",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 126,
+          "quote": "הכל מעריכין כהנים לוים וישראלים פשיטא אמר רבא לא נצרכא אלא לבן בוכרי דתנן א\"ר יהודה העיד בן בוכרי ביבנה כל כהן ששוקל אינו חוטא",
+          "segment_id": "seg_8d6b20eafb11ed735963",
+          "start_char": 0
+        }
+      ],
+      "id": "ar.e1.b005fix.bukhri_pay.p",
+      "layer": "positions",
+      "links": [
+        "ar.e1.b005.bukhri_pay"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Quoted Mishnah context supports a Rabbi Yehuda expansion as contextual inference, but this revision retains the raw abbreviated title and does not settle historical identity."
+      ],
+      "supersedes": "ar.e1.b005.bukhri_pay.p"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Independent AR005-01/02 repair: explicit priests eating question and three premise supports; raw abbreviated title retained with contextual-expansion uncertainty. No added core coverage.",
+      "record_ids": [
+        "ar.e1.b005.bukhri_dispute",
+        "ar.e1.b005fix.offering_support_omer",
+        "ar.e1.b005fix.offering_support_two_loaves",
+        "ar.e1.b005fix.offering_support_showbread"
+      ],
+      "segment_id": "seg_122db57fc5ca8eb1ec1c"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "questions",
+      "rationale": "Independent AR005-01/02 repair: explicit priests eating question and three premise supports; raw abbreviated title retained with contextual-expansion uncertainty. No added core coverage.",
+      "record_ids": [
+        "ar.e1.b005fix.eating_q"
+      ],
+      "segment_id": "seg_122db57fc5ca8eb1ec1c"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Independent AR005-01/02 repair: explicit priests eating question and three premise supports; raw abbreviated title retained with contextual-expansion uncertainty. No added core coverage.",
+      "record_ids": [
+        "ar.e1.b005fix.offering_support_omer",
+        "ar.e1.b005fix.offering_support_two_loaves",
+        "ar.e1.b005fix.offering_support_showbread"
+      ],
+      "segment_id": "seg_4b930132d332af1215eb"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "questions",
+      "rationale": "Independent AR005-01/02 repair: explicit priests eating question and three premise supports; raw abbreviated title retained with contextual-expansion uncertainty. No added core coverage.",
+      "record_ids": [
+        "ar.e1.b005fix.eating_q"
+      ],
+      "segment_id": "seg_4b930132d332af1215eb"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Independent AR005-01/02 repair: explicit priests eating question and three premise supports; raw abbreviated title retained with contextual-expansion uncertainty. No added core coverage.",
+      "record_ids": [
+        "ar.e1.b005.frame5",
+        "ar.e1.b005.rava_first",
+        "ar.e1.b005fix.bukhri_testimony"
+      ],
+      "segment_id": "seg_8d6b20eafb11ed735963"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Independent AR005-01/02 repair: explicit priests eating question and three premise supports; raw abbreviated title retained with contextual-expansion uncertainty. No added core coverage.",
+      "record_ids": [
+        "ar.e1.b005.valuation_priest.p",
+        "ar.e1.b005.valuation_levite.p",
+        "ar.e1.b005.valuation_israel.p",
+        "ar.e1.b005.rava_bukhri.p",
+        "ar.e1.b005fix.bukhri_pay.p"
+      ],
+      "segment_id": "seg_8d6b20eafb11ed735963"
+    }
+  ]
+}

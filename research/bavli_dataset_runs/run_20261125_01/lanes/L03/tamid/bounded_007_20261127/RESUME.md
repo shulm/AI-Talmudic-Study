@@ -1,0 +1,1 @@
+Partial110/207 each8passes. NextTamid30a5 original[58,4]; no open tails at chapter boundary. Owner /root/lead_l01_l03 epoch1, root producer. Prior context reused. Independent007 comparison pending; no tractate delivery or ML eligibility. Replay pinned canonical job; export F:/Sefaria_QA/bavli_l03_exports_20261127/tamid_007.

@@ -1,0 +1,100 @@
+{
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "bounded_status": "ACCEPT_BOUNDED",
+  "snapshot_sha256": "eca024a2346d9a35620f5e97b60a7be3ae891cd88e9897598b3586e9da0b214f",
+  "proposal_sha256": "858a3fc108ce3e81dec95cf46f292b010ad3efcad728ecef18459fdad12e0a72",
+  "comparator": "/root/blind_review",
+  "original_reader_id": "reader_l03_remaining_wave5",
+  "source_sha256": "d37fab6314d84a21da855c5b5d8b91f8bfc594b336817e13393e383ffdcd453d",
+  "reader_sha256": "6c18c9845856d5c04b2e57c0770d79e4a054137abd13eadcaec8264ad3bdc3db",
+  "core_scope": "Tamid26b:8–27a:7",
+  "new_cores_compared": 10,
+  "original_reader_findings_represented": 20,
+  "original_reader_findings_total": 20,
+  "confirmed_semantic_defects": 0,
+  "unresolved_integrity_critical_count": 0,
+  "exceptions": [
+    {
+      "id": "TAM003-REUSED-CORE",
+      "category": "provenance",
+      "ids": [
+        "tam002.prepared_context",
+        "tam002.prepared_context.p",
+        "tam002.prepared_answer",
+        "tam002.prepared.a"
+      ],
+      "note": "26b8 was producer-context evidence already reviewed in002;003 reuses unchanged rows and adds coverage. No new blind reading credit."
+    },
+    {
+      "id": "TAM003-ALTERNATIVE",
+      "category": "preserved scope",
+      "ids": [
+        "tam003.twentyfour",
+        "tam003.asuppim",
+        "tam003.parbar_guard",
+        "tam003.literal24_context",
+        "tam003.priests_levites_context"
+      ],
+      "note": "Initial reduction24→22→21 and separate literal24=3priests+21Levites are alternative explanations. RYBL24 textual occurrences is a different count. No unique final count resolution or named retraction inferred."
+    },
+    {
+      "id": "TAM003-LOCAL-STATUS-TEMPLATE",
+      "category": "nonblocking wording caveat",
+      "ids": [
+        "tam003.beds_answer.p",
+        "tam003.not_service.p",
+        "tam003.service.p"
+      ],
+      "note": "Generic local_status says alternative explanation retained even for standalone local assertions. Read as conservative dataset-wide scope language, not evidence of an unstated local alternative. Do not extract new alternatives from this template."
+    },
+    {
+      "id": "TAM003-COMPOSITES",
+      "category": "granularity limitation",
+      "ids": [
+        "tam003.three_repeat",
+        "tam003.chronicles",
+        "tam003.literal24_context",
+        "tam003.priests_levites_context"
+      ],
+      "note": "Named-site recurrence and scriptural enumerations remain composite. All20reader findings represented, not exhaustive atomic-gold recall or task eligibility."
+    },
+    {
+      "id": "TAM003-NEXT",
+      "category": "resume obligation",
+      "ids": [
+        "tam003.levites",
+        "tam003.literal24_context",
+        "tam003.all_levites_context",
+        "tam003.priests_levites_context",
+        "tam003.rybl.a"
+      ],
+      "note": "27a8–9 context already has semantic rows; next batch must reuse them and close/continue structure without duplicate claims. Further27a10–13 context read by comparator but outside current core comparison."
+    },
+    {
+      "id": "TAM003-READER-CAVEAT",
+      "category": "reader precision",
+      "ids": [
+        "tam003.twentyfour",
+        "tam003.asuppim"
+      ],
+      "note": "Original reader c059/c060 shares composite holder text anonymous objection; Abaye answer. Producer correctly separates anonymous count from Abaye response. Preserve original reading without endorsing combined speaker label for each atom."
+    }
+  ],
+  "producer_completed_per_pass": 30,
+  "source_segments": 207,
+  "remaining_per_pass": 177,
+  "next_ref": "Tamid 27a:8",
+  "open_tails": [
+    "tam003.levites"
+  ],
+  "new_probability_or_endpoint_sample_credit": 0,
+  "new_blind_cohort_credit": 0,
+  "ml_eligible": false,
+  "task_eligible_count": 0,
+  "tractate_delivered": false,
+  "limitations": [
+    "Bounded comparison only; no new full-tractate or historical semantic acceptance.",
+    "Original frozen reader subset reused, with comparator prior002 context exposure explicitly documented.",
+    "AI provisional assessment, not human certification."
+  ]
+}

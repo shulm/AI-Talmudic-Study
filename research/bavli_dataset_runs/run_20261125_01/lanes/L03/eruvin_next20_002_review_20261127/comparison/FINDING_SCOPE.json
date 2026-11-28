@@ -1,0 +1,59 @@
+{
+  "finding_id": "ER002_SCOPE01",
+  "snapshot_sha256": "a78a43540816ccb3736a4215e01527105c3c3602499ea78515bfb7c44901484c",
+  "status": "confirmed_targeted_rework",
+  "agent_id": "/root/blind_review",
+  "model_id": null,
+  "record_ids": [
+    "er022.bs_doors",
+    "er022.bs_lock",
+    "er022.bh_door",
+    "er022.shmuel_hananya"
+  ],
+  "source_first_finding": "eruvin.next20.002.052",
+  "evidence": [
+    {
+      "ref": "Eruvin 7a:12",
+      "source_index": [
+        12,
+        11
+      ],
+      "start_char": 0,
+      "end_char": 113,
+      "quote": "יתיב רב יוסף קמיה דרב הונא ויתיב וקאמר אמר רב יהודה אמר רב מחלוקת בסרטיא מכאן וסרטיא מכאן ופלטיא מכאן ופלטיא מכאן"
+    },
+    {
+      "ref": "Eruvin 7a:13",
+      "source_index": [
+        12,
+        12
+      ],
+      "start_char": 0,
+      "end_char": 85,
+      "quote": "אבל סרטיא מכאן ובקעה מכאן או בקעה מכאן ובקעה מכאן עושה צורת הפתח מכאן ולחי וקורה מכאן"
+    },
+    {
+      "ref": "Eruvin 7a:14",
+      "source_index": [
+        12,
+        13
+      ],
+      "start_char": 0,
+      "end_char": 93,
+      "quote": "השתא סרטיא מכאן ובקעה מכאן עושה לו צורת הפתח מכאן ולחי וקורה מכאן בקעה מכאן ובקעה מכאן מיבעיא"
+    },
+    {
+      "ref": "Eruvin 7a:15",
+      "source_index": [
+        12,
+        14
+      ],
+      "start_char": 0,
+      "end_char": 57,
+      "quote": "הכי קאמר סרטיא מכאן ובקעה מכאן נעשה כבקעה מכאן ובקעה מכאן"
+    }
+  ],
+  "issue": "The corrected domain is represented at6b4, but the later7a12–15 limitation of the dispute to street/street or plaza/plaza, and the common doorway-form plus lehi/beam remedy for street/field and field/field, is absent. The door-requirement positions consequently lack a material source-supported scope qualification. This is required context for current6a11 rules, not a demand to count later context as new cores.",
+  "minimum_repair": "Add atomic context scope claim(s) and attributed Rav Yosef report of Rav Yehuda→Rav, with source-explicit qualification edges to the competing remedy rules/door requirements and the conditional street/field remedy. Preserve7a14–15 clarification and avoid transferring the separately disputed rehava attribution from7a16 onward. No added core coverage.",
+  "remaining_review": "Full integrity checks and other finding dispositions still running."
+}

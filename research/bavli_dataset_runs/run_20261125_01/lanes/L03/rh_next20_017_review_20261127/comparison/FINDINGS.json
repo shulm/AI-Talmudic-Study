@@ -1,0 +1,45 @@
+{
+  "snapshot_sha256": "85052d7ae9cd0a063765ac9901879eefa9d8007554035778c5f0c635587ecf11",
+  "reviewer": "/root/blind_review",
+  "issues": [
+    {
+      "id": "RH017_01",
+      "records": [
+        "rh.e3.b017.frame1",
+        "rh.e3.b017.frame3",
+        "rh.e3.b017.frame4",
+        "rh.e3.b017.frame8",
+        "rh.e3.b017.frame10",
+        "rh.e3.b017.frame11",
+        "rh.e3.b017.frame12",
+        "rh.e3.b017.frame13",
+        "rh.e3.b017.frame16",
+        "rh.e3.b017.frame17",
+        "rh.e3.b017.frame18",
+        "rh.e3.b017.frame19",
+        "rh.e3.b017.ybl"
+      ],
+      "issue": "Several attribution records use English discourse descriptions as source surface and sometimes as speaker candidates: quoted Mishnah, reported exposition continued, and combined dialogue labels are not identified persons. frame8 and frame11 assign speaker to anonymous/cited material; frame10 merges reporter and alternate holders into one candidate. frame1/ybl expand ריב\"ל without a normalization caveat.",
+      "repair": "Review these attribution rows individually: preserve source surface, separate anonymous frame/quoted authority/transmitter, list actual person candidates only where supported, retain true alternatives and source-holder chains. For ריב\"ל preserve raw abbreviation or explicitly qualify conventional expansion. Do not change correct claims or invent identities.",
+      "source_refs": [
+        "Rosh Hashanah12b2",
+        "Rosh Hashanah12b4–5",
+        "Rosh Hashanah12b9–13",
+        "Rosh Hashanah13a1",
+        "Rosh Hashanah13a4–7"
+      ]
+    },
+    {
+      "id": "RH017_02",
+      "records": [
+        "rh.e3.b017.one_first"
+      ],
+      "issue": "Support edge one_tithe→third_first uses a premise expressly restricted to competing changing allocations to support persistence of first tithe. The next segment explicitly asks whether first tithe might cease and establishes continuity by inheritance, so the present source node does not carry the necessary premise.",
+      "repair": "Immutable revision of this edge to the source-supported first_continuity→third_first support, with12b2–3evidence, or equivalent narrowly supported relation. Preserve one_tithe support for changing allocation and the existing continuity proof; no additional coverage.",
+      "source_refs": [
+        "Rosh Hashanah12b2–3"
+      ]
+    }
+  ],
+  "status": "TARGETED_FINDINGS_FROZEN_INTEGRITY_CHECKS_PENDING"
+}

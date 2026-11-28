@@ -1,0 +1,2323 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Rosh Hashanah",
+  "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "owner": "L03/rosh_hashanah",
+  "epoch": 3,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/rosh_hashanah/review_correction_20261126",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Accession on 29 Adar"
+        ],
+        "proposition": "For a king who acceded on 29 Adar, a year is counted when 1 Nisan arrives.",
+        "scope": "Local passage; no later practical ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 9,
+          "end_char": 68,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.c.adar",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.c.adar"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.review20261126.rev.rh.kings.pass1.c.adar",
+        "conditions": [
+          "Accession on 29 Adar"
+        ],
+        "holder_candidates": [
+          "Baraita"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 9,
+          "end_char": 68,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.p.adar",
+      "layer": "positions",
+      "links": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.adar"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.p.adar"
+    },
+    {
+      "id": "rh.e3.review20261126.adar.repeat",
+      "layer": "claims",
+      "content": {
+        "proposition": "For a king who acceded on 29 Adar, a year is counted when 1 Nisan arrives.",
+        "conditions": [
+          "Accession on 29 Adar"
+        ],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 7,
+          "end_char": 66,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.adar.repeat.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.adar.repeat",
+        "question_id": null,
+        "holder_candidates": [
+          "anonymous baraita quoted by discussion"
+        ],
+        "conditions": [
+          "Accession on 29 Adar"
+        ],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 7,
+          "end_char": 66,
+          "quote": "מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.adar.repeat"
+      ]
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "rh.e3.review20261126.adar.repeat",
+        "target_id": "rh.kings.pass1.c.newyear"
+      },
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.teaching1",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.adar.repeat",
+        "rh.kings.pass1.c.newyear"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.teaching1"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "rh.e3.review20261126.adar.repeat",
+        "target_id": "rh.kings.pass1.c.day"
+      },
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.teaching2",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.adar.repeat",
+        "rh.kings.pass1.c.day"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.teaching2"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Accession on 1 Nisan"
+        ],
+        "proposition": "For a king who acceded on 1 Nisan, a year is not counted until the next Nisan.",
+        "scope": "Local passage; no later practical ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 69,
+          "end_char": 129,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.c.nisan"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan",
+        "conditions": [
+          "Accession on 1 Nisan"
+        ],
+        "holder_candidates": [
+          "Baraita"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 69,
+          "end_char": 129,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.p.nisan",
+      "layer": "positions",
+      "links": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.p.nisan"
+    },
+    {
+      "id": "rh.e3.review20261126.nisan.repeat",
+      "layer": "claims",
+      "content": {
+        "proposition": "For a king who acceded on 1 Nisan, a year is not counted until the next Nisan.",
+        "conditions": [
+          "Accession on 1 Nisan"
+        ],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 45,
+          "end_char": 105,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.nisan.repeat.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.nisan.repeat",
+        "question_id": null,
+        "holder_candidates": [
+          "anonymous baraita quoted by discussion"
+        ],
+        "conditions": [
+          "Accession on 1 Nisan"
+        ],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 45,
+          "end_char": 105,
+          "quote": "ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.nisan.repeat"
+      ]
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "correction",
+        "source_id": "rh.e3.review20261126.selection.resolution",
+        "target_id": "rh.kings.pass1.c.hyp_two"
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.rejecttwo",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.selection.resolution",
+        "rh.kings.pass1.c.hyp_two"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.rejecttwo"
+    },
+    {
+      "content": {
+        "claim_id": "rh.kings.pass1.c.hyp_two",
+        "conditions": [
+          "Appointment in Adar, accession Nisan"
+        ],
+        "holder_candidates": [
+          "Anonymous hypothetical"
+        ],
+        "local_status": "Rejected hypothesis: prior Adar selection does not count two years when accession occurs in Nisan.",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.p.hyp_two",
+      "layer": "positions",
+      "links": [
+        "rh.kings.pass1.c.hyp_two"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.p.hyp_two"
+    },
+    {
+      "id": "rh.e3.review20261126.selection.resolution",
+      "layer": "claims",
+      "content": {
+        "proposition": "Prior Adar selection does not produce the proposed two-year count for accession in Nisan.",
+        "conditions": [
+          "Appointment in Adar",
+          "Accession in Nisan"
+        ],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.selection.resolution.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.selection.resolution",
+        "question_id": null,
+        "holder_candidates": [
+          "anonymous discussion"
+        ],
+        "conditions": [
+          "Appointment in Adar",
+          "Accession in Nisan"
+        ],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.selection.resolution"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.jonah.use",
+      "layer": "claims",
+      "content": {
+        "proposition": "The sages use the festivals verse for Rabbi Yonah’s teaching.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "ורבנן ההוא לכדרבי יונה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "rh.e3.b007.c20"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.review20261126.jonah.use",
+        "conditions": [],
+        "holder_candidates": [
+          "רבנן as reported by discussion"
+        ],
+        "local_status": "Asserted in this occurrence; continuation qualifications preserved",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "ורבנן ההוא לכדרבי יונה"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c20.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.review20261126.jonah.use"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c20.pos"
+    },
+    {
+      "id": "rh.e3.review20261126.jonah.comparison",
+      "layer": "claims",
+      "content": {
+        "proposition": "All the festivals are compared with one another.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 37,
+          "end_char": 65,
+          "quote": "הוקשו כל המועדים כולם זה לזה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.jonah.comparison.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.jonah.comparison",
+        "question_id": null,
+        "holder_candidates": [
+          "רבי יונה"
+        ],
+        "conditions": [],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 37,
+          "end_char": 65,
+          "quote": "הוקשו כל המועדים כולם זה לזה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.jonah.comparison"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.jonah.atonement",
+      "layer": "claims",
+      "content": {
+        "proposition": "All the festivals atone for impurity of the sanctuary and its sacred things.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 66,
+          "end_char": 99,
+          "quote": "שכולן מכפרים על טומאת מקדש וקדשיו"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.jonah.atonement.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.jonah.atonement",
+        "question_id": null,
+        "holder_candidates": [
+          "רבי יונה"
+        ],
+        "conditions": [],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 66,
+          "end_char": 99,
+          "quote": "שכולן מכפרים על טומאת מקדש וקדשיו"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.jonah.atonement"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.jonah.inference",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.review20261126.jonah.comparison",
+        "target_id": "rh.e3.review20261126.jonah.atonement",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ורבנן ההוא לכדרבי יונה דאמר רבי יונה הוקשו כל המועדים כולם זה לזה שכולן מכפרים על טומאת מקדש וקדשיו"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.jonah.comparison",
+        "rh.e3.review20261126.jonah.atonement"
+      ]
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "Sukkot has passed"
+        ],
+        "proposition": "He interprets the redundant mention of Sukkot as making Sukkot itself decisive.",
+        "scope": "Festival sequence, delay prohibition, make-up offerings, and Paschal-derived peace offerings in this local discussion"
+      },
+      "evidence": [
+        {
+          "end_char": 118,
+          "quote": "למה נאמר לומר שזה גורם",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 96
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c21",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c21"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.review20261126.rev.rh.e3.b007.c21",
+        "conditions": [
+          "Sukkot has passed"
+        ],
+        "holder_candidates": [
+          "רבי אלעזר ברבי שמעון"
+        ],
+        "local_status": "asserted locally",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 118,
+          "quote": "למה נאמר לומר שזה גורם",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 96
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c21.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c21"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c21.pos"
+    },
+    {
+      "id": "rh.e3.review20261126.festival.list.use",
+      "layer": "claims",
+      "content": {
+        "proposition": "Rabbi Meir and Rabbi Eliezer ben Jacob use the festival list for the Shavuot make-up-period teaching.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 82,
+          "end_char": 118,
+          "quote": "מיבעי להו לכדרבי אלעזר אמר ר' אושעיא"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.festival.list.use.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.festival.list.use",
+        "question_id": null,
+        "holder_candidates": [
+          "רבי מאיר and רבי אליעזר בן יעקב as explained by discussion"
+        ],
+        "conditions": [],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 82,
+          "end_char": 118,
+          "quote": "מיבעי להו לכדרבי אלעזר אמר ר' אושעיא"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.festival.list.use"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.passover.premise",
+      "layer": "claims",
+      "content": {
+        "proposition": "Passover has a seven-day period for make-up offerings.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 254,
+          "end_char": 287,
+          "quote": "מה חג המצות יש לו תשלומין כל שבעה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.passover.premise.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.passover.premise",
+        "question_id": null,
+        "holder_candidates": [
+          "רבי אושעיא, reported by רבי אלעזר"
+        ],
+        "conditions": [],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 254,
+          "end_char": 287,
+          "quote": "מה חג המצות יש לו תשלומין כל שבעה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.passover.premise"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.passover.chain",
+      "layer": "attributions",
+      "content": {
+        "surface": "רבי אלעזר אמר רבי אושעיא",
+        "role": "transmitter",
+        "candidates": [
+          "רבי אלעזר"
+        ],
+        "scope": "Passover premise and Shavuot conclusion",
+        "transmission_chain": [
+          "רבי אלעזר",
+          "רבי אושעיא"
+        ]
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 119,
+          "end_char": 146,
+          "quote": "דאמר ר' אלעזר אמר ר' אושעיא"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.passover.premise",
+        "rh.e3.b007.c22"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.passover.analogy",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.review20261126.passover.premise",
+        "target_id": "rh.e3.b007.c22",
+        "relation": "analogy",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 0,
+          "end_char": 323,
+          "quote": "ורבי מאיר ורבי אליעזר בן יעקב האי בחג המצות ובחג השבועות ובחג הסוכות מאי דרשו ביה מיבעי להו לכדרבי אלעזר אמר ר' אושעיא דאמר ר' אלעזר אמר ר' אושעיא מניין לעצרת שיש לה תשלומין כל שבעה תלמוד לומר בחג המצות ובחג השבועות ובחג הסוכות מקיש חג השבועות לחג המצות מה חג המצות יש לו תשלומין כל שבעה אף חג השבועות יש לו תשלומין כל שבעה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.passover.premise",
+        "rh.e3.b007.c22"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.list.answer",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.review20261126.festival.list.use",
+        "target_id": "rh.e3.b007.q8",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e85fc12597b899dc6cc1",
+          "start_char": 0,
+          "end_char": 323,
+          "quote": "ורבי מאיר ורבי אליעזר בן יעקב האי בחג המצות ובחג השבועות ובחג הסוכות מאי דרשו ביה מיבעי להו לכדרבי אלעזר אמר ר' אושעיא דאמר ר' אלעזר אמר ר' אושעיא מניין לעצרת שיש לה תשלומין כל שבעה תלמוד לומר בחג המצות ובחג השבועות ובחג הסוכות מקיש חג השבועות לחג המצות מה חג המצות יש לו תשלומין כל שבעה אף חג השבועות יש לו תשלומין כל שבעה"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.festival.list.use",
+        "rh.e3.b007.q8"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.eighth.compensation",
+      "layer": "claims",
+      "content": {
+        "proposition": "For make-up offerings all agree the eighth day compensates for the first.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 50,
+          "end_char": 96,
+          "quote": "אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "rh.e3.b007.c24"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.review20261126.eighth.compensation",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous discussion"
+        ],
+        "local_status": "Asserted in this occurrence; continuation qualifications preserved",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 50,
+          "end_char": 96,
+          "quote": "אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c24.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.review20261126.eighth.compensation"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c24.pos"
+    },
+    {
+      "id": "rh.e3.review20261126.eighth.mnemonic",
+      "layer": "claims",
+      "content": {
+        "proposition": "The eighth day is independent for the matters denoted by פז״ר קש״ב.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0,
+          "end_char": 49,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.eighth.mnemonic.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.eighth.mnemonic",
+        "question_id": null,
+        "holder_candidates": [
+          "anonymous discussion"
+        ],
+        "conditions": [],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0,
+          "end_char": 49,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.eighth.mnemonic"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.mnemonic.qualifies",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.review20261126.eighth.mnemonic",
+        "target_id": "rh.e3.b007.c23",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0,
+          "end_char": 96,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.eighth.mnemonic",
+        "rh.e3.b007.c23"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.makeup.last",
+      "layer": "claims",
+      "content": {
+        "proposition": "One who did not offer on the first festival day may offer on the last festival day too.",
+        "conditions": [
+          "Did not offer on first festival day"
+        ],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 73,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "rh.e3.b007.c25"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.review20261126.makeup.last",
+        "conditions": [
+          "Did not offer on first festival day"
+        ],
+        "holder_candidates": [
+          "quoted anonymous Mishnah"
+        ],
+        "local_status": "Asserted in this occurrence; continuation qualifications preserved",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 73,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c25.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.review20261126.makeup.last"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c25.pos"
+    },
+    {
+      "id": "rh.e3.review20261126.makeup.throughout",
+      "layer": "claims",
+      "content": {
+        "proposition": "One who did not offer on the first festival day may offer throughout the festival.",
+        "conditions": [
+          "Did not offer on first festival day"
+        ],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 51,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.makeup.throughout.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.makeup.throughout",
+        "question_id": null,
+        "holder_candidates": [
+          "quoted anonymous Mishnah"
+        ],
+        "conditions": [
+          "Did not offer on first festival day"
+        ],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 5,
+          "end_char": 51,
+          "quote": "מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.makeup.throughout"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.throughout.support",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.review20261126.makeup.throughout",
+        "target_id": "rh.e3.review20261126.eighth.compensation",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "דתנן מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.makeup.throughout",
+        "rh.e3.review20261126.eighth.compensation"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.inference.smaller",
+      "layer": "claims",
+      "content": {
+        "proposition": "Taking the smaller amount secures the inference.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 19,
+          "end_char": 33,
+          "quote": "תפשת מועט תפשת"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [],
+      "supersedes": "rh.e3.b007.c26"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.review20261126.inference.smaller",
+        "conditions": [],
+        "holder_candidates": [
+          "anonymous discussion"
+        ],
+        "local_status": "Asserted in this occurrence; continuation qualifications preserved",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 19,
+          "end_char": 33,
+          "quote": "תפשת מועט תפשת"
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c26.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.review20261126.inference.smaller"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c26.pos"
+    },
+    {
+      "id": "rh.e3.review20261126.inference.larger",
+      "layer": "claims",
+      "content": {
+        "proposition": "Taking the larger amount does not secure the inference.",
+        "conditions": [],
+        "scope": "Bounded reviewed source occurrence; no final practical ruling or task eligibility inferred",
+        "assertion_mode": "asserted"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0,
+          "end_char": 18,
+          "quote": "תפשת מרובה לא תפשת"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "rh.e3.review20261126.inference.larger.pos",
+      "layer": "positions",
+      "content": {
+        "claim_id": "rh.e3.review20261126.inference.larger",
+        "question_id": null,
+        "holder_candidates": [
+          "anonymous discussion"
+        ],
+        "conditions": [],
+        "local_status": "Asserted in this occurrence; no final ruling inferred"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0,
+          "end_char": 18,
+          "quote": "תפשת מרובה לא תפשת"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.inference.larger"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.larger.objection",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.review20261126.inference.larger",
+        "target_id": "rh.e3.b007.q10",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0,
+          "end_char": 33,
+          "quote": "תפשת מרובה לא תפשת תפשת מועט תפשת"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.review20261126.inference.larger",
+        "rh.e3.b007.q10"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.q.animal",
+      "layer": "questions",
+      "content": {
+        "formulation": "When does the animal-tithe year begin?",
+        "question_origin": "editorial_reconstruction",
+        "conditions": [],
+        "answer_set_status": "topic_inventory"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_38336ba7201acd221fb2",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי"
+        }
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "Editorial grouping only; no independently certified exhaustive/comparable choice set."
+      ],
+      "links": []
+    },
+    {
+      "content": {
+        "claim_id": "rh.opening1.c.animal",
+        "conditions": [],
+        "holder_candidates": [
+          "Mishnah anonymous first opinion"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": "rh.e3.review20261126.q.animal"
+      },
+      "evidence": [
+        {
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי",
+          "segment_id": "seg_38336ba7201acd221fb2",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.opening1.p.animal",
+      "layer": "positions",
+      "links": [
+        "rh.opening1.c.animal",
+        "rh.e3.review20261126.q.animal"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.opening1.p.animal"
+    },
+    {
+      "content": {
+        "claim_id": "rh.opening1.c.animal_alt",
+        "conditions": [],
+        "holder_candidates": [
+          "רבי אלעזר ורבי שמעון"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": "rh.e3.review20261126.q.animal"
+      },
+      "evidence": [
+        {
+          "end_char": 62,
+          "quote": "באחד באלול ראש השנה למעשר בהמה ר' אלעזר ור\"ש אומרים באחד בתשרי",
+          "segment_id": "seg_38336ba7201acd221fb2",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.opening1.p.animal_alt",
+      "layer": "positions",
+      "links": [
+        "rh.opening1.c.animal_alt",
+        "rh.e3.review20261126.q.animal"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.opening1.p.animal_alt"
+    },
+    {
+      "id": "rh.e3.review20261126.q.tree",
+      "layer": "questions",
+      "content": {
+        "formulation": "When does the tree year begin?",
+        "question_origin": "editorial_reconstruction",
+        "conditions": [],
+        "answer_set_status": "topic_inventory"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_91e82450d2fbfec98bf7",
+          "start_char": 0,
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:"
+        }
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "Editorial grouping only; no independently certified exhaustive/comparable choice set."
+      ],
+      "links": []
+    },
+    {
+      "content": {
+        "claim_id": "rh.opening1.c.tree_bs",
+        "conditions": [],
+        "holder_candidates": [
+          "בית שמאי"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": "rh.e3.review20261126.q.tree"
+      },
+      "evidence": [
+        {
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:",
+          "segment_id": "seg_91e82450d2fbfec98bf7",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.opening1.p.tree_bs",
+      "layer": "positions",
+      "links": [
+        "rh.opening1.c.tree_bs",
+        "rh.e3.review20261126.q.tree"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.opening1.p.tree_bs"
+    },
+    {
+      "content": {
+        "claim_id": "rh.opening1.c.tree_bh",
+        "conditions": [],
+        "holder_candidates": [
+          "בית הלל"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": "rh.e3.review20261126.q.tree"
+      },
+      "evidence": [
+        {
+          "end_char": 68,
+          "quote": "באחד בשבט ראש השנה לאילן כדברי בית שמאי בית הלל אומרים בחמשה עשר בו:",
+          "segment_id": "seg_91e82450d2fbfec98bf7",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.opening1.p.tree_bh",
+      "layer": "positions",
+      "links": [
+        "rh.opening1.c.tree_bh",
+        "rh.e3.review20261126.q.tree"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.opening1.p.tree_bh"
+    },
+    {
+      "id": "rh.e3.review20261126.q.teachings",
+      "layer": "questions",
+      "content": {
+        "formulation": "What does the Adar-accession case teach?",
+        "question_origin": "editorial_reconstruction",
+        "conditions": [],
+        "answer_set_status": "topic_inventory"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא"
+        },
+        {
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0,
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא"
+        }
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "Editorial grouping only; no independently certified exhaustive/comparable choice set.",
+        "Cumulative teachings, not competing alternatives."
+      ],
+      "links": []
+    },
+    {
+      "content": {
+        "claim_id": "rh.kings.pass1.c.newyear",
+        "conditions": [],
+        "holder_candidates": [
+          "Anonymous Gemara"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": "rh.e3.review20261126.q.teachings"
+      },
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.p.newyear",
+      "layer": "positions",
+      "links": [
+        "rh.kings.pass1.c.newyear",
+        "rh.e3.review20261126.q.teachings"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.p.newyear"
+    },
+    {
+      "content": {
+        "claim_id": "rh.kings.pass1.c.day",
+        "conditions": [
+          "Regnal-year count in the stated accession case"
+        ],
+        "holder_candidates": [
+          "Anonymous Gemara"
+        ],
+        "local_status": "Reported in this passage; no ruling beyond local text asserted",
+        "question_id": "rh.e3.review20261126.q.teachings"
+      },
+      "evidence": [
+        {
+          "end_char": 69,
+          "quote": "אמר מר מלך שעמד בעשרים ותשעה באדר כיון שהגיע אחד בניסן עלתה לו שנה הא",
+          "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+          "start_char": 0
+        },
+        {
+          "end_char": 111,
+          "quote": "קמ\"ל דניסן ר\"ה למלכים ויום אחד בשנה חשוב שנה ואם לא עמד אלא באחד בניסן אין מונין לו שנה עד שיגיע ניסן אחר פשיטא",
+          "segment_id": "seg_1063cb889e35cdd266b5",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.kings.pass1.p.day",
+      "layer": "positions",
+      "links": [
+        "rh.kings.pass1.c.day",
+        "rh.e3.review20261126.q.teachings"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.kings.pass1.p.day"
+    },
+    {
+      "id": "rh.e3.review20261126.q.deadline",
+      "layer": "questions",
+      "content": {
+        "formulation": "What festival threshold triggers delay liability in this baraita?",
+        "question_origin": "editorial_reconstruction",
+        "conditions": [],
+        "answer_set_status": "topic_inventory"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_497f7ba8013bcb6937f0",
+          "start_char": 0,
+          "end_char": 102,
+          "quote": "לקט שכחה ופאה כיון שעברו עליהן שלשה רגלים עובר בבל תאחר רבי שמעון אומר שלשה רגלים כסדרן וחג המצות תחלה"
+        },
+        {
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 0,
+          "end_char": 187,
+          "quote": "ר' מאיר אומר כיון שעבר עליהן רגל אחד עובר בבל תאחר רבי אליעזר בן יעקב אומר כיון שעברו עליהן שני רגלים עובר בבל תאחר רבי אלעזר ברבי שמעון אומר כיון שעבר עליהן חג הסוכות עובר עליהן בבל תאחר"
+        }
+      ],
+      "origin": "editorial_inference",
+      "uncertainty": [
+        "Editorial grouping only; no independently certified exhaustive/comparable choice set."
+      ],
+      "links": []
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.b007.c9",
+        "conditions": [
+          "One of the obligations listed in 4a:15–4b:1",
+          "Three festivals passed"
+        ],
+        "holder_candidates": [
+          "anonymous first tanna"
+        ],
+        "local_status": "asserted locally",
+        "question_id": "rh.e3.review20261126.q.deadline"
+      },
+      "evidence": [
+        {
+          "end_char": 55,
+          "quote": "לקט שכחה ופאה כיון שעברו עליהן שלשה רגלים עובר בבל תאחר",
+          "segment_id": "seg_497f7ba8013bcb6937f0",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c9.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.b007.c9",
+        "rh.e3.review20261126.q.deadline"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c9.pos"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.b007.c10",
+        "conditions": [
+          "Three ordered festivals",
+          "Passover first"
+        ],
+        "holder_candidates": [
+          "רבי שמעון"
+        ],
+        "local_status": "asserted locally",
+        "question_id": "rh.e3.review20261126.q.deadline"
+      },
+      "evidence": [
+        {
+          "end_char": 102,
+          "quote": "רבי שמעון אומר שלשה רגלים כסדרן וחג המצות תחלה",
+          "segment_id": "seg_497f7ba8013bcb6937f0",
+          "start_char": 56
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c10.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.b007.c10",
+        "rh.e3.review20261126.q.deadline"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c10.pos"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.b007.c11",
+        "conditions": [
+          "One festival passed"
+        ],
+        "holder_candidates": [
+          "רבי מאיר"
+        ],
+        "local_status": "asserted locally",
+        "question_id": "rh.e3.review20261126.q.deadline"
+      },
+      "evidence": [
+        {
+          "end_char": 50,
+          "quote": "ר' מאיר אומר כיון שעבר עליהן רגל אחד עובר בבל תאחר",
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c11.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.b007.c11",
+        "rh.e3.review20261126.q.deadline"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c11.pos"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.b007.c12",
+        "conditions": [
+          "Two festivals passed"
+        ],
+        "holder_candidates": [
+          "רבי אליעזר בן יעקב"
+        ],
+        "local_status": "asserted locally",
+        "question_id": "rh.e3.review20261126.q.deadline"
+      },
+      "evidence": [
+        {
+          "end_char": 115,
+          "quote": "רבי אליעזר בן יעקב אומר כיון שעברו עליהן שני רגלים עובר בבל תאחר",
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 51
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c12.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.b007.c12",
+        "rh.e3.review20261126.q.deadline"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c12.pos"
+    },
+    {
+      "content": {
+        "claim_id": "rh.e3.b007.c13",
+        "conditions": [
+          "Sukkot passed"
+        ],
+        "holder_candidates": [
+          "רבי אלעזר ברבי שמעון"
+        ],
+        "local_status": "asserted locally",
+        "question_id": "rh.e3.review20261126.q.deadline"
+      },
+      "evidence": [
+        {
+          "end_char": 187,
+          "quote": "רבי אלעזר ברבי שמעון אומר כיון שעבר עליהן חג הסוכות עובר עליהן בבל תאחר",
+          "segment_id": "seg_e27eba2d70961253b082",
+          "start_char": 116
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.c13.pos",
+      "layer": "positions",
+      "links": [
+        "rh.e3.b007.c13",
+        "rh.e3.review20261126.q.deadline"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.c13.pos"
+    },
+    {
+      "id": "rh.e3.review20261126.kings.qualify",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.b006.c1",
+        "target_id": "rh.opening1.c.kings",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_ed4b08ed2f17f1e17683",
+          "start_char": 0,
+          "end_char": 193,
+          "quote": "א\"ר חסדא לא שנו אלא למלכי ישראל אבל למלכי אומות העולם מתשרי מנינן שנא' (נחמיה א, א) דברי נחמיה בן חכליה ויהי בחדש כסליו שנת עשרים וגו' וכתיב (נחמיה ב, א) ויהי בחדש ניסן שנת עשרי' לארתחשסתא וגו'"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.b006.c1",
+        "rh.opening1.c.kings"
+      ]
+    },
+    {
+      "id": "rh.e3.review20261126.festivals.qualify",
+      "layer": "edges",
+      "content": {
+        "source_id": "rh.e3.b007.c1",
+        "target_id": "rh.opening1.c.festivals",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "evidence": [
+        {
+          "segment_id": "seg_f6836ea695173176a4a8",
+          "start_char": 0,
+          "end_char": 85,
+          "quote": "ולרגלים: רגלים באחד בניסן הוא בחמשה עשר בניסן הוא אמר רב חסדא רגל שבו ראש השנה לרגלים"
+        }
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "rh.e3.b007.c1",
+        "rh.opening1.c.festivals"
+      ]
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "distinction",
+        "source_id": "rh.e3.review20261126.jonah.use",
+        "target_id": "rh.e3.b007.c19"
+      },
+      "evidence": [
+        {
+          "end_char": 99,
+          "quote": "ורבנן ההוא לכדרבי יונה דאמר רבי יונה הוקשו כל המועדים כולם זה לזה שכולן מכפרים על טומאת מקדש וקדשיו",
+          "segment_id": "seg_ad4c80aa619228e0ca9d",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.e13",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.jonah.use",
+        "rh.e3.b007.c19"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.e13"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "rh.e3.review20261126.rev.rh.e3.b007.c21",
+        "target_id": "rh.e3.b007.q7"
+      },
+      "evidence": [
+        {
+          "end_char": 119,
+          "quote": " ורבי אלעזר ברבי שמעון מאי טעמא דתניא רבי אלעזר בר' שמעון אומר לא יאמר חג הסוכות שבו דיבר הכתוב למה נאמר לומר שזה גורם ",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.e14",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c21",
+        "rh.e3.b007.q7"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.e14"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "rh.e3.review20261126.rev.rh.e3.b007.c21",
+        "target_id": "rh.e3.b007.c13"
+      },
+      "evidence": [
+        {
+          "end_char": 119,
+          "quote": " ורבי אלעזר ברבי שמעון מאי טעמא דתניא רבי אלעזר בר' שמעון אומר לא יאמר חג הסוכות שבו דיבר הכתוב למה נאמר לומר שזה גורם ",
+          "segment_id": "seg_544b793b0e51c36bfc94",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.e15",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c21",
+        "rh.e3.b007.c13"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.e15"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "rh.e3.review20261126.eighth.compensation",
+        "target_id": "rh.e3.b007.c23"
+      },
+      "evidence": [
+        {
+          "end_char": 96,
+          "quote": "אימור דאמרינן שמיני רגל בפני עצמו לענין פז\"ר קש\"ב אבל לעניין תשלומין דברי הכל תשלומין דראשון הוא",
+          "segment_id": "seg_3e10b76653d4127c26fb",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.e20",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.eighth.compensation",
+        "rh.e3.b007.c23"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.e20"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "support",
+        "source_id": "rh.e3.review20261126.makeup.last",
+        "target_id": "rh.e3.review20261126.eighth.compensation"
+      },
+      "evidence": [
+        {
+          "end_char": 73,
+          "quote": "דתנן מי שלא חג יום טוב הראשון של חג חוגג את כל הרגל ויום טוב האחרון של חג",
+          "segment_id": "seg_aa765167c5a1af35d4b1",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.e21",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.makeup.last",
+        "rh.e3.review20261126.eighth.compensation"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.e21"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "answer",
+        "source_id": "rh.e3.review20261126.inference.smaller",
+        "target_id": "rh.e3.b007.q10"
+      },
+      "evidence": [
+        {
+          "end_char": 33,
+          "quote": "תפשת מרובה לא תפשת תפשת מועט תפשת",
+          "segment_id": "seg_e25bf5e94ffbc3ba2345",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.e3.b007.e22",
+      "layer": "edges",
+      "links": [
+        "rh.e3.review20261126.inference.smaller",
+        "rh.e3.b007.q10"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.e3.b007.e22"
+    },
+    {
+      "content": {
+        "candidates": [],
+        "role": "anonymous",
+        "scope": "rh.kings.pass1.c.nisan",
+        "surface": "תנו רבנן",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 8,
+          "quote": "תנו רבנן",
+          "segment_id": "seg_38b07d16e8bf34bd0765",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.reviewfix1.a.baraita1_nisan",
+      "layer": "attributions",
+      "links": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.reviewfix1.a.baraita1_nisan"
+    },
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "qualification",
+        "source_id": "rh.kings.pass1.c.appointment",
+        "target_id": "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan"
+      },
+      "evidence": [
+        {
+          "end_char": 61,
+          "quote": "לא צריכא דאימנו עליה מאדר מהו דתימא נימנו ליה תרתין שנין קמ\"ל",
+          "segment_id": "seg_749b15b9a84a267ff4a1",
+          "start_char": 0
+        }
+      ],
+      "id": "rh.e3.review20261126.rev.rh.reviewfix1.e.appointment_qualification",
+      "layer": "edges",
+      "links": [
+        "rh.kings.pass1.c.appointment",
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "rh.reviewfix1.e.appointment_qualification"
+    }
+  ],
+  "coverage": [
+    {
+      "segment_id": "seg_1063cb889e35cdd266b5",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.kings.pass1.c.day",
+        "rh.kings.pass1.c.newyear",
+        "rh.e3.review20261126.nisan.repeat"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_1063cb889e35cdd266b5",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.teaching1",
+        "rh.e3.review20261126.rev.rh.kings.pass1.teaching2"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_1063cb889e35cdd266b5",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.nisan.repeat.pos",
+        "rh.e3.review20261126.rev.rh.kings.pass1.p.newyear",
+        "rh.e3.review20261126.rev.rh.kings.pass1.p.day"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_1063cb889e35cdd266b5",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.kings.pass1.q.obvious1",
+        "rh.e3.review20261126.q.teachings"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_38336ba7201acd221fb2",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.opening1.p.animal",
+        "rh.e3.review20261126.rev.rh.opening1.p.animal_alt"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_38336ba7201acd221fb2",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.q.animal"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_38b07d16e8bf34bd0765",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.kings.pass1.baraita1",
+        "rh.e3.review20261126.rev.rh.reviewfix1.a.baraita1_nisan"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_38b07d16e8bf34bd0765",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.adar",
+        "rh.e3.review20261126.rev.rh.kings.pass1.c.nisan"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_38b07d16e8bf34bd0765",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.p.adar",
+        "rh.e3.review20261126.rev.rh.kings.pass1.p.nisan"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_3e10b76653d4127c26fb",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.eighth.compensation",
+        "rh.e3.review20261126.eighth.mnemonic"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_3e10b76653d4127c26fb",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.mnemonic.qualifies",
+        "rh.e3.review20261126.rev.rh.e3.b007.e20"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_3e10b76653d4127c26fb",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c24.pos",
+        "rh.e3.review20261126.eighth.mnemonic.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_497f7ba8013bcb6937f0",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c9.pos",
+        "rh.e3.review20261126.rev.rh.e3.b007.c10.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_497f7ba8013bcb6937f0",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.q.deadline"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_544b793b0e51c36bfc94",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c21"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_544b793b0e51c36bfc94",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.e14",
+        "rh.e3.review20261126.rev.rh.e3.b007.e15"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_544b793b0e51c36bfc94",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c21.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_749b15b9a84a267ff4a1",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.kings.pass1.c.appointment",
+        "rh.kings.pass1.c.hyp_two",
+        "rh.e3.review20261126.selection.resolution"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_749b15b9a84a267ff4a1",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.kings.pass1.appointment",
+        "rh.e3.review20261126.rev.rh.kings.pass1.rejecttwo",
+        "rh.e3.review20261126.rev.rh.reviewfix1.e.appointment_qualification"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_749b15b9a84a267ff4a1",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.kings.pass1.p.appointment",
+        "rh.e3.review20261126.rev.rh.kings.pass1.p.hyp_two",
+        "rh.e3.review20261126.selection.resolution.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_91e82450d2fbfec98bf7",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.opening1.p.tree_bs",
+        "rh.e3.review20261126.rev.rh.opening1.p.tree_bh"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_91e82450d2fbfec98bf7",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.q.tree"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_aa765167c5a1af35d4b1",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.makeup.last",
+        "rh.e3.review20261126.makeup.throughout"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_aa765167c5a1af35d4b1",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.throughout.support",
+        "rh.e3.review20261126.rev.rh.e3.b007.e21"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_aa765167c5a1af35d4b1",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c25.pos",
+        "rh.e3.review20261126.makeup.throughout.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_ad4c80aa619228e0ca9d",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.jonah.use",
+        "rh.e3.review20261126.jonah.comparison",
+        "rh.e3.review20261126.jonah.atonement"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_ad4c80aa619228e0ca9d",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.jonah.inference",
+        "rh.e3.review20261126.rev.rh.e3.b007.e13"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_ad4c80aa619228e0ca9d",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c20.pos",
+        "rh.e3.review20261126.jonah.comparison.pos",
+        "rh.e3.review20261126.jonah.atonement.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.kings.pass1.c.day",
+        "rh.kings.pass1.c.newyear",
+        "rh.e3.review20261126.adar.repeat"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.kings.pass1.teaching1",
+        "rh.e3.review20261126.rev.rh.kings.pass1.teaching2"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.adar.repeat.pos",
+        "rh.e3.review20261126.rev.rh.kings.pass1.p.newyear",
+        "rh.e3.review20261126.rev.rh.kings.pass1.p.day"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_b71fcd3a6ba8cb3c9d53",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.q.teachings"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e25bf5e94ffbc3ba2345",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.inference.smaller",
+        "rh.e3.review20261126.inference.larger"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e25bf5e94ffbc3ba2345",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.larger.objection",
+        "rh.e3.review20261126.rev.rh.e3.b007.e22"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e25bf5e94ffbc3ba2345",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c26.pos",
+        "rh.e3.review20261126.inference.larger.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e27eba2d70961253b082",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.rev.rh.e3.b007.c11.pos",
+        "rh.e3.review20261126.rev.rh.e3.b007.c12.pos",
+        "rh.e3.review20261126.rev.rh.e3.b007.c13.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e27eba2d70961253b082",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.q.deadline"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e85fc12597b899dc6cc1",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.b007.a12",
+        "rh.e3.b007.a13",
+        "rh.e3.review20261126.passover.chain"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e85fc12597b899dc6cc1",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.b007.c22",
+        "rh.e3.review20261126.festival.list.use",
+        "rh.e3.review20261126.passover.premise"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e85fc12597b899dc6cc1",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.b007.e16",
+        "rh.e3.b007.e17",
+        "rh.e3.review20261126.passover.analogy",
+        "rh.e3.review20261126.list.answer"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_e85fc12597b899dc6cc1",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.b007.c22.pos",
+        "rh.e3.review20261126.festival.list.use.pos",
+        "rh.e3.review20261126.passover.premise.pos"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_ed4b08ed2f17f1e17683",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.review20261126.kings.qualify"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    },
+    {
+      "segment_id": "seg_f6836ea695173176a4a8",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "rh.e3.b007.e1",
+        "rh.e3.review20261126.festivals.qualify"
+      ],
+      "rationale": "Bounded source-rechecked review correction: refresh atomic/repeated occurrences, editorial question links and dependent edges; no new source-pass scope."
+    }
+  ],
+  "open_tails": []
+}

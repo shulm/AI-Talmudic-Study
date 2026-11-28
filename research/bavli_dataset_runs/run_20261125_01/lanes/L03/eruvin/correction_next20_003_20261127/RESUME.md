@@ -1,0 +1,1 @@
+170/3646 unchanged; nextEruvin7a5. One attribution role revision distinguishes anonymous Gemara attribution from direct speech. Export F:/Sefaria_QA/bavli_l03_exports_20261127/eruvin_next20_003_corrected. Independent recheck pending; no full-tractate delivery.

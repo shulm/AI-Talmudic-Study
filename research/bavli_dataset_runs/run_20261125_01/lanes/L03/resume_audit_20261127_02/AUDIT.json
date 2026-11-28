@@ -1,0 +1,310 @@
+{
+  "audit_kind": "read_only_integrity_and_readiness",
+  "agent_id": "/root/blind_review",
+  "model": null,
+  "created_utc": "2026-11-27T11:07:02.663032+00:00",
+  "active_run": {
+    "assignment_ledger": "research/bavli_dataset_runs/run_20261125_01/ASSIGNMENT_LEDGER.json",
+    "assignment_revision": 5,
+    "contract_commit": "53bfbacb8f95d625f5036b73109eef738277e7e7",
+    "contract_path": "research/bavli_dataset_runs/run_20261125_01/RUN_CONTRACT.json",
+    "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+    "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "run_id": "run_20261125_01"
+  },
+  "active_run_sha256": "929a32fa531a56069ecd3d3563a5ac3de92643d4c2fd591e14ebdf4eaef45f61",
+  "ledger_sha256": "caedff92702dd3e1d9abbc15177b9b986ab8b42449ca2b4e1f9d646a968d81ad",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "contract_commit_bytes_verified": true,
+  "production_files": [
+    {
+      "path": "research/bavli_production_v1/.gitignore",
+      "expected": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "lane": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "coordinator": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "production_commit_blob": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    {
+      "path": "research/bavli_production_v1/PROTOCOL.md",
+      "expected": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "lane": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "coordinator": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+      "production_commit_blob": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    {
+      "path": "research/bavli_production_v1/README.md",
+      "expected": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+      "lane": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+      "coordinator": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+      "production_commit_blob": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036"
+    },
+    {
+      "path": "research/bavli_production_v1/runner.py",
+      "expected": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+      "lane": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+      "coordinator": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+      "production_commit_blob": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    {
+      "path": "research/bavli_production_v1/schema.json",
+      "expected": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "lane": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "coordinator": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+      "production_commit_blob": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    {
+      "path": "research/bavli_production_v1/test_runner.py",
+      "expected": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+      "lane": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+      "coordinator": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+      "production_commit_blob": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65"
+    },
+    {
+      "path": "research/bavli_source_access_v1/README.md",
+      "expected": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+      "lane": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+      "coordinator": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+      "production_commit_blob": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e"
+    },
+    {
+      "path": "research/bavli_source_access_v1/SOURCE_ACCESS_AUDIT.json",
+      "expected": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+      "lane": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+      "coordinator": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+      "production_commit_blob": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e"
+    },
+    {
+      "path": "research/bavli_source_access_v1/source_packages.py",
+      "expected": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8",
+      "lane": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8",
+      "coordinator": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8",
+      "production_commit_blob": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8"
+    }
+  ],
+  "jobs": [
+    {
+      "job_id": "bavli_arakhin",
+      "source_sha256": "1a25d9524ec1d35eee64749794e158a24bfa10177bc9c6db56b4fca6adbc9ed4",
+      "source_segments": 1183,
+      "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "owner": {
+        "epoch": 1,
+        "owner": "/root/lead_l01_l03"
+      },
+      "ledger_owner_epoch_match": true,
+      "inventory_verified": true,
+      "first_ref": "Arakhin 2a:1",
+      "metadata_hashes": {
+        "JOB.json": "390787503e2e3d4ad37723cf1989c8c8dcc0797ef5778e941286ba27425b5b50",
+        "OWNER.json": "7d3f4869ba07c4e360b5f3565f9e35f2a48bd211dc9ef5f9b1a5c82228b131c4",
+        "source_inventory.json": "584748d67ce39558f725cea4b06680a729b695c9268fc1e5292b9e90a9512986"
+      },
+      "snapshot_sha256": null,
+      "records": 0,
+      "proposal_count": 0,
+      "coverage_by_layer": {},
+      "status": "initialized; no CURRENT checkpoint",
+      "pointer_stable_during_check": true
+    },
+    {
+      "job_id": "bavli_eruvin",
+      "source_sha256": "704da1ef8bd3b5748fc57c714c783744b67a16687fd1a83afecde18786953fed",
+      "source_segments": 3646,
+      "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "owner": {
+        "epoch": 2,
+        "owner": "L03/eruvin"
+      },
+      "ledger_owner_epoch_match": true,
+      "inventory_verified": true,
+      "first_ref": "Eruvin 2a:1",
+      "metadata_hashes": {
+        "JOB.json": "c60049a82551fdb357f23c381ab674eae1e45623879b256b8c375aaba7ed96df",
+        "OWNER.json": "2eec5a0de041cc14b062a6425d1334c8629b71b79761461070b779c444d71c71",
+        "source_inventory.json": "7416edb7370ef13bdfb59554eb7b03bfbc52a351a932daa38771ae96a3674670"
+      },
+      "snapshot_sha256": "6d0d2c6635723481dec4f853702b48908057bbb439c18c8734000dd9f0766680",
+      "records": 694,
+      "proposal_count": 7,
+      "evidence_spans_verified": 813,
+      "coverage_by_layer": {
+        "attributions": 110,
+        "claims": 110,
+        "edges": 110,
+        "positions": 110,
+        "questions": 110,
+        "reconciliation": 110,
+        "structure": 110,
+        "utterances": 110
+      },
+      "open_tail_count": 0,
+      "ml_eligible": false,
+      "pointer_stable_during_check": true
+    },
+    {
+      "job_id": "bavli_kiddushin",
+      "source_sha256": "daf594dcc08ac2763187d84655f905d14fe94be566b723bff6bb95e6c33f138f",
+      "source_segments": 2406,
+      "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "owner": {
+        "epoch": 1,
+        "owner": "/root/lead_l01_l03"
+      },
+      "ledger_owner_epoch_match": true,
+      "inventory_verified": true,
+      "first_ref": "Kiddushin 2a:1",
+      "metadata_hashes": {
+        "JOB.json": "eb537aa5e31bebf968f23b4175c6936c941a05bb9185965529adb15e851e4e75",
+        "OWNER.json": "7d3f4869ba07c4e360b5f3565f9e35f2a48bd211dc9ef5f9b1a5c82228b131c4",
+        "source_inventory.json": "8d3840d3f54180af9d839c120ec5a895ab44eb81eb90d8717c24d37052cbe4e9"
+      },
+      "snapshot_sha256": "485622fdbe5533eba01863f478943dfd0b7ad5ffa38f9832c18776dbd4f74e2d",
+      "records": 100,
+      "proposal_count": 1,
+      "evidence_spans_verified": 117,
+      "coverage_by_layer": {
+        "attributions": 10,
+        "claims": 10,
+        "edges": 10,
+        "positions": 10,
+        "questions": 10,
+        "reconciliation": 10,
+        "structure": 10,
+        "utterances": 10
+      },
+      "open_tail_count": 1,
+      "ml_eligible": false,
+      "pointer_stable_during_check": true
+    },
+    {
+      "job_id": "bavli_nazir",
+      "source_sha256": "29a2a4347221c24b248de9b131523cb8354dcbf78d7975167c12ab7c13d43bef",
+      "source_segments": 1299,
+      "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "owner": {
+        "epoch": 1,
+        "owner": "/root/lead_l01_l03"
+      },
+      "ledger_owner_epoch_match": true,
+      "inventory_verified": true,
+      "first_ref": "Nazir 2a:1",
+      "metadata_hashes": {
+        "JOB.json": "7517156ba1d82763d1aadeb1efc1d2687e63548cad1bce696b066f447ea00acb",
+        "OWNER.json": "7d3f4869ba07c4e360b5f3565f9e35f2a48bd211dc9ef5f9b1a5c82228b131c4",
+        "source_inventory.json": "f9ce3ebf9a4907fce8d8fae256c56a3db333e7c88790673a1214da8f207d4c86"
+      },
+      "snapshot_sha256": null,
+      "records": 0,
+      "proposal_count": 0,
+      "coverage_by_layer": {},
+      "status": "initialized; no CURRENT checkpoint",
+      "pointer_stable_during_check": true,
+      "concurrency_note": "Producer dispatched concurrently from0 under existing owner epoch1. Integrity only; no semantic reading or interpretation inspected."
+    },
+    {
+      "job_id": "bavli_rosh_hashanah",
+      "source_sha256": "9e7dafc69d032964e3004ba417a9020306b0bb6d94b098165d891066ec27942f",
+      "source_segments": 1025,
+      "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "owner": {
+        "epoch": 3,
+        "owner": "L03/rosh_hashanah"
+      },
+      "ledger_owner_epoch_match": true,
+      "inventory_verified": true,
+      "first_ref": "Rosh Hashanah 2a:1",
+      "metadata_hashes": {
+        "JOB.json": "7e25e0ae7514f4c5e203c08a265f9c0f1930b23b74fff8a0550a230137344380",
+        "OWNER.json": "5c93cdec49b0dc7962aa05eb6cc926b2f6b8623a849329b3ac4928cc06b317cb",
+        "source_inventory.json": "8fd47bb144874cc5049aefa6c828e35c917df6f705519c8623434e2c6c95c406"
+      },
+      "snapshot_sha256": "afd5ec0fbdf7ce7635e917a1068ac649193a5f9db692d1ac1b5e2925617e7557",
+      "records": 1427,
+      "proposal_count": 15,
+      "evidence_spans_verified": 1645,
+      "coverage_by_layer": {
+        "attributions": 202,
+        "claims": 202,
+        "edges": 202,
+        "positions": 202,
+        "questions": 202,
+        "reconciliation": 202,
+        "structure": 202,
+        "utterances": 202
+      },
+      "open_tail_count": 0,
+      "ml_eligible": false,
+      "pointer_stable_during_check": true
+    },
+    {
+      "job_id": "bavli_tamid",
+      "source_sha256": "d37fab6314d84a21da855c5b5d8b91f8bfc594b336817e13393e383ffdcd453d",
+      "source_segments": 207,
+      "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "owner": {
+        "epoch": 1,
+        "owner": "/root/lead_l01_l03"
+      },
+      "ledger_owner_epoch_match": true,
+      "inventory_verified": true,
+      "first_ref": "Tamid 25b:1",
+      "metadata_hashes": {
+        "JOB.json": "1b57ffcf8ef1608b35964ea1bdeb9a4d1d9dd9bbf6071b4b33483f424ce024bc",
+        "OWNER.json": "7d3f4869ba07c4e360b5f3565f9e35f2a48bd211dc9ef5f9b1a5c82228b131c4",
+        "source_inventory.json": "17c7cb38d6885da84ef2a62524c69e9773cdac0dd2d19d8d34d3f8798b3b03b6"
+      },
+      "snapshot_sha256": null,
+      "records": 0,
+      "proposal_count": 0,
+      "coverage_by_layer": {},
+      "status": "initialized; no CURRENT checkpoint",
+      "pointer_stable_during_check": true
+    },
+    {
+      "job_id": "bavli_yevamot",
+      "source_sha256": "e3f2ddea9c75119de9dd032ca9cf91108d55c332ca8eeab4fb0997ed1eca5a07",
+      "source_segments": 3869,
+      "manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+      "owner": {
+        "epoch": 2,
+        "owner": "L03/yevamot"
+      },
+      "ledger_owner_epoch_match": true,
+      "inventory_verified": true,
+      "first_ref": "Yevamot 2a:1",
+      "metadata_hashes": {
+        "JOB.json": "e003a9503c9bea6a0f1a820296edcbb7d097b7d6070afd3af7546a1cccb1bc51",
+        "OWNER.json": "0b7e30dad05b20cc22c0fddb18ed105b45b28c4f5301a836f6428ef0a437c5f3",
+        "source_inventory.json": "1cd576dda303206598634568a76d726a43f3fba6afe59fc598cf73292b7f5220"
+      },
+      "snapshot_sha256": "f826b12fdf8ceb153343497762bb2851ab1fa5865e2d536cb4b5554e6c21276a",
+      "records": 1311,
+      "proposal_count": 10,
+      "evidence_spans_verified": 1899,
+      "coverage_by_layer": {
+        "attributions": 178,
+        "claims": 178,
+        "edges": 178,
+        "positions": 178,
+        "questions": 178,
+        "reconciliation": 178,
+        "structure": 178,
+        "utterances": 178
+      },
+      "open_tail_count": 0,
+      "ml_eligible": false,
+      "pointer_stable_during_check": true
+    }
+  ],
+  "blockers": [],
+  "notes": [
+    "Four of seven jobs have CURRENT; Arakhin/Tamid/Nazir initialized without checkpoint at audit observation. Do not invent seven snapshots.",
+    "Contract epochs are historical launch values; current revision5 ledger matches all seven live owners/epochs.",
+    "No production writes, semantic review, replay or full acceptance performed by this audit.",
+    "Arakhin ready at2a:1,1183 segments; Tamid ready at25b:1,207 segments. Prepared worker files are instructions, not production."
+  ],
+  "prefilled_assignment_hashes": {
+    "32_arakhin.md": "78495e2c5632ff8157265d8ca5c2c977d8d436f6f4719d696e707fcae0de2415",
+    "36_tamid.md": "26f0df57d34ed0a99ea4c070c9d3860faa9d9f5b91fe425517a2f3fb5182e22a"
+  }
+}

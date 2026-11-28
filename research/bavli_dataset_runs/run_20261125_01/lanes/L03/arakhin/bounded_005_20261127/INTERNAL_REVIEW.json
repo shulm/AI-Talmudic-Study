@@ -1,0 +1,37 @@
+{
+  "agent_id": "/root/blind_review",
+  "model_id": null,
+  "independent": false,
+  "reader_labels_seen": false,
+  "source_evidence_spans_verified": 298,
+  "all_prior_records_unchanged": true,
+  "active_dependencies_valid": true,
+  "primary_partitions_verified": 90,
+  "passes": [
+    "structure",
+    "utterances",
+    "claims",
+    "attributions",
+    "questions",
+    "positions",
+    "edges",
+    "reconciliation"
+  ],
+  "observations": [
+    "Named and alternate attributions retain raw spellings; Rav Yehuda transmits Shmuel, Rav Nachman transmits Rabbah bar Avuha.",
+    "Three priestly valuation rationales retain objections and hypothetical exclusions, not adopted exclusions.",
+    "Later unspecified valuation versions are not collapsed into one ruling.",
+    "Later balanced-case and dead-standing derivation qualifications are context only."
+  ],
+  "preserved_drafts": {
+    "INITIAL_PROPOSAL.json": "Unsubmitted initial draft; unsupported clarification enum and open boundary retained as history.",
+    "REVIEWED_PROPOSAL.json": "Rejected by schema: open boundary; retained.",
+    "SCHEMA_CORRECTED_PROPOSAL.json": "Rejected by runner: claim continuation edge; retained.",
+    "PROPOSAL.json": "Accepted; open_right boundary and qualification edge."
+  },
+  "limitations": [
+    "AI provisional producer self-review; independent semantic review pending.",
+    "Future context adds no core coverage.",
+    "Baraita primary structure remains open_right for next batch."
+  ]
+}
