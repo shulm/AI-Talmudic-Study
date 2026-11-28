@@ -1,0 +1,3089 @@
+{
+  "artifact_kind": "immutable_bounded_correction_recheck",
+  "execution": {
+    "agent_id": "/root/ta_compare062",
+    "role": "NONBLIND independent original comparator",
+    "fresh_source_only": false
+  },
+  "status": "BOUNDED_13_FINDINGS_RESOLVED_WITH_PRIOR_RESTRICTIONS",
+  "bindings": [
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\comparisons\\correction055_preflight062.json",
+      "sha256": "b3c5bd340dd071bbd878d3d6bc4ef50b998ef6f850ac9372129611ab4dffe277"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\comparisons\\ta055_comparison062.json",
+      "sha256": "b126ef13aeb1027ed41a4bcd57470d2ff06301661a45f9d410aeb42ef5162abd"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\comparisons\\ta055_v2_verdict062.json",
+      "sha256": "9da24aea259f1a4adae3c18d48b6be25379f067e6a3ab8c2b415589fed2b7163"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\taanit_delegated055.json",
+      "sha256": "19e60727e4c13a8cecb90c13e2afe68a035368bfa18cc23b3ce19d67af8cdd3e"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-l04-production\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\lanes\\L04\\resume_20261126\\taanit\\CHECKPOINT_055.json",
+      "sha256": "4cb9c98be03ac478f10f40b00fe11d21496ee512b34edcaeee8d9a30553d6e7e"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\comparisons\\recheck055_062.py",
+      "sha256": "8e456339a9269603ae261c58446d188027b833f815d1e7239fae63861a8d77f7"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\comparisons\\freeze_correction055_062.py",
+      "sha256": "b5bbe6cd4894bc620f37055daa5007c1fabc43912a620a9841e0c76fa37c5b52"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\snapshots\\ac7c9ec619b963f05c6dc32c42e16511808f6256dea63937f5b5f8e5e96e5cf4.json",
+      "sha256": "ac7c9ec619b963f05c6dc32c42e16511808f6256dea63937f5b5f8e5e96e5cf4"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\snapshots\\415494e40a79b4f217d5e265c9d5b126e71677af764a9988013249e571b75888.json",
+      "sha256": "415494e40a79b4f217d5e265c9d5b126e71677af764a9988013249e571b75888"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\snapshots\\663ea1da0f7ad381ee844fb537869ef1ebce15930d69048be7b85b064f48a086.json",
+      "sha256": "663ea1da0f7ad381ee844fb537869ef1ebce15930d69048be7b85b064f48a086"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_taanit\\proposals\\feb5147495135f0904423cc5ffc531f093188144ea8123a42cdd7fe75e363f75.json",
+      "sha256": "feb5147495135f0904423cc5ffc531f093188144ea8123a42cdd7fe75e363f75"
+    },
+    {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated055\\comparisons\\recheck055_062.py",
+      "sha256": "8e456339a9269603ae261c58446d188027b833f815d1e7239fae63861a8d77f7"
+    }
+  ],
+  "snapshot_sha256": "663ea1da0f7ad381ee844fb537869ef1ebce15930d69048be7b85b064f48a086",
+  "base_snapshot_sha256": "415494e40a79b4f217d5e265c9d5b126e71677af764a9988013249e571b75888",
+  "proposal_sha256": "feb5147495135f0904423cc5ffc531f093188144ea8123a42cdd7fe75e363f75",
+  "findings_rechecked": 13,
+  "findings_resolved": 13,
+  "findings_unresolved_in_this_producer_repair_set": 0,
+  "issue_by_issue": [
+    {
+      "finding_id": "TA062-GRAPH-A1",
+      "original_category": "confirmed_producer_typed_relation_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:8",
+          "segment_id": "seg_170a2323dd1f059bfd06",
+          "start_char": 75,
+          "end_char": 145,
+          "quote": "מה ברזל זה אחד מחדד את חבירו אף שני תלמידי חכמים מחדדין זה את זה בהלכה"
+        }
+      ],
+      "original_finding": "The producer preserves the analogy in a composite proposition but has no distinct premise/conclusion endpoints and no typed analogy edge for this source-explicit מה/אף relation. This is not a missing prose proposition.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.iron.scholars.premise",
+        "ta.resume010.iron.scholars.t062055",
+        "ta.review062.iron.scholars.analogy",
+        "ta.review062.iron.scholars.premise.a",
+        "ta.review062.iron.scholars.premise.p"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.iron.scholars.premise",
+          "canonical_sha256": "b178386145b0ccdee5743f2f1d37ab584899e5ee895be03b776d1c2e069b03bf",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "In the analogy, one piece of iron sharpens another.",
+              "scope": "Taanit 7a:8 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 103,
+                "quote": "מה ברזל זה אחד מחדד את חבירו",
+                "segment_id": "seg_170a2323dd1f059bfd06",
+                "start_char": 75
+              }
+            ],
+            "id": "ta.review062.iron.scholars.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Opening reads אמר רבי חמא (אמר רבי) חנינא; parenthetical transmission or name form remains unresolved.",
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.iron.scholars.t062055",
+          "canonical_sha256": "1390fa2ea22d781f43194135aa8620db1b680f94a22babfcf1d4745f5f04245f",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Two Torah scholars sharpen one another in halakha.",
+              "scope": "Taanit 7a:8 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 145,
+                "quote": "אף שני תלמידי חכמים מחדדין זה את זה בהלכה",
+                "segment_id": "seg_170a2323dd1f059bfd06",
+                "start_char": 104
+              }
+            ],
+            "id": "ta.resume010.iron.scholars.t062055",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.iron.scholars",
+            "uncertainty": [
+              "Opening reads אמר רבי חמא (אמר רבי) חנינא; parenthetical transmission or name form remains unresolved.",
+              "TA062-A1: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.iron.scholars.analogy",
+          "canonical_sha256": "b3691c3f697344b2443d5cc4389dfb167948ee5491a06f92a43ade7db4deb6e9",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "analogy",
+              "source_id": "ta.review062.iron.scholars.premise",
+              "target_id": "ta.resume010.iron.scholars.t062055"
+            },
+            "evidence": [
+              {
+                "end_char": 145,
+                "quote": "אמר רבי חמא (אמר רבי) חנינא מאי דכתיב (משלי כז, יז) ברזל בברזל יחד לומר לך מה ברזל זה אחד מחדד את חבירו אף שני תלמידי חכמים מחדדין זה את זה בהלכה",
+                "segment_id": "seg_170a2323dd1f059bfd06",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.review062.iron.scholars.analogy",
+            "layer": "edges",
+            "links": [
+              "ta.review062.iron.scholars.premise",
+              "ta.resume010.iron.scholars.t062055"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.iron.scholars.premise.a",
+          "canonical_sha256": "c342ecda95af459afb1603cc2f0c3f4250c287acc29738ac9b15b9f630f8ed40",
+          "record": {
+            "content": {
+              "candidates": [
+                "Rabbi Hama",
+                "Rabbi Hanina"
+              ],
+              "role": "speaker",
+              "scope": "ta.review062.iron.scholars.premise",
+              "surface": "אמר רבי חמא (אמר רבי) חנינא",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 103,
+                "quote": "מה ברזל זה אחד מחדד את חבירו",
+                "segment_id": "seg_170a2323dd1f059bfd06",
+                "start_char": 75
+              }
+            ],
+            "id": "ta.review062.iron.scholars.premise.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.iron.scholars.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Printed parenthetical attribution does not establish one unique identity or chain.",
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.iron.scholars.premise.p",
+          "canonical_sha256": "30f828fe9a3f23eb1c0d7d2c7285b8dc5e1b46458ce2b00191af01cb6ba42db5",
+          "record": {
+            "content": {
+              "claim_id": "ta.review062.iron.scholars.premise",
+              "conditions": [],
+              "holder_candidates": [],
+              "local_status": "asserted locally; no later halakhic adjudication inferred",
+              "question_id": null
+            },
+            "evidence": [
+              {
+                "end_char": 103,
+                "quote": "מה ברזל זה אחד מחדד את חבירו",
+                "segment_id": "seg_170a2323dd1f059bfd06",
+                "start_char": 75
+              }
+            ],
+            "id": "ta.review062.iron.scholars.premise.p",
+            "layer": "positions",
+            "links": [
+              "ta.review062.iron.scholars.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Opening reads אמר רבי חמא (אמר רבי) חנינא; parenthetical transmission or name form remains unresolved.",
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Iron premise and sharpening conclusion are distinct; printed Hama/Hanina uncertainty and empty unique holder retained."
+    },
+    {
+      "finding_id": "TA062-GRAPH-A2",
+      "original_category": "confirmed_producer_typed_relation_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:9",
+          "segment_id": "seg_f1cf3add5e0e0cc8665c",
+          "start_char": 95,
+          "end_char": 149,
+          "quote": "מה אש אינו דולק יחידי אף דברי תורה אין מתקיימין ביחידי"
+        }
+      ],
+      "original_finding": "The producer preserves the analogy in a composite proposition but has no distinct premise/conclusion endpoints and no typed analogy edge for this source-explicit מה/אף relation. This is not a missing prose proposition.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.fire.solitary.premise",
+        "ta.resume010.fire.solitary.t062055",
+        "ta.review062.fire.solitary.analogy",
+        "ta.review062.fire.solitary.premise.a",
+        "ta.review062.fire.solitary.premise.p"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.fire.solitary.premise",
+          "canonical_sha256": "557f85fc65039ef7b2264c336a614fe6ee9457b60545c8dd750231a159c832ef",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "In the analogy, fire does not burn alone.",
+              "scope": "Taanit 7a:9 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 116,
+                "quote": "מה אש אינו דולק יחידי",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 95
+              }
+            ],
+            "id": "ta.review062.fire.solitary.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.fire.solitary.t062055",
+          "canonical_sha256": "ab6ec748c97a8aac9a10c82cefd9690328e79bbfb97a38bdc8293ad17853c5a9",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Words of Torah do not endure with a solitary learner.",
+              "scope": "Taanit 7a:9 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 149,
+                "quote": "אף דברי תורה אין מתקיימין ביחידי",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 117
+              }
+            ],
+            "id": "ta.resume010.fire.solitary.t062055",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.fire.solitary",
+            "uncertainty": [
+              "TA062-A2: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.fire.solitary.analogy",
+          "canonical_sha256": "2bd439ba44359e924cb079e61bbac2c56c76226eaa941e423cd48ec468c96d6f",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "analogy",
+              "source_id": "ta.review062.fire.solitary.premise",
+              "target_id": "ta.resume010.fire.solitary.t062055"
+            },
+            "evidence": [
+              {
+                "end_char": 149,
+                "quote": "אמר רבה בר בר חנה למה נמשלו דברי תורה כאש שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה' לומר לך מה אש אינו דולק יחידי אף דברי תורה אין מתקיימין ביחידי",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.review062.fire.solitary.analogy",
+            "layer": "edges",
+            "links": [
+              "ta.review062.fire.solitary.premise",
+              "ta.resume010.fire.solitary.t062055"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.fire.solitary.premise.a",
+          "canonical_sha256": "86b11f3d2a98c086765ad9a20789ce0fcafafcbb3d276281dd405c932a1694ce",
+          "record": {
+            "content": {
+              "candidates": [
+                "Rabbah bar bar Hanah"
+              ],
+              "role": "speaker",
+              "scope": "ta.review062.fire.solitary.premise",
+              "surface": "Rabbah bar bar Hanah",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 116,
+                "quote": "מה אש אינו דולק יחידי",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 95
+              }
+            ],
+            "id": "ta.review062.fire.solitary.premise.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.fire.solitary.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.fire.solitary.premise.p",
+          "canonical_sha256": "5df7f9e7f64b0c4c160ccd9683e33fc6cd5faec0e3f5ede00ebb184cf66986aa",
+          "record": {
+            "content": {
+              "claim_id": "ta.review062.fire.solitary.premise",
+              "conditions": [],
+              "holder_candidates": [
+                "Rabbah bar bar Hanah"
+              ],
+              "local_status": "asserted locally; no later halakhic adjudication inferred",
+              "question_id": null
+            },
+            "evidence": [
+              {
+                "end_char": 116,
+                "quote": "מה אש אינו דולק יחידי",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 95
+              }
+            ],
+            "id": "ta.review062.fire.solitary.premise.p",
+            "layer": "positions",
+            "links": [
+              "ta.review062.fire.solitary.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Fire-not-burning-alone premise supports Torah-not-enduring-alone conclusion; Rabbah bar bar Hanah retained."
+    },
+    {
+      "finding_id": "TA062-GRAPH-A3",
+      "original_category": "confirmed_producer_typed_relation_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:12",
+          "segment_id": "seg_d0c597ed64e77861e00a",
+          "start_char": 95,
+          "end_char": 159,
+          "quote": "מה עץ קטן מדליק את הגדול אף תלמידי חכמים קטנים מחדדים את הגדולים"
+        }
+      ],
+      "original_finding": "The producer preserves the analogy in a composite proposition but has no distinct premise/conclusion endpoints and no typed analogy edge for this source-explicit מה/אף relation. This is not a missing prose proposition.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.small.sharpens.premise",
+        "ta.resume010.small.sharpens.t062055",
+        "ta.review062.small.sharpens.analogy",
+        "ta.review062.small.sharpens.premise.a",
+        "ta.review062.small.sharpens.premise.p"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.small.sharpens.premise",
+          "canonical_sha256": "4b69172943a9a9abdce72b58a277bf72c0b0d691cb859cb1aa55629bdace0f9f",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "In the analogy, small wood ignites large wood.",
+              "scope": "Taanit 7a:12 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 119,
+                "quote": "מה עץ קטן מדליק את הגדול",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 95
+              }
+            ],
+            "id": "ta.review062.small.sharpens.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.small.sharpens.t062055",
+          "canonical_sha256": "c5b708e945468e0d95aa4406b35f3067fc1e684a96e68abbf31afabc93ea5bf7",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "Lesser Torah scholars sharpen greater ones.",
+              "scope": "Taanit 7a:12 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 159,
+                "quote": "אף תלמידי חכמים קטנים מחדדים את הגדולים",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 120
+              }
+            ],
+            "id": "ta.resume010.small.sharpens.t062055",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.small.sharpens",
+            "uncertainty": [
+              "TA062-A3: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.small.sharpens.analogy",
+          "canonical_sha256": "bfc395d15121c0dd7b68b08d6782aa3b350df83274e5b443e763245718a9d084",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "analogy",
+              "source_id": "ta.review062.small.sharpens.premise",
+              "target_id": "ta.resume010.small.sharpens.t062055"
+            },
+            "evidence": [
+              {
+                "end_char": 238,
+                "quote": "אמר רב נחמן בר יצחק למה נמשלו דברי תורה כעץ שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה לומר לך מה עץ קטן מדליק את הגדול אף תלמידי חכמים קטנים מחדדים את הגדולים והיינו דאמר ר' חנינא הרבה למדתי מרבותי ומחבירי יותר מרבותי ומתלמידי יותר מכולן",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.review062.small.sharpens.analogy",
+            "layer": "edges",
+            "links": [
+              "ta.review062.small.sharpens.premise",
+              "ta.resume010.small.sharpens.t062055"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.small.sharpens.premise.a",
+          "canonical_sha256": "17a44f7564e6128702b817e2554d64195e7cdc8c665e2369650e0bfbecd8f531",
+          "record": {
+            "content": {
+              "candidates": [
+                "Rav Nahman bar Yitzhak"
+              ],
+              "role": "speaker",
+              "scope": "ta.review062.small.sharpens.premise",
+              "surface": "Rav Nahman bar Yitzhak",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 119,
+                "quote": "מה עץ קטן מדליק את הגדול",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 95
+              }
+            ],
+            "id": "ta.review062.small.sharpens.premise.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.small.sharpens.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.small.sharpens.premise.p",
+          "canonical_sha256": "2a8753c216bb0c26e62341028fa6755e1f71b697d9e709b2b9b03fa7458fe0d3",
+          "record": {
+            "content": {
+              "claim_id": "ta.review062.small.sharpens.premise",
+              "conditions": [],
+              "holder_candidates": [
+                "Rav Nahman bar Yitzhak"
+              ],
+              "local_status": "asserted locally; no later halakhic adjudication inferred",
+              "question_id": null
+            },
+            "evidence": [
+              {
+                "end_char": 119,
+                "quote": "מה עץ קטן מדליק את הגדול",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 95
+              }
+            ],
+            "id": "ta.review062.small.sharpens.premise.p",
+            "layer": "positions",
+            "links": [
+              "ta.review062.small.sharpens.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Small wood and junior/senior scholars are distinct endpoints under Rav Nahman bar Yitzhak; Hanina testimony remains a separate supporting claim."
+    },
+    {
+      "finding_id": "TA062-GRAPH-A4",
+      "original_category": "confirmed_producer_typed_relation_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:15",
+          "segment_id": "seg_22ef265cf86d1848c2b9",
+          "start_char": 84,
+          "end_char": 171,
+          "quote": "מה מים מניחין מקום גבוה והולכין למקום נמוך אף דברי תורה אין מתקיימין אלא במי שדעתו שפלה"
+        }
+      ],
+      "original_finding": "The producer preserves the analogy in a composite proposition but has no distinct premise/conclusion endpoints and no typed analogy edge for this source-explicit מה/אף relation. This is not a missing prose proposition.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.water.humility.premise",
+        "ta.resume010.water.humility.t062055",
+        "ta.review062.water.humility.analogy",
+        "ta.review062.water.humility.premise.a",
+        "ta.review062.water.humility.premise.p"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.water.humility.premise",
+          "canonical_sha256": "d02617d36223d6e2759e30b0c2137e2b7f10d11f9117051a6f6590d30d174178",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "In the analogy, water leaves a high place and goes to a low place.",
+              "scope": "Taanit 7a:15 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 126,
+                "quote": "מה מים מניחין מקום גבוה והולכין למקום נמוך",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 84
+              }
+            ],
+            "id": "ta.review062.water.humility.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.water.humility.t062055",
+          "canonical_sha256": "18a9652f2be6a675db51c77dc3fa9a43631390366b8039bd8de47b3c1b7e610a",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "humble disposition"
+              ],
+              "proposition": "Words of Torah endure only in a person of humble disposition.",
+              "scope": "Taanit 7a:15 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 171,
+                "quote": "אף דברי תורה אין מתקיימין אלא במי שדעתו שפלה",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 127
+              }
+            ],
+            "id": "ta.resume010.water.humility.t062055",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.water.humility",
+            "uncertainty": [
+              "TA062-A4: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.water.humility.analogy",
+          "canonical_sha256": "ccbc8e94362c8d9d722564d7a2a5eb59ed91c4a51aa6cfb9905acdc2017e74d1",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "analogy",
+              "source_id": "ta.review062.water.humility.premise",
+              "target_id": "ta.resume010.water.humility.t062055"
+            },
+            "evidence": [
+              {
+                "end_char": 171,
+                "quote": "(ואמר) רבי חנינא בר אידי למה נמשלו דברי תורה למים דכתיב הוי כל צמא לכו למים לומר לך מה מים מניחין מקום גבוה והולכין למקום נמוך אף דברי תורה אין מתקיימין אלא במי שדעתו שפלה",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.review062.water.humility.analogy",
+            "layer": "edges",
+            "links": [
+              "ta.review062.water.humility.premise",
+              "ta.resume010.water.humility.t062055"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.water.humility.premise.a",
+          "canonical_sha256": "51daa06c2fc28002cb6e14a4fa3ef147308a7c95e26d8ac14793d914995e90b4",
+          "record": {
+            "content": {
+              "candidates": [
+                "Rabbi Hanina bar Idi"
+              ],
+              "role": "speaker",
+              "scope": "ta.review062.water.humility.premise",
+              "surface": "Rabbi Hanina bar Idi",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 126,
+                "quote": "מה מים מניחין מקום גבוה והולכין למקום נמוך",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 84
+              }
+            ],
+            "id": "ta.review062.water.humility.premise.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.water.humility.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.water.humility.premise.p",
+          "canonical_sha256": "9d9b2e4493664f7a9eb5e71530c583dfd08af42a3472024cae0dc4f43b11b3c4",
+          "record": {
+            "content": {
+              "claim_id": "ta.review062.water.humility.premise",
+              "conditions": [],
+              "holder_candidates": [
+                "Rabbi Hanina bar Idi"
+              ],
+              "local_status": "asserted locally; no later halakhic adjudication inferred",
+              "question_id": null
+            },
+            "evidence": [
+              {
+                "end_char": 126,
+                "quote": "מה מים מניחין מקום גבוה והולכין למקום נמוך",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 84
+              }
+            ],
+            "id": "ta.review062.water.humility.premise.p",
+            "layer": "positions",
+            "links": [
+              "ta.review062.water.humility.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Water descending from high to low is distinct from humility condition; Hanina bar Idi retained."
+    },
+    {
+      "finding_id": "TA062-GRAPH-A5",
+      "original_category": "confirmed_producer_typed_relation_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:16",
+          "segment_id": "seg_06861580d418b49bf4a6",
+          "start_char": 177,
+          "end_char": 270,
+          "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים אף דברי תורה אין מתקיימין אלא במי שדעתו שפלה"
+        }
+      ],
+      "original_finding": "The producer preserves the analogy in a composite proposition but has no distinct premise/conclusion endpoints and no typed analogy edge for this source-explicit מה/אף relation. This is not a missing prose proposition.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.vessels.humility.premise",
+        "ta.resume010.vessels.humility.t062055",
+        "ta.review062.vessels.humility.analogy",
+        "ta.review062.vessels.humility.premise.a",
+        "ta.review062.vessels.humility.premise.p"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.vessels.humility.premise",
+          "canonical_sha256": "e190b02077912cdbeab5e8cda09cc69202c5eeaecd76f7fe9ec22d94795558bf",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "lowly vessels are necessary for preservation within this analogy"
+              ],
+              "proposition": "In this analogy, these three liquids keep only in lowly vessels.",
+              "scope": "Taanit 7a:16 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 225,
+                "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 177
+              }
+            ],
+            "id": "ta.review062.vessels.humility.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.vessels.humility.t062055",
+          "canonical_sha256": "2b92ae298b89d7a22a0b4a20712a3882220dd8c65b33cd3941ff6173d1d1c783",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "humble disposition"
+              ],
+              "proposition": "Words of Torah endure only in a person of humble disposition.",
+              "scope": "Taanit 7a:16 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 270,
+                "quote": "אף דברי תורה אין מתקיימין אלא במי שדעתו שפלה",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 226
+              }
+            ],
+            "id": "ta.resume010.vessels.humility.t062055",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.vessels.humility",
+            "uncertainty": [
+              "TA062-A5: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.vessels.humility.analogy",
+          "canonical_sha256": "cbcccb5b77632cbb5f28852d515481254e265d6a9abfd012e2700d661fed3360",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "analogy",
+              "source_id": "ta.review062.vessels.humility.premise",
+              "target_id": "ta.resume010.vessels.humility.t062055"
+            },
+            "evidence": [
+              {
+                "end_char": 270,
+                "quote": "ואמר רבי אושעיא למה נמשלו דברי תורה לשלשה משקין הללו במים וביין ובחלב דכתיב הוי כל צמא לכו למים וכתיב (ישעיהו נה, א) לכו שברו ואכלו ולכו שברו בלא כסף ובלא מחיר יין וחלב לומר לך מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים אף דברי תורה אין מתקיימין אלא במי שדעתו שפלה",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.review062.vessels.humility.analogy",
+            "layer": "edges",
+            "links": [
+              "ta.review062.vessels.humility.premise",
+              "ta.resume010.vessels.humility.t062055"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.vessels.humility.premise.a",
+          "canonical_sha256": "3fc4cfa997b4d0b00c6c2722cf4710970b73c34d681ee9aebe912a2de879247b",
+          "record": {
+            "content": {
+              "candidates": [
+                "Rabbi Oshaya"
+              ],
+              "role": "speaker",
+              "scope": "ta.review062.vessels.humility.premise",
+              "surface": "Rabbi Oshaya",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 225,
+                "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 177
+              }
+            ],
+            "id": "ta.review062.vessels.humility.premise.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.vessels.humility.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.vessels.humility.premise.p",
+          "canonical_sha256": "0df34adbb7515661518085d0cc7ba94ba85cfbcd34a443e3c18538323d88dc96",
+          "record": {
+            "content": {
+              "claim_id": "ta.review062.vessels.humility.premise",
+              "conditions": [
+                "lowly vessels are necessary for preservation within this analogy"
+              ],
+              "holder_candidates": [
+                "Rabbi Oshaya"
+              ],
+              "local_status": "asserted locally; no later halakhic adjudication inferred",
+              "question_id": null
+            },
+            "evidence": [
+              {
+                "end_char": 225,
+                "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 177
+              }
+            ],
+            "id": "ta.review062.vessels.humility.premise.p",
+            "layer": "positions",
+            "links": [
+              "ta.review062.vessels.humility.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Lowly-vessel necessity is distinct from humility necessity; Oshaya retained, without empirical certification."
+    },
+    {
+      "finding_id": "TA062-GRAPH-A6",
+      "original_category": "confirmed_producer_typed_relation_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7b:1",
+          "segment_id": "seg_12dc42703ae12d3c9779",
+          "start_char": 33,
+          "end_char": 117,
+          "quote": "מה שלשה משקין הללו אין נפסלין אלא בהיסח הדעת אף דברי תורה אין משתכחין אלא בהיסח הדעת"
+        }
+      ],
+      "original_finding": "The producer preserves the analogy in a composite proposition but has no distinct premise/conclusion endpoints and no typed analogy edge for this source-explicit מה/אף relation. This is not a missing prose proposition.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.attention.liquids.premise",
+        "ta.resume010.attention.liquids.t062055",
+        "ta.review062.attention.liquids.analogy",
+        "ta.review062.attention.liquids.premise.a",
+        "ta.review062.attention.liquids.premise.p"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.attention.liquids.premise",
+          "canonical_sha256": "1ca11dbe0b8f5481d2f32b42c93ef6f90bfdeb847bde01c6e1597e3fedc53bc0",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "inattention is necessary for spoilage within this analogy"
+              ],
+              "proposition": "The alternative analogy says these three liquids spoil only through inattention.",
+              "scope": "Taanit 7b:1 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 77,
+                "quote": "דבר אחר מה שלשה משקין הללו אין נפסלין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 25
+              }
+            ],
+            "id": "ta.review062.attention.liquids.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.attention.liquids.t062055",
+          "canonical_sha256": "12346ed96e4b317cd628065ac87055e056f7d4736d60072596b4dd1dd8bb3359",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "inattention is necessary for forgetting in this alternative explanation"
+              ],
+              "proposition": "The alternative explanation says words of Torah are forgotten only through inattention.",
+              "scope": "Taanit 7b:1 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 117,
+                "quote": "אף דברי תורה אין משתכחין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 78
+              }
+            ],
+            "id": "ta.resume010.attention.liquids.t062055",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.attention.liquids",
+            "uncertainty": [
+              "TA062-A6: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.attention.liquids.analogy",
+          "canonical_sha256": "afb7da0ae1678ae3bdd52a25e2c3178798d02daaa416bded0cf9c7a976c33d3b",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "analogy",
+              "source_id": "ta.review062.attention.liquids.premise",
+              "target_id": "ta.resume010.attention.liquids.t062055"
+            },
+            "evidence": [
+              {
+                "end_char": 117,
+                "quote": "אי הוו סנו טפי הוו גמירי דבר אחר מה שלשה משקין הללו אין נפסלין אלא בהיסח הדעת אף דברי תורה אין משתכחין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.review062.attention.liquids.analogy",
+            "layer": "edges",
+            "links": [
+              "ta.review062.attention.liquids.premise",
+              "ta.resume010.attention.liquids.t062055"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.attention.liquids.premise.a",
+          "canonical_sha256": "7d1f4015888e207509420488aa5834a2556f27aafa75b10713e9919cad78e6ef",
+          "record": {
+            "content": {
+              "candidates": [],
+              "role": "anonymous",
+              "scope": "ta.review062.attention.liquids.premise",
+              "surface": "anonymous",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 77,
+                "quote": "דבר אחר מה שלשה משקין הללו אין נפסלין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 25
+              }
+            ],
+            "id": "ta.review062.attention.liquids.premise.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.attention.liquids.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.attention.liquids.premise.p",
+          "canonical_sha256": "617c6c7ce8017f83b91b187c8e781d155ccc943d1ee9ddb3fc9321c6cb86b52f",
+          "record": {
+            "content": {
+              "claim_id": "ta.review062.attention.liquids.premise",
+              "conditions": [
+                "inattention is necessary for spoilage within this analogy"
+              ],
+              "holder_candidates": [],
+              "local_status": "asserted locally; no later halakhic adjudication inferred",
+              "question_id": null
+            },
+            "evidence": [
+              {
+                "end_char": 77,
+                "quote": "דבר אחר מה שלשה משקין הללו אין נפסלין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 25
+              }
+            ],
+            "id": "ta.review062.attention.liquids.premise.p",
+            "layer": "positions",
+            "links": [
+              "ta.review062.attention.liquids.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Inattention premise and forgetting conclusion are distinct; דבר אחר remains anonymous and both necessity restrictions retained."
+    },
+    {
+      "finding_id": "TA062-GRAPH-B1",
+      "original_category": "confirmed_producer_typed_proof_basis_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:9",
+          "segment_id": "seg_f1cf3add5e0e0cc8665c",
+          "start_char": 42,
+          "end_char": 86,
+          "quote": "שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה'"
+        }
+      ],
+      "original_finding": "Quoted basis survives as evidence attached to a question or conclusion, but no typed quoted-authority/basis node and support relation represent this proof step. For metaphor passages the verse establishes the comparison basis, not by itself the downstream pedagogical conclusion.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.proof.fire",
+        "ta.review062.proof.fire.a",
+        "ta.review062.proof.fire.u",
+        "ta.review062.proof.fire.support",
+        "ta.resume010.fire.q"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.proof.fire",
+          "canonical_sha256": "a8d1c1d9aec5494f69255955bb4481ee0d292054230def9da3007b1e48796f2a",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The cited Jeremiah verse compares the divine word to fire.",
+              "scope": "Taanit 7a:9 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה'",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 42
+              }
+            ],
+            "id": "ta.review062.proof.fire",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.fire.a",
+          "canonical_sha256": "88b20b3eafa44cbe2250d5f2b71d3761bb7b4887e8e029ac69501fb2ab57da03",
+          "record": {
+            "content": {
+              "candidates": [],
+              "role": "quoted_authority",
+              "scope": "ta.review062.proof.fire",
+              "surface": "שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה'",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה'",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 42
+              }
+            ],
+            "id": "ta.review062.proof.fire.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.proof.fire"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.fire.u",
+          "canonical_sha256": "4bd912510402e83685097030a1902c5038bbf8e743c5565f0597d16ea11437a1",
+          "record": {
+            "content": {
+              "composition": "atomic",
+              "discourse_role": "asserted",
+              "textual_voice": "quoted scriptural authority"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה'",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 42
+              }
+            ],
+            "id": "ta.review062.proof.fire.u",
+            "layer": "utterances",
+            "links": [
+              "ta.review062.proof.fire"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.fire.support",
+          "canonical_sha256": "98e10bedbdcd3d379041bb36d0625c28b50f974fd7863e6007c47cd95b2a7649",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "support",
+              "source_id": "ta.review062.proof.fire",
+              "target_id": "ta.resume010.fire.q"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה'",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 42
+              }
+            ],
+            "id": "ta.review062.proof.fire.support",
+            "layer": "edges",
+            "links": [
+              "ta.review062.proof.fire",
+              "ta.resume010.fire.q"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Verse supplies the comparison basis represented in the question, not by itself the downstream pedagogical inference."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.fire.q",
+          "canonical_sha256": "e5f7b2d7e2423bd4b3391b6db2754d06bc29e01adf5bcf77e7f03864f76008be",
+          "record": {
+            "content": {
+              "answer_set_status": "partial",
+              "conditions": [],
+              "formulation": "Rabbah bar bar Hanah asks why Torah is compared to fire.",
+              "question_origin": "explicit"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "אמר רבה בר בר חנה למה נמשלו דברי תורה כאש שנאמר (ירמיהו כג, כט) הלא כה דברי כאש נאם ה'",
+                "segment_id": "seg_f1cf3add5e0e0cc8665c",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.resume010.fire.q",
+            "layer": "questions",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        }
+      ],
+      "independent_source_assessment": "Jeremiah establishes the fire comparison basis, not by itself the non-solitary conclusion."
+    },
+    {
+      "finding_id": "TA062-GRAPH-B2",
+      "original_category": "confirmed_producer_typed_proof_basis_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:10",
+          "segment_id": "seg_cfcb62ff8dac0b682cd4",
+          "start_char": 147,
+          "end_char": 159,
+          "quote": "שנאמר ונואלו"
+        }
+      ],
+      "original_finding": "Quoted basis survives as evidence attached to a question or conclusion, but no typed quoted-authority/basis node and support relation represent this proof step. For metaphor passages the verse establishes the comparison basis, not by itself the downstream pedagogical conclusion.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.proof.foolish",
+        "ta.review062.proof.foolish.a",
+        "ta.review062.proof.foolish.u",
+        "ta.review062.proof.foolish.support",
+        "ta.resume010.solitary.foolish"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.proof.foolish",
+          "canonical_sha256": "397d86de042f02a30eb5659f90874601aa439cf7beda8d439c3196f53ef077b7",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The quoted ונואלו supplies the scriptural basis for becoming foolish.",
+              "scope": "Taanit 7a:10 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 159,
+                "quote": "שנאמר ונואלו",
+                "segment_id": "seg_cfcb62ff8dac0b682cd4",
+                "start_char": 147
+              }
+            ],
+            "id": "ta.review062.proof.foolish",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.foolish.a",
+          "canonical_sha256": "2b6de0f38767eed40f3880d06c6f966339d5ab93b3079e836307804f188202fe",
+          "record": {
+            "content": {
+              "candidates": [],
+              "role": "quoted_authority",
+              "scope": "ta.review062.proof.foolish",
+              "surface": "שנאמר ונואלו",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 159,
+                "quote": "שנאמר ונואלו",
+                "segment_id": "seg_cfcb62ff8dac0b682cd4",
+                "start_char": 147
+              }
+            ],
+            "id": "ta.review062.proof.foolish.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.proof.foolish"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.foolish.u",
+          "canonical_sha256": "651537ad7ef862f47692b6830197cdf4bbec9e70e1dc7ea682f22d0bc51bcfa1",
+          "record": {
+            "content": {
+              "composition": "atomic",
+              "discourse_role": "asserted",
+              "textual_voice": "quoted scriptural authority"
+            },
+            "evidence": [
+              {
+                "end_char": 159,
+                "quote": "שנאמר ונואלו",
+                "segment_id": "seg_cfcb62ff8dac0b682cd4",
+                "start_char": 147
+              }
+            ],
+            "id": "ta.review062.proof.foolish.u",
+            "layer": "utterances",
+            "links": [
+              "ta.review062.proof.foolish"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.foolish.support",
+          "canonical_sha256": "7a2b5c1715f9b1114a7b46ff5cb2f5b4da23b7268e07473c3ffdf1b964331666",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "support",
+              "source_id": "ta.review062.proof.foolish",
+              "target_id": "ta.resume010.solitary.foolish"
+            },
+            "evidence": [
+              {
+                "end_char": 159,
+                "quote": "שנאמר ונואלו",
+                "segment_id": "seg_cfcb62ff8dac0b682cd4",
+                "start_char": 147
+              }
+            ],
+            "id": "ta.review062.proof.foolish.support",
+            "layer": "edges",
+            "links": [
+              "ta.review062.proof.foolish",
+              "ta.resume010.solitary.foolish"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Explicit שנאמר supports the foolishness conclusion."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.solitary.foolish",
+          "canonical_sha256": "ff383f9d1274c26adf2a66fd40e3a9a28c52c298ce1ceed9d695e097c0387b75",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "studying Torah alone"
+              ],
+              "proposition": "He adds that they become foolish, citing ונואלו.",
+              "scope": "Taanit 7a:10 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 159,
+                "quote": "ולא עוד אלא שמטפשין שנאמר ונואלו",
+                "segment_id": "seg_cfcb62ff8dac0b682cd4",
+                "start_char": 127
+              }
+            ],
+            "id": "ta.resume010.solitary.foolish",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        }
+      ],
+      "independent_source_assessment": "Quoted ונואלו supports the foolishness conclusion; Yosi bar Hanina remains the citing teacher, not the quoted-authority node."
+    },
+    {
+      "finding_id": "TA062-GRAPH-B3",
+      "original_category": "confirmed_producer_typed_proof_basis_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:12",
+          "segment_id": "seg_d0c597ed64e77861e00a",
+          "start_char": 44,
+          "end_char": 86,
+          "quote": "שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה"
+        }
+      ],
+      "original_finding": "Quoted basis survives as evidence attached to a question or conclusion, but no typed quoted-authority/basis node and support relation represent this proof step. For metaphor passages the verse establishes the comparison basis, not by itself the downstream pedagogical conclusion.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.proof.wood",
+        "ta.review062.proof.wood.a",
+        "ta.review062.proof.wood.u",
+        "ta.review062.proof.wood.support",
+        "ta.resume010.wood.q"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.proof.wood",
+          "canonical_sha256": "2c224b06a403d630d5cb95cde3ff6c6435bd62f5488943773ac6cad455cc3d70",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The cited Proverbs verse calls Torah a tree of life to those who hold it.",
+              "scope": "Taanit 7a:12 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 44
+              }
+            ],
+            "id": "ta.review062.proof.wood",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.wood.a",
+          "canonical_sha256": "7cb3306a2e7076916d5f93a005204cc9283c9fe18b0d386489a228adcce0ddde",
+          "record": {
+            "content": {
+              "candidates": [],
+              "role": "quoted_authority",
+              "scope": "ta.review062.proof.wood",
+              "surface": "שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 44
+              }
+            ],
+            "id": "ta.review062.proof.wood.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.proof.wood"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.wood.u",
+          "canonical_sha256": "decbe33a5afbe88a19ceecaac55f38d1513373881bae14b6b0af535a85ef2f14",
+          "record": {
+            "content": {
+              "composition": "atomic",
+              "discourse_role": "asserted",
+              "textual_voice": "quoted scriptural authority"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 44
+              }
+            ],
+            "id": "ta.review062.proof.wood.u",
+            "layer": "utterances",
+            "links": [
+              "ta.review062.proof.wood"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.wood.support",
+          "canonical_sha256": "11b2068483fdc37c20ab747a4b24f155b9d5a15df5a707916ce4027e4c3c9fc8",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "support",
+              "source_id": "ta.review062.proof.wood",
+              "target_id": "ta.resume010.wood.q"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 44
+              }
+            ],
+            "id": "ta.review062.proof.wood.support",
+            "layer": "edges",
+            "links": [
+              "ta.review062.proof.wood",
+              "ta.resume010.wood.q"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Verse supplies the comparison basis represented in the question, not by itself the downstream pedagogical inference."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.wood.q",
+          "canonical_sha256": "9a7593eac2210779b11d9602aeda7b2c08c5c57fa9e0dc8e265e6af09d874417",
+          "record": {
+            "content": {
+              "answer_set_status": "partial",
+              "conditions": [],
+              "formulation": "Rav Nahman bar Yitzhak asks why Torah is compared to wood/a tree.",
+              "question_origin": "explicit"
+            },
+            "evidence": [
+              {
+                "end_char": 86,
+                "quote": "אמר רב נחמן בר יצחק למה נמשלו דברי תורה כעץ שנאמר (משלי ג, יח) עץ חיים היא למחזיקים בה",
+                "segment_id": "seg_d0c597ed64e77861e00a",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.resume010.wood.q",
+            "layer": "questions",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        }
+      ],
+      "independent_source_assessment": "Proverbs supplies the tree comparison basis; junior/senior inference remains a separate analogy."
+    },
+    {
+      "finding_id": "TA062-GRAPH-B4",
+      "original_category": "confirmed_producer_typed_proof_basis_omission",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:15",
+          "segment_id": "seg_22ef265cf86d1848c2b9",
+          "start_char": 50,
+          "end_char": 75,
+          "quote": "דכתיב הוי כל צמא לכו למים"
+        }
+      ],
+      "original_finding": "Quoted basis survives as evidence attached to a question or conclusion, but no typed quoted-authority/basis node and support relation represent this proof step. For metaphor passages the verse establishes the comparison basis, not by itself the downstream pedagogical conclusion.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.proof.water",
+        "ta.review062.proof.water.a",
+        "ta.review062.proof.water.u",
+        "ta.review062.proof.water.support",
+        "ta.resume010.water.humility.q"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.proof.water",
+          "canonical_sha256": "cfd453043d6d820a58d460df3c9ef6b14622bfa9f5315bd341475d9ea89ca993",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "The quoted invitation calls every thirsty person to water, supplying the water comparison.",
+              "scope": "Taanit 7a:15 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 75,
+                "quote": "דכתיב הוי כל צמא לכו למים",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 50
+              }
+            ],
+            "id": "ta.review062.proof.water",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.water.a",
+          "canonical_sha256": "ee4c68485d0c80c94db4acff21579515be2fcf265bf706798c5f1ab772a1d7f9",
+          "record": {
+            "content": {
+              "candidates": [],
+              "role": "quoted_authority",
+              "scope": "ta.review062.proof.water",
+              "surface": "דכתיב הוי כל צמא לכו למים",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 75,
+                "quote": "דכתיב הוי כל צמא לכו למים",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 50
+              }
+            ],
+            "id": "ta.review062.proof.water.a",
+            "layer": "attributions",
+            "links": [
+              "ta.review062.proof.water"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.water.u",
+          "canonical_sha256": "f3a3879da9864c125c898aaee3cd883e540bc5bbc4761de858929c44bf9eb878",
+          "record": {
+            "content": {
+              "composition": "atomic",
+              "discourse_role": "asserted",
+              "textual_voice": "quoted scriptural authority"
+            },
+            "evidence": [
+              {
+                "end_char": 75,
+                "quote": "דכתיב הוי כל צמא לכו למים",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 50
+              }
+            ],
+            "id": "ta.review062.proof.water.u",
+            "layer": "utterances",
+            "links": [
+              "ta.review062.proof.water"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.proof.water.support",
+          "canonical_sha256": "c42b5cc281ef605270dd4052add9f1718075215911c1dc63e0dea76d3e08a591",
+          "record": {
+            "content": {
+              "explicitness": "source_explicit",
+              "relation": "support",
+              "source_id": "ta.review062.proof.water",
+              "target_id": "ta.resume010.water.humility.q"
+            },
+            "evidence": [
+              {
+                "end_char": 75,
+                "quote": "דכתיב הוי כל צמא לכו למים",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 50
+              }
+            ],
+            "id": "ta.review062.proof.water.support",
+            "layer": "edges",
+            "links": [
+              "ta.review062.proof.water",
+              "ta.resume010.water.humility.q"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Verse supplies the comparison basis represented in the question, not by itself the downstream pedagogical inference."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.water.humility.q",
+          "canonical_sha256": "2386247d2e11d22a1be0967e581461a0a5a506cabb7f31a59d14e07657983f14",
+          "record": {
+            "content": {
+              "answer_set_status": "partial",
+              "conditions": [],
+              "formulation": "Hanina bar Idi asks why Torah is compared to water.",
+              "question_origin": "explicit"
+            },
+            "evidence": [
+              {
+                "end_char": 75,
+                "quote": "(ואמר) רבי חנינא בר אידי למה נמשלו דברי תורה למים דכתיב הוי כל צמא לכו למים",
+                "segment_id": "seg_22ef265cf86d1848c2b9",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.resume010.water.humility.q",
+            "layer": "questions",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        }
+      ],
+      "independent_source_assessment": "Water invitation supplies comparison basis; humility conclusion is supported through water analogy."
+    },
+    {
+      "finding_id": "TA062-ENDPOINT",
+      "original_category": "confirmed_producer_relation_endpoint_error",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:17",
+          "segment_id": "seg_1c918d69e48a70e142f6",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "כדאמרה ליה ברתיה דקיסר"
+        }
+      ],
+      "original_finding": "כדאמרה introduces a narrative illustration. The daughter’s taunt alone is not the full premise showing lowly vessels preserve contents; its current edge endpoint narrows the story to a taunt and labels that relation source_explicit. The reader’s souring-to-vessels link is explicitly editorial and better scoped.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.resume010.narrative.illustrates.t062055",
+        "ta.resume010.wine.sours",
+        "ta.review062.vessels.humility.premise"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.resume010.narrative.illustrates.t062055",
+          "canonical_sha256": "81ef3c8007aaa84f24c09f6335e6d0520dc27ed83db50f8dbb63845a3f213ea4",
+          "record": {
+            "content": {
+              "explicitness": "editorial_reconstruction",
+              "relation": "support",
+              "source_id": "ta.resume010.wine.sours",
+              "target_id": "ta.review062.vessels.humility.premise"
+            },
+            "evidence": [
+              {
+                "end_char": 164,
+                "quote": "כדאמרה ליה ברתיה דקיסר לר' יהושע בן חנניה אי חכמה מפוארה בכלי מכוער אמר לה אביך רמי חמרא במני דפחרא אמרה ליה אלא במאי נירמי אמר לה אתון דחשביתו רמו במאני דהבא וכספא",
+                "segment_id": "seg_1c918d69e48a70e142f6",
+                "start_char": 0
+              },
+              {
+                "end_char": 212,
+                "quote": "אזלה ואמרה ליה לאבוה רמייא לחמרא במני דהבא וכספא ותקיף אתו ואמרו ליה אמר לה לברתיה מאן אמר לך הכי אמרה ליה רבי יהושע בן חנניה קריוהו אמר ליה אמאי אמרת לה הכי אמר ליה כי היכי דאמרה לי אמרי לה והא איכא שפירי דגמירי",
+                "segment_id": "seg_33064639d3aa86a0fcda",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.resume010.narrative.illustrates.t062055",
+            "layer": "edges",
+            "links": [
+              "ta.resume010.wine.sours",
+              "ta.review062.vessels.humility.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "editorial_inference",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.narrative.illustrates",
+            "uncertainty": [
+              "TA062-ENDPOINT: wine transferred to precious vessels and soured is the relevant narrative outcome; link to the lowly-vessel premise is an editorial account of the narrative illustration, not empirical proof of a universal rule. Taunt retained separately."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.wine.sours",
+          "canonical_sha256": "f2a089f536f6afb460ab8d4e01963d7c3a4d873a0b6a3f027a56b3db6bd887a7",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [],
+              "proposition": "She tells her father; the wine is placed in gold/silver vessels and sours.",
+              "scope": "Taanit 7a:18 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 54,
+                "quote": "אזלה ואמרה ליה לאבוה רמייא לחמרא במני דהבא וכספא ותקיף",
+                "segment_id": "seg_33064639d3aa86a0fcda",
+                "start_char": 0
+              }
+            ],
+            "id": "ta.resume010.wine.sours",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": []
+          }
+        },
+        {
+          "id": "ta.review062.vessels.humility.premise",
+          "canonical_sha256": "e190b02077912cdbeab5e8cda09cc69202c5eeaecd76f7fe9ec22d94795558bf",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "lowly vessels are necessary for preservation within this analogy"
+              ],
+              "proposition": "In this analogy, these three liquids keep only in lowly vessels.",
+              "scope": "Taanit 7a:16 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 225,
+                "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 177
+              }
+            ],
+            "id": "ta.review062.vessels.humility.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Wine-souring outcome now supports the lowly-vessel premise with editorial explicitness and both narrative segments as evidence. Taunt remains narrative speech; no direct beauty/pride equivalence is introduced."
+    },
+    {
+      "finding_id": "TA062-ONLY-VESSELS",
+      "original_category": "confirmed_producer_condition_scope_loss",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7a:16",
+          "segment_id": "seg_06861580d418b49bf4a6",
+          "start_char": 177,
+          "end_char": 225,
+          "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים"
+        }
+      ],
+      "original_finding": "The producer says the liquids keep in lowly vessels, losing the premise’s only/אין...אלא restriction. It retains only for the Torah conclusion. A condition list saying humble disposition does not restore the premise quantifier.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.vessels.humility.premise",
+        "ta.review062.vessels.humility.premise.p"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.vessels.humility.premise",
+          "canonical_sha256": "e190b02077912cdbeab5e8cda09cc69202c5eeaecd76f7fe9ec22d94795558bf",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "lowly vessels are necessary for preservation within this analogy"
+              ],
+              "proposition": "In this analogy, these three liquids keep only in lowly vessels.",
+              "scope": "Taanit 7a:16 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 225,
+                "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 177
+              }
+            ],
+            "id": "ta.review062.vessels.humility.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.review062.vessels.humility.premise.p",
+          "canonical_sha256": "0df34adbb7515661518085d0cc7ba94ba85cfbcd34a443e3c18538323d88dc96",
+          "record": {
+            "content": {
+              "claim_id": "ta.review062.vessels.humility.premise",
+              "conditions": [
+                "lowly vessels are necessary for preservation within this analogy"
+              ],
+              "holder_candidates": [
+                "Rabbi Oshaya"
+              ],
+              "local_status": "asserted locally; no later halakhic adjudication inferred",
+              "question_id": null
+            },
+            "evidence": [
+              {
+                "end_char": 225,
+                "quote": "מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים",
+                "segment_id": "seg_06861580d418b49bf4a6",
+                "start_char": 177
+              }
+            ],
+            "id": "ta.review062.vessels.humility.premise.p",
+            "layer": "positions",
+            "links": [
+              "ta.review062.vessels.humility.premise"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "אין מתקיימין אלא בפחות שבכלים is retained as only in lowly vessels in both proposition and necessary-condition description, scoped within the analogy."
+    },
+    {
+      "finding_id": "TA062-ONLY-ATTENTION",
+      "original_category": "confirmed_producer_condition_scope_loss",
+      "original_evidence": [
+        {
+          "ref": "Taanit 7b:1",
+          "segment_id": "seg_12dc42703ae12d3c9779",
+          "start_char": 33,
+          "end_char": 117,
+          "quote": "מה שלשה משקין הללו אין נפסלין אלא בהיסח הדעת אף דברי תורה אין משתכחין אלא בהיסח הדעת"
+        }
+      ],
+      "original_finding": "Producer wording through inattention preserves a causal association but loses only through inattention on both premise and conclusion. The untyped inattention condition does not state necessity.",
+      "resolution": "RESOLVED_IN_EXACT_CORRECTION",
+      "corrected_record_ids": [
+        "ta.review062.attention.liquids.premise",
+        "ta.resume010.attention.liquids.t062055",
+        "ta.resume010.attention.liquids.a.t062055"
+      ],
+      "corrected_versions": [
+        {
+          "id": "ta.review062.attention.liquids.premise",
+          "canonical_sha256": "1ca11dbe0b8f5481d2f32b42c93ef6f90bfdeb847bde01c6e1597e3fedc53bc0",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "inattention is necessary for spoilage within this analogy"
+              ],
+              "proposition": "The alternative analogy says these three liquids spoil only through inattention.",
+              "scope": "Taanit 7b:1 analogy premise"
+            },
+            "evidence": [
+              {
+                "end_char": 77,
+                "quote": "דבר אחר מה שלשה משקין הללו אין נפסלין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 25
+              }
+            ],
+            "id": "ta.review062.attention.liquids.premise",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "uncertainty": [
+              "Separate source-explicit analogy premise; this records the teaching, not empirical certification."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.attention.liquids.t062055",
+          "canonical_sha256": "12346ed96e4b317cd628065ac87055e056f7d4736d60072596b4dd1dd8bb3359",
+          "record": {
+            "content": {
+              "assertion_mode": "asserted",
+              "conditions": [
+                "inattention is necessary for forgetting in this alternative explanation"
+              ],
+              "proposition": "The alternative explanation says words of Torah are forgotten only through inattention.",
+              "scope": "Taanit 7b:1 local discussion"
+            },
+            "evidence": [
+              {
+                "end_char": 117,
+                "quote": "אף דברי תורה אין משתכחין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 78
+              }
+            ],
+            "id": "ta.resume010.attention.liquids.t062055",
+            "layer": "claims",
+            "links": [],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.attention.liquids",
+            "uncertainty": [
+              "TA062-A6: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        },
+        {
+          "id": "ta.resume010.attention.liquids.a.t062055",
+          "canonical_sha256": "b63f52fd4bbca5c3cb10e8b5747ce5eb1d01ba320b29d10c2e7e0eeae2407511",
+          "record": {
+            "content": {
+              "candidates": [],
+              "role": "anonymous",
+              "scope": "ta.resume010.attention.liquids.t062055",
+              "surface": "anonymous",
+              "transmission_chain": []
+            },
+            "evidence": [
+              {
+                "end_char": 117,
+                "quote": "אף דברי תורה אין משתכחין אלא בהיסח הדעת",
+                "segment_id": "seg_12dc42703ae12d3c9779",
+                "start_char": 78
+              }
+            ],
+            "id": "ta.resume010.attention.liquids.a.t062055",
+            "layer": "attributions",
+            "links": [
+              "ta.resume010.attention.liquids.t062055"
+            ],
+            "ml_eligible": false,
+            "origin": "source_paraphrase",
+            "release_state": "valid",
+            "review_state": "unreviewed",
+            "supersedes": "ta.resume010.attention.liquids.a",
+            "uncertainty": [
+              "TA062-A6: composite split into distinct premise/conclusion with typed analogy; original attribution uncertainty retained."
+            ]
+          }
+        }
+      ],
+      "independent_source_assessment": "Both אין...אלא clauses retain only through inattention; anonymous attribution and alternative-explanation scope survive. Conditions explicitly express necessity."
+    }
+  ],
+  "reader_and_unresolved_qualifications_preserved": [
+    {
+      "id": "TA062-READER-GLOSS",
+      "category": "reader_unverified_lexical_expansion",
+      "severity": "low",
+      "evidence": [
+        {
+          "ref": "Taanit 6b:3",
+          "segment_id": "seg_f1035734546592a3fabf",
+          "start_char": 24,
+          "end_char": 40,
+          "quote": "סבי דאזלי אתיגרא"
+        }
+      ],
+      "reader_ids": [
+        "ta055.claims.0040"
+      ],
+      "producer_ids": [
+        "ta.resume008.nemushot.yohanan.tf013"
+      ],
+      "reader_original": [
+        {
+          "id": "ta055.claims.0040",
+          "layer": "claims",
+          "evidence": [
+            {
+              "segment_id": "Taanit 6b:3",
+              "start_char": 11,
+              "end_char": 40,
+              "quote": "אמר ר' יוחנן סבי דאזלי אתיגרא"
+            }
+          ],
+          "content": {
+            "proposition": "Namushot means old people walking with support.",
+            "conditions": [],
+            "scope": "Taanit 6b:3; teaching",
+            "assertion_mode": "asserted"
+          },
+          "origin": "source_paraphrase",
+          "uncertainty": [
+            "אתיגרא retained; exact lexical rendering not settled by this passage."
+          ],
+          "links": []
+        }
+      ],
+      "producer_original": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi Yohanan identifies נמושות as סבי דאזלי אתיגרא (elderly people who go אתיגרא).",
+            "scope": "Taanit 6b:3 local discussion"
+          },
+          "evidence": [
+            {
+              "end_char": 40,
+              "quote": "אמר ר' יוחנן סבי דאזלי אתיגרא",
+              "segment_id": "seg_f1035734546592a3fabf",
+              "start_char": 11
+            }
+          ],
+          "id": "ta.resume008.nemushot.yohanan.tf013",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "supersedes": "ta.resume008.nemushot.yohanan",
+          "uncertainty": [
+            "TF-GLOSS-01: Earlier English gloss walking with support is editorial and unverified; אתיגרא retained for lexical review. No demanding lexical QA qualification is claimed."
+          ]
+        }
+      ],
+      "finding": "Reader proposition asserts walking with support while its uncertainty admits the gloss is not established. Producer historical revision retains אתיגרא without asserting the gloss. No new lexical source was consulted; this is not adjudication of the correct dictionary translation.",
+      "proposed_action": "For standalone use retain the Aramaic or mark the gloss as an unresolved editorial possibility. No mutation to frozen reading.",
+      "resolution_state": "frozen_finding_no_mutation"
+    },
+    {
+      "id": "TA062-READER-SOIL",
+      "category": "reader_unmarked_explanatory_expansion",
+      "severity": "low",
+      "evidence": [
+        {
+          "ref": "Taanit 6b:8",
+          "segment_id": "seg_b29dd0407dbf55370e2c",
+          "start_char": 46,
+          "end_char": 70,
+          "quote": "שניה כדי לגוף בה פי חבית"
+        }
+      ],
+      "reader_ids": [
+        "ta055.claims.0105"
+      ],
+      "producer_ids": [
+        "ta.resume009.second.amount"
+      ],
+      "reader_original": [
+        {
+          "id": "ta055.claims.0105",
+          "layer": "claims",
+          "evidence": [
+            {
+              "segment_id": "Taanit 6b:8",
+              "start_char": 46,
+              "end_char": 70,
+              "quote": "שניה כדי לגוף בה פי חבית"
+            }
+          ],
+          "content": {
+            "proposition": "Second reviyah is enough to seal a barrel mouth with the resulting soil.",
+            "conditions": [],
+            "scope": "Taanit 6b:8; teaching",
+            "assertion_mode": "asserted"
+          },
+          "origin": "source_paraphrase",
+          "uncertainty": [],
+          "links": []
+        }
+      ],
+      "producer_original": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "For the second rainfall, Rabbi Abbahu gives the amount sufficient to seal a jar opening.",
+            "scope": "Taanit 6b:8 local discussion"
+          },
+          "evidence": [
+            {
+              "end_char": 70,
+              "quote": "שניה כדי לגוף בה פי חבית",
+              "segment_id": "seg_b29dd0407dbf55370e2c",
+              "start_char": 46
+            }
+          ],
+          "id": "ta.resume009.second.amount",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "The text gives the sealing measure without an explicit soil/moisture gloss."
+          ]
+        }
+      ],
+      "finding": "Reader adds resulting soil without a local uncertainty note; producer explicitly notes source does not give the soil/moisture gloss. Plausible explanation is not an exact source statement.",
+      "proposed_action": "Mark the soil gloss editorial or use the literal sealing measure; retain original reading.",
+      "resolution_state": "frozen_finding_no_mutation"
+    },
+    {
+      "id": "TA062-OBJECTION-SCOPE",
+      "category": "unresolved_editorial_relation_scope",
+      "severity": "low",
+      "evidence": [
+        {
+          "ref": "Taanit 7a:18",
+          "segment_id": "seg_33064639d3aa86a0fcda",
+          "start_char": 191,
+          "end_char": 212,
+          "quote": "והא איכא שפירי דגמירי"
+        }
+      ],
+      "reader_ids": [
+        "ta055.edges.0367"
+      ],
+      "producer_ids": [
+        "ta.resume010.handsome.scholars.q",
+        "ta.resume010.vessels.humility"
+      ],
+      "reader_original": [
+        {
+          "id": "ta055.edges.0367",
+          "layer": "edges",
+          "evidence": [
+            {
+              "segment_id": "Taanit 7a:18",
+              "start_char": 0,
+              "end_char": 212,
+              "quote": "אזלה ואמרה ליה לאבוה רמייא לחמרא במני דהבא וכספא ותקיף אתו ואמרו ליה אמר לה לברתיה מאן אמר לך הכי אמרה ליה רבי יהושע בן חנניה קריוהו אמר ליה אמאי אמרת לה הכי אמר ליה כי היכי דאמרה לי אמרי לה והא איכא שפירי דגמירי"
+            }
+          ],
+          "content": {
+            "source_id": "ta055.questions.0364",
+            "target_id": "ta055.claims.0318",
+            "relation": "objection",
+            "explicitness": "editorial_reconstruction"
+          },
+          "origin": "source_paraphrase",
+          "uncertainty": [],
+          "links": [
+            "ta055.questions.0364",
+            "ta055.claims.0318"
+          ]
+        }
+      ],
+      "producer_original": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [],
+            "formulation": "But there are handsome people who are learned?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 212,
+              "quote": "והא איכא שפירי דגמירי",
+              "segment_id": "seg_33064639d3aa86a0fcda",
+              "start_char": 191
+            }
+          ],
+          "id": "ta.resume010.handsome.scholars.q",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "humble disposition"
+            ],
+            "proposition": "As these liquids keep in lowly vessels, Torah endures only in a humble person.",
+            "scope": "Taanit 7a:16 local discussion"
+          },
+          "evidence": [
+            {
+              "end_char": 270,
+              "quote": "לומר לך מה שלשה משקין הללו אין מתקיימין אלא בפחות שבכלים אף דברי תורה אין מתקיימין אלא במי שדעתו שפלה",
+              "segment_id": "seg_06861580d418b49bf4a6",
+              "start_char": 169
+            }
+          ],
+          "id": "ta.resume010.vessels.humility",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "finding": "Reader targets humility proposition with the handsome-learners objection. Local challenge directly addresses the physical ugliness implication of the narrative analogy; physical beauty is not identical to pride. Reader correctly labels editorial reconstruction, and no unique speaker is asserted by producer.",
+      "proposed_action": "Keep objection attested but scope target to the narrative implication or preserve ambiguity; do not force a definitive objection-to-humility edge.",
+      "resolution_state": "frozen_finding_no_mutation"
+    }
+  ],
+  "unresolved_objection_current_question": {
+    "content": {
+      "answer_set_status": "partial",
+      "conditions": [],
+      "formulation": "But there are handsome people who are learned?",
+      "question_origin": "explicit"
+    },
+    "evidence": [
+      {
+        "end_char": 212,
+        "quote": "והא איכא שפירי דגמירי",
+        "segment_id": "seg_33064639d3aa86a0fcda",
+        "start_char": 191
+      }
+    ],
+    "id": "ta.resume010.handsome.scholars.q.t062055",
+    "layer": "questions",
+    "links": [],
+    "ml_eligible": false,
+    "origin": "source_paraphrase",
+    "release_state": "valid",
+    "review_state": "unreviewed",
+    "supersedes": "ta.resume010.handsome.scholars.q",
+    "uncertainty": [
+      "TA062-OBJECTION-SCOPE: local challenge addresses the narrative implication of physical ugliness; physical beauty is not identical with pride. No definitive objection-to-humility edge is assigned."
+    ]
+  },
+  "historical_verdict_preserved": "REWORK_TARGETED remains the immutable verdict on historical697; this additive receipt records resolution of its13 producer findings only.",
+  "remaining_scope_limits": [
+    "Reader lexical and soil expansions remain qualified; frozen reader unchanged.",
+    "Physical beauty versus humility objection target remains unresolved, now explicitly noted in producer question.",
+    "All other original comparison granularity and restriction assessments remain in force, including7a7 proof-basis representation and no exhaustive answer-set certification.",
+    "No whole712 or whole697 semantic re-review; no full admission, new task eligibility or human certification.",
+    "Newer15 source segments remain byte-equivalent in records and coverage and explicitly UNREVIEWED."
+  ],
+  "changed_record_versions": [
+    {
+      "id": "ta.resume010.iron.scholars.t062055",
+      "layer": "claims",
+      "supersedes": "ta.resume010.iron.scholars",
+      "canonical_sha256": "1390fa2ea22d781f43194135aa8620db1b680f94a22babfcf1d4745f5f04245f"
+    },
+    {
+      "id": "ta.resume010.iron.scholars.a.t062055",
+      "layer": "attributions",
+      "supersedes": "ta.resume010.iron.scholars.a",
+      "canonical_sha256": "b48c1986cdf17ffc143f390cf68deca8f2c9c9345fc078a5a1ab97ff1aa1a3f8"
+    },
+    {
+      "id": "ta.resume010.iron.scholars.p.t062055",
+      "layer": "positions",
+      "supersedes": "ta.resume010.iron.scholars.p",
+      "canonical_sha256": "c25c560c627cf90fee98aa47b097bdc5e86e3888b5164d52fa294939e2f9ce9d"
+    },
+    {
+      "id": "ta.resume010.iron.scholars.u.t062055",
+      "layer": "utterances",
+      "supersedes": "ta.resume010.iron.scholars.u",
+      "canonical_sha256": "67536b30cd390560d075b93ec340b80e4c52990fe4dbe671483412ca5e0b0033"
+    },
+    {
+      "id": "ta.resume010.fire.solitary.t062055",
+      "layer": "claims",
+      "supersedes": "ta.resume010.fire.solitary",
+      "canonical_sha256": "ab6ec748c97a8aac9a10c82cefd9690328e79bbfb97a38bdc8293ad17853c5a9"
+    },
+    {
+      "id": "ta.resume010.fire.solitary.a.t062055",
+      "layer": "attributions",
+      "supersedes": "ta.resume010.fire.solitary.a",
+      "canonical_sha256": "bb223a78209864477a3722e914bf8d6d689b9b2ea96fd69d71fbbe81a24b6e24"
+    },
+    {
+      "id": "ta.resume010.fire.solitary.p.t062055",
+      "layer": "positions",
+      "supersedes": "ta.resume010.fire.solitary.p",
+      "canonical_sha256": "ba4df36941ace37698b40520b80bfec9e8d6ddd95b6e8808fc7461be14a6d452"
+    },
+    {
+      "id": "ta.resume010.fire.solitary.u.t062055",
+      "layer": "utterances",
+      "supersedes": "ta.resume010.fire.solitary.u",
+      "canonical_sha256": "bc998ea6cd3a27a22b6e970bf543d239aed0cff50baaf6913abf925f929fc138"
+    },
+    {
+      "id": "ta.resume010.small.sharpens.t062055",
+      "layer": "claims",
+      "supersedes": "ta.resume010.small.sharpens",
+      "canonical_sha256": "c5b708e945468e0d95aa4406b35f3067fc1e684a96e68abbf31afabc93ea5bf7"
+    },
+    {
+      "id": "ta.resume010.small.sharpens.a.t062055",
+      "layer": "attributions",
+      "supersedes": "ta.resume010.small.sharpens.a",
+      "canonical_sha256": "5c95ae6ff781df69b2d10ce45b31aff2e5eaf5bdcc6745e131a7abede2244103"
+    },
+    {
+      "id": "ta.resume010.small.sharpens.p.t062055",
+      "layer": "positions",
+      "supersedes": "ta.resume010.small.sharpens.p",
+      "canonical_sha256": "47dabccf42b972d8208f077f8ca8caf2b3d63500ea8942c14465cd70dce79f20"
+    },
+    {
+      "id": "ta.resume010.small.sharpens.u.t062055",
+      "layer": "utterances",
+      "supersedes": "ta.resume010.small.sharpens.u",
+      "canonical_sha256": "4c00aa63b963eccad1100ef0fe6023153618ab698637baab380bb861096112ba"
+    },
+    {
+      "id": "ta.resume010.water.humility.t062055",
+      "layer": "claims",
+      "supersedes": "ta.resume010.water.humility",
+      "canonical_sha256": "18a9652f2be6a675db51c77dc3fa9a43631390366b8039bd8de47b3c1b7e610a"
+    },
+    {
+      "id": "ta.resume010.water.humility.a.t062055",
+      "layer": "attributions",
+      "supersedes": "ta.resume010.water.humility.a",
+      "canonical_sha256": "5ca95ab24e36710384d160f38a64053d398bf6c01d06027673046673772e71df"
+    },
+    {
+      "id": "ta.resume010.water.humility.p.t062055",
+      "layer": "positions",
+      "supersedes": "ta.resume010.water.humility.p",
+      "canonical_sha256": "5eb246f0d1c14efc2e4d8c3d7a3594c394e5377a56a707f152cfcddec1abb7cf"
+    },
+    {
+      "id": "ta.resume010.water.humility.u.t062055",
+      "layer": "utterances",
+      "supersedes": "ta.resume010.water.humility.u",
+      "canonical_sha256": "db014e55cbbc615359c2289f04e45599af792ad81e63cebf01ee87037ce1b8d0"
+    },
+    {
+      "id": "ta.resume010.vessels.humility.t062055",
+      "layer": "claims",
+      "supersedes": "ta.resume010.vessels.humility",
+      "canonical_sha256": "2b92ae298b89d7a22a0b4a20712a3882220dd8c65b33cd3941ff6173d1d1c783"
+    },
+    {
+      "id": "ta.resume010.vessels.humility.a.t062055",
+      "layer": "attributions",
+      "supersedes": "ta.resume010.vessels.humility.a",
+      "canonical_sha256": "9558cefd61ff792e231b57c4e812a7896b062c5ce31be408f3c1defb60be7e1c"
+    },
+    {
+      "id": "ta.resume010.vessels.humility.p.t062055",
+      "layer": "positions",
+      "supersedes": "ta.resume010.vessels.humility.p",
+      "canonical_sha256": "45e6092dd319529676755081a55cd728409eb171e8b57c2c301b736b39ad29fd"
+    },
+    {
+      "id": "ta.resume010.vessels.humility.u.t062055",
+      "layer": "utterances",
+      "supersedes": "ta.resume010.vessels.humility.u",
+      "canonical_sha256": "450503756b03103e2c353d716965f19074efbb7aeeee9fed5272663233c916fb"
+    },
+    {
+      "id": "ta.resume010.attention.liquids.t062055",
+      "layer": "claims",
+      "supersedes": "ta.resume010.attention.liquids",
+      "canonical_sha256": "12346ed96e4b317cd628065ac87055e056f7d4736d60072596b4dd1dd8bb3359"
+    },
+    {
+      "id": "ta.resume010.attention.liquids.a.t062055",
+      "layer": "attributions",
+      "supersedes": "ta.resume010.attention.liquids.a",
+      "canonical_sha256": "b63f52fd4bbca5c3cb10e8b5747ce5eb1d01ba320b29d10c2e7e0eeae2407511"
+    },
+    {
+      "id": "ta.resume010.attention.liquids.p.t062055",
+      "layer": "positions",
+      "supersedes": "ta.resume010.attention.liquids.p",
+      "canonical_sha256": "6a0df7f9b5a33ffdf1f21bf05f65413f9a47d8337beb0a75294b88cf97bdcfa2"
+    },
+    {
+      "id": "ta.resume010.attention.liquids.u.t062055",
+      "layer": "utterances",
+      "supersedes": "ta.resume010.attention.liquids.u",
+      "canonical_sha256": "9fb13a67820727998fdbdcfb84250fd63008524d165a295264c2bed280a57aed"
+    },
+    {
+      "id": "ta.resume010.narrative.illustrates.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.narrative.illustrates",
+      "canonical_sha256": "81ef3c8007aaa84f24c09f6335e6d0520dc27ed83db50f8dbb63845a3f213ea4"
+    },
+    {
+      "id": "ta.resume010.handsome.scholars.q.t062055",
+      "layer": "questions",
+      "supersedes": "ta.resume010.handsome.scholars.q",
+      "canonical_sha256": "30ba96b03bbe93d746a94fb95ee4379236130ebfbdeb42a48623fd0f029dc332"
+    },
+    {
+      "id": "ta.resume010.attention.answer.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.attention.answer",
+      "canonical_sha256": "855a00741ae079904d64c487be116be9ac22e6213d2e085dcac056f45169eeef"
+    },
+    {
+      "id": "ta.resume010.fire.answer.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.fire.answer",
+      "canonical_sha256": "727fcff850902d2ce37a7a81e15866b69ad941079d7af6e02ced273a18a8a5c0"
+    },
+    {
+      "id": "ta.resume010.handsome.answer.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.handsome.answer",
+      "canonical_sha256": "f7f297c61be7aab4876d65d009c04917b77ce4afbd2253ab6e52ed535cd8d172"
+    },
+    {
+      "id": "ta.resume010.handsome.scholars.q.a.t062055",
+      "layer": "attributions",
+      "supersedes": "ta.resume010.handsome.scholars.q.a",
+      "canonical_sha256": "7c4ed016f42e80d38f5c129787f3567005f008c36487b0fd8267480ece5251ee"
+    },
+    {
+      "id": "ta.resume010.handsome.scholars.q.u.t062055",
+      "layer": "utterances",
+      "supersedes": "ta.resume010.handsome.scholars.q.u",
+      "canonical_sha256": "ff4bd0b51ba108ec9d4d4ff886f11427c0db1af4e93e3d2a32b449138b5717c2"
+    },
+    {
+      "id": "ta.resume010.humility.answer.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.humility.answer",
+      "canonical_sha256": "94760df8b3dc661850153a18885554cf76de07147bb11027601a4c609ec439b6"
+    },
+    {
+      "id": "ta.resume010.iron.answer.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.iron.answer",
+      "canonical_sha256": "a9248951c25c4222fe65f951303b5ccbb89bc5d39976fe9f0f9f340bf9a760af"
+    },
+    {
+      "id": "ta.resume010.solitary.parallel.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.solitary.parallel",
+      "canonical_sha256": "9522445198b5c1a456dba5907314bc7e1022422932a61d9c07e70d4e863d8344"
+    },
+    {
+      "id": "ta.resume010.students.support.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.students.support",
+      "canonical_sha256": "ccf01c66347348afe07f13f4109ac1ad1342086af03ed0681e6bc1604704d388"
+    },
+    {
+      "id": "ta.resume010.vessels.answer.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.vessels.answer",
+      "canonical_sha256": "381dd7cb575f5cae39bd9ba05e61ac47bdbb7843736c3587b8fd9f58f58eb3a1"
+    },
+    {
+      "id": "ta.resume010.wood.answer.t062055",
+      "layer": "edges",
+      "supersedes": "ta.resume010.wood.answer",
+      "canonical_sha256": "0411f72a2935b74991f213c0aec7f8002c296d2c8635331b4a7c3ae6fe958668"
+    },
+    {
+      "id": "ta.review062.iron.scholars.premise",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "b178386145b0ccdee5743f2f1d37ab584899e5ee895be03b776d1c2e069b03bf"
+    },
+    {
+      "id": "ta.review062.iron.scholars.premise.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "c342ecda95af459afb1603cc2f0c3f4250c287acc29738ac9b15b9f630f8ed40"
+    },
+    {
+      "id": "ta.review062.iron.scholars.premise.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "30f828fe9a3f23eb1c0d7d2c7285b8dc5e1b46458ce2b00191af01cb6ba42db5"
+    },
+    {
+      "id": "ta.review062.iron.scholars.premise.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "78a2f81d3567fc412abfe55bffa239bd45d6f49bce877ad6bd68ffcb8a0faa52"
+    },
+    {
+      "id": "ta.review062.iron.scholars.analogy",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "b3691c3f697344b2443d5cc4389dfb167948ee5491a06f92a43ade7db4deb6e9"
+    },
+    {
+      "id": "ta.review062.fire.solitary.premise",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "557f85fc65039ef7b2264c336a614fe6ee9457b60545c8dd750231a159c832ef"
+    },
+    {
+      "id": "ta.review062.fire.solitary.premise.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "86b11f3d2a98c086765ad9a20789ce0fcafafcbb3d276281dd405c932a1694ce"
+    },
+    {
+      "id": "ta.review062.fire.solitary.premise.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "5df7f9e7f64b0c4c160ccd9683e33fc6cd5faec0e3f5ede00ebb184cf66986aa"
+    },
+    {
+      "id": "ta.review062.fire.solitary.premise.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "270e2651287b83d89a702d3fdf645bf4f2094d00c0ed8f8564edbf448a358e88"
+    },
+    {
+      "id": "ta.review062.fire.solitary.analogy",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "2bd439ba44359e924cb079e61bbac2c56c76226eaa941e423cd48ec468c96d6f"
+    },
+    {
+      "id": "ta.review062.small.sharpens.premise",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "4b69172943a9a9abdce72b58a277bf72c0b0d691cb859cb1aa55629bdace0f9f"
+    },
+    {
+      "id": "ta.review062.small.sharpens.premise.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "17a44f7564e6128702b817e2554d64195e7cdc8c665e2369650e0bfbecd8f531"
+    },
+    {
+      "id": "ta.review062.small.sharpens.premise.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "2a8753c216bb0c26e62341028fa6755e1f71b697d9e709b2b9b03fa7458fe0d3"
+    },
+    {
+      "id": "ta.review062.small.sharpens.premise.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "2875359f739a301a48ff09d0391dce7db962c7b6779ecc7c7c93b23b52fdcd1a"
+    },
+    {
+      "id": "ta.review062.small.sharpens.analogy",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "bfc395d15121c0dd7b68b08d6782aa3b350df83274e5b443e763245718a9d084"
+    },
+    {
+      "id": "ta.review062.water.humility.premise",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "d02617d36223d6e2759e30b0c2137e2b7f10d11f9117051a6f6590d30d174178"
+    },
+    {
+      "id": "ta.review062.water.humility.premise.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "51daa06c2fc28002cb6e14a4fa3ef147308a7c95e26d8ac14793d914995e90b4"
+    },
+    {
+      "id": "ta.review062.water.humility.premise.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "9d9b2e4493664f7a9eb5e71530c583dfd08af42a3472024cae0dc4f43b11b3c4"
+    },
+    {
+      "id": "ta.review062.water.humility.premise.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "7e09bad851bdb57e4e4214e1023f7f9c9de5fdfdbd7dc61b4a2f434a229f20e8"
+    },
+    {
+      "id": "ta.review062.water.humility.analogy",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "ccbc8e94362c8d9d722564d7a2a5eb59ed91c4a51aa6cfb9905acdc2017e74d1"
+    },
+    {
+      "id": "ta.review062.vessels.humility.premise",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "e190b02077912cdbeab5e8cda09cc69202c5eeaecd76f7fe9ec22d94795558bf"
+    },
+    {
+      "id": "ta.review062.vessels.humility.premise.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "3fc4cfa997b4d0b00c6c2722cf4710970b73c34d681ee9aebe912a2de879247b"
+    },
+    {
+      "id": "ta.review062.vessels.humility.premise.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "0df34adbb7515661518085d0cc7ba94ba85cfbcd34a443e3c18538323d88dc96"
+    },
+    {
+      "id": "ta.review062.vessels.humility.premise.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "42c6e7890f3a83bcadfeed89b00d83cc883f2826036d2b65b29b414b7f540344"
+    },
+    {
+      "id": "ta.review062.vessels.humility.analogy",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "cbcccb5b77632cbb5f28852d515481254e265d6a9abfd012e2700d661fed3360"
+    },
+    {
+      "id": "ta.review062.attention.liquids.premise",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "1ca11dbe0b8f5481d2f32b42c93ef6f90bfdeb847bde01c6e1597e3fedc53bc0"
+    },
+    {
+      "id": "ta.review062.attention.liquids.premise.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "7d1f4015888e207509420488aa5834a2556f27aafa75b10713e9919cad78e6ef"
+    },
+    {
+      "id": "ta.review062.attention.liquids.premise.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "617c6c7ce8017f83b91b187c8e781d155ccc943d1ee9ddb3fc9321c6cb86b52f"
+    },
+    {
+      "id": "ta.review062.attention.liquids.premise.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "310d7ff6db28e2094e19f5e7b5e45e5d4f55b54a6cefe81f49001789d4f7f350"
+    },
+    {
+      "id": "ta.review062.attention.liquids.analogy",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "afb7da0ae1678ae3bdd52a25e2c3178798d02daaa416bded0cf9c7a976c33d3b"
+    },
+    {
+      "id": "ta.review062.proof.fire",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "a8d1c1d9aec5494f69255955bb4481ee0d292054230def9da3007b1e48796f2a"
+    },
+    {
+      "id": "ta.review062.proof.fire.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "4bd912510402e83685097030a1902c5038bbf8e743c5565f0597d16ea11437a1"
+    },
+    {
+      "id": "ta.review062.proof.fire.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "88b20b3eafa44cbe2250d5f2b71d3761bb7b4887e8e029ac69501fb2ab57da03"
+    },
+    {
+      "id": "ta.review062.proof.fire.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "fd128c35c2898ef49fae125ae6c8f6efba391edb5988d91d43342a351460ca26"
+    },
+    {
+      "id": "ta.review062.proof.fire.support",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "98e10bedbdcd3d379041bb36d0625c28b50f974fd7863e6007c47cd95b2a7649"
+    },
+    {
+      "id": "ta.review062.proof.foolish",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "397d86de042f02a30eb5659f90874601aa439cf7beda8d439c3196f53ef077b7"
+    },
+    {
+      "id": "ta.review062.proof.foolish.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "651537ad7ef862f47692b6830197cdf4bbec9e70e1dc7ea682f22d0bc51bcfa1"
+    },
+    {
+      "id": "ta.review062.proof.foolish.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "2b6de0f38767eed40f3880d06c6f966339d5ab93b3079e836307804f188202fe"
+    },
+    {
+      "id": "ta.review062.proof.foolish.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "5f2313223f7997e4cd9877bdd44f6d885a143ef6d3297d75d0a1ce7908396ac3"
+    },
+    {
+      "id": "ta.review062.proof.foolish.support",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "7a2b5c1715f9b1114a7b46ff5cb2f5b4da23b7268e07473c3ffdf1b964331666"
+    },
+    {
+      "id": "ta.review062.proof.wood",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "2c224b06a403d630d5cb95cde3ff6c6435bd62f5488943773ac6cad455cc3d70"
+    },
+    {
+      "id": "ta.review062.proof.wood.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "decbe33a5afbe88a19ceecaac55f38d1513373881bae14b6b0af535a85ef2f14"
+    },
+    {
+      "id": "ta.review062.proof.wood.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "7cb3306a2e7076916d5f93a005204cc9283c9fe18b0d386489a228adcce0ddde"
+    },
+    {
+      "id": "ta.review062.proof.wood.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "b4a3ca89d9db3d6047a47b206d4e5036936af217887e6ecb995a5150c1d80f2f"
+    },
+    {
+      "id": "ta.review062.proof.wood.support",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "11b2068483fdc37c20ab747a4b24f155b9d5a15df5a707916ce4027e4c3c9fc8"
+    },
+    {
+      "id": "ta.review062.proof.water",
+      "layer": "claims",
+      "supersedes": null,
+      "canonical_sha256": "cfd453043d6d820a58d460df3c9ef6b14622bfa9f5315bd341475d9ea89ca993"
+    },
+    {
+      "id": "ta.review062.proof.water.u",
+      "layer": "utterances",
+      "supersedes": null,
+      "canonical_sha256": "f3a3879da9864c125c898aaee3cd883e540bc5bbc4761de858929c44bf9eb878"
+    },
+    {
+      "id": "ta.review062.proof.water.a",
+      "layer": "attributions",
+      "supersedes": null,
+      "canonical_sha256": "ee4c68485d0c80c94db4acff21579515be2fcf265bf706798c5f1ab772a1d7f9"
+    },
+    {
+      "id": "ta.review062.proof.water.p",
+      "layer": "positions",
+      "supersedes": null,
+      "canonical_sha256": "b6cf921d688d1da4a015230c384c0a98b3dba54430cb33f3b2fd0410280a461a"
+    },
+    {
+      "id": "ta.review062.proof.water.support",
+      "layer": "edges",
+      "supersedes": null,
+      "canonical_sha256": "c42b5cc281ef605270dd4052add9f1718075215911c1dc63e0dea76d3e08a591"
+    }
+  ],
+  "supersessions": 37,
+  "additions": 50,
+  "completed_segments_per_layer": 712,
+  "structural_or_review_core_credit_increment": 0,
+  "new_reading_credit": 0,
+  "new_compared_core_credit": 0,
+  "production_modified_by_comparator": false,
+  "newer15_reviewed": false,
+  "later_versions_inherit_review": false,
+  "full_admission": false,
+  "task_eligibility": {
+    "retrieval": false,
+    "segmentation": false,
+    "attribution": false,
+    "argument_extraction": false,
+    "qa": false,
+    "scholar_choice": false,
+    "ml": false
+  },
+  "source_edition": {
+    "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Moed/Taanit/Hebrew/Wikisource Talmud Bavli.json",
+    "sha256": "02ca5882a085f5025ffa3b307c77c11f01fa23ef0e44cea44270eb776f06eead"
+  },
+  "source_refs_reread": [
+    "Taanit 7a:10",
+    "Taanit 7a:12",
+    "Taanit 7a:15",
+    "Taanit 7a:16",
+    "Taanit 7a:17",
+    "Taanit 7a:18",
+    "Taanit 7a:8",
+    "Taanit 7a:9",
+    "Taanit 7b:1"
+  ],
+  "dependency_closure": "All active links, edge endpoints, position references and record-valued attribution scopes resolve to active IDs; unchanged original records preserved except37 expected release-state transitions. Answer/support dependencies manually checked after splits."
+}

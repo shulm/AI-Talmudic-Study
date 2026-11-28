@@ -1,0 +1,61 @@
+{
+  "artifact_kind": "nonblind_comparison_reservation",
+  "owner": "L04 independent comparators; root intake later",
+  "scope": "delegated020 only",
+  "source_only_protection": "Do not send this annotated comparison-entry artifact or producer pins to source-only readers before their freezes.",
+  "jobs": [
+    {
+      "tractate_slug": "taanit",
+      "neutral_job_path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\jobs\\bavli_taanit_delegated020.json",
+      "source_only_reading_path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/review_20261127_delegated020/taanit_delegated020.json",
+      "snapshot_path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_taanit/snapshots/59c62a6064a816524290a464e500ca6e82b6b0fe2b540a8f9b385ee533dff776.json",
+      "snapshot_sha256": "59c62a6064a816524290a464e500ca6e82b6b0fe2b540a8f9b385ee533dff776",
+      "core_count": 30,
+      "cohort": "original_probability_sample",
+      "dispatch_condition": "reading freeze validated; no producer-role agent used"
+    },
+    {
+      "tractate_slug": "nedarim",
+      "neutral_job_path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\jobs\\bavli_nedarim_delegated020.json",
+      "source_only_reading_path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/review_20261127_delegated020/nedarim_delegated020.json",
+      "snapshot_path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_nedarim/snapshots/d34c7be2fd11ac6af344a3d49a15486b294390b51c6132e8a41984328f786a81.json",
+      "snapshot_sha256": "d34c7be2fd11ac6af344a3d49a15486b294390b51c6132e8a41984328f786a81",
+      "core_count": 30,
+      "cohort": "original_probability_sample",
+      "dispatch_condition": "reading freeze validated; no producer-role agent used"
+    },
+    {
+      "tractate_slug": "makkot",
+      "neutral_job_path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\jobs\\bavli_makkot_delegated020.json",
+      "source_only_reading_path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/review_20261127_delegated020/makkot_delegated020.json",
+      "snapshot_path": "F:/Sefaria_QA/bavli_production_run_20261125_01/L04/bavli_makkot/snapshots/bf3f3242d3a8c9e476640240788bc653646a232e2362fb1f34d2b6d1cf5ba172.json",
+      "snapshot_sha256": "bf3f3242d3a8c9e476640240788bc653646a232e2362fb1f34d2b6d1cf5ba172",
+      "core_count": 30,
+      "cohort": "original_probability_sample",
+      "dispatch_condition": "reading freeze validated; no producer-role agent used"
+    }
+  ],
+  "requirements": [
+    "Fresh fork:none comparator distinct from producer; explicitly NONBLIND comparison role, not a fresh source-only reading. Record actual agent ID and launch provenance.",
+    "Start only after source-only reading and hash sidecar are frozen and validated. Verify job/source/common/plan/contract hashes and exact Unicode refs, offsets and quotes. Preserve reading bytes.",
+    "Read original source plus necessary continuations; compare all independently found claims, attribution/transmission, conditions, questions/comparable answers, positions/local status and argument relations. Distinguish original authority from citing speaker.",
+    "Report independently found claim, attributable claim, condition-bearing claim, proposed answer-set and argument-edge denominators separately. Context must not inflate sampled cores.",
+    "Classify confirmed omission/error, reader error, reasonable granularity, unresolved ambiguity and restricted eligibility separately. Verify typed relation endpoints and local stage; prose presence does not automatically satisfy typed graph inventory.",
+    "Use exact immutable proposal prefix and snapshot only; readonly in-memory replay and exact evidence checks. Never promote/rewrite production or substitute CURRENT. Record unavailable checks honestly.",
+    "Preserve initial producer/reader versions and every disagreement; additive corrections only. No automatic full-tractate admission, later-version acceptance, new task eligibility or human certification.",
+    "Emit immutable comparison, v2 verdict, validation/replay observations and hashes in isolated L04 review output path. Bind all sources, input readings, contract/schema/protocol/runner, plan and exact snapshot. No root artifact writes or duplicate root comparison.",
+    "Return actual core refs, prior comparison overlap and cohort; reserve all three delegated020 scopes to L04. Root will validate and reconcile before updating aggregate coverage."
+  ],
+  "mandatory_new_entry_script": null,
+  "format_and_readonly_replay_examples": [
+    "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\avodah_zarah_batch001_extension002_exact_version.json",
+    "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\verdicts\\avodah_zarah_batch001_extension002_v2_verdict.json",
+    "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\avodah_zarah_batch001_extension002_audit.py"
+  ],
+  "example_limit": "Examples are NONBLIND comparator formatting/method references only; do not copy verdicts or execute unadapted audit scripts. Common schema/protocol remain authoritative.",
+  "root_duplicating_comparisons": false,
+  "new_reading_credit": 0,
+  "new_comparison_credit": 0,
+  "reported_dispatch_status": "instructions sent; actual comparator launches pending confirmation",
+  "other_reserved_work": "Meilah003a interrupted exact comparison remains root-reserved; do not duplicate under these L04 scopes."
+}

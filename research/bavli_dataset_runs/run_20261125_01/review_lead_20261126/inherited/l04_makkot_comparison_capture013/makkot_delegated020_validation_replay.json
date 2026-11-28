@@ -1,0 +1,129 @@
+{
+  "artifact_kind": "validation_replay_observations",
+  "actual_agent_id": "/root/makkot_compare020",
+  "comparison": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\makkot_delegated020_exact_version.json",
+    "sha256": "55c36eca45705eebd0bae433755fb523b014b1b62314f1ebcb8ea218591aafbf"
+  },
+  "verdict": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\makkot_delegated020_v2_verdict.json",
+    "sha256": "030c6647347d51b2cecada017587dd0baccaa57f3fcb876ecceed1f0825e3329"
+  },
+  "audit_script": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\makkot_delegated020_audit.py",
+    "sha256": "06e4ae4266eb05feedfae90d0aa590c8ac4d4a20fd6af21fb34c71cf95347a20"
+  },
+  "checks": {
+    "reader_exact_slices": 449,
+    "snapshot_exact_slices": 2192,
+    "original_inventory_segments_verified": 709,
+    "failures": 0,
+    "reader_schema_links_primary_partition": "passed",
+    "exact_quotes_do_not_prove_semantics": true
+  },
+  "readonly_prefix_replay": {
+    "matched_exact_snapshot": true,
+    "proposal_count": 17,
+    "used_CURRENT": false,
+    "report": {
+      "source_segments": 709,
+      "semantic_records": 2026,
+      "completed_by_layer": {
+        "structure": 214,
+        "utterances": 214,
+        "claims": 214,
+        "attributions": 214,
+        "questions": 214,
+        "positions": 214,
+        "edges": 214,
+        "reconciliation": 214
+      },
+      "outcomes_by_layer": {
+        "structure": {
+          "records_found": 214,
+          "none_found_after_pass": 0,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "utterances": {
+          "records_found": 214,
+          "none_found_after_pass": 0,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "claims": {
+          "records_found": 200,
+          "none_found_after_pass": 14,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "attributions": {
+          "records_found": 214,
+          "none_found_after_pass": 0,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "questions": {
+          "records_found": 97,
+          "none_found_after_pass": 117,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "positions": {
+          "records_found": 200,
+          "none_found_after_pass": 14,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "edges": {
+          "records_found": 154,
+          "none_found_after_pass": 60,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        },
+        "reconciliation": {
+          "records_found": 200,
+          "none_found_after_pass": 14,
+          "abstained_ambiguous": 0,
+          "not_applicable": 0
+        }
+      },
+      "independent_review_completed": false,
+      "tractate_delivered": false,
+      "next_unprocessed_by_layer": {
+        "structure": "Makkot 9a:2",
+        "utterances": "Makkot 9a:2",
+        "claims": "Makkot 9a:2",
+        "attributions": "Makkot 9a:2",
+        "questions": "Makkot 9a:2",
+        "positions": "Makkot 9a:2",
+        "edges": "Makkot 9a:2",
+        "reconciliation": "Makkot 9a:2"
+      }
+    }
+  },
+  "input_hashes_preserved": true,
+  "independent_denominators": {
+    "independently_found_core_claims": 63,
+    "core_claims_with_nonempty_holder_candidates": 29,
+    "core_condition_bearing_claims": 30,
+    "core_questions": 9,
+    "proposed_answer_sets": 9,
+    "answer_set_definition": "one local question inventory per core question; not nine exhaustive or mutually exclusive choice sets",
+    "independent_core_argument_edges": 48,
+    "context_claims": 15,
+    "context_questions": 3,
+    "context_argument_edges": 13,
+    "whole_reading_claims": 78,
+    "whole_reading_edges": 61,
+    "atomicity_certified": false
+  },
+  "relation_assessments": {
+    "reasonable_internal_granularity_no_self_edge_required": 8,
+    "typed_relation_present": 29,
+    "reader_explicitness_overclaim_and_unrepresented_editorial_opposition": 3,
+    "confirmed_typed_relation_omission": 7,
+    "reasonable_relation_target_granularity": 1
+  },
+  "prior_overlap": 0
+}

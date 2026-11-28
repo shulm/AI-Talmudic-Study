@@ -1,0 +1,23 @@
+{
+  "artifact_kind": "comparison_candidate_pin_not_reading",
+  "candidates": [
+    {
+      "job_id": "bavli_zevachim",
+      "snapshot_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_zevachim\\snapshots\\0ca186f5d15caef7d17399b21fd0464a8f22b9ded849d454f08b6460c4e00c64.json",
+      "snapshot_sha256": "0ca186f5d15caef7d17399b21fd0464a8f22b9ded849d454f08b6460c4e00c64"
+    },
+    {
+      "job_id": "bavli_bava_batra",
+      "snapshot_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\snapshots\\f82c4e3f725e0eac9e92ce05eeb4070e085b2aa370f3e27d64445236f3c97077.json",
+      "snapshot_sha256": "f82c4e3f725e0eac9e92ce05eeb4070e085b2aa370f3e27d64445236f3c97077"
+    },
+    {
+      "job_id": "bavli_shabbat",
+      "snapshot_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shabbat\\snapshots\\fe708810f594231c7dcb654d30f106af9af6e885095e4d4bae0fd09d863f47d3.json",
+      "snapshot_sha256": "fe708810f594231c7dcb654d30f106af9af6e885095e4d4bae0fd09d863f47d3"
+    }
+  ],
+  "source_only_readers_exposed": false,
+  "duplicate_notice": "L04 reported after launch its own BB blocks0,2,3 readings previously frozen. Preserve both independent readings; deduplicate source core coverage. Root readers were not sent lane findings.",
+  "L04_reported_corrections": "Taanit fixes reported at463a44280cdb694e9606f11c4487280b0308f9013d9f0810c4509ac0f635dded; not yet independently rechecked here."
+}

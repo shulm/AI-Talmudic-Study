@@ -1,0 +1,2509 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Bava Metzia",
+  "source_sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "owner": "/root/lead_l02_l04",
+  "epoch": 1,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/lead_l02_l04",
+    "model_id": null
+  },
+  "records": [
+    {
+      "id": "bm.opening.questions.1",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "formulation": "How are a garment and the oath allocated when both possessors claim ownership?",
+        "question_origin": "editorial_reconstruction",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "editorial_inference",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.utterances.2",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 52,
+          "end_char": 70,
+          "quote": "זה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "textual_voice": "first litigant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.3",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 52,
+          "end_char": 70,
+          "quote": "זה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "proposition": "I found the garment.",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "scope": "Bava Metzia 2a:1",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.2"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.4",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 52,
+          "end_char": 70,
+          "quote": "זה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "surface": "first litigant",
+        "role": "speaker",
+        "candidates": [
+          "first litigant"
+        ],
+        "scope": "bm.opening.claims.3",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.3"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.5",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 52,
+          "end_char": 70,
+          "quote": "זה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "first litigant"
+        ],
+        "claim_id": "bm.opening.claims.3",
+        "question_id": "bm.opening.questions.1",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.3",
+        "bm.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.6",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 71,
+          "end_char": 90,
+          "quote": "וזה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "textual_voice": "second litigant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.7",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 71,
+          "end_char": 90,
+          "quote": "וזה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "proposition": "I found the garment.",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "scope": "Bava Metzia 2a:1",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.6"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.8",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 71,
+          "end_char": 90,
+          "quote": "וזה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "surface": "second litigant",
+        "role": "speaker",
+        "candidates": [
+          "second litigant"
+        ],
+        "scope": "bm.opening.claims.7",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.7"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.9",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 71,
+          "end_char": 90,
+          "quote": "וזה אומר אני מצאתיה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "second litigant"
+        ],
+        "claim_id": "bm.opening.claims.7",
+        "question_id": "bm.opening.questions.1",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.7",
+        "bm.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.10",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 91,
+          "end_char": 107,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "textual_voice": "first litigant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.11",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 91,
+          "end_char": 107,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "proposition": "The entire garment is mine.",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "scope": "Bava Metzia 2a:1",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.10"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.12",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 91,
+          "end_char": 107,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "surface": "first litigant",
+        "role": "speaker",
+        "candidates": [
+          "first litigant"
+        ],
+        "scope": "bm.opening.claims.11",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.11"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.13",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 91,
+          "end_char": 107,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "first litigant"
+        ],
+        "claim_id": "bm.opening.claims.11",
+        "question_id": "bm.opening.questions.1",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.11",
+        "bm.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.14",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 108,
+          "end_char": 125,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "textual_voice": "second litigant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.15",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 108,
+          "end_char": 125,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "proposition": "The entire garment is mine.",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "scope": "Bava Metzia 2a:1",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.14"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.16",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 108,
+          "end_char": 125,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "surface": "second litigant",
+        "role": "speaker",
+        "candidates": [
+          "second litigant"
+        ],
+        "scope": "bm.opening.claims.15",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.15"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.17",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 108,
+          "end_char": 125,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "second litigant"
+        ],
+        "claim_id": "bm.opening.claims.15",
+        "question_id": "bm.opening.questions.1",
+        "conditions": [
+          "two hold one garment"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.15",
+        "bm.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.18",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 126,
+          "end_char": 155,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.19",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 126,
+          "end_char": 155,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "proposition": "First claimant swears ownership of no less than half.",
+        "conditions": [
+          "both claim the whole while holding"
+        ],
+        "scope": "Bava Metzia 2a:1",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.18"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.20",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 126,
+          "end_char": 155,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.19",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.19"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.21",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 126,
+          "end_char": 155,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.19",
+        "question_id": "bm.opening.questions.1",
+        "conditions": [
+          "both claim the whole while holding"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.19",
+        "bm.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.22",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 156,
+          "end_char": 186,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.23",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 156,
+          "end_char": 186,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "proposition": "Second claimant swears ownership of no less than half.",
+        "conditions": [
+          "both claim the whole while holding"
+        ],
+        "scope": "Bava Metzia 2a:1",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.22"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.24",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 156,
+          "end_char": 186,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.23",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.23"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.25",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 156,
+          "end_char": 186,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.23",
+        "question_id": "bm.opening.questions.1",
+        "conditions": [
+          "both claim the whole while holding"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.23",
+        "bm.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.26",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 187,
+          "end_char": 194,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.27",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 187,
+          "end_char": 194,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "proposition": "They divide equally.",
+        "conditions": [
+          "both claim the whole while holding",
+          "each takes specified oath"
+        ],
+        "scope": "Bava Metzia 2a:1",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.26"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.28",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 187,
+          "end_char": 194,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.27",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.27"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.29",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 187,
+          "end_char": 194,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.27",
+        "question_id": "bm.opening.questions.1",
+        "conditions": [
+          "both claim the whole while holding",
+          "each takes specified oath"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.27",
+        "bm.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.30",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.19",
+        "target_id": "bm.opening.claims.27",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.19",
+        "bm.opening.claims.27"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.31",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.23",
+        "target_id": "bm.opening.claims.27",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.23",
+        "bm.opening.claims.27"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.32",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 0,
+          "end_char": 16,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "textual_voice": "whole claimant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.33",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 0,
+          "end_char": 16,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "proposition": "The entire garment is mine.",
+        "conditions": [
+          "two hold garment; asymmetric claims"
+        ],
+        "scope": "Bava Metzia 2a:2",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.32"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.34",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 0,
+          "end_char": 16,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "surface": "whole claimant",
+        "role": "speaker",
+        "candidates": [
+          "whole claimant"
+        ],
+        "scope": "bm.opening.claims.33",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.33"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.35",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 0,
+          "end_char": 16,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "whole claimant"
+        ],
+        "claim_id": "bm.opening.claims.33",
+        "question_id": null,
+        "conditions": [
+          "two hold garment; asymmetric claims"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.33"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.36",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 17,
+          "end_char": 34,
+          "quote": "וזה אומר חציה שלי"
+        }
+      ],
+      "content": {
+        "textual_voice": "half claimant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.37",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 17,
+          "end_char": 34,
+          "quote": "וזה אומר חציה שלי"
+        }
+      ],
+      "content": {
+        "proposition": "Half the garment is mine.",
+        "conditions": [
+          "two hold garment; asymmetric claims"
+        ],
+        "scope": "Bava Metzia 2a:2",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.36"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.38",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 17,
+          "end_char": 34,
+          "quote": "וזה אומר חציה שלי"
+        }
+      ],
+      "content": {
+        "surface": "half claimant",
+        "role": "speaker",
+        "candidates": [
+          "half claimant"
+        ],
+        "scope": "bm.opening.claims.37",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.37"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.39",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 17,
+          "end_char": 34,
+          "quote": "וזה אומר חציה שלי"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "half claimant"
+        ],
+        "claim_id": "bm.opening.claims.37",
+        "question_id": null,
+        "conditions": [
+          "two hold garment; asymmetric claims"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.37"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.40",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 35,
+          "end_char": 82,
+          "quote": "האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.41",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 35,
+          "end_char": 82,
+          "quote": "האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים"
+        }
+      ],
+      "content": {
+        "proposition": "Whole claimant swears no less than three quarters.",
+        "conditions": [
+          "opponent claims half"
+        ],
+        "scope": "Bava Metzia 2a:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.40"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.42",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 35,
+          "end_char": 82,
+          "quote": "האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.41",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.41"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.43",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 35,
+          "end_char": 82,
+          "quote": "האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.41",
+        "question_id": null,
+        "conditions": [
+          "opponent claims half"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.41"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.44",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 83,
+          "end_char": 125,
+          "quote": "והאומר חציה שלי ישבע שאין לו בה פחות מרביע"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.45",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 83,
+          "end_char": 125,
+          "quote": "והאומר חציה שלי ישבע שאין לו בה פחות מרביע"
+        }
+      ],
+      "content": {
+        "proposition": "Half claimant swears no less than one quarter.",
+        "conditions": [
+          "opponent claims whole"
+        ],
+        "scope": "Bava Metzia 2a:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.44"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.46",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 83,
+          "end_char": 125,
+          "quote": "והאומר חציה שלי ישבע שאין לו בה פחות מרביע"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.45",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.45"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.47",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 83,
+          "end_char": 125,
+          "quote": "והאומר חציה שלי ישבע שאין לו בה פחות מרביע"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.45",
+        "question_id": null,
+        "conditions": [
+          "opponent claims whole"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.45"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.48",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 126,
+          "end_char": 144,
+          "quote": "זה נוטל שלשה חלקים"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.49",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 126,
+          "end_char": 144,
+          "quote": "זה נוטל שלשה חלקים"
+        }
+      ],
+      "content": {
+        "proposition": "Whole claimant receives three quarters.",
+        "conditions": [
+          "specified oath",
+          "opponent claims half"
+        ],
+        "scope": "Bava Metzia 2a:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.48"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.50",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 126,
+          "end_char": 144,
+          "quote": "זה נוטל שלשה חלקים"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.49",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.49"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.51",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 126,
+          "end_char": 144,
+          "quote": "זה נוטל שלשה חלקים"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.49",
+        "question_id": null,
+        "conditions": [
+          "specified oath",
+          "opponent claims half"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.49"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.52",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "זה אומר כולה שלי וזה אומר חציה שלי האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים והאומר חציה שלי ישבע שאין לו בה פחות מרביע זה נוטל שלשה חלקים וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.41",
+        "target_id": "bm.opening.claims.49",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.41",
+        "bm.opening.claims.49"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.53",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 145,
+          "end_char": 158,
+          "quote": "וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.54",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 145,
+          "end_char": 158,
+          "quote": "וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "proposition": "Half claimant receives one quarter.",
+        "conditions": [
+          "specified oath",
+          "opponent claims whole"
+        ],
+        "scope": "Bava Metzia 2a:2",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.53"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.55",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 145,
+          "end_char": 158,
+          "quote": "וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.54",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.54"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.56",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 145,
+          "end_char": 158,
+          "quote": "וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.54",
+        "question_id": null,
+        "conditions": [
+          "specified oath",
+          "opponent claims whole"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.54"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.57",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "זה אומר כולה שלי וזה אומר חציה שלי האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים והאומר חציה שלי ישבע שאין לו בה פחות מרביע זה נוטל שלשה חלקים וזה נוטל רביע"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.45",
+        "target_id": "bm.opening.claims.54",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.45",
+        "bm.opening.claims.54"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.58",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 56,
+          "end_char": 72,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "textual_voice": "first animal claimant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.59",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 56,
+          "end_char": 72,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "proposition": "The entire animal is mine.",
+        "conditions": [
+          "both ride or one rides and other leads"
+        ],
+        "scope": "Bava Metzia 2a:3",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.58"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.60",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 56,
+          "end_char": 72,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "surface": "first animal claimant",
+        "role": "speaker",
+        "candidates": [
+          "first animal claimant"
+        ],
+        "scope": "bm.opening.claims.59",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.59"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.61",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 56,
+          "end_char": 72,
+          "quote": "זה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "first animal claimant"
+        ],
+        "claim_id": "bm.opening.claims.59",
+        "question_id": null,
+        "conditions": [
+          "both ride or one rides and other leads"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.59"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.62",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 73,
+          "end_char": 90,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "textual_voice": "second animal claimant",
+        "discourse_role": "litigant assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.63",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 73,
+          "end_char": 90,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "proposition": "The entire animal is mine.",
+        "conditions": [
+          "both ride or one rides and other leads"
+        ],
+        "scope": "Bava Metzia 2a:3",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.62"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.64",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 73,
+          "end_char": 90,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "surface": "second animal claimant",
+        "role": "speaker",
+        "candidates": [
+          "second animal claimant"
+        ],
+        "scope": "bm.opening.claims.63",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.63"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.65",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 73,
+          "end_char": 90,
+          "quote": "וזה אומר כולה שלי"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "second animal claimant"
+        ],
+        "claim_id": "bm.opening.claims.63",
+        "question_id": null,
+        "conditions": [
+          "both ride or one rides and other leads"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.63"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.66",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 91,
+          "end_char": 120,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.67",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 91,
+          "end_char": 120,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "proposition": "First animal claimant swears no less than half.",
+        "conditions": [
+          "both ride or one rides and other leads",
+          "both claim whole"
+        ],
+        "scope": "Bava Metzia 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.66"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.68",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 91,
+          "end_char": 120,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.67",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.67"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.69",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 91,
+          "end_char": 120,
+          "quote": "זה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.67",
+        "question_id": null,
+        "conditions": [
+          "both ride or one rides and other leads",
+          "both claim whole"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.67"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.70",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 121,
+          "end_char": 151,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.71",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 121,
+          "end_char": 151,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "proposition": "Second animal claimant swears no less than half.",
+        "conditions": [
+          "both ride or one rides and other leads",
+          "both claim whole"
+        ],
+        "scope": "Bava Metzia 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.70"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.72",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 121,
+          "end_char": 151,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.71",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.71"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.73",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 121,
+          "end_char": 151,
+          "quote": "וזה ישבע שאין לו בה פחות מחציה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.71",
+        "question_id": null,
+        "conditions": [
+          "both ride or one rides and other leads",
+          "both claim whole"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.71"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.74",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 152,
+          "end_char": 159,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.75",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 152,
+          "end_char": 159,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "proposition": "They divide the animal equally.",
+        "conditions": [
+          "both ride or one rides and other leads",
+          "both claim whole",
+          "each takes specified oath"
+        ],
+        "scope": "Bava Metzia 2a:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.utterances.74"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.76",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 152,
+          "end_char": 159,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.75",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.75"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.77",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 152,
+          "end_char": 159,
+          "quote": "ויחלוקו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.75",
+        "question_id": null,
+        "conditions": [
+          "both ride or one rides and other leads",
+          "both claim whole",
+          "each takes specified oath"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.75"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.78",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "היו שנים רוכבין על גבי בהמה או שהיה אחד רוכב ואחד מנהיג זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.67",
+        "target_id": "bm.opening.claims.75",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.67",
+        "bm.opening.claims.75"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.79",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "היו שנים רוכבין על גבי בהמה או שהיה אחד רוכב ואחד מנהיג זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.71",
+        "target_id": "bm.opening.claims.75",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.71",
+        "bm.opening.claims.75"
+      ]
+    },
+    {
+      "id": "bm.opening.utterances.80",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_cc1465c5805de91583a4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Mishnah",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Precise content of admission/witness evidence not elaborated in this Mishnah sentence."
+      ],
+      "links": []
+    },
+    {
+      "id": "bm.opening.claims.81",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_cc1465c5805de91583a4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "proposition": "They divide without oath.",
+        "conditions": [
+          "mutual admission OR witnesses"
+        ],
+        "scope": "Bava Metzia 2a:4",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Precise content of admission/witness evidence not elaborated in this Mishnah sentence."
+      ],
+      "links": [
+        "bm.opening.utterances.80"
+      ]
+    },
+    {
+      "id": "bm.opening.attributions.82",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_cc1465c5805de91583a4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Mishnah",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.opening.claims.81",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Precise content of admission/witness evidence not elaborated in this Mishnah sentence."
+      ],
+      "links": [
+        "bm.opening.claims.81"
+      ]
+    },
+    {
+      "id": "bm.opening.positions.83",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_cc1465c5805de91583a4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.opening.claims.81",
+        "question_id": null,
+        "conditions": [
+          "mutual admission OR witnesses"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Precise content of admission/witness evidence not elaborated in this Mishnah sentence."
+      ],
+      "links": [
+        "bm.opening.claims.81"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.84",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_cc1465c5805de91583a4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.81",
+        "target_id": "bm.opening.claims.67",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.81",
+        "bm.opening.claims.67"
+      ]
+    },
+    {
+      "id": "bm.opening.edges.85",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_cc1465c5805de91583a4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "source_id": "bm.opening.claims.81",
+        "target_id": "bm.opening.claims.71",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.opening.claims.81",
+        "bm.opening.claims.71"
+      ]
+    },
+    {
+      "id": "bm.opening.structure.86",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "seg_75059f9f5b0213fc5dc6",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "מתני׳ <big><strong>שנים</strong></big> אוחזין בטלית זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        },
+        {
+          "segment_id": "seg_229f17a415244bea20e2",
+          "start_char": 0,
+          "end_char": 158,
+          "quote": "זה אומר כולה שלי וזה אומר חציה שלי האומר כולה שלי ישבע שאין לו בה פחות משלשה חלקים והאומר חציה שלי ישבע שאין לו בה פחות מרביע זה נוטל שלשה חלקים וזה נוטל רביע"
+        },
+        {
+          "segment_id": "seg_12ac31b607e754c18900",
+          "start_char": 0,
+          "end_char": 159,
+          "quote": "היו שנים רוכבין על גבי בהמה או שהיה אחד רוכב ואחד מנהיג זה אומר כולה שלי וזה אומר כולה שלי זה ישבע שאין לו בה פחות מחציה וזה ישבע שאין לו בה פחות מחציה ויחלוקו"
+        },
+        {
+          "segment_id": "seg_cc1465c5805de91583a4",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "בזמן שהם מודים או שיש להן עדים חולקין בלא שבועה:"
+        }
+      ],
+      "content": {
+        "title": "Opening Mishnah: possession, asymmetric claims, animal and oath exceptions; Gemara continues",
+        "primary": true,
+        "boundary": "open_right",
+        "legacy_ids": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    }
+  ],
+  "coverage": [
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.structure.86"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.utterances.2",
+        "bm.opening.utterances.6",
+        "bm.opening.utterances.10",
+        "bm.opening.utterances.14",
+        "bm.opening.utterances.18",
+        "bm.opening.utterances.22",
+        "bm.opening.utterances.26"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.claims.3",
+        "bm.opening.claims.7",
+        "bm.opening.claims.11",
+        "bm.opening.claims.15",
+        "bm.opening.claims.19",
+        "bm.opening.claims.23",
+        "bm.opening.claims.27"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.attributions.4",
+        "bm.opening.attributions.8",
+        "bm.opening.attributions.12",
+        "bm.opening.attributions.16",
+        "bm.opening.attributions.20",
+        "bm.opening.attributions.24",
+        "bm.opening.attributions.28"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.questions.1"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.positions.5",
+        "bm.opening.positions.9",
+        "bm.opening.positions.13",
+        "bm.opening.positions.17",
+        "bm.opening.positions.21",
+        "bm.opening.positions.25",
+        "bm.opening.positions.29"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.edges.30",
+        "bm.opening.edges.31"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_75059f9f5b0213fc5dc6",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread: preserved both finding assertions and whole-title assertions separately; each oath and equal division distinct. Gemara2a5–2b3 read: finding/purchase alternatives prevent collapsing litigant statements into one established event."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.structure.86"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.utterances.32",
+        "bm.opening.utterances.36",
+        "bm.opening.utterances.40",
+        "bm.opening.utterances.44",
+        "bm.opening.utterances.48",
+        "bm.opening.utterances.53"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.claims.33",
+        "bm.opening.claims.37",
+        "bm.opening.claims.41",
+        "bm.opening.claims.45",
+        "bm.opening.claims.49",
+        "bm.opening.claims.54"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.attributions.34",
+        "bm.opening.attributions.38",
+        "bm.opening.attributions.42",
+        "bm.opening.attributions.46",
+        "bm.opening.attributions.50",
+        "bm.opening.attributions.55"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.positions.35",
+        "bm.opening.positions.39",
+        "bm.opening.positions.43",
+        "bm.opening.positions.47",
+        "bm.opening.positions.51",
+        "bm.opening.positions.56"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.edges.52",
+        "bm.opening.edges.57"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_229f17a415244bea20e2",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread asymmetric case: whole and half assertions, both oath fractions and both award fractions retained; no binary scholar dispute invented."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.structure.86"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.utterances.58",
+        "bm.opening.utterances.62",
+        "bm.opening.utterances.66",
+        "bm.opening.utterances.70",
+        "bm.opening.utterances.74"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.claims.59",
+        "bm.opening.claims.63",
+        "bm.opening.claims.67",
+        "bm.opening.claims.71",
+        "bm.opening.claims.75"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.attributions.60",
+        "bm.opening.attributions.64",
+        "bm.opening.attributions.68",
+        "bm.opening.attributions.72",
+        "bm.opening.attributions.76"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.positions.61",
+        "bm.opening.positions.65",
+        "bm.opening.positions.69",
+        "bm.opening.positions.73",
+        "bm.opening.positions.77"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.edges.78",
+        "bm.opening.edges.79"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_12ac31b607e754c18900",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread animal case: two riders OR rider/leader conditions retained on each legal rule; both litigant voices, oaths and equal award retained."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.structure.86"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.utterances.80"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.claims.81"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.attributions.82"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.positions.83"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.opening.edges.84",
+        "bm.opening.edges.85"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_cc1465c5805de91583a4",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread exception: admission OR witnesses preserved; exemption qualifies oath rules; no invented named holder. Full later Gemara not certified; open tail retained."
+    }
+  ],
+  "open_tails": [
+    "bm.opening.structure.86"
+  ]
+}

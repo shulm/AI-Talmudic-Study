@@ -1,0 +1,3130 @@
+{
+  "artifact_kind": "exact_version_nonblind_comparison",
+  "agent_id": "/root/bb_compare037",
+  "provenance": {
+    "role": "NONBLIND comparator, not fresh source-only reading",
+    "launch": "fresh fork:none per parent dispatch",
+    "distinct_from_producer_and_reader": true,
+    "reader_agent": "/root/bb_source_review037",
+    "model_id": null,
+    "sequence_disclosure": "Inspected frozen source-only reader and exact producer excerpts during setup before completion of independent replay; no verdict or output issued before PASS. NONBLIND throughout."
+  },
+  "bindings": {
+    "job": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\jobs\\bavli_bava_batra_delegated037.json",
+      "sha256": "107078be4e24ffe632ce74e2b62084e784ddf0269add939bcfc5795f847d65cb"
+    },
+    "initial_reading": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated037\\bava_batra_delegated037.json",
+      "sha256": "b8f404704770c73b6bdd7cd3126b3b59ef8292bd18e8a8dbf9c34b82c598508f"
+    },
+    "effective_reading": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated037\\bava_batra_delegated037.r2.json",
+      "sha256": "32d1af8ed4df70800334179165e3d1d8901bdeb79cb6b844f28e290f1da083ba"
+    },
+    "reader_validation": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated037\\validation_delegated037.r2.json",
+      "sha256": "929711431446e8386fdefd5373bb3e6c4f60af63a7160a00cbc61d892ac3d238"
+    },
+    "reader_bound_documents": [
+      {
+        "path": "F:/Sefaria-Export-master/json/Talmud/Bavli/Seder Nezikin/Bava Batra/Hebrew/Wikisource Talmud Bavli.json",
+        "sha256": "efa311405538b4993cd84dc91aad0bb3ff792aac3a3b62df117948d8a3ee9dd3"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/PROTOCOL.md",
+        "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/schema.json",
+        "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/source_only_common/INDEPENDENT_REVIEW_PROMPT.md",
+        "sha256": "f193ded3d00c0a7bdaf6b1e554dd3c8a5492319d93b2c6e438c33d2b5d8b3ab2"
+      },
+      {
+        "path": "C:/Users/David/Documents/ChatGPT/AI Talmudic Study/research/bavli_dataset_runs/run_20261125_01/review_lead_20261126/frozen_plans/bavli_bava_batra.json",
+        "sha256": "239ec9731a68e3eed50e54eddb490bfdeaa4bff853b1ca6030bea5780a1ed98b"
+      },
+      {
+        "path": "F:/Sefaria-Export-master/schemas/Bava_Batra.json",
+        "sha256": "83a4a3dab261bad3302a89620da14e49d69a10b09b64d3c45d147d6854b837b2"
+      }
+    ],
+    "contract": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\RUN_CONTRACT.json",
+      "sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174"
+    },
+    "production_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "schema": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\schema.json",
+      "sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa"
+    },
+    "protocol": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\PROTOCOL.md",
+      "sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\snapshots\\6c1f1a43e1e07f0772cd625422949e0673e777a153dde1e6bfc081211cc96833.json",
+      "sha256": "6c1f1a43e1e07f0772cd625422949e0673e777a153dde1e6bfc081211cc96833"
+    },
+    "reservation": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\BB037_COMPARATOR_RESERVATION_045.json",
+      "sha256": "8500344830736d5aefc3ad9def0b51e8f26497abb0097d84c1231f2cfbe34d90"
+    },
+    "requirements": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\L04_COMPARISON_RESERVATION_027.json",
+      "sha256": "9ce101f41098d1a8393474242849f477ea4e15e6e1f0e3355fb239f025851903"
+    },
+    "audit_helper": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated037\\comparisons\\audit_bb037.py",
+      "sha256": "341928c931c4034051648bf873f6f6952aaf3cd6b36e1808bb8aad08be92f192"
+    },
+    "proposals": [
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\4948b7fdaf78509161ff4acfbc1d40de3d5c5d9d55088df6f702e618682a372a.json",
+        "sha256": "4948b7fdaf78509161ff4acfbc1d40de3d5c5d9d55088df6f702e618682a372a"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\d4006140ea813d87736a232437720711579b21b3c95058d684ae00ca31f3eee0.json",
+        "sha256": "d4006140ea813d87736a232437720711579b21b3c95058d684ae00ca31f3eee0"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\b59dfce49ae548b9949017bea37505d8db6d01087050e3e7ff65053c55ab82df.json",
+        "sha256": "b59dfce49ae548b9949017bea37505d8db6d01087050e3e7ff65053c55ab82df"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\3e417d8ff62d6d3060260b855385af5897718ccc0f10f7a2a9ef8d9996217502.json",
+        "sha256": "3e417d8ff62d6d3060260b855385af5897718ccc0f10f7a2a9ef8d9996217502"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\4cf403d9c7ba1818c2c1c2e3df9e5a553ff23aab80ecf95cec8e6c0020d46805.json",
+        "sha256": "4cf403d9c7ba1818c2c1c2e3df9e5a553ff23aab80ecf95cec8e6c0020d46805"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\0f1a8433eb92bb0e45337443a0c26b3d38aec6c05a0340a3fd01bb31a53e5bf1.json",
+        "sha256": "0f1a8433eb92bb0e45337443a0c26b3d38aec6c05a0340a3fd01bb31a53e5bf1"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\3dd9d1ab496390b1cf0520cc399d19224052f0ba13b58d4fb94e9d24e7e4e604.json",
+        "sha256": "3dd9d1ab496390b1cf0520cc399d19224052f0ba13b58d4fb94e9d24e7e4e604"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\44c54858f00f2df56acd9b4ab9a036b6154ef7ce7f617e216bc684196d0342b8.json",
+        "sha256": "44c54858f00f2df56acd9b4ab9a036b6154ef7ce7f617e216bc684196d0342b8"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\2f49669e0c276f6306ea2cb0d7dca293fda3be42d4c910ad5cdfa10f9cf578ef.json",
+        "sha256": "2f49669e0c276f6306ea2cb0d7dca293fda3be42d4c910ad5cdfa10f9cf578ef"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\e155796e5555308fbe0f0a25751bb1b8965fc70f45324eb597e91b7e6df24cb5.json",
+        "sha256": "e155796e5555308fbe0f0a25751bb1b8965fc70f45324eb597e91b7e6df24cb5"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\0290547bdbc673d8c75b202eddd9d7d6ba92cfc24cfe9c8b5210a5dd702fcc82.json",
+        "sha256": "0290547bdbc673d8c75b202eddd9d7d6ba92cfc24cfe9c8b5210a5dd702fcc82"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\60e32140450ad28a079c08da012e94717d5e7e696230eb4074fdfa845407f7ff.json",
+        "sha256": "60e32140450ad28a079c08da012e94717d5e7e696230eb4074fdfa845407f7ff"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\6f2dd659d620b6e0fc8bb781cb234080734d613873159e59ac58f3d2d83552d3.json",
+        "sha256": "6f2dd659d620b6e0fc8bb781cb234080734d613873159e59ac58f3d2d83552d3"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\faeb2ca59221a264ba7240481b3467c56ba0b5e8306333c1b371ec15996cc500.json",
+        "sha256": "faeb2ca59221a264ba7240481b3467c56ba0b5e8306333c1b371ec15996cc500"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\fbfd05e7c2164eca4ee606a2bb2e1b17869bca54d3cba2b50f2256fa0157dcfb.json",
+        "sha256": "fbfd05e7c2164eca4ee606a2bb2e1b17869bca54d3cba2b50f2256fa0157dcfb"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\3c954fa4fc7b88e8b6a73d541e3d5e2179531072add831b2ef57da1626840fa5.json",
+        "sha256": "3c954fa4fc7b88e8b6a73d541e3d5e2179531072add831b2ef57da1626840fa5"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\627c351e040efe9a2ebe1a92f2f306553f0b6cdb46462226966c955804846508.json",
+        "sha256": "627c351e040efe9a2ebe1a92f2f306553f0b6cdb46462226966c955804846508"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\3875f836a9ffb9da0f04003a08314dda29414a572ca813096f02262559452a5d.json",
+        "sha256": "3875f836a9ffb9da0f04003a08314dda29414a572ca813096f02262559452a5d"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\1c6b438ac511d461ea10e16cdcb28c4e2608f6f908e57a371927e17b9ab77e6a.json",
+        "sha256": "1c6b438ac511d461ea10e16cdcb28c4e2608f6f908e57a371927e17b9ab77e6a"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\16f1a9641553e3e37bce89149abdbd3cbbd479ff6fa1249f99ebc12addae44c4.json",
+        "sha256": "16f1a9641553e3e37bce89149abdbd3cbbd479ff6fa1249f99ebc12addae44c4"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\7ca80d260f16552c5a79e8e2b85dd4e42789c099b1c4b1b49146a10eb677ac89.json",
+        "sha256": "7ca80d260f16552c5a79e8e2b85dd4e42789c099b1c4b1b49146a10eb677ac89"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\a1622d3a4e6442bb9c78146926ed40bad759935823c0d793e59ca8e5849358a6.json",
+        "sha256": "a1622d3a4e6442bb9c78146926ed40bad759935823c0d793e59ca8e5849358a6"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\a3ad55334736b77de84f88377d9ad7d2cfefdd8fe5dcb7cd23498f2b1730cc6a.json",
+        "sha256": "a3ad55334736b77de84f88377d9ad7d2cfefdd8fe5dcb7cd23498f2b1730cc6a"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\46c059de711798f9d7140b59de395abf280408af1a4a002bdf565bb28b6e2e45.json",
+        "sha256": "46c059de711798f9d7140b59de395abf280408af1a4a002bdf565bb28b6e2e45"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\a2f44e08399e97643a45dc43bf302a3838433a3dc5766ede3b93f02d1fa404d0.json",
+        "sha256": "a2f44e08399e97643a45dc43bf302a3838433a3dc5766ede3b93f02d1fa404d0"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\bce9b3b53c5a3c04fd309ef745a8d359fb928ccc5133a6a615df89994506254d.json",
+        "sha256": "bce9b3b53c5a3c04fd309ef745a8d359fb928ccc5133a6a615df89994506254d"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\d0142f8b7974b7130c58c68c470e88e3e29bebc66ea8c23970b8120407f5a759.json",
+        "sha256": "d0142f8b7974b7130c58c68c470e88e3e29bebc66ea8c23970b8120407f5a759"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\5b61a6f3df62cc0dc8d55cb0509ad346604de637dd9031512c982b1cb3b3ca7d.json",
+        "sha256": "5b61a6f3df62cc0dc8d55cb0509ad346604de637dd9031512c982b1cb3b3ca7d"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\e3351d00c6aa35d4393ba730288df58ee02432fe988e4f4198e57cb3a4da1d5e.json",
+        "sha256": "e3351d00c6aa35d4393ba730288df58ee02432fe988e4f4198e57cb3a4da1d5e"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\7c59b18efc3cfd02ebc8b0b5b2697946bb4327b436639da03dc8f60377a5ae2c.json",
+        "sha256": "7c59b18efc3cfd02ebc8b0b5b2697946bb4327b436639da03dc8f60377a5ae2c"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\2a0233df9e2aaae5eb142d0ccb9612c6461f2958e51490ee290d419e77369af6.json",
+        "sha256": "2a0233df9e2aaae5eb142d0ccb9612c6461f2958e51490ee290d419e77369af6"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\1a4d2791009f174adec1c620ac678ea7ce7076d667cabe547fb998ee9351b74f.json",
+        "sha256": "1a4d2791009f174adec1c620ac678ea7ce7076d667cabe547fb998ee9351b74f"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\8e1a1b8e621f0ee44a2e37454fd43ade700b9b20bc72297a97ed05e79f92ff88.json",
+        "sha256": "8e1a1b8e621f0ee44a2e37454fd43ade700b9b20bc72297a97ed05e79f92ff88"
+      },
+      {
+        "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\d588df4bc0b7ca563fad17bf026be2015bb6fdd949b5cea86db469ee7fec5d9d.json",
+        "sha256": "d588df4bc0b7ca563fad17bf026be2015bb6fdd949b5cea86db469ee7fec5d9d"
+      }
+    ]
+  },
+  "validation": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated037\\comparisons\\validation_replay_bb037.json",
+    "sha256": "182321f8b13eae0dc3a15059c3026d5b2415b587eb2054fec5577ef6cddf3c36"
+  },
+  "author_helper": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated037\\comparisons\\author_comparison_bb037.py",
+    "sha256": "afd42ebd43616769d576a667c0732506a18a2c9c86450d6507441a3a2312cd1f"
+  },
+  "compared_core_refs": [
+    "Bava Batra 11b:6",
+    "Bava Batra 11b:7",
+    "Bava Batra 11b:8",
+    "Bava Batra 11b:9",
+    "Bava Batra 11b:10",
+    "Bava Batra 11b:11",
+    "Bava Batra 11b:12",
+    "Bava Batra 12a:1",
+    "Bava Batra 12a:2",
+    "Bava Batra 12a:3"
+  ],
+  "cohort": "original_probability_sample",
+  "selected_blocks": [
+    {
+      "block_id": "block_000028",
+      "roles": [
+        "probability_sample"
+      ],
+      "core_refs": [
+        "Bava Batra 11b:6",
+        "Bava Batra 11b:7",
+        "Bava Batra 11b:8",
+        "Bava Batra 11b:9",
+        "Bava Batra 11b:10",
+        "Bava Batra 11b:11",
+        "Bava Batra 11b:12",
+        "Bava Batra 12a:1",
+        "Bava Batra 12a:2",
+        "Bava Batra 12a:3"
+      ]
+    }
+  ],
+  "sampled_core_count": 10,
+  "context_refs_read": [
+    "Bava Batra 11b:5",
+    "Bava Batra 12a:4",
+    "Bava Batra 12a:5"
+  ],
+  "context_not_extra_cores": true,
+  "prior_comparison_overlap": {
+    "search_roots": [
+      "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons",
+      "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04"
+    ],
+    "files_inspected": 75,
+    "matched_artifacts": [],
+    "overlap_core_refs": []
+  },
+  "new_reading_credit": 0,
+  "comparison_credit_pending_root_intake": 10,
+  "layer_matrix": [
+    {
+      "layer": "structure",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "Producer four multi-segment primary bundles versus ten per-core reader units; exact full character partitions pass. Boundary granularity reasonable; 11b:12–12a:2 continuation retained."
+    },
+    {
+      "layer": "utterances",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "Named speech, supporting baraita and reconstruction distinguished. Repeated אמר מר occurrence missing (P001). Tomb is explicitly composite, not certified atomic."
+    },
+    {
+      "layer": "claims",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "All 32 independently found core claim occurrences mapped; one repeated occurrence omission. Ten-plus reader units legitimately share coarse producer claims; tomb summary restricted."
+    },
+    {
+      "layer": "attributions",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "Rabbi Ami/Rav Huna inherited dialogue verified at11b:5. Rabbi versus R. Shimon reconstruction verified. Rava is not Rabbah. Abaye introduces anonymous baraita. Yohanan holder and Rabbah bar bar Hana transmitter retained; anonymous explanation boundary unresolved."
+    },
+    {
+      "layer": "questions",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "Two explicit questions plus one editorial objection question; all three functions represented. No exhaustive or comparable scholar-choice inventory certified."
+    },
+    {
+      "layer": "positions",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "Generic asserted labels read with scope and argument relations. תנאי היא resolves local objection without retracting Rav Huna; reopening rule qualified by retained posts. No practical halakhic finality."
+    },
+    {
+      "layer": "edges",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "21 independent core-evidence edge candidates assessed individually with typed endpoints; missing repeated quotation and four-cubit distinction recorded. Reader correction endpoint error retained; optional editorial analogy/support not forced."
+    },
+    {
+      "layer": "reconciliation",
+      "producer_completed_core_segments": 10,
+      "compared_core_segments": 10,
+      "assessment": "Independent source omission check covers both lodging/manure allocations, all five-courtyard branches, original and reconstructed repeated formulations, reopening/post conditions, both tomb/house variants, alternative-route strength and Rav rationale in context."
+    }
+  ],
+  "independent_denominators": {
+    "core_claim_occurrences": 32,
+    "context_claim_occurrences": 2,
+    "attributable_core_claims": 30,
+    "attributable_definition": "Reader holder_candidates nonempty, including anonymous baraita as quoted authority; not equivalent to a named scholar.",
+    "attributable_ids": [
+      "bb037r2.lodging",
+      "bb037r2.manure",
+      "bb037r2.lodgingbar",
+      "bb037r2.obstruction",
+      "bb037r2.distance",
+      "bb037r2.outerall",
+      "bb037r2.outerself",
+      "bb037r2.secondall",
+      "bb037r2.secondself",
+      "bb037r2.secondouter",
+      "bb037r2.innerself",
+      "bb037r2.innerall",
+      "bb037r2.reroute",
+      "bb037r2.reopen",
+      "bb037r2.shared",
+      "bb037r2.rabbiouterall",
+      "bb037r2.rabbiouterself",
+      "bb037r2.shared11",
+      "bb037r2.reopenquote",
+      "bb037r2.frameintact",
+      "bb037r2.framebroken",
+      "bb037r2.house4",
+      "bb037r2.house0",
+      "bb037r2.tombclosed",
+      "bb037r2.tombbroken",
+      "bb037r2.impurityhouse",
+      "bb037r2.impuritybroken",
+      "bb037r2.othercity",
+      "bb037r2.noroute",
+      "bb037r2.withroute"
+    ],
+    "named_attributable_core_claims": 15,
+    "named_attributable_ids": [
+      "bb037r2.lodging",
+      "bb037r2.obstruction",
+      "bb037r2.distance",
+      "bb037r2.reroute",
+      "bb037r2.reopen",
+      "bb037r2.shared",
+      "bb037r2.rabbiouterall",
+      "bb037r2.rabbiouterself",
+      "bb037r2.shared11",
+      "bb037r2.reopenquote",
+      "bb037r2.frameintact",
+      "bb037r2.framebroken",
+      "bb037r2.othercity",
+      "bb037r2.noroute",
+      "bb037r2.withroute"
+    ],
+    "condition_bearing_core_claims": 27,
+    "condition_bearing_ids": [
+      "bb037r2.obstruction",
+      "bb037r2.distance",
+      "bb037r2.outerall",
+      "bb037r2.outerself",
+      "bb037r2.secondall",
+      "bb037r2.secondself",
+      "bb037r2.secondouter",
+      "bb037r2.innerself",
+      "bb037r2.innerall",
+      "bb037r2.reroute",
+      "bb037r2.reopen",
+      "bb037r2.shared",
+      "bb037r2.rabbiouterall",
+      "bb037r2.rabbiouterself",
+      "bb037r2.shared11",
+      "bb037r2.reopenquote",
+      "bb037r2.frameintact",
+      "bb037r2.framebroken",
+      "bb037r2.house4",
+      "bb037r2.house0",
+      "bb037r2.tombclosed",
+      "bb037r2.tombbroken",
+      "bb037r2.impurityhouse",
+      "bb037r2.impuritybroken",
+      "bb037r2.othercity",
+      "bb037r2.noroute",
+      "bb037r2.withroute"
+    ],
+    "condition_definition": "Independent reader explicit conditions nonempty; implicit settings separately reviewed, not claimed exhaustive atomic ontology.",
+    "proposed_answer_inventories": 3,
+    "explicit_questions": 2,
+    "editorial_questions": 1,
+    "certified_comparable_exhaustive_scholar_answer_sets": 0,
+    "core_argument_edge_candidates": 21,
+    "context_edge_candidates": 2,
+    "uncertainty": "Denominators are frozen independent reading units; coarse producer counts are not accuracy denominators."
+  },
+  "claim_mapping": [
+    {
+      "reader_id": "bb037r2.lodging",
+      "producer_ids": [
+        "bb.r032.lodge.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:6",
+          "start_char": 46,
+          "end_char": 72,
+          "quote": "אמר ליה לפי בני אדם מתחלקת"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.manure",
+      "producer_ids": [
+        "bb.r032.manure.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:6",
+          "start_char": 86,
+          "end_char": 112,
+          "quote": "זבל שבחצר מתחלקת לפי פתחים"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.lodgingbar",
+      "producer_ids": [
+        "bb.r032.barlodge.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:6",
+          "start_char": 73,
+          "end_char": 131,
+          "quote": "תניא נמי הכי זבל שבחצר מתחלקת לפי פתחים אכסניא לפי בני אדם"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.obstruction",
+      "producer_ids": [
+        "bb.r032.block.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:7",
+          "start_char": 12,
+          "end_char": 67,
+          "quote": "אחד מבני מבוי שבקש לסתום כנגד פתחו בני מבוי מעכבין עליו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.distance",
+      "producer_ids": [
+        "bb.r032.longer.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:7",
+          "start_char": 68,
+          "end_char": 87,
+          "quote": "שמרבה עליהן את הדרך"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.outerall",
+      "producer_ids": [
+        "bb.r032.outer.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:8",
+          "start_char": 30,
+          "end_char": 53,
+          "quote": "כולן משתמשות עם החיצונה"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.outerself",
+      "producer_ids": [
+        "bb.r032.outer.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:8",
+          "start_char": 54,
+          "end_char": 75,
+          "quote": "והחיצונה משתמשת לעצמה"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.secondall",
+      "producer_ids": [
+        "bb.r032.second.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:8",
+          "start_char": 76,
+          "end_char": 98,
+          "quote": "והשאר משתמשות עם השניה"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.secondself",
+      "producer_ids": [
+        "bb.r032.second.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:8",
+          "start_char": 99,
+          "end_char": 118,
+          "quote": "והשניה משתמשת לעצמה"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.secondouter",
+      "producer_ids": [
+        "bb.r032.second.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:8",
+          "start_char": 119,
+          "end_char": 137,
+          "quote": "ומשתמשת עם החיצונה"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.innerself",
+      "producer_ids": [
+        "bb.r032.inner.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:9",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "נמצאת פנימית משתמשת לעצמה"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.innerall",
+      "producer_ids": [
+        "bb.r032.inner.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:9",
+          "start_char": 26,
+          "end_char": 48,
+          "quote": "ומשתמשת עם כל אחת ואחת"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.tannaitic",
+      "producer_ids": [
+        "bb.r032.tannaim.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:10",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "תנאי היא"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.reroute",
+      "producer_ids": [
+        "bb.r032.rebchange.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:10",
+          "start_char": 15,
+          "end_char": 76,
+          "quote": "אחד מבני מבוי שבקש להחזיר פתחו למבוי אחר בני מבוי מעכבין עליו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.reopen",
+      "producer_ids": [
+        "bb.r032.reopen.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:10",
+          "start_char": 77,
+          "end_char": 122,
+          "quote": "היה סתום ובקש לפותחו אין בני מבוי מעכבין עליו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.shared",
+      "producer_ids": [
+        "bb.r032.shared.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:10",
+          "start_char": 132,
+          "end_char": 201,
+          "quote": "ר\"ש בן אלעזר אומר חמש חצרות הפתוחות למבוי כולן משתמשות במבוי זו עם זו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.missingtext",
+      "producer_ids": [
+        "bb.r032.restore.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 21,
+          "end_char": 42,
+          "quote": "חסורי מחסרא והכי קתני"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.rabbiouterall",
+      "producer_ids": [
+        "bb.r032.rebgraded.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 71,
+          "end_char": 94,
+          "quote": "כולן משתמשות עם החיצונה"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.rabbiouterself",
+      "producer_ids": [
+        "bb.r032.rebgraded.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 95,
+          "end_char": 121,
+          "quote": "והחיצונה משתמשת לעצמה וכו'"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.shared11",
+      "producer_ids": [
+        "bb.r032.sharedrepeat.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 131,
+          "end_char": 196,
+          "quote": "ר' שמעון בן אלעזר אומר חמש חצרות הפתוחות למבוי כולן משתמשות במבוי"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.reopenquote",
+      "producer_ids": [],
+      "assessment": "confirmed_occurrence_omission",
+      "note": "The earlier 11b:10 proposition exists as bb.r032.reopen.c; the quoted 11b:12 occurrence has no separate utterance/claim/quotation edge. Whole structure evidence and Rava evidence preserve the words but not their occurrence annotation.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "אמר מר היה סתום ובקש לפותחו אין בני מבוי מעכבין עליו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.frameintact",
+      "producer_ids": [
+        "bb.r032.retained.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 61,
+          "end_char": 89,
+          "quote": "לא שנו אלא שלא פרץ את פצימיו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.framebroken",
+      "producer_ids": [
+        "bb.r032.removed.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 90,
+          "end_char": 128,
+          "quote": "אבל פרץ את פצימיו בני מבוי מעכבין עליו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.house4",
+      "producer_ids": [
+        "bb.r032.closed.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:1",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "בית סתום יש לו ד' אמות"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.house0",
+      "producer_ids": [
+        "bb.r032.nopost.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:1",
+          "start_char": 23,
+          "end_char": 51,
+          "quote": "פרץ את פצימיו אין לו ד' אמות"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.tombclosed",
+      "producer_ids": [
+        "bb.r032.tomb.c"
+      ],
+      "assessment": "coarse_representation_with_restriction",
+      "note": "Both clauses and removed-plus-reclosed condition retained in evidence and expressly non-atomic combined record. Summary does not spell out which branch imparts impurity; cannot serve as a condition-to-outcome answer without refinement.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 1,
+          "end_char": 35,
+          "quote": "קבר שפתחו סתום אינו מטמא כל סביביו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.tombbroken",
+      "producer_ids": [
+        "bb.r032.tomb.c"
+      ],
+      "assessment": "coarse_representation_with_restriction",
+      "note": "Both clauses and removed-plus-reclosed condition retained in evidence and expressly non-atomic combined record. Summary does not spell out which branch imparts impurity; cannot serve as a condition-to-outcome answer without refinement.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 36,
+          "end_char": 70,
+          "quote": "פרץ את פצימיו וסתמו מטמא כל סביביו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.impurityhouse",
+      "producer_ids": [
+        "bb.r032.houseclean.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 72,
+          "end_char": 100,
+          "quote": "בית סתום אינו מטמא כל סביביו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.impuritybroken",
+      "producer_ids": [
+        "bb.r032.houseimpure.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 101,
+          "end_char": 129,
+          "quote": "פרץ את פצימיו מטמא כל סביביו"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.othercity",
+      "producer_ids": [
+        "bb.r032.city.c"
+      ],
+      "assessment": "represented",
+      "note": "Source proposition, local stage and conditions represented; holder and transmission checked separately.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:3",
+          "start_char": 28,
+          "end_char": 102,
+          "quote": "מבואות המפולשות לעיר אחרת ובקשו בני העיר לסותמן בני אותה העיר מעכבין עליהן"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.noroute",
+      "producer_ids": [
+        "bb.r032.alternate.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:3",
+          "start_char": 103,
+          "end_char": 138,
+          "quote": "לא מיבעי כי ליכא דרכא אחרינא דמעכבי"
+        }
+      ]
+    },
+    {
+      "reader_id": "bb037r2.withroute",
+      "producer_ids": [
+        "bb.r032.alternate.c"
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Multiple reader units map to the stated combined producer proposition; no omitted substantive branch.",
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:3",
+          "start_char": 139,
+          "end_char": 178,
+          "quote": "אלא אפילו כי איכא דרכא אחרינא נמי מעכבי"
+        }
+      ]
+    }
+  ],
+  "question_answer_review": [
+    {
+      "reader_id": "bb037r2.lodgingq",
+      "producer_ids": [
+        "bb.r032.lodge_q.q"
+      ],
+      "answer_claims": [
+        "bb037r2.lodging"
+      ],
+      "comparison": "Persons versus entrances is a question alternative, not two named maintained positions. Actual answer persons supported by baraita; partial inventory."
+    },
+    {
+      "reader_id": "bb037r2.objectionq",
+      "producer_ids": [
+        "bb.r032.outer_objection",
+        "bb.r032.tannaim_resolution"
+      ],
+      "answer_claims": [
+        "bb037r2.tannaitic"
+      ],
+      "comparison": "Editorially reconstructed objection question; producer typed objection/resolution represents function without a duplicate question. No competing scholar-answer set certified."
+    },
+    {
+      "reader_id": "bb037r2.courtyardq",
+      "producer_ids": [
+        "bb.r032.missing_q.q"
+      ],
+      "answer_claims": [
+        "bb037r2.missingtext"
+      ],
+      "comparison": "One local missing-text reconstruction answer; not an exhaustive alternative inventory."
+    }
+  ],
+  "edge_mapping": [
+    {
+      "reader_id": "bb037r2.lodginganswer",
+      "reader_content": {
+        "source_id": "bb037r2.lodging",
+        "target_id": "bb037r2.lodgingq",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:6",
+          "start_char": 46,
+          "end_char": 72,
+          "quote": "אמר ליה לפי בני אדם מתחלקת"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.lodge_answer"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "bb.r032.lodge.c",
+          "target_id": "bb.r032.lodge_q.q"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Same claim-to-question answer."
+    },
+    {
+      "reader_id": "bb037r2.lodgingsupp",
+      "reader_content": {
+        "source_id": "bb037r2.lodgingbar",
+        "target_id": "bb037r2.lodging",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:6",
+          "start_char": 73,
+          "end_char": 85,
+          "quote": "תניא נמי הכי"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.lodge_support"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "bb.r032.barlodge.c",
+          "target_id": "bb.r032.lodge.c"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Same baraita-to-answer support."
+    },
+    {
+      "reader_id": "bb037r2.dialoguecontinuation",
+      "reader_content": {
+        "source_id": "bb037r2.ctx_dialogue",
+        "target_id": "bb037r2.lodgingq",
+        "relation": "continuation",
+        "explicitness": "editorial_reconstruction"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:6",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "אכסניא לפי בני אדם מתחלקת או לפי פתחים מתחלקת"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "reasonable_granularity",
+      "note": "Inherited dialogue identity is explicit in producer scope; optional editorial continuation edge not present."
+    },
+    {
+      "reader_id": "bb037r2.distancerationale",
+      "reader_content": {
+        "source_id": "bb037r2.distance",
+        "target_id": "bb037r2.obstruction",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:7",
+          "start_char": 68,
+          "end_char": 87,
+          "quote": "שמרבה עליהן את הדרך"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.longer_support"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "bb.r032.longer.c",
+          "target_id": "bb.r032.block.c"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Same rationale-to-obstruction support."
+    },
+    {
+      "reader_id": "bb037r2.objection",
+      "reader_content": {
+        "source_id": "bb037r2.outerself",
+        "target_id": "bb037r2.obstruction",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:8",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "מיתיבי"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.outer_objection"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "bb.r032.outer.c",
+          "target_id": "bb.r032.block.c"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Producer combined outer claim contains reader outerself; same challenged Rav Huna claim."
+    },
+    {
+      "reader_id": "bb037r2.innercontinuation",
+      "reader_content": {
+        "source_id": "bb037r2.innerall",
+        "target_id": "bb037r2.outerall",
+        "relation": "continuation",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:9",
+          "start_char": 0,
+          "end_char": 48,
+          "quote": "נמצאת פנימית משתמשת לעצמה ומשתמשת עם כל אחת ואחת"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "reasonable_granularity",
+      "note": "Continuation is retained in one graded-use source bundle; explicit separate continuation edge absent, no claim omitted."
+    },
+    {
+      "reader_id": "bb037r2.reconcile",
+      "reader_content": {
+        "source_id": "bb037r2.tannaitic",
+        "target_id": "bb037r2.objectionq",
+        "relation": "local_resolution",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:10",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "תנאי היא"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.tannaim_resolution"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "local_resolution",
+          "source_id": "bb.r032.tannaim.c",
+          "target_id": "bb.r032.outer.c"
+        }
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Reader targets reconstructed objection question, producer targets objection-bearing claim; both resolve local challenge, not the existence of the graded rule."
+    },
+    {
+      "reader_id": "bb037r2.sharedsupport",
+      "reader_content": {
+        "source_id": "bb037r2.shared",
+        "target_id": "bb037r2.obstruction",
+        "relation": "support",
+        "explicitness": "editorial_reconstruction"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:10",
+          "start_char": 0,
+          "end_char": 8,
+          "quote": "תנאי היא"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "uncertainty",
+      "note": "Source תנאי היא supports this editorial alignment; producer preserves tannaitic distinction and resolution, but no direct R. Shimon-to-Rav Huna support edge. Do not certify equivalence of typed inventories."
+    },
+    {
+      "reader_id": "bb037r2.reconstructionanswer",
+      "reader_content": {
+        "source_id": "bb037r2.missingtext",
+        "target_id": "bb037r2.courtyardq",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 21,
+          "end_char": 42,
+          "quote": "חסורי מחסרא והכי קתני"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.restore_answer"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "bb.r032.restore.c",
+          "target_id": "bb.r032.missing_q.q"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Same reconstruction answer to missing-courtyards question."
+    },
+    {
+      "reader_id": "bb037r2.repair",
+      "reader_content": {
+        "source_id": "bb037r2.missingtext",
+        "target_id": "bb037r2.shared",
+        "relation": "correction",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 21,
+          "end_char": 42,
+          "quote": "חסורי מחסרא והכי קתני"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "reader_error",
+      "note": "The correction is to the incomplete quoted formulation, not to R. Shimon shared-use proposition which is repeated unchanged. Retarget to quotation/reconstruction structure, or narrow the relation scope."
+    },
+    {
+      "reader_id": "bb037r2.rabbiattribution",
+      "reader_content": {
+        "source_id": "bb037r2.rabbiouterall",
+        "target_id": "bb037r2.outerall",
+        "relation": "quotation",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 43,
+          "end_char": 94,
+          "quote": "וכן חמש חצרות הפתוחות למבוי כולן משתמשות עם החיצונה"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "reasonable_granularity",
+      "note": "Producer separately attributes reconstructed graded clause to Rabbi. No direct quotation edge connects earlier anonymous formulation; source reconstruction relation is not a new named original speaker event."
+    },
+    {
+      "reader_id": "bb037r2.reopenquotation",
+      "reader_content": {
+        "source_id": "bb037r2.reopenquote",
+        "target_id": "bb037r2.reopen",
+        "relation": "quotation",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "אמר מר היה סתום ובקש לפותחו אין בני מבוי מעכבין עליו"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "confirmed_producer_omission",
+      "note": "Quoted 11b:12 occurrence and its quotation relation are missing."
+    },
+    {
+      "reader_id": "bb037r2.qualify",
+      "reader_content": {
+        "source_id": "bb037r2.frameintact",
+        "target_id": "bb037r2.reopenquote",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 61,
+          "end_char": 89,
+          "quote": "לא שנו אלא שלא פרץ את פצימיו"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.retained_qualification"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "bb.r032.retained.c",
+          "target_id": "bb.r032.reopen.c"
+        }
+      ],
+      "assessment": "represented_with_occurrence_gap",
+      "note": "Correct earlier reopening claim targeted; missing repeated occurrence separately logged."
+    },
+    {
+      "reader_id": "bb037r2.contrast",
+      "reader_content": {
+        "source_id": "bb037r2.framebroken",
+        "target_id": "bb037r2.frameintact",
+        "relation": "distinction",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 90,
+          "end_char": 128,
+          "quote": "אבל פרץ את פצימיו בני מבוי מעכבין עליו"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.removed_distinction"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "distinction",
+          "source_id": "bb.r032.removed.c",
+          "target_id": "bb.r032.retained.c"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Same removed-versus-retained condition distinction."
+    },
+    {
+      "reader_id": "bb037r2.supportframe",
+      "reader_content": {
+        "source_id": "bb037r2.house4",
+        "target_id": "bb037r2.frameintact",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 147,
+          "end_char": 161,
+          "quote": "תניא דמסייע לך"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.closed_support"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "bb.r032.closed.c",
+          "target_id": "bb.r032.retained.c"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Baraita supports retained-post case, Abaye is introducer rather than baraita author."
+    },
+    {
+      "reader_id": "bb037r2.supportbroken",
+      "reader_content": {
+        "source_id": "bb037r2.house0",
+        "target_id": "bb037r2.framebroken",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 147,
+          "end_char": 161,
+          "quote": "תניא דמסייע לך"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.nopost_support"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "bb.r032.nopost.c",
+          "target_id": "bb.r032.removed.c"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Baraita supports removed-post case."
+    },
+    {
+      "reader_id": "bb037r2.housesdistinction",
+      "reader_content": {
+        "source_id": "bb037r2.house0",
+        "target_id": "bb037r2.house4",
+        "relation": "distinction",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:1",
+          "start_char": 0,
+          "end_char": 51,
+          "quote": "בית סתום יש לו ד' אמות פרץ את פצימיו אין לו ד' אמות"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "confirmed_producer_omission",
+      "note": "Both conditional four-cubit claims exist, but no typed distinction connects them. Support edges to Rava do not replace this within-baraita distinction."
+    },
+    {
+      "reader_id": "bb037r2.tombdistinction",
+      "reader_content": {
+        "source_id": "bb037r2.tombbroken",
+        "target_id": "bb037r2.tombclosed",
+        "relation": "distinction",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 36,
+          "end_char": 70,
+          "quote": "פרץ את פצימיו וסתמו מטמא כל סביביו"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "restricted_granularity",
+      "note": "Two branches are one expressly non-atomic claim, so a typed two-endpoint distinction is unavailable; coarse inventory not suitable for atomic relation tasks."
+    },
+    {
+      "reader_id": "bb037r2.impuritydistinction",
+      "reader_content": {
+        "source_id": "bb037r2.impuritybroken",
+        "target_id": "bb037r2.impurityhouse",
+        "relation": "distinction",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 101,
+          "end_char": 129,
+          "quote": "פרץ את פצימיו מטמא כל סביביו"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.impurity_distinction"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "distinction",
+          "source_id": "bb.r032.houseimpure.c",
+          "target_id": "bb.r032.houseclean.c"
+        }
+      ],
+      "assessment": "represented",
+      "note": "Correct distinct house claims and condition directions."
+    },
+    {
+      "reader_id": "bb037r2.impurityanalogy",
+      "reader_content": {
+        "source_id": "bb037r2.impurityhouse",
+        "target_id": "bb037r2.house4",
+        "relation": "analogy",
+        "explicitness": "editorial_reconstruction"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 0,
+          "end_char": 129,
+          "quote": "(קבר שפתחו סתום אינו מטמא כל סביביו פרץ את פצימיו וסתמו מטמא כל סביביו) בית סתום אינו מטמא כל סביביו פרץ את פצימיו מטמא כל סביביו"
+        }
+      ],
+      "producer_ids": [],
+      "producer_contents": [],
+      "assessment": "uncertainty",
+      "note": "Reader labels analogy editorial. Adjacent baraita material does not explicitly assert this analogy; optional reconstruction, not confirmed producer omission."
+    },
+    {
+      "reader_id": "bb037r2.evenalternative",
+      "reader_content": {
+        "source_id": "bb037r2.withroute",
+        "target_id": "bb037r2.noroute",
+        "relation": "qualification",
+        "explicitness": "source_explicit"
+      },
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:3",
+          "start_char": 139,
+          "end_char": 178,
+          "quote": "אלא אפילו כי איכא דרכא אחרינא נמי מעכבי"
+        }
+      ],
+      "producer_ids": [
+        "bb.r032.alternate_qualification"
+      ],
+      "producer_contents": [
+        {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "bb.r032.alternate.c",
+          "target_id": "bb.r032.city.c"
+        }
+      ],
+      "assessment": "reasonable_granularity",
+      "note": "Reader relates stronger to easy branch; producer combined branches qualify general city rule. Typed topology differs but source conditions and stronger case retained."
+    }
+  ],
+  "discrepancy_ledger": [
+    {
+      "id": "BB037-P001",
+      "category": "confirmed_producer_occurrence_omission",
+      "reader_ids": [
+        "bb037r2.reopenquote",
+        "bb037r2.reopenquotation"
+      ],
+      "producer_ids": [
+        "bb.r032.reopen.c",
+        "bb.r032.retained_qualification"
+      ],
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "אמר מר היה סתום ובקש לפותחו אין בני מבוי מעכבין עליו"
+        },
+        {
+          "segment_id": "Bava Batra 11b:12",
+          "start_char": 0,
+          "end_char": 52,
+          "quote": "אמר מר היה סתום ובקש לפותחו אין בני מבוי מעכבין עליו"
+        }
+      ],
+      "finding": "Repeated אמר מר lemma at 11b:12 is absent as an utterance/claim/quotation occurrence, though words survive in structural evidence. Earlier claim cannot count twice automatically.",
+      "required_action": "Add source-anchored repeated lemma with quoted authority distinct from anonymous citing voice and quotation edge; retain original IDs and qualify with Rava.",
+      "severity": "localized",
+      "resolution_state": "open_additive_review_only"
+    },
+    {
+      "id": "BB037-P002",
+      "category": "confirmed_producer_typed_edge_omission",
+      "reader_ids": [
+        "bb037r2.housesdistinction"
+      ],
+      "producer_ids": [
+        "bb.r032.closed.c",
+        "bb.r032.nopost.c",
+        "bb.r032.closed_support",
+        "bb.r032.nopost_support"
+      ],
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:1",
+          "start_char": 0,
+          "end_char": 51,
+          "quote": "בית סתום יש לו ד' אמות פרץ את פצימיו אין לו ד' אמות"
+        }
+      ],
+      "finding": "Within-baraita retained/lost four-cubit distinction is not in producer edge inventory.",
+      "required_action": "Add distinction from no-post/no-four-cubit claim to closed-house/four-cubit claim with exact 12a:1 evidence; support edges remain.",
+      "severity": "localized",
+      "resolution_state": "open_additive_review_only"
+    },
+    {
+      "id": "BB037-R001",
+      "category": "reader_error",
+      "reader_ids": [
+        "bb037r2.repair"
+      ],
+      "producer_ids": [
+        "bb.r032.restore.c",
+        "bb.r032.shared.c",
+        "bb.r032.sharedrepeat.c"
+      ],
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 11b:11",
+          "start_char": 21,
+          "end_char": 42,
+          "quote": "חסורי מחסרא והכי קתני"
+        }
+      ],
+      "finding": "Reader correction targets the R. Shimon shared-use claim; source repairs missing courtyard clause, without correcting that unchanged claim.",
+      "required_action": "Preserve reader r2; add a correction event that changes endpoint/scope to the incomplete quotation rather than shared-use proposition.",
+      "severity": "localized",
+      "resolution_state": "open_additive_review_only"
+    },
+    {
+      "id": "BB037-G001",
+      "category": "reasonable_granularity_with_restricted_eligibility",
+      "reader_ids": [
+        "bb037r2.tombclosed",
+        "bb037r2.tombbroken",
+        "bb037r2.tombdistinction"
+      ],
+      "producer_ids": [
+        "bb.r032.tomb.c",
+        "bb.r032.tomb.p",
+        "bb.r032.tomb.u"
+      ],
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 1,
+          "end_char": 35,
+          "quote": "קבר שפתחו סתום אינו מטמא כל סביביו"
+        },
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 36,
+          "end_char": 70,
+          "quote": "פרץ את פצימיו וסתמו מטמא כל סביביו"
+        },
+        {
+          "segment_id": "Bava Batra 12a:2",
+          "start_char": 36,
+          "end_char": 70,
+          "quote": "פרץ את פצימיו וסתמו מטמא כל סביביו"
+        }
+      ],
+      "finding": "Parenthetical tomb clauses are preserved explicitly as a non-atomic paired formulation. Summary lacks outcome polarity and a separate typed branch relation. Not a false assertion or lost source wording.",
+      "required_action": "Before atomic QA/argument use, split or explicitly state both outcomes and retain וסתמו condition unique to parenthetical tomb wording; currently no such eligibility.",
+      "severity": "task_restriction",
+      "resolution_state": "open_additive_review_only"
+    },
+    {
+      "id": "BB037-U001",
+      "category": "unresolved_attribution_boundary",
+      "reader_ids": [
+        "bb037r2.noroute",
+        "bb037r2.withroute"
+      ],
+      "producer_ids": [
+        "bb.r032.alternate.a",
+        "bb.r032.alternate.c",
+        "bb.r032.city.a"
+      ],
+      "source_evidence": [
+        {
+          "segment_id": "Bava Batra 12a:3",
+          "start_char": 103,
+          "end_char": 138,
+          "quote": "לא מיבעי כי ליכא דרכא אחרינא דמעכבי"
+        },
+        {
+          "segment_id": "Bava Batra 12a:3",
+          "start_char": 139,
+          "end_char": 178,
+          "quote": "אלא אפילו כי איכא דרכא אחרינא נמי מעכבי"
+        }
+      ],
+      "finding": "Reader provisionally extends Yohanan holder over explanatory branches with uncertainty; producer marks explanatory voice anonymous. Source has no explicit boundary marker.",
+      "required_action": "Retain report-holder Yohanan and reporter Rabbah bar bar Hana; preserve uncertainty about explanation voice without forcing a named attribution.",
+      "severity": "uncertainty",
+      "resolution_state": "open_additive_review_only"
+    }
+  ],
+  "context_review": [
+    "11b:5 establishes Huna asks Ami; no attribution by mere order.",
+    "12a:4 Yehuda transmits Rav; parenthetical Giddel is separate. Producer public_support targets general city rule and reader targets stronger alternative-route branch: reasonable scope difference. Giddel nested support differs but no forced Rav/Shmuel dispute.",
+    "12a:5 begins Anan/Shmuel public-domain doors report, a separate subject. It is context only, not sampled or newly admitted."
+  ],
+  "additional_source_checks": [
+    "The initial reader repeated-substring lodging evidence error was corrected before producer exposure; preserved initial/r2 hashes, not producer defect or new credit.",
+    "Parenthetical tomb wording includes וסתמו; unparenthesized house clause does not. Producer records preserve the distinction.",
+    "Tannaitic shared use and graded use are real local alternatives; no speculative permanent named positions for anonymous objections.",
+    "Producer-only allocation_distinction correctly distinguishes manure from lodging rather than opposing speakers; restored_content support and shared_distinction correctly preserve reconstruction and tannaitic contrast."
+  ],
+  "versions": {
+    "reader": [
+      {
+        "id": "bb037r2.s11b_6",
+        "sha256": "62914053cc4c2597a8f91ff43fc5a75417f20fb39c651ed42f38bdbecba51503"
+      },
+      {
+        "id": "bb037r2.s11b_7",
+        "sha256": "2bc2c9839be955bda5173e843b687bb648bae45e22c8f8d3134787eabf2c991d"
+      },
+      {
+        "id": "bb037r2.s11b_8",
+        "sha256": "71eba002e6627621c66249deb70c7ce5933ee5cd3d17a6d237c2980f9da84b95"
+      },
+      {
+        "id": "bb037r2.s11b_9",
+        "sha256": "a8d2ba8b1a4ca0620cd92bc7e8d44e2d42e00d8fdcdd579a3600d38f3ac0eecb"
+      },
+      {
+        "id": "bb037r2.s11b_10",
+        "sha256": "95df32bce34b368178fe2ed22e9ef58d4f9b7fe722f5eadc0be1d1b349f420e6"
+      },
+      {
+        "id": "bb037r2.s11b_11",
+        "sha256": "356d3eb1a8fd8df41daeece8b78c452426d9e435008728107a853f24e09cc469"
+      },
+      {
+        "id": "bb037r2.s11b_12",
+        "sha256": "263b49826e5d479d66e5053170e0f072212d414518d7a28840959da3c862a990"
+      },
+      {
+        "id": "bb037r2.s12a_1",
+        "sha256": "d8f04b1ad2ad45b2016eec596a1bf70ae95856f011bd51a17ecce1e3703d2701"
+      },
+      {
+        "id": "bb037r2.s12a_2",
+        "sha256": "a70398d138f775a4a28f80f2c32dbd57603c09a63c0fc2b4ef348b92c373cc87"
+      },
+      {
+        "id": "bb037r2.s12a_3",
+        "sha256": "82c5685a56fd035be1036c04a85e3c56e0ae6415f0c7aad2b90e64431da414ae"
+      },
+      {
+        "id": "bb037r2.ctx_dialogue",
+        "sha256": "75c0821ed5bd16c03ecdcc3d2f25171c6ef9b5c719c6df5c262dd341e6753942"
+      },
+      {
+        "id": "bb037r2.ctx_asker",
+        "sha256": "adedeea707c73b929b875fa7a882f56ea4e767c07fd3a4d8b8a53b695ed2fe94"
+      },
+      {
+        "id": "bb037r2.ctx_answerer",
+        "sha256": "82abf6b4cad09dd8518d296c07ab764e8dd15cf3e70838279f029ad08b92334b"
+      },
+      {
+        "id": "bb037r2.lodgingqu",
+        "sha256": "7c6831853b9025707ede0af38a1ed56e260c1cd0f6a17c75fe26c4ff33803a6f"
+      },
+      {
+        "id": "bb037r2.lodgingq",
+        "sha256": "c978063672b9e24ce9606cd9a9cdb4616503b51d077c5d0d737760ad1d9e67b8"
+      },
+      {
+        "id": "bb037r2.lodgingu",
+        "sha256": "80c87eac74826e030627ec3b4137999c0e1824f5cc25bd0a94eb69075097f366"
+      },
+      {
+        "id": "bb037r2.lodging",
+        "sha256": "8122c115f6cd2e48d164e7488e6df4828ce536bf78a6a8dbe58afb981e9a8f0e"
+      },
+      {
+        "id": "bb037r2.lodgingp",
+        "sha256": "400c36f277f260bca2add0e5a04914ef0b42f559ad6e079c916e99826402b9c4"
+      },
+      {
+        "id": "bb037r2.ami",
+        "sha256": "049f01d2063cedbed6c4f471d7a2ffda56006d6fb37bb6ff0b85d88cb276d382"
+      },
+      {
+        "id": "bb037r2.hunaq",
+        "sha256": "f19829c11f804577bceea1f5d4bd94b686520bb1626aa96a869d09c8de869422"
+      },
+      {
+        "id": "bb037r2.lodgingsupport",
+        "sha256": "7dcf0842341f9083f34d0b5c585f152fedce6775dc425db9469b7fefe3a1dcf4"
+      },
+      {
+        "id": "bb037r2.manureu",
+        "sha256": "92e2863bafb881fb0ed7a732d48b4b1c90498eb4812b53b0b018344e2c74d388"
+      },
+      {
+        "id": "bb037r2.manure",
+        "sha256": "bae02f9e775272abe68147807106c25ad001a2cf47e97bbf78c21a3d8646e234"
+      },
+      {
+        "id": "bb037r2.manurep",
+        "sha256": "1a9b8fdd13668c9ce0dac524a74a649f414aa1b11bcc5d91cf07a9a35c1957a8"
+      },
+      {
+        "id": "bb037r2.lodgingbaru",
+        "sha256": "c336e46c4dbfed752b03169dd4bcaf22e8094648aeacc2263dca76abb9f73a47"
+      },
+      {
+        "id": "bb037r2.lodgingbar",
+        "sha256": "1f45f14caff80e42e2b7cbc6f31223d9ff86d017d6dfd415849fb606f4a29eed"
+      },
+      {
+        "id": "bb037r2.lodgingbarp",
+        "sha256": "0d27eff891fd3b4f3ea2b4272bfda21a687e91c6cb0ef79aad4862f6a10ecee9"
+      },
+      {
+        "id": "bb037r2.lodgingtanna",
+        "sha256": "2e966eb8c31b0993b950c065f06049be8da7e62aefa81a374af3cc853d261814"
+      },
+      {
+        "id": "bb037r2.lodginganswer",
+        "sha256": "8e457171bfaf6df0d68d7214e564d08b05ba4a35791eb652fb4331527afad3c4"
+      },
+      {
+        "id": "bb037r2.lodgingsupp",
+        "sha256": "3a1ecd7da2f0cb6b22c7444f4c430589c86c1f99fea52abd113f3039b101526b"
+      },
+      {
+        "id": "bb037r2.dialoguecontinuation",
+        "sha256": "0e7b5ff97b4b5eceefdd88d6aa52f422374cabf4ace2d987f6b9ece17577792a"
+      },
+      {
+        "id": "bb037r2.obstructionu",
+        "sha256": "79de32720daca6b03db4ab5312a9738efa5700c40bbb3e713969fcf03ae64951"
+      },
+      {
+        "id": "bb037r2.obstruction",
+        "sha256": "fb02476626021e68af103276b6d1b3053f86da9342c54c662a3eb2e9b3bbef57"
+      },
+      {
+        "id": "bb037r2.obstructionp",
+        "sha256": "d4eb034dd89e53667dec8ef07ebf3987ef0540f3fafdd08fb6c355c5380ead49"
+      },
+      {
+        "id": "bb037r2.distanceu",
+        "sha256": "6ae3b448b49ed07d72b4ded155bac3ce968e54c2d94ab757648291d2ac764d34"
+      },
+      {
+        "id": "bb037r2.distance",
+        "sha256": "dfd11b095e956a20caf22d277f430e3cbfb905e4a7fde1f59acc1f681e5b78b7"
+      },
+      {
+        "id": "bb037r2.distancep",
+        "sha256": "a225ce9405a2d00638dbfd54224103fadd7e1d7877b48bd02e166f9f5320d63d"
+      },
+      {
+        "id": "bb037r2.huna",
+        "sha256": "b818be4210a32759694da00efd28a00111ac7e3a29f7d4efbba675d2d0999664"
+      },
+      {
+        "id": "bb037r2.distancerationale",
+        "sha256": "028e90e11a76d5ceee89c59a7d254f36a3b7d0b75ec63c3c88718bd2c432559a"
+      },
+      {
+        "id": "bb037r2.objectionqu",
+        "sha256": "e088cbc0cb01131d18a8be2563737f1ab6205efb5d1ed62b1d25656f5f44cc5d"
+      },
+      {
+        "id": "bb037r2.objectionq",
+        "sha256": "b410f9d19c3c10b9fccc46c335ed7b8efce9e2e1e926159b75fa9e3e3f566574"
+      },
+      {
+        "id": "bb037r2.objector",
+        "sha256": "091a0307ade795fd1a34a55997f4b6f02a09dc39ea0e85ec2959254d42cce135"
+      },
+      {
+        "id": "bb037r2.outerallu",
+        "sha256": "5e11a6ca74655a04e11273591e3956f7f3d52b05d70d1e7bbf3e22748fade090"
+      },
+      {
+        "id": "bb037r2.outerall",
+        "sha256": "cd035a829241caa41bdfd49499bf924e4cd6f7eb5bf7bcb57895463f2125d189"
+      },
+      {
+        "id": "bb037r2.outerallp",
+        "sha256": "3d2b589998e19b7666c409e571b92e4dd660c7670eecf9f28d13a4cc417ade79"
+      },
+      {
+        "id": "bb037r2.outerselfu",
+        "sha256": "b0bb78e10ebccfce98c9ac86289dd84413bd726f7117d6449baec23133668ccf"
+      },
+      {
+        "id": "bb037r2.outerself",
+        "sha256": "7ba1b6b4254fbd526d52e2e9bed9802eeea2b9f8d355a0631f75ee5ce0ef3530"
+      },
+      {
+        "id": "bb037r2.outerselfp",
+        "sha256": "8c9e9397f50eee4e8a5821e71992426206f238b9da70b757d8142c414b181bd6"
+      },
+      {
+        "id": "bb037r2.secondallu",
+        "sha256": "6f2430d66251b59b2e6be7346b6519a81b8301bf07252d85c13645bc3b229b9a"
+      },
+      {
+        "id": "bb037r2.secondall",
+        "sha256": "81f8d2167633fe344e0ecd3d30916eaa3a2135a7925ffb907c7d78c4c59fb553"
+      },
+      {
+        "id": "bb037r2.secondallp",
+        "sha256": "c81535eb1bf24d0f6bee34e4904a6ebfde6cd581a92486397da863c6b4e4bd98"
+      },
+      {
+        "id": "bb037r2.secondselfu",
+        "sha256": "06f6bacf197dfa90ca424f22472df1a03341c8dd3974f2a9452f5e169b3cc17d"
+      },
+      {
+        "id": "bb037r2.secondself",
+        "sha256": "074feb65d88e38ada2b68a9f552baf92655ce19d65159ed367972cca16091d03"
+      },
+      {
+        "id": "bb037r2.secondselfp",
+        "sha256": "d3869a2bca3d9bcfb378aa4fda153887e21bcc6fb3081654a279b7be71a393a0"
+      },
+      {
+        "id": "bb037r2.secondouteru",
+        "sha256": "e84e57440631d24cd308bf280ce14d3c90c98c6d936e56675f0f663b134b2af4"
+      },
+      {
+        "id": "bb037r2.secondouter",
+        "sha256": "0694460b6bf42a91744b403f13ceb618201c4d0622b5e7200b43eb822d6c7bf2"
+      },
+      {
+        "id": "bb037r2.secondouterp",
+        "sha256": "8c83b72d806eba0c46cd2dba17517396c39062e2502807eb1c6a7698907c860b"
+      },
+      {
+        "id": "bb037r2.innerselfu",
+        "sha256": "a0026bcdfea28edf5052b8a6309754e4229c8b104941afb9c61719c90394cb02"
+      },
+      {
+        "id": "bb037r2.innerself",
+        "sha256": "e93f0c4529f78e854fd5ffecf4338bdd398d7993e8cfd200bb6e66cbd150e11f"
+      },
+      {
+        "id": "bb037r2.innerselfp",
+        "sha256": "d2d8d4412c101e97d208a146d624b5299512f2ca8ce1aacc246ac31bf6c2da84"
+      },
+      {
+        "id": "bb037r2.innerallu",
+        "sha256": "2d696a1703324000503536d9e1c8125bb1e60757439a040216e0b23b168eda0d"
+      },
+      {
+        "id": "bb037r2.innerall",
+        "sha256": "0cb7649462b5dd2a242e647f07ef117721843bf9ce790c48d6b893ced9c7ff50"
+      },
+      {
+        "id": "bb037r2.innerallp",
+        "sha256": "e1e406635e575b966b7e55b35a5b0d716953fd9e2202bc84cba0da3bbf312b58"
+      },
+      {
+        "id": "bb037r2.baraita8",
+        "sha256": "8682fdba7edb9c19672ab46337646370b9d9e9b657945e643463be352e221d07"
+      },
+      {
+        "id": "bb037r2.baraita9",
+        "sha256": "fd725e320470d1cdee443ea5d37c6e2662d10e11f07a41c791eeb53af3fd155c"
+      },
+      {
+        "id": "bb037r2.objection",
+        "sha256": "1e0e51d556fff0038c1a405a1858bd14dce5d4c0bc4b5605d624fc91100b93ae"
+      },
+      {
+        "id": "bb037r2.innercontinuation",
+        "sha256": "9c433ffd1462a04225126a292bfceb907ad0d36385364e36e184f880cd3b44d1"
+      },
+      {
+        "id": "bb037r2.tannaiticu",
+        "sha256": "95c6fb5ff8de6cacec1d562de3fa2e007ff4a99ed8f79c033489a42405496e69"
+      },
+      {
+        "id": "bb037r2.tannaitic",
+        "sha256": "0a3e779ef60d9fb82e43fc0b98e24be6c0786dcf14481297d7be00e0d8dc97b8"
+      },
+      {
+        "id": "bb037r2.tannaiticp",
+        "sha256": "626e4a48f154eb95ddf83fe25881bba14c6e0784e06ce0f77f7431a4cdd4988c"
+      },
+      {
+        "id": "bb037r2.rerouteu",
+        "sha256": "08767fe5cd4c07f36b18f5dacb94a0612229485ae54c81574b68e0f71a5ddc4a"
+      },
+      {
+        "id": "bb037r2.reroute",
+        "sha256": "47ddef096ba591dcbd87375060b05be3e8c08267b48e2ede44f4fb575fb50c18"
+      },
+      {
+        "id": "bb037r2.reroutep",
+        "sha256": "99954de3b5b4b8fa89874ba67248d0beb5d929f17b36fe41ce31d195e2d166ac"
+      },
+      {
+        "id": "bb037r2.reopenu",
+        "sha256": "02d3b84ba1dd5634af79185bd020c64619dd48232d5c5ab11e5880e852417700"
+      },
+      {
+        "id": "bb037r2.reopen",
+        "sha256": "09c05bfaf28214fa13cbee21b22651632b338fed9afa697b1750c2e9f7450042"
+      },
+      {
+        "id": "bb037r2.reopenp",
+        "sha256": "55dd7fe7995e6679f4d04c9f25347488c666344972f9d9e3b9198842703e8ffd"
+      },
+      {
+        "id": "bb037r2.sharedu",
+        "sha256": "3a935aa9f71bbe76f849d544d5aea037907b107f9c2e1525095ae8137fc3b636"
+      },
+      {
+        "id": "bb037r2.shared",
+        "sha256": "e69d6078aba4e884e875f6d7aa8aba997933024f68eaa51fd40afac7f0d77b6d"
+      },
+      {
+        "id": "bb037r2.sharedp",
+        "sha256": "c5afce838872e41ddd9ed3c2cb4425e49eb27d54120044972460fd5420eeacc9"
+      },
+      {
+        "id": "bb037r2.rabbi10",
+        "sha256": "c3477c3b02d04a355c34ad494530cd96b9e995940d1b1770882ab7ef05d7b6ee"
+      },
+      {
+        "id": "bb037r2.rsa10",
+        "sha256": "dd6e18b354be31522f268ca3fe3ae5d71d90176c1c71e0d072d40274678f4d0c"
+      },
+      {
+        "id": "bb037r2.anon10",
+        "sha256": "e8e8ac4b41ecf5bff7dcc3aedf08281db51aa24ed5dbcc0d6d6be6b5d039a5e0"
+      },
+      {
+        "id": "bb037r2.reconcile",
+        "sha256": "e937f7b90229f5c5b66114d6e72f1cefdf44e7b10c31fa64e2bd969c83e69e79"
+      },
+      {
+        "id": "bb037r2.sharedsupport",
+        "sha256": "cd2d33c9b3005a3c93139ee4f1952134693f474d5d4e0abc9e7302f745e690b5"
+      },
+      {
+        "id": "bb037r2.courtyardqu",
+        "sha256": "8330d49100831dd974d063a43285838937510fd97b8f893af92ff37cd58c24f3"
+      },
+      {
+        "id": "bb037r2.courtyardq",
+        "sha256": "9d39c1779e84e0ce83096925f4929b2ffb3bfe6544a385997aa45e41da98b247"
+      },
+      {
+        "id": "bb037r2.reconstruction",
+        "sha256": "9b3f926e047aeedf4ec11d526c4c2231833545433fddb9b7233bf838ace64bd1"
+      },
+      {
+        "id": "bb037r2.missingtextu",
+        "sha256": "88f7a3d11e67fc511825c984352d9468a609a8056ff9dfe630ba4eb55128dad0"
+      },
+      {
+        "id": "bb037r2.missingtext",
+        "sha256": "450c914b8bddf1859dcd9ba70a11d01b7a79529c8463cfaa15c9c1b06f589285"
+      },
+      {
+        "id": "bb037r2.missingtextp",
+        "sha256": "04e78c71e1221f4b61b14f844e422e4d0572e319b61a69840d3801aa2fa99406"
+      },
+      {
+        "id": "bb037r2.rabbiouterallu",
+        "sha256": "245993405ae2a194d3a529f7bced27fc8c375665eb3c5ee1368b97decee74e16"
+      },
+      {
+        "id": "bb037r2.rabbiouterall",
+        "sha256": "0bb5094abc045f75ebcd4b21699646ed62213cfbc0ba1a35807008dc40f0cc9a"
+      },
+      {
+        "id": "bb037r2.rabbiouterallp",
+        "sha256": "83e398b28382b3e9591117749e269b26cf96ee048fa3b23939c39a19ef55bc90"
+      },
+      {
+        "id": "bb037r2.rabbiouterselfu",
+        "sha256": "1f9f3ce04d4ab02de61a8bdbddf5f3ec433f530b2681f481b2ab5df37a7fc28b"
+      },
+      {
+        "id": "bb037r2.rabbiouterself",
+        "sha256": "13b85a6889ec293db1f874bdfdb5a6c12fd42f706b00672354bf8e9f45bb92ce"
+      },
+      {
+        "id": "bb037r2.rabbiouterselfp",
+        "sha256": "c0f90f360b040d90aba2b6b63358be605658b4897d60f38e4c62e477a1adc7ba"
+      },
+      {
+        "id": "bb037r2.shared11u",
+        "sha256": "2cd928c278f14468ab64f5166c91a55cdfe4dbcc56c6789903d036726389db5c"
+      },
+      {
+        "id": "bb037r2.shared11",
+        "sha256": "943ac4973c8d13312e2153ab93dab78b4663a62cfe63211d815dd179911c6810"
+      },
+      {
+        "id": "bb037r2.shared11p",
+        "sha256": "db9fee48cfe9bdaa15d82e27ee87c44eeae9d1045f0df80cb5c90b69fdd18146"
+      },
+      {
+        "id": "bb037r2.rabbi11",
+        "sha256": "437a73ea0bb51dbd59d1562b901aa0643de8cdfe9aa5e09e43ca8a617bc61ab0"
+      },
+      {
+        "id": "bb037r2.rsa11",
+        "sha256": "86f115f433984841207c298da63d4251026573279170a2710229cd5c9c987bbe"
+      },
+      {
+        "id": "bb037r2.anon11",
+        "sha256": "16089c472e534c1746c5fb395665fc9ba0e13801e4b88ff280dd690057a78ce7"
+      },
+      {
+        "id": "bb037r2.reconstructionanswer",
+        "sha256": "5320918d38f1a2019bd640e25132bab17b00b505a78bccd4589beb9c9fd94be6"
+      },
+      {
+        "id": "bb037r2.repair",
+        "sha256": "fe761956edd91805e38c8d2a5a14202fc68ab9a21843ce82903eb7009068612d"
+      },
+      {
+        "id": "bb037r2.rabbiattribution",
+        "sha256": "2ad2c6f9c933bf92774f9640d3bdd636a81e8fceed3b05c7abcde53f1fe2b7cf"
+      },
+      {
+        "id": "bb037r2.reopenquoteu",
+        "sha256": "f640fecf35a9a630aa3a83fbead6a8deabc45172c0cfff613cdb9f6120b45545"
+      },
+      {
+        "id": "bb037r2.reopenquote",
+        "sha256": "8d0f028753ded6cf5d0f4ee42f5d9eebffbebe6a75bf81e93e47024e7af61ac3"
+      },
+      {
+        "id": "bb037r2.reopenquotep",
+        "sha256": "70db651d87de161380d8dd483b61f28440a2747c39380b2b5bed724752d42d4a"
+      },
+      {
+        "id": "bb037r2.frameintactu",
+        "sha256": "687eaa5b8df1604fa9c55e672bedd93f277fd863f4ac9e3d548430b50be3f051"
+      },
+      {
+        "id": "bb037r2.frameintact",
+        "sha256": "36c895c83f7f50c502e0d893167ef13cb3e9ee7f98d68d1b68dbb22405753f14"
+      },
+      {
+        "id": "bb037r2.frameintactp",
+        "sha256": "a8ec7c087118a87ba968696d619cb7a81bdad7b9642d286de55b12fd7cafa57f"
+      },
+      {
+        "id": "bb037r2.framebrokenu",
+        "sha256": "f66970ea4e4b31f6febd4aa970d36c05ec410b1227e52a05d33f3b867a6bbe2d"
+      },
+      {
+        "id": "bb037r2.framebroken",
+        "sha256": "23fcf046f42527af5170bca3e82a5363d8f70f92038c6c2694c67b2f90114436"
+      },
+      {
+        "id": "bb037r2.framebrokenp",
+        "sha256": "88c7b2370e97d0b4f487801c9d43e3dc2ff1c9bab659d2475e75ec180968e071"
+      },
+      {
+        "id": "bb037r2.abayesupport",
+        "sha256": "4f90562dec6233026bd512cc2785bffc2197b073080469fb5afe6b30cafae111"
+      },
+      {
+        "id": "bb037r2.rava",
+        "sha256": "4838ea62bccb6e30a462f8bc9810da7b2b0da085b9a47f66928fa65323d67f4f"
+      },
+      {
+        "id": "bb037r2.abaye",
+        "sha256": "44bdc65d96cb43b7027f5732ff9b50b7da675c0d4aa42a6393b690e838d853a7"
+      },
+      {
+        "id": "bb037r2.mar",
+        "sha256": "a706c2b995bf92e0c9f800c3aef4babac07334c4ef86bc16c6f9dae846dbb9ea"
+      },
+      {
+        "id": "bb037r2.reopenquotation",
+        "sha256": "33826f57accb9da72d44c2daf7ce17ebf4219713c972dccc06ac1a985115b491"
+      },
+      {
+        "id": "bb037r2.qualify",
+        "sha256": "f870df56e4b7aca9aaf65884f9d96fc9c39d4b31b5cee790b8fca64cc71cc4c0"
+      },
+      {
+        "id": "bb037r2.contrast",
+        "sha256": "1a581d3aad0bdb4caefc187e655628da2bc80d3c4d1debe981c4b24acccf09b7"
+      },
+      {
+        "id": "bb037r2.house4u",
+        "sha256": "64772a0cc07725334408771134a271eed9bec306f0dbfafbb834986b6b86fa23"
+      },
+      {
+        "id": "bb037r2.house4",
+        "sha256": "f0b4f6aa71e8b59e4b4a8ca6ba3820317b74c0c72f3f55908ddaa0cc93dd1994"
+      },
+      {
+        "id": "bb037r2.house4p",
+        "sha256": "9f6e02d70971ab483427a5bceb0a01dceb0002a676462bb3ce7b7df9ad4f414f"
+      },
+      {
+        "id": "bb037r2.house0u",
+        "sha256": "06dcd6d02c27e4f8a50b0e3b2d10ca4a5bc991428ec83ec1127c43745061b116"
+      },
+      {
+        "id": "bb037r2.house0",
+        "sha256": "f61e6e78a18be1af9c95d75127fc9d66150503e70c069e939ab865e9050068bc"
+      },
+      {
+        "id": "bb037r2.house0p",
+        "sha256": "cd60f648c77a40919b92c7a5a1f455725b1289a6123680189e8d78f0322884e2"
+      },
+      {
+        "id": "bb037r2.baraitahouse",
+        "sha256": "557083d66363b76f452dfc0d8a42f05a2c1a5f9baf8f2efed840f3079ec0d251"
+      },
+      {
+        "id": "bb037r2.supportframe",
+        "sha256": "db15d2031ffc5513bc8b47ffd213beb8b2920b7b7a6318cdb3a569150726f0e2"
+      },
+      {
+        "id": "bb037r2.supportbroken",
+        "sha256": "fb4537bbc140812b8f40f4369335d863641346e0ad728f6f3c4425fe93930c99"
+      },
+      {
+        "id": "bb037r2.housesdistinction",
+        "sha256": "f7c67582d935615c3fb8b6fd775bf5a81964d2bb4b29cd41be257ec6deaa829e"
+      },
+      {
+        "id": "bb037r2.tombclosedu",
+        "sha256": "e454691b43e727372ff6dc999a72f033b2fc7d26a7590476351c33389d478e66"
+      },
+      {
+        "id": "bb037r2.tombclosed",
+        "sha256": "2b48671974b952db04410dff3e0bb3c7dd807416759b5d1d826696b64ecb5110"
+      },
+      {
+        "id": "bb037r2.tombclosedp",
+        "sha256": "dfe2c80a26e69959c10c952162eb8c036520c87293dee42feff0ee0edec5fa70"
+      },
+      {
+        "id": "bb037r2.tombbrokenu",
+        "sha256": "f46f2135d13eb48ae46d59b3001764ac5842bad1f9928e4f573d285527787ffe"
+      },
+      {
+        "id": "bb037r2.tombbroken",
+        "sha256": "057d1080cb739bd980243e1fba69a5616b6be82774e9c4da77a38a48746b9941"
+      },
+      {
+        "id": "bb037r2.tombbrokenp",
+        "sha256": "f87d6fd8cfc4efc91bfb032d108b76aa4843781bdbda45b1e51f240847fda9eb"
+      },
+      {
+        "id": "bb037r2.impurityhouseu",
+        "sha256": "f3aa894b48202d28cf10b95b246e38eab412fc0734e645aa8b3c8cda97a4abc5"
+      },
+      {
+        "id": "bb037r2.impurityhouse",
+        "sha256": "14360fc2a6448b6c7da9b17f3294c629c6214e50712b5af7efdc4adf071c9f36"
+      },
+      {
+        "id": "bb037r2.impurityhousep",
+        "sha256": "1624439ac49fd75cb638311cc5b816d89188404fbf3a5889050ba8e7ccab11a2"
+      },
+      {
+        "id": "bb037r2.impuritybrokenu",
+        "sha256": "e63bc1add8903755418cd1f53757350b21fb0771a8ab4d697c51079692f4532f"
+      },
+      {
+        "id": "bb037r2.impuritybroken",
+        "sha256": "58c23fd82534c2329b55e429013f619e1517d3d869f6251b76449302987fb32d"
+      },
+      {
+        "id": "bb037r2.impuritybrokenp",
+        "sha256": "3a54748f23909cf0c78e63ef11c52be3a5e4fc1e0d7ab3969d97b64479056d7b"
+      },
+      {
+        "id": "bb037r2.impuritybaraita",
+        "sha256": "7726ede24498cdcb208b67ba015477ad47edb4a8fdde81b030d0cac4c1b68d1e"
+      },
+      {
+        "id": "bb037r2.tombdistinction",
+        "sha256": "92089ad398beb785bf1d6c30fddf42984de109fee3da6d5f906e6ec71e4140ec"
+      },
+      {
+        "id": "bb037r2.impuritydistinction",
+        "sha256": "e8935aec2f0e7ed0525f6a5b40541794b08776633d08d6dd7c906e1b83a89891"
+      },
+      {
+        "id": "bb037r2.impurityanalogy",
+        "sha256": "d08e8b24c3b820ec653478c18ae7ab266d60b09ded7c9a1906843f3e99be7cd2"
+      },
+      {
+        "id": "bb037r2.othercityu",
+        "sha256": "8c1dc98a037850ad3ba7a4c6728db59714078f33e5e81e6e36aedf2829ebf4b4"
+      },
+      {
+        "id": "bb037r2.othercity",
+        "sha256": "1edaa774fb81a1b404ff8f064429f08fe7a962147839feb6c77e7a628f05251c"
+      },
+      {
+        "id": "bb037r2.othercityp",
+        "sha256": "6143f16a170c3473d03f9b0bd97566ace4654b5c42876cd992315da3d3144aed"
+      },
+      {
+        "id": "bb037r2.norouteu",
+        "sha256": "2662080107f449b234acda01f2992d9bfa454e81eec0b9950ed52c50caa17216"
+      },
+      {
+        "id": "bb037r2.noroute",
+        "sha256": "ae7d320022d036ff1ec7bd6397ca0000b941a3fa488d9e5006654d7c910ebe3b"
+      },
+      {
+        "id": "bb037r2.noroutep",
+        "sha256": "fef74d868cfc01f73d4653d3832bf5371b01ed38eb79a1a12df45c4627c2083e"
+      },
+      {
+        "id": "bb037r2.withrouteu",
+        "sha256": "41ca32a6f8d708e93d5ee9196e100f28c38efcf1d41c92b0013dd36eb3f10766"
+      },
+      {
+        "id": "bb037r2.withroute",
+        "sha256": "1b12d9c0b2c7c7f5ada13f5d058ebe25130aad8b07f439b0db1b016775b41271"
+      },
+      {
+        "id": "bb037r2.withroutep",
+        "sha256": "34d738a8280b4932bb6e3a39da88353c6e2e40243e0dec0093976ae23b711b96"
+      },
+      {
+        "id": "bb037r2.rbbh",
+        "sha256": "1169adc4e690440ce54d5e9ab77ae0dceaf42ec7f54ea2dd479a5f8582ad01af"
+      },
+      {
+        "id": "bb037r2.yohanan",
+        "sha256": "b35e62678fa113e8f81e08b3f1937203fc3b73f878d6cf6c5d86742570aa8927"
+      },
+      {
+        "id": "bb037r2.evenalternative",
+        "sha256": "317c735e5b164786d55f83a29b00dcced8b02ef6a0064f4ac4a60c1e9c19c97a"
+      },
+      {
+        "id": "bb037r2.publicrouteu",
+        "sha256": "bb2c6217fd69be80e539e6ef64f1f70b0c10143038b4e216fc124a295286a669"
+      },
+      {
+        "id": "bb037r2.publicroute",
+        "sha256": "9cf0f188005984284b366a6d05c8f16f2379942181989e22b28079f24c695c8b"
+      },
+      {
+        "id": "bb037r2.publicroutep",
+        "sha256": "251b4628e5466b673c543e72068b3e88adcf4c0cb1015f06b186217cc94679eb"
+      },
+      {
+        "id": "bb037r2.yehuda",
+        "sha256": "f95d3696616f081d14dd9cbc0ca3e139cad965cb34185813cf9befff0adab750"
+      },
+      {
+        "id": "bb037r2.rav",
+        "sha256": "410942d218ac88ff185e31f76053df179b96ae69d777268067523411598c4127"
+      },
+      {
+        "id": "bb037r2.giddelu",
+        "sha256": "77588f0dd75899b95e75425034941fa8ad15d1398f7d0e2c9fae16d4ebf98b1e"
+      },
+      {
+        "id": "bb037r2.giddel",
+        "sha256": "ff2c670128617aad33dca5b99c520011f719809cc519e2626a356367eb473e0d"
+      },
+      {
+        "id": "bb037r2.giddelp",
+        "sha256": "2fe38ef460aaacdc4bc4bac73c97459996e2f26f4a5783b8f466638cf38af39e"
+      },
+      {
+        "id": "bb037r2.giddelattr",
+        "sha256": "1313dd669c39766fcd19e22194419a4fe4ed0cc58eca7bba0375084fef35d97e"
+      },
+      {
+        "id": "bb037r2.routerationale",
+        "sha256": "fe55f24bdceaa340a8108cd3ff0a6f891e94e32ebab863de56873a0057b45052"
+      },
+      {
+        "id": "bb037r2.giddelrationale",
+        "sha256": "317cc95c93e983fd2f4e03b3ebe9a35d76e2570b14688ed318fa0fae53399886"
+      }
+    ],
+    "producer": [
+      {
+        "id": "bb.r032.allocation_distinction",
+        "sha256": "8cb6b4ece5802f16d890709dbcc1a28102c6745a2a09d9cd3e2dbcbcd1f61d1e",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.alternate.a",
+        "sha256": "69542f3b19c30943bd6ec79ef1194fd9f77a342aa79b29a5a52fdf170efc9bca",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.alternate.c",
+        "sha256": "e3905955c0ae6e2764b7b07f9d038464bc02543960e81dd58d40698c9d169277",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.alternate.p",
+        "sha256": "fc43ac2a149a8206b1a0879adbf9bad58f3881514ab59821bda900d98c089758",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.alternate.u",
+        "sha256": "49eecba4369b2dc25c62bd7d9618ca1756f4918cc3f112aa7a8b3f5000368bf0",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.alternate_qualification",
+        "sha256": "756d10c367fa1e4f93f1866eedd4cab276c65c88a1cd1cae4a5911b196c147a5",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.barlodge.a",
+        "sha256": "7e8998057f1097ad806494a30ac23906aca84535d737234174b73b7d234496bb",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.barlodge.c",
+        "sha256": "9843ab205d2462aa7f67e3337493521b8fd76a8db4def74eb5b43ad215c5ee69",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.barlodge.p",
+        "sha256": "bfc48e56cb0bea9d30ff09ef1513d426b55eee358b998a550f7325ec436e73d0",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.barlodge.u",
+        "sha256": "3588a75e6a020018cc8ded5885626ba7d3630ad53f30ca3d282b53f9822fed96",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.block.a",
+        "sha256": "33bd11e3e192354120dc0bf7cddeea1a1ed9bac801a8cf0bceaefe737be6693f",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.block.c",
+        "sha256": "cd2d015dffc9ed331c6ca4fa297d31c5c14eef85d713b2b63e0851122402e04e",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.block.p",
+        "sha256": "24fdab2ff947d605a515ad4952e12cbf4c2c2e24f4e783065a53912bf8748b3d",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.block.u",
+        "sha256": "56ca318c99ea3acf84c79a4a1f4baeb26a094ef536a60b7e48c3bce5f5f36f52",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.blocking",
+        "sha256": "be80f22c4569a200a25ce0cbae2984b5618b671fac720006f2162292051ae6ce",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.changing",
+        "sha256": "2cfd3139b42e8c445d2f5c8612faf4b887cb18b7a57c16a4b8f510403002db1c",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.city.a",
+        "sha256": "9985fbe8faa296a74a49053f053c7788ed9024d3c031f1788598de70e950bf7f",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.city.c",
+        "sha256": "451c655a351b30cde3e48c70fbd56f6a03ea587fc97b39856667669524266297",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.city.p",
+        "sha256": "ec7423783abe02393ba3fde30299f63db7aeef14522e09f0f0fe008eb1cb8302",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.city.u",
+        "sha256": "f61dff262225ee4f076d3efba038df9a7fa4ab5efba7c3704cd4a81f58a0f660",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.closed",
+        "sha256": "1995efb96efd2d38c52c8b2543fb3e2fb5c1c78f573acf657945eb4055623dd4",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.closed.a",
+        "sha256": "e05f693068bed91a82a8f75a30fbb468bb95eaba8f3a97bff28b2436f4e3f211",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.closed.c",
+        "sha256": "caa1aa50ed2ad314cf8856e0c7c12391468378547ab2e9c060ca0f5ff9176d3a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.closed.p",
+        "sha256": "5a54c241f6c0fe097f5f568f75f1042a0ad3e5bf3824f4160388576bd945fb74",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.closed.u",
+        "sha256": "c540e1282d9c1b33c87f1f8613d62c433c9d55580c794fbfbe345151b35deac5",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.closed_support",
+        "sha256": "9b33c3cc856371e70b3817080498703b62dbf6c7e1ca32db02f95debbd0761d3",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseclean.a",
+        "sha256": "157060d6cd3d1dcfbbb976ca4610f706043d7cd2a914e3cbeeb579ff70df8fc8",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseclean.c",
+        "sha256": "083c75fa9807771b4fee1b316a7fdf946e2bc3e1922710199b1ff8f48a54facf",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseclean.p",
+        "sha256": "a72659c98cc7716e180f72a05235e9ce06a73a42d11420b7ae3f971fd08e82ba",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseclean.u",
+        "sha256": "75e6e72277532567bdbd2ed3fe77c8f37362ad5fabe41890891cf3aa04f99a37",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseimpure.a",
+        "sha256": "09a474d11f643f88119f29478e6a1155b2e7b04dbdf3260506488f299753b72b",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseimpure.c",
+        "sha256": "e096765b20d9db29bea2c06c16d5470197a06c0d5714665c3bfb09fe576d2dcb",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseimpure.p",
+        "sha256": "3ab7de3eeef943e47268201f0a65a007e341fb3896f624bf0bfd1565e15c1f22",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.houseimpure.u",
+        "sha256": "6d673d9bfa567f9f6ab245bae7c4b1aab9f6ce9c7022ac987e9f6d861f06cc73",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.impurity_distinction",
+        "sha256": "6f2ee423ecdb2bfb47726ad51306fb1a560d208cfcde05fb76d49cca5877edd6",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.inner.a",
+        "sha256": "dde6c418b34c23a90cbefde64f697544a6840612faefefe22b810035be946ae3",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.inner.c",
+        "sha256": "ec6638b98486349c9e6421407ca839340ad6fc09e1dca86b0197fb4e3ad1b393",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.inner.p",
+        "sha256": "ac0e646d05f6fbe89aacd4c170eccde6c3e27b27c0168b2cbad99d0c8f15899a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.inner.u",
+        "sha256": "5b7b5302163b7081593362fe8e585ca90fc868821d39064b5fcd18b16b7b0d74",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge.a",
+        "sha256": "92f1f0a7ca0c1f8da1d735ea74ac9540ddc397d8b9be23b490c52f248ada3e03",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge.c",
+        "sha256": "629722c8654712166da1b462c37c8eace74ceac6c10ecac35782f0518ffa25e8",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge.p",
+        "sha256": "c133227bf73c67c9421aba2bf2a9e3b7625b9ca9d94d56fe97eb2b0ae1257409",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge.u",
+        "sha256": "6fcaf576523f6402c75ae120d6fa0f06cb7eec5834e85eb3c8f44569ccc477be",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge_answer",
+        "sha256": "93552b83d5ef80d7b9827f6a2999c65e0679923b3a13ab06c7395a0d8353380d",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge_q.a",
+        "sha256": "23eee695e5174ddc5cb5a48c7b74dbd2df5a344d758a875ba0ddfaa7460fabdc",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge_q.q",
+        "sha256": "97b31e4f19089881547fdbd66626280bc3aef17673efdeac5448ed01400489af",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge_q.u",
+        "sha256": "07c4ed4e36ff5fbae7b0a4919e20604f2f0cb9fa7688ed81d738f9748a22e223",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.lodge_support",
+        "sha256": "1d47160f9c2a3ada5bd24fb0bf1904452d17f69bc6735584c3708fd23178f6f3",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.longer.a",
+        "sha256": "7d7521cba98d414b8f4fa69f368f3dd0292e7d88644631497815c1d85580049a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.longer.c",
+        "sha256": "99e1bdef731ca220b8688af60a8dfc4623367b06d6b4987d7ee8caed9826f432",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.longer.p",
+        "sha256": "c730561c705d0577d1d343ded15890f54a707e938cd79b1deea1a4aeace787f8",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.longer.u",
+        "sha256": "dd2cfad0deab5ffcac791f12736676a2212b49fcb98d86547d066ebfc2d25847",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.longer_support",
+        "sha256": "d574b58b6d1148d8bbed8734e523c195f3de7b6ae18477ef39dffcf7b85d8c2c",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.manure.a",
+        "sha256": "cd6d24dc8d9e4d3c133f0729fc142940dfe44fc82aa32933c45b21f697b65088",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.manure.c",
+        "sha256": "9d6865a6ee587186447235223ea7fcd757670bc6f3ae94a3bbd9a451215ba28f",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.manure.p",
+        "sha256": "5a4fb64cea0f8c4663685790907d1c2425ce1078e6ca0d5ed89da67e68b02217",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.manure.u",
+        "sha256": "7066bdeaa2eff259b5a58771cb9acbe75fa109558700b92ae64f72e6c82d50f7",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.missing_q.a",
+        "sha256": "1079a46fd5bc1b26d1d8aaa837905d7258c85d064c0eafb8ad6263255fdaa1bd",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.missing_q.q",
+        "sha256": "df2156e5d532ab3fd26f246e2d89f388a762529ad84b3217b51736e8cee62ae2",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.missing_q.u",
+        "sha256": "b7ddfc18ff718a3fd5c00524560fcc36341cd3df1ea4507eb6af8d0ace8009d3",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.nopost.a",
+        "sha256": "362e593ac81c0055e1a94716369fe55d65825933099b71e052164c3dce01d2d4",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.nopost.c",
+        "sha256": "492c8bf93727318112279937fbec5608bbe3f2caff7b41734ee85dcce5660110",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.nopost.p",
+        "sha256": "29489b6cfe7009bd6baf5b56ed66b7d37d2e08dca0f47b43112578a7acd7bb06",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.nopost.u",
+        "sha256": "1d3c6ec357a6dc35c6155d4e657a38e3bd7e2cf83a5285bd54a1dd43ea53fdaa",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.nopost_support",
+        "sha256": "becd771f9cf84b81fbcefdbdc78e080178e4ba8e3b7f659791b4a3efa1b8158f",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.outer.a",
+        "sha256": "d31ad30c28e39ac3d495f070607eb2cf1e46be8a719b2c2db358a3c0cff251aa",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.outer.c",
+        "sha256": "53deaf582593cf92d19bd4396bfe38b58ddaad756eb9046f1ab37164cde915b1",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.outer.p",
+        "sha256": "3ad44a0ddf372337b8766f019b324d9867cd8776fb0bc0be0a8df00b3ec9300a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.outer.u",
+        "sha256": "eace22ef675620721447a03ed61e69e304b749ef7b05c9fcdb03738ff91ba1fe",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.outer_objection",
+        "sha256": "7b9b3a09d286d6d4f647be210912666a4a7882f250d6451cea413595f3b807ea",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.public",
+        "sha256": "e2796852475a4fc0f0e7c12cd902dc2c5602ae19d45139ff8b5a024b76fa96d0",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebchange.a",
+        "sha256": "86962ddc3d4b309ccbe241526c118e40064a9a21a9631cedb737f6d9e2054fcc",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebchange.c",
+        "sha256": "dfc80c24b9b2d24731d8aca92d70a5add3f49bba3c991839fe1c357d9b4de4d3",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebchange.p",
+        "sha256": "3f2b6e52c8d5fca078c48e1bd210840811c8c225b81bf2411cdd8193f8c774c3",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebchange.u",
+        "sha256": "690913f288bd749641715032c382f9326a7def22e1a2580d3f9ebea8c421d11f",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebgraded.a",
+        "sha256": "7894ed6919cf8fe73eddedce2d0be36a9ff1d645906228052cfe4c74fcb2e6a1",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebgraded.c",
+        "sha256": "eba6039a35df2735467d31aa1ff1b4842ff71163bbf023849764ab887e826de2",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebgraded.p",
+        "sha256": "eb4be9f2fad381bd32caac6a7e7f6cc85735a06c04370eb9ba1b6c278628a9ec",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.rebgraded.u",
+        "sha256": "78c584a857488f7118f06d8f1f3efdd1b72485721aa07c5fb57d90199f025a07",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.removed.a",
+        "sha256": "82a01a60738f9a3d167558d061778b7c3628efc64b86efe890134b4dfdfde51a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.removed.c",
+        "sha256": "6ec4991f06ed412bb49e37feed4ebe33d9cefbba23ba5a919151c20c51f23276",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.removed.p",
+        "sha256": "ddb9ed0f2801ef653ed9ce8d2d799d0c9f1f3fe6dac618cddad9c8a78d444d89",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.removed.u",
+        "sha256": "8dade54c828379390a65ec5da2e64db5e3d9a81f25af8ada131dbd4735d2fbdb",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.removed_distinction",
+        "sha256": "d2c460d1a34607bcf2b759c5d191e87b2b15185a86bda182dd41babc32194ac2",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.reopen.a",
+        "sha256": "4e0e215b81505caff18410f42f36b7ec4e52757766e2bfd682ff21d207663773",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.reopen.c",
+        "sha256": "ebf877c4efbcfdefcd393d017fa67857d1f5d2f2d7fa02dcfebac1562fe60972",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.reopen.p",
+        "sha256": "5b32e976e69ad52c9e16967c850d873c4c74f6fe2e20d1e8104fabbb29b22362",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.reopen.u",
+        "sha256": "988e744fc03ed83d9459b779be5cb8a876c7576cb219646aa59efe5d2cf12cae",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.restore.a",
+        "sha256": "007734152a068439211235098a40cc395de6e26292ef8340a60e55b08e9b94d4",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.restore.c",
+        "sha256": "2287e2cf17202c733cd6bad4890799c77d5529cb067c9e271a08a4f6317537b6",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.restore.p",
+        "sha256": "b587567695b32b01bb0a5255d9eb5c3db4e3d483e8f193cc8108817e95be1fdd",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.restore.u",
+        "sha256": "c4e66c6293d132c533cb061fd221bbd678ba28b867c01a7ff3fff9537aa25409",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.restore_answer",
+        "sha256": "c558a4bacdca9286fc212afa8e14fe2b38e884f83f629f180c59f093e0359aaa",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.restored_content",
+        "sha256": "883d60f4b6307b29edc02c8566091e74e1fcf6ead30461d541e31a8888de4df8",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.retained.a",
+        "sha256": "f85ac3b23101a4bba61ca8642719b1cdbfbad4d1ee0e924c13d9994386a658f4",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.retained.c",
+        "sha256": "ceedb3c1ce5847a295057d1ae3fe555cecdea87e6ae8d642a8121a5f7a1e5c9a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.retained.p",
+        "sha256": "9a9c916f075d0d6c489c190b6f22bfcc433244f53838863429bb3ca261486ea9",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.retained.u",
+        "sha256": "397a29b6d9e8786194d7132eea27b306df7fe586a1d78c6f0a5cb4c4a59d727b",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.retained_qualification",
+        "sha256": "3835297351e54df8fb7ea8274b2bc73c9ce6d508d897aa4c6af931f97429351f",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.second.a",
+        "sha256": "8c424ce87aeb72c6773bc324126f44770722781ceb1bbf8a56b78ea2569533c8",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.second.c",
+        "sha256": "ac395aeb9959a99a026ee7e912be7fdaa7fca0c8a28718a5097c02d9ce3e4e23",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.second.p",
+        "sha256": "282c4fcbc09091a45f66449f2ba59f6774ae29943a877df7b0e58d89dab397d6",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.second.u",
+        "sha256": "85b8d039d28f706ec1f5e0c294b84b40359a748f07371f125795e9efdf119417",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.shared.a",
+        "sha256": "2bf9e08293901f75e18193b817f871503a84f864c682867fb574568c4aa4e89d",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.shared.c",
+        "sha256": "deaa32b66f7a478774f702590d8165255f41032bed42943ba991934a6fbaa3cd",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.shared.p",
+        "sha256": "7b1f645ddd0e1252c16ee742157df8057a7fd3bb5434daf62ea405f81c2d25a2",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.shared.u",
+        "sha256": "897b37353c0ec75ca0382befbeae93bac2a60e3918163a9adeada9e30573f01a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.shared_distinction",
+        "sha256": "c32988c88015769f48d6ded5dce266cb8bbbdcdf93be80b71debe271a2fe0b97",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.sharedrepeat.a",
+        "sha256": "73bb05e69e71f3731867f14c413d6602b068b4cc2df912ef862d8b47a9e0d8c0",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.sharedrepeat.c",
+        "sha256": "cb8394c55e979437646d6823d05d097dd0614e2301f82f942df79870b68a7e34",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.sharedrepeat.p",
+        "sha256": "30606e29c2106a9a58c3d37c362ba732329ffaec0d031cc9d1b210a04dee6e7d",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.sharedrepeat.u",
+        "sha256": "d5dbd311255c008f5e2def6328f4b679a38b6c340695cef66732c1bbb6ecec2e",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.support_intro.a",
+        "sha256": "4e7e2cc5e39f6666c7466cf9fef9d13cd625d1849a653dcbfb83f7646861eeac",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.support_intro.u",
+        "sha256": "03e72d4f7953090403aafd61a11f44d2b8908569cb8bd0ae80b9a338e48ab569",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tannaim.a",
+        "sha256": "996133f83e9ddda22dc7ce115019bce8922e7605e4414bdde7dc3db1446588fd",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tannaim.c",
+        "sha256": "de675369e257fa5a0027952d60118fdc931b950deec134101110e1206bd31af9",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tannaim.p",
+        "sha256": "f5f6cd857f9b97f7c0febce57611cf8cd0916e578d4384d6bc0cdbe48649789a",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tannaim.u",
+        "sha256": "bf952287fedfee158369c5ee293078279bbee3ef2d62e8779a00e9f0d9a151ae",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tannaim_resolution",
+        "sha256": "7c181ad2e22a5428ba9ef6356277a10d9b741984020102000e9bdf833b3bfd29",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tomb.a",
+        "sha256": "0d6d4f159cc323d4696505bf69238937954e7cdcded1adf25d369212a7c181a4",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tomb.c",
+        "sha256": "4868cbacc6b71fb4c940064f8124d317320b345ee0605eb78193456dae4bfdb3",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tomb.p",
+        "sha256": "5129e679358d80cee23c580a8a234c16726aed890bfb037150237681d20d6f54",
+        "release_state": "valid",
+        "supersedes": null
+      },
+      {
+        "id": "bb.r032.tomb.u",
+        "sha256": "9821fe66a1f670664d6075eb5315267073a59fef88a01e668998adf00ba5ca2f",
+        "release_state": "valid",
+        "supersedes": null
+      }
+    ]
+  },
+  "verdict": "REWORK_TARGETED",
+  "limits": [
+    "Historical310 snapshot only; newer317 window12b:9–13a:1 excluded/unreviewed.",
+    "No whole-tractate or whole-snapshot admission; 310 production cores is not independent coverage.",
+    "No release015 changes, paid APIs, production/common/root artifacts or preserved reader bytes modified.",
+    "No human certification, new task eligibility, later-version inheritance, or replacement of reader disagreement history.",
+    "Prior overlap search limited to declared core coordinates in available root/L04 comparison JSONs; root reconciles other ledgers."
+  ],
+  "task_eligibility": {
+    "segmentation": false,
+    "retrieval": false,
+    "attribution": false,
+    "argument_extraction": false,
+    "qa": false,
+    "scholar_choice": false,
+    "ml": false
+  },
+  "tractate_accepted": false,
+  "later_versions_inherit_review": false
+}

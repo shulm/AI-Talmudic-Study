@@ -1,0 +1,169 @@
+{
+  "review_kind": "independent_ai_source_first_targeted_risk",
+  "snapshot_sha256": "d16f0a518bcd7b7f24385fee06d10ecee2d465eda1aeb8bdad395e42766f8af0",
+  "source_sha256": "b067f3555fa8981f4ff950347cfd2fc30a727bca74c626a63fa91e4a880482b7",
+  "initial_reading_hashes": [
+    "de19aad8476e28496c818ae5eda59263559b992bd274e7d0ded006b228ebaeae"
+  ],
+  "scope": "Moed Katan 5b:2–6a:8, 27 core segments; context 5a:13–6b:4",
+  "omission_pass_performed": true,
+  "producer_labels_exposed_only_after_freeze": true,
+  "compared_active_record_count": 262,
+  "reviewed_risk_record_ids": [
+    "mk.r013.border.a",
+    "mk.r013.border.c",
+    "mk.r013.border.p",
+    "mk.r013.border.u",
+    "mk.r013.boundary1.c",
+    "mk.r013.boundary1.p",
+    "mk.r013.boundary2.c",
+    "mk.r013.boundary2.p",
+    "mk.r013.boundary3.c",
+    "mk.r013.boundary3.p",
+    "mk.r013.boundary4.c",
+    "mk.r013.boundary4.p",
+    "mk.r013.despair.a",
+    "mk.r013.despair.c",
+    "mk.r013.despair.p",
+    "mk.r013.despair.u",
+    "mk.r013.distinguish.c",
+    "mk.r013.distinguish.p",
+    "mk.r013.doubt_kinds.c",
+    "mk.r013.doubt_kinds.p",
+    "mk.r013.elder.c",
+    "mk.r013.elder.p",
+    "mk.r013.exact.c",
+    "mk.r013.exact.p",
+    "mk.r013.field_q.q",
+    "mk.r013.inner_q.q",
+    "mk.r013.measure_q.q",
+    "mk.r013.mourn_q.q",
+    "mk.r013.mourn_why.q",
+    "mk.r013.not_at.c",
+    "mk.r013.not_at.p",
+    "mk.r013.not_far.c",
+    "mk.r013.not_far.p",
+    "mk.r013.olive_q.q",
+    "mk.r013.outer_q.q",
+    "mk.r013.plough_mark_q.q",
+    "mk.r013.repeat.c",
+    "mk.r013.repeat.p",
+    "mk.r013.shift.c",
+    "mk.r013.shift.p",
+    "mk.r013.stone_q.q",
+    "mk.r013.term_q.q",
+    "mk.r013.term_yes.a",
+    "mk.r013.term_yes.c",
+    "mk.r013.term_yes.p",
+    "mk.r013.term_yes.u",
+    "mk.r013.tree_history.c",
+    "mk.r013.tree_history.p"
+  ],
+  "findings": [
+    {
+      "id": "MG01",
+      "classification": "confirmed_typed_attribution_error",
+      "refs": [
+        "Moed Katan 5b:20"
+      ],
+      "record_ids": [
+        "mk.r013.border.u",
+        "mk.r013.border.p",
+        "mk.r013.border.c",
+        "mk.r013.border.a"
+      ],
+      "problem": "The proposition is the anonymous application here of Ulla’s cited explanation, but border.u gives textual_voice Ulla and border.p makes Ulla the holder of that application. Existing uncertainty correctly warns against precisely this inference; it does not repair typed fields. Quoted-authority attribution border.a is appropriate for the quoted component.",
+      "action": "Supersede affected utterance/position into anonymous application and separate quoted Ulla authority/claim if needed; update graph dependencies and coverage. Preserve quotation and uncertainty.",
+      "evidence": [
+        {
+          "ref": "Moed Katan 5b:20",
+          "start_char": 0,
+          "end_char": 56,
+          "quote": "כדאמר עולא בעומדין על הגבולין הכא נמי בעומדין על הגבולין"
+        }
+      ]
+    },
+    {
+      "id": "MG02",
+      "classification": "confirmed_relation_target_error",
+      "refs": [
+        "Moed Katan 5b:9",
+        "Moed Katan 5b:10",
+        "Moed Katan 5b:12"
+      ],
+      "record_ids": [
+        "mk.r013.field_challenge",
+        "mk.r013.field_q.q",
+        "mk.r013.plough.c",
+        "mk.r013.doubt_kinds.c",
+        "mk.r013.no_tent.c"
+      ],
+      "problem": "field_challenge targets plough.c, whose content only says that plowing a grave creates an area called beit hapras. The objection asks about tent impurity in the marking context; it does not deny that terminology or the creation of the field. The subsequent answer retains both field categories.",
+      "action": "Retarget to the marking/tent-impurity inference with explicit editorial reconstruction if needed, or add an accurately scoped combined claim rather than representing terminology itself as objected to. Preserve field_q and source answer.",
+      "evidence": [
+        {
+          "ref": "Moed Katan 5b:10",
+          "start_char": 0,
+          "end_char": 71,
+          "quote": "ובית הפרס מי מטמא באהל והאמר רב יהודה אמר שמואל מנפח אדם בית הפרס והולך"
+        },
+        {
+          "ref": "Moed Katan 5b:12",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "אמר רב פפא לא קשיא כאן בשדה שאבד בה קבר כאן בשדה שנחרש בה קבר"
+        }
+      ]
+    },
+    {
+      "id": "MG03",
+      "classification": "confirmed_relation_omission",
+      "refs": [
+        "Moed Katan 5b:12",
+        "Moed Katan 5b:16"
+      ],
+      "record_ids": [
+        "mk.r013.plough_mark_q.q",
+        "mk.r013.distinguish.c",
+        "mk.r013.trees_support",
+        "mk.r013.history_answer"
+      ],
+      "problem": "The explicit 5b:16 objection to the no-marking consequence of Rav Pappa’s distinction is recorded as a question with proof and answer, but no objection relation connects it to the preceding distinction. This leaves the actual challenged conclusion unrepresented in the relation layer.",
+      "action": "Add objection relation to the no-marking aspect of distinguish.c or a properly separated claim for that consequence, with source evidence and conservative explicitness.",
+      "evidence": [
+        {
+          "ref": "Moed Katan 5b:16",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "ושדה שנחרש בה קבר לא בעי ציון והא תניא מצא שדה מצויינת ואין ידוע מה טיבה יש בה אילנות בידוע שנחרש בה קבר אין בה אילנות בידוע שאבד בה קבר"
+        },
+        {
+          "ref": "Moed Katan 5b:12",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "אמר רב פפא לא קשיא כאן בשדה שאבד בה קבר כאן בשדה שנחרש בה קבר"
+        }
+      ]
+    }
+  ],
+  "unresolved_integrity_critical_count": 2,
+  "integrity_count_definition": "MG01 typed attribution and MG02 incorrect relation target; MG03 additional relation omission. No numerical estimate outside cohort.",
+  "source_claim_omissions_found": [],
+  "agreements": [
+    "All 27 core segments have corresponding content. No entirely missing source proposition identified.",
+    "Exact olive size and diminution, two marking-distance constraints, three bet haperas types, temporal marked-field history, two alternative 6a:2 answers, lime/plowing alternatives and all four boundary branches retained.",
+    "Shmuel/Ulla transmitter chains retained; Rav Asi not conflated with Rav; Rabbi Yehuda repeat retained.",
+    "5b:13 printed terminology question preserved without silent emendation; 5b:14–15 terse source uncertainty preserved."
+  ],
+  "policy_application": "Read COORDINATOR_ANSWER_SET_STATUS_001.json. Every core question is partial and has represented source answer edge; no enum-only source-error finding. Does not imply complete answer inventories or choice-QA eligibility.",
+  "interpretive_limits": [
+    "Compound branches flagged as non-atomic by producer are not treated as missing source content.",
+    "Quoted-authority versus textual-voice conventions for straightforward transmission chains are not independently called errors. MG01 is specifically the anonymous here-application.",
+    "Additional qualification links could improve standalone consumption, but not every possible redundant graph link is counted as omission."
+  ],
+  "evidence_slice_errors": [],
+  "verdict": "TARGETED_CORRECTIONS_REQUIRED",
+  "full_tractate_acceptance": false,
+  "probability_claim": false,
+  "production_writes": false
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Niddah",
+  "owner": "/root/l06_niddah",
+  "epoch": 2,
+  "source_sha256": "2ef431a223773c5920cd51f03d6555e45c81ad98373c98beae9b466cf962e265",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root",
+    "model_id": null
+  },
+  "records": [
+    {
+      "content": {
+        "explicitness": "source_explicit",
+        "relation": "objection",
+        "source_id": "l06.nid.mikveh.c.hillel.difficulty",
+        "target_id": "l06.nid.open.c.hillel.scope_v2"
+      },
+      "evidence": [
+        {
+          "end_char": 82,
+          "quote": "להלל קשיא ודאי דאילו מעת לעת שבנדה תולין לא אוכלין ולא שורפין ואילו הכא טומאה ודאי",
+          "segment_id": "seg_09ab8152826b5e8909c1",
+          "start_char": 0
+        }
+      ],
+      "id": "l06.nid.mikveh.e2.scope_v2",
+      "layer": "edges",
+      "links": [
+        "l06.nid.mikveh.c.hillel.difficulty",
+        "l06.nid.open.c.hillel.scope_v2"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "l06.nid.mikveh.e2"
+    },
+    {
+      "content": {
+        "candidates": [
+          "הלל"
+        ],
+        "role": "position_holder",
+        "scope": "l06.nid.open.c.hillel",
+        "surface": "הלל",
+        "transmission_chain": []
+      },
+      "evidence": [
+        {
+          "end_char": 66,
+          "quote": "הלל",
+          "segment_id": "seg_330daec0f560d6016313",
+          "start_char": 63
+        }
+      ],
+      "id": "l06.nid.open.a.p.hillel.scope_v2",
+      "layer": "attributions",
+      "links": [
+        "l06.nid.open.c.hillel.scope_v2"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "l06.nid.open.a.p.hillel"
+    },
+    {
+      "content": {
+        "assertion_mode": "asserted",
+        "conditions": [
+          "interval from prior examination to current finding",
+          "retrospective effect on taharot; not a retroactive prohibition of marital relations"
+        ],
+        "proposition": "Hillel extends retrospective impurity of pure items to the previous examination, even many days earlier; the later dialogue expressly limits his statement to pure items rather than marital relations.",
+        "scope": "opening Mishnah"
+      },
+      "evidence": [
+        {
+          "end_char": 103,
+          "quote": "הלל אומר מפקידה לפקידה ואפילו לימים הרבה",
+          "segment_id": "seg_330daec0f560d6016313",
+          "start_char": 63
+        },
+        {
+          "segment_id": "seg_8ac6a605c47e3020c8a4",
+          "start_char": 40,
+          "end_char": 85,
+          "quote": "והלל מפריה ורביה מי קאמינא לטהרות הוא דקאמינא"
+        }
+      ],
+      "id": "l06.nid.open.c.hillel.scope_v2",
+      "layer": "claims",
+      "links": [],
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Explicit continuation scope added after frozen independent reading; earlier broad wording retained in superseded record."
+      ],
+      "supersedes": "l06.nid.open.c.hillel"
+    },
+    {
+      "content": {
+        "claim_id": "l06.nid.open.c.hillel.scope_v2",
+        "conditions": [],
+        "holder_candidates": [
+          "הלל"
+        ],
+        "local_status": "explicit Mishnah view; not a later practical ruling",
+        "question_id": null
+      },
+      "evidence": [
+        {
+          "end_char": 66,
+          "quote": "הלל",
+          "segment_id": "seg_330daec0f560d6016313",
+          "start_char": 63
+        }
+      ],
+      "id": "l06.nid.open.p.hillel.scope_v2",
+      "layer": "positions",
+      "links": [
+        "l06.nid.open.c.hillel.scope_v2"
+      ],
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "supersedes": "l06.nid.open.p.hillel"
+    }
+  ],
+  "coverage": [
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "edges",
+      "rationale": "Manual reread: preserve mikveh retrospective certainty versus niddah suspension, each rebuttal and hypothetical gradual bleeding; later repetition and Rabbi Shimon remain open. Evidence checked against raw source. Explicit Hillel taharot-only scope from 3b:11 added after independent reading; context not counted as processed.",
+      "record_ids": [
+        "l06.nid.mikveh.e2.scope_v2"
+      ],
+      "segment_id": "seg_09ab8152826b5e8909c1"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Manual reread: preserve mikveh retrospective certainty versus niddah suspension, each rebuttal and hypothetical gradual bleeding; later repetition and Rabbi Shimon remain open. Evidence checked against raw source. Explicit Hillel taharot-only scope from 3b:11 added after independent reading; context not counted as processed.",
+      "record_ids": [
+        "l06.nid.mikveh.structure",
+        "l06.nid.mikveh.u9",
+        "l06.nid.mikveh.a9",
+        "l06.nid.mikveh.c.hillel.difficulty",
+        "l06.nid.mikveh.c.suspension",
+        "l06.nid.mikveh.c.certainty",
+        "l06.nid.mikveh.p1",
+        "l06.nid.mikveh.p2",
+        "l06.nid.mikveh.e2.scope_v2"
+      ],
+      "segment_id": "seg_09ab8152826b5e8909c1"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "attributions",
+      "rationale": "Manual source rereading of opening Mishnah and first Gemara reason, checked against continuation through 3a:18; preserves alternative later reasoning as open.  Explicit Hillel taharot-only scope from 3b:11 added after independent reading; context not counted as processed.",
+      "record_ids": [
+        "l06.nid.open.a.p.shammai",
+        "l06.nid.open.a.p.hillel.scope_v2"
+      ],
+      "segment_id": "seg_330daec0f560d6016313"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "claims",
+      "rationale": "Manual source rereading of opening Mishnah and first Gemara reason, checked against continuation through 3a:18; preserves alternative later reasoning as open.  Explicit Hillel taharot-only scope from 3b:11 added after independent reading; context not counted as processed.",
+      "record_ids": [
+        "l06.nid.open.c.shammai",
+        "l06.nid.open.c.hillel.scope_v2"
+      ],
+      "segment_id": "seg_330daec0f560d6016313"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "positions",
+      "rationale": "Manual source rereading of opening Mishnah and first Gemara reason, checked against continuation through 3a:18; preserves alternative later reasoning as open.  Explicit Hillel taharot-only scope from 3b:11 added after independent reading; context not counted as processed.",
+      "record_ids": [
+        "l06.nid.open.p.shammai",
+        "l06.nid.open.p.hillel.scope_v2"
+      ],
+      "segment_id": "seg_330daec0f560d6016313"
+    },
+    {
+      "extraction_result": "records_found",
+      "extraction_state": "completed",
+      "layer": "reconciliation",
+      "rationale": "Manual source rereading of opening Mishnah and first Gemara reason, checked against continuation through 3a:18; preserves alternative later reasoning as open. Checked interval limits, veset and edim conditions, separate object/woman outcomes, counting, anonymous attribution and split-page continuation. Explicit Hillel taharot-only scope from 3b:11 added after independent reading; context not counted as processed.",
+      "record_ids": [
+        "l06.nid.open.structure.mishnah",
+        "l06.nid.open.u0",
+        "l06.nid.open.c.shammai",
+        "l06.nid.open.c.hillel.scope_v2",
+        "l06.nid.open.p.shammai",
+        "l06.nid.open.a.p.shammai",
+        "l06.nid.open.p.hillel.scope_v2",
+        "l06.nid.open.a.p.hillel.scope_v2"
+      ],
+      "segment_id": "seg_330daec0f560d6016313"
+    }
+  ],
+  "open_tails": [
+    "l06.nid.open.structure.reason",
+    "l06.nid.mikveh.structure"
+  ]
+}

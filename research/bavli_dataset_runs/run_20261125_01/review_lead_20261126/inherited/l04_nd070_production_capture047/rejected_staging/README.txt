@@ -1,0 +1,1 @@
+Historical failed local prevalidation only. Duplicate proposal ID; never submitted. Corrected069b alone entered production. See nedarim/CONTINUATION069_FAILURE_LINEAGE.json for hashes and later reproduction chronology. Do not use this file as accepted annotation.

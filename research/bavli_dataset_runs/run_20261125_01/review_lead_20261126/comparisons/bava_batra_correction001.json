@@ -1,0 +1,56 @@
+{
+  "artifact_kind": "targeted_correction_receipt_not_new_scope_admission",
+  "status": "TARGETED_DISCREPANCIES_RESOLVED_AT_EXACT_VERSION",
+  "bindings": {
+    "old_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\snapshots\\f82c4e3f725e0eac9e92ce05eeb4070e085b2aa370f3e27d64445236f3c97077.json",
+      "sha256": "f82c4e3f725e0eac9e92ce05eeb4070e085b2aa370f3e27d64445236f3c97077"
+    },
+    "corrected_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\snapshots\\95c61e5e4d60466f3ebb56f5fd491908d64e0f3320e901e9d7220beed5d46940.json",
+      "sha256": "95c61e5e4d60466f3ebb56f5fd491908d64e0f3320e901e9d7220beed5d46940"
+    },
+    "correction_proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_bava_batra\\proposals\\3c954fa4fc7b88e8b6a73d541e3d5e2179531072add831b2ef57da1626840fa5.json",
+      "sha256": "3c954fa4fc7b88e8b6a73d541e3d5e2179531072add831b2ef57da1626840fa5"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "initial_comparison": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\bava_batra_batch001_exact_version.json",
+      "sha256": "9ceaf0dcb99f4f1f624af0529c935bf28d7aa17ec40f2df5e3edf8965d2770a1"
+    },
+    "initial_reading": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\bava_batra_batch001.json",
+      "sha256": "0c0763b9a31ce8b183b3ce6f2e2832f5b57f8d0fc98882e89f1942af87de8593"
+    }
+  },
+  "exact_readonly_replay": true,
+  "proposal_count": 16,
+  "initial_records_preserved_except_release_state": true,
+  "correction_record_count": 31,
+  "evidence_occurrences": 31,
+  "findings": [
+    {
+      "id": "BB-WINDOW",
+      "result": "Separate above/below/opposite claims and conditioned positions added. Reasons target corresponding claim; privacy/home distinction targets above/below, not opposite/light. Original2b15–16 reread. Aggregate quotation remains composite context, not three additional atomic observations."
+    },
+    {
+      "id": "BB-KINYAN",
+      "result": "Explicit scoped nonbinding-words premise added with objection to unqualified acquisition and directions/possession qualifications. Original3a13–14 reread; no universal acquisition prohibition inferred."
+    },
+    {
+      "id": "BB-READER-C55",
+      "result": "Reader attribution error preserved; correct producer Rabba son of Rava continuation unchanged."
+    }
+  ],
+  "limits": [
+    "No full tractate admission or new task eligibility",
+    "No later production admission",
+    "Other lane review not pooled"
+  ],
+  "new_blind_core_segments": 0,
+  "ml_eligible": false
+}

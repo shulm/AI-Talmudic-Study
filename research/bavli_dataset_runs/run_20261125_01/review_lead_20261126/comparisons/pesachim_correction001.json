@@ -1,0 +1,46 @@
+{
+  "artifact_kind": "targeted_correction_receipt_not_new_scope_admission",
+  "status": "TARGETED_DISCREPANCY_RESOLVED_AT_EXACT_VERSION",
+  "bindings": {
+    "old_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_pesachim\\snapshots\\6cd74742059e02cbc7f80f4c373838f1779066975af8eae6e422f988930bc72b.json",
+      "sha256": "6cd74742059e02cbc7f80f4c373838f1779066975af8eae6e422f988930bc72b"
+    },
+    "corrected_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_pesachim\\snapshots\\0e3faae411fe501c3dd3ea74d588088304ac353359690d28dd61066455942902.json",
+      "sha256": "0e3faae411fe501c3dd3ea74d588088304ac353359690d28dd61066455942902"
+    },
+    "correction_proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\bavli_pesachim\\proposals\\7d4639a76d723e7cb2ef8796672ffb34374bd48609518fca1cd2b034e0073734.json",
+      "sha256": "7d4639a76d723e7cb2ef8796672ffb34374bd48609518fca1cd2b034e0073734"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "initial_comparison": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\pesachim_batch001_exact_version.json",
+      "sha256": "5814c68aa60eaeccbd46b5a1b757962a781d3dd4c96025f97829b2cb85817f71"
+    },
+    "initial_reading": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\pesachim_batch001.json",
+      "sha256": "2d05bd8236334c4af5ddcb264fbbb123a9274be49bbde6c83081c9048e918d89"
+    }
+  },
+  "exact_readonly_replay": true,
+  "proposal_count": 7,
+  "initial_records_preserved_except_release_state": true,
+  "correction_record_count": 4,
+  "evidence_occurrences": 4,
+  "finding": {
+    "id": "PE-QA-001",
+    "result": "Source2a8 reread confirms explicit practical-difference question and vow answer. New question marks partial rather than none, with explicit nonexhaustiveness uncertainty; utterance, attribution and answer edge retargeted. No fabricated alternative or demanding answer-set eligibility inferred."
+  },
+  "limits": [
+    "No full tractate admission or new task eligibility",
+    "No later production admission",
+    "Initial reader-side conditions/granularity issues retained"
+  ],
+  "new_blind_core_segments": 0,
+  "ml_eligible": false
+}

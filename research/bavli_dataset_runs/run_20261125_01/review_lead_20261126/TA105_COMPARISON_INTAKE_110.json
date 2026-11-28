@@ -1,0 +1,266 @@
+{
+  "artifact_kind": "external_exact_version_comparison_intake",
+  "artifact_directory": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\delegated101\\comparisons",
+  "effective_comparison": {
+    "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\delegated101\\comparisons\\comparison_revision2.json",
+    "sha256": "37b5d1ea044a0d5c57a458456ea9c5193be54396775b54f82a60d37e203a5584"
+  },
+  "effective_verdict": {
+    "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\delegated101\\comparisons\\v2_verdict_revision2.json",
+    "sha256": "c3e3e7178aa9fc250fa2a2ab847860505ecfcb09e6b8a0858bd4b83428f195dd"
+  },
+  "final_receipt": {
+    "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\delegated101\\comparisons\\FINAL_RECEIPT.json",
+    "sha256": "bed62d69ad24da4c59307ddd31075109a508f958f4819b1379d9b72f77a813b7"
+  },
+  "result": "REWORK_TARGETED",
+  "core_count": 30,
+  "context_compared": 4,
+  "cohort": "original_probability_sample",
+  "root_verification": {
+    "bindings": 60,
+    "inline_exact_evidence": 2770
+  },
+  "additional_commentary_evidence_verified": [
+    {
+      "end_char": 272,
+      "path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Rishonim on Talmud\\Rashi\\Seder Moed\\Rashi on Taanit\\Hebrew\\Vilna Edition.json",
+      "quote": "דמה טעם נתראו דהא מית שהרי מת אהרן",
+      "ref": "Rashi on Taanit 9a:11:1",
+      "role": "additional nonblind comparator commentary evidence; not original-source-only input or replacement edition",
+      "sha256": "ad17f9782b9a7640aee553eea79e7c54a3cb1808b0b1138c74bb1d53e8c7b1d7",
+      "source_index": [
+        16,
+        10,
+        0
+      ],
+      "start_char": 238,
+      "title": "Rashi on Taanit",
+      "versionTitle": "Vilna Edition"
+    }
+  ],
+  "denominators": {
+    "context_layer_cells": 32,
+    "core_claim_concepts_absent_in_all_producer_layers": 0,
+    "core_claim_concepts_with_producer_representation": 81,
+    "core_layer_cells": 240,
+    "fully_compared_context_refs": [
+      "Taanit 9b:1",
+      "Taanit 9b:3",
+      "Taanit 9b:4",
+      "Taanit 9b:5"
+    ],
+    "incidental_boundary_refs_read": [
+      "Taanit 7b:16",
+      "Taanit 9b:2",
+      "Taanit 9b:6"
+    ],
+    "independent_core_claim_concepts": 81,
+    "original_sample_cores": 30,
+    "qualification": "Not an accuracy percentage. Presence is not correctness. Context counts separate. Edge count includes continuation and optional editorial relation; do not pool as supported semantic-edge denominator.",
+    "reader_context_layer_record_counts": {
+      "attributions": 13,
+      "claims": 11,
+      "edges": 10,
+      "positions": 5,
+      "questions": 1,
+      "structure": 4,
+      "utterances": 13
+    },
+    "reader_core_layer_record_counts": {
+      "attributions": 99,
+      "claims": 81,
+      "edges": 64,
+      "positions": 66,
+      "questions": 13,
+      "structure": 30,
+      "utterances": 94
+    },
+    "shared_core_claim_mistranslations": 1,
+    "source_segments_total": 895
+  },
+  "findings_summary": [
+    {
+      "id": "TA101-01",
+      "category": "shared_semantic_error",
+      "refs": [
+        "Taanit 9a:10",
+        "Taanit 9a:11"
+      ],
+      "finding": "Both first readings translate the rereading as they feared. The immediate argument is removal of protective clouds and the congregation becoming visible/exposed. Added local Rashi explicitly explains נתראו and ואתחזיאו. Agreement is a shared error, not independent confirmation. The unpointed original spelling remains preserved.",
+      "proposed_action": "Revise translation to became visible/exposed with source/commentary distinction; retain original records and recheck dependent support to cloud departure."
+    },
+    {
+      "id": "TA101-02",
+      "category": "producer_attribution_omission",
+      "refs": [
+        "Taanit 9a:7"
+      ],
+      "finding": "אמרה ליה explicitly introduces the mother speaking. Producer prose identifies her but structured attribution/utterance voice remains anonymous and holder empty. This is layer loss, not missing narrative content.",
+      "proposed_action": "Preserve mother as character speaker, and warning rather than narrator-certified causal claim."
+    },
+    {
+      "id": "TA101-03",
+      "category": "producer_attribution_omission",
+      "refs": [
+        "Taanit 9a:6"
+      ],
+      "finding": "Producer paraphrases the child citing Genesis and challenging Yohanan, but structured attribution marks both child reply and counter-question anonymous. Source encounter and named Yohanan question establish interlocutors without assigning a חד אמר by order.",
+      "proposed_action": "Add contextual child speaker with explicit source anchor to 9a:5-6; preserve question versus quoted scripture roles."
+    },
+    {
+      "id": "TA101-04",
+      "category": "producer_attribution_omission",
+      "refs": [
+        "Taanit 9a:5"
+      ],
+      "finding": "Quoted-authority typing correctly recognizes Proverbs, but no structured speaker preserves the explicitly reciting child (דיתיב ואמר). Narrative prose contains it; attribution layer does not.",
+      "proposed_action": "Retain quoted authority and add reciter/speaker distinction; do not count the proverb as an independently authored child doctrine."
+    },
+    {
+      "id": "TA101-05",
+      "category": "producer_relation_omission",
+      "refs": [
+        "Taanit 7b:15"
+      ],
+      "finding": "כל שכן records preference for deeds rectified beforehand. Producer retains the claim but its graph has only the remedy answer, omitting this explicit relation. This is an edge omission, not a missing claim.",
+      "proposed_action": "Add a faithful qualification/a-fortiori relation or document a schema-appropriate equivalent, with exact endpoints and source span."
+    },
+    {
+      "id": "TA101-06",
+      "category": "reader_attribution_error",
+      "refs": [
+        "Taanit 7b:14"
+      ],
+      "finding": "ואמר רבי אמי מאי דכתיב explicitly assigns the question to Rabbi Ami; reader question utterance/attribution is anonymous. Producer correctly preserves Ami.",
+      "proposed_action": "Correct only a future reader revision; preserve frozen first reading."
+    },
+    {
+      "id": "TA101-07",
+      "category": "reader_context_attribution_and_answer_error",
+      "refs": [
+        "Taanit 9b:3"
+      ],
+      "finding": "דאמר ריש לקיש מנין names Resh Lakish as questioner. Reader calls question anonymous and links conclusion rain-for-individual as answer to whence derived; the cited verse is the direct evidentiary answer, correctly linked by producer.",
+      "proposed_action": "Future reader revision should preserve named question and proof-answer relation; no core credit from context."
+    },
+    {
+      "id": "TA101-08",
+      "category": "reader_context_polarity_error",
+      "refs": [
+        "Taanit 9b:4"
+      ],
+      "finding": "Reader propositions say a possibility is excluded, but mark those exclusion propositions rejected. The rejected object is the universal possibility, not the asserted narrowing. Producer question/answer separation avoids that polarity inversion.",
+      "proposed_action": "Separate rejected alternatives from accepted limitations in future reader revision."
+    },
+    {
+      "id": "TA101-09",
+      "category": "unresolved_attribution_scope",
+      "refs": [
+        "Taanit 9a:12"
+      ],
+      "finding": "Reader resumes Rabbi Yosi ben Yehuda baraita attribution after the Abahu/Resh Lakish gloss; producer uses anonymous. Resumption is plausible but the unpunctuated text does not independently delimit every quotation boundary. Neither a forced named attribution nor a certified anonymous author is warranted.",
+      "proposed_action": "Preserve inherited-baraita possibility/uncertainty; do not treat as resolved named scholar-choice data."
+    },
+    {
+      "id": "TA101-10",
+      "category": "reasonable_granularity",
+      "refs": [
+        "Taanit 7b:8"
+      ],
+      "finding": "Reader explicitly labels an editorial objection edge between temporal alternatives; producer preserves alternative status without a graph objection. These are not direct contradictory temporal propositions, and no explicit objection formula appears.",
+      "proposed_action": "Do not charge an omission for the optional editorial edge or force a binary dispute."
+    },
+    {
+      "id": "TA101-11",
+      "category": "reasonable_granularity",
+      "refs": [
+        "Taanit 8b:14",
+        "Taanit 9a:10",
+        "Taanit 9a:12",
+        "Taanit 9a:14"
+      ],
+      "finding": "Four exclusions/three dates/narrative steps are split in reader and combined in producer, whose composite content preserves the components and conditions. Concept mapping is many-to-one; row counts are not omission counts.",
+      "proposed_action": "Retain separate atomic denominators; no wholesale claim-omission charge."
+    },
+    {
+      "id": "TA101-12",
+      "category": "unresolved_dialogue_specificity",
+      "refs": [
+        "Taanit 9a:2",
+        "Taanit 9a:3",
+        "Taanit 9a:4"
+      ],
+      "finding": "Reader keeps Yohanan/child candidates for terse dialogue; producer uses anonymous respondent and correctly preserves Hoshaya as reported authority. Do not treat ambiguity as a confirmed wrong named attribution. First recitation request itself clearly belongs to Yohanan, so reader overuncertainty should not spread there. Added Rashi identifies some turns, but it was not part of the original frozen reading and is not silently substituted.",
+      "proposed_action": "Maintain speaker uncertainty for unresolved turns and distinguish actual reported Hoshaya from dialogue transmitter. Any commentary-based refinement requires explicit provenance."
+    },
+    {
+      "id": "TA101-13",
+      "category": "reader_export_compatibility",
+      "refs": [
+        "Taanit 7b:11",
+        "Taanit 9a:14"
+      ],
+      "finding": "Frozen reader declares open_tails=[] while 24 structure rows have open boundaries. Standalone source reading uses segment-sized structures with continuation edges. Source schema/graph/partitions pass; a production proposal adapter with only ref conversion fails actual runner open-tail contract. This is a descriptor/export-compatibility defect, not evidence invalidating all source reading. Exact missing IDs are in validation.json.",
+      "proposed_action": "Document source-only convention and require explicit tail mapping before any production-compatible export; never mutate the frozen reading or claim unadapted production validation passed."
+    },
+    {
+      "id": "TA101-14",
+      "category": "reasonable_granularity",
+      "refs": [
+        "Taanit 9a:8",
+        "Taanit 9a:13"
+      ],
+      "finding": "Reader generic local status for original sustenance statement is supplemented by challenge/resolution graph. Producer original position explicitly notes challenge and Moses qualification; inference has qualification relation. Neither supports an unqualified maintained individual-sustenance rule; no later halakha inferred.",
+      "proposed_action": "Preserve full dependency context in derived views; no new task eligibility."
+    },
+    {
+      "id": "TA101-15",
+      "category": "unresolved_inherited_voice",
+      "refs": [
+        "Taanit 7b:10",
+        "Taanit 7b:12"
+      ],
+      "finding": "Reader assigns expository continuation anonymously while producer inherits Ketina/Ami. Same source content and argument preserved; quotation boundary is not explicitly marked. This is a scope disagreement rather than a demonstrated wrong name.",
+      "proposed_action": "Record inherited-speech uncertainty; do not force a held personal opinion."
+    }
+  ],
+  "chronology": "Pins before semantic inspection; replay after semantic inspection before initial freeze; one auxiliary reader-ID erratum frozen in revision2 after initial freeze. Original artifacts preserved.",
+  "output_path_deviation": "Preserved109; externalcomparatorwroteisolatedreviewrootdirectory instead ofassignedFdirectory. Originalfilesunchanged; additiveIDerratumrevision2effective.",
+  "external_prefix_replay": "57proposal historical712PASS aftersemanticinspection;rootdidnotrepeat",
+  "reader_adapter_limitation": {
+    "extra": [],
+    "missing": [
+      "ta101.structure.0006",
+      "ta101.structure.0007",
+      "ta101.structure.0008",
+      "ta101.structure.0009",
+      "ta101.structure.0010",
+      "ta101.structure.0016",
+      "ta101.structure.0017",
+      "ta101.structure.0018",
+      "ta101.structure.0019",
+      "ta101.structure.0020",
+      "ta101.structure.0021",
+      "ta101.structure.0022",
+      "ta101.structure.0023",
+      "ta101.structure.0024",
+      "ta101.structure.0025",
+      "ta101.structure.0026",
+      "ta101.structure.0027",
+      "ta101.structure.0028",
+      "ta101.structure.0029",
+      "ta101.structure.0030",
+      "ta101.structure.0031",
+      "ta101.structure.0032",
+      "ta101.structure.0033",
+      "ta101.structure.0034"
+    ]
+  },
+  "new_external_comparison_cores_pending_reconciliation": 30,
+  "new_reading_credit": 0,
+  "newwindow9_UNREVIEWED": true,
+  "full_admission": false,
+  "task_eligibility_change": false,
+  "current015_unchanged": true
+}

@@ -1,0 +1,3777 @@
+{
+  "schema_version": "2.0.0-production",
+  "tractate": "Bava Metzia",
+  "source_sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "owner": "/root/lead_l02_l04",
+  "epoch": 1,
+  "execution": {
+    "route": "interactive_agent",
+    "agent_id": "/root/lead_l02_l04",
+    "model_id": null
+  },
+  "records": [
+    {
+      "id": "bm.gemara001.opening.questions.1",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_874a06ae99266d973760",
+          "start_char": 32,
+          "end_char": 44,
+          "quote": "למה לי למתנא"
+        }
+      ],
+      "content": {
+        "formulation": "Why repeat both finding and whole-ownership formulations?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.2",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_874a06ae99266d973760",
+          "start_char": 129,
+          "end_char": 137,
+          "quote": "חדא קתני"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "initial answer",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Explicitly challenged by2a10; replaced by separate cases2a11."
+      ],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.3",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_874a06ae99266d973760",
+          "start_char": 129,
+          "end_char": 137,
+          "quote": "חדא קתני"
+        }
+      ],
+      "content": {
+        "proposition": "The two formulations constitute one combined claim.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:5",
+        "assertion_mode": "rejected"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Explicitly challenged by2a10; replaced by separate cases2a11."
+      ],
+      "links": [
+        "bm.gemara001.opening.utterances.2"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.4",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_874a06ae99266d973760",
+          "start_char": 129,
+          "end_char": 137,
+          "quote": "חדא קתני"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.3",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Explicitly challenged by2a10; replaced by separate cases2a11."
+      ],
+      "links": [
+        "bm.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.5",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_874a06ae99266d973760",
+          "start_char": 129,
+          "end_char": 137,
+          "quote": "חדא קתני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.3",
+        "question_id": "bm.gemara001.opening.questions.1",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Explicitly challenged by2a10; replaced by separate cases2a11."
+      ],
+      "links": [
+        "bm.gemara001.opening.claims.3",
+        "bm.gemara001.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.6",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_874a06ae99266d973760",
+          "start_char": 0,
+          "end_char": 196,
+          "quote": "<big><strong>גמ׳</strong></big> למה לי למתנא זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי ליתני חדא חדא קתני זה אומר אני מצאתיה וכולה שלי וזה אומר אני מצאתיה וכולה שלי"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.3",
+        "target_id": "bm.gemara001.opening.questions.1",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.3",
+        "bm.gemara001.opening.questions.1"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.questions.7",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 0,
+          "end_char": 17,
+          "quote": "וליתני אני מצאתיה"
+        }
+      ],
+      "content": {
+        "formulation": "Why not state only I found it?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.8",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 57,
+          "end_char": 84,
+          "quote": "הוה אמינא מאי מצאתיה ראיתיה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "anticipated misunderstanding",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.9",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 57,
+          "end_char": 84,
+          "quote": "הוה אמינא מאי מצאתיה ראיתיה"
+        }
+      ],
+      "content": {
+        "proposition": "One might misconstrue found as merely saw.",
+        "conditions": [
+          "if only found were stated"
+        ],
+        "scope": "Bava Metzia 2a:6",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.8"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.10",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 57,
+          "end_char": 84,
+          "quote": "הוה אמינא מאי מצאתיה ראיתיה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.9",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.9"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.11",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 57,
+          "end_char": 84,
+          "quote": "הוה אמינא מאי מצאתיה ראיתיה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.9",
+        "question_id": null,
+        "conditions": [
+          "if only found were stated"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.9"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.12",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 105,
+          "end_char": 120,
+          "quote": "בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.13",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 105,
+          "end_char": 120,
+          "quote": "בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "proposition": "One might infer sight alone acquires.",
+        "conditions": [
+          "misreading found as saw"
+        ],
+        "scope": "Bava Metzia 2a:6",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.12"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.14",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 105,
+          "end_char": 120,
+          "quote": "בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.13",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.13"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.15",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 105,
+          "end_char": 120,
+          "quote": "בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.13",
+        "question_id": null,
+        "conditions": [
+          "misreading found as saw"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.13"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.16",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 121,
+          "end_char": 147,
+          "quote": "תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "answer",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.17",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 121,
+          "end_char": 147,
+          "quote": "תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "proposition": "Whole ownership teaches that mere sight does not acquire.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:6",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.16"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.18",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 121,
+          "end_char": 147,
+          "quote": "תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.17",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.17"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.19",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 121,
+          "end_char": 147,
+          "quote": "תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.17",
+        "question_id": "bm.gemara001.opening.questions.7",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.17",
+        "bm.gemara001.opening.questions.7"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.20",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 0,
+          "end_char": 147,
+          "quote": "וליתני אני מצאתיה ואנא ידענא דכולה שלי אי תנא אני מצאתיה הוה אמינא מאי מצאתיה ראיתיה אע\"ג דלא אתאי לידיה בראיה בעלמא קני תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.17",
+        "target_id": "bm.gemara001.opening.questions.7",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.17",
+        "bm.gemara001.opening.questions.7"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.21",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 0,
+          "end_char": 147,
+          "quote": "וליתני אני מצאתיה ואנא ידענא דכולה שלי אי תנא אני מצאתיה הוה אמינא מאי מצאתיה ראיתיה אע\"ג דלא אתאי לידיה בראיה בעלמא קני תנא כולה שלי דבראיה לא קני"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.17",
+        "target_id": "bm.gemara001.opening.claims.13",
+        "relation": "correction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.17",
+        "bm.gemara001.opening.claims.13"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.questions.22",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "ומי מצית אמרת מאי מצאתיה ראיתיה"
+        }
+      ],
+      "content": {
+        "formulation": "Can found mean saw despite Rabbanai on the biblical wording?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.23",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "textual_voice": "רבנאי",
+        "discourse_role": "quoted lexical interpretation",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.24",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "proposition": "Biblical ומצאתה implies the object came into possession.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:7",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.23"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.25",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "surface": "רבנאי",
+        "role": "speaker",
+        "candidates": [
+          "רבנאי"
+        ],
+        "scope": "bm.gemara001.opening.claims.24",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.24"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.26",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "רבנאי"
+        ],
+        "claim_id": "bm.gemara001.opening.claims.24",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.24"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.27",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "ומי מצית אמרת מאי מצאתיה ראיתיה והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.24",
+        "target_id": "bm.gemara001.opening.questions.22",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.24",
+        "bm.gemara001.opening.questions.22"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.28",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "ומי מצית אמרת מאי מצאתיה ראיתיה והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.questions.22",
+        "target_id": "bm.gemara001.opening.claims.9",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.questions.22",
+        "bm.gemara001.opening.claims.9"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.29",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "concession",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.30",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע"
+        }
+      ],
+      "content": {
+        "proposition": "The biblical expression does imply possession.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:8",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.29"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.31",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.30",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.30"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.32",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 31,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.30",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.30"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.33",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.30",
+        "target_id": "bm.gemara001.opening.claims.24",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.30",
+        "bm.gemara001.opening.claims.24"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.34",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "lexical distinction",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.35",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית"
+        }
+      ],
+      "content": {
+        "proposition": "The tanna uses colloquial language, where seeing can be described as finding.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:8",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.34"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.36",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.35",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.35"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.37",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 32,
+          "end_char": 83,
+          "quote": "ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.35",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.35"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.38",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.35",
+        "target_id": "bm.gemara001.opening.questions.22",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.35",
+        "bm.gemara001.opening.questions.22"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.39",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 84,
+          "end_char": 120,
+          "quote": "ואע\"ג דלא אתאי לידיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.40",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 84,
+          "end_char": 120,
+          "quote": "ואע\"ג דלא אתאי לידיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "proposition": "Under the anticipated colloquial misreading, sight without possession could be thought to acquire.",
+        "conditions": [
+          "omitting whole-ownership wording"
+        ],
+        "scope": "Bava Metzia 2a:8",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.39"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.41",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 84,
+          "end_char": 120,
+          "quote": "ואע\"ג דלא אתאי לידיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.40",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.40"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.42",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 84,
+          "end_char": 120,
+          "quote": "ואע\"ג דלא אתאי לידיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.40",
+        "question_id": null,
+        "conditions": [
+          "omitting whole-ownership wording"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.40"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.43",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 121,
+          "end_char": 156,
+          "quote": "תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.44",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 121,
+          "end_char": 156,
+          "quote": "תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "proposition": "The additional whole-ownership wording denies acquisition by sight alone.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:8",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.43"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.45",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 121,
+          "end_char": 156,
+          "quote": "תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.44",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.44"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.46",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 121,
+          "end_char": 156,
+          "quote": "תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.44",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.44"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.47",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.44",
+        "target_id": "bm.gemara001.opening.claims.40",
+        "relation": "correction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.44",
+        "bm.gemara001.opening.claims.40"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.questions.48",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 0,
+          "end_char": 34,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה"
+        }
+      ],
+      "content": {
+        "formulation": "Why not state only whole ownership and omit finding?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.49",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 51,
+          "end_char": 95,
+          "quote": "הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.50",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 51,
+          "end_char": 95,
+          "quote": "הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "proposition": "Without this juxtaposition one might read found elsewhere as acquisition by sight.",
+        "conditions": [
+          "if only whole ownership were stated"
+        ],
+        "scope": "Bava Metzia 2a:9",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.49"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.51",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 51,
+          "end_char": 95,
+          "quote": "הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.50",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.50"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.52",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 51,
+          "end_char": 95,
+          "quote": "הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.50",
+        "question_id": null,
+        "conditions": [
+          "if only whole ownership were stated"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.50"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.53",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 129,
+          "end_char": 162,
+          "quote": "דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.54",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 129,
+          "end_char": 162,
+          "quote": "דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "proposition": "Redundant wording teaches that sight does not acquire.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:9",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.53"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.55",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 129,
+          "end_char": 162,
+          "quote": "דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.54",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.54"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.56",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 129,
+          "end_char": 162,
+          "quote": "דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.54",
+        "question_id": "bm.gemara001.opening.questions.48",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.54",
+        "bm.gemara001.opening.questions.48"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.57",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 0,
+          "end_char": 162,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה אי תני כולה שלי הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני תנא אני מצאתיה והדר תנא כולה שלי דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.54",
+        "target_id": "bm.gemara001.opening.questions.48",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.54",
+        "bm.gemara001.opening.questions.48"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.58",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 0,
+          "end_char": 162,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה אי תני כולה שלי הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני תנא אני מצאתיה והדר תנא כולה שלי דממשנה יתירה אשמעינן דראיה לא קני"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.54",
+        "target_id": "bm.gemara001.opening.claims.50",
+        "relation": "correction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.54",
+        "bm.gemara001.opening.claims.50"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.questions.59",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_483af1c4cf2fb07d25a1",
+          "start_char": 0,
+          "end_char": 22,
+          "quote": "ומי מצית אמרת חדא קתני"
+        }
+      ],
+      "content": {
+        "formulation": "Can it be one combined clause when this and this are separately repeated?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.60",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_483af1c4cf2fb07d25a1",
+          "start_char": 23,
+          "end_char": 38,
+          "quote": "והא זה וזה קתני"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "textual objection",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.61",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_483af1c4cf2fb07d25a1",
+          "start_char": 23,
+          "end_char": 38,
+          "quote": "והא זה וזה קתני"
+        }
+      ],
+      "content": {
+        "proposition": "Separate this-and-this wording opposes the single-clause explanation.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:10",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.60"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.62",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_483af1c4cf2fb07d25a1",
+          "start_char": 23,
+          "end_char": 38,
+          "quote": "והא זה וזה קתני"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.61",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.61"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.63",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_483af1c4cf2fb07d25a1",
+          "start_char": 23,
+          "end_char": 38,
+          "quote": "והא זה וזה קתני"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.61",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.61"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.64",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_483af1c4cf2fb07d25a1",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ומי מצית אמרת חדא קתני והא זה וזה קתני זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וכו'"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.61",
+        "target_id": "bm.gemara001.opening.claims.3",
+        "relation": "objection",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.61",
+        "bm.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.65",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 47,
+          "end_char": 58,
+          "quote": "רישא במציאה"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rav Pappa OR Rav Shimi bar Ashi OR unattributed",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "ואיתימא / ואמרי לה כדי preserve alternative attribution, not joint speech."
+      ],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.66",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 47,
+          "end_char": 58,
+          "quote": "רישא במציאה"
+        }
+      ],
+      "content": {
+        "proposition": "The first case concerns a found item.",
+        "conditions": [
+          "alternative reports preserved"
+        ],
+        "scope": "Bava Metzia 2a:11",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "ואיתימא / ואמרי לה כדי preserve alternative attribution, not joint speech."
+      ],
+      "links": [
+        "bm.gemara001.opening.utterances.65"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.67",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 47,
+          "end_char": 58,
+          "quote": "רישא במציאה"
+        }
+      ],
+      "content": {
+        "surface": "Rav Pappa OR Rav Shimi bar Ashi OR unattributed",
+        "role": "speaker",
+        "candidates": [
+          "Rav Pappa OR Rav Shimi bar Ashi OR unattributed"
+        ],
+        "scope": "bm.gemara001.opening.claims.66",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "ואיתימא / ואמרי לה כדי preserve alternative attribution, not joint speech."
+      ],
+      "links": [
+        "bm.gemara001.opening.claims.66"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.68",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 47,
+          "end_char": 58,
+          "quote": "רישא במציאה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rav Pappa OR Rav Shimi bar Ashi OR unattributed"
+        ],
+        "claim_id": "bm.gemara001.opening.claims.66",
+        "question_id": "bm.gemara001.opening.questions.59",
+        "conditions": [
+          "alternative reports preserved"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "ואיתימא / ואמרי לה כדי preserve alternative attribution, not joint speech."
+      ],
+      "links": [
+        "bm.gemara001.opening.claims.66",
+        "bm.gemara001.opening.questions.59"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.69",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 59,
+          "end_char": 75,
+          "quote": "וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "textual_voice": "Rav Pappa OR Rav Shimi bar Ashi OR unattributed",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "כדי retained as attribution absence/uncertainty; no forced named holder."
+      ],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.70",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 59,
+          "end_char": 75,
+          "quote": "וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "proposition": "The latter case concerns a purchase.",
+        "conditions": [
+          "alternative reports preserved"
+        ],
+        "scope": "Bava Metzia 2a:11",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "כדי retained as attribution absence/uncertainty; no forced named holder."
+      ],
+      "links": [
+        "bm.gemara001.opening.utterances.69"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.71",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 59,
+          "end_char": 75,
+          "quote": "וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "surface": "Rav Pappa OR Rav Shimi bar Ashi OR unattributed",
+        "role": "speaker",
+        "candidates": [
+          "Rav Pappa OR Rav Shimi bar Ashi OR unattributed"
+        ],
+        "scope": "bm.gemara001.opening.claims.70",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "כדי retained as attribution absence/uncertainty; no forced named holder."
+      ],
+      "links": [
+        "bm.gemara001.opening.claims.70"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.72",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 59,
+          "end_char": 75,
+          "quote": "וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "holder_candidates": [
+          "Rav Pappa OR Rav Shimi bar Ashi OR unattributed"
+        ],
+        "claim_id": "bm.gemara001.opening.claims.70",
+        "question_id": "bm.gemara001.opening.questions.59",
+        "conditions": [
+          "alternative reports preserved"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "כדי retained as attribution absence/uncertainty; no forced named holder."
+      ],
+      "links": [
+        "bm.gemara001.opening.claims.70",
+        "bm.gemara001.opening.questions.59"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.73",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.66",
+        "target_id": "bm.gemara001.opening.claims.3",
+        "relation": "correction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.66",
+        "bm.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.74",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.66",
+        "target_id": "bm.gemara001.opening.questions.59",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.66",
+        "bm.gemara001.opening.questions.59"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.75",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.70",
+        "target_id": "bm.gemara001.opening.claims.3",
+        "relation": "correction",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.70",
+        "bm.gemara001.opening.claims.3"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.76",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.70",
+        "target_id": "bm.gemara001.opening.questions.59",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.70",
+        "bm.gemara001.opening.questions.59"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.77",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        }
+      ],
+      "content": {
+        "surface": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי",
+        "role": "speaker",
+        "candidates": [
+          "Rav Pappa",
+          "Rav Shimi bar Ashi",
+          "unattributed"
+        ],
+        "scope": "alternative transmission of separate-case explanation",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [
+        "Alternatives, not a transmitter chain."
+      ],
+      "links": [
+        "bm.gemara001.opening.claims.66",
+        "bm.gemara001.opening.claims.70"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.78",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_b93003f5b675f91e5a53",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "necessity assertion",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.79",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_b93003f5b675f91e5a53",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        }
+      ],
+      "content": {
+        "proposition": "Both found-item and purchase cases are needed.",
+        "conditions": [],
+        "scope": "Bava Metzia 2a:12",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.78"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.80",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_b93003f5b675f91e5a53",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.79",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.79"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.81",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_b93003f5b675f91e5a53",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.79",
+        "question_id": null,
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.79"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.82",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "necessity argument",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.83",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "proposition": "If only finding were taught, one might restrict the oath to finding because a seizer rationalizes that the other loses nothing.",
+        "conditions": [
+          "counterfactual only finding taught"
+        ],
+        "scope": "Bava Metzia 2b:1",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.82"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.84",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.83",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.83"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.85",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.83",
+        "question_id": null,
+        "conditions": [
+          "counterfactual only finding taught"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.83"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.86",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 118,
+          "end_char": 155,
+          "quote": "אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.87",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 118,
+          "end_char": 155,
+          "quote": "אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "proposition": "One might then exempt purchase, where that rationalization is absent.",
+        "conditions": [
+          "counterfactual only finding taught"
+        ],
+        "scope": "Bava Metzia 2b:1",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.86"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.88",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 118,
+          "end_char": 155,
+          "quote": "אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.87",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.87"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.89",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 118,
+          "end_char": 155,
+          "quote": "אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.87",
+        "question_id": null,
+        "conditions": [
+          "counterfactual only finding taught"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.87"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.90",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.83",
+        "target_id": "bm.gemara001.opening.claims.79",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.83",
+        "bm.gemara001.opening.claims.79"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.91",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.87",
+        "target_id": "bm.gemara001.opening.claims.79",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.87",
+        "bm.gemara001.opening.claims.79"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.92",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "necessity argument",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.93",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "proposition": "If only purchase were taught, one might restrict the oath to purchase because both paid and the seizer rationalizes his need while the other can buy elsewhere.",
+        "conditions": [
+          "counterfactual only purchase taught"
+        ],
+        "scope": "Bava Metzia 2b:2",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.92"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.94",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.93",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.93"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.95",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.93",
+        "question_id": null,
+        "conditions": [
+          "counterfactual only purchase taught"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.93"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.96",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 149,
+          "end_char": 188,
+          "quote": "אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.97",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 149,
+          "end_char": 188,
+          "quote": "אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "proposition": "One might exempt finding; therefore both cases must be taught.",
+        "conditions": [
+          "counterfactual only purchase taught"
+        ],
+        "scope": "Bava Metzia 2b:2",
+        "assertion_mode": "hypothetical"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.96"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.98",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 149,
+          "end_char": 188,
+          "quote": "אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.97",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.97"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.99",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 149,
+          "end_char": 188,
+          "quote": "אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.97",
+        "question_id": null,
+        "conditions": [
+          "counterfactual only purchase taught"
+        ],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.97"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.100",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.93",
+        "target_id": "bm.gemara001.opening.claims.79",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.93",
+        "bm.gemara001.opening.claims.79"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.101",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.97",
+        "target_id": "bm.gemara001.opening.claims.79",
+        "relation": "support",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.97",
+        "bm.gemara001.opening.claims.79"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.questions.102",
+      "layer": "questions",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 10,
+          "end_char": 29,
+          "quote": "ולחזי זוזי ממאן נקט"
+        }
+      ],
+      "content": {
+        "formulation": "For purchase, inspect whose money the seller received?",
+        "question_origin": "explicit",
+        "conditions": [],
+        "answer_set_status": "partial"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.103",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 30,
+          "end_char": 52,
+          "quote": "לא צריכא דנקט מתרוייהו"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.104",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 30,
+          "end_char": 52,
+          "quote": "לא צריכא דנקט מתרוייהו"
+        }
+      ],
+      "content": {
+        "proposition": "The purchase case involves money received from both.",
+        "conditions": [],
+        "scope": "Bava Metzia 2b:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.103"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.105",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 30,
+          "end_char": 52,
+          "quote": "לא צריכא דנקט מתרוייהו"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.104",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.104"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.106",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 30,
+          "end_char": 52,
+          "quote": "לא צריכא דנקט מתרוייהו"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.104",
+        "question_id": "bm.gemara001.opening.questions.102",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.104",
+        "bm.gemara001.opening.questions.102"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.107",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 53,
+          "end_char": 73,
+          "quote": "מחד מדעתיה ומחד בע\"כ"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.108",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 53,
+          "end_char": 73,
+          "quote": "מחד מדעתיה ומחד בע\"כ"
+        }
+      ],
+      "content": {
+        "proposition": "One payment was accepted willingly and one unwillingly.",
+        "conditions": [],
+        "scope": "Bava Metzia 2b:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.107"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.109",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 53,
+          "end_char": 73,
+          "quote": "מחד מדעתיה ומחד בע\"כ"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.108",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.108"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.110",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 53,
+          "end_char": 73,
+          "quote": "מחד מדעתיה ומחד בע\"כ"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.108",
+        "question_id": "bm.gemara001.opening.questions.102",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.108",
+        "bm.gemara001.opening.questions.102"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.utterances.111",
+      "layer": "utterances",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 74,
+          "end_char": 116,
+          "quote": "ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "textual_voice": "anonymous Gemara",
+        "discourse_role": "ruling",
+        "composition": "atomic"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    },
+    {
+      "id": "bm.gemara001.opening.claims.112",
+      "layer": "claims",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 74,
+          "end_char": 116,
+          "quote": "ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "proposition": "It is not known which payer was accepted willingly.",
+        "conditions": [],
+        "scope": "Bava Metzia 2b:3",
+        "assertion_mode": "asserted"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.utterances.111"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.attributions.113",
+      "layer": "attributions",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 74,
+          "end_char": 116,
+          "quote": "ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "surface": "anonymous Gemara",
+        "role": "anonymous",
+        "candidates": [],
+        "scope": "bm.gemara001.opening.claims.112",
+        "transmission_chain": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.112"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.positions.114",
+      "layer": "positions",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 74,
+          "end_char": 116,
+          "quote": "ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "holder_candidates": [],
+        "claim_id": "bm.gemara001.opening.claims.112",
+        "question_id": "bm.gemara001.opening.questions.102",
+        "conditions": [],
+        "local_status": "provisional local reading; no final halakhic adjudication"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.112",
+        "bm.gemara001.opening.questions.102"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.115",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.104",
+        "target_id": "bm.gemara001.opening.questions.102",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.104",
+        "bm.gemara001.opening.questions.102"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.116",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.108",
+        "target_id": "bm.gemara001.opening.questions.102",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.108",
+        "bm.gemara001.opening.questions.102"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.edges.117",
+      "layer": "edges",
+      "evidence": [
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "source_id": "bm.gemara001.opening.claims.112",
+        "target_id": "bm.gemara001.opening.questions.102",
+        "relation": "answer",
+        "explicitness": "source_explicit"
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": [
+        "bm.gemara001.opening.claims.112",
+        "bm.gemara001.opening.questions.102"
+      ]
+    },
+    {
+      "id": "bm.gemara001.opening.structure.118",
+      "layer": "structure",
+      "evidence": [
+        {
+          "segment_id": "seg_874a06ae99266d973760",
+          "start_char": 0,
+          "end_char": 196,
+          "quote": "<big><strong>גמ׳</strong></big> למה לי למתנא זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וזה אומר כולה שלי ליתני חדא חדא קתני זה אומר אני מצאתיה וכולה שלי וזה אומר אני מצאתיה וכולה שלי"
+        },
+        {
+          "segment_id": "seg_9edffc949b9a686d3430",
+          "start_char": 0,
+          "end_char": 147,
+          "quote": "וליתני אני מצאתיה ואנא ידענא דכולה שלי אי תנא אני מצאתיה הוה אמינא מאי מצאתיה ראיתיה אע\"ג דלא אתאי לידיה בראיה בעלמא קני תנא כולה שלי דבראיה לא קני"
+        },
+        {
+          "segment_id": "seg_92acd3b5e6d261e72a4e",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "ומי מצית אמרת מאי מצאתיה ראיתיה והא אמר רבנאי (דברים כב, ג) ומצאתה דאתאי לידיה משמע"
+        },
+        {
+          "segment_id": "seg_2f26f30b55008a19ba33",
+          "start_char": 0,
+          "end_char": 156,
+          "quote": "אין ומצאתה דקרא דאתא לידיה משמע ומיהו תנא לישנא דעלמא נקט ומדחזי ליה אמר אנא אשכחית ואע\"ג דלא אתאי לידיה בראיה בעלמא קני תני כולה שלי דבראיה בעלמא לא קני לה"
+        },
+        {
+          "segment_id": "seg_f005a0e0ac2cf785cf02",
+          "start_char": 0,
+          "end_char": 162,
+          "quote": "וליתני כולה שלי ולא בעי אני מצאתיה אי תני כולה שלי הוה אמינא בעלמא דקתני מצאתיה בראיה בעלמא קני תנא אני מצאתיה והדר תנא כולה שלי דממשנה יתירה אשמעינן דראיה לא קני"
+        },
+        {
+          "segment_id": "seg_483af1c4cf2fb07d25a1",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "ומי מצית אמרת חדא קתני והא זה וזה קתני זה אומר אני מצאתיה וזה אומר אני מצאתיה זה אומר כולה שלי וכו'"
+        },
+        {
+          "segment_id": "seg_57c1f2a118b74deb7889",
+          "start_char": 0,
+          "end_char": 75,
+          "quote": "אמר רב פפא ואיתימא רב שימי בר אשי ואמרי לה כדי רישא במציאה וסיפא במקח וממכר"
+        },
+        {
+          "segment_id": "seg_b93003f5b675f91e5a53",
+          "start_char": 0,
+          "end_char": 6,
+          "quote": "וצריכא"
+        },
+        {
+          "segment_id": "seg_5ca820b546c49eff63d5",
+          "start_char": 0,
+          "end_char": 155,
+          "quote": "דאי תנא מציאה הוה אמינא מציאה הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי לאו מידי חסר בה איזל אתפיס ואתפליג בהדיה אבל מקח וממכר דליכא למימר הכי אימא לא"
+        },
+        {
+          "segment_id": "seg_f210fd993d264063faab",
+          "start_char": 0,
+          "end_char": 188,
+          "quote": "ואי תנא מקח וממכר הוא דרמו רבנן שבועה עליה משום דמורי ואמר חבראי דמי קא יהיב ואנא דמי קא יהיבנא השתא דצריכא לדידי אשקליה אנא וחבראי ליזיל לטרח ליזבן אבל מציאה דליכא למימר הכי אימא לא צריכא"
+        },
+        {
+          "segment_id": "seg_749d10d689f58acca818",
+          "start_char": 0,
+          "end_char": 116,
+          "quote": "מקח וממכר ולחזי זוזי ממאן נקט לא צריכא דנקט מתרוייהו מחד מדעתיה ומחד בע\"כ ולא ידענא מי הוא מדעתיה ומי הוא בעל כורחיה"
+        }
+      ],
+      "content": {
+        "title": "Gemara: repeated claims, sight acquisition and found/purchased cases",
+        "primary": true,
+        "boundary": "open_right",
+        "legacy_ids": []
+      },
+      "origin": "source_paraphrase",
+      "uncertainty": [],
+      "links": []
+    }
+  ],
+  "coverage": [
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.2"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.3"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.4"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.questions.1"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.5"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.6"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_874a06ae99266d973760",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread redundancy question and rejected single-clause answer;2a10–11 correction recorded, no initial reading deleted."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.8",
+        "bm.gemara001.opening.utterances.12",
+        "bm.gemara001.opening.utterances.16"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.9",
+        "bm.gemara001.opening.claims.13",
+        "bm.gemara001.opening.claims.17"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.10",
+        "bm.gemara001.opening.attributions.14",
+        "bm.gemara001.opening.attributions.18"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.questions.7"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.11",
+        "bm.gemara001.opening.positions.15",
+        "bm.gemara001.opening.positions.19"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.20",
+        "bm.gemara001.opening.edges.21"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_9edffc949b9a686d3430",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread omitted-finding scenario, colloquial hypothetical and actual denial of sight acquisition; modality separated."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.23"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.24"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.25"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.questions.22"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.26"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.27",
+        "bm.gemara001.opening.edges.28"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_92acd3b5e6d261e72a4e",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread explicit objection and Rabbanai quoted-authority statement; name not conflated with Rav."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.29",
+        "bm.gemara001.opening.utterances.34",
+        "bm.gemara001.opening.utterances.39",
+        "bm.gemara001.opening.utterances.43"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.30",
+        "bm.gemara001.opening.claims.35",
+        "bm.gemara001.opening.claims.40",
+        "bm.gemara001.opening.claims.44"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.31",
+        "bm.gemara001.opening.attributions.36",
+        "bm.gemara001.opening.attributions.41",
+        "bm.gemara001.opening.attributions.45"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.32",
+        "bm.gemara001.opening.positions.37",
+        "bm.gemara001.opening.positions.42",
+        "bm.gemara001.opening.positions.46"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.33",
+        "bm.gemara001.opening.edges.38",
+        "bm.gemara001.opening.edges.47"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_2f26f30b55008a19ba33",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread concession, biblical/colloquial distinction, hypothetical acquisition and actual negation as four propositions."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.49",
+        "bm.gemara001.opening.utterances.53"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.50",
+        "bm.gemara001.opening.claims.54"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.51",
+        "bm.gemara001.opening.attributions.55"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.questions.48"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.52",
+        "bm.gemara001.opening.positions.56"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.57",
+        "bm.gemara001.opening.edges.58"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f005a0e0ac2cf785cf02",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread inverse redundancy challenge; hypothetical other-context inference and surplus-wording answer retained."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.60"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.61"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.62"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.questions.59"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.63"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.64"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_483af1c4cf2fb07d25a1",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread repeated demonstratives as objection to initial parsing; downstream correction linked."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.65",
+        "bm.gemara001.opening.utterances.69"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.66",
+        "bm.gemara001.opening.claims.70"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.67",
+        "bm.gemara001.opening.attributions.71",
+        "bm.gemara001.opening.attributions.77"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.68",
+        "bm.gemara001.opening.positions.72"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.73",
+        "bm.gemara001.opening.edges.74",
+        "bm.gemara001.opening.edges.75",
+        "bm.gemara001.opening.edges.76"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_57c1f2a118b74deb7889",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread first-found/latter-purchase claims; three attribution alternatives kept, not merged as historical coauthors."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.78"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.79"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.80"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.81"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit edges found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_b93003f5b675f91e5a53",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread necessity marker with full2b1–2 continuation; incomplete folio token interpreted only with its continuation."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.82",
+        "bm.gemara001.opening.utterances.86"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.83",
+        "bm.gemara001.opening.claims.87"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.84",
+        "bm.gemara001.opening.attributions.88"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.85",
+        "bm.gemara001.opening.positions.89"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.90",
+        "bm.gemara001.opening.edges.91"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_5ca820b546c49eff63d5",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread first counterfactual and rationalized inner speech; neither financial psychology nor exemption asserted as historical fact. Composite nested rationalization retained in proposition."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.92",
+        "bm.gemara001.opening.utterances.96"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.93",
+        "bm.gemara001.opening.claims.97"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.94",
+        "bm.gemara001.opening.attributions.98"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread this segment: no additional explicit questions found; no artificial relation/question supplied."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.95",
+        "bm.gemara001.opening.positions.99"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.100",
+        "bm.gemara001.opening.edges.101"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_f210fd993d264063faab",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread reverse counterfactual, equal payments, personal need and alternative acquisition retained; conclusion both necessary linked."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "structure",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.structure.118"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "utterances",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.utterances.103",
+        "bm.gemara001.opening.utterances.107",
+        "bm.gemara001.opening.utterances.111"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "claims",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.claims.104",
+        "bm.gemara001.opening.claims.108",
+        "bm.gemara001.opening.claims.112"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "attributions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.attributions.105",
+        "bm.gemara001.opening.attributions.109",
+        "bm.gemara001.opening.attributions.113"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "questions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.questions.102"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "positions",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.positions.106",
+        "bm.gemara001.opening.positions.110",
+        "bm.gemara001.opening.positions.114"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "edges",
+      "extraction_state": "completed",
+      "extraction_result": "records_found",
+      "record_ids": [
+        "bm.gemara001.opening.edges.115",
+        "bm.gemara001.opening.edges.116",
+        "bm.gemara001.opening.edges.117"
+      ],
+      "rationale": "Source-first pass; local contextual reading with continuation; independent review pending."
+    },
+    {
+      "segment_id": "seg_749d10d689f58acca818",
+      "layer": "reconciliation",
+      "extraction_state": "completed",
+      "extraction_result": "none_found_after_pass",
+      "record_ids": [],
+      "rationale": "Reread purchase objection, receipt from both, voluntary/involuntary distinction and unknown identity each extracted. New Ben Nannas topic2b4 begins next."
+    }
+  ],
+  "open_tails": [
+    "bm.gemara001.opening.structure.118",
+    "bm.opening.structure.86"
+  ]
+}

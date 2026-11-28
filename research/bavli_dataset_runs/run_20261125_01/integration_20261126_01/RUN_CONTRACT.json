@@ -1,0 +1,201 @@
+{
+  "actual_platform_identities": {
+    "local": "Codex desktop local host; four simultaneous collaboration slots including coordinator",
+    "remote": "No reachable remote production session or transfer receipt established"
+  },
+  "annotation_protocol_file": "research/bavli_production_v1/PROTOCOL.md",
+  "annotation_protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "assignment_ledger": "research/bavli_dataset_runs/run_20261125_01/ASSIGNMENT_LEDGER.json",
+  "assignment_revision": 1,
+  "assignments_sha256": "cebe3248155bc225321c9f924104a8f250c6b91a5fc32e9dfe641e014e5c2beb",
+  "blocked_lanes": [],
+  "checkpoint_convention": "External job CURRENT.json points at immutable snapshots/<sha>.json; immutable proposals/<sha>.json; explicit per-tractate OWNER.json",
+  "completion_gate": "37 required extraction passes by layer plus source-coordinate random, endpoint and risk review; no whole tractate yet delivered",
+  "coordination_branch": "dataset/bavli-coordination-v1",
+  "cross_lane_reassignment_owner": "GLOBAL_COORDINATOR",
+  "historical_state": {
+    "berakhot_open_tail": "sug_bb0081dd21382f865f03",
+    "berakhot_structural_next": "Berakhot 9b:1",
+    "berakhot_structural_segments": 386,
+    "legacy_semantics_not_counted_complete": true,
+    "path": "F:/Sefaria_QA/bavli_inherited_snapshot_v1",
+    "snapshot_manifest_sha256": "e08e8ed46e08eaa450ca3430b4bc9c962f5189c508033999b6ee5dafe6ef1ad8"
+  },
+  "lane_output_convention": "F:/Sefaria_QA/bavli_production_run_20261125_01/<lane>/<job_id>; repository metadata and bounded proposal evidence under run/lanes/<lane>; source inventories and full source copies never Git",
+  "output_schema_files": [
+    "research/bavli_production_v1/schema.json"
+  ],
+  "passed_checks": [
+    "37 source and schema hashes + TOC",
+    "81793 source segments inventoried",
+    "six deterministic lane packages",
+    "inherited 88-file snapshot unchanged",
+    "17 engineering tests",
+    "inherited B24 and fresh RH semantic execution",
+    "exact original quotations and typed schema",
+    "interruption/recovery/idempotency",
+    "deterministic replay",
+    "targeted fresh source-first review and preserved corrections"
+  ],
+  "production_files": {
+    "research/bavli_production_v1/.gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+    "research/bavli_production_v1/PROTOCOL.md": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+    "research/bavli_production_v1/README.md": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+    "research/bavli_production_v1/runner.py": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+    "research/bavli_production_v1/schema.json": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+    "research/bavli_production_v1/test_runner.py": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+    "research/bavli_source_access_v1/README.md": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+    "research/bavli_source_access_v1/SOURCE_ACCESS_AUDIT.json": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+    "research/bavli_source_access_v1/source_packages.py": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8"
+  },
+  "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "readiness_scope": "Inputs ready on verified local host only; lane launch and completion tracked separately. Remote sessions require verified transfer.",
+  "ready_lanes": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06"
+  ],
+  "review_packet_policy": "fresh_source_only_contexts",
+  "review_plan_seed": 20261125,
+  "run_id": "run_20261125_01",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "schema_version": "2.0.0-production",
+  "shakedown_artifacts": [
+    {
+      "path": "research/bavli_dataset_runs/run_20261125_01/SHAKEDOWN.json",
+      "sha256": "0bcef6aeef06c1bd0c7c9528ed75db5289c005411995b02d86ffdd48ae36e83d"
+    },
+    {
+      "path": "research/bavli_dataset_runs/run_20261125_01/review/bootstrap_blind_initial.json",
+      "sha256": "f66447b183bd9c878bac0fe8308912a543620d02d6c56ab23767c0310cdd0bc6"
+    },
+    {
+      "path": "research/bavli_dataset_runs/run_20261125_01/review/bootstrap_comparison.json",
+      "sha256": "70c9cd5d6cde34af7f18b98df208bbbabd811c717dff174362523da54949c045"
+    },
+    {
+      "path": "research/bavli_dataset_runs/run_20261125_01/review/correction_receipt.json",
+      "sha256": "ab9b5f29fdced30e15b0b6b84c11cfbfddb654f63e119d337e60c6ad3a534461"
+    },
+    {
+      "path": "research/bavli_inheritance_audit_v1/engineering_final_checks.json",
+      "sha256": "9ed912c22710e636bd4a59ad045b5f4752591edf9a972f31a425acf04f5aea3a"
+    }
+  ],
+  "source_access_descriptors_by_lane": {
+    "L01": {
+      "local_source_root": "F:/Sefaria-Export-master",
+      "local_status": "VERIFIED_AVAILABLE",
+      "package_path": "F:\\Sefaria_QA\\bavli_source_packages_v1\\L01.zip",
+      "package_sha256": "94ffd2301a9ae6ce9820857c26ed579ab434dfb65db1f1a05bf27be762fb7e80",
+      "remote_status": "NOT_TRANSFERRED",
+      "verification_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L01 --package F:\\Sefaria_QA\\bavli_source_packages_v1\\L01.zip"
+    },
+    "L02": {
+      "local_source_root": "F:/Sefaria-Export-master",
+      "local_status": "VERIFIED_AVAILABLE",
+      "package_path": "F:\\Sefaria_QA\\bavli_source_packages_v1\\L02.zip",
+      "package_sha256": "452e7306b8dcd4daad3347b2ca71d3b63f7d0588127b46c153b2762f424cc242",
+      "remote_status": "NOT_TRANSFERRED",
+      "verification_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L02 --package F:\\Sefaria_QA\\bavli_source_packages_v1\\L02.zip"
+    },
+    "L03": {
+      "local_source_root": "F:/Sefaria-Export-master",
+      "local_status": "VERIFIED_AVAILABLE",
+      "package_path": "F:\\Sefaria_QA\\bavli_source_packages_v1\\L03.zip",
+      "package_sha256": "820487dce3d741f6009979eb2b2c8d399951471ba4d2978ebc2be50c2a9605d3",
+      "remote_status": "NOT_TRANSFERRED",
+      "verification_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L03 --package F:\\Sefaria_QA\\bavli_source_packages_v1\\L03.zip"
+    },
+    "L04": {
+      "local_source_root": "F:/Sefaria-Export-master",
+      "local_status": "VERIFIED_AVAILABLE",
+      "package_path": "F:\\Sefaria_QA\\bavli_source_packages_v1\\L04.zip",
+      "package_sha256": "b027a02a43e48b5f16bff6a12886e5d812bcf2e1ca246767b8875896ed70f983",
+      "remote_status": "NOT_TRANSFERRED",
+      "verification_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L04 --package F:\\Sefaria_QA\\bavli_source_packages_v1\\L04.zip"
+    },
+    "L05": {
+      "local_source_root": "F:/Sefaria-Export-master",
+      "local_status": "VERIFIED_AVAILABLE",
+      "package_path": "F:\\Sefaria_QA\\bavli_source_packages_v1\\L05.zip",
+      "package_sha256": "1d4b3615e6048ed84f094e35197c97b5a441e4efc99fe0d87b3fb7a4921b2b18",
+      "remote_status": "NOT_TRANSFERRED",
+      "verification_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L05 --package F:\\Sefaria_QA\\bavli_source_packages_v1\\L05.zip"
+    },
+    "L06": {
+      "local_source_root": "F:/Sefaria-Export-master",
+      "local_status": "VERIFIED_AVAILABLE",
+      "package_path": "F:\\Sefaria_QA\\bavli_source_packages_v1\\L06.zip",
+      "package_sha256": "4327c2601dcd0cace17890844d8fd77a0d4c4ff28f57419a3b0092dca8d74202",
+      "remote_status": "NOT_TRANSFERRED",
+      "verification_command": "python -X utf8 research/bavli_source_access_v1/source_packages.py --lane L06 --package F:\\Sefaria_QA\\bavli_source_packages_v1\\L06.zip"
+    }
+  },
+  "source_edition": "Wikisource Talmud Bavli",
+  "source_manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+  "status": "READY_FOR_ASSIGNED_LANES",
+  "supported_execution_routes": [
+    {
+      "actual_shakedown_agent": "/root",
+      "new_metered_external_api_calls": 0,
+      "platform": "local Codex collaboration agents",
+      "route": "interactive_agent"
+    }
+  ],
+  "tested_commands": [
+    "init",
+    "packet",
+    "submit",
+    "replay",
+    "migrate",
+    "handoff",
+    "export",
+    "compatibility-export",
+    "python -m unittest discover -s research/bavli_production_v1 -p test_runner.py",
+    "python -X utf8 research/bavli_dataset_runs/run_20261125_01/verify_shakedown.py"
+  ],
+  "tractate_assignment_epochs": {
+    "bavli_arakhin": 1,
+    "bavli_avodah_zarah": 1,
+    "bavli_bava_batra": 1,
+    "bavli_bava_kamma": 1,
+    "bavli_bava_metzia": 1,
+    "bavli_beitzah": 1,
+    "bavli_bekhorot": 1,
+    "bavli_berakhot": 2,
+    "bavli_chagigah": 1,
+    "bavli_chullin": 1,
+    "bavli_eruvin": 1,
+    "bavli_gittin": 1,
+    "bavli_horayot": 1,
+    "bavli_keritot": 1,
+    "bavli_ketubot": 1,
+    "bavli_kiddushin": 1,
+    "bavli_makkot": 1,
+    "bavli_megillah": 1,
+    "bavli_meilah": 1,
+    "bavli_menachot": 1,
+    "bavli_moed_katan": 1,
+    "bavli_nazir": 1,
+    "bavli_nedarim": 1,
+    "bavli_niddah": 1,
+    "bavli_pesachim": 1,
+    "bavli_rosh_hashanah": 2,
+    "bavli_sanhedrin": 1,
+    "bavli_shabbat": 1,
+    "bavli_shevuot": 1,
+    "bavli_sotah": 1,
+    "bavli_sukkah": 1,
+    "bavli_taanit": 1,
+    "bavli_tamid": 1,
+    "bavli_temurah": 1,
+    "bavli_yevamot": 1,
+    "bavli_yoma": 1,
+    "bavli_zevachim": 1
+  },
+  "within_lane_worker_dispatch": "delegated_to_admitted_lane_lead"
+}

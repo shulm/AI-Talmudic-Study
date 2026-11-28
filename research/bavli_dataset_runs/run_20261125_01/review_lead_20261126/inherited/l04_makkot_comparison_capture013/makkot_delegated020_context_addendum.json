@@ -1,0 +1,174 @@
+{
+  "artifact_kind": "immutable_context_and_chronology_addendum",
+  "actual_comparator_agent_id": "/root/makkot_compare020",
+  "base_comparison": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\makkot_delegated020_exact_version.json",
+    "sha256": "55c36eca45705eebd0bae433755fb523b014b1b62314f1ebcb8ea218591aafbf"
+  },
+  "base_verdict": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\makkot_delegated020_v2_verdict.json",
+    "sha256": "030c6647347d51b2cecada017587dd0baccaa57f3fcb876ecceed1f0825e3329"
+  },
+  "audit_script": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L04\\review_20261127_delegated020\\comparisons\\makkot_delegated020_context_addendum.py",
+    "sha256": "d7f9069012a27dc559248dd2ae2481e0c270acb42ba44f041b17feb59cce8abf"
+  },
+  "context_claim_mapping": {
+    "x01": [
+      "ma.r006.ravadist.c"
+    ],
+    "x02": [
+      "ma.r006.option1.c"
+    ],
+    "x03": [
+      "ma.r006.option1.c"
+    ],
+    "x04": [
+      "ma.r006.option2.c"
+    ],
+    "x05": [
+      "ma.r006.option2b.c"
+    ],
+    "x06": [
+      "ma.r008.avahu.c"
+    ],
+    "x07": [
+      "ma.r008.rava.c"
+    ],
+    "x08": [
+      "ma.r008.wordq.q",
+      "ma.r008.difficulty.c"
+    ],
+    "x09": [
+      "ma.r008.woman.c"
+    ],
+    "x10": [
+      "ma.r008.rl.c"
+    ],
+    "x11": [
+      "ma.r008.elazar.q"
+    ],
+    "x12": [
+      "ma.r008.secondcase.c",
+      "ma.r008.rl2.c",
+      "ma.r008.yohanan.q"
+    ],
+    "x13": [
+      "ma.r008.credit.c"
+    ],
+    "x14": [
+      "ma.r008.rlans.c"
+    ],
+    "x15": [
+      "ma.r008.yans.c"
+    ],
+    "xq1": [
+      "ma.r008.setq.q"
+    ],
+    "xq2": [
+      "ma.r008.past.q"
+    ],
+    "xq3": [
+      "ma.r008.align.q"
+    ]
+  },
+  "context_relation_review": [
+    {
+      "reader_id": "e49",
+      "assessment": "reasonable_editorial_dependency",
+      "note": "Earlier Rava reconciliation explains why he is certain, but no explicit support speech; no required typed edge."
+    },
+    {
+      "reader_id": "e50",
+      "assessment": "context_typed_relation_omission",
+      "note": "או דלמא explicitly distinguishes second and first alternatives: ma.r006.option2.c -> ma.r006.option1.c."
+    },
+    {
+      "reader_id": "e51",
+      "assessment": "typed_relation_present",
+      "note": "ma.r006.text.support"
+    },
+    {
+      "reader_id": "e52",
+      "assessment": "context_typed_relation_omission",
+      "note": "ma.r008.setq.q challenges ma.r008.yehuda.c; question prose exists but objection edge absent."
+    },
+    {
+      "reader_id": "e53",
+      "assessment": "typed_relation_present",
+      "note": "ma.r008.avahu.answer"
+    },
+    {
+      "reader_id": "e54",
+      "assessment": "typed_relation_present",
+      "note": "ma.r008.past.objection"
+    },
+    {
+      "reader_id": "e55",
+      "assessment": "context_typed_relation_omission",
+      "note": "אלא אמר רבא replaces Abbahu explanation: correction ma.r008.rava.c -> ma.r008.avahu.c absent."
+    },
+    {
+      "reader_id": "e56",
+      "assessment": "typed_relation_present",
+      "note": "ma.r008.difficulty.outcome"
+    },
+    {
+      "reader_id": "e57",
+      "assessment": "reader_qualification",
+      "note": "Difficulty directly attacks Rava reformulation; original Mishnah remains difficult through that chain, not an independently explicit extra unresolved-outcome event."
+    },
+    {
+      "reader_id": "e58",
+      "assessment": "typed_relation_present",
+      "note": "ma.r008.elazar.objection"
+    },
+    {
+      "reader_id": "e59",
+      "assessment": "reasonable_narrative_granularity",
+      "note": "Narrative reproach follows second scene; no argumentative continuation required solely for temporal sequencing."
+    },
+    {
+      "reader_id": "e60",
+      "assessment": "typed_relation_present",
+      "note": "ma.r008.rlans.answer"
+    },
+    {
+      "reader_id": "e61",
+      "assessment": "typed_relation_present",
+      "note": "ma.r008.yans.answer"
+    }
+  ],
+  "context_denominators": {
+    "claims": 15,
+    "questions": 3,
+    "relations": 13,
+    "sampled_core_credit": 0
+  },
+  "additional_context_status_error": {
+    "ref": "Makkot 5a:13",
+    "producer_ids": [
+      "ma.r008.camel.c",
+      "ma.r008.camel.p"
+    ],
+    "finding": "Same polarity defect as core vision record: the proposition that the teaching rejects extraordinary camel travel is marked rejected. The extraordinary-travel allowance is rejected; rejection itself is accepted.",
+    "required_correction": "Separate hypothetical allowance from accepted rejection or correct negative-proposition status and linked position. Check these two local parallel instances; no claim of whole-tractate systematic review."
+  },
+  "context_required_edge_corrections": [
+    "e50",
+    "e52",
+    "e55"
+  ],
+  "new_core_findings": 0,
+  "total_observed_status_errors": {
+    "core": 1,
+    "context": 1
+  },
+  "total_confirmed_missing_typed_relations": {
+    "core": 7,
+    "context": 3
+  },
+  "verdict": "REWORK_TARGETED",
+  "chronology_qualification": "Reader file/sidecar and receipt were inspected before semantic comparison; full independent cryptographic/schema/evidence/replay assertions were completed later in the comparator execution. Thus strict verify-before-first-producer-inspection ordering was not achieved. All exact pins subsequently passed, inputs remained frozen, and no blind-reading credit is claimed.",
+  "restrictions": "All 15 context claims represented, often composite or interrogative. No context omission rate, new core credit, task eligibility, full admission, human certification or later-version inheritance. Initial comparison/verdict remain immutable; this additive evidence must accompany them."
+}

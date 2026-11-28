@@ -1,0 +1,23 @@
+import json
+from pathlib import Path
+R=Path(__file__).resolve().parents[1];RT=Path('F:/Sefaria_QA/bavli_production_run_20261125_01/L06/bavli_meilah');rd=json.loads((R/'readings/meilah_supplement003a.json').read_text());s=json.loads((RT/'snapshots/376f00e4349914d3550a2c1673e749a1b752aa4d72169022f3267331fe365dbd.json').read_text());lookup={x['id']:x for x in s['records']};raw={}
+def put(nums,section,names):
+ ids=['l06.mei.'+section+'.'+n for n in names.split('+')]
+ for n in nums:raw[f'meilah_supplement003a.claims.{n:04}']=ids
+for nums,names in [([1],'c.consecrate'),(range(2,5),'c.melikah'),(range(5,9),'c.blood'),([9],'c.disqualify'),([10],'c.identify'),([11],'c.shaul'),([12,13],'c.meir'),(range(14,18),'c.sages'),([18],'c.rava1'),([19,20],'c.rava2'),([21],'c.residual'),([22,23,24],'c.hanina'),([25,26],'c.huna'),([27,28],'c.adda'),([29,30],'c.verse'),([31],'c.ifremaining'),([32],'c.firstclause'),([33],'q.mincha+c.mincha'),([34,35,36],'c.mincha'),([37],'c.extra'),([38,39],'c.combined'),([40],'c.split'),([41],'c.schoolagain'),([42],'q.traditions'),([43],'c.pappa'),([44],'c.twotannaim')]:put(nums,'birdsin',names)
+for start,name in [(45,'bird'),(52,'burned'),(59,'olah'),(66,'sinasham')]:
+ put([start],'stages','c.'+name+'.start');put(range(start+1,start+4),'stages','c.'+name+'.disqualify');put(range(start+4,start+7),'stages','c.'+name+'.liability')
+for nums,name in [([73],'bird'),([74],'burned'),([75,76],'olah'),([77,78],'sinasham')]:put(nums,'stages','c.'+name+'.end')
+for nums,names in [([79],'c.twoloaves.start'),(range(80,84),'c.twoloaves.crust'),(range(84,88),'c.twoloaves.blood'),([88],'c.showbread.start'),(range(89,92),'c.showbread.crust'),(range(92,96),'c.showbread.bowls'),([96],'c.mincha.start'),(range(97,100),'c.mincha.vessel'),(range(100,105),'c.mincha.handful'),([105,109],'c.rav'),([106,110],'c.yohanan'),([107,108],'c.agreed'),([111],'c.endpoint'),([112,113,114],'c.coal'),([115],'c.substance'),([116],'c.alternate'),([117],'c.yohananreply')]:put(nums,'stages',names)
+for nums,names in [([118],'c.rav'),([119],'c.levi'),([120],'c.school'),([121],'c.incense'),([122,123],'c.before'),([124,125],'c.after'),([126],'c.voluntary'),([127,128,129],'c.destinations'),([130],'q.contradiction'),([131,133,134],'c.split'),([132],'c.shimon'),([135,136],'c.rava'),([137],'q.obvious'),([138,139,140],'c.hypothesis'),([141,142],'c.awareness'),([143],'c.reason'),([144],'c.substances'),(range(145,151),'c.vessel'),([151,152,153],'c.permitters'),([154,155,156],'c.without'),(range(157,165),'c.inference'),([165],'c.all'),([166],'q.immediate'),([167],'c.timing'),([168,169],'c.elazar')]:put(nums,'compensation',names)
+for nums,names in [(range(170,173),'c.die'),(range(173,177),'c.after'),(range(177,182),'c.before'),([182,183],'c.scope'),([184,185],'c.repeat'),([186,187,188],'c.nazir'),([189],'c.unspecified'),([190,191,192],'c.sinmoney'),([193,194],'c.olah'),([195,196,197],'c.peace'),([198,199,200],'c.birds'),([201,202],'c.rava')]:put(nums,'designations',names)
+assert len(raw)==202 and all(z in lookup for v in raw.values() for z in v)
+qraw={}
+for i,sec,ids in [(1,'birdsin','q.who'),(2,'birdsin','c.shaul+c.meir+c.sages'),(3,'birdsin','q.property'),(4,'birdsin','c.huna+c.adda'),(5,'birdsin','q.verse'),(6,'birdsin','c.firstclause'),(7,'birdsin','q.mincha'),(8,'birdsin','c.combined'),(9,'birdsin','q.traditions'),(10,'stages','c.rav+c.yohanan'),(11,'stages','q.endpoint'),(12,'stages','q.coal'),(13,'stages','q.alternate'),(14,'compensation','c.rav+c.levi'),(15,'compensation','c.school'),(16,'compensation','q.item'),(17,'compensation','q.contradiction'),(18,'compensation','q.obvious'),(19,'compensation','q.why'),(20,'compensation','q.source'),(21,'compensation','c.inference'),(22,'compensation','q.touch'),(23,'designations','q.scope'),(24,'designations','q.repeat'),(25,'designations','q.birds')]:qraw[f'meilah_supplement003a.questions.{i:04}']=['l06.mei.'+sec+'.'+z for z in ids.split('+')]
+allmap=raw|qraw;pedges=[x for x in s['records'] if x['layer']=='edges' and x['release_state']=='valid'];edgechecks=[]
+for x in rd['proposal']['records']:
+ if x['layer']!='edges':continue
+ c=x['content'];ss=allmap[c['source_id']];ts=allmap[c['target_id']];match=[e['id'] for e in pedges if e['content']['source_id'] in ss and e['content']['target_id'] in ts];internal=bool(set(ss)&set(ts));edgechecks.append({'reader_id':x['id'],'source_mapping':ss,'target_mapping':ts,'reader_relation':c['relation'],'producer_endpoint_edges':match,'internal_to_compound_record':internal})
+if __name__=='__main__':
+ for x in edgechecks:
+  if not x['producer_endpoint_edges'] and not x['internal_to_compound_record']:print(x)
