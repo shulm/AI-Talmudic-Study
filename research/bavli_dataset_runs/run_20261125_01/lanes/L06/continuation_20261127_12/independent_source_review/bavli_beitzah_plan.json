@@ -1,0 +1,4643 @@
+{
+  "algorithm_version": "source-only-block-review-v1",
+  "status": "PLAN_ONLY_NOT_REVIEWED",
+  "tractate": "Beitzah",
+  "source_sha256": "dfac792819786eb3092e1bc182b62f31dd30874ce58369497d097ecca5264a53",
+  "source_version_title": "Wikisource Talmud Bavli",
+  "source_language": "he",
+  "seed": 20261125,
+  "coordinate_contract": "Original zero-based array indices; half-open Unicode codepoint offsets; no normalization",
+  "empty_rule": "Only raw empty strings are empty (bool(text)==False); whitespace-only raw strings remain nonempty; no normalization or HTML stripping",
+  "source_inventory": {
+    "page_positions": 80,
+    "segment_positions": 1151,
+    "nonempty_segments": 1151,
+    "empty_segment_positions": [],
+    "whitespace_only_nonempty_positions": [],
+    "empty_page_indices": [
+      0,
+      1
+    ]
+  },
+  "sampling": {
+    "block_size_nonempty_segments": 10,
+    "grid_blocks": 116,
+    "sampled_blocks": 30,
+    "inclusion_probability_numerator": 30,
+    "inclusion_probability_denominator": 116,
+    "inclusion_probability_scope": "Probability sample only; mandatory endpoint union is recorded separately",
+    "rank_algorithm": "SHA-256(domain NUL + canonical JSON of seed, source_sha256, block_id); ascending digest then block_id",
+    "rank_domain": "bavli-review-block-rank-v1",
+    "probability_sample_block_ids": [
+      "block_000000",
+      "block_000013",
+      "block_000018",
+      "block_000025",
+      "block_000028",
+      "block_000029",
+      "block_000031",
+      "block_000034",
+      "block_000035",
+      "block_000036",
+      "block_000037",
+      "block_000045",
+      "block_000047",
+      "block_000054",
+      "block_000060",
+      "block_000062",
+      "block_000064",
+      "block_000065",
+      "block_000070",
+      "block_000074",
+      "block_000082",
+      "block_000083",
+      "block_000088",
+      "block_000089",
+      "block_000090",
+      "block_000092",
+      "block_000094",
+      "block_000108",
+      "block_000110",
+      "block_000112"
+    ]
+  },
+  "endpoint_checks": {
+    "opening_block_id": "block_000000",
+    "closing_block_id": "block_000115",
+    "overlap_with_probability_sample": [
+      "block_000000"
+    ],
+    "unique_added_block_ids": [
+      "block_000115"
+    ]
+  },
+  "coverage": {
+    "unique_review_blocks": 31,
+    "probability_sample_nonempty_segments": 300,
+    "unique_review_nonempty_segments": 301
+  },
+  "sampling_grid": [
+    {
+      "block_id": "block_000000",
+      "nonempty_ordinal_start": 0,
+      "nonempty_ordinal_end_exclusive": 10,
+      "first_ref": "Beitzah 2a:1",
+      "last_ref": "Beitzah 2a:10",
+      "membership_sha256": "8242a1f49d1e0f8ab4f6982371acb999a26e01df91a20626cd6cb21642f57e53"
+    },
+    {
+      "block_id": "block_000001",
+      "nonempty_ordinal_start": 10,
+      "nonempty_ordinal_end_exclusive": 20,
+      "first_ref": "Beitzah 2a:11",
+      "last_ref": "Beitzah 2b:9",
+      "membership_sha256": "9de12fe8420ce34282d402e04c320d18de9828a868b94bfedfd017a58774d6e3"
+    },
+    {
+      "block_id": "block_000002",
+      "nonempty_ordinal_start": 20,
+      "nonempty_ordinal_end_exclusive": 30,
+      "first_ref": "Beitzah 2b:10",
+      "last_ref": "Beitzah 3a:4",
+      "membership_sha256": "91fb09d1bffe8fffcadd09fa2624113149991c15f3ed2db57ced39a2fb57e71d"
+    },
+    {
+      "block_id": "block_000003",
+      "nonempty_ordinal_start": 30,
+      "nonempty_ordinal_end_exclusive": 40,
+      "first_ref": "Beitzah 3a:5",
+      "last_ref": "Beitzah 3b:1",
+      "membership_sha256": "e510420e9cd497171e068a2a5f82c35b50293f99d1b5a76f2c6400207b2024d4"
+    },
+    {
+      "block_id": "block_000004",
+      "nonempty_ordinal_start": 40,
+      "nonempty_ordinal_end_exclusive": 50,
+      "first_ref": "Beitzah 3b:2",
+      "last_ref": "Beitzah 3b:11",
+      "membership_sha256": "6a6c6fafe2da520e6ff5f4d9dec101a2a6b52736750f20706a49d7c010f9d756"
+    },
+    {
+      "block_id": "block_000005",
+      "nonempty_ordinal_start": 50,
+      "nonempty_ordinal_end_exclusive": 60,
+      "first_ref": "Beitzah 3b:12",
+      "last_ref": "Beitzah 4a:3",
+      "membership_sha256": "9c68837bbab1c31148dad9c9f8bb5d13dea687e1c93ca2698c15f04d832c3878"
+    },
+    {
+      "block_id": "block_000006",
+      "nonempty_ordinal_start": 60,
+      "nonempty_ordinal_end_exclusive": 70,
+      "first_ref": "Beitzah 4a:4",
+      "last_ref": "Beitzah 4a:13",
+      "membership_sha256": "7c6c125af9f5d0ba3aa50445d614231f3a7f9da92cd5f3102607788700b81769"
+    },
+    {
+      "block_id": "block_000007",
+      "nonempty_ordinal_start": 70,
+      "nonempty_ordinal_end_exclusive": 80,
+      "first_ref": "Beitzah 4a:14",
+      "last_ref": "Beitzah 4b:3",
+      "membership_sha256": "058d13b5ff99bdca51f3030d8b1b7934a0403fca18acd6da75703d5cdb3af7b8"
+    },
+    {
+      "block_id": "block_000008",
+      "nonempty_ordinal_start": 80,
+      "nonempty_ordinal_end_exclusive": 90,
+      "first_ref": "Beitzah 4b:4",
+      "last_ref": "Beitzah 4b:13",
+      "membership_sha256": "2061c7d03ea14829284048c26b8d6898ea12028f16c7e08b1ab28b409202cf61"
+    },
+    {
+      "block_id": "block_000009",
+      "nonempty_ordinal_start": 90,
+      "nonempty_ordinal_end_exclusive": 100,
+      "first_ref": "Beitzah 5a:1",
+      "last_ref": "Beitzah 5a:10",
+      "membership_sha256": "4e38ed57e4bda4d7fe5e1865af96b9af503d61cb931b28f78e2362fc60707e9c"
+    },
+    {
+      "block_id": "block_000010",
+      "nonempty_ordinal_start": 100,
+      "nonempty_ordinal_end_exclusive": 110,
+      "first_ref": "Beitzah 5b:1",
+      "last_ref": "Beitzah 5b:10",
+      "membership_sha256": "f9e505a3e34a79181d5df0d0df099c3e40f115c8d0eca665679c5fbbdeeef93d"
+    },
+    {
+      "block_id": "block_000011",
+      "nonempty_ordinal_start": 110,
+      "nonempty_ordinal_end_exclusive": 120,
+      "first_ref": "Beitzah 5b:11",
+      "last_ref": "Beitzah 6a:7",
+      "membership_sha256": "c69aba271302ca0ab5901e0fbffec3e62cee25a44a0c69e22443e640988e61d9"
+    },
+    {
+      "block_id": "block_000012",
+      "nonempty_ordinal_start": 120,
+      "nonempty_ordinal_end_exclusive": 130,
+      "first_ref": "Beitzah 6a:8",
+      "last_ref": "Beitzah 6b:3",
+      "membership_sha256": "d8fc30d5ad1ee63b61f89f5a8f236ccaff398bdbe049d2b33d947976c89aa6b0"
+    },
+    {
+      "block_id": "block_000013",
+      "nonempty_ordinal_start": 130,
+      "nonempty_ordinal_end_exclusive": 140,
+      "first_ref": "Beitzah 6b:4",
+      "last_ref": "Beitzah 7a:1",
+      "membership_sha256": "bf71d468d8c985181cfcbdf3b9b1a2df020db97080d20ca9c33760bfd8e360f2"
+    },
+    {
+      "block_id": "block_000014",
+      "nonempty_ordinal_start": 140,
+      "nonempty_ordinal_end_exclusive": 150,
+      "first_ref": "Beitzah 7a:2",
+      "last_ref": "Beitzah 7a:11",
+      "membership_sha256": "0377fc5cf68d8ee663fb60b924b9f25cb9293eaf775bbab657a661fe4c0675d4"
+    },
+    {
+      "block_id": "block_000015",
+      "nonempty_ordinal_start": 150,
+      "nonempty_ordinal_end_exclusive": 160,
+      "first_ref": "Beitzah 7a:12",
+      "last_ref": "Beitzah 7b:1",
+      "membership_sha256": "42818484a2d5562126bc54690fbecafdbfa94cf0157eef4a0c44da14875a2532"
+    },
+    {
+      "block_id": "block_000016",
+      "nonempty_ordinal_start": 160,
+      "nonempty_ordinal_end_exclusive": 170,
+      "first_ref": "Beitzah 7b:2",
+      "last_ref": "Beitzah 7b:11",
+      "membership_sha256": "2e0155487144d5c0dab55ee475fdfd4e9b1e9daadaefea523c2052f0f6f3c31b"
+    },
+    {
+      "block_id": "block_000017",
+      "nonempty_ordinal_start": 170,
+      "nonempty_ordinal_end_exclusive": 180,
+      "first_ref": "Beitzah 7b:12",
+      "last_ref": "Beitzah 7b:21",
+      "membership_sha256": "724d9c401b11cdc439961ed5e73b5554cc435804f78ff3d821feb2969e84e7de"
+    },
+    {
+      "block_id": "block_000018",
+      "nonempty_ordinal_start": 180,
+      "nonempty_ordinal_end_exclusive": 190,
+      "first_ref": "Beitzah 7b:22",
+      "last_ref": "Beitzah 8a:7",
+      "membership_sha256": "40dcd34802f6d8dc7e2d1bfe76a64942a808c2e9d45da7cbcbb1ec970ba2d46b"
+    },
+    {
+      "block_id": "block_000019",
+      "nonempty_ordinal_start": 190,
+      "nonempty_ordinal_end_exclusive": 200,
+      "first_ref": "Beitzah 8a:8",
+      "last_ref": "Beitzah 8b:6",
+      "membership_sha256": "0a9f50f075981b18e96402638cd6370915099b196120145285c7195968108fb9"
+    },
+    {
+      "block_id": "block_000020",
+      "nonempty_ordinal_start": 200,
+      "nonempty_ordinal_end_exclusive": 210,
+      "first_ref": "Beitzah 8b:7",
+      "last_ref": "Beitzah 8b:16",
+      "membership_sha256": "2c612cdb65223e604a0ab95303d20df5b804559c154f5d990e154c2ba1cb21b4"
+    },
+    {
+      "block_id": "block_000021",
+      "nonempty_ordinal_start": 210,
+      "nonempty_ordinal_end_exclusive": 220,
+      "first_ref": "Beitzah 8b:17",
+      "last_ref": "Beitzah 9a:6",
+      "membership_sha256": "a428fa70b69658c584dfff174ec0a36bf1384503cd0fb0703abffccc6df63454"
+    },
+    {
+      "block_id": "block_000022",
+      "nonempty_ordinal_start": 220,
+      "nonempty_ordinal_end_exclusive": 230,
+      "first_ref": "Beitzah 9a:7",
+      "last_ref": "Beitzah 9b:7",
+      "membership_sha256": "e8aa94870f9c54bae7b41c75bee6d769d8391eabdc42bb439f13e74b7481ea27"
+    },
+    {
+      "block_id": "block_000023",
+      "nonempty_ordinal_start": 230,
+      "nonempty_ordinal_end_exclusive": 240,
+      "first_ref": "Beitzah 9b:8",
+      "last_ref": "Beitzah 10a:3",
+      "membership_sha256": "478a04d5aef8930f1c20c4762ecb6c7293a5ff963dc1243a71f851c95ebe155d"
+    },
+    {
+      "block_id": "block_000024",
+      "nonempty_ordinal_start": 240,
+      "nonempty_ordinal_end_exclusive": 250,
+      "first_ref": "Beitzah 10a:4",
+      "last_ref": "Beitzah 10a:13",
+      "membership_sha256": "d0a4e7a75f8cc5119867a6eb2f9e2bc84a831a3aa52514910c420f2afa64cdfe"
+    },
+    {
+      "block_id": "block_000025",
+      "nonempty_ordinal_start": 250,
+      "nonempty_ordinal_end_exclusive": 260,
+      "first_ref": "Beitzah 10a:14",
+      "last_ref": "Beitzah 10b:4",
+      "membership_sha256": "5ee867efbdf433a945dc1b6d4c7f5adc20f09d48c1e56615c0f05f9d74e9a0b5"
+    },
+    {
+      "block_id": "block_000026",
+      "nonempty_ordinal_start": 260,
+      "nonempty_ordinal_end_exclusive": 270,
+      "first_ref": "Beitzah 10b:5",
+      "last_ref": "Beitzah 10b:14",
+      "membership_sha256": "7d4d30bfbd05e2ea4ad1c53bf26f02deb094bbd2de85296a6ec1830a2cc9b94e"
+    },
+    {
+      "block_id": "block_000027",
+      "nonempty_ordinal_start": 270,
+      "nonempty_ordinal_end_exclusive": 280,
+      "first_ref": "Beitzah 10b:15",
+      "last_ref": "Beitzah 11a:9",
+      "membership_sha256": "3f63b8b28f0cb5091ef9631e61f4654ba62df6d32a66d10dc1eca9dbd1031358"
+    },
+    {
+      "block_id": "block_000028",
+      "nonempty_ordinal_start": 280,
+      "nonempty_ordinal_end_exclusive": 290,
+      "first_ref": "Beitzah 11a:10",
+      "last_ref": "Beitzah 11a:19",
+      "membership_sha256": "336ebc947ff5b3951ff702b1cb39ba2d5ad4f4ef6b4d44d44b0bdea78b9cfd24"
+    },
+    {
+      "block_id": "block_000029",
+      "nonempty_ordinal_start": 290,
+      "nonempty_ordinal_end_exclusive": 300,
+      "first_ref": "Beitzah 11a:20",
+      "last_ref": "Beitzah 11b:8",
+      "membership_sha256": "9bc90b07a511637664b7977ab827b0c56f10343fac9872a3d34cfb2d1214d1f5"
+    },
+    {
+      "block_id": "block_000030",
+      "nonempty_ordinal_start": 300,
+      "nonempty_ordinal_end_exclusive": 310,
+      "first_ref": "Beitzah 11b:9",
+      "last_ref": "Beitzah 12a:2",
+      "membership_sha256": "7d477630f100036583871141491b79f0031d52bd0fedd27b4334339e1b7e533c"
+    },
+    {
+      "block_id": "block_000031",
+      "nonempty_ordinal_start": 310,
+      "nonempty_ordinal_end_exclusive": 320,
+      "first_ref": "Beitzah 12a:3",
+      "last_ref": "Beitzah 12b:1",
+      "membership_sha256": "e7fcf520a5753d8009ae9a9187340306c805c271d51d3ab5a02716a80ea322fd"
+    },
+    {
+      "block_id": "block_000032",
+      "nonempty_ordinal_start": 320,
+      "nonempty_ordinal_end_exclusive": 330,
+      "first_ref": "Beitzah 12b:2",
+      "last_ref": "Beitzah 12b:11",
+      "membership_sha256": "9f6d5fa3d9b7d48946226a42f66ad161fb22055227f2953387405b37d9cb391a"
+    },
+    {
+      "block_id": "block_000033",
+      "nonempty_ordinal_start": 330,
+      "nonempty_ordinal_end_exclusive": 340,
+      "first_ref": "Beitzah 12b:12",
+      "last_ref": "Beitzah 13a:2",
+      "membership_sha256": "ad21bf2cdbf37d511db7261aaf424d680d96e9768dbfd92b02b6d41129e7f68b"
+    },
+    {
+      "block_id": "block_000034",
+      "nonempty_ordinal_start": 340,
+      "nonempty_ordinal_end_exclusive": 350,
+      "first_ref": "Beitzah 13a:3",
+      "last_ref": "Beitzah 13a:12",
+      "membership_sha256": "3aaabbdad03723dccef4415c6d08f51a5a457d134596ad4f176b47affdcec719"
+    },
+    {
+      "block_id": "block_000035",
+      "nonempty_ordinal_start": 350,
+      "nonempty_ordinal_end_exclusive": 360,
+      "first_ref": "Beitzah 13a:13",
+      "last_ref": "Beitzah 13b:7",
+      "membership_sha256": "f30920353a06845425c9b933bccbc8ced70c07284e6d239fda9eecc4ebc26467"
+    },
+    {
+      "block_id": "block_000036",
+      "nonempty_ordinal_start": 360,
+      "nonempty_ordinal_end_exclusive": 370,
+      "first_ref": "Beitzah 13b:8",
+      "last_ref": "Beitzah 14a:2",
+      "membership_sha256": "29adcd418111ea14cfe34f1fb2eb4774aa093cf9a66c672f1cb58a97c69219e8"
+    },
+    {
+      "block_id": "block_000037",
+      "nonempty_ordinal_start": 370,
+      "nonempty_ordinal_end_exclusive": 380,
+      "first_ref": "Beitzah 14a:3",
+      "last_ref": "Beitzah 14a:12",
+      "membership_sha256": "c93c9a470b9179445c1d5cc71cb9f50bb155eb5ddf06263355487a68b062e5be"
+    },
+    {
+      "block_id": "block_000038",
+      "nonempty_ordinal_start": 380,
+      "nonempty_ordinal_end_exclusive": 390,
+      "first_ref": "Beitzah 14a:13",
+      "last_ref": "Beitzah 14b:9",
+      "membership_sha256": "a077f9ca4d8846deac44630ac9cbb99dde674ca611de65ed4f78c76bc4cd7f8e"
+    },
+    {
+      "block_id": "block_000039",
+      "nonempty_ordinal_start": 390,
+      "nonempty_ordinal_end_exclusive": 400,
+      "first_ref": "Beitzah 14b:10",
+      "last_ref": "Beitzah 15a:3",
+      "membership_sha256": "a088e8a0b07070619af53bbf8d8c096f612815291ff1822eeafcdbc7d234a166"
+    },
+    {
+      "block_id": "block_000040",
+      "nonempty_ordinal_start": 400,
+      "nonempty_ordinal_end_exclusive": 410,
+      "first_ref": "Beitzah 15a:4",
+      "last_ref": "Beitzah 15a:13",
+      "membership_sha256": "5eda1a6de51baec4bb5f875ce8b26446c799cf51147489c5270e067423530060"
+    },
+    {
+      "block_id": "block_000041",
+      "nonempty_ordinal_start": 410,
+      "nonempty_ordinal_end_exclusive": 420,
+      "first_ref": "Beitzah 15a:14",
+      "last_ref": "Beitzah 15b:8",
+      "membership_sha256": "847855b91b0d07895f5a189d32c46492bbb150a6c790d0a93dbb5328941404de"
+    },
+    {
+      "block_id": "block_000042",
+      "nonempty_ordinal_start": 420,
+      "nonempty_ordinal_end_exclusive": 430,
+      "first_ref": "Beitzah 15b:9",
+      "last_ref": "Beitzah 15b:18",
+      "membership_sha256": "87edf834ab0a1c3d8968e365ce17a6f9bdcdee75c02407152f38eec0ce9c8ed3"
+    },
+    {
+      "block_id": "block_000043",
+      "nonempty_ordinal_start": 430,
+      "nonempty_ordinal_end_exclusive": 440,
+      "first_ref": "Beitzah 15b:19",
+      "last_ref": "Beitzah 16a:7",
+      "membership_sha256": "b4e2183580609436f1728566f0a19bb9eb6ef9e67495146ff4f74953eb80ace5"
+    },
+    {
+      "block_id": "block_000044",
+      "nonempty_ordinal_start": 440,
+      "nonempty_ordinal_end_exclusive": 450,
+      "first_ref": "Beitzah 16a:8",
+      "last_ref": "Beitzah 16a:17",
+      "membership_sha256": "30464c96c4612e5ef7604a8456b63c7ae3e2d7e1faeb90b81da12980940c36eb"
+    },
+    {
+      "block_id": "block_000045",
+      "nonempty_ordinal_start": 450,
+      "nonempty_ordinal_end_exclusive": 460,
+      "first_ref": "Beitzah 16a:18",
+      "last_ref": "Beitzah 16b:9",
+      "membership_sha256": "15e81e7453f119512b7d10e8202a896566efa1b80dc3ff3f933bffae62fa0b37"
+    },
+    {
+      "block_id": "block_000046",
+      "nonempty_ordinal_start": 460,
+      "nonempty_ordinal_end_exclusive": 470,
+      "first_ref": "Beitzah 16b:10",
+      "last_ref": "Beitzah 17a:6",
+      "membership_sha256": "ae6cbc156bc9d1567692d3f106e9f43fcc1bd9084e1701bb61127e9a46ead992"
+    },
+    {
+      "block_id": "block_000047",
+      "nonempty_ordinal_start": 470,
+      "nonempty_ordinal_end_exclusive": 480,
+      "first_ref": "Beitzah 17a:7",
+      "last_ref": "Beitzah 17b:2",
+      "membership_sha256": "3b388a0423bcdf5bb08bf478f059c02431e77f4586922faf391d05d1dbd84fb2"
+    },
+    {
+      "block_id": "block_000048",
+      "nonempty_ordinal_start": 480,
+      "nonempty_ordinal_end_exclusive": 490,
+      "first_ref": "Beitzah 17b:3",
+      "last_ref": "Beitzah 17b:12",
+      "membership_sha256": "1792e92bf7e59d71be762bd0eb4b69a9049eed624cd8a6c7e9d2c5b2dff6d249"
+    },
+    {
+      "block_id": "block_000049",
+      "nonempty_ordinal_start": 490,
+      "nonempty_ordinal_end_exclusive": 500,
+      "first_ref": "Beitzah 17b:13",
+      "last_ref": "Beitzah 18a:6",
+      "membership_sha256": "dbfce2e45d646e0e7d921f9dbe28967664fb0c677c4d26cb79cb9e7f04ec41a6"
+    },
+    {
+      "block_id": "block_000050",
+      "nonempty_ordinal_start": 500,
+      "nonempty_ordinal_end_exclusive": 510,
+      "first_ref": "Beitzah 18a:7",
+      "last_ref": "Beitzah 18b:1",
+      "membership_sha256": "5e79055e5a9deaae9557dd652be00dd0a2cafe82df3de1ff40581d2e9a6a276e"
+    },
+    {
+      "block_id": "block_000051",
+      "nonempty_ordinal_start": 510,
+      "nonempty_ordinal_end_exclusive": 520,
+      "first_ref": "Beitzah 18b:2",
+      "last_ref": "Beitzah 18b:11",
+      "membership_sha256": "61bfde70ff61b45bcb73cb0a4720b5c9d51a2aaa905f1975a1b71b325c5c285b"
+    },
+    {
+      "block_id": "block_000052",
+      "nonempty_ordinal_start": 520,
+      "nonempty_ordinal_end_exclusive": 530,
+      "first_ref": "Beitzah 18b:12",
+      "last_ref": "Beitzah 19a:9",
+      "membership_sha256": "81b10ef1bf3f0d4c9a110087f963c56839be0a264f807b219b4479fc023e8273"
+    },
+    {
+      "block_id": "block_000053",
+      "nonempty_ordinal_start": 530,
+      "nonempty_ordinal_end_exclusive": 540,
+      "first_ref": "Beitzah 19a:10",
+      "last_ref": "Beitzah 19b:2",
+      "membership_sha256": "49497daeb74d045e22ca7109779e8fec3b72a4be07f40d7df8578a26015a2b73"
+    },
+    {
+      "block_id": "block_000054",
+      "nonempty_ordinal_start": 540,
+      "nonempty_ordinal_end_exclusive": 550,
+      "first_ref": "Beitzah 19b:3",
+      "last_ref": "Beitzah 19b:12",
+      "membership_sha256": "e742db5a7b827ef7c9671ed50e490114a97023ff6a5a863d4faeed375aa64bf6"
+    },
+    {
+      "block_id": "block_000055",
+      "nonempty_ordinal_start": 550,
+      "nonempty_ordinal_end_exclusive": 560,
+      "first_ref": "Beitzah 19b:13",
+      "last_ref": "Beitzah 20a:6",
+      "membership_sha256": "5078a527a3db16dc72553f5b2e4ea4553fb4c9316c440006457219feb947b7eb"
+    },
+    {
+      "block_id": "block_000056",
+      "nonempty_ordinal_start": 560,
+      "nonempty_ordinal_end_exclusive": 570,
+      "first_ref": "Beitzah 20a:7",
+      "last_ref": "Beitzah 20b:3",
+      "membership_sha256": "6e54d611db34567803ea8b7a7658aa0a0f1640891c92039516782e896522afe1"
+    },
+    {
+      "block_id": "block_000057",
+      "nonempty_ordinal_start": 570,
+      "nonempty_ordinal_end_exclusive": 580,
+      "first_ref": "Beitzah 20b:4",
+      "last_ref": "Beitzah 20b:13",
+      "membership_sha256": "c80ba0aa1c9dcba8918055d6bb64a99f5cb31f135dda4c3c62bcba2c40077e21"
+    },
+    {
+      "block_id": "block_000058",
+      "nonempty_ordinal_start": 580,
+      "nonempty_ordinal_end_exclusive": 590,
+      "first_ref": "Beitzah 20b:14",
+      "last_ref": "Beitzah 21a:9",
+      "membership_sha256": "3b62e88204c17491d292f636b9561f6786f20b3012aeeccd09fdf5cdc6cbb2ab"
+    },
+    {
+      "block_id": "block_000059",
+      "nonempty_ordinal_start": 590,
+      "nonempty_ordinal_end_exclusive": 600,
+      "first_ref": "Beitzah 21a:10",
+      "last_ref": "Beitzah 21b:4",
+      "membership_sha256": "77299a75954ba3222b845360ba40d5616018d36244b85da251c7b13af53ab392"
+    },
+    {
+      "block_id": "block_000060",
+      "nonempty_ordinal_start": 600,
+      "nonempty_ordinal_end_exclusive": 610,
+      "first_ref": "Beitzah 21b:5",
+      "last_ref": "Beitzah 21b:14",
+      "membership_sha256": "e0a93e64ab815ccb0a174f6854c15771ae09c3f0cfbf800e238b9d927a418c85"
+    },
+    {
+      "block_id": "block_000061",
+      "nonempty_ordinal_start": 610,
+      "nonempty_ordinal_end_exclusive": 620,
+      "first_ref": "Beitzah 21b:15",
+      "last_ref": "Beitzah 22a:7",
+      "membership_sha256": "f7fc944eee89c69b078365883f17efab26d9808e0899e3c890796c0a84b668ae"
+    },
+    {
+      "block_id": "block_000062",
+      "nonempty_ordinal_start": 620,
+      "nonempty_ordinal_end_exclusive": 630,
+      "first_ref": "Beitzah 22a:8",
+      "last_ref": "Beitzah 22a:17",
+      "membership_sha256": "78ba9faef6f1f5b6d49733040262b5ec0d74f2771f24a07befd3ea6317bd9887"
+    },
+    {
+      "block_id": "block_000063",
+      "nonempty_ordinal_start": 630,
+      "nonempty_ordinal_end_exclusive": 640,
+      "first_ref": "Beitzah 22b:1",
+      "last_ref": "Beitzah 22b:10",
+      "membership_sha256": "ab249a3816fc57de30594858e11a24411ca6c144c7b818820fd21937f59d156a"
+    },
+    {
+      "block_id": "block_000064",
+      "nonempty_ordinal_start": 640,
+      "nonempty_ordinal_end_exclusive": 650,
+      "first_ref": "Beitzah 22b:11",
+      "last_ref": "Beitzah 23a:4",
+      "membership_sha256": "09c71f60a486169560224c526e8b0dc4d0103fb2aa8fe6f4673ac65d6119f24f"
+    },
+    {
+      "block_id": "block_000065",
+      "nonempty_ordinal_start": 650,
+      "nonempty_ordinal_end_exclusive": 660,
+      "first_ref": "Beitzah 23a:5",
+      "last_ref": "Beitzah 23a:14",
+      "membership_sha256": "ea4387a5fbde73cade4e1b831ebc051f5cb138e2c5f11fbdda36baf86e2faffb"
+    },
+    {
+      "block_id": "block_000066",
+      "nonempty_ordinal_start": 660,
+      "nonempty_ordinal_end_exclusive": 670,
+      "first_ref": "Beitzah 23a:15",
+      "last_ref": "Beitzah 23b:9",
+      "membership_sha256": "e203dbdaf653942d18bfed0a4f5a555751616f5ca3c4c695473f25522ffb6257"
+    },
+    {
+      "block_id": "block_000067",
+      "nonempty_ordinal_start": 670,
+      "nonempty_ordinal_end_exclusive": 680,
+      "first_ref": "Beitzah 23b:10",
+      "last_ref": "Beitzah 24a:6",
+      "membership_sha256": "cc63986210029e13f83f635e637e94f8b8e5e7c8bb54f8dbb458a2fb1f5853de"
+    },
+    {
+      "block_id": "block_000068",
+      "nonempty_ordinal_start": 680,
+      "nonempty_ordinal_end_exclusive": 690,
+      "first_ref": "Beitzah 24a:7",
+      "last_ref": "Beitzah 24a:16",
+      "membership_sha256": "5df853bc80d4f0a22d1f7c5edd9b9faddf328407ae551df6c120591137f63e25"
+    },
+    {
+      "block_id": "block_000069",
+      "nonempty_ordinal_start": 690,
+      "nonempty_ordinal_end_exclusive": 700,
+      "first_ref": "Beitzah 24a:17",
+      "last_ref": "Beitzah 24b:6",
+      "membership_sha256": "b0da32601b39cad1e03ea7931a5d4e007c0bd68b735aeb667a6d4b6df08ec0d9"
+    },
+    {
+      "block_id": "block_000070",
+      "nonempty_ordinal_start": 700,
+      "nonempty_ordinal_end_exclusive": 710,
+      "first_ref": "Beitzah 24b:7",
+      "last_ref": "Beitzah 25a:6",
+      "membership_sha256": "f7a74fd391157d39cc39055c0242ef34c32eec0e3891be451666daab7936843f"
+    },
+    {
+      "block_id": "block_000071",
+      "nonempty_ordinal_start": 710,
+      "nonempty_ordinal_end_exclusive": 720,
+      "first_ref": "Beitzah 25a:7",
+      "last_ref": "Beitzah 25a:16",
+      "membership_sha256": "5e83e96a3292727f3853443b92654c0733da07e341fa433049aa58dbcc44e4d0"
+    },
+    {
+      "block_id": "block_000072",
+      "nonempty_ordinal_start": 720,
+      "nonempty_ordinal_end_exclusive": 730,
+      "first_ref": "Beitzah 25a:17",
+      "last_ref": "Beitzah 25b:9",
+      "membership_sha256": "583b35791b5be3f4439e50bf74eadf7ccd20241f62c03ee785a8c00f143dbde0"
+    },
+    {
+      "block_id": "block_000073",
+      "nonempty_ordinal_start": 730,
+      "nonempty_ordinal_end_exclusive": 740,
+      "first_ref": "Beitzah 25b:10",
+      "last_ref": "Beitzah 26a:3",
+      "membership_sha256": "af881a31d95b560fb4814e800943142eea8ffcdae8a3e1a3357fe9f8376c12b8"
+    },
+    {
+      "block_id": "block_000074",
+      "nonempty_ordinal_start": 740,
+      "nonempty_ordinal_end_exclusive": 750,
+      "first_ref": "Beitzah 26a:4",
+      "last_ref": "Beitzah 26b:6",
+      "membership_sha256": "77bde34ea6cefd4e9f6f450e4745b4c0e83f494150162176cde191177f2521c3"
+    },
+    {
+      "block_id": "block_000075",
+      "nonempty_ordinal_start": 750,
+      "nonempty_ordinal_end_exclusive": 760,
+      "first_ref": "Beitzah 26b:7",
+      "last_ref": "Beitzah 26b:16",
+      "membership_sha256": "60e997c65653ca4704409380561cccc0c0ccb23a8fcfdd0a4b106a12dccae92e"
+    },
+    {
+      "block_id": "block_000076",
+      "nonempty_ordinal_start": 760,
+      "nonempty_ordinal_end_exclusive": 770,
+      "first_ref": "Beitzah 26b:17",
+      "last_ref": "Beitzah 27a:6",
+      "membership_sha256": "0e143680c07180094e4c8c062d4a3a5319d014c45841de1e1576e16135a3ce99"
+    },
+    {
+      "block_id": "block_000077",
+      "nonempty_ordinal_start": 770,
+      "nonempty_ordinal_end_exclusive": 780,
+      "first_ref": "Beitzah 27a:7",
+      "last_ref": "Beitzah 27b:1",
+      "membership_sha256": "7647896419da65ab86e7f1fcf1ae7c0da75a840fe61a0da23d49dc71902ce824"
+    },
+    {
+      "block_id": "block_000078",
+      "nonempty_ordinal_start": 780,
+      "nonempty_ordinal_end_exclusive": 790,
+      "first_ref": "Beitzah 27b:2",
+      "last_ref": "Beitzah 27b:11",
+      "membership_sha256": "1c0b5d7d683b20dcc6f2c8fe08a2512aa4c21631a7ed717a93dd80d6b6e6498c"
+    },
+    {
+      "block_id": "block_000079",
+      "nonempty_ordinal_start": 790,
+      "nonempty_ordinal_end_exclusive": 800,
+      "first_ref": "Beitzah 27b:12",
+      "last_ref": "Beitzah 28a:8",
+      "membership_sha256": "065955832f488b37da694494516a56afd3d015738c7513e8c4602063dc20d7c9"
+    },
+    {
+      "block_id": "block_000080",
+      "nonempty_ordinal_start": 800,
+      "nonempty_ordinal_end_exclusive": 810,
+      "first_ref": "Beitzah 28a:9",
+      "last_ref": "Beitzah 28a:18",
+      "membership_sha256": "75087f41cdd75b5e69add083070a8334391c02ac3ff1d4d7a60e079bf538c5de"
+    },
+    {
+      "block_id": "block_000081",
+      "nonempty_ordinal_start": 810,
+      "nonempty_ordinal_end_exclusive": 820,
+      "first_ref": "Beitzah 28a:19",
+      "last_ref": "Beitzah 28b:8",
+      "membership_sha256": "744a0849bf17d0970baa6bf3ee52feed39ad8164f377c846ea38c0c923409afc"
+    },
+    {
+      "block_id": "block_000082",
+      "nonempty_ordinal_start": 820,
+      "nonempty_ordinal_end_exclusive": 830,
+      "first_ref": "Beitzah 28b:9",
+      "last_ref": "Beitzah 29a:2",
+      "membership_sha256": "0ecf9b3c9a0707a719131eed63732cda7f7dd71458f8755250109d7b6b9a2635"
+    },
+    {
+      "block_id": "block_000083",
+      "nonempty_ordinal_start": 830,
+      "nonempty_ordinal_end_exclusive": 840,
+      "first_ref": "Beitzah 29a:3",
+      "last_ref": "Beitzah 29a:12",
+      "membership_sha256": "2ed600b7aed178e0b8792db818d2f3eb01db19fefab7080a7906bf532a12d511"
+    },
+    {
+      "block_id": "block_000084",
+      "nonempty_ordinal_start": 840,
+      "nonempty_ordinal_end_exclusive": 850,
+      "first_ref": "Beitzah 29a:13",
+      "last_ref": "Beitzah 29b:5",
+      "membership_sha256": "05c31f3d6a76c669db246c5455aa548475586eeb474c47e5d4361251bc24ac8d"
+    },
+    {
+      "block_id": "block_000085",
+      "nonempty_ordinal_start": 850,
+      "nonempty_ordinal_end_exclusive": 860,
+      "first_ref": "Beitzah 29b:6",
+      "last_ref": "Beitzah 30a:5",
+      "membership_sha256": "7fae7b9e71f0a8d1c8a44897cc83f43cb4891d8d71cdbc10de5cf8a9e80334da"
+    },
+    {
+      "block_id": "block_000086",
+      "nonempty_ordinal_start": 860,
+      "nonempty_ordinal_end_exclusive": 870,
+      "first_ref": "Beitzah 30a:6",
+      "last_ref": "Beitzah 30b:1",
+      "membership_sha256": "94ace10560d3a6c7997d2d00e84ce540c6396af3c68b6afab2ce77abcb9e1f58"
+    },
+    {
+      "block_id": "block_000087",
+      "nonempty_ordinal_start": 870,
+      "nonempty_ordinal_end_exclusive": 880,
+      "first_ref": "Beitzah 30b:2",
+      "last_ref": "Beitzah 30b:11",
+      "membership_sha256": "d007245a2774e44f1b9e9037c8b6a2bf2962f47f1fff9afaf88ba0162a614057"
+    },
+    {
+      "block_id": "block_000088",
+      "nonempty_ordinal_start": 880,
+      "nonempty_ordinal_end_exclusive": 890,
+      "first_ref": "Beitzah 30b:12",
+      "last_ref": "Beitzah 31a:7",
+      "membership_sha256": "46afc4d637435d1acc5f88744479df700be72c87eb87fc64d058b62b4db4ae36"
+    },
+    {
+      "block_id": "block_000089",
+      "nonempty_ordinal_start": 890,
+      "nonempty_ordinal_end_exclusive": 900,
+      "first_ref": "Beitzah 31a:8",
+      "last_ref": "Beitzah 31b:9",
+      "membership_sha256": "414ed11bd7c5a314394ceb66640c6e5f804ab85162ac18c8d6ccb65998dfed6f"
+    },
+    {
+      "block_id": "block_000090",
+      "nonempty_ordinal_start": 900,
+      "nonempty_ordinal_end_exclusive": 910,
+      "first_ref": "Beitzah 31b:10",
+      "last_ref": "Beitzah 32a:8",
+      "membership_sha256": "cde66d91ebec6d6209f0dd6a2b22a5f51d9be1cfb06c62a19cd773ccda47df0f"
+    },
+    {
+      "block_id": "block_000091",
+      "nonempty_ordinal_start": 910,
+      "nonempty_ordinal_end_exclusive": 920,
+      "first_ref": "Beitzah 32a:9",
+      "last_ref": "Beitzah 32b:1",
+      "membership_sha256": "cf300dd4b88131981ea5cf574becf1b2da00cfe150b80669e002737bba235033"
+    },
+    {
+      "block_id": "block_000092",
+      "nonempty_ordinal_start": 920,
+      "nonempty_ordinal_end_exclusive": 930,
+      "first_ref": "Beitzah 32b:2",
+      "last_ref": "Beitzah 32b:11",
+      "membership_sha256": "8aaa1eaa7950052494d71e26410289eac64af821ab1022203cfadab39b6295dc"
+    },
+    {
+      "block_id": "block_000093",
+      "nonempty_ordinal_start": 930,
+      "nonempty_ordinal_end_exclusive": 940,
+      "first_ref": "Beitzah 32b:12",
+      "last_ref": "Beitzah 33a:6",
+      "membership_sha256": "f20efdb534c62ecb71c0d8cc5103dc9d7886a790d3c6c159004311ff3eedcc32"
+    },
+    {
+      "block_id": "block_000094",
+      "nonempty_ordinal_start": 940,
+      "nonempty_ordinal_end_exclusive": 950,
+      "first_ref": "Beitzah 33a:7",
+      "last_ref": "Beitzah 33b:6",
+      "membership_sha256": "cfce9444b37f4953a2eaac206beea8eda8ac8ced6d8d8f52dce5b2f9c61d7b86"
+    },
+    {
+      "block_id": "block_000095",
+      "nonempty_ordinal_start": 950,
+      "nonempty_ordinal_end_exclusive": 960,
+      "first_ref": "Beitzah 33b:7",
+      "last_ref": "Beitzah 34a:4",
+      "membership_sha256": "69769c0074d67b61e110f43f5a647a4608738f62ece5198e75ee681780989dec"
+    },
+    {
+      "block_id": "block_000096",
+      "nonempty_ordinal_start": 960,
+      "nonempty_ordinal_end_exclusive": 970,
+      "first_ref": "Beitzah 34a:5",
+      "last_ref": "Beitzah 34b:2",
+      "membership_sha256": "7c55a3e4879b9160bfc3f77b3ec2dcf7eaa2a8b55d4ca163c59ff800ca5eca84"
+    },
+    {
+      "block_id": "block_000097",
+      "nonempty_ordinal_start": 970,
+      "nonempty_ordinal_end_exclusive": 980,
+      "first_ref": "Beitzah 34b:3",
+      "last_ref": "Beitzah 35a:6",
+      "membership_sha256": "05d413e78521b179099f61c5352f45dfbf6eccc355a10723cb630414767a9088"
+    },
+    {
+      "block_id": "block_000098",
+      "nonempty_ordinal_start": 980,
+      "nonempty_ordinal_end_exclusive": 990,
+      "first_ref": "Beitzah 35a:7",
+      "last_ref": "Beitzah 35b:3",
+      "membership_sha256": "8bdfcba2333444c0602f74f5f929215de15f4f2ef85949711ab25616f159d11b"
+    },
+    {
+      "block_id": "block_000099",
+      "nonempty_ordinal_start": 990,
+      "nonempty_ordinal_end_exclusive": 1000,
+      "first_ref": "Beitzah 35b:4",
+      "last_ref": "Beitzah 35b:13",
+      "membership_sha256": "d088b0de34ecb4ac4aae50fd4924f4cfc19edaca3fd15bd81964c49c8d79d77b"
+    },
+    {
+      "block_id": "block_000100",
+      "nonempty_ordinal_start": 1000,
+      "nonempty_ordinal_end_exclusive": 1010,
+      "first_ref": "Beitzah 35b:14",
+      "last_ref": "Beitzah 36a:8",
+      "membership_sha256": "57e1998c8b5a04c59ce88d04a0b2bce4c0f9b4fadec3b0caa5cc1475baa1ddf0"
+    },
+    {
+      "block_id": "block_000101",
+      "nonempty_ordinal_start": 1010,
+      "nonempty_ordinal_end_exclusive": 1020,
+      "first_ref": "Beitzah 36a:9",
+      "last_ref": "Beitzah 36a:18",
+      "membership_sha256": "7f6ee93623f68baa5f30f2cf643eb8c907d49e2d31d32d914b66f64e0c02438e"
+    },
+    {
+      "block_id": "block_000102",
+      "nonempty_ordinal_start": 1020,
+      "nonempty_ordinal_end_exclusive": 1030,
+      "first_ref": "Beitzah 36a:19",
+      "last_ref": "Beitzah 36b:6",
+      "membership_sha256": "5314c30e76b0953dbfb8bd315e509b5a086b1e30b5c75558f08068cf762367db"
+    },
+    {
+      "block_id": "block_000103",
+      "nonempty_ordinal_start": 1030,
+      "nonempty_ordinal_end_exclusive": 1040,
+      "first_ref": "Beitzah 36b:7",
+      "last_ref": "Beitzah 36b:16",
+      "membership_sha256": "eff39e138b686cbe9b5d35f2c436822934477e0c356ca9d39f291c5fba2cdb8f"
+    },
+    {
+      "block_id": "block_000104",
+      "nonempty_ordinal_start": 1040,
+      "nonempty_ordinal_end_exclusive": 1050,
+      "first_ref": "Beitzah 36b:17",
+      "last_ref": "Beitzah 37a:8",
+      "membership_sha256": "3eabcce06c94cb06dfa48396e49fb72b8e526bc546f25323634a8fde2b816f7c"
+    },
+    {
+      "block_id": "block_000105",
+      "nonempty_ordinal_start": 1050,
+      "nonempty_ordinal_end_exclusive": 1060,
+      "first_ref": "Beitzah 37a:9",
+      "last_ref": "Beitzah 37a:18",
+      "membership_sha256": "3c65bcdee06ab5db6143e5907dbee1148bfc9f076e51f0c8766bc07cd875de80"
+    },
+    {
+      "block_id": "block_000106",
+      "nonempty_ordinal_start": 1060,
+      "nonempty_ordinal_end_exclusive": 1070,
+      "first_ref": "Beitzah 37a:19",
+      "last_ref": "Beitzah 37b:7",
+      "membership_sha256": "57f037eb321276b78143bce2bcc9d264b3a2950ee057ca97b10e471ab37f0e9b"
+    },
+    {
+      "block_id": "block_000107",
+      "nonempty_ordinal_start": 1070,
+      "nonempty_ordinal_end_exclusive": 1080,
+      "first_ref": "Beitzah 37b:8",
+      "last_ref": "Beitzah 37b:17",
+      "membership_sha256": "416ac243608cc95e893975aeeb86c6c21e0fcc869cc234241ff9a22c3fad8582"
+    },
+    {
+      "block_id": "block_000108",
+      "nonempty_ordinal_start": 1080,
+      "nonempty_ordinal_end_exclusive": 1090,
+      "first_ref": "Beitzah 37b:18",
+      "last_ref": "Beitzah 38a:8",
+      "membership_sha256": "02b10f31fe72d2b3e41ee2fbd708508853622598e88aa92e0707f9be04a685a0"
+    },
+    {
+      "block_id": "block_000109",
+      "nonempty_ordinal_start": 1090,
+      "nonempty_ordinal_end_exclusive": 1100,
+      "first_ref": "Beitzah 38a:9",
+      "last_ref": "Beitzah 38b:9",
+      "membership_sha256": "cc1c27c21062b0230a14feac6d4fadbe72325f396c073f6c02e81f1ddf1e2aca"
+    },
+    {
+      "block_id": "block_000110",
+      "nonempty_ordinal_start": 1100,
+      "nonempty_ordinal_end_exclusive": 1110,
+      "first_ref": "Beitzah 38b:10",
+      "last_ref": "Beitzah 39a:7",
+      "membership_sha256": "1c1aee4d42cf5a44b9d4e44d3c14990214104fb14ef1928e3d4d53fc245a58ae"
+    },
+    {
+      "block_id": "block_000111",
+      "nonempty_ordinal_start": 1110,
+      "nonempty_ordinal_end_exclusive": 1120,
+      "first_ref": "Beitzah 39a:8",
+      "last_ref": "Beitzah 39b:1",
+      "membership_sha256": "e166c43aff33c5860fbda0172f7d1b87970a2294e4818456eb422af1f52b5bd8"
+    },
+    {
+      "block_id": "block_000112",
+      "nonempty_ordinal_start": 1120,
+      "nonempty_ordinal_end_exclusive": 1130,
+      "first_ref": "Beitzah 39b:2",
+      "last_ref": "Beitzah 39b:11",
+      "membership_sha256": "195ce8211793e03dddb855e3796231e68db8fd093d303c957ace36d26fa5ba22"
+    },
+    {
+      "block_id": "block_000113",
+      "nonempty_ordinal_start": 1130,
+      "nonempty_ordinal_end_exclusive": 1140,
+      "first_ref": "Beitzah 40a:1",
+      "last_ref": "Beitzah 40a:10",
+      "membership_sha256": "d103a3b0c7eed37f1dd53ad300d05916540abf4cbf82a7f9f28b34e0e7062173"
+    },
+    {
+      "block_id": "block_000114",
+      "nonempty_ordinal_start": 1140,
+      "nonempty_ordinal_end_exclusive": 1150,
+      "first_ref": "Beitzah 40a:11",
+      "last_ref": "Beitzah 40b:3",
+      "membership_sha256": "2f54925b1ba976adadee0c3b3497f362c8a2e05384bc4bc2e7e5c98cdb5f5496"
+    },
+    {
+      "block_id": "block_000115",
+      "nonempty_ordinal_start": 1150,
+      "nonempty_ordinal_end_exclusive": 1151,
+      "first_ref": "Beitzah 40b:4",
+      "last_ref": "Beitzah 40b:4",
+      "membership_sha256": "e4511f9b62c1e67dfb926e3c25c68f38836ea50249a256ee0115ad0cb7203e4f"
+    }
+  ],
+  "review_blocks": [
+    {
+      "block_id": "block_000000",
+      "spans": [
+        {
+          "ref": "Beitzah 2a:1",
+          "page_index": 2,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            168
+          ],
+          "span_sha256_utf8": "23e4a9ac0e933b031a0db7f03afdfdce5a3b4e6359bc04bf98fb93c03e77e0a5",
+          "nonempty_ordinal": 0
+        },
+        {
+          "ref": "Beitzah 2a:2",
+          "page_index": 2,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            171
+          ],
+          "span_sha256_utf8": "a6c2f6a890e475633839b7b807aa9c88b92715083755f11635fea5ab9c92ab8d",
+          "nonempty_ordinal": 1
+        },
+        {
+          "ref": "Beitzah 2a:3",
+          "page_index": 2,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "span_sha256_utf8": "bad82d26fb4101e5dfa45154d3aec9ee4b15df95d1ebf3d24ca48154d2bea768",
+          "nonempty_ordinal": 2
+        },
+        {
+          "ref": "Beitzah 2a:4",
+          "page_index": 2,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            30
+          ],
+          "span_sha256_utf8": "e0d3dbb2f54b4ecd7a7f0ba3c905261bca1b248991464c0e8d0ef580ae6a48a4",
+          "nonempty_ordinal": 3
+        },
+        {
+          "ref": "Beitzah 2a:5",
+          "page_index": 2,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "4e373adaeb7f68f0b14a29e94b18640a5fea6749c6972865c94909f28445a81a",
+          "nonempty_ordinal": 4
+        },
+        {
+          "ref": "Beitzah 2a:6",
+          "page_index": 2,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            67
+          ],
+          "span_sha256_utf8": "9b3d85330ef1db235283e87373536caf4697a7660f8050de420d4baa0a46b348",
+          "nonempty_ordinal": 5
+        },
+        {
+          "ref": "Beitzah 2a:7",
+          "page_index": 2,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            142
+          ],
+          "span_sha256_utf8": "9e5d2c5ca12a00f25bf51a23272d6e686a1ccdcc7dfb58f897f5f109132d143c",
+          "nonempty_ordinal": 6
+        },
+        {
+          "ref": "Beitzah 2a:8",
+          "page_index": 2,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            115
+          ],
+          "span_sha256_utf8": "a9b16cc9be75dddfecc887ae88e83f755d928c16631a1d8d6f4fdf0898b30044",
+          "nonempty_ordinal": 7
+        },
+        {
+          "ref": "Beitzah 2a:9",
+          "page_index": 2,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "span_sha256_utf8": "d1dc16d788b9de2bb5fb3b617474d0a02bb4bb3bef9effa9e4ef02d88d08474d",
+          "nonempty_ordinal": 8
+        },
+        {
+          "ref": "Beitzah 2a:10",
+          "page_index": 2,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            101
+          ],
+          "span_sha256_utf8": "07895988bbd2cde2e8b5637205827f4fd01c2f9bc3f3868ee0fd7792cc811e5f",
+          "nonempty_ordinal": 9
+        }
+      ],
+      "roles": [
+        "probability_sample",
+        "opening_check"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 1.0
+    },
+    {
+      "block_id": "block_000013",
+      "spans": [
+        {
+          "ref": "Beitzah 6b:4",
+          "page_index": 11,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            126
+          ],
+          "span_sha256_utf8": "0fb9c9747cc9cb9303ca5b6913e5e5910e834b96f7908c778d8308a5b56ec05c",
+          "nonempty_ordinal": 130
+        },
+        {
+          "ref": "Beitzah 6b:5",
+          "page_index": 11,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            129
+          ],
+          "span_sha256_utf8": "11463eb1910e9ed9aee99df1fad5b22938a36bf98cced1ecbee581525a54592d",
+          "nonempty_ordinal": 131
+        },
+        {
+          "ref": "Beitzah 6b:6",
+          "page_index": 11,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "span_sha256_utf8": "0fa26150fc39e268281389a58778310e9c2309d9e4cf103bcb9f76080137fad4",
+          "nonempty_ordinal": 132
+        },
+        {
+          "ref": "Beitzah 6b:7",
+          "page_index": 11,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "span_sha256_utf8": "cf01f5818c3b02fdb5d1dcee6c0d78b2272a8c344b0a16670a330f4902a6e903",
+          "nonempty_ordinal": 133
+        },
+        {
+          "ref": "Beitzah 6b:8",
+          "page_index": 11,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            193
+          ],
+          "span_sha256_utf8": "02b0a28c95d677a2bb54401e92ffe8307588fcf05f25f396661d1385de111a98",
+          "nonempty_ordinal": 134
+        },
+        {
+          "ref": "Beitzah 6b:9",
+          "page_index": 11,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            145
+          ],
+          "span_sha256_utf8": "c0953de4fb9509fc10d654f302f81b040c169b21b7f3d84b1e955d68ae3405d2",
+          "nonempty_ordinal": 135
+        },
+        {
+          "ref": "Beitzah 6b:10",
+          "page_index": 11,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            178
+          ],
+          "span_sha256_utf8": "99db21b28b66aa410d0b0045b1ba1ae37d01cb6cce75fe69bdc9fa99184fd9bd",
+          "nonempty_ordinal": 136
+        },
+        {
+          "ref": "Beitzah 6b:11",
+          "page_index": 11,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            187
+          ],
+          "span_sha256_utf8": "6eee7d63d322208b78b7d10402c9856659746aac417b887ad1bd554ea5f0d709",
+          "nonempty_ordinal": 137
+        },
+        {
+          "ref": "Beitzah 6b:12",
+          "page_index": 11,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "span_sha256_utf8": "d9ab56e1238f2a291e93b8a27a43ac2bdff307102972d1adb17d87f267a1c305",
+          "nonempty_ordinal": 138
+        },
+        {
+          "ref": "Beitzah 7a:1",
+          "page_index": 12,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            76
+          ],
+          "span_sha256_utf8": "e652967d1170ed22959421419735bd09de3fa560c515ca7f39a11c5ab7ae675f",
+          "nonempty_ordinal": 139
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000018",
+      "spans": [
+        {
+          "ref": "Beitzah 7b:22",
+          "page_index": 13,
+          "segment_index": 21,
+          "offsets_codepoints": [
+            0,
+            44
+          ],
+          "span_sha256_utf8": "1e390ee4940604582f8c2687058ab26602d53f42dd7fa03c6b2377873ca72d6f",
+          "nonempty_ordinal": 180
+        },
+        {
+          "ref": "Beitzah 7b:23",
+          "page_index": 13,
+          "segment_index": 22,
+          "offsets_codepoints": [
+            0,
+            192
+          ],
+          "span_sha256_utf8": "1c0ec4d5dbee6af56e0615969661723f742583558cc82d27d1868c815371bb5a",
+          "nonempty_ordinal": 181
+        },
+        {
+          "ref": "Beitzah 7b:24",
+          "page_index": 13,
+          "segment_index": 23,
+          "offsets_codepoints": [
+            0,
+            135
+          ],
+          "span_sha256_utf8": "c065826978d3a47e9de748ffb77550f650035cf6876a1398c0a3aaec07898f29",
+          "nonempty_ordinal": 182
+        },
+        {
+          "ref": "Beitzah 8a:1",
+          "page_index": 14,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            10
+          ],
+          "span_sha256_utf8": "7501fdd24e7d09cd5d74f19d2ebc6082e66287b985da45a5f3c5d562f98d9a1b",
+          "nonempty_ordinal": 183
+        },
+        {
+          "ref": "Beitzah 8a:2",
+          "page_index": 14,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "05037aadae42226cd99e2365340c0228715cb27dbca32284b9efc364674ea235",
+          "nonempty_ordinal": 184
+        },
+        {
+          "ref": "Beitzah 8a:3",
+          "page_index": 14,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "993ee8aa509d492b449084f62ec18570126c8e8ce97687225929fef1abf38d02",
+          "nonempty_ordinal": 185
+        },
+        {
+          "ref": "Beitzah 8a:4",
+          "page_index": 14,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            97
+          ],
+          "span_sha256_utf8": "2f0e55bfa0c212c4948fd3cb54255d431871a7c4afe39a83c524655441cda061",
+          "nonempty_ordinal": 186
+        },
+        {
+          "ref": "Beitzah 8a:5",
+          "page_index": 14,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            116
+          ],
+          "span_sha256_utf8": "8717c8ce9a8f5dae8aabef4cc053a0db241e9081d2c169667470bc3c46d2a197",
+          "nonempty_ordinal": 187
+        },
+        {
+          "ref": "Beitzah 8a:6",
+          "page_index": 14,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "span_sha256_utf8": "1398ec76be5554c7604abe040a268d4b3796fa3b6bffda0e3ee1a21213b324d2",
+          "nonempty_ordinal": 188
+        },
+        {
+          "ref": "Beitzah 8a:7",
+          "page_index": 14,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            55
+          ],
+          "span_sha256_utf8": "b7c2761d17d88485978a991fd3df6a220c308c4fa5648de7171d7fa11b845b92",
+          "nonempty_ordinal": 189
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000025",
+      "spans": [
+        {
+          "ref": "Beitzah 10a:14",
+          "page_index": 18,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            71
+          ],
+          "span_sha256_utf8": "25a72b453a5acf21f1fd22a976ebf250f1b92c234a40e9b6b10585250f6d849c",
+          "nonempty_ordinal": 250
+        },
+        {
+          "ref": "Beitzah 10a:15",
+          "page_index": 18,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            108
+          ],
+          "span_sha256_utf8": "df3763920e19b696d7e9ef52291054c6c29a0a11fff8c60e9d5697d60bacf503",
+          "nonempty_ordinal": 251
+        },
+        {
+          "ref": "Beitzah 10a:16",
+          "page_index": 18,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "span_sha256_utf8": "2629a97ddf96e136ad8e035e84e7a090eb761d3b623ea4c8e5a306c0f09bcf07",
+          "nonempty_ordinal": 252
+        },
+        {
+          "ref": "Beitzah 10a:17",
+          "page_index": 18,
+          "segment_index": 16,
+          "offsets_codepoints": [
+            0,
+            114
+          ],
+          "span_sha256_utf8": "cadddfe43392a5324c33c0c89af4da6bc5c8f5336e22d0108aea9a0583d954d8",
+          "nonempty_ordinal": 253
+        },
+        {
+          "ref": "Beitzah 10a:18",
+          "page_index": 18,
+          "segment_index": 17,
+          "offsets_codepoints": [
+            0,
+            91
+          ],
+          "span_sha256_utf8": "2481358d9029a6fa11bbc5afb781db5c2751fe0b9189d6fc02547d6b517dd816",
+          "nonempty_ordinal": 254
+        },
+        {
+          "ref": "Beitzah 10a:19",
+          "page_index": 18,
+          "segment_index": 18,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "617232f93dfacce0c6197fa979f8bde744f439b8370693f9cea96800360f0fd3",
+          "nonempty_ordinal": 255
+        },
+        {
+          "ref": "Beitzah 10b:1",
+          "page_index": 19,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            157
+          ],
+          "span_sha256_utf8": "b70a2c5e02455f5c0faba027e4a9edc5563975b4df8abe6679304db6707a3d6e",
+          "nonempty_ordinal": 256
+        },
+        {
+          "ref": "Beitzah 10b:2",
+          "page_index": 19,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            117
+          ],
+          "span_sha256_utf8": "8f1ed9782f61ad734f325f689f145d17ea4ab026f511a27211ab173a5887d973",
+          "nonempty_ordinal": 257
+        },
+        {
+          "ref": "Beitzah 10b:3",
+          "page_index": 19,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "7a593ecc6d6dacef4277e429f20aaa4482648357da3bc7e353424b9810a10db6",
+          "nonempty_ordinal": 258
+        },
+        {
+          "ref": "Beitzah 10b:4",
+          "page_index": 19,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            216
+          ],
+          "span_sha256_utf8": "74640f8c76abed7fc5f9b8390f57652e9f28dbecbe711497e00ad17d12f9c868",
+          "nonempty_ordinal": 259
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000028",
+      "spans": [
+        {
+          "ref": "Beitzah 11a:10",
+          "page_index": 20,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            63
+          ],
+          "span_sha256_utf8": "adb6b71ef94b77d87296e057ef02a549d49d7c1cbfbbbb3fabd4d6233e8860ed",
+          "nonempty_ordinal": 280
+        },
+        {
+          "ref": "Beitzah 11a:11",
+          "page_index": 20,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            114
+          ],
+          "span_sha256_utf8": "f940ff5b74313af46b6cd50d5796b91b034d710c1859951edbb9ec1e7a0fc74c",
+          "nonempty_ordinal": 281
+        },
+        {
+          "ref": "Beitzah 11a:12",
+          "page_index": 20,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "214ee3e4ff24ae9bb4c76afe3d381ef69530bc3e83aded86b442a79b78d4657b",
+          "nonempty_ordinal": 282
+        },
+        {
+          "ref": "Beitzah 11a:13",
+          "page_index": 20,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            137
+          ],
+          "span_sha256_utf8": "6bac353b0c27f189a3f7d906cf4c86b8aae7115ba995881435713c885cbf4df6",
+          "nonempty_ordinal": 283
+        },
+        {
+          "ref": "Beitzah 11a:14",
+          "page_index": 20,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            109
+          ],
+          "span_sha256_utf8": "0baa1524f5232dae1978b525657a7d7506b6d863b5a20ab2763e11dbcf442781",
+          "nonempty_ordinal": 284
+        },
+        {
+          "ref": "Beitzah 11a:15",
+          "page_index": 20,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            230
+          ],
+          "span_sha256_utf8": "24864952eae4c9ee150ddc8e5db8171316cb0016a6af62d31cd8dffbc479662c",
+          "nonempty_ordinal": 285
+        },
+        {
+          "ref": "Beitzah 11a:16",
+          "page_index": 20,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "span_sha256_utf8": "6fa53e37cdc42ce55c554c6bd24b18fd0cf878fc73a1a18953f228e0725e65a5",
+          "nonempty_ordinal": 286
+        },
+        {
+          "ref": "Beitzah 11a:17",
+          "page_index": 20,
+          "segment_index": 16,
+          "offsets_codepoints": [
+            0,
+            49
+          ],
+          "span_sha256_utf8": "2e7c24b32a8795cf879e122dd27ce992fbc3eea85b362738c6acef2da5a016ea",
+          "nonempty_ordinal": 287
+        },
+        {
+          "ref": "Beitzah 11a:18",
+          "page_index": 20,
+          "segment_index": 17,
+          "offsets_codepoints": [
+            0,
+            88
+          ],
+          "span_sha256_utf8": "a1493740b6c6b75ab7bebe9edf8c7829d16d63bb665d46f1bfe59514af892f13",
+          "nonempty_ordinal": 288
+        },
+        {
+          "ref": "Beitzah 11a:19",
+          "page_index": 20,
+          "segment_index": 18,
+          "offsets_codepoints": [
+            0,
+            149
+          ],
+          "span_sha256_utf8": "7f77894102c8e26be3ae8c484eba27c17c54fb0a5e32ee01bc852223635112e0",
+          "nonempty_ordinal": 289
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000029",
+      "spans": [
+        {
+          "ref": "Beitzah 11a:20",
+          "page_index": 20,
+          "segment_index": 19,
+          "offsets_codepoints": [
+            0,
+            123
+          ],
+          "span_sha256_utf8": "6a2833f1ad55285668b4b089b76eaee0ca8662d2ae1241a78fad4003e093e3a6",
+          "nonempty_ordinal": 290
+        },
+        {
+          "ref": "Beitzah 11a:21",
+          "page_index": 20,
+          "segment_index": 20,
+          "offsets_codepoints": [
+            0,
+            25
+          ],
+          "span_sha256_utf8": "e48a0d2d0b386df1612e77675e19ff25dc898577d6ab8aac9776f615881c7272",
+          "nonempty_ordinal": 291
+        },
+        {
+          "ref": "Beitzah 11b:1",
+          "page_index": 21,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            122
+          ],
+          "span_sha256_utf8": "c0016fe876d03db26bf2ac3b9a85dc01dfc946f8b4a945140dcffca1fffe65d3",
+          "nonempty_ordinal": 292
+        },
+        {
+          "ref": "Beitzah 11b:2",
+          "page_index": 21,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            126
+          ],
+          "span_sha256_utf8": "f51d06427fccc7ae04fa51292dda9633eaf8407bc4f07301a00e40f838bf01a4",
+          "nonempty_ordinal": 293
+        },
+        {
+          "ref": "Beitzah 11b:3",
+          "page_index": 21,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            107
+          ],
+          "span_sha256_utf8": "16ef6609cb87d0ce9b0cadd6097dad5f22a78c9cf811ed8f8e35ff69a99f1cf0",
+          "nonempty_ordinal": 294
+        },
+        {
+          "ref": "Beitzah 11b:4",
+          "page_index": 21,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            65
+          ],
+          "span_sha256_utf8": "b1f487ba132ca25c8038d938b843f7c87155cdb2a2ee2715c442e6fffc531811",
+          "nonempty_ordinal": 295
+        },
+        {
+          "ref": "Beitzah 11b:5",
+          "page_index": 21,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "span_sha256_utf8": "ad8b57a33fea357ac3d2216d9d8defc9dd3a2826822a3a9b19543c5a21c0e310",
+          "nonempty_ordinal": 296
+        },
+        {
+          "ref": "Beitzah 11b:6",
+          "page_index": 21,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            16
+          ],
+          "span_sha256_utf8": "13c5151f231bb374df8e3d6d63775b5ac235a92bc68bcdf7b1ca216dd80d27d2",
+          "nonempty_ordinal": 297
+        },
+        {
+          "ref": "Beitzah 11b:7",
+          "page_index": 21,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            59
+          ],
+          "span_sha256_utf8": "5a3bf0bad8b6dd0e174720aec95156233b6323ef3f60c31c3737fb72617e3591",
+          "nonempty_ordinal": 298
+        },
+        {
+          "ref": "Beitzah 11b:8",
+          "page_index": 21,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            28
+          ],
+          "span_sha256_utf8": "97b474ecfe02be4a5eb880ea5b15dabc2494d63e195af2fbd64cc44225779532",
+          "nonempty_ordinal": 299
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000031",
+      "spans": [
+        {
+          "ref": "Beitzah 12a:3",
+          "page_index": 22,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            94
+          ],
+          "span_sha256_utf8": "09d19639336626db61f7929ffc694140f953703d243a525cd0c9f34f37e370da",
+          "nonempty_ordinal": 310
+        },
+        {
+          "ref": "Beitzah 12a:4",
+          "page_index": 22,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            208
+          ],
+          "span_sha256_utf8": "12f1cc0d84d7d653b8d7799d04256772b3d9e89e5fa87c73dd26de26ec2b4add",
+          "nonempty_ordinal": 311
+        },
+        {
+          "ref": "Beitzah 12a:5",
+          "page_index": 22,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "span_sha256_utf8": "50c0be8cf5571af48e96641669d63fc3311b1973e7f2beaa802c54d01a7ff6c6",
+          "nonempty_ordinal": 312
+        },
+        {
+          "ref": "Beitzah 12a:6",
+          "page_index": 22,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "span_sha256_utf8": "7d93d7dcc320906c2fa1d9f977fca3e8114cbe8e903fe3f33c37c52fad4990eb",
+          "nonempty_ordinal": 313
+        },
+        {
+          "ref": "Beitzah 12a:7",
+          "page_index": 22,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            124
+          ],
+          "span_sha256_utf8": "863fbd48a53ca65a5b3c80394ab08a1d161cd7dd83f65717f71c0235ae88a888",
+          "nonempty_ordinal": 314
+        },
+        {
+          "ref": "Beitzah 12a:8",
+          "page_index": 22,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            65
+          ],
+          "span_sha256_utf8": "4426380a38b919e466166ea60c5ebe6d12df2d197ba3a91685c8a3b61a1b7020",
+          "nonempty_ordinal": 315
+        },
+        {
+          "ref": "Beitzah 12a:9",
+          "page_index": 22,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            22
+          ],
+          "span_sha256_utf8": "e219363086470481f29c0f45457671b0c3b31e911617e5833a5872e69d29d68c",
+          "nonempty_ordinal": 316
+        },
+        {
+          "ref": "Beitzah 12a:10",
+          "page_index": 22,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            135
+          ],
+          "span_sha256_utf8": "742ae3d0129dfa981915736e1ec2db860d644d3aba7c543ee515afbe6d191a7f",
+          "nonempty_ordinal": 317
+        },
+        {
+          "ref": "Beitzah 12a:11",
+          "page_index": 22,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            94
+          ],
+          "span_sha256_utf8": "1a0a2b5975e1b4637024c8e8abb4429995377d5be121a9686f8258082386210e",
+          "nonempty_ordinal": 318
+        },
+        {
+          "ref": "Beitzah 12b:1",
+          "page_index": 23,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            10
+          ],
+          "span_sha256_utf8": "61049fd9d64c4235bff54ec7c6bea5584c6c490621274dd8a04f9cd02481ce94",
+          "nonempty_ordinal": 319
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000034",
+      "spans": [
+        {
+          "ref": "Beitzah 13a:3",
+          "page_index": 24,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            108
+          ],
+          "span_sha256_utf8": "537877ab36d21142a0c10eb8f31e48a3d88a94743c9662d1bc4495eeae61fba2",
+          "nonempty_ordinal": 340
+        },
+        {
+          "ref": "Beitzah 13a:4",
+          "page_index": 24,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            23
+          ],
+          "span_sha256_utf8": "53767ac5dd6ff0e12b87553c41bd2b6ab3a97f86a8cd850de4c3fa2ad093a21f",
+          "nonempty_ordinal": 341
+        },
+        {
+          "ref": "Beitzah 13a:5",
+          "page_index": 24,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            57
+          ],
+          "span_sha256_utf8": "eb8fc22c3dd11e6fbe7b627fcc0c8181640dd7c1a7f342671b345f055e83b084",
+          "nonempty_ordinal": 342
+        },
+        {
+          "ref": "Beitzah 13a:6",
+          "page_index": 24,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            167
+          ],
+          "span_sha256_utf8": "25a222245a963b301f89d5d6d1c05ffff7ec2c21e9cbb839156d206e57da71e7",
+          "nonempty_ordinal": 343
+        },
+        {
+          "ref": "Beitzah 13a:7",
+          "page_index": 24,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            51
+          ],
+          "span_sha256_utf8": "60eacf367bacc88074216ea73b09132cc0cccba6f8e7ef4294baabef97b2041e",
+          "nonempty_ordinal": 344
+        },
+        {
+          "ref": "Beitzah 13a:8",
+          "page_index": 24,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            60
+          ],
+          "span_sha256_utf8": "d322aa74d8107db6276edbf12060b8b4768335590f8a048a24e0c6b492f42955",
+          "nonempty_ordinal": 345
+        },
+        {
+          "ref": "Beitzah 13a:9",
+          "page_index": 24,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "d2909830ee615a888796ef158d99e3aaa658ebc12859a569eb48f5611d518da6",
+          "nonempty_ordinal": 346
+        },
+        {
+          "ref": "Beitzah 13a:10",
+          "page_index": 24,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            200
+          ],
+          "span_sha256_utf8": "b11d2e49c979ddd3b905805b55b144217fe097b9d0573056f1690ed4ce2e45be",
+          "nonempty_ordinal": 347
+        },
+        {
+          "ref": "Beitzah 13a:11",
+          "page_index": 24,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            25
+          ],
+          "span_sha256_utf8": "ead07d49ca685251d9d54e0bbb812f41df710d3a1deb794c97be4295f72d0157",
+          "nonempty_ordinal": 348
+        },
+        {
+          "ref": "Beitzah 13a:12",
+          "page_index": 24,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "span_sha256_utf8": "1bc97dbfa363f7f61e25ea1b3e78f9d690360dcb71d576c32e6b135557b7db80",
+          "nonempty_ordinal": 349
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000035",
+      "spans": [
+        {
+          "ref": "Beitzah 13a:13",
+          "page_index": 24,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            21
+          ],
+          "span_sha256_utf8": "9e90a658d24a09352562c4cb933e841fcad4e8f4871f49ac067a2672a15be48c",
+          "nonempty_ordinal": 350
+        },
+        {
+          "ref": "Beitzah 13a:14",
+          "page_index": 24,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "span_sha256_utf8": "7e5f382b6249f19cfcadc6f0a0543c6649cf707bb8c17c7aae7f079eb420c50f",
+          "nonempty_ordinal": 351
+        },
+        {
+          "ref": "Beitzah 13a:15",
+          "page_index": 24,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            164
+          ],
+          "span_sha256_utf8": "23002e05c9f08cd821070a8bf3e6d5705691e2ac7f585cb85e3214ce55c0872c",
+          "nonempty_ordinal": 352
+        },
+        {
+          "ref": "Beitzah 13b:1",
+          "page_index": 25,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "span_sha256_utf8": "4c516d7d1e35938f52f4c18604f433846cf7981cd3dc8190836bbe5236628831",
+          "nonempty_ordinal": 353
+        },
+        {
+          "ref": "Beitzah 13b:2",
+          "page_index": 25,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            17
+          ],
+          "span_sha256_utf8": "289509659a2f98f4442a51da21dddf89fa6ac8735fadd9a8827bf88d8e745e06",
+          "nonempty_ordinal": 354
+        },
+        {
+          "ref": "Beitzah 13b:3",
+          "page_index": 25,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            216
+          ],
+          "span_sha256_utf8": "2b24cead54de011782174f1498b8d0006f08a9b8623f200979ddf6a0420ff2d4",
+          "nonempty_ordinal": 355
+        },
+        {
+          "ref": "Beitzah 13b:4",
+          "page_index": 25,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            121
+          ],
+          "span_sha256_utf8": "22ca797f12f080b89a0527f2405b27960c04d9b7e3cd5ac40d507db4070674ac",
+          "nonempty_ordinal": 356
+        },
+        {
+          "ref": "Beitzah 13b:5",
+          "page_index": 25,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            59
+          ],
+          "span_sha256_utf8": "51462a0a2d1648ab7521ae941e50956eb72ec6d754f1dfb1465621869d05ba36",
+          "nonempty_ordinal": 357
+        },
+        {
+          "ref": "Beitzah 13b:6",
+          "page_index": 25,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            115
+          ],
+          "span_sha256_utf8": "c142fcc1b27338b42304d9cfb5c4d4e14f560d43b0e3dee4ac29d6174269c361",
+          "nonempty_ordinal": 358
+        },
+        {
+          "ref": "Beitzah 13b:7",
+          "page_index": 25,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            118
+          ],
+          "span_sha256_utf8": "07ee69cd84f514b1082fa6ab2bbc94db5e2d76834ee7a45b25b695d317243af2",
+          "nonempty_ordinal": 359
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000036",
+      "spans": [
+        {
+          "ref": "Beitzah 13b:8",
+          "page_index": 25,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            31
+          ],
+          "span_sha256_utf8": "77ff4d7ca6871dc1fbc7b703fcc00548bef6532d635c3cc1ac1ceb0e04085a7f",
+          "nonempty_ordinal": 360
+        },
+        {
+          "ref": "Beitzah 13b:9",
+          "page_index": 25,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            89
+          ],
+          "span_sha256_utf8": "783b51fd7d87c87bf9c94ae99d9b2bc2b85ee5091be5eb6b3e5b3a2d88187aaa",
+          "nonempty_ordinal": 361
+        },
+        {
+          "ref": "Beitzah 13b:10",
+          "page_index": 25,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            188
+          ],
+          "span_sha256_utf8": "9196263b052599fef5c08fb9c56e640039d8c82832444c6cbbf7bb106f70fa2d",
+          "nonempty_ordinal": 362
+        },
+        {
+          "ref": "Beitzah 13b:11",
+          "page_index": 25,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "span_sha256_utf8": "1a5ec5cba3f124e117c0bed5f1cf3e1d2f63bffd6b4f708cb80fc1827ad6bd4a",
+          "nonempty_ordinal": 363
+        },
+        {
+          "ref": "Beitzah 13b:12",
+          "page_index": 25,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            180
+          ],
+          "span_sha256_utf8": "e3a7b4fe9721c0609dede3251d6f8750a85b7f576bc86559a1b374af60a0d4c6",
+          "nonempty_ordinal": 364
+        },
+        {
+          "ref": "Beitzah 13b:13",
+          "page_index": 25,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "span_sha256_utf8": "ab8e2bc268d9688aa2895925f75426a011e84389c624aedb58cc83b89909a927",
+          "nonempty_ordinal": 365
+        },
+        {
+          "ref": "Beitzah 13b:14",
+          "page_index": 25,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            120
+          ],
+          "span_sha256_utf8": "abeee33e5ef86376c2cb4aa33c4c86192842205322c16c16676df3fa694faa97",
+          "nonempty_ordinal": 366
+        },
+        {
+          "ref": "Beitzah 13b:15",
+          "page_index": 25,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            40
+          ],
+          "span_sha256_utf8": "fbcfbe6fe768d5e9aa8cd04cc97306a18dc0e27163a2dc2bdffe95a1df22bc75",
+          "nonempty_ordinal": 367
+        },
+        {
+          "ref": "Beitzah 14a:1",
+          "page_index": 26,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            21
+          ],
+          "span_sha256_utf8": "a9eddc5c68f53855c5794642c87ad0ebf038990cbe4070da45ba7a6a62676a27",
+          "nonempty_ordinal": 368
+        },
+        {
+          "ref": "Beitzah 14a:2",
+          "page_index": 26,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            84
+          ],
+          "span_sha256_utf8": "61acb3db650aa855b7cf1c1f5b75c0afd83581587b86ae996941fbd396b2a367",
+          "nonempty_ordinal": 369
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000037",
+      "spans": [
+        {
+          "ref": "Beitzah 14a:3",
+          "page_index": 26,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            162
+          ],
+          "span_sha256_utf8": "e480a3140242d4cdd1c4e2a3c53e1ea518eb19f13cb82c7c87b357f313057a27",
+          "nonempty_ordinal": 370
+        },
+        {
+          "ref": "Beitzah 14a:4",
+          "page_index": 26,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            143
+          ],
+          "span_sha256_utf8": "ead5a544e027f7d550bfa3d6884a7954f2496c3ec8a8b55e2ad2d46c70182661",
+          "nonempty_ordinal": 371
+        },
+        {
+          "ref": "Beitzah 14a:5",
+          "page_index": 26,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            50
+          ],
+          "span_sha256_utf8": "475fc3e8d1fe905058b32fa14bb42b9df5aad1e1115f8e63236e89cc4ed25c13",
+          "nonempty_ordinal": 372
+        },
+        {
+          "ref": "Beitzah 14a:6",
+          "page_index": 26,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "span_sha256_utf8": "7456ccc61087347874d85bcfed85a68088f7ccb13c792ccca8c2fd50fc99d9ca",
+          "nonempty_ordinal": 373
+        },
+        {
+          "ref": "Beitzah 14a:7",
+          "page_index": 26,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            181
+          ],
+          "span_sha256_utf8": "4d2c3042d5e072135d67a043ce8078b47af259fb9249c3ece130b6316a301d72",
+          "nonempty_ordinal": 374
+        },
+        {
+          "ref": "Beitzah 14a:8",
+          "page_index": 26,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            141
+          ],
+          "span_sha256_utf8": "6695768a205a762cf74af484f65660e04af48bc201f7334d94b0e23de0edd04c",
+          "nonempty_ordinal": 375
+        },
+        {
+          "ref": "Beitzah 14a:9",
+          "page_index": 26,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            98
+          ],
+          "span_sha256_utf8": "5c04d4670810a1a7b2b62fad648611d8017caab793bb8fc6a4ddc13c69971d27",
+          "nonempty_ordinal": 376
+        },
+        {
+          "ref": "Beitzah 14a:10",
+          "page_index": 26,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "span_sha256_utf8": "21f4999e86856b1253c6a8f320631b66b744c0bdab1af460e879b50d9ff4674e",
+          "nonempty_ordinal": 377
+        },
+        {
+          "ref": "Beitzah 14a:11",
+          "page_index": 26,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            103
+          ],
+          "span_sha256_utf8": "0e54487aadf9e984fe82c6139715c5092c35a1140365c92d54a06f740afeadaf",
+          "nonempty_ordinal": 378
+        },
+        {
+          "ref": "Beitzah 14a:12",
+          "page_index": 26,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "span_sha256_utf8": "8b88e0f6ece0f6456d73d854cb06c9109450415774c67ca170f4a9f105a1cd86",
+          "nonempty_ordinal": 379
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000045",
+      "spans": [
+        {
+          "ref": "Beitzah 16a:18",
+          "page_index": 30,
+          "segment_index": 17,
+          "offsets_codepoints": [
+            0,
+            15
+          ],
+          "span_sha256_utf8": "5604dee153b51a65f924f766185ce67708b6dc831abbd91eefe0797707ff099a",
+          "nonempty_ordinal": 450
+        },
+        {
+          "ref": "Beitzah 16b:1",
+          "page_index": 31,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            25
+          ],
+          "span_sha256_utf8": "c757d40fa75bd62b8f9cd858e7766754d6aa5b524ac422816ae470d722638810",
+          "nonempty_ordinal": 451
+        },
+        {
+          "ref": "Beitzah 16b:2",
+          "page_index": 31,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            156
+          ],
+          "span_sha256_utf8": "335c7d974c2a18a259e76ed210484071079fa59c523ad1a0749aca49945a3edf",
+          "nonempty_ordinal": 452
+        },
+        {
+          "ref": "Beitzah 16b:3",
+          "page_index": 31,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            118
+          ],
+          "span_sha256_utf8": "9aca55c3518f9bbd57932d4a1893a7c9c7be184ff2615d151300c977ffb618d0",
+          "nonempty_ordinal": 453
+        },
+        {
+          "ref": "Beitzah 16b:4",
+          "page_index": 31,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            174
+          ],
+          "span_sha256_utf8": "c0b55a3af7eb9151a5c06a1e48d0639ee92d3d4ba28fcc7cfc4d9fff8d6846c7",
+          "nonempty_ordinal": 454
+        },
+        {
+          "ref": "Beitzah 16b:5",
+          "page_index": 31,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            99
+          ],
+          "span_sha256_utf8": "eee68502ef87eb28f818a234580bd07b597824471ae24b4fedd3fdf3552b0c6b",
+          "nonempty_ordinal": 455
+        },
+        {
+          "ref": "Beitzah 16b:6",
+          "page_index": 31,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            196
+          ],
+          "span_sha256_utf8": "7945bbabf4b5c752800fc6f3fd42e4c416d4ff3862657a47ac276853e787a1b9",
+          "nonempty_ordinal": 456
+        },
+        {
+          "ref": "Beitzah 16b:7",
+          "page_index": 31,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            243
+          ],
+          "span_sha256_utf8": "0cc48927c2880881d90ef884de36c5131608ef8d1cf27636c36fceabf641acf6",
+          "nonempty_ordinal": 457
+        },
+        {
+          "ref": "Beitzah 16b:8",
+          "page_index": 31,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            73
+          ],
+          "span_sha256_utf8": "8b6c090f9cedc8c97b6ea8f49206aca50a7f20f412a1b82f8e01e32562a0d0cc",
+          "nonempty_ordinal": 458
+        },
+        {
+          "ref": "Beitzah 16b:9",
+          "page_index": 31,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "span_sha256_utf8": "e7a1a6d03ea84e98b02d04c110cfd9fa5135a7c7e82d525bb365dc7be14264b7",
+          "nonempty_ordinal": 459
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000047",
+      "spans": [
+        {
+          "ref": "Beitzah 17a:7",
+          "page_index": 32,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            53
+          ],
+          "span_sha256_utf8": "206bf36f523e3819bd679051f183c5aa30c3f62f1576958d64484b464ee8f55e",
+          "nonempty_ordinal": 470
+        },
+        {
+          "ref": "Beitzah 17a:8",
+          "page_index": 32,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            121
+          ],
+          "span_sha256_utf8": "a239aaeada83d748b5405d5b02cc6063a3a1aedf9a61b5f62704b9ba3bfe4c13",
+          "nonempty_ordinal": 471
+        },
+        {
+          "ref": "Beitzah 17a:9",
+          "page_index": 32,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            188
+          ],
+          "span_sha256_utf8": "ff2aa66b98b5302351dac96b1f64ff5731516e3cc9ff5d69edbe48ad741cbd43",
+          "nonempty_ordinal": 472
+        },
+        {
+          "ref": "Beitzah 17a:10",
+          "page_index": 32,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "span_sha256_utf8": "e9e9ce5ec96fc40d5757f18316a7db431d37bdb14cdd89908ba2aa56c6a4cf40",
+          "nonempty_ordinal": 473
+        },
+        {
+          "ref": "Beitzah 17a:11",
+          "page_index": 32,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            89
+          ],
+          "span_sha256_utf8": "8b5db17040ac765257c9f04ef86d5a80cbf9f53ba9ab6c864fdd8a4bd04400ce",
+          "nonempty_ordinal": 474
+        },
+        {
+          "ref": "Beitzah 17a:12",
+          "page_index": 32,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            152
+          ],
+          "span_sha256_utf8": "04086fad5b9005942ae560acbdda908eed26cb30d471a4cfbbaa78c3f0b1ee5d",
+          "nonempty_ordinal": 475
+        },
+        {
+          "ref": "Beitzah 17a:13",
+          "page_index": 32,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            191
+          ],
+          "span_sha256_utf8": "9fc3a6b3000c05856f55405318b1ed8cf998b89a0de501a0ce410df7ced7591a",
+          "nonempty_ordinal": 476
+        },
+        {
+          "ref": "Beitzah 17a:14",
+          "page_index": 32,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "span_sha256_utf8": "5cdf617f251bdbbb2e90707b215e7e785a56689f27d820adf008089f7e0efd12",
+          "nonempty_ordinal": 477
+        },
+        {
+          "ref": "Beitzah 17b:1",
+          "page_index": 33,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            90
+          ],
+          "span_sha256_utf8": "334cedfe24471a44422c32d0a72a6e99098650df45bb602c73674afd2225432a",
+          "nonempty_ordinal": 478
+        },
+        {
+          "ref": "Beitzah 17b:2",
+          "page_index": 33,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            194
+          ],
+          "span_sha256_utf8": "e6f94302d87e759998c5e268d294b7b7ea4794517ef46f33bc7a0815977aa82d",
+          "nonempty_ordinal": 479
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000054",
+      "spans": [
+        {
+          "ref": "Beitzah 19b:3",
+          "page_index": 37,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            265
+          ],
+          "span_sha256_utf8": "899e2b1a85f30588059592c58cdb786cce014c7c15cb9e209f219c405376dac4",
+          "nonempty_ordinal": 540
+        },
+        {
+          "ref": "Beitzah 19b:4",
+          "page_index": 37,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            157
+          ],
+          "span_sha256_utf8": "153962b11ef42577795154fd59d65a27d37d6909b45f321a9281d3131ad30316",
+          "nonempty_ordinal": 541
+        },
+        {
+          "ref": "Beitzah 19b:5",
+          "page_index": 37,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            62
+          ],
+          "span_sha256_utf8": "138cb07c9dc95a9706f3bbbabf7ee69c22a4a3c63d35a648d00c0a55389c17fc",
+          "nonempty_ordinal": 542
+        },
+        {
+          "ref": "Beitzah 19b:6",
+          "page_index": 37,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "span_sha256_utf8": "b63074466ab556f629644de3d355cad778bf5ef4385000557353a3f24ac4adf6",
+          "nonempty_ordinal": 543
+        },
+        {
+          "ref": "Beitzah 19b:7",
+          "page_index": 37,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            208
+          ],
+          "span_sha256_utf8": "a9514a1b3e321eef011f51260b7608f0a3000e3e45d4b28f7badb81edc9ec963",
+          "nonempty_ordinal": 544
+        },
+        {
+          "ref": "Beitzah 19b:8",
+          "page_index": 37,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            68
+          ],
+          "span_sha256_utf8": "376fe81a236e6f8942fb0b13bfe27b39639436191076ec40b2402a9259224080",
+          "nonempty_ordinal": 545
+        },
+        {
+          "ref": "Beitzah 19b:9",
+          "page_index": 37,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            43
+          ],
+          "span_sha256_utf8": "7b5c1848dd89af1c47bdd5228f39395aca6580c9cf412a890471927604badc99",
+          "nonempty_ordinal": 546
+        },
+        {
+          "ref": "Beitzah 19b:10",
+          "page_index": 37,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            36
+          ],
+          "span_sha256_utf8": "e22ad8594e0e2d468412830ff7d38c7861e717b33e637847c9e38e98d67639dd",
+          "nonempty_ordinal": 547
+        },
+        {
+          "ref": "Beitzah 19b:11",
+          "page_index": 37,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "span_sha256_utf8": "24170f4d15b7bebb538d0cc939985ddaec52481037e3a36cfc60ed02cf4260f1",
+          "nonempty_ordinal": 548
+        },
+        {
+          "ref": "Beitzah 19b:12",
+          "page_index": 37,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "span_sha256_utf8": "9c847eb8448607f4a44cdc2a246717fc55adc750150227b918a6bc89735aefed",
+          "nonempty_ordinal": 549
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000060",
+      "spans": [
+        {
+          "ref": "Beitzah 21b:5",
+          "page_index": 41,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            92
+          ],
+          "span_sha256_utf8": "ea203c95f21a5afe0557b3ce48fe804b73e23cb86da073130f4b03b8aa0ad442",
+          "nonempty_ordinal": 600
+        },
+        {
+          "ref": "Beitzah 21b:6",
+          "page_index": 41,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            118
+          ],
+          "span_sha256_utf8": "99285e0370577fb819232cb1e753bc8ef11428c0af0c5733a7cdef4961cb66fa",
+          "nonempty_ordinal": 601
+        },
+        {
+          "ref": "Beitzah 21b:7",
+          "page_index": 41,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            136
+          ],
+          "span_sha256_utf8": "a0d0a34910ac393fc5adaa956b6130059ee90a7094347f132302655f23a027eb",
+          "nonempty_ordinal": 602
+        },
+        {
+          "ref": "Beitzah 21b:8",
+          "page_index": 41,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            82
+          ],
+          "span_sha256_utf8": "c26d4c91cb4dae7b9f6fa33943b8b09aa4baf2eaa477eb0b0c0300bd733273cc",
+          "nonempty_ordinal": 603
+        },
+        {
+          "ref": "Beitzah 21b:9",
+          "page_index": 41,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            48
+          ],
+          "span_sha256_utf8": "0443fa79abcc366504fef70a895796225b7ba01a76341c03a0ad50d47254b572",
+          "nonempty_ordinal": 604
+        },
+        {
+          "ref": "Beitzah 21b:10",
+          "page_index": 41,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            83
+          ],
+          "span_sha256_utf8": "07c882a869c5d4284c0af72773ae3289cf45d22f4a94a167a22ed7c6e5e23080",
+          "nonempty_ordinal": 605
+        },
+        {
+          "ref": "Beitzah 21b:11",
+          "page_index": 41,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            216
+          ],
+          "span_sha256_utf8": "374434f8aabe33c940792610c3bfeb5cc5707ae8bedb48ce7ed169f29d1ba26e",
+          "nonempty_ordinal": 606
+        },
+        {
+          "ref": "Beitzah 21b:12",
+          "page_index": 41,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            131
+          ],
+          "span_sha256_utf8": "f598061fdcb591cee6b51c951a446d3a8cf175652d2675f12360d632be6fecdd",
+          "nonempty_ordinal": 607
+        },
+        {
+          "ref": "Beitzah 21b:13",
+          "page_index": 41,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            166
+          ],
+          "span_sha256_utf8": "69c3a2eadb22b90e2f1fdb00e3d1588e377850cc78e442c19490c1e1bc1e95a8",
+          "nonempty_ordinal": 608
+        },
+        {
+          "ref": "Beitzah 21b:14",
+          "page_index": 41,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "span_sha256_utf8": "b02b657c49a4de77ea54277c4ec028d1df6a15a2360274ede92e435ef4ee2dc1",
+          "nonempty_ordinal": 609
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000062",
+      "spans": [
+        {
+          "ref": "Beitzah 22a:8",
+          "page_index": 42,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            78
+          ],
+          "span_sha256_utf8": "3fdcc1b3f2b2a12bc989f364b9c5d2e73d1920963cdff265d1316d8cc06d2f6d",
+          "nonempty_ordinal": 620
+        },
+        {
+          "ref": "Beitzah 22a:9",
+          "page_index": 42,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            113
+          ],
+          "span_sha256_utf8": "91c2cc1d7ee3b4806d7a94da612a28b7e937bc0fdb6d8213e642f3d1c625783e",
+          "nonempty_ordinal": 621
+        },
+        {
+          "ref": "Beitzah 22a:10",
+          "page_index": 42,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            126
+          ],
+          "span_sha256_utf8": "218aa2079a849c153f52c397e73a31d09b9a4e2f51ef6638c9d7c551d3541539",
+          "nonempty_ordinal": 622
+        },
+        {
+          "ref": "Beitzah 22a:11",
+          "page_index": 42,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            138
+          ],
+          "span_sha256_utf8": "3a4ff0b4a7992dbf554e14b5535949e360f8b8e5306c63e74c61ae89f0ddac04",
+          "nonempty_ordinal": 623
+        },
+        {
+          "ref": "Beitzah 22a:12",
+          "page_index": 42,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            118
+          ],
+          "span_sha256_utf8": "c83fa153525b17f781f6c4e7ac7fa03c4066dfc82667e955cc16c77bccf33e35",
+          "nonempty_ordinal": 624
+        },
+        {
+          "ref": "Beitzah 22a:13",
+          "page_index": 42,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            182
+          ],
+          "span_sha256_utf8": "c7d99b1756713c72a13a28ba92b57a57d040c843215f3fe11361e4748faa1773",
+          "nonempty_ordinal": 625
+        },
+        {
+          "ref": "Beitzah 22a:14",
+          "page_index": 42,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            42
+          ],
+          "span_sha256_utf8": "eb04518b37b9d438fb610e1ee0bbcb02cc5f4959d9329f3173fa5a4cacf7c617",
+          "nonempty_ordinal": 626
+        },
+        {
+          "ref": "Beitzah 22a:15",
+          "page_index": 42,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            218
+          ],
+          "span_sha256_utf8": "4b2a7547fd3aedacb9d8ffa92536d8d5c93d402af91ec87c22be336572688bcc",
+          "nonempty_ordinal": 627
+        },
+        {
+          "ref": "Beitzah 22a:16",
+          "page_index": 42,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            123
+          ],
+          "span_sha256_utf8": "c9c4049be0c75f3d2701e08cc8409ac77bb264c27596edf12407b7685934bfff",
+          "nonempty_ordinal": 628
+        },
+        {
+          "ref": "Beitzah 22a:17",
+          "page_index": 42,
+          "segment_index": 16,
+          "offsets_codepoints": [
+            0,
+            172
+          ],
+          "span_sha256_utf8": "b44ec89e96f6b2fcf974f5d7aef41806e678da9583e366a9438cdfbfe890554b",
+          "nonempty_ordinal": 629
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000064",
+      "spans": [
+        {
+          "ref": "Beitzah 22b:11",
+          "page_index": 43,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            309
+          ],
+          "span_sha256_utf8": "e908d65e1e5155f5e012f9cf81dab9501f970b7a66add83dbfa4a603e868489b",
+          "nonempty_ordinal": 640
+        },
+        {
+          "ref": "Beitzah 22b:12",
+          "page_index": 43,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            295
+          ],
+          "span_sha256_utf8": "f282d34108e778855aa018f43d9946fadfd0dff46fd865e13607d0e725cd36f2",
+          "nonempty_ordinal": 641
+        },
+        {
+          "ref": "Beitzah 22b:13",
+          "page_index": 43,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            33
+          ],
+          "span_sha256_utf8": "82dbd0a9ca467ec367b89e3088ec5a4d26929f3b5b6ed4b039bf0a98a3c88590",
+          "nonempty_ordinal": 642
+        },
+        {
+          "ref": "Beitzah 22b:14",
+          "page_index": 43,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            58
+          ],
+          "span_sha256_utf8": "254dd911a1d48fd93ad36e1e9d88d3efdb19d79e8d579cd637c662598ec72f7f",
+          "nonempty_ordinal": 643
+        },
+        {
+          "ref": "Beitzah 22b:15",
+          "page_index": 43,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            155
+          ],
+          "span_sha256_utf8": "968454bae6c57208eb38d26cddbff5afa7fd19d1ea22f3f1e725504e60484fdb",
+          "nonempty_ordinal": 644
+        },
+        {
+          "ref": "Beitzah 22b:16",
+          "page_index": 43,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            26
+          ],
+          "span_sha256_utf8": "d19fb62ffcc0874a38d11f3b2925d4bfd3125b705784bc041c7765c33fe4ba23",
+          "nonempty_ordinal": 645
+        },
+        {
+          "ref": "Beitzah 23a:1",
+          "page_index": 44,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            15
+          ],
+          "span_sha256_utf8": "a4242d37d891d21dbf83097fe75c05178d715e69f0129a665d7e926032e4ce51",
+          "nonempty_ordinal": 646
+        },
+        {
+          "ref": "Beitzah 23a:2",
+          "page_index": 44,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            129
+          ],
+          "span_sha256_utf8": "eb75aed7b58fe3bf216953db5f106d7cc386c1a667ed974f1fee12486265fdd8",
+          "nonempty_ordinal": 647
+        },
+        {
+          "ref": "Beitzah 23a:3",
+          "page_index": 44,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            162
+          ],
+          "span_sha256_utf8": "b4aa2638f719d0295ca4592bd8e7f730921e38e3dbf7561be567abe958eed1c9",
+          "nonempty_ordinal": 648
+        },
+        {
+          "ref": "Beitzah 23a:4",
+          "page_index": 44,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            174
+          ],
+          "span_sha256_utf8": "9dc137acccd8cc61231d3ad6082bcc23b2b7ae6aee605402c18eaefae4fb1b29",
+          "nonempty_ordinal": 649
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000065",
+      "spans": [
+        {
+          "ref": "Beitzah 23a:5",
+          "page_index": 44,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            180
+          ],
+          "span_sha256_utf8": "20fb1086e8c5571de3e0ec5c52a80513419dfae25b8ba67f8a69471c102890b6",
+          "nonempty_ordinal": 650
+        },
+        {
+          "ref": "Beitzah 23a:6",
+          "page_index": 44,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            174
+          ],
+          "span_sha256_utf8": "c7e8a8c7a0fe907a92ce57700d45a263e7e869bfbb0bf5e44dd510c63596a310",
+          "nonempty_ordinal": 651
+        },
+        {
+          "ref": "Beitzah 23a:7",
+          "page_index": 44,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            36
+          ],
+          "span_sha256_utf8": "f023e0294d504ccd07beb738512375203ba50cafaa4398fde75fa355ab1910ff",
+          "nonempty_ordinal": 652
+        },
+        {
+          "ref": "Beitzah 23a:8",
+          "page_index": 44,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            111
+          ],
+          "span_sha256_utf8": "989eaa57a94e2f0962c96daf5c649b368f880143bd4bca2c420ed00df427d64e",
+          "nonempty_ordinal": 653
+        },
+        {
+          "ref": "Beitzah 23a:9",
+          "page_index": 44,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            52
+          ],
+          "span_sha256_utf8": "a68a85d33ff0001c16b1e9d5e76e34525ca1017aba71b20db415a54a54c6123a",
+          "nonempty_ordinal": 654
+        },
+        {
+          "ref": "Beitzah 23a:10",
+          "page_index": 44,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "span_sha256_utf8": "0ec30ecb7696962b4bf1c1ee30d0ad412795a08a6b07cce187e89a7ba8c8cbf7",
+          "nonempty_ordinal": 655
+        },
+        {
+          "ref": "Beitzah 23a:11",
+          "page_index": 44,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            241
+          ],
+          "span_sha256_utf8": "c2dc5618d34ec0c5b7e5ecfbf1eaa3835019ba472196f4f980fe8e6da5186210",
+          "nonempty_ordinal": 656
+        },
+        {
+          "ref": "Beitzah 23a:12",
+          "page_index": 44,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            110
+          ],
+          "span_sha256_utf8": "5473a0514e968bd241177d936196f7919a08d2445a0658752a5c3252b3ef47d9",
+          "nonempty_ordinal": 657
+        },
+        {
+          "ref": "Beitzah 23a:13",
+          "page_index": 44,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            137
+          ],
+          "span_sha256_utf8": "46cee6b1f4754bc49342acb0264737324fd7d46baf97fdcc993d8b37775a7c2d",
+          "nonempty_ordinal": 658
+        },
+        {
+          "ref": "Beitzah 23a:14",
+          "page_index": 44,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            157
+          ],
+          "span_sha256_utf8": "181048ec771ab431c6a55a8e604fc88cae3258fe5c382955336d7c283518e459",
+          "nonempty_ordinal": 659
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000070",
+      "spans": [
+        {
+          "ref": "Beitzah 24b:7",
+          "page_index": 47,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            158
+          ],
+          "span_sha256_utf8": "436bb8eb99ea36fb9814f43803b9218f6f7101d1713680e34ada385a9d576563",
+          "nonempty_ordinal": 700
+        },
+        {
+          "ref": "Beitzah 24b:8",
+          "page_index": 47,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            121
+          ],
+          "span_sha256_utf8": "a7b4876d7f4b0129697a3aa92a63ed2771c08ee378c396420fa149231a775eec",
+          "nonempty_ordinal": 701
+        },
+        {
+          "ref": "Beitzah 24b:9",
+          "page_index": 47,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            106
+          ],
+          "span_sha256_utf8": "d3aa1528d3c0292cf03289f36a79e56f60d7a69c5f3f86dab16657e4702546b4",
+          "nonempty_ordinal": 702
+        },
+        {
+          "ref": "Beitzah 24b:10",
+          "page_index": 47,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            40
+          ],
+          "span_sha256_utf8": "2d59387682f5f01cb8c003df99ebbd18b0df851c7d5485a47f2653ea0a565891",
+          "nonempty_ordinal": 703
+        },
+        {
+          "ref": "Beitzah 25a:1",
+          "page_index": 48,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            50
+          ],
+          "span_sha256_utf8": "f43dd4af6d077ae391f92f18554bff149ee35128d798b75d4c8a7538d7c01c78",
+          "nonempty_ordinal": 704
+        },
+        {
+          "ref": "Beitzah 25a:2",
+          "page_index": 48,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "6ca3423377ce6a0f1d08be7ae86e96933813b352f202ffcf2c079e1370d63e0f",
+          "nonempty_ordinal": 705
+        },
+        {
+          "ref": "Beitzah 25a:3",
+          "page_index": 48,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            204
+          ],
+          "span_sha256_utf8": "a662b11857ae2c0b37bfbec703531c8153e38b4b0d17ab8f5b890cec5315cb3a",
+          "nonempty_ordinal": 706
+        },
+        {
+          "ref": "Beitzah 25a:4",
+          "page_index": 48,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            36
+          ],
+          "span_sha256_utf8": "86f32261f7ef81d3fe5505c181a0cc4295250e708b8e13df7008c38175407854",
+          "nonempty_ordinal": 707
+        },
+        {
+          "ref": "Beitzah 25a:5",
+          "page_index": 48,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            137
+          ],
+          "span_sha256_utf8": "7481aefd3e581ab73167c69ffe450653c65266bb388450252ef476213591bf77",
+          "nonempty_ordinal": 708
+        },
+        {
+          "ref": "Beitzah 25a:6",
+          "page_index": 48,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            295
+          ],
+          "span_sha256_utf8": "b443134ed15ee5da7fecd170d1db921b439654912eb6077d9c889206f5e23f7b",
+          "nonempty_ordinal": 709
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000074",
+      "spans": [
+        {
+          "ref": "Beitzah 26a:4",
+          "page_index": 50,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "2ad5ddf4a5440d382626c225334f4586b098677a37a5ce420325222b64145c7a",
+          "nonempty_ordinal": 740
+        },
+        {
+          "ref": "Beitzah 26a:5",
+          "page_index": 50,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            53
+          ],
+          "span_sha256_utf8": "c6c0a228eaca0733087ab829279e0772b1364e57f2f0c1982a7a5c2ea3a67930",
+          "nonempty_ordinal": 741
+        },
+        {
+          "ref": "Beitzah 26a:6",
+          "page_index": 50,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            94
+          ],
+          "span_sha256_utf8": "7ca1a5a2c9774f8eaaf4a2a0863e39c4aa21921e18b672bb97ea9f544f6dc520",
+          "nonempty_ordinal": 742
+        },
+        {
+          "ref": "Beitzah 26a:7",
+          "page_index": 50,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            216
+          ],
+          "span_sha256_utf8": "8448048846511d190251fd976d16d8f794f51e8cc95c6758e0eb2ac74e09bd80",
+          "nonempty_ordinal": 743
+        },
+        {
+          "ref": "Beitzah 26b:1",
+          "page_index": 51,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            76
+          ],
+          "span_sha256_utf8": "fbc903f4ccbf8ba0f247ad60c177b0d9f94d98fbda3442757550ed8a09f96561",
+          "nonempty_ordinal": 744
+        },
+        {
+          "ref": "Beitzah 26b:2",
+          "page_index": 51,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "span_sha256_utf8": "b41d3e5d9868f14242aa75410f594549ad722fb327be2f408bf32666d236563e",
+          "nonempty_ordinal": 745
+        },
+        {
+          "ref": "Beitzah 26b:3",
+          "page_index": 51,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            136
+          ],
+          "span_sha256_utf8": "87b1aa7c77b882fec40c1c10b31896c20a90914e22fd789193de4d5620c894be",
+          "nonempty_ordinal": 746
+        },
+        {
+          "ref": "Beitzah 26b:4",
+          "page_index": 51,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            135
+          ],
+          "span_sha256_utf8": "b14874e2c6215c02a95675ffcbf38930b88ce7dca7f7e8c4ec11151564059fd2",
+          "nonempty_ordinal": 747
+        },
+        {
+          "ref": "Beitzah 26b:5",
+          "page_index": 51,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            122
+          ],
+          "span_sha256_utf8": "33952633edfe1fc4144897c69e2ce269654c6f26a88758701edf082070343aaf",
+          "nonempty_ordinal": 748
+        },
+        {
+          "ref": "Beitzah 26b:6",
+          "page_index": 51,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            45
+          ],
+          "span_sha256_utf8": "e5ead9573a71e31fba0d73f81661d8976fecaf67993f039cc3b8a51d47bbce1a",
+          "nonempty_ordinal": 749
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000082",
+      "spans": [
+        {
+          "ref": "Beitzah 28b:9",
+          "page_index": 55,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "37639e4987099b1f126f4c77d986716a62cac59e6d98c2e0a46216c3af003b75",
+          "nonempty_ordinal": 820
+        },
+        {
+          "ref": "Beitzah 28b:10",
+          "page_index": 55,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            108
+          ],
+          "span_sha256_utf8": "fe4ab89eda590d60f6daaa7ddf7516f3f17c86ccc2a6a90e727c5f0f26fe2945",
+          "nonempty_ordinal": 821
+        },
+        {
+          "ref": "Beitzah 28b:11",
+          "page_index": 55,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            125
+          ],
+          "span_sha256_utf8": "f81b60599999cbc9b4f83916a324e9c0a8f49e52089d45d1d21c17f88f6a28ba",
+          "nonempty_ordinal": 822
+        },
+        {
+          "ref": "Beitzah 28b:12",
+          "page_index": 55,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            53
+          ],
+          "span_sha256_utf8": "14490ef94daf4f8b8ada3086ea566d10839997e22fa995d0a382d228d8da35e5",
+          "nonempty_ordinal": 823
+        },
+        {
+          "ref": "Beitzah 28b:13",
+          "page_index": 55,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            31
+          ],
+          "span_sha256_utf8": "98f653449ea6ad1a7474be0202e360882da5ca25f68d5d833f8b132c365c2e74",
+          "nonempty_ordinal": 824
+        },
+        {
+          "ref": "Beitzah 28b:14",
+          "page_index": 55,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            105
+          ],
+          "span_sha256_utf8": "bd873a58e90b7b8c860f5edef3e5458118f2a9eae5170b9bef0e1d8e3cecdb2b",
+          "nonempty_ordinal": 825
+        },
+        {
+          "ref": "Beitzah 28b:15",
+          "page_index": 55,
+          "segment_index": 14,
+          "offsets_codepoints": [
+            0,
+            91
+          ],
+          "span_sha256_utf8": "806e70e95cbbe30fc9e73138ed913145a2d5a38a1eb0bdb52343466c830cd923",
+          "nonempty_ordinal": 826
+        },
+        {
+          "ref": "Beitzah 28b:16",
+          "page_index": 55,
+          "segment_index": 15,
+          "offsets_codepoints": [
+            0,
+            47
+          ],
+          "span_sha256_utf8": "084e29b41259d96f27319d514b1edc7cb17d3e41647529837f737c8ff257bff6",
+          "nonempty_ordinal": 827
+        },
+        {
+          "ref": "Beitzah 29a:1",
+          "page_index": 56,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            130
+          ],
+          "span_sha256_utf8": "b906628f36374a00eefcb32e953f147ca054bfe10f9b4ba9fd364c9771f6e280",
+          "nonempty_ordinal": 828
+        },
+        {
+          "ref": "Beitzah 29a:2",
+          "page_index": 56,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            188
+          ],
+          "span_sha256_utf8": "64d4d3583770a16dd14a819e34bfff1797ca6c42c601aadd10bcea6c7135b01f",
+          "nonempty_ordinal": 829
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000083",
+      "spans": [
+        {
+          "ref": "Beitzah 29a:3",
+          "page_index": 56,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            94
+          ],
+          "span_sha256_utf8": "f71b50e288e5ec7909fad2c81d259b52adb5055aff1fd04b2f9912dac0399cc2",
+          "nonempty_ordinal": 830
+        },
+        {
+          "ref": "Beitzah 29a:4",
+          "page_index": 56,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            171
+          ],
+          "span_sha256_utf8": "f3a0f0c880eb1dc144470874c0ab84ea55f5e8b9448bc5c6951918b4cd6ea0c1",
+          "nonempty_ordinal": 831
+        },
+        {
+          "ref": "Beitzah 29a:5",
+          "page_index": 56,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            247
+          ],
+          "span_sha256_utf8": "ce55a1954d38a11c6042e68a01eb4b584dcd70bfbe686967c12b1317523a3904",
+          "nonempty_ordinal": 832
+        },
+        {
+          "ref": "Beitzah 29a:6",
+          "page_index": 56,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "span_sha256_utf8": "b2fb4185bdd21351dd42250f41519b2b5c9ac0057ebae71f3d8de883a815ac55",
+          "nonempty_ordinal": 833
+        },
+        {
+          "ref": "Beitzah 29a:7",
+          "page_index": 56,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "f100992f3b51c467a80285309fc0ef796d30499c3e8c19f1b347682edf273c39",
+          "nonempty_ordinal": 834
+        },
+        {
+          "ref": "Beitzah 29a:8",
+          "page_index": 56,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            116
+          ],
+          "span_sha256_utf8": "628cbea6c753ef3e622342770a42ba47144a035eca359be903436e0439e05426",
+          "nonempty_ordinal": 835
+        },
+        {
+          "ref": "Beitzah 29a:9",
+          "page_index": 56,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            248
+          ],
+          "span_sha256_utf8": "bc9d41eba3e62a106fcd9208ff39f9f8f632c46d2500ce1aaeaa4f7b94724f1b",
+          "nonempty_ordinal": 836
+        },
+        {
+          "ref": "Beitzah 29a:10",
+          "page_index": 56,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            178
+          ],
+          "span_sha256_utf8": "f32149cf372cca06be9e81e43fb4faade35d1fa3b03983a66ae0c6acdf0f3c61",
+          "nonempty_ordinal": 837
+        },
+        {
+          "ref": "Beitzah 29a:11",
+          "page_index": 56,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            65
+          ],
+          "span_sha256_utf8": "34fb89b7d4ee41a25ab77d99845fa3d8732b2f61d7908d6d83d63a0276e6a8cc",
+          "nonempty_ordinal": 838
+        },
+        {
+          "ref": "Beitzah 29a:12",
+          "page_index": 56,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            119
+          ],
+          "span_sha256_utf8": "8f0d34f9538d55b52403f02d7d8c750c159a00a95d1bc6de213dccda8a15527a",
+          "nonempty_ordinal": 839
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000088",
+      "spans": [
+        {
+          "ref": "Beitzah 30b:12",
+          "page_index": 59,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            122
+          ],
+          "span_sha256_utf8": "ff59646e72a6d5d3cbd9fe12cbd3bf75cbc09d7224bed56600ba6c877acc5037",
+          "nonempty_ordinal": 880
+        },
+        {
+          "ref": "Beitzah 30b:13",
+          "page_index": 59,
+          "segment_index": 12,
+          "offsets_codepoints": [
+            0,
+            128
+          ],
+          "span_sha256_utf8": "e255e6be770567f87ecc29da1ea22d45d99b00d91a0db5dbd895f7c4f59f2c76",
+          "nonempty_ordinal": 881
+        },
+        {
+          "ref": "Beitzah 30b:14",
+          "page_index": 59,
+          "segment_index": 13,
+          "offsets_codepoints": [
+            0,
+            116
+          ],
+          "span_sha256_utf8": "4db738c592a5f8103f45e8f4295c8671430b5eb9d90a5b9e2d39d1b6046bf75b",
+          "nonempty_ordinal": 882
+        },
+        {
+          "ref": "Beitzah 31a:1",
+          "page_index": 60,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            183
+          ],
+          "span_sha256_utf8": "a4192f63088f6b47e17296ce158c3100f41f3d7e47ea2cc22d9441f8423403d8",
+          "nonempty_ordinal": 883
+        },
+        {
+          "ref": "Beitzah 31a:2",
+          "page_index": 60,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            152
+          ],
+          "span_sha256_utf8": "f5ca8948ccceda6a35d451e83057882216d1916bff0697f518a847f87c4b5821",
+          "nonempty_ordinal": 884
+        },
+        {
+          "ref": "Beitzah 31a:3",
+          "page_index": 60,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            208
+          ],
+          "span_sha256_utf8": "3c07ebdc31ab1cb84923a00a6b6bd3e407fba0f608f1217b312e4a5969b00a08",
+          "nonempty_ordinal": 885
+        },
+        {
+          "ref": "Beitzah 31a:4",
+          "page_index": 60,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            140
+          ],
+          "span_sha256_utf8": "7f948ab15f1a24244653ff2b5a3e58dd92b76bbb7965faa034cd2c923055149e",
+          "nonempty_ordinal": 886
+        },
+        {
+          "ref": "Beitzah 31a:5",
+          "page_index": 60,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            133
+          ],
+          "span_sha256_utf8": "de2bb89c8c9d0a29912e8490fafd04cee464a3a8349890aca3d24b2be980f449",
+          "nonempty_ordinal": 887
+        },
+        {
+          "ref": "Beitzah 31a:6",
+          "page_index": 60,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            168
+          ],
+          "span_sha256_utf8": "d7cef1437109a4cffe0b985d3d7a7b4d99a75afe4b5468cc6bfc1a211678d115",
+          "nonempty_ordinal": 888
+        },
+        {
+          "ref": "Beitzah 31a:7",
+          "page_index": 60,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            144
+          ],
+          "span_sha256_utf8": "5a0840ba9fa38e95afe5d54860676fd2ac4d711f12171d5982aa259d6ea68303",
+          "nonempty_ordinal": 889
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000089",
+      "spans": [
+        {
+          "ref": "Beitzah 31a:8",
+          "page_index": 60,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            174
+          ],
+          "span_sha256_utf8": "e64dd944b66aa8e86f0894441193f857d15dfab0fd1edd0b154fa5abca76ac7f",
+          "nonempty_ordinal": 890
+        },
+        {
+          "ref": "Beitzah 31b:1",
+          "page_index": 61,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            163
+          ],
+          "span_sha256_utf8": "93bb261ae78c0fdf8016be3b2d54d224b4fa89c054ea7491ef6abd15c2567d1d",
+          "nonempty_ordinal": 891
+        },
+        {
+          "ref": "Beitzah 31b:2",
+          "page_index": 61,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            159
+          ],
+          "span_sha256_utf8": "ff4ffab75caed74dbf33f3dc57325a4985af8dbf7ad54f0aa3b97d296f50b3fe",
+          "nonempty_ordinal": 892
+        },
+        {
+          "ref": "Beitzah 31b:3",
+          "page_index": 61,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "258a346f77a40b16b052537713b01cce68c9db18870071b37736f6e120e52229",
+          "nonempty_ordinal": 893
+        },
+        {
+          "ref": "Beitzah 31b:4",
+          "page_index": 61,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            107
+          ],
+          "span_sha256_utf8": "9ef79fc1ce760325f6c4a5f487ebb0f5f1db8a1d010e5c66f6f2daf8db6699a5",
+          "nonempty_ordinal": 894
+        },
+        {
+          "ref": "Beitzah 31b:5",
+          "page_index": 61,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            211
+          ],
+          "span_sha256_utf8": "59fbe02d3a43bb254a44d16b5240b4c501e674fe6340d519bed535ed1f64fccc",
+          "nonempty_ordinal": 895
+        },
+        {
+          "ref": "Beitzah 31b:6",
+          "page_index": 61,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            109
+          ],
+          "span_sha256_utf8": "eea04424e68db43a0cb3e653b2ddb80aaff59cf4c22e97f43ffb0ac9e94233ac",
+          "nonempty_ordinal": 896
+        },
+        {
+          "ref": "Beitzah 31b:7",
+          "page_index": 61,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            206
+          ],
+          "span_sha256_utf8": "890e363f40429fdf1e2760d7a536049bbed1b2722fef4ed70154940f05ad73da",
+          "nonempty_ordinal": 897
+        },
+        {
+          "ref": "Beitzah 31b:8",
+          "page_index": 61,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            106
+          ],
+          "span_sha256_utf8": "0e03d83eb10688963fdca06fc5ad7794f4dc393265783200af4c0514f86ac3a1",
+          "nonempty_ordinal": 898
+        },
+        {
+          "ref": "Beitzah 31b:9",
+          "page_index": 61,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "span_sha256_utf8": "ea494352af07416302011d4260a5bbc8bdf3467c3f75068674b06ba54e72156b",
+          "nonempty_ordinal": 899
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000090",
+      "spans": [
+        {
+          "ref": "Beitzah 31b:10",
+          "page_index": 61,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            79
+          ],
+          "span_sha256_utf8": "cae0e6b2449b4d3466e0580e3d0e1189cc1e941f4230ec096df8d8d71a7dda09",
+          "nonempty_ordinal": 900
+        },
+        {
+          "ref": "Beitzah 31b:11",
+          "page_index": 61,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            217
+          ],
+          "span_sha256_utf8": "3438949199fa701f731baadd014516c61b824a854f75eee8fa276b1d9706f9af",
+          "nonempty_ordinal": 901
+        },
+        {
+          "ref": "Beitzah 32a:1",
+          "page_index": 62,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            150
+          ],
+          "span_sha256_utf8": "f3ab780160a81394a3539fc9b5b3144c54d69d0e01e370a7910ec6e1dc3af59d",
+          "nonempty_ordinal": 902
+        },
+        {
+          "ref": "Beitzah 32a:2",
+          "page_index": 62,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            26
+          ],
+          "span_sha256_utf8": "a23e8849db3921655332365d9e6aca06af70e57788457939bb5fcc372c09b8a0",
+          "nonempty_ordinal": 903
+        },
+        {
+          "ref": "Beitzah 32a:3",
+          "page_index": 62,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            59
+          ],
+          "span_sha256_utf8": "a41f253a31fe711ad3146d7c244d3bafb584a292ec9c1194c000ee5b09c1b9ea",
+          "nonempty_ordinal": 904
+        },
+        {
+          "ref": "Beitzah 32a:4",
+          "page_index": 62,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "span_sha256_utf8": "9bbe0383f34a3b4e9b3e77f84ad1fe8711e8628dc732314df32a661b6f07e19f",
+          "nonempty_ordinal": 905
+        },
+        {
+          "ref": "Beitzah 32a:5",
+          "page_index": 62,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "span_sha256_utf8": "2471a6f765598d25b1b3397db676380f8b5aaab4a6b2bfa176229556ab639b1e",
+          "nonempty_ordinal": 906
+        },
+        {
+          "ref": "Beitzah 32a:6",
+          "page_index": 62,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            44
+          ],
+          "span_sha256_utf8": "dc24a20ec41c7f66166289fb6ff5d8daaae8739fb3531cfe2f50cd7aca3efca5",
+          "nonempty_ordinal": 907
+        },
+        {
+          "ref": "Beitzah 32a:7",
+          "page_index": 62,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            26
+          ],
+          "span_sha256_utf8": "2c2229e2eb60ca680677719d79225f1401a1387a1a59dd047978666dcf2698a3",
+          "nonempty_ordinal": 908
+        },
+        {
+          "ref": "Beitzah 32a:8",
+          "page_index": 62,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            144
+          ],
+          "span_sha256_utf8": "163e2608bc31f339dafcd76456a134d5d1dbeaf2b22c329034b30e889eba37dd",
+          "nonempty_ordinal": 909
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000092",
+      "spans": [
+        {
+          "ref": "Beitzah 32b:2",
+          "page_index": 63,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            185
+          ],
+          "span_sha256_utf8": "fde2d27329de624e4f0fec58438996a167554c6a96012ae40069a3b1156cb14d",
+          "nonempty_ordinal": 920
+        },
+        {
+          "ref": "Beitzah 32b:3",
+          "page_index": 63,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            137
+          ],
+          "span_sha256_utf8": "e679c018f966031da6139f4e4e5f455ac45e74fcfeab210f20f4e233cfc83742",
+          "nonempty_ordinal": 921
+        },
+        {
+          "ref": "Beitzah 32b:4",
+          "page_index": 63,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            175
+          ],
+          "span_sha256_utf8": "677cd660717a1f1e10b25bc7cbde46f841206488901efc131fc916303c9e74a5",
+          "nonempty_ordinal": 922
+        },
+        {
+          "ref": "Beitzah 32b:5",
+          "page_index": 63,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            155
+          ],
+          "span_sha256_utf8": "c5c788594549565ce427227864c371aef1df24b0c5df049530da2ee15f3961eb",
+          "nonempty_ordinal": 923
+        },
+        {
+          "ref": "Beitzah 32b:6",
+          "page_index": 63,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            156
+          ],
+          "span_sha256_utf8": "4aed0c36ca7cfa635a3275e9abe5dc222b49b70df0faf6059df6d60e4fe283b4",
+          "nonempty_ordinal": 924
+        },
+        {
+          "ref": "Beitzah 32b:7",
+          "page_index": 63,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "6baaf8414fa4c4529e8b3b8bb2a0e91d070506e6bfb2800f2aed7d053781221e",
+          "nonempty_ordinal": 925
+        },
+        {
+          "ref": "Beitzah 32b:8",
+          "page_index": 63,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            34
+          ],
+          "span_sha256_utf8": "89e4a6400b9350b6d42b43e0dd3a05d3c3a755f94699691a68e58cad29e349b2",
+          "nonempty_ordinal": 926
+        },
+        {
+          "ref": "Beitzah 32b:9",
+          "page_index": 63,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            141
+          ],
+          "span_sha256_utf8": "7b4982c53c5283e79f0496d8da50e08a7247be11375a1291429986c4d7c0820f",
+          "nonempty_ordinal": 927
+        },
+        {
+          "ref": "Beitzah 32b:10",
+          "page_index": 63,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            52
+          ],
+          "span_sha256_utf8": "44142ea9533a8af77ac6b7e36b5379f8f4fc0e16534b8a032b205df023d0d169",
+          "nonempty_ordinal": 928
+        },
+        {
+          "ref": "Beitzah 32b:11",
+          "page_index": 63,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            230
+          ],
+          "span_sha256_utf8": "156388c46585df091b68d5f19cfbddb882b060ece80fa9a2b68a659c22c0d2a3",
+          "nonempty_ordinal": 929
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000094",
+      "spans": [
+        {
+          "ref": "Beitzah 33a:7",
+          "page_index": 64,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            138
+          ],
+          "span_sha256_utf8": "c28e2ce7745bd467be22adfee9639a1db4db84fa870dbf5d2179cce301f43b22",
+          "nonempty_ordinal": 940
+        },
+        {
+          "ref": "Beitzah 33a:8",
+          "page_index": 64,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            162
+          ],
+          "span_sha256_utf8": "e6afbd2ed5e1efd177cf08176e35f59fc5d636c3178403f71d9dc04cbb4ce9a7",
+          "nonempty_ordinal": 941
+        },
+        {
+          "ref": "Beitzah 33a:9",
+          "page_index": 64,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            116
+          ],
+          "span_sha256_utf8": "da28a52643e62ee4b4071ab0b05c9a4b7947602dcd398da0d2034535eeeedc4d",
+          "nonempty_ordinal": 942
+        },
+        {
+          "ref": "Beitzah 33a:10",
+          "page_index": 64,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            44
+          ],
+          "span_sha256_utf8": "a06c430036cc33254ffc49910e2f0a4c05de88d49799c07c27de26bb910ddd36",
+          "nonempty_ordinal": 943
+        },
+        {
+          "ref": "Beitzah 33b:1",
+          "page_index": 65,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            32
+          ],
+          "span_sha256_utf8": "b8a0bae61e3accf0a34699e37030b88c1e24308af21c63bfae84c5db4544822a",
+          "nonempty_ordinal": 944
+        },
+        {
+          "ref": "Beitzah 33b:2",
+          "page_index": 65,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            173
+          ],
+          "span_sha256_utf8": "c2df3b70a55cffef4a86d786988c913494f68f68f91ee6bdc0ab584808d95868",
+          "nonempty_ordinal": 945
+        },
+        {
+          "ref": "Beitzah 33b:3",
+          "page_index": 65,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            93
+          ],
+          "span_sha256_utf8": "3b226949b450024449ca62cc5d431c4543a44ef4710058e44f0baf87671b7448",
+          "nonempty_ordinal": 946
+        },
+        {
+          "ref": "Beitzah 33b:4",
+          "page_index": 65,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            149
+          ],
+          "span_sha256_utf8": "594d667dd1449c07c2599a8174ce0bec1785b10644ef57cc5bd9cbfbfcecdae6",
+          "nonempty_ordinal": 947
+        },
+        {
+          "ref": "Beitzah 33b:5",
+          "page_index": 65,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            103
+          ],
+          "span_sha256_utf8": "cac557a47396621d7ba1a64c9a818c04532d1e271336c83f0c30bfb43c1db042",
+          "nonempty_ordinal": 948
+        },
+        {
+          "ref": "Beitzah 33b:6",
+          "page_index": 65,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            251
+          ],
+          "span_sha256_utf8": "75008df0830ec9961621707a97ef8d5aaccd3fe47a4a62fa16225fedd50110e3",
+          "nonempty_ordinal": 949
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000108",
+      "spans": [
+        {
+          "ref": "Beitzah 37b:18",
+          "page_index": 73,
+          "segment_index": 17,
+          "offsets_codepoints": [
+            0,
+            28
+          ],
+          "span_sha256_utf8": "065e11eb342e20d747476be8c44ef198e451cfcff198d6074833febdd4ae8943",
+          "nonempty_ordinal": 1080
+        },
+        {
+          "ref": "Beitzah 37b:19",
+          "page_index": 73,
+          "segment_index": 18,
+          "offsets_codepoints": [
+            0,
+            116
+          ],
+          "span_sha256_utf8": "70992a79c7fdc68cc7c5a98516acc5262e0f9e9e000f6d45aa2bd864171506b0",
+          "nonempty_ordinal": 1081
+        },
+        {
+          "ref": "Beitzah 38a:1",
+          "page_index": 74,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            64
+          ],
+          "span_sha256_utf8": "0e96b28f8040563c3112e8aab3eb9a3c6b73892b59e9694ba8c9f12393d84748",
+          "nonempty_ordinal": 1082
+        },
+        {
+          "ref": "Beitzah 38a:2",
+          "page_index": 74,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            51
+          ],
+          "span_sha256_utf8": "c4615089f3504321cbc1d10391e5015ce3abca2441052dc234c22811e8102d26",
+          "nonempty_ordinal": 1083
+        },
+        {
+          "ref": "Beitzah 38a:3",
+          "page_index": 74,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            77
+          ],
+          "span_sha256_utf8": "8d3cbdaeee570655cb4707452569afa0297dfc20bf7555a4d8dffe52bc9d20cc",
+          "nonempty_ordinal": 1084
+        },
+        {
+          "ref": "Beitzah 38a:4",
+          "page_index": 74,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            29
+          ],
+          "span_sha256_utf8": "d959ce52c7523cee8349f0ffedf87af53516539037c467748f182f3bcab57937",
+          "nonempty_ordinal": 1085
+        },
+        {
+          "ref": "Beitzah 38a:5",
+          "page_index": 74,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            78
+          ],
+          "span_sha256_utf8": "ddaa04bc55079846ec5a40512821f1bc0f680f4da0cef933d65ed978d926d9e5",
+          "nonempty_ordinal": 1086
+        },
+        {
+          "ref": "Beitzah 38a:6",
+          "page_index": 74,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            98
+          ],
+          "span_sha256_utf8": "c14096c118a1cbeeff8d9953f95653337ca4d3cf275370f1615239747ebcf2b2",
+          "nonempty_ordinal": 1087
+        },
+        {
+          "ref": "Beitzah 38a:7",
+          "page_index": 74,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            112
+          ],
+          "span_sha256_utf8": "2ffd3f439d74e011500ab57a72e2843bb3238656605966201b929e5cdedbeae7",
+          "nonempty_ordinal": 1088
+        },
+        {
+          "ref": "Beitzah 38a:8",
+          "page_index": 74,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            139
+          ],
+          "span_sha256_utf8": "db77345ac675289411875c80f1188ce09bd25191b32c73b18b3567bcd53f5c1f",
+          "nonempty_ordinal": 1089
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000110",
+      "spans": [
+        {
+          "ref": "Beitzah 38b:10",
+          "page_index": 75,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            9
+          ],
+          "span_sha256_utf8": "63c8c319da76bbe049fb39ef31bb48968563d88921ca5cdc4610d231708e33f3",
+          "nonempty_ordinal": 1100
+        },
+        {
+          "ref": "Beitzah 38b:11",
+          "page_index": 75,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            35
+          ],
+          "span_sha256_utf8": "a463357bff4f0ae76f5af13991c9ee98d875ed664fa227a2bc0ab2439476eb5e",
+          "nonempty_ordinal": 1101
+        },
+        {
+          "ref": "Beitzah 38b:12",
+          "page_index": 75,
+          "segment_index": 11,
+          "offsets_codepoints": [
+            0,
+            39
+          ],
+          "span_sha256_utf8": "0510ec628e72346af7b866f58db4d7b4b58dbb24ef830b73872683624d663713",
+          "nonempty_ordinal": 1102
+        },
+        {
+          "ref": "Beitzah 39a:1",
+          "page_index": 76,
+          "segment_index": 0,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "4d01abf393f4a268e028d8ea1e28aa2378ff6dbd5baa5767272cc496ea3c311c",
+          "nonempty_ordinal": 1103
+        },
+        {
+          "ref": "Beitzah 39a:2",
+          "page_index": 76,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            134
+          ],
+          "span_sha256_utf8": "7ba88efa4d669aa832a8abceebfa33c359c4c34288821edfd2e739a54ec66ee9",
+          "nonempty_ordinal": 1104
+        },
+        {
+          "ref": "Beitzah 39a:3",
+          "page_index": 76,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            94
+          ],
+          "span_sha256_utf8": "6ea90b3ec033c1118c78c08178016014ba88ac1ae99e4f6f5baddd0e9cf54ae4",
+          "nonempty_ordinal": 1105
+        },
+        {
+          "ref": "Beitzah 39a:4",
+          "page_index": 76,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            154
+          ],
+          "span_sha256_utf8": "1bebdb4af75173f1d68a195a272bd95bb9466c6b88601613393bc9f7a8f7ffdd",
+          "nonempty_ordinal": 1106
+        },
+        {
+          "ref": "Beitzah 39a:5",
+          "page_index": 76,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            259
+          ],
+          "span_sha256_utf8": "80f8d63d683a0fbd0970ecca7eea1fb0e875468eb7bc4f102b84e17ff1808ccc",
+          "nonempty_ordinal": 1107
+        },
+        {
+          "ref": "Beitzah 39a:6",
+          "page_index": 76,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            141
+          ],
+          "span_sha256_utf8": "879503da2f1b6b401b39f1cecf850f4162d5900b258d55da28a530ecffdf4bcb",
+          "nonempty_ordinal": 1108
+        },
+        {
+          "ref": "Beitzah 39a:7",
+          "page_index": 76,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            106
+          ],
+          "span_sha256_utf8": "e1c0107b1fd6a66308cef3e1e4c5015fc8743384f1c64e22318b701150cf0e82",
+          "nonempty_ordinal": 1109
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000112",
+      "spans": [
+        {
+          "ref": "Beitzah 39b:2",
+          "page_index": 77,
+          "segment_index": 1,
+          "offsets_codepoints": [
+            0,
+            115
+          ],
+          "span_sha256_utf8": "99075e00a9536d859350d6c6fd4426ada7cc9b8870561aebfe3aa06277bb9dec",
+          "nonempty_ordinal": 1120
+        },
+        {
+          "ref": "Beitzah 39b:3",
+          "page_index": 77,
+          "segment_index": 2,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "521810da5a93dfcfa58fd34f8b3c1143d82771bc34c9f9482c124e44382011f9",
+          "nonempty_ordinal": 1121
+        },
+        {
+          "ref": "Beitzah 39b:4",
+          "page_index": 77,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            70
+          ],
+          "span_sha256_utf8": "d25a46e846781f01ef7e48e736c86369f2d6fb6cadf3aa0f0d7a1e98b763905f",
+          "nonempty_ordinal": 1122
+        },
+        {
+          "ref": "Beitzah 39b:5",
+          "page_index": 77,
+          "segment_index": 4,
+          "offsets_codepoints": [
+            0,
+            75
+          ],
+          "span_sha256_utf8": "470a75e7d6551ef496c9649718de7e3f524c9d91f4dfdb52662c34e825568dae",
+          "nonempty_ordinal": 1123
+        },
+        {
+          "ref": "Beitzah 39b:6",
+          "page_index": 77,
+          "segment_index": 5,
+          "offsets_codepoints": [
+            0,
+            37
+          ],
+          "span_sha256_utf8": "45683ab3ee356cf16b0383bc1a4ba4b7bce7af2bd092d363e6a3ee18ea97c5af",
+          "nonempty_ordinal": 1124
+        },
+        {
+          "ref": "Beitzah 39b:7",
+          "page_index": 77,
+          "segment_index": 6,
+          "offsets_codepoints": [
+            0,
+            61
+          ],
+          "span_sha256_utf8": "ffe8668c3c61ee290695fdff87dc0619e9a44803f4087f72aeb1ee6ecd129ced",
+          "nonempty_ordinal": 1125
+        },
+        {
+          "ref": "Beitzah 39b:8",
+          "page_index": 77,
+          "segment_index": 7,
+          "offsets_codepoints": [
+            0,
+            78
+          ],
+          "span_sha256_utf8": "a2cb128644e9598f11ded12d865e15e7b9af8f417d25a4bc2156f14bf14411c1",
+          "nonempty_ordinal": 1126
+        },
+        {
+          "ref": "Beitzah 39b:9",
+          "page_index": 77,
+          "segment_index": 8,
+          "offsets_codepoints": [
+            0,
+            96
+          ],
+          "span_sha256_utf8": "3d4bcf6458ee0904a77c09940471b852f30a8765042d81ea91d1dcefaa5387a3",
+          "nonempty_ordinal": 1127
+        },
+        {
+          "ref": "Beitzah 39b:10",
+          "page_index": 77,
+          "segment_index": 9,
+          "offsets_codepoints": [
+            0,
+            95
+          ],
+          "span_sha256_utf8": "50fdea799bffb576fab141c29ff1d28dcd965a8a3ec846264c677f9b23eb8a78",
+          "nonempty_ordinal": 1128
+        },
+        {
+          "ref": "Beitzah 39b:11",
+          "page_index": 77,
+          "segment_index": 10,
+          "offsets_codepoints": [
+            0,
+            137
+          ],
+          "span_sha256_utf8": "567bd4c5349a5d50c52d1b61d261d1ba21de3456b7adb868fd195031a9177191",
+          "nonempty_ordinal": 1129
+        }
+      ],
+      "roles": [
+        "probability_sample"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 0.25862068965517243
+    },
+    {
+      "block_id": "block_000115",
+      "spans": [
+        {
+          "ref": "Beitzah 40b:4",
+          "page_index": 79,
+          "segment_index": 3,
+          "offsets_codepoints": [
+            0,
+            85
+          ],
+          "span_sha256_utf8": "045471a9bb63affa3855b841d30fc05124b6a063a6c6640dad7613ca86fd93ee",
+          "nonempty_ordinal": 1150
+        }
+      ],
+      "roles": [
+        "closing_check"
+      ],
+      "inclusion_probability": 0.25862068965517243,
+      "review_union_inclusion_probability": 1.0
+    }
+  ],
+  "reader_context_policy": "Expansion to full discussions is a later, separately logged reader event; context does not inflate sampled core counts",
+  "review_policy": "No worker annotations or flags used. No sugya counts exist until independent reading. AI review is not human certification.",
+  "plan_hash_contract": {
+    "algorithm": "SHA-256",
+    "domain": "bavli-source-only-review-plan-v1",
+    "domain_separator": "one NUL byte",
+    "canonicalization": "UTF-8 JSON; sorted keys; compact separators; ensure_ascii=false; no NaN",
+    "excluded_top_level_field": "plan_sha256"
+  },
+  "plan_sha256": "a999a37bbfad6f5261f6f5324de7262b851135e48392930ce33cc69e4ec3d7cb"
+}

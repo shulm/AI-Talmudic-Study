@@ -1,0 +1,59 @@
+{
+  "artifact_kind": "targeted_correction_receipt_not_new_scope_admission",
+  "status": "TARGETED_DISCREPANCY_RESOLVED_AT_EXACT_VERSION",
+  "bindings": {
+    "initial_comparison": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\comparisons\\niddah_batch001_exact_version.json",
+      "sha256": "19b8a7fec1de5d5fd5f0b6e35011699689408e6335b18ccd0cb0db469da17d0a"
+    },
+    "old_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_niddah\\snapshots\\0ecb8d694f09b493b0596dac40b86878c7bac591b429ae2c77bb956c793a119f.json",
+      "sha256": "0ecb8d694f09b493b0596dac40b86878c7bac591b429ae2c77bb956c793a119f"
+    },
+    "corrected_snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_niddah\\snapshots\\e9707f0a257ebade9f8570a2bc27ae82dbb643ed1f6c02c0fcbe15f1c7032f9c.json",
+      "sha256": "e9707f0a257ebade9f8570a2bc27ae82dbb643ed1f6c02c0fcbe15f1c7032f9c"
+    },
+    "correction_proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L06\\bavli_niddah\\proposals\\0aa5fba315ea5ff165706d81936b8e3a239248c0aa334d1fc9421cdd9be483eb.json",
+      "sha256": "0aa5fba315ea5ff165706d81936b8e3a239248c0aa334d1fc9421cdd9be483eb"
+    },
+    "runner": {
+      "path": "C:\\Users\\David\\.codex\\worktrees\\bavli-global-coordination\\AI Talmudic Study\\research\\bavli_production_v1\\runner.py",
+      "sha256": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0"
+    },
+    "niddah_batch001.json": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\niddah_batch001.json",
+      "sha256": "e255b793c7385b712635339eec4cdb49a2f851a2618f696ce8ed84e4ddd7f33c"
+    },
+    "niddah_batch001.coverage_correction.json": {
+      "path": "C:\\Users\\David\\Documents\\ChatGPT\\AI Talmudic Study\\research\\bavli_dataset_runs\\run_20261125_01\\review_lead_20261126\\readings\\niddah_batch001.coverage_correction.json",
+      "sha256": "80e4bde9d9d98de5d715c99bf7ccf042102ac0084e725405ea7cf291cf6bfca7"
+    }
+  },
+  "exact_readonly_replay": true,
+  "proposal_count": 9,
+  "correction_record_count": 7,
+  "superseded_originals_preserved": [
+    "l06.nid.reasons.a.eliezer",
+    "l06.nid.reasons.c.four",
+    "l06.nid.reasons.e.all",
+    "l06.nid.reasons.p.four"
+  ],
+  "evidence_occurrences": 11,
+  "coverage_unchanged_each_layer": 118,
+  "finding": {
+    "id": "NID-ATTR-001",
+    "source_ref": "Niddah 3a:17",
+    "result": "Original source3a14-20 reread. Named four-women restriction is now separate from anonymous explanation that all-women wording excludes it. Named attribution/position point only to restriction; anonymous attribution/position and answer edge point to explanatory claim answering q.all. Targeted attribution scope and argument linkage repaired."
+  },
+  "limits": [
+    "Initial REWORK verdict and reader qualifications preserved",
+    "Unread7a/7b remain excluded by initial coverage correction",
+    "No full tractate or later-version admission",
+    "No new task eligibility or independent-reading coverage"
+  ],
+  "new_blind_core_segments": 0,
+  "ml_eligible": false,
+  "human_scholarly_certification": false
+}

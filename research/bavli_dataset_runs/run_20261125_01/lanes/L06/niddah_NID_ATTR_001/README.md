@@ -1,0 +1,7 @@
+# Niddah NID-ATTR-001 correction
+
+This additive correction separates Rabbi Eliezer's four-women restriction at Niddah 3a:17 from the anonymous explanation that the Mishnah's all-women wording excludes that restriction. The named claim, position and attribution have narrower evidence; the anonymous explanation has its own claim, attribution, position and answer edge. Four superseded original records remain in history and seven records were appended.
+
+The exact before/after snapshots, proposal, original independent comparison and export hashes are recorded in RECEIPT.json. Replay passed. Independent recheck of this corrected snapshot is pending; no acceptance is inherited from earlier versions. Coverage remains 118 Niddah segments per pass, 456/13,641 across L06. No tractate is delivered. Total historical records across L06 are now 2,724.
+
+This is a delta to continuation_20261126_02/niddah_addendum_118. Retain that package and its complete earlier proposal chain, append this proposal and snapshot, and use the after_snapshot in RECEIPT.json as the Niddah checkpoint. Do not overwrite a live job when replaying. Follow the preceding package's source manifest, contract, ownership and replay instructions. Resume production at Niddah 5b:3 under the verified existing owner /root/l06_niddah, epoch 2. The source files, schema and shared runner are unchanged. Source provenance and qualifications from the preceding package apply. Keep PR24 a draft and unmerged.

@@ -1,0 +1,31 @@
+{
+  "kind": "source_first_comparison",
+  "producer_snapshot": "fae024e68a170e50893f90f740abaf0971bdeb65f90dbcda24b6f4de2cd0dba5",
+  "reading_sha256": "67358ee0e7ea455e3a2b71aa8a0616bf6ecfafff1441c27fceb8312449b913d0",
+  "comparator": "/root (also producer; not a second independent reviewer)",
+  "core_segments": 10,
+  "core_range": "Niddah 2a:1–2b:4",
+  "context_not_counted": true,
+  "verdict": "partial_agreement_with_scope_correction_not_release",
+  "findings": [
+    {
+      "kind": "condition_scope_omission",
+      "record": "l06.nid.open.c.hillel",
+      "reviewer_claim": "C2",
+      "evidence": "Niddah 3b:11",
+      "resolution": "Explicit taharot-only scope added; no claim original expressly prohibited marital relations."
+    },
+    {
+      "kind": "prior_self_correction",
+      "ref": "Niddah 2a:4",
+      "resolution": "Producer independently added explicit כיצד question before comparison; original omission retained."
+    },
+    {
+      "kind": "agreement",
+      "scope": "core propositions C1–C11",
+      "details": "Named holders, anonymous explanations, shorter interval, veset/edim conditions, separate objects/woman, count, cross-page sentence and certainty contrast agree in content. C6 maps to two producer claims; C11 maps to two producer claims. Not a complete edge-by-edge accuracy measurement."
+    }
+  ],
+  "remaining": "All other source-random and endpoint cores, risk review, full layer omissions and task qualifications incomplete",
+  "ml_eligible": false
+}
