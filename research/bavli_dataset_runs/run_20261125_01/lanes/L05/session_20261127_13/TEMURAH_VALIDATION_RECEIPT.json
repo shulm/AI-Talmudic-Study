@@ -1,0 +1,72 @@
+{
+  "status": "READ_ONLY_VALIDATION_PASS_RELEASE_RECEIVED",
+  "prior_snapshot_sha256": "c707095cba580154adb46bb43f6a50b63affe0eea83f3c5a7455db7adf2e5ad7",
+  "proposal_sha256": "0ff41268becf7777608314091d2aa6d0c025d564a1c012f4bc920e037b5f3b73",
+  "new_segments": 20,
+  "new_records": 188,
+  "source_path": "F:\\Sefaria-Export-master\\json\\Talmud\\Bavli\\Seder Kodashim\\Temurah\\Hebrew\\Wikisource Talmud Bavli.json",
+  "source_sha256": "5e3336dff6155a38eb0f82473821bd06657651a70f902ea152c0092ecbcd0405",
+  "source_schema_sha256": "541f567920d2519305318a56d0f39396e3ec7f299f2d8772988f6f2ce299f58d",
+  "coordination_active": {
+    "assignment_ledger": "research/bavli_dataset_runs/run_20261125_01/ASSIGNMENT_LEDGER.json",
+    "assignment_revision": 6,
+    "contract_commit": "53bfbacb8f95d625f5036b73109eef738277e7e7",
+    "contract_path": "research/bavli_dataset_runs/run_20261125_01/RUN_CONTRACT.json",
+    "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+    "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "run_id": "run_20261125_01"
+  },
+  "coordinator_assignment": {
+    "checkpoint": {
+      "accepted_proposal_count": 5,
+      "snapshot_sha256": "c707095cba580154adb46bb43f6a50b63affe0eea83f3c5a7455db7adf2e5ad7"
+    },
+    "completed_source_segments_by_layer": {
+      "attributions": 64,
+      "claims": 64,
+      "edges": 64,
+      "positions": 64,
+      "questions": 64,
+      "reconciliation": 64,
+      "structure": 64,
+      "utterances": 64
+    },
+    "epoch": 2,
+    "job_dir": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_temurah",
+    "job_id": "bavli_temurah",
+    "lane_id": "L05",
+    "legacy_note": "No inherited pilot",
+    "owner": "L05/temurah",
+    "source_segments": 1150,
+    "source_sha256": "5e3336dff6155a38eb0f82473821bd06657651a70f902ea152c0092ecbcd0405",
+    "state": "captured_partial",
+    "tractate": "Temurah"
+  },
+  "production_files_verified": {
+    "research/bavli_production_v1/.gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+    "research/bavli_production_v1/PROTOCOL.md": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+    "research/bavli_production_v1/README.md": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+    "research/bavli_production_v1/runner.py": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+    "research/bavli_production_v1/schema.json": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+    "research/bavli_production_v1/test_runner.py": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+    "research/bavli_source_access_v1/README.md": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+    "research/bavli_source_access_v1/SOURCE_ACCESS_AUDIT.json": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+    "research/bavli_source_access_v1/source_packages.py": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8"
+  },
+  "owner": {
+    "owner": "L05/temurah",
+    "epoch": 2
+  },
+  "context_only": [
+    "Temurah 4b:14",
+    "Temurah 5a:6"
+  ],
+  "additional_context_read_to": "Temurah 5a:14",
+  "context_coverage_credit": 0,
+  "inherited_gates_unchanged": true,
+  "notes": [
+    "Existing attribution-reversal correction records preserved and reused in relevant core coverage.",
+    "Overlapping contextual correction and new atomic records must not be counted as independent unique claims.",
+    "No reviewer labels or root package scripts accessed for production."
+  ]
+}

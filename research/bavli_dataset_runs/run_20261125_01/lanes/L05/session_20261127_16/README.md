@@ -1,0 +1,13 @@
+# L05 session16 partial checkpoint
+
+Chullin 5a:15–6a:9 adds 20 original source segments in each of eight required layers, reaching 128/4,393. L05 totals 689/13,598 per layer; 0/6 tractates delivered. Exact-version comparison found no mandatory repair within these 20 cores. Review SHA 7ebba2c7f4c34d1d077fe7b236ec06cbd8fd0ceaf407feb38058f9961f9a330f verifies 237 raw-exact evidence spans and 47 mappings from fresh claims/questions, plus producer-only additions.
+
+Proposal d1eb7c0ba32ff2245dbf6b68dbab42aeacd230780c6fd2a13a22804ffa2f5c1d creates snapshot dfadd95de7eb330fbb8af1fc0814ed10f4af0fbda367c524e602ffe2f6a2db41: 208 new records (46 claims,18 questions,48 edges),1,277 total, all1,069 prior records preserved. The mnemonic-only 5b:7 is retained without invented substantive claims. Decree/report acceptance and chronology, supervision scope, and domain-right negation require distinct readings; full relevant continuations are retained as evidence without crediting context-only segments.
+
+Fresh source reading bd6e6e4ed680deeeaa9cbdd2a2043296fa1d4034d1392eaa40d6949f3ce1be18 precedes label comparison. It contains142 mixed findings, with prior raw-context exposure disclosed and no producer-label access. Comparator is nonblind. No new probability-sample credit or task eligibility is granted. AI review is not human certification; no global omission rate is inferred.
+
+COORDINATOR_RECHECK.json verifies actual revision6 owners at epoch2 and all six exact source files. CHECKPOINTS.json pins all six snapshots, per-layer coverage, open tails, source/schema/protocol and normalized export manifests. Replay and export integrity passed for all six. Preserve historical proposals, original reviews, supported uncertainty and correction lineage. Chullin inherited role restrictions and Horayot standalone-question/condition qualification remain open; composite parents/children are not independent counts.
+
+Reproduce with the pinned shared runner replay against each job directory in CHECKPOINTS.json; verify export manifest SHA values. package_wave.py reconstructs this package only while its live expected snapshots still match; never run historical author scripts over later state. archive_partial.py creates the external partial zip and verifies every member; ARTIFACT_RECEIPT.json records bytes. Original source inventories are excluded. Draft branch remains unmerged. New metered API allowance is zero; token/cost telemetry is unknown.
+
+Next Chullin source is6a:10. Session17 preparation may proceed independently, but canonical promotion waits for this exact review and archive binding. No entire tractate or full-tractate review is complete.

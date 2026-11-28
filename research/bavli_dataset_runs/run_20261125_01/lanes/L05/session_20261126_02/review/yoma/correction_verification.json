@@ -1,0 +1,27 @@
+{
+  "status": "targeted_corrections_verified",
+  "snapshot_sha256": "e49172b482d9fbb9d021aa4cb2f2b78bd3a155c8601c8f07958ef4d6181250ab",
+  "proposal_sha256": "0cd6ebdcff1b2d03aabbecbb125ad9fdc19b831a8243a7e03cca5d7a0addbdac",
+  "previous_snapshot_sha256": "33b8a981a43e6030e2fb4658122b281dbe1befeef219d5fcf9256a3eb62c24df",
+  "findings": [
+    {
+      "id": "YOM-R02-001",
+      "outcome": "corrected_and_verified"
+    },
+    {
+      "id": "YOM-R02-002",
+      "outcome": "root_adjudicated_repair_verified"
+    }
+  ],
+  "checks": [
+    "Exact snapshot/proposal bytes match requested hashes",
+    "Corrected mode matches accepted rationale",
+    "Both two-part claims preserve initial report and explicit later teacher attribution",
+    "Yohanan transmitter and R Ishmael holder supported by 3b:11 evidence",
+    "Original superseded versions retained unchanged except lifecycle status",
+    "Proposal fields equal snapshot fields; lifecycle defaults added; evidence raw slices match",
+    "Dependent revised links target valid records; ml_eligible remains false"
+  ],
+  "proposal_records_checked": 13,
+  "limitations": "Only correction delta and its dependent links verified. No additional source scope, probability review, exhaustive coverage, task eligibility, full replay or blanket qualification. Original frozen findings remain preserved."
+}

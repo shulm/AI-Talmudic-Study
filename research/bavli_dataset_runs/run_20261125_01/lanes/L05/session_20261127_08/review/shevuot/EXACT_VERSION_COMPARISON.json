@@ -1,0 +1,4781 @@
+{
+  "format": "bounded-exact-version-comparison-v1",
+  "reviewer": "/root/horayot_review",
+  "scope": "Shevuot4a:4–5a:5,28cores;5a:6–13 awareness clarification context",
+  "provenance": {
+    "nonblind_comparator": true,
+    "prior_producer_and_raw_context_exposure": true,
+    "fresh_reader": "/root/yoma_fresh_7",
+    "fresh_freeze_read_before_producer": true,
+    "fresh_mixed_record_count": 197,
+    "fresh_layer_counts": {
+      "questions": 17,
+      "claims": 46,
+      "attributions": 11,
+      "edges": 21,
+      "structure": 28,
+      "utterances": 28,
+      "positions": 46
+    },
+    "new_source_first_credit_for_comparator": false,
+    "new_probability_credit": false
+  },
+  "pins": {
+    "prior": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\snapshots\\b3049a3e12c0a4bca5eaa7b700541f844b78da51d6500aab9e6398b7b836b112.json",
+      "sha256": "b3049a3e12c0a4bca5eaa7b700541f844b78da51d6500aab9e6398b7b836b112"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\snapshots\\1f5c0a7b34d9e2110928c94c3ef16a89e4f66b557347fe965b5dc8a54aeb46b4.json",
+      "sha256": "1f5c0a7b34d9e2110928c94c3ef16a89e4f66b557347fe965b5dc8a54aeb46b4"
+    },
+    "proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_shevuot\\proposals\\eb7c307c75858f08f7c0922376f027ef9a444630d129a8796dd8b20766c75242.json",
+      "sha256": "eb7c307c75858f08f7c0922376f027ef9a444630d129a8796dd8b20766c75242"
+    },
+    "fresh": {
+      "path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\review_session20261127_08\\shevuot\\FRESH_SOURCE_ONLY_FROZEN.json",
+      "sha256": "1294ca8a3af3979cc7f64bc9b127cda31b10a87b4dcedd76dcc8363f41185554"
+    }
+  },
+  "integrity": {
+    "raw_source_sha256": "a3b0bb25746aa3683e9dd9da551b66670ab1fb57e1ac9c2bd1583d4aa984edd9",
+    "prior414objects_equal": true,
+    "new_records": 272,
+    "historical_records": 686,
+    "new_layer_counts": {
+      "claims": 53,
+      "attributions": 69,
+      "positions": 37,
+      "edges": 62,
+      "questions": 22,
+      "structure": 1,
+      "utterances": 28
+    },
+    "new_evidence_spans_exact": 308,
+    "span_failures": 0,
+    "links_and_edge_endpoints_resolve": true,
+    "coverage_completed_by_layer": {
+      "attributions": 77,
+      "claims": 77,
+      "edges": 77,
+      "positions": 77,
+      "questions": 77,
+      "reconciliation": 77,
+      "structure": 77,
+      "utterances": 77
+    },
+    "all_ml_eligible_false": true
+  },
+  "mapping": [
+    {
+      "fresh_id": "c_initial_view",
+      "fresh_content": {
+        "proposition": "Initially Rabbi held actless prohibitions incur lashes and taught an anonymous Mishnah accordingly.",
+        "holder_candidates": [
+          "anonymous account of רבי"
+        ],
+        "conditions": [
+          "earlier stage"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "retracted",
+            "conditions": [
+              "Earlier stage",
+              "Prohibition without action"
+            ],
+            "proposition": "Rabbi initially held that a prohibition without action receives lashes and taught anonymously accordingly.",
+            "scope": "Earlier editorial position retained as history, subsequently revised"
+          },
+          "evidence": [
+            {
+              "end_char": 98,
+              "quote": "אלא מעיקרא סבר לאו שאין בו מעשה לוקין עליו וסתמה והדר סבר אין לוקין עליו וסתמה ומשנה לא זזה ממקומה",
+              "segment_id": "seg_747eb325196c51fe5214",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.initiallashes",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_changed_view",
+      "fresh_content": {
+        "proposition": "Later Rabbi held they do not incur lashes and taught an anonymous Mishnah accordingly.",
+        "holder_candidates": [
+          "anonymous account of רבי"
+        ],
+        "conditions": [
+          "later stage"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Later stage",
+              "Prohibition without action"
+            ],
+            "proposition": "Rabbi later held that such a prohibition does not receive lashes and taught anonymously accordingly.",
+            "scope": "Later revised position explains Rabbi Yohanan’s choice"
+          },
+          "evidence": [
+            {
+              "end_char": 98,
+              "quote": "אלא מעיקרא סבר לאו שאין בו מעשה לוקין עליו וסתמה והדר סבר אין לוקין עליו וסתמה ומשנה לא זזה ממקומה",
+              "segment_id": "seg_747eb325196c51fe5214",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.laternolashes",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_retained",
+      "fresh_content": {
+        "proposition": "The earlier Mishnah remained in place.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The earlier Mishnah did not move from its place.",
+            "scope": "Preservation of earlier text despite change of view; no erasure of historical source"
+          },
+          "evidence": [
+            {
+              "end_char": 98,
+              "quote": "אלא מעיקרא סבר לאו שאין בו מעשה לוקין עליו וסתמה והדר סבר אין לוקין עליו וסתמה ומשנה לא זזה ממקומה",
+              "segment_id": "seg_747eb325196c51fe5214",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.mishnahretained",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_cut_lesion",
+      "fresh_content": {
+        "proposition": "Answer: cutting off his baheret lesion.",
+        "holder_candidates": [
+          "anonymous answer"
+        ],
+        "conditions": [
+          "within proposed lashes reconstruction"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Cuts off בהרת"
+            ],
+            "proposition": "The case is one who cuts off his baheret.",
+            "scope": "Local answer defending lashes reading"
+          },
+          "evidence": [
+            {
+              "end_char": 154,
+              "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+              "segment_id": "seg_ed55a8e1675844afd1ab",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.cutslesion",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_prohib_words",
+      "fresh_content": {
+        "proposition": "Where השמר, פן, or אל is stated, it is a prohibition.",
+        "holder_candidates": [
+          "רבי אילעא reported by רבי אבין"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Every occurrence of השמר, פן, or אל is a negative prohibition.",
+            "scope": "Rabbi Avin reports Rabbi Ilaa; do not conflate reporter with originator"
+          },
+          "evidence": [
+            {
+              "end_char": 154,
+              "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+              "segment_id": "seg_ed55a8e1675844afd1ab",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.negativeformula",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_capital_no_lashes",
+      "fresh_content": {
+        "proposition": "Objection: the prohibition warns against a court-capital offense, and such a prohibition does not incur lashes.",
+        "holder_candidates": [
+          "anonymous objection"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The Shabbat transfer prohibition is given as a warning for a court-imposed death penalty.",
+            "scope": "Ground of objection to lashes interpretation"
+          },
+          "evidence": [
+            {
+              "end_char": 173,
+              "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+              "segment_id": "seg_cc7e0dff43d8aea76ff4",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.capitalwarning",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "לאו שניתן לאזהרת מיתת בית דין"
+            ],
+            "proposition": "A prohibition given as warning for a court-imposed death penalty does not incur lashes.",
+            "scope": "Principle invoked by objection; opposed view follows"
+          },
+          "evidence": [
+            {
+              "end_char": 173,
+              "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+              "segment_id": "seg_cc7e0dff43d8aea76ff4",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.capitalnolashes",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_ishmael_capital",
+      "fresh_content": {
+        "proposition": "Answer: precisely why it was assigned to Rabbi Ishmael, who permits lashes for a prohibition warning of a court-capital offense.",
+        "holder_candidates": [
+          "רבי ישמעאל as reported"
+        ],
+        "conditions": [
+          "answer within reconstruction"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "לאו שניתן לאזהרת מיתת בית דין"
+            ],
+            "proposition": "Such a prohibition does incur lashes.",
+            "scope": "Rabbi Yishmael’s view invoked to defend identifying Mishnah with him"
+          },
+          "evidence": [
+            {
+              "end_char": 173,
+              "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+              "segment_id": "seg_cc7e0dff43d8aea76ff4",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.yishmaelcapital",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "challenged",
+            "conditions": [],
+            "proposition": "That is why the Mishnah was being assigned to Rabbi Yishmael.",
+            "scope": "Local defense of provisional attribution, not final author determination"
+          },
+          "evidence": [
+            {
+              "end_char": 173,
+              "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+              "segment_id": "seg_cc7e0dff43d8aea76ff4",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.whyidentify",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_akiva_lashes",
+      "fresh_content": {
+        "proposition": "Response: as Rabbi Ishmael was construed for lashes, Rabbi Akiva can likewise be construed for lashes.",
+        "holder_candidates": [
+          "anonymous proposed reconstruction"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "Just as the Yishmael reading used lashes, an Akiva reading could also concern lashes.",
+            "scope": "Alternative defense of classification scope, rejected by further difficulties"
+          },
+          "evidence": [
+            {
+              "end_char": 81,
+              "quote": "הא לאו הכי קיימא כר\"ע קשיא ידיעות לאו אמרת רבי ישמעאל היא ולמלקות ר\"ע נמי ולמלקות",
+              "segment_id": "seg_8a7cc671af418dbe67f0",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.akivalashes",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_warning_awareness",
+      "fresh_content": {
+        "proposition": "Read awareness of warnings.",
+        "holder_candidates": [
+          "anonymous local answer"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "Read it as awareness of warnings.",
+            "scope": "Local answer to terminology objection, not final accepted Mishnah interpretation"
+          },
+          "evidence": [
+            {
+              "end_char": 60,
+              "quote": "אי הכי ידיעות התראות מיבעי ליה הא לא קשיא תני ידיעות דהתראות",
+              "segment_id": "seg_feb2178dd56543f3456b",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.warningawareness",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_explicit_offering",
+      "fresh_content": {
+        "proposition": "Further objection: the Mishnah expressly requires a sliding-scale offering, contradicting the lashes-only reconstruction.",
+        "holder_candidates": [
+          "quoted Mishnah in objection"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The Mishnah specifies a variable-value offering.",
+            "scope": "Third objection to lashes-only interpretation"
+          },
+          "evidence": [
+            {
+              "end_char": 135,
+              "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+              "segment_id": "seg_1e9aadf5cccc247b9b0d",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.offeringproblem",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_yosef_rabbi",
+      "fresh_content": {
+        "proposition": "Rav Yosef replaces the reconstruction: it is Rabbi, adopting tannaitic views.",
+        "holder_candidates": [
+          "רב יוסף"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The Mishnah is Rabbi’s, formulated according to different tannaim.",
+            "scope": "Rav Yosef’s replacement of whole-list Yishmael/Akiva alternatives"
+          },
+          "evidence": [
+            {
+              "end_char": 93,
+              "quote": "אלא אמר רב יוסף רבי היא ונסיב לה אליבא דתנאי בידיעות נסיב לה כרבי ישמעאל בשבועות נסיב לה כר\"ע",
+              "segment_id": "seg_af9d90f60a8c29268316",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.yosefauthor",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_yosef_awareness",
+      "fresh_content": {
+        "proposition": "For awareness Rabbi takes Rabbi Ishmael’s view.",
+        "holder_candidates": [
+          "רב יוסף"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "For awareness Rabbi adopts Rabbi Yishmael’s position.",
+            "scope": "Rav Yosef’s attribution, subsequently refined to Rabbi’s own reasoning"
+          },
+          "evidence": [
+            {
+              "end_char": 93,
+              "quote": "אלא אמר רב יוסף רבי היא ונסיב לה אליבא דתנאי בידיעות נסיב לה כרבי ישמעאל בשבועות נסיב לה כר\"ע",
+              "segment_id": "seg_af9d90f60a8c29268316",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.yosefimpurity",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_yosef_oaths",
+      "fresh_content": {
+        "proposition": "For oaths Rabbi takes Rabbi Akiva’s view.",
+        "holder_candidates": [
+          "רב יוסף"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "For oaths Rabbi adopts Rabbi Akiva’s position.",
+            "scope": "Rav Yosef’s attribution, final personal-disagreement qualification at5a5"
+          },
+          "evidence": [
+            {
+              "end_char": 93,
+              "quote": "אלא אמר רב יוסף רבי היא ונסיב לה אליבא דתנאי בידיעות נסיב לה כרבי ישמעאל בשבועות נסיב לה כר\"ע",
+              "segment_id": "seg_af9d90f60a8c29268316",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.yosefoaths",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_kahana_negation",
+      "fresh_content": {
+        "proposition": "Rav Kahana tells Rav Ashi not to say Rabbi adopts tannaitic positions while himself disagreeing.",
+        "holder_candidates": [
+          "רב כהנא as reported by רב אשי"
+        ],
+        "conditions": [
+          "local correction; later oath-specific limitation separately recorded"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "challenged",
+            "conditions": [],
+            "proposition": "Do not say Rabbi merely adopts the tannaim’s views without personally agreeing.",
+            "scope": "Rav Kahana’s response reported by Rav Ashi; subsequent inquiry ultimately limits this explanation for oaths"
+          },
+          "evidence": [
+            {
+              "end_char": 90,
+              "quote": "אמר רב אשי אמריתא לשמעתא קמיה דרב כהנא ואמר לי לא תימא רבי נסיב לה אליבא דתנאי וליה לא ס\"ל",
+              "segment_id": "seg_c3130609df8b31143bd7",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.kahanaadmonition",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_own_reason",
+      "fresh_content": {
+        "proposition": "Rather, Rabbi explains his own reasoning.",
+        "holder_candidates": [
+          "continuation of Rav Kahana correction"
+        ],
+        "conditions": [
+          "asserted at this stage; not promoted to final universal conclusion"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Awareness derivation established below"
+            ],
+            "proposition": "Rather, Rabbi explains his own reasoning.",
+            "scope": "Response continuing Rav Kahana report; demonstrated for awareness, not unqualified final oath agreement"
+          },
+          "evidence": [
+            {
+              "end_char": 146,
+              "quote": "אלא רבי טעמיה דנפשיה מפרש דתניא מנין שאינו חייב אלא על שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים ת\"ל (ויקרא ה, ב) ונעלם ונעלם שני פעמים דברי ר\"ע",
+              "segment_id": "seg_bc414d80219f05f4df31",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.ownreason",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_akiva_two_ve",
+      "fresh_content": {
+        "proposition": "Rabbi Akiva derives the awareness pattern from two occurrences of ונעלם.",
+        "holder_candidates": [
+          "רבי עקיבא"
+        ],
+        "conditions": [
+          "baraita"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Initial awareness",
+              "Final awareness",
+              "Unawareness between"
+            ],
+            "proposition": "The twice-written ונעלם establishes liability only with awareness initially and finally and unawareness between.",
+            "scope": "Rabbi Akiva’s baraita derivation"
+          },
+          "evidence": [
+            {
+              "end_char": 146,
+              "quote": "אלא רבי טעמיה דנפשיה מפרש דתניא מנין שאינו חייב אלא על שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים ת\"ל (ויקרא ה, ב) ונעלם ונעלם שני פעמים דברי ר\"ע",
+              "segment_id": "seg_bc414d80219f05f4df31",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.akivadouble",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_rabbi_unneeded",
+      "fresh_content": {
+        "proposition": "Rabbi says that derivation is unnecessary and begins an alternative proof, continued next segment.",
+        "holder_candidates": [
+          "רבי"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi says that derivation is unnecessary.",
+            "scope": "Full cross-folio response to Akiva’s use of repeated ונעלם"
+          },
+          "evidence": [
+            {
+              "end_char": 31,
+              "quote": "רבי אומר אינו צריך הרי הוא אומר",
+              "segment_id": "seg_758485e66079c5a00665",
+              "start_char": 0
+            },
+            {
+              "end_char": 115,
+              "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+              "segment_id": "seg_3f473642a2a52a7ad753",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.rabbineednot",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_initial_knowing",
+      "fresh_content": {
+        "proposition": "ונעלם implies previous knowledge.",
+        "holder_candidates": [
+          "רבי in cited baraita"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "ונעלם implies prior knowledge.",
+            "scope": "Rabbi’s stated derivation; later5a8–13 examines what knowledge means, so no invented experiential requirement"
+          },
+          "evidence": [
+            {
+              "end_char": 31,
+              "quote": "רבי אומר אינו צריך הרי הוא אומר",
+              "segment_id": "seg_758485e66079c5a00665",
+              "start_char": 0
+            },
+            {
+              "end_char": 115,
+              "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+              "segment_id": "seg_3f473642a2a52a7ad753",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.priorawareness",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_final_knowing",
+      "fresh_content": {
+        "proposition": "והוא ידע supplies the other awareness; thus two awareness events.",
+        "holder_candidates": [
+          "רבי in cited baraita"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "והוא ידע supplies the other awareness, yielding two awareness states.",
+            "scope": "Rabbi’s alternative derivation"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+              "segment_id": "seg_3f473642a2a52a7ad753",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.finalawareness",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_both_forgetting",
+      "fresh_content": {
+        "proposition": "It imposes liability for forgetting impurity and forgetting sanctuary.",
+        "holder_candidates": [
+          "רבי in cited baraita"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "העלם טומאה"
+            ],
+            "proposition": "The repetition imposes liability for unawareness of impurity.",
+            "scope": "Rabbi’s own derivation, not merely borrowed Yishmael report"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+              "segment_id": "seg_3f473642a2a52a7ad753",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.rabbiimpurity",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "העלם מקדש"
+            ],
+            "proposition": "The repetition imposes liability for unawareness of the Temple.",
+            "scope": "Second liability grounded in Rabbi’s own derivation"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+              "segment_id": "seg_3f473642a2a52a7ad753",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.rabbitemple",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_reason_answer",
+      "fresh_content": {
+        "proposition": "Answer: it is reasoned inference.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "It is a matter of reasoning.",
+            "scope": "First wording’s initial answer, argument developed and revised below"
+          },
+          "evidence": [
+            {
+              "end_char": 78,
+              "quote": "אשכחן בידיעות דאית ליה טעמיה דנפשיה שבועות דלית ליה טעמיה דנפשיה מנלן סברא הוא",
+              "segment_id": "seg_6d3b1ea554e878fcc7ea",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.reasonanswer",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_akiva_method",
+      "fresh_content": {
+        "proposition": "Rabbi Akiva’s past-oath liability is grounded in expansion/restriction exposition.",
+        "holder_candidates": [
+          "anonymous explanation of רבי עקיבא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi Akiva interprets by inclusions and exclusions.",
+            "scope": "Explanation for his past-oath liability"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "ר\"ע מאי טעמא קא מחייב לשעבר דדריש ריבויי ומיעוטי רבי נמי דריש ריבויי ומיעוטי",
+              "segment_id": "seg_197e3673b12b2f9fb18b",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.akivaribuy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_rabbi_method_initial",
+      "fresh_content": {
+        "proposition": "Rabbi likewise uses expansion/restriction.",
+        "holder_candidates": [
+          "anonymous argument"
+        ],
+        "conditions": [
+          "local inference subsequently qualified to exceptional context"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "Rabbi too interprets by inclusions and exclusions.",
+            "scope": "Initial unrestricted explanation of oath agreement, subsequently restricted to special textual case and rejected as proof of personal oath agreement"
+          },
+          "evidence": [
+            {
+              "end_char": 76,
+              "quote": "ר\"ע מאי טעמא קא מחייב לשעבר דדריש ריבויי ומיעוטי רבי נמי דריש ריבויי ומיעוטי",
+              "segment_id": "seg_197e3673b12b2f9fb18b",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.rabbiribuyinitial",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_redeem_rabbi",
+      "fresh_content": {
+        "proposition": "Rabbi allows redeeming a human firstborn with everything except documents.",
+        "holder_candidates": [
+          "רבי"
+        ],
+        "conditions": [
+          "firstborn redemption"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Redemption of human firstborn"
+            ],
+            "proposition": "A human firstborn may be redeemed with everything except documents.",
+            "scope": "Rabbi’s baraita rule"
+          },
+          "evidence": [
+            {
+              "end_char": 103,
+              "quote": "דתניא רבי אומר בכל פודין בכור אדם חוץ מן השטרות ורבנן אמרי בכל פודין בכור אדם חוץ מעבדים ושטרות וקרקעות",
+              "segment_id": "seg_8dd0cf6659408d392d3e",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.rabbiredemption",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_redeem_rabbis",
+      "fresh_content": {
+        "proposition": "The rabbis exclude slaves, documents and land from redemption media.",
+        "holder_candidates": [
+          "רבנן"
+        ],
+        "conditions": [
+          "firstborn redemption"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Redemption of human firstborn"
+            ],
+            "proposition": "A human firstborn may be redeemed with everything except slaves, documents and land.",
+            "scope": "Sages’ contrasting baraita rule"
+          },
+          "evidence": [
+            {
+              "end_char": 103,
+              "quote": "דתניא רבי אומר בכל פודין בכור אדם חוץ מן השטרות ורבנן אמרי בכל פודין בכור אדם חוץ מעבדים ושטרות וקרקעות",
+              "segment_id": "seg_8dd0cf6659408d392d3e",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.sagesredemption",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_redeem_steps",
+      "fresh_content": {
+        "proposition": "Expansion: ופדויו מבן חדש; restriction: בערכך כסף חמשת שקלים; renewed expansion: תפדה.",
+        "holder_candidates": [
+          "anonymous explanation of רבי"
+        ],
+        "conditions": [
+          "redemption verse"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi reads ופדויו מבן חדש as inclusion, בערכך כסף חמשת שקלים as exclusion, and תפדה as renewed inclusion.",
+            "scope": "Redemption-specific method; later limited by adjacent-general-text pattern"
+          },
+          "evidence": [
+            {
+              "end_char": 124,
+              "quote": "מאי טעמא דרבי דריש ריבויי ומיעוטי (במדבר יח, טז) ופדויו מבן חדש ריבה (במדבר יח, טז) בערכך כסף חמשת שקלים מיעט תפדה חזר וריבה",
+              "segment_id": "seg_9b029b551d1f6f6972db",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.redeemribuy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_include_all",
+      "fresh_content": {
+        "proposition": "Expansion/restriction/expansion includes all.",
+        "holder_candidates": [
+          "anonymous explanation of רבי"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "An inclusion, exclusion and renewed inclusion includes everything.",
+            "scope": "Interpretive rule applied here"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+              "segment_id": "seg_65e130eb8583d3208171",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.includeall",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_all_media",
+      "fresh_content": {
+        "proposition": "All things are included.",
+        "holder_candidates": [
+          "anonymous explanation of רבי"
+        ],
+        "conditions": [
+          "subject to explicit document exclusion"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "All items are included.",
+            "scope": "Answer in the stated interpretive scheme, subject to explicit document exclusion"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+              "segment_id": "seg_65e130eb8583d3208171",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.allitems",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_exclude_docs",
+      "fresh_content": {
+        "proposition": "Documents are excluded.",
+        "holder_candidates": [
+          "anonymous explanation of רבי"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Documents are excluded.",
+            "scope": "Specific exclusion in Rabbi’s redemption reading"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+              "segment_id": "seg_65e130eb8583d3208171",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.documents",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_rabbis_steps",
+      "fresh_content": {
+        "proposition": "The rabbis use generalization/specification/generalization: ופדויו מבן חדש; בערכך כסף חמשת שקלים; תפדה.",
+        "holder_candidates": [
+          "רבנן as explained"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The sages use general and particular interpretation.",
+            "scope": "Redemption method"
+          },
+          "evidence": [
+            {
+              "end_char": 79,
+              "quote": "ורבנן דרשי כללי ופרטי ופדויו מבן חדש כלל בערכך כסף חמשת שקלים פרט תפדה חזר וכלל",
+              "segment_id": "seg_1ca22e4ca3ecf84b5d0e",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.sagesgeneral",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "ופדויו מבן חדש is general, בערכך כסף חמשת שקלים particular, and תפדה general again.",
+            "scope": "Sages’ verse mapping"
+          },
+          "evidence": [
+            {
+              "end_char": 79,
+              "quote": "ורבנן דרשי כללי ופרטי ופדויו מבן חדש כלל בערכך כסף חמשת שקלים פרט תפדה חזר וכלל",
+              "segment_id": "seg_1ca22e4ca3ecf84b5d0e",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.sagessequence",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_like_detail",
+      "fresh_content": {
+        "proposition": "Generalization/specification/generalization yields only what resembles the specification.",
+        "holder_candidates": [
+          "anonymous explanation of רבנן"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "With general-particular-general one includes only things similar to the particular.",
+            "scope": "Rule underlying sages’ redemption exclusions"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+              "segment_id": "seg_71da207fc0be34194390",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.likeparticular",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_movable_value",
+      "fresh_content": {
+        "proposition": "Included items must be movable and themselves have monetary substance/value.",
+        "holder_candidates": [
+          "anonymous explanation of רבנן"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Movable",
+              "גופו ממון"
+            ],
+            "proposition": "The particular specifies a movable thing with intrinsic monetary value; included items must share those features.",
+            "scope": "Joint conditions, not merely movability"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+              "segment_id": "seg_71da207fc0be34194390",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.movablevalue",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_land",
+      "fresh_content": {
+        "proposition": "Land is excluded as immovable.",
+        "holder_candidates": [
+          "anonymous explanation of רבנן"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Land is excluded because it is not movable.",
+            "scope": "Sages’ redemption exclusion and reason"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+              "segment_id": "seg_71da207fc0be34194390",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.excludeland",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_slaves",
+      "fresh_content": {
+        "proposition": "Slaves are excluded by comparison to land.",
+        "holder_candidates": [
+          "anonymous explanation of רבנן"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Slaves are excluded because they are compared to land.",
+            "scope": "Sages’ redemption exclusion and reason"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+              "segment_id": "seg_71da207fc0be34194390",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.excludeslaves",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_documents",
+      "fresh_content": {
+        "proposition": "Documents are excluded despite being movable because their substance is not itself monetary value.",
+        "holder_candidates": [
+          "anonymous explanation of רבנן"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Movable yet אין גופן ממון"
+            ],
+            "proposition": "Documents are excluded although movable, because they lack intrinsic monetary value.",
+            "scope": "Sages’ redemption exclusion preserves concession and negation"
+          },
+          "evidence": [
+            {
+              "end_char": 192,
+              "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+              "segment_id": "seg_71da207fc0be34194390",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.excludedocs",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_yosi_tools",
+      "fresh_content": {
+        "proposition": "Rabbi Yosi b. Yehuda includes anything taken in the hand through ולקח.",
+        "holder_candidates": [
+          "רבי יוסי ברבי יהודה"
+        ],
+        "conditions": [
+          "piercing implement; preserve source tool names without uncertain translation"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "ולקחת includes anything taken in the hand, including the listed הסול, הסירה, המחט, המקדח and המכתב.",
+            "scope": "Rabbi Yosi son of Rabbi Yehuda’s expansion; all listed implements retained in original terms"
+          },
+          "evidence": [
+            {
+              "end_char": 198,
+              "quote": "דתניא (דברים טו, יז) מרצע אין לי אלא מרצע מנין לרבות הסול והסירה המחט והמקדח והמכתב ת\"ל (דברים טו, יז) ולקח' כל דבר שנלקח ביד דברי ר' יוסי בר' יהודה רבי אומר מרצע מה מרצע מיוחד של מתכת אף כל של מתכת",
+              "segment_id": "seg_779425c87f33b5cb705f",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.yosibarinclude",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_rabbi_metal",
+      "fresh_content": {
+        "proposition": "Rabbi limits implements to metal, like the awl.",
+        "holder_candidates": [
+          "רבי"
+        ],
+        "conditions": [
+          "piercing implement"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Metal implement"
+            ],
+            "proposition": "Just as the awl is metal, every included implement must be metal.",
+            "scope": "Rabbi’s restrictive instrument rule"
+          },
+          "evidence": [
+            {
+              "end_char": 198,
+              "quote": "דתניא (דברים טו, יז) מרצע אין לי אלא מרצע מנין לרבות הסול והסירה המחט והמקדח והמכתב ת\"ל (דברים טו, יז) ולקח' כל דבר שנלקח ביד דברי ר' יוסי בר' יהודה רבי אומר מרצע מה מרצע מיוחד של מתכת אף כל של מתכת",
+              "segment_id": "seg_779425c87f33b5cb705f",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.rabbimetal",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_rabbi_general",
+      "fresh_content": {
+        "proposition": "Rabbi uses generalization/specification.",
+        "holder_candidates": [
+          "anonymous analysis of רבי"
+        ],
+        "conditions": [
+          "awl passage"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi interprets by general and particular.",
+            "scope": "Analysis of instrument baraita; confirmed as general practice at5a2"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "ואמרינן במאי קא מיפלגי רבי דריש כללי ופרטי ורבי יוסי בר' יהודה דריש",
+              "segment_id": "seg_d29f2d51bba054a0529d",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.rabbigeneral",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_yosi_open",
+      "fresh_content": {
+        "proposition": "Rabbi Yosi b. Yehuda uses the method completed at 5a:1.",
+        "holder_candidates": [
+          "anonymous analysis of רבי יוסי ברבי יהודה"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi Yosi son of Rabbi Yehuda interprets by inclusions and exclusions.",
+            "scope": "Full split-folio methodological attribution, not assigned from name order"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "ואמרינן במאי קא מיפלגי רבי דריש כללי ופרטי ורבי יוסי בר' יהודה דריש",
+              "segment_id": "seg_d29f2d51bba054a0529d",
+              "start_char": 0
+            },
+            {
+              "end_char": 14,
+              "quote": "ריבויי ומיעוטי",
+              "segment_id": "seg_d26c8f8cd19819a31157",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.yosiribuy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_yosi_expansion",
+      "fresh_content": {
+        "proposition": "Expansion/restriction completes Rabbi Yosi b. Yehuda’s method attribution.",
+        "holder_candidates": [
+          "רבי יוסי ברבי יהודה"
+        ],
+        "conditions": [
+          "continuation, not new anonymous standalone universal rule"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi Yosi son of Rabbi Yehuda interprets by inclusions and exclusions.",
+            "scope": "Full split-folio methodological attribution, not assigned from name order"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "ואמרינן במאי קא מיפלגי רבי דריש כללי ופרטי ורבי יוסי בר' יהודה דריש",
+              "segment_id": "seg_d29f2d51bba054a0529d",
+              "start_char": 0
+            },
+            {
+              "end_char": 14,
+              "quote": "ריבויי ומיעוטי",
+              "segment_id": "seg_d26c8f8cd19819a31157",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.yosiribuy",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_general_yes",
+      "fresh_content": {
+        "proposition": "Yes: generally Rabbi uses generalization/specification.",
+        "holder_candidates": [
+          "anonymous answer"
+        ],
+        "conditions": [
+          "general rule; corrects earlier inference"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Yes, Rabbi generally interprets by general and particular.",
+            "scope": "Reply concedes challenge; no definitive named speaker assigned to anonymous answer"
+          },
+          "evidence": [
+            {
+              "end_char": 61,
+              "quote": "אין בעלמא כללי ופרטי דריש והכא היינו טעמא כדתנא דבי ר' ישמעאל",
+              "segment_id": "seg_2920c6bbffc6235cb927",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.normallygeneral",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_exception",
+      "fresh_content": {
+        "proposition": "Here the exceptional redemption method follows a teaching of Rabbi Ishmael’s school.",
+        "holder_candidates": [
+          "anonymous answer"
+        ],
+        "conditions": [
+          "redemption exception, not universal method switch"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Here the reason is the rule taught in the school of Rabbi Yishmael.",
+            "scope": "Redemption exception, not universal Rabbi inclusion-exclusion method"
+          },
+          "evidence": [
+            {
+              "end_char": 61,
+              "quote": "אין בעלמא כללי ופרטי דריש והכא היינו טעמא כדתנא דבי ר' ישמעאל",
+              "segment_id": "seg_2920c6bbffc6235cb927",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.specialcase",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_water",
+      "fresh_content": {
+        "proposition": "Rabbi Ishmael’s school teaches that repeated במים is not generalization/specification but expansion/restriction.",
+        "holder_candidates": [
+          "דבי רבי ישמעאל"
+        ],
+        "conditions": [
+          "two במים occurrences; analogy for exceptional verse structure"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The twice-written במים is not general-particular but inclusion-exclusion.",
+            "scope": "Teaching from Rabbi Yishmael’s school used for the special textual pattern"
+          },
+          "evidence": [
+            {
+              "end_char": 84,
+              "quote": "דתנא דבי ר' ישמעאל (ויקרא יא, לב) במים במים שני פעמים אין זה כלל ופרט אלא ריבה ומיעט",
+              "segment_id": "seg_2caf4af294fa9660d298",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.waterdouble",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_west_rule",
+      "fresh_content": {
+        "proposition": "Ravina explains the rabbis using the Western teaching: when two generalizations are adjacent, place a specification between them and interpret as generalization/specification.",
+        "holder_candidates": [
+          "Western teaching reported by רבינא"
+        ],
+        "conditions": [
+          "two adjacent generalizations"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Two adjacent general expressions"
+            ],
+            "proposition": "When two general expressions are adjacent, place the particular between them and interpret as general-particular.",
+            "scope": "Western teaching reported by Ravina; preserve its exact stated formula"
+          },
+          "evidence": [
+            {
+              "end_char": 103,
+              "quote": "ורבנן אמר רבינא כדאמרי במערבא כל מקום שאתה מוצא שתי כללות הסמוכות זה לזה הטל פרט ביניהן ודונם בכלל ופרט",
+              "segment_id": "seg_6fb2ade5b3634c4ea932",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.westgeneral",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_final_difficulty",
+      "fresh_content": {
+        "proposition": "Given Rabbi generally uses generalization/specification, the oath position remains difficult.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "The proposed personal agreement on past-oath liability rested on a method now limited to redemption"
+            ],
+            "formulation": "Given that Rabbi generally interprets by general and particular, how can the oath position be explained?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+              "segment_id": "seg_c8f0b33f2456d047de28",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.oathdifficulty",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "c_final_oaths",
+      "fresh_content": {
+        "proposition": "For oaths, Rabbi compiles according to Rabbi Akiva but does not himself agree.",
+        "holder_candidates": [
+          "anonymous final local conclusion"
+        ],
+        "conditions": [
+          "oaths specifically; does not revoke Rabbi’s own awareness reasoning"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oaths"
+            ],
+            "proposition": "For oaths Rabbi adopts Rabbi Akiva’s view.",
+            "scope": "Final revision distinguishing reported ruling from personal endorsement"
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+              "segment_id": "seg_c8f0b33f2456d047de28",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.finalreport",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Oaths position adopted from Rabbi Akiva"
+            ],
+            "proposition": "Rabbi himself does not agree with that oath position.",
+            "scope": "Explicit וליה לא סבירא ליה; limited to oaths, not reversal of his own awareness derivation"
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+              "segment_id": "seg_c8f0b33f2456d047de28",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.finaldisagree",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "substantive text represented; finalreport structured role defect separately S08-R01"
+    },
+    {
+      "fresh_id": "q_rabbi_conflict",
+      "fresh_content": {
+        "formulation": "How could Rabbi himself teach conflicting anonymous rulings?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Prior question why Rabbi Yohanan prefers one anonymous source",
+              "Conflicting no-action lashes implications"
+            ],
+            "formulation": "On your reasoning, how did Rabbi himself teach one anonymous Mishnah this way and the other differently?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 46,
+              "quote": "ולטעמיך רבי גופיה היכי סתם לן הכא הכי והכא הכי",
+              "segment_id": "seg_7da3966feb3b8bdac143",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.rabbiinconsistent",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_lesion_lashes",
+      "fresh_content": {
+        "formulation": "Given the proposed Rabbi Ishmael/lashes reading, what lashes apply to lesion appearances?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "All categories tentatively interpreted as lashes"
+            ],
+            "formulation": "What lashes are there for appearances of lesions?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 154,
+              "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+              "segment_id": "seg_ed55a8e1675844afd1ab",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.lesionlashes",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_shabbat_lashes",
+      "fresh_content": {
+        "formulation": "What lashes apply to Shabbat carryings?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Attempted all-lashes reading",
+              "Prohibition warns of a court-imposed death penalty"
+            ],
+            "formulation": "What lashes apply to Shabbat transfers?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 173,
+              "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+              "segment_id": "seg_cc7e0dff43d8aea76ff4",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.shabbatlashes",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_akiva_awareness",
+      "fresh_content": {
+        "formulation": "Does this imply it could otherwise be Rabbi Akiva? Awareness remains difficult.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Implied alternative to Yishmael attribution",
+              "Akiva excludes unawareness of Temple for sacrifice"
+            ],
+            "formulation": "Otherwise could it be Rabbi Akiva? Awareness of impurity would remain difficult.",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 81,
+              "quote": "הא לאו הכי קיימא כר\"ע קשיא ידיעות לאו אמרת רבי ישמעאל היא ולמלקות ר\"ע נמי ולמלקות",
+              "segment_id": "seg_8a7cc671af418dbe67f0",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.akivaotherwise",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_terminology",
+      "fresh_content": {
+        "formulation": "Then should the Mishnah say warnings rather than awareness?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Lashes interpretation requires warnings"
+            ],
+            "formulation": "If so, should the heading not say warnings instead of awareness?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 60,
+              "quote": "אי הכי ידיעות התראות מיבעי ליה הא לא קשיא תני ידיעות דהתראות",
+              "segment_id": "seg_feb2178dd56543f3456b",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.warnings",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_count",
+      "fresh_content": {
+        "formulation": "Then why two that are four, when there would be only two?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Awareness interpreted as warnings for lashes"
+            ],
+            "formulation": "If so, are there not only two rather than two that are four?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 135,
+              "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+              "segment_id": "seg_1e9aadf5cccc247b9b0d",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.onlytwo",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_forgetting",
+      "fresh_content": {
+        "formulation": "Why would intervening forgetfulness between initial and final awareness matter for lashes?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Mishnah requires awareness initially and finally with unawareness between"
+            ],
+            "formulation": "What role could intervening unawareness have for lashes?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 135,
+              "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+              "segment_id": "seg_1e9aadf5cccc247b9b0d",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.forgetting",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_two_awareness",
+      "fresh_content": {
+        "formulation": "From where is liability restricted to initial and final awareness with intervening forgetfulness?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Baraita’s awareness conditions"
+            ],
+            "formulation": "From where do we derive liability only with initial and final awareness and intervening unawareness?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 146,
+              "quote": "אלא רבי טעמיה דנפשיה מפרש דתניא מנין שאינו חייב אלא על שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים ת\"ל (ויקרא ה, ב) ונעלם ונעלם שני פעמים דברי ר\"ע",
+              "segment_id": "seg_bc414d80219f05f4df31",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.awarenesssource",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_repeated_ve",
+      "fresh_content": {
+        "formulation": "What then does the repeated ונעלם teach?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Two awareness states already derived from ונעלם and והוא ידע"
+            ],
+            "formulation": "What then does the repeated ונעלם teach?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+              "segment_id": "seg_3f473642a2a52a7ad753",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.doubleleft",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_oath_reason",
+      "fresh_content": {
+        "formulation": "Awareness has Rabbi’s own rationale; from where establish his oath position?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "First wording of question",
+              "Awareness reasoning shown",
+              "Oath reasoning not yet shown"
+            ],
+            "formulation": "We have found Rabbi’s own reasoning for awareness; from where is his position on oaths established?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 78,
+              "quote": "אשכחן בידיעות דאית ליה טעמיה דנפשיה שבועות דלית ליה טעמיה דנפשיה מנלן סברא הוא",
+              "segment_id": "seg_6d3b1ea554e878fcc7ea",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.oathsource",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_oath_alt",
+      "fresh_content": {
+        "formulation": "Alternative version: awareness follows Rabbi Ishmael; whence that oaths follow Rabbi Akiva? Answer in same alternative: reasoned inference.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "לישנא אחרינא",
+              "Alternative wording preserved separately"
+            ],
+            "formulation": "We have found that Rabbi agrees with Rabbi Yishmael on awareness; from where do we know he agrees with Rabbi Akiva on oaths?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "(לישנא אחרינא אשכחן בידיעות דסבר לה כר' ישמעאל בשבועות דסבר לה כר\"ע מנלן סברא הוא)",
+              "segment_id": "seg_1aae601b08e382de09b7",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.oathsourcealt",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "It is a matter of reasoning.",
+            "scope": "Alternative wording’s initial answer; not an independently resolved agreement claim"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "(לישנא אחרינא אשכחן בידיעות דסבר לה כר' ישמעאל בשבועות דסבר לה כר\"ע מנלן סברא הוא)",
+              "segment_id": "seg_1aae601b08e382de09b7",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.reasonansweralt",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_redeem_reason",
+      "fresh_content": {
+        "formulation": "What grounds Rabbi’s redemption rule?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Redemption admits all except documents"
+            ],
+            "formulation": "What is Rabbi’s reason?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 124,
+              "quote": "מאי טעמא דרבי דריש ריבויי ומיעוטי (במדבר יח, טז) ופדויו מבן חדש ריבה (במדבר יח, טז) בערכך כסף חמשת שקלים מיעט תפדה חזר וריבה",
+              "segment_id": "seg_9b029b551d1f6f6972db",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.rabbireason",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_include",
+      "fresh_content": {
+        "formulation": "What is included?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Inclusion-exclusion-inclusion for redemption"
+            ],
+            "formulation": "What is included?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+              "segment_id": "seg_65e130eb8583d3208171",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.included",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_exclude",
+      "fresh_content": {
+        "formulation": "What is excluded?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Inclusion-exclusion-inclusion for redemption"
+            ],
+            "formulation": "What is excluded?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+              "segment_id": "seg_65e130eb8583d3208171",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.excluded",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_ravina",
+      "fresh_content": {
+        "formulation": "Ravina asks Ameimar: does Rabbi use expansion/restriction? Rabbi uses generalization/specification!",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Ravina addresses Ameimar",
+              "Challenge to unrestricted inference from redemption"
+            ],
+            "formulation": "Does Rabbi interpret by inclusions and exclusions? Does he not interpret by general and particular?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 64,
+              "quote": "א\"ל רבינא לאמימר רבי דריש ריבויי ומיעוטי והא רבי כללי ופרטי דריש",
+              "segment_id": "seg_c78ec47dd4fd227a604c",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.ravina",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_awl_expand",
+      "fresh_content": {
+        "formulation": "Beyond an awl, whence include הסול, הסירה, needle, drill and scriber?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Ear-piercing instrument baraita"
+            ],
+            "formulation": "With only מרצע stated, from where are הסול, הסירה, המחט, המקדח and המכתב included?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 198,
+              "quote": "דתניא (דברים טו, יז) מרצע אין לי אלא מרצע מנין לרבות הסול והסירה המחט והמקדח והמכתב ת\"ל (דברים טו, יז) ולקח' כל דבר שנלקח ביד דברי ר' יוסי בר' יהודה רבי אומר מרצע מה מרצע מיוחד של מתכת אף כל של מתכת",
+              "segment_id": "seg_779425c87f33b5cb705f",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.tools",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    },
+    {
+      "fresh_id": "q_method_dispute",
+      "fresh_content": {
+        "formulation": "What explains their disagreement?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Instrument baraita; quoted analysis"
+            ],
+            "formulation": "In what do they disagree?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 67,
+              "quote": "ואמרינן במאי קא מיפלגי רבי דריש כללי ופרטי ורבי יוסי בר' יהודה דריש",
+              "segment_id": "seg_d29f2d51bba054a0529d",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.q.methods",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "represented with split/combined nodes; not count equivalence"
+    }
+  ],
+  "producer_only_source_supported": [
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [
+            "Initial awareness",
+            "Final awareness",
+            "Intervening unawareness"
+          ],
+          "proposition": "The Mishnah includes awareness at the beginning and end with unawareness between.",
+          "scope": "Quoted condition contradicting proposed lashes-only scope"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.awarenesspattern",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit recap, premise, alternative answer or interrogative elaboration supported by cited raw passage."
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "asserted",
+          "conditions": [],
+          "proposition": "The warning interpretation yields only two categories.",
+          "scope": "First objection to lashes-only reading"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.onlytwoproblem",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit recap, premise, alternative answer or interrogative elaboration supported by cited raw passage."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Past-directed oath liability"
+          ],
+          "formulation": "Why does Rabbi Akiva impose liability for the past?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "ר\"ע מאי טעמא קא מחייב לשעבר דדריש ריבויי ומיעוטי רבי נמי דריש ריבויי ומיעוטי",
+            "segment_id": "seg_197e3673b12b2f9fb18b",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.q.akivapast",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit recap, premise, alternative answer or interrogative elaboration supported by cited raw passage."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Return to attempted Rabbi Yishmael/lashes reading"
+          ],
+          "formulation": "How was the Mishnah interpreted?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+            "segment_id": "seg_ed55a8e1675844afd1ab",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.q.establishedas",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit recap, premise, alternative answer or interrogative elaboration supported by cited raw passage."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Special double-general-text explanation for Rabbi",
+            "Elliptical ורבנן question"
+          ],
+          "formulation": "How do the sages interpret this arrangement?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "ורבנן אמר רבינא כדאמרי במערבא כל מקום שאתה מוצא שתי כללות הסמוכות זה לזה הטל פרט ביניהן ודונם בכלל ופרט",
+            "segment_id": "seg_6fb2ade5b3634c4ea932",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.q.sageshow",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit recap, premise, alternative answer or interrogative elaboration supported by cited raw passage."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Attempted lashes-only interpretation"
+          ],
+          "formulation": "Moreover, does the Mishnah not specify a variable-value offering?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.q.variableoffering",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit recap, premise, alternative answer or interrogative elaboration supported by cited raw passage."
+    },
+    {
+      "record": {
+        "content": {
+          "assertion_mode": "rejected",
+          "conditions": [],
+          "proposition": "It was interpreted as Rabbi Yishmael and concerning lashes.",
+          "scope": "Recap of interim reading, not final endorsement"
+        },
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+            "segment_id": "seg_ed55a8e1675844afd1ab",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.recap",
+        "layer": "claims",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit recap, premise, alternative answer or interrogative elaboration supported by cited raw passage."
+    }
+  ],
+  "question_review": {
+    "producer_questions": 22,
+    "fresh_questions": 17,
+    "missing_explicit_questions_identified": [],
+    "assessment": "Additional recap במאי אוקימתא, Akiva past-oath rationale, explicit offering objection, elliptical ורבנן and final oath difficulty represented. First/alternative4b2–3 versions separate, not pooled as two independent proofs."
+  },
+  "semantic_checks": [
+    "Earlier/later Rabbi views and preserved anonymous Mishnah represented; later view answers prior4a3 challenge.",
+    "Lashes-only reconstruction remains rejected; warnings interpretation and three objections distinct. Avin transmitter/Ilaa holder retained; Rav Ashi transmitter/Kahana holder retained.",
+    "Awareness derivation of Rabbi distinct from Akiva doubled ונעלם proof. Both impurity and sanctuary forgetting retained.5a8–13 clarifies awareness as school-learning, without importing experiential knowledge into core.",
+    "Redemption inclusive/exclusive methods preserve exact verse sequences, all-items/document exception, movable plus intrinsic-value conjunction, land/slave/document reasons.",
+    "Ravina speaks to Ameimar; latter is not automatically assigned anonymous reply. Western teaching reported by Ravina retains Western holder. Yosi son of Yehuda method crosses4b12–5a1 and is not assigned by name order.",
+    "General Rabbi method corrected to general/particular, with redemption special textual exception. Final oath-only adoption and personal disagreement both present in prose; structured role conversion fails as below."
+  ],
+  "graph_review": {
+    "edges_checked": 62,
+    "fresh_edges": 21,
+    "exact_equivalence_claimed": false,
+    "assessment": "Directions checked: retraction earlier->later represented from later to earlier; correction of prior-wave lashes reconstruction, qualification of Kahana and final oath reporting, method correction and redemption exception appropriately separated. Alternative versions distinguished in node scope, not dedicated alternative-version edge.",
+    "records": [
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "retraction",
+          "source_id": "she.s2708.laternolashes",
+          "target_id": "she.s2708.initiallashes"
+        },
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אלא מעיקרא סבר לאו שאין בו מעשה לוקין עליו וסתמה והדר סבר אין לוקין עליו וסתמה ומשנה לא זזה ממקומה",
+            "segment_id": "seg_747eb325196c51fe5214",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.0",
+        "layer": "edges",
+        "links": [
+          "she.s2708.laternolashes",
+          "she.s2708.initiallashes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.laternolashes",
+          "target_id": "she.s2708.q.rabbiinconsistent"
+        },
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אלא מעיקרא סבר לאו שאין בו מעשה לוקין עליו וסתמה והדר סבר אין לוקין עליו וסתמה ומשנה לא זזה ממקומה",
+            "segment_id": "seg_747eb325196c51fe5214",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.1",
+        "layer": "edges",
+        "links": [
+          "she.s2708.laternolashes",
+          "she.s2708.q.rabbiinconsistent"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.yishmaelcapital",
+          "target_id": "she.s2708.whyidentify"
+        },
+        "evidence": [
+          {
+            "end_char": 173,
+            "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+            "segment_id": "seg_cc7e0dff43d8aea76ff4",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.10",
+        "layer": "edges",
+        "links": [
+          "she.s2708.yishmaelcapital",
+          "she.s2708.whyidentify"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.akivalashes",
+          "target_id": "she.s2708.q.akivaotherwise"
+        },
+        "evidence": [
+          {
+            "end_char": 81,
+            "quote": "הא לאו הכי קיימא כר\"ע קשיא ידיעות לאו אמרת רבי ישמעאל היא ולמלקות ר\"ע נמי ולמלקות",
+            "segment_id": "seg_8a7cc671af418dbe67f0",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.11",
+        "layer": "edges",
+        "links": [
+          "she.s2708.akivalashes",
+          "she.s2708.q.akivaotherwise"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.warningawareness",
+          "target_id": "she.s2708.q.warnings"
+        },
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "אי הכי ידיעות התראות מיבעי ליה הא לא קשיא תני ידיעות דהתראות",
+            "segment_id": "seg_feb2178dd56543f3456b",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.12",
+        "layer": "edges",
+        "links": [
+          "she.s2708.warningawareness",
+          "she.s2708.q.warnings"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "she.s2708.q.onlytwo",
+          "target_id": "she.s2708.warningawareness"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.13",
+        "layer": "edges",
+        "links": [
+          "she.s2708.q.onlytwo",
+          "she.s2708.warningawareness"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "she.s2708.q.forgetting",
+          "target_id": "she.s2708.recap"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.14",
+        "layer": "edges",
+        "links": [
+          "she.s2708.q.forgetting",
+          "she.s2708.recap"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "she.s2708.q.variableoffering",
+          "target_id": "she.s2708.recap"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.15",
+        "layer": "edges",
+        "links": [
+          "she.s2708.q.variableoffering",
+          "she.s2708.recap"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.awarenesspattern",
+          "target_id": "she.s2708.q.forgetting"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.16",
+        "layer": "edges",
+        "links": [
+          "she.s2708.awarenesspattern",
+          "she.s2708.q.forgetting"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.offeringproblem",
+          "target_id": "she.s2708.q.variableoffering"
+        },
+        "evidence": [
+          {
+            "end_char": 135,
+            "quote": "אי הכי שתים שהן ארבע תרתי הוא דהויין ותו את שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים העלמה למלקות מאי עבידתיה ותו הרי זה בעולה ויורד",
+            "segment_id": "seg_1e9aadf5cccc247b9b0d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.17",
+        "layer": "edges",
+        "links": [
+          "she.s2708.offeringproblem",
+          "she.s2708.q.variableoffering"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "she.s2708.yosefauthor",
+          "target_id": "she.s2707.yishmaellashes"
+        },
+        "evidence": [
+          {
+            "end_char": 93,
+            "quote": "אלא אמר רב יוסף רבי היא ונסיב לה אליבא דתנאי בידיעות נסיב לה כרבי ישמעאל בשבועות נסיב לה כר\"ע",
+            "segment_id": "seg_af9d90f60a8c29268316",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.18",
+        "layer": "edges",
+        "links": [
+          "she.s2708.yosefauthor",
+          "she.s2707.yishmaellashes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "she.s2708.kahanaadmonition",
+          "target_id": "she.s2708.yosefauthor"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "אמר רב אשי אמריתא לשמעתא קמיה דרב כהנא ואמר לי לא תימא רבי נסיב לה אליבא דתנאי וליה לא ס\"ל",
+            "segment_id": "seg_c3130609df8b31143bd7",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.19",
+        "layer": "edges",
+        "links": [
+          "she.s2708.kahanaadmonition",
+          "she.s2708.yosefauthor"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.mishnahretained",
+          "target_id": "she.s2708.q.rabbiinconsistent"
+        },
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אלא מעיקרא סבר לאו שאין בו מעשה לוקין עליו וסתמה והדר סבר אין לוקין עליו וסתמה ומשנה לא זזה ממקומה",
+            "segment_id": "seg_747eb325196c51fe5214",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.2",
+        "layer": "edges",
+        "links": [
+          "she.s2708.mishnahretained",
+          "she.s2708.q.rabbiinconsistent"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.ownreason",
+          "target_id": "she.s2708.kahanaadmonition"
+        },
+        "evidence": [
+          {
+            "end_char": 146,
+            "quote": "אלא רבי טעמיה דנפשיה מפרש דתניא מנין שאינו חייב אלא על שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים ת\"ל (ויקרא ה, ב) ונעלם ונעלם שני פעמים דברי ר\"ע",
+            "segment_id": "seg_bc414d80219f05f4df31",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.20",
+        "layer": "edges",
+        "links": [
+          "she.s2708.ownreason",
+          "she.s2708.kahanaadmonition"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.akivadouble",
+          "target_id": "she.s2708.q.awarenesssource"
+        },
+        "evidence": [
+          {
+            "end_char": 146,
+            "quote": "אלא רבי טעמיה דנפשיה מפרש דתניא מנין שאינו חייב אלא על שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים ת\"ל (ויקרא ה, ב) ונעלם ונעלם שני פעמים דברי ר\"ע",
+            "segment_id": "seg_bc414d80219f05f4df31",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.21",
+        "layer": "edges",
+        "links": [
+          "she.s2708.akivadouble",
+          "she.s2708.q.awarenesssource"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "she.s2708.rabbineednot",
+          "target_id": "she.s2708.akivadouble"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+            "segment_id": "seg_3f473642a2a52a7ad753",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.22",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbineednot",
+          "she.s2708.akivadouble"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.priorawareness",
+          "target_id": "she.s2708.rabbineednot"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+            "segment_id": "seg_3f473642a2a52a7ad753",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.23",
+        "layer": "edges",
+        "links": [
+          "she.s2708.priorawareness",
+          "she.s2708.rabbineednot"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.finalawareness",
+          "target_id": "she.s2708.rabbineednot"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+            "segment_id": "seg_3f473642a2a52a7ad753",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.24",
+        "layer": "edges",
+        "links": [
+          "she.s2708.finalawareness",
+          "she.s2708.rabbineednot"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.rabbiimpurity",
+          "target_id": "she.s2708.q.doubleleft"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+            "segment_id": "seg_3f473642a2a52a7ad753",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.25",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbiimpurity",
+          "she.s2708.q.doubleleft"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.rabbitemple",
+          "target_id": "she.s2708.q.doubleleft"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+            "segment_id": "seg_3f473642a2a52a7ad753",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.26",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbitemple",
+          "she.s2708.q.doubleleft"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.rabbiimpurity",
+          "target_id": "she.s2708.ownreason"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+            "segment_id": "seg_3f473642a2a52a7ad753",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.27",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbiimpurity",
+          "she.s2708.ownreason"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.rabbitemple",
+          "target_id": "she.s2708.ownreason"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "ונעלם מכלל דידע והוא ידע הרי כאן שתי ידיעות אם כן מה ת\"ל (ויקרא ה, ב) ונעלם ונעלם לחייב על העלם טומאה ועל העלם מקדש",
+            "segment_id": "seg_3f473642a2a52a7ad753",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.28",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbitemple",
+          "she.s2708.ownreason"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.reasonanswer",
+          "target_id": "she.s2708.q.oathsource"
+        },
+        "evidence": [
+          {
+            "end_char": 78,
+            "quote": "אשכחן בידיעות דאית ליה טעמיה דנפשיה שבועות דלית ליה טעמיה דנפשיה מנלן סברא הוא",
+            "segment_id": "seg_6d3b1ea554e878fcc7ea",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.29",
+        "layer": "edges",
+        "links": [
+          "she.s2708.reasonanswer",
+          "she.s2708.q.oathsource"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.laternolashes",
+          "target_id": "she.s2707.q.prefer"
+        },
+        "evidence": [
+          {
+            "end_char": 98,
+            "quote": "אלא מעיקרא סבר לאו שאין בו מעשה לוקין עליו וסתמה והדר סבר אין לוקין עליו וסתמה ומשנה לא זזה ממקומה",
+            "segment_id": "seg_747eb325196c51fe5214",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.3",
+        "layer": "edges",
+        "links": [
+          "she.s2708.laternolashes",
+          "she.s2707.q.prefer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.reasonansweralt",
+          "target_id": "she.s2708.q.oathsourcealt"
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "(לישנא אחרינא אשכחן בידיעות דסבר לה כר' ישמעאל בשבועות דסבר לה כר\"ע מנלן סברא הוא)",
+            "segment_id": "seg_1aae601b08e382de09b7",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.30",
+        "layer": "edges",
+        "links": [
+          "she.s2708.reasonansweralt",
+          "she.s2708.q.oathsourcealt"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.akivaribuy",
+          "target_id": "she.s2708.q.akivapast"
+        },
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "ר\"ע מאי טעמא קא מחייב לשעבר דדריש ריבויי ומיעוטי רבי נמי דריש ריבויי ומיעוטי",
+            "segment_id": "seg_197e3673b12b2f9fb18b",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.31",
+        "layer": "edges",
+        "links": [
+          "she.s2708.akivaribuy",
+          "she.s2708.q.akivapast"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.rabbiribuyinitial",
+          "target_id": "she.s2708.reasonanswer"
+        },
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "ר\"ע מאי טעמא קא מחייב לשעבר דדריש ריבויי ומיעוטי רבי נמי דריש ריבויי ומיעוטי",
+            "segment_id": "seg_197e3673b12b2f9fb18b",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.32",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbiribuyinitial",
+          "she.s2708.reasonanswer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.rabbiribuyinitial",
+          "target_id": "she.s2708.reasonansweralt"
+        },
+        "evidence": [
+          {
+            "end_char": 76,
+            "quote": "ר\"ע מאי טעמא קא מחייב לשעבר דדריש ריבויי ומיעוטי רבי נמי דריש ריבויי ומיעוטי",
+            "segment_id": "seg_197e3673b12b2f9fb18b",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.33",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbiribuyinitial",
+          "she.s2708.reasonansweralt"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.rabbiredemption",
+          "target_id": "she.s2708.rabbiribuyinitial"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "דתניא רבי אומר בכל פודין בכור אדם חוץ מן השטרות ורבנן אמרי בכל פודין בכור אדם חוץ מעבדים ושטרות וקרקעות",
+            "segment_id": "seg_8dd0cf6659408d392d3e",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.34",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbiredemption",
+          "she.s2708.rabbiribuyinitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.redeemribuy",
+          "target_id": "she.s2708.q.rabbireason"
+        },
+        "evidence": [
+          {
+            "end_char": 124,
+            "quote": "מאי טעמא דרבי דריש ריבויי ומיעוטי (במדבר יח, טז) ופדויו מבן חדש ריבה (במדבר יח, טז) בערכך כסף חמשת שקלים מיעט תפדה חזר וריבה",
+            "segment_id": "seg_9b029b551d1f6f6972db",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.35",
+        "layer": "edges",
+        "links": [
+          "she.s2708.redeemribuy",
+          "she.s2708.q.rabbireason"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.allitems",
+          "target_id": "she.s2708.q.included"
+        },
+        "evidence": [
+          {
+            "end_char": 63,
+            "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+            "segment_id": "seg_65e130eb8583d3208171",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.36",
+        "layer": "edges",
+        "links": [
+          "she.s2708.allitems",
+          "she.s2708.q.included"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.documents",
+          "target_id": "she.s2708.q.excluded"
+        },
+        "evidence": [
+          {
+            "end_char": 63,
+            "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+            "segment_id": "seg_65e130eb8583d3208171",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.37",
+        "layer": "edges",
+        "links": [
+          "she.s2708.documents",
+          "she.s2708.q.excluded"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.redeemribuy",
+          "target_id": "she.s2708.rabbiredemption"
+        },
+        "evidence": [
+          {
+            "end_char": 63,
+            "quote": "ריבה ומיעט וריבה ריבה הכל מאי ריבה כל מילי ומאי מיעט מיעט שטרות",
+            "segment_id": "seg_65e130eb8583d3208171",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.38",
+        "layer": "edges",
+        "links": [
+          "she.s2708.redeemribuy",
+          "she.s2708.rabbiredemption"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.likeparticular",
+          "target_id": "she.s2708.movablevalue"
+        },
+        "evidence": [
+          {
+            "end_char": 192,
+            "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+            "segment_id": "seg_71da207fc0be34194390",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.39",
+        "layer": "edges",
+        "links": [
+          "she.s2708.likeparticular",
+          "she.s2708.movablevalue"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.recap",
+          "target_id": "she.s2708.q.establishedas"
+        },
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+            "segment_id": "seg_ed55a8e1675844afd1ab",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.4",
+        "layer": "edges",
+        "links": [
+          "she.s2708.recap",
+          "she.s2708.q.establishedas"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.movablevalue",
+          "target_id": "she.s2708.excludeland"
+        },
+        "evidence": [
+          {
+            "end_char": 192,
+            "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+            "segment_id": "seg_71da207fc0be34194390",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.40",
+        "layer": "edges",
+        "links": [
+          "she.s2708.movablevalue",
+          "she.s2708.excludeland"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.movablevalue",
+          "target_id": "she.s2708.excludeslaves"
+        },
+        "evidence": [
+          {
+            "end_char": 192,
+            "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+            "segment_id": "seg_71da207fc0be34194390",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.41",
+        "layer": "edges",
+        "links": [
+          "she.s2708.movablevalue",
+          "she.s2708.excludeslaves"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.movablevalue",
+          "target_id": "she.s2708.excludedocs"
+        },
+        "evidence": [
+          {
+            "end_char": 192,
+            "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+            "segment_id": "seg_71da207fc0be34194390",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.42",
+        "layer": "edges",
+        "links": [
+          "she.s2708.movablevalue",
+          "she.s2708.excludedocs"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.excludeland",
+          "target_id": "she.s2708.sagesredemption"
+        },
+        "evidence": [
+          {
+            "end_char": 192,
+            "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+            "segment_id": "seg_71da207fc0be34194390",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.43",
+        "layer": "edges",
+        "links": [
+          "she.s2708.excludeland",
+          "she.s2708.sagesredemption"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.excludeslaves",
+          "target_id": "she.s2708.sagesredemption"
+        },
+        "evidence": [
+          {
+            "end_char": 192,
+            "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+            "segment_id": "seg_71da207fc0be34194390",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.44",
+        "layer": "edges",
+        "links": [
+          "she.s2708.excludeslaves",
+          "she.s2708.sagesredemption"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.excludedocs",
+          "target_id": "she.s2708.sagesredemption"
+        },
+        "evidence": [
+          {
+            "end_char": 192,
+            "quote": "כלל ופרט וכלל אי אתה דן אלא כעין הפרט מה הפרט מפורש דבר המטלטל וגופו ממון אף כל דבר המטלטל וגופו ממון יצאו קרקעות שאינן מטלטלין יצאו עבדים שהוקשו לקרקעות יצאו שטרות אע\"פ שמטלטלין אין גופן ממון",
+            "segment_id": "seg_71da207fc0be34194390",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.45",
+        "layer": "edges",
+        "links": [
+          "she.s2708.excludedocs",
+          "she.s2708.sagesredemption"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "she.s2708.q.ravina",
+          "target_id": "she.s2708.rabbiribuyinitial"
+        },
+        "evidence": [
+          {
+            "end_char": 64,
+            "quote": "א\"ל רבינא לאמימר רבי דריש ריבויי ומיעוטי והא רבי כללי ופרטי דריש",
+            "segment_id": "seg_c78ec47dd4fd227a604c",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.46",
+        "layer": "edges",
+        "links": [
+          "she.s2708.q.ravina",
+          "she.s2708.rabbiribuyinitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.yosibarinclude",
+          "target_id": "she.s2708.q.tools"
+        },
+        "evidence": [
+          {
+            "end_char": 198,
+            "quote": "דתניא (דברים טו, יז) מרצע אין לי אלא מרצע מנין לרבות הסול והסירה המחט והמקדח והמכתב ת\"ל (דברים טו, יז) ולקח' כל דבר שנלקח ביד דברי ר' יוסי בר' יהודה רבי אומר מרצע מה מרצע מיוחד של מתכת אף כל של מתכת",
+            "segment_id": "seg_779425c87f33b5cb705f",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.47",
+        "layer": "edges",
+        "links": [
+          "she.s2708.yosibarinclude",
+          "she.s2708.q.tools"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.rabbigeneral",
+          "target_id": "she.s2708.q.methods"
+        },
+        "evidence": [
+          {
+            "end_char": 67,
+            "quote": "ואמרינן במאי קא מיפלגי רבי דריש כללי ופרטי ורבי יוסי בר' יהודה דריש",
+            "segment_id": "seg_d29f2d51bba054a0529d",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.48",
+        "layer": "edges",
+        "links": [
+          "she.s2708.rabbigeneral",
+          "she.s2708.q.methods"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.yosiribuy",
+          "target_id": "she.s2708.q.methods"
+        },
+        "evidence": [
+          {
+            "end_char": 14,
+            "quote": "ריבויי ומיעוטי",
+            "segment_id": "seg_d26c8f8cd19819a31157",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.49",
+        "layer": "edges",
+        "links": [
+          "she.s2708.yosiribuy",
+          "she.s2708.q.methods"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.cutslesion",
+          "target_id": "she.s2708.q.lesionlashes"
+        },
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+            "segment_id": "seg_ed55a8e1675844afd1ab",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.5",
+        "layer": "edges",
+        "links": [
+          "she.s2708.cutslesion",
+          "she.s2708.q.lesionlashes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.normallygeneral",
+          "target_id": "she.s2708.q.ravina"
+        },
+        "evidence": [
+          {
+            "end_char": 61,
+            "quote": "אין בעלמא כללי ופרטי דריש והכא היינו טעמא כדתנא דבי ר' ישמעאל",
+            "segment_id": "seg_2920c6bbffc6235cb927",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.50",
+        "layer": "edges",
+        "links": [
+          "she.s2708.normallygeneral",
+          "she.s2708.q.ravina"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "she.s2708.normallygeneral",
+          "target_id": "she.s2708.rabbiribuyinitial"
+        },
+        "evidence": [
+          {
+            "end_char": 61,
+            "quote": "אין בעלמא כללי ופרטי דריש והכא היינו טעמא כדתנא דבי ר' ישמעאל",
+            "segment_id": "seg_2920c6bbffc6235cb927",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.51",
+        "layer": "edges",
+        "links": [
+          "she.s2708.normallygeneral",
+          "she.s2708.rabbiribuyinitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "she.s2708.specialcase",
+          "target_id": "she.s2708.redeemribuy"
+        },
+        "evidence": [
+          {
+            "end_char": 61,
+            "quote": "אין בעלמא כללי ופרטי דריש והכא היינו טעמא כדתנא דבי ר' ישמעאל",
+            "segment_id": "seg_2920c6bbffc6235cb927",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.52",
+        "layer": "edges",
+        "links": [
+          "she.s2708.specialcase",
+          "she.s2708.redeemribuy"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.waterdouble",
+          "target_id": "she.s2708.specialcase"
+        },
+        "evidence": [
+          {
+            "end_char": 84,
+            "quote": "דתנא דבי ר' ישמעאל (ויקרא יא, לב) במים במים שני פעמים אין זה כלל ופרט אלא ריבה ומיעט",
+            "segment_id": "seg_2caf4af294fa9660d298",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.53",
+        "layer": "edges",
+        "links": [
+          "she.s2708.waterdouble",
+          "she.s2708.specialcase"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.westgeneral",
+          "target_id": "she.s2708.q.sageshow"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "ורבנן אמר רבינא כדאמרי במערבא כל מקום שאתה מוצא שתי כללות הסמוכות זה לזה הטל פרט ביניהן ודונם בכלל ופרט",
+            "segment_id": "seg_6fb2ade5b3634c4ea932",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.54",
+        "layer": "edges",
+        "links": [
+          "she.s2708.westgeneral",
+          "she.s2708.q.sageshow"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.westgeneral",
+          "target_id": "she.s2708.sagesgeneral"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "ורבנן אמר רבינא כדאמרי במערבא כל מקום שאתה מוצא שתי כללות הסמוכות זה לזה הטל פרט ביניהן ודונם בכלל ופרט",
+            "segment_id": "seg_6fb2ade5b3634c4ea932",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.55",
+        "layer": "edges",
+        "links": [
+          "she.s2708.westgeneral",
+          "she.s2708.sagesgeneral"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "she.s2708.q.oathdifficulty",
+          "target_id": "she.s2708.rabbiribuyinitial"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+            "segment_id": "seg_c8f0b33f2456d047de28",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.56",
+        "layer": "edges",
+        "links": [
+          "she.s2708.q.oathdifficulty",
+          "she.s2708.rabbiribuyinitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.finalreport",
+          "target_id": "she.s2708.q.oathdifficulty"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+            "segment_id": "seg_c8f0b33f2456d047de28",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.57",
+        "layer": "edges",
+        "links": [
+          "she.s2708.finalreport",
+          "she.s2708.q.oathdifficulty"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.finaldisagree",
+          "target_id": "she.s2708.q.oathdifficulty"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+            "segment_id": "seg_c8f0b33f2456d047de28",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.58",
+        "layer": "edges",
+        "links": [
+          "she.s2708.finaldisagree",
+          "she.s2708.q.oathdifficulty"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "she.s2708.finaldisagree",
+          "target_id": "she.s2708.kahanaadmonition"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+            "segment_id": "seg_c8f0b33f2456d047de28",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.59",
+        "layer": "edges",
+        "links": [
+          "she.s2708.finaldisagree",
+          "she.s2708.kahanaadmonition"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.negativeformula",
+          "target_id": "she.s2708.cutslesion"
+        },
+        "evidence": [
+          {
+            "end_char": 154,
+            "quote": "במאי אוקימתא כר' ישמעאל ולמלקות מראות נגעים מאי מלקות איכא בקוצץ בהרתו וכרבי אבין א\"ר אילעא דא\"ר אבין א\"ר אילעא כל מקום שנאמר השמר פן ואל אינו אלא לא תעשה",
+            "segment_id": "seg_ed55a8e1675844afd1ab",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.6",
+        "layer": "edges",
+        "links": [
+          "she.s2708.negativeformula",
+          "she.s2708.cutslesion"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "she.s2708.finaldisagree",
+          "target_id": "she.s2708.yosefoaths"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+            "segment_id": "seg_c8f0b33f2456d047de28",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.60",
+        "layer": "edges",
+        "links": [
+          "she.s2708.finaldisagree",
+          "she.s2708.yosefoaths"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.capitalwarning",
+          "target_id": "she.s2708.q.shabbatlashes"
+        },
+        "evidence": [
+          {
+            "end_char": 173,
+            "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+            "segment_id": "seg_cc7e0dff43d8aea76ff4",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.7",
+        "layer": "edges",
+        "links": [
+          "she.s2708.capitalwarning",
+          "she.s2708.q.shabbatlashes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "she.s2708.capitalnolashes",
+          "target_id": "she.s2708.q.shabbatlashes"
+        },
+        "evidence": [
+          {
+            "end_char": 173,
+            "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+            "segment_id": "seg_cc7e0dff43d8aea76ff4",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.8",
+        "layer": "edges",
+        "links": [
+          "she.s2708.capitalnolashes",
+          "she.s2708.q.shabbatlashes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "she.s2708.yishmaelcapital",
+          "target_id": "she.s2708.q.shabbatlashes"
+        },
+        "evidence": [
+          {
+            "end_char": 173,
+            "quote": "יציאות שבת מאי מלקות איכא לאו שניתן לאזהרת מיתת ב\"ד הוא וכל לאו שניתן לאזהרת מיתת ב\"ד אין לוקין עליו משום הכי קא מוקמינא כר' ישמעאל דאמר לאו שניתן לאזהרת מיתת ב\"ד לוקין עליו",
+            "segment_id": "seg_cc7e0dff43d8aea76ff4",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.9",
+        "layer": "edges",
+        "links": [
+          "she.s2708.yishmaelcapital",
+          "she.s2708.q.shabbatlashes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "continuation",
+          "source_id": "she.s2707.identity",
+          "target_id": "she.s2708.revision"
+        },
+        "evidence": [
+          {
+            "end_char": 46,
+            "quote": "ולטעמיך רבי גופיה היכי סתם לן הכא הכי והכא הכי",
+            "segment_id": "seg_7da3966feb3b8bdac143",
+            "start_char": 0
+          }
+        ],
+        "id": "she.s2708.e.continuation",
+        "layer": "edges",
+        "links": [
+          "she.s2707.identity",
+          "she.s2708.revision"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "mandatory_repairs": [
+    {
+      "id": "S08-R01",
+      "type": "reporter_holder_conversion",
+      "source_ref": "Shevuot5a:5",
+      "evidence": [
+        {
+          "end_char": 105,
+          "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+          "segment_id": "seg_c8f0b33f2456d047de28",
+          "start_char": 0
+        }
+      ],
+      "affected_records": [
+        {
+          "content": {
+            "candidates": [
+              "רבי"
+            ],
+            "role": "position_holder",
+            "scope": "Final revision distinguishing reported ruling from personal endorsement",
+            "surface": "רבי",
+            "transmission_chain": []
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+              "segment_id": "seg_c8f0b33f2456d047de28",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.finalreport.a",
+          "layer": "attributions",
+          "links": [
+            "she.s2708.finalreport"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "claim_id": "she.s2708.finalreport",
+            "conditions": [
+              "Oaths"
+            ],
+            "holder_candidates": [
+              "רבי"
+            ],
+            "local_status": "asserted; Final revision distinguishing reported ruling from personal endorsement",
+            "question_id": null
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "השתא דאמרת רבי כללי ופרטי דריש בעל כורחיך קשיא שבועות אלא בשבועות נסיב אליבא דר' עקיבא וליה לא סבירא ליה:",
+              "segment_id": "seg_c8f0b33f2456d047de28",
+              "start_char": 0
+            }
+          ],
+          "id": "she.s2708.finalreport.p",
+          "layer": "positions",
+          "links": [
+            "she.s2708.finalreport"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "finding": "Anonymous final meta-conclusion that Rabbi compiles Akiva’s oath view while personally disagreeing is assigned Rabbi as position_holder and named holder_candidates. Correct prose and separate finaldisagree do not repair this structured conversion.",
+      "protocol_basis": "Production PROTOCOL.md line5: preserve transmitter/holder distinctions; new revisions use new IDs and explicit supersedes.",
+      "required_repair": "Supersede finalreport.a and finalreport.p using anonymous attribution / no named meta-conclusion holder. Represent Rabbi separately with existing transmitter role explicitly scoped to compiler/reporting of Akiva’s oath view, not endorsement. Keep substantive Akiva oath position separate if separately annotated and ground it in explicit source evidence. Preserve finalreport/finaldisagree and negative personal-stance distinction; reconcile affected coverage/dependencies. Do not alter immutable originals or invent ontology fields.",
+      "production_scope": "Mandatory for corrected role/position records; not a claim every other record is wrong."
+    }
+  ],
+  "reader_errors_identified": [],
+  "outcome": "Correction required before bounded role comparison closure: S08-R01. No additional mandatory omission or direction defect identified.",
+  "qualifications": [
+    "No blanket task/atomicity/role qualification",
+    "272producer records versus fresh mixed findings is not an accuracy denominator",
+    "All eligibility remains false; prose caveats are not enforced export quarantine",
+    "No production mutation or source mutation by comparator"
+  ],
+  "context_findings_retained": [
+    {
+      "evidence": [
+        {
+          "ref": "Shevuot 5a:6",
+          "segment_id": "seg_3de3df9e62786b987101",
+          "start_char": 0,
+          "end_char": 119,
+          "quote": "גופא מנין שאינו חייב אלא על שיש בה ידיעה בתחלה וידיעה בסוף והעלם בינתים ת\"ל (ויקרא ה, ב) ונעלם ונעלם שני פעמים דברי ר\"ע"
+        },
+        {
+          "ref": "Shevuot 5a:7",
+          "segment_id": "seg_beaadf611d69e98cb8b6",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "רבי אומר אינו צריך הרי הוא אומר ונעלם מכלל שידע והוא ידע הרי כאן שתי ידיעות א\"כ מה ת\"ל ונעלם לחייב על העלם טומאה ועל העלם מקדש:"
+        },
+        {
+          "ref": "Shevuot 5a:8",
+          "segment_id": "seg_a2f879d760683d6bcc47",
+          "start_char": 0,
+          "end_char": 65,
+          "quote": "אמר מר ונעלם מכלל שידע מאי משמע אמר רבא מדלא כתיב והיא עלומה ממנו"
+        }
+      ],
+      "explanation": "Continuation restates awareness baraita and asks how ונעלם implies prior awareness; Rava initially offers a linguistic argument."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Shevuot 5a:9",
+          "segment_id": "seg_cedeb54918226456491f",
+          "start_char": 0,
+          "end_char": 110,
+          "quote": "א\"ל אביי אלא מעתה גבי סוטה דכתיב (במדבר ה, יג) ונעלם מעיני אישה מכלל דהוי ידע מעיקרא אי הוה ידע מי בדקו לה מיא"
+        },
+        {
+          "ref": "Shevuot 5a:10",
+          "segment_id": "seg_e53674e56b7854ec9825",
+          "start_char": 0,
+          "end_char": 146,
+          "quote": "והא תניא (במדבר ה, לא) ונקה האיש מעון והאשה ההיא תשא את עונה בזמן שהאיש מנוקה מעון המים בודקין את אשתו אין האיש מנוקה מעון אין המים בודקין את אשתו"
+        },
+        {
+          "ref": "Shevuot 5a:11",
+          "segment_id": "seg_d5893c8e57716201c973",
+          "start_char": 0,
+          "end_char": 131,
+          "quote": "ותו גבי תורה דכתיב (איוב כח, כא) ונעלמה מעיני כל חי ומעוף השמים נסתרה מכלל דאיכא דהוה ידע ביה והכתיב (איוב כח, יג) לא ידע אנוש ערכה"
+        },
+        {
+          "ref": "Shevuot 5a:12",
+          "segment_id": "seg_d58b65d7b13e900d1ae4",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "אלא אמר אביי קסבר רבי ידיעת בית רבו שמה ידיעה"
+        },
+        {
+          "ref": "Shevuot 5a:13",
+          "segment_id": "seg_4139dc47fe5ace26d54f",
+          "start_char": 0,
+          "end_char": 137,
+          "quote": "א\"ל רב פפא לאביי אלא דקתני אין בה ידיעה בתחלה ויש בה ידיעה בסוף מי איכא דלית ליה ידיעת בית רבו א\"ל אין משכחת לה בתינוק שנשבה לבין הנכרים:"
+        }
+      ],
+      "explanation": "Abaye challenges Rava’s linguistic proof with sotah and Torah texts, then explains Rabbi as accepting school-learning awareness. Rav Pappa asks how no prior awareness occurs; answer is a child captured among non-Jews. This refines awareness interpretation without reversing the oath-specific endpoint conclusion."
+    }
+  ]
+}

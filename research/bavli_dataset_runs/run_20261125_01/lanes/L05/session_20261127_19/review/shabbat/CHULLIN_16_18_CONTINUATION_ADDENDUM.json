@@ -1,0 +1,654 @@
+{
+  "format": "retrospective-continuation-preservation-addendum-v1",
+  "scope": "Narrow requested check of sessions16–18 only; not blanket re-review. No new coverage or independent credit.",
+  "reviewer": "/root/horayot_review",
+  "versions_checked": [
+    "dfadd95de7eb330fbb8af1fc0814ed10f4af0fbda367c524e602ffe2f6a2db41",
+    "257511a70118b2e07c628d189d88a24981620d7515797368e2b18388ab5b9f91",
+    "342e4c22b5c117279b77266d9f38f8b41e0c83d741c1ab33f1e933338cf54a33"
+  ],
+  "preserved_initial_reports": [
+    {
+      "session": "16",
+      "sha256": "7ebba2c7f4c34d1d077fe7b236ec06cbd8fd0ceaf407feb38058f9961f9a330f"
+    },
+    {
+      "session": "17",
+      "sha256": "a85f58f6b99954691d1b3a9114a2b25173750924b5e694aa3e7deea89113902b"
+    },
+    {
+      "session": "18",
+      "sha256": "90d9967be730407c8f91b3f5472410c1d881c52f4232e22626e149edd6b5a7f5"
+    }
+  ],
+  "findings": [
+    {
+      "id": "RET16-DOMAIN",
+      "status": "preserved",
+      "details": "Session16 notshabbat evidence includes6a9[0,102) and6a10[0,61), with e.46 support to domainrights. Session17 israelgive/israelrenounce/gentilerental and formulas retain6a10–11, plus explicit domaincontinuation. Corrected closed predecessor retains history.",
+      "records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Does not observe Shabbat in public"
+            ],
+            "proposition": "One who does not observe Shabbat publicly cannot relinquish or give domain rights by those procedures.",
+            "scope": "Negative branch read with6a10 requiring rental for gentile; raw אינו מבטל רשות ונותן רשות retained, no mistaken positive giving permission"
+          },
+          "evidence": [
+            {
+              "end_char": 102,
+              "quote": "וכדתניא ישראל מומר משמר שבתו בשוק מבטל רשות ונותן רשות ושאינו משמר שבתו בשוק אינו מבטל רשות ונותן רשות",
+              "segment_id": "seg_9a843023ae01f6731d27",
+              "start_char": 0
+            },
+            {
+              "end_char": 61,
+              "quote": "מפני שאמרו ישראל נותן רשות ומבטל רשות ובעובד כוכבים עד שישכור",
+              "segment_id": "seg_9510259cdf172f166242",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2716.notshabbat",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "support",
+            "source_id": "ch.s2716.notshabbat",
+            "target_id": "ch.s2716.domainrights"
+          },
+          "evidence": [
+            {
+              "end_char": 102,
+              "quote": "וכדתניא ישראל מומר משמר שבתו בשוק מבטל רשות ונותן רשות ושאינו משמר שבתו בשוק אינו מבטל רשות ונותן רשות",
+              "segment_id": "seg_9a843023ae01f6731d27",
+              "start_char": 0
+            },
+            {
+              "end_char": 61,
+              "quote": "מפני שאמרו ישראל נותן רשות ומבטל רשות ובעובד כוכבים עד שישכור",
+              "segment_id": "seg_9510259cdf172f166242",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2716.e.46",
+          "layer": "edges",
+          "links": [
+            "ch.s2716.notshabbat",
+            "ch.s2716.domainrights"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Gentile domain rights"
+            ],
+            "proposition": "For a gentile, rental is required.",
+            "scope": "עד שישכור: earlier giving/relinquishing procedures do not replace rental"
+          },
+          "evidence": [
+            {
+              "end_char": 61,
+              "quote": "מפני שאמרו ישראל נותן רשות ומבטל רשות ובעובד כוכבים עד שישכור",
+              "segment_id": "seg_9510259cdf172f166242",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2717.gentilerental",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Israelite giving rights",
+              "Says רשותי קנויה לך"
+            ],
+            "proposition": "Saying רשותי קנויה לך effects acquisition of the domain right.",
+            "scope": "First verbal formula"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "כיצד אמר לו רשותי קנויה לך רשותי מבוטלת לך קנה ואינו צריך לזכות",
+              "segment_id": "seg_9441032bd2a27ebf7c6f",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2717.givenformula",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Israelite relinquishing rights",
+              "Says רשותי מבוטלת לך"
+            ],
+            "proposition": "Saying רשותי מבוטלת לך effects the stated domain-right result.",
+            "scope": "Second formula retained as relinquishment, not physical title transfer to land"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "כיצד אמר לו רשותי קנויה לך רשותי מבוטלת לך קנה ואינו צריך לזכות",
+              "segment_id": "seg_9441032bd2a27ebf7c6f",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2717.nullformula",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Said either stated formula"
+            ],
+            "proposition": "There is no need for an additional act of conferring acquisition: ואינו צריך לזכות.",
+            "scope": "Negative procedural requirement following formulas; avoid importing mechanism not stated"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "כיצד אמר לו רשותי קנויה לך רשותי מבוטלת לך קנה ואינו צריך לזכות",
+              "segment_id": "seg_9441032bd2a27ebf7c6f",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2717.noformal",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    },
+    {
+      "id": "RET17-BEIT",
+      "status": "historical_gap_subsequently_filled_as_core",
+      "details": "Session17 permittedbeit/testimony only cite6b5[0,116); references to7a4–9 in scope were not evidence retention at that version. Session18 canonically extracts7a4–9, and e.beitcontinuation connects closed predecessor to beitproof. Thus raw context now retained. Qualification/reply claims connect to same-episode questions; no direct new qualification edge to earlier permittedbeit/testimony claims. For claim-isolated use, add explicit links binding initialsanctity/notfuture to permittedbeit and bundle/greatwitness to testimony, preserving interpretation versus report.",
+      "current_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi permitted all Beit Shean on the strength of that testimony.",
+            "scope": "Tithing context; scope/legal basis challenged and clarified7a4–9, not universal exemption from all commandments"
+          },
+          "evidence": [
+            {
+              "end_char": 116,
+              "quote": "העיד רבי יהושע בן זרוז בן חמיו של רבי מאיר לפני רבי על ר\"מ שאכל עלה של ירק בבית שאן והתיר רבי את בית שאן כולה על ידו",
+              "segment_id": "seg_a49caa021d69a143d7c2",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2717.permittedbeit",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rabbi Yehoshua ben Zeruz testified before Rabbi that Rabbi Meir ate a vegetable leaf in Beit Shean.",
+            "scope": "Named eyewitness report; later7a7–9 tests leaf/bundle, oversight and tithing alternatives"
+          },
+          "evidence": [
+            {
+              "end_char": 116,
+              "quote": "העיד רבי יהושע בן זרוז בן חמיו של רבי מאיר לפני רבי על ר\"מ שאכל עלה של ירק בבית שאן והתיר רבי את בית שאן כולה על ידו",
+              "segment_id": "seg_a49caa021d69a143d7c2",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2717.testimony",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The first sanctification sanctified for its time.",
+            "scope": "Anonymous explanation of position underlying ruling; not an unrelated blanket future sanctity conclusion"
+          },
+          "evidence": [
+            {
+              "end_char": 87,
+              "quote": "וקסבר קדושה ראשונה קדשה לשעתה ולא קדשה לעתיד לבא והניחום כדי שיסמכו עליהן עניים בשביעית",
+              "segment_id": "seg_756b70130f64fe279f24",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.initialsanctity",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "It did not sanctify for the future.",
+            "scope": "Negative temporal limit on first sanctification, in this explanation"
+          },
+          "evidence": [
+            {
+              "end_char": 87,
+              "quote": "וקסבר קדושה ראשונה קדשה לשעתה ולא קדשה לעתיד לבא והניחום כדי שיסמכו עליהן עניים בשביעית",
+              "segment_id": "seg_756b70130f64fe279f24",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.notfuture",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "He ate it from a bundle.",
+            "scope": "Rabbi Zeira answer, not unsupported assumption about an isolated leaf"
+          },
+          "evidence": [
+            {
+              "end_char": 101,
+              "quote": "אמר ליה ר' ירמיה לרבי זירא והא ר' מאיר עלה בעלמא הוא דאכיל אמר ליה מאגודה אכליה ותנן ירק הנאגד משיאגד",
+              "segment_id": "seg_dad9e998e8423ae30229",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.bundle",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Consider what a great man is testifying about him.",
+            "scope": "Reply relies on witness quality; does not fabricate unreported explicit detail or recant original testimony"
+          },
+          "evidence": [
+            {
+              "end_char": 133,
+              "quote": "ודלמא עישר עליהם ממקום אחר לא נחשדו חברים לתרום שלא מן המוקף ודלמא נתן עיניו בצד זה ואכל בצד אחר אמר ליה חזי מאן גברא רבה קמסהיד עליה",
+              "segment_id": "seg_650b8d857d6543711598",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.greatwitness",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "continuation",
+            "source_id": "ch.s2717.beitshean.s18closed",
+            "target_id": "ch.s2718.beitproof"
+          },
+          "evidence": [
+            {
+              "end_char": 162,
+              "quote": "מתקיף לה יהודה בריה דר' שמעון בן פזי ומי איכא למאן דאמר דבית שאן לאו מארץ ישראל היא והכתיב (שופטים א, כז) ולא הוריש מנשה את בית שאן ואת בנותיה ואת תענך ואת בנותיה",
+              "segment_id": "seg_ccaad0f23730bdb97592",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.e.beitcontinuation",
+          "layer": "edges",
+          "links": [
+            "ch.s2717.beitshean.s18closed",
+            "ch.s2718.beitproof"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    },
+    {
+      "id": "RET18-RIVER-DONKEY",
+      "status": "preserved",
+      "details": "Session18 greaterinitial and equalfinal both cite7a13[0,123), linked by e.17 correction. originalanimal/originalhuman cite7b3[0,220); e.22 qualifies animalexempt and e.23 answers animalobligation. Own/friends animal corroboration retained.",
+      "records": [
+        {
+          "content": {
+            "assertion_mode": "challenged",
+            "conditions": [],
+            "proposition": "How much greater this man is than Moses and six hundred thousand: there once, here three times.",
+            "scope": "Rav Yosef initial comparison, revised after challenge"
+          },
+          "evidence": [
+            {
+              "end_char": 123,
+              "quote": "אמר רב יוסף כמה נפיש גברא ממשה ושתין רבוון דאילו התם חד זימנא והכא תלתא זימנין ודלמא הכא נמי חדא זימנא אלא כמשה ושתין רבוון",
+              "segment_id": "seg_98b29188b36a9418f5c6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.greaterinitial",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "reconciled",
+            "conditions": [],
+            "proposition": "Rather, like Moses and six hundred thousand.",
+            "scope": "Revised comparison replaces claim of greater through three separate splits"
+          },
+          "evidence": [
+            {
+              "end_char": 123,
+              "quote": "אמר רב יוסף כמה נפיש גברא ממשה ושתין רבוון דאילו התם חד זימנא והכא תלתא זימנין ודלמא הכא נמי חדא זימנא אלא כמשה ושתין רבוון",
+              "segment_id": "seg_98b29188b36a9418f5c6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.equalfinal",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "correction",
+            "source_id": "ch.s2718.equalfinal",
+            "target_id": "ch.s2718.greaterinitial"
+          },
+          "evidence": [
+            {
+              "end_char": 123,
+              "quote": "אמר רב יוסף כמה נפיש גברא ממשה ושתין רבוון דאילו התם חד זימנא והכא תלתא זימנין ודלמא הכא נמי חדא זימנא אלא כמשה ושתין רבוון",
+              "segment_id": "seg_98b29188b36a9418f5c6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.e.17",
+          "layer": "edges",
+          "links": [
+            "ch.s2718.equalfinal",
+            "ch.s2718.greaterinitial"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Initial purchase for animal"
+            ],
+            "proposition": "The exemption was taught only where he initially bought it for an animal.",
+            "scope": "Rabbi Yohanan qualification"
+          },
+          "evidence": [
+            {
+              "end_char": 220,
+              "quote": "התם הא אתמר עלה אמר רבי יוחנן לא שנו אלא שלקחן מתחלה לבהמה אבל לקחן מתחלה לאדם ונמלך עליהם לבהמה חייב לעשר והתניא הלוקח פירות מן השוק לאכילה ונמלך עליהן לבהמה הרי זה לא יתן לא לפני בהמתו ולא לפני בהמת חברו אלא אם כן עישר",
+              "segment_id": "seg_741f7b771459b52dc406",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.originalanimal",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Initial human-food purchase",
+              "Subsequent decision for animal"
+            ],
+            "proposition": "If initially bought for a person, then redirected to an animal, it must be tithed.",
+            "scope": "Rabbi Yohanan opposite branch"
+          },
+          "evidence": [
+            {
+              "end_char": 220,
+              "quote": "התם הא אתמר עלה אמר רבי יוחנן לא שנו אלא שלקחן מתחלה לבהמה אבל לקחן מתחלה לאדם ונמלך עליהם לבהמה חייב לעשר והתניא הלוקח פירות מן השוק לאכילה ונמלך עליהן לבהמה הרי זה לא יתן לא לפני בהמתו ולא לפני בהמת חברו אלא אם כן עישר",
+              "segment_id": "seg_741f7b771459b52dc406",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.originalhuman",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "qualification",
+            "source_id": "ch.s2718.originalanimal",
+            "target_id": "ch.s2718.animalexempt"
+          },
+          "evidence": [
+            {
+              "end_char": 220,
+              "quote": "התם הא אתמר עלה אמר רבי יוחנן לא שנו אלא שלקחן מתחלה לבהמה אבל לקחן מתחלה לאדם ונמלך עליהם לבהמה חייב לעשר והתניא הלוקח פירות מן השוק לאכילה ונמלך עליהן לבהמה הרי זה לא יתן לא לפני בהמתו ולא לפני בהמת חברו אלא אם כן עישר",
+              "segment_id": "seg_741f7b771459b52dc406",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.e.22",
+          "layer": "edges",
+          "links": [
+            "ch.s2718.originalanimal",
+            "ch.s2718.animalexempt"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "explicitness": "source_explicit",
+            "relation": "answer",
+            "source_id": "ch.s2718.originalhuman",
+            "target_id": "ch.s2718.q.animalobligation"
+          },
+          "evidence": [
+            {
+              "end_char": 220,
+              "quote": "התם הא אתמר עלה אמר רבי יוחנן לא שנו אלא שלקחן מתחלה לבהמה אבל לקחן מתחלה לאדם ונמלך עליהם לבהמה חייב לעשר והתניא הלוקח פירות מן השוק לאכילה ונמלך עליהן לבהמה הרי זה לא יתן לא לפני בהמתו ולא לפני בהמת חברו אלא אם כן עישר",
+              "segment_id": "seg_741f7b771459b52dc406",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2718.e.23",
+          "layer": "edges",
+          "links": [
+            "ch.s2718.originalhuman",
+            "ch.s2718.q.animalobligation"
+          ],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ]
+    },
+    {
+      "id": "RET18-R01",
+      "status": "required_bounded_context_repair",
+      "details": "No accepted session18 record has evidence from7b10–16. Material context claimed in initial review, particularly7b13 correction/narrowing, remains review-only. Preserve exact hospitality continuation and qualification as context-only evidence with linked explanatory records. Do not imply current white-mule danger wording is an independently general medical assertion.",
+      "affected_record_ids": [
+        "ch.s2718.whitemules",
+        "ch.s2718.q.deathmeal",
+        "ch.s2718.returnpromise",
+        "ch.s2718.yesdine",
+        "ch.s2718.sellproposal",
+        "ch.s2718.stumblingblock",
+        "ch.s2718.abandonproposal",
+        "ch.s2718.moreharm",
+        "ch.s2718.crippleproposal",
+        "ch.s2718.animalpain",
+        "ch.s2718.killproposal",
+        "ch.s2718.waste",
+        "ch.s2718.hospitality"
+      ],
+      "required_scope": [
+        "Retain7b10 narrative outcome separating Rabbi/Pinhas, and7b16 report about Pinhas hospitality practice, linked to initial invitation/deferral and hospitality unit without inventing completed meal.",
+        "Retain7b13 initial life/fatality wording, challenge, corrected recovery wording, further challenge and final white-extremities narrowing; named Yehoshua b Levi/Hanina roles distinct. Bind qualification to whitemules/q.deathmeal scope.",
+        "Full nearby7b10–16 original strings are supplied below for context continuity;7b11–12 and7b14–15 are distinct arguments, do not flatten into blanket qualifications on every prior claim. Context-only no coverage increment.",
+        "Preserve existing hypothetical proposals and local animal-harm/waste objections; later danger qualification does not reverse them into permissions."
+      ]
+    }
+  ],
+  "material_context_original_spans": [
+    {
+      "ref": "Chullin 7b:10",
+      "segment_id": "seg_7eb43132d1413ab57ecc",
+      "start_char": 0,
+      "end_char": 277,
+      "quote": "הוה קא מבתש ביה טובא גבה טורא בינייהו בכה רבי ואמר מה בחייהן כך במיתתן על אחת כמה וכמה דאמר ר' חמא בר חנינא גדולים צדיקים במיתתן יותר מבחייהן שנאמר (מלכים ב יג, כא) ויהי הם קוברים איש והנה ראו [את] הגדוד וישליכו את האיש בקבר אלישע וילך ויגע האיש בעצמות אלישע ויחי ויקם על רגליו"
+    },
+    {
+      "ref": "Chullin 7b:11",
+      "segment_id": "seg_2a0236bf27a0194c1a54",
+      "start_char": 0,
+      "end_char": 152,
+      "quote": "אמר ליה רב פפא לאביי ודילמא לקיומי ביה ברכתא דאליהו דכתיב (מלכים ב ב, ט) ויהי נא פי שנים ברוחך אלי אמר ליה אי הכי היינו דתניא על רגליו עמד ולביתו לא הלך"
+    },
+    {
+      "ref": "Chullin 7b:12",
+      "segment_id": "seg_13842d8906a6b3520840",
+      "start_char": 0,
+      "end_char": 95,
+      "quote": "אלא במה איקיים כדאמר ר' יוחנן שריפא צרעת נעמן שהיא שקולה כמת שנאמר (במדבר יב, יב) אל נא תהי כמת"
+    },
+    {
+      "ref": "Chullin 7b:13",
+      "segment_id": "seg_080abe28643acbb9db29",
+      "start_char": 0,
+      "end_char": 189,
+      "quote": "אמר ר' יהושע בן לוי למה נקרא שמן ימים שאימתם מוטלת על הבריות דאמר ר' חנינא מימי לא שאלני אדם על מכת פרדה לבנה וחיה והא קחזינא דחיי אימא וחיית והא קחזינא דמיתסי דחיוורן ריש כרעייהו קא אמרינן"
+    },
+    {
+      "ref": "Chullin 7b:14",
+      "segment_id": "seg_28a0e6db5c10489f9c54",
+      "start_char": 0,
+      "end_char": 250,
+      "quote": "(דברים ד, לה) אין עוד מלבדו אמר רבי חנינא ואפילו כשפים ההיא איתתא דהות קא מהדרא למישקל עפרא מתותיה כרעיה דרבי חנינא אמר לה שקולי לא מסתייעא מילתיך אין עוד מלבדו כתיב והאמר ר' יוחנן למה נקרא שמן כשפים שמכחישין פמליא של מעלה שאני ר' חנינא דנפישא זכותיה"
+    },
+    {
+      "ref": "Chullin 7b:15",
+      "segment_id": "seg_cda2845da558b39d3a64",
+      "start_char": 0,
+      "end_char": 224,
+      "quote": "ואמר ר' חנינא אין אדם נוקף אצבעו מלמטה אלא א\"כ מכריזין עליו מלמעלה שנאמר (תהלים לז, כג) מה' מצעדי גבר כוננו (משלי כ, כד) ואדם מה יבין דרכו א\"ר אלעזר דם ניקוף מרצה כדם עולה אמר רבא בגודל ימין ובניקוף שני והוא דקאזיל לדבר מצוה"
+    },
+    {
+      "ref": "Chullin 7b:16",
+      "segment_id": "seg_78fceb56ed4e77db0769",
+      "start_char": 0,
+      "end_char": 100,
+      "quote": "אמרו עליו על ר' פנחס בן יאיר מימיו לא בצע על פרוסה שאינה שלו ומיום שעמד על דעתו לא נהנה מסעודת אביו:"
+    }
+  ],
+  "reviewer_error": "Earlier reviews treated read/frozen context and eligibility caveats as sufficient production preservation. This addendum records exact historical/current distinction and revises that implication without overwriting reports.",
+  "constraints": [
+    "No canonical mutations performed.",
+    "No blanket older-tail closure.",
+    "Inherited task gates remain false; gates do not substitute for preserving material evidence."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "verdict": "targeted attribution/exception-scope correction verified; no substantive defect found in the seven added records",
+  "source_first_freeze_sha256": "6132ea941bbf15a8e1c863ba76a3dd25998bc56b530c858fc432e627f7c519c4",
+  "snapshot_sha256": "c707095cba580154adb46bb43f6a50b63affe0eea83f3c5a7455db7adf2e5ad7",
+  "prior_snapshot_sha256": "7d4de3664fbc1bdf7ce11b65101c779855788ef7521677f0091d113963ed0ec2",
+  "proposal_sha256": "3ba9ecffad774ef7d4afb7272da39805378a32f04d25154d9b250fcf423b3d0e",
+  "hashes_verified": true,
+  "additive_integrity": {
+    "added_record_count": 7,
+    "added_ids": [
+      "tem_open_c_a40h2_review001_v2",
+      "tem_open_c_c40c_review001_v2",
+      "tem_open_pc_c40c_review001_v2",
+      "tem_status001_attribution_reversal",
+      "tem_status001_final_pairing",
+      "tem_status001_initial_liability_inference",
+      "tem_status001_initial_liability_position"
+    ],
+    "existing_records_changed_only_to_superseded": [
+      {
+        "id": "tem_open_c_a40h2",
+        "fields": [
+          "release_state"
+        ],
+        "new_release_state": "superseded"
+      },
+      {
+        "id": "tem_open_c_c40c",
+        "fields": [
+          "release_state"
+        ],
+        "new_release_state": "superseded"
+      },
+      {
+        "id": "tem_open_pc_c40c",
+        "fields": [
+          "release_state"
+        ],
+        "new_release_state": "superseded"
+      }
+    ],
+    "original_records_deleted": [],
+    "completed_layer_scope_unchanged": true,
+    "completed_unique_segments_old": 64,
+    "completed_unique_segments_new": 64,
+    "exact_new_evidence_spans_checked": 44
+  },
+  "semantic_comparison": [
+    {
+      "frozen": "T03,T05,T08,T09",
+      "records": [
+        "tem_open_c_c40c_review001_v2",
+        "tem_open_pc_c40c_review001_v2",
+        "tem_open_c_a40h2_review001_v2"
+      ],
+      "verdict": "Final Yose exemption explicit; original ambiguous liability attachment superseded; local source authority preserved."
+    },
+    {
+      "frozen": "T05",
+      "records": [
+        "tem_status001_initial_liability_inference",
+        "tem_status001_initial_liability_position"
+      ],
+      "verdict": "Initial liability assignment preserved as rejected provisional inference, not equally live final version."
+    },
+    {
+      "frozen": "T06,T07,T09",
+      "records": [
+        "tem_status001_final_pairing",
+        "tem_status001_attribution_reversal"
+      ],
+      "verdict": "Final Elazar liability/Yose exemption correctly derived from second proof and scope reattachment, not name ordering. Correction edge points from final pairing to rejected initial inference."
+    },
+    {
+      "frozen": "T01,T02,TC01",
+      "records": [
+        "tem_open_c_a40t0",
+        "tem_open_c_a40t1",
+        "tem_open_c_a40t2",
+        "tem_open_c_a40t3",
+        "tem_open_c_c40b"
+      ],
+      "verdict": "Existing transmitter chain distinguished from ultimate source; initial substitution exception scope explicitly says corrected at3b14. These are contextual checks, not newly repaired records."
+    }
+  ],
+  "qualifications": [
+    "Evidence at4a4–4b1 is used as context for correcting3a18; completed extraction coverage is not inflated. No complete production extraction certification for the wider ten-segment review core.",
+    "4b2 raises speech-as-action objection and4b3 answers with prohibition repaired by positive duty. New final exemption record does not claim a final no-act rationale, so no conflict; these further dialectical units are not claimed fully extracted by this correction.",
+    "Final pairing is a compound contextual claim; this verification does not certify atomic scholar-position export for Elazar or a complete argument graph.",
+    "The existing initial exception position tem_open_pc_c40b has generic asserted status; consumers must retain its linked claim scope marking substitution corrected at3b14. No isolated-row final-rule qualification granted.",
+    "No random-sample accuracy estimate, human-reviewed status, global semantic pass or ML eligibility granted. Original source-only notes and initial errors remain preserved."
+  ],
+  "production_mutated_by_reviewer": false
+}

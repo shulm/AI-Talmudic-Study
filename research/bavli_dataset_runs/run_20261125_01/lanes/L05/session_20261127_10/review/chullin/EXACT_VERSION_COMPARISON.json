@@ -1,0 +1,4365 @@
+{
+  "format": "bounded-exact-version-comparison-v1",
+  "reviewer": "/root/horayot_review",
+  "scope": "Chullin4a:19–4b:17,20cores; continuation4b18–5a14 for closure/refutations",
+  "provenance": {
+    "nonblind_comparator": true,
+    "prior_Chullin_producer_exposure": true,
+    "fresh_reader": "/root/yoma_fresh_7",
+    "fresh_freeze_read_before_new_snapshot": true,
+    "fresh_mixed_records": 155,
+    "fresh_layer_counts": {
+      "questions": 17,
+      "claims": 36,
+      "attributions": 6,
+      "edges": 20,
+      "structure": 20,
+      "utterances": 20,
+      "positions": 36
+    },
+    "new_source_first_credit_for_comparator": false,
+    "new_probability_credit": false
+  },
+  "pins": {
+    "prior": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\0dce64bf439c2436ea857615d451128d57ff8e4db069673d17bc4dc17b99c04f.json",
+      "sha256": "0dce64bf439c2436ea857615d451128d57ff8e4db069673d17bc4dc17b99c04f"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\b0ce5a2b110699b460d566e48510d031a970103fcf76984e7359ab1f8be6566f.json",
+      "sha256": "b0ce5a2b110699b460d566e48510d031a970103fcf76984e7359ab1f8be6566f"
+    },
+    "proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\proposals\\3676605423e895c0f3daf34b7a8c1488e0a1f73e5de6eac847da5036994330b2.json",
+      "sha256": "3676605423e895c0f3daf34b7a8c1488e0a1f73e5de6eac847da5036994330b2"
+    },
+    "fresh": {
+      "path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\review_session20261127_10\\chullin\\FRESH_SOURCE_ONLY_FROZEN.json",
+      "sha256": "5f6b0256173d4c222f739daa721a170dcccd773db9b1b68a5bd097a92a713e41"
+    }
+  },
+  "integrity": {
+    "raw_source_sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
+    "prior737objects_equal": true,
+    "new_records": 175,
+    "historical_records": 912,
+    "new_layer_counts": {
+      "claims": 41,
+      "structure": 2,
+      "attributions": 32,
+      "positions": 10,
+      "edges": 48,
+      "questions": 22,
+      "utterances": 20
+    },
+    "new_evidence_spans_exact": 202,
+    "span_failures": 0,
+    "new_links_and_edge_endpoints_resolve": true,
+    "completed_coverage_by_layer": {
+      "attributions": 92,
+      "claims": 92,
+      "edges": 92,
+      "positions": 92,
+      "questions": 92,
+      "reconciliation": 92,
+      "structure": 92,
+      "utterances": 92
+    },
+    "all_record_ml_eligible_false": true
+  },
+  "mapping": [
+    {
+      "fresh_id": "c_prefer",
+      "fresh_content": {
+        "proposition": "When permitted and forbidden options are available, he does not abandon permitted food to eat forbidden food.",
+        "holder_candidates": [
+          "anonymous explanation of רבא"
+        ],
+        "conditions": [
+          "appetite-driven Jewish carcass-meat eater from 4a:18; not all transgressors"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Appetite-driven carcass eater",
+              "Permitted option available"
+            ],
+            "proposition": "When permitted and prohibited options are available, he does not leave the permitted option and eat the prohibited one.",
+            "scope": "Reason for Rava’s appetite-motive rule, not every category of apostate"
+          },
+          "evidence": [
+            {
+              "end_char": 60,
+              "quote": "מאי טעמא כיון דאיכא התירא ואיסורא לא שביק התירא ואכיל איסורא",
+              "segment_id": "seg_1640478a4b0f7b83c0b4",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.preferpermitted",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_noeffort",
+      "fresh_content": {
+        "proposition": "He will not exert the needed effort.",
+        "holder_candidates": [
+          "anonymous answer"
+        ],
+        "conditions": [
+          "maintains prior checked-knife condition"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Effort needed to secure permitted slaughter"
+            ],
+            "proposition": "He does not trouble himself to make the effort.",
+            "scope": "Answer preserves need for supplied knife inspection; preference does not guarantee self-inspection"
+          },
+          "evidence": [
+            {
+              "end_char": 33,
+              "quote": "אי הכי כי לא בדק נמי מיטרח לא טרח",
+              "segment_id": "seg_690f6edfa6ff79939ee0",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.noeffort",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_scholars_support",
+      "fresh_content": {
+        "proposition": "The rabbis tell Rava a baraita supports him.",
+        "holder_candidates": [
+          "רבנן addressing רבא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The rabbis tell Rava that a baraita supports him.",
+            "scope": "Speakers are rabbis; Rava is addressee, not speaker of their proposed proof"
+          },
+          "evidence": [
+            {
+              "end_char": 62,
+              "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח",
+              "segment_id": "seg_24b2b7be200165362816",
+              "start_char": 0
+            },
+            {
+              "end_char": 25,
+              "quote": "מותר מיד מפני שהן מחליפין",
+              "segment_id": "seg_47eee65930d8304ab696",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.scholarssupport",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_chametz_start",
+      "fresh_content": {
+        "proposition": "The cited rule concerns transgressors’ leaven after Passover; ruling continues at 4b:1.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "After Passover",
+              "Leaven of transgressors"
+            ],
+            "proposition": "The leaven of transgressors after Passover is permitted immediately.",
+            "scope": "Full cross-folio baraita quotation"
+          },
+          "evidence": [
+            {
+              "end_char": 62,
+              "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח",
+              "segment_id": "seg_24b2b7be200165362816",
+              "start_char": 0
+            },
+            {
+              "end_char": 25,
+              "quote": "מותר מיד מפני שהן מחליפין",
+              "segment_id": "seg_47eee65930d8304ab696",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.leavenallowed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_chametz_permit",
+      "fresh_content": {
+        "proposition": "It is permitted immediately because they exchange it.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "after Passover",
+          "exchange as reason"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "After Passover",
+              "Leaven of transgressors"
+            ],
+            "proposition": "The leaven of transgressors after Passover is permitted immediately.",
+            "scope": "Full cross-folio baraita quotation"
+          },
+          "evidence": [
+            {
+              "end_char": 62,
+              "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח",
+              "segment_id": "seg_24b2b7be200165362816",
+              "start_char": 0
+            },
+            {
+              "end_char": 25,
+              "quote": "מותר מיד מפני שהן מחליפין",
+              "segment_id": "seg_47eee65930d8304ab696",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.leavenallowed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The reason is that they exchange it.",
+            "scope": "Baraita’s stated behavior, distinguished below from merely presuming an exchange"
+          },
+          "evidence": [
+            {
+              "end_char": 62,
+              "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח",
+              "segment_id": "seg_24b2b7be200165362816",
+              "start_char": 0
+            },
+            {
+              "end_char": 25,
+              "quote": "מותר מיד מפני שהן מחליפין",
+              "segment_id": "seg_47eee65930d8304ab696",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.exchange",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_yh_assumption",
+      "fresh_content": {
+        "proposition": "Initial assumption: Rabbi Yehuda is the authority, holding leaven after Passover prohibited by Torah law.",
+        "holder_candidates": [
+          "anonymous initial attribution"
+        ],
+        "conditions": [
+          "initial assumption; challenged next"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "challenged",
+            "conditions": [],
+            "proposition": "The initial assumption identifies this baraita with Rabbi Yehuda.",
+            "scope": "סברוה; challenged as non-unique next"
+          },
+          "evidence": [
+            {
+              "end_char": 108,
+              "quote": "סברוה הא מני רבי יהודה היא דאמר חמץ אחר הפסח דאורייתא וקתני מפני שהן מחליפין אלמא לא שביק התירא ואכיל איסורא",
+              "segment_id": "seg_c97680340d8e5d205691",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.yehudainitial",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Leaven after Passover"
+            ],
+            "proposition": "Post-Passover leaven is prohibited by Torah law.",
+            "scope": "Rabbi Yehuda’s quoted position"
+          },
+          "evidence": [
+            {
+              "end_char": 108,
+              "quote": "סברוה הא מני רבי יהודה היא דאמר חמץ אחר הפסח דאורייתא וקתני מפני שהן מחליפין אלמא לא שביק התירא ואכיל איסורא",
+              "segment_id": "seg_c97680340d8e5d205691",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.yehudatorah",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_chametz_infer",
+      "fresh_content": {
+        "proposition": "Because exchange is stated, infer that permitted is not abandoned for forbidden.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The exchange instruction indicates that they do not leave permitted food and eat prohibited food.",
+            "scope": "Initial inference supporting Rava from assumed Torah-prohibition case"
+          },
+          "evidence": [
+            {
+              "end_char": 108,
+              "quote": "סברוה הא מני רבי יהודה היא דאמר חמץ אחר הפסח דאורייתא וקתני מפני שהן מחליפין אלמא לא שביק התירא ואכיל איסורא",
+              "segment_id": "seg_c97680340d8e5d205691",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.exchangeproof",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_rabbinic_limit",
+      "fresh_content": {
+        "proposition": "Proposed objection: leniency in rabbinic law need not extend to Torah law.",
+        "holder_candidates": [
+          "anonymous objection"
+        ],
+        "conditions": [
+          "hypothetical Rabbi Shimon attribution"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "challenged",
+            "conditions": [
+              "Hypothesis: baraita follows Rabbi Shimon"
+            ],
+            "proposition": "Perhaps leniency applies for a rabbinic prohibition but not a Torah prohibition.",
+            "scope": "Suggested objection to transferring leaven evidence to slaughter; answered next"
+          },
+          "evidence": [
+            {
+              "end_char": 81,
+              "quote": "ממאי דלמא ר\"ש היא דאמר חמץ אחר הפסח דרבנן וכי מקילינן בדרבנן בדאורייתא לא מקילינן",
+              "segment_id": "seg_bc5e7be30839fb7b1dd7",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.leniencyobjection",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_certain_exchange",
+      "fresh_content": {
+        "proposition": "It says because they exchange, indicating definite exchange.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "It says “because they exchange,” meaning they certainly exchange.",
+            "scope": "Answer establishes behavioral premise rather than merely lower evidentiary threshold"
+          },
+          "evidence": [
+            {
+              "end_char": 127,
+              "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+              "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.definiteexchange",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_afortiori",
+      "fresh_content": {
+        "proposition": "If he does not abandon permitted food even for a rabbinically prohibited item, all the more for a Torah-prohibited item.",
+        "holder_candidates": [
+          "anonymous answer"
+        ],
+        "conditions": [
+          "supports Rava without settling baraita’s named authority"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Avoiding the rabbinic prohibition supports avoidance of a Torah prohibition all the more.",
+            "scope": "Defense of Rava’s support even on Rabbi Shimon identification"
+          },
+          "evidence": [
+            {
+              "end_char": 127,
+              "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+              "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.afortioriproof",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_all_slaughter",
+      "fresh_content": {
+        "proposition": "The baraita says all slaughter, including Kuti, uncircumcised person, and Jewish transgressor.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "subsequent inquiry determines scope of categories"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Even a Kuti is included in those who slaughter.",
+            "scope": "Quoted all-slaughter baraita; scope debated locally, not universal final Kuti ruling"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.kutibaraita",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Even an uncircumcised person is included.",
+            "scope": "Quoted all-slaughter baraita; identity clarified next"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.uncircbaraita",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Even an Israelite apostate is included.",
+            "scope": "Quoted all-slaughter baraita; category disputed below"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.apostatebaraita",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_medical",
+      "fresh_content": {
+        "proposition": "If his brothers died from circumcision, he is a fully qualified Jew; that is not the exceptional category sought.",
+        "holder_candidates": [
+          "anonymous elimination"
+        ],
+        "conditions": [
+          "medical danger case"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Brothers died because of circumcision"
+            ],
+            "proposition": "If his brothers died from circumcision, he is a fully proper Israelite.",
+            "scope": "Reason that this obvious case cannot explain emphasized inclusion"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.brothersdead",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_uncircumcision_transgression",
+      "fresh_content": {
+        "proposition": "The category instead concerns transgression regarding circumcision.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "מומר לערלות"
+            ],
+            "proposition": "The intended uncircumcised case is an apostate regarding circumcision.",
+            "scope": "Local conclusion about first category"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.circumapostate",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_one_not_all",
+      "fresh_content": {
+        "proposition": "This presumes transgression of one matter does not make him a transgressor of the entire Torah.",
+        "holder_candidates": [
+          "anonymous inference"
+        ],
+        "conditions": [
+          "scope later tested for idolatry separately"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "One specific matter"
+            ],
+            "proposition": "Apostasy regarding one matter is not apostasy regarding the whole Torah.",
+            "scope": "Principle inferred from circumcision case"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.onevsall",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_other_redundant",
+      "fresh_content": {
+        "proposition": "If a different offense, the circumcision-transgressor case already supplies that category.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "An apostate regarding a different matter would duplicate the circumcision case.",
+            "scope": "Redundancy argument about latter clause"
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא",
+              "segment_id": "seg_5b502c9807b6cea44b91",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.otherredundant",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_same_proposed",
+      "fresh_content": {
+        "proposition": "Proposed inference: it means transgression of this same matter, supporting Rava.",
+        "holder_candidates": [
+          "anonymous proposed support"
+        ],
+        "conditions": [
+          "same slaughter/forbidden-meat matter"
+        ],
+        "assertion_mode": "challenged by alternative next segment"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "challenged",
+            "conditions": [],
+            "proposition": "The proposed inference reads the baraita as permitting the same-matter apostate, supporting Rava.",
+            "scope": "Proposed support disputed by alternative interpretation next"
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא",
+              "segment_id": "seg_5b502c9807b6cea44b91",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.sameproposed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_same_reject",
+      "fresh_content": {
+        "proposition": "Counterreading: the same-offense transgressor need not be included.",
+        "holder_candidates": [
+          "anonymous alternative"
+        ],
+        "conditions": [
+          "not an unqualified final rejection of Rava"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "hypothetical",
+            "conditions": [],
+            "proposition": "One may instead deny permission for the same-matter apostate in interpreting this baraita.",
+            "scope": "Alternative blocking this proof, not a final refutation of Rava’s separate appetite rule"
+          },
+          "evidence": [
+            {
+              "end_char": 165,
+              "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+              "segment_id": "seg_0bd08a4c040c4ec28841",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.samenotnecessary",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_habituation",
+      "fresh_content": {
+        "proposition": "Habit makes it seem permitted to him.",
+        "holder_candidates": [
+          "anonymous counterreading rationale"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Habitual violation of that same matter"
+            ],
+            "proposition": "Because he is accustomed to it, it seems permitted to him.",
+            "scope": "Reason within alternative interpretation"
+          },
+          "evidence": [
+            {
+              "end_char": 165,
+              "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+              "segment_id": "seg_0bd08a4c040c4ec28841",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.habit",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_idolatry_alternative",
+      "fresh_content": {
+        "proposition": "Alternative interpretation: an idolatry transgressor, following Rav Anan’s report.",
+        "holder_candidates": [
+          "anonymous counterreading"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "The baraita could instead concern an apostate to idolatry, following Rav Anan’s report.",
+            "scope": "Alternative to same-matter reading; later5a6–14 rejects Rav Anan’s idolatry rule"
+          },
+          "evidence": [
+            {
+              "end_char": 165,
+              "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+              "segment_id": "seg_0bd08a4c040c4ec28841",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.idolatryalternative",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_shmuel_report1",
+      "fresh_content": {
+        "proposition": "Rav Anan reports Shmuel permitting eating the slaughter of an idolatrous Jew.",
+        "holder_candidates": [
+          "שמואל reported by רב ענן"
+        ],
+        "conditions": [
+          "reported position, later expressly refuted in 5a:14"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "Israelite apostate to idolatry"
+            ],
+            "proposition": "One may eat from the slaughter of an Israelite apostate to idolatry.",
+            "scope": "Shmuel’s rule as cited through Rav Anan; local report retained, explicit refutation of Rav Anan at5a14 governs final status"
+          },
+          "evidence": [
+            {
+              "end_char": 165,
+              "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+              "segment_id": "seg_0bd08a4c040c4ec28841",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.shmuelcited",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_shmuel_report2",
+      "fresh_content": {
+        "proposition": "The discussion restates Rav Anan’s report of Shmuel permitting this slaughter.",
+        "holder_candidates": [
+          "שמואל reported by רב ענן"
+        ],
+        "conditions": [
+          "repeat occurrence preserved; not new independent view"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "Israelite apostate to idolatry"
+            ],
+            "proposition": "One may eat from the slaughter of an Israelite apostate to idolatry.",
+            "scope": "Repeated גופא report preserved as separate occurrence; later refuted, not merged with Rava appetite case"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד",
+              "segment_id": "seg_89f75623c6393185447c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.shmuelresumed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_jehoshaphat",
+      "fresh_content": {
+        "proposition": "The report is supported by Jehoshaphat enjoying Ahab’s feast.",
+        "holder_candidates": [
+          "argument accompanying report"
+        ],
+        "conditions": [
+          "scriptural narrative offered as proof, subject to subsequent objections"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Jehoshaphat king of Judah benefited from Ahab’s meal.",
+            "scope": "Proposed historical proof for reported idolatry-slaughter permission; objections interrogate participation and slaughterers"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד",
+              "segment_id": "seg_89f75623c6393185447c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.mealexample",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The cited verse says Ahab slaughtered sheep and cattle in abundance for him and his people and persuaded him to ascend to Ramoth-gilead.",
+            "scope": "Full proof text including abundance and persuasion, used in successive answers"
+          },
+          "evidence": [
+            {
+              "end_char": 210,
+              "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד",
+              "segment_id": "seg_89f75623c6393185447c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.mealverse",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_enticed",
+      "fresh_content": {
+        "proposition": "The verse says he enticed him.",
+        "holder_candidates": [
+          "anonymous reply"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "ויסיתהו is written.",
+            "scope": "First answer relying on persuasion wording"
+          },
+          "evidence": [
+            {
+              "end_char": 69,
+              "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים",
+              "segment_id": "seg_36960b47bf1e69f0d67f",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.persuasionword",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_notwords",
+      "fresh_content": {
+        "proposition": "Reply: enticement is not by words.",
+        "holder_candidates": [
+          "anonymous local reply"
+        ],
+        "conditions": [
+          "challenged and qualified next"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "There is no persuasion through words.",
+            "scope": "Local answer tested by scriptural counterexamples, not a universal linguistic certification"
+          },
+          "evidence": [
+            {
+              "end_char": 69,
+              "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים",
+              "segment_id": "seg_36960b47bf1e69f0d67f",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.nowordspersuasion",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_fooddrink",
+      "fresh_content": {
+        "proposition": "Answer: through food and drink.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "That persuasion is through eating and drinking.",
+            "scope": "Answer interpreting the brother verse"
+          },
+          "evidence": [
+            {
+              "end_char": 103,
+              "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+              "segment_id": "seg_891693823dae6c1f9333",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.brotherfood",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_divine_exception",
+      "fresh_content": {
+        "proposition": "The heavenly case differs.",
+        "holder_candidates": [
+          "anonymous distinction"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Above is different.",
+            "scope": "Answer distinguishes divine context from ordinary meal-persuasion usage"
+          },
+          "evidence": [
+            {
+              "end_char": 103,
+              "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+              "segment_id": "seg_891693823dae6c1f9333",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.heavendifferent",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_drinkanalogy",
+      "fresh_content": {
+        "proposition": "Proposed answer: if drinking relies on idolatry not disqualifying him for the whole Torah, the same should apply to eating.",
+        "holder_candidates": [
+          "anonymous proposed analogy"
+        ],
+        "conditions": [
+          "challenged next"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "The proposed reply treats drinking and eating alike under non-universal apostasy.",
+            "scope": "Provisional analogy rejected next"
+          },
+          "evidence": [
+            {
+              "end_char": 150,
+              "quote": "ודלמא משתא אשתי מיכל לא אכל מאי שנא שתיה דאמרינן מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה אכילה נמי מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_7dbcedee1609ea21343b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.drinkcomparison",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_wine_distinction",
+      "fresh_content": {
+        "proposition": "Counterargument: the drink was ordinary gentile wine, whose prohibition had not yet been enacted.",
+        "holder_candidates": [
+          "anonymous distinction"
+        ],
+        "conditions": [
+          "historical narrative context"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Historical meal period before wine prohibition"
+            ],
+            "proposition": "The drinking would concern ordinary gentile wine, which had not yet been prohibited.",
+            "scope": "Temporal legal distinction undermining analogy"
+          },
+          "evidence": [
+            {
+              "end_char": 123,
+              "quote": "הכי השתא שתיה סתם יינן הוא ועדיין לא נאסר יינן של עובדי כוכבים אבל אכילה אימא לך מומר לעבודת כוכבים הוי מומר לכל התורה כולה",
+              "segment_id": "seg_ff075cc8d0e0899994ae",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.wineunprohibited",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_eating_open",
+      "fresh_content": {
+        "proposition": "Eating could still be disallowed if idolatry makes him a transgressor of the entire Torah.",
+        "holder_candidates": [
+          "anonymous hypothetical counterargument"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "hypothetical",
+            "conditions": [
+              "Eating/slaughter rather than then-unprohibited wine"
+            ],
+            "proposition": "For eating, one could still say apostasy to idolatry is apostasy to the whole Torah.",
+            "scope": "Counter-possibility defeating drinking analogy; not yet final proof"
+          },
+          "evidence": [
+            {
+              "end_char": 123,
+              "quote": "הכי השתא שתיה סתם יינן הוא ועדיין לא נאסר יינן של עובדי כוכבים אבל אכילה אימא לך מומר לעבודת כוכבים הוי מומר לכל התורה כולה",
+              "segment_id": "seg_ff075cc8d0e0899994ae",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.foodmaybeall",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_royal_custom",
+      "fresh_content": {
+        "proposition": "First alternative answer: a king does not customarily drink without eating.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Alternatively, it is not a king’s custom to drink without eating.",
+            "scope": "First independent answer to drinking-only hypothesis"
+          },
+          "evidence": [
+            {
+              "end_char": 93,
+              "quote": "איבעית אימא לאו אורחיה דמלכא משתיא בלא מיכלא ואיבעית אימא ויזבח ויסיתהו כתיב במה הסיתו בזביחה",
+              "segment_id": "seg_b95ec9f1ea00aef75586",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.royalcustom",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_slaughter_entice",
+      "fresh_content": {
+        "proposition": "Second alternative: the paired slaughter/enticement wording shows enticement by slaughter.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Alternatively, the paired words ויזבח and ויסיתהו show persuasion through slaughter.",
+            "scope": "Second independent answer; not collapsed with royal-custom rationale"
+          },
+          "evidence": [
+            {
+              "end_char": 93,
+              "quote": "איבעית אימא לאו אורחיה דמלכא משתיא בלא מיכלא ואיבעית אימא ויזבח ויסיתהו כתיב במה הסיתו בזביחה",
+              "segment_id": "seg_b95ec9f1ea00aef75586",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.slaughterpersuasion",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_abundance",
+      "fresh_content": {
+        "proposition": "The verse says in abundance; Obadiah alone could not suffice.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "לרוב is written; Obadiah would not have sufficed.",
+            "scope": "Answer from large quantity"
+          },
+          "evidence": [
+            {
+              "end_char": 45,
+              "quote": "ודלמא עובדיה זבח לרוב כתיב עובדיה לא הוה ספיק",
+              "segment_id": "seg_afda8f395eb37b9539e3",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.toomany",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_seventhousand_text",
+      "fresh_content": {
+        "proposition": "The question invokes the verse about seven thousand who did not bow to Baal.",
+        "holder_candidates": [
+          "scriptural citation in objection"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Cited I Kings19:18 alternative righteous slaughterers"
+            ],
+            "formulation": "Perhaps the seven thousand who had not bowed to Baal slaughtered?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "ודלמא שבעת אלפים זבוח דכתיב (מלכים א יט, יח) והשארתי בישראל שבעת אלפים כל הברכים אשר לא כרעו לבעל וגו' טמורי הוו מיטמרי מאיזבל",
+              "segment_id": "seg_ac84b55779dceba7472c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.seventhousand",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_hiding",
+      "fresh_content": {
+        "proposition": "Answer: they were hiding from Jezebel.",
+        "holder_candidates": [
+          "anonymous sugya"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "They were hiding from Jezebel.",
+            "scope": "Answer rejecting their availability as slaughterers"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "ודלמא שבעת אלפים זבוח דכתיב (מלכים א יט, יח) והשארתי בישראל שבעת אלפים כל הברכים אשר לא כרעו לבעל וגו' טמורי הוו מיטמרי מאיזבל",
+              "segment_id": "seg_ac84b55779dceba7472c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.hiding",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_ahab_rebuttal",
+      "fresh_content": {
+        "proposition": "Answer rejects that possibility by citing the ruler/listening-to-falsehood verse.",
+        "holder_candidates": [
+          "anonymous narrative argument"
+        ],
+        "conditions": [
+          "specific proof setting; not a general present-day social classification"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "That is rejected through the verse that a ruler listening to falsehood has wicked servants.",
+            "scope": "Proverb applied to Ahab’s men in this proof, not a universal unsupported historical survey"
+          },
+          "evidence": [
+            {
+              "end_char": 90,
+              "quote": "ודלמא גברי דאחאב הוו מעלו לא ס\"ד דכתיב (משלי כט, יב) מושל מקשיב על דבר שקר כל משרתיו רשעים",
+              "segment_id": "seg_ef54b8b86de6e5ba757d",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.ahabwicked",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "c_separate_obadiah",
+      "fresh_content": {
+        "proposition": "Proposed scenario: Ahab’s servants slaughtered for Jehoshaphat’s servants, while Obadiah slaughtered for Jehoshaphat.",
+        "holder_candidates": [
+          "anonymous hypothetical objection"
+        ],
+        "conditions": [
+          "answered at 4b:18; not asserted historical fact"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "Perhaps Ahab’s men slaughtered and Jehoshaphat’s men ate their slaughter.",
+            "scope": "First part of proposed scenario; rejected by continuation4b18"
+          },
+          "evidence": [
+            {
+              "end_char": 91,
+              "quote": "ודלמא גברי דיהושפט נמי לא הוו מעלו זבוח גברי דאחאב אכול גברי דיהושפט זבוח עובדיה אכל יהושפט",
+              "segment_id": "seg_f0d7fa173df6581bb0f8",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.splitservants",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [],
+            "proposition": "Perhaps Obadiah slaughtered for Jehoshaphat himself.",
+            "scope": "Second part of proposed scenario; rejected by continuation4b18"
+          },
+          "evidence": [
+            {
+              "end_char": 91,
+              "quote": "ודלמא גברי דיהושפט נמי לא הוו מעלו זבוח גברי דאחאב אכול גברי דיהושפט זבוח עובדיה אכל יהושפט",
+              "segment_id": "seg_f0d7fa173df6581bb0f8",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.splitking",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_reason",
+      "fresh_content": {
+        "formulation": "What grounds Rava’s preceding slaughter permission?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Appetite-driven carcass eater",
+              "Checked knife supplied"
+            ],
+            "formulation": "What is the reason for Rava’s permission?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 60,
+              "quote": "מאי טעמא כיון דאיכא התירא ואיסורא לא שביק התירא ואכיל איסורא",
+              "segment_id": "seg_1640478a4b0f7b83c0b4",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.reason",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_unchecked",
+      "fresh_content": {
+        "formulation": "Why not permit even without the knife check?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Reason that he prefers available permitted food"
+            ],
+            "formulation": "If so, should permission apply even without checking the knife?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 33,
+              "quote": "אי הכי כי לא בדק נמי מיטרח לא טרח",
+              "segment_id": "seg_690f6edfa6ff79939ee0",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.unchecked",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_shimon",
+      "fresh_content": {
+        "formulation": "Why assume Rabbi Yehuda? Perhaps Rabbi Shimon, for whom post-Passover prohibition is rabbinic?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Initial baraita identification"
+            ],
+            "formulation": "How do we know it is Rabbi Yehuda—perhaps it is Rabbi Shimon?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 81,
+              "quote": "ממאי דלמא ר\"ש היא דאמר חמץ אחר הפסח דרבנן וכי מקילינן בדרבנן בדאורייתא לא מקילינן",
+              "segment_id": "seg_bc5e7be30839fb7b1dd7",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.whoyehuda",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Leaven after Passover"
+            ],
+            "proposition": "Post-Passover leaven is prohibited rabbinically.",
+            "scope": "Rabbi Shimon’s cited position"
+          },
+          "evidence": [
+            {
+              "end_char": 81,
+              "quote": "ממאי דלמא ר\"ש היא דאמר חמץ אחר הפסח דרבנן וכי מקילינן בדרבנן בדאורייתא לא מקילינן",
+              "segment_id": "seg_bc5e7be30839fb7b1dd7",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.shimonrabbinic",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_wording",
+      "fresh_content": {
+        "formulation": "Even granting Rabbi Shimon, does the baraita say merely I presume they exchanged it?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Distinguishing presumption from definite behavior",
+              "Baraita says מפני שמחליפין"
+            ],
+            "formulation": "Even if it follows Rabbi Shimon, does it say “I presume they exchanged”?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 127,
+              "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+              "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.presumedexchange",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_baraita_support",
+      "fresh_content": {
+        "formulation": "Can the following baraita support him?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Proposed further support"
+            ],
+            "formulation": "Shall the baraita “all slaughter,” even a Kuti, uncircumcised person and Israelite apostate, support Rava?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.allslaughterproof",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_uncircumcised",
+      "fresh_content": {
+        "formulation": "What uncircumcised case is intended?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Baraita specifically includes ערל"
+            ],
+            "formulation": "What kind of uncircumcised person is meant?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 195,
+              "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_2e1a485e8324b552669e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.whichuncirc",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_transgressor",
+      "fresh_content": {
+        "formulation": "What transgressor is meant by the final additional category?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "All-slaughter baraita already includes circumcision apostate"
+            ],
+            "formulation": "What kind of Israelite apostate is meant in the final clause?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 105,
+              "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא",
+              "segment_id": "seg_5b502c9807b6cea44b91",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.whichapostate",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_habit_reason",
+      "fresh_content": {
+        "formulation": "Why exclude the same-offense transgressor under this counterreading?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Alternative interpretation rejecting proposed proof"
+            ],
+            "formulation": "Why might the same-matter apostate be excluded?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 165,
+              "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+              "segment_id": "seg_0bd08a4c040c4ec28841",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.samewhy",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_noeat",
+      "fresh_content": {
+        "formulation": "Perhaps Ahab slaughtered but Jehoshaphat did not eat?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Ahab’s slaughter does not alone establish participation"
+            ],
+            "formulation": "Perhaps he slaughtered, but Jehoshaphat did not eat?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 69,
+              "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים",
+              "segment_id": "seg_36960b47bf1e69f0d67f",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.slaughternoteat",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_words",
+      "fresh_content": {
+        "formulation": "Perhaps the enticement was by words?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Challenge to inferring eating from ויסיתהו"
+            ],
+            "formulation": "Perhaps the persuasion was through words?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 69,
+              "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים",
+              "segment_id": "seg_36960b47bf1e69f0d67f",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.justwords",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_brother",
+      "fresh_content": {
+        "formulation": "Does כי יסיתך אחיך not challenge that assertion?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Challenge to no-persuasion-through-words answer"
+            ],
+            "formulation": "Is that so—what about כי יסיתך אחיך?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 103,
+              "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+              "segment_id": "seg_891693823dae6c1f9333",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.brotherverse",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_job",
+      "fresh_content": {
+        "formulation": "What about ותסיתני בו לבלעו חנם?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Further challenge from Job verse"
+            ],
+            "formulation": "What about ותסיתני בו לבלעו חנם?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 103,
+              "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+              "segment_id": "seg_891693823dae6c1f9333",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.jobverse",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_drinkonly",
+      "fresh_content": {
+        "formulation": "Perhaps he drank but did not eat?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Meal evidence could show drink alone"
+            ],
+            "formulation": "Perhaps Jehoshaphat drank but did not eat?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 150,
+              "quote": "ודלמא משתא אשתי מיכל לא אכל מאי שנא שתיה דאמרינן מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה אכילה נמי מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה",
+              "segment_id": "seg_7dbcedee1609ea21343b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.drinknoteat",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_obadiah",
+      "fresh_content": {
+        "formulation": "Perhaps Obadiah performed the slaughter?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Would avoid proof from Ahab-associated slaughterers"
+            ],
+            "formulation": "Perhaps Obadiah slaughtered?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 45,
+              "quote": "ודלמא עובדיה זבח לרוב כתיב עובדיה לא הוה ספיק",
+              "segment_id": "seg_afda8f395eb37b9539e3",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.ovadyah",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_seventhousand",
+      "fresh_content": {
+        "formulation": "Perhaps the seven thousand performed the slaughter?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Cited I Kings19:18 alternative righteous slaughterers"
+            ],
+            "formulation": "Perhaps the seven thousand who had not bowed to Baal slaughtered?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 126,
+              "quote": "ודלמא שבעת אלפים זבוח דכתיב (מלכים א יט, יח) והשארתי בישראל שבעת אלפים כל הברכים אשר לא כרעו לבעל וגו' טמורי הוו מיטמרי מאיזבל",
+              "segment_id": "seg_ac84b55779dceba7472c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.seventhousand",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_ahab_servants",
+      "fresh_content": {
+        "formulation": "Perhaps Ahab’s servants were upright?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Alternative that slaughterers were reliable despite Ahab"
+            ],
+            "formulation": "Perhaps Ahab’s men were upright?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 90,
+              "quote": "ודלמא גברי דאחאב הוו מעלו לא ס\"ד דכתיב (משלי כט, יב) מושל מקשיב על דבר שקר כל משרתיו רשעים",
+              "segment_id": "seg_ef54b8b86de6e5ba757d",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.ahabupright",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    },
+    {
+      "fresh_id": "q_jehoshaphat_servants",
+      "fresh_content": {
+        "formulation": "Perhaps Jehoshaphat’s servants also were not upright?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Alternative division of meal consumers and slaughterers",
+              "Answered explicitly at4b18"
+            ],
+            "formulation": "Perhaps Jehoshaphat’s men too were not upright?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 91,
+              "quote": "ודלמא גברי דיהושפט נמי לא הוו מעלו זבוח גברי דאחאב אכול גברי דיהושפט זבוח עובדיה אכל יהושפט",
+              "segment_id": "seg_f0d7fa173df6581bb0f8",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2710.q.yehoshapatnot",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; current assertion status tracks later context more explicitly than fresh wording where needed"
+    }
+  ],
+  "extra_producer_source_supported": [
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Definite exchanging behavior",
+            "Rabbinic-to-Torah inference"
+          ],
+          "formulation": "If they do not leave permitted food for prohibited food even in a rabbinic matter, is that not all the more true for a Torah prohibition?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 127,
+            "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+            "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.q.afortiori",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit interrogative retained separately; not unsupported extra doctrine."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Drinking/eating analogy"
+          ],
+          "formulation": "Are these cases comparable?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 123,
+            "quote": "הכי השתא שתיה סתם יינן הוא ועדיין לא נאסר יינן של עובדי כוכבים אבל אכילה אימא לך מומר לעבודת כוכבים הוי מומר לכל התורה כולה",
+            "segment_id": "seg_ff075cc8d0e0899994ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.q.comparable",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit interrogative retained separately; not unsupported extra doctrine."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Proposed rejection of drinking-only distinction"
+          ],
+          "formulation": "Why should drinking differ from eating in applying the rule that apostasy to idolatry is not apostasy to the whole Torah?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 150,
+            "quote": "ודלמא משתא אשתי מיכל לא אכל מאי שנא שתיה דאמרינן מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה אכילה נמי מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_7dbcedee1609ea21343b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.q.drinkdifferent",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit interrogative retained separately; not unsupported extra doctrine."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Second answer joins ויזבח and ויסיתהו"
+          ],
+          "formulation": "By what did he persuade him?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 93,
+            "quote": "איבעית אימא לאו אורחיה דמלכא משתיא בלא מיכלא ואיבעית אימא ויזבח ויסיתהו כתיב במה הסיתו בזביחה",
+            "segment_id": "seg_b95ec9f1ea00aef75586",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.q.persuadedbywhat",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit interrogative retained separately; not unsupported extra doctrine."
+    },
+    {
+      "record": {
+        "content": {
+          "answer_set_status": "partial",
+          "conditions": [
+            "Redundancy of different-matter interpretation",
+            "Proposed appetite-driven slaughter relevance"
+          ],
+          "formulation": "Must it not therefore mean an apostate regarding this very matter, in accordance with Rava?",
+          "question_origin": "explicit"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא",
+            "segment_id": "seg_5b502c9807b6cea44b91",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.q.sameoffense",
+        "layer": "questions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      "assessment": "Explicit interrogative retained separately; not unsupported extra doctrine."
+    }
+  ],
+  "question_review": {
+    "producer": 22,
+    "fresh": 17,
+    "missing_explicit_questions_identified": [],
+    "assessment": "Extra rhetorical question nodes preserve a-fortiori, same-offense inference, drinking distinction, comparability and persuasion means. All core challenges covered, endpoint answer belongs to context not silently completed within core."
+  },
+  "semantic_checks": [
+    "Rava preference rationale conditional on appetite motive and available permitted food; no-effort answer preserves checked-knife condition. Rabbis address Rava, not reverse speaker/addressee.",
+    "Leaven baraita continues across folio. Yehuda initial attribution challenged, Shimon rabbinic view separately cited. Definite exchange, not merely presumption, supports a-fortiori without uniquely deciding baraita author.",
+    "Medical circumcision exemption distinguished from circumcision transgression. Single-offense principle does not automatically settle idolatry. Proposed same-offense support is challenged, not blanket rejection of Rava.",
+    "Rav Anan transmitter and Shmuel substantive holder separately represented in both citation and repeated גופא occurrence. Both report claims marked rejected based on explicit5a14 refutation, with occurrence distinction retained. No Rav/Rav Anan confusion.",
+    "Jehoshaphat meal evidence, no-eating and words alternatives, brother/Job objections and divine exception retained as staged proof. Drinking analogy rejected by historical wine-law distinction; eating remains open under that counterargument.",
+    "Royal-custom and paired-slaughter/enticement alternatives remain separate. Obadiah insufficient quantity, seven thousand hiding, and Ahab-servant verse arguments source-supported.",
+    "Endpoint split-servant/king scenario marked rejected from4b18 continuation, not asserted as history. Further separate-meal proofs and eventual5a14 refutation do not turn Rava appetite-specific rule into the refuted idolatry report."
+  ],
+  "role_review": {
+    "records": [
+      {
+        "content": {
+          "candidates": [
+            "רב ענן"
+          ],
+          "role": "transmitter",
+          "scope": "Rav Anan reports Shmuel; report subsequently explicitly refuted at5a14",
+          "surface": "רב ענן אמר שמואל",
+          "transmission_chain": [
+            "רב ענן",
+            "שמואל"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 165,
+            "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+            "segment_id": "seg_0bd08a4c040c4ec28841",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.ananreport",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.shmuelcited"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רב ענן"
+          ],
+          "role": "transmitter",
+          "scope": "Rav Anan reports Shmuel; report subsequently explicitly refuted at5a14",
+          "surface": "רב ענן אמר שמואל",
+          "transmission_chain": [
+            "רב ענן",
+            "שמואל"
+          ]
+        },
+        "evidence": [
+          {
+            "end_char": 210,
+            "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד",
+            "segment_id": "seg_89f75623c6393185447c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.ananresumed",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.shmuelresumed"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous all-slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Quoted all-slaughter baraita; category disputed below",
+          "surface": "Anonymous all-slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 195,
+            "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_2e1a485e8324b552669e",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.apostatebaraita.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.apostatebaraita"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous leaven baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Baraita’s stated behavior, distinguished below from merely presuming an exchange",
+          "surface": "Anonymous leaven baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח",
+            "segment_id": "seg_24b2b7be200165362816",
+            "start_char": 0
+          },
+          {
+            "end_char": 25,
+            "quote": "מותר מיד מפני שהן מחליפין",
+            "segment_id": "seg_47eee65930d8304ab696",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.exchange.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.exchange"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous all-slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Quoted all-slaughter baraita; scope debated locally, not universal final Kuti ruling",
+          "surface": "Anonymous all-slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 195,
+            "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_2e1a485e8324b552669e",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.kutibaraita.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.kutibaraita"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous leaven baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Full cross-folio baraita quotation",
+          "surface": "Anonymous leaven baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח",
+            "segment_id": "seg_24b2b7be200165362816",
+            "start_char": 0
+          },
+          {
+            "end_char": 25,
+            "quote": "מותר מיד מפני שהן מחליפין",
+            "segment_id": "seg_47eee65930d8304ab696",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.leavenallowed.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.leavenallowed"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבנן הפונים לרבא"
+          ],
+          "role": "position_holder",
+          "scope": "Speakers are rabbis; Rava is addressee, not speaker of their proposed proof",
+          "surface": "רבנן הפונים לרבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח",
+            "segment_id": "seg_24b2b7be200165362816",
+            "start_char": 0
+          },
+          {
+            "end_char": 25,
+            "quote": "מותר מיד מפני שהן מחליפין",
+            "segment_id": "seg_47eee65930d8304ab696",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.scholarssupport.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.scholarssupport"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבי שמעון"
+          ],
+          "role": "position_holder",
+          "scope": "Rabbi Shimon’s cited position",
+          "surface": "רבי שמעון",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 81,
+            "quote": "ממאי דלמא ר\"ש היא דאמר חמץ אחר הפסח דרבנן וכי מקילינן בדרבנן בדאורייתא לא מקילינן",
+            "segment_id": "seg_bc5e7be30839fb7b1dd7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.shimonrabbinic.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.shimonrabbinic"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "שמואל"
+          ],
+          "role": "position_holder",
+          "scope": "Shmuel’s rule as cited through Rav Anan; local report retained, explicit refutation of Rav Anan at5a14 governs final status",
+          "surface": "שמואל",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 165,
+            "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+            "segment_id": "seg_0bd08a4c040c4ec28841",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.shmuelcited.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.shmuelcited"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "שמואל"
+          ],
+          "role": "position_holder",
+          "scope": "Repeated גופא report preserved as separate occurrence; later refuted, not merged with Rava appetite case",
+          "surface": "שמואל",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 210,
+            "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד",
+            "segment_id": "seg_89f75623c6393185447c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.shmuelresumed.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.shmuelresumed"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous all-slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Quoted all-slaughter baraita; identity clarified next",
+          "surface": "Anonymous all-slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 195,
+            "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_2e1a485e8324b552669e",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.uncircbaraita.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.uncircbaraita"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבי יהודה"
+          ],
+          "role": "position_holder",
+          "scope": "Rabbi Yehuda’s quoted position",
+          "surface": "רבי יהודה",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 108,
+            "quote": "סברוה הא מני רבי יהודה היא דאמר חמץ אחר הפסח דאורייתא וקתני מפני שהן מחליפין אלמא לא שביק התירא ואכיל איסורא",
+            "segment_id": "seg_c97680340d8e5d205691",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.yehudatorah.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2710.yehudatorah"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ],
+    "assessment": "Anan transmitter/Shmuel holder explicit; rabbis speaker-side of support retained; named leaven positions distinct from anonymous hypothesis selecting baraita authority."
+  },
+  "graph_review": {
+    "producer_edges": 48,
+    "fresh_edges": 20,
+    "exact_graph_equivalence_claimed": false,
+    "assessment": "All48 final edge directions checked. Source of support is proof -> claim, questions object to premises, alternative drink answers -> question. Rejected/hypothetical node status must remain attached to answer/support edges. Separate restatement edge not required for preserved two distinct report occurrences; no exhaustive graph qualification.",
+    "records": [
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.preferpermitted",
+          "target_id": "ch.s2710.q.reason"
+        },
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "מאי טעמא כיון דאיכא התירא ואיסורא לא שביק התירא ואכיל איסורא",
+            "segment_id": "seg_1640478a4b0f7b83c0b4",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.0",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.preferpermitted",
+          "ch.s2710.q.reason"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.preferpermitted",
+          "target_id": "ch.s2709.ravaeat"
+        },
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "מאי טעמא כיון דאיכא התירא ואיסורא לא שביק התירא ואכיל איסורא",
+            "segment_id": "seg_1640478a4b0f7b83c0b4",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.1",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.preferpermitted",
+          "ch.s2709.ravaeat"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.definiteexchange",
+          "target_id": "ch.s2710.q.presumedexchange"
+        },
+        "evidence": [
+          {
+            "end_char": 127,
+            "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+            "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.10",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.definiteexchange",
+          "ch.s2710.q.presumedexchange"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.definiteexchange",
+          "target_id": "ch.s2710.leniencyobjection"
+        },
+        "evidence": [
+          {
+            "end_char": 127,
+            "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+            "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.11",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.definiteexchange",
+          "ch.s2710.leniencyobjection"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.afortioriproof",
+          "target_id": "ch.s2710.q.afortiori"
+        },
+        "evidence": [
+          {
+            "end_char": 127,
+            "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+            "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.12",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.afortioriproof",
+          "ch.s2710.q.afortiori"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.afortioriproof",
+          "target_id": "ch.s2710.preferpermitted"
+        },
+        "evidence": [
+          {
+            "end_char": 127,
+            "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש",
+            "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.13",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.afortioriproof",
+          "ch.s2710.preferpermitted"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.circumapostate",
+          "target_id": "ch.s2710.q.whichuncirc"
+        },
+        "evidence": [
+          {
+            "end_char": 195,
+            "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_2e1a485e8324b552669e",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.14",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.circumapostate",
+          "ch.s2710.q.whichuncirc"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.circumapostate",
+          "target_id": "ch.s2710.onevsall"
+        },
+        "evidence": [
+          {
+            "end_char": 195,
+            "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_2e1a485e8324b552669e",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.15",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.circumapostate",
+          "ch.s2710.onevsall"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "ch.s2710.otherredundant",
+          "target_id": "ch.s2710.q.whichapostate"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא",
+            "segment_id": "seg_5b502c9807b6cea44b91",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.16",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.otherredundant",
+          "ch.s2710.q.whichapostate"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.sameproposed",
+          "target_id": "ch.s2710.q.sameoffense"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא",
+            "segment_id": "seg_5b502c9807b6cea44b91",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.17",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.sameproposed",
+          "ch.s2710.q.sameoffense"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.sameproposed",
+          "target_id": "ch.s2710.q.allslaughterproof"
+        },
+        "evidence": [
+          {
+            "end_char": 105,
+            "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא",
+            "segment_id": "seg_5b502c9807b6cea44b91",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.18",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.sameproposed",
+          "ch.s2710.q.allslaughterproof"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.samenotnecessary",
+          "target_id": "ch.s2710.sameproposed"
+        },
+        "evidence": [
+          {
+            "end_char": 165,
+            "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+            "segment_id": "seg_0bd08a4c040c4ec28841",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.19",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.samenotnecessary",
+          "ch.s2710.sameproposed"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.noeffort",
+          "target_id": "ch.s2710.q.unchecked"
+        },
+        "evidence": [
+          {
+            "end_char": 33,
+            "quote": "אי הכי כי לא בדק נמי מיטרח לא טרח",
+            "segment_id": "seg_690f6edfa6ff79939ee0",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.2",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.noeffort",
+          "ch.s2710.q.unchecked"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.habit",
+          "target_id": "ch.s2710.q.samewhy"
+        },
+        "evidence": [
+          {
+            "end_char": 165,
+            "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+            "segment_id": "seg_0bd08a4c040c4ec28841",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.20",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.habit",
+          "ch.s2710.q.samewhy"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.idolatryalternative",
+          "target_id": "ch.s2710.q.whichapostate"
+        },
+        "evidence": [
+          {
+            "end_char": 165,
+            "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+            "segment_id": "seg_0bd08a4c040c4ec28841",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.21",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.idolatryalternative",
+          "ch.s2710.q.whichapostate"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.shmuelcited",
+          "target_id": "ch.s2710.idolatryalternative"
+        },
+        "evidence": [
+          {
+            "end_char": 165,
+            "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו",
+            "segment_id": "seg_0bd08a4c040c4ec28841",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.22",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.shmuelcited",
+          "ch.s2710.idolatryalternative"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.mealexample",
+          "target_id": "ch.s2710.shmuelresumed"
+        },
+        "evidence": [
+          {
+            "end_char": 210,
+            "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד",
+            "segment_id": "seg_89f75623c6393185447c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.23",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.mealexample",
+          "ch.s2710.shmuelresumed"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.mealverse",
+          "target_id": "ch.s2710.mealexample"
+        },
+        "evidence": [
+          {
+            "end_char": 210,
+            "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד",
+            "segment_id": "seg_89f75623c6393185447c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.24",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.mealverse",
+          "ch.s2710.mealexample"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.persuasionword",
+          "target_id": "ch.s2710.q.slaughternoteat"
+        },
+        "evidence": [
+          {
+            "end_char": 69,
+            "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים",
+            "segment_id": "seg_36960b47bf1e69f0d67f",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.25",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.persuasionword",
+          "ch.s2710.q.slaughternoteat"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.justwords",
+          "target_id": "ch.s2710.persuasionword"
+        },
+        "evidence": [
+          {
+            "end_char": 69,
+            "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים",
+            "segment_id": "seg_36960b47bf1e69f0d67f",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.26",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.justwords",
+          "ch.s2710.persuasionword"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.nowordspersuasion",
+          "target_id": "ch.s2710.q.justwords"
+        },
+        "evidence": [
+          {
+            "end_char": 69,
+            "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים",
+            "segment_id": "seg_36960b47bf1e69f0d67f",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.27",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.nowordspersuasion",
+          "ch.s2710.q.justwords"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.brotherverse",
+          "target_id": "ch.s2710.nowordspersuasion"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+            "segment_id": "seg_891693823dae6c1f9333",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.28",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.brotherverse",
+          "ch.s2710.nowordspersuasion"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.brotherfood",
+          "target_id": "ch.s2710.q.brotherverse"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+            "segment_id": "seg_891693823dae6c1f9333",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.29",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.brotherfood",
+          "ch.s2710.q.brotherverse"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.noeffort",
+          "target_id": "ch.s2709.ravaappetite"
+        },
+        "evidence": [
+          {
+            "end_char": 33,
+            "quote": "אי הכי כי לא בדק נמי מיטרח לא טרח",
+            "segment_id": "seg_690f6edfa6ff79939ee0",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.3",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.noeffort",
+          "ch.s2709.ravaappetite"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.jobverse",
+          "target_id": "ch.s2710.nowordspersuasion"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+            "segment_id": "seg_891693823dae6c1f9333",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.30",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.jobverse",
+          "ch.s2710.nowordspersuasion"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.heavendifferent",
+          "target_id": "ch.s2710.q.jobverse"
+        },
+        "evidence": [
+          {
+            "end_char": 103,
+            "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני",
+            "segment_id": "seg_891693823dae6c1f9333",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.31",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.heavendifferent",
+          "ch.s2710.q.jobverse"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.drinknoteat",
+          "target_id": "ch.s2710.mealexample"
+        },
+        "evidence": [
+          {
+            "end_char": 150,
+            "quote": "ודלמא משתא אשתי מיכל לא אכל מאי שנא שתיה דאמרינן מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה אכילה נמי מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_7dbcedee1609ea21343b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.32",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.drinknoteat",
+          "ch.s2710.mealexample"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.drinkcomparison",
+          "target_id": "ch.s2710.q.drinknoteat"
+        },
+        "evidence": [
+          {
+            "end_char": 150,
+            "quote": "ודלמא משתא אשתי מיכל לא אכל מאי שנא שתיה דאמרינן מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה אכילה נמי מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה",
+            "segment_id": "seg_7dbcedee1609ea21343b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.33",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.drinkcomparison",
+          "ch.s2710.q.drinknoteat"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.comparable",
+          "target_id": "ch.s2710.drinkcomparison"
+        },
+        "evidence": [
+          {
+            "end_char": 123,
+            "quote": "הכי השתא שתיה סתם יינן הוא ועדיין לא נאסר יינן של עובדי כוכבים אבל אכילה אימא לך מומר לעבודת כוכבים הוי מומר לכל התורה כולה",
+            "segment_id": "seg_ff075cc8d0e0899994ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.34",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.comparable",
+          "ch.s2710.drinkcomparison"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.wineunprohibited",
+          "target_id": "ch.s2710.drinkcomparison"
+        },
+        "evidence": [
+          {
+            "end_char": 123,
+            "quote": "הכי השתא שתיה סתם יינן הוא ועדיין לא נאסר יינן של עובדי כוכבים אבל אכילה אימא לך מומר לעבודת כוכבים הוי מומר לכל התורה כולה",
+            "segment_id": "seg_ff075cc8d0e0899994ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.35",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.wineunprohibited",
+          "ch.s2710.drinkcomparison"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.foodmaybeall",
+          "target_id": "ch.s2710.drinkcomparison"
+        },
+        "evidence": [
+          {
+            "end_char": 123,
+            "quote": "הכי השתא שתיה סתם יינן הוא ועדיין לא נאסר יינן של עובדי כוכבים אבל אכילה אימא לך מומר לעבודת כוכבים הוי מומר לכל התורה כולה",
+            "segment_id": "seg_ff075cc8d0e0899994ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.36",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.foodmaybeall",
+          "ch.s2710.drinkcomparison"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.royalcustom",
+          "target_id": "ch.s2710.q.drinknoteat"
+        },
+        "evidence": [
+          {
+            "end_char": 93,
+            "quote": "איבעית אימא לאו אורחיה דמלכא משתיא בלא מיכלא ואיבעית אימא ויזבח ויסיתהו כתיב במה הסיתו בזביחה",
+            "segment_id": "seg_b95ec9f1ea00aef75586",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.37",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.royalcustom",
+          "ch.s2710.q.drinknoteat"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.slaughterpersuasion",
+          "target_id": "ch.s2710.q.drinknoteat"
+        },
+        "evidence": [
+          {
+            "end_char": 93,
+            "quote": "איבעית אימא לאו אורחיה דמלכא משתיא בלא מיכלא ואיבעית אימא ויזבח ויסיתהו כתיב במה הסיתו בזביחה",
+            "segment_id": "seg_b95ec9f1ea00aef75586",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.38",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.slaughterpersuasion",
+          "ch.s2710.q.drinknoteat"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.slaughterpersuasion",
+          "target_id": "ch.s2710.q.persuadedbywhat"
+        },
+        "evidence": [
+          {
+            "end_char": 93,
+            "quote": "איבעית אימא לאו אורחיה דמלכא משתיא בלא מיכלא ואיבעית אימא ויזבח ויסיתהו כתיב במה הסיתו בזביחה",
+            "segment_id": "seg_b95ec9f1ea00aef75586",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.39",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.slaughterpersuasion",
+          "ch.s2710.q.persuadedbywhat"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.leavenallowed",
+          "target_id": "ch.s2710.scholarssupport"
+        },
+        "evidence": [
+          {
+            "end_char": 25,
+            "quote": "מותר מיד מפני שהן מחליפין",
+            "segment_id": "seg_47eee65930d8304ab696",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.4",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.leavenallowed",
+          "ch.s2710.scholarssupport"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.ovadyah",
+          "target_id": "ch.s2710.mealexample"
+        },
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "ודלמא עובדיה זבח לרוב כתיב עובדיה לא הוה ספיק",
+            "segment_id": "seg_afda8f395eb37b9539e3",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.40",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.ovadyah",
+          "ch.s2710.mealexample"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.toomany",
+          "target_id": "ch.s2710.q.ovadyah"
+        },
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "ודלמא עובדיה זבח לרוב כתיב עובדיה לא הוה ספיק",
+            "segment_id": "seg_afda8f395eb37b9539e3",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.41",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.toomany",
+          "ch.s2710.q.ovadyah"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.seventhousand",
+          "target_id": "ch.s2710.mealexample"
+        },
+        "evidence": [
+          {
+            "end_char": 126,
+            "quote": "ודלמא שבעת אלפים זבוח דכתיב (מלכים א יט, יח) והשארתי בישראל שבעת אלפים כל הברכים אשר לא כרעו לבעל וגו' טמורי הוו מיטמרי מאיזבל",
+            "segment_id": "seg_ac84b55779dceba7472c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.42",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.seventhousand",
+          "ch.s2710.mealexample"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.hiding",
+          "target_id": "ch.s2710.q.seventhousand"
+        },
+        "evidence": [
+          {
+            "end_char": 126,
+            "quote": "ודלמא שבעת אלפים זבוח דכתיב (מלכים א יט, יח) והשארתי בישראל שבעת אלפים כל הברכים אשר לא כרעו לבעל וגו' טמורי הוו מיטמרי מאיזבל",
+            "segment_id": "seg_ac84b55779dceba7472c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.43",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.hiding",
+          "ch.s2710.q.seventhousand"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.ahabupright",
+          "target_id": "ch.s2710.mealexample"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "ודלמא גברי דאחאב הוו מעלו לא ס\"ד דכתיב (משלי כט, יב) מושל מקשיב על דבר שקר כל משרתיו רשעים",
+            "segment_id": "seg_ef54b8b86de6e5ba757d",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.44",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.ahabupright",
+          "ch.s2710.mealexample"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2710.ahabwicked",
+          "target_id": "ch.s2710.q.ahabupright"
+        },
+        "evidence": [
+          {
+            "end_char": 90,
+            "quote": "ודלמא גברי דאחאב הוו מעלו לא ס\"ד דכתיב (משלי כט, יב) מושל מקשיב על דבר שקר כל משרתיו רשעים",
+            "segment_id": "seg_ef54b8b86de6e5ba757d",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.45",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.ahabwicked",
+          "ch.s2710.q.ahabupright"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.yehoshapatnot",
+          "target_id": "ch.s2710.mealexample"
+        },
+        "evidence": [
+          {
+            "end_char": 91,
+            "quote": "ודלמא גברי דיהושפט נמי לא הוו מעלו זבוח גברי דאחאב אכול גברי דיהושפט זבוח עובדיה אכל יהושפט",
+            "segment_id": "seg_f0d7fa173df6581bb0f8",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.46",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.yehoshapatnot",
+          "ch.s2710.mealexample"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.exchange",
+          "target_id": "ch.s2710.leavenallowed"
+        },
+        "evidence": [
+          {
+            "end_char": 25,
+            "quote": "מותר מיד מפני שהן מחליפין",
+            "segment_id": "seg_47eee65930d8304ab696",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.5",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.exchange",
+          "ch.s2710.leavenallowed"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.exchange",
+          "target_id": "ch.s2710.exchangeproof"
+        },
+        "evidence": [
+          {
+            "end_char": 108,
+            "quote": "סברוה הא מני רבי יהודה היא דאמר חמץ אחר הפסח דאורייתא וקתני מפני שהן מחליפין אלמא לא שביק התירא ואכיל איסורא",
+            "segment_id": "seg_c97680340d8e5d205691",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.6",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.exchange",
+          "ch.s2710.exchangeproof"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2710.exchangeproof",
+          "target_id": "ch.s2710.preferpermitted"
+        },
+        "evidence": [
+          {
+            "end_char": 108,
+            "quote": "סברוה הא מני רבי יהודה היא דאמר חמץ אחר הפסח דאורייתא וקתני מפני שהן מחליפין אלמא לא שביק התירא ואכיל איסורא",
+            "segment_id": "seg_c97680340d8e5d205691",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.7",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.exchangeproof",
+          "ch.s2710.preferpermitted"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.q.whoyehuda",
+          "target_id": "ch.s2710.yehudainitial"
+        },
+        "evidence": [
+          {
+            "end_char": 81,
+            "quote": "ממאי דלמא ר\"ש היא דאמר חמץ אחר הפסח דרבנן וכי מקילינן בדרבנן בדאורייתא לא מקילינן",
+            "segment_id": "seg_bc5e7be30839fb7b1dd7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.8",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.q.whoyehuda",
+          "ch.s2710.yehudainitial"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2710.leniencyobjection",
+          "target_id": "ch.s2710.exchangeproof"
+        },
+        "evidence": [
+          {
+            "end_char": 81,
+            "quote": "ממאי דלמא ר\"ש היא דאמר חמץ אחר הפסח דרבנן וכי מקילינן בדרבנן בדאורייתא לא מקילינן",
+            "segment_id": "seg_bc5e7be30839fb7b1dd7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.9",
+        "layer": "edges",
+        "links": [
+          "ch.s2710.leniencyobjection",
+          "ch.s2710.exchangeproof"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "continuation",
+          "source_id": "ch.s2709.mumar",
+          "target_id": "ch.s2710.support"
+        },
+        "evidence": [
+          {
+            "end_char": 60,
+            "quote": "מאי טעמא כיון דאיכא התירא ואיסורא לא שביק התירא ואכיל איסורא",
+            "segment_id": "seg_1640478a4b0f7b83c0b4",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2710.e.continue",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.mumar",
+          "ch.s2710.support"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "reader_status_differences": [
+    {
+      "fresh_ids": [
+        "c_shmuel_report1",
+        "c_shmuel_report2",
+        "c_idolatry_alternative",
+        "c_separate_obadiah"
+      ],
+      "assessment": "Fresh asserted wording describes a reported/hypothetical local occurrence, with later refutation or contextual rejection in conditions. Producer rejected/hypothetical status more directly encodes those continuations. Preserve original fresh labels; do not call this semantic disagreement over final result."
+    }
+  ],
+  "mandatory_repairs": [],
+  "outcome": "No mandatory new-core repair identified in exact bounded comparison.",
+  "qualifications": [
+    "Inherited earlier Chullin role gate not closed by new-core review.",
+    "No verified enforced quarantine artifact claimed; actual all-record ml_eligible false checked.",
+    "No task, whole-tractate, atomicity or global role qualification.",
+    "No canonical production/source mutation; no new probability credit."
+  ],
+  "context_findings": [
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 4a:18",
+          "segment_id": "seg_c305a4ca8c1d4eff885d",
+          "start_char": 0,
+          "end_char": 82,
+          "quote": "גופא אמר רבא ישראל מומר אוכל נבילות לתיאבון בודק סכין ונותן לו ומותר לאכול משחיטתו"
+        }
+      ],
+      "explanation": "Underlying Rava rule concerns appetite-driven carcass-meat eating and requires a checked supplied knife. Do not broaden to every transgressor or idolatry."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 4b:18",
+          "segment_id": "seg_4f6beccba5ef90f8822d",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "לא סלקא דעתך מדמושל מקשיב על דבר שקר כל משרתיו רשעים הא לדבר אמת משרתיו צדיקים"
+        },
+        {
+          "ref": "Chullin 4b:19",
+          "segment_id": "seg_76ef9d3b0cde53045fee",
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "ודלמא זבוח גברי דאחאב אכל אחאב וגבריה זבוח גברי דיהושפט אכל יהושפט וגבריה"
+        },
+        {
+          "ref": "Chullin 5a:1",
+          "segment_id": "seg_ae8de015b9ae564aa096",
+          "start_char": 0,
+          "end_char": 189,
+          "quote": "לא הוה מפליג נפשיה מיניה מנלן אילימא מדכתיב (מלכים א כב, ד) כמוני כמוך כעמי כעמך אלא מעתה כסוסי כסוסיך הכי נמי אלא מה דהוי אסוסיך תהוי אסוסי ה\"נ מאי דהוי עלך ועילוי עמך תיהוי עלי ועילוי עמי"
+        },
+        {
+          "ref": "Chullin 5a:2",
+          "segment_id": "seg_86c799da18ee654e9f0e",
+          "start_char": 0,
+          "end_char": 226,
+          "quote": "אלא מהכא (מלכים א כב, י) ומלך ישראל ויהושפט מלך יהודה יושבים איש על כסאו מלובשים בגדים בגורן פתח שער שומרון מאי גורן אילימא גורן ממש אטו שער שומרון גורן הוה אלא כי גורן דתנן סנהדרין היתה כחצי גורן עגולה כדי שיהו רואין זה את זה"
+        }
+      ],
+      "explanation": "Endpoint hypothetical is rejected by converse inference about a truthful ruler’s servants. Another separate-meal scenario is raised. Initial כמוני כמוך proof is rejected by horse analogy, then common seating as a semicircular threshing floor is offered. This remains a staged argument, not the final legal outcome."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 5a:3",
+          "segment_id": "seg_f5a707eb3a4994157a05",
+          "start_char": 0,
+          "end_char": 131,
+          "quote": "לימא מסייע ליה (מלכים א יז, ו) והעורבים מביאים לו לחם ובשר בבקר ולחם ובשר בערב ואמר רב יהודה אמר רב מבי טבחי דאחאב על פי הדבור שאני"
+        },
+        {
+          "ref": "Chullin 5a:4",
+          "segment_id": "seg_a2239b319c20cc4d3f25",
+          "start_char": 0,
+          "end_char": 195,
+          "quote": "מאי עורבים אמר רבינא עורבים ממש א\"ל רב אדא בר מניומי ודלמא תרי גברי דהוי שמייהו עורבים מי לא כתיב (שופטים ז, כה) ויהרגו את עורב בצור עורב ואת זאב וגו' א\"ל איתרמאי מילתא דתרוייהו הוה שמייהו עורבים"
+        },
+        {
+          "ref": "Chullin 5a:5",
+          "segment_id": "seg_bc6f7f69023ee129c9a7",
+          "start_char": 0,
+          "end_char": 169,
+          "quote": "ודלמא על שם מקומן מי לא כתיב (מלכים ב ה, ב) וארם יצאו גדודים וישבו מארץ ישראל נערה קטנה וקשיא לן קרי לה נערה וקרי לה קטנה וא\"ר פדת קטנה דמן נעורן אם כן עורביים מיבעי ליה"
+        }
+      ],
+      "explanation": "Rav Yehuda reports Rav about Ahab’s slaughterhouse in Elijah’s raven narrative; divine command is an exception. Rav in this later report is distinct from Rav Anan, who transmits Shmuel in core."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 5a:6",
+          "segment_id": "seg_7f212d69e290766e98a4",
+          "start_char": 0,
+          "end_char": 147,
+          "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא שמתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות"
+        },
+        {
+          "ref": "Chullin 5a:7",
+          "segment_id": "seg_2b9ace84bf07158a7092",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "אימא סיפא ואפילו ישראל מומר ה\"ד אי מומר לדבר אחד היינו מומר לערלות אלא לאו מומר לעבודת כוכבים וכדרב ענן"
+        },
+        {
+          "ref": "Chullin 5a:8",
+          "segment_id": "seg_933325cd5f1fcba940f6",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "לא לעולם אימא לך מומר לעבודת כוכבים לא דאמר מר חמורה עבודת כוכבים שכל הכופר בה כמודה בכל התורה כולה"
+        },
+        {
+          "ref": "Chullin 5a:9",
+          "segment_id": "seg_b2f6951fa0aa9cef9ee4",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "אלא מומר לאותו דבר וכדרבא"
+        }
+      ],
+      "explanation": "Another proposed baraita support for Rav Anan is counterread as same-offense transgression according to Rava, not idolatry. Neither the initial anti-Rava counterreading nor subsequent proposed pro-Anan reading is a settled final legal conclusion."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 5a:10",
+          "segment_id": "seg_7e6e513f2cf0d627ed7b",
+          "start_char": 0,
+          "end_char": 216,
+          "quote": "מיתיבי (ויקרא א, ב) מכם ולא כולכם להוציא את המומר מכם בכם חלקתי ולא באומות מן הבהמה להביא בני אדם שדומים לבהמה מכאן אמרו מקבלין קרבנות מפושעי ישראל כדי שיחזרו בהן בתשובה חוץ מן המומר ומנסך את היין ומחלל שבתות בפרהסיא"
+        },
+        {
+          "ref": "Chullin 5a:11",
+          "segment_id": "seg_ff478a4f5598209b5130",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "הא גופא קשיא אמרת מכם ולא כולכם להוציא את המומר והדר תני מקבלין קרבנות מפושעי ישראל"
+        },
+        {
+          "ref": "Chullin 5a:12",
+          "segment_id": "seg_791aa3ace81960e41156",
+          "start_char": 0,
+          "end_char": 56,
+          "quote": "הא לא קשיא רישא מומר לכל התורה כולה מציעתא מומר לדבר אחד"
+        },
+        {
+          "ref": "Chullin 5a:13",
+          "segment_id": "seg_fb66ec29af74caeb6f06",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "אימא סיפא חוץ מן המומר ומנסך את היין ומחלל שבת בפרהסיא האי מומר היכי דמי אי מומר לכל התורה כולה היינו רישא ואי מומר לדבר אחד קשיא מציעתא"
+        },
+        {
+          "ref": "Chullin 5a:14",
+          "segment_id": "seg_483c02af0b86390a8172",
+          "start_char": 0,
+          "end_char": 133,
+          "quote": "אלא לאו הכי קאמר חוץ מן המומר לנסך את היין ולחלל שבתות בפרהסיא אלמא מומר לעבודת כוכבים הוה מומר לכל התורה כולה ותיובתא דרב ענן תיובתא"
+        }
+      ],
+      "explanation": "Sacrifice baraita distinguishes general apostasy and single-offense transgression. Its exclusion is interpreted as idolatrous wine libation and public Sabbath desecration; source explicitly concludes ותיובתא דרב ענן תיובתא. The reported idolatry permission is therefore refuted in continuation; Rava’s appetite-specific ruling is not identified as refuted."
+    }
+  ]
+}

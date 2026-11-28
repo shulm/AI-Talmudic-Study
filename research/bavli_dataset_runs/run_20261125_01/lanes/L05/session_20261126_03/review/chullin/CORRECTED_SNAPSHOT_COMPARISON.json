@@ -1,0 +1,134 @@
+{
+  "scope": "Chullin 2a:1–2b:5 only; 11 core segments",
+  "cohort": "targeted source-first opening; not random sample",
+  "source_freeze_sha256": "2de59077e2e52b98044c703c9e5f769b9a9021d64f864c4fce09ce64832eb2fd",
+  "snapshot_sha256": "e3820a8f1a9958659f65f5fd706c5ba00b7c2962a74e4157aee272ec18ccd165",
+  "snapshot_hash_verified": true,
+  "atomic_comparison": {
+    "C01": [
+      "ch01_c_all_rev04"
+    ],
+    "C02": [
+      "ch04_m_valid"
+    ],
+    "C03": [
+      "ch01_c_ex_rev04",
+      "ch04_m_risk"
+    ],
+    "C04": [
+      "ch01_c_watch",
+      "ch01_p_watch_rev04"
+    ],
+    "C05": [
+      "ch01_c_initial_rev04"
+    ],
+    "C06": [
+      "ch01_c_valid"
+    ],
+    "C07": [
+      "ch01_q_all",
+      "ch01_a_acha",
+      "ch04_lex_generalization"
+    ],
+    "C08": [
+      "ch01_c_temurah"
+    ],
+    "C09": [
+      "ch01_c_temurah",
+      "ch01_c_notperm_rev04"
+    ],
+    "C10": [
+      "ch01_c_notperm_rev04",
+      "ch04_tem_effect",
+      "ch01_c_lashes"
+    ],
+    "C11": [
+      "ch01_q_vows",
+      "ch04_valuers",
+      "ch04_valued",
+      "ch04_vowers",
+      "ch04_vowed"
+    ],
+    "C12": [
+      "ch01_c_abstain"
+    ],
+    "C13": [
+      "ch01_c_unpaid"
+    ],
+    "C14": [
+      "ch01_c_meir"
+    ],
+    "C15": [
+      "ch01_c_yehuda",
+      "ch01_p_yehuda"
+    ],
+    "C16": [
+      "ch01_c_zeh"
+    ],
+    "C17": [
+      "ch01_c_zeh"
+    ],
+    "C18": [
+      "ch01_q_reverse",
+      "ch04_sukkah",
+      "ch04_tzitzit"
+    ],
+    "C19": [
+      "ch01_c_chayav"
+    ],
+    "C20": [
+      "ch01_q_semikha",
+      "ch04_semikhah",
+      "ch01_c_semikha"
+    ],
+    "C21": [
+      "ch01_c_mixed_rev04",
+      "ch04_lex_post"
+    ],
+    "C22": [
+      "ch01_q_local"
+    ],
+    "C23": [
+      "ch01_c_redundancy"
+    ],
+    "C24": [
+      "ch01_q_duplicate"
+    ]
+  },
+  "checks": [
+    {
+      "label": "CH-ATOMIC",
+      "verdict": "targeted repair substantively verified",
+      "detail": "All 24 source-first proposals represented, some in shared records. Separate opening permission/validity/exclusion/risk, substitution prohibition/effect/lashes, lexical initial/post-factum alternatives and individual quoted valuation/obligation examples now present. This does not assert every existing record is fully atomic."
+    },
+    {
+      "label": "CH-COND",
+      "verdict": "targeted repair substantively verified",
+      "detail": "Supervision in watch position, unsupervised exclusion, substitution-performed conditions in effect/lashes, and anonymous harei zo versus harei alai restriction propagated to relevant positions. Yehuda holder distinguished from anonymous restrictive interpretation."
+    },
+    {
+      "label": "CH-GRAPH",
+      "verdict": "targeted repair substantively verified with limited graph scope",
+      "detail": "Temurah/vow objections now target universal lexical inference ch04_lex_generalization; local initial reading retains redundancy support. Semikhah support targets semikhah question. This is stronger precision than my frozen high-level objection-to-C05 shorthand. No complete-edge-recall certification."
+    },
+    {
+      "label": "ROLE",
+      "verdict": "quarantine-status discrepancy confirmed; no enforced record quarantine verified",
+      "detail": "ch01_a_ashi_addressee remains valid with role quoted_authority; scope and uncertainty explicitly say named addressee only and schema limitation. No quarantined records in snapshot. Do not expose this as resolved quoted-authority label in role evaluation; external task gate may handle quarantine but was not yet supplied. Anonymous reply 2b:5 remains unnamed, agreeing with source-first review. Root reports only inherited RESUME_PACKET/README assertions of quarantine, no actual quarantine artifact. These assertions are not supported by this snapshot state. Global ml_eligible=false is a distinct gate and does not make release_state quarantined."
+    }
+  ],
+  "evidence_verification": {
+    "record_set": "valid ch01/ch04 records only",
+    "record_count": 100,
+    "evidence_spans_checked": 112,
+    "result": "all exact Unicode slices matched raw source via inventory coordinates"
+  },
+  "remaining_limitations": [
+    "Some quoted vowing formulations use English may; scope explicitly limits these to quotations in lexical argument rather than practical permission. Downstream consumers must retain scope.",
+    "No completeness certification for all graph edges; for example separate lexical post-factum atom has no independent answer edge, though the proposition is preserved.",
+    "Record-specific role quarantine is not established; correct inherited status language. Preserve global ML ineligibility and exclude coarse addressee role from any future role benchmark until schema/policy repair.",
+    "Other snapshot scope including ch02/ch03/ch05 is not certified by this core comparison.",
+    "All records remain AI-provisional; no human review, random-sample error estimate, or ML eligibility granted."
+  ],
+  "verdict": "Targeted atomic/condition/graph corrections agree with independent opening reading; claimed role quarantine is unverified and conflicts with valid snapshot release state."
+}

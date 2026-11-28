@@ -1,0 +1,4285 @@
+{
+  "format": "bounded-exact-version-comparison-v1",
+  "reviewer": "/root/horayot_review",
+  "scope": "Chullin3b:20–4a:18,20newcores; necessary context including5a14 refutation and5b8–6a8 decree history, with fresh evidence through6a10",
+  "provenance": {
+    "nonblind_comparator": true,
+    "prior_Chullin_producer_exposure": true,
+    "fresh_reader": "/root/yoma_fresh_7",
+    "fresh_freeze_read_before_new_snapshot": true,
+    "fresh_mixed_records": 131,
+    "fresh_layer_counts": {
+      "claims": 30,
+      "questions": 9,
+      "attributions": 7,
+      "edges": 14,
+      "structure": 21,
+      "utterances": 20,
+      "positions": 30
+    },
+    "new_source_first_credit_for_comparator": false,
+    "new_probability_credit": false
+  },
+  "pins": {
+    "prior": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\e3820a8f1a9958659f65f5fd706c5ba00b7c2962a74e4157aee272ec18ccd165.json",
+      "sha256": "e3820a8f1a9958659f65f5fd706c5ba00b7c2962a74e4157aee272ec18ccd165"
+    },
+    "snapshot": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\snapshots\\0dce64bf439c2436ea857615d451128d57ff8e4db069673d17bc4dc17b99c04f.json",
+      "sha256": "0dce64bf439c2436ea857615d451128d57ff8e4db069673d17bc4dc17b99c04f"
+    },
+    "proposal": {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L05\\bavli_chullin\\proposals\\ac4357ee0db1293711926f389c8dfbbd14ecd028a79fce08b0baa9c3fc6b6993.json",
+      "sha256": "ac4357ee0db1293711926f389c8dfbbd14ecd028a79fce08b0baa9c3fc6b6993"
+    },
+    "fresh": {
+      "path": "F:\\Sefaria_QA\\bavli_l05_workspace_20261126\\review_session20261127_09\\chullin\\FRESH_SOURCE_ONLY_FROZEN.json",
+      "sha256": "04afb3ea545c0b272a598a1da56678ade67bbf4888cf1f3b362f3397066124f5"
+    }
+  },
+  "integrity": {
+    "raw_source_sha256": "173834a472b2c7a93b1713a71f633376534556c98b93e29f03ecae27cc69638b",
+    "prior570objects_equal": true,
+    "new_records": 167,
+    "historical_records": 737,
+    "new_layer_counts": {
+      "claims": 34,
+      "attributions": 47,
+      "positions": 27,
+      "edges": 26,
+      "structure": 2,
+      "utterances": 21,
+      "questions": 10
+    },
+    "new_evidence_spans_exact": 194,
+    "span_failures": 0,
+    "all_new_links_and_edge_endpoints_resolve": true,
+    "completed_coverage_by_layer": {
+      "attributions": 72,
+      "claims": 72,
+      "edges": 72,
+      "positions": 72,
+      "questions": 72,
+      "reconciliation": 72,
+      "structure": 72,
+      "utterances": 72
+    },
+    "all_record_ml_eligible_false": true
+  },
+  "mapping": [
+    {
+      "fresh_id": "c_kuti_supervised",
+      "fresh_content": {
+        "proposition": "The baraita permits a Kuti’s slaughter when a Jew stands supervising.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "Israelite supervisor standing over him",
+          "Kuti terminology retained; no equation with every non-Jew"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Israelite stands over Kuti during slaughter"
+            ],
+            "proposition": "A Kuti’s slaughter is permitted when an Israelite stands over him.",
+            "scope": "Baraita’s local rule; later5b8–6a1 restrictions are separate source occurrences, not silently merged"
+          },
+          "evidence": [
+            {
+              "end_char": 151,
+              "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_137d051b1c22b675a99b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.supervised",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_meat_test",
+      "fresh_content": {
+        "proposition": "If he arrives and finds slaughter already done, he cuts an olive-sized portion and gives it to the slaughterer.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "slaughter found completed"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "No observation; arrives after slaughter"
+            ],
+            "proposition": "If one comes and finds that he has already slaughtered, cut off an olive-sized portion and give it to him.",
+            "scope": "Post-slaughter consumption test"
+          },
+          "evidence": [
+            {
+              "end_char": 151,
+              "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_137d051b1c22b675a99b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.olivetest",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_eat_yes",
+      "fresh_content": {
+        "proposition": "If the slaughterer eats it, one may eat from his slaughter.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "slaughterer eats supplied portion"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Arrived after slaughter",
+              "Kuti eats offered olive-sized portion"
+            ],
+            "proposition": "If the Kuti eats that portion, one may eat from his slaughter.",
+            "scope": "Positive outcome of consumption test"
+          },
+          "evidence": [
+            {
+              "end_char": 151,
+              "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_137d051b1c22b675a99b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.atepermitted",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_eat_no",
+      "fresh_content": {
+        "proposition": "Otherwise one may not eat from his slaughter.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "slaughterer does not eat supplied portion"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Arrived after slaughter",
+              "Kuti does not eat offered portion"
+            ],
+            "proposition": "If he does not eat it, one may not eat from his slaughter.",
+            "scope": "Negative outcome retained"
+          },
+          "evidence": [
+            {
+              "end_char": 151,
+              "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_137d051b1c22b675a99b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.notateforbidden",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_birds_start",
+      "fresh_content": {
+        "proposition": "The baraita begins an analogous found-in-his-possession case, completed at 4a:1.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Bird group in Kuti possession"
+            ],
+            "proposition": "Similarly, if one finds a דקוריא of birds in his possession, cut off the head of one and give it to him.",
+            "scope": "Full split-folio test; source grouping term retained without fixed numerical count"
+          },
+          "evidence": [
+            {
+              "end_char": 17,
+              "quote": "כיוצא בו מצא בידו",
+              "segment_id": "seg_2b2810a8fe2f137a3670",
+              "start_char": 0
+            },
+            {
+              "end_char": 96,
+              "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_c765d7ca1e5ce49d02ed",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.birdsample",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_birds_test",
+      "fresh_content": {
+        "proposition": "For a group of birds, remove the head of one and give it to him.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "found group of birds in his possession"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Bird group in Kuti possession"
+            ],
+            "proposition": "Similarly, if one finds a דקוריא of birds in his possession, cut off the head of one and give it to him.",
+            "scope": "Full split-folio test; source grouping term retained without fixed numerical count"
+          },
+          "evidence": [
+            {
+              "end_char": 17,
+              "quote": "כיוצא בו מצא בידו",
+              "segment_id": "seg_2b2810a8fe2f137a3670",
+              "start_char": 0
+            },
+            {
+              "end_char": 96,
+              "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_c765d7ca1e5ce49d02ed",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.birdsample",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_birds_yes",
+      "fresh_content": {
+        "proposition": "If he eats it, eating his slaughter is permitted.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "bird test"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Bird group found",
+              "Kuti eats head offered"
+            ],
+            "proposition": "If he eats the sampled head, one may eat from his slaughter.",
+            "scope": "Bird-test positive outcome, procedure qualified below"
+          },
+          "evidence": [
+            {
+              "end_char": 17,
+              "quote": "כיוצא בו מצא בידו",
+              "segment_id": "seg_2b2810a8fe2f137a3670",
+              "start_char": 0
+            },
+            {
+              "end_char": 96,
+              "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_c765d7ca1e5ce49d02ed",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.birdyes",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_birds_no",
+      "fresh_content": {
+        "proposition": "If not, eating his slaughter is prohibited.",
+        "holder_candidates": [
+          "anonymous baraita"
+        ],
+        "conditions": [
+          "bird test"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Bird group found",
+              "Kuti does not eat sampled head"
+            ],
+            "proposition": "If he does not eat it, one may not eat from his slaughter.",
+            "scope": "Bird-test negative outcome"
+          },
+          "evidence": [
+            {
+              "end_char": 17,
+              "quote": "כיוצא בו מצא בידו",
+              "segment_id": "seg_2b2810a8fe2f137a3670",
+              "start_char": 0
+            },
+            {
+              "end_char": 96,
+              "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+              "segment_id": "seg_c765d7ca1e5ce49d02ed",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.birdno",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_abaye",
+      "fresh_content": {
+        "proposition": "Abaye infers from the opening: standing supervision permits, intermittent entry/exit does not.",
+        "holder_candidates": [
+          "אביי"
+        ],
+        "conditions": [
+          "supervision condition"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Abaye draws his inference from the opening clause.",
+            "scope": "Named textual inference, not name-order attribution"
+          },
+          "evidence": [
+            {
+              "end_char": 89,
+              "quote": "אביי דייק מרישא רבא דייק מסיפא אביי דייק מרישא טעמא דישראל עומד על גביו אבל יוצא ונכנס לא",
+              "segment_id": "seg_7153cedf2c4e44bd18ae",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.abayehead",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Israelite intermittently enters and leaves rather than continuously standing over"
+            ],
+            "proposition": "Only standing over him permits; going in and out does not suffice.",
+            "scope": "Abaye’s inference from opening supervision condition"
+          },
+          "evidence": [
+            {
+              "end_char": 89,
+              "quote": "אביי דייק מרישא רבא דייק מסיפא אביי דייק מרישא טעמא דישראל עומד על גביו אבל יוצא ונכנס לא",
+              "segment_id": "seg_7153cedf2c4e44bd18ae",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.abayeinout",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_rava",
+      "fresh_content": {
+        "proposition": "Rava infers from the ending: only finding completed slaughter requires the test; intermittent entry/exit is sufficient.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [
+          "supervisor entering and leaving"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Rava draws his inference from the latter clause.",
+            "scope": "Named textual inference"
+          },
+          "evidence": [
+            {
+              "end_char": 58,
+              "quote": "רבא דייק מסיפא טעמא דבא ומצאו ששחט אבל יוצא ונכנס שפיר דמי",
+              "segment_id": "seg_10ae1654e219e0a2596b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.ravatail",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Israelite intermittently enters and leaves"
+            ],
+            "proposition": "The test is required when one arrives after slaughter, but going in and out suffices.",
+            "scope": "Rava’s inference from latter post-slaughter case"
+          },
+          "evidence": [
+            {
+              "end_char": 58,
+              "quote": "רבא דייק מסיפא טעמא דבא ומצאו ששחט אבל יוצא ונכנס שפיר דמי",
+              "segment_id": "seg_10ae1654e219e0a2596b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.ravainout",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_abaye_answer",
+      "fresh_content": {
+        "proposition": "For Abaye, entry/exit is also called arriving and finding slaughter done.",
+        "holder_candidates": [
+          "answer represented for אביי"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Intermittent supervision"
+            ],
+            "proposition": "Going in and out is also called coming and finding that he slaughtered.",
+            "scope": "Answer on behalf of Abaye broadens latter clause scope"
+          },
+          "evidence": [
+            {
+              "end_char": 111,
+              "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+              "segment_id": "seg_4daa93e699b8978e38b7",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.abayeanswer",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_rava_answer",
+      "fresh_content": {
+        "proposition": "For Rava, entry/exit is equivalent to standing supervision.",
+        "holder_candidates": [
+          "answer represented for רבא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Intermittent supervision"
+            ],
+            "proposition": "Going in and out is also considered like standing over him.",
+            "scope": "Answer on behalf of Rava interprets opening clause"
+          },
+          "evidence": [
+            {
+              "end_char": 111,
+              "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+              "segment_id": "seg_4daa93e699b8978e38b7",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.ravaanswer",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_menashe",
+      "fresh_content": {
+        "proposition": "The test involves putting them beneath his garment folds, preventing the relevant identification.",
+        "holder_candidates": [
+          "רב מנשה"
+        ],
+        "conditions": [
+          "literal תחת כנפיו retained; concealment purpose is explanatory inference"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Bird-group test"
+            ],
+            "proposition": "The birds are placed under his כנפיו.",
+            "scope": "Rav Menashe’s concealment procedure answering selective identification concern; retain source wording"
+          },
+          "evidence": [
+            {
+              "end_char": 58,
+              "quote": "אמר רב מנשה (סימן מכני\"ס איזמ\"ל בזכרי\"ם) במכניסן תחת כנפיו",
+              "segment_id": "seg_711904f86b9e8abcf9af",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.hidden",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "The terse source does not explicitly identify every actor or describe the garment; do not turn the mnemonic into a legal condition."
+          ]
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_mesharshia",
+      "fresh_content": {
+        "proposition": "Rav Mesharshia answers that he crushes/mangles it, defeating the mark.",
+        "holder_candidates": [
+          "רב משרשיא"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Sample used in bird test"
+            ],
+            "proposition": "It is mashed—דממסמס ליה מסמוסי.",
+            "scope": "Rav Mesharshiya’s response preventing recognition by identifying mark; source pronoun retained"
+          },
+          "evidence": [
+            {
+              "end_char": 62,
+              "quote": "ודלמא סימנא הוה יהיב ליה בגויה אמר רב משרשיא דממסמס ליה מסמוסי",
+              "segment_id": "seg_2a4ff5e5064ab11a445c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.mash",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": [
+            "Exact object of the pronoun is not independently expanded beyond the sampled material in this terse answer."
+          ]
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_established",
+      "fresh_content": {
+        "proposition": "Established observance is relied upon for those slaughter rules; likewise established observance answers the bird-slaughter concern.",
+        "holder_candidates": [
+          "anonymous answer"
+        ],
+        "conditions": [
+          "practices they have adopted; not every practice automatically"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "They have established the relevant practice"
+            ],
+            "proposition": "Once they have established observance of those rules, their observance is established.",
+            "scope": "Response concerning the listed slaughter defects"
+          },
+          "evidence": [
+            {
+              "end_char": 55,
+              "quote": "אלא כיון דאחזיקו בהו אחזיקו בהו ה\"נ כיון דאחזיקו אחזיקו",
+              "segment_id": "seg_6c9472ee7d61eb7742a6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.establishedfive",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Established bird-slaughter practice"
+            ],
+            "proposition": "Likewise, once they have established this practice, it is established.",
+            "scope": "Analogous response for bird slaughter; not proof merely from text being written"
+          },
+          "evidence": [
+            {
+              "end_char": 55,
+              "quote": "אלא כיון דאחזיקו בהו אחזיקו בהו ה\"נ כיון דאחזיקו אחזיקו",
+              "segment_id": "seg_6c9472ee7d61eb7742a6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.establishedbird",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_tannaitic",
+      "fresh_content": {
+        "proposition": "Reliance on adoption/non-adoption concerning an unwritten matter is a tannaitic issue.",
+        "holder_candidates": [
+          "anonymous transition"
+        ],
+        "conditions": [
+          "precise dispute reconstructed and revised below"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "Acceptance of established practice where a rule is not written is a tannaitic dispute.",
+            "scope": "Introduction to matzah baraita; actual disputed axis clarified at4a17"
+          },
+          "evidence": [
+            {
+              "end_char": 85,
+              "quote": "ואחזוק ולא אחזוק בדלא כתיבא תנאי היא דתניא מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח",
+              "segment_id": "seg_58228f129a0e0759febc",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.tannaitic",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_matzah_permit",
+      "fresh_content": {
+        "proposition": "A cited baraita permits a Kuti’s matzah.",
+        "holder_candidates": [
+          "anonymous first opinion"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Kuti matzah"
+            ],
+            "proposition": "Kuti matzah may be eaten.",
+            "scope": "First tanna’s matzah rule"
+          },
+          "evidence": [
+            {
+              "end_char": 85,
+              "quote": "ואחזוק ולא אחזוק בדלא כתיבא תנאי היא דתניא מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח",
+              "segment_id": "seg_58228f129a0e0759febc",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.matzahallowed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_matzah_fulfill",
+      "fresh_content": {
+        "proposition": "One can fulfill the Passover matzah obligation with it.",
+        "holder_candidates": [
+          "anonymous first opinion"
+        ],
+        "conditions": [
+          "fulfillment distinct from mere permission to eat"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Kuti matzah",
+              "Passover obligation"
+            ],
+            "proposition": "A person fulfills the Passover obligation with it.",
+            "scope": "First tanna’s additional ritual-use claim"
+          },
+          "evidence": [
+            {
+              "end_char": 85,
+              "quote": "ואחזוק ולא אחזוק בדלא כתיבא תנאי היא דתניא מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח",
+              "segment_id": "seg_58228f129a0e0759febc",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.matzahobligation",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_eliezer_prohibit",
+      "fresh_content": {
+        "proposition": "ר\"א prohibits because they lack Israelite expertise in the detailed rules of matzah.",
+        "holder_candidates": [
+          "ר\"א"
+        ],
+        "conditions": [
+          "source abbreviation not expanded without further evidence"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Kuti matzah"
+            ],
+            "proposition": "ר\"א forbids it.",
+            "scope": "Opposed matzah position; source abbreviation preserved"
+          },
+          "evidence": [
+            {
+              "end_char": 44,
+              "quote": "ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות כישראל",
+              "segment_id": "seg_8eefc2aa61aa8a2b79d8",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.raforbids",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The Kutim are not expert in the fine points of mitzvot like Israel.",
+            "scope": "ר\"א reason for matzah prohibition"
+          },
+          "evidence": [
+            {
+              "end_char": 44,
+              "quote": "ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות כישראל",
+              "segment_id": "seg_8eefc2aa61aa8a2b79d8",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.radetails",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_gamliel",
+      "fresh_content": {
+        "proposition": "Rabban Shimon b. Gamliel says that for any commandment Kutim have adopted, they are more meticulous than Israelites.",
+        "holder_candidates": [
+          "רבן שמעון בן גמליאל"
+        ],
+        "conditions": [
+          "only commandments they have adopted"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Mitzvah they have established in practice"
+            ],
+            "proposition": "In every mitzvah they have established, Kutim are much more exacting than Israel.",
+            "scope": "Rabban Shimon ben Gamliel’s conditional statement"
+          },
+          "evidence": [
+            {
+              "end_char": 63,
+              "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל",
+              "segment_id": "seg_bd035dd5702cfab3481b",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.rsbgcareful",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_guarding_worry",
+      "fresh_content": {
+        "proposition": "One might have thought they lack expertise in guarding.",
+        "holder_candidates": [
+          "anonymous hypothetical"
+        ],
+        "conditions": [
+          "matzah guarding"
+        ],
+        "assertion_mode": "proposed concern rejected by first opinion"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "שימור for matzah"
+            ],
+            "proposition": "One might have thought they are not expert in guarding the matzah.",
+            "scope": "Suggested concern rejected by first tanna’s teaching"
+          },
+          "evidence": [
+            {
+              "end_char": 145,
+              "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+              "segment_id": "seg_ee38a42a8c6022f5eefd",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.possibleunguarded",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_guarding_answer",
+      "fresh_content": {
+        "proposition": "The first opinion teaches otherwise; guarding concern does not prevent fulfillment.",
+        "holder_candidates": [
+          "anonymous explanation of first opinion"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [],
+            "proposition": "The teaching rules out that concern about guarding.",
+            "scope": "Explanation of first tanna’s matzah ruling; not unrestricted endorsement of all Kuti practices"
+          },
+          "evidence": [
+            {
+              "end_char": 145,
+              "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+              "segment_id": "seg_ee38a42a8c6022f5eefd",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.guardingaffirmed",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_eliezer_guarding",
+      "fresh_content": {
+        "proposition": "The prohibiting authority holds they lack expertise in guarding.",
+        "holder_candidates": [
+          "ר\"א as explained anonymously"
+        ],
+        "conditions": [],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "שימור for matzah"
+            ],
+            "proposition": "ר\"א holds they are not expert in guarding.",
+            "scope": "Specific explanation of prohibition, separate from first tanna’s rejected concern"
+          },
+          "evidence": [
+            {
+              "end_char": 145,
+              "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+              "segment_id": "seg_ee38a42a8c6022f5eefd",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.raguarding",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_initial_axis",
+      "fresh_content": {
+        "proposition": "Initial answer: they differ about a written rule not adopted.",
+        "holder_candidates": [
+          "anonymous reconstruction"
+        ],
+        "conditions": [
+          "written; not adopted"
+        ],
+        "assertion_mode": "subsequently replaced"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "Written rule",
+              "Not established in practice"
+            ],
+            "proposition": "The initial answer distinguishes a rule written explicitly that they have not established in practice.",
+            "scope": "First proposed axis, rejected by wording objection next"
+          },
+          "evidence": [
+            {
+              "end_char": 185,
+              "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+              "segment_id": "seg_29412e48c1efff821be6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.firstaxis",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_tk_initial",
+      "fresh_content": {
+        "proposition": "Initial reconstruction: the first opinion relies on it because written even without adoption.",
+        "holder_candidates": [
+          "תנא קמא"
+        ],
+        "conditions": [
+          "written; not adopted"
+        ],
+        "assertion_mode": "subsequently replaced as interpretation"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "Written",
+              "No established practice"
+            ],
+            "proposition": "The first tanna is initially explained as trusting the written rule even without established practice.",
+            "scope": "Provisional interpretation only; rejected as the dispute’s axis"
+          },
+          "evidence": [
+            {
+              "end_char": 185,
+              "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+              "segment_id": "seg_29412e48c1efff821be6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.tkwritten",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_gamliel_initial",
+      "fresh_content": {
+        "proposition": "Initial reconstruction: Rabban Shimon b. Gamliel requires adoption; without adoption, no.",
+        "holder_candidates": [
+          "רבן שמעון בן גמליאל"
+        ],
+        "conditions": [
+          "initial proposed axis"
+        ],
+        "assertion_mode": "initial reconstruction"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "rejected",
+            "conditions": [
+              "Written rule",
+              "Only if established in practice"
+            ],
+            "proposition": "Rabban Shimon ben Gamliel is initially explained as requiring established practice even for a written rule.",
+            "scope": "Provisional interpretation only; not final classification of written/unpracticed case"
+          },
+          "evidence": [
+            {
+              "end_char": 185,
+              "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+              "segment_id": "seg_29412e48c1efff821be6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.rsbgwritten",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_final_axis",
+      "fresh_content": {
+        "proposition": "Revised axis: an unwritten practice which they have adopted.",
+        "holder_candidates": [
+          "anonymous final local reconstruction"
+        ],
+        "conditions": [
+          "unwritten; adopted"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Not explicitly written",
+              "Established in practice"
+            ],
+            "proposition": "Instead the dispute concerns a rule not written explicitly that they have established in practice.",
+            "scope": "Revised and accepted dispute axis"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+              "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.finalaxis",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_tk_final",
+      "fresh_content": {
+        "proposition": "First opinion: because unwritten, even adoption does not suffice.",
+        "holder_candidates": [
+          "תנא קמא"
+        ],
+        "conditions": [
+          "unwritten; adopted"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Not explicitly written",
+              "Established practice"
+            ],
+            "proposition": "The first tanna does not accept the practice when the rule is not written, even though they have established it.",
+            "scope": "Final explanation of first tanna’s scope"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+              "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.tknonwritten",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_gamliel_final",
+      "fresh_content": {
+        "proposition": "Rabban Shimon b. Gamliel: established adoption suffices.",
+        "holder_candidates": [
+          "רבן שמעון בן גמליאל"
+        ],
+        "conditions": [
+          "unwritten; adopted"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Not explicitly written",
+              "Established practice"
+            ],
+            "proposition": "Rabban Shimon ben Gamliel accepts it because they have established the practice.",
+            "scope": "Final explanation; practical establishment sufficient in unwritten case"
+          },
+          "evidence": [
+            {
+              "end_char": 115,
+              "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+              "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.rsbgnonwritten",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "c_rava_appetite",
+      "fresh_content": {
+        "proposition": "Rava: for a Jewish habitual eater of carcass meat out of appetite, one checks a knife and gives it to him; eating from his slaughter is permitted.",
+        "holder_candidates": [
+          "רבא"
+        ],
+        "conditions": [
+          "ישראל מומר אוכל נבילות לתיאבון",
+          "knife checked and supplied",
+          "not generalized to idolatry or all apostasy"
+        ],
+        "assertion_mode": "asserted"
+      },
+      "producer_records": [
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "ישראל מומר",
+              "Eats נבילות לתיאבון",
+              "Knife checked before given"
+            ],
+            "proposition": "For an Israelite apostate who eats carcasses for appetite, one checks a knife and gives it to him.",
+            "scope": "Rava’s resumed statement; checking is performed before handing over, not presumed self-inspection by offender"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "גופא אמר רבא ישראל מומר אוכל נבילות לתיאבון בודק סכין ונותן לו ומותר לאכול משחיטתו",
+              "segment_id": "seg_c305a4ca8c1d4eff885d",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.ravaappetite",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        },
+        {
+          "content": {
+            "assertion_mode": "asserted",
+            "conditions": [
+              "Israelite who eats carcasses for appetite",
+              "Knife checked and given to him"
+            ],
+            "proposition": "One may eat from that person’s slaughter.",
+            "scope": "Rava’s permission conditioned on prior knife checking and appetite motive; continuation distinguishes lack of inspection effort, not spiteful violation"
+          },
+          "evidence": [
+            {
+              "end_char": 82,
+              "quote": "גופא אמר רבא ישראל מומר אוכל נבילות לתיאבון בודק סכין ונותן לו ומותר לאכול משחיטתו",
+              "segment_id": "seg_c305a4ca8c1d4eff885d",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.ravaeat",
+          "layer": "claims",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_abaye_end",
+      "fresh_content": {
+        "formulation": "Does the ending challenge Abaye?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Abaye disallows intermittent supervision",
+              "Latter clause singles out arriving after slaughter"
+            ],
+            "formulation": "Does the latter clause not pose a difficulty for Abaye?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 111,
+              "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+              "segment_id": "seg_4daa93e699b8978e38b7",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.abayeproblem",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_rava_start",
+      "fresh_content": {
+        "formulation": "Does the opening challenge Rava?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Rava permits intermittent supervision",
+              "Opening says Israelite stands over him"
+            ],
+            "formulation": "Does the opening clause not pose a difficulty for Rava?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 111,
+              "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+              "segment_id": "seg_4daa93e699b8978e38b7",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.ravaproblem",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_one_bird",
+      "fresh_content": {
+        "formulation": "Why does the one-head test suffice? Perhaps this particular bird alone was properly slaughtered.",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Bird-group consumption test",
+              "One head sampled"
+            ],
+            "formulation": "Why does one head establish permission—should we not fear that only this bird was slaughtered properly?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 86,
+              "quote": "כיוצא בו מצא בידו דקוריא של צפרין קוטע ראשו כו' אמאי ליחוש דלמא האי הוא דהוה שחיט שפיר",
+              "segment_id": "seg_574b74e92b63e4f91e88",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.oneproper",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_mark",
+      "fresh_content": {
+        "formulation": "Perhaps he had placed an identifying mark in it?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Concealed bird-sample procedure",
+              "Kuti might still identify properly slaughtered specimen"
+            ],
+            "formulation": "Perhaps he had placed a distinguishing mark inside it?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 62,
+              "quote": "ודלמא סימנא הוה יהיב ליה בגויה אמר רב משרשיא דממסמס ליה מסמוסי",
+              "segment_id": "seg_2a4ff5e5064ab11a445c",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.internalmark",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_birds_torah",
+      "fresh_content": {
+        "formulation": "Perhaps Kutim hold that birds do not require slaughter by Torah law?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Consumption of a bird would then not establish our slaughter standard"
+            ],
+            "formulation": "Perhaps the Kutim hold that bird slaughter is not required by Torah law?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 41,
+              "quote": "ודלמא קסברי כותים אין שחיטה לעוף מן התורה",
+              "segment_id": "seg_a1a3314bd120adcd0393",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.birdtorah",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_unwritten",
+      "fresh_content": {
+        "formulation": "Are שהייה, דרסה, חלדה, הגרמה and עיקור themselves explicitly written?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Challenge based on requirement not explicit in written text",
+              "Five slaughter defects listed in full"
+            ],
+            "formulation": "On your reasoning, are שהייה, דרסה, חלדה, הגרמה and עיקור written explicitly?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 45,
+              "quote": "ולטעמיך שהייה דרסה חלדה הגרמה ועיקור מי כתיבן",
+              "segment_id": "seg_b8ac0c2926cac2676c2e",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.fivewritten",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_obvious",
+      "fresh_content": {
+        "formulation": "Is fulfillment with the permitted matzah not obvious?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Quoted first tanna’s matzah rule"
+            ],
+            "formulation": "Is the permission and fulfillment statement not obvious?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 145,
+              "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+              "segment_id": "seg_ee38a42a8c6022f5eefd",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.obvious",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_same_tk",
+      "fresh_content": {
+        "formulation": "Is Rabban Shimon b. Gamliel not identical to the first opinion?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Both apparently accept Kuti practice"
+            ],
+            "formulation": "Is Rabban Shimon ben Gamliel’s position not the same as the first tanna’s?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 185,
+              "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+              "segment_id": "seg_29412e48c1efff821be6",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.sameastk",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    },
+    {
+      "fresh_id": "q_wording",
+      "fresh_content": {
+        "formulation": "Then should he have said if they adopted, rather than every commandment they adopted?",
+        "question_origin": "explicit",
+        "answer_set_status": "partial",
+        "conditions": []
+      },
+      "producer_records": [
+        {
+          "content": {
+            "answer_set_status": "partial",
+            "conditions": [
+              "Initial written-but-unpracticed interpretation",
+              "כל versus אם wording"
+            ],
+            "formulation": "If so, should the wording not be “if they established” rather than “every mitzvah they established”?",
+            "question_origin": "explicit"
+          },
+          "evidence": [
+            {
+              "end_char": 51,
+              "quote": "אי הכי כל מצוה שהחזיקו בה כותים אם החזיקו מיבעי ליה",
+              "segment_id": "seg_73cd79e58dfe4869cbb2",
+              "start_char": 0
+            }
+          ],
+          "id": "ch.s2709.q.ifwording",
+          "layer": "questions",
+          "links": [],
+          "ml_eligible": false,
+          "origin": "source_paraphrase",
+          "release_state": "valid",
+          "review_state": "unreviewed",
+          "uncertainty": []
+        }
+      ],
+      "assessment": "source substance represented; split or joined records not separate accuracy trials"
+    }
+  ],
+  "extra_source_supported_questions": [
+    {
+      "content": {
+        "answer_set_status": "partial",
+        "conditions": [
+          "Baraita opening permission",
+          "במה דברים אמורים introduces supervision condition"
+        ],
+        "formulation": "Under what circumstances is a Kuti’s slaughter permitted?",
+        "question_origin": "explicit"
+      },
+      "evidence": [
+        {
+          "end_char": 151,
+          "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+          "segment_id": "seg_137d051b1c22b675a99b",
+          "start_char": 0
+        }
+      ],
+      "id": "ch.s2709.q.whenpermitted",
+      "layer": "questions",
+      "links": [],
+      "ml_eligible": false,
+      "origin": "source_paraphrase",
+      "release_state": "valid",
+      "review_state": "unreviewed",
+      "uncertainty": []
+    }
+  ],
+  "question_review": "All nine fresh core questions represented; producer separately captures במה דברים אמורים as q.whenpermitted (ten questions). Counterquestion on five unwritten defects preserves all five terms.",
+  "semantic_checks": [
+    "Supervised permission, completed-slaughter olive test, eating/non-eating outcomes retained separately. Bird case split across3b21–4a1 fully joined; no invented fixed bird count.",
+    "Abaye opening inference differs from Rava ending inference about intermittent supervision. Their respective answers explain source clauses; no name-order guess.",
+    "Menashe concealment and Mesharshiya mangling procedures retain terse wording and source pronoun. Purpose explanations treated as contextual interpretation; mnemonic not treated as new legal claim.",
+    "Written-but-unestablished initial axis rejected; unwritten-but-established final axis correctly substituted. First-tanna refusal and RSBG acceptance preserve both conditions; rejected interpretations do not become timeless rulings.",
+    "Matzah permission and fulfillment distinct; rejected guarding concern for first tanna is not confused with ר\"א accepted guarding reason. Source abbreviation preserved without unsupported name expansion.",
+    "Rava appetite-driven carcass eater is a Jewish offender with a checked supplied knife; not all apostasy, not idolatry. Earlier3b1 postinspection qualification and later unwillingness-to-exert explanation do not repeal this conditional rule.",
+    "5a14 explicit refutation concerns Rav Anan reporting Shmuel on idolatry, not Rava appetite case. Rav Yehuda reporting Rav in ancillary proof is not merged with Rav Anan/Shmuel.",
+    "Kuti local rules are historical source occurrences; later decrees/acceptance disputes through6a8 qualify overall legal-status history. Supervised scope explicitly references later restrictions. No contemporary or universal permission inferred."
+  ],
+  "graph_review": {
+    "producer_edges": 26,
+    "fresh_edges": 14,
+    "assessment": "Answer/objection/analogy/correction directions checked: concealed/mangled tests answer recognition concerns; tannaitic transition qualifies established-practice inference; finalaxis corrects firstaxis and final tannaitic positions correct provisional interpretations. No exact graph equivalence claimed.",
+    "records": [
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2709.supervised",
+          "target_id": "ch.s2709.abayeinout"
+        },
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "אביי דייק מרישא רבא דייק מסיפא אביי דייק מרישא טעמא דישראל עומד על גביו אבל יוצא ונכנס לא",
+            "segment_id": "seg_7153cedf2c4e44bd18ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.0",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.supervised",
+          "ch.s2709.abayeinout"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2709.olivetest",
+          "target_id": "ch.s2709.ravainout"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "רבא דייק מסיפא טעמא דבא ומצאו ששחט אבל יוצא ונכנס שפיר דמי",
+            "segment_id": "seg_10ae1654e219e0a2596b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.1",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.olivetest",
+          "ch.s2709.ravainout"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "analogy",
+          "source_id": "ch.s2709.establishedfive",
+          "target_id": "ch.s2709.establishedbird"
+        },
+        "evidence": [
+          {
+            "end_char": 55,
+            "quote": "אלא כיון דאחזיקו בהו אחזיקו בהו ה\"נ כיון דאחזיקו אחזיקו",
+            "segment_id": "seg_6c9472ee7d61eb7742a6",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.10",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.establishedfive",
+          "ch.s2709.establishedbird"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.establishedbird",
+          "target_id": "ch.s2709.q.birdtorah"
+        },
+        "evidence": [
+          {
+            "end_char": 55,
+            "quote": "אלא כיון דאחזיקו בהו אחזיקו בהו ה\"נ כיון דאחזיקו אחזיקו",
+            "segment_id": "seg_6c9472ee7d61eb7742a6",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.11",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.establishedbird",
+          "ch.s2709.q.birdtorah"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "qualification",
+          "source_id": "ch.s2709.tannaitic",
+          "target_id": "ch.s2709.establishedbird"
+        },
+        "evidence": [
+          {
+            "end_char": 85,
+            "quote": "ואחזוק ולא אחזוק בדלא כתיבא תנאי היא דתניא מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח",
+            "segment_id": "seg_58228f129a0e0759febc",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.12",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.tannaitic",
+          "ch.s2709.establishedbird"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2709.radetails",
+          "target_id": "ch.s2709.raforbids"
+        },
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות כישראל",
+            "segment_id": "seg_8eefc2aa61aa8a2b79d8",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.13",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.radetails",
+          "ch.s2709.raforbids"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.guardingaffirmed",
+          "target_id": "ch.s2709.q.obvious"
+        },
+        "evidence": [
+          {
+            "end_char": 145,
+            "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+            "segment_id": "seg_ee38a42a8c6022f5eefd",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.14",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.guardingaffirmed",
+          "ch.s2709.q.obvious"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2709.guardingaffirmed",
+          "target_id": "ch.s2709.possibleunguarded"
+        },
+        "evidence": [
+          {
+            "end_char": 145,
+            "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+            "segment_id": "seg_ee38a42a8c6022f5eefd",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.15",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.guardingaffirmed",
+          "ch.s2709.possibleunguarded"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2709.raguarding",
+          "target_id": "ch.s2709.raforbids"
+        },
+        "evidence": [
+          {
+            "end_char": 145,
+            "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+            "segment_id": "seg_ee38a42a8c6022f5eefd",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.16",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.raguarding",
+          "ch.s2709.raforbids"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.firstaxis",
+          "target_id": "ch.s2709.q.sameastk"
+        },
+        "evidence": [
+          {
+            "end_char": 185,
+            "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+            "segment_id": "seg_29412e48c1efff821be6",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.17",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.firstaxis",
+          "ch.s2709.q.sameastk"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2709.q.ifwording",
+          "target_id": "ch.s2709.firstaxis"
+        },
+        "evidence": [
+          {
+            "end_char": 51,
+            "quote": "אי הכי כל מצוה שהחזיקו בה כותים אם החזיקו מיבעי ליה",
+            "segment_id": "seg_73cd79e58dfe4869cbb2",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.18",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.q.ifwording",
+          "ch.s2709.firstaxis"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "ch.s2709.finalaxis",
+          "target_id": "ch.s2709.firstaxis"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.19",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.finalaxis",
+          "ch.s2709.firstaxis"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.abayeanswer",
+          "target_id": "ch.s2709.q.abayeproblem"
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+            "segment_id": "seg_4daa93e699b8978e38b7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.2",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.abayeanswer",
+          "ch.s2709.q.abayeproblem"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.finalaxis",
+          "target_id": "ch.s2709.q.sameastk"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.20",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.finalaxis",
+          "ch.s2709.q.sameastk"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "ch.s2709.tknonwritten",
+          "target_id": "ch.s2709.tkwritten"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.21",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.tknonwritten",
+          "ch.s2709.tkwritten"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "correction",
+          "source_id": "ch.s2709.rsbgnonwritten",
+          "target_id": "ch.s2709.rsbgwritten"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.22",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.rsbgnonwritten",
+          "ch.s2709.rsbgwritten"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2709.rsbgnonwritten",
+          "target_id": "ch.s2709.tannaitic"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.23",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.rsbgnonwritten",
+          "ch.s2709.tannaitic"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "support",
+          "source_id": "ch.s2709.tknonwritten",
+          "target_id": "ch.s2709.tannaitic"
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.24",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.tknonwritten",
+          "ch.s2709.tannaitic"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.ravaanswer",
+          "target_id": "ch.s2709.q.ravaproblem"
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+            "segment_id": "seg_4daa93e699b8978e38b7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.3",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.ravaanswer",
+          "ch.s2709.q.ravaproblem"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2709.q.oneproper",
+          "target_id": "ch.s2709.birdyes"
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "כיוצא בו מצא בידו דקוריא של צפרין קוטע ראשו כו' אמאי ליחוש דלמא האי הוא דהוה שחיט שפיר",
+            "segment_id": "seg_574b74e92b63e4f91e88",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.4",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.q.oneproper",
+          "ch.s2709.birdyes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.hidden",
+          "target_id": "ch.s2709.q.oneproper"
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב מנשה (סימן מכני\"ס איזמ\"ל בזכרי\"ם) במכניסן תחת כנפיו",
+            "segment_id": "seg_711904f86b9e8abcf9af",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.5",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.hidden",
+          "ch.s2709.q.oneproper"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2709.q.internalmark",
+          "target_id": "ch.s2709.hidden"
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "ודלמא סימנא הוה יהיב ליה בגויה אמר רב משרשיא דממסמס ליה מסמוסי",
+            "segment_id": "seg_2a4ff5e5064ab11a445c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.6",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.q.internalmark",
+          "ch.s2709.hidden"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.mash",
+          "target_id": "ch.s2709.q.internalmark"
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "ודלמא סימנא הוה יהיב ליה בגויה אמר רב משרשיא דממסמס ליה מסמוסי",
+            "segment_id": "seg_2a4ff5e5064ab11a445c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.7",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.mash",
+          "ch.s2709.q.internalmark"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2709.q.birdtorah",
+          "target_id": "ch.s2709.birdyes"
+        },
+        "evidence": [
+          {
+            "end_char": 41,
+            "quote": "ודלמא קסברי כותים אין שחיטה לעוף מן התורה",
+            "segment_id": "seg_a1a3314bd120adcd0393",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.8",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.q.birdtorah",
+          "ch.s2709.birdyes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "objection",
+          "source_id": "ch.s2709.q.fivewritten",
+          "target_id": "ch.s2709.q.birdtorah"
+        },
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "ולטעמיך שהייה דרסה חלדה הגרמה ועיקור מי כתיבן",
+            "segment_id": "seg_b8ac0c2926cac2676c2e",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.9",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.q.fivewritten",
+          "ch.s2709.q.birdtorah"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "explicitness": "source_explicit",
+          "relation": "answer",
+          "source_id": "ch.s2709.supervised",
+          "target_id": "ch.s2709.q.whenpermitted"
+        },
+        "evidence": [
+          {
+            "end_char": 151,
+            "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_137d051b1c22b675a99b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.e.scopeanswer",
+        "layer": "edges",
+        "links": [
+          "ch.s2709.supervised",
+          "ch.s2709.q.whenpermitted"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "role_review": {
+    "assessment": "Named source inferences and represented answers attributed to Abaye/Rava; procedure holders Menashe/Mesharshiya; first tanna distinct from RSBG and unexpanded ר\"א. Anonymous framing not substitute for named holders.",
+    "attribution_records": [
+      {
+        "content": {
+          "candidates": [
+            "אביי"
+          ],
+          "role": "position_holder",
+          "scope": "Answer on behalf of Abaye broadens latter clause scope",
+          "surface": "אביי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+            "segment_id": "seg_4daa93e699b8978e38b7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.abayeanswer.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.abayeanswer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "אביי"
+          ],
+          "role": "position_holder",
+          "scope": "Named textual inference, not name-order attribution",
+          "surface": "אביי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "אביי דייק מרישא רבא דייק מסיפא אביי דייק מרישא טעמא דישראל עומד על גביו אבל יוצא ונכנס לא",
+            "segment_id": "seg_7153cedf2c4e44bd18ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.abayehead.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.abayehead"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "אביי"
+          ],
+          "role": "position_holder",
+          "scope": "Abaye’s inference from opening supervision condition",
+          "surface": "אביי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "אביי דייק מרישא רבא דייק מסיפא אביי דייק מרישא טעמא דישראל עומד על גביו אבל יוצא ונכנס לא",
+            "segment_id": "seg_7153cedf2c4e44bd18ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.abayeinout.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.abayeinout"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 151,
+            "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_137d051b1c22b675a99b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon52",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 17,
+            "quote": "כיוצא בו מצא בידו",
+            "segment_id": "seg_2b2810a8fe2f137a3670",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon53",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 96,
+            "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_c765d7ca1e5ce49d02ed",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon54",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 89,
+            "quote": "אביי דייק מרישא רבא דייק מסיפא אביי דייק מרישא טעמא דישראל עומד על גביו אבל יוצא ונכנס לא",
+            "segment_id": "seg_7153cedf2c4e44bd18ae",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon55",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "רבא דייק מסיפא טעמא דבא ומצאו ששחט אבל יוצא ונכנס שפיר דמי",
+            "segment_id": "seg_10ae1654e219e0a2596b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon56",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+            "segment_id": "seg_4daa93e699b8978e38b7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon57",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 86,
+            "quote": "כיוצא בו מצא בידו דקוריא של צפרין קוטע ראשו כו' אמאי ליחוש דלמא האי הוא דהוה שחיט שפיר",
+            "segment_id": "seg_574b74e92b63e4f91e88",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon58",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב מנשה (סימן מכני\"ס איזמ\"ל בזכרי\"ם) במכניסן תחת כנפיו",
+            "segment_id": "seg_711904f86b9e8abcf9af",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon59",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "ודלמא סימנא הוה יהיב ליה בגויה אמר רב משרשיא דממסמס ליה מסמוסי",
+            "segment_id": "seg_2a4ff5e5064ab11a445c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon60",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 41,
+            "quote": "ודלמא קסברי כותים אין שחיטה לעוף מן התורה",
+            "segment_id": "seg_a1a3314bd120adcd0393",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon61",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 45,
+            "quote": "ולטעמיך שהייה דרסה חלדה הגרמה ועיקור מי כתיבן",
+            "segment_id": "seg_b8ac0c2926cac2676c2e",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon62",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 55,
+            "quote": "אלא כיון דאחזיקו בהו אחזיקו בהו ה\"נ כיון דאחזיקו אחזיקו",
+            "segment_id": "seg_6c9472ee7d61eb7742a6",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon63",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 85,
+            "quote": "ואחזוק ולא אחזוק בדלא כתיבא תנאי היא דתניא מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח",
+            "segment_id": "seg_58228f129a0e0759febc",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon64",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות כישראל",
+            "segment_id": "seg_8eefc2aa61aa8a2b79d8",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon65",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 63,
+            "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל",
+            "segment_id": "seg_bd035dd5702cfab3481b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon66",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 145,
+            "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+            "segment_id": "seg_ee38a42a8c6022f5eefd",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon67",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 185,
+            "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+            "segment_id": "seg_29412e48c1efff821be6",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon68",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 51,
+            "quote": "אי הכי כל מצוה שהחזיקו בה כותים אם החזיקו מיבעי ליה",
+            "segment_id": "seg_73cd79e58dfe4869cbb2",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon69",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon70",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [],
+          "role": "anonymous",
+          "scope": "Anonymous connective material only; does not replace named holder and speaker records",
+          "surface": "Anonymous framing or quoted baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "גופא אמר רבא ישראל מומר אוכל נבילות לתיאבון בודק סכין ונותן לו ומותר לאכול משחיטתו",
+            "segment_id": "seg_c305a4ca8c1d4eff885d",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.anon71",
+        "layer": "attributions",
+        "links": [],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Positive outcome of consumption test",
+          "surface": "Anonymous slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 151,
+            "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_137d051b1c22b675a99b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.atepermitted.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.atepermitted"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Bird-test negative outcome",
+          "surface": "Anonymous slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 17,
+            "quote": "כיוצא בו מצא בידו",
+            "segment_id": "seg_2b2810a8fe2f137a3670",
+            "start_char": 0
+          },
+          {
+            "end_char": 96,
+            "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_c765d7ca1e5ce49d02ed",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.birdno.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.birdno"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Full split-folio test; source grouping term retained without fixed numerical count",
+          "surface": "Anonymous slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 17,
+            "quote": "כיוצא בו מצא בידו",
+            "segment_id": "seg_2b2810a8fe2f137a3670",
+            "start_char": 0
+          },
+          {
+            "end_char": 96,
+            "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_c765d7ca1e5ce49d02ed",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.birdsample.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.birdsample"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Bird-test positive outcome, procedure qualified below",
+          "surface": "Anonymous slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 17,
+            "quote": "כיוצא בו מצא בידו",
+            "segment_id": "seg_2b2810a8fe2f137a3670",
+            "start_char": 0
+          },
+          {
+            "end_char": 96,
+            "quote": "דקוריא של צפרים קוטע ראשו של אחד מהן ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_c765d7ca1e5ce49d02ed",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.birdyes.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.birdyes"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רב מנשה"
+          ],
+          "role": "position_holder",
+          "scope": "Rav Menashe’s concealment procedure answering selective identification concern; retain source wording",
+          "surface": "רב מנשה",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "אמר רב מנשה (סימן מכני\"ס איזמ\"ל בזכרי\"ם) במכניסן תחת כנפיו",
+            "segment_id": "seg_711904f86b9e8abcf9af",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.hidden.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.hidden"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "The terse source does not explicitly identify every actor or describe the garment; do not turn the mnemonic into a legal condition."
+        ]
+      },
+      {
+        "content": {
+          "candidates": [
+            "רב משרשיא"
+          ],
+          "role": "position_holder",
+          "scope": "Rav Mesharshiya’s response preventing recognition by identifying mark; source pronoun retained",
+          "surface": "רב משרשיא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 62,
+            "quote": "ודלמא סימנא הוה יהיב ליה בגויה אמר רב משרשיא דממסמס ליה מסמוסי",
+            "segment_id": "seg_2a4ff5e5064ab11a445c",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.mash.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.mash"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": [
+          "Exact object of the pronoun is not independently expanded beyond the sampled material in this terse answer."
+        ]
+      },
+      {
+        "content": {
+          "candidates": [
+            "תנא קמא — ברייתת מצת כותי"
+          ],
+          "role": "position_holder",
+          "scope": "First tanna’s matzah rule",
+          "surface": "תנא קמא — ברייתת מצת כותי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 85,
+            "quote": "ואחזוק ולא אחזוק בדלא כתיבא תנאי היא דתניא מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח",
+            "segment_id": "seg_58228f129a0e0759febc",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.matzahallowed.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.matzahallowed"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "תנא קמא — ברייתת מצת כותי"
+          ],
+          "role": "position_holder",
+          "scope": "First tanna’s additional ritual-use claim",
+          "surface": "תנא קמא — ברייתת מצת כותי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 85,
+            "quote": "ואחזוק ולא אחזוק בדלא כתיבא תנאי היא דתניא מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח",
+            "segment_id": "seg_58228f129a0e0759febc",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.matzahobligation.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.matzahobligation"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Negative outcome retained",
+          "surface": "Anonymous slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 151,
+            "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_137d051b1c22b675a99b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.notateforbidden.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.notateforbidden"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Post-slaughter consumption test",
+          "surface": "Anonymous slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 151,
+            "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_137d051b1c22b675a99b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.olivetest.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.olivetest"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "ר\"א"
+          ],
+          "role": "position_holder",
+          "scope": "ר\"א reason for matzah prohibition",
+          "surface": "ר\"א",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות כישראל",
+            "segment_id": "seg_8eefc2aa61aa8a2b79d8",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.radetails.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.radetails"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "ר\"א"
+          ],
+          "role": "position_holder",
+          "scope": "Opposed matzah position; source abbreviation preserved",
+          "surface": "ר\"א",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 44,
+            "quote": "ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות כישראל",
+            "segment_id": "seg_8eefc2aa61aa8a2b79d8",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.raforbids.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.raforbids"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "ר\"א"
+          ],
+          "role": "position_holder",
+          "scope": "Specific explanation of prohibition, separate from first tanna’s rejected concern",
+          "surface": "ר\"א",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 145,
+            "quote": "אמר מר מצת כותי מותרת ואדם יוצא בה ידי חובתו בפסח פשיטא מהו דתימא לא בקיאי בשימור קמ\"ל ר\"א אוסר לפי שאין בקיאין בדקדוקי מצות קסבר לא בקיאי בשימור",
+            "segment_id": "seg_ee38a42a8c6022f5eefd",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.raguarding.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.raguarding"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבא"
+          ],
+          "role": "position_holder",
+          "scope": "Answer on behalf of Rava interprets opening clause",
+          "surface": "רבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 111,
+            "quote": "ולאביי קשיא סיפא אמר לך יוצא ונכנס נמי בא ומצאו קרי ליה ולרבא קשיא רישא אמר לך יוצא ונכנס נמי כעומד על גביו דמי",
+            "segment_id": "seg_4daa93e699b8978e38b7",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.ravaanswer.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.ravaanswer"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבא"
+          ],
+          "role": "position_holder",
+          "scope": "Rava’s resumed statement; checking is performed before handing over, not presumed self-inspection by offender",
+          "surface": "רבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "גופא אמר רבא ישראל מומר אוכל נבילות לתיאבון בודק סכין ונותן לו ומותר לאכול משחיטתו",
+            "segment_id": "seg_c305a4ca8c1d4eff885d",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.ravaappetite.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.ravaappetite"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבא"
+          ],
+          "role": "position_holder",
+          "scope": "Rava’s permission conditioned on prior knife checking and appetite motive; continuation distinguishes lack of inspection effort, not spiteful violation",
+          "surface": "רבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 82,
+            "quote": "גופא אמר רבא ישראל מומר אוכל נבילות לתיאבון בודק סכין ונותן לו ומותר לאכול משחיטתו",
+            "segment_id": "seg_c305a4ca8c1d4eff885d",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.ravaeat.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.ravaeat"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבא"
+          ],
+          "role": "position_holder",
+          "scope": "Rava’s inference from latter post-slaughter case",
+          "surface": "רבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "רבא דייק מסיפא טעמא דבא ומצאו ששחט אבל יוצא ונכנס שפיר דמי",
+            "segment_id": "seg_10ae1654e219e0a2596b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.ravainout.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.ravainout"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רבא"
+          ],
+          "role": "position_holder",
+          "scope": "Named textual inference",
+          "surface": "רבא",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 58,
+            "quote": "רבא דייק מסיפא טעמא דבא ומצאו ששחט אבל יוצא ונכנס שפיר דמי",
+            "segment_id": "seg_10ae1654e219e0a2596b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.ravatail.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.ravatail"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רשב\"ג"
+          ],
+          "role": "position_holder",
+          "scope": "Rabban Shimon ben Gamliel’s conditional statement",
+          "surface": "רשב\"ג",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 63,
+            "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל",
+            "segment_id": "seg_bd035dd5702cfab3481b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.rsbgcareful.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.rsbgcareful"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רשב\"ג"
+          ],
+          "role": "position_holder",
+          "scope": "Final explanation; practical establishment sufficient in unwritten case",
+          "surface": "רשב\"ג",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.rsbgnonwritten.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.rsbgnonwritten"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "רשב\"ג"
+          ],
+          "role": "position_holder",
+          "scope": "Provisional interpretation only; not final classification of written/unpracticed case",
+          "surface": "רשב\"ג",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 185,
+            "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+            "segment_id": "seg_29412e48c1efff821be6",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.rsbgwritten.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.rsbgwritten"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "Anonymous slaughter baraita"
+          ],
+          "role": "position_holder",
+          "scope": "Baraita’s local rule; later5b8–6a1 restrictions are separate source occurrences, not silently merged",
+          "surface": "Anonymous slaughter baraita",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 151,
+            "quote": "תנו רבנן שחיטת כותי מותרת במה דברים אמורים כשישראל עומד על גביו אבל בא ומצאו ששחט חותך כזית ונותן לו אכלו מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו",
+            "segment_id": "seg_137d051b1c22b675a99b",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.supervised.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.supervised"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "תנא קמא — ברייתת מצת כותי"
+          ],
+          "role": "position_holder",
+          "scope": "Final explanation of first tanna’s scope",
+          "surface": "תנא קמא — ברייתת מצת כותי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 115,
+            "quote": "אלא איכא בינייהו דלא כתיבא ואחזיקו בה תנא קמא סבר כיון דלא כתיבא אע\"ג דאחזיקו בה נמי לא רשב\"ג סבר כיון דאחזוק אחזוק",
+            "segment_id": "seg_8542d9b1bbcfff4a3ebf",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.tknonwritten.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.tknonwritten"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      },
+      {
+        "content": {
+          "candidates": [
+            "תנא קמא — ברייתת מצת כותי"
+          ],
+          "role": "position_holder",
+          "scope": "Provisional interpretation only; rejected as the dispute’s axis",
+          "surface": "תנא קמא — ברייתת מצת כותי",
+          "transmission_chain": []
+        },
+        "evidence": [
+          {
+            "end_char": 185,
+            "quote": "רשב\"ג אומר כל מצוה שהחזיקו בה כותים הרבה מדקדקין בה יותר מישראל היינו ת\"ק איכא בינייהו דכתיבא ולא אחזיקו בה ת\"ק סבר כיון דכתיבא אע\"ג דלא אחזיקו בה ורשב\"ג סבר אי אחזוק אין אי לא אחזוק לא",
+            "segment_id": "seg_29412e48c1efff821be6",
+            "start_char": 0
+          }
+        ],
+        "id": "ch.s2709.tkwritten.a",
+        "layer": "attributions",
+        "links": [
+          "ch.s2709.tkwritten"
+        ],
+        "ml_eligible": false,
+        "origin": "source_paraphrase",
+        "release_state": "valid",
+        "review_state": "unreviewed",
+        "uncertainty": []
+      }
+    ]
+  },
+  "mandatory_repairs": [],
+  "reader_errors_identified": [],
+  "outcome": "No mandatory new-core repair identified in this exact bounded comparison.",
+  "qualifications": [
+    "Inherited earlier Chullin role gate remains unresolved by this review; unchanged570records are preservation evidence, not requalification.",
+    "No claim of actual enforced quarantine artifact; global ml_eligible false remains verified.",
+    "No new probability credit or full-tractate/source-first credit for comparator.",
+    "No blanket role/atomicity/task qualification; all source conditions and local statuses required for interpretation.",
+    "No canonical production or source mutation by comparator"
+  ],
+  "context_findings": [
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 3a:13",
+          "segment_id": "seg_da31e84780048b09c814",
+          "start_char": 0,
+          "end_char": 126,
+          "quote": "רב אשי אמר הכי קתני הכל שוחטין ואפילו ישראל מומר מומר למאי לאכול נבילות לתיאבון וכדרבא דאמר רבא ישראל מומר אוכל נבילות לתיאבון"
+        },
+        {
+          "ref": "Chullin 3b:1",
+          "segment_id": "seg_1cef8107b77eeb3d2329",
+          "start_char": 0,
+          "end_char": 153,
+          "quote": "בודק סכין ונותן לו ומותר לאכול משחיטתו אבל לא בדק ונתן לו לא ישחוט ואם שחט בודק סכינו אחריו נמצאת סכינו יפה מותר לאכול משחיטתו ואם לאו אסור לאכול משחיטתו"
+        },
+        {
+          "ref": "Chullin 4a:19",
+          "segment_id": "seg_1640478a4b0f7b83c0b4",
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "מאי טעמא כיון דאיכא התירא ואיסורא לא שביק התירא ואכיל איסורא"
+        },
+        {
+          "ref": "Chullin 4a:20",
+          "segment_id": "seg_690f6edfa6ff79939ee0",
+          "start_char": 0,
+          "end_char": 33,
+          "quote": "אי הכי כי לא בדק נמי מיטרח לא טרח"
+        }
+      ],
+      "explanation": "Knife-checking qualification: appetite-driven offender prefers permitted food when available but will not exert himself to prepare it. Prior source permits post-slaughter inspection when knife was not checked, only if found sound; do not omit these conditions."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 4a:21",
+          "segment_id": "seg_24b2b7be200165362816",
+          "start_char": 0,
+          "end_char": 62,
+          "quote": "אמרו ליה רבנן לרבא תניא דמסייע לך חמצן של עוברי עבירה אחר הפסח"
+        },
+        {
+          "ref": "Chullin 4b:1",
+          "segment_id": "seg_47eee65930d8304ab696",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "מותר מיד מפני שהן מחליפין"
+        },
+        {
+          "ref": "Chullin 4b:2",
+          "segment_id": "seg_c97680340d8e5d205691",
+          "start_char": 0,
+          "end_char": 108,
+          "quote": "סברוה הא מני רבי יהודה היא דאמר חמץ אחר הפסח דאורייתא וקתני מפני שהן מחליפין אלמא לא שביק התירא ואכיל איסורא"
+        },
+        {
+          "ref": "Chullin 4b:3",
+          "segment_id": "seg_bc5e7be30839fb7b1dd7",
+          "start_char": 0,
+          "end_char": 81,
+          "quote": "ממאי דלמא ר\"ש היא דאמר חמץ אחר הפסח דרבנן וכי מקילינן בדרבנן בדאורייתא לא מקילינן"
+        },
+        {
+          "ref": "Chullin 4b:4",
+          "segment_id": "seg_0e4a3568d9c3fea7a1c9",
+          "start_char": 0,
+          "end_char": 127,
+          "quote": "ותיהוי נמי ר\"ש מי קתני שאני אומר החליפו מפני שמחליפין קתני דודאי מחליפין ומה בדרבנן לא שביק התירא ואכיל איסורא בדאורייתא לא כ\"ש"
+        }
+      ],
+      "explanation": "Leaven exchange proof initially assumes Rabbi Yehuda and Torah prohibition, then faces Rabbi Shimon/rabbinic-law objection; certainty of exchange wording yields an a fortiori argument even under Rabbi Shimon."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 4b:5",
+          "segment_id": "seg_2e1a485e8324b552669e",
+          "start_char": 0,
+          "end_char": 195,
+          "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא מתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות וקא סבר מומר לדבר אחד לא הוי מומר לכל התורה כולה"
+        },
+        {
+          "ref": "Chullin 4b:6",
+          "segment_id": "seg_5b502c9807b6cea44b91",
+          "start_char": 0,
+          "end_char": 105,
+          "quote": "אימא סיפא ואפילו ישראל מומר האי מומר ה\"ד אי מומר לדבר אחר היינו מומר לערלות אלא לאו מומר לאותו דבר וכדרבא"
+        },
+        {
+          "ref": "Chullin 4b:7",
+          "segment_id": "seg_0bd08a4c040c4ec28841",
+          "start_char": 0,
+          "end_char": 165,
+          "quote": "לא לעולם אימא לך מומר לאותו דבר לא מ\"ט כיון דדש ביה כהתירא דמי ליה אלא מומר לעבודת כוכבים וכדרב ענן דאמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו"
+        },
+        {
+          "ref": "Chullin 4b:8",
+          "segment_id": "seg_89f75623c6393185447c",
+          "start_char": 0,
+          "end_char": 210,
+          "quote": "גופא אמר רב ענן אמר שמואל ישראל מומר לעבודת כוכבים מותר לאכול משחיטתו שכן מצינו ביהושפט מלך יהודה שנהנה מסעודת אחאב שנאמר (דברי הימים ב יח, ב) ויזבח לו אחאב צאן ובקר לרוב ולעם אשר עמו ויסיתהו לעלות אל רמות גלעד"
+        }
+      ],
+      "explanation": "First proposed support from uncircumcised/transgressor baraita distinguishes medical circumcision exemption from transgression. Alternative interpretation invokes Rav Anan reporting Shmuel on an idolatrous Jew. This is not Rav’s opinion and not a stable final ruling."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 4b:9",
+          "segment_id": "seg_36960b47bf1e69f0d67f",
+          "start_char": 0,
+          "end_char": 69,
+          "quote": "ודלמא מיזבח זבח מיכל לא אכל ויסיתהו כתיב ודלמא בדברים אין הסתה בדברים"
+        },
+        {
+          "ref": "Chullin 4b:10",
+          "segment_id": "seg_891693823dae6c1f9333",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "ולא והכתיב (דברים יג, ז) כי יסיתך אחיך באכילה ובשתיה והכתיב (איוב ב, ג) ותסיתני בו לבלעו חנם למעלה שאני"
+        },
+        {
+          "ref": "Chullin 4b:11",
+          "segment_id": "seg_7dbcedee1609ea21343b",
+          "start_char": 0,
+          "end_char": 150,
+          "quote": "ודלמא משתא אשתי מיכל לא אכל מאי שנא שתיה דאמרינן מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה אכילה נמי מומר לעבודת כוכבים לא הוי מומר לכל התורה כולה"
+        },
+        {
+          "ref": "Chullin 4b:12",
+          "segment_id": "seg_ff075cc8d0e0899994ae",
+          "start_char": 0,
+          "end_char": 123,
+          "quote": "הכי השתא שתיה סתם יינן הוא ועדיין לא נאסר יינן של עובדי כוכבים אבל אכילה אימא לך מומר לעבודת כוכבים הוי מומר לכל התורה כולה"
+        },
+        {
+          "ref": "Chullin 4b:13",
+          "segment_id": "seg_b95ec9f1ea00aef75586",
+          "start_char": 0,
+          "end_char": 93,
+          "quote": "איבעית אימא לאו אורחיה דמלכא משתיא בלא מיכלא ואיבעית אימא ויזבח ויסיתהו כתיב במה הסיתו בזביחה"
+        },
+        {
+          "ref": "Chullin 4b:14",
+          "segment_id": "seg_afda8f395eb37b9539e3",
+          "start_char": 0,
+          "end_char": 45,
+          "quote": "ודלמא עובדיה זבח לרוב כתיב עובדיה לא הוה ספיק"
+        },
+        {
+          "ref": "Chullin 4b:15",
+          "segment_id": "seg_ac84b55779dceba7472c",
+          "start_char": 0,
+          "end_char": 126,
+          "quote": "ודלמא שבעת אלפים זבוח דכתיב (מלכים א יט, יח) והשארתי בישראל שבעת אלפים כל הברכים אשר לא כרעו לבעל וגו' טמורי הוו מיטמרי מאיזבל"
+        },
+        {
+          "ref": "Chullin 4b:16",
+          "segment_id": "seg_ef54b8b86de6e5ba757d",
+          "start_char": 0,
+          "end_char": 90,
+          "quote": "ודלמא גברי דאחאב הוו מעלו לא ס\"ד דכתיב (משלי כט, יב) מושל מקשיב על דבר שקר כל משרתיו רשעים"
+        },
+        {
+          "ref": "Chullin 4b:17",
+          "segment_id": "seg_f0d7fa173df6581bb0f8",
+          "start_char": 0,
+          "end_char": 91,
+          "quote": "ודלמא גברי דיהושפט נמי לא הוו מעלו זבוח גברי דאחאב אכול גברי דיהושפט זבוח עובדיה אכל יהושפט"
+        },
+        {
+          "ref": "Chullin 4b:18",
+          "segment_id": "seg_4f6beccba5ef90f8822d",
+          "start_char": 0,
+          "end_char": 78,
+          "quote": "לא סלקא דעתך מדמושל מקשיב על דבר שקר כל משרתיו רשעים הא לדבר אמת משרתיו צדיקים"
+        },
+        {
+          "ref": "Chullin 4b:19",
+          "segment_id": "seg_76ef9d3b0cde53045fee",
+          "start_char": 0,
+          "end_char": 73,
+          "quote": "ודלמא זבוח גברי דאחאב אכל אחאב וגבריה זבוח גברי דיהושפט אכל יהושפט וגבריה"
+        },
+        {
+          "ref": "Chullin 5a:1",
+          "segment_id": "seg_ae8de015b9ae564aa096",
+          "start_char": 0,
+          "end_char": 189,
+          "quote": "לא הוה מפליג נפשיה מיניה מנלן אילימא מדכתיב (מלכים א כב, ד) כמוני כמוך כעמי כעמך אלא מעתה כסוסי כסוסיך הכי נמי אלא מה דהוי אסוסיך תהוי אסוסי ה\"נ מאי דהוי עלך ועילוי עמך תיהוי עלי ועילוי עמי"
+        },
+        {
+          "ref": "Chullin 5a:2",
+          "segment_id": "seg_86c799da18ee654e9f0e",
+          "start_char": 0,
+          "end_char": 226,
+          "quote": "אלא מהכא (מלכים א כב, י) ומלך ישראל ויהושפט מלך יהודה יושבים איש על כסאו מלובשים בגדים בגורן פתח שער שומרון מאי גורן אילימא גורן ממש אטו שער שומרון גורן הוה אלא כי גורן דתנן סנהדרין היתה כחצי גורן עגולה כדי שיהו רואין זה את זה"
+        }
+      ],
+      "explanation": "Jehoshaphat/Ahab proof faces successive alternatives: not eating, only drinking, other slaughterers, separate meals. Anonymous replies and alternative answers preserve those stages; narration is not a new universal ruling."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 5a:3",
+          "segment_id": "seg_f5a707eb3a4994157a05",
+          "start_char": 0,
+          "end_char": 131,
+          "quote": "לימא מסייע ליה (מלכים א יז, ו) והעורבים מביאים לו לחם ובשר בבקר ולחם ובשר בערב ואמר רב יהודה אמר רב מבי טבחי דאחאב על פי הדבור שאני"
+        },
+        {
+          "ref": "Chullin 5a:4",
+          "segment_id": "seg_a2239b319c20cc4d3f25",
+          "start_char": 0,
+          "end_char": 195,
+          "quote": "מאי עורבים אמר רבינא עורבים ממש א\"ל רב אדא בר מניומי ודלמא תרי גברי דהוי שמייהו עורבים מי לא כתיב (שופטים ז, כה) ויהרגו את עורב בצור עורב ואת זאב וגו' א\"ל איתרמאי מילתא דתרוייהו הוה שמייהו עורבים"
+        },
+        {
+          "ref": "Chullin 5a:5",
+          "segment_id": "seg_bc6f7f69023ee129c9a7",
+          "start_char": 0,
+          "end_char": 169,
+          "quote": "ודלמא על שם מקומן מי לא כתיב (מלכים ב ה, ב) וארם יצאו גדודים וישבו מארץ ישראל נערה קטנה וקשיא לן קרי לה נערה וקרי לה קטנה וא\"ר פדת קטנה דמן נעורן אם כן עורביים מיבעי ליה"
+        }
+      ],
+      "explanation": "Rav Yehuda reports Rav concerning Ahab’s slaughterhouse; source distinguishes divine-command exception. Discussion of ravens is ancillary and does not rescue general idolatry permission."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 5a:6",
+          "segment_id": "seg_7f212d69e290766e98a4",
+          "start_char": 0,
+          "end_char": 147,
+          "quote": "לימא מסייע ליה הכל שוחטין ואפילו כותי ואפילו ערל ואפילו ישראל מומר האי ערל ה\"ד אילימא שמתו אחיו מחמת מילה האי ישראל מעליא הוא אלא פשיטא מומר לערלות"
+        },
+        {
+          "ref": "Chullin 5a:7",
+          "segment_id": "seg_2b9ace84bf07158a7092",
+          "start_char": 0,
+          "end_char": 103,
+          "quote": "אימא סיפא ואפילו ישראל מומר ה\"ד אי מומר לדבר אחד היינו מומר לערלות אלא לאו מומר לעבודת כוכבים וכדרב ענן"
+        },
+        {
+          "ref": "Chullin 5a:8",
+          "segment_id": "seg_933325cd5f1fcba940f6",
+          "start_char": 0,
+          "end_char": 99,
+          "quote": "לא לעולם אימא לך מומר לעבודת כוכבים לא דאמר מר חמורה עבודת כוכבים שכל הכופר בה כמודה בכל התורה כולה"
+        },
+        {
+          "ref": "Chullin 5a:9",
+          "segment_id": "seg_b2f6951fa0aa9cef9ee4",
+          "start_char": 0,
+          "end_char": 25,
+          "quote": "אלא מומר לאותו דבר וכדרבא"
+        },
+        {
+          "ref": "Chullin 5a:10",
+          "segment_id": "seg_7e6e513f2cf0d627ed7b",
+          "start_char": 0,
+          "end_char": 216,
+          "quote": "מיתיבי (ויקרא א, ב) מכם ולא כולכם להוציא את המומר מכם בכם חלקתי ולא באומות מן הבהמה להביא בני אדם שדומים לבהמה מכאן אמרו מקבלין קרבנות מפושעי ישראל כדי שיחזרו בהן בתשובה חוץ מן המומר ומנסך את היין ומחלל שבתות בפרהסיא"
+        },
+        {
+          "ref": "Chullin 5a:11",
+          "segment_id": "seg_ff478a4f5598209b5130",
+          "start_char": 0,
+          "end_char": 83,
+          "quote": "הא גופא קשיא אמרת מכם ולא כולכם להוציא את המומר והדר תני מקבלין קרבנות מפושעי ישראל"
+        },
+        {
+          "ref": "Chullin 5a:12",
+          "segment_id": "seg_791aa3ace81960e41156",
+          "start_char": 0,
+          "end_char": 56,
+          "quote": "הא לא קשיא רישא מומר לכל התורה כולה מציעתא מומר לדבר אחד"
+        },
+        {
+          "ref": "Chullin 5a:13",
+          "segment_id": "seg_fb66ec29af74caeb6f06",
+          "start_char": 0,
+          "end_char": 136,
+          "quote": "אימא סיפא חוץ מן המומר ומנסך את היין ומחלל שבת בפרהסיא האי מומר היכי דמי אי מומר לכל התורה כולה היינו רישא ואי מומר לדבר אחד קשיא מציעתא"
+        },
+        {
+          "ref": "Chullin 5a:14",
+          "segment_id": "seg_483c02af0b86390a8172",
+          "start_char": 0,
+          "end_char": 133,
+          "quote": "אלא לאו הכי קאמר חוץ מן המומר לנסך את היין ולחלל שבתות בפרהסיא אלמא מומר לעבודת כוכבים הוה מומר לכל התורה כולה ותיובתא דרב ענן תיובתא"
+        }
+      ],
+      "explanation": "Renewed baraita support for Rav Anan is answered by Rava’s same-offense case. Sacrifice acceptance distinguishes general apostasy, single-offense transgression, idolatrous wine libation and public Sabbath desecration. Final explicit תיובתא targets Rav Anan’s idolatry report; do not merge it into Rava’s appetite ruling."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 5b:8",
+          "segment_id": "seg_7c881fdb1d3183e97e2e",
+          "start_char": 0,
+          "end_char": 246,
+          "quote": "א\"ר חנן א\"ר יעקב בר אידי א\"ר יהושע בן לוי משום בר קפרא ר\"ג ובית דינו נמנו על שחיטת כותי ואסרוה א\"ל רבי זירא לרבי יעקב בר אידי שמא לא שמע רבי אלא בשאין ישראל עומד על גביו א\"ל דמי האי מרבנן כדלא גמירי אינשי שמעתא בשאין ישראל עומד על גביו למימרא בעי"
+        },
+        {
+          "ref": "Chullin 5b:9",
+          "segment_id": "seg_fc13443bb566f68f1b9d",
+          "start_char": 0,
+          "end_char": 211,
+          "quote": "קבלה מיניה או לא קבלה מיניה ת\"ש דאמר ר\"נ בר יצחק א\"ר אסי אני ראיתי את רבי יוחנן שאכל משחיטת כותי אף רבי אסי אכל משחיטת כותי ותהי בה רבי זירא לא שמיעא להו דאי הוה שמיעא להו הוו מקבלי לה או דלמא שמיע להו ולא קבלוה"
+        },
+        {
+          "ref": "Chullin 5b:10",
+          "segment_id": "seg_d7727b95636a09baac57",
+          "start_char": 0,
+          "end_char": 194,
+          "quote": "הדר פשיט לנפשיה מסתברא דשמיע להו ולא קבלוה דאי ס\"ד לא שמיע להו ואי הוה שמיע להו הוו מקבלי לה היכי מסתייעא מילתא למיכל איסורא השתא בהמתן של צדיקים אין הקב\"ה מביא תקלה על ידן צדיקים עצמן לא כל שכן"
+        },
+        {
+          "ref": "Chullin 6a:1",
+          "segment_id": "seg_a10cbab02844d7f15ba0",
+          "start_char": 0,
+          "end_char": 119,
+          "quote": "ואי סלקא דעתיך לא קבלה מיניה לישני ליה כאן כשישראל עומד על גביו כאן כשאין ישראל עומד על גביו אלא לאו ש\"מ קבלה מיניה ש\"מ"
+        }
+      ],
+      "explanation": "Later court prohibition of Kuti slaughter and Rabbi Zeira’s acceptance inquiry distinguish standing-supervisor cases. Reports of Rabbi Yohanan/Rabbi Asi eating are not simply harmonized away; source concludes they heard but did not accept the decree."
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Chullin 6a:2",
+          "segment_id": "seg_e3dcdfafe2cbd36c6b1c",
+          "start_char": 0,
+          "end_char": 182,
+          "quote": "ומ\"ט גזרו בהו רבנן כי הא דר\"ש בן אלעזר שדריה ר\"מ לאתויי חמרא מבי כותאי אשכחיה ההוא סבא א\"ל (משלי כג, ב) ושמת סכין בלועך אם בעל נפש אתה הלך ר\"ש בן אלעזר וספר דברים לפני ר\"מ וגזר עליהן"
+        },
+        {
+          "ref": "Chullin 6a:3",
+          "segment_id": "seg_2855ac784bc3a40ea37f",
+          "start_char": 0,
+          "end_char": 167,
+          "quote": "מאי טעמא אמר רב נחמן בר יצחק דמות יונה מצאו להן בראש הר גריזים שהיו עובדין אותה ור\"מ לטעמיה דחייש למיעוטא וגזר רובא אטו מיעוטא ורבן גמליאל ובית דינו נמי כר\"מ סבירא להו"
+        },
+        {
+          "ref": "Chullin 6a:6",
+          "segment_id": "seg_0576858ec093f0a3b658",
+          "start_char": 0,
+          "end_char": 219,
+          "quote": "רבי יצחק בן יוסף שדריה רבי אבהו לאתויי חמרא מבי כותאי אשכחיה ההוא סבא א\"ל לית כאן שומרי תורה הלך רבי יצחק וספר דברים לפני רבי אבהו והלך רבי אבהו וספר דברים לפני רבי אמי ורבי אסי ולא זזו משם עד שעשאום עובדי כוכבים גמורין"
+        },
+        {
+          "ref": "Chullin 6a:7",
+          "segment_id": "seg_342a17b9e0f1a9d3039b",
+          "start_char": 0,
+          "end_char": 110,
+          "quote": "למאי אי לשחיטה ויין נסך מהתם גזרו בהו רבנן אינהו גזור ולא קבלו מינייהו אתו רבי אמי ורבי אסי גזרו וקבלו מינייהו"
+        },
+        {
+          "ref": "Chullin 6a:8",
+          "segment_id": "seg_c6e78b3b95fdc6fb802d",
+          "start_char": 0,
+          "end_char": 60,
+          "quote": "מאי עובדי כוכבים גמורין אמר ר\"נ בר יצחק לבטל רשות וליתן רשות"
+        },
+        {
+          "ref": "Chullin 6a:9",
+          "segment_id": "seg_9a843023ae01f6731d27",
+          "start_char": 0,
+          "end_char": 102,
+          "quote": "וכדתניא ישראל מומר משמר שבתו בשוק מבטל רשות ונותן רשות ושאינו משמר שבתו בשוק אינו מבטל רשות ונותן רשות"
+        },
+        {
+          "ref": "Chullin 6a:10",
+          "segment_id": "seg_9510259cdf172f166242",
+          "start_char": 0,
+          "end_char": 61,
+          "quote": "מפני שאמרו ישראל נותן רשות ומבטל רשות ובעובד כוכבים עד שישכור"
+        }
+      ],
+      "explanation": "Later reasons/decrees include minority idolatry concern, initially unaccepted and later accepted decrees, then treatment as full gentiles with domain-renunciation/transfer implications. This is contextual legal-status history, not a general judgment about present social groups or all individuals."
+    }
+  ]
+}
