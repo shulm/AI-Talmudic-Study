@@ -1,0 +1,67 @@
+from pathlib import Path
+helper=(Path(r'F:/Sefaria_QA/bavli_production_run_20261125_01/L01/bavli_berakhot/worker_wave2_20261126/batch01.py')).read_text(encoding='utf-8').split("refs=['4a:'")[0]
+exec(compile(helper,'serialization_helpers','exec'))
+pre='beh.redemptionkinds.20261126w3.'
+assert r.sha(r.encoded(state))=='701bf9caee1502f7a594343915ab70321ac8b5a1261afd6827440b984797e841'
+refs=['12a:'+str(n) for n in range(1,20)]
+add('s1','structure',refs[:4],dict(title='Redemption animal exclusions and qualified Passover analogy',primary=True,boundary='closed',legacy_ids=[]))
+add('s2','structure',refs[4:9],dict(title='Ben pekua redemption: Mar Zutra versus Rav Ashi',primary=True,boundary='closed',legacy_ids=[]))
+add('s3','structure',refs[9:],dict(title='Changed-form offspring redemption and two restricted proofs',primary=True,boundary='closed',legacy_ids=[]))
+for k,item in [('calf','calf'),('wild','wild animal'),('slaughtered','slaughtered animal'),('treifa','treifa'),('hybrid','hybrid'),('koi','koi')]:
+ c('c1'+k,'12a:1','The Mishnah’s first view excludes '+item+' as redemption for a firstborn donkey.')
+ pos('p1'+k,'12a:1','c1'+k,['First tanna of Mishnah'],'Excluded redemption kind')
+c('c1eliezerhybrid','12a:1','Rabbi Eliezer permits redemption with a hybrid because it is a seh.')
+c('c1eliezerkoi','12a:1','Rabbi Eliezer prohibits redemption with a koi because its status is doubtful.')
+c('c1priest','12a:1','If the donkey is given to a priest, the priest may not retain it without setting aside a seh in its place.')
+q('q2','12a:2','Whose view is the Mishnah’s exclusion list?')
+c('c2assign','12a:2','The Gemara assigns the list to Ben Bag Bag.')
+c('c2analogy','12a:2','Ben Bag Bag compares seh here with seh there to exclude the listed kinds.')
+q('q3','12a:3','Should the analogy also require male, unblemished and one-year-old status?')
+c('c3','12a:3','Repeated redeem wording broadens eligibility beyond those additional requirements.')
+q('q4','12a:4','Should that broadening include all the initially excluded kinds as well?')
+c('c4','12a:4','The reply preserves an operative role for the seh-seh analogy.')
+q('q5','12a:5','May a ben pekua, offspring permitted through its mother’s slaughter, redeem a firstborn donkey?')
+c('c5meir','12a:5','Under Rabbi Meir the inquiry does not arise because ben pekua requires slaughter and is a full seh.')
+c('c5sages','12a:5','The inquiry is under the Sages who hold the mother’s slaughter permits the offspring.')
+c('c6meat','12a:6','One branch regards it as meat in a basket, excluding it as a live redemption animal.',mode='hypothetical')
+c('c6live','12a:6','The other calls it a seh because it now runs and moves.',mode='hypothetical')
+c('c7mar','12a:7','Mar Zutra prohibits redemption with ben pekua.')
+c('c7ashi','12a:7','Rav Ashi permits redemption with ben pekua.')
+q('q8','12a:8','Rav Ashi asks Mar Zutra whether his reason derives from Passover, and if so why not also require male, unblemished and one year old?')
+c('c8','12a:8','The response invokes repeated redeem wording to broaden those requirements.')
+q('q9','12a:9','Why should that broadening not also include ben pekua?')
+c('c9','12a:9','The response again reserves an operative role for the seh-seh analogy.')
+q('q10','12a:10','May changed-form offspring, nidmeh, be used for redemption?')
+c('c10eliezer','12a:10','For Rabbi Eliezer, permission of hybrids makes changed-form offspring permission unproblematic.')
+c('c11scope','12a:11','The question is under the Sages who exclude hybrids.')
+c('c11yes','12a:11','One branch would permit changed-form offspring while prohibiting actual hybrids.',mode='hypothetical')
+c('c11no','12a:11','The alternative would make no distinction and prohibit both.',mode='hypothetical')
+c('c12cow','12a:12','The cited baraita excludes a cow’s goat-kind offspring from redemption.')
+c('c12infer','12a:12','The proposed inference permits a ewe’s goat-kind offspring and assigns that to the Sages because Rabbi Eliezer even permits hybrids.',mode='challenged')
+c('c13assign','12a:13','The answer permits assigning the baraita to Rabbi Eliezer.')
+c('c13mother','12a:13','Its point is that a cow’s goat-kind offspring follows its mother and is a calf, not a full goat despite its appearance.')
+c('c14initial','12a:14','Rabba bar Shmuel’s cited formulation calls a ewe’s goat-kind offspring with a sheep father a hybrid.',mode='challenged')
+q('q14','12a:14','With a sheep father, is it not changed-form offspring rather than a hybrid?')
+c('c14correct','12a:14','The corrected formulation calls it similar to a hybrid, treated by the Sages like a hybrid.')
+q('q15','12a:15','For what legal domain is that rabbinic assimilation needed?')
+c('c15hybrid','12a:15','For sacrifices, the ox-or-sheep wording already excludes hybrids.')
+c('c15nidmeh','12a:15','The or-goat wording already excludes changed-form offspring for sacrifices.')
+c('c16first','12a:16','For firstborn status, matching-kind parent and firstborn are already required by the verse.')
+c('c17tithe','12a:17','Animal tithe is initially dismissed because under-under is learned from sacrifices.')
+c('c17donkey','12a:17','The attempted conclusion assigns the assimilation to firstborn-donkey redemption, proving prohibition of changed-form offspring.',mode='challenged')
+c('c18tithe','12a:18','The reply retains animal tithe as the domain, with the case having some maternal signs.')
+c('c18hyp','12a:18','One might learn tithe from firstborn by the shared passing term and allow the partial-signs case.',mode='hypothetical')
+c('c19','12a:19','The teaching instead learns tithe from sacrifices through under-under, defeating that permission.')
+for ref,v,role in [('12a:1','Mishnah first tanna and Rabbi Eliezer','Animal exclusions and priest obligation'),('12a:2','Anonymous Gemara quoting Ben Bag Bag','Seh-seh analogy'),('12a:3','Anonymous exchange','Extra restrictions broadened'),('12a:4','Anonymous exchange','Analogy retains exclusions'),('12a:5','Anonymous Gemara','Ben pekua inquiry limited to Sages'),('12a:6','Anonymous Gemara','Two conceptual branches'),('12a:7','Mar Zutra and Rav Ashi','Opposite rulings'),('12a:8','Rav Ashi to Mar Zutra and response','Passover analogy challenge'),('12a:9','Dialogue continuation','Broadening challenge and analogy reply'),('12a:10','Anonymous Gemara','Changed-form inquiry'),('12a:11','Anonymous Gemara','Sages two branches'),('12a:12','Anonymous Gemara citing baraita','First attempted proof'),('12a:13','Anonymous answer','Maternal calf classification'),('12a:14','Rabba bar Shmuel report and anonymous correction','Hybrid terminology corrected'),('12a:15','Anonymous Gemara','Sacrificial domain excluded'),('12a:16','Anonymous Gemara','Firstborn domain excluded'),('12a:17','Anonymous Gemara','Tithe excluded and donkey-domain inference'),('12a:18','Anonymous reply','Partial-signs tithe case'),('12a:19','Anonymous reply','Sacrifice analogy resolves case, not original redemption inquiry')]:add('u'+ref.replace(':','_'),'utterances',[ref],dict(textual_voice=v,discourse_role=role,composition='composite'))
+for k,ref,surf,role,cands,scope in [('a1','12a:1','רבי אליעזר','speaker',['רבי אליעזר'],'Hybrid/koi rulings'),('a2','12a:2','בן בג בג','quoted_authority',['בן בג בג'],'Seh-seh analogy'),('a5m','12a:5',"ר' מאיר",'position_holder',['רבי מאיר'],'Ben pekua requires slaughter'),('a5s','12a:5','רבנן','collective',['Sages'],'Mother slaughter permits ben pekua'),('a7m','12a:7','מר זוטרא','speaker',['מר זוטרא'],'Ben pekua prohibited'),('a7a','12a:7','רב אשי','speaker',['רב אשי'],'Ben pekua permitted'),('a8','12a:8','רב אשי','speaker',['רב אשי'],'Challenge addressed to MarZutra'),('a14','12a:14','רבה בר שמואל','transmitter',['רבה בר שמואל'],'Changed-form baraita')]:att(k,ref,surf,role,cands,scope)
+for k,ref,cl,h,st,qu in [('p1eh','12a:1','c1eliezerhybrid',['רבי אליעזר'],'Hybrid permission',None),('p1ek','12a:1','c1eliezerkoi',['רבי אליעזר'],'Koi prohibition',None),('p2','12a:2','c2assign',['Anonymous Gemara'],'Tannaitic assignment','q2'),('p3','12a:3','c3',['Anonymous Gemara'],'Broadening','q3'),('p4','12a:4','c4',['Anonymous Gemara'],'Analogy remains effective','q4'),('p7m','12a:7','c7mar',['מר זוטרא'],'Ben pekua prohibited','q5'),('p7a','12a:7','c7ashi',['רב אשי'],'Ben pekua permitted','q5'),('p10','12a:10','c10eliezer',['Anonymous Gemara explaining רבי אליעזר'],'Inquiry unnecessary for RabbiEliezer','q10'),('p11y','12a:11','c11yes',['Anonymous Gemara'],'Unresolved inquiry branch','q10'),('p11n','12a:11','c11no',['Anonymous Gemara'],'Unresolved inquiry branch','q10'),('p12','12a:12','c12infer',['Anonymous Gemara'],'Proof attempt defeated','q10'),('p13','12a:13','c13assign',['Anonymous Gemara'],'Alternative attribution',None),('p17','12a:17','c17donkey',['Anonymous Gemara'],'Second proof attempt defeated','q10'),('p18','12a:18','c18tithe',['Anonymous Gemara'],'Alternative domain',None)]:pos(k,ref,cl,h,st,qu,unc=['Both proof attempts are deflected; no final ruling for Sages on nidmeh is supplied here.'] if k in ['p11y','p11n'] else [])
+for k,ref,a,b,rel in [('e1h','12a:1','c1eliezerhybrid','c1hybrid','distinction'),('e2','12a:2','c2assign','q2','answer'),('e3','12a:3','c3','q3','answer'),('e4','12a:4','c4','q4','answer'),('e5','12a:5','c5sages','q5','qualification'),('e6m','12a:6','c6meat','q5','answer'),('e6l','12a:6','c6live','q5','answer'),('e7m','12a:7','c7mar','q5','answer'),('e7a','12a:7','c7ashi','q5','answer'),('e7d','12a:7','c7ashi','c7mar','distinction'),('e8','12a:8','c8','q8','answer'),('e9','12a:9','c9','q9','answer'),('e11','12a:11','c11scope','q10','qualification'),('e11y','12a:11','c11yes','q10','answer'),('e11n','12a:11','c11no','q10','answer'),('e12','12a:12','c12infer','q10','answer'),('e13','12a:13','c13assign','c12infer','objection'),('e13m','12a:13','c13mother','c12cow','support'),('e14q','12a:14','q14','c14initial','objection'),('e14','12a:14','c14correct','q14','answer'),('e14c','12a:14','c14correct','c14initial','correction'),('e17','12a:17','c17donkey','q15','answer'),('e18','12a:18','c18tithe','c17donkey','objection'),('e19','12a:19','c19','c18hyp','objection')]:edge(k,ref,a,b,rel)
+for x in rows:
+ if x['layer']=='claims':x['content']['scope']='Redemption-kind exclusions and ben-pekua/nidmeh questions. Distinct MarZutra/RavAshi rulings retained. Two nidmeh proof attempts fail; no final prohibition or permission invented. Sacrifice, firstborn, animal-tithe and donkey-redemption domains kept separate.'
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Read12a1–13a26 and omission reread12a1–19. Six exclusions separated, competing hybrid view retained, two distinct uncertain animal categories, proof restrictions and partial-signs tithe domain preserved. Original nidmeh inquiry remains unresolved after deflected proofs. Completed '+layer+' pass.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/l01_bekhorot',epoch=2,execution=dict(route='interactive_agent',agent_id='/root',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch27_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch27_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch27_receipt.json',r.encoded(out));print(r.encoded(out).decode())

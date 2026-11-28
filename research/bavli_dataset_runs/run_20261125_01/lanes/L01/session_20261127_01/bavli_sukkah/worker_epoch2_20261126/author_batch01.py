@@ -1,0 +1,168 @@
+"""Manual source annotations; helpers only serialize evidence, links and coverage."""
+import json, pathlib, importlib.util
+BASE=pathlib.Path(__file__).parent
+JOB=BASE.parent
+RUNNER=pathlib.Path('C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_production_v1/runner.py')
+spec=importlib.util.spec_from_file_location('runner',RUNNER); r=importlib.util.module_from_spec(spec);spec.loader.exec_module(r)
+j,source=r.load(JOB); ss={s['ref'].replace('Sukkah ',''):s for s in source.values()}
+records=[]; notes={}; handles={}
+def ev(ref,quote=None):
+    s=ss[ref]; t=s['text']; a=t.index(quote) if quote else 0; b=a+len(quote) if quote else len(t)
+    return dict(segment_id=s['id'],start_char=a,end_char=b,quote=t[a:b])
+def add(key,layer,refs,content,origin='source_paraphrase',uncertainty=None,links=None):
+    rid='sk.e2.b01.'+key; handles[key]=rid
+    records.append(dict(id=rid,layer=layer,evidence=[ev(x) for x in refs.split()],content=content,origin=origin,uncertainty=uncertainty or [],links=[handles.get(x,x) for x in (links or [])]))
+    return rid
+def group(key,start,end,title):
+    refs=list(ss); a=refs.index(start);b=refs.index(end)
+    add(key,'structure',' '.join(refs[a:b+1]),dict(title=title,primary=True,boundary='closed',legacy_ids=[]),'editorial_inference')
+def u(ref,voice,role,composition='atomic',uncertainty=None):
+    return add('u'+ref,'utterances',ref,dict(textual_voice=voice,discourse_role=role,composition=composition),'source_paraphrase',uncertainty)
+def c(key,refs,holder,proposition,scope,conditions=None,mode='asserted',status='stated locally; no final halakhic ruling inferred',uncertainty=None):
+    rid=add('c'+key,'claims',refs,dict(proposition=proposition,conditions=conditions or [],scope=scope,assertion_mode=mode),uncertainty=uncertainty)
+    add('p'+key,'positions',refs,dict(holder_candidates=[holder],claim_id=rid,question_id=None,conditions=conditions or [],local_status=status),uncertainty=uncertainty,links=['c'+key])
+    return rid
+def a(key,refs,surface,role,scope,chain=None,candidates=None,uncertainty=None):
+    add('a'+key,'attributions',refs,dict(surface=surface,role=role,candidates=candidates or [surface],scope=scope,transmission_chain=chain or []),uncertainty=uncertainty)
+def q(key,refs,text,conditions=None,status='partial'):
+    return add('q'+key,'questions',refs,dict(formulation=text,question_origin='explicit',conditions=conditions or [],answer_set_status=status))
+def edge(key,refs,src,tgt,rel,explicit='source_explicit'):
+    add('e'+key,'edges',refs,dict(source_id=handles[src],target_id=handles[tgt],relation=rel,explicitness=explicit),links=[src,tgt])
+def note(ref,text): notes[ref]=text
+
+group('s1','2a:1','2a:2','Opening Mishnah: sukkah height, walls and shade')
+group('s2','2a:3','2a:6','Why sukkah is invalidated while a tall alley is instructed to be lowered')
+group('s3','2a:7','2b:4','Three rationales for the twenty-cubit limit and their objections')
+group('s4','2b:5','2b:13','Three reports in Rav’s name limiting the tannaitic height dispute')
+group('s5','2b:14','3a:3','Heleni’s high sukkah: proof, obligation and small chambers')
+
+u('2a:1','anonymous Mishnah and רבי יהודה','opposing height rulings','composite')
+c('1a','2a:1','anonymous Mishnah','A sukkah taller than twenty cubits is invalid.','sukkah height',['height > 20 cubits'])
+c('1b','2a:1','רבי יהודה','A sukkah taller than twenty cubits is valid.','sukkah height',['height > 20 cubits'])
+a('1a','2a:1','anonymous Mishnah','anonymous','height invalidation');a('1b','2a:1','רבי יהודה','position_holder','height validation')
+note('2a:1','Retained opposed anonymous and R. Judah rulings; later scope limitations belong to separate reports, not silently inserted here.')
+u('2a:2','anonymous Mishnah','three invalidity conditions','composite')
+c('2a','2a:2','anonymous Mishnah','A sukkah lower than ten handbreadths is invalid.','minimum height',['height < 10 handbreadths'])
+c('2b','2a:2','anonymous Mishnah','A sukkah lacking the requisite walls is invalid; the source prints (שלשה).','walls',['lacks (three) walls'],uncertainty=['Parentheses retained as source typography; no textual-witness resolution.'])
+c('2c','2a:2','anonymous Mishnah','A sukkah whose sunlight exceeds its shade is invalid.','shade',['sunlight > shade'])
+a('2','2a:2','anonymous Mishnah','anonymous','three further invalidities');note('2a:2','Separated height, walls and shade; retained parenthetical wall numeral.')
+u('2a:3','anonymous Gemara quoting Mishnah; רבי יהודה','parallel alley ruling','composite')
+c('3a','2a:3','anonymous quoted Mishnah','An alley entrance higher than twenty cubits must be reduced.','mavoi height',['height > 20 cubits'])
+c('3b','2a:3','רבי יהודה','The alley entrance need not be reduced.','mavoi height',['height > 20 cubits'])
+a('3a','2a:3','תנן התם','quoted_authority','anonymous alley Mishnah',candidates=['anonymous Mishnah']);a('3b','2a:3','רבי יהודה','quoted_authority','alley exemption')
+note('2a:3','Parallel tannaitic text is quoted evidence, not the Gemara’s independent practical ruling.')
+u('2a:4','anonymous Gemara','wording comparison question');q('4','2a:4','Why does sukkah use invalidity language and mavoi prescribe a remedy?');a('4','2a:4','anonymous Gemara','anonymous','wording comparison');note('2a:4','Question concerns wording, not an asserted difference in availability of repair.')
+u('2a:5','anonymous Gemara','first answer')
+c('5','2a:5','anonymous Gemara','Torah-level sukkah law uses invalidity language; rabbinic alley law uses repair language.','explanation of Mishnah wording');a('5','2a:5','anonymous Gemara','anonymous','first answer');edge('5','2a:5','c5','q4','answer');note('2a:5','First explanation retained alongside the alternative, without treating either as retracted.')
+u('2a:6','anonymous Gemara','alternative answer','composite')
+c('6a','2a:6','anonymous Gemara','Torah laws can also be formulated as remedies.','alternative wording explanation')
+c('6b','2a:6','anonymous Gemara','Sukkah has numerous matters and therefore states invalidity concisely; mavoi has fewer matters and states the remedy.','alternative wording explanation')
+a('6','2a:6','ואיבעית אימא','anonymous','alternative anonymous explanation',candidates=['anonymous Gemara']);edge('6','2a:6','c6b','q4','answer');note('2a:6','Alternative explicitly denies that Torah status alone requires invalidity wording; not an additional named opinion.')
+u('2a:7','anonymous Gemara','derivation question');q('7','2a:7','From where is the twenty-cubit sukkah limit derived?');a('7','2a:7','anonymous Gemara','anonymous','derivation question');note('2a:7','Elliptical מנה״מ scoped to upper height limit from ensuing answers, not all Mishnah invalidities.')
+u('2a:8','רבה','scriptural derivation and visual rationale','composite')
+c('8a','2a:8','רבה','The knowledge verse supports requiring awareness of dwelling in a sukkah.','twenty-cubit limit')
+c('8b','2a:8','רבה','Up to twenty cubits the roof is visually noticed; above that height the eye does not take it in.','visual rationale',['ordinary wall/roof configuration; later qualification at 2b:5–6'])
+a('8','2a:8','רבה','speaker','knowledge/visibility rationale');edge('8','2a:8','c8a','q7','answer');note('2a:8','רבה is Rabbah, distinct from רבא at 2a:12; visual explanation later qualified for walls reaching roof.')
+u('2a:9','רבי זירא','shade derivation','composite')
+c('9a','2a:9','רבי זירא','The verse describing a sukkah for shade supports requiring roof shade.','twenty-cubit limit')
+c('9b','2a:9','רבי זירא','At more than twenty cubits one sits in wall shade rather than sukkah shade.','shade rationale',['ordinary width; larger width qualification at 2b:7–8'])
+a('9','2a:9','רבי זירא','speaker','shade rationale');edge('9','2a:9','c9a','q7','answer');note('2a:9','Shade explanation is separate from Rabbah’s awareness rationale; width restriction appears later.')
+u('2a:10','אביי','counterexample question');q('10','2a:10','Would a sukkah in Ashterot Karnayim be invalid on the shade rationale?',['external topography supplies shade']);a('10','2a:10','אביי','speaker','question to R. Zeira');edge('10','2a:10','q10','c9b','objection');note('2a:10','Rhetorical consequence is challenged, not asserted as Abaye’s ruling.')
+u('2a:11','רבי זירא (contextual reply)','distinction')
+c('11','2a:11','רבי זירא','Removing the external obstruction would leave roof shade there; removing the walls of the tall sukkah would leave no roof shade.','answer to Ashterot Karnayim objection',['counterfactual removal of external obstruction or walls'])
+a('11','2a:11','א"ל','speaker','reply to Abaye after R. Zeira',candidates=['רבי זירא'],uncertainty=['Name supplied by immediate dialogue context, not printed in reply.']);edge('11','2a:11','c11','q10','distinction');note('2a:11','Resolved dialogue antecedent locally; distinguishes roof’s capacity to shade from actual competing shade.')
+u('2a:12','רבא','temporary-dwelling derivation','composite')
+c('12a','2a:12','רבא','The seven-day dwelling command is read as leaving permanent dwelling for temporary dwelling.','twenty-cubit limit')
+c('12b','2a:12','רבא','A dwelling can be made temporary up to twenty cubits; above twenty it requires permanent construction.','structural capacity rationale',['height threshold 20 cubits'])
+a('12','2a:12','רבא','speaker','temporary dwelling rationale');edge('12','2a:12','c12a','q7','answer');note('2a:12','Rava distinct from Rabbah; ensuing reply makes capacity, not actual weak construction, decisive.')
+u('2a:13','אביי','counterexample question');q('13','2a:13','Would iron walls with roofing invalidate a sukkah?',['permanent wall material']);a('13','2a:13','אביי','speaker','challenge to Rava');edge('13','2a:13','q13','c12b','objection');note('2a:13','Iron-wall invalidation remains a challenge, not a settled rule.')
+u('2a:14','רבא (contextual reply)','clarification of structural capacity','composite')
+c('14a','2a:14','רבא','At a height permitting temporary construction, actual permanent construction still fulfills the obligation.','capacity rather than actual material',['height ≤ 20 cubits'])
+c('14b','2a:14','רבא','At a height requiring permanent construction, actual temporary construction does not fulfill the obligation.','capacity rather than actual material',['height > 20 cubits'])
+a('14','2a:14','א"ל','speaker','reply to Abaye after Rava',candidates=['רבא'],uncertainty=['Name inferred from immediate dialogue antecedent.']);edge('14a','2a:14','c14a','q13','answer');edge('14b','2a:14','c14b','c12b','qualification');note('2a:14','Two conditional limbs extracted; other explainers still invoke Abaye’s objection at 2b:4, so no universal acceptance inferred.')
+u('2b:1','anonymous Gemara explaining other proponents','reason for rejecting Rabbah derivation')
+c('b1','2b:1','other proponents as explained anonymously','The knowledge verse concerns knowledge for future generations, not current sight of the roof.','nonadoption of Rabbah rationale')
+a('b1','2b:1','כולהו','collective','others’ nonadoption of Rabbah',candidates=['רבי זירא','רבא']);edge('b1','2b:1','cb1','c8a','objection');note('2b:1','Retains explanatory reconstruction of others’ reading; no rejection of the height rule itself.')
+u('2b:2','anonymous Gemara explaining other proponents','reason for rejecting R. Zeira derivation')
+c('b2','2b:2','other proponents as explained anonymously','The shade verse describes the messianic era.','nonadoption of R. Zeira rationale')
+a('b2','2b:2','anonymous Gemara','anonymous','reason other proponents reject shade derivation');edge('b2','2b:2','cb2','c9a','objection');note('2b:2','Objection to applying the verse to this law, not a direct practical ruling.')
+u('2b:3','רבי זירא as defended anonymously','answer from wording')
+c('b3','2b:3','רבי זירא','The verse’s choice of sukkah rather than canopy supports learning both the future-era meaning and the sukkah shade rule.','dual significance of scriptural word')
+a('b3','2b:3','ור\' זירא','position_holder','anonymous defense assigned to R. Zeira');q('b3','2b:3','Why does the verse say sukkah rather than canopy?');edge('b3','2b:3','cb3','cb2','answer');note('2b:3','Anonymous dialectic assigned to R. Zeira’s position; not an explicitly transmitted direct utterance.')
+u('2b:4','anonymous Gemara explaining other proponents','nonadoption of Rava')
+c('b4','2b:4','other proponents as explained anonymously','Others do not adopt Rava’s derivation because of Abaye’s objection.','assessment of temporary-dwelling rationale')
+a('b4','2b:4','anonymous Gemara','anonymous','nonadoption of Rava');edge('b4','2b:4','cb4','c12a','objection');note('2b:4','Preserved tension with Rava’s answer; did not erase answer or assert unanimous resolution.')
+
+u('2b:5','anonymous question quoting רבי יאשיה אמר רב','alignment inquiry','composite')
+c('b5','2b:5','רב','The height dispute applies when walls do not reach the roof; when walls reach it even above twenty cubits is valid.','Rav report via R. Yoshiyah',['wall/roof connection'],status='report in Rav’s name; competing reports follow')
+a('b5t','2b:5','רבי יאשיה','transmitter','reports Rav on walls reaching roof',['רבי יאשיה','רב']);a('b5h','2b:5','רב','position_holder','walls-reaching-roof report',['רבי יאשיה','רב']);q('b5','2b:5','Which derivation fits R. Yoshiyah’s report in Rav’s name?');note('2b:5','Reporter and Rav as holder kept distinct; scope limits tannaitic disagreement rather than attributing its two sides to amoraim.')
+u('2b:6','anonymous Gemara','alignment answer')
+c('b6','2b:6','anonymous Gemara','The report fits Rabbah: walls reaching the roof draw the eye to it.','alignment of wall qualification with visibility');a('b6','2b:6','anonymous Gemara','anonymous','alignment with Rabbah');edge('b6','2b:6','cb6','qb5','answer');note('2b:6','Alignment inference from text, not a new transmission from Rabbah.')
+u('2b:7','anonymous question quoting רב הונא אמר רב','alignment inquiry','composite')
+c('b7','2b:7','רב','The height dispute applies at four by four cubits; above that area a tall sukkah is valid.','Rav report via Rav Huna',['more than 4×4 cubits permits height >20'],status='report later clarified to encompass smaller valid sukkot too')
+a('b7t','2b:7','רב הונא','transmitter','area report',['רב הונא','רב']);a('b7h','2b:7','רב','position_holder','area report',['רב הונא','רב']);q('b7','2b:7','Which derivation fits Rav Huna’s report in Rav’s name?');note('2b:7','Do not infer Rav Huna requires 4×4 for every sukkah: 2b:12–13 rejects that inference.')
+u('2b:8','anonymous Gemara','alignment answer')
+c('b8','2b:8','anonymous Gemara','The larger-area report fits R. Zeira: a wide sukkah has roof shade.','alignment with shade');a('b8','2b:8','anonymous Gemara','anonymous','alignment with R. Zeira');edge('b8','2b:8','cb8','qb7','answer');note('2b:8','Width affects shade explanation; not a new minimum-size ruling.')
+u('2b:9','anonymous question quoting רב חנן בר רבה אמר רב','alignment inquiry and negative answer','composite')
+c('b9a','2b:9','רב','The height dispute applies only at capacity for head, most of body and table; any larger capacity permits even above twenty cubits.','Rav report via Rav Hanan bar Rabbah',['larger than head/body/table minimum'],status='third reported qualification')
+c('b9b','2b:9','anonymous Gemara','The third report matches none of the three prior rationales.','alignment conclusion')
+a('b9t','2b:9','רב חנן בר רבה','transmitter','minimum-capacity report',['רב חנן בר רבה','רב']);a('b9h','2b:9','רב','position_holder','minimum-capacity report',['רב חנן בר רבה','רב']);q('b9','2b:9','Which rationale fits Rav Hanan bar Rabbah’s report?');edge('b9','2b:9','cb9b','qb9','answer');note('2b:9','Rav Hanan bar Rabbah not Rabbah himself; דלא כחד preserved, without inventing fourth derivation.')
+u('2b:10','anonymous Gemara','contrast among reports')
+c('b10','2b:10','anonymous Gemara','R. Yoshiyah’s report differs from the other two: they specify horizontal dimensions and he does not.','comparison of Rav traditions');a('b10','2b:10','anonymous Gemara','anonymous','comparison of reports');note('2b:10','Differences among transmitters’ formulations are explicit; no harmonization imposed.')
+u('2b:11','anonymous Gemara','proposed minimum-size dispute');q('b11','2b:11','Do Rav Huna and Rav Hanan bar Rabbah disagree on the minimum valid sukkah size?');c('b11','2b:11','anonymous Gemara','Perhaps one requires four cubits and the other head/body/table capacity.','proposed reconstruction',mode='rejected',status='explicitly rejected by לא at 2b:12');a('b11','2b:11','anonymous Gemara','anonymous','rejected proposal');note('2b:11','Rejected minimum-size dispute not promoted to either named scholar’s settled position.')
+u('2b:12','anonymous Gemara','rejection and alternative reconstruction','composite')
+c('b12a','2b:12','anonymous Gemara','Both reports allow a sukkah containing head, most of body and table.','shared minimum according to reconstruction')
+c('b12b','2b:12','רב חנן בר רבה reporting רב','Height is disputed only at the exact minimum; larger capacity is valid according to all.','reconstructed difference between Rav reports',['capacity > head/body/table minimum'],status='anonymous explanation aligned by prior explicit report')
+a('b12','2b:12','דכולי עלמא','collective','shared minimum in these two reports',candidates=['רב הונא reporting רב','רב חנן בר רבה reporting רב']);edge('b12','2b:12','cb12a','cb11','correction');note('2b:12','מר resolved by 2b:9 explicit content, not order alone; both agree on minimum size.')
+u('2b:13','anonymous Gemara explaining Rav Huna report','second reconstructed scope')
+c('b13','2b:13','רב הונא reporting רב','The height dispute covers head/body/table capacity through four cubits; above four cubits all permit.','reconstructed Rav Huna report',['minimum ≤ capacity ≤ 4×4 cubits: dispute; larger: all permit'])
+a('b13','2b:13','ומר','position_holder','the four-cubit report',candidates=['רב הונא reporting רב'],uncertainty=['Resolved by content of explicit 2b:7 report, not pronoun order.']);edge('b13','2b:13','cb13','cb7','qualification');note('2b:13','Continuation supplies lower bound omitted from initial report; not a four-cubit minimum.')
+
+u('2b:14','anonymous objection quoting baraita','height baraita','composite')
+c('b14a','2b:14','anonymous baraita','A sukkah above twenty cubits is invalid.','quoted baraita')
+c('b14b','2b:14','רבי יהודה','A sukkah may be valid even forty or fifty cubits high.','quoted baraita',['forty/fifty cubits illustrative printed heights'])
+a('b14a','2b:14','מיתיבי','anonymous','objection introducing baraita');a('b14b','2b:14','רבי יהודה','quoted_authority','permitting high sukkah');note('2b:14','Objection’s force depends on following narrative and dimensions; isolated baraita not treated as refuting every report.')
+u('2b:15','רבי יהודה and interlocutors','Heleni narrative proof and rebuttal','composite')
+c('b15a','2b:15','רבי יהודה','Heleni’s sukkah in Lod exceeded twenty cubits and visiting elders did not object.','narrative offered as proof')
+c('b15b','2b:15','interlocutors of רבי יהודה','Her example need not prove validity because a woman is exempt from sukkah.','response to narrative proof')
+c('b15c','2b:15','רבי יהודה','She had seven sons, and acted only according to sages.','counterresponse to exemption objection')
+a('b15a','2b:15','רבי יהודה','speaker','narrative proof and counterresponse');a('b15b','2b:15','אמרו לו','collective','objectors to proof',candidates=['unnamed interlocutors of רבי יהודה']);edge('b15a','2b:15','cb15a','cb14b','support');edge('b15b','2b:15','cb15b','cb15a','objection');edge('b15c','2b:15','cb15c','cb15b','answer');q('b15','2b:15','Can an exempt woman’s sukkah prove the rule?');note('2b:15','Preserved narrator versus quoted objectors; sons’ ages are inferred only in subsequent explanation.')
+u('2b:16','anonymous Gemara','question on redundant proof');q('b16','2b:16','Why add that all her actions followed sages?');a('b16','2b:16','anonymous Gemara','anonymous','question on second proof');note('2b:16','Question about argument necessity rather than historical denial.')
+u('2b:17','anonymous Gemara reconstructing רבי יהודה','anticipated exemption objection and response','composite')
+c('b17a','2b:17','hypothetical objectors','Perhaps all sons were minors exempt from sukkah.','anticipated objection',mode='hypothetical')
+c('b17b','2b:17','רבי יהודה as reconstructed','Among seven sons at least one must have been independent of his mother.','reconstructed response to minors objection',status='source’s argument; not independently verified historical age')
+a('b17','2b:17','הכי קאמר להו','position_holder','anonymous reconstruction of Judah',candidates=['רבי יהודה']);edge('b17','2b:17','cb17b','cb17a','answer');note('2b:17','No exact ages invented; inference is explicitly the sugya’s reconstruction.')
+u('2b:18','anonymous Gemara reconstructing רבי יהודה','rabbinic-obligation objection and answer','composite')
+c('b18a','2b:18','hypothetical objectors','The independent minor’s obligation is rabbinic, and perhaps Heleni disregarded rabbinic law.','anticipated objection',mode='hypothetical')
+c('b18b','2b:18','רבי יהודה as reconstructed','Her following sages answers the suggestion she disregarded the minor’s rabbinic obligation.','purpose of additional proof')
+a('b18','2b:18','וכי תימרו','anonymous','anonymous reconstruction of exchange');edge('b18a','2b:18','cb18b','cb18a','answer');edge('b18b','2b:18','cb18b','qb16','answer');note('2b:18','Rabbinic noncompliance only hypothetical, never an asserted characteristic of Heleni.')
+u('2b:19','anonymous Gemara','wall-based report fits royal practice')
+c('b19','2b:19 3a:1','anonymous Gemara','A queen could sit in a sukkah with walls not reaching the roof for ventilation.','fit of R. Yoshiyah’s qualification to Heleni narrative')
+a('b19','2b:19','anonymous Gemara','anonymous','assessment of walls-reaching-roof report');note('2b:19','Sentence continues into 3a:1 משום אוירא; evidence includes both segments.')
+u('3a:1','anonymous Gemara and רבה בר רב אדא','small-size objection and chamber answer','composite')
+q('3a1','3a:1','Would a queen normally sit in a small sukkah?',['height dispute said to concern only small sukkot'])
+c('3a1','3a:1','רבה בר רב אדא','The narrative concerns a sukkah made as small chambers.','first answer to royal-size objection',status='challenged in next segment')
+a('3a1','3a:1','רבה בר רב אדא','speaker','chamber answer');edge('3a1','3a:1','c3a1','q3a1','answer');note('3a:1','Ventilation closes prior page; Rabbah bar Rav Adda is not Rabbah; chamber answer is subsequently refined.')
+u('3a:2','anonymous Gemara and רב אשי','objection and refined chamber answer','composite')
+q('3a2','3a:2','Would a queen normally occupy a sukkah composed of little chambers?')
+c('3a2','3a:2','רב אשי','The narrative concerns small chambers within her sukkah.','refinement of chamber answer')
+a('3a2','3a:2','רב אשי','speaker','inner-chambers interpretation');edge('3a2a','3a:2','q3a2','c3a1','objection');edge('3a2b','3a:2','c3a2','q3a2','answer');note('3a:2','Distinguishes entire royal sukkah partitioned into small rooms from small rooms within larger sukkah.')
+u('3a:3','anonymous Gemara assigning tannaitic readings','competing placement of sons','composite')
+c('3a3a','3a:3','רבנן','Her sons sat in the valid large sukkah while she occupied chambers for privacy; hence elders’ silence.','rabbis’ reading of narrative')
+c('3a3b','3a:3','רבי יהודה','Her sons sat beside her in the chambers and elders still did not object.','Judah’s reading of narrative')
+a('3a3a','3a:3','רבנן','collective','rabbis’ placement of sons');a('3a3b','3a:3','ר\' יהודה','position_holder','Judah’s placement of sons',candidates=['רבי יהודה']);edge('3a3a','3a:3','c3a3a','cb15a','qualification');edge('3a3b','3a:3','c3a3b','cb14b','support');note('3a:3','Alternative narrative readings retained; privacy motive is source-explicit, not agent psychology. No adjudication of actual seating.')
+
+refs=list(ss); core=refs[:refs.index('3a:3')+1]
+assert len(core)==36 and set(core)==set(notes)
+coverage=[]
+for ref in core:
+    sid=ss[ref]['id']
+    for layer in r.LAYERS:
+        ids=[v['id'] for v in records if (layer=='reconciliation' or v['layer']==layer) and any(e['segment_id']==sid for e in v['evidence'])]
+        rationale=notes[ref] if layer=='reconciliation' else 'Source-read '+layer+' pass. '+notes[ref]
+        if not ids: rationale+=' No separate '+layer+' record supported in this segment after reading the complete local continuation.'
+        coverage.append(dict(segment_id=sid,layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale=rationale))
+p={k:j[k] for k in ['schema_version','tractate','source_sha256','protocol_sha256','schema_sha256']}
+p.update(owner='/root/sukkah_production',epoch=2,execution=dict(route='interactive_agent',agent_id='/root/sukkah_production',model_id=None),records=records,coverage=coverage,open_tails=[])
+r.immutable(BASE/'proposal01.json',r.encoded(p))
+print(json.dumps(dict(proposal_sha256=r.sha(r.encoded(p)),records=len(records),segments=len(core))))

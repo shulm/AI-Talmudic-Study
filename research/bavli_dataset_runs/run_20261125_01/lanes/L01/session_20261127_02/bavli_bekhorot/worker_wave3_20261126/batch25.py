@@ -1,0 +1,68 @@
+from pathlib import Path
+helper=(Path(r'F:/Sefaria_QA/bavli_production_run_20261125_01/L01/bavli_berakhot/worker_wave2_20261126/batch01.py')).read_text(encoding='utf-8').split("refs=['4a:'")[0]
+exec(compile(helper,'serialization_helpers','exec'))
+pre='beh.redemptionvalue.20261126w3.'
+assert r.sha(r.encoded(state))=='008b52a41e865bb92757793fb9a681e7585f90afcb4d76b28a1c0031370d6bea'
+refs=['10b:'+str(n) for n in range(28,34)]+['11a:'+str(n) for n in range(1,17)]
+add('s1','structure',refs[:12],dict(title='Immediate redemption, minimum value and distinction between advice and independent action',primary=True,boundary='closed',legacy_ids=[]))
+add('s2','structure',refs[12:16],dict(title='Equivalent-value redemption and correction of tannaitic alignment',primary=True,boundary='closed',legacy_ids=[]))
+add('s3','structure',refs[16:],dict(title='Redeeming another owner’s donkey: effective redemption and ownership inquiry',primary=True,boundary='closed',legacy_ids=[]))
+for ref,v,role in [('10b:28','Anonymous Gemara','Why derive immediate/any-value redemption?'),('10b:29','Anonymous Gemara','Possible human-firstborn analogy'),('10b:30','Anonymous Gemara','Immediate and any-value exceptions'),('10b:31','Anonymous Gemara','RabbiYoseBarYehuda shekel-source dilemma'),('10b:32','Rava','Valuation minimum derivation'),('10b:33','Anonymous Gemara','Sages alternative verse reading begins'),('11a:1','Anonymous Gemara','Means-assessment context'),('11a:2','Rav Nahman, Rav Yosef and Rava','Sages ruling and small-value example'),('11a:3','Anonymous Gemara','Low-value and lean-animal doubt excluded'),('11a:4','Rabbi Yehuda Nesia and Rabbi Tarfon','Redemption amount advice'),('11a:5','Rava and explanatory continuation','Middle amount defined'),('11a:6','Anonymous Gemara','Advice versus independent action reconciliation'),('11a:7','Rabbi Yitzhak reporting Resh Lakish','Equivalent-value redemption, initial alignment'),('11a:8','Rav Aha and Ravina','Report formulation and halakhic challenge'),('11a:9','Ravina challenge continuation','Anonymous Mishnah alignment'),('11a:10','Anonymous answer and reported practice','RabbiYehuda compatibility and leniency'),('11a:11','Rav Shizvi reporting Rav Huna; anonymous inquiry','Other-owner redemption effective; who owns donkey?'),('11a:12','Anonymous Gemara','Inquiry restricted to RabbiYehuda'),('11a:13','Anonymous Gemara','Sacred-property analogy or retained surplus ownership'),('11a:14','Rav Nahman citing baraita','Double-payment theft proof'),('11a:15','Anonymous Gemara','Baraita belongs to RabbiYehuda'),('11a:16','Anonymous Gemara','Private-property theft excludes sacred analogy')]:add('u'+ref.replace(':','_'),'utterances',[ref],dict(textual_voice=v,discourse_role=role,composition='composite'))
+q('q28','10b:28','Why are immediate redemption and redemption at any amount not obvious?')
+c('c29time','10b:29','A proposed human-firstborn analogy would postpone donkey redemption until thirty days.',mode='hypothetical')
+c('c29amount','10b:29','That analogy would require five units for redemption.',mode='hypothetical')
+c('c30time','10b:30','The repeated redeem term teaches immediate redemption.')
+c('c30amount','10b:30','It teaches redemption at any amount.')
+q('q31','10b:31','If Rabbi Yose bar Yehuda analogizes to human firstborn, why not five; if not, what establishes one shekel?')
+c('c32','10b:32','Rava derives his one-shekel floor from all your valuations shall be in the sacred shekel, without the human-firstborn analogy.')
+c('c33','10b:33','For the Sages, that valuation verse is assigned to a different context.')
+c('c1','11a:1','The context is assessment according to means.')
+c('c2halakha','11a:2','Rav Nahman rules according to the Sages.')
+c('c2yosef','11a:2','Rav Yosef permits even the low-value patruza animal described as worth a danka.')
+rows[-1]['uncertainty'].append('פטרוזא and בר דנקא kept without a normalized monetary conversion or definitive lexical identification.')
+c('c2rava','11a:2','Rava cites the Mishnah’s large and small wording as support.')
+c('c3low','11a:3','The statement excludes the possible reservation that such an extremely low value would not suffice.',mode='hypothetical')
+c('c3patruza','11a:3','Alternatively it excludes a reservation against a patruza animal specifically.',mode='hypothetical')
+q('q4','11a:4','Rabbi Yehuda Nesia asks Rabbi Tarfon how much to give the priest for his firstborn donkey.')
+c('c4generous','11a:4','Rabbi Tarfon gives one sela for a generous disposition.')
+c('c4poor','11a:4','He gives one shekel for a poor disposition.')
+c('c4middle','11a:4','He gives ragya for an intermediate disposition.')
+c('c5ruling','11a:5','Rava rules ragya.')
+c('c5amount','11a:5','The passage defines ragya as three zuz, described by a phrase relating it to both sides.')
+q('q6','11a:6','Do the rulings of any amount and the middle amount conflict?')
+c('c6','11a:6','The answer distinguishes one who comes for advice from one who acts on his own.')
+rows[-1]['uncertainty'].append('Immediate syntax gives contexts without repeating ruling names; local juxtaposition connects advice with middle amount and independent action with any amount.')
+c('c7','11a:7','Rabbi Yitzhak reports Resh Lakish: one lacking a seh may redeem the firstborn donkey at its value.',cond=['Has a firstborn donkey','Lacks a seh'])
+c('c7initial','11a:7','The initial analysis excludes Rabbi Yehuda because of the seh requirement and assigns the teaching to Rabbi Shimon.',mode='challenged')
+c('c8report','11a:8','Rav Aha transmits that formulation.')
+c('c8rule','11a:8','Ravina challenges it on the ground that the ruling between Rabbi Yehuda and Rabbi Shimon follows Rabbi Yehuda.')
+c('c9','11a:9','The challenge adds that the anonymous Mishnah follows Rabbi Yehuda.')
+c('c10y','11a:10','The answer allows the teaching even according to Rabbi Yehuda.')
+c('c10sacred','11a:10','The donkey is not to be treated more strictly than sacred property regarding value redemption.')
+c('c10lenient','11a:10','The seh option is a leniency rather than a restriction on the owner.')
+c('c10practice','11a:10','The passage reports Rav Nahman son of Rav Yosef redeeming with cooked vegetables at equivalent value.')
+rows[-1]['uncertainty'].append('Printed רב נחמן בריה דרב יוסף here differs from רב נחמיה בריה דרב יוסף at9b6; occurrences retained without silent identity correction.')
+c('c11valid','11a:11','Rav Shizvi reports Rav Huna: redemption of another owner’s firstborn donkey is effective.')
+q('q11','11a:11','Does the redeemed donkey belong to the redeemer or the original owners?')
+c('c12s','11a:12','According to Rabbi Shimon no ownership doubt arises: because benefit is permitted, the donkey remains the owners’ property.')
+c('c12y','11a:12','The ownership inquiry is under Rabbi Yehuda’s benefit prohibition.')
+c('c13sacred','11a:13','One branch analogizes to sacred property acquired by the redeemer who gives the money.',mode='hypothetical')
+c('c13surplus','11a:13','The other branch distinguishes sacred property because the original owner retains the surplus-value interest.',mode='hypothetical')
+c('c14double','11a:14','The cited baraita requires a thief of another’s firstborn donkey to pay double to its owners.')
+c('c14future','11a:14','It explains that although the owner lacks present enjoyment, he has a later interest.')
+c('c15','11a:15','The passage assigns the baraita to Rabbi Yehuda because Rabbi Shimon would already recognize a present interest.')
+c('c16private','11a:16','The theft verse covers theft from a person’s house, excluding sacred property.')
+c('c16conclude','11a:16','The doubled-payment proof therefore defeats equating the donkey to sacred property in the ownership inquiry.')
+for k,ref,surf,role,cands,scope,chain in [('a32','10b:32','רבא','speaker',['רבא'],'Shekel derivation',[]),('a2n','11a:2','רב נחמן','speaker',['רב נחמן'],'Sages ruling',[]),('a2y','11a:2','רב יוסף','speaker',['רב יוסף'],'Low-value example',[]),('a2r','11a:2','רבא','speaker',['רבא'],'Mishnah support',[]),('a4n','11a:4','רבי יהודה נשיאה','speaker',['רבי יהודה נשיאה'],'Advice question',[]),('a4t','11a:4','רבי טרפון','quoted_authority',['רבי טרפון'],'Amount advice',[]),('a5','11a:5','רבא','speaker',['רבא'],'Middle amount ruling',[]),('a7i','11a:7','רבי יצחק','transmitter',['רבי יצחק'],'Equivalent-value redemption',['רבי יצחק','ריש לקיש']),('a7rl','11a:7','ריש לקיש','quoted_authority',['ריש לקיש'],'Equivalent-value redemption',['רבי יצחק','ריש לקיש']),('a8a','11a:8','רב אחא','transmitter',['רב אחא'],'Formulation of report',[]),('a8r','11a:8','רבינא','speaker',['רבינא'],'Halakhic alignment challenge',[]),('a10','11a:10','רב נחמן בריה דרב יוסף','quoted_authority',['רב נחמן בריה דרב יוסף'],'Reported vegetable redemption',[]),('a11s','11a:11','רב שיזבי','transmitter',['רב שיזבי'],'Other-owner redemption',['רב שיזבי','רב הונא']),('a11h','11a:11','רב הונא','quoted_authority',['רב הונא'],'Other-owner redemption',['רב שיזבי','רב הונא']),('a14','11a:14','אר"נ','speaker',['רב נחמן'],'Double-payment proof',[])]:att(k,ref,surf,role,cands,scope,chain)
+for k,ref,cl,h,st,qu in [('p30t','10b:30','c30time',['Anonymous exposition'],'Immediate redemption','q28'),('p30a','10b:30','c30amount',['Anonymous exposition'],'Any amount','q28'),('p32','10b:32','c32',['רבא'],'RabbiYoseBarYehuda derivation','q31'),('p2','11a:2','c2halakha',['רב נחמן'],'Ruling according to Sages',None),('p4g','11a:4','c4generous',['רבי טרפון'],'Advice: generous amount','q4'),('p4p','11a:4','c4poor',['רבי טרפון'],'Advice: poor amount','q4'),('p4m','11a:4','c4middle',['רבי טרפון'],'Advice: middle amount','q4'),('p5','11a:5','c5ruling',['רבא'],'Middle amount ruling, advice context',None),('p6','11a:6','c6',['Anonymous Gemara'],'Reconciliation','q6'),('p7','11a:7','c7',['ריש לקיש via רבי יצחק'],'Equivalent-value redemption',None),('p7i','11a:7','c7initial',['Initial anonymous analysis'],'Challenged alignment',None),('p10','11a:10','c10y',['Anonymous Gemara'],'Corrected alignment',None),('p11','11a:11','c11valid',['רב הונא via רב שיזבי'],'Effective redemption',None),('p12','11a:12','c12s',['Anonymous Gemara explaining רבי שמעון'],'Owners retain property','q11'),('p13a','11a:13','c13sacred',['Anonymous Gemara'],'Inquiry branch defeated by proof','q11'),('p13b','11a:13','c13surplus',['Anonymous Gemara'],'Inquiry branch supported by proof','q11'),('p16','11a:16','c16conclude',['Anonymous Gemara'],'Local conclusion','q11')]:
+ cr=next(x for x in rows if x['id']==pre+cl);pos(k,ref,cl,h,st,qu,cr['content']['conditions'],cr['uncertainty'])
+for k,ref,a,b,rel in [('e29t','10b:29','c29time','q28','answer'),('e29a','10b:29','c29amount','q28','answer'),('e30t','10b:30','c30time','c29time','objection'),('e30a','10b:30','c30amount','c29amount','objection'),('e32','10b:32','c32','q31','answer'),('e1','11a:1','c1','c33','qualification'),('e2','11a:2','c2rava','c2yosef','support'),('e4g','11a:4','c4generous','q4','answer'),('e4p','11a:4','c4poor','q4','answer'),('e4m','11a:4','c4middle','q4','answer'),('e5','11a:5','c5amount','c5ruling','qualification'),('e6','11a:6','c6','q6','answer'),('e8','11a:8','c8rule','c7initial','objection'),('e9','11a:9','c9','c7initial','objection'),('e10','11a:10','c10y','c7initial','correction'),('e10s','11a:10','c10sacred','c10y','support'),('e10l','11a:10','c10lenient','c10y','support'),('e12','11a:12','c12y','q11','qualification'),('e13a','11a:13','c13sacred','q11','answer'),('e13b','11a:13','c13surplus','q11','answer'),('e14','11a:14','c14future','c14double','support'),('e15','11a:15','c15','c14double','qualification'),('e16','11a:16','c16private','c16conclude','support'),('e16r','11a:16','c16conclude','c13sacred','objection'),('e16a','11a:16','c16conclude','q11','local_resolution')]:edge(k,ref,a,b,rel)
+for x in rows:
+ if x['layer']=='claims':x['content']['scope']='Redemption timing/value and ownership. Any-amount and middle-amount rulings reconciled by advice versus independent action. Equivalent-value redemption retained across revised tannaitic alignment. Printed Nehemya/Nahman name variation not silently collapsed. No modern currency conversion.'
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Source and omission reread10b28–11a26. Page-break statement10b33–11a1 integrated; monetary/time analogies separated, advice reconciliation retained, report chains and corrected alignment explicit, ownership inquiry resolved only by its stated private-property proof. Completed '+layer+' pass.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/l01_bekhorot',epoch=2,execution=dict(route='interactive_agent',agent_id='/root',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch25_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch25_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch25_receipt.json',r.encoded(out));print(r.encoded(out).decode())

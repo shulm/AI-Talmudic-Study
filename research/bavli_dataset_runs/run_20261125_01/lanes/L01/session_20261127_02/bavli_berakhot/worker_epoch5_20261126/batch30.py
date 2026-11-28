@@ -1,0 +1,43 @@
+from pathlib import Path
+exec(compile((Path(__file__).parent/'helpers.py').read_text(encoding='utf8'),'helpers','exec'))
+pre='bk.articulation_error.20261127e5.'
+assert r.sha(r.encoded(state))=='f23f13d6a7f193c55355fe5d35e45dab4d383641595b5b30bbf4d7615862f0c0'
+refs=['15b:'+str(i) for i in range(19,31)]+['16a:'+str(i) for i in range(1,7)]
+for k,rr,title in [('lenient',refs[:2],'Lenient resolution of two Shema disputes'),('resurrection',refs[2:4],'Womb and grave analogy'),('writing',refs[4:8],'Writing commands and the sotah comparison'),('letters',refs[8:11],'Spacing adjacent words and precise articulation'),('tents',refs[11:13],'Tents and streams analogy'),('errors',refs[13:],'Uncertain recitation errors and habitual continuation')]:add('s'+k,'structure',rr,dict(title=title,primary=True,boundary='closed',legacy_ids=[]))
+voices=['Mishnah lemma','Rabbi Tavi reporting Rabbi Yoshiya','Same chain with rhetorical question','A fortiori continuation','Rabbi Oshaya teaching before Rava','Rava identifies author and distinction','Anonymous challenge to explanation','Anonymous reply against hypothetical analogy','Rav Ovadya teaching before Rava','Rava supplies examples','Rabbi Hama son of Rabbi Hanina','Same speaker begins question','Analogy completed','Mishnah lemma','Narrative of Rabbi Ammi/Rabbi Assi/Rabbi Eleazar','Baraita recited before Rabbi Yohanan','Rabbi Yohanan qualifies','Narrative return and appreciation']
+for ref,voice in zip(refs,voices):add('u'+ref.replace(':','_'),'utterances',[ref],dict(textual_voice=voice,discourse_role='Ruling, exposition, qualification or narrative',composition='composite'))
+def claim(k,ref,text,holders,cond=(),status='Reported locally',unc=()):
+ c('c'+k,ref,text,cond=cond);pos('p'+k,ref,'c'+k,holders,status,cond=cond,unc=unc)
+ if unc:rows[-2]['uncertainty'].extend(unc)
+claim('20','15b:20','Rabbi Yoshiya through Rabbi Tavi rules leniently like both disputants: retrospective validity without hearing oneself and without precise articulation.',['Rabbi Yoshiya'],status='Local synthesis of the two Mishnah disputes',unc=['The two applications are inferred from the immediately governing Mishnah15a6–7; this is not initial permission to neglect articulation.'])
+q('q21','15b:21','Why does Proverbs place the grave beside the womb?')
+claim('21','15b:21','Rabbi Yoshiya through Rabbi Tavi interprets: as the womb takes in and brings out, so the grave takes in and brings out.',['Rabbi Yoshiya'])
+claim('22','15b:22','The a fortiori argument says if the womb receives quietly and brings out loudly, the grave that receives loudly should certainly bring out loudly, answering denial of resurrection from Torah.',['Rabbi Yoshiya'],status='Expository argument; not empirical claim about a particular resurrection event')
+claim('23','15b:23','Rabbi Oshaya teaches before Rava that u-khetavtam requires all in writing, even commands.',['Baraita recited by Rabbi Oshaya'])
+claim('24','15b:24','Rava identifies the teaching as Rabbi Yehuda’s: in sotah curses are written but commands are not, whereas here u-khetavtam includes commands.',['Rava'],status='Tannaitic attribution and textual distinction')
+claim('24yehuda','15b:24','Rabbi Yehuda’s sotah rule writes curses but not commands, based on writing these curses.',['Rabbi Yehuda'],cond=['Sotah writing'])
+q('q25','15b:25','Is Rabbi Yehuda’s reason really the word write rather than curses, which excludes commands?')
+claim('26','15b:26','The reply says u-khetavtam is needed to block deriving writing from writing in sotah: despite that hypothetical analogy, commands are included here.',['Anonymous Gemara'],status='Explains necessity of wording without replacing the sotah ground')
+claim('27','15b:27','Rav Ovadya teaches before Rava that ve-limmadtem requires complete learning, giving space between adjacent words.',['Baraita recited by Rav Ovadya'])
+claim('28','15b:28','Rava gives examples: al levavekha, al levavkhem, be-khol levavekha, be-khol levavkhem, esev be-sadekha, va-avadtem mehera, ha-kanaf petil and etkhem me-eretz.',['Rava'],status='Concrete examples of separating adjacent sounds')
+claim('29','15b:29','Rabbi Hama son of Rabbi Hanina says precise Shema articulation brings cooling of Gehinnom, deriving it through variant readings of the Psalm.',['Rabbi Hama son of Rabbi Hanina'],status='Exegetical reward teaching')
+q('q30','15b:30','Why are tents juxtaposed with streams?')
+claim('1','16a:1','As streams raise a person from impurity to purity, tents raise a person from the scale of guilt to merit.',['Rabbi Hama son of Rabbi Hanina'],status='Analogy completing15b30')
+claim('3','16a:3','While Rabbi Ammi and Rabbi Assi prepared a wedding canopy for Rabbi Eleazar, he went to hear a teaching in the study house and bring it back; he found a reciter before Rabbi Yohanan.',['Anonymous narrator'],status='Narrative frame',unc=['גננא rendered canopy in this contextual reading; pronouns follow Rabbi Eleazar as the one going, without inventing wedding details.'])
+claim('4middle','16a:4','One who erred and does not know where, within a paragraph returns to its beginning.',['Baraita before Rabbi Yohanan'],cond=['Error location unknown','Within paragraph'])
+claim('4between','16a:4','If uncertain between paragraphs, return to the first paragraph.',['Baraita before Rabbi Yohanan'],cond=['Error location unknown','Between paragraphs'])
+claim('4write','16a:4','If uncertain between the two writing clauses, return to the first writing clause.',['Baraita before Rabbi Yohanan'],cond=['Uncertain between writing clauses'])
+claim('5','16a:5','Rabbi Yohanan limits that rule to one who has not begun lemaan yirbu yemeikhem; if begun, habitual continuation has carried him along.',['Rabbi Yohanan'],cond=['Began lemaan yirbu yemeikhem'],status='Qualification of writing-clause uncertainty')
+claim('6','16a:6','Upon hearing the reported teaching, the others say hearing this alone would have sufficed for their coming.',['Rabbi Ammi and Rabbi Assi'],status='Narrative appreciation; no additional halakhic rule')
+for k,ref,surface,chain in [('20','15b:20','ר טבי',['רבי טבי','רבי יאשיה']),('21','15b:21','ר טבי',['רבי טבי','רבי יאשיה'])]:att('a'+k,ref,surface,'transmitter',[chain[0]],'Explicit transmission',chain=chain)
+for k,ref,surface,name in [('23','15b:23',"ר' אושעיא",'רבי אושעיא'),('24','15b:24',"ר' יהודה",'רבי יהודה'),('27','15b:27','רב עובדיה','רב עובדיה'),('28','15b:28','רבא','רבא'),('29','15b:29','ר חמא ברבי חנינא','רבי חמא ברבי חנינא'),('30','15b:30','רבי חמא ברבי חנינא','רבי חמא ברבי חנינא'),('3a','16a:3','רבי אמי','רבי אמי'),('3b','16a:3','רבי אסי','רבי אסי'),('3e','16a:3',"ר' אלעזר",'רבי אלעזר'),('5','16a:5',"ר' יוחנן",'רבי יוחנן')]:att('a'+k,ref,surface,'speaker',[name],'Named recital, rule, exposition or narrative participant')
+for k,ref,a,b,rel in [('21','15b:21','c21','q21','answer'),('22','15b:22','c22','c21','support'),('24','15b:24','c24','c23','support'),('25','15b:25','q25','c24','objection'),('26','15b:26','c26','q25','answer'),('28','15b:28','c28','c27','support'),('1','16a:1','c1','q30','answer'),('5','16a:5','c5','c4write','qualification')]:edge('e'+k,ref,a,b,rel)
+for x in rows:
+ if x['layer']=='claims':x['content']['scope']='Local articulation, writing and error-recovery rules plus attributed expositions and narrative. Preserve analogy as interpretation and uncertainty-specific recovery conditions.'
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Read15b19–16a23; reread core15b19–16a6 for dual lenient synthesis, resurrection analogy, sotah-writing challenge and reply, all eight articulation examples, Gehinnom and tents expositions, three uncertain-error cases and Rabbi Yohanan’s habitual-continuation exception. Completed '+layer+' pass.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/blind_reader_wave3',epoch=5,execution=dict(route='interactive_agent',agent_id='/root/blind_reader_wave3',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch30_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch30_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch30_receipt.json',r.encoded(out));print(r.encoded(out).decode())

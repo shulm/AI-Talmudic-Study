@@ -1,0 +1,507 @@
+{
+  "review_id": "bekhorot_opening_fresh_comparison",
+  "initial_reading_sha256": "5aa8d8376b439fe1f0aac527e52035965ba2ae345626e77d9bc0a7a4d871c6ca",
+  "producer_snapshot_sha256": "d33eec110117c488238f86530f882ddf97fb2c72b0662de4725ad6066d2999d8",
+  "producer_snapshot_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_bekhorot\\snapshots\\d33eec110117c488238f86530f882ddf97fb2c72b0662de4725ad6066d2999d8.json",
+  "producer_proposal_hashes": [
+    "df35cb99f3fa6fe1e333cffa22121c987ac5aa1addaf4e4db2e516b95b6ba675"
+  ],
+  "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8",
+  "scope": {
+    "kind": "assigned opening endpoint subset; not probability sample",
+    "core_refs": [
+      "Bekhorot 2a:1",
+      "Bekhorot 2a:2",
+      "Bekhorot 2a:3",
+      "Bekhorot 2a:4",
+      "Bekhorot 2a:5",
+      "Bekhorot 2a:6"
+    ],
+    "core_segments": 6,
+    "core_characters": 568,
+    "context_refs": [
+      "Bekhorot 2a:7",
+      "Bekhorot 2a:8",
+      "Bekhorot 2a:9",
+      "Bekhorot 2a:10",
+      "Bekhorot 2a:11",
+      "Bekhorot 2a:12",
+      "Bekhorot 2b:1",
+      "Bekhorot 2b:2",
+      "Bekhorot 2b:3",
+      "Bekhorot 2b:4",
+      "Bekhorot 2b:5",
+      "Bekhorot 2b:6",
+      "Bekhorot 2b:7",
+      "Bekhorot 2b:8",
+      "Bekhorot 2b:9",
+      "Bekhorot 2b:10",
+      "Bekhorot 2b:11",
+      "Bekhorot 2b:12",
+      "Bekhorot 2b:13",
+      "Bekhorot 2b:14",
+      "Bekhorot 2b:15",
+      "Bekhorot 2b:16",
+      "Bekhorot 2b:17",
+      "Bekhorot 2b:18",
+      "Bekhorot 2b:19",
+      "Bekhorot 2b:20",
+      "Bekhorot 2b:21",
+      "Bekhorot 2b:22",
+      "Bekhorot 3a:1",
+      "Bekhorot 3a:2",
+      "Bekhorot 3a:3",
+      "Bekhorot 3a:4",
+      "Bekhorot 3a:5",
+      "Bekhorot 3a:6",
+      "Bekhorot 3a:7",
+      "Bekhorot 3a:8",
+      "Bekhorot 3a:9",
+      "Bekhorot 3a:10",
+      "Bekhorot 3a:11"
+    ],
+    "context_segments": 39,
+    "context_characters": 3682,
+    "full_tractate_review": false,
+    "endpoint_block_complete": false,
+    "note": "Assigned six-segment opening core only; continuation read through 3a:11. No probability, closing endpoint or tractate-wide coverage asserted."
+  },
+  "blind_reading_preserved": true,
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "verdict_scope": "Only Bekhorot 2a:1–6; provisional AI comparison, not tractate acceptance or task eligibility",
+  "mechanical_checks": {
+    "producer_records": 58,
+    "direct_evidence_spans": 62,
+    "quote_equality": "pass against original six core strings",
+    "primary_partition": "pass: each of 568 original characters exactly once",
+    "id_uniqueness": "pass",
+    "record_links": "pass",
+    "source_hash": "matches pinned original",
+    "snapshot_hash": "pass",
+    "coverage_rows": 48,
+    "producer_layers": {
+      "attributions": 2,
+      "claims": 15,
+      "edges": 14,
+      "positions": 15,
+      "questions": 4,
+      "structure": 2,
+      "utterances": 6
+    },
+    "limitations": [
+      "Did not rerun global production validator or proposal replay.",
+      "No run-contract, schema hash or producer commit certification; snapshot is the exact bound evidence version."
+    ]
+  },
+  "independent_core_denominator": {
+    "atomic_readings": 21,
+    "questions": 4,
+    "relations": 12,
+    "substantive_omissions_detected": 0,
+    "confirmed_wrong_attributions": 0,
+    "confirmed_condition_losses": 0
+  },
+  "core_mapping": [
+    {
+      "initial_record": "C01",
+      "producer_ids": [
+        "bek.open1.c.purchase"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C02",
+      "producer_ids": [
+        "bek.open1.c.sale"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C03",
+      "producer_ids": [
+        "bek.open1.c.sale_prohibited"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C04",
+      "producer_ids": [
+        "bek.open1.c.partnership"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C05",
+      "producer_ids": [
+        "bek.open1.c.receiving"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C06",
+      "producer_ids": [
+        "bek.open1.c.giving"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C07",
+      "producer_ids": [
+        "bek.open1.c.purchase",
+        "bek.open1.c.sale",
+        "bek.open1.c.partnership",
+        "bek.open1.c.receiving",
+        "bek.open1.c.giving"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C08",
+      "producer_ids": [
+        "bek.open1.c.israel"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "Q01",
+      "producer_ids": [
+        "bek.open1.q.all"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C09",
+      "producer_ids": [
+        "bek.open1.e.purchase",
+        "bek.open1.e.sale_answer",
+        "bek.open1.e.partner",
+        "bek.open1.e.receiving",
+        "bek.open1.e.giving_need"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C10",
+      "producer_ids": [
+        "bek.open1.c.purchase_reason"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C11",
+      "producer_ids": [
+        "bek.open1.c.sale_fine"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C12",
+      "producer_ids": [
+        "bek.open1.c.sale_fine"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C13",
+      "producer_ids": [
+        "bek.open1.c.sale_no_fine"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "Q02",
+      "producer_ids": [
+        "bek.open1.q.partnership"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C14",
+      "producer_ids": [
+        "bek.open1.c.yehuda",
+        "bek.open1.a.yehuda",
+        "bek.open1.p.yehuda"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C15",
+      "producer_ids": [
+        "bek.open1.c.partnership_contrast"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "Q03",
+      "producer_ids": [
+        "bek.open1.q.receiving"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C16",
+      "producer_ids": [
+        "bek.open1.c.paired"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "Q04",
+      "producer_ids": [
+        "bek.open1.q.giving"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C17",
+      "producer_ids": [
+        "bek.open1.e.giving_need"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C18",
+      "producer_ids": [
+        "bek.open1.c.giving_fine"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C19",
+      "producer_ids": [
+        "bek.open1.c.giving_fine"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C20",
+      "producer_ids": [
+        "bek.open1.c.giving_fine"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    },
+    {
+      "initial_record": "C21",
+      "producer_ids": [
+        "bek.open1.c.giving_no_fine"
+      ],
+      "result": "substantive agreement; may be distributed across conditions/relations"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "category": "reasonable granularity difference",
+      "severity": "low",
+      "refs": [
+        "Bekhorot 2a:3",
+        "Bekhorot 2a:6"
+      ],
+      "initial_ids": [
+        "C11",
+        "C18",
+        "C20"
+      ],
+      "producer_ids": [
+        "bek.open1.c.sale_fine",
+        "bek.open1.c.giving_fine"
+      ],
+      "original_reading": "Separate rationale and condition atoms from proposed penalties.",
+      "producer_reading": "Premises, rationale and hypothetical penalty combined in propositions and conditions.",
+      "evidence": [
+        {
+          "ref": "Bekhorot 2a:3",
+          "json_index": [
+            2,
+            2
+          ],
+          "start": 48,
+          "end": 75,
+          "quote": "אבל מוכר דקא מפקע לה מקדושה",
+          "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8"
+        },
+        {
+          "ref": "Bekhorot 2a:6",
+          "json_index": [
+            2,
+            5
+          ],
+          "start": 31,
+          "end": 63,
+          "quote": "סד\"א הואיל ועיקר בהמה דישראל היא",
+          "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8"
+        },
+        {
+          "ref": "Bekhorot 2a:6",
+          "json_index": [
+            2,
+            5
+          ],
+          "start": 72,
+          "end": 102,
+          "quote": "דלמא אתי לאיחלופי בבהמה אחריתי",
+          "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8"
+        }
+      ],
+      "resolution": "Not a substantive omission; no mandatory correction for this partial release.",
+      "proposed_action": "Split into premise atoms if an atomic-premise evaluation view is later required."
+    },
+    {
+      "id": "F02",
+      "category": "relation precision limitation",
+      "severity": "low",
+      "refs": [
+        "Bekhorot 2a:4"
+      ],
+      "initial_ids": [
+        "C14",
+        "C15"
+      ],
+      "producer_ids": [
+        "bek.open1.e.partner_difference"
+      ],
+      "original_reading": "Mishnah exemption contradicts Rabbi Yehuda liability.",
+      "producer_reading": "Uses objection relation from partnership exemption to Rabbi Yehuda claim.",
+      "evidence": [
+        {
+          "ref": "Bekhorot 2a:4",
+          "json_index": [
+            2,
+            3
+          ],
+          "start": 26,
+          "end": 73,
+          "quote": "דרבי יהודה דאמר שותפות עובד כוכבים חייבת בבכורה",
+          "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8"
+        }
+      ],
+      "resolution": "Supported disagreement, but objection must not be read as a historical direct utterance addressed to Rabbi Yehuda.",
+      "proposed_action": "For demanding argument evaluation use explicit contrary-position semantics or document broad objection semantics."
+    },
+    {
+      "id": "F03",
+      "category": "reasonable granularity difference",
+      "severity": "low",
+      "refs": [
+        "Bekhorot 2a:3",
+        "Bekhorot 2a:6"
+      ],
+      "initial_ids": [
+        "C09",
+        "C17"
+      ],
+      "producer_ids": [
+        "bek.open1.e.purchase",
+        "bek.open1.e.giving_need"
+      ],
+      "original_reading": "צריכי and איצטריך recorded as explicit necessity answers.",
+      "producer_reading": "Necessity represented by explanatory claims and answer edges, not a separate meta claim.",
+      "evidence": [
+        {
+          "ref": "Bekhorot 2a:3",
+          "json_index": [
+            2,
+            2
+          ],
+          "start": 0,
+          "end": 5,
+          "quote": "צריכי",
+          "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8"
+        },
+        {
+          "ref": "Bekhorot 2a:6",
+          "json_index": [
+            2,
+            5
+          ],
+          "start": 23,
+          "end": 30,
+          "quote": "איצטריך",
+          "source_sha256": "ed3f5e0c8646acca75ba0ba78526afe3f455d9e1bc293628bd067d991bba7bc8"
+        }
+      ],
+      "resolution": "Adequate substantive coverage; does not certify exact atomic segmentation.",
+      "proposed_action": "Retain independent segmentation for future fine-grained comparison."
+    },
+    {
+      "id": "F04",
+      "category": "evidence precision limitation",
+      "severity": "low",
+      "refs": [
+        "Bekhorot 2a:1–6"
+      ],
+      "producer_ids": [
+        "bek.open1.a.mishnah",
+        "bek.open1.a.yehuda",
+        "bek.open1.c.giving",
+        "bek.open1.c.giving_fine",
+        "bek.open1.c.giving_no_fine",
+        "bek.open1.c.israel",
+        "bek.open1.c.paired",
+        "bek.open1.c.partnership",
+        "bek.open1.c.partnership_contrast",
+        "bek.open1.c.purchase",
+        "bek.open1.c.purchase_reason",
+        "bek.open1.c.receiving",
+        "bek.open1.c.sale",
+        "bek.open1.c.sale_fine",
+        "bek.open1.c.sale_no_fine",
+        "bek.open1.c.sale_prohibited",
+        "bek.open1.c.yehuda",
+        "bek.open1.e.giving_answer",
+        "bek.open1.e.giving_fine",
+        "bek.open1.e.giving_need",
+        "bek.open1.e.israel",
+        "bek.open1.e.israel_give",
+        "bek.open1.e.israel_partner",
+        "bek.open1.e.israel_receive",
+        "bek.open1.e.israel_sale",
+        "bek.open1.e.partner",
+        "bek.open1.e.partner_difference",
+        "bek.open1.e.purchase",
+        "bek.open1.e.receiving",
+        "bek.open1.e.sale_answer",
+        "bek.open1.e.sale_fine",
+        "bek.open1.p.giving",
+        "bek.open1.p.giving_fine",
+        "bek.open1.p.giving_no_fine",
+        "bek.open1.p.israel",
+        "bek.open1.p.paired",
+        "bek.open1.p.partnership",
+        "bek.open1.p.partnership_contrast",
+        "bek.open1.p.purchase",
+        "bek.open1.p.purchase_reason",
+        "bek.open1.p.receiving",
+        "bek.open1.p.sale",
+        "bek.open1.p.sale_fine",
+        "bek.open1.p.sale_no_fine",
+        "bek.open1.p.sale_prohibited",
+        "bek.open1.p.yehuda",
+        "bek.open1.q.all",
+        "bek.open1.q.giving",
+        "bek.open1.q.partnership",
+        "bek.open1.q.receiving",
+        "bek.open1.s.mishnah",
+        "bek.open1.s.necessity",
+        "bek.open1.u.2a:1",
+        "bek.open1.u.2a:2",
+        "bek.open1.u.2a:3",
+        "bek.open1.u.2a:4",
+        "bek.open1.u.2a:5",
+        "bek.open1.u.2a:6"
+      ],
+      "original_reading": "Clause offsets preserved in core reading.",
+      "producer_reading": "Most semantic evidence spans cover entire source segments.",
+      "resolution": "All evidence exact; broad spans do not invalidate supported claims.",
+      "proposed_action": "Use frozen clause offsets or tighter producer evidence for clause-level localization evaluation."
+    }
+  ],
+  "remaining_risks": [
+    "Opening endpoint subset is six segments, not a completed ten-segment endpoint block or full probability review.",
+    "39 continuation segments supply interpretation only; they are not producer extraction coverage and were not compared as producer records.",
+    "No closing endpoint, probability sample, whole tractate, demanding QA, or scholar-choice eligibility is certified.",
+    "Context reading includes an alternative version and later different penalty referent; future extension must preserve those, not inherit blanket review.",
+    "All ML flags remain false; source paraphrase agreement is not human scholarly certification."
+  ],
+  "changes_to_production": false
+}

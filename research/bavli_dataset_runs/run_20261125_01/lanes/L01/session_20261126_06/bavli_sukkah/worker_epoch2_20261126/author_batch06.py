@@ -1,0 +1,67 @@
+import pathlib
+exec(pathlib.Path(__file__).with_name('author_batch01.py').read_text(encoding='utf8').split("\ngroup('s1'")[0].replace('sk.e2.b01.','sk.e2.b06.'))
+group('s1','7a:11','7b:5','Reciprocal sukkah and Sabbath wall recognition, alley and well-post cases')
+group('s2','7b:6','7b:9','Roof shade versus wall shade and R. Yoshiyah’s derivation')
+def row(ref,voice,role,annotation):
+    u(ref,voice,role,'composite');a(ref,ref,voice,'anonymous' if voice=='anonymous Gemara' else 'speaker',role);note(ref,annotation)
+row('7a:11','רבא','sukkah walls recognized for Sabbath','Recognition concerns Sabbath of sukkah, as clarified by response at 7a:15; no permission on ordinary Sabbaths inferred.')
+c('migo','7a:11','רבא','Since the wall is a wall for sukkah, it counts as a wall for Sabbath as well.','Sabbath during sukkah observance',['valid sukkah wall configuration'])
+row('7a:12','אביי quoting baraita','challenge to migo and cane-gap rule','Quoted wall similarity requires each inter-cane gap below three handbreadths; next segment supplies apparent stringency against migo.')
+q('migo','7a:12','Do we apply this since-it-counts-for-sukkah reasoning?')
+c('canes','7a:12','quoted baraita','A sukkah wall is like a Sabbath wall, provided no gap between neighboring canes reaches three handbreadths.','cane wall continuity',['each gap<3 handbreadths'])
+a('abaye','7a:12','אביי','speaker','objection');a('baraita','7a:12 7a:13','התניא','quoted_authority','sukkah/Sabbath wall comparison',candidates=['anonymous baraita']);edge('migo','7a:12','qmigo','cmigo','objection')
+row('7a:13','quoted baraita','Sabbath majority-standing stringency','Standing-majority distinction quoted before anonymous discussion scopes Sabbath comparison.')
+c('standing','7a:13','quoted baraita','Sabbath requires standing material to exceed gaps, while sukkah does not require this.','comparative wall stringency',status='which Sabbath is meant clarified at 7a:15')
+row('7a:14','anonymous Gemara explicating objection','proposed same-festival comparison','Reading that defeats migo is proposed, then rejected; not itself final baraita scope.')
+c('same','7a:14','anonymous Gemara','Perhaps the baraita makes the Sabbath of sukkah stricter than sukkah and rejects migo.','initial reading',mode='rejected',status='לא at 7a:15 rejects this reading')
+q('same','7a:14','Does it not compare Sabbath of sukkah with sukkah and deny migo?');edge('same','7a:14','csame','cmigo','objection')
+row('7a:15','anonymous reply','ordinary Sabbath distinguished from festival Sabbath','Reply unnamed in printed segment; do not force direct speaker beyond context.')
+c('ordinary','7a:15','anonymous reply','The baraita means ordinary Sabbath is stricter than Sabbath of sukkah.','resolved comparison scope');edge('ordinary','7a:15','cordinary','qsame','answer')
+row('7a:16','anonymous Gemara','missing reverse comparison challenge','Distinguishes ordinary sukkah need for generous handbreadth from festival-Sabbath sukkah sufficing with lehi; question concerns omitted baraita contrast.')
+q('reverse','7a:16','Why not also state that ordinary sukkah is stricter than sukkah of Sabbath, since the latter can suffice with a lehi?')
+c('reverse','7a:16','anonymous Gemara','Ordinary sukkah needs a generous handbreadth; on Sabbath the lehi can suffice by the reciprocal recognition.','contrast underlying question',['Sabbath-valid lehi arrangement'])
+row('7a:17','anonymous interlocutor quoting רבא','proof from roofed alley ruling','Second-person reference points to Rava’s teaching; independent gufa quotation at 7a:19–7b:1 confirms attribution.')
+c('quotedalley','7a:17','רבא as quoted','Roofing over an alley possessing a lehi is valid.','quoted reciprocal-recognition example',['alley has lehi; Sabbath context'])
+a('rava','7a:17','את הוא דאמרת','quoted_authority','roofed alley teaching',candidates=['רבא'],uncertainty=['Name supplied by surrounding dialogue and explicit gufa quotation at 7a:19.']);edge('quotedalley','7a:17','cquotedalley','qreverse','support')
+row('7a:18','anonymous reply','a-fortiori answer to omitted contrast','Lenient sukkah to stringent Sabbath is already greater novelty; reverse direction need not be independently stated in that baraita.')
+c('afortiori','7a:18','anonymous reply','If recognition transfers from the lenient domain to the stringent one, transfer from stringent to lenient follows all the more.','reason reciprocal contrast omitted');edge('afortiori','7a:18','cafortiori','qreverse','answer')
+row('7a:19','anonymous Gemara introducing רבא','gufa return to alley ruling','Introduction’s content completes across page; no isolated claim manufactured from אמר רבא alone.')
+a('gufa','7a:19 7b:1','רבא','speaker','explicit alley teaching')
+row('7b:1','רבא introduced before page break','roofed alley validity','Repeated occurrence deliberately retained apart from 7a:17 quote; same local teaching, not counted as unique new topic.')
+c('alley','7a:19 7b:1','רבא','A sukkah covering an alley with a lehi is valid.','gufa alley ruling',['Sabbath-recognized alley boundary'])
+row('7b:2','רבא','roofing over well-post enclosures','Pasei biraot retained as distinct boundary institution; no unconditional year-round permission inferred beyond sugya Sabbath context.')
+c('well','7b:2','רבא','A sukkah covering the posts of a well enclosure is valid.','well-post sukkah',['Sabbath-recognized well-post enclosure'])
+row('7b:3','anonymous Gemara','why alley alone would not teach well-post case','Two good walls provide a possible special ground for alley; hypothetical exclusion of well-post case rejected by second teaching.')
+c('alleyonly','7b:3','hypothetical interpreter','One might permit the alley because it has two proper walls but not the well-post enclosure, which lacks them.','first need-both argument',mode='rejected',status='well-post ruling blocks limitation');edge('alleyonly','7b:3','calleyonly','cwell','qualification')
+row('7b:4','anonymous Gemara','why well-post alone would not teach alley case','Four-direction appearance is possible special basis for well-posts, absent in alley; again hypothetical exclusion, not adopted.')
+c('wellonly','7b:4','hypothetical interpreter','One might permit well-posts because they bear the form of four walls but not the alley, which lacks that form.','second need-both argument',mode='rejected',status='alley ruling blocks limitation');edge('wellonly','7b:4','cwellonly','calley','qualification')
+row('7b:5','anonymous Gemara','why original sukkah-to-Sabbath rule remains needed','Two reciprocal examples run stringent-to-lenient; original rule adds lenient-to-stringent, so three teachings are complementary in novelty.')
+c('thirdneeded','7b:5','anonymous Gemara','The two examples alone show stringent-to-lenient recognition; lenient-to-stringent might still fail, so the original statement is necessary.','third need-all argument');edge('thirdneeded','7b:5','cthirdneeded','cmigo','support')
+row('7b:6','quoted Mishnah','sunlight-majority lemma','Repeated lemma introduces scope of shade criterion, roof versus walls.')
+c('shadelemma','7b:6','anonymous Mishnah','A sukkah with more sunlight than shade is invalid.','quoted sunlight criterion')
+row('7b:7','baraita: חכמים and רבי יאשיה','roof-only versus walls-too criterion','Explicit tannaitic scope disagreement; speaker Yoshiyah distinct from prior transmitters’ statements unless source evidence links them.')
+c('roof','7b:7','anonymous baraita','The invalidating excess sunlight concerns roofing, not walls.','scope of shade requirement')
+c('walls','7b:7','רבי יאשיה','It also concerns the walls.','scope of shade requirement')
+a('yoshiyah','7b:7','רבי יאשיה','quoted_authority','wall-shade requirement')
+row('7b:8','רב יימר בר שלמיה transmitting אביי','rationale of R. Yoshiyah','Distinguish Rav Yeimar transmitter, Abaye explanatory authority, Yoshiyah holder of requirement; parokhet as partition called covering supplies argument.')
+q('whywall','7b:8','What is R. Yoshiyah’s reason?')
+c('curtain','7b:8','אביי','The verse calls the curtain over the ark a covering even though it is a partition; a partition is therefore required to meet roofing criteria.','explanation of R. Yoshiyah')
+a('yeimar','7b:8','רב יימר בר שלמיה','transmitter','Abaye’s explanation',['רב יימר בר שלמיה','אביי']);a('abaye2','7b:8','אביי','position_holder','explanation of R. Yoshiyah',['רב יימר בר שלמיה','אביי']);edge('curtain','7b:8','ccurtain','qwhywall','answer');edge('curtain2','7b:8','ccurtain','cwalls','support')
+row('7b:9','anonymous Gemara explaining רבנן','limited overhang reading of curtain verse','Sages interpret slight bending/overhang like roofing; do not equate all partitions with roof shade standard.')
+c('bend','7b:9','רבנן as explained anonymously','The curtain is bent slightly so it resembles covering, explaining the verse without a general wall-roof equation.','response to R. Yoshiyah’s proof');edge('bend','7b:9','cbend','ccurtain','answer')
+
+refs=list(ss);core=refs[refs.index('7a:11'):refs.index('7b:9')+1]
+assert len(core)==18 and set(core)==set(notes)
+coverage=[]
+for ref in core:
+    sid=ss[ref]['id']
+    for layer in r.LAYERS:
+        ids=[v['id'] for v in records if (layer=='reconciliation' or v['layer']==layer) and any(e['segment_id']==sid for e in v['evidence'])]
+        rationale=notes[ref] if layer=='reconciliation' else 'Source-read '+layer+' pass. '+notes[ref]
+        if not ids:rationale+=' No separate '+layer+' record after full local continuation.'
+        coverage.append(dict(segment_id=sid,layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale=rationale))
+p={k:j[k] for k in ['schema_version','tractate','source_sha256','protocol_sha256','schema_sha256']}
+p.update(owner='/root/sukkah_production',epoch=2,execution=dict(route='interactive_agent',agent_id='/root/sukkah_production',model_id=None),records=records,coverage=coverage,open_tails=[])
+assert len({x['id'] for x in records})==len(records)
+r.immutable(BASE/'proposal06.json',r.encoded(p))
+print(json.dumps(dict(proposal_sha256=r.sha(r.encoded(p)),records=len(records),segments=len(core))))

@@ -1,0 +1,64 @@
+import sys,subprocess
+from pathlib import Path
+sys.path.insert(0,r'C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study/research/bavli_production_v1');import runner as r
+repo=Path(r'C:/Users/David/.codex/worktrees/bavli-global-coordination/AI Talmudic Study');job=Path('F:/Sefaria_QA/bavli_production_run_20261125_01/L01/bavli_zevachim');out=job/'worker_wave2_20261126';j,ss=r.load(job);state=r.current(job);rows={x['ref'].split(' ')[1]:x for x in ss.values()};R=[];prefix='zv.wave2.b1.'
+active=r.read(repo/'research/bavli_dataset_runs/ACTIVE_RUN.json');assert r.sha((repo/active['contract_path']).read_bytes())==active['contract_sha256']
+for f in ['runner.py','schema.json','PROTOCOL.md']:assert subprocess.check_output(['git','show',active['production_git_commit']+':research/bavli_production_v1/'+f],cwd=repo)==(repo/'research/bavli_production_v1'/f).read_bytes()
+assert r.read(job/'OWNER.json')==dict(owner='/root/zevachim_resume',epoch=3)
+assert r.sha(r.encoded(state))=='d4b3fbf60e707e286bb5f8caae51063a91439564090ce6a9d7920487917ad2cd'
+r.immutable(out/'activation.json',r.encoded(dict(active=active,owner=r.read(job/'OWNER.json'),source_sha256=j['source_sha256'],checkpoint=r.sha(r.encoded(state)))))
+def ev(ref):
+ s=rows[ref];return dict(segment_id=s['id'],start_char=0,end_char=len(s['text']),quote=s['text'])
+def rec(key,layer,refs,c,links=[],unc=[],origin='source_paraphrase'):
+ R.append(dict(id=prefix+key,layer=layer,evidence=[ev(x) for x in refs],content=c,origin=origin,uncertainty=unc,links=[prefix+x for x in links]));return key
+D=[
+('1',['7a:5','7a:6'],'רבה','disputed_rule','Rabbah calls a thanksgiving offering slaughtered for another person\'s thanksgiving offering valid, because thanksgiving was slaughtered as thanksgiving.','asserted',['Thanksgiving offering slaughtered for another person\'s thanksgiving offering'],None),
+('2',['7a:5','7a:6'],'רב חסדא','disputed_rule','Rav Hisda calls it פסולה, requiring slaughter for his own peace offering.','asserted',['Thanksgiving offering slaughtered for another person\'s thanksgiving offering'],None),
+('3',['7a:7'],'רבה','proof','Rabbah cites Abba Hanin in Rabbi Eliezer\'s name: thanksgiving slaughtered as peace offering is valid, but peace offering as thanksgiving is פסולים, because thanksgiving is called peace offering whereas peace offering is not called thanksgiving.','asserted',['Direction of thanksgiving/peace-offering designation'],None),
+('4',['7a:8'],'anonymous continuation of proof','inference','The baraita\'s invalidity for peace offering as thanksgiving appears to imply validity for thanksgiving as thanksgiving; perhaps it includes another person\'s.','hypothetical',['Inference from baraita; another owner\'s thanksgiving'],'Does the implied validity refer to another person\'s thanksgiving?'),
+('5',['7a:9'],'anonymous','reply','The implied validity can concern his own thanksgiving offering.','asserted',['Same owner\'s thanksgiving'],None),
+('6',['7a:10'],'anonymous','objection','If another person\'s thanksgiving is invalid, the baraita could state that case, making peace offering as thanksgiving invalid all the more.','queried',['Assume another owner\'s thanksgiving invalid'],'Why not teach thanksgiving for another thanksgiving, and infer peace offering all the more?'),
+('7',['7a:11'],'anonymous','answer','Peace offering slaughtered as his own thanksgiving needed explicit teaching, lest one infer reciprocal naming from thanksgiving being called peace offering.','asserted',['His own peace offering slaughtered as thanksgiving; rejected reciprocal-naming inference'],None),
+('8',['7a:12','7a:13'],'רבא','rule','A sin offering slaughtered as a sin offering is valid; as a burnt offering it is invalid, based on ושחט אותה לחטאת.','asserted',['Sin offering; designated as sin versus burnt offering'],None),
+('9',['7a:14','7a:15'],'רבא','rule','A sin offering slaughtered for someone obligated in a sin offering is invalid, but for someone obligated in a burnt offering is valid; עליו excludes another like himself in the same atonement obligation.','asserted',['Wrong beneficiary; sin-offering versus burnt-offering obligation'],None),
+('10',['7a:16'],'רבא','rule','A sin offering slaughtered for a person described as obligated in nothing is invalid, because no Israelite lacks an obligation relating to a positive commandment.','asserted',['Wrong beneficiary described as obligated in nothing'],None),
+('11',['7a:17'],'רבא','a_fortiori','A sin offering atones for positive-commandment violations: if it atones for offenses carrying karet, all the more for positive-commandment violations.','asserted',['Atonement for positive-commandment violations'],None),
+('12',['7a:18'],'anonymous','objection','Does that make positive-commandment atonement the same kind? Rava nevertheless ruled a sin offering for one obligated in a burnt offering valid.','queried',['Compare sin-offering atonement with wrong-beneficiary rule'],'Is positive-commandment atonement the same kind for this rule?'),
+('13',['7b:1'],'anonymous','distinction','The sin offering does not provide fixed primary atonement for those violations but provides incidental atonement.','asserted',['Positive-commandment violations; primary versus incidental atonement'],None),
+('14',['7b:2'],'רבא','rule','After a burnt offering was slaughtered for a different purpose, its blood may not be sprinkled for a different purpose.','asserted',['Burnt offering already slaughtered not for its purpose'],None),
+('15',['7b:3'],'anonymous','alternative_reasons','The rule can be derived either from מוצא שפתיך or from the reasoning that one alteration does not permit further alteration, referring back to the opening discussion.','asserted',['Wrong-purpose slaughter does not authorize wrong-purpose sprinkling'],None),
+('16',['7b:4'],'רבא','rule','A burnt offering brought after death is called פסולה for a change of sacred designation but valid for a change of owner, because there are no owners after death.','asserted',['Burnt offering after owner death; change of designation versus owner'],None),
+('17',['7b:5'],'רב פנחס בריה דרב אמי','disagreement','Rav Pinhas son of Rav Ami says there are owners after death.','asserted',['Posthumous burnt offering'],None),
+('18',['7b:5'],'רב אשי','clarification_question','Rav Ashi asks whether ownership after death is meant strictly, requiring another burnt offering, or only that it atones for additional positive-commandment violations.','queried',['Meaning of Rav Pinhas\'s posthumous ownership claim'],'Is ownership after death strict, requiring another offering, or merely incidental atonement?'),
+('19',['7b:6'],'רב פנחס בריה דרב אמי','answer','He says he means ownership strictly.','asserted',['Posthumous ownership as questioned by Rav Ashi; entails another offering in the questioned case'],None),
+('20',['7b:7'],'רבא','explanation','The burnt offering is a gift: without repentance the wicked person\'s sacrifice is abominable; after repentance for a positive-commandment violation forgiveness already occurs, so the offering is a gift.','asserted',['Positive-commandment violation; repentance versus absence of repentance'],None),
+('21',['7b:9'],'רבי שמעון quoted','support','The corrected question asks why a sin offering comes before a burnt offering: first the advocate gains favor, then the gift enters afterward.','asserted',['Order of sin and burnt offerings'], 'Why does the sin offering come before the burnt offering?')]
+for key,refs,voice,role,prop,mode,cond,q in D:
+ unc=[]
+ if key in ['2','3','16']:unc=['Source term פסולה/פסולים retained; do not infer a stronger practical invalidity consequence than this local contrast establishes without further review.']
+ if key=='21':unc=['Bracketed ריצה פרקליט נכנס retained as source wording.']
+ rec('u'+key,'utterances',refs,dict(textual_voice=voice,discourse_role=role,composition='composite' if len(refs)>1 or key in ['3','20','21'] else 'atomic'),unc=unc)
+ rec('c'+key,'claims',refs,dict(proposition=prop,conditions=cond,scope='Local sacrifice-purpose/owner/atonement discussion',assertion_mode=mode),['u'+key],unc)
+ if q:rec('q'+key,'questions',refs,dict(formulation=q,question_origin='explicit',conditions=cond,answer_set_status='partial'),['u'+key])
+ if not voice.startswith('anonymous'):rec('a'+key,'attributions',refs,dict(surface=voice,role='quoted_authority' if 'quoted' in voice else 'speaker',candidates=[voice],scope='Local utterance '+key,transmission_chain=[]),['u'+key])
+ if mode=='asserted':rec('p'+key,'positions',refs,dict(holder_candidates=[] if voice.startswith('anonymous') else [voice],claim_id=prefix+'c'+key,question_id=prefix+'q18' if key=='19' else None,conditions=cond,local_status='Local named or anonymous position; distinctions and objections kept'),['c'+key]+(['q18'] if key=='19' else []),unc)
+# Separate rules in composite quotations and polarity contrasts.
+E=[('3a',['7a:7'],'Thanksgiving slaughtered as peace offering is valid.',['Thanksgiving designated as peace offering'],'רבי אליעזר'),('3b',['7a:7'],'Peace offering slaughtered as thanksgiving is פסולים.',['Peace offering designated as thanksgiving'],'רבי אליעזר'),('8a',['7a:12','7a:13'],'Sin offering slaughtered as sin offering is valid.',['Sin offering designated as sin offering'],'רבא'),('8b',['7a:12','7a:13'],'Sin offering slaughtered as burnt offering is invalid.',['Sin offering designated as burnt offering'],'רבא'),('9a',['7a:14','7a:15'],'Sin offering for another person obligated in a sin offering is invalid.',['Wrong beneficiary obligated in sin offering'],'רבא'),('9b',['7a:14','7a:15'],'Sin offering for another person obligated in a burnt offering is valid.',['Wrong beneficiary obligated in burnt offering'],'רבא')]
+for key,refs,prop,cond,holder in E:
+ rec('c'+key,'claims',refs,dict(proposition=prop,conditions=cond,scope='Component of quoted/composite ruling',assertion_mode='asserted'))
+ rec('p'+key,'positions',refs,dict(holder_candidates=[holder],claim_id=prefix+'c'+key,question_id=None,conditions=cond,local_status='Local quoted or named ruling'),['c'+key])
+rec('a3chain','attributions',['7a:7'],dict(surface='אבא חנין אמר משום ר׳ אליעזר',role='transmitter',candidates=['אבא חנין'],scope='Rabbah quotes baraita as support',transmission_chain=['אבא חנין','רבי אליעזר']),['c3a','c3b'])
+rec('a3holder','attributions',['7a:7'],dict(surface='ר׳ אליעזר',role='quoted_authority',candidates=['רבי אליעזר'],scope='Direction of thanksgiving/peace-offering designation',transmission_chain=[]),['c3a','c3b'])
+rec('uMnemonic','utterances',['7b:8'],dict(textual_voice='anonymous textual mnemonic',discourse_role='mnemonic',composition='atomic'),origin='literal')
+for a,b,rel in [('3','1','support'),('4','3','qualification'),('5','4','objection'),('6','5','objection'),('7','6','answer'),('12','11','objection'),('9b','12','support'),('13','12','answer'),('15','14','support'),('18','17','qualification'),('19','18','answer'),('21','20','support')]:
+ refs=next(x[1] for x in D+E if x[0]==a);rec('e'+a+'_'+b,'edges',refs,dict(source_id=prefix+'c'+a,target_id=prefix+'c'+b,relation=rel,explicitness='source_explicit'),['c'+a,'c'+b])
+refs=['7a:'+str(i) for i in range(5,19)]+['7b:'+str(i) for i in range(1,10)]
+for key,title,part in [('s1','Thanksgiving for another owner: Rabbah and Rav Hisda, with inconclusive proof',refs[:7]),('s2','Rava rulings: sin-offering atonement, changed purpose, posthumous ownership and gift',refs[7:])]:rec(key,'structure',part,dict(title=title,primary=True,boundary='closed',legacy_ids=[]),origin='editorial_inference')
+C=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in R if x['layer']==layer and any(e['segment_id']==rows[ref]['id'] for e in x['evidence'])]
+  why='Source reread through 7b:9 closure and next topic 7b:10. Preserved Rabbah versus Rava, Abba Hanin transmission, owner/designation conditions, incidental atonement, strict clarification and source פסולה terminology.' if layer=='reconciliation' else 'Manual source pass; '+('supported records listed.' if ids else 'No separate '+layer+' finding in this segment; mnemonic or anonymous continuation retained as applicable.')
+  C.append(dict(segment_id=rows[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale=why))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/zevachim_resume',epoch=3,source_sha256=j['source_sha256'],schema_sha256=j['schema_sha256'],protocol_sha256=j['protocol_sha256'],execution=dict(route='interactive_agent',agent_id='/root/zevachim_resume',model_id=None),records=R,coverage=C,open_tails=[])
+r.validate_apply(state,p,ss,j);path=out/'proposal_7a5_7b9.json';r.immutable(path,r.encoded(p));res=r.submit(job,path,p['owner'],p['epoch']);r.immutable(out/'receipt_batch1.json',r.encoded(res));print(res)

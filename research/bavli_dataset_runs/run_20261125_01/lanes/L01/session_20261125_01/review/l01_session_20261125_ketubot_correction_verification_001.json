@@ -1,0 +1,386 @@
+{
+  "artifact_type": "independent_exact_version_correction_verification",
+  "created_utc": "2026-11-25T21:14:41.460417+00:00",
+  "reviewer": {
+    "agent_id": "/root/blind_review",
+    "model_id": null,
+    "role": "comparison_after_frozen_source_only_reading",
+    "future_blind_readings_require_fresh_context": true
+  },
+  "verdict": "ACCEPT_PARTIAL_WITH_EXCEPTIONS",
+  "verdict_scope": "Ketubot assigned opening endpoint corrections and 3a:12–14 qualification only; no tractate acceptance.",
+  "bindings": {
+    "initial_reading_sha256": "ca6de3979264a3dbd36df3faf231d78a6de7aaae41ffdfcda4d07bd0bce1b59d",
+    "producer_comparison_sha256": "e4f7cb738e6b6ad7473373e57ef0eb5a4bf172140af59ff9664a1986b351804d",
+    "correction_proposal_sha256": "3c25d0116e1a1575b8c887287ab8076877e7d0cee4155f39d59f02d2ac8845a1",
+    "producer_snapshot_sha256": "107caa00ffc7786eb509da045b06f38c1862bd6ef6ea4714ace19d855ef2cc79"
+  },
+  "mechanical_checks": {
+    "snapshot_sha256": "107caa00ffc7786eb509da045b06f38c1862bd6ef6ea4714ace19d855ef2cc79",
+    "source_sha256": "f736ba10fa498bbe884bd4243f334fec4b8ccd2161b6a29cbe8cc58649451d4a",
+    "active_scope_records_checked": 142,
+    "evidence_spans_checked_against_original": 169,
+    "direct_evidence_errors": 0,
+    "invalid_or_inactive_links": 0,
+    "primary_partition_segments_checked": 18,
+    "primary_partition_errors": 0,
+    "record_counts_by_layer": {
+      "attributions": 12,
+      "claims": 33,
+      "edges": 34,
+      "positions": 30,
+      "questions": 12,
+      "structure": 4,
+      "utterances": 17
+    },
+    "scope_refs": [
+      "Ketubot 2a:1",
+      "Ketubot 2a:2",
+      "Ketubot 2a:3",
+      "Ketubot 2a:4",
+      "Ketubot 2a:5",
+      "Ketubot 2a:6",
+      "Ketubot 2a:7",
+      "Ketubot 2a:8",
+      "Ketubot 2a:9",
+      "Ketubot 2a:10",
+      "Ketubot 2a:11",
+      "Ketubot 2b:1",
+      "Ketubot 2b:2",
+      "Ketubot 2b:3",
+      "Ketubot 2b:4",
+      "Ketubot 3a:12",
+      "Ketubot 3a:13",
+      "Ketubot 3a:14"
+    ],
+    "replay_rerun": false,
+    "schema_validator_rerun": false,
+    "method": "Independent raw-source equality, original index/ref lookup, active link checks and exact primary interval coverage. Not a runner replay or full schema validation."
+  },
+  "reviewer_claim_mapping": [
+    {
+      "reviewer_claim_id": "C01",
+      "current_producer_record_ids": [
+        "kt.open1.c.virgin"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C02",
+      "current_producer_record_ids": [
+        "kt.open1.c.widow"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C03",
+      "current_producer_record_ids": [
+        "kt.open1.c.courts"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C04",
+      "current_producer_record_ids": [
+        "kt.open1.c.complaint"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C05",
+      "current_producer_record_ids": [
+        "kt.open1.c.deadline"
+      ],
+      "result": "substantive_content_preserved",
+      "note": "C05/C06 share a composite production record; C19–C21 now resolve to explicit corrected versions."
+    },
+    {
+      "reviewer_claim_id": "C06",
+      "current_producer_record_ids": [
+        "kt.open1.c.deadline"
+      ],
+      "result": "substantive_content_preserved",
+      "note": "C05/C06 share a composite production record; C19–C21 now resolve to explicit corrected versions."
+    },
+    {
+      "reviewer_claim_id": "C07",
+      "current_producer_record_ids": [
+        "kt.open1.c.initial_derivation",
+        "kt.open1.c.sunday_initial"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C08",
+      "current_producer_record_ids": [
+        "kt.open1.c.direction"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C09",
+      "current_producer_record_ids": [
+        "kt.open1.c.court_reform"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C10",
+      "current_producer_record_ids": [
+        "kt.open1.c.feast"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C11",
+      "current_producer_record_ids": [
+        "kt.open1.c.sunday_final"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C12",
+      "current_producer_record_ids": [
+        "kt.open1.c.ill_him"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C13",
+      "current_producer_record_ids": [
+        "kt.open1.c.ill_her"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C14",
+      "current_producer_record_ids": [
+        "kt.open1.c.niddah"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C15",
+      "current_producer_record_ids": [
+        "kt.open1.c.him_excuse"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C16",
+      "current_producer_record_ids": [
+        "kt.open1.c.him_distinguish"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C17",
+      "current_producer_record_ids": [
+        "kt.open1.c.her_ready"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C18",
+      "current_producer_record_ids": [
+        "kt.open1.c.her_misfortune"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C19",
+      "current_producer_record_ids": [
+        "kt.open1.c.expected.condrev1"
+      ],
+      "result": "substantive_content_preserved",
+      "note": "C05/C06 share a composite production record; C19–C21 now resolve to explicit corrected versions."
+    },
+    {
+      "reviewer_claim_id": "C20",
+      "current_producer_record_ids": [
+        "kt.open1.c.unexpected_yes.condrev1"
+      ],
+      "result": "substantive_content_preserved",
+      "note": "C05/C06 share a composite production record; C19–C21 now resolve to explicit corrected versions."
+    },
+    {
+      "reviewer_claim_id": "C21",
+      "current_producer_record_ids": [
+        "kt.open1.c.unexpected_no.condrev1"
+      ],
+      "result": "substantive_content_preserved",
+      "note": "C05/C06 share a composite production record; C19–C21 now resolve to explicit corrected versions."
+    },
+    {
+      "reviewer_claim_id": "C22",
+      "current_producer_record_ids": [
+        "kt.open1.c.achai_proof"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C23",
+      "current_producer_record_ids": [
+        "kt.open1.c.her_delay"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C24",
+      "current_producer_record_ids": [
+        "kt.open1.c.ashi_exemption"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C25",
+      "current_producer_record_ids": [
+        "kt.open1.c.ashi_men"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    },
+    {
+      "reviewer_claim_id": "C26",
+      "current_producer_record_ids": [
+        "kt.open1.c.ashi_style"
+      ],
+      "result": "substantive_content_preserved",
+      "note": ""
+    }
+  ],
+  "correction_checks": [
+    {
+      "finding_id": "K01",
+      "result": "verified_corrected",
+      "record_ids": [
+        "kt.open1.c.expected.condrev1",
+        "kt.open1.c.unexpected_yes.condrev1",
+        "kt.open1.c.unexpected_no.condrev1"
+      ],
+      "evidence_refs": [
+        "Ketubot 2a:9",
+        "Ketubot 2a:10",
+        "Ketubot 2a:11",
+        "Ketubot 2b:1"
+      ],
+      "assessment": "Prior misfortune-argument branch is now explicit in all three claim and corresponding position arrays, with superseded originals retained and active graph references updated."
+    },
+    {
+      "finding_id": "K02",
+      "result": "verified_corrected",
+      "record_ids": [
+        "kt.qual1.c.deadline_repeat",
+        "kt.qual1.p.deadline_repeat"
+      ],
+      "evidence_refs": [
+        "Ketubot 2a:6"
+      ],
+      "assessment": "Repeated occurrence now has claim and position, retaining both maintenance and terumah."
+    },
+    {
+      "finding_id": "K03",
+      "result": "verified_corrected",
+      "record_ids": [
+        "kt.qual1.e.sunday_answer",
+        "kt.qual1.e.achai_case",
+        "kt.qual1.e.achai_elimination"
+      ],
+      "evidence_refs": [
+        "Ketubot 2a:6",
+        "Ketubot 2b:2",
+        "Ketubot 2b:3"
+      ],
+      "assessment": "All three directed links are supported: final Sunday claim answers Sunday-pay question; Ahai proposed case answers case question; elimination of voluntary female delay supports his proposal. His proposal remains challenged."
+    },
+    {
+      "finding_id": "K04",
+      "result": "reasonable_boundary_granularity_preserved",
+      "evidence_refs": [
+        "Ketubot 2a:7"
+      ],
+      "assessment": "Grouping the first-version illness consequence with the ensuing alternative inquiry is defensible; original reviewer grouping is retained, and exact primary partition passes."
+    },
+    {
+      "finding_id": "K05",
+      "result": "verified_corrected_with_export_condition",
+      "record_ids": [
+        "kt.qual1.c.ezra",
+        "kt.qual1.c.before",
+        "kt.qual1.c.current",
+        "kt.qual1.c.prepared",
+        "kt.qual1.e.weekday",
+        "kt.qual1.e.preparation"
+      ],
+      "evidence_refs": [
+        "Ketubot 3a:12",
+        "Ketubot 3a:13",
+        "Ketubot 3a:14"
+      ],
+      "assessment": "Daily courts and completed preparation qualifications, distinct Rav Shmuel bar Yitzhak attribution, and directed qualification graph are present. Any-day claims must be exported with the preparation qualification, not as isolated unconditioned rulings."
+    },
+    {
+      "finding_id": "K06",
+      "result": "granularity_not_semantic_omission",
+      "record_ids": [
+        "kt.open1.c.deadline"
+      ],
+      "assessment": "Both entitlements are explicitly preserved in one composite record. This is not two omitted claims; atomized training views would still need a split."
+    }
+  ],
+  "remaining_concerns": [
+    {
+      "id": "KV01",
+      "category": "downstream_condition_inheritance",
+      "severity": "task_export_restriction",
+      "record_ids": [
+        "kt.open1.q.unexpected",
+        "kt.qual1.c.current",
+        "kt.qual1.p.current"
+      ],
+      "finding": "Unexpected-menstruation question stores only unexpected timing, with conditional ancestry preserved in adjacent inquiry and revised answer claims. Current-daily-court claim/position needs its separate preparation qualification. Isolated QA or scholar-choice export must carry inherited conditions or revise these rows.",
+      "action": "Do not qualify isolated exports until condition closure is implemented and checked.",
+      "status": "open_task_eligibility_constraint"
+    },
+    {
+      "id": "KV02",
+      "category": "granularity",
+      "severity": "annotation_design",
+      "finding": "Composite entitlement records remain; semantic content matches, but an atomic-claim export requires splitting while retaining occurrence identity.",
+      "status": "preserved_not_counted_as_omission"
+    }
+  ],
+  "coverage": {
+    "core_segments": 15,
+    "added_qualification_segments": 3,
+    "reviewer_core_claims_mapped": 26,
+    "whole_tractate_review": false,
+    "random_sample_review_completed": false,
+    "newly_qualified_task_records": 0
+  },
+  "qualification": {
+    "ml_eligible": false,
+    "human_reviewed": false,
+    "production_state_mutated": false,
+    "initial_judgments_preserved": true
+  }
+}

@@ -1,0 +1,60 @@
+from pathlib import Path
+helper=(Path(r'F:/Sefaria_QA/bavli_production_run_20261125_01/L01/bavli_berakhot/worker_wave2_20261126/batch01.py')).read_text(encoding='utf-8').split("refs=['4a:'")[0]
+exec(compile(helper,'serialization_helpers','exec'))
+pre='beh.repetition.20261126w3.'
+assert r.sha(r.encoded(state))=='418b9c36dc087d0e8c1398518848a6f620af53200e5f33d9ba8b106016c51692'
+refs=['5b:'+str(n) for n in range(17,30)]+['6a:'+str(n) for n in range(1,10)]
+add('s1','structure',refs[:10],dict(title='Separate sacrificial portions and repeated firstborn terms',primary=True,boundary='closed',legacy_ids=[]))
+add('s2','structure',refs[10:],dict(title='Excluding horses and camels: repeated donkey terms and general-particular rule',primary=True,boundary='closed',legacy_ids=[]))
+for ref,voice,role in [('5b:17','Anonymous question and answer','Use of repeated firstborn terms by Mishnah tanna'),('5b:18','Rabbi Yose son of Rabbi Hanina','Need for three sacrificial-portion prescriptions'),('5b:19','Anonymous explanatory continuation','Ox distinction'),('5b:20','Anonymous explanatory continuation','Sheep distinction'),('5b:21','Anonymous explanatory continuation','Goat distinction'),('5b:22','Anonymous Gemara','Proposed derivation from two species'),('5b:23','Anonymous Gemara','Ox-from-two rejected'),('5b:24','Anonymous Gemara','Sheep-from-two rejected'),('5b:25','Anonymous Gemara','Goat-from-two rejected and necessity concluded'),('5b:26','Anonymous exposition of Rabbi Yose the Galilean','Surplus repeated terms'),('5b:27','Anonymous Gemara','Use of repeated donkey terms'),('5b:28','Baraita quoting Rabbi Yose the Galilean','Initial general reading and first exclusion'),('5b:29','Baraita continuation','Residual possible redemption with anything'),('6a:1','Baraita continuation','Second exclusion'),('6a:2','Rav Ahai','Challenge to first hermeneutical step'),('6a:3','Rav Ahai continuation','Revised exclusion and remaining challenge'),('6a:4','Anonymous answer','Full repeated wording excludes other species'),('6a:5','Anonymous Gemara','Mishnah tanna source for exclusion'),('6a:6','Rav Pappa','General-particular derivation'),('6a:7','Anonymous exposition of Rabbi Yose and Sages','Interruption and reconnection'),('6a:8','Anonymous exposition of Rabbi Yose','Challenge to unnecessary wording'),('6a:9','Anonymous exposition of Sages','Different sanctities explain separation and reconnection')]:add('u'+ref.replace(':','_'),'utterances',[ref],dict(textual_voice=voice,discourse_role=role,composition='composite'))
+q('q17','5b:17','How does the Mishnah tanna use the repeated firstborn terms?')
+c('c17','5b:17','The repetition is needed for Rabbi Yose son of Rabbi Hanina’s teaching.')
+q('q18','5b:18','Why are sacrificial portions prescribed separately for firstborn ox, sheep and goat?')
+c('c19','5b:19','An ox-only prescription would not establish the others because the ox has a greater libation requirement.',cond=['Hypothetical ox-only prescription'])
+c('c20','5b:20','A sheep-only prescription would not establish the others because sheep have the additional tail portion.',cond=['Hypothetical sheep-only prescription'])
+c('c21','5b:21','A goat-only prescription would not establish the others because goat is included for an individual’s idolatry offering.',cond=['Hypothetical goat-only prescription'])
+c('c22','5b:22','One species cannot be derived from a single other species in these comparisons.')
+q('q22','5b:22','Could one species be derived from the other two?')
+q('q23','5b:23','Could ox be omitted and derived from sheep and goat?')
+c('c23','5b:23','Sheep and goat have the distinguishing inclusion in Passover offerings, defeating the proposed ox derivation.')
+q('q24','5b:24','Could sheep be omitted and derived from ox and goat?')
+c('c24','5b:24','Ox and goat have the distinguishing inclusion in communal idolatry offerings, defeating the proposed sheep derivation.')
+q('q25','5b:25','Could goat be omitted and derived from ox and sheep?')
+c('c25','5b:25','Ox and sheep each have a feature of increase regarding the altar, defeating the proposed goat derivation.')
+c('c25need',('5b:25','הילכך צריכי'),'The separate prescriptions are therefore necessary.')
+c('c26short','5b:26','For Rabbi Yose the Galilean, the sacrificial-portion teaching could use a single firstborn term with the three species.')
+c('c26match','5b:26','The surplus repeated firstborn terms therefore require the parent and its firstborn to match the named species.')
+q('q27','5b:27','How does Rabbi Yose the Galilean use the repeated firstborn-donkey terms?')
+c('c28initial','5b:28','The general command to redeem the firstborn of impure animals could initially include horses and camels.',mode='hypothetical')
+c('c28exclude','5b:28','The first donkey specification is offered to exclude horses and camels from the redemption command.')
+c('c29','5b:29','A remaining proposed reading would redeem donkey firstborn with a sheep and horse or camel firstborn with anything.',mode='hypothetical')
+c('c1','6a:1','The doubled donkey wording excludes firstborn horses and camels from redemption.')
+c('c2','6a:2','Rav Ahai challenges the first step: one donkey instance could exemplify the general class and teach sheep redemption for all of it.',mode='hypothetical')
+c('c3exclude','6a:3','On that analysis, the other donkey instance excludes horses and camels from sheep redemption.')
+q('q3','6a:3','Why not retain redemption of horses and camels with anything after excluding sheep?')
+c('c4','6a:4','The answer points to repeating the full firstborn-donkey formulation, when merely repeating donkey would suffice, to exclude horses and camels themselves.')
+q('q5','6a:5','What excludes horses and camels according to the Mishnah tanna?')
+c('c6general','6a:6','Rav Pappa reads all your livestock as a general term and ox, sheep and donkey as particulars.')
+c('c6limited','6a:6','The general-particular rule limits the inclusion to the named ox, sheep and donkey; other species are excluded.')
+c('c7y','6a:7','Rabbi Yose the Galilean treats the word peter as interrupting the subject, preventing that combined general-particular reading.')
+c('c7r','6a:7','The Sages answer that the conjunction reconnects the text.')
+q('q8','6a:8','Rabbi Yose’s response asks why neither the conjunction nor peter was omitted if the text is to be connected.')
+c('c9separate','6a:9','The Sages explain the separation by the difference between monetary sanctity and bodily sanctity.')
+c('c9rejoin','6a:9','The text then reconnects the categories after separating them.')
+att('a18','5b:18',"ר' יוסי בר' חנינא",'quoted_authority',['רבי יוסי ברבי חנינא'],'Separate sacrificial portions teaching')
+att('a26','5b:26','רבי יוסי הגלילי','position_holder',['רבי יוסי הגלילי'],'Repeated firstborn terms')
+att('a28','5b:28',"ר' יוסי הגלילי",'quoted_authority',['רבי יוסי הגלילי'],'Baraita excluding horses and camels')
+att('a2','6a:2','רב אחאי','speaker',['רב אחאי'],'Challenge to baraita inference')
+att('a6','6a:6','רב פפא','speaker',['רב פפא'],'Mishnah tanna general-particular derivation')
+for key,ref,surface,holder in [('a7y','6a:7','רבי יוסי הגלילי','רבי יוסי הגלילי'),('a7r','6a:7','רבנן','Sages'),('a8','6a:8',"ר' יוסי הגלילי",'רבי יוסי הגלילי'),('a9','6a:9','רבנן','Sages')]:att(key,ref,surface,'position_holder',[holder],'Textual derivation exchange')
+for k,ref,cl,h,st,qu in [('p17','5b:17','c17',['Mishnah tanna'],'Assigned use','q17'),('p26','5b:26','c26match',['רבי יוסי הגלילי'],'Derivation',None),('p28','5b:28','c28exclude',['רבי יוסי הגלילי'],'Initial baraita derivation subsequently challenged','q27'),('p29','5b:29','c29',['Baraita hypothetical voice'],'Proposed possibility rejected',None),('p1','6a:1','c1',['רבי יוסי הגלילי'],'Baraita exclusion','q27'),('p2','6a:2','c2',['רב אחאי'],'Objection',None),('p4','6a:4','c4',['Anonymous Gemara'],'Answer to remaining objection','q3'),('p6','6a:6','c6limited',['רב פפא'],'Mishnah tanna derivation','q5'),('p7y','6a:7','c7y',['רבי יוסי הגלילי'],'Contrasting reading',None),('p7r','6a:7','c7r',['Sages'],'Response',None),('p9','6a:9','c9separate',['Sages'],'Answer','q8')]:pos(k,ref,cl,h,st,qu)
+for k,ref,a,b,rel in [('e17','5b:17','c17','q17','answer'),('e19','5b:19','c19','q18','answer'),('e20','5b:20','c20','q18','answer'),('e21','5b:21','c21','q18','answer'),('e23','5b:23','c23','q23','objection'),('e24','5b:24','c24','q24','objection'),('e25','5b:25','c25','q25','objection'),('e25a','5b:25','c25need','q22','answer'),('e25b','5b:25','c25need','q18','answer'),('e26','5b:26','c26short','c26match','support'),('e28','5b:28','c28exclude','c28initial','qualification'),('e28a','5b:28','c28exclude','q27','answer'),('e29','5b:29','c29','c28exclude','objection'),('e1','6a:1','c1','c29','objection'),('e2','6a:2','c2','c28exclude','objection'),('e3','6a:3','q3','c3exclude','objection'),('e4','6a:4','c4','q3','answer'),('e6','6a:6','c6general','c6limited','support'),('e6a','6a:6','c6limited','q5','answer'),('e7y','6a:7','c7y','c6general','objection'),('e7r','6a:7','c7r','c7y','answer'),('e8','6a:8','q8','c7r','objection'),('e9','6a:9','c9separate','q8','answer'),('e9r','6a:9','c9rejoin','q8','answer')]:edge(k,ref,a,b,rel)
+for x in rows:
+ if x['layer']=='claims':x['content']['scope']='Local competing firstborn derivations. Hypothetical expansions and rejected proof stages remain distinct from final exclusions; different named Yose authorities remain separate.'
+cov=[]
+for ref in refs:
+ for layer in r.LAYERS:
+  ids=[x['id'] for x in rows if x['layer']==layer and any(e['segment_id']==by[ref]['id'] for e in x['evidence'])]
+  cov.append(dict(segment_id=by[ref]['id'],layer=layer,extraction_state='completed',extraction_result='records_found' if ids else 'none_found_after_pass',record_ids=ids,rationale='Read5b17–6a22 and omission reread5b17–6a9. Preserved species-specific failed analogies, baraita hypothetical stages, RavAhai challenge, exact repeated wording and two tannaitic derivation routes. Completed '+layer+' pass.'))
+p=dict(schema_version=r.VERSION,tractate=j['tractate'],owner='/root/l01_bekhorot',epoch=2,execution=dict(route='interactive_agent',agent_id='/root',model_id=None),records=rows,coverage=cov,open_tails=state['open_tails'],**{k:j[k] for k in ['source_sha256','schema_sha256','protocol_sha256']})
+r.validate_apply(state,p,ss,j);r.immutable(HERE/'batch13_proposal.json',r.encoded(p));out=r.submit(JOB,HERE/'batch13_proposal.json',p['owner'],p['epoch']);r.immutable(HERE/'batch13_receipt.json',r.encoded(out));print(r.encoded(out).decode())

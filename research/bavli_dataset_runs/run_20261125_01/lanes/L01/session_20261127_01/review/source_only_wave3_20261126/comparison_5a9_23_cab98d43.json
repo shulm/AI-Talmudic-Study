@@ -1,0 +1,213 @@
+{
+  "artifact_type": "post_freeze_bounded_comparison",
+  "created_utc": "2026-11-26T21:02:50.459612+00:00",
+  "frozen_reading": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\review\\source_only_wave3_20261126\\berakhot_4b16_5a23.json",
+    "sha256": "bb0bcaced9f4bc2a0ef14030ecdc8a1aa91867dc688698060d308bca65e75295"
+  },
+  "production_snapshot": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\cab98d439137c44996726e24faa6aaa565721a96eb970763f59530e458e945f1.json",
+    "sha256": "cab98d439137c44996726e24faa6aaa565721a96eb970763f59530e458e945f1"
+  },
+  "compared_scope": "Berakhot 5a:9–23 only",
+  "alignment": [
+    {
+      "source_only_record": "c23",
+      "production_records": [
+        "bk.sufferings.20261126w3.c9examine",
+        "bk.sufferings.20261126w3.c9torah"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c24",
+      "production_records": [
+        "bk.sufferings.20261126w3.c10"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c25",
+      "production_records": [
+        "bk.sufferings.20261126w3.c11"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "q04",
+      "production_records": [
+        "bk.sufferings.20261126w3.q12"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c26",
+      "production_records": [
+        "bk.sufferings.20261126w3.c12"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c27",
+      "production_records": [
+        "bk.sufferings.20261126w3.q13",
+        "bk.sufferings.20261126w3.c13seed",
+        "bk.sufferings.20261126w3.c13days",
+        "bk.sufferings.20261126w3.c13study"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c28",
+      "production_records": [
+        "bk.sufferings.20261126w3.c14"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c29",
+      "production_records": [
+        "bk.sufferings.20261126w3.c15"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c30",
+      "production_records": [
+        "bk.sufferings.20261126w3.c16"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "q05",
+      "production_records": [
+        "bk.sufferings.20261126w3.q17"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c31",
+      "production_records": [
+        "bk.sufferings.20261126w3.c17",
+        "bk.sufferings.20261126w3.c18minor",
+        "bk.sufferings.20261126w3.c18major"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c32",
+      "production_records": [
+        "bk.sufferings.20261126w3.c19salt",
+        "bk.sufferings.20261126w3.c19suffer",
+        "bk.sufferings.20261126w3.c19clean"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c33",
+      "production_records": [
+        "bk.sufferings.20261126w3.c20torah",
+        "bk.sufferings.20261126w3.c20land",
+        "bk.sufferings.20261126w3.c20world"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c34",
+      "production_records": [
+        "bk.sufferings.20261126w3.q21",
+        "bk.sufferings.20261126w3.c21"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c35",
+      "production_records": [
+        "bk.sufferings.20261126w3.c22"
+      ],
+      "assessment": "substantive claim agreement"
+    },
+    {
+      "source_only_record": "c36",
+      "production_records": [
+        "bk.sufferings.20261126w3.c23"
+      ],
+      "assessment": "substantive claim agreement"
+    }
+  ],
+  "findings": [
+    {
+      "id": "w3-sufferings-F01",
+      "category": "argument_edge_omission",
+      "severity": "bounded_graph_omission",
+      "source_refs": [
+        "Berakhot 5a:14",
+        "Berakhot 5a:15"
+      ],
+      "source_only_records": [
+        "c28",
+        "c29"
+      ],
+      "production_records": [
+        "bk.sufferings.20261126w3.c14",
+        "bk.sufferings.20261126w3.c15"
+      ],
+      "description": "The explicit פליגי בה / חד אמר / וחד אמר dispute between the two criteria is represented in claims, positions and structure, but no edge links those two positions/claims as disputed criteria. The only dispute-response edges in this unit are Yohanan’s objections to each criterion.",
+      "evidence": [
+        {
+          "ref": "Berakhot 5a:14",
+          "json_index": [
+            8,
+            13
+          ],
+          "start": 0,
+          "end": 154,
+          "quote": "פליגי בה רבי יעקב בר אידי ורבי אחא בר חנינא חד אמר אלו הם יסורין של אהבה כל שאין בהן בטול תורה שנאמר (תהלים צד, יב) אשרי הגבר אשר תיסרנו יה ומתורתך תלמדנו"
+        },
+        {
+          "ref": "Berakhot 5a:15",
+          "json_index": [
+            8,
+            14
+          ],
+          "start": 0,
+          "end": 111,
+          "quote": "וחד אמר אלו הם יסורין של אהבה כל שאין בהן בטול תפלה שנאמר (תהלים סו, כ) ברוך אלהים אשר לא הסיר תפלתי וחסדו מאתי"
+        }
+      ],
+      "suggested_resolution": "Add a schema-supported disagreement/contrast relation connecting the two criteria, retaining unidentified holders and recording that the first/second ordering is textual rather than historical objection direction. Do not assign either view to a name.",
+      "impact": "Graph-only consumers can miss the explicitly stated initial dispute although prose consumers retain it.",
+      "does_not_allege": "No missing claim, incorrect named assignment or false practical resolution."
+    }
+  ],
+  "observations": [
+    "Rava/Rav Hisda alternative and two unnamed holders in 5a:14–15 remain unresolved correctly.",
+    "Rava and Rav Sehora are transmitters of Rav Huna; Rabbi Abba and his father transmit Rabbi Yohanan.",
+    "5a:17 identical unvocalized forms are explicitly preserved.",
+    "Acceptance conditions qualify the divine-favor teaching; later 5b distinctions are explicitly retained in scope rather than treating all atonement as sufferings of love.",
+    "Production uses anonymous expository continuation for 5a:12–13/17; this is a conservative nonassignment rather than a claim about historical anonymous authorship.",
+    "Rewards and three gifts are split more finely than the initial reader; no substantive claim omission found."
+  ],
+  "checks": {
+    "production_records": 92,
+    "records_by_layer": {
+      "attributions": 11,
+      "claims": 23,
+      "edges": 19,
+      "positions": 16,
+      "questions": 4,
+      "structure": 4,
+      "utterances": 15
+    },
+    "evidence_spans_checked": 103,
+    "source_segments_mapped": 15,
+    "exact_quote_and_codepoint_checks": "passed",
+    "source_only_core_claims_or_questions_unmatched": 0
+  },
+  "conclusion": "One bounded argument-edge omission identified; substantive claims, conditions and speaker handling agree with the frozen source reading.",
+  "limitations": [
+    "Bounded AI review, not human scholarly certification.",
+    "5b continuation informs scope but no claim of complete extraction or comparison of 5b4–27.",
+    "No eligibility determination; initial reading and production unchanged."
+  ]
+}

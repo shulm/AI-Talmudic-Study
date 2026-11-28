@@ -1,0 +1,158 @@
+{
+  "artifact_type": "post_freeze_bounded_comparison",
+  "created_utc": "2026-11-26T21:01:09.391625+00:00",
+  "frozen_reading": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\review\\source_only_wave3_20261126\\berakhot_4b16_5a23.json",
+    "sha256": "bb0bcaced9f4bc2a0ef14030ecdc8a1aa91867dc688698060d308bca65e75295"
+  },
+  "production_snapshot": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\ba10092d36fa9c0805a50c541c45ce0e585a6d267ce2e0736fce6967c0aaa09a.json",
+    "sha256": "ba10092d36fa9c0805a50c541c45ce0e585a6d267ce2e0736fce6967c0aaa09a"
+  },
+  "compared_scope": "Berakhot 4b:27–5a:8 only",
+  "excluded_scope": "5a:9–23 not compared; no future-production omission finding",
+  "alignment": [
+    {
+      "source_only_record": "c11",
+      "production_records": [
+        "bk.bedtime.20261126w3.c27"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c12",
+      "production_records": [
+        "bk.bedtime.20261126w3.q27",
+        "bk.bedtime.20261126w3.c27verse"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c13",
+      "production_records": [
+        "bk.bedtime.20261126w3.c1rn"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c14",
+      "production_records": [
+        "bk.bedtime.20261126w3.c1ab",
+        "bk.bedtime.20261126w3.c1example"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c15",
+      "production_records": [
+        "bk.bedtime.20261126w3.c2first",
+        "bk.bedtime.20261126w3.c2torah",
+        "bk.bedtime.20261126w3.c2shema",
+        "bk.bedtime.20261126w3.c2death"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c16",
+      "production_records": [
+        "bk.bedtime.20261126w3.q3",
+        "bk.bedtime.20261126w3.c3tablets",
+        "bk.bedtime.20261126w3.c3torah",
+        "bk.bedtime.20261126w3.c3command",
+        "bk.bedtime.20261126w3.c3written",
+        "bk.bedtime.20261126w3.c3teach",
+        "bk.bedtime.20261126w3.c3all"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c17",
+      "production_records": [
+        "bk.bedtime.20261126w3.c4"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "q03",
+      "production_records": [
+        "bk.bedtime.20261126w3.q4"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c18",
+      "production_records": [
+        "bk.bedtime.20261126w3.c4answer"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c19",
+      "production_records": [
+        "bk.bedtime.20261126w3.c5",
+        "bk.bedtime.20261126w3.c5of",
+        "bk.bedtime.20261126w3.c5reshef"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c20",
+      "production_records": [
+        "bk.bedtime.20261126w3.c6",
+        "bk.bedtime.20261126w3.c6of",
+        "bk.bedtime.20261126w3.c6reshef"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c21",
+      "production_records": [
+        "bk.bedtime.20261126w3.c7obvious",
+        "bk.bedtime.20261126w3.c7verse",
+        "bk.bedtime.20261126w3.c7neglect",
+        "bk.bedtime.20261126w3.c7good"
+      ],
+      "assessment": "substantive agreement"
+    },
+    {
+      "source_only_record": "c22",
+      "production_records": [
+        "bk.bedtime.20261126w3.c8seller",
+        "bk.bedtime.20261126w3.c8buyer",
+        "bk.bedtime.20261126w3.c8god"
+      ],
+      "assessment": "substantive agreement"
+    }
+  ],
+  "findings": [],
+  "observations": [
+    "Rav Nahman sentence crosses 4b:28/5a:1; production joins content and preserves Abaye’s limited prayer-verse qualification.",
+    "The four-step struggle sequence retains conditions of failure rather than becoming unconditional commands.",
+    "5a:4 and 5a:8 preserve unresolved alternative attributions.",
+    "5a:7 objection concerns novelty, with ability and neglect conditions retained in the replacement claim.",
+    "No artificial disagreement inferred between the protective teachings of 5a:5 and 5a:6.",
+    "Production makes explicit question nodes for מאי קרא and מאי דכתיב which frozen reading embeds in the relevant derivation records; these are compatible extra granularity."
+  ],
+  "checks": {
+    "production_records": 106,
+    "records_by_layer": {
+      "attributions": 14,
+      "claims": 30,
+      "edges": 23,
+      "positions": 21,
+      "questions": 3,
+      "structure": 5,
+      "utterances": 10
+    },
+    "evidence_spans_checked": 112,
+    "source_segments_mapped": 10,
+    "exact_quote_and_codepoint_checks": "passed",
+    "source_only_core_claims_or_questions_unmatched": 0
+  },
+  "conclusion": "No actionable source omission, attribution, scope or directed-relation error identified in this exact 10-segment comparison.",
+  "limitations": [
+    "Bounded AI review, not human scholarly certification.",
+    "No future-core or eligibility determination.",
+    "Initial reading and production unchanged."
+  ]
+}

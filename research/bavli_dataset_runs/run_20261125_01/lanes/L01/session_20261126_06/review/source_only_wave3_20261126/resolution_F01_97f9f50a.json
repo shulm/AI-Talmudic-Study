@@ -1,0 +1,25 @@
+{
+  "artifact_type": "review_finding_resolution_receipt",
+  "created_utc": "2026-11-26T21:04:57.010032+00:00",
+  "finding_id": "w3-sufferings-F01",
+  "prior_comparison_sha256": "172f953ed7bbfe360ddc0347e2e0c79c16c1f0c46ce8ae5eb3cf5584784886b1",
+  "corrected_snapshot_sha256": "97f9f50aa253c5e3c9dd6760f9f21979358fb9e66f45098990bfdb12b683d00f",
+  "corrected_snapshot_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L01\\bavli_berakhot\\snapshots\\97f9f50aa253c5e3c9dd6760f9f21979358fb9e66f45098990bfdb12b683d00f.json",
+  "correction_record": "bk.sufferings.20261126w3.e14_15_contrast",
+  "resolution": "sufficient_graph_representation_with_declared_schema_limitation",
+  "finding_status": "resolved",
+  "assessment": "The added distinction edge directly connects the explicitly disputed criteria. The source anchors include פליגי בה and חד אמר/וחד אמר. Its uncertainty note identifies disagreement, limits arrow order to textual sequencing, and prohibits named assignment. This resolves the graph omission within the current schema.",
+  "checks": {
+    "exact_evidence_spans_verified": 2,
+    "coverage_row_count_before": 1232,
+    "coverage_row_count_after": 1232,
+    "coverage_metadata_identical": false,
+    "initial_reading_sha256": "bb0bcaced9f4bc2a0ef14030ecdc8a1aa91867dc688698060d308bca65e75295"
+  },
+  "remaining_limitations": [
+    "Generic distinction alone does not distinguish disputes from all other distinctions; retain the uncertainty note and source evidence.",
+    "Coverage row counts are unchanged, but coverage metadata is not byte-identical; no full coverage audit performed in this bounded receipt.",
+    "No new coverage, speaker resolution, human certification or eligibility determination implied."
+  ],
+  "production_modified_by_reviewer": false
+}
