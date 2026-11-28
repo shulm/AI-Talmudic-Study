@@ -1,0 +1,18 @@
+{
+  "artifact_kind": "coordination_verification_supplement",
+  "run_id": "run_20261125_01",
+  "discrepancy_id": "BM001-SCOPE",
+  "correction_receipt_sha256": "d8f664a9bdc7b64780f66f1a0f260338addec609775db347189c482c06fb04c8",
+  "correction_snapshot_sha256": "1de0ef2ed8f9cd4fc22791162f92e7d59d276dc09dd9c50336dd8fe0a3940a92",
+  "verification_provenance": "L02 parent lead reported its fresh remote coordination fetch in this agent session after the immutable correction receipt was written. This worker separately verified local live owner epoch and prior snapshot before mutation; it does not claim to have performed the parent fetch.",
+  "coordination_head": "44cc6fb5c9206c1f8bbf28d9b5d851bf8c0fc74b",
+  "active_run_assignment_revision": 4,
+  "contract_and_production_pins": "unchanged per parent verification",
+  "ledger_owner": "/root/bava_metzia",
+  "ledger_epoch": 2,
+  "ledger_snapshot_before_correction": "25ffca05e9a6f9445ac1f1b285f70d8e113e962353c02e0e108ce4aa2d5e5990",
+  "ownership_conflict_reported": false,
+  "comparison_verdict": "REWORK_TARGETED",
+  "independent_re_review_completed": false,
+  "note": "Supplement adds coordination provenance only. Frozen original review, correction proposal, receipt, source and semantic outputs are unchanged."
+}

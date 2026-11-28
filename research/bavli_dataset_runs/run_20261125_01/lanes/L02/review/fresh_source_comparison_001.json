@@ -1,0 +1,66 @@
+{
+  "ledger_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\comparison_001.json",
+  "ledger_sha256": "ff8e9770a606e6d684f811193daaaf87e77ce8a7a4bdd2bffd760960d46ced4b",
+  "counts": {
+    "independent_core_claim_records_compared": 56,
+    "represented": 56,
+    "confirmed_omissions_among_denominator": 0,
+    "confirmed_content_errors_among_denominator": 0,
+    "bm_core_claim_records": 15,
+    "gittin_core_claim_records": 41
+  },
+  "followup_events": [
+    {
+      "finding": "Gittin opening number attribution resolves at 5b:8",
+      "review_records": [
+        "go_a02",
+        "go_c45",
+        "go_c46"
+      ],
+      "producer_records": [
+        "L02.git.open.c.number_yohanan",
+        "L02.git.open.c.number_hanina",
+        "L02.git.open.e.number_initial",
+        "L02.git.open.e.number_repeated"
+      ],
+      "state": "post_source_alert_addition_present",
+      "chronology": "Coordinator explicitly reports addition after reviewer source alert; predecessor snapshot not inspected, so initial omission extent not independently version-audited.",
+      "do_not_count_as": "first-pass independent producer agreement"
+    },
+    {
+      "finding": "Rabbah also accepts Rava; initial Israel-interprovincial distinction revised",
+      "review_records": [
+        "go_c16",
+        "go_c42"
+      ],
+      "producer_records": [
+        "L02.git.open.c.t26",
+        "L02.git.open.e.revised_difference"
+      ],
+      "state": "present_at_compared_snapshot",
+      "chronology": "Reviewer alerted coordinator before comparison; creation chronology of this particular production record not independently audited."
+    },
+    {
+      "finding": "Ravnai distinct from Rav and Rav Pappa/Rav Shimi/unattributed variants",
+      "review_records": [
+        "bo_a01",
+        "bo_a02"
+      ],
+      "producer_records": [
+        "bm.gemara001.opening.attributions.25",
+        "bm.gemara001.opening.attributions.77.reviewfix1"
+      ],
+      "state": "present_at_compared_snapshot",
+      "chronology": "Existing reviewfix lineage observed, earlier version not evaluated here."
+    }
+  ],
+  "carry_forward": {
+    "previous_snapshot_sha256": "e2684900cfbd5c43d1cad7a9e9ecd9e2c57b872685814608c90ff4767bc36daa",
+    "later_snapshot_sha256": "2a9a0af253e9c3aed3c8a4d76ead004109ddc286c2fa9f68e4ffc32b598eb00e",
+    "selected_core_records_checked": 215,
+    "changed_or_missing": [],
+    "meaning": "Only exact hashes of already-selected core records compared. New semantic scopes not read from production or adjudicated."
+  },
+  "verdict": "NO_TRACTATE_VERDICT_INCOMPLETE_REVIEW",
+  "ml_eligible": false
+}

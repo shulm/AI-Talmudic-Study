@@ -1,0 +1,252 @@
+{
+  "status": "PARTIAL_SOURCE_ONLY_FROZEN_READINGS",
+  "reviewer": "/root/source_review",
+  "plans": [
+    {
+      "tractate": "Bava Metzia",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\Bava_Metzia_plan.json",
+      "plan_sha256": "8d0a4c9096c9f98f97540e75f87e0cf2986217e59b8704aa43280432dda369b5",
+      "planned": {
+        "unique_review_blocks": 39,
+        "probability_sample_nonempty_segments": 370,
+        "unique_review_nonempty_segments": 390
+      },
+      "review_state": "PLAN_NOT_COMPLETED"
+    },
+    {
+      "tractate": "Gittin",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\Gittin_plan.json",
+      "plan_sha256": "4331da24c82a4774f47d1345098b4ae4cff323730c665d3f12ae1b3f67bc10fd",
+      "planned": {
+        "unique_review_blocks": 32,
+        "probability_sample_nonempty_segments": 300,
+        "unique_review_nonempty_segments": 312
+      },
+      "review_state": "PLAN_NOT_COMPLETED"
+    },
+    {
+      "tractate": "Keritot",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\Keritot_plan.json",
+      "plan_sha256": "ef50800900f7d574e70781f06de57e553a9ca323e921668cc2247bae9e67619e",
+      "planned": {
+        "unique_review_blocks": 32,
+        "probability_sample_nonempty_segments": 300,
+        "unique_review_nonempty_segments": 311
+      },
+      "review_state": "PLAN_NOT_COMPLETED"
+    },
+    {
+      "tractate": "Sanhedrin",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\Sanhedrin_plan.json",
+      "plan_sha256": "d580ec2c5c931f43c7040d8165725584133511370564b47371b9931a7d9c7e72",
+      "planned": {
+        "unique_review_blocks": 44,
+        "probability_sample_nonempty_segments": 420,
+        "unique_review_nonempty_segments": 431
+      },
+      "review_state": "PLAN_NOT_COMPLETED"
+    },
+    {
+      "tractate": "Sotah",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\Sotah_plan.json",
+      "plan_sha256": "e75a2d638089a07c99593417982608231b27954a4feaf04fb26de0504f909bca",
+      "planned": {
+        "unique_review_blocks": 32,
+        "probability_sample_nonempty_segments": 300,
+        "unique_review_nonempty_segments": 315
+      },
+      "review_state": "PLAN_NOT_COMPLETED"
+    }
+  ],
+  "readings": [
+    {
+      "review_id": "bm_opening_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\bm_opening_001.json",
+      "sha256": "cc7c5d9c1fe5a0a8bf7f3e692c64f41e32dc4dcf12a8b2a6411e422843441b77",
+      "core": {
+        "block_id": "block_000000",
+        "cohort": "mandatory_opening",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2a:6",
+          "2a:7",
+          "2a:8",
+          "2a:9",
+          "2a:10"
+        ]
+      },
+      "context_read": [
+        "2a:11-12",
+        "2b:1-14",
+        "3a:1-18"
+      ],
+      "record_counts": {
+        "attribution": 2,
+        "boundary": 1,
+        "claim": 18,
+        "edge": 1,
+        "omission_opportunity": 2,
+        "question": 5
+      },
+      "core_claim_records": 15,
+      "context_claim_records": 3
+    },
+    {
+      "review_id": "bm_signs_risk_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\bm_signs_risk_001.json",
+      "sha256": "f2b1c0972031dbe28597a27d2ed559b1b95f8e53a0fefa09f8584baf9972bff0",
+      "core": {
+        "cohort": "source_derived_risk",
+        "reason": "Attribution alternatives, competing explanations and conditions across page boundary; explicitly assigned source-only scope",
+        "refs": [
+          "22b:11",
+          "22b:12",
+          "22b:13",
+          "22b:14",
+          "22b:15",
+          "22b:16",
+          "23a:1",
+          "23a:2",
+          "23a:3",
+          "23a:4",
+          "23a:5",
+          "23a:6",
+          "23a:7",
+          "23a:8",
+          "23a:9",
+          "23a:10",
+          "23a:11",
+          "23a:12",
+          "23a:13",
+          "23a:14",
+          "23a:15"
+        ]
+      },
+      "context_read": [
+        "22a:1-12",
+        "22b:1-10",
+        "23b:1-11"
+      ],
+      "record_counts": {
+        "attribution": 2,
+        "boundary": 1,
+        "claim": 34,
+        "edge": 3,
+        "omission_opportunity": 3,
+        "question": 4
+      },
+      "core_claim_records": 34,
+      "context_claim_records": 0
+    },
+    {
+      "review_id": "git_opening_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\git_opening_001.json",
+      "sha256": "5b8488b1bc1ae6ca52975acc5055ac996cef3663cd11496f0c0c7df62fdcef86",
+      "core": {
+        "cohort": "mandatory_opening_plus_source_derived_risk",
+        "endpoint_block_id": "block_000000",
+        "reason": "Assigned opening; source-derived differential-case and attribution continuations",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2a:6",
+          "2b:1",
+          "2b:2",
+          "2b:3",
+          "2b:4",
+          "2b:5",
+          "2b:6",
+          "2b:7",
+          "2b:8",
+          "3a:1",
+          "3a:2",
+          "3a:3",
+          "3a:4",
+          "3a:5",
+          "3a:6",
+          "3a:7",
+          "3a:8",
+          "3a:9",
+          "3a:10",
+          "3a:11",
+          "3a:12",
+          "3a:13",
+          "3a:14",
+          "3a:15"
+        ]
+      },
+      "context_read": [
+        "3a:16",
+        "3b:1-5",
+        "4a:1-13",
+        "4b:1-18",
+        "5a:1-17",
+        "5b:1-22",
+        "6a:1-19"
+      ],
+      "record_counts": {
+        "attribution": 3,
+        "boundary": 2,
+        "claim": 46,
+        "edge": 4,
+        "omission_opportunity": 3,
+        "question": 6
+      },
+      "core_claim_records": 41,
+      "context_claim_records": 5
+    },
+    {
+      "review_id": "san_opening_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\san_opening_001.json",
+      "sha256": "4950c5fba3567811c503711a05afc5879d7d9b9b4f87a28651c2d720d8a92949",
+      "core": {
+        "block_id": "block_000000",
+        "cohort": "mandatory_opening",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2a:6",
+          "2a:7",
+          "2a:8",
+          "2a:9",
+          "2a:10"
+        ]
+      },
+      "context_read": [
+        "2a:11-16",
+        "2b:1-9",
+        "3a:1-11"
+      ],
+      "record_counts": {
+        "attribution": 1,
+        "boundary": 1,
+        "claim": 36,
+        "edge": 1,
+        "omission_opportunity": 3,
+        "question": 2
+      },
+      "core_claim_records": 30,
+      "context_claim_records": 6
+    }
+  ],
+  "direct_evidence_spans_validated": 184,
+  "producer_comparison": "NOT_STARTED",
+  "human_certification": false,
+  "ml_eligible": false,
+  "limitations": [
+    "Plan is not review. No full probability cohort completed.",
+    "Claim record counts are not guaranteed fully atomized: explicitly paired/enumerated formulations remain in some records.",
+    "Context read counts are separate from core review. No tractate release verdict."
+  ],
+  "blindness": "No producer annotations, proposals, snapshots, handoff interpretations or pilot interpretations viewed."
+}

@@ -1,0 +1,100 @@
+{
+  "status": "VERIFIED_INPUTS_NOT_COMPLETION",
+  "run_pointer": {
+    "assignment_ledger": "research/bavli_dataset_runs/run_20261125_01/ASSIGNMENT_LEDGER.json",
+    "assignment_revision": 3,
+    "contract_commit": "53bfbacb8f95d625f5036b73109eef738277e7e7",
+    "contract_path": "research/bavli_dataset_runs/run_20261125_01/RUN_CONTRACT.json",
+    "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+    "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+    "run_id": "run_20261125_01"
+  },
+  "coordination_head": "f6b691011b88f0b7f1f7dd5dc8fc29cc4100fcc1",
+  "inherited_lane_state": {
+    "launch_confirmation": "collaboration.spawn_agent confirmed /root/lead_l02_l04",
+    "lead": "/root/lead_l02_l04",
+    "state": "checkpointed_producer_inactive"
+  },
+  "authority": "User appointed L02 lead; within-lane handoffs delegated by common contract; prior producer recorded inactive at ledger revision 3",
+  "production_files": {
+    "research/bavli_production_v1/.gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+    "research/bavli_production_v1/PROTOCOL.md": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+    "research/bavli_production_v1/README.md": "3678717aa26bf0164965969afca068d8757b72c549b519058f7ab9951375f036",
+    "research/bavli_production_v1/runner.py": "b929c6bb529eb27c306d925bc234cfa051ea199fd7dcbce4be0a3be4673f8dc0",
+    "research/bavli_production_v1/schema.json": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+    "research/bavli_production_v1/test_runner.py": "fc82b8468e08be1eae2d04d97de915ba98f295c9e62c8061059d10a88fb9ea65",
+    "research/bavli_source_access_v1/README.md": "788fc5625ec7a55d30a2ac94eb0cb8ef96e10be9fd758abeac2f0bac2f97917e",
+    "research/bavli_source_access_v1/SOURCE_ACCESS_AUDIT.json": "a5775e4b30f1d79138211a0eab3bebc3026f5da56901fa75345320d3ff5be76e",
+    "research/bavli_source_access_v1/source_packages.py": "46ecd53e5d5699602fc4419d3d5f2a8477d8d068fbab7adeb0c800262a0690a8"
+  },
+  "source_manifest_sha256": "11997b5ed2c4e2faf84f625164e93f85084fc36c54ce8ba874644835ce071e9c",
+  "jobs": [
+    {
+      "job_id": "bavli_bava_metzia",
+      "tractate": "Bava Metzia",
+      "source_segments": 3660,
+      "source_path": "json/Talmud/Bavli/Seder Nezikin/Bava Metzia/Hebrew/Wikisource Talmud Bavli.json",
+      "schema_path": "schemas/Bava_Metzia.json",
+      "source_sha256": "2ba697d1185eaf618c5e99fc254d849744375cfcd03ddbbd1d46751a2fb4b84b",
+      "schema_sha256": "21fb46d7bedd3ce06c12678addc3edb9fc09fa2adc1aef2ebef8ea1d02e8bcd0",
+      "prior_checkpoint": {
+        "accepted_proposal_count": 3,
+        "snapshot_sha256": "15dfee7e82b867d02f5c9aed071a9313ad9c03ef9b821471b7e6acf124c39eba"
+      }
+    },
+    {
+      "job_id": "bavli_sanhedrin",
+      "tractate": "Sanhedrin",
+      "source_segments": 4171,
+      "source_path": "json/Talmud/Bavli/Seder Nezikin/Sanhedrin/Hebrew/Wikisource Talmud Bavli.json",
+      "schema_path": "schemas/Sanhedrin.json",
+      "source_sha256": "bf0e4b682965e2de25969841f69354a90afceaa38e84ad32782d24d26f1ba2aa",
+      "schema_sha256": "5d7dc7d87e3740899f3c2fbef1b79f7dcfd5ec5e561cf19bb42f4a624f3ee3c2",
+      "prior_checkpoint": {
+        "accepted_proposal_count": 0,
+        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+      }
+    },
+    {
+      "job_id": "bavli_gittin",
+      "tractate": "Gittin",
+      "source_segments": 2992,
+      "source_path": "json/Talmud/Bavli/Seder Nashim/Gittin/Hebrew/Wikisource Talmud Bavli.json",
+      "schema_path": "schemas/Gittin.json",
+      "source_sha256": "a5f62b44b8d7169783a97a1b894d6186ab446f45f3e7a88df67bc18d575d6de6",
+      "schema_sha256": "060df3c612ddce8af933366b5151e13805fa95c44a5c59f44170b9a2292017a5",
+      "prior_checkpoint": {
+        "accepted_proposal_count": 0,
+        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+      }
+    },
+    {
+      "job_id": "bavli_sotah",
+      "tractate": "Sotah",
+      "source_segments": 1635,
+      "source_path": "json/Talmud/Bavli/Seder Nashim/Sotah/Hebrew/Wikisource Talmud Bavli.json",
+      "schema_path": "schemas/Sotah.json",
+      "source_sha256": "728c220f989308eec03a41c7be4dd026c4bb4bfe1d8f93fca48f5dc1b90204a1",
+      "schema_sha256": "1655abc2d54f04d2cbdeedff990bb64fefae47d2f5d8b17d5a559bbd71d3e4e2",
+      "prior_checkpoint": {
+        "accepted_proposal_count": 0,
+        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+      }
+    },
+    {
+      "job_id": "bavli_keritot",
+      "tractate": "Keritot",
+      "source_segments": 1211,
+      "source_path": "json/Talmud/Bavli/Seder Kodashim/Keritot/Hebrew/Wikisource Talmud Bavli.json",
+      "schema_path": "schemas/Keritot.json",
+      "source_sha256": "0261a83aab64c143af0412d1f4bc598ebeec4c820bbc7c7b059a447f069542e2",
+      "schema_sha256": "8eeb59a2da4ee56e55e5f88db721eed6f458e2c342b16ef85a453f650ce642df",
+      "prior_checkpoint": {
+        "accepted_proposal_count": 0,
+        "snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9"
+      }
+    }
+  ],
+  "no_global_ledger_mutation": true,
+  "new_metered_calls": 0
+}

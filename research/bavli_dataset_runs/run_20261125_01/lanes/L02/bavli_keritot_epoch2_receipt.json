@@ -1,0 +1,128 @@
+{
+  "status": "PARTIAL_REQUIRED_WORK_REMAINS",
+  "run_id": "run_20261125_01",
+  "contract_sha256": "6e6f3bb4c0095a47cb7e5b07b1e296e76dd7d67fdbea34995054354c914c5174",
+  "production_git_commit": "15bba19d80273232b4554dfe507ceb37e97843a2",
+  "job": "bavli_keritot",
+  "lane": "L02",
+  "source_sha256": "0261a83aab64c143af0412d1f4bc598ebeec4c820bbc7c7b059a447f069542e2",
+  "schema_sha256": "43638e2127e40eeb33124f5e884c980bcf8bd7a6a84ba37896b1c8f65cd7f7aa",
+  "protocol_sha256": "ee727cd4cb9f19f893a2d4f2232c7df0e9e323647d7336c6eae3edbc86b1ceb2",
+  "handoff": {
+    "previous_owner": "/root/lead_l02_l04",
+    "previous_epoch": 1,
+    "owner": "/root/bava_metzia",
+    "epoch": 2,
+    "authority": "Explicit parent L02 lead delegation in this agent session; no cross-lane transfer",
+    "prior_snapshot_sha256": "5f0e5e028bff1d83ddf60971b58f96f61c0e1cc5e9149b6be4d99fd1c198b9c9",
+    "owner_file_sha256": "9a5cb421283a547c66a199f2db57ef5a88ed4233297642b9ce2ddda58fbda986"
+  },
+  "snapshot_sha256": "ae125e16ff4a644e00446845f4b873c727bef02a5673fa1cdd195c4ee89c637c",
+  "accepted_proposal_sha256s": [
+    "4f66f473709c71989d8f1c9e724af3517b85fcf8061a53ce334ee7052c51c38f"
+  ],
+  "replay": {
+    "completed_by_layer": {
+      "attributions": 21,
+      "claims": 21,
+      "edges": 21,
+      "positions": 21,
+      "questions": 21,
+      "reconciliation": 21,
+      "structure": 21,
+      "utterances": 21
+    },
+    "independent_review_completed": false,
+    "next_unprocessed_by_layer": {
+      "attributions": "Keritot 2b:17",
+      "claims": "Keritot 2b:17",
+      "edges": "Keritot 2b:17",
+      "positions": "Keritot 2b:17",
+      "questions": "Keritot 2b:17",
+      "reconciliation": "Keritot 2b:17",
+      "structure": "Keritot 2b:17",
+      "utterances": "Keritot 2b:17"
+    },
+    "outcomes_by_layer": {
+      "attributions": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 21
+      },
+      "claims": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 21
+      },
+      "edges": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 11,
+        "not_applicable": 0,
+        "records_found": 10
+      },
+      "positions": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 21
+      },
+      "questions": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 11,
+        "not_applicable": 0,
+        "records_found": 10
+      },
+      "reconciliation": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 21,
+        "not_applicable": 0,
+        "records_found": 0
+      },
+      "structure": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 21
+      },
+      "utterances": {
+        "abstained_ambiguous": 0,
+        "none_found_after_pass": 0,
+        "not_applicable": 0,
+        "records_found": 21
+      }
+    },
+    "replay_pass": true,
+    "semantic_records": 147,
+    "snapshot_sha256": "ae125e16ff4a644e00446845f4b873c727bef02a5673fa1cdd195c4ee89c637c",
+    "source_segments": 1211,
+    "tractate_delivered": false
+  },
+  "export_path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\L02\\bavli_keritot\\exports\\epoch2_ae125e16",
+  "export_manifest_sha256": "41c1053f51830c24682617da77decb771eaa317953ce8d314ab6a3a54884d80d",
+  "open_tails": [
+    "ker.e2.b1.counts.structure"
+  ],
+  "next_ref": "Keritot 2b:17",
+  "unresolved": [
+    "2a:1 unexpected ועל אשת אחי אמו retained as pinned text; catalogue count/text needs review.",
+    "Rhetorical enumeration comparisons retained; subsequent derivation of separate liability remains unprocessed."
+  ],
+  "review_state": "unreviewed",
+  "review_limit": "Producer omission reread only for new material; separate source-only review and full tractate admission incomplete",
+  "ml_eligible": false,
+  "tractate_delivered": false,
+  "source_segments_remaining_per_pass": 1190,
+  "reproduce": [
+    "python -X utf8 research/bavli_production_v1/runner.py replay --job-dir F:/Sefaria_QA/bavli_production_run_20261125_01/L02/bavli_keritot",
+    "python -X utf8 research/bavli_production_v1/runner.py export --job-dir F:/Sefaria_QA/bavli_production_run_20261125_01/L02/bavli_keritot --output NEW_EMPTY_EXTERNAL_DIRECTORY"
+  ],
+  "resume": "Verify active contract, replay accepted chain, use OWNER epoch 2 and source packet at next_ref. Fresh model continuation is a new attempt; do not overwrite accepted proposals.",
+  "artifacts": {
+    "work/batch_opening.json": "4f66f473709c71989d8f1c9e724af3517b85fcf8061a53ce334ee7052c51c38f",
+    "work/batch_opening.py": "24d25da7768efc30cb60d8b805ca9c9e3cc80efdb6757c8028a3b8441677769c",
+    "work/replay_epoch2.json": "7aaa2c99a1c45f08f0ba446a7c0bbcaf6ae694babfa1a098e7b33d0b913d528c"
+  },
+  "migration_manifests": {}
+}

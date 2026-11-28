@@ -1,0 +1,555 @@
+{
+  "status": "PARTIAL_REVIEW_CHECKPOINT",
+  "reviewer": "/root/source_review",
+  "readings": [
+    {
+      "id": "bm_closing_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\bm_closing_001.json",
+      "sha256": "6ba901c63b926c85b77f692a9602cd182b3a58be83c076f2ebc978be1d3bf174",
+      "title": "Bava Metzia",
+      "core": {
+        "block_id": "block_000365",
+        "cohort": "mandatory_closing",
+        "refs": [
+          "118b:11",
+          "118b:12",
+          "118b:13",
+          "118b:14",
+          "119a:1",
+          "119a:2",
+          "119a:3",
+          "119a:4",
+          "119a:5",
+          "119a:6"
+        ]
+      },
+      "context_read": [],
+      "counts": {
+        "attribution": 2,
+        "boundary": 1,
+        "claim": 18,
+        "edge": 2,
+        "omission_opportunity": 1,
+        "question": 1
+      }
+    },
+    {
+      "id": "bm_opening_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\bm_opening_001.json",
+      "sha256": "cc7c5d9c1fe5a0a8bf7f3e692c64f41e32dc4dcf12a8b2a6411e422843441b77",
+      "title": "Bava Metzia",
+      "core": {
+        "block_id": "block_000000",
+        "cohort": "mandatory_opening",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2a:6",
+          "2a:7",
+          "2a:8",
+          "2a:9",
+          "2a:10"
+        ]
+      },
+      "context_read": [
+        "2a:11-12",
+        "2b:1-14",
+        "3a:1-18"
+      ],
+      "counts": {
+        "attribution": 2,
+        "boundary": 1,
+        "claim": 18,
+        "edge": 1,
+        "omission_opportunity": 2,
+        "question": 5
+      }
+    },
+    {
+      "id": "bm_signs_risk_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\bm_signs_risk_001.json",
+      "sha256": "f2b1c0972031dbe28597a27d2ed559b1b95f8e53a0fefa09f8584baf9972bff0",
+      "title": "Bava Metzia",
+      "core": {
+        "cohort": "source_derived_risk",
+        "reason": "Attribution alternatives, competing explanations and conditions across page boundary; explicitly assigned source-only scope",
+        "refs": [
+          "22b:11",
+          "22b:12",
+          "22b:13",
+          "22b:14",
+          "22b:15",
+          "22b:16",
+          "23a:1",
+          "23a:2",
+          "23a:3",
+          "23a:4",
+          "23a:5",
+          "23a:6",
+          "23a:7",
+          "23a:8",
+          "23a:9",
+          "23a:10",
+          "23a:11",
+          "23a:12",
+          "23a:13",
+          "23a:14",
+          "23a:15"
+        ]
+      },
+      "context_read": [
+        "22a:1-12",
+        "22b:1-10",
+        "23b:1-11"
+      ],
+      "counts": {
+        "attribution": 2,
+        "boundary": 1,
+        "claim": 34,
+        "edge": 3,
+        "omission_opportunity": 3,
+        "question": 4
+      }
+    },
+    {
+      "id": "git_closing_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\git_closing_001.json",
+      "sha256": "79a1fcefe5c14c77213a56fa70af7615fdf5bf59857cb59f964ad684352dbc77",
+      "title": "Gittin",
+      "core": {
+        "block_id": "block_000299",
+        "cohort": "mandatory_closing",
+        "refs": [
+          "90b:7",
+          "90b:8"
+        ]
+      },
+      "context_read": [
+        "90b:1-6"
+      ],
+      "counts": {
+        "attribution": 1,
+        "boundary": 1,
+        "claim": 2,
+        "edge": 1,
+        "omission_opportunity": 1
+      }
+    },
+    {
+      "id": "git_opening_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\git_opening_001.json",
+      "sha256": "5b8488b1bc1ae6ca52975acc5055ac996cef3663cd11496f0c0c7df62fdcef86",
+      "title": "Gittin",
+      "core": {
+        "cohort": "mandatory_opening_plus_source_derived_risk",
+        "endpoint_block_id": "block_000000",
+        "reason": "Assigned opening; source-derived differential-case and attribution continuations",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2a:6",
+          "2b:1",
+          "2b:2",
+          "2b:3",
+          "2b:4",
+          "2b:5",
+          "2b:6",
+          "2b:7",
+          "2b:8",
+          "3a:1",
+          "3a:2",
+          "3a:3",
+          "3a:4",
+          "3a:5",
+          "3a:6",
+          "3a:7",
+          "3a:8",
+          "3a:9",
+          "3a:10",
+          "3a:11",
+          "3a:12",
+          "3a:13",
+          "3a:14",
+          "3a:15"
+        ]
+      },
+      "context_read": [
+        "3a:16",
+        "3b:1-5",
+        "4a:1-13",
+        "4b:1-18",
+        "5a:1-17",
+        "5b:1-22",
+        "6a:1-19"
+      ],
+      "counts": {
+        "attribution": 3,
+        "boundary": 2,
+        "claim": 46,
+        "edge": 4,
+        "omission_opportunity": 3,
+        "question": 6
+      }
+    },
+    {
+      "id": "ker_closing_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\ker_closing_001.json",
+      "sha256": "ba221eb01ad173e0ff060c778241a9dc19ce5386d3305592ec1c050fdf1c9ccd",
+      "title": "Keritot",
+      "core": {
+        "block_id": "block_000121",
+        "cohort": "mandatory_closing",
+        "refs": [
+          "28b:9"
+        ]
+      },
+      "context_read": [
+        "28b:1-8"
+      ],
+      "counts": {
+        "boundary": 1
+      }
+    },
+    {
+      "id": "ker_opening_002",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\ker_opening_002.json",
+      "sha256": "d11227e3b142708a0c7020056c5121d9c6b871f51e8e958a82aaef6815196665",
+      "title": "Keritot",
+      "core": {
+        "block_id": "block_000000",
+        "cohort": "mandatory_opening",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2b:1",
+          "2b:2",
+          "2b:3",
+          "2b:4",
+          "2b:5"
+        ]
+      },
+      "context_read": [
+        "2b:6-32",
+        "3a:1-32",
+        "3b:1-30"
+      ],
+      "counts": {
+        "boundary": 1,
+        "claim": 50,
+        "edge": 1,
+        "omission_opportunity": 2,
+        "question": 4
+      }
+    },
+    {
+      "id": "ker_probability_000005_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\ker_probability_000005_001.json",
+      "sha256": "3dbf149a43eb60de175ed0e9b03766de9c4a1791ab0350dafaf974c865b04924",
+      "title": "Keritot",
+      "core": {
+        "block_id": "block_000005",
+        "cohort": "probability_sample",
+        "refs": [
+          "3a:14",
+          "3a:15",
+          "3a:16",
+          "3a:17",
+          "3a:18",
+          "3a:19",
+          "3a:20",
+          "3a:21",
+          "3a:22",
+          "3a:23"
+        ]
+      },
+      "context_read": [
+        "2b:1-32",
+        "3a:1-13",
+        "3a:24-32",
+        "3b:1-30"
+      ],
+      "counts": {
+        "attribution": 2,
+        "boundary": 1,
+        "claim": 14,
+        "edge": 2,
+        "omission_opportunity": 2,
+        "question": 5
+      }
+    },
+    {
+      "id": "san_closing_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\san_closing_001.json",
+      "sha256": "72efcf7850a8bf7a15a61ec3cf1981c08d4a2973a5d1b9fdb120ea421d431ddf",
+      "title": "Sanhedrin",
+      "core": {
+        "block_id": "block_000417",
+        "cohort": "mandatory_closing",
+        "refs": [
+          "113b:4"
+        ]
+      },
+      "context_read": [
+        "113b:1-3"
+      ],
+      "counts": {
+        "boundary": 1
+      }
+    },
+    {
+      "id": "san_opening_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\san_opening_001.json",
+      "sha256": "4950c5fba3567811c503711a05afc5879d7d9b9b4f87a28651c2d720d8a92949",
+      "title": "Sanhedrin",
+      "core": {
+        "block_id": "block_000000",
+        "cohort": "mandatory_opening",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2a:6",
+          "2a:7",
+          "2a:8",
+          "2a:9",
+          "2a:10"
+        ]
+      },
+      "context_read": [
+        "2a:11-16",
+        "2b:1-9",
+        "3a:1-11"
+      ],
+      "counts": {
+        "attribution": 1,
+        "boundary": 1,
+        "claim": 36,
+        "edge": 1,
+        "omission_opportunity": 3,
+        "question": 2
+      }
+    },
+    {
+      "id": "sot_closing_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\sot_closing_001.json",
+      "sha256": "1cb2f486c8c180e18864e4d27bdd6a9565c9c232815ed080437013f69a960ea8",
+      "title": "Sotah",
+      "core": {
+        "block_id": "block_000163",
+        "cohort": "mandatory_closing",
+        "refs": [
+          "49b:16",
+          "49b:17",
+          "49b:18",
+          "49b:19",
+          "49b:20"
+        ]
+      },
+      "context_read": [
+        "49b:1-15"
+      ],
+      "counts": {
+        "attribution": 2,
+        "boundary": 1,
+        "claim": 15,
+        "edge": 2,
+        "omission_opportunity": 1,
+        "question": 1
+      }
+    },
+    {
+      "id": "sot_opening_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\sot_opening_001.json",
+      "sha256": "f00c90c286c6e814669630c898c84a3a4a8bf369629b260cfac21ffcd05ff74d",
+      "title": "Sotah",
+      "core": {
+        "block_id": "block_000000",
+        "cohort": "mandatory_opening",
+        "refs": [
+          "2a:1",
+          "2a:2",
+          "2a:3",
+          "2a:4",
+          "2a:5",
+          "2a:6",
+          "2a:7",
+          "2a:8",
+          "2a:9",
+          "2a:10"
+        ]
+      },
+      "context_read": [
+        "2a:11-13",
+        "2b:1-29",
+        "3a:1-24"
+      ],
+      "counts": {
+        "attribution": 3,
+        "boundary": 1,
+        "claim": 24,
+        "edge": 1,
+        "omission_opportunity": 2,
+        "question": 3
+      }
+    },
+    {
+      "id": "sot_probability_000008_001",
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\sot_probability_000008_001.json",
+      "sha256": "2bb294c70866b8c9b14d44b2e0e5d79d97a40d1c7ce2c07de19cadddd2b0d829",
+      "title": "Sotah",
+      "core": {
+        "block_id": "block_000008",
+        "cohort": "probability_sample",
+        "refs": [
+          "3b:15",
+          "3b:16",
+          "3b:17",
+          "3b:18",
+          "3b:19",
+          "3b:20",
+          "3b:21",
+          "3b:22",
+          "3b:23",
+          "4a:1"
+        ]
+      },
+      "context_read": [
+        "3a:1-24",
+        "3b:1-14",
+        "4a:2-21",
+        "4b:1-18"
+      ],
+      "counts": {
+        "attribution": 2,
+        "boundary": 2,
+        "claim": 13,
+        "edge": 3,
+        "omission_opportunity": 2,
+        "question": 3
+      }
+    }
+  ],
+  "preserved_superseded_reading": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\ker_opening_001.json",
+    "sha256": "f37f9e90d93b874e0f6244b92daafa99b433ea07eee4549f4a722f64d74e9b5f",
+    "reason": "Independent pre-comparison quote-anchor correction"
+  },
+  "cohorts": [
+    {
+      "tractate": "Bava Metzia",
+      "plan_sha256": "8d0a4c9096c9f98f97540e75f87e0cf2986217e59b8704aa43280432dda369b5",
+      "planned_probability_blocks": 37,
+      "planned_union_segments": 390,
+      "actual_unique_core_segments": 41,
+      "actual_core_characters": 5812,
+      "actual_probability_core_segments": 5,
+      "actual_endpoint_core_segments": 20,
+      "actual_additional_risk_segments_outside_plan": 16,
+      "completed_probability_blocks": 0,
+      "endpoint_complete": true,
+      "remaining_selected_blocks": 37
+    },
+    {
+      "tractate": "Sanhedrin",
+      "plan_sha256": "d580ec2c5c931f43c7040d8165725584133511370564b47371b9931a7d9c7e72",
+      "planned_probability_blocks": 42,
+      "planned_union_segments": 431,
+      "actual_unique_core_segments": 11,
+      "actual_core_characters": 1056,
+      "actual_probability_core_segments": 0,
+      "actual_endpoint_core_segments": 11,
+      "actual_additional_risk_segments_outside_plan": 0,
+      "completed_probability_blocks": 0,
+      "endpoint_complete": true,
+      "remaining_selected_blocks": 42
+    },
+    {
+      "tractate": "Gittin",
+      "plan_sha256": "4331da24c82a4774f47d1345098b4ae4cff323730c665d3f12ae1b3f67bc10fd",
+      "planned_probability_blocks": 30,
+      "planned_union_segments": 312,
+      "actual_unique_core_segments": 31,
+      "actual_core_characters": 2822,
+      "actual_probability_core_segments": 0,
+      "actual_endpoint_core_segments": 12,
+      "actual_additional_risk_segments_outside_plan": 19,
+      "completed_probability_blocks": 0,
+      "endpoint_complete": true,
+      "remaining_selected_blocks": 30
+    },
+    {
+      "tractate": "Sotah",
+      "plan_sha256": "e75a2d638089a07c99593417982608231b27954a4feaf04fb26de0504f909bca",
+      "planned_probability_blocks": 30,
+      "planned_union_segments": 315,
+      "actual_unique_core_segments": 25,
+      "actual_core_characters": 2764,
+      "actual_probability_core_segments": 10,
+      "actual_endpoint_core_segments": 15,
+      "actual_additional_risk_segments_outside_plan": 0,
+      "completed_probability_blocks": 1,
+      "endpoint_complete": true,
+      "remaining_selected_blocks": 29
+    },
+    {
+      "tractate": "Keritot",
+      "plan_sha256": "ef50800900f7d574e70781f06de57e553a9ca323e921668cc2247bae9e67619e",
+      "planned_probability_blocks": 30,
+      "planned_union_segments": 311,
+      "actual_unique_core_segments": 21,
+      "actual_core_characters": 2186,
+      "actual_probability_core_segments": 10,
+      "actual_endpoint_core_segments": 11,
+      "actual_additional_risk_segments_outside_plan": 0,
+      "completed_probability_blocks": 1,
+      "endpoint_complete": true,
+      "remaining_selected_blocks": 29
+    }
+  ],
+  "direct_evidence_spans_validated_current_readings": 382,
+  "total_actual_unique_core_segments": 129,
+  "total_actual_core_characters": 14640,
+  "comparison_ledgers": [
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\comparison_001.json",
+      "sha256": "ff8e9770a606e6d684f811193daaaf87e77ce8a7a4bdd2bffd760960d46ced4b"
+    },
+    {
+      "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\comparison_002.json",
+      "sha256": "fbe8f359ab3627d2242a5ab07f5d30508e56958a4d17f472af6d95fa3845ca60"
+    }
+  ],
+  "remaining_manifest": {
+    "path": "F:\\Sefaria_QA\\bavli_production_run_20261125_01\\review\\L02_fresh_20261125\\remaining_source_review_001.json",
+    "sha256": "61d54a56ac9d36ef6aed94da9dff1e8a82d2f4f076313275da61a388c53a46cb",
+    "blocks": 167
+  },
+  "qualification": {
+    "human_reviewed": false,
+    "ml_eligible": false,
+    "tractate_verdict": "NONE_INCOMPLETE",
+    "compared_core_claim_records": 128,
+    "content_represented_in_limited_denominator": 128,
+    "confirmed_missing_in_limited_denominator": 0,
+    "semantic_accuracy_estimate": null
+  },
+  "limitations": [
+    "Only two full probability blocks completed; five additional probability segments overlap BM risk reading.",
+    "Context expansions read, not counted as completed core review.",
+    "All endpoints complete, including terminal colophon-only cores; semantic coverage not inflated.",
+    "Independent claim denominator includes enumerated and composite units; no universal atomicity claim.",
+    "Gittin 5b identity resolution added after source alert, not first-pass independent producer agreement.",
+    "No complete tractate extraction/QA verdict or task eligibility certification."
+  ]
+}
